@@ -1,0 +1,212 @@
+https://www.opennet.ru/man.shtml?topic=autofs&category=8&russian=0
+
+\n
+Automount\n
+\n
+Stores automount(8) configuration for autofs(8) in IPA.\n
+\n
+The base of an automount configuration is the configuration file auto.master.
+\n
+This is also the base location in IPA. Multiple auto.master configurations\n
+can be stored in separate locations. A location is implementation-specific\n
+with the default being a location named 'default'. For example, you can have\n
+locations by geographic region, by floor, by type, etc.\n
+\n
+Automount has three basic object types: locations, maps and keys.\n
+\n
+A location defines a set of maps anchored in auto.master. This allows you\n
+to store multiple automount configurations. A location in itself isn't\n
+very interesting, it is just a point to start a new automount map.\n
+\n
+A map is roughly equivalent to a discrete automount file and provides\n
+storage for keys.\n
+\n
+A key is a mount point associated with a map.\n
+\n
+When a new location is created, two maps are automatically created for\n
+it: auto.master and auto.direct. auto.master is the root map for all\n
+automount maps for the location. auto.direct is the default map for\n
+direct mounts and is mounted on /-.\n
+\n
+An automount map may contain a submount key. This key defines a mount\n
+location within the map that references another map. This can be done\n
+either using automountmap-add-indirect --parentmap or manually\n
+with automountkey-add and setting info to "-type=autofs :<mapname>".\n
+\n
+EXAMPLES:\n
+\n
+Locations:\n
+\n
+  Create a named location, "Baltimore":\n
+    ipa automountlocation-add baltimore\n
+\n
+  Display the new location:\n
+    ipa automountlocation-show baltimore\n
+\n
+  Find available locations:\n
+    ipa automountlocation-find\n
+\n
+  Remove a named automount location:\n
+    ipa automountlocation-del baltimore\n
+\n
+  Show what the automount maps would look like if they were in the 
+filesystem:\n
+    ipa automountlocation-tofiles baltimore\n
+\n
+  Import an existing configuration into a location:\n
+    ipa automountlocation-import baltimore /etc/auto.master\n
+\n
+    The import will fail if any duplicate entries are found. For\n
+    continuous operation where errors are ignored, use the --continue\n
+    option.\n
+\n
+Maps:\n
+\n
+  Create a new map, "auto.share":\n
+    ipa automountmap-add baltimore auto.share\n
+\n
+  Display the new map:\n
+    ipa automountmap-show baltimore auto.share\n
+\n
+  Find maps in the location baltimore:\n
+    ipa automountmap-find baltimore\n
+\n
+  Create an indirect map with auto.share as a submount:\n
+    ipa automountmap-add-indirect baltimore --parentmap=auto.share --mount=
+sub auto.man\n
+\n
+    This is equivalent to:\n
+\n
+    ipa automountmap-add-indirect baltimore --mount=/man auto.man\n
+    ipa automountkey-add baltimore auto.man --key=sub --info="-fstype=
+autofs ldap:auto.share"\n
+\n
+  Remove the auto.share map:\n
+    ipa automountmap-del baltimore auto.share\n
+\n
+Keys:\n
+\n
+  Create a new key for the auto.share map in location baltimore. This ties\n
+  the map we previously created to auto.master:\n
+    ipa automountkey-add baltimore auto.master --key=/share --info=auto.
+share\n
+\n
+  Create a new key for our auto.share map, an NFS mount for man pages:\n
+    ipa automountkey-add baltimore auto.share --key=man --info="-
+ro,soft,rsize=8192,wsize=8192 ipa.example.com:/shared/man"\n
+\n
+  Find all keys for the auto.share map:\n
+    ipa automountkey-find baltimore auto.share\n
+\n
+  Find all direct automount keys:\n
+    ipa automountkey-find baltimore --key=/-\n
+\n
+  Remove the man key from the auto.share map:\n
+    ipa automountkey-del baltimore auto.share --key=man\n
+
+
+
+
+\n
+Automount\n
+\n
+Хранит параметры automount(8) для autofs(8) в IPA.\n
+\n
+Основа параметров automount — файл auto.master.
+\n
+В IPA этот файл выполняет аналогичную роль. Разные файлы auto.master\n
+можно хранить в различных местоположениях. Местоположение зависит от реализации,\n
+стандартным местоположением является местоположение с названием 'default'. Например, могут существовать\n
+местоположения, разделяемые по географическому региону, по этажу, по типу и т.д.\n
+\n
+У automount есть три базовых типа объектов: локации, схемы монтирования и ключи.\n
+\n
+Локация определяет набор схем монтирования, привязанных к файлу auto.master, что позволяет\n
+хранить несколько конфигураций automount. Сама по себе локация неинтересна\n
+она является только точкой для старта новой схемы монтирования automount.\n
+\n
+Схема монтирования грубо напоминает дискретный файл automount и является\n
+хранилищем ключей.\n
+\n
+Ключ — это точка монтирования, привязанная к схеме монтирования.\n
+\n
+Во время создания новой локации для неё автоматически создаются две схемы монтирования:\n
+auto.master и auto.direct. Файл auto.master является корнем для всех\n
+схем монтирования automount данной локации. Файл auto.direct — схема монтирования по умолчанию для\n
+прямых монтирований и смонтирован на /-.\n
+\n
+An automount map may contain a submount key. This key defines a mount\n
+location within the map that references another map. This can be done\n
+either using automountmap-add-indirect --parentmap or manually\n
+with automountkey-add and setting info to "-type=autofs :<mapname>".\n
+\n
+EXAMPLES:\n
+\n
+Locations:\n
+\n
+  Create a named location, "Baltimore":\n
+    ipa automountlocation-add baltimore\n
+\n
+  Display the new location:\n
+    ipa automountlocation-show baltimore\n
+\n
+  Find available locations:\n
+    ipa automountlocation-find\n
+\n
+  Remove a named automount location:\n
+    ipa automountlocation-del baltimore\n
+\n
+  Show what the automount maps would look like if they were in the 
+filesystem:\n
+    ipa automountlocation-tofiles baltimore\n
+\n
+  Import an existing configuration into a location:\n
+    ipa automountlocation-import baltimore /etc/auto.master\n
+\n
+    The import will fail if any duplicate entries are found. For\n
+    continuous operation where errors are ignored, use the --continue\n
+    option.\n
+\n
+Maps:\n
+\n
+  Create a new map, "auto.share":\n
+    ipa automountmap-add baltimore auto.share\n
+\n
+  Display the new map:\n
+    ipa automountmap-show baltimore auto.share\n
+\n
+  Find maps in the location baltimore:\n
+    ipa automountmap-find baltimore\n
+\n
+  Create an indirect map with auto.share as a submount:\n
+    ipa automountmap-add-indirect baltimore --parentmap=auto.share --mount=
+sub auto.man\n
+\n
+    This is equivalent to:\n
+\n
+    ipa automountmap-add-indirect baltimore --mount=/man auto.man\n
+    ipa automountkey-add baltimore auto.man --key=sub --info="-fstype=
+autofs ldap:auto.share"\n
+\n
+  Remove the auto.share map:\n
+    ipa automountmap-del baltimore auto.share\n
+\n
+Keys:\n
+\n
+  Create a new key for the auto.share map in location baltimore. This ties\n
+  the map we previously created to auto.master:\n
+    ipa automountkey-add baltimore auto.master --key=/share --info=auto.
+share\n
+\n
+  Create a new key for our auto.share map, an NFS mount for man pages:\n
+    ipa automountkey-add baltimore auto.share --key=man --info="-
+ro,soft,rsize=8192,wsize=8192 ipa.example.com:/shared/man"\n
+\n
+  Find all keys for the auto.share map:\n
+    ipa automountkey-find baltimore auto.share\n
+\n
+  Find all direct automount keys:\n
+    ipa automountkey-find baltimore --key=/-\n
+\n
+  Remove the man key from the auto.share map:\n
+    ipa automountkey-del baltimore auto.share --key=man\n

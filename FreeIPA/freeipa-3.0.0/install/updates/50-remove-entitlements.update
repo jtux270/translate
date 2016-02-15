@@ -1,0 +1,25 @@
+dn: $SUFFIX
+remove: aci: '(target = "ldap:///ipaentitlementid=*,cn=entitlements,cn=etc,$SUFFIX")(version 3.0;acl "permission:Register Entitlements";allow (add) groupdn = "ldap:///cn=Register Entitlements,cn=permissions,cn=pbac,$SUFFIX";)'
+remove: aci: '(targetattr = "usercertificate")(target = "ldap:///ipaentitlement=*,cn=entitlements,cn=etc,$SUFFIX")(version 3.0;acl "permission:Write Entitlements";allow (write) groupdn = "ldap:///cn=Write Entitlements,cn=permissions,cn=pbac,$SUFFIX";)'
+remove: aci: '(targetattr = "userpkcs12")(target = "ldap:///ipaentitlementid=*,cn=entitlements,cn=etc,$SUFFIX")(version 3.0;acl "permission:Read Entitlements";allow (read) groupdn = "ldap:///cn=Read Entitlements,cn=permissions,cn=pbac,$SUFFIX";)'
+
+dn: cn=Entitlement Management,cn=roles,cn=accounts,$SUFFIX
+deleteentry: dn: cn=Entitlement Management,cn=roles,cn=accounts,$SUFFIX
+
+dn: cn=Entitlement Compliance,cn=roles,cn=accounts,$SUFFIX
+deleteentry: dn: cn=Entitlement Compliance,cn=roles,cn=accounts,$SUFFIX
+
+dn: cn=Register and Write Entitlements,cn=privileges,cn=pbac,$SUFFIX
+deleteentry: dn: cn=Entitlement Compliance,cn=roles,cn=accounts,$SUFFIX
+
+dn: cn=Read Entitlements,cn=privileges,cn=pbac,$SUFFIX
+deleteentry: dn: cn=Entitlement Compliance,cn=roles,cn=accounts,$SUFFIX
+
+dn: cn=Register Entitlements,cn=permissions,cn=pbac,$SUFFIX
+deleteentry: dn: cn=Register Entitlements,cn=permissions,cn=pbac,$SUFFIX
+
+dn: cn=Read Entitlements,cn=permissions,cn=pbac,$SUFFIX
+deleteentry: dn: cn=Read Entitlements,cn=permissions,cn=pbac,$SUFFIX
+
+dn: cn=Write Entitlements,cn=permissions,cn=pbac,$SUFFIX
+deleteentry: dn: cn=Write Entitlements,cn=permissions,cn=pbac,$SUFFIX

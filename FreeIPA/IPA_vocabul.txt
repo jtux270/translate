@@ -1,0 +1,65 @@
+aci         Directory Server Access Control Instructions (ACIs)
+
+PAC — privilege attribute certificate, сертификат атрибута привилегий
+automount   Automount
+  cert        Command plugins for IPA-RA certificate operations.
+  config      IPA configuration
+  dns         Domain Name System (DNS) plugin
+  group       Groups of users
+  hbac        Host based access control
+  host        Hosts/Machines (Identity)
+  hostgroup   Groups of hosts.
+  krbtpolicy  Kerberos ticket policy
+  migration   Migration to IPA
+  misc        Misc plugins
+  netgroup    Netgroups
+  passwd      Password changes
+  pwpolicy    Password policy
+  rolegroup   Rolegroups
+  service     Services (Identity)
+  taskgroup   Taskgroups
+  user        Users (Identity)
+
+http://www.freeipa.org/page/Kerberos Kerberos-Specific Terminology
+
+
+Представление о транзитивности доверия   https://technet.microsoft.com/ru-ru/library/cc754612.aspx
+
+https://msdn.microsoft.com/ru-ru/library/cc775736(v=ws.10).aspx
+SOA
+http://peterhost.ru/wiki/SOA-записи/  
+http://hosting.agava.ru/faq/tech/docs/dns.shtml
+
+
+Что такое «Ресурсные записи DNS»
+https://www.reg.ru/support/domains/dns_servery_i_nastroika_zony/Nastroika-zony/chto-takoe-resursnye-zapisi-dns
+
+service principal	субъект-служба	A globally-unique name associated with a service entity at an endpoint node within a Kerberos peer-to-peer communication.
+host principal		субъекта узла
+
+Обычно RID — это последнее целое число SID пользователя или группы, следующее за SID
+
+ID view — представление ID
+
+A User ID view is a special reporting view that only displays data from sessions in which you send unique ID and related data to Google Analytics. To analyze all of your data, use a different view.
+https://support.google.com/analytics/answer/3123669?hl=en
+
+HOTP — HMAC-Based One-Time Password Algorithm,  алгоритм защищенной аутентификации с использованием одноразового пароля
+https://www.opennet.ru/tips/2805_ssh_auth_yubikey_password.shtml
+
+Двухэтапная авторизация (OTP)  → https://dev.1c-bitrix.ru/learning/course/?COURSE_ID=34&CHAPTER_ID=06818
+
+!!!!!!!!!!!!!! DNS forward zone  !!!!!!!!!!!!!!!!!!!! ретранслирующая зона DNS
+
+zone cut   ???????????????   http://www.circleid.com/posts/the_design_of_the_domain_name_system_part_iii_name_structure_and_delegation/
+
+stage user  — шаблонный
+  
+
+DN — distinguished name, отличительное имя
+RDN — Relative Distinguished Name относительное отличительное имя
+AD DC  — Active Directory Domain Controller
+GC — Global Catalog
+UPG — User Private Groups
+
+389 Directory Server —  служба каталогов уровня предприятия с открытым исходным кодом, предназначенная для централизованного управления доступом к ресурсам на множестве сетевых серверов.

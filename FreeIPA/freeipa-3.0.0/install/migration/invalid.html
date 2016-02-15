@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Identity Management</title>
+
+    <link rel="stylesheet" type="text/css" href="../ui/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../ui/ipa.css" />
+</head>
+
+<body class="info-page">
+
+  <div class="container_1">
+    <div class="header-logo">
+            <img src="../ui/images/ipa-logo.png" /><img src="../ui/images/rh-ipabanner.png" />
+        </div>
+       <div class="textblock">
+        <h1>Password Migration</h1>
+        <p>If you have been sent here by your administrator, your personal
+           information is being migrated to a new identity management solution
+           (IPA).</p>
+        <p>Please, enter your credentials in the form below to complete the
+           process. Upon successful login your kerberos account will be
+           activated.</p>
+        </div>
+        <div id="formwindow">
+           <h2>Login</h2>
+           <div id="error-box">
+             <p><strong>Please re-enter your username or password</strong></p>
+             <p>The password or username you entered is incorrect. Please try again (make sure your caps lock is off).</p>
+             <p>If the problem persists, contact your administrator.</p>
+           </div>
+           <form id="login" action="migration.py" method="post" name="">
+              <ul>
+                <li>
+                  <label for="username">Username:</label>
+                  <input type="text" name="username" value="" accesskey="u" />
+                </li>
+                <li>
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" value="" accesskey="p" />
+                </li>
+              <ul>
+           <div class="formbutton">
+          <input name="submit" value="Migrate" type="submit" />
+          </div>
+
+          </form>
+       </div>
+   </div>
+
+</body>
+
+</html>
+

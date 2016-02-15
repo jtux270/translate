@@ -1,0 +1,195 @@
+.\" A man page for ipa-client-install
+.\" Copyright (C) 2008 Red Hat, Inc.
+.\"
+.\" This program is free software; you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation, either version 3 of the License, or
+.\" (at your option) any later version.
+.\"
+.\" This program is distributed in the hope that it will be useful, but
+.\" WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+.\" General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License
+.\" along with this program.  If not, see <http://www.gnu.org/licenses/>.
+.\"
+.\" Author: Rob Crittenden <rcritten@redhat.com>
+.\"
+.TH "ipa-client-install" "1" "Sep 5 2011" "FreeIPA" "FreeIPA Manual Pages"
+.SH "NAME"
+ipa\-client\-install \- Configure an IPA client
+.SH "SYNOPSIS"
+ipa\-client\-install [\fIOPTION\fR]...
+.SH "DESCRIPTION"
+Configures a client machine to use IPA for authentication and identity services.
+
+By default this configures SSSD to connect to an IPA server for authentication and authorization. Optionally one can instead configure PAM and NSS (Name Switching Service) to work with an IPA server over Kerberos and LDAP.
+
+An authorized user is required to join a client machine to IPA. This can take the form of a kerberos principal or a one\-time password associated with the machine.
+
+This same tool is used to unconfigure IPA and attempts to return the machine to its previous state. Part of this process is to unenroll the host from the IPA server. Unenrollment consists of disabling the prinicipal key on the IPA server so that it may be re\-enrolled. The machine principal in /etc/krb5.keytab (host/<fqdn>@REALM) is used to authenticate to the IPA server to unenroll itself. If this principal does not exist then unenrollment will fail and an administrator will need to disable the host principal (ipa host\-disable <fqdn>).
+
+.SS "HOSTNAME REQUIREMENTS"
+Client must use a \fBstatic hostname\fR. If the machine hostname changes for example due to a dynamic hostname assignment by a DHCP server, client enrollment to IPA server breaks and user then would not be able to perform Kerberos authentication.
+
+\-\-hostname option may be used to specify a static hostname that persists over reboot.
+
+.SH "OPTIONS"
+.SS "BASIC OPTIONS"
+.TP
+\fB\-\-domain\fR=\fIDOMAIN\fR
+Set the domain name to DOMAIN
+.TP
+\fB\-\-server\fR=\fISERVER\fR
+Set the IPA server to connect to. May be specified multiple times to add multiple servers to ipa_server value in sssd.conf. Only the first value is considered when used with \-\-no\-sssd.
+.TP
+\fB\-\-realm\fR=\fIREALM_NAME\fR
+Set the IPA realm name to REALM_NAME
+.TP
+\fB\-\-fixed\-primary\fR
+Configure sssd to use a fixed server as the primary IPA server. The default is to use DNS SRV records to determine the primary server to use and fall back to the server the client is enrolled with. When used in conjunction with \-\-server then no _srv_ value is set in the ipa_server option in sssd.conf.
+.TP
+\fB\-p\fR, \fB\-\-principal\fR
+Authorized kerberos principal to use to join the IPA realm.
+.TP
+\fB\-w\fR \fIPASSWORD\fR, \fB\-\-password\fR=\fIPASSWORD\fR
+Password for joining a machine to the IPA realm. Assumes bulk password unless principal is also set.
+.TP
+\fB\-W\fR
+Prompt for the password for joining a machine to the IPA realm.
+.TP
+\fB\-\-mkhomedir\fR
+Configure PAM to create a users home directory if it does not exist.
+.TP
+\fB\-\-hostname\fR
+The hostname of this machine (FQDN). If specified, the hostname will be set and the system configuration will be updated to persist over reboot. By default a nodename result from uname(2) is used.
+.TP
+\fB\-\-force\-join\fR
+Join the host even if it is already enrolled.
+.TP
+\fB\-\-ntp\-server\fR=\fINTP_SERVER\fR
+Configure ntpd to use this NTP server.
+.TP
+\fB\-N\fR, \fB\-\-no\-ntp\fR
+Do not configure or enable NTP.
+.TP
+\fB\-\-nisdomain\fR=\fINIS_DOMAIN\fR
+Set the NIS domain name as specified. By default, this is set to the IPA domain name.
+.TP
+\fB\-\-no\-nisdomain\fR
+Do not configure NIS domain name.
+.TP
+\fB\-\-ssh\-trust\-dns\fR
+Configure OpenSSH client to trust DNS SSHFP records.
+.TP
+\fB\-\-no\-ssh\fR
+Do not configure OpenSSH client.
+.TP
+\fB\-\-no\-sshd\fR
+Do not configure OpenSSH server.
+.TP
+\fB\-\-no\-sudo\fR
+Do not configure SSSD as a data source for sudo.
+.TP
+\fB\-\-no\-dns\-sshfp\fR
+Do not automatically create DNS SSHFP records.
+.TP
+\fB\-\-noac\fR
+Do not use Authconfig to modify the nsswitch.conf and PAM configuration.
+.TP
+\fB\-f\fR, \fB\-\-force\fR
+Force the settings even if errors occur
+.TP
+\fB\-\-kinit\-attempts\fR=\fIKINIT_ATTEMPTS\fR
+Number of unsuccessful attempts to obtain host TGT that will be performed
+before aborting client installation. \fIKINIT_ATTEMPTS\fR should be a number
+greater than zero. By default 5 attempts to get TGT are performed.
+.TP
+\fB\-d\fR, \fB\-\-debug\fR
+Print debugging information to stdout
+.TP
+\fB\-U\fR, \fB\-\-unattended\fR
+Unattended installation. The user will not be prompted.
+.TP
+\fB\-\-ca-cert-file\fR=\fICA_FILE\fR
+Do not attempt to acquire the IPA CA certificate via automated means,
+instead use the CA certificate found locally in in \fICA_FILE\fR.  The
+\fICA_FILE\fR must be an absolute path to a PEM formatted certificate
+file. The CA certificate found in \fICA_FILE\fR is considered
+authoritative and will be installed without checking to see if it's
+valid for the IPA domain.
+
+.SS "SSSD OPTIONS"
+.TP
+\fB\-\-permit\fR
+Configure SSSD to permit all access. Otherwise the machine will be controlled by the Host\-based Access Controls (HBAC) on the IPA server.
+.TP
+\fB\-\-enable\-dns\-updates\fR
+This option tells SSSD to automatically update DNS with the IP address of this client.
+.TP
+\fB\-\-no\-krb5\-offline\-passwords\fR
+Configure SSSD not to store user password when the server is offline.
+.TP
+\fB\-S\fR, \fB\-\-no\-sssd\fR
+Do not configure the client to use SSSD for authentication, use nss_ldap instead.
+.TP
+\fB\-\-preserve\-sssd\fR
+Disabled by default. When enabled, preserves old SSSD configuration if it is
+not possible to merge it with a new one. Effectively, if the merge is not
+possible due to SSSDConfig reader encountering unsupported options,
+\fBipa\-client\-install\fR will not run further and ask to fix SSSD config
+first. When this option is not specified, \fBipa\-client\-install\fR will back
+up SSSD config and create new one. The back up version will be restored during
+uninstall.
+
+.SS "UNINSTALL OPTIONS"
+.TP
+\fB\-\-uninstall\fR
+Remove the IPA client software and restore the configuration to the pre\-IPA state.
+.TP
+\fB\-U\fR, \fB\-\-unattended\fR
+Unattended uninstallation. The user will not be prompted.
+
+.SH "FILES"
+.TP
+Files that will be replaced if SSSD is configured (default):
+
+/etc/sssd/sssd.conf\p
+.TP
+Files that will be replaced if they exist and SSSD is not configured (\-\-no\-sssd):
+
+/etc/ldap.conf\p
+/etc/nss_ldap.conf\p
+/etc/libnss\-ldap.conf\p
+/etc/pam_ldap.conf\p
+/etc/nslcd.conf\p
+.TP
+Files replaced if NTP is enabled:
+
+/etc/ntp.conf\p
+/etc/sysconfig/ntpd\p
+/etc/ntp/step\-tickers\p
+.TP
+Files always created (replacing existing content):
+
+/etc/krb5.conf\p
+/etc/ipa/ca.crt\p
+/etc/ipa/default.conf\p
+/etc/openldap/ldap.conf\p
+.TP
+Files updated, existing content is maintained:
+
+/etc/pki/nssdb\p
+/etc/krb5.keytab\p
+/etc/sysconfig/network\p
+.SH "EXIT STATUS"
+0 if the installation was successful
+
+1 if an error occurred
+
+2 if uninstalling and the client is not configured
+
+3 if installing and the client is already configured
+
+4 if an uninstall error occurred

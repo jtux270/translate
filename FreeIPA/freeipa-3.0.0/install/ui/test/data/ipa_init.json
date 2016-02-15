@@ -1,0 +1,757 @@
+{
+    "error": null,
+    "id": null,
+    "result": {
+        "count": 4,
+        "results": [
+            {
+                "error": null,
+                "messages": {
+                    "ajax": {
+                        "401": {
+                            "message": "Your session has expired. Please re-login."
+                        }
+                    },
+                    "actions": {
+                        "apply": "Apply",
+                        "confirm": "Are you sure you want to proceed with the action.",
+                        "delete_confirm": "Are you sure you want to delete ${object}",
+                        "disable_confirm": "Are you sure you want to disable ${object}",
+                        "enable_confirm": "Are you sure you want to enable ${object}",
+                        "title": "Actions"
+                    },
+                    "association": {
+                        "add": {
+                            "ipasudorunas": "Add RunAs ${other_entity} into ${entity} ${primary_key}",
+                            "ipasudorunasgroup": "Add RunAs Groups into ${entity} ${primary_key}",
+                            "managedby": "Add ${other_entity} Managing ${entity} ${primary_key}",
+                            "member": "Add ${other_entity} into ${entity} ${primary_key}",
+                            "memberallowcmd": "Add Allow ${other_entity} into ${entity} ${primary_key}",
+                            "memberdenycmd": "Add Deny ${other_entity} into ${entity} ${primary_key}",
+                            "memberof": "Add ${entity} ${primary_key} into ${other_entity}",
+                            "sourcehost": "Add Source ${other_entity} into ${entity} ${primary_key}"
+                        },
+                        "added": "Items added",
+                        "direct_membership": "Direct Membership",
+                        "indirect_membership": "Indirect Membership",
+                        "no_entries": "No entries.",
+                        "paging": "Showing ${start} to ${end} of ${total} entries.",
+                        "remove": {
+                            "ipasudorunas": "Remove RunAs ${other_entity} from ${entity} ${primary_key}",
+                            "ipasudorunasgroup": "Remove RunAs Groups from ${entity} ${primary_key}",
+                            "managedby": "Remove ${other_entity} Managing ${entity} ${primary_key}",
+                            "member": "Remove ${other_entity} from ${entity} ${primary_key}",
+                            "memberallowcmd": "Remove Allow ${other_entity} from ${entity} ${primary_key}",
+                            "memberdenycmd": "Remove Deny ${other_entity} from ${entity} ${primary_key}",
+                            "memberof": "Remove ${entity} ${primary_key} from ${other_entity}",
+                            "sourcehost": "Remove Source ${other_entity} from ${entity} ${primary_key}"
+                        },
+                        "removed": "Items removed",
+                        "show_results": "Show Results"
+                    },
+                    "buttons": {
+                        "add": "Add",
+                        "add_and_add_another": "Add and Add Another",
+                        "add_and_close": "Add and Close",
+                        "add_and_edit": "Add and Edit",
+                        "add_many": "Add Many",
+                        "back": "Back",
+                        "cancel": "Cancel",
+                        "close": "Close",
+                        "disable": "Disable",
+                        "edit": "Edit",
+                        "enable": "Enable",
+                        "find": "Find",
+                        "get": "Get",
+                        "issue": "Issue",
+                        "ok": "OK",
+                        "refresh": "Refresh",
+                        "remove": "Delete",
+                        "reset": "Reset",
+                        "reset_password_and_login": "Reset Password and Login",
+                        "restore": "Restore",
+                        "retry": "Retry",
+                        "revoke": "Revoke",
+                        "set": "Set",
+                        "update": "Update",
+                        "view": "View"
+                    },
+                    "details": {
+                        "collapse_all": "Collapse All",
+                        "expand_all": "Expand All",
+                        "general": "General",
+                        "identity": "Identity Settings",
+                        "settings": "${entity} ${primary_key} Settings",
+                        "to_top": "Back to Top",
+                        "updated": "${entity} ${primary_key} updated"
+                    },
+                    "dialogs": {
+                        "add_confirmation": "${entity} successfully added",
+                        "add_title": "Add ${entity}",
+                        "available": "Available",
+                        "batch_error_message": "Some operations failed.",
+                        "batch_error_title": "Operations Error",
+                        "confirmation": "Confirmation",
+                        "dirty_message": "This page has unsaved changes. Please save or revert.",
+                        "dirty_title": "Unsaved Changes",
+                        "edit_title": "Edit ${entity}",
+                        "hide_details": "Hide details",
+                        "prospective": "Prospective",
+                        "redirection": "Redirection",
+                        "remove_empty": "Select entries to be removed.",
+                        "remove_title": "Remove ${entity}",
+                        "show_details": "Show details",
+                        "validation_message": "Input form contains invalid or missing values.",
+                        "validation_title": "Validation error"
+                    },
+                    "error_report": {
+                        "options": "Please try the following options:",
+                        "problem_persists": "If the problem persists please contact the system administrator.",
+                        "refresh": "Refresh the page.",
+                        "reload": "Reload the browser.",
+                        "main_page": "Return to the main page and retry the operation",
+                        "title": "An error has occurred (${error})"
+                    },
+                    "errors": {
+                        "error": "Error",
+                        "http_error": "HTTP Error",
+                        "internal_error": "Internal Error",
+                        "ipa_error": "IPA Error",
+                        "no_response": "No response",
+                        "unknown_error": "Unknown Error",
+                        "url": "URL"
+                    },
+                    "facet_groups": {
+                        "managedby": "${primary_key} is managed by:",
+                        "member": "${primary_key} members:",
+                        "memberof": "${primary_key} is a member of:"
+                    },
+                    "facets": {
+                        "details": "Settings",
+                        "search": "Search"
+                    },
+                    "false": "False",
+                    "login": {
+                        "form_auth": "To login with username and password, enter them in the fields below then click Login.",
+                        "header": "Logged In As",
+                        "krb_auth_msg": "To login with Kerberos, please make sure you have valid tickets (obtainable via kinit) and <a href='http://${host}/ipa/config/unauthorized.html'>configured</a> the browser correctly, then click Login.",
+                        "login": "Login",
+                        "logout": "Logout",
+                        "logout_error": "Logout error",
+                        "password": "Password",
+                        "username": "Username"
+                    },
+                    "measurement_units": {
+                        "number_of_passwords": "number of passwords",
+                        "seconds": "seconds"
+                    },
+                    "objects": {
+                        "aci": {
+                            "attribute": "Attribute"
+                        },
+                        "automember": {
+                            "add_condition": "Add Condition into ${pkey}",
+                            "add_rule": "Add Rule",
+                            "attribute": "Attribute",
+                            "default_host_group": "Default host group",
+                            "default_user_group": "Default user group",
+                            "exclusive": "Exclusive",
+                            "expression": "Expression",
+                            "hostgrouprule": "Host group rule",
+                            "hostgrouprules": "Host group rules",
+                            "inclusive": "Inclusive",
+                            "usergrouprule": "User group rule",
+                            "usergrouprules": "User group rules"
+                        },
+                        "automountkey": {},
+                        "automountlocation": {
+                            "identity": "Automount Location Settings"
+                        },
+                        "automountmap": {
+                            "direct": "Direct",
+                            "indirect": "Indirect",
+                            "map_type": "Map Type"
+                        },
+                        "cert": {
+                            "aa_compromise": "AA Compromise",
+                            "affiliation_changed": "Affiliation Changed",
+                            "ca_compromise": "CA Compromise",
+                            "certificate_hold": "Certificate Hold",
+                            "cessation_of_operation": "Cessation of Operation",
+                            "common_name": "Common Name",
+                            "expires_on": "Expires On",
+                            "fingerprints": "Fingerprints",
+                            "issue_certificate": "Issue New Certificate for ${entity} ${primary_key}",
+                            "issued_by": "Issued By",
+                            "issued_on": "Issued On",
+                            "issued_to": "Issued To",
+                            "key_compromise": "Key Compromise",
+                            "md5_fingerprint": "MD5 Fingerprint",
+                            "missing": "No Valid Certificate",
+                            "new_certificate": "New Certificate",
+                            "note": "Note",
+                            "organization": "Organization",
+                            "organizational_unit": "Organizational Unit",
+                            "privilege_withdrawn": "Privilege Withdrawn",
+                            "reason": "Reason for Revocation",
+                            "remove_from_crl": "Remove from CRL",
+                            "request_message": "<ol> <li>Create a certificate database or use an existing one. To create a new database:<br/> <code># certutil -N -d &lt;database path&gt;</code> </li> <li>Create a CSR with subject <em>CN=&lt;hostname&gt;,O=&lt;realm&gt;</em>, for example:<br/> <code># certutil -R -d &lt;database path&gt; -a -g &lt;key size&gt; -s 'CN=${hostname},O=${realm}'</code> </li> <li> Copy and paste the CSR (from <em>-----BEGIN NEW CERTIFICATE REQUEST-----</em> to <em>-----END NEW CERTIFICATE REQUEST-----</em>) into the text area below: </li> </ol>",
+                            "requested": "Certificate requested",
+                            "restore_certificate": "Restore Certificate for ${entity} ${primary_key}",
+                            "restore_confirmation": "To confirm your intention to restore this certificate, click the \"Restore\" button.",
+                            "restored": "Certificate restored",
+                            "revoke_certificate": "Revoke Certificate for ${entity} ${primary_key}",
+                            "revoke_confirmation": "To confirm your intention to revoke this certificate, select a reason from the pull-down list, and click the \"Revoke\" button.",
+                            "revoked": "Certificate Revoked",
+                            "serial_number": "Serial Number",
+                            "serial_number_hex": "Serial Number (hex)",
+                            "sha1_fingerprint": "SHA1 Fingerprint",
+                            "superseded": "Superseded",
+                            "unspecified": "Unspecified",
+                            "valid": "Valid Certificate Present",
+                            "validity": "Validity",
+                            "view_certificate": "Certificate for ${entity} ${primary_key}"
+                        },
+                        "config": {
+                            "group": "Group Options",
+                            "search": "Search Options",
+                            "selinux": "SELinux Options",
+                            "service": "Service Options",
+                            "user": "User Options"
+                        },
+                        "delegation": {},
+                        "dnsconfig": {
+                            "forward_first": "Forward first",
+                            "forward_none": "Forwarding disabled",
+                            "forward_only": "Forward only",
+                            "options": "Options"
+                        },
+                        "dnsrecord": {
+                            "data": "Data",
+                            "deleted_no_data": "DNS record was deleted because it contained no data.",
+                            "other": "Other Record Types",
+                            "ptr_redir_address_err": "Address not valid, can't redirect",
+                            "ptr_redir_create": "Create dns record",
+                            "ptr_redir_creating": "Creating record.",
+                            "ptr_redir_creating_err": "Record creation failed.",
+                            "ptr_redir_record": "Checking if record exists.",
+                            "ptr_redir_record_err": "Record not found.",
+                            "ptr_redir_title": "Redirection to PTR record",
+                            "ptr_redir_zone": "Zone found: ${zone}",
+                            "ptr_redir_zone_err": "Target reverse zone not found.",
+                            "ptr_redir_zones": "Fetching DNS zones.",
+                            "ptr_redir_zones_err": "An error occurred while fetching dns zones.",
+                            "redirection_dnszone": "You will be redirected to DNS Zone.",
+                            "standard": "Standard Record Types",
+                            "title": "Records for DNS Zone",
+                            "type": "Record Type"
+                        },
+                        "dnszone": {
+                            "identity": "DNS Zone Settings",
+                            "add_permission": "Add Permission",
+                            "remove_permission": "Remove Permission"
+                        },
+                        "entitle": {
+                            "account": "Account",
+                            "certificate": "Certificate",
+                            "certificates": "Certificates",
+                            "consume": "Consume",
+                            "consume_entitlement": "Consume Entitlement",
+                            "consumed": "Consumed",
+                            "download": "Download",
+                            "download_certificate": "Download Certificate",
+                            "end": "End",
+                            "import_button": "Import",
+                            "import_certificate": "Import Certificate",
+                            "import_message": "Enter the Base64-encoded entitlement certificate below:",
+                            "loading": "Loading...",
+                            "no_certificate": "No Certificate.",
+                            "product": "Product",
+                            "register": "Register",
+                            "registration": "Registration",
+                            "start": "Start",
+                            "status": "Status"
+                        },
+                        "group": {
+                            "details": "Group Settings",
+                            "external": "External",
+                            "make_external": "Change to external group",
+                            "make_posix": "Change to POSIX group",
+                            "normal": "Normal",
+                            "posix": "POSIX",
+                            "type": "Group Type"
+                        },
+                        "hbacrule": {
+                            "any_host": "Any Host",
+                            "any_service": "Any Service",
+                            "anyone": "Anyone",
+                            "host": "Accessing",
+                            "ipaenabledflag": "Rule status",
+                            "service": "Via Service",
+                            "sourcehost": "From",
+                            "specified_hosts": "Specified Hosts and Groups",
+                            "specified_services": "Specified Services and Groups",
+                            "specified_users": "Specified Users and Groups",
+                            "user": "Who"
+                        },
+                        "hbacsvc": {},
+                        "hbacsvcgroup": {
+                            "services": "Services"
+                        },
+                        "hbactest": {
+                            "access_denied": "Access Denied",
+                            "access_granted": "Access Granted",
+                            "include_disabled": "Include Disabled",
+                            "include_enabled": "Include Enabled",
+                            "label": "HBAC Test",
+                            "matched": "Matched",
+                            "missing_values": "Missing values: ",
+                            "new_test": "New Test",
+                            "rules": "Rules",
+                            "run_test": "Run Test",
+                            "specify_external": "Specify external ${entity}",
+                            "unmatched": "Unmatched"
+                        },
+                        "host": {
+                            "certificate": "Host Certificate",
+                            "cn": "Host Name",
+                            "delete_key_unprovision": "Delete Key, Unprovision",
+                            "details": "Host Settings",
+                            "enrolled": "Enrolled",
+                            "enrollment": "Enrollment",
+                            "fqdn": "Fully Qualified Host Name",
+                            "keytab": "Kerberos Key",
+                            "keytab_missing": "Kerberos Key Not Present",
+                            "keytab_present": "Kerberos Key Present, Host Provisioned",
+                            "password": "One-Time-Password",
+                            "password_missing": "One-Time-Password Not Present",
+                            "password_present": "One-Time-Password Present",
+                            "password_reset_button": "Reset OTP",
+                            "password_reset_title": "Reset One-Time-Password",
+                            "password_set_button": "Set OTP",
+                            "password_set_success": "OTP set",
+                            "password_set_title": "Set One-Time-Password",
+                            "status": "Status",
+                            "unprovision": "Unprovision",
+                            "unprovision_confirmation": "Are you sure you want to unprovision this host?",
+                            "unprovision_title": "Unprovisioning ${entity}",
+                            "unprovisioned": "Host unprovisioned"
+                        },
+                        "hostgroup": {
+                            "identity": "Host Group Settings"
+                        },
+                        "krbtpolicy": {
+                            "identity": "Kerberos Ticket Policy"
+                        },
+                        "netgroup": {
+                            "any_host": "Any Host",
+                            "anyone": "Anyone",
+                            "external": "External",
+                            "host": "Host",
+                            "hostgroups": "Host Groups",
+                            "hosts": "Hosts",
+                            "identity": "Netgroup Settings",
+                            "specified_hosts": "Specified Hosts and Groups",
+                            "specified_users": "Specified Users and Groups",
+                            "user": "User",
+                            "usergroups": "User Groups",
+                            "users": "Users"
+                        },
+                        "permission": {
+                            "identity": "Identity",
+                            "invalid_target": "Permission with invalid target specification",
+                            "rights": "Rights",
+                            "target": "Target"
+                        },
+                        "privilege": {
+                            "identity": "Privilege Settings"
+                        },
+                        "pwpolicy": {
+                            "identity": "Password Policy"
+                        },
+                        "idrange": {
+                            "details": "Range Settings",
+                            "ipabaseid": "Base ID",
+                            "ipabaserid": "Primary RID base",
+                            "ipaidrangesize": "Range size",
+                            "ipanttrusteddomainsid": "Domain SID",
+                            "ipasecondarybaserid": "Secondary RID base",
+                            "type": "Range type",
+                            "type_ad": "Active Directory domain",
+                            "type_local": "Local domain"
+                        },
+                        "role": {
+                            "identity": "Role Settings"
+                        },
+                        "selfservice": {},
+                        "selinuxusermap": {
+                            "any_host": "Any Host",
+                            "anyone": "Anyone",
+                            "host": "Host",
+                            "specified_hosts": "Specified Hosts and Groups",
+                            "specified_users": "Specified Users and Groups",
+                            "user": "User"
+                        },
+                        "service": {
+                            "certificate": "Service Certificate",
+                            "delete_key_unprovision": "Delete Key, Unprovision",
+                            "details": "Service Settings",
+                            "host": "Host Name",
+                            "missing": "Kerberos Key Not Present",
+                            "provisioning": "Provisioning",
+                            "service": "Service",
+                            "status": "Status",
+                            "unprovision": "Unprovision",
+                            "unprovision_confirmation": "Are you sure you want to unprovision this service?",
+                            "unprovision_title": "Unprovisioning ${entity}",
+                            "unprovisioned": "Service unprovisioned",
+                            "valid": "Kerberos Key Present, Service Provisioned"
+                        },
+                        "sshkeystore": {
+                            "keys": "SSH public keys",
+                            "set_dialog_help": "SSH public key:",
+                            "set_dialog_title": "Set SSH key",
+                            "show_set_key": "Show/Set key",
+                            "status_mod_ns": "Modified: key not set",
+                            "status_mod_s": "Modified",
+                            "status_new_ns": "New: key not set",
+                            "status_new_s": "New: key set"
+                        },
+                        "sudocmd": {
+                            "groups": "Groups"
+                        },
+                        "sudocmdgroup": {
+                            "commands": "Commands"
+                        },
+                        "sudorule": {
+                            "allow": "Allow",
+                            "any_command": "Any Command",
+                            "any_group": "Any Group",
+                            "any_host": "Any Host",
+                            "anyone": "Anyone",
+                            "command": "Run Commands",
+                            "deny": "Deny",
+                            "external": "External",
+                            "host": "Access this host",
+                            "ipaenabledflag": "Rule status",
+                            "option_added": "Option added",
+                            "option_removed": "Option(s) removed",
+                            "options": "Options",
+                            "runas": "As Whom",
+                            "specified_commands": "Specified Commands and Groups",
+                            "specified_groups": "Specified Groups",
+                            "specified_hosts": "Specified Hosts and Groups",
+                            "specified_users": "Specified Users and Groups",
+                            "user": "Who"
+                        },
+                        "trust": {
+                            "account": "Account",
+                            "admin_account": "Administrative account",
+                            "details": "Trust Settings",
+                            "domain": "Domain",
+                            "establish_using": "Establish using",
+                            "ipantflatname": "Domain NetBIOS name",
+                            "ipanttrusteddomainsid": "Domain Security Identifier",
+                            "preshared_password": "Pre-shared password",
+                            "trustdirection": "Trust direction",
+                            "truststatus": "Trust status",
+                            "trusttype": "Trust type"
+                        },
+                        "user": {
+                            "account": "Account Settings",
+                            "account_status": "Account Status",
+                            "contact": "Contact Settings",
+                            "employee": "Employee Information",
+                            "error_changing_status": "Error changing account status",
+                            "krbpasswordexpiration": "Password expiration",
+                            "mailing": "Mailing Address",
+                            "misc": "Misc. Information",
+                            "status_confirmation": "Are you sure you want to ${action} the user?<br/>The change will take effect immediately.",
+                            "status_link": "Click to ${action}"
+                        }
+                    },
+                    "password": {
+                        "current_password": "Current Password",
+                        "current_password_required": "Current password is required",
+                        "expires_in": "Your password expires in ${days} days.",
+                        "invalid_password": "The password or username you entered is incorrect.",
+                        "new_password": "New Password",
+                        "new_password_required": "New password is required",
+                        "password": "Password",
+                        "password_change_complete": "Password change complete",
+                        "password_must_match": "Passwords must match",
+                        "reset_failure": "Password reset was not successful.",
+                        "reset_password": "Reset Password",
+                        "reset_password_sentence": "Reset your password.",
+                        "verify_password": "Verify Password"
+                    },
+                    "search": {
+                        "delete_confirm": "Are you sure you want to delete selected entries?",
+                        "deleted": "Selected entries were deleted.",
+                        "disable_confirm": "Are you sure you want to disable selected entries?",
+                        "disabled": "${count} items were disabled",
+                        "enable_confirm": "Are you sure you want to enable selected entries?",
+                        "enabled": "${count} items were enabled",
+                        "partial_delete": "Some entries were not deleted",
+                        "quick_links": "Quick Links",
+                        "select_all": "Select All",
+                        "truncated": "Query returned more results than the configured size limit. Displaying the first ${counter} results.",
+                        "unselect_all": "Unselect All"
+                    },
+                    "status": {
+                        "disable": "Disable",
+                        "disabled": "Disabled",
+                        "enable": "Enable",
+                        "enabled": "Enabled",
+                        "label": "Status"
+                    },
+                    "tabs": {
+                        "audit": "Audit",
+                        "automember": "Automember",
+                        "automount": "Automount",
+                        "dns": "DNS",
+                        "hbac": "Host Based Access Control",
+                        "identity": "Identity",
+                        "ipaserver": "IPA Server",
+                        "policy": "Policy",
+                        "role": "Role Based Access Control",
+                        "sudo": "Sudo"
+                    },
+                    "true": "True",
+                    "widget": {
+                        "next": "Next",
+                        "page": "Page",
+                        "prev": "Prev",
+                        "undo": "undo",
+                        "undo_all": "undo all",
+                        "validation": {
+                            "error": "Text does not match field pattern",
+                            "decimal": "Must be a decimal number",
+                            "integer": "Must be an integer",
+                            "ip_address": "Not a valid IP address",
+                            "ip_v4_address": "Not a valid IPv4 address",
+                            "ip_v6_address": "Not a valid IPv6 address",
+                            "max_value": "Maximum value is ${value}",
+                            "min_value": "Minimum value is ${value}",
+                            "net_address": "Not a valid network address",
+                            "port": "'${port}' is not a valid port",
+                            "required": "Required field",
+                            "unsupported": "Unsupported value"
+                        }
+                    }
+                }
+            },
+            {
+                "error": null,
+                "result": {
+                    "dn": "cn=ipaconfig,cn=etc,dc=test,dc=example,dc=com",
+                    "ipacertificatesubjectbase": [
+                        "O=EXAMPLE.COM"
+                    ],
+                    "ipaconfigstring": [
+                        "AllowNThash"
+                    ],
+                    "ipadefaultemaildomain": [
+                        "example.com"
+                    ],
+                    "ipadefaultloginshell": [
+                        "/bin/sh"
+                    ],
+                    "ipadefaultprimarygroup": [
+                        "ipausers"
+                    ],
+                    "ipagroupsearchfields": [
+                        "cn,description"
+                    ],
+                    "ipahomesrootdir": [
+                        "/home"
+                    ],
+                    "ipamaxusernamelength": [
+                        "32"
+                    ],
+                    "ipamigrationenabled": [
+                        "FALSE"
+                    ],
+                    "ipapwdexpadvnotify": [
+                        "4"
+                    ],
+                    "ipasearchrecordslimit": [
+                        "100"
+                    ],
+                    "ipasearchtimelimit": [
+                        "2"
+                    ],
+                    "ipaselinuxusermapdefault": [
+                        "guest_u:s0"
+                    ],
+                    "ipaselinuxusermaporder": [
+                        "guest_u:s0$xguest_u:s0$user_u:s0-s0:c0.c1023$staff_u:s0-s0:c0.c1023$unconfined_u:s0-s0:c0.c1023"
+                    ],
+                    "ipausersearchfields": [
+                        "uid,givenname,sn,telephonenumber,ou,title"
+                    ]
+                },
+                "summary": null,
+                "value": ""
+            },
+            {
+                "count": 1,
+                "error": null,
+                "result": [
+                    {
+                        "cn": [
+                            "Administrator"
+                        ],
+                        "dn": "uid=admin,cn=users,cn=accounts,dc=dev,dc=example,dc=com",
+                        "gecos": [
+                            "Administrator"
+                        ],
+                        "gidnumber": [
+                            "719000000"
+                        ],
+                        "has_keytab": true,
+                        "has_password": true,
+                        "homedirectory": [
+                            "/home/admin"
+                        ],
+                        "ipauniqueid": [
+                            "03400b10-ddc8-11e0-9103-525400e135d8"
+                        ],
+                        "krbextradata": [
+                            {
+                                "__base64__": "AAJF6G5Ocm9vdC9hZG1pbkBJRE0uTEFCLkJPUy5SRURIQVQuQ09NAA=="
+                            },
+                            {
+                                "__base64__": "AAgBAA=="
+                            }
+                        ],
+                        "krblastpwdchange": [
+                            "20120110142413Z"
+                        ],
+                        "krbpasswordexpiration": [
+                            "20141212052109Z"
+                        ],
+                        "krbprincipalname": [
+                            "admin@DEV.EXAMPLE.COM"
+                        ],
+                        "loginshell": [
+                            "/bin/bash"
+                        ],
+                        "memberof_group": [
+                            "admins"
+                        ],
+                        "nsaccountlock": false,
+                        "objectclass": [
+                            "top",
+                            "person",
+                            "posixaccount",
+                            "krbprincipalaux",
+                            "krbticketpolicyaux",
+                            "inetuser",
+                            "ipaobject"
+                        ],
+                        "sn": [
+                            "Administrator"
+                        ],
+                        "uid": [
+                            "admin"
+                        ],
+                        "uidnumber": [
+                            "719000000"
+                        ]
+                    }
+                ],
+                "summary": "1 user matched",
+                "truncated": false
+            },
+            {
+                "count": 75,
+                "error": null,
+                "result": {
+                    "basedn": "dc=dev,dc=example,dc=com",
+                    "bin": "/var/www",
+                    "ca_agent_install_port": 9443,
+                    "ca_agent_port": 443,
+                    "ca_ee_install_port": 9444,
+                    "ca_ee_port": 443,
+                    "ca_host": "dev.example.com",
+                    "ca_install_port": 9180,
+                    "ca_port": 80,
+                    "conf": "/etc/ipa/server.conf",
+                    "conf_default": "/etc/ipa/default.conf",
+                    "confdir": "/etc/ipa",
+                    "config_loaded": true,
+                    "container_accounts": "cn=accounts",
+                    "container_applications": "cn=applications,cn=configs,cn=policies",
+                    "container_automember": "cn=automember,cn=etc",
+                    "container_automount": "cn=automount",
+                    "container_configs": "cn=configs,cn=policies",
+                    "container_dns": "cn=dns",
+                    "container_entitlements": "cn=entitlements,cn=etc",
+                    "container_group": "cn=groups,cn=accounts",
+                    "container_hbac": "cn=hbac",
+                    "container_hbacservice": "cn=hbacservices,cn=hbac",
+                    "container_hbacservicegroup": "cn=hbacservicegroups,cn=hbac",
+                    "container_host": "cn=computers,cn=accounts",
+                    "container_hostgroup": "cn=hostgroups,cn=accounts",
+                    "container_netgroup": "cn=ng,cn=alt",
+                    "container_permission": "cn=permissions,cn=pbac",
+                    "container_policies": "cn=policies",
+                    "container_policygroups": "cn=policygroups,cn=configs,cn=policies",
+                    "container_policylinks": "cn=policylinks,cn=configs,cn=policies",
+                    "container_privilege": "cn=privileges,cn=pbac",
+                    "container_rolegroup": "cn=roles,cn=accounts",
+                    "container_roles": "cn=roles,cn=policies",
+                    "container_selinux": "cn=usermap,cn=selinux",
+                    "container_service": "cn=services,cn=accounts",
+                    "container_sudocmd": "cn=sudocmds,cn=sudo",
+                    "container_sudocmdgroup": "cn=sudocmdgroups,cn=sudo",
+                    "container_sudorule": "cn=sudorules,cn=sudo",
+                    "container_user": "cn=users,cn=accounts",
+                    "container_virtual": "cn=virtual operations,cn=etc",
+                    "context": "server",
+                    "debug": false,
+                    "domain": "example.com",
+                    "dot_ipa": "/var/www/.ipa",
+                    "enable_ra": true,
+                    "fallback": true,
+                    "home": "/var/www",
+                    "host": "dev.example.com",
+                    "in_server": true,
+                    "in_tree": false,
+                    "interactive": true,
+                    "ipalib": "/usr/lib/python2.7/site-packages/ipalib",
+                    "ldap_uri": "ldapi://%2fvar%2frun%2fslapd-DEV-EXAMPLE-COM.socket",
+                    "log": null,
+                    "logdir": "/var/log/ipa",
+                    "mode": "production",
+                    "mount_ipa": "/ipa/",
+                    "mount_jsonserver": "json",
+                    "mount_xmlserver": "xml",
+                    "plugins_on_demand": false,
+                    "prompt_all": false,
+                    "ra_plugin": "dogtag",
+                    "realm": "DEV.EXAMPLE.COM",
+                    "rpc_json_uri": "http://localhost:8888/ipa/json",
+                    "script": "/var/www/mod_wsgi",
+                    "site_packages": "/usr/lib/python2.7/site-packages",
+                    "startup_traceback": false,
+                    "validate_api": false,
+                    "verbose": 0,
+                    "wait_for_attr": false,
+                    "webui_assets_dir": null,
+                    "webui_prod": true,
+                    "xmlrpc_uri": "https://dev.example.com/ipa/xml"
+                },
+                "summary": "75 variables",
+                "total": 75
+            },
+            {
+                "error": null,
+                "result": true,
+                "summary": null,
+                "value": ""
+            }
+        ]
+    }
+}
