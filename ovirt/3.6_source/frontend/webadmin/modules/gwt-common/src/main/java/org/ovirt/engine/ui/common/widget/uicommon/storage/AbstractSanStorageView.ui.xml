@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog" xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor"
+	xmlns:w="urn:import:org.ovirt.engine.ui.common.widget">
+
+	<ui:style>
+		.contentPanel {
+			padding: 2px;
+			margin: 4px;
+		}
+
+		.errorMessageLabel {			
+			color: red;
+			margin: 2px;
+			height: 16px;
+		}
+	</ui:style>
+	
+	<g:FlowPanel>
+		<g:Label ui:field="errorMessage" addStyleNames="{style.errorMessageLabel}" />		
+		<w:ValidatedPanelWidget ui:field="contentPanel" addStyleNames="{style.contentPanel}" />
+	</g:FlowPanel>
+
+</ui:UiBinder>

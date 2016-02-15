@@ -1,0 +1,47 @@
+package org.ovirt.engine.core.bll.profiles;
+
+import java.util.Collections;
+import java.util.List;
+
+import org.ovirt.engine.core.bll.utils.PermissionSubject;
+import org.ovirt.engine.core.common.AuditLogType;
+import org.ovirt.engine.core.common.VdcObjectType;
+import org.ovirt.engine.core.common.action.DiskProfileParameters;
+import org.ovirt.engine.core.common.businessentities.profiles.DiskProfile;
+import org.ovirt.engine.core.common.errors.VdcBllMessages;
+import org.ovirt.engine.core.dao.profiles.ProfilesDao;
+
+public class UpdateDiskProfileCommand extends UpdateProfileCommandBase<DiskProfileParameters, DiskProfile, DiskProfileValidator> {
+
+    public UpdateDiskProfileCommand(DiskProfileParameters parameters) {
+        super(parameters);
+    }
+
+    @Override
+    protected DiskProfileValidator getProfileValidator() {
+        return new DiskProfileValidator(getProfile());
+    }
+
+    @Override
+    protected ProfilesDao<DiskProfile> getProfileDao() {
+        return getDiskProfileDao();
+    }
+
+    @Override
+    public List<PermissionSubject> getPermissionCheckSubjects() {
+        return Collections.singletonList(new PermissionSubject(getParameters().getProfileId(),
+                VdcObjectType.DiskProfile, getActionType().getActionGroup()));
+    }
+
+    @Override
+    protected void setActionMessageParameters() {
+        super.setActionMessageParameters();
+        addCanDoActionMessage(VdcBllMessages.VAR__TYPE__DISK_PROFILE);
+    }
+
+    @Override
+    public AuditLogType getAuditLogTypeValue() {
+        return getSucceeded() ? AuditLogType.USER_UPDATED_DISK_PROFILE
+                : AuditLogType.USER_FAILED_TO_UPDATE_DISK_PROFILE;
+    }
+}

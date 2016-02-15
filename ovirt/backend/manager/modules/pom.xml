@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.ovirt.engine.core</groupId>
+    <artifactId>manager</artifactId>
+    <version>3.5.1.1</version>
+  </parent>
+
+  <artifactId>manager-modules</artifactId>
+  <packaging>pom</packaging>
+
+  <name>oVirt Modules - manager</name>
+  <description>parent POM for all oVirt modules</description>
+
+  <modules>
+    <module>extensions-api-root</module>
+    <module>uutils</module>
+    <module>extensions-manager</module>
+    <module>compat</module>
+    <module>utils</module>
+    <module>common</module>
+    <module>dal</module>
+    <module>vdsbroker</module>
+    <module>builtin-extensions</module>
+    <module>scheduler</module>
+    <module>searchbackend</module>
+    <module>aaa</module>
+    <module>bll</module>
+    <module>restapi</module>
+    <module>logger</module>
+    <module>root</module>
+    <module>branding</module>
+    <module>services</module>
+    <module>docs</module>
+    <module>welcome</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>p6spy</groupId>
+      <artifactId>p6spy</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <excludes>**/RsdlManager.java,**/RsdlIOManager.java</excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

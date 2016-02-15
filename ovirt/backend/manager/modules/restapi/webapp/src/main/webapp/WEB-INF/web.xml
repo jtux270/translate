@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+
+<!--
+Copyright (c) 2014 Red Hat, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<web-app
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+
+  <context-param>
+    <param-name>resteasy.media.type.param.mapping</param-name>
+    <param-value>accept</param-value>
+  </context-param>
+
+  <filter>
+    <filter-name>CSRFProtection</filter-name>
+    <filter-class>org.ovirt.engine.api.common.security.CSRFProtectionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CSRFProtection</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>RestApiSessionValidationFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.aaa.filters.RestApiSessionValidationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>RestApiSessionValidationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+      <filter-name>EngineSessionTokenAuthenticationFilter</filter-name>
+      <filter-class>org.ovirt.engine.core.aaa.filters.EngineSessionTokenAuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>EngineSessionTokenAuthenticationFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>SessionValidationFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.aaa.filters.SessionValidationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SessionValidationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>BasicAuthenticationFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.aaa.filters.BasicAuthenticationFilter</filter-class>
+    <init-param>
+      <param-name>user-name-format</param-name>
+      <param-value>RESTAPI_SPECIFIC</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>BasicAuthenticationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>NegotiationFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.aaa.filters.NegotiationFilter</filter-class>
+    <init-param>
+      <param-name>capabilities</param-name>
+      <param-value>AUTHENTICATE_NEGOTIATE_NON_INTERACTIVE</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>NegotiationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+ <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.aaa.filters.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+ <filter>
+    <filter-name>EnforceAuthFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.aaa.filters.EnforceAuthFilter</filter-class>
+<!-- schemes parameter names should be in format of scheme.XXX
+Add an init-param per each scheme -->
+    <init-param>
+      <param-name>scheme.basic_auth</param-name>
+      <param-value>Basic realm="RESTAPI"</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>EnforceAuthFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>RestApiSessionMgmtFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.aaa.filters.RestApiSessionMgmtFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>RestApiSessionMgmtFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- confidentiality -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>everything</web-resource-name>
+      <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <user-data-constraint>
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <session-config>
+    <session-timeout>180</session-timeout>
+    <cookie-config>
+      <http-only>true</http-only>
+    </cookie-config>
+  </session-config>
+
+</web-app>

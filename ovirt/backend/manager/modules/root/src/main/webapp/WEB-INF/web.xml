@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+
+  <!-- Header filter to automatically add some headers to each response -->
+  <filter>
+    <filter-name>HeaderFilter</filter-name>
+    <filter-class>org.ovirt.engine.core.utils.servlet.HeaderFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>HeaderFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- File servlet instance to serve the CA certificate: -->
+  <servlet>
+    <servlet-name>PKIResourceServlet.ca</servlet-name>
+    <servlet-class>org.ovirt.engine.core.utils.servlet.ForwardServlet</servlet-class>
+    <init-param>
+        <param-name>targetContext</param-name>
+        <param-value>%{ENGINE_URI}/services/</param-value>
+    </init-param>
+    <init-param>
+        <param-name>uri</param-name>
+        <param-value>/pki-resource</param-value>
+    </init-param>
+    <init-param>
+        <param-name>attr-resource</param-name>
+        <param-value>ca-certificate</param-value>
+    </init-param>
+    <init-param>
+        <param-name>attr-format</param-name>
+        <param-value>X509-PEM-CA</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PKIResourceServlet.ca</servlet-name>
+    <url-pattern>/ca.crt</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet to serve the engine SSH public key: -->
+  <servlet>
+    <servlet-name>PKIResourceServlet.engine.ssh</servlet-name>
+    <servlet-class>org.ovirt.engine.core.utils.servlet.ForwardServlet</servlet-class>
+    <init-param>
+        <param-name>targetContext</param-name>
+        <param-value>%{ENGINE_URI}/services/</param-value>
+    </init-param>
+    <init-param>
+        <param-name>uri</param-name>
+        <param-value>/pki-resource</param-value>
+    </init-param>
+    <init-param>
+        <param-name>attr-resource</param-name>
+        <param-value>engine-certificate</param-value>
+    </init-param>
+    <init-param>
+        <param-name>attr-format</param-name>
+        <param-value>OPENSSH-PUBKEY</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PKIResourceServlet.engine.ssh</servlet-name>
+    <url-pattern>/engine.ssh.key.txt</url-pattern>
+    <url-pattern>/rhevm.ssh.key.txt</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet for automatic registration of hypervisors: -->
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>org.ovirt.engine.core.utils.servlet.ForwardServlet</servlet-class>
+    <init-param>
+        <param-name>targetContext</param-name>
+        <param-value>%{ENGINE_URI}/services/</param-value>
+    </init-param>
+    <init-param>
+        <param-name>uri</param-name>
+        <param-value>/host-register</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/OvirtEngineWeb/register</url-pattern>
+    <url-pattern>/OvirtEngineWeb/VdsAutoRegistration.aspx</url-pattern>
+    <url-pattern>/RHEVManagerWeb/VdsAutoRegistration.aspx</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet used by external applications (the notification service
+       and external clustering infrastructure) to check the health of
+       the engine: -->
+  <servlet>
+    <servlet-name>HealthStatus</servlet-name>
+    <servlet-class>org.ovirt.engine.core.utils.servlet.ForwardServlet</servlet-class>
+    <init-param>
+      <param-name>targetContext</param-name>
+      <param-value>%{ENGINE_URI}/services/</param-value>
+    </init-param>
+    <init-param>
+      <param-name>uri</param-name>
+      <param-value>/health</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HealthStatus</servlet-name>
+    <url-pattern>/OvirtEngineWeb/HealthStatus/*</url-pattern>
+    <url-pattern>/OvirtEngineWeb/HealthStatus.aspx</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <servlet-class>org.ovirt.engine.core.utils.servlet.RedirectServlet</servlet-class>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>%{ENGINE_URI}</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <session-config>
+    <cookie-config>
+      <http-only>true</http-only>
+    </cookie-config>
+  </session-config>
+
+</web-app>

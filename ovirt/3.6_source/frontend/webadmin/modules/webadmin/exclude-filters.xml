@@ -1,0 +1,321 @@
+<FindBugsFilter>
+    <Match>
+        <!--
+         findbugs complain that when returning Boolean type we should return only True
+         or False and not null.
+         In this case we do have the third option i.e. null
+        -->
+        <Class name="org.ovirt.engine.ui.webadmin.plugin.jsni.JsFunctionResultHelper" />
+        <Method name="getResultAsBoolean"/>
+        <Bug code="NP"/>
+    </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.UpdateMainContentLayout" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.popup.CloseDynamicPopup" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabClusterPresenter$ClusterSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabDataCenterPresenter$DataCenterSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabDiskPresenter$DiskSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabEventPresenter$EventSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabHostPresenter$HostSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabNetworkPresenter$NetworkSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabPoolPresenter$PoolSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabProviderPresenter$ProviderSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabSessionPresenter$SessionSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabQuotaPresenter$QuotaSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabStoragePresenter$StorageSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabTemplatePresenter$TemplateSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabUserPresenter$UserSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabVirtualMachinePresenter$VirtualMachineSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.system.MessageReceived" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and is used to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.uicommon.model.SystemTreeModelProvider$SystemTreeSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabEngineErrataPresenter$ErrataSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of unused field in class.
+        This is a GWT class and use to generate code
+
+        findbugs reason:
+        UuF: Unused field (UUF_UNUSED_FIELD)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabVolumePresenter$VolumeSelectionChange" />
+       <Bug code="UuF"/>
+     </Match>
+
+       <!--
+        findbugs complain of using Boolean constructor instead of Boolean.valueOf
+        This calss is GWT generated code
+
+        findbugs reason:
+        Dm: Method invokes inefficient Boolean constructor; use Boolean.valueOf(...) instead (DM_BOOLEAN_CTOR)
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.UpdateMainContentLayoutEvent" />
+       <Method name="hashCode"/>
+       <Bug pattern="DM_BOOLEAN_CTOR"/>
+     </Match>
+
+    <!--
+      findbugs complain of unused field in class.
+      This is a GWT class and use to generate code
+
+      findbugs reason:
+      UuF: Unused field (UUF_UNUSED_FIELD)
+    -->
+   <Match>
+     <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabVnicProfilePresenter$VnicProfileSelectionChange" />
+     <Bug code="UuF"/>
+   </Match>
+
+     <!--
+      Suppress current instance methods assigning values to static variables
+      -->
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.section.main.presenter.tab.MainTabReportsPresenter" />
+       <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+     </Match>
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.uicommon.model.TaskFirstRowModelProvider" />
+       <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+     </Match>
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.widget.table.cell.CustomSelectionCell" />
+       <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+     </Match>
+     <Match>
+       <Class name="org.ovirt.engine.ui.webadmin.widget.tags.TagItemCell" />
+       <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+     </Match>
+
+    <!--
+     Ignore all the unconfirmed casts in this module.
+     Unfortunately, these warnings are currently inherit to the design,
+     and handling them on an individual basis just adds noise to the
+     process.
+     -->
+    <Match>
+      <Bug pattern="BC_UNCONFIRMED_CAST"/>
+    </Match>
+
+    <!--
+      Ignore non-static inner classes.
+      This pattern is used by GWT-generated code, which we have no control of
+      -->
+     <Match>
+        <Bug pattern="SIC_INNER_SHOULD_BE_STATIC" />
+     </Match>
+
+    <Match>
+      <Class name="org.ovirt.engine.ui.webadmin.ApplicationConstants" />
+      <Bug pattern="SKIPPED_CLASS_TOO_BIG"/>
+    </Match>
+</FindBugsFilter>
+

@@ -1,0 +1,41 @@
+
+export ENGINE_DEFAULTS="${ENGINE_DEFAULTS:-@ENGINE_DEFAULTS@}"
+export ENGINE_VARS="${ENGINE_VARS:-@ENGINE_VARS@}"
+PACKAGE_NAME="@PACKAGE_NAME@"
+PACKAGE_VERSION="@PACKAGE_VERSION@"
+DISPLAY_VERSION="@DISPLAY_VERSION@"
+
+die() {
+	local m="$1"
+	echo "FATAL: ${m}" >&2
+	exit 1
+}
+
+load_config() {
+
+	[ -r "${ENGINE_DEFAULTS}" ] || die "Can't load defaults file \"${ENGINE_DEFAULTS}\"."
+
+	for f in \
+		"${ENGINE_DEFAULTS}" \
+		"${ENGINE_VARS}" \
+		$([ -d "${ENGINE_VARS}.d" ] && find "${ENGINE_VARS}.d" -name '*.conf' | sort) \
+		; do
+
+		[ -r "${f}" ] && . "${f}"
+	done
+
+	[ -n "${OVIRT_JBOSS_HOME}" ] && JBOSS_HOME="${OVIRT_JBOSS_HOME}"
+
+	JAVA_HOME="$("${ENGINE_USR}/bin/java-home")" || die "Cannot set JAVA_HOME"
+	export JAVA_HOME
+
+	# we use jboss specific loader (jboss-modules.jar)
+	# setup module path
+	export JAVA_MODULEPATH="${ENGINE_USR}/modules/tools:${ENGINE_JAVA_MODULEPATH}:${JBOSS_HOME}/modules"
+
+	# clean the class path
+	# jboss module loader will not run otherwise.
+	export CLASSPATH=""
+}
+
+load_config

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog"
+    xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor"
+    xmlns:t="urn:import:org.ovirt.engine.ui.webadmin.section.main.view.popup"
+    xmlns:er="urn:import:org.ovirt.engine.ui.webadmin.widget.errata">
+
+    <ui:style>
+        .errataTitleLabel {
+            font-weight: bold;
+        }
+
+        .errataTitlePanel {
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        .progressDotsImage {
+            margin: 10px;
+        }
+    </ui:style>
+
+    <d:SimpleDialogPanel width="870px" height="650px">
+        <d:content>
+            <g:SplitLayoutPanel ui:field="splitLayoutPanel">
+                <g:center>
+                    <t:ErrataTableView ui:field="errataTableView"/>
+                </g:center>
+                <g:south size="300">
+                    <g:FlowPanel ui:field="errataDetailPanel">
+                        <g:FlowPanel addStyleNames="{style.errataTitlePanel}">
+                            <g:HTMLPanel tag="span" ui:field="errataTitle" addStyleNames="{style.errataTitleLabel}"/>
+                        </g:FlowPanel>
+                        <er:ErrataDetailModelForm ui:field="errataDetailModelForm" />
+                    </g:FlowPanel>
+                </g:south>
+            </g:SplitLayoutPanel>
+        </d:content>
+    </d:SimpleDialogPanel>
+
+</ui:UiBinder>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.ovirt.engine</groupId>
+    <artifactId>root</artifactId>
+    <version>3.5.1.1</version>
+  </parent>
+  <artifactId>frontend-all</artifactId>
+  <groupId>org.ovirt.engine.ui</groupId>
+  <packaging>pom</packaging>
+  <name>oVirt Modules :: Frontend</name>
+  <description>An aggregator module for all frontend modules.</description>
+  <modules>
+    <module>webadmin</module>
+  </modules>
+  <properties>
+    <engine.groupId>org.ovirt.engine.ui</engine.groupId>
+    <engine.core.groupId>org.ovirt.engine.core</engine.core.groupId>
+    <aspectj.version>1.6.11</aspectj.version>
+  </properties>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>gwt-maven-plugin</artifactId>
+                    <versionRange>[1.3.2.google,)</versionRange>
+                    <goals>
+                      <goal>resources</goal>
+                      <goal>generateAsync</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action><ignore/></action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

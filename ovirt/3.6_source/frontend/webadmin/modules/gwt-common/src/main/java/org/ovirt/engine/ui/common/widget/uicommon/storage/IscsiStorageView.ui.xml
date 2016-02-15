@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog" xmlns:t="urn:import:org.ovirt.engine.ui.common.widget.dialog.tab"
+	xmlns:w="urn:import:org.ovirt.engine.ui.common.widget">
+
+	<ui:style type="org.ovirt.engine.ui.common.widget.uicommon.storage.IscsiStorageView.WidgetStyle">
+		.bar {
+			width: 22px !important;
+            border-right: none;
+            background-color: #fff;
+		}
+
+		.dialogTab {
+			position: relative;
+			white-space: nowrap;
+			display: table;
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+		}
+
+		.tabPanel {
+			display: inline-block;
+		}
+
+		.tabContentPanel {
+			padding: 2px;
+			margin-right: 2px;
+		}
+
+		.targetsListPanel {
+			margin-top: 35px;
+		}
+
+		.expandedlunsListPanel {
+			width: 100%;
+			overflow-y: scroll !important;
+			overflow-x: auto;
+		}
+
+		.errorMessageLabel {			
+			color: red;
+			margin: 2px;
+			height: 16px;
+		}
+
+        .tabWrapper {
+            outline: none;
+        }
+	</ui:style>
+	
+	<g:FlowPanel>
+		<g:VerticalPanel addStyleNames="{style.errorMessageLabel}">
+			<g:Label ui:field="message"/>
+			<g:Label ui:field="warning" />	
+		</g:VerticalPanel>
+		<t:DialogTabPanel ui:field="dialogTabPanel" height="340px" width="100%" addStyleNames="{style.tabPanel}">
+			<t:tab>
+				<t:DialogTab ui:field="targetsToLunTab" addStyleNames="{style.tabWrapper}">
+					<t:content>
+					    <w:ValidatedPanelWidget ui:field="targetsToLunsPanel" addStyleNames="{style.tabContentPanel}" />
+					</t:content>
+				</t:DialogTab>
+			</t:tab>
+			<t:tab>
+				<t:DialogTab ui:field="lunToTargetsTab" addStyleNames="{style.tabWrapper}">
+					<t:content>
+					    <w:ValidatedPanelWidget ui:field="lunsListPanel" addStyleNames="{style.tabContentPanel}" />
+					</t:content>
+				</t:DialogTab>
+			</t:tab>
+		</t:DialogTabPanel>	
+	</g:FlowPanel>
+
+</ui:UiBinder>

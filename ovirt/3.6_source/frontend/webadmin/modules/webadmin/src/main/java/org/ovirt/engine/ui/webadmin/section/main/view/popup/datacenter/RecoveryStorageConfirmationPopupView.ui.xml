@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog" xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor"
+  xmlns:ge="urn:import:org.ovirt.engine.ui.common.widget.editor.generic">
+
+	<ui:style>
+		.content {
+		}
+
+		.messages {
+			margin-left: 15px;
+		}
+
+		.messageLabel {
+			padding-bottom: 20px;
+		}
+
+		.errorLabel {
+			padding-bottom: 20px;
+			width: 450px;
+			color: red;
+		}
+
+		.selectNewDSDLabel {
+			padding-top: 10px;
+		}
+
+		.sdItemsPanel {
+			width: 100%;
+			height: 50%;
+			border-bottom: 1px solid #BBBBBB;
+			border-top: 1px solid #BBBBBB;
+		}
+
+	</ui:style>
+
+	<d:SimpleDialogPanel width="530px" height="350px">
+		<d:content>
+			<g:FlowPanel addStyleNames="{style.content}">
+				<g:FlowPanel addStyleNames="{style.messages}">
+                    <g:Label ui:field="errorLabel" addStyleNames="{style.errorLabel}" visible="false"/>
+					<g:HTML ui:field="messageLabel" addStyleNames="{style.messageLabel}"/>
+				</g:FlowPanel>
+				<ge:EntityModelCheckBoxEditor ui:field="latch" visible="false"/>
+				<g:Label ui:field="selectNewDSDLabel" addStyleNames="{style.selectNewDSDLabel}"/>
+				<g:ScrollPanel ui:field="sdItemsScrollPanel" addStyleNames="{style.sdItemsPanel}">
+					<e:EntityModelCellTable ui:field="storageDomainItems"/>
+				</g:ScrollPanel>
+			</g:FlowPanel>
+		</d:content>
+	</d:SimpleDialogPanel>
+
+</ui:UiBinder>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:style type="org.ovirt.engine.ui.webadmin.section.main.view.SearchPanelView.Style">
+        @external gwt-SuggestBoxPopup .suggestPopupMiddleCenterInner;
+        @external gwt-SuggestBoxPopup .suggestPopupContent;
+        @external gwt-SuggestBoxPopup .suggestPopupTop;
+        @external gwt-SuggestBoxPopup .suggestPopupBottom;
+        @external gwt-SuggestBoxPopup .suggestPopupMiddleLeft;
+        @external gwt-SuggestBoxPopup .suggestPopupMiddleRight;
+
+        .gwt-SuggestBoxPopup {
+            z-index: 1;
+        }
+
+        .gwt-SuggestBoxPopup .suggestPopupMiddleCenterInner {
+            height: 220px;
+            width: 100%;
+            overflow-y: auto;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .gwt-SuggestBoxPopup .suggestPopupContent {
+            overflow-y: auto;
+            padding: 1px;
+        }
+
+        .gwt-SuggestBoxPopup .suggestPopupTop,
+        .gwt-SuggestBoxPopup .suggestPopupBottom,
+        .gwt-SuggestBoxPopup .suggestPopupMiddleLeft,
+        .gwt-SuggestBoxPopup .suggestPopupMiddleRight {
+            display: none;
+        }
+
+        .wrapper {
+            padding: 11px;
+        }
+
+        .searchLabel {
+            float: left;
+            margin-left: 20px;
+            line-height:25px;
+        }
+
+        .searchBoxPanel {
+            width: 100%;
+            height: 25px;
+        }
+
+        .searchBoxPanel_HasSelectedTags {
+            background-image: url(images/search_bar_middle_HasSelectedTags.png);
+        }
+
+        .searchBoxClear_HasSelectedTags {
+            background-image: url(images/search_bar_middle_HasSelectedTags.png);
+        }
+
+        .searchBoxMiddleSearchPrefix {
+            float: left;
+            height: 25px;
+        }
+
+        .searchBoxMiddleSearchString {
+            float: left;
+            height: 25px;
+            width: 100%;
+        }
+
+        .searchBoxMiddleSearchString td {
+            outline: 1px gray solid;
+        }
+
+        .searchStringPrefixLabel {
+            border: none;
+            outline: 1px gray solid;
+            font-size: 14px;
+            color: grey;
+            padding-left: 10px;
+            padding-right: 10px;
+            white-space: nowrap;
+            background-color: #CACACA;
+            color: #000000;
+        }
+
+        .searchSuggestBox {
+            padding-left: 10px;
+            padding-right: 2px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin: 0px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            height: 25px;
+            line-height: 25px;
+            width: 100% !important;
+        }
+
+        .searchBoxClear, .searchBoxBookmark, .searchBoxSearch {
+            width: 30px;
+            height: 25px;
+            background-color: #fff;
+            outline: 1px gray solid;
+            text-align: center;
+            float: left;
+            padding-top: 3px;
+            cursor: pointer;
+        }
+
+        .searchBoxPanelContainer {
+            width: 100%;
+        }
+
+        .openSans {
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+        }
+    </ui:style>
+
+    <g:HTMLPanel addStyleNames="{style.wrapper}">
+        <g:HorizontalPanel ui:field="searchPanelContainer">
+
+            <g:VerticalPanel ui:field="searchBoxPanel" addStyleNames="{style.searchBoxPanel}">
+                <g:HorizontalPanel ui:field="searchBoxPanelContainer" addStyleNames="{style.searchBoxPanelContainer}">
+                    <g:HorizontalPanel addStyleNames="{style.searchBoxMiddleSearchPrefix}">
+                        <g:Label ui:field="searchStringPrefixLabel" addStyleNames="{style.searchStringPrefixLabel} {style.openSans} spv_searchStringPrefixLabel_pfly_fix" />
+                    </g:HorizontalPanel>
+                    <g:HorizontalPanel addStyleNames="{style.searchBoxMiddleSearchString}">
+                        <g:SuggestBox ui:field="searchStringInput" addStyleNames="{style.searchSuggestBox} {style.openSans}" />
+                    </g:HorizontalPanel>
+                </g:HorizontalPanel>
+            </g:VerticalPanel>
+
+
+            <g:FocusPanel ui:field="searchBoxClear" addStyleNames="{style.searchBoxClear}">
+                <g:InlineHTML addStyleNames="pficon pficon-close"></g:InlineHTML>
+            </g:FocusPanel>
+
+            <g:FocusPanel ui:field="searchBoxBookmark" addStyleNames="{style.searchBoxBookmark}">
+                <g:InlineHTML addStyleNames="glyphicon glyphicon-star-empty"></g:InlineHTML>
+            </g:FocusPanel>
+
+            <g:FocusPanel ui:field="searchBoxSearch" addStyleNames="{style.searchBoxSearch}">
+                <g:InlineHTML addStyleNames="glyphicon glyphicon-search"></g:InlineHTML>
+            </g:FocusPanel>
+        </g:HorizontalPanel>
+
+        <div style="clear: both;" />
+
+    </g:HTMLPanel>
+
+</ui:UiBinder>

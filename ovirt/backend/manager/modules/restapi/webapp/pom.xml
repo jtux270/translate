@@ -1,0 +1,37 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.ovirt.engine.api</groupId>
+    <artifactId>restapi-parent</artifactId>
+    <version>3.5.1.1</version>
+  </parent>
+
+  <artifactId>restapi-webapp</artifactId>
+  <packaging>war</packaging>
+  <name>oVirt RESTful API Backend Integration Webapp</name>
+
+  <build>
+    <plugins>
+
+      <!-- Don't include Maven metadata or empty classes directory in
+           the generated .jar file: -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <archive>
+            <addMavenDescriptor>false</addMavenDescriptor>
+          </archive>
+          <packagingExcludes>WEB-INF/classes</packagingExcludes>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>

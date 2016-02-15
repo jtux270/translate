@@ -1,0 +1,375 @@
+frontend_webadmin_modules_userportal-gwtp_src_main_resources_org_ovirt_engine_ui_frontend_AppErrors +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_AppErrors +
+frontend_webadmin_modules_userportal-gwtp_src_main_resources_org_ovirt_engine_ui_frontend_ConsoleErrors + 
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_ConsoleErrors +
+frontend_webadmin_modules_uicompat_src_main_resources_org_ovirt_engine_ui_uicompat_LocalizedEnums +
+backend_manager_modules_docs_src_main_resources_messages +
+backend_manager_modules_welcome_src_main_resources_messages +
+packaging_branding_ovirt.brand_messages +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.common.CommonApplicationConstants +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.uicompat.SpiceRedKeys +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.uicompat.UIConstants +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.uicompat.UIMessages +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.userportal.ApplicationConstants +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.userportal.ApplicationMessages +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.webadmin.ApplicationConstants +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_org.ovirt.engine.ui.webadmin.ApplicationMessages +
+frontend_webadmin_modules_userportal-gwtp_src_main_resources_org_ovirt_engine_ui_frontend_VdsmErrors +
+frontend_webadmin_modules_webadmin_src_main_resources_org_ovirt_engine_ui_frontend_VdsmErrors +
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________--
+
+
+the following localized files don't exist in the oVirt source:
+
+org.ovirt.engine.ui.uicompat.SpiceRedKeys.properties     @@@@@@@@@@@@@@@@@@@@
+org.ovirt.engine.ui.uicompat.UIConstants.properties    @@@@@@@@@@@@@@@@@@@@
+org.ovirt.engine.ui.uicompat.UIMessages.properties   @@@@@@@@@@@@@@@@@@@@@@
+org.ovirt.engine.ui.common.CommonApplicationConstants.properties    @@@@@@@@@@@@@@@@@@@@@@@
+org.ovirt.engine.ui.webadmin.ApplicationMessages.properties   @@@@@@@@@@@@@@@@@@@@@@@@
+org.ovirt.engine.ui.webadmin.ApplicationConstants.properties   @@@@@@@@@@@@@@@@@@@@@@
+org.ovirt.engine.ui.userportal.ApplicationConstants.properties   @@@@@@@@@@@@@@@@@@@
+org.ovirt.engine.ui.userportal.ApplicationMessages.properties @@@@@@@@@@@@@@@@@@@@@@ 
+
+the English strings actually reside in GWT Java Constants/Messages files:
+./frontend/webadmin/modules/uicompat/src/main/java/org/ovirt/engine/ui/uicompat/SpiceRedKeys.java   @@@@@@@@@@@@@
+./frontend/webadmin/modules/uicompat/src/main/java/org/ovirt/engine/ui/uicompat/UIConstants.java        @@@@@@@@@@@@@
+./frontend/webadmin/modules/uicompat/src/main/java/org/ovirt/engine/ui/uicompat/UIMessages.java    @@@@@@@@@@@@@@@@
+./frontend/webadmin/modules/gwt-common/src/main/java/org/ovirt/engine/ui/common/CommonApplicationConstants.java    @@@@@@@@@@@@@@@
+./frontend/webadmin/modules/webadmin/src/main/java/org/ovirt/engine/ui/webadmin/ApplicationMessages.java   @@@@@@@@@@@@@
+./frontend/webadmin/modules/webadmin/src/main/java/org/ovirt/engine/ui/webadmin/ApplicationConstants.java   @@@@@@@@@@@@
+./frontend/webadmin/modules/userportal-gwtp/src/main/java/org/ovirt/engine/ui/userportal/ApplicationConstants.java    @@@@@@@@@@@
+./frontend/webadmin/modules/userportal-gwtp/src/main/java/org/ovirt/engine/ui/userportal/ApplicationMessages.java   @@@@@@@@@@@@@@@@@@
+
+and also:
+
+./frontend/webadmin/modules/gwt-common/src/main/java/org/ovirt/engine/ui/common/CommonApplicationMessages.java   @@@@@@@@@@@@@@@@@@@@@
+(which is the base Interface for both of the ApplicationMessages.java files).
+
+________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+with values expressed via Java annotation (like DefaultStringValue):
+
+  @DefaultStringValue("oVirt Engine Web Administration")
+  String applicationTitle();
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+
+po2prop --personality=mozilla -t *.properties *.po *.ru_RU.properties
+
+prop2po --personality=mozilla *.properties ru.pot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://projects.rosalab.ru:8443/issues/6230
+http://resources.ovirt.org/pub/ovirt-3.5/src/ovirt-engine/ovirt-engine-3.5.1.1.tar.gz
+
+
+ССЫЛКИ
+https://translate.zanata.org/zanata/iteration/view/ovirt/master/languages/ru
+http://www.fedora.md/tag/ovirt/
+http://ivirt-it.ru/platforma-ovirt/
+http://ivirt-it.ru/glusterfs-novyj-klass-xranilishh-dannyx/
+http://www.gluster.org/community/documentation/index.php/GlusterFS_Concepts
+http://www.bog.pp.ru/work/GlusterFS.html
+
+
+
+engine
+
+./backend/manager/modules/docs/src/main/resources/
+./backend/manager/modules/welcome/src/main/resources/
+./packaging/branding/ovirt.brand/
+
+./frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/webadmin/   ←------- no English
+
+./frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/ +++
+./frontend/webadmin/modules/uicompat/src/main/resources/org/ovirt/engine/ui/uicompat/
+./frontend/webadmin/modules/gwt-common/src/main/resources/org/ovirt/engine/ui/common/
+
+./frontend/webadmin/modules/userportal-gwtp/src/main/resources/org/ovirt/engine/ui/frontend/AppErrors   +++
+./frontend/webadmin/modules/userportal-gwtp/src/main/resources/org/ovirt/engine/ui/frontend/VdsmErrors +++
+
+./frontend/webadmin/modules/userportal-gwtp/src/main/resources/org/ovirt/engine/ui/userportal/
+____________________________________________________________________________________________________________________________________________________________
+
+
+
+'Run Once'→ «Однократный запуск»
+'Boot from CD' — «Загрузка с CD»
+'Boot from Network'  — «Загрузка по сети»
+'Edit VM' → «Свойства ВМ»
+'Setup Networks' — «Настроить сети»
+«Network bootable» — «Загружаемая по сети»
+Sub-Tab → внутренняя вкладка
+Alternatives → Доступные возможности
+stateless — «без запоминания состояния» 
+business object — бизнес-объект
+'VM-Pool(s)' — «Пулы ВМ»
+'Manage Pool Users' → «Управление пользователями пула»
+Edit Network — «Свойства сети»
+Force-Remove — «Принудительно удалить»
+'Manage Cluster Networks' — «Управление сетями кластера»
+"Permissions tab", "The Add Permission to User dialog" 
+Resource Allocation   —   «Распределение ресурсов»
+
+non-responsive state — не отвечает
+up — запущен
+up state — работоспособное состояние
+running — выполняется
+up and running — запущен и работает
+NFS Retransmissions — повторные передачи
+running — выполняется
+
+down — отключен|не работает
+Powering Up — Производится включение
+Migrating — Идёт миграция
+
+
+not operational—  в нерабочем состоянии (не работает)?
+
+OVF — Open Virtualization Format
+Open Virtualization Manager — диспетчер Open Virtualization
+VF — Virtual Function, virtual function exposed by SR-IOV capable device VF
+Physical Function
+SR-IOV (Single Root Input/Output Virtualization, виртуализация ввода-вывода с единым корнем) — технология виртуализации устройств, позволяющая предоставить виртуальным машинам прямой доступ к части аппаратных возможностей устройства.
+Host Cluster — Кластер хостов
+
+suspend — приостановить
+LUN - номер логического устройства  LUN или Logical Unit Number — это адрес диска (в ранних версиях) или дискового устройства в сетях хранения (современное использование).
+Direct LUN — Direct LUN
+
+SR-IOV (сокращение от англ. Single Root Input/Output Virtualization, виртуализация ввода-вывода с единым корнем) — технология виртуализации устройств, позволяющая предоставить виртуальным машинам прямой доступ к части аппаратных возможностей устройства.
+Ключевыми терминами являются:
+Physical Function — функциональность того, что будет разделяться между виртуальными машинами. В случае сетевого адаптера, например, это сетевой интерфейс, доступный для отправки и приёма трафика.
+Virtual Function — несколько объектов того же типа, как и физическая функция, позволяющие отдавать функции виртуальным машинам независимо друг от друга. В случае сетевого адаптера это некоторое количество сетевых устройств, передаваемые в виртуальные машины.
+
+
+source — исходное расположение
+destination — целевое расположение
+
+CUSTOM_PROPERTIES — пользовательские параметры
+
+custom — тж. индивидуальный
+
+
+
+'Force Override' — «принудительно заменить»
+
+attach - присоединить
+detach — отсоединить
+reconstruct — воссоздать
+DESTROY — уничтожить
+power up —   Питание включено
+ 
+ 
+ Paused - машина приостановлена но сама она об этом не знает. Suspended - то-же но в машину отдаётся команда на suspend (примерно как когда закрывается крышка у ноутбука). Соответственно во втором случае оперативная память выгружается на диск виртуалки а в первом - остаётся в памяти гипервизора.
+https://gerrit.ovirt.org/#/c/1121/
+
+Paused  — Приостановлено
+Saving State  — Сохранение состояния (или Состояние сохраняется)
+Suspended  — Заморожено
+Image Illegal — Образ недействителен
+concurrently — параллельно
+
+Permission denied — Доступ запрещён
+
+oVirt Engine - центр управления виртуализацией
+oVirt Node - заготовка (appliance) для управления узлом виртуализации. 
+oVirt VDSM - интерфейс управления компьютерами через oVirt Engine. ( http://umvirt.ru/node/72 )
+Self Hosted Engine — Виртуализированный ЦУ
+
+native support - Встроенная поддержка
+Storage Pool  — пул хранилища
+Directory Server - Сервер каталогов
+Directory User - пользователь из каталога
+Directory Group - группа из каталога
+
+not valid — Недействительный, недопустимый
+provider - оператор услуг
+
+Image locked = образ заблокирован. Образ диска блокируется когда с ним происходит какая-то операция. Например машина переходит в такой статус в момент создания снэпшота.
+
+Сообщение появляется когда пользователь пытается добавить/убрать сетевую карту, а виртуальная машина в данный момент находится в промежуточном состоянии (мигрирует, перезапускается, приостановлена). Если изменить параметры виртуалки в таком состоянии, скорее всего произойдёт сбой когда она выйдет из него и не обнаружит каких-то устройств (или напротив обнаружатся лишние)
+
+
+management network — административная сеть
+CPU pinning - привязка задачи к процессору
+validation — проверка правильности, валидация
+collapse — свернуть структуру (??)
+
+
+File based storage — Файловое хранилище
+"Gluster based storage"  —   «Хранилище Gluster»
+evenly distributed policy  — политика равномерного распределения
+
+верхний и нижний пороги
+slave interface — ведомый
+
+
+
+correlation ID —  Идентификатор корреляции
+
+fully qualified domain name  —    полное доменное имя
+connectivity — возможность подключения
+trimming whitespace characters — обрамляющие символы пробелов
+
+fence — операция блокады
+action group — группа действий
+approve Host — одобрить хост
+if the problem persists — при повторных сбоях
+evaluation mode — режим ознакомительного использования
+(Период ознакомительного использования Центра 
+управления oVirt окончен)
+
+routable address —   маршрутизируемый адрес
+supplied — задан
+
+Edit VM properties — «Свойства ВМ»
+Edit Properties — «Свойства»
+Edit Network Parameters — «Параметры сети»
+
+feature — функционал
+step — этап (A component of a job.)
+
+Alignment http://www.ovirt.org/Features/DiskAlignment  — невыровненные разделы, поиск невыровненных разделов
+block storage domains — домены блочного хранилища
+
+Positive Affinity (Run Together) - An affinity policy can be set as a Run Together policy to dictate that the identified virtual machines are to be run on the same hypervisor host.
+Anti (Negative) Affinity (Run Independently) - An affinity policy can be set as Run Independently to dictate that the identified virtual machines are to be run on separate hypervisor hosts.
+может "положительная зависимость" и "отрицательная зависимость"? 
+"positive Affinity Group" = все участники группы должны работать на одном и том-же гипервизоре
+"negative Affinity Group" = все участники группы должны работать на разных гипервизоров
+Второй вариант используется в отказоустойчивых кластерах чтобы удостовериться что отказ гипервизора не отключит все ноды в кластере.
+
+группа положительной схожести, группа отрицательной схожести, группа принудительной схожести, группа двойной схожести
+
+
+
+буквенно-числовых символов и специальных символов, входящих в стандартный набор ASCII.
+
+Invalid security data — Недопустимые данные безопасности.
+Не хватает памяти
+Указан неверный адрес IP
+Method not implemented — Метод не реализован
+
+Не удалось получить блокировку — Could not obtain lock
+
+domain layout  - стуктура домена
+Data Domain — домен базы данных 
+fatal error	неустранимая ошибка
+Running Task in progress — Задача в процессе выполнения
+
+transient — промежуточный
+
+Writes — Операции записи
+validate — проверить достоверность
+
+
+pv — Physical Volume — физ.том
+Unable to acquire lock  —  Не удалось получить блокировку.
+release lock  —  снять блокировку
+PROVIDER — поставщик
+Stale NFS handle — Устаревший дескриптор NFS
+
+tag — метка
+Live migration — Динамическая миграция
+MAC Pool — пул MAC-адресов
+Configuration Tool  — инструмент конфигурации (engine-config)
+
+brick — элемент
+Export Domain — домен экспорта   https://www.safaribooksonline.com/library/view/getting-started-with/9781783280070/ch03s06.html
+
+HA — High Availability
+VDS — Video Display System
+VDC — Video Display Control, Video Domain Controller
+VG — volume group
+SMT — Simultaneous MultiThreading  синхронная многопоточность
+
+диспетчер пула хранилища (SPM) Storage Pool Manager
+Mom -- Memory Overcommitment Manager  http://www.ovirt.org/MoM
+превышенное выделение памяти — memory overcommitment
+
+bond — агрегация, связь
+
+
+Distributed Striped Volume (распределённый и разделенный по частям)  http://osc.dondub.com/articles/2015/04/article_852  
+
+GlusterFS умеет несколько режимов распределения данных в кластере:
+
+распределенный (distributed)
+реплицируемый (replicated)
+по частям (striped)
+распределённый по частям (distributed striped)
+распределенный и реплицируемый (distributed replicated)
+распределенный по частям и реплицируемый (distributed striped replicated)
+реплицируемый по частям (striped replicated)
+дисперсный (dispersed)
+распределенный дисперсный (distributed dispersed)      http://jnotes.ru/install-and-settings-glustrerfs.html
+
+Defined Memory  — Определяемая память
+Link State — статус канала; состояние связи
+
+Вытеснение (Ballooning)
+Дедупликация страниц (Page Sharing)
+Подкачка на уровне гипервизора (Hypervisor Swapping)
+
+http://itband.ru/2010/12/memory-overcommitment/
+http://www.vm4.ru/2010/08/memory-management.html
+
+
+Качество обслуживания — QoS
+
+
+Higher CPU means it has more CPU flags (e.g. more capabilities)  http://lists.ovirt.org/pipermail/devel/2015-May/010579.html
+Is "unified affinity group" referring to "positive affinity group"?  http://lists.ovirt.org/pipermail/devel/2015-June/010855.html
+
+
+NUMA span — охват NUMA   https://technet.microsoft.com/ru-ru/library/dn282282.aspx#bkmk_Config
+
+
+Guide Me — Пошаговый помощник

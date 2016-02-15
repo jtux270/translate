@@ -1,0 +1,34 @@
+.Dd August 25, 2013
+.Os POSIX-compatible
+.Dt engine-setup 8
+.Sh NAME
+engine\-setup \- Setup and configuration utility for Open Virtualization
+Manager.
+.Sh SYNOPSIS
+.Nm engine\-setup [options]
+.Sh DESCRIPTION
+The engine\-setup utility performs setup and configuration of
+Open Virtualization Manager. Configuration values
+must be provided interactively, as command line options, or using
+an answer file. Following a successful run of the engine\-setup
+utility Open Virtualization Manager is installed
+and ready for use. Where a run of the engine\-setup utility is
+unsuccessful, comprehensive logging and error information is output
+both to standard output and to the engine\-setup log file.
+.Sh OPTIONS
+.Bl -tag -width "AA"
+.It \-\-log=file
+write log to this file.
+.It \-\-config=file
+Load configuration files.
+.It \-\-config-append=file
+Load extra configuration files.
+.It \-\-offline
+Offline mode.
+.It \-\-generate-answer=file
+Generate answer file.
+.It \-\-jboss-home=dir
+Use this jboss.
+.El
+.Sh BUGS
+Report bugs at https://bugzilla.redhat.com/.

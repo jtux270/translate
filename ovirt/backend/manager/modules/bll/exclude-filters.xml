@@ -1,0 +1,133 @@
+<FindBugsFilter>
+       <!--
+        findbugs complain that we are not using the getBlockingQueue() return value,
+        by calling getBlockingQueue() we also set the synchronized queue.
+        In this case we have no use for the return queue, only to set it.
+       -->
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.RunVmCommandBase" />
+       <Method name="decreasePendingVms"/>
+       <Bug code="RV"/>
+     </Match>
+
+     <Match>
+       <!--
+        findbugs complain that we are not using the getBlockingQueue() return value,
+        by calling getBlockingQueue() we also set the synchronized queue.
+        In this case we have no use for the return queue, only to set it.
+       -->
+       <Class name="org.ovirt.engine.core.bll.RunVmCommandBase" />
+       <Method name="delay"/>
+       <Bug code="RV"/>
+     </Match>
+
+     <!--
+      findbugs complains that class does not call super.clone()
+      its super class is QuotaConsumptionParameter which is abstract
+      and does not implement clone() method - so it cannot be called
+
+      findbugs reason:
+      CN: clone method does not call super.clone() (CN_IDIOM_NO_SUPER_CALL)
+     -->
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.quota.QuotaVdsGroupConsumptionParameter" />
+       <Method name="clone"/>
+       <Bug code="CN"/>
+     </Match>
+
+     <!--
+      findbugs complains that class does not call super.clone()
+      its super class is QuotaConsumptionParameter which is abstract
+      and does not implement clone() method - so it cannot be called
+
+      findbugs reason:
+      CN: clone method does not call super.clone() (CN_IDIOM_NO_SUPER_CALL)
+     -->
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.quota.QuotaStorageConsumptionParameter" />
+       <Method name="clone"/>
+       <Bug code="CN"/>
+     </Match>
+
+     <!--
+      findbugs complains that class does not call super.clone()
+      its super class is QuotaConsumptionParameter which is abstract
+      and does not implement clone() method - so it cannot be called
+
+      findbugs reason:
+      CN: clone method does not call super.clone() (CN_IDIOM_NO_SUPER_CALL)
+     -->
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.quota.QuotaSanityParameter" />
+       <Method name="clone"/>
+       <Bug code="CN"/>
+     </Match>
+
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.utils.GlusterUtil" />
+       <Or>
+          <Method name="getPeers" params="java.lang.String,java.lang.String,java.lang.String" />
+          <Method name="getPeers" params="java.lang.String,java.lang.String,java.lang.String,java.lang.String"/>
+       </Or>
+       <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE"/>
+     </Match>
+
+     <!--
+        findbugs complains about synchronizing java.util.concurrent object - semaphore
+        we must synchronize 2 calls to the semaphore object (drain and release)
+        findbugs reason:
+        JLM_JSR166_UTILCONCURRENT_MONITORENTER:
+        This method performs synchronization an object that is an instance of a class from the java.util.concurrent
+     -->
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.scheduling.SchedulingManager" />
+       <Bug pattern="JLM_JSR166_UTILCONCURRENT_MONITORENTER" />
+     </Match>
+
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.Backend" />
+       <Method name="runPublicQuery" params="org.ovirt.engine.core.common.queries.VdcQueryType,org.ovirt.engine.core.common.queries.VdcQueryParametersBase" />
+       <Bug pattern="BC_UNCONFIRMED_CAST" />
+     </Match>
+
+     <!--
+      findbugs complains that object does not call super.clone()
+      the clone() method at the super class is abstract, so it cannot be called.
+
+      findbugs reason:
+      CN: clone method does not call super.clone() (CN_IDIOM_NO_SUPER_CALL)
+     -->
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.context.CommandContext" />
+       <Method name="clone" />
+       <Bug pattern="CN_IDIOM_NO_SUPER_CALL" />
+     </Match>
+
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.context.EngineContext" />
+       <Method name="clone" />
+       <Bug pattern="CN_IDIOM_NO_SUPER_CALL" />
+     </Match>
+
+     <Match>
+       <Class name="org.ovirt.engine.core.bll.Backend" />
+       <Method name="initialize" />
+       <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+     </Match>
+
+    <Match>
+       <Class name="org.ovirt.engine.core.bll.tasks.AsyncTaskManager" />
+       <Bug pattern="IS2_INCONSISTENT_SYNC" />
+    </Match>
+
+    <Match>
+       <Class name="org.ovirt.engine.core.bll.VdsDeploy" />
+       <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+    </Match>
+
+    <Match>
+       <Class name="org.ovirt.engine.core.bll.utils.BllCDIAdapter" />
+       <Field name="dbFacade" />
+       <Bug pattern="URF_UNREAD_FIELD" />
+    </Match>
+</FindBugsFilter>

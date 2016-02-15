@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.ovirt.engine.ui</groupId>
+    <artifactId>webadmin-all</artifactId>
+    <version>3.5.1.1</version>
+  </parent>
+  <groupId>org.ovirt.engine.ui</groupId>
+  <artifactId>webadmin-modules</artifactId>
+  <packaging>pom</packaging>
+  <name>oVirt Modules - ui</name>
+  <description>parent POM for all oVirt modules</description>
+  <modules>
+    <module>gwt-extension</module>
+    <module>uicompat</module>
+    <module>frontend</module>
+    <module>uicommonweb</module>
+    <module>gwt-common</module>
+    <module>webadmin</module>
+    <module>userportal-gwtp</module>
+  </modules>
+  <properties>
+    <!-- Enforce java 1.6 compilation for GWT integration -->
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    <animal.sniffer.signature>java16</animal.sniffer.signature>
+    <!-- Directory where JSR-269 annotation processors generate their sources -->
+    <generatedSourcesDirectory>generated-sources/annotations</generatedSourcesDirectory>
+    <!-- Directory where GWT compiler generates normally-transient types for review (-gen compiler option) -->
+    <gwtGenDirectory>gen</gwtGenDirectory>
+    <gwtp.version>1.0</gwtp.version>
+    <guice.version>3.0</guice.version>
+    <gin.version>2.0.0</gin.version>
+    <!-- gwtbootstrap3 version -->
+    <gwtbootstrap3.version>0.6</gwtbootstrap3.version>
+    <maven-resources-plugin.version>2.5</maven-resources-plugin.version>
+    <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
+    <build-helper-maven-plugin.version>1.5</build-helper-maven-plugin.version>
+    <!-- Using older maven-processor-plugin version for Maven 2 compatibility -->
+    <maven-processor-plugin.version>1.3.7</maven-processor-plugin.version>
+    <maven-checkstyle-plugin.version>2.8</maven-checkstyle-plugin.version>
+    <!-- Activate load time weaving of aspects via AspectJ JVM agent -->
+    <aspectj.agent>-javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar</aspectj.agent>
+    <!-- Control verbosity of GWT compiler -->
+    <gwt.logLevel>INFO</gwt.logLevel>
+    <!-- Regular expression that matches types that GWT compiler shouldn't prune (avoid dead code optimization) -->
+    <gwt.dontPrune>-Dgwt.dontPrune=org\.ovirt\.engine\.core\.(common|compat)\..*</gwt.dontPrune>
+    <!-- This can be overridden by setting this property in your personal settings.xml -->
+    <gwt-plugin.extraJvmArgs>
+      -Xms1024M -Xmx4096M -XX:PermSize=512M -XX:MaxPermSize=1024M \
+      -Dgwt.jjs.permutationWorkerFactory=com.google.gwt.dev.ThreadedPermutationWorkerFactory \
+      -Dgwt.jjs.maxThreads=4 \
+      -Djava.io.tmpdir="${project.build.directory}/tmp" \
+      -Djava.util.prefs.systemRoot="${project.build.directory}/tmp/.java" \
+      -Djava.util.prefs.userRoot="${project.build.directory}/tmp/.java"
+    </gwt-plugin.extraJvmArgs>
+    <!-- Control target browsers for GWT compilation, maps to 'user.agent' deferred binding property in *.gwt.xml -->
+    <!-- By default, all modern browsers are supported, see [gwt-user.jar:com/google/gwt/user/UserAgent.gwt.xml] for a complete list -->
+    <gwt.userAgent>ie8,ie9,gecko1_8,safari,opera</gwt.userAgent>
+    <!-- Control target locales for GWT compilation, maps to 'locale' deferred binding property in *.gwt.xml -->
+    <!-- By default, only English locale is supported, see 'all-langs' profile for a complete list -->
+    <gwt.locale>en_US</gwt.locale>
+    <!-- By default, engine port is 8080 -->
+    <engine.port.http>8080</engine.port.http>
+    <!-- GWT CSS obfuscation style. production should be 'obf', use 'pretty' in development for easier css debugging -->
+    <gwt.cssResourceStyle>obf</gwt.cssResourceStyle>
+  </properties>
+  <dependencyManagement>
+    <dependencies>
+      <!-- Exclude Guice dependencies from GIN -->
+      <dependency>
+        <groupId>com.google.gwt.inject</groupId>
+        <artifactId>gin</artifactId>
+        <version>${gin.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-assistedinject</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <!-- Exclude servlet API dependency from commons-logging -->
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>${commons-logging.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>${maven.compiler.source}</source>
+            <target>${maven.compiler.target}</target>
+            <encoding>${project.build.sourceEncoding}</encoding>
+            <!-- We use maven-processor-plugin to invoke annotation processors -->
+            <compilerArgument>-proc:none</compilerArgument>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.bsc.maven</groupId>
+          <artifactId>maven-processor-plugin</artifactId>
+          <version>${maven-processor-plugin.version}</version>
+          <configuration>
+            <outputDirectory>${project.build.directory}/${generatedSourcesDirectory}</outputDirectory>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>${maven-resources-plugin.version}</version>
+          <configuration>
+            <encoding>${project.build.sourceEncoding}</encoding>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>${maven-clean-plugin.version}</version>
+          <configuration>
+            <filesets>
+              <fileset>
+                <directory>${gwtGenDirectory}</directory>
+                <includes>
+                  <include>**/*</include>
+                </includes>
+              </fileset>
+            </filesets>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>gwt-maven-plugin</artifactId>
+          <dependencies>
+            <dependency>
+              <groupId>com.google.gwt</groupId>
+              <artifactId>gwt-user</artifactId>
+              <version>${gwt.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>com.google.gwt</groupId>
+              <artifactId>gwt-dev</artifactId>
+              <version>${gwt.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>com.google.gwt</groupId>
+              <artifactId>gwt-servlet</artifactId>
+              <version>${gwt.version}</version>
+            </dependency>
+            <!-- Add gwt-extension aspects to GWT compiler classpath -->
+            <dependency>
+              <groupId>${engine.groupId}</groupId>
+              <artifactId>gwt-extension</artifactId>
+              <version>${engine.version}</version>
+            </dependency>
+          </dependencies>
+          <configuration>
+            <logLevel>${gwt.logLevel}</logLevel>
+            <style>OBF</style>
+            <port>${engine.port.http}</port>
+            <noServer>true</noServer>
+            <bindAddress>0.0.0.0</bindAddress>
+            <gen>${gwtGenDirectory}</gen>
+            <extraJvmArgs>${aspectj.agent} ${gwt-plugin.extraJvmArgs} ${gwt.dontPrune}</extraJvmArgs>
+            <copyWebapp>true</copyWebapp>
+            <strict>true</strict>
+            <compileSourcesArtifacts>
+              <compileSourcesArtifact>${engine.groupId}:gwt-extension</compileSourcesArtifact>
+              <compileSourcesArtifact>${engine.groupId}:uicommonweb</compileSourcesArtifact>
+            </compileSourcesArtifacts>
+            <!--Why asm is excluded? -->
+            <runClasspathExcludes>
+              <runClasspathExclude>asm-3.3.jar</runClasspathExclude>
+            </runClasspathExcludes>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <configuration>
+            <sources>
+              <source>${project.build.directory}/${generatedSourcesDirectory}</source>
+              <source>${project.build.directory}/generated-sources/gwt</source>
+            </sources>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <profiles>
+    <profile>
+      <id>all-langs</id>
+      <properties>
+        <gwt.locale>en_US,es_ES,fr_FR,ja_JP,pt_BR,zh_CN,de_DE,ko_KR</gwt.locale>
+      </properties>
+    </profile>
+    <profile>
+      <id>gwtdraft</id>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>gwt-maven-plugin</artifactId>
+              <configuration>
+                <style>DETAILED</style>
+                <draftCompile>true</draftCompile>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+</project>

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.ovirt.engine.ui</groupId>
+    <artifactId>webadmin-modules</artifactId>
+    <version>3.6.0</version>
+  </parent>
+  <artifactId>gwt-extension</artifactId>
+  <packaging>jar</packaging>
+  <name>Extensions for GWT</name>
+  <properties>
+    <sourceDir>${project.basedir}/src/main/java</sourceDir>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-dev</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>${aspectj.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>${engine.core.groupId}</groupId>
+      <artifactId>common</artifactId>
+      <version>${engine.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>${engine.core.groupId}</groupId>
+      <artifactId>aaa</artifactId>
+      <version>${engine.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>${engine.core.groupId}</groupId>
+      <artifactId>utils</artifactId>
+      <version>${engine.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <!-- Overrides default value ${project.artifactId}-${project.version} -->
+    <finalName>ovirt-engine-gwt-extension-${project.version}</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>**/uioverrides/**/*</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- This is needed to avoid having to manually add the generated sources
+           directory to the source paths in Eclipse: -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>${project.build.directory}/generated-sources/annotations</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+        <id>findbugs</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>${findbugs.version}</version>
+                    <configuration>
+                        <xmlOutput>true</xmlOutput>
+                        <!-- Optional directory to put findbugs xdoc xml report -->
+                        <excludeFilterFile> ${basedir}/exclude-filters.xml</excludeFilterFile>
+                        <xmlOutputDirectory>target/site</xmlOutputDirectory>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+
+    <profile>
+        <id>findbugs-general</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>${findbugs.version}</version>
+                    <configuration>
+                        <xmlOutput>true</xmlOutput>
+                        <!-- Optional directory to put findbugs xdoc xml report -->
+                        <excludeFilterFile> ${basedir}/exclude-filters.xml, ${basedir}/../../../../exclude-filters-general.xml</excludeFilterFile>
+                        <xmlOutputDirectory>target/site</xmlOutputDirectory>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+  </profiles>
+</project>

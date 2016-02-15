@@ -1,0 +1,14 @@
+[Unit]
+Description=oVirt Engine
+After=network.service postgresql.service
+
+[Service]
+Type=notify
+User=@ENGINE_USER@
+Group=@ENGINE_GROUP@
+LimitNOFILE=65535
+ExecStart=@ENGINE_USR@/services/ovirt-engine/ovirt-engine.py --redirect-output --systemd=notify $EXTRA_ARGS start
+EnvironmentFile=-/etc/sysconfig/ovirt-engine
+
+[Install]
+WantedBy=multi-user.target

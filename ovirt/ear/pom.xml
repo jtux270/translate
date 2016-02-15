@@ -1,0 +1,266 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.ovirt.engine</groupId>
+    <artifactId>root</artifactId>
+    <version>3.5.1.1</version>
+  </parent>
+
+  <artifactId>engine-server-ear</artifactId>
+  <packaging>ear</packaging>
+
+  <name>oVirt Server EAR</name>
+  <description>oVirt server EAR</description>
+
+  <properties>
+    <earDirectory>${project.build.directory}/${project.build.finalName}</earDirectory>
+  </properties>
+
+  <dependencies>
+    <!-- Internal Deps -->
+    <!-- ** JARs -->
+    <dependency>
+      <groupId>org.ovirt.engine.core</groupId>
+      <artifactId>vdsbroker</artifactId>
+      <version>${engine.version}</version>
+      <type>jar</type>
+    </dependency>
+
+    <!-- WARS -->
+    <dependency>
+      <groupId>org.ovirt.engine.core</groupId>
+      <artifactId>root-war</artifactId>
+      <version>${engine.version}</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.ovirt.engine.ui</groupId>
+      <artifactId>userportal</artifactId>
+      <version>${engine.version}</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.ovirt.engine.ui</groupId>
+      <artifactId>webadmin</artifactId>
+      <version>${engine.version}</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.ovirt.engine.core</groupId>
+      <artifactId>services</artifactId>
+      <version>${engine.version}</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.ovirt.engine.core</groupId>
+      <artifactId>docs</artifactId>
+      <version>${engine.version}</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.ovirt.engine.core</groupId>
+      <artifactId>welcome</artifactId>
+      <version>${engine.version}</version>
+      <type>war</type>
+    </dependency>
+
+    <!-- ** EJB-JARs -->
+    <dependency>
+      <groupId>org.ovirt.engine.core</groupId>
+      <artifactId>scheduler</artifactId>
+      <version>${engine.version}</version>
+      <type>ejb</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.ovirt.engine.core</groupId>
+      <artifactId>bll</artifactId>
+      <version>${engine.version}</version>
+      <type>ejb</type>
+    </dependency>
+
+    <!-- ** JARs -->
+	 <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-beans</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+    <!-- Set the scope of depedencies provided by JBoss so that
+         they are not included in the resulting archive: -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.infinispan</groupId>
+      <artifactId>infinispan-core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>engine</finalName>
+
+    <pluginManagement>
+      <plugins>
+
+        <!-- We need to ignore the execution of the maven-ear-plugin when
+             running inside Eclipse, as there is no Eclipse plugin supporting
+             most of the parameters that we use and this generates an error
+             when importing the project: -->
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ear-plugin</artifactId>
+                    <versionRange>[1.0,)</versionRange>
+                    <goals>
+                      <goal>generate-application-xml</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore/>
+                  </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <artifactId>maven-ear-plugin</artifactId>
+        <configuration>
+          <!-- params common to ear:ear and ear:generate-application-xml -->
+          <defaultLibBundleDir>lib</defaultLibBundleDir>
+          <workDirectory>${earDirectory}</workDirectory>
+
+          <!-- J2EE version -->
+          <version>1.4</version>
+
+          <!-- params for ear:ear -->
+          <resourcesDir>${basedir}/target/classes</resourcesDir>
+          <unpackTypes>war</unpackTypes>
+
+          <!-- params for ear:generate-application-xml -->
+          <displayName>ENGINE</displayName>
+
+          <modules>
+            <!-- ** WARs -->
+            <webModule>
+              <groupId>org.ovirt.engine.core</groupId>
+              <artifactId>root-war</artifactId>
+              <bundleFileName>root.war</bundleFileName>
+              <contextRoot>/</contextRoot>
+            </webModule>
+
+            <webModule>
+              <groupId>org.ovirt.engine.ui</groupId>
+              <artifactId>userportal</artifactId>
+              <bundleFileName>userportal.war</bundleFileName>
+              <contextRoot>/ovirt-engine/userportal</contextRoot>
+            </webModule>
+
+            <webModule>
+              <groupId>org.ovirt.engine.ui</groupId>
+              <artifactId>webadmin</artifactId>
+              <bundleFileName>webadmin.war</bundleFileName>
+              <contextRoot>/ovirt-engine/webadmin</contextRoot>
+            </webModule>
+
+            <webModule>
+              <groupId>org.ovirt.engine.core</groupId>
+              <artifactId>services</artifactId>
+              <bundleFileName>services.war</bundleFileName>
+              <contextRoot>/ovirt-engine/services</contextRoot>
+            </webModule>
+
+            <webModule>
+              <groupId>org.ovirt.engine.core</groupId>
+              <artifactId>docs</artifactId>
+              <bundleFileName>docs.war</bundleFileName>
+              <contextRoot>/ovirt-engine/docs</contextRoot>
+            </webModule>
+
+            <webModule>
+              <groupId>org.ovirt.engine.core</groupId>
+              <artifactId>welcome</artifactId>
+              <bundleFileName>welcome.war</bundleFileName>
+              <contextRoot>/ovirt-engine</contextRoot>
+            </webModule>
+
+            <!-- ** EJB-JARs -->
+            <ejbModule>
+              <groupId>org.ovirt.engine.core</groupId>
+              <artifactId>scheduler</artifactId>
+              <bundleFileName>scheduler.jar</bundleFileName>
+            </ejbModule>
+
+            <ejbModule>
+              <groupId>org.ovirt.engine.core</groupId>
+              <artifactId>bll</artifactId>
+              <bundleFileName>bll.jar</bundleFileName>
+            </ejbModule>
+
+          </modules>
+
+          <!-- Add a the manifest that contains the required dependencies
+               for JBoss modules: -->
+          <archive>
+            <addMavenDescriptor>false</addMavenDescriptor>
+            <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+          </archive>
+
+          <!-- Add the META-INF directory, all the EJB and web
+               applications, and our own dependencies from the
+               lib directory, but none of the external dependencies,
+               as they are already included as references in the
+               manifest: -->
+          <packagingIncludes>
+            *.jar/**,
+            *.war/**,
+            META-INF/**,
+            lib/vdsbroker.jar/**,
+          </packagingIncludes>
+
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+</project>

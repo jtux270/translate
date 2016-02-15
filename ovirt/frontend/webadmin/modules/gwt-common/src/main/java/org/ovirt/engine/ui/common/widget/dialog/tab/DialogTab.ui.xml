@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style type="org.ovirt.engine.ui.common.widget.dialog.tab.DialogTab.Style">
+		.tab {
+			padding: 5px;
+			cursor: pointer;
+			word-break: keep-all;
+		}
+
+        @external obrand_active;
+		.obrand_active {
+		}
+
+		.inactive {
+			background-color: #F3F3F3;
+			color: black;
+			font-weight: normal;
+			border: 1px solid #E5E5E5;
+		}
+
+		.inactive:hover {
+			background-color: #D3D3D3;
+		}
+	</ui:style>
+
+    <g:FocusPanel ui:field="tabContainer" addStyleNames="{style.tab} {style.inactive} dialogTab_fix">
+        <g:InlineLabel ui:field="tabLabel"/>
+    </g:FocusPanel>
+
+</ui:UiBinder>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+xmlns:t="urn:import:org.ovirt.engine.ui.common.widget.tooltip"
+xmlns:b="urn:import:org.gwtbootstrap3.client.ui" >
+
+    <ui:style type="org.ovirt.engine.ui.common.widget.AbstractValidatedWidgetWithLabel.Style">
+        .wrapper_legacy {
+            line-height: 30px;
+            text-align: left;
+            padding: 0 5px;
+        }
+
+        .label_legacy {
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            line-height: 16px;
+            padding: 0;
+        }
+
+        .contentWidgetContainer_legacy {
+            float: right;
+            width: 238px;
+            padding: 0 5px;
+            line-height: 16px !important;
+        }
+
+        .contentWidget_legacy {
+            width: 100%;
+        }
+    </ui:style>
+
+    <g:HTMLPanel ui:field="wrapperPanel">
+        <t:WidgetTooltip ui:field="labelTooltip">
+            <b:FormLabel ui:field="label"/>
+        </t:WidgetTooltip>
+        <t:WidgetTooltip ui:field="contentWidgetContainerTooltip">
+            <g:SimplePanel ui:field="contentWidgetContainer" />
+        </t:WidgetTooltip>
+        <div style="clear: both;" />
+    </g:HTMLPanel>
+
+</ui:UiBinder>

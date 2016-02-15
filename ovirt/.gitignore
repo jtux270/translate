@@ -1,0 +1,83 @@
+# ovirt-engine global ignore list
+###########################
+
+# mvn folders
+###########################
+target
+
+# build-time files
+###########################
+.metadata
+*.class
+*.swp
+*.iws
+tmp.*
+
+# IDE files
+###########################
+.settings
+.project
+.classpath
+.factorypath
+.externalToolBuilders
+maven-eclipse.xml
+.pmd
+*.ipr
+*.iml
+.idea
+.pydevproject
+
+# python files
+###########################
+*.pyo
+*.pyc
+__pycache__
+
+# UI folders
+###########################
+/frontend/webadmin/modules/userportal-gwtp/gen
+/frontend/webadmin/modules/webadmin/gen
+/frontend/webadmin/modules/webadmin/war
+
+# Local scripts log files
+# #########################
+/backend/manager/dbscripts/*.sh.log
+
+# Files generated from templates
+###########################
+build/python-check.sh
+ovirt-engine.spec
+packaging/bin/engine-prolog.sh
+packaging/bin/ovirt-engine-log-setup-event.sh
+packaging/bin/pki-common.sh
+packaging/etc/engine-config/log4j.xml
+packaging/etc/engine-manage-domains/engine-manage-domains.conf
+packaging/etc/engine-manage-domains/log4j.xml
+packaging/etc/engine.conf.d/README
+packaging/etc/notifier/log4j.xml
+packaging/etc/notifier/notifier.conf.d/README
+packaging/etc/ovirt-fence-kdump-listener.conf.d/README
+packaging/etc/ovirt-websocket-proxy.conf.d/README
+packaging/pythonlib/ovirt_engine/config.py
+packaging/services/*/*.conf
+packaging/services/*/*.systemd
+packaging/services/*/*.sysv
+packaging/services/*/config.py
+packaging/setup/bin/ovirt-engine-setup.env
+packaging/setup/ovirt_engine_setup/config.py
+packaging/setup/ovirt_engine_setup/engine/config.py
+packaging/setup/ovirt_engine_setup/engine_common/config.py
+packaging/setup/ovirt_engine_setup/websocket_proxy/config.py
+packaging/sys-etc/logrotate.d/ovirt-engine
+packaging/sys-etc/logrotate.d/ovirt-engine-notifier
+packaging/sys-etc/logrotate.d/ovirt-engine-setup
+
+# dbscripts
+###########################
+packaging/dbscripts/*.scripts.md5
+packaging/dbscripts/*.schema
+packaging/dbscripts/*.log
+
+# jrebel plugin integration for IDE
+# #########################
+*rebel.xml

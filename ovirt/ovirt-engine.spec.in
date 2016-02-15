@@ -1,0 +1,1166 @@
+
+#
+# CUSTOMIZATION-BEGIN
+#
+# ovirt_build_extra_flags
+# ovirt_build_ut
+%if 0%{?ovirt_build_quick}
+%global _ovirt_build_ut 0
+%global ovirt_build_gwt 0
+%global ovirt_build_locales 0
+%global __jar_repack 0
+%endif
+%if 0%{?ovirt_build_minimal}
+%global _ovirt_build_ut 0
+%global ovirt_build_locales 0
+%global _ovirt_build_extra_flags -D gwt.userAgent=gecko1_8
+%endif
+%if 0%{!?ovirt_build_ut:1}
+%if 0%{?_ovirt_build_ut:1}
+%global ovirt_build_ut %{_ovirt_build_ut}
+%else
+%global ovirt_build_ut 1
+%endif
+%endif
+%if 0%{!?ovirt_build_gwt:1}
+%global ovirt_build_gwt 1
+%endif
+%if 0%{!?ovirt_build_locales:1}
+%global ovirt_build_locales 1
+%endif
+#
+# CUSTOMIZATION-END
+#
+
+#
+# rpm does not support override
+# nor modify of variables
+#
+%if %{?_ovirt_build_extra_flags:1}%{?ovirt_build_extra_flags:1}0
+%global EXTRA_BUILD_FLAGS %{?_ovirt_build_extra_flags:%{_ovirt_build_extra_flags}}%{?ovirt_build_extra_flags: %{ovirt_build_extra_flags}}
+%endif
+
+%if 0%{?fedora}
+%global ovirt_install_systemd 1
+%global ovirt_install_systemv 0
+%global ovirt_install_poms 1
+%global ovirt_require_maven 1
+%if %{fedora} >= 20
+%global ovirt_provides_jboss 1
+%global jboss ovirt-engine-jboss-as >= 7.1.1
+%else
+%global ovirt_provides_jboss 0
+%global jboss jboss-as >= 7.1.1-9.3
+%endif
+%endif
+
+%if 0%{?rhel}
+%if 0%{?rhel} >= 7
+%global ovirt_install_systemd 1
+%global ovirt_install_systemv 0
+%global ovirt_install_poms 1
+%global ovirt_require_maven 1
+%global ovirt_provides_jboss 1
+%global jboss ovirt-engine-jboss-as >= 7.1.1
+%else
+%global ovirt_install_systemd 0
+%global ovirt_install_systemv 1
+%global ovirt_install_poms 0
+%global ovirt_require_maven 0
+%global ovirt_provides_jboss 1
+%global jboss ovirt-engine-jboss-as >= 7.1.1
+
+# emulate fedora java for simplicity
+%undefine add_maven_depmap
+%define add_maven_depmap(f:) \
+	_jarpart="%2" \
+	_filelist=".mfiles%{-f*:-%{-f*}}" \
+	_jpath= \
+	for _dir in "%{_jnidir}" "%{_javajnidir}" "%{_javadir}"; do \
+		if [ -f "%{buildroot}/${_dir}/${_jarpart}" ]; then \
+			_jpath="${_dir}/${_jarpart}" \
+		fi \
+	done \
+	[ -n "${_jpath}" ] && echo "${_jpath}" >> "${_filelist}" \
+	%{nil}
+
+%endif
+%endif
+
+%global ovirt_product_name oVirt Engine
+%global ovirt_product_name_short oVirt Engine
+%global ovirt_product_group Virtualization/Management
+%global ovirt_user_description oVirt Manager
+
+%global engine_cache %{_localstatedir}/cache/%{engine_name}
+%global engine_data %{_datadir}/%{engine_name}
+%global engine_doc %{_docdir}/%{engine_name}
+%global engine_ear %{engine_data}/engine.ear
+%global engine_etc %{_sysconfdir}/%{engine_name}
+%global engine_java %{_javadir}/%{engine_name}
+%global engine_jboss_modules %{engine_data}/modules
+%global engine_log %{_localstatedir}/log/%{engine_name}
+%global engine_name ovirt-engine
+%global engine_pki %{_sysconfdir}/pki/%{engine_name}
+%global engine_restapi_war %{engine_data}/restapi.war
+%global engine_legacy_restapi_war %{engine_data}/legacy_restapi.war
+%global engine_run %{_localstatedir}/run/%{engine_name}
+%global engine_state %{_localstatedir}/lib/%{engine_name}
+%global engine_tmp %{_localstatedir}/tmp/%{engine_name}
+
+%global engine_gid 108
+%global engine_group ovirt
+%global engine_uid 108
+%global engine_user ovirt
+%global vdsm_description Node Virtualization Manager
+%global vdsm_gid 36
+%global vdsm_group kvm
+%global vdsm_uid 36
+%global vdsm_user vdsm
+
+%global openstack_java_version 3.0.5
+
+# Macro to create an user:
+#
+# %1 user name
+# %2 user id
+# %3 primary group name
+# %4 primary group id
+# %5 description
+# %6 home directory
+#
+%global _ovirt_create_user() \
+getent group %3 >/dev/null || groupadd -r -g %4 %3; \
+getent passwd %1 >/dev/null || useradd -r -u %2 -g %3 -c %5 -s /sbin/nologin -d %6 %1
+
+%global ovirt_create_user_engine \
+%_ovirt_create_user %{engine_user} %{engine_uid} %{engine_group} %{engine_gid} "%{ovirt_user_description}" %{engine_state}
+
+%global ovirt_create_user_vdsm \
+%_ovirt_create_user %{vdsm_user} %{vdsm_uid} %{vdsm_group} %{vdsm_gid} "%{vdsm_description}" /var/lib/vdsm
+
+%global make_common_opts \\\
+	-j1 \\\
+	BUILD_GWT=%{ovirt_build_gwt} \\\
+	BUILD_LOCALES=%{ovirt_build_locales} \\\
+	BUILD_UT=%{ovirt_build_ut} \\\
+	BUILD_VALIDATION=0 \\\
+	PACKAGE_NAME=%{name} \\\
+	RPM_VERSION=%{version} \\\
+	RPM_RELEASE=%{release} \\\
+	DISPLAY_VERSION=%{version}-%{release} \\\
+	ENGINE_NAME=%{engine_name} \\\
+	LOCALSTATE_DIR=%{_localstatedir} \\\
+	PREFIX=%{_prefix} \\\
+	SYSCONF_DIR=%{_sysconfdir} \\\
+	BIN_DIR=%{_bindir} \\\
+	PID_DIR=%{_localstatedir}/run \\\
+	DATAROOT_DIR=%{_datadir} \\\
+	MAN_DIR=%{_mandir} \\\
+	DOC_DIR=%{_docdir} \\\
+	PYTHON=%{__python} \\\
+	PYTHON_DIR=%{python_sitelib} \\\
+	JAVA_DIR=%{_javadir} \\\
+	MAVENPOM_DIR=%{_mavenpomdir} \\\
+	PKG_SYSCONF_DIR=%{engine_etc} \\\
+	PKG_DOC_DIR=%{engine_doc} \\\
+	PKG_EAR_DIR=%{engine_ear} \\\
+	PKG_PKI_DIR=%{engine_pki} \\\
+	PKG_JBOSS_MODULES=%{engine_jboss_modules} \\\
+	PKG_CACHE_DIR=%{engine_cache} \\\
+	PKG_LOG_DIR=%{engine_log} \\\
+	PKG_TMP_DIR=%{engine_tmp} \\\
+	PKG_STATE_DIR=%{engine_state} \\\
+	PKG_USER=%{engine_user} \\\
+	PKG_GROUP=%{engine_group} \\\
+	%{?EXTRA_BUILD_FLAGS:EXTRA_BUILD_FLAGS="%{EXTRA_BUILD_FLAGS}"}
+
+Name:		@PACKAGE_NAME@
+Version:	@RPM_VERSION@
+Release:	@RPM_RELEASE@%{?release_suffix}%{?dist}
+Summary:	Management server for Open Virtualization
+Group:		%{ovirt_product_group}
+License:	ASL 2.0
+URL:		http://www.ovirt.org
+Source0:	http://resources.ovirt.org/pub/ovirt-3.5-snapshot/src/@PACKAGE_NAME@/@PACKAGE_NAME@-@PACKAGE_VERSION@.tar.gz
+
+BuildArch:	noarch
+
+%if 0%{?rhel}
+%if 0%{?rhel} >= 7
+BuildRequires:	java-devel >= 1.7.0
+%else
+BuildRequires:	java7-devel
+%endif
+%endif
+%if 0%{?fedora}
+BuildRequires:	java-devel >= 1.7.0
+%endif
+
+BuildRequires:	jpackage-utils
+BuildRequires:	make
+BuildRequires:	python
+%if %{ovirt_require_maven}
+BuildRequires:	maven
+%endif
+BuildRequires:	unzip
+
+Requires:	%{jboss}
+Requires:	%{name}-backend = %{version}-%{release}
+Requires:	%{name}-cli
+Requires:	%{name}-dbscripts = %{version}-%{release}
+Requires:	%{name}-restapi = %{version}-%{release}
+Requires:	%{name}-tools = %{version}-%{release}
+Requires:	%{name}-userportal = %{version}-%{release}
+Requires:	%{name}-webadmin-portal = %{version}-%{release}
+Requires:	%{name}-websocket-proxy >= %{version}-%{release}
+Requires:	fop
+Requires:	java
+Requires:	java-1.7.0-openjdk >= 1:1.7.0.9-2.3.3.2
+Requires:	jpackage-utils
+Requires:	ovirt-image-uploader >= 3.5.0
+Requires:	ovirt-iso-uploader >= 3.5.0
+Requires:	patternfly1
+Requires:	postgresql-server >= 8.4.7
+Requires:	ws-commons-util
+Requires:	yum-plugin-versionlock
+
+%if 0%{?fedora}
+%if %{fedora} >= 19
+Requires:	apache-commons-compress
+Requires:	apache-commons-configuration
+Requires:	apache-commons-jxpath
+Requires:	jakarta-commons-httpclient
+Requires:	objectweb-asm
+Requires:	openstack-java-client >= %{openstack_java_version}
+Requires:	openstack-java-glance-client >= %{openstack_java_version}
+Requires:	openstack-java-glance-model >= %{openstack_java_version}
+Requires:	openstack-java-keystone-client >= %{openstack_java_version}
+Requires:	openstack-java-keystone-model >= %{openstack_java_version}
+Requires:	openstack-java-quantum-client >= %{openstack_java_version}
+Requires:	openstack-java-quantum-model >= %{openstack_java_version}
+Requires:	openstack-java-resteasy-connector >= %{openstack_java_version}
+Requires:	postgresql-jdbc
+Requires:	quartz
+Requires:	snmp4j
+Requires:	spring-ldap
+Requires:	springframework-aop
+Requires:	springframework-beans
+Requires:	springframework-context
+Requires:	springframework-expression
+Requires:	springframework-instrument
+Requires:	springframework-jdbc
+Requires:	springframework-tx
+Requires:	xmlrpc-client
+%endif
+%endif
+
+# We can't require exactly the same version and release of the
+# setup package because it needs to be updated independently as part
+# of the update process implemented in the engine-upgrade script:
+Requires:	%{name}-setup >= %{version}-%{release}
+
+# rhbz#1028966
+Conflicts:	java-1.7.0-openjdk = 1:1.7.0.45-2.4.3.3.el6
+
+# We can drop these conflicts when
+# we drop Requires: mod_ssl
+Conflicts:	freeipa-server
+Conflicts:	ipa-server
+
+%if %{ovirt_install_systemd}
+BuildRequires:	systemd
+%endif
+
+%description
+%{ovirt_product_name} is a feature-rich server virtualization management
+system that provides advanced capabilities for managing the Open
+virtualization infrastructure for Servers and Desktops.
+
+%package extensions-api-impl
+Summary:	%{ovirt_product_name_short} extensions api
+Group:		%{ovirt_product_group}
+Provides:	ovirt-engine-extensions-api = 0
+
+%description extensions-api-impl
+%{ovirt_product_name_short} extensions api
+
+%package extensions-api-impl-javadoc
+Summary:	%{ovirt_product_name_short} extensions api documentation
+Group:		%{ovirt_product_group}
+Provides:	ovirt-engine-extensions-api-javadoc = 0
+
+%description extensions-api-impl-javadoc
+%{ovirt_product_name_short} extensions api documentation
+
+%package lib
+Summary:	%{ovirt_product_name_short} library
+Group:		%{ovirt_product_group}
+Requires:	python-daemon
+
+%description lib
+%{ovirt_product_name_short} library
+
+%package backend
+Summary:	Engine core of %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}-extensions-api-impl >= %{version}-%{release}
+Requires:	%{name}-lib >= %{version}-%{release}
+Requires:	httpd
+Requires:	java
+Requires:	logrotate
+Requires:	mailcap
+Requires:	mod_ssl
+Requires:	novnc
+Requires:	openssl
+Requires:	ovirt-host-deploy-java >= 1.3.0
+Requires:	python-cheetah
+Requires:	vdsm-jsonrpc-java >= 1.0.14
+Requires:	spice-html5
+
+%if %{ovirt_install_systemd}
+Requires(post):		systemd
+Requires(preun):	systemd
+Requires(postun):	systemd
+%endif
+
+%pre backend
+%ovirt_create_user_engine
+
+%post backend
+%if %{ovirt_install_systemd}
+%systemd_post ovirt-engine.service
+%endif
+%if %{ovirt_install_systemv}
+chkconfig --add ovirt-engine
+%endif
+
+%preun backend
+%if %{ovirt_install_systemd}
+%systemd_preun ovirt-engine.service
+%endif
+
+%if %{ovirt_install_systemv}
+if [ $1 -eq 0 ]; then
+	service ovirt-engine stop > /dev/null 2>&1 || true
+	chkconfig --del ovirt-engine
+fi
+%endif
+
+%postun backend
+%if %{ovirt_install_systemd}
+%systemd_postun ovirt-engine.service
+%endif
+
+%description backend
+The backend engine of %{ovirt_product_name_short}
+
+%package restapi
+Summary:	RESTful API for %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name} = %{version}-%{release}
+
+%description restapi
+The RESTful API for %{ovirt_product_name_short}
+
+%package setup-base
+Summary:	%{ovirt_product_name_short} suite base setup components.
+Group:		%{ovirt_product_group}
+Requires:	%{name}-lib >= %{version}-%{release}
+Requires:	bind-utils
+Requires:	iproute
+Requires:	libxml2-python
+Requires:	logrotate
+Requires:	otopi >= 1.2.2
+Requires:	python-paramiko
+Conflicts:	%{name}-dwh-setup < 3.5.0
+Conflicts:	%{name}-reports-setup < 3.5.0
+
+%description setup-base
+%{ovirt_product_name_short} suite base setup components.
+
+
+%pre setup-base
+%ovirt_create_user_engine
+
+%package setup
+Summary:	Setup and upgrade scripts for %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name}-setup-plugin-ovirt-engine = %{version}-%{release}
+
+%description setup
+Setup and upgrade scripts for %{ovirt_product_name_short}
+
+%package setup-plugin-ovirt-engine
+Summary:	Setup and upgrade specific plugins for %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name}-setup-plugin-ovirt-engine-common = %{version}-%{release}
+Requires:	%{name} >= 3.4.0
+Conflicts:	%{name} < 3.4.0
+Conflicts:	%{name}-dwh < 3.4.0
+Conflicts:	%{name}-reports < 3.4.0
+
+%description setup-plugin-ovirt-engine
+Setup and upgrade specific plugins for %{ovirt_product_name_short}
+
+%pre setup-plugin-ovirt-engine
+%ovirt_create_user_vdsm
+
+%package setup-plugin-ovirt-engine-common
+Summary:	Setup and upgrade common plugins for %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name}-setup-base = %{version}-%{release}
+Requires:	cracklib-python
+Requires:	libselinux-python
+Requires:	m2crypto
+Requires:	nfs-utils
+Requires:	policycoreutils-python
+Requires:	python-psycopg2
+Requires:	yum
+
+# We can drop these conflicts when
+# we drop Requires: mod_ssl
+# conflict here so we can avoid upgrade
+# of setup at this environment, this
+# will produce early error.
+Conflicts:	ipa-server
+Conflicts:	freeipa-server
+
+%description setup-plugin-ovirt-engine-common
+Setup and upgrade common plugins for %{ovirt_product_name_short}
+
+%package dbscripts
+Summary:	Database scripts for %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name} = %{version}-%{release}
+
+%description dbscripts
+Database scripts for %{ovirt_product_name_short}
+
+%package userportal
+Summary:	User Portal of %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name} = %{version}-%{release}
+
+%description userportal
+The user portal interface to %{ovirt_product_name_short}
+
+%package userportal-debuginfo
+Summary:	Debug information for User Portal of %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+
+%description userportal-debuginfo
+Debug information for the user portal interface to %{ovirt_product_name_short}
+
+%package webadmin-portal
+Summary:	Web Admin Portal of %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+Requires:	%{name} = %{version}-%{release}
+
+%description webadmin-portal
+The web administration interface to %{ovirt_product_name_short}
+
+%package webadmin-portal-debuginfo
+Summary:	Debug information for Web Admin Portal of %{ovirt_product_name_short}
+Group:		%{ovirt_product_group}
+
+%description webadmin-portal-debuginfo
+Debug information for the web administration interface to %{ovirt_product_name_short}
+
+%package tools
+Summary:	%{ovirt_product_name_short} Tools
+Group:		%{ovirt_product_group}
+Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}-lib >= %{version}-%{release}
+Requires:	java
+Requires:	logrotate
+Requires:	python-psycopg2
+Requires:	bzip2
+
+%if %{ovirt_install_systemd}
+Requires(post):		systemd
+Requires(preun):	systemd
+Requires(postun):	systemd
+%endif
+
+%description tools
+%{ovirt_product_name_short} Tools
+
+%pre tools
+%ovirt_create_user_engine
+
+%post tools
+%if %{ovirt_install_systemd}
+%systemd_post ovirt-engine-notifier.service
+%systemd_post ovirt-fence-kdump-listener.service
+%endif
+%if %{ovirt_install_systemv}
+chkconfig --add ovirt-engine-notifier
+chkconfig --add ovirt-fence-kdump-listener
+%endif
+
+%postun tools
+%if %{ovirt_install_systemd}
+%systemd_postun ovirt-engine-notifier.service
+%systemd_postun ovirt-fence-kdump-listener.service
+%endif
+
+%preun tools
+%if %{ovirt_install_systemd}
+%systemd_preun ovirt-engine-notifier.service
+%systemd_preun ovirt-fence-kdump-listener.service
+%endif
+
+%if %{ovirt_install_systemv}
+if [ $1 -eq 0 ]; then
+	service ovirt-engine-notifier stop > /dev/null 2>&1 || true
+	chkconfig --del ovirt-engine-notifier
+	service ovirt-fence-kdump-listener stop > /dev/null 2>&1 || true
+	chkconfig --del ovirt-fence-kdump-listener
+fi
+%endif
+
+%package websocket-proxy
+Summary:	%{ovirt_product_name_short} Websocket Proxy
+Group:		%{ovirt_product_group}
+Requires:	%{name}-lib >= %{version}-%{release}
+Requires:	m2crypto
+Requires:	numpy
+Requires:	python-websockify
+Requires:	%{name}-setup-plugin-websocket-proxy >= %{version}-%{release}
+
+%if %{ovirt_install_systemd}
+Requires(post):		systemd
+Requires(preun):	systemd
+Requires(postun):	systemd
+%endif
+
+%description websocket-proxy
+%{ovirt_product_name_short} Websocket Proxy
+
+%pre websocket-proxy
+%ovirt_create_user_engine
+
+%post websocket-proxy
+%if %{ovirt_install_systemd}
+%systemd_post ovirt-websocket-proxy.service
+%endif
+%if %{ovirt_install_systemv}
+chkconfig --add ovirt-websocket-proxy
+%endif
+
+%postun websocket-proxy
+%if %{ovirt_install_systemd}
+%systemd_postun ovirt-websocket-proxy.service
+%endif
+
+%preun websocket-proxy
+%if %{ovirt_install_systemd}
+%systemd_preun ovirt-websocket-proxy.service
+%endif
+
+%if %{ovirt_install_systemv}
+if [ $1 -eq 0 ]; then
+	service ovirt-websocket-proxy stop > /dev/null 2>&1 || true
+	chkconfig --del ovirt-websocket-proxy
+fi
+%endif
+
+%package setup-plugin-websocket-proxy
+Summary:	Setup and upgrade specific plugins for websocket-proxy
+Requires:	%{name}-setup-plugin-ovirt-engine-common = %{version}-%{release}
+
+%description setup-plugin-websocket-proxy
+Setup and upgrade specific plugins for websocket-proxy
+
+%package setup-plugin-allinone
+Summary:	All-in-one plugin for %{ovirt_product_name_short}'s setup
+Group:		%{ovirt_product_group}
+Requires:	%{name}-sdk-python >= 3.5.0.7
+Requires:	%{name}-setup-plugin-ovirt-engine = %{version}-%{release}
+Requires:	openssh-server
+Requires:	ovirt-host-deploy >= 1.3.0
+Requires:	ovirt-host-deploy-offline >= 1.3.0
+Requires:	vdsm-jsonrpc-java >= 1.0.14
+
+%description setup-plugin-allinone
+All-in-one plugin for %{ovirt_product_name_short}'s setup
+
+%prep
+%setup -c -q
+
+%build
+make %{make_common_opts}
+
+%install
+rm -fr "%{buildroot}"
+make %{make_common_opts} install DESTDIR="%{buildroot}"
+
+# Compile python files
+%{__python} -m compileall -f -q -d / "%{buildroot}"
+%{__python} -O -m compileall -f -q -d / "%{buildroot}"
+
+#
+# /var creation
+#
+install -dm 755 "%{buildroot}/%{engine_state}"/{content,setup/answers}
+install -dm 755 "%{buildroot}/%{engine_log}"/{host-deploy,setup,notifier,engine-manage-domains,dump}
+install -dm 755 "%{buildroot}/%{engine_cache}"
+install -dm 755 "%{buildroot}/%{engine_run}/notifier"
+
+#
+# Force TLS/SSL for selected applications.
+#
+for war in \
+	"%{buildroot}%{engine_ear}"/{userportal,webadmin}.war \
+	"%{buildroot}%{engine_restapi_war}" \
+	"%{buildroot}%{engine_legacy_restapi_war}"; do
+	sed -i \
+		's#<transport-guarantee>NONE</transport-guarantee>#<transport-guarantee>CONFIDENTIAL</transport-guarantee>#' \
+		"${war}/WEB-INF/web.xml"
+done
+
+#
+# Move jars to destribution location
+#
+install -dm 755 "%{buildroot}%{engine_java}"
+while read lib_path; do
+	java_path="%{engine_java}/$(basename "${lib_path}")"
+	if ! [ -e "%{buildroot}/${java_path}" ] && [ -f "%{buildroot}/${lib_path}" ]; then
+		cp "%{buildroot}/${lib_path}" "%{buildroot}/${java_path}"
+	fi
+	rm -f "%{buildroot}/${lib_path}"
+	ln -s "${java_path}" "%{buildroot}${lib_path}"
+done << __EOF__
+%{engine_ear}/bll.jar
+%{engine_ear}/docs.war/WEB-INF/lib/branding.jar
+%{engine_ear}/lib/vdsbroker.jar
+%{engine_ear}/scheduler.jar
+%{engine_ear}/userportal.war/WEB-INF/lib/branding.jar
+%{engine_ear}/webadmin.war/WEB-INF/lib/branding.jar
+%{engine_ear}/welcome.war/WEB-INF/lib/branding.jar
+%{engine_jboss_modules}/org/ovirt/engine/api/interface-common-jaxrs/main/interface-common-jaxrs.jar
+%{engine_jboss_modules}/org/ovirt/engine/api/ovirt-engine-extensions-api/main/ovirt-engine-extensions-api.jar
+%{engine_jboss_modules}/org/ovirt/engine/api/restapi-definition/main/restapi-definition.jar
+%{engine_jboss_modules}/org/ovirt/engine/api/restapi-jaxrs/main/restapi-jaxrs.jar
+%{engine_jboss_modules}/org/ovirt/engine/api/restapi-types/main/restapi-types.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/aaa/main/aaa.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/branding/main/branding.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/common/main/common.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/compat/main/compat.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/dal/main/dal.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/extensions-manager/main/extensions-manager.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/searchbackend/main/searchbackend.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/tools/main/tools.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/utils/main/utils.jar
+%{engine_jboss_modules}/org/ovirt/engine/core/uutils/main/uutils.jar
+%{engine_jboss_modules}/org/ovirt/engine/extensions/builtin/main/builtin.jar
+__EOF__
+
+# Needed for compatibility if package is different than the directory structure
+%if "%{name}" != "%{engine_name}"
+ln -s "%{engine_name}" "%{buildroot}%{engine_java}/../%{name}"
+%endif
+
+#
+# Register poms
+#
+while read package pom; do
+	pomdir="$(dirname "%{_mavenpomdir}/${pom}")"
+	pom="$(basename "${pom}")"
+	jpppom="JPP.${pom}"
+	mv "%{buildroot}${pomdir}/${pom}" "%{buildroot}${pomdir}/${jpppom}"
+	artifact_id="$(echo "${pom}" | sed -e 's/^%{name}-//' -e 's/\.pom//')"
+	if [ -f "%{buildroot}%{engine_java}/${artifact_id}.jar" ]; then
+		%add_maven_depmap -f "${package}" "${jpppom}" "%{name}/${artifact_id}.jar"
+	else
+		%add_maven_depmap -f "${package}" "${jpppom}"
+	fi
+done << __EOF__
+backend %{name}-aaa.pom
+backend %{name}-backend.pom
+backend %{name}-bll.pom
+backend %{name}-builtin.pom
+backend %{name}-dal.pom
+backend %{name}-manager-modules.pom
+backend %{name}-manager.pom
+backend %{name}-scheduler.pom
+backend %{name}-searchbackend.pom
+backend %{name}-vdsbroker.pom
+base %{name}-branding.pom
+base %{name}-common.pom
+base %{name}-compat.pom
+base %{name}-extensions-manager.pom
+base %{name}-root.pom
+base %{name}-utils.pom
+base %{name}-uutils.pom
+extensions-api %{name}-ovirt-engine-extensions-api-root.pom
+extensions-api %{name}-ovirt-engine-extensions-api.pom
+restapi %{name}-interface-common-jaxrs.pom
+restapi %{name}-restapi-definition.pom
+restapi %{name}-restapi-jaxrs.pom
+restapi %{name}-restapi-parent.pom
+restapi %{name}-restapi-types.pom
+tools %{name}-tools.pom
+__EOF__
+
+%if "%{name}" != "%{engine_name}"
+sed -i 's#%{_javadir}/%{name}#%{engine_java}#' .mfiles*
+%endif
+
+%if !%{ovirt_install_poms}
+rm -fr "%{buildroot}%{_mavenpomdir}"
+%endif
+
+#
+# Link dependencies to system provided
+#
+while read dst src; do
+	[ -z "${dst}" ] && continue
+	[ -z "${src}" ] && src="$(basename "${dst}")"
+
+	dst="%{engine_jboss_modules}/${dst}"
+	src="%{_javadir}/${src}"
+	rm -f "%{buildroot}${dst}"
+	ln -s "${src}" "%{buildroot}${dst}"
+done << __EOF__
+org/apache/commons/io/main/commons-io.jar
+org/apache/ws/commons/main/ws-commons-util.jar
+org/apache/xmlgraphics/batik/main/batik-awt-util.jar batik/batik-awt-util.jar
+org/apache/xmlgraphics/batik/main/batik-bridge.jar batik/batik-bridge.jar
+org/apache/xmlgraphics/batik/main/batik-css.jar batik/batik-css.jar
+org/apache/xmlgraphics/batik/main/batik-ext.jar batik/batik-ext.jar
+org/apache/xmlgraphics/batik/main/batik-extension.jar batik/batik-extension.jar
+org/apache/xmlgraphics/batik/main/batik-gvt.jar batik/batik-gvt.jar
+org/apache/xmlgraphics/batik/main/batik-svg-dom.jar batik/batik-svg-dom.jar
+org/apache/xmlgraphics/batik/main/batik-transcoder.jar batik/batik-transcoder.jar
+org/apache/xmlgraphics/batik/main/batik-util.jar batik/batik-util.jar
+org/apache/xmlgraphics/commons/main/xmlgraphics-commons.jar
+org/apache/xmlgraphics/fop/main/fop.jar
+org/ovirt/otopi/main/otopi.jar otopi/otopi.jar
+org/ovirt/ovirt-host-deploy/main/ovirt-host-deploy.jar ovirt-host-deploy/ovirt-host-deploy.jar
+org/ovirt/vdsm-jsonrpc-java/main/vdsm-jsonrpc-java-client.jar vdsm-jsonrpc-java/vdsm-jsonrpc-java-client.jar
+%if 0%{?fedora}
+%if %{fedora} >= 19
+com/mchange/c3p0/main/c3p0.jar
+com/woorea/openstack/sdk/main/glance-client.jar openstack-java-sdk/glance-client.jar
+com/woorea/openstack/sdk/main/glance-model.jar openstack-java-sdk/glance-model.jar
+com/woorea/openstack/sdk/main/keystone-client.jar openstack-java-sdk/keystone-client.jar
+com/woorea/openstack/sdk/main/keystone-model.jar openstack-java-sdk/keystone-model.jar
+com/woorea/openstack/sdk/main/openstack-client.jar openstack-java-sdk/openstack-client.jar
+com/woorea/openstack/sdk/main/quantum-client.jar openstack-java-sdk/quantum-client.jar
+com/woorea/openstack/sdk/main/quantum-model.jar openstack-java-sdk/quantum-model.jar
+com/woorea/openstack/sdk/main/resteasy-connector.jar openstack-java-sdk/resteasy-connector.jar
+org/aopalliance/main/aopalliance.jar
+org/apache/avalon/framework/main/avalon-framework-api.jar
+org/apache/avalon/framework/main/avalon-framework-impl.jar
+org/apache/commons/compress/main/commons-compress.jar
+org/apache/commons/configuration/main/commons-configuration.jar commons-configuration.jar
+org/apache/commons/httpclient/main/commons-httpclient.jar
+org/apache/commons/jxpath/main/commons-jxpath.jar commons-jxpath.jar
+org/apache/xmlrpc/main/xmlrpc-client.jar
+org/apache/xmlrpc/main/xmlrpc-common.jar
+org/postgresql/main/postgresql.jar postgresql-jdbc.jar
+org/quartz/main/quartz.jar
+org/snmp4j/main/snmp4j.jar
+org/springframework/ldap/main/spring-ldap-core.jar spring-ldap/spring-ldap-core.jar
+org/springframework/main/spring-aop.jar springframework/spring-aop.jar
+org/springframework/main/spring-asm.jar objectweb-asm/asm.jar
+org/springframework/main/spring-beans.jar springframework/spring-beans.jar
+org/springframework/main/spring-context.jar springframework/spring-context.jar
+org/springframework/main/spring-core.jar springframework/spring-core.jar
+org/springframework/main/spring-expression.jar springframework/spring-expression.jar
+org/springframework/main/spring-instrument.jar springframework/spring-instrument.jar
+org/springframework/main/spring-jdbc.jar springframework/spring-jdbc.jar
+org/springframework/main/spring-tx.jar springframework/spring-tx.jar
+org/tukaani/xz/main/xz.jar
+%endif
+%endif
+%if 0%{?rhel}
+%if %{rhel} >= 7
+org/apache/avalon/framework/main/avalon-framework-api.jar
+org/apache/avalon/framework/main/avalon-framework-impl.jar
+%else
+org/apache/avalon/framework/main/avalon-framework-api.jar avalon-framework.jar
+org/apache/avalon/framework/main/avalon-framework-impl.jar avalon-framework.jar
+%endif
+%endif
+__EOF__
+
+#
+# Register services
+#
+%if %{ovirt_install_systemd}
+install -dm 755 "%{buildroot}%{_unitdir}"
+for service in ovirt-engine ovirt-engine-notifier ovirt-fence-kdump-listener ovirt-websocket-proxy; do
+	cp "%{buildroot}%{engine_data}/services/${service}/${service}.systemd" "%{buildroot}%{_unitdir}/${service}.service"
+done
+%endif
+
+%if %{ovirt_install_systemv}
+install -dm 755 "%{buildroot}%{_initddir}"
+for service in ovirt-engine ovirt-engine-notifier ovirt-fence-kdump-listener ovirt-websocket-proxy; do
+	cp "%{buildroot}%{engine_data}/services/${service}/${service}.sysv" "%{buildroot}%{_initddir}/${service}"
+done
+%endif
+
+#
+# Package customization
+#
+install -d "%{buildroot}%{_sysconfdir}/ovirt-engine-setup.conf.d"
+cat > "%{buildroot}%{_sysconfdir}/ovirt-engine-setup.conf.d/10-packaging.conf" << __EOF__
+[environment:default]
+OVESETUP_APACHE/configureRootRedirectionDefault=bool:True
+__EOF__
+cat > "%{buildroot}%{_sysconfdir}/ovirt-engine-setup.conf.d/10-packaging-aio.conf" << __EOF__
+[environment:default]
+OVESETUP_AIO/enable=bool:True
+__EOF__
+install -d "%{buildroot}%{_sysconfdir}/ovirt-host-deploy.conf.d"
+cat > "%{buildroot}%{_sysconfdir}/ovirt-host-deploy.conf.d/10-packaging-aio.conf" << __EOF__
+[environment:default]
+VDSM/disableNetworkManager=bool:False
+__EOF__
+
+%if %{ovirt_provides_jboss}
+cat > "%{buildroot}%{_sysconfdir}/ovirt-engine-setup.conf.d/10-packaging-jboss.conf" << __EOF__
+[environment:default]
+OVESETUP_CONFIG/jbossHome=str:/usr/share/ovirt-engine-jboss-as
+__EOF__
+%endif
+
+#
+# bakcward compatibility
+# keep ovirt-engine-setup package to pull ovirt-engine-setup-plugin-ovirt-engine
+#
+touch "%{buildroot}%{engine_data}/setup/ovirt-engine-setup-ghost"
+
+#
+# backward compatibly (pre-3.3.0)
+# force rpm not to remove config files
+# as these used to be %config
+# these files are created empty in order to mark
+# them as %ghost
+#
+touch "%{buildroot}%{engine_etc}/engine.conf"
+touch "%{buildroot}%{engine_etc}/notifier/notifier.conf"
+touch "%{buildroot}%{engine_pki}/cacert.template"
+touch "%{buildroot}%{engine_pki}/cert.template"
+touch "%{buildroot}%{engine_pki}/database.txt"
+touch "%{buildroot}%{engine_pki}/serial.txt"
+install -d "%{buildroot}%{engine_etc}/sysprep"
+for f in 2k12x64 2k3 2k8 2k8x86 2k8x64 w7 w7x64 w8 w8x64 xp; do
+	touch "%{buildroot}%{engine_etc}/sysprep/sysprep.${f}"
+done
+install -d "%{buildroot}%{_sysconfdir}/firewalld/services"
+touch "%{buildroot}%{_sysconfdir}/firewalld/services/ovirt.xml"
+
+%preun
+if [ "$1" -eq 0 ]; then
+	#
+	# backup pki dir into the backup dir with current date
+	#
+	if [ -d "%{engine_pki}" ]; then
+		dest="%{engine_pki}/../%{engine_name}-backups/%{engine_name}-$(date +"%%Y%%m%%d%%H%%M%%S")"
+		mkdir -p "${dest}"
+		cp -pR "%{engine_pki}" "${dest}"
+	fi
+fi
+
+%postun
+if [ "$1" -eq 0 ]; then
+	rm -rf "%{engine_cache}"
+	rm -rf "%{engine_pki}"
+
+	if [ -f "%{_sysconfdir}/yum/pluginconf.d/versionlock.list" ]; then
+		sed -i '/%{name}/d' "%{_sysconfdir}/yum/pluginconf.d/versionlock.list"
+	fi
+fi
+
+%pre
+%ovirt_create_user_engine
+
+%files -f .mfiles-base
+
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_cache}
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_log}
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_log}/dump
+%dir %{engine_data}
+%dir %{engine_data}/bin
+%dir %{engine_data}/branding
+%dir %{engine_data}/conf
+%dir %{engine_data}/engine.ear
+%dir %{engine_data}/extensions.d
+%dir %{engine_data}/services
+%dir %{engine_etc}
+%dir %{engine_etc}/branding
+%dir %{engine_etc}/extensions.d
+%dir %{engine_java}
+%doc LICENSE
+%ghost %config(noreplace) %{engine_etc}/engine.conf
+%{engine_data}/branding/ovirt.brand/
+%{engine_etc}/branding/00-ovirt.brand
+%{engine_etc}/engine.conf.d/
+
+#
+# ATTENTION:
+# Needed for compatibility if package is different
+# than the directory structure
+#
+%if "%{name}" != "%{engine_name}"
+%{_javadir}/%{name}
+%endif
+
+%files extensions-api-impl -f .mfiles-extensions-api
+
+%files extensions-api-impl-javadoc
+%{engine_doc}/ovirt-engine-extensions-api/
+
+%files lib
+%{engine_data}/bin/java-home
+%{python_sitelib}/ovirt_engine/
+
+%files backend -f .mfiles-backend
+
+%attr(-, %{engine_user}, %{engine_group}) %{engine_log}/host-deploy
+%attr(-, %{engine_user}, %{engine_group}) %{engine_state}/content
+%config %{_sysconfdir}/logrotate.d/ovirt-engine
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_state}
+%dir %{engine_data}/bin
+%dir %{engine_data}/gwt-symbols
+%dir %{engine_data}/ui-plugins
+%dir %{engine_ear}
+%{engine_data}/conf/osinfo-defaults.properties
+%{engine_data}/conf/sysprep/
+%{engine_data}/files/
+%{engine_doc}/AuditLogMessages.properties
+%{engine_doc}/mibs/
+%{engine_ear}/META-INF
+%{engine_ear}/bll.jar
+%{engine_ear}/docs.war/
+%{engine_ear}/lib
+%{engine_ear}/root.war/
+%{engine_ear}/scheduler.jar
+%{engine_ear}/services.war/
+%{engine_ear}/welcome.war/
+%{engine_etc}/osinfo.conf.d/
+%{engine_jboss_modules}/
+
+%{engine_data}/services/ovirt-engine
+%if %{ovirt_install_systemd}
+%{_unitdir}/ovirt-engine.service
+%endif
+%if %{ovirt_install_systemv}
+%{_initddir}/ovirt-engine
+%endif
+
+#
+# PKI
+#
+# Most directories are owned by the engine user because
+# it needs to create files inside
+#
+%config(noreplace) %{engine_pki}/cacert.template.in
+%config(noreplace) %{engine_pki}/cert.template.in
+%config(noreplace) %{engine_pki}/openssl.conf
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_pki}
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_pki}/certs
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_pki}/private
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_pki}/requests
+%dir %{engine_pki}/keys
+%{engine_data}/bin/pki-common.sh
+%{engine_data}/bin/pki-create-ca.sh
+%{engine_data}/bin/pki-enroll-pkcs12.sh
+%{engine_data}/bin/pki-enroll-request.sh
+%{engine_data}/bin/pki-pkcs12-extract.sh
+
+# backward compatibly (pre-3.3.0)
+# force rpm not to remove pki files
+# as these used to be %config
+%ghost %config(noreplace) %{engine_pki}/cacert.template
+%ghost %config(noreplace) %{engine_pki}/cert.template
+%ghost %config(noreplace) %{engine_pki}/database.txt
+%ghost %config(noreplace) %{engine_pki}/serial.txt
+
+%files setup-base
+
+%config %{_sysconfdir}/logrotate.d/ovirt-engine-setup
+%dir %{engine_data}/setup/bin/
+%dir %{engine_log}/setup
+%dir %{engine_data}/setup/ovirt_engine_setup
+%{_bindir}/engine-cleanup
+%{_bindir}/engine-setup
+%{_mandir}/man8/engine-cleanup.*
+%{_mandir}/man8/engine-setup.*
+%{_mandir}/man8/engine-upgrade-check.*
+%{engine_data}/bin/ovirt-engine-log-setup-event.sh
+%{engine_data}/conf/iptables.default.in
+%{engine_data}/setup/bin/ovirt-engine-remove
+%{engine_data}/setup/bin/ovirt-engine-rename
+%{engine_data}/setup/bin/ovirt-engine-setup
+%{engine_data}/setup/bin/ovirt-engine-setup.env
+%{engine_data}/setup/ovirt_engine_setup/*.py*
+%{engine_data}/setup/plugins/*/base/
+%{engine_state}/backups/
+%{engine_state}/setup/
+
+%files setup
+
+# package cannot be empty
+%ghost %{engine_data}/setup/ovirt-engine-setup-ghost
+
+%files setup-plugin-ovirt-engine
+
+%config %{_sysconfdir}/ovirt-engine-setup.conf.d/10-packaging.conf
+%{_bindir}/engine-upgrade-check
+%{engine_data}/conf/ovirt-engine-proxy.conf.v2.in
+%{engine_data}/conf/ovirt-engine-root-redirect.conf.in
+%{engine_data}/firewalld/ovirt-engine/
+%{engine_data}/setup/bin/ovirt-engine-upgrade-check
+%{engine_data}/setup/dbutils/
+%{engine_data}/setup/ovirt_engine_setup/engine/
+%{engine_data}/setup/plugins/*/ovirt-engine/
+
+# backward compatibility (pre-3.4)
+%ghost %config(noreplace) %{engine_etc}/sysprep/
+%ghost %config(noreplace) %{_sysconfdir}/firewalld/services/ovirt.xml
+
+%files setup-plugin-ovirt-engine-common
+
+%{engine_data}/setup/ovirt_engine_setup/engine_common/
+%{engine_data}/setup/plugins/*/ovirt-engine-common/
+%{engine_data}/firewalld/ovirt-common/
+
+%if %{ovirt_provides_jboss}
+%config %{_sysconfdir}/ovirt-engine-setup.conf.d/10-packaging-jboss.conf
+%endif
+
+%files setup-plugin-websocket-proxy
+
+%{engine_data}/firewalld/websocket-proxy/
+%{engine_data}/setup/ovirt_engine_setup/websocket_proxy/
+%{engine_data}/setup/plugins/*/websocket_proxy/
+
+%files setup-plugin-allinone
+
+%config %{_sysconfdir}/ovirt-engine-setup.conf.d/10-packaging-aio.conf
+%config %{_sysconfdir}/ovirt-host-deploy.conf.d/10-packaging-aio.conf
+%{engine_data}/firewalld/aio/
+
+%files dbscripts
+
+%{engine_data}/dbscripts/
+
+%files restapi -f .mfiles-restapi
+
+%{engine_restapi_war}/
+%{engine_legacy_restapi_war}/
+
+%files userportal
+
+%config %{engine_etc}/usbfilter.txt
+%{engine_ear}/userportal.war
+
+%files userportal-debuginfo
+
+%{engine_data}/gwt-symbols/userportal/
+
+%files webadmin-portal
+
+%{engine_ear}/webadmin.war
+
+%files webadmin-portal-debuginfo
+
+%{engine_data}/gwt-symbols/webadmin/
+
+%files websocket-proxy
+
+%{engine_data}/services/ovirt-websocket-proxy
+%{engine_etc}/ovirt-websocket-proxy.conf.d/
+
+%if %{ovirt_install_systemd}
+%{_unitdir}/ovirt-websocket-proxy.service
+%endif
+%if %{ovirt_install_systemv}
+%{_initddir}/ovirt-websocket-proxy
+%endif
+
+%files tools -f .mfiles-tools
+
+%config %{_sysconfdir}/logrotate.d/ovirt-engine-notifier
+%config %{engine_etc}/notifier/log4j.xml
+%config(noreplace) %{engine_etc}/engine-config/engine-config.conf
+%config(noreplace) %{engine_etc}/engine-manage-domains/engine-manage-domains.conf
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_log}/notifier
+%dir %attr(-, %{engine_user}, %{engine_group}) %{engine_run}/notifier
+%dir %{engine_etc}/engine-config
+%dir %{engine_etc}/engine-manage-domains
+%dir %{engine_etc}/notifier
+%ghost %config(noreplace) %{engine_etc}/notifier/notifier.conf
+%{_bindir}/engine-backup
+%{_bindir}/engine-config
+%{_bindir}/engine-manage-domains
+%{_mandir}/man8/engine-backup.*
+%{_mandir}/man8/engine-config.*
+%{_mandir}/man8/engine-manage-domains.*
+%{engine_data}/bin/engine-backup.sh
+%{engine_data}/bin/engine-config.sh
+%{engine_data}/bin/engine-manage-domains.sh
+%{engine_data}/bin/engine-prolog.sh
+%{engine_data}/bin/ovirt-engine-role.sh
+%{engine_data}/conf/jaas.conf
+%{engine_data}/services/ovirt-engine-notifier
+%{engine_data}/services/ovirt-fence-kdump-listener/
+%{engine_etc}/engine-config/engine-config.*properties
+%{engine_etc}/notifier/notifier.conf.d/
+%{engine_etc}/ovirt-fence-kdump-listener.conf.d/
+
+%if %{ovirt_install_systemd}
+%{_unitdir}/ovirt-engine-notifier.service
+%{_unitdir}/ovirt-fence-kdump-listener.service
+%endif
+%if %{ovirt_install_systemv}
+%{_initddir}/ovirt-engine-notifier
+%{_initddir}/ovirt-fence-kdump-listener
+%endif
+
+%changelog
+* Thu Jan 29 2015 Sandro Bonazzola <sbonazzo@redhat.com> - 3.5.1.1-1
+- Bump version to 3.5.1.1
+
+* Tue Jan 20 2015 Sandro Bonazzola <sbonazzo@redhat.com> - 3.5.1-1
+- Bump version to 3.5.1
+
+* Fri Sep 19 2014 Sandro Bonazzola <sbonazzo@redhat.com> - 3.5.0-1
+- Bump version to 3.5.0
+
+* Thu Jul 10 2014 Sandro Bonazzola <sbonazzo@redhat.com> - 3.5.0
+- Update dependencies and removed legacy provides / requires
+
+* Thu Jan 17 2013 Juan Hernandez <juan.hernandez@redhat.com> - 3.3.0-1
+- Bump version to 3.3.0
+
+* Fri Nov 02 2012 Juan Hernandez <juan.hernandez@redhat.com> - 3.2.0-1
+- Bump version to 3.2.0
+
+* Mon May 07 2012 Keith Robertson <kroberts@redhat.com> - 3.1.0-3
+- Removed image uploader, iso uploader, and log collector from this
+  git repo.  The are now in their own respective ovirt.org git
+  repos. BZ#803240.
+
+* Wed Apr 04 2012 Stephen Gordon <sgordon@redhat.com> - 3.1.0-2
+- The ovirt-engine spec file did not previously contain a BuildRequires
+  statement for the maven package. As a result in mock environments the
+  build failed with an error when attempting to call the 'mvn' binary -
+  BZ#807761.
+
+* Wed Jan 04 2012 Ronen Angluste <ranglust@redhat.com> - 3.1.0-1
+- Adjust code for Jboss AS 7.1
+
+* Sun Dec 11 2011 Ronen Angluster <ranglust@redhat.com> - 3.1.0-1
+- Moved all hard coded paths to macros
+
+* Wed Oct 26 2011 Ronen Angluster <ranglust@redhat.com> - 3.1.0-1
+- Initial build
+- Cloned from RHEVM spec file

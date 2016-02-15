@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog"
+	xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor"
+	xmlns:ge="urn:import:org.ovirt.engine.ui.common.widget.editor.generic"
+	xmlns:h="urn:import:org.ovirt.engine.ui.webadmin.section.main.view.popup.host">
+	<ui:with field='constants' type='org.ovirt.engine.ui.webadmin.ApplicationConstants' />
+
+	<ui:style type="org.ovirt.engine.ui.webadmin.section.main.view.popup.host.VfsConfigPopupView.WidgetStyle">
+        .valueWidth {
+            width: 60px;
+        }
+
+        .numOfVfs {
+            width: 165px;
+        }
+
+        .maxVfsLabel {
+            display: block;
+            font-size: 9px;
+            padding-left: 112px;
+        }
+
+         .expander {
+            font-weight: bold;
+        }
+
+        .expanderContent {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .allowedNetworksPanel {
+            margin-left: 15px;
+            display: inline-flex;
+        }
+
+        .allAllowedLabel {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .selectNetworksLabel {
+            margin-top: 10px;
+        }
+
+        .allAllowedSelector {
+            float: left;
+        }
+
+        .networksTableScrollPanel {
+            height: 50%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .labelWidget {
+            width: auto !important;
+        }
+
+        .networksPanel {
+            height: 100%;
+            width: 265px;
+            margin-right: 15px;
+        }
+
+        .labelsTitle {
+            font-weight: normal !important;
+            margin-top: 10px !important;
+            margin-left: 15px;
+        }
+
+        .labelEditorContent {
+            width: 120px;
+        }
+
+        .labelEditorWrapper {
+            margin-right: 0px !important;
+        }
+
+        .splitter {
+            background-color: grey;
+            width: 1px;
+            margin-top: 32px;
+        }
+
+        .labelEditorsPanel {
+            height: 100% !important;
+            overflow: hidden !important;
+        }
+	</ui:style>
+
+	<d:SimpleDialogPanel width="515px" height="600px">
+		<d:content>
+			<g:FlowPanel>
+				<d:AdvancedParametersExpander ui:field="numVfsExpander" addStyleNames="{style.expander}" />
+				<g:FlowPanel ui:field="numVfsExpanderContent" addStyleNames="{style.expanderContent}">
+					<ge:IntegerEntityModelTextBoxEditor ui:field="numOfVfs" addStyleNames="{style.numOfVfs}" />
+					<g:ValueLabel ui:field="maxVfsLabel" addStyleNames="{style.maxVfsLabel}" />
+				</g:FlowPanel>
+				<g:Label ui:field="allowedNetworksLabel" addStyleNames="{style.allAllowedLabel}" />
+				<e:ListModelRadioGroupEditor ui:field="allNetworksSelectorEditor" addStyleNames="{style.allAllowedSelector}" />
+				<g:SimplePanel addStyleNames="{style.clear}" />
+				<g:FlowPanel ui:field="allowedNetworksPanel" addStyleNames="{style.allowedNetworksPanel}" >
+					<g:FlowPanel addStyleNames="{style.networksPanel}" >
+						<g:Label ui:field="selectNetworksLabel" addStyleNames="{style.selectNetworksLabel}" />
+						<g:ScrollPanel addStyleNames="{style.networksTableScrollPanel}">
+							<e:EntityModelCellTable ui:field="networks" />
+						</g:ScrollPanel>
+					</g:FlowPanel>
+					<g:SimplePanel addStyleNames="{style.splitter}" />
+					<h:VfsNicLabelWidget ui:field="labelsWidget" addStyleNames="{style.labelWidget}" />
+				</g:FlowPanel>
+			</g:FlowPanel>
+		</d:content>
+	</d:SimpleDialogPanel>
+
+</ui:UiBinder>

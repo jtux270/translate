@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor"
+    xmlns:p="urn:import:org.ovirt.engine.ui.webadmin.widget.errata">
+
+    <g:LayoutPanel>
+        <g:layer top="0px" height="28px">
+            <g:FlowPanel>
+                <p:ErrataFilterPanel ui:field="errataFilterPanel" />
+            </g:FlowPanel>
+        </g:layer>
+        <g:layer top="28px" height="100%">
+            <g:ScrollPanel ui:field="scrollPanel">
+                <e:EntityModelCellTable ui:field="errataTable" />
+            </g:ScrollPanel>
+        </g:layer>
+    </g:LayoutPanel>
+
+</ui:UiBinder>

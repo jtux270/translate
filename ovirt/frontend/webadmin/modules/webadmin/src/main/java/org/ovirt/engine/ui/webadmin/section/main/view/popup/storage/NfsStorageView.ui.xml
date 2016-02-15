@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog"
+             xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor"
+             xmlns:ge="urn:import:org.ovirt.engine.ui.common.widget.editor.generic">
+
+<ui:style type="org.ovirt.engine.ui.webadmin.section.main.view.popup.storage.NfsStorageView.WidgetStyle">
+        .content {
+            margin-top: 40px;
+        }
+
+        .label {
+            color: #333333;
+            margin: 0px 5px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .pathEditorContent {
+            width: 540px;
+            margin-left: 45px;
+        }
+
+        .pathHintLabel {
+            margin: 2px 0px 0px 50px;
+            font-size: 8pt;
+            width: 450px;
+        }
+
+        .errorLabel {
+            color: #CD2127;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        .warningLabel {
+            color: Red;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .expanderContent {
+            margin-left: 15px;
+            display: none;
+        }
+
+    </ui:style>
+
+    <g:VerticalPanel addStyleNames="{style.content}">
+        <g:HTMLPanel>
+            <table>
+                <tr>
+                    <td nowrap="nowrap">
+                        <g:Label ui:field="pathLabel" addStyleNames="{style.label}"/>
+                    </td>
+                    <td>
+                        <ge:StringEntityModelTextBoxOnlyEditor ui:field="pathEditor" addStyleNames="table_contentWidget_pfly_fix"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <g:Label ui:field="pathHintLabel" addStyleNames="{style.pathHintLabel}, generalDialogComment"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <d:AdvancedParametersExpander ui:field="expander"/>
+                    </td>
+                </tr>
+                <table ui:field="expanderContent">
+                    <tr>
+                        <td colspan="2">
+                            <g:Label ui:field="warningLabel" addStyleNames="{style.warningLabel}"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ge:EntityModelCheckBoxEditor ui:field="overrideEditor" addStyleNames="{style.label} table_contentWidget_pfly_fix"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap">
+                            <g:Label ui:field="versionLabel" addStyleNames="{style.label}"/>
+                        </td>
+                        <td>
+                            <e:ListModelListBoxOnlyEditor ui:field="versionEditor"/>
+                            <ge:StringEntityModelTextBoxOnlyEditor ui:field="versionReadOnlyEditor" addStyleNames="table_contentWidget_pfly_fix"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap">
+                            <g:Label ui:field="retransmissionsLabel" addStyleNames="{style.label}"/>
+                        </td>
+                        <td>
+                            <ge:ShortEntityModelTextBoxOnlyEditor ui:field="retransmissionsEditor"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap">
+                            <g:Label ui:field="timeoutLabel" addStyleNames="{style.label}"/>
+                        </td>
+                        <td>
+                            <ge:ShortEntityModelTextBoxOnlyEditor ui:field="timeoutEditor" addStyleNames="table_contentWidget_pfly_fix"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap">
+                            <g:Label ui:field="mountOptionsLabel" addStyleNames="{style.label}"/>
+                        </td>
+                        <td>
+                            <ge:StringEntityModelTextBoxOnlyEditor ui:field="mountOptionsEditor" addStyleNames="table_contentWidget_pfly_fix"/>
+                        </td>
+                    </tr>
+                </table>
+            </table>
+        </g:HTMLPanel>
+        <g:Label ui:field="message" addStyleNames="{style.errorLabel}"/>
+    </g:VerticalPanel>
+
+</ui:UiBinder>

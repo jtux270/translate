@@ -1,0 +1,82 @@
+package org.ovirt.engine.api.restapi.resource;
+
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
+import org.ovirt.engine.api.model.DataCenter;
+import org.ovirt.engine.api.model.DataCenters;
+import org.ovirt.engine.api.model.StorageType;
+import org.ovirt.engine.api.model.SupportedVersions;
+import org.ovirt.engine.api.resource.DataCenterResource;
+import org.ovirt.engine.api.resource.DataCentersResource;
+import org.ovirt.engine.core.common.action.StoragePoolManagementParameter;
+import org.ovirt.engine.core.common.action.VdcActionType;
+import org.ovirt.engine.core.common.businessentities.StoragePool;
+import org.ovirt.engine.core.common.interfaces.SearchType;
+import org.ovirt.engine.core.common.queries.IdQueryParameters;
+import org.ovirt.engine.core.common.queries.VdcQueryParametersBase;
+import org.ovirt.engine.core.common.queries.VdcQueryType;
+import org.ovirt.engine.core.compat.Guid;
+
+public class BackendDataCentersResource extends
+        AbstractBackendCollectionResource<DataCenter, StoragePool> implements DataCentersResource {
+
+    static final String[] SUB_COLLECTIONS =
+            { "storagedomains", "clusters", "networks", "permissions", "quotas", "qoss", "iscsibonds" };
+
+    public BackendDataCentersResource() {
+        super(DataCenter.class, StoragePool.class, SUB_COLLECTIONS);
+    }
+
+    @Override
+    public DataCenters list() {
+        if (isFiltered())
+            return mapCollection(getBackendCollection(VdcQueryType.GetAllStoragePools,
+                    new VdcQueryParametersBase()));
+        else
+            return mapCollection(getBackendCollection(SearchType.StoragePool));
+    }
+
+    @Override
+    public DataCenterResource getDataCenterSubResource(String id) {
+        return inject(new BackendDataCenterResource(id, this));
+    }
+
+    @Override
+    public Response add(DataCenter dataCenter) {
+        validateParameters(dataCenter, "name");
+        validateEnums(DataCenter.class, dataCenter);
+        if (dataCenter.isSetStorageType()) {
+            validateEnum(StorageType.class, dataCenter.getStorageType().toUpperCase());
+        }
+        else if(!dataCenter.isSetLocal()) {
+            validateParameters(dataCenter, "local");
+        }
+        StoragePool entity = map(dataCenter);
+        return performCreate(VdcActionType.AddEmptyStoragePool,
+                               new StoragePoolManagementParameter(entity),
+                               new QueryIdResolver<Guid>(VdcQueryType.GetStoragePoolById, IdQueryParameters.class));
+    }
+
+    private DataCenters mapCollection(List<StoragePool> entities) {
+        DataCenters collection = new DataCenters();
+        for (StoragePool entity : entities) {
+            collection.getDataCenters().add(addLinks(populate(map(entity), entity)));
+        }
+        return collection;
+    }
+
+    @Override
+    protected DataCenter deprecatedPopulate(DataCenter model, StoragePool entity) {
+        IdQueryParameters parameters = new IdQueryParameters(asGuid(model.getId()));
+        model.setSupportedVersions(getMapper(List.class,
+                                             SupportedVersions.class).map(getEntity(List.class,
+                                                                                    VdcQueryType.GetAvailableStoragePoolVersions,
+                                                                                    parameters,
+                                                                                    model.getId()),
+                                                                          null));
+        return model;
+    }
+
+}

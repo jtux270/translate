@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:org.ovirt.engine.ui.common.widget.dialog"
+  xmlns:e="urn:import:org.ovirt.engine.ui.common.widget.editor"
+  xmlns:ge="urn:import:org.ovirt.engine.ui.common.widget.editor.generic">
+
+<ui:style>
+    .innerPanel {
+        padding-left: 30px;
+    }
+</ui:style>
+<d:SimpleDialogPanel height="400px" width="600px">
+    <d:content>
+        <g:VerticalPanel>
+            <g:Label ui:field="dialogLabelEditor"/>
+            <g:Label ui:field="selectLabelEditor"/>
+            <ge:EntityModelRadioButtonEditor ui:field="noCloneEditor"/>
+            <ge:EntityModelRadioButtonEditor ui:field="cloneEditor"/>
+            <g:FlowPanel addStyleNames="{style.innerPanel}">
+                <ge:StringEntityModelTextBoxEditor ui:field="nameEditor" />
+            </g:FlowPanel>
+            <ge:EntityModelCheckBoxEditor ui:field="applyToAllEditor" />
+            <g:FlowPanel addStyleNames="{style.innerPanel}">
+                <ge:StringEntityModelTextBoxEditor ui:field="suffixEditor" />
+            </g:FlowPanel>
+        </g:VerticalPanel>
+    </d:content>
+</d:SimpleDialogPanel>
+</ui:UiBinder>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.1//EN"
+    "http://google-web-toolkit.googlecode.com/svn/tags/2.5.1/distro-source/core/src/gwt-module.dtd">
+<module>
+
+    <!-- Inherit the core Web Toolkit stuff -->
+    <inherits name="com.google.gwt.user.User" />
+    <inherits name="com.google.gwt.inject.Inject" />
+
+    <inherits name="org.gwtbootstrap3.GwtBootstrap3CDN"/>
+    <inherits name="org.gwtbootstrap3.extras.datetimepicker.DateTimePicker"/>
+    <inherits name="com.google.gwt.uibinder.GinUiBinder" />
+
+    <!-- Inherit GWTP MVP module with automatic EntryPoint support -->
+    <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint" />
+
+    <!-- Disable GWTP version checking -->
+    <set-configuration-property name="verifyNewerVersion" value="false"/>
+
+    <!-- Inherit oVirt UiCommon Web modules and GWT deRPC module -->
+    <inherits name="org.ovirt.engine.ui.GwtExtension" />
+    <inherits name="org.ovirt.engine.ui.UICommonWeb" />
+    <inherits name="com.google.gwt.rpc.RPC" />
+
+    <!-- Inherit GWT logging module -->
+    <inherits name="com.google.gwt.logging.Logging" />
+    <set-property name="gwt.logging.enabled" value="TRUE" />
+
+    <!-- Configure default GWT log handlers -->
+    <set-property name="gwt.logging.consoleHandler" value="ENABLED" />
+    <set-property name="gwt.logging.developmentModeHandler" value="ENABLED" />
+    <set-property name="gwt.logging.systemHandler" value="ENABLED" />
+    <set-property name="gwt.logging.firebugHandler" value="DISABLED" />
+    <set-property name="gwt.logging.hasWidgetsHandler" value="DISABLED" />
+    <set-property name="gwt.logging.popupHandler" value="DISABLED" />
+    <set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED" />
+
+    <!-- All source code within this module is translatable -->
+    <source path="">
+        <!-- Except deferred binding classes -->
+        <exclude name="binding/**" />
+    </source>
+
+    <!-- Use custom GWT Editor Driver generator -->
+    <generate-with class="org.ovirt.engine.ui.common.binding.UiCommonEditorDriverGenerator">
+        <when-type-assignable class="com.google.gwt.editor.client.SimpleBeanEditorDriver" />
+    </generate-with>
+
+    <!-- Register IdHandler generator -->
+    <generate-with class="org.ovirt.engine.ui.common.binding.ElementIdHandlerGenerator">
+        <when-type-assignable class="org.ovirt.engine.ui.common.idhandler.ElementIdHandler" />
+    </generate-with>
+
+</module>

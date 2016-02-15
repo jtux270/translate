@@ -1,0 +1,274 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.ovirt.engine.core</groupId>
+    <artifactId>manager-modules</artifactId>
+    <version>3.6.0</version>
+  </parent>
+
+  <artifactId>bll</artifactId>
+  <packaging>ejb</packaging>
+
+  <name>Backend Logic @Service bean</name>
+
+  <properties>
+    <engine.ejb3.connector.port>3873</engine.ejb3.connector.port>
+    <engine.bisocket.connector.port>4457</engine.bisocket.connector.port>
+    <engine.schema>engine</engine.schema>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>compat</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>common</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>aaa</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>extensions-manager</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ovirt.engine.api</groupId>
+      <artifactId>ovirt-engine-extensions-api</artifactId>
+      <version>${org.ovirt.engine.api.ovirt-engine-extensions-api.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ovirt.engine.extensions</groupId>
+      <artifactId>builtin</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>utils</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>dal</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>searchbackend</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>vdsbroker</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>branding</artifactId>
+      <version>${engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>scheduler</artifactId>
+      <version>${engine.version}</version>
+      <scope>provided</scope>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.woorea</groupId>
+      <artifactId>keystone-client</artifactId>
+      <version>${openstack-client.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.woorea</groupId>
+      <artifactId>quantum-client</artifactId>
+      <version>${openstack-client.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.woorea</groupId>
+      <artifactId>resteasy-connector</artifactId>
+      <version>${openstack-client.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec.javax.ejb</groupId>
+      <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.transaction</groupId>
+      <artifactId>jta</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec.javax.interceptor</groupId>
+      <artifactId>jboss-interceptors-api_1.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.xmlrpc</groupId>
+      <artifactId>xmlrpc-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>${engine.groupId}</groupId>
+      <artifactId>utils</artifactId>
+      <version>${engine.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <version>1.6</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- JUL is used as logging backend for tests -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>${hamcrest.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+	      <outputDirectory>${project.build.testOutputDirectory}/deploy/</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>src/test/${engine.db}-resources/</directory>
+                </resource>
+              </resources>
+
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <systemPropertyVariables>
+            <java.util.logging.config.file>src/test/resources/logging.properties</java.util.logging.config.file>
+            <jboss.server.log.dir>${project.build.directory}/logs/engine/</jboss.server.log.dir>
+            <postgres.schema.name>${engine.schema}</postgres.schema.name>
+          </systemPropertyVariables>
+
+         <!-- These environment variables are needed to run the tests
+              using an alternative configuration that disables retries
+              when trying to locate the data source, otherwise each
+              test will have to wait till the timeout expires: -->
+         <environmentVariables>
+           <ENGINE_DEFAULTS>${basedir}/src/test/resources/engine.conf.defaults</ENGINE_DEFAULTS>
+           <ENGINE_VARS>${basedir}/src/test/resources/engine.conf</ENGINE_VARS>
+         </environmentVariables>
+
+          <argLine>-Dengine.ejb3.connector.port=${engine.ejb3.connector.port} -Dengine.bisocket.connector.port=${engine.bisocket.connector.port} -Dsun.lang.ClassLoader.allowArraySyntax=true -Djava.endorsed.dirs="${settings.localRepository}/org/codehaus/woodstox/wstx-asl/3.2.9/"</argLine>
+          <additionalClasspathElements>
+            <additionalClasspathElement>${basedir}/src/test/java</additionalClasspathElement>
+          </additionalClasspathElements>
+          <excludes>
+	    <exclude>**/TestHelper*.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+        <plugin>
+          <artifactId>maven-ejb-plugin</artifactId>
+          <configuration>
+            <ejbVersion>3.1</ejbVersion>
+            <generateClient>true</generateClient>
+            <archive>
+              <manifest>
+                <addClasspath>false</addClasspath>
+              </manifest>
+              <manifestEntries>
+                <Dependencies>org.slf4j, javax.interceptor.api, javax.ejb.api, sun.jdk</Dependencies>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+        <id>findbugs</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>${findbugs.version}</version>
+                    <configuration>
+                        <xmlOutput>true</xmlOutput>
+                        <!-- Optional directory to put findbugs xdoc xml report -->
+                        <excludeFilterFile> ${basedir}/exclude-filters.xml</excludeFilterFile>
+                        <xmlOutputDirectory>target/site</xmlOutputDirectory>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+
+    <profile>
+        <id>findbugs-general</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>${findbugs.version}</version>
+                    <configuration>
+                        <xmlOutput>true</xmlOutput>
+                        <!-- Optional directory to put findbugs xdoc xml report -->
+                        <excludeFilterFile> ${basedir}/exclude-filters.xml, ${basedir}/../../../../exclude-filters-general.xml</excludeFilterFile>
+                        <xmlOutputDirectory>target/site</xmlOutputDirectory>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+  </profiles>
+</project>

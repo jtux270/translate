@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:ge="urn:import:org.ovirt.engine.ui.common.widget.editor.generic">
+            <ui:with field='resources' type='org.ovirt.engine.ui.webadmin.ApplicationResources' />
+	<ui:style type="org.ovirt.engine.ui.webadmin.section.main.view.popup.storage.PosixStorageView.WidgetStyle">
+		.content {
+			margin-top: 40px;
+		}
+
+        .label {
+            color: #333333;
+            margin: 0 5px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .pathEditorContent {
+            width: 540px;
+            margin-left: 87px;
+        }
+
+        .pathExampleLabel {
+            margin: 0 0 0 125px;
+            font-size: 8pt;
+            width: 450px;
+        }
+
+		.errorLabel {
+			color: #CD2127;
+			margin-top: 20px;
+			margin-left: 5px;
+		}
+
+        .vfsTypeTextBoxEditor {
+            width: 270px;
+            margin-left: 57px;
+        }
+
+        .mountOptionsTextBoxEditor {
+            width: 270px;
+            margin-left: 29px;
+        }
+
+	</ui:style>
+
+    <g:VerticalPanel addStyleNames="{style.content}">
+        <ge:StringEntityModelTextBoxEditor ui:field="pathEditor"/>
+        <g:Label ui:field="pathExampleLabel" addStyleNames="{style.pathExampleLabel}, generalDialogComment"/>
+        <g:HorizontalPanel>
+            <ge:StringEntityModelTextBoxEditor ui:field="vfsTypeEditor"/>
+            <g:Image ui:field="nfsPosixAlertIcon" resource='{resources.alertImage}' visible="false"/>
+        </g:HorizontalPanel>
+        <g:HorizontalPanel>
+            <ge:StringEntityModelTextBoxEditor ui:field="mountOptionsEditor"/>
+        </g:HorizontalPanel>
+    </g:VerticalPanel>
+
+</ui:UiBinder>
