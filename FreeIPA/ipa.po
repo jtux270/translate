@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-02-16 02:28+0000\n"
+"PO-Revision-Date: 2016-02-16 20:57+0000\n"
 "Last-Translator: jdronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "ru/)\n"
@@ -269,7 +269,7 @@ msgstr "Субъект-служба должна иметь форму: служ
 #: ipalib/errors.py:937
 msgid ""
 "The realm for the principal does not match the realm for this IPA server"
-msgstr "Область принципала не совпадает с областью этого сервера IPA"
+msgstr "Область принципала не соответствует области этого сервера IPA"
 
 #: ipalib/errors.py:953
 msgid "This command requires root access"
@@ -647,9 +647,8 @@ msgid ""
 "by a missing dot at the end of the name specification."
 msgstr ""
 "Название относительной записи «%(record)s» содержит имя зоны «%(zone)s» "
-"в качестве суффикса, что составляет полное доменное имя «%(fqdn)s». Эта "
-"ошибка "
-"обычно происходит из-за отсутствия точки в конце определения имени."
+"в качестве суффикса, что даёт полное доменное имя «%(fqdn)s». Эта "
+"ошибка обычно происходит из-за отсутствия точки в конце определения имени."
 
 #: ipalib/messages.py:321
 #, python-format
@@ -744,7 +743,7 @@ msgstr ""
 #: ipalib/parameters.py:1321
 #, python-format
 msgid "must match pattern \"%(pattern)s\""
-msgstr "должно совпадать с шаблоном «%(pattern)s»"
+msgstr "должно соответствовать шаблону «%(pattern)s»"
 
 #: ipalib/parameters.py:1339
 msgid "must be binary data"
@@ -809,7 +808,7 @@ msgstr "должно быть значением datetime"
 
 #: ipalib/parameters.py:1669
 msgid "does not match any of accepted formats: "
-msgstr "не совпадает ни с одним из принятых значений: "
+msgstr "не соответствует ни одному из принятых форматов: "
 
 #: ipalib/parameters.py:1854
 msgid "incomplete time value"
@@ -1084,8 +1083,8 @@ msgstr ""
 "\n"
 "Условие (condition) — это регулярное выражение, используемое сервером 389-ds\n"
 "для проверки соответствия новой входящей записи правилу автоматического\n"
-"членства. Если запись подходит под правило включения, то она добавляется в\n"
-"соответствующую группу или в группу хостов.\n"
+"членства. Если запись соответствует правилу включения, то она добавляется в\n"
+"подходящую группу или группу хостов.\n"
 
 #: ipalib/plugins/automember.py:47
 msgid ""
@@ -1097,7 +1096,7 @@ msgstr ""
 "\n"
 "Для записей, не соответствующих ни одному правилу, можно указать "
 "группу/группу\n"
-"хостов по умолчанию. В случае записей пользователя эта группа будет "
+"хостов по умолчанию. В случае записей пользователя, эта группа будет "
 "резервной, т.к. все\n"
 "пользователя являются по умолчанию членами группы, указанной в "
 "конфигурационном\n"
@@ -1379,7 +1378,6 @@ msgid "Attribute Key"
 msgstr "Ключ атрибута"
 
 #: ipalib/plugins/automember.py:160
-#, fuzzy
 msgid ""
 "Attribute to filter via regex. For example fqdn for a host, or manager for a "
 "user"
@@ -1596,7 +1594,6 @@ msgstr ""
 "    "
 
 #: ipalib/plugins/automember.py:565
-#, fuzzy
 msgid ""
 "\n"
 "    Set default (fallback) group for all unmatched entries.\n"
@@ -1604,7 +1601,7 @@ msgid ""
 msgstr ""
 "\n"
 "    Назначить стандартную (резервную) группу для всех несоответствующих "
-"элементов .\n"
+"записей .\n"
 "    "
 
 #: ipalib/plugins/automember.py:573
@@ -1619,7 +1616,6 @@ msgstr ""
 "(value)s»"
 
 #: ipalib/plugins/automember.py:593
-#, fuzzy
 msgid ""
 "\n"
 "    Remove default (fallback) group for all unmatched entries.\n"
@@ -1627,7 +1623,7 @@ msgid ""
 msgstr ""
 "\n"
 "    Удалить стандартную (резервную) группу для всех несоответствующих "
-"элементов.\n"
+"записей.\n"
 "    "
 
 #: ipalib/plugins/automember.py:598
@@ -2219,7 +2215,8 @@ msgstr ""
 #, fuzzy
 msgid "mount point is relative to parent map, cannot begin with /"
 msgstr ""
-"точка монтирования определяется относительно родительской схемы монтирования, "
+"точка монтирования является относительной для родительской схемы "
+"монтирования, "
 "и не может начинаться с «/»"
 
 #: ipalib/plugins/automount.py:948
@@ -3025,9 +3022,9 @@ msgstr "Поиск по CA ACLs."
 #, python-format
 msgid "%(count)d CA ACL matched"
 msgid_plural "%(count)d CA ACLs matched"
-msgstr[0] "%(count)d CA ACL найдено"
-msgstr[1] "%(count)d CA ACLs совпадений"
-msgstr[2] ""
+msgstr[0] "найдено %(count)d CA ACL"
+msgstr[1] "найдено %(count)d CA ACL"
+msgstr[2] "найдено %(count)d CA ACL"
 
 #: ipalib/plugins/caacl.py:369
 msgid "Display the properties of a CA ACL."
@@ -3186,6 +3183,7 @@ msgid "%i profiles removed."
 msgstr "%i профили удалены."
 
 #: ipalib/plugins/cert.py:54
+#, fuzzy
 msgid ""
 "\n"
 "IPA certificate operations\n"
@@ -3268,6 +3266,90 @@ msgid ""
 "http://www.ietf.org/rfc/rfc5280.txt\n"
 "\n"
 msgstr ""
+"\n"
+"Операции с сертификатами IPA\n"
+"\n"
+"Представляет собой набор команд для управления SSL сертификатами сервера.\n"
+"\n"
+"Запрос на сертификат представляет собой запрос подписи сертификата (CSR)\n"
+"в формате PEM.\n"
+"\n"
+"Центр сертификации DogTag  использует только значение CN и принудительно "
+"устанавливает остальные значения субъекта\n"
+"равным значениям, существующим на сервере.\n"
+"\n"
+"Сертификат хранится с принципалом службы, а принципалу службы\n"
+"требуется хост.\n"
+"\n"
+"Условия запроса сертификата:\n"
+"\n"
+"* Должен существовать хост\n"
+"* Должна существовать служба (или используйте параметр «--add» для "
+"автоматического её добавления)\n"
+"\n"
+"ПОИСК:\n"
+"\n"
+"Сертификаты можно искать по любому субъекту сертификата, по серийному "
+"номеру,\n"
+"причине отзыва, датам срока действия и дате выпуска.\n"
+"\n"
+"Во время поиска по датам, условие _от даты выполняет поиск >=, а  _до даты\n"
+"выполняет поиск <= В комбинированном поиске условия считаются как «И».\n"
+"\n"
+"Даты считаются по GMT, для совпадения с датами в сертификатах.\n"
+"\n"
+"Формат даты: ГГГГ-мм-дд.\n"
+"\n"
+"ПРИМЕРЫ:\n"
+"\n"
+" Запросить новый сертификат и добавить принципал:\n"
+"   ipa cert-request --add --principal=HTTP/lion.example.com example.csr\n"
+"\n"
+" Получить существующий сертификат:\n"
+"   ipa cert-show 1032\n"
+"\n"
+" Отозвать сертификат (причины отзыва см. в RFC 5280):\n"
+"   ipa cert-revoke --revocation-reason=6 1032\n"
+"\n"
+" Удалить сертификат из состояния удержания отзыва:\n"
+"   ipa cert-remove-hold 1032\n"
+"\n"
+" Проверить статус запроса подписи:\n"
+"   ipa cert-status 10\n"
+"\n"
+" Поиск сертификата по имени хоста:\n"
+"   ipa cert-find --subject=ipaserver.example.com\n"
+"\n"
+" Писк отозванных сертификатов по причине отзыва:\n"
+"   ipa cert-find --revocation-reason=5\n"
+"\n"
+" Поиск сертификатов по дате выдачи:\n"
+"   ipa cert-find --issuedon-from=2013-02-01 --issuedon-to=2013-02-07\n"
+"\n"
+"В настоящее время IPA выдаёт сертификаты по запросу (или отвергает запрос) "
+"немедленно,\n"
+"поэтому поиск по статусу запроса обычно не бывает полезен. Он предназначен "
+"для использования в будущем,\n"
+"или для тех случаев, когда ЦС выдаёт сертификат не сразу.\n"
+"\n"
+"Поддерживаются следующие причины отзыва:\n"
+"\n"
+"    * 0 - unspecified\n"
+"    * 1 - keyCompromise\n"
+"    * 2 - cACompromise\n"
+"    * 3 - affiliationChanged\n"
+"    * 4 - superseded\n"
+"    * 5 - cessationOfOperation\n"
+"    * 6 - certificateHold\n"
+"    * 8 - removeFromCRL\n"
+"    * 9 - privilegeWithdrawn\n"
+"    * 10 - aACompromise\n"
+"\n"
+"Значение «7» не используется, подробности см. в RFC 5280:\n"
+"\n"
+"http://www.ietf.org/rfc/rfc5280.txt (англ.), http://rfc2.ru/5280.rfc/print "
+"(рус.)\n"
+"\n"
 
 #: ipalib/plugins/cert.py:164 ipalib/plugins/cert.py:375
 #, python-format
@@ -3373,14 +3455,17 @@ msgid ""
 "hostname in subject of request '%(cn)s' does not match principal hostname "
 "'%(hostname)s'"
 msgstr ""
+"имя хоста в субъекте запроса «%(cn)s» не соответствует имени хоста "
+"принципала «%(hostname)s»"
 
 #: ipalib/plugins/cert.py:419
 msgid "DN commonName does not match user's login"
-msgstr "DN commonName не совпадает с именем пользователя"
+msgstr "Отличительное имя commonName не совпадает с именем пользователя"
 
 #: ipalib/plugins/cert.py:428
 msgid "DN emailAddress does not match any of user's email addresses"
-msgstr "DN emailAddress не совпадает ни с одним адресом пользователей"
+msgstr ""
+"Отличительное имя emailAddress не совпадает ни с одним адресом пользователей"
 
 #: ipalib/plugins/cert.py:434
 #, python-format
@@ -3411,10 +3496,13 @@ msgstr ""
 #, python-format
 msgid "Principal '%s' in subject alt name does not match requested principal"
 msgstr ""
+"Принципал «%s» в альтернативном имени субъекта не совпадает с запрошенным "
+"принципалом"
 
 #: ipalib/plugins/cert.py:485
 msgid "RFC822Name does not match any of user's email addresses"
-msgstr "RFC822 Имя не совпадает ни с одним пользователем электронной почты"
+msgstr ""
+"RFC822Name не соответствует ни одному из почтовых адресов пользователей"
 
 #: ipalib/plugins/cert.py:491
 #, python-format
@@ -3506,7 +3594,7 @@ msgstr "Максимальный серийный номер"
 
 #: ipalib/plugins/cert.py:755
 msgid "match the common name exactly"
-msgstr ""
+msgstr "точно соответствовать обычному имени"
 
 #: ipalib/plugins/cert.py:759
 msgid "Valid not after from this date (YYYY-mm-dd)"
@@ -3554,9 +3642,9 @@ msgstr ""
 #, python-format
 msgid "%(count)d certificate matched"
 msgid_plural "%(count)d certificates matched"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Найден %(count)d сертификат"
+msgstr[1] "Найдено %(count)d сертификата"
+msgstr[2] "Найдено %(count)d сертификатов"
 
 #: ipalib/plugins/certprofile.py:24
 msgid ""
@@ -3615,6 +3703,63 @@ msgid ""
 "  class must be used.\n"
 "\n"
 msgstr ""
+"\n"
+"Управление профилями сертификатов\n"
+"\n"
+"Профили сертификатов используются ЦС во время подписи\n"
+"сертификатов для определения, можно ли принять запрос подписи сертификата,\n"
+"и если да, то какие параметры и расширения будут присутствовать в "
+"сертификате.\n"
+"\n"
+"Формат профиля сертификата — это список свойств, понимаемых центрами "
+"сертификации\n"
+"Dogtag или Red Hat Certificate System.\n"
+"\n"
+"СИНТАКСИС ИДЕНТИФИКАТОРА ПРОФИЛЯ:\n"
+"\n"
+"Идентификатор профиля — это строка без пробелов или знаков препинания, "
+"начинающаяся с буквы «a»,\n"
+"после которой следует последовательность букв, цифр или знаков подчёркивания "
+"(«_»).\n"
+"\n"
+"ПРИМЕРЫ:\n"
+"\n"
+"  Импорт профиля, который не будет хранить выданные сертификаты:\n"
+"    ipa certprofile-import ShortLivedUserCert \\\n"
+"      --file UserCert.profile --desc \"User Certificates\" \\\n"
+"      --store=false\n"
+"\n"
+"  Удалить профиль сертификата:\n"
+"    ipa certprofile-del ShortLivedUserCert\n"
+"\n"
+"  Вывести информацию о профиле:\n"
+"    ipa certprofile-show ShortLivedUserCert\n"
+"\n"
+"  Сохранить параметры профиля в файл:\n"
+"    ipa certprofile-show caIPAserviceCert --out caIPAserviceCert.cfg\n"
+"\n"
+"  Поиск профилей, не хранящих сертификаты:\n"
+"    ipa certprofile-find --store=false\n"
+"\n"
+"ФОРМАТ ПАРАМЕТРОВ ПРОФИЛЯ:\n"
+"\n"
+"Формат параметров профиля представляет собой необработанный формат списка "
+"параметров,\n"
+"используемый системой сертификации Dogtag.  Формат XML не поддерживается.\n"
+"\n"
+"Следующие ограничения применяются к профилям, управляемым FreeIPA:\n"
+"\n"
+"— При импорте профиля, значение поле «profileId», в случае его присутствия, "
+"должно совпадать\n"
+"  с идентификатором, указанным в командной строке.\n"
+"\n"
+"— Значение поля «classId» должно быть равно «caEnrollImpl»\n"
+"\n"
+"— Значение поля «auth.instance_id» должно быть равно «raCertAuth»\n"
+"\n"
+"— Должны использоваться входной класс «certReqInputImpl» и выходной\n"
+"  класс «certOutputImpl».\n"
+"\n"
 
 #: ipalib/plugins/certprofile.py:98
 msgid "invalid Profile ID"
@@ -3656,9 +3801,9 @@ msgstr ""
 #, python-format
 msgid "%(count)d profile matched"
 msgid_plural "%(count)d profiles matched"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Найден %(count)d профиль"
+msgstr[1] "Найдено %(count)d профиля"
+msgstr[2] "Найдено %(count)d профилей"
 
 #: ipalib/plugins/certprofile.py:199
 msgid "Display the properties of a Certificate Profile."
@@ -3694,6 +3839,8 @@ msgstr ""
 #, python-format
 msgid "Profile ID '%(cli_value)s' does not match profile data '%(file_value)s'"
 msgstr ""
+"Идентификатор профиля «%(cli_value)s» не соответствует данным профиля «%"
+"(file_value)s»"
 
 #: ipalib/plugins/certprofile.py:288
 msgid "Delete a Certificate Profile."
@@ -3900,8 +4047,11 @@ msgid "Default SELinux user"
 msgstr ""
 
 #: ipalib/plugins/config.py:213
+#, fuzzy
 msgid "Default SELinux user when no match is found in SELinux map rule"
 msgstr ""
+"Пользователь SELinux по умолчанию, если в правиле сопоставления SELinux "
+"отсутствует соответствие"
 
 #: ipalib/plugins/config.py:217
 msgid "Default PAC types"
@@ -4060,9 +4210,9 @@ msgstr ""
 #, python-format
 msgid "%(count)d delegation matched"
 msgid_plural "%(count)d delegations matched"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Найдено %(count)d делегирование"
+msgstr[1] "Найдено %(count)d делегирования"
+msgstr[2] "Найдено %(count)d делегирований"
 
 #: ipalib/plugins/delegation.py:218
 msgid "Display information about a delegation."
@@ -4745,7 +4895,7 @@ msgstr ""
 #: ipalib/plugins/dns.py:1081 ipalib/plugins/dns.py:1406
 #: ipalib/plugins/internal.py:613
 msgid "Target"
-msgstr ""
+msgstr "Целевой объект"
 
 #: ipalib/plugins/dns.py:1101
 msgid "Digest Type"
@@ -4890,6 +5040,8 @@ msgid ""
 "The domain name of the target host or '.' if the service is decidedly not "
 "available at this domain"
 msgstr ""
+"Доменное имя целевого хоста, или «.», если служба точно недоступна "
+"в этом домене"
 
 #: ipalib/plugins/dns.py:1416
 msgid "the value does not follow \"YYYYMMDDHHMMSS\" time format"
@@ -6966,11 +7118,10 @@ msgstr ""
 "аргумент «--enabled»"
 
 #: ipalib/plugins/hbactest.py:281
-#, fuzzy
 msgid "Hide details which rules are matched, not matched, or invalid"
 msgstr ""
-"Спрятать подробности о том, какие правила соответствуют, не соответствуют или "
-"являются недопустимыми"
+"Спрятать подробности о соответствующих, несоответствующих или "
+"недопустимых правилах"
 
 #: ipalib/plugins/hbactest.py:285
 msgid "Include all enabled IPA rules into test [default]"
@@ -9658,7 +9809,7 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:456
 msgid "Target reverse zone not found."
-msgstr ""
+msgstr "Целевая обратная зона не найдена"
 
 #: ipalib/plugins/internal.py:457
 msgid "Fetching DNS zones."
@@ -9789,7 +9940,7 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:512
 msgid "Matched"
-msgstr ""
+msgstr "Соответствует"
 
 #: ipalib/plugins/internal.py:513
 msgid "Missing values: "
@@ -9814,7 +9965,7 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:518
 msgid "Unmatched"
-msgstr ""
+msgstr "Не соответствует"
 
 #: ipalib/plugins/internal.py:521
 msgid "Host Certificate"
@@ -10497,7 +10648,7 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:779
 msgid "Passwords must match"
-msgstr ""
+msgstr "Пароли должны совпадать"
 
 #: ipalib/plugins/internal.py:780
 msgid "Password reset was not successful."
@@ -10666,8 +10817,9 @@ msgid "Undo All"
 msgstr ""
 
 #: ipalib/plugins/internal.py:836
+#, fuzzy
 msgid "Text does not match field pattern"
-msgstr ""
+msgstr "Текст не соответствует шаблону поля"
 
 #: ipalib/plugins/internal.py:837
 msgid "Must be an UTC date/time value (e.g., \"2014-01-20 17:58:01Z\")"
@@ -12168,12 +12320,12 @@ msgid ""
 "to\n"
 msgstr ""
 "\n"
-"Существует несколько разрешённых объектов:\n"
+"Существует несколько разрешённых целевых объектов:\n"
 "1. Поддерево: различающееся имя; полномочия применяются к поддереву этого "
 "имени\n"
-"2. Фильтр объекта (target filter): фильтр LDAP\n"
-"3. Объект (target): DN с возможными подстановочными знаками, указывает "
-"записи, к которым "
+"2. Фильтр целевого объекта: фильтр LDAP\n"
+"3. Целевой объект: DN с возможными подстановочными знаками, указывает записи, "
+"к которым "
 "применяются полномочия\n"
 
 #: ipalib/plugins/permission.py:80
@@ -12191,12 +12343,13 @@ msgstr ""
 "\n"
 "Кроме того, существуют следующие удобные параметры.\n"
 "Установка одного из этих параметров установит соответствующие атрибуты.\n"
-"1. type: тип объекта (пользователь, группа и т.д.); sets subtree and target "
-"filter."
+"1. type: тип объекта (пользователь, группа и т.д.); устанавливает поддерево и "
+"целевой фильтр."
 "\n"
-"2. memberof: apply to members of a group; sets target filter\n"
-"3. targetgroup: grant access to modify a specific group (such as granting\n"
-"   the rights to manage group membership); sets target.\n"
+"2. memberof: применить к членам группы; устанавливает целевой фильтр\n"
+"3. targetgroup: разрешает доступ на изменение указанной  группы (напр., "
+"права\n"
+"   для управления членством в группе); устанавливать.\n"
 
 #: ipalib/plugins/permission.py:87
 msgid ""
@@ -12230,7 +12383,7 @@ msgid ""
 msgstr ""
 "\n"
 "Удаление и переименование управляемых полномочий, а также изменение их "
-"объекта,\n"
+"целевого объекта\n"
 "не разрешается.\n"
 
 #: ipalib/plugins/permission.py:98
@@ -12333,38 +12486,42 @@ msgid "Subtree to apply permissions to"
 msgstr "Поддерево, к которому применить полномочия"
 
 #: ipalib/plugins/permission.py:291 ipalib/plugins/permission.py:292
+#, fuzzy
 msgid "Extra target filter"
-msgstr ""
+msgstr "Дополнительный целевой фильтр"
 
 #: ipalib/plugins/permission.py:298
 msgid "Raw target filter"
 msgstr ""
 
 #: ipalib/plugins/permission.py:299
+#, fuzzy
 msgid "All target filters, including those implied by type and memberof"
-msgstr ""
+msgstr "Все целевые фильтры, включая подразумевающиеся по типу и memberof"
 
 #: ipalib/plugins/permission.py:306
 msgid "Target DN"
-msgstr ""
+msgstr "Целевой DN"
 
 #: ipalib/plugins/permission.py:307
 msgid ""
 "Optional DN to apply the permission to (must be in the subtree, but may not "
 "yet exist)"
 msgstr ""
-"Необязательно: DN, к которому нужно применить полномочия "
+"Опционально: DN, к которому нужно применить полномочия "
 "(должно находиться в поддереве, но может ещё не существовать)"
 
 #: ipalib/plugins/permission.py:314
 msgid "Target DN subtree"
-msgstr ""
+msgstr "Поддерево целевого DN"
 
 #: ipalib/plugins/permission.py:315
 msgid ""
 "Optional DN subtree where an entry can be moved to (must be in the subtree, "
 "but may not yet exist)"
 msgstr ""
+"Опционально: поддерево DN, куда можно переместить запись (должно находиться "
+"в поддереве, но может ещё не существовать)"
 
 #: ipalib/plugins/permission.py:322
 msgid "Origin DN subtree"
@@ -12382,15 +12539,17 @@ msgstr ""
 
 #: ipalib/plugins/permission.py:329
 msgid "Target members of a group (sets memberOf targetfilter)"
-msgstr ""
+msgstr "Целевые члены группы (устанавливает целевой фильтр memberOf)"
 
 #: ipalib/plugins/permission.py:334
 msgid "User group to apply permissions to (sets target)"
-msgstr "Группа пользователей, к которой применить полномочия"
+msgstr ""
+"Группа пользователей, к которой применить полномочия (устанавливает "
+"целевые объекты)"
 
 #: ipalib/plugins/permission.py:340
 msgid "Type of IPA object (sets subtree and objectClass targetfilter)"
-msgstr ""
+msgstr "Тип объекта IPA (устанавливает целевой фильтр objectClass)"
 
 #: ipalib/plugins/permission.py:346
 #, python-format
@@ -12417,9 +12576,10 @@ msgid "The ACI for permission %(name)s was not found in %(dn)s "
 msgstr "Информация ACI для полномочий %(name)s не была найдена в %(dn)s "
 
 #: ipalib/plugins/permission.py:804
+#, fuzzy
 msgid ""
 "cannot specify full target filter and extra target filter simultaneously"
-msgstr ""
+msgstr "нельзя одновременно указать полный  целевой фильтр и дополнительный"
 
 #: ipalib/plugins/permission.py:827
 #, python-format
@@ -12437,8 +12597,9 @@ msgid "%s: group not found"
 msgstr ""
 
 #: ipalib/plugins/permission.py:855
+#, fuzzy
 msgid "target and targetgroup are mutually exclusive"
-msgstr ""
+msgstr "целевой объект и целевая группа являются взаимоисключающими"
 
 #: ipalib/plugins/permission.py:876
 msgid "subtree and type are mutually exclusive"
@@ -12481,9 +12642,9 @@ msgid "attrs and included attributes are mutually exclusive"
 msgstr ""
 
 #: ipalib/plugins/permission.py:1032
-#, fuzzy, python-format
+#, python-format
 msgid "Cannot store permission ACI to %s"
-msgstr "Невозможно сохранить в %s информацию ACI о полномочиях"
+msgstr "Невозможно сохранить ACI полномочий в %s"
 
 #: ipalib/plugins/permission.py:1041
 msgid "Delete a permission."
@@ -12523,7 +12684,7 @@ msgstr "нельзя переименовать управляемые полн�
 #: ipalib/plugins/permission.py:1119 ipalib/plugins/permission.py:1123
 #, fuzzy
 msgid "not modifiable on managed permissions"
-msgstr "не модифицируемо для управляемых полномочий"
+msgstr "неизменяемо для управляемых полномочий"
 
 #: ipalib/plugins/permission.py:1130
 msgid "only available on managed permissions"
@@ -12534,7 +12695,6 @@ msgid "attrs and included/excluded attributes are mutually exclusive"
 msgstr ""
 
 #: ipalib/plugins/permission.py:1148
-#, fuzzy
 msgid "cannot set bindtype for a permission that is assigned to a privilege"
 msgstr "невозможно установить bindtype для полномочий, присвоенных привилегии"
 
@@ -14205,9 +14365,9 @@ msgstr "Поиск служб IPA"
 #, python-format
 msgid "%(count)d service matched"
 msgid_plural "%(count)d services matched"
-msgstr[0] "найдена %(count)d служба"
-msgstr[1] "найдено %(count)d службы"
-msgstr[2] "найдено %(count)d служб"
+msgstr[0] "Найдена %(count)d служба"
+msgstr[1] "Найдено %(count)d службы"
+msgstr[2] "Найдено %(count)d служб"
 
 #: ipalib/plugins/service.py:694
 msgid "Display information about an IPA service."
@@ -14406,9 +14566,8 @@ msgstr ""
 "делегирования, что в итоге приведёт к остановке работы фреймворка.\n"
 
 #: ipalib/plugins/servicedelegation.py:93
-#, fuzzy
 msgid "Allowed Target"
-msgstr "Разрешённый таргет"
+msgstr "Разрешённый целевой объект"
 
 #: ipalib/plugins/servicedelegation.py:97
 #, fuzzy
@@ -14421,12 +14580,11 @@ msgstr ""
 
 #: ipalib/plugins/servicedelegation.py:109
 msgid "Failed targets"
-msgstr "Сбойные таргеты"
+msgstr "Целевые объекты с ошибками"
 
 #: ipalib/plugins/servicedelegation.py:173
-#, fuzzy
 msgid "Add target to a named service delegation."
-msgstr "Добавить таргет для делегирования указанной службы"
+msgstr "Добавить целевой объект для делегирования указанной службы"
 
 #: ipalib/plugins/servicedelegation.py:254
 #, fuzzy
@@ -14498,74 +14656,74 @@ msgstr "Удалить члена из правила делегирования
 
 #: ipalib/plugins/servicedelegation.py:425
 msgid "Add target to a named service delegation rule."
-msgstr "Добавить таргет в указанное правило делегирования службы"
+msgstr "Добавить целевой объект в указанное правило делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:436
 msgid "Remove target from a named service delegation rule."
-msgstr "Удалить таргет из указанного правила делегирования службы"
+msgstr "Удалить целевой объект из указанного правила делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:446
 #: ipalib/plugins/servicedelegation.py:475
 msgid "service delegation target"
-msgstr "таргет делегирования службы"
+msgstr "целевой объект делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:447
 msgid "service delegation targets"
-msgstr "таргеты делегирования службы"
+msgstr "целевые объекты делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:454
 msgid "Service delegation targets"
-msgstr "Таргеты делегирования службы"
+msgstr "Целевые объекты делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:455
 msgid "Service delegation target"
-msgstr "Таргет делегирования службы"
+msgstr "Целевой объект делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:460
 msgid "Create a new service delegation target."
-msgstr "Создать новый таргет делегирования службы"
+msgstr "Создать новый целевой объект делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:462
 #, python-format
 msgid "Added service delegation target \"%(value)s\""
-msgstr "Добавлен таргет делегирования службы «%(value)s»"
+msgstr "Добавлен целевой объект делегирования службы «%(value)s»"
 
 #: ipalib/plugins/servicedelegation.py:467
 msgid "Delete service delegation target."
-msgstr "Удалить таргет делегирования службы"
+msgstr "Удалить целевой объект делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:469
 #, python-format
 msgid "Deleted service delegation target \"%(value)s\""
-msgstr "Таргет делегирования службы «(value)s» удалён"
+msgstr "Целевой объект делегирования службы «(value)s» удалён"
 
 #: ipalib/plugins/servicedelegation.py:477
 msgid "privileged service delegation target"
-msgstr "таргет делегирования привилегированной службы"
+msgstr "целевой объект делегирования привилегированной службы"
 
 #: ipalib/plugins/servicedelegation.py:484
 msgid "Search for service delegation target."
-msgstr "Поиск таргета делегирования службы"
+msgstr "Поиск целевого объекта делегирования службы."
 
 #: ipalib/plugins/servicedelegation.py:489
 #, python-format
 msgid "%(count)d service delegation target matched"
 msgid_plural "%(count)d service delegation targets matched"
-msgstr[0] "Найден %(count)d таргет делегирования службы"
-msgstr[1] "Найдено %(count)d таргета делегирования службы"
-msgstr[2] "Найдено %(count)d таргетов делегирования службы"
+msgstr[0] "Найден %(count)d целевой объект делегирования службы"
+msgstr[1] "Найдено %(count)d целевых объекта делегирования службы"
+msgstr[2] "Найдено %(count)d целевых объектов делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:523
 msgid "Display information about a named service delegation target."
-msgstr "Вывести информацию об указанном таргете делегирования службы"
+msgstr "Вывести информацию об указанном целевом объекте делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:530
 msgid "Add member to a named service delegation target."
-msgstr "Добавить членов в указанный таргет делегирования службы"
+msgstr "Добавить членов в указанный целевой объект делегирования службы"
 
 #: ipalib/plugins/servicedelegation.py:539
 msgid "Remove member from a named service delegation target."
-msgstr "Удалить членов из указанного таргета делегирования служб"
+msgstr "Удалить членов из указанного целевого объекта делегирования служб."
 
 #: ipalib/plugins/stageuser.py:53
 #, fuzzy
