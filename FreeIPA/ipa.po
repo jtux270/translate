@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-02-19 16:35+0000\n"
+"PO-Revision-Date: 2016-02-24 21:31+0000\n"
 "Last-Translator: jdronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "ru/)\n"
@@ -82,13 +82,14 @@ msgid "No file to read"
 msgstr "Отсутствует файл для чтения"
 
 #: ipalib/crud.py:247
+#, fuzzy
 msgid "A string searched in all relevant object attributes"
-msgstr ""
+msgstr "Поиск строки во всех релевантных атрибутах объекта"
 
 #: ipalib/errors.py:281
 #, python-format
 msgid "%(cver)s client incompatible with %(sver)s server at '%(server)s'"
-msgstr ""
+msgstr "Клиент %(cver)s несовместим с сервером %(sver)s на «%(server)s»"
 
 #: ipalib/errors.py:299
 #, python-format
@@ -384,7 +385,7 @@ msgstr "изменение конфликтует с другим изменен
 
 #: ipalib/errors.py:1436
 msgid "no modifications to be performed"
-msgstr ""
+msgstr "отсутствуют изменения для выполнения"
 
 #: ipalib/errors.py:1452
 #, python-format
@@ -986,8 +987,9 @@ msgid "Group to apply ACI to"
 msgstr "Группа для применения ACI"
 
 #: ipalib/plugins/aci.py:506
+#, fuzzy
 msgid "Target your own entry (self)"
-msgstr ""
+msgstr "назначить целью собственную запись (self)"
 
 #: ipalib/plugins/aci.py:507
 #, fuzzy
@@ -1045,6 +1047,8 @@ msgid ""
 "\n"
 "Auto Membership Rule.\n"
 msgstr ""
+"\n"
+"Правило автоматического членства.\n"
 
 #: ipalib/plugins/automember.py:36
 msgid ""
@@ -2116,7 +2120,7 @@ msgstr "Показать схему монтирования automount"
 
 #: ipalib/plugins/automount.py:689
 msgid "Automount key object."
-msgstr ""
+msgstr "Объект ключа automount."
 
 #: ipalib/plugins/automount.py:693
 msgid "automount key"
@@ -2139,7 +2143,7 @@ msgstr "Название ключа automount"
 #: ipalib/plugins/automount.py:712 ipalib/plugins/automount.py:960
 #: ipalib/plugins/automount.py:1067
 msgid "Mount information"
-msgstr ""
+msgstr "Информация о монтировании"
 
 #: ipalib/plugins/automount.py:715
 msgid "description"
@@ -2240,7 +2244,7 @@ msgstr "Ключ automount «%(value)s» изменён"
 
 #: ipalib/plugins/automount.py:998
 msgid "New mount information"
-msgstr ""
+msgstr "Информация о новом монтировании"
 
 #: ipalib/plugins/automount.py:1047
 msgid "Search for an automount key."
@@ -2280,19 +2284,19 @@ msgstr "Группы-участники"
 
 #: ipalib/plugins/baseldap.py:60
 msgid "Member of groups"
-msgstr ""
+msgstr "Участник групп"
 
 #: ipalib/plugins/baseldap.py:63
 msgid "Member hosts"
-msgstr ""
+msgstr "Хосты-участники"
 
 #: ipalib/plugins/baseldap.py:66
 msgid "Member host-groups"
-msgstr ""
+msgstr "Группы хостов-участники"
 
 #: ipalib/plugins/baseldap.py:69
 msgid "Member of host-groups"
-msgstr ""
+msgstr "Участник групп хостов"
 
 #: ipalib/plugins/baseldap.py:78 ipalib/plugins/role.py:130
 msgid "Roles"
@@ -2305,31 +2309,32 @@ msgstr "Группы команды sudo"
 
 #: ipalib/plugins/baseldap.py:87
 msgid "Granting privilege to roles"
-msgstr ""
+msgstr "Предоставление привилегии ролям"
 
 #: ipalib/plugins/baseldap.py:90
 msgid "Member netgroups"
-msgstr ""
+msgstr "Сетевые группы-участники"
 
 #: ipalib/plugins/baseldap.py:93
 msgid "Member of netgroups"
-msgstr ""
+msgstr "Участник сетевых групп"
 
 #: ipalib/plugins/baseldap.py:96
 msgid "Member services"
-msgstr ""
+msgstr "Службы-участники"
 
 #: ipalib/plugins/baseldap.py:99
 msgid "Member service groups"
-msgstr ""
+msgstr "Группы служб-участники"
 
 #: ipalib/plugins/baseldap.py:105
 msgid "Member HBAC service"
-msgstr ""
+msgstr "Служба HBAC-участник"
 
 #: ipalib/plugins/baseldap.py:108
+#, fuzzy
 msgid "Member HBAC service groups"
-msgstr ""
+msgstr "Группы служб HBAC-участники"
 
 #: ipalib/plugins/baseldap.py:123
 msgid "Indirect Member users"
@@ -2423,7 +2428,7 @@ msgstr "Запись"
 #: ipalib/plugins/baseldap.py:565
 #, python-format
 msgid "container entry (%(container)s) not found"
-msgstr ""
+msgstr "запись контейнера (%(container)s) не найдена"
 
 #: ipalib/plugins/baseldap.py:566
 #, python-format
@@ -2438,7 +2443,7 @@ msgstr "%(pkey)s: %(oname)s не найден"
 #: ipalib/plugins/baseldap.py:568
 #, python-format
 msgid "%(oname)s with name \"%(pkey)s\" already exists"
-msgstr ""
+msgstr "%(oname)s с именем «%(pkey)s» уже существует"
 
 #: ipalib/plugins/baseldap.py:849 ipalib/plugins/baseldap.py:857
 #: ipalib/plugins/baseldap.py:862
@@ -2451,6 +2456,9 @@ msgid ""
 "Set an attribute to a name/value pair. Format is attr=value.\n"
 "For multi-valued attributes, the command replaces the values already present."
 msgstr ""
+"Указать атрибут для пары имя/значение. Формат: attr=value.\n"
+"Для атрибутов с несколькими значениями команда заменяет уже "
+"существующие значения."
 
 #: ipalib/plugins/baseldap.py:930
 msgid ""
@@ -2461,26 +2469,29 @@ msgstr ""
 "должен быть частью схемы."
 
 #: ipalib/plugins/baseldap.py:936
+#, fuzzy
 msgid ""
 "Delete an attribute/value pair. The option will be evaluated\n"
 "last, after all sets and adds."
 msgstr ""
+"Удалить пару атрибут/значение. Параметр будет оценен последним,\n"
+"после всех "
 
 #: ipalib/plugins/baseldap.py:970
 msgid "attribute is not configurable"
-msgstr ""
+msgstr "атрибут не является настраиваемым"
 
 #: ipalib/plugins/baseldap.py:1073
 msgid "No such attribute on this entry"
-msgstr ""
+msgstr "У этой записи нет такого атрибута"
 
 #: ipalib/plugins/baseldap.py:1170
 msgid "Suppress processing of membership attributes."
-msgstr ""
+msgstr "Подавлять обработку атрибутов членства"
 
 #: ipalib/plugins/baseldap.py:1327
 msgid "Continuous mode: Don't stop on errors."
-msgstr ""
+msgstr "Режим непрерывного выполнения: не прерывать при возникновении ошибок."
 
 #: ipalib/plugins/baseldap.py:1348 ipalib/plugins/baseldap.py:1426
 msgid "Rights"
@@ -2491,6 +2502,8 @@ msgid ""
 "Display the access rights of this entry (requires --all). See ipa man page "
 "for details."
 msgstr ""
+"Показать права доступа этой записи (требует параметра --all). Подробности "
+"см. в man ipa."
 
 #: ipalib/plugins/baseldap.py:1436
 msgid "Rename"
@@ -2499,11 +2512,11 @@ msgstr "Переименовать"
 #: ipalib/plugins/baseldap.py:1437
 #, python-format
 msgid "Rename the %(ldap_obj_name)s object"
-msgstr ""
+msgstr "Переименовать объект %(ldap_obj_name)s"
 
 #: ipalib/plugins/baseldap.py:1527 ipalib/plugins/baseldap.py:2399
 msgid "the entry was deleted while being modified"
-msgstr ""
+msgstr "запись была удалена во время изменения"
 
 #: ipalib/plugins/baseldap.py:1664 ipalib/plugins/baseldap.py:2129
 #, python-format
@@ -2525,7 +2538,7 @@ msgstr "%s к добавлению"
 #: ipalib/plugins/privilege.py:201 ipalib/plugins/privilege.py:232
 #: ipalib/plugins/role.py:213 ipalib/plugins/role.py:236
 msgid "Members that could not be added"
-msgstr ""
+msgstr "Участники, которых не удалось добавить"
 
 #: ipalib/plugins/baseldap.py:1719 ipalib/plugins/baseldap.py:2170
 msgid "Number of members added"
@@ -2574,7 +2587,7 @@ msgstr "Ограничение по времени"
 
 #: ipalib/plugins/baseldap.py:1931
 msgid "Time limit of search in seconds (0 is unlimited)"
-msgstr ""
+msgstr "Временной лимит в секундах (0 — без лимита)"
 
 #: ipalib/plugins/baseldap.py:1937 ipalib/plugins/cert.py:791
 #: ipalib/plugins/hbactest.py:292
@@ -2583,32 +2596,37 @@ msgstr "Ограничение по размеру"
 
 #: ipalib/plugins/baseldap.py:1938
 msgid "Maximum number of entries returned (0 is unlimited)"
-msgstr ""
+msgstr "Максимальное число возвращаемых записей (0 — без лимита)"
 
 #: ipalib/plugins/baseldap.py:2433
 msgid "added attribute value to entry %(value)"
-msgstr ""
+msgstr "добавлено значение атрибута к записи %(value)"
 
 #: ipalib/plugins/baseldap.py:2442
 #, python-format
 msgid "'%s' already contains one or more values"
-msgstr ""
+msgstr "«%s» уже содержит одно или более значений"
 
 #: ipalib/plugins/baseldap.py:2450
 msgid "removed attribute values from entry %(value)"
-msgstr ""
+msgstr "удалены значения атрибута для записи %(value)"
 
 #: ipalib/plugins/baseldap.py:2459
 msgid "one or more values to remove"
-msgstr ""
+msgstr "одно или более значений для удаления"
 
 #: ipalib/plugins/baseuser.py:48
+#, fuzzy
 msgid ""
 "\n"
 "Baseuser\n"
 "\n"
 "This contains common definitions for user/stageuser\n"
 msgstr ""
+"\n"
+"Baseuser\n"
+"\n"
+"Содержит общие определения пользователя/шаблонного пользователя\n"
 
 #: ipalib/plugins/baseuser.py:60
 msgid "Kerberos keys available"
@@ -2690,7 +2708,7 @@ msgstr "Kerberos владелец"
 
 #: ipalib/plugins/baseuser.py:273
 msgid "Kerberos principal expiration"
-msgstr ""
+msgstr "Окончание срока действия принципала Kerberos"
 
 #: ipalib/plugins/baseuser.py:277
 msgid "Email address"
@@ -2796,6 +2814,8 @@ msgid ""
 "User category (semantics placed on this attribute are for local "
 "interpretation)"
 msgstr ""
+"Категория пользователя (семантика, назначенная этому атрибуту, "
+"предназначена для локальной интерпретации)"
 
 #: ipalib/plugins/baseuser.py:372
 msgid "RADIUS proxy configuration"
@@ -2811,11 +2831,11 @@ msgstr "Номер отдела"
 
 #: ipalib/plugins/baseuser.py:382
 msgid "Employee Number"
-msgstr ""
+msgstr "Номер сотрудника"
 
 #: ipalib/plugins/baseuser.py:385
 msgid "Employee Type"
-msgstr ""
+msgstr "Тип сотрудника"
 
 #: ipalib/plugins/baseuser.py:388
 msgid "Preferred Language"
@@ -2830,7 +2850,7 @@ msgstr "Сертификат"
 #: ipalib/plugins/baseuser.py:396 ipalib/plugins/host.py:506
 #: ipalib/plugins/service.py:484
 msgid "Base-64 encoded server certificate"
-msgstr "Base-64 шифрованый сертификат сервера"
+msgstr "Сертификат сервера в Base-64"
 
 #: ipalib/plugins/baseuser.py:415 ipalib/plugins/baseuser.py:419
 #, python-format
@@ -2846,13 +2866,14 @@ msgstr "руководитель %(manager)s не найден"
 #: ipalib/plugins/stageuser.py:504 ipalib/plugins/user.py:458
 #, python-format
 msgid "can be at most %(len)d characters"
-msgstr ""
+msgstr "может быть не более %(len)d символов"
 
 #: ipalib/plugins/batch.py:71
 msgid "Nested Methods to execute"
-msgstr ""
+msgstr "Вложенные методы для выполнения"
 
 #: ipalib/plugins/caacl.py:20
+#, fuzzy
 msgid ""
 "\n"
 "Manage CA ACL rules.\n"
@@ -2887,6 +2908,39 @@ msgid ""
 "  Remove a CA ACL:\n"
 "    ipa caacl-del test\n"
 msgstr ""
+"\n"
+"Управление правилами ЦС ACL.\n"
+"\n"
+"Этот модуль используется для определения правил, определяющих, каким "
+"принципалам разрешено\n"
+"иметь сертификаты, выпущенные с использованием указанного профиля "
+"сертификатов.\n"
+"\n"
+"СИНТАКСИС ИДЕНТИФИКАТОРА ПРОФИЛЯ:\n"
+"\n"
+"ID профиля — это строка без пробелов или знаков препинания starting with a "
+"letter\n"
+"and followed by a sequence of letters, digits or underscore (\"_\").\n"
+"\n"
+"EXAMPLES:\n"
+"\n"
+"  Create a CA ACL \"test\" that grants all users access to the\n"
+"  \"UserCert\" profile:\n"
+"    ipa caacl-add test --usercat=all\n"
+"    ipa caacl-add-profile test --certprofiles UserCert\n"
+"\n"
+"  Display the properties of a named CA ACL:\n"
+"    ipa caacl-show test\n"
+"\n"
+"  Create a CA ACL to let user \"alice\" use the \"DNP3\" profile:\n"
+"    ipa caacl-add-profile alice_dnp3 --certprofiles DNP3\n"
+"    ipa caacl-add-user alice_dnp3 --user=alice\n"
+"\n"
+"  Disable a CA ACL:\n"
+"    ipa caacl-disable test\n"
+"\n"
+"  Remove a CA ACL:\n"
+"    ipa caacl-del test\n"
 
 #: ipalib/plugins/caacl.py:136 ipalib/plugins/caacl.py:213
 #: ipalib/plugins/caacl.py:313
@@ -3882,6 +3936,7 @@ msgid "Certificate profiles cannot be renamed"
 msgstr ""
 
 #: ipalib/plugins/config.py:33
+#, fuzzy
 msgid ""
 "\n"
 "Server configuration\n"
@@ -3929,10 +3984,62 @@ msgid ""
 "   ipa config-mod --ipaselinuxusermaporder='guest_u:s0$xguest_u:s0$user_u:s0-"
 "s0:c0.c1023$staff_u:s0-s0:c0.c1023$unconfined_u:s0-s0:c0.c1023'\n"
 msgstr ""
+"\n"
+"Параметры сервера\n"
+"\n"
+"Управление значениями по умолчанию и некоторыми параметрами настройки, "
+"используемыми IPA.\n"
+"\n"
+"ПРИМЕЧАНИЯ:\n"
+"\n"
+"Здесь хранится значение сообщения о пароле (--pwdexpnotify), поэтому оно "
+"будет реплицировано. На данный\n"
+"момент оно не используется для предварительного уведомления пользователей об "
+"истечении\n"
+"срока действия пароля.\n"
+"\n"
+"Некоторые атрибуты являются атрибутами только для чтения, предоставляемыми "
+"только в информационных целях.\n"
+"Это следующие атрибуты:\n"
+"\n"
+"Certificate Subject base: настроенная база субъекта сертификата,\n"
+"  напр., O=EXAMPLE.COM.  Возможно настроить только во время инсталляции.\n"
+"Функции модуля пароля: в настоящее время определяет дополнительные хеши, "
+"которые будут\n"
+"  созданы паролем (могут существовать другие условия).\n"
+"\n"
+"При настраивании списка порядка отображения пользователей SELinux может "
+"понадобиться\n"
+"взять значение в кавычки, чтобы оно не было интерпретировано командным "
+"интерпретатором.\n"
+"\n"
+"ПРИМЕРЫ:\n"
+"\n"
+" Показать базовую конфигурацию сервера:\n"
+"   ipa config-show\n"
+"\n"
+" Показать все настраиваемые параметры:\n"
+"   ipa config-show --all\n"
+"\n"
+" Изменить значение максимальной длины имени пользователя на 99 символов:\n"
+"   ipa config-mod --maxusername=99\n"
+"\n"
+" Увеличить лимит времени и размеров по умолчанию для поиска на сервере IPA:\n"
+"   ipa config-mod --searchtimelimit=10 --searchrecordslimit=2000\n"
+"\n"
+" Указать стандартный почтовый домен пользователей:\n"
+"   ipa config-mod --emaildomain=example.com\n"
+"\n"
+" Включить режим миграции, чтобы сделать команду «ipa migrate-ds» рабочей:\n"
+"   ipa config-mod --enable-migration=TRUE\n"
+"\n"
+" Определить последовательность сопоставления пользователей SELinux:\n"
+"   ipa config-mod --ipaselinuxusermaporder='guest_u:s0$xguest_u:s0$user_u:s0-"
+"s0:c0.c1023$staff_u:s0-s0:c0.c1023$unconfined_u:s0-s0:c0.c1023'\n"
 
 #: ipalib/plugins/config.py:86
 msgid "configuration options"
-msgstr ""
+msgstr "параметры конфигурации"
 
 #: ipalib/plugins/config.py:119 ipalib/plugins/config.py:120
 msgid "Configuration"
@@ -4044,11 +4151,13 @@ msgstr ""
 
 #: ipalib/plugins/config.py:208
 msgid "SELinux user map order"
-msgstr ""
+msgstr "Последовательность отображения пользователей SELinux"
 
 #: ipalib/plugins/config.py:209
 msgid "Order in increasing priority of SELinux users, delimited by $"
 msgstr ""
+"Последовательность повышения приоритета пользователей SELinux, "
+"разделитель — $"
 
 #: ipalib/plugins/config.py:212
 msgid "Default SELinux user"
@@ -4079,7 +4188,7 @@ msgstr ""
 
 #: ipalib/plugins/config.py:238
 msgid "Modify configuration options."
-msgstr ""
+msgstr "Изменить параметры конфигурации."
 
 #: ipalib/plugins/config.py:247
 msgid "The group doesn't exist"
@@ -4111,6 +4220,8 @@ msgstr ""
 #: ipalib/plugins/config.py:348
 msgid "SELinux user map default user not in order list"
 msgstr ""
+"Стандартный пользователь отображения пользователей SELinux "
+"отсутствует в упорядоченном списке"
 
 #: ipalib/plugins/config.py:356
 msgid "Show the current configuration."
@@ -5007,7 +5118,7 @@ msgstr ""
 
 #: ipalib/plugins/dns.py:1340
 msgid "Order"
-msgstr ""
+msgstr "Порядок"
 
 #: ipalib/plugins/dns.py:1351
 msgid "Flags"
@@ -5667,7 +5778,7 @@ msgstr "Хост «%(host)s» не найден"
 
 #: ipalib/plugins/dns.py:4247
 msgid "DNS configuration options"
-msgstr "Параметры настройки DNS"
+msgstr "Параметры конфигурации DNS"
 
 #: ipalib/plugins/dns.py:4252 ipalib/plugins/dns.py:4253
 msgid "DNS Global Configuration"
@@ -9751,7 +9862,7 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:447
 msgid "Other Record Types"
-msgstr ""
+msgstr "Другие типы записей"
 
 #: ipalib/plugins/internal.py:448
 msgid "Address not valid, can't redirect"
@@ -9759,11 +9870,11 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:449
 msgid "Create dns record"
-msgstr ""
+msgstr "Создать запись dns"
 
 #: ipalib/plugins/internal.py:450
 msgid "Creating record."
-msgstr ""
+msgstr "Запись создаётся"
 
 #: ipalib/plugins/internal.py:451
 msgid "Record creation failed."
@@ -9771,20 +9882,20 @@ msgstr "Сбой создания записи"
 
 #: ipalib/plugins/internal.py:452
 msgid "Checking if record exists."
-msgstr ""
+msgstr "Проверка существования записи"
 
 #: ipalib/plugins/internal.py:453
 msgid "Record not found."
-msgstr ""
+msgstr "Недействительный адрес, перенаправление невозможно."
 
 #: ipalib/plugins/internal.py:454
 msgid "Redirection to PTR record"
-msgstr ""
+msgstr "Перенаправление на запись PTR"
 
 #: ipalib/plugins/internal.py:455
 #, python-brace-format
 msgid "Zone found: ${zone}"
-msgstr ""
+msgstr "Найдена зона: ${zone}"
 
 #: ipalib/plugins/internal.py:456
 msgid "Target reverse zone not found."
@@ -9792,27 +9903,27 @@ msgstr "Целевая обратная зона не найдена"
 
 #: ipalib/plugins/internal.py:457
 msgid "Fetching DNS zones."
-msgstr ""
+msgstr "Получение зон DNS"
 
 #: ipalib/plugins/internal.py:458
 msgid "An error occurred while fetching dns zones."
-msgstr ""
+msgstr "Ошибка при получении зон DNS"
 
 #: ipalib/plugins/internal.py:459
 msgid "You will be redirected to DNS Zone."
-msgstr ""
+msgstr "Вы будете перенаправлены в зону DNS"
 
 #: ipalib/plugins/internal.py:460
 msgid "Standard Record Types"
-msgstr ""
+msgstr "Стандартные типы записей"
 
 #: ipalib/plugins/internal.py:461
 msgid "Records for DNS Zone"
-msgstr ""
+msgstr "Записи зоны DNS"
 
 #: ipalib/plugins/internal.py:462
 msgid "Record Type"
-msgstr ""
+msgstr "Тип записи"
 
 #: ipalib/plugins/internal.py:465
 msgid "DNS Zone Settings"
@@ -9838,84 +9949,87 @@ msgstr "Точно удалить полномочия для зоны DNS ${obj
 
 #: ipalib/plugins/internal.py:470
 msgid "Skip DNS check"
-msgstr ""
+msgstr "Пропустить проверку DNS"
 
 #: ipalib/plugins/internal.py:471
 msgid "Do you want to check if new authoritative nameserver address is in DNS"
 msgstr ""
+"Проверить наличие в DNS адреса нового полномочного сервера доменных имен"
 
 #: ipalib/plugins/internal.py:472
 msgid "Authoritative nameserver change"
-msgstr ""
+msgstr "Смена полномочного сервера доменных имен"
 
 #: ipalib/plugins/internal.py:477
 msgid "Level"
-msgstr ""
+msgstr "Уровень"
 
 #: ipalib/plugins/internal.py:478
 msgid "Set Domain Level"
-msgstr ""
+msgstr "Указать доменный уровень"
 
 #: ipalib/plugins/internal.py:481
 msgid "Group Settings"
-msgstr ""
+msgstr "Параметры группы"
 
 #: ipalib/plugins/internal.py:482 ipalib/plugins/internal.py:583
 #: ipalib/plugins/internal.py:706
 msgid "External"
-msgstr ""
+msgstr "Внешняя"
 
 #: ipalib/plugins/internal.py:483
 msgid "Change to external group"
-msgstr ""
+msgstr "Сменить на внешнюю группу"
 
 #: ipalib/plugins/internal.py:484
 msgid "Change to POSIX group"
-msgstr ""
+msgstr "Сменить на группу POSIX"
 
 #: ipalib/plugins/internal.py:485
 msgid "Normal"
-msgstr ""
+msgstr "Обычная"
 
 #: ipalib/plugins/internal.py:486
 msgid "POSIX"
-msgstr ""
+msgstr "POSIX"
 
 #: ipalib/plugins/internal.py:487
 msgid "Group Type"
-msgstr ""
+msgstr "Тип группы"
 
 #: ipalib/plugins/internal.py:493
 msgid "Accessing"
-msgstr ""
+msgstr "Доступ"
 
 #: ipalib/plugins/internal.py:495
 msgid "Via Service"
-msgstr ""
+msgstr "Через службу"
 
 #: ipalib/plugins/internal.py:499 ipalib/plugins/internal.py:717
 msgid "Who"
-msgstr ""
+msgstr "Кто"
 
 #: ipalib/plugins/internal.py:507
 msgid "Access Denied"
-msgstr ""
+msgstr "Доступ запрешён"
 
 #: ipalib/plugins/internal.py:508
 msgid "Access Granted"
-msgstr ""
+msgstr "Доступ разрешён"
 
 #: ipalib/plugins/internal.py:509
+#, fuzzy
 msgid "Include Disabled"
-msgstr ""
+msgstr "Включение отключено"
 
 #: ipalib/plugins/internal.py:510
+#, fuzzy
 msgid "Include Enabled"
-msgstr ""
+msgstr "Включение включено"
 
 #: ipalib/plugins/internal.py:511
 msgid "HBAC Test"
-msgstr ""
+msgstr "Проверка HBAC"
 
 #: ipalib/plugins/internal.py:512
 msgid "Matched"
@@ -9923,11 +10037,11 @@ msgstr "Соответствует"
 
 #: ipalib/plugins/internal.py:513
 msgid "Missing values: "
-msgstr ""
+msgstr "Отсутствующие значения: "
 
 #: ipalib/plugins/internal.py:514
 msgid "New Test"
-msgstr ""
+msgstr "Новая проверка"
 
 #: ipalib/plugins/internal.py:515
 msgid "Rules"
@@ -9935,12 +10049,12 @@ msgstr "Правила"
 
 #: ipalib/plugins/internal.py:516
 msgid "Run Test"
-msgstr ""
+msgstr "Запустить проверку"
 
 #: ipalib/plugins/internal.py:517
 #, python-brace-format
 msgid "Specify external ${entity}"
-msgstr ""
+msgstr "Указать внешнюю ${entity}"
 
 #: ipalib/plugins/internal.py:518
 msgid "Unmatched"
@@ -9955,24 +10069,25 @@ msgid "Host Name"
 msgstr "Имя узла"
 
 #: ipalib/plugins/internal.py:523 ipalib/plugins/internal.py:660
+#, fuzzy
 msgid "Delete Key, Unprovision"
-msgstr ""
+msgstr "Удалить ключ, отмена подготовки"
 
 #: ipalib/plugins/internal.py:524
 msgid "Host Settings"
-msgstr ""
+msgstr "Параметры хоста"
 
 #: ipalib/plugins/internal.py:525
 msgid "Enrolled"
-msgstr ""
+msgstr "Регистрация проведена"
 
 #: ipalib/plugins/internal.py:526
 msgid "Enrollment"
-msgstr ""
+msgstr "Регистрация"
 
 #: ipalib/plugins/internal.py:527
 msgid "Fully Qualified Host Name"
-msgstr ""
+msgstr "Полное имя хоста"
 
 #: ipalib/plugins/internal.py:528
 msgid "Kerberos Key"
@@ -9980,11 +10095,11 @@ msgstr "Ключ Kerberos"
 
 #: ipalib/plugins/internal.py:529 ipalib/plugins/internal.py:663
 msgid "Kerberos Key Not Present"
-msgstr ""
+msgstr "Ключ Kerberos не предоставлен"
 
 #: ipalib/plugins/internal.py:530
 msgid "Kerberos Key Present, Host Provisioned"
-msgstr ""
+msgstr "Ключ Kerberos в наличии, хост подготовлен"
 
 #: ipalib/plugins/internal.py:531 ipalib/plugins/internal.py:772
 msgid "One-Time-Password"
@@ -9992,11 +10107,11 @@ msgstr "Одноразовый пароль"
 
 #: ipalib/plugins/internal.py:532
 msgid "One-Time-Password Not Present"
-msgstr ""
+msgstr "Одноразовый пароль не предоставлен"
 
 #: ipalib/plugins/internal.py:533
 msgid "One-Time-Password Present"
-msgstr ""
+msgstr "Одноразовый пароль в наличии"
 
 #: ipalib/plugins/internal.py:534
 msgid "Reset OTP"
@@ -10008,11 +10123,11 @@ msgstr "Сбросить одноразовый пароль"
 
 #: ipalib/plugins/internal.py:536
 msgid "Set OTP"
-msgstr "Установить ОРП"
+msgstr "Установить OTP"
 
 #: ipalib/plugins/internal.py:537
 msgid "OTP set"
-msgstr ""
+msgstr "OTP установлен"
 
 #: ipalib/plugins/internal.py:538
 msgid "Set One-Time-Password"
@@ -10020,28 +10135,28 @@ msgstr "Установить одноразовый пароль"
 
 #: ipalib/plugins/internal.py:540 ipalib/plugins/internal.py:667
 msgid "Unprovision"
-msgstr ""
+msgstr "Отменить подготовку"
 
 #: ipalib/plugins/internal.py:541
 msgid "Are you sure you want to unprovision this host?"
-msgstr ""
+msgstr "Точно отменить подготовку этого хоста?"
 
 #: ipalib/plugins/internal.py:542 ipalib/plugins/internal.py:669
 #, python-brace-format
 msgid "Unprovisioning ${entity}"
-msgstr ""
+msgstr "Идёт отмена подготовки ${entity}"
 
 #: ipalib/plugins/internal.py:543
 msgid "Host unprovisioned"
-msgstr ""
+msgstr "Подготовка хоста отменена"
 
 #: ipalib/plugins/internal.py:546
 msgid "Host Group Settings"
-msgstr ""
+msgstr "Параметры группы хостов"
 
 #: ipalib/plugins/internal.py:549
 msgid "User to override"
-msgstr ""
+msgstr "Пользователь для переопределения"
 
 #: ipalib/plugins/internal.py:550
 msgid ""
@@ -10057,96 +10172,98 @@ msgstr "Введите доверенное имя пользователя"
 
 #: ipalib/plugins/internal.py:554
 msgid "Group to override"
-msgstr ""
+msgstr "Группа для переопределения"
 
 #: ipalib/plugins/internal.py:555
 msgid ""
 "Enter trusted or IPA group name. Note: search doesn't list groups from "
 "trusted domains."
 msgstr ""
+"Введите имя доверенной группы или группы IPA. Внимание: поиск не показывает "
+"группы доверенных доменов."
 
 #: ipalib/plugins/internal.py:556
 msgid "Enter trusted group name."
-msgstr ""
+msgstr "Введите имя доверенной группы."
 
 #: ipalib/plugins/internal.py:559
 #, python-brace-format
 msgid "${primary_key} applies to:"
-msgstr ""
+msgstr "${primary_key} применяется к:"
 
 #: ipalib/plugins/internal.py:560 ipalib/plugins/internal.py:561
 msgid "Applied to hosts"
-msgstr ""
+msgstr "Применено к хостам"
 
 #: ipalib/plugins/internal.py:562
 msgid "Apply to host groups"
-msgstr ""
+msgstr "Применить к группам хостов"
 
 #: ipalib/plugins/internal.py:563
 #, python-brace-format
 msgid "Apply ID View ${primary_key} on hosts of ${entity}"
-msgstr ""
+msgstr "Применить представление ID ${primary_key} на хостах ${entity}"
 
 #: ipalib/plugins/internal.py:564
 msgid "Apply to hosts"
-msgstr ""
+msgstr "Применить к хостам"
 
 #: ipalib/plugins/internal.py:565
 #, python-brace-format
 msgid "Apply ID view ${primary_key} on ${entity}"
-msgstr ""
+msgstr "Применить представление ID ${primary_key} на ${entity}"
 
 #: ipalib/plugins/internal.py:567
 #, python-brace-format
 msgid "${primary_key} overrides:"
-msgstr ""
+msgstr "переопределения ${primary_key}:"
 
 #: ipalib/plugins/internal.py:568
 msgid "Un-apply from host groups"
-msgstr ""
+msgstr "Отозвать применение для групп хостов"
 
 #: ipalib/plugins/internal.py:569
 msgid "Un-apply ID Views from hosts of hostgroups"
-msgstr ""
+msgstr "Отозвать применение представления ID с хостов или групп хостов"
 
 #: ipalib/plugins/internal.py:570
 #, python-brace-format
 msgid "Un-apply ID View ${primary_key} from hosts of ${entity}"
-msgstr ""
+msgstr "Отозвать применение представления ID ${primary_key} с хостов ${entity}"
 
 #: ipalib/plugins/internal.py:571
 msgid "Un-apply"
-msgstr ""
+msgstr "Отозвать применение"
 
 #: ipalib/plugins/internal.py:572
 msgid "Un-apply from hosts"
-msgstr ""
+msgstr "Отозвать применение с хостов"
 
 #: ipalib/plugins/internal.py:573
 msgid "Un-apply ID Views from hosts"
-msgstr ""
+msgstr "Отозвать применение представления ID с хостов"
 
 #: ipalib/plugins/internal.py:574
 msgid "Are you sure you want to un-apply ID view from selected entries?"
-msgstr ""
+msgstr "Точно отозвать применение представления ID для выбранных записей?"
 
 #: ipalib/plugins/internal.py:575
 #, python-brace-format
 msgid "Un-apply ID View ${primary_key} from hosts"
-msgstr ""
+msgstr "Отозвать применение представления ID ${primary_key} с хостов"
 
 #: ipalib/plugins/internal.py:578 ipalib/plugins/krbtpolicy.py:118
 #: ipalib/plugins/krbtpolicy.py:119
 msgid "Kerberos Ticket Policy"
-msgstr "Параметры политики билетов Kerberos"
+msgstr "Политика билетов Kerberos"
 
 #: ipalib/plugins/internal.py:587
 msgid "Netgroup Settings"
-msgstr ""
+msgstr "Параметры сетевой группы"
 
 #: ipalib/plugins/internal.py:595
 msgid "Add OTP Token"
-msgstr ""
+msgstr "Добавить токен OTP"
 
 #: ipalib/plugins/internal.py:596
 #, python-brace-format
@@ -10154,48 +10271,53 @@ msgid ""
 "You can use <a href=\"${link}\" target=\"_blank\">FreeOTP<a/> as a software "
 "OTP token application."
 msgstr ""
+"В качестве программного приложения для токенов OTP можно "
+"использовать <a href=\"${link}\" target=\"_blank\">FreeOTP<a/>."
 
 #: ipalib/plugins/internal.py:597
 msgid "Configure your token"
-msgstr ""
+msgstr "Настроить токен"
 
 #: ipalib/plugins/internal.py:598
+#, fuzzy
 msgid ""
 "Configure your token by scanning the QR code below. Click on the QR code if "
 "you see this on the device you want to configure."
 msgstr ""
+"Настроить токен с помощью сканирования кода QR ниже. Нажмите на код "
+"QR если он присутствует на устройстве, которое нужно настроить."
 
 #: ipalib/plugins/internal.py:599
 msgid "OTP Token Settings"
-msgstr ""
+msgstr "Параметры токена OTP"
 
 #: ipalib/plugins/internal.py:600
 msgid "Disable token"
-msgstr ""
+msgstr "Отключить токен"
 
 #: ipalib/plugins/internal.py:601
 msgid "Enable token"
-msgstr ""
+msgstr "Включить токен"
 
 #: ipalib/plugins/internal.py:602
 msgid "Show QR code"
-msgstr ""
+msgstr "Показать код QR"
 
 #: ipalib/plugins/internal.py:603
 msgid "Show configuration uri"
-msgstr ""
+msgstr "Показать uri конфигурации"
 
 #: ipalib/plugins/internal.py:604
 msgid "Counter-based (HOTP)"
-msgstr ""
+msgstr "Использование счётчика (HOTP)"
 
 #: ipalib/plugins/internal.py:605
 msgid "Time-based (TOTP)"
-msgstr ""
+msgstr "Использование синхронизации по времени (TOTP)"
 
 #: ipalib/plugins/internal.py:608
 msgid "Add custom attribute"
-msgstr ""
+msgstr "Добавить свой атрибут"
 
 #: ipalib/plugins/internal.py:611
 msgid "Permission settings"
@@ -10203,112 +10325,113 @@ msgstr "Параметры полномочий"
 
 #: ipalib/plugins/internal.py:612
 msgid "Attribute breakdown"
-msgstr ""
+msgstr "Разбор атрибута"
 
 #: ipalib/plugins/internal.py:616
 msgid "Privilege Settings"
-msgstr ""
+msgstr "Параметры привилегии"
 
 #: ipalib/plugins/internal.py:619 ipalib/plugins/pwpolicy.py:313
 msgid "Password Policy"
-msgstr ""
+msgstr "Политика пароля"
 
 #: ipalib/plugins/internal.py:622
 msgid "Range Settings"
-msgstr ""
+msgstr "Параметры диапазона"
 
 #: ipalib/plugins/internal.py:623
 msgid "Base ID"
-msgstr ""
+msgstr "Базовый ID"
 
 #: ipalib/plugins/internal.py:624
 msgid "Primary RID base"
-msgstr ""
+msgstr "Первичная основа RID"
 
 #: ipalib/plugins/internal.py:625
 msgid "Range size"
-msgstr ""
+msgstr "Размер диапазона"
 
 #: ipalib/plugins/internal.py:626
 msgid "Domain SID"
-msgstr ""
+msgstr "SID домена"
 
 #: ipalib/plugins/internal.py:627
 msgid "Secondary RID base"
-msgstr ""
+msgstr "Вторичная основа RID"
 
 #: ipalib/plugins/internal.py:629 ipalib/plugins/trust.py:153
 msgid "Active Directory domain"
-msgstr ""
+msgstr "Домен Active Directory"
 
 #: ipalib/plugins/internal.py:630
 msgid "Active Directory domain with POSIX attributes"
-msgstr ""
+msgstr "Домен Active Directory с атрибутами POSIX"
 
 #: ipalib/plugins/internal.py:631
 msgid "Detect"
-msgstr ""
+msgstr "Определить"
 
 #: ipalib/plugins/internal.py:632
 msgid "Local domain"
-msgstr ""
+msgstr "Локальный домен"
 
 #: ipalib/plugins/internal.py:633
 msgid "IPA trust"
-msgstr ""
+msgstr "Доверие IPA"
 
 #: ipalib/plugins/internal.py:634
+#, fuzzy
 msgid "Active Directory winsync"
-msgstr ""
+msgstr "Active Directory winsync"
 
 #: ipalib/plugins/internal.py:637
 msgid "RADIUS Proxy Server Settings"
-msgstr ""
+msgstr "Параметры прокси-сервера RADIUS"
 
 #: ipalib/plugins/internal.py:640 ipalib/plugins/realmdomains.py:97
 #: ipalib/plugins/realmdomains.py:98
 msgid "Realm Domains"
-msgstr ""
+msgstr "Домены областей"
 
 #: ipalib/plugins/internal.py:641
 msgid "Check DNS"
-msgstr ""
+msgstr "Проверка DNS"
 
 #: ipalib/plugins/internal.py:642
 msgid "Do you also want to perform DNS check?"
-msgstr ""
+msgstr "Выполнить также проверку DNS?"
 
 #: ipalib/plugins/internal.py:643
 msgid "Force Update"
-msgstr ""
+msgstr "Обновить принудительно"
 
 #: ipalib/plugins/internal.py:646
 msgid "Role Settings"
-msgstr ""
+msgstr "Параметры роли"
 
 #: ipalib/plugins/internal.py:659
 msgid "Service Certificate"
-msgstr ""
+msgstr "Сертификат службы"
 
 #: ipalib/plugins/internal.py:661
 msgid "Service Settings"
-msgstr ""
+msgstr "Параметры службы"
 
 #: ipalib/plugins/internal.py:664
 msgid "Provisioning"
-msgstr ""
+msgstr "Подготовка"
 
 #: ipalib/plugins/internal.py:668
 msgid "Are you sure you want to unprovision this service?"
-msgstr ""
+msgstr "Точно отменить подготовку этой службы?"
 
 #: ipalib/plugins/internal.py:670
 msgid "Service unprovisioned"
-msgstr ""
+msgstr "Подготовка службы отменена"
 
 #: ipalib/plugins/internal.py:671
 msgid "Kerberos Key Present, Service Provisioned"
-msgstr ""
+msgstr "Ключ Kerberos в наличии, служба подготовлена"
 
 #: ipalib/plugins/internal.py:674
 msgid "SSH public keys"
@@ -10316,40 +10439,40 @@ msgstr "Открытые ключи SSH"
 
 #: ipalib/plugins/internal.py:675
 msgid "SSH public key:"
-msgstr ""
+msgstr "Открытый ключ SSH"
 
 #: ipalib/plugins/internal.py:676
 msgid "Set SSH key"
-msgstr ""
+msgstr "Настроить ключ SSH"
 
 #: ipalib/plugins/internal.py:677
 msgid "Show/Set key"
-msgstr ""
+msgstr "Показать/настроить ключ"
 
 #: ipalib/plugins/internal.py:678
 msgid "Modified: key not set"
-msgstr ""
+msgstr "Изменено: ключ не настроен"
 
 #: ipalib/plugins/internal.py:679
 msgid "Modified"
-msgstr ""
+msgstr "Изменено"
 
 #: ipalib/plugins/internal.py:680
 msgid "New: key not set"
-msgstr ""
+msgstr "Новое: ключ не настроен"
 
 #: ipalib/plugins/internal.py:681
 msgid "New: key set"
-msgstr ""
+msgstr "Новое: ключ настроен"
 
 #: ipalib/plugins/internal.py:684
 msgid "Are you sure you want to activate selected users?"
-msgstr ""
+msgstr "Точно активировать выбранных пользователей?"
 
 #: ipalib/plugins/internal.py:685
 #, python-brace-format
 msgid "${count} user(s) activated"
-msgstr ""
+msgstr "Пользователей активировано: ${count}"
 
 #: ipalib/plugins/internal.py:686
 msgid "Stage users"
@@ -10357,73 +10480,73 @@ msgstr "Шаблонные пользователи"
 
 #: ipalib/plugins/internal.py:687
 msgid "Preserved users"
-msgstr ""
+msgstr "Сохранённые пользователи"
 
 #: ipalib/plugins/internal.py:688
 msgid "Are you sure you want to restore selected users?"
-msgstr ""
+msgstr "Точно восстановить выбранных пользователей?"
 
 #: ipalib/plugins/internal.py:689
 #, python-brace-format
 msgid "${count} user(s) restored"
-msgstr ""
+msgstr "Восстановлено пользователей: ${count}"
 
 #: ipalib/plugins/internal.py:690
 msgid "User categories"
-msgstr ""
+msgstr "Категории пользователей"
 
 #: ipalib/plugins/internal.py:693
 msgid "Groups"
-msgstr ""
+msgstr "Группы"
 
 #: ipalib/plugins/internal.py:696 ipalib/plugins/sudocmdgroup.py:126
 msgid "Commands"
-msgstr ""
+msgstr "Команды"
 
 #: ipalib/plugins/internal.py:699
 msgid "Allow"
-msgstr ""
+msgstr "Разрешить"
 
 #: ipalib/plugins/internal.py:700
 msgid "Any Command"
-msgstr ""
+msgstr "Любая команда"
 
 #: ipalib/plugins/internal.py:701
 msgid "Any Group"
-msgstr ""
+msgstr "Любая группа"
 
 #: ipalib/plugins/internal.py:704
 msgid "Run Commands"
-msgstr ""
+msgstr "Выполнить команды"
 
 #: ipalib/plugins/internal.py:705
 msgid "Deny"
-msgstr ""
+msgstr "Запретить"
 
 #: ipalib/plugins/internal.py:707
 msgid "Access this host"
-msgstr ""
+msgstr "Доступ к этому хосту"
 
 #: ipalib/plugins/internal.py:709
 msgid "Option added"
-msgstr ""
+msgstr "Параметр добавлен"
 
 #: ipalib/plugins/internal.py:710
 #, python-brace-format
 msgid "${count} option(s) removed"
-msgstr ""
+msgstr "Параметров удалено: ${count}"
 
 #: ipalib/plugins/internal.py:712
 msgid "As Whom"
-msgstr ""
+msgstr "От чьего имени"
 
 #: ipalib/plugins/internal.py:713
 msgid "Specified Commands and Groups"
-msgstr ""
+msgstr "Указанные команды и группы"
 
 #: ipalib/plugins/internal.py:714
 msgid "Specified Groups"
-msgstr ""
+msgstr "Указанные группы"
 
 #: ipalib/plugins/internal.py:720
 msgid "Segment details"
@@ -10431,79 +10554,80 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:721
 msgid "Replication configuration"
-msgstr ""
+msgstr "Параметры репликации"
 
 #: ipalib/plugins/internal.py:722
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Managed topology requires minimal domain level ${domainlevel}"
 msgstr ""
+"Управление топологией требует минимального уровня домена ${domainlevel}"
 
 #: ipalib/plugins/internal.py:725
 msgid "Account"
-msgstr ""
+msgstr "Учётная запись"
 
 #: ipalib/plugins/internal.py:726
 msgid "Administrative account"
-msgstr ""
+msgstr "Учётная запись администратора"
 
 #: ipalib/plugins/internal.py:727
 msgid "SID blacklists"
-msgstr ""
+msgstr "Чёрные списки SID"
 
 #: ipalib/plugins/internal.py:728
 msgid "Trust Settings"
-msgstr ""
+msgstr "Параметры доверия"
 
 #: ipalib/plugins/internal.py:729 ipalib/plugins/realmdomains.py:105
 #: ipalib/plugins/trust.py:1093
 msgid "Domain"
-msgstr ""
+msgstr "Домен"
 
 #: ipalib/plugins/internal.py:730
 msgid "Establish using"
-msgstr ""
+msgstr "Установить с помощью"
 
 #: ipalib/plugins/internal.py:731
 msgid "Fetch domains"
-msgstr ""
+msgstr "Получить домены"
 
 #: ipalib/plugins/internal.py:732 ipalib/plugins/trust.py:508
 #: ipalib/plugins/trust.py:1410
 msgid "Domain NetBIOS name"
-msgstr ""
+msgstr "Имя домена NetBIOS"
 
 #: ipalib/plugins/internal.py:733 ipalib/plugins/trust.py:512
 #: ipalib/plugins/trust.py:1414
 msgid "Domain Security Identifier"
-msgstr ""
+msgstr "Идентификатор безопасности домена"
 
 #: ipalib/plugins/internal.py:734
 msgid "Pre-shared password"
-msgstr ""
+msgstr "Предопределенный общий пароль"
 
 #: ipalib/plugins/internal.py:735 ipalib/plugins/trust.py:145
 msgid "Trust direction"
-msgstr ""
+msgstr "Направление доверия"
 
 #: ipalib/plugins/internal.py:736 ipalib/plugins/trust.py:149
 msgid "Trust status"
-msgstr ""
+msgstr "Статус доверия"
 
 #: ipalib/plugins/internal.py:737 ipalib/plugins/trust.py:147
 msgid "Trust type"
-msgstr ""
+msgstr "Тип доверия"
 
 #: ipalib/plugins/internal.py:743
 msgid "Account Settings"
-msgstr ""
+msgstr "Параметры учётной записи"
 
 #: ipalib/plugins/internal.py:744
 msgid "Account Status"
-msgstr ""
+msgstr "Статус учётной записи"
 
 #: ipalib/plugins/internal.py:745
 msgid "Active users"
-msgstr ""
+msgstr "Активные пользователи"
 
 #: ipalib/plugins/internal.py:746
 msgid "Contact Settings"
@@ -10511,35 +10635,35 @@ msgstr ""
 
 #: ipalib/plugins/internal.py:747
 msgid "Delete mode"
-msgstr ""
+msgstr "Режим удаления"
 
 #: ipalib/plugins/internal.py:748
 msgid "Employee Information"
-msgstr ""
+msgstr "Информация о сотруднике"
 
 #: ipalib/plugins/internal.py:749
 msgid "Error changing account status"
-msgstr ""
+msgstr "Ошибка смены статуса учётной записи"
 
 #: ipalib/plugins/internal.py:750
 msgid "Password expiration"
-msgstr ""
+msgstr "Окончание срока действия пароля"
 
 #: ipalib/plugins/internal.py:751
 msgid "Mailing Address"
-msgstr ""
+msgstr "Почтовый адрес"
 
 #: ipalib/plugins/internal.py:752
 msgid "Misc. Information"
-msgstr ""
+msgstr "Прочая информация"
 
 #: ipalib/plugins/internal.py:753
 msgid "delete"
-msgstr ""
+msgstr "удалить"
 
 #: ipalib/plugins/internal.py:754
 msgid "preserve"
-msgstr ""
+msgstr "сохранить"
 
 #: ipalib/plugins/internal.py:755
 msgid "No private group"
@@ -10551,59 +10675,63 @@ msgid ""
 "Are you sure you want to ${action} the user?<br/>The change will take effect "
 "immediately."
 msgstr ""
+"Точно выполнить ${action} с этим пользователем?<br/>Изменение вступит в силу "
+"немедленно."
 
 #: ipalib/plugins/internal.py:757
 #, python-brace-format
 msgid "Click to ${action}"
-msgstr ""
+msgstr "Нажмите чтобы ${action}"
 
 #: ipalib/plugins/internal.py:758
 msgid "Unlock"
-msgstr ""
+msgstr "Разблокировать"
 
 #: ipalib/plugins/internal.py:759
 #, python-brace-format
 msgid "Are you sure you want to unlock user ${object}?"
-msgstr ""
+msgstr "Точно разблокировать пользовательский ${object}?"
 
 #: ipalib/plugins/internal.py:763 ipalib/plugins/passwd.py:84
 msgid "Current Password"
-msgstr ""
+msgstr "Текущий пароль"
 
 #: ipalib/plugins/internal.py:764
 msgid "Current password is required"
-msgstr ""
+msgstr "Требуется текущий пароль"
 
 #: ipalib/plugins/internal.py:765
 #, python-brace-format
 msgid "Your password expires in ${days} days."
-msgstr ""
+msgstr "Срок вашего пароля истекает через ${days} дней."
 
 #: ipalib/plugins/internal.py:766
 msgid "First OTP"
-msgstr ""
+msgstr "Первый OTP"
 
 #: ipalib/plugins/internal.py:767
 msgid "The password or username you entered is incorrect."
-msgstr ""
+msgstr "Введён неверный пароль/имя пользователя"
 
 #: ipalib/plugins/internal.py:768 ipalib/plugins/passwd.py:81
 msgid "New Password"
-msgstr ""
+msgstr "Новый пароль"
 
 #: ipalib/plugins/internal.py:769
 msgid "New password is required"
-msgstr ""
+msgstr "Требуется новый пароль"
 
 #: ipalib/plugins/internal.py:770 ipalib/plugins/passwd.py:94
 msgid "OTP"
-msgstr ""
+msgstr "OTP"
 
 #: ipalib/plugins/internal.py:771
 msgid ""
 "<i class=\"fa fa-info-circle\"></i> <strong>One-Time-Password(OTP):</strong> "
 "Generate new OTP code for each OTP field."
 msgstr ""
+"<i class=\"fa fa-info-circle\"></i> <strong>Одноразовый пароль(OTP):</strong> "
+"Создать новый код OTP для каждого поля OTP."
 
 #: ipalib/plugins/internal.py:773
 msgid "Token synchronization failed"
@@ -10611,19 +10739,19 @@ msgstr "Сбой синхронизации токенов"
 
 #: ipalib/plugins/internal.py:774
 msgid "The username, password or token codes are not correct"
-msgstr ""
+msgstr "Неверное имя пользователя, пароль или токен"
 
 #: ipalib/plugins/internal.py:775
 msgid "Token was synchronized"
-msgstr ""
+msgstr "Токен синхронизирован"
 
 #: ipalib/plugins/internal.py:777
 msgid "Password or Password+One-Time-Password"
-msgstr ""
+msgstr "Пароль или пароль+OTP"
 
 #: ipalib/plugins/internal.py:778
 msgid "Password change complete"
-msgstr ""
+msgstr "Смена пароля выполнена"
 
 #: ipalib/plugins/internal.py:779
 msgid "Passwords must match"
@@ -10631,66 +10759,66 @@ msgstr "Пароли должны совпадать"
 
 #: ipalib/plugins/internal.py:780
 msgid "Password reset was not successful."
-msgstr ""
+msgstr "Смена пароля была неуспешной"
 
 #: ipalib/plugins/internal.py:781
 msgid "Reset Password"
-msgstr ""
+msgstr "Смена пароля"
 
 #: ipalib/plugins/internal.py:782
 msgid "Reset your password."
-msgstr ""
+msgstr "Сменить пароль"
 
 #: ipalib/plugins/internal.py:783
 msgid "Second OTP"
-msgstr ""
+msgstr "Второй OTP"
 
 #: ipalib/plugins/internal.py:784 ipalib/plugins/otptoken.py:513
 msgid "Token ID"
-msgstr ""
+msgstr "Идентификатор токена"
 
 #: ipalib/plugins/internal.py:785
 msgid "Verify Password"
-msgstr ""
+msgstr "Подтвердить пароль"
 
 #: ipalib/plugins/internal.py:788
 msgid "Are you sure you want to delete selected entries?"
-msgstr ""
+msgstr "Точно удалить выбранные записи?"
 
 #: ipalib/plugins/internal.py:789
 #, python-brace-format
 msgid "${count} item(s) deleted"
-msgstr ""
+msgstr "Удалено элементов: ${count}"
 
 #: ipalib/plugins/internal.py:790
 msgid "Are you sure you want to disable selected entries?"
-msgstr ""
+msgstr "Точно отключить выбранные записи?"
 
 #: ipalib/plugins/internal.py:791
 #, python-brace-format
 msgid "${count} item(s) disabled"
-msgstr ""
+msgstr "Отключено элементов: ${count}"
 
 #: ipalib/plugins/internal.py:792
 msgid "Are you sure you want to enable selected entries?"
-msgstr ""
+msgstr "Точно включить выбранные записи?"
 
 #: ipalib/plugins/internal.py:793
 #, python-brace-format
 msgid "${count} item(s) enabled"
-msgstr ""
+msgstr "Включено элементов: ${count}"
 
 #: ipalib/plugins/internal.py:794
 msgid "Some entries were not deleted"
-msgstr ""
+msgstr "Некоторые записи не были удалены"
 
 #: ipalib/plugins/internal.py:796
 msgid "Quick Links"
-msgstr ""
+msgstr "Быстрые ссылки"
 
 #: ipalib/plugins/internal.py:797
 msgid "Select All"
-msgstr ""
+msgstr "Выбрать всё"
 
 #: ipalib/plugins/internal.py:798
 #, python-brace-format
@@ -10698,18 +10826,20 @@ msgid ""
 "Query returned more results than the configured size limit. Displaying the "
 "first ${counter} results."
 msgstr ""
+"Поиск выдал больше результатов, чем позволяет установленный лимит. Показано "
+"первые ${counter} результатов."
 
 #: ipalib/plugins/internal.py:799
 msgid "Unselect All"
-msgstr ""
+msgstr "Снять всё выделение"
 
 #: ipalib/plugins/internal.py:803 ipalib/plugins/otptoken.py:188
 msgid "Disabled"
-msgstr ""
+msgstr "Отключено"
 
 #: ipalib/plugins/internal.py:807
 msgid "Working"
-msgstr ""
+msgstr "Работает"
 
 #: ipalib/plugins/internal.py:810
 msgid "Audit"
@@ -10717,11 +10847,11 @@ msgstr "Аудит"
 
 #: ipalib/plugins/internal.py:811
 msgid "Authentication"
-msgstr ""
+msgstr "Аутентификация"
 
 #: ipalib/plugins/internal.py:813
 msgid "Automount"
-msgstr ""
+msgstr "Automount"
 
 #: ipalib/plugins/internal.py:815
 msgid "DNS"
@@ -10729,7 +10859,7 @@ msgstr "DNS"
 
 #: ipalib/plugins/internal.py:816
 msgid "Host Based Access Control"
-msgstr ""
+msgstr "Управление доступом на основе хоста (HBAC)"
 
 #: ipalib/plugins/internal.py:817
 msgid "Identity"
@@ -10737,19 +10867,19 @@ msgstr "Идентификация"
 
 #: ipalib/plugins/internal.py:818 ipalib/plugins/server.py:47
 msgid "IPA Server"
-msgstr ""
+msgstr "Сервер IPA"
 
 #: ipalib/plugins/internal.py:819
 msgid "Network Services"
-msgstr ""
+msgstr "Сетевые службы"
 
 #: ipalib/plugins/internal.py:820
 msgid "Policy"
-msgstr ""
+msgstr "Политика"
 
 #: ipalib/plugins/internal.py:821
 msgid "Role Based Access Control"
-msgstr ""
+msgstr "Управление доступом на основе роли"
 
 #: ipalib/plugins/internal.py:822
 msgid "Sudo"
@@ -10757,27 +10887,27 @@ msgstr "Sudo"
 
 #: ipalib/plugins/internal.py:823
 msgid "Topology"
-msgstr ""
+msgstr "Топология"
 
 #: ipalib/plugins/internal.py:824 ipalib/plugins/trust.py:497
 msgid "Trusts"
-msgstr ""
+msgstr "Доверия"
 
 #: ipalib/plugins/internal.py:826
 msgid "True"
-msgstr ""
+msgstr "Верно"
 
 #: ipalib/plugins/internal.py:828
 msgid "First"
-msgstr ""
+msgstr "Первый"
 
 #: ipalib/plugins/internal.py:829
 msgid "Last"
-msgstr ""
+msgstr "Последний"
 
 #: ipalib/plugins/internal.py:830
 msgid "Next"
-msgstr "Далее"
+msgstr "Следующий"
 
 #: ipalib/plugins/internal.py:831
 msgid "Page"
@@ -10789,11 +10919,11 @@ msgstr "Назад"
 
 #: ipalib/plugins/internal.py:833
 msgid "Undo"
-msgstr ""
+msgstr "Отменить"
 
 #: ipalib/plugins/internal.py:834
 msgid "Undo All"
-msgstr ""
+msgstr "Отменить всё"
 
 #: ipalib/plugins/internal.py:836
 msgid "Text does not match field pattern"
@@ -10802,61 +10932,62 @@ msgstr "Текст не соответствует шаблону поля"
 #: ipalib/plugins/internal.py:837
 msgid "Must be an UTC date/time value (e.g., \"2014-01-20 17:58:01Z\")"
 msgstr ""
+"Необходимо значение даты/времени в UTC (напр., \"2014-01-20 17:58:01Z\")"
 
 #: ipalib/plugins/internal.py:838
 msgid "Must be a decimal number"
-msgstr ""
+msgstr "Необходимо десятичное число"
 
 #: ipalib/plugins/internal.py:839
 msgid "Format error"
-msgstr ""
+msgstr "Ошибка формата"
 
 #: ipalib/plugins/internal.py:840
 msgid "Must be an integer"
-msgstr ""
+msgstr "Необходимо целое число"
 
 #: ipalib/plugins/internal.py:841
 msgid "Not a valid IP address"
-msgstr ""
+msgstr "Недопустимый адрес IP"
 
 #: ipalib/plugins/internal.py:842
 msgid "Not a valid IPv4 address"
-msgstr ""
+msgstr "Недопустимый адрес IPv4"
 
 #: ipalib/plugins/internal.py:843
 msgid "Not a valid IPv6 address"
-msgstr ""
+msgstr "Недопустимый адрес IPv6"
 
 #: ipalib/plugins/internal.py:844
 #, python-brace-format
 msgid "Maximum value is ${value}"
-msgstr ""
+msgstr "Максимальное значение: ${value}"
 
 #: ipalib/plugins/internal.py:845
 #, python-brace-format
 msgid "Minimum value is ${value}"
-msgstr ""
+msgstr "Минимальное значение: ${value}"
 
 #: ipalib/plugins/internal.py:846
 msgid "Not a valid network address"
-msgstr ""
+msgstr "Недопустимый сетевой адрес"
 
 #: ipalib/plugins/internal.py:847
 msgid "Parse error"
-msgstr ""
+msgstr "Ошибка анализа"
 
 #: ipalib/plugins/internal.py:848
 #, python-brace-format
 msgid "'${port}' is not a valid port"
-msgstr ""
+msgstr "Недопустимый порт «${port}»"
 
 #: ipalib/plugins/internal.py:849
 msgid "Required field"
-msgstr ""
+msgstr "Обязательное поле"
 
 #: ipalib/plugins/internal.py:850
 msgid "Unsupported value"
-msgstr ""
+msgstr "Неподдерживаемое значение"
 
 #: ipalib/plugins/internal.py:855
 msgid "Dict of I18N messages"
@@ -11227,9 +11358,8 @@ msgstr ""
 "«ipa group-add-member» для добавления вручную."
 
 #: ipalib/plugins/migration.py:145
-#, fuzzy
 msgid "Migration of LDAP search reference is not supported."
-msgstr "Перенос ссылок на документацию LDAP не поддерживается"
+msgstr "Миграция поисковых ссылок LDAP не поддерживается"
 
 #: ipalib/plugins/migration.py:146
 msgid "Malformed DN"
@@ -11587,7 +11717,7 @@ msgstr ""
 #: ipalib/plugins/netgroup.py:75
 #, fuzzy
 msgid "Member Host"
-msgstr "Хост членов"
+msgstr ""
 
 #: ipalib/plugins/netgroup.py:89
 msgid "netgroup"
@@ -11686,7 +11816,6 @@ msgid "Remove members from a netgroup."
 msgstr "Удалить членов из сетевой группы"
 
 #: ipalib/plugins/otpconfig.py:24
-#, fuzzy
 msgid ""
 "\n"
 "OTP configuration\n"
@@ -11720,22 +11849,22 @@ msgstr ""
 "\n"
 "ПРИМЕРЫ:\n"
 "\n"
-" Показать базовые параметры OTP:\n"
+" Показать базовую конфигурацию OTP:\n"
 "   ipa otpconfig-show\n"
 "\n"
-" Показать все параметры OTP:\n"
+" Показать все параметры конфигурации OTP:\n"
 "   ipa otpconfig-show --all\n"
 "\n"
-" Установить максимальное время окна аутентификации TOTP на 10 минут:\n"
+" Установить максимальное окно аутентификации TOTP на 10 минут:\n"
 "   ipa otpconfig-mod --totp-auth-window=600\n"
 "\n"
-" Установить максимальное время окна аутентификации TOTP на 12 часов:\n"
+" Установить максимальное окно синхронизации TOTP на 12 часов:\n"
 "   ipa otpconfig-mod --totp-sync-window=43200\n"
 "\n"
-" Установить максимальное время окна аутентификации TOTP на 5:\n"
+" Изменить максимальное окно аутентификации TOTP на 5:\n"
 "   ipa hotpconfig-mod --hotp-auth-window=5\n"
 "\n"
-" Установить максимальное время окна аутентификации TOTP на 50:\n"
+" Изменить максимальное окно синхронизации TOTP на 50:\n"
 "   ipa hotpconfig-mod --hotp-sync-window=50\n"
 
 #: ipalib/plugins/otpconfig.py:52 ipalib/plugins/otptoken.py:68
@@ -11745,7 +11874,7 @@ msgstr "Команды одноразового пароля"
 
 #: ipalib/plugins/otpconfig.py:57
 msgid "OTP configuration options"
-msgstr "Параметры настройки OTP"
+msgstr "Параметры конфигурации OTP"
 
 #: ipalib/plugins/otpconfig.py:80 ipalib/plugins/otpconfig.py:81
 msgid "OTP Configuration"
@@ -11756,27 +11885,24 @@ msgid "TOTP authentication Window"
 msgstr "Окно аутентификации TOTP"
 
 #: ipalib/plugins/otpconfig.py:87
-#, fuzzy
 msgid "TOTP authentication time variance (seconds)"
-msgstr "Изменение времени продолжительности аутентификации TOTP (секунды)"
+msgstr "Расхождение времени аутентификации TOTP (сек.)"
 
 #: ipalib/plugins/otpconfig.py:92
 msgid "TOTP Synchronization Window"
 msgstr "Окно синхронизации TOTP"
 
 #: ipalib/plugins/otpconfig.py:93
-#, fuzzy
 msgid "TOTP synchronization time variance (seconds)"
-msgstr "Изменение времени продолжительности синхронизации TOTP (секунды)"
+msgstr "Расхождение времени синхронизации TOTP (сек.)"
 
 #: ipalib/plugins/otpconfig.py:98
 msgid "HOTP Authentication Window"
 msgstr "Окно аутентификации HOTP"
 
 #: ipalib/plugins/otpconfig.py:99
-#, fuzzy
 msgid "HOTP authentication skip-ahead"
-msgstr " аутентификации HOTP"
+msgstr "Пропуск аутентификации HOTP"
 
 #: ipalib/plugins/otpconfig.py:104
 msgid "HOTP Synchronization Window"
@@ -11788,7 +11914,7 @@ msgstr "Пропуск синхронизации HOTP"
 
 #: ipalib/plugins/otpconfig.py:116
 msgid "Modify OTP configuration options."
-msgstr "Изменить параметры настройки OTP"
+msgstr "Изменить параметры конфигурации OTP"
 
 #: ipalib/plugins/otpconfig.py:121
 msgid "Show the current OTP configuration."
@@ -12311,7 +12437,7 @@ msgid ""
 msgstr ""
 "\n"
 "Кроме того, существуют следующие удобные параметры.\n"
-"Установка одного из этих параметров установит соответствующие атрибуты.\n"
+"Установка одного из этих параметров настроит соответствующие атрибуты.\n"
 "1. type: тип объекта (пользователь, группа и т.д.); устанавливает поддерево и "
 "целевой фильтр."
 "\n"
@@ -12344,7 +12470,6 @@ msgstr ""
 "\n"
 
 #: ipalib/plugins/permission.py:93
-#, fuzzy
 msgid ""
 "\n"
 "Deleting or renaming a managed permission, as well as changing its target,\n"
@@ -12353,7 +12478,7 @@ msgstr ""
 "\n"
 "Удаление и переименование управляемых полномочий, а также изменение их "
 "целевого объекта\n"
-"не разрешается.\n"
+"не допускается.\n"
 
 #: ipalib/plugins/permission.py:98
 msgid ""
@@ -12379,12 +12504,12 @@ msgstr ""
 
 #: ipalib/plugins/permission.py:132
 msgid "must be enclosed in parentheses"
-msgstr ""
+msgstr "должно быть заключено в круглые скобки"
 
 #: ipalib/plugins/permission.py:151
 #, python-format
 msgid "\"%s\" is not an object type"
-msgstr ""
+msgstr "«%s» не является типом объекта"
 
 #: ipalib/plugins/permission.py:153 ipalib/plugins/permission.py:881
 #, python-format
@@ -12405,15 +12530,17 @@ msgstr "Название полномочий"
 
 #: ipalib/plugins/permission.py:240
 msgid "Granted rights"
-msgstr ""
+msgstr "Предоставленные права"
 
 #: ipalib/plugins/permission.py:241
 msgid "Rights to grant (read, search, compare, write, add, delete, all)"
 msgstr ""
+"Права для предоставления (чтение, поиск, сравнение, запись, добавление, "
+"удаление, все)"
 
 #: ipalib/plugins/permission.py:248
 msgid "Effective attributes"
-msgstr ""
+msgstr "Эффективные атрибуты"
 
 #: ipalib/plugins/permission.py:249
 msgid "All attributes to which the permission applies"
@@ -12421,7 +12548,7 @@ msgstr "Все атрибуты, к которым применяются пол
 
 #: ipalib/plugins/permission.py:254
 msgid "Included attributes"
-msgstr ""
+msgstr "Включённые атрибуты"
 
 #: ipalib/plugins/permission.py:255
 msgid "User-specified attributes to which the permission applies"
@@ -12429,18 +12556,17 @@ msgstr "Указанные пользователем атрибуты, к ко�
 
 #: ipalib/plugins/permission.py:260
 msgid "Excluded attributes"
-msgstr ""
+msgstr "Исключённые атрибуты"
 
 #: ipalib/plugins/permission.py:261
-#, fuzzy
 msgid ""
 "User-specified attributes to which the permission explicitly does not apply"
 msgstr ""
-"Указанные пользователем атрибуты, к которым явно не применяются полномочия"
+"Указанные пользователем атрибуты, к которым полномочия не применяются явно"
 
 #: ipalib/plugins/permission.py:267
 msgid "Default attributes"
-msgstr ""
+msgstr "Атрибуты по умолчанию"
 
 #: ipalib/plugins/permission.py:268
 msgid "Attributes to which the permission applies by default"
@@ -12448,14 +12574,13 @@ msgstr "Атрибуты, к которым по умолчанию примен
 
 #: ipalib/plugins/permission.py:274 ipalib/plugins/permission.py:275
 msgid "Bind rule type"
-msgstr ""
+msgstr "Тип правила подсоединения"
 
 #: ipalib/plugins/permission.py:285
 msgid "Subtree to apply permissions to"
 msgstr "Поддерево, к которому применить полномочия"
 
 #: ipalib/plugins/permission.py:291 ipalib/plugins/permission.py:292
-#, fuzzy
 msgid "Extra target filter"
 msgstr "Дополнительный целевой фильтр"
 
@@ -12466,7 +12591,7 @@ msgstr ""
 #: ipalib/plugins/permission.py:299
 #, fuzzy
 msgid "All target filters, including those implied by type and memberof"
-msgstr "Все целевые фильтры, включая подразумевающиеся по типу и memberof"
+msgstr "Все целевые фильтры, включая подразумеваемые типом и memberof"
 
 #: ipalib/plugins/permission.py:306
 msgid "Target DN"
@@ -12493,18 +12618,21 @@ msgstr ""
 "в поддереве, но может ещё не существовать)"
 
 #: ipalib/plugins/permission.py:322
+#, fuzzy
 msgid "Origin DN subtree"
-msgstr ""
+msgstr "Поддерево исходного DN"
 
 #: ipalib/plugins/permission.py:323
 msgid ""
 "Optional DN subtree from where an entry can be moved (must be in the "
 "subtree, but may not yet exist)"
 msgstr ""
+"Опционально: поддерево DN, откуда можно переместить запись (должно находиться "
+"в поддереве, но может ещё не существовать)"
 
 #: ipalib/plugins/permission.py:328
 msgid "Member of group"
-msgstr ""
+msgstr "Участник группы"
 
 #: ipalib/plugins/permission.py:329
 msgid "Target members of a group (sets memberOf targetfilter)"
@@ -12523,7 +12651,7 @@ msgstr "Тип объекта IPA (устанавливает целевой ф�
 #: ipalib/plugins/permission.py:346
 #, python-format
 msgid "Deprecated; use %s"
-msgstr ""
+msgstr "Устарело; используйте %s"
 
 #: ipalib/plugins/permission.py:357
 #, python-format
@@ -12537,7 +12665,7 @@ msgstr "СИСТЕМНЫЕ полномочия нельзя ни изменят
 #: ipalib/plugins/permission.py:609
 #, python-format
 msgid "Entry %s not found"
-msgstr ""
+msgstr "Запись %s не найдена"
 
 #: ipalib/plugins/permission.py:700
 #, python-format
@@ -12545,25 +12673,24 @@ msgid "The ACI for permission %(name)s was not found in %(dn)s "
 msgstr "Информация ACI для полномочий %(name)s не была найдена в %(dn)s "
 
 #: ipalib/plugins/permission.py:804
-#, fuzzy
 msgid ""
 "cannot specify full target filter and extra target filter simultaneously"
-msgstr "нельзя одновременно указать полный  целевой фильтр и дополнительный"
+msgstr "нельзя одновременно указать полный и дополнительный целевые фильтры"
 
 #: ipalib/plugins/permission.py:827
 #, python-format
 msgid "option was renamed; use %s"
-msgstr ""
+msgstr "параметр был переименован; используйте %s"
 
 #: ipalib/plugins/permission.py:831
 #, python-format
 msgid "Cannot use %(old_name)s with %(new_name)s"
-msgstr ""
+msgstr "Нельзя использовать %(old_name)s с %(new_name)s"
 
 #: ipalib/plugins/permission.py:845 ipalib/plugins/permission.py:860
 #, python-format
 msgid "%s: group not found"
-msgstr ""
+msgstr "%s: группа не найдена"
 
 #: ipalib/plugins/permission.py:855
 #, fuzzy
@@ -12571,8 +12698,9 @@ msgid "target and targetgroup are mutually exclusive"
 msgstr "целевой объект и целевая группа являются взаимоисключающими"
 
 #: ipalib/plugins/permission.py:876
+#, fuzzy
 msgid "subtree and type are mutually exclusive"
-msgstr ""
+msgstr "subtree и type are являются взаимоисключающими"
 
 #: ipalib/plugins/permission.py:912
 msgid "Bad search filter"
@@ -12581,13 +12709,16 @@ msgstr "Неверный фильтр поиска"
 #: ipalib/plugins/permission.py:922
 #, python-format
 msgid "Entry %s does not exist"
-msgstr ""
+msgstr "Запись %s не существует"
 
 #: ipalib/plugins/permission.py:931
+#, fuzzy
 msgid ""
 "there must be at least one target entry specifier (e.g. target, "
 "targetfilter, attrs)"
 msgstr ""
+"необходим по крайней мере один указатель целевой записи "
+"(напр., target, targetfilter, attrs)"
 
 #: ipalib/plugins/permission.py:941
 msgid "Add a system permission without an ACI (internal command)"
@@ -12608,7 +12739,7 @@ msgstr "Добавить новые полномочия."
 
 #: ipalib/plugins/permission.py:1000
 msgid "attrs and included attributes are mutually exclusive"
-msgstr ""
+msgstr "attrs и включённые атрибуты являются взаимоисклоючающими"
 
 #: ipalib/plugins/permission.py:1032
 #, python-format
@@ -12651,7 +12782,6 @@ msgid "cannot rename managed permissions"
 msgstr "нельзя переименовать управляемые полномочия"
 
 #: ipalib/plugins/permission.py:1119 ipalib/plugins/permission.py:1123
-#, fuzzy
 msgid "not modifiable on managed permissions"
 msgstr "неизменяемо для управляемых полномочий"
 
@@ -12661,7 +12791,7 @@ msgstr "доступно только для управляемых полном
 
 #: ipalib/plugins/permission.py:1137 ipalib/plugins/permission.py:1257
 msgid "attrs and included/excluded attributes are mutually exclusive"
-msgstr ""
+msgstr "attrs и включённые/исключённые атрибуты являются взаимоисклоючающими"
 
 #: ipalib/plugins/permission.py:1148
 msgid "cannot set bindtype for a permission that is assigned to a privilege"
@@ -12684,6 +12814,7 @@ msgid "Display information about a permission."
 msgstr "Вывести информацию о полномочиях"
 
 #: ipalib/plugins/ping.py:26
+#, fuzzy
 msgid ""
 "\n"
 "Ping the remote IPA server to ensure it is running.\n"
@@ -12712,12 +12843,40 @@ msgid ""
 "   IPA server version 2.1.9. API version 2.20\n"
 "   -----------------------------------------------------\n"
 msgstr ""
+"\n"
+"Проверка связи (ping) с удалённым сервером IPA чтобы убедиться в его работе.\n"
+"\n"
+"Команда ping посылает эхо-запрос до сервера IPA. Сервер\n"
+"возвращает информацию о своей версии. Это используется клиентом IPA\n"
+"для подтверждения того, что сервер доступен и принимает запросы.\n"
+"\n"
+"Первым посылается запрос на сервер из xmlrpc_uri в /etc/ipa/default.conf.\n"
+"В случае отсутствия ответа клиент связывается с любыми серверами, "
+"определёнными\n"
+"записями ldap SRV в DNS.\n"
+"\n"
+"ПРИМЕРЫ:\n"
+"\n"
+" Ping до сервера IPA:\n"
+"   ipa ping\n"
+"   ------------------------------------------\n"
+"   IPA server version 2.1.9. API version 2.20\n"
+"   ------------------------------------------\n"
+"\n"
+" Ping до сервера IPA с подробным выводом:\n"
+"   ipa -v ping\n"
+"   ipa: INFO: trying https://ipa.example.com/ipa/xml\n"
+"   ipa: INFO: Forwarding 'ping' to server 'https://ipa.example.com/ipa/xml'\n"
+"   -----------------------------------------------------\n"
+"   IPA server version 2.1.9. API version 2.20\n"
+"   -----------------------------------------------------\n"
 
 #: ipalib/plugins/ping.py:59
 msgid "Ping a remote server."
-msgstr ""
+msgstr "Ping до удалённого сервера."
 
 #: ipalib/plugins/pkinit.py:27
+#, fuzzy
 msgid ""
 "\n"
 "Kerberos pkinit options\n"
@@ -12738,10 +12897,28 @@ msgid ""
 "\n"
 "http://k5wiki.kerberos.org/wiki/Projects/Anonymous_pkinit\n"
 msgstr ""
+"\n"
+"Параметры pkinit для Kerberos\n"
+"\n"
+"Enable or disable anonymous pkinit using the principal\n"
+"WELLKNOWN/ANONYMOUS@REALM. The server must have been installed with\n"
+"pkinit support.\n"
+"\n"
+"EXAMPLES:\n"
+"\n"
+" Enable anonymous pkinit:\n"
+"  ipa pkinit-anonymous enable\n"
+"\n"
+" Disable anonymous pkinit:\n"
+"  ipa pkinit-anonymous disable\n"
+"\n"
+"For more information on anonymous pkinit see:\n"
+"\n"
+"http://k5wiki.kerberos.org/wiki/Projects/Anonymous_pkinit\n"
 
 #: ipalib/plugins/pkinit.py:54
 msgid "pkinit"
-msgstr ""
+msgstr "pkinit"
 
 #: ipalib/plugins/pkinit.py:56
 msgid "PKINIT"
@@ -12750,11 +12927,11 @@ msgstr "PKINIT"
 #: ipalib/plugins/pkinit.py:67
 #, python-format
 msgid "Unknown command %s"
-msgstr ""
+msgstr "Неизвестная команда %s"
 
 #: ipalib/plugins/pkinit.py:72
 msgid "Enable or Disable Anonymous PKINIT."
-msgstr ""
+msgstr "Включить или отключить анонимный PKINIT."
 
 #: ipalib/plugins/privilege.py:24
 msgid ""
@@ -12803,7 +12980,7 @@ msgstr ""
 "Дополнительные сведения см. в справке по ролям и полномочиям.\n"
 
 #: ipalib/plugins/privilege.py:63
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "cannot add permission \"%(perm)s\" with bindtype \"%(bindtype)s\" to a "
 "privilege"
@@ -13272,9 +13449,8 @@ msgid "User attribute"
 msgstr "Атрибут пользователя"
 
 #: ipalib/plugins/radiusproxy.py:140
-#, fuzzy
 msgid "The username attribute on the user object"
-msgstr "Атрибут имени пользователя на объекте пользователя"
+msgstr "Атрибут username на объект пользователя"
 
 #: ipalib/plugins/radiusproxy.py:146
 msgid "Add a new RADIUS proxy server."
@@ -13397,15 +13573,16 @@ msgid "The following domains do not belong to this realm: %(domains)s"
 msgstr "Следующие домены не принадлежат данной области: %(domains)s"
 
 #: ipalib/plugins/realmdomains.py:196
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The realm of the folllowing domains could not be detected: %(domains)s. If "
 "these are domains that belong to the this realm, please create a _kerberos "
 "TXT record containing \"%(realm)s\" in each of them."
 msgstr ""
-"Не удалось определить область для следующих доменов: %(domains)s. Если эти "
-"домены принадлежат данной области, создайте запись _kerberos TXT, содержащую "
-"строку «%(realm)s» для каждого из доменов."
+"Не удалось обнаружить область следующих доменов: %(domains)s. Если эти "
+"домены принадлежат данной области, создайте на каждом из них запись вида "
+"_kerberos TXT, "
+"содержащую строку «%(realm)s»."
 
 #: ipalib/plugins/realmdomains.py:219
 msgid ""
@@ -13781,26 +13958,27 @@ msgid ""
 " and the default SELinux user are available in the config-show command.\n"
 msgstr ""
 "\n"
-"SELinux, отображение пользователей\n"
+"Отображение пользователей SELinux\n"
 "\n"
-"Отображение пользователей IPA в пользователей SELinux by host.\n"
+"Отображение пользователей IPA на пользователей SELinux by host.\n"
 "\n"
-"Хосты, группы хостов, пользователи и группы определяться\n"
-"в рамках правила или же правило указывает на существующее правило HBAC. При\n"
-"использовании параметра «--hbacrule» команды selinuxusermap-find, поиск "
-"ведётся по точному соответствию\n"
-"имени правила HBAC, в результате возвращается либо один результат либо ни "
-"одного.\n"
+"Хосты, группы хостов, пользователи и группы можно определить либо "
+"непосредственно в правиле\n"
+"либо же это правило будет указывать на существующее правило HBAC. При "
+"использовании\n"
+"параметра --hbacrule команды selinuxusermap-find, поиск ведётся по точному "
+"соответствию\n"
+"имени правила HBAC, что в итоге возвратит только один или нулевой результат.\n"
 "\n"
 "ПРИМЕРЫ:\n"
 "\n"
 " Создать правило «test1», устанавливающее для всех пользователей на хосте "
-"\"server\" значение xguest_u:s0:\n"
+"«server» значение xguest_u:s0:\n"
 "   ipa selinuxusermap-add --usercat=all --selinuxuser=xguest_u:s0 test1\n"
 "   ipa selinuxusermap-add-host --hosts=server.example.com test1\n"
 "\n"
 " Создать правило «test2», устанавливающее для всех пользователей значение "
-"guest_u:s0 и использующее "
+"guest_u:s0 и использующее\n"
 "для пользователей и хостов существующее правило HBAC:\n"
 "   ipa selinuxusermap-add --usercat=all --hbacrule=webserver --selinuxuser="
 "guest_u:s0 test2\n"
@@ -13808,9 +13986,9 @@ msgstr ""
 " Показать свойства правила:\n"
 "   ipa selinuxusermap-show test2\n"
 "\n"
-" Создать правило для конкретного пользователя. Оно устанавливает для\n"
-" пользователя john контекст SELinux unconfined_u:s0-s0:c0.c1023 на любой "
-"машине:\n"
+" Создать правило для указанного пользователя. Контекст SELinux "
+"unconfined_u:s0-s0:c0.c1023\n"
+" устанавливается для пользователя john на любой машине:\n"
 "   ipa selinuxusermap-add --hostcat=all --selinuxuser=unconfined_u:s0-s0:c0.c1"
 "023 john_unconfined\n"
 "   ipa selinuxusermap-add-user --users=john john_unconfined\n"
@@ -13829,9 +14007,10 @@ msgstr ""
 "\n"
 "ТАКЖЕ СМ.:\n"
 "\n"
-" Список, контролирующий порядок, в котором применяется отображение "
+" Список, контролирующий последовательность применения отображение "
 "пользователей SELinux,\n"
-" и пользователь SELinux по умолчанию, доступны через команду config-show.\n"
+" а также пользователь SELinux по умолчанию, доступны через команду "
+"config-show.\n"
 
 #: ipalib/plugins/selinuxusermap.py:74
 msgid "HBAC rule and local members cannot both be set"
@@ -13860,10 +14039,11 @@ msgid "SELinux user map list not found in configuration"
 msgstr "Список отображения пользователей SELinux не найден в конфигурации"
 
 #: ipalib/plugins/selinuxusermap.py:126
-#, fuzzy, python-format
+#, python-format
 msgid "SELinux user %(user)s not found in ordering list (in config)"
 msgstr ""
-"Пользователь SELinux %(user)s не найден в списке упорядочения (in config)"
+"Пользователь SELinux %(user)s не найден в упорядоченном списке "
+"(в config)"
 
 #: ipalib/plugins/selinuxusermap.py:138
 msgid "SELinux User Map rule"
@@ -13895,9 +14075,8 @@ msgid "HBAC rule %(rule)s not found"
 msgstr "правило HBAC %(rule)s не найдено"
 
 #: ipalib/plugins/selinuxusermap.py:290
-#, fuzzy
 msgid "Create a new SELinux User Map."
-msgstr "Создать новое отображение пользователей SELinux"
+msgstr "Создать новое отображение пользователя SELinux"
 
 #: ipalib/plugins/selinuxusermap.py:292
 #, python-format
@@ -14255,9 +14434,8 @@ msgid "missing service"
 msgstr "служба отсутствует"
 
 #: ipalib/plugins/service.py:318
-#, fuzzy
 msgid "This principal is required by the IPA master"
-msgstr "Этот принципал требуется основному серверу IPA"
+msgstr "Этот принципал необходим основному серверу IPA"
 
 #: ipalib/plugins/service.py:391
 msgid "service"
@@ -14542,7 +14720,6 @@ msgid "Allowed Target"
 msgstr "Допустимый целевой объект"
 
 #: ipalib/plugins/servicedelegation.py:97
-#, fuzzy
 msgid "Allowed to Impersonate"
 msgstr "Разрешена имитация"
 
@@ -14559,9 +14736,8 @@ msgid "Add target to a named service delegation."
 msgstr "Добавить целевой объект для делегирования указанной службы"
 
 #: ipalib/plugins/servicedelegation.py:254
-#, fuzzy
 msgid "Remove member from a named service delegation."
-msgstr "Удалить элемент из делегирования указанной службы"
+msgstr "Удалить участника делегирования указанной службы."
 
 #: ipalib/plugins/servicedelegation.py:347
 #: ipalib/plugins/servicedelegation.py:380
@@ -14828,13 +15004,12 @@ msgid "Create Stage user in from a delete user"
 msgstr "Создать шаблонного пользователя из пользователя delete"
 
 #: ipalib/plugins/stageuser.py:282
-#, fuzzy
 msgid "givenname is required"
 msgstr "требуется givenname"
 
 #: ipalib/plugins/stageuser.py:285
 msgid "sn is required"
-msgstr ""
+msgstr "требуется sn"
 
 #: ipalib/plugins/stageuser.py:397
 msgid "Delete a stage user."
@@ -15183,11 +15358,9 @@ msgid ""
 "must be unique.\n"
 msgstr ""
 "\n"
-"В правило sudo можно добавить очерёдность, для контроля за порядком, в "
-"котором они\n"
-"вычисляются (если клиент это поддерживает). Эта очерёдность является целым "
-"числом\n"
-"и должна быть уникальной.\n"
+"В правило sudo можно добавить очерёдность, для контроля за порядком, в\n"
+"котором они оцениваются (если клиент это поддерживает). Эта очерёдность\n"
+"является целым числом и должна быть уникальной.\n"
 
 #: ipalib/plugins/sudorule.py:62
 msgid ""
@@ -15314,7 +15487,6 @@ msgid "Command category the rule applies to"
 msgstr "Категория команд, к которым применяется правило"
 
 #: ipalib/plugins/sudorule.py:253
-#, fuzzy
 msgid "RunAs User category"
 msgstr "Категория RunAs User"
 
@@ -15332,7 +15504,7 @@ msgstr "Категория RunAs Group, к которой применяется
 
 #: ipalib/plugins/sudorule.py:265
 msgid "Sudo order"
-msgstr ""
+msgstr "Очерёдность sudo"
 
 #: ipalib/plugins/sudorule.py:266
 msgid "integer to order the Sudo rules"
@@ -15353,22 +15525,18 @@ msgid "Host Masks"
 msgstr "Маски хостов"
 
 #: ipalib/plugins/sudorule.py:299
-#, fuzzy
 msgid "Sudo Allow Commands"
 msgstr "Команды Sudo Allow"
 
 #: ipalib/plugins/sudorule.py:303
-#, fuzzy
 msgid "Sudo Deny Commands"
 msgstr "Команды Sudo Deny"
 
 #: ipalib/plugins/sudorule.py:307
-#, fuzzy
 msgid "Sudo Allow Command Groups"
 msgstr "Группы команд Sudo Allow"
 
 #: ipalib/plugins/sudorule.py:311
-#, fuzzy
 msgid "Sudo Deny Command Groups"
 msgstr "Группы команд Sudo Deny"
 
@@ -15431,11 +15599,11 @@ msgid "Sudo Option"
 msgstr "Параметр sudo"
 
 #: ipalib/plugins/sudorule.py:352
-#, fuzzy, python-format
+#, python-format
 msgid "order must be a unique value (%(order)d already used by %(rule)s)"
 msgstr ""
-"приоритет должен иметь уникальное значение (%(order)d уже используется %"
-"(rule)s)"
+"последовательность должна иметь уникальное значение (%(order)d "
+"уже используется в %(rule)s)"
 
 #: ipalib/plugins/sudorule.py:374
 msgid "Create new Sudo Rule."
@@ -16874,7 +17042,6 @@ msgid "Account disabled"
 msgstr "Учетная запись отключена"
 
 #: ipalib/plugins/user.py:353
-#, fuzzy
 msgid "Preserved user"
 msgstr "Сохранённый пользователь"
 
@@ -16919,7 +17086,6 @@ msgid "%s: user is already preserved"
 msgstr "%s: пользователь уже сохранён"
 
 #: ipalib/plugins/user.py:660
-#, fuzzy
 msgid "preserve and no-preserve cannot be both set"
 msgstr "нельзя одновременно установить preserve и no-preserve"
 
@@ -18231,7 +18397,7 @@ msgstr "SID не совпадает ни с одним доверенным до
 
 #: ipaserver/dcerpc.py:322 ipaserver/dcerpc.py:328 ipaserver/dcerpc.py:671
 msgid "Trust setup"
-msgstr ""
+msgstr "Настройка доверия"
 
 #: ipaserver/dcerpc.py:323
 msgid "Our domain is not configured"
