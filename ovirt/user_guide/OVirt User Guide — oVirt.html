@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://www.ovirt.org/documentation/user-guide/user-guide/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!-- <![endif] --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+OVirt User Guide —
+oVirt
+</title>
+<meta charset="utf-8">
+<meta content="" name="description">
+<meta content="" name="author">
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+
+<link href="http://www.ovirt.org/images/favicon.ico" rel="shortcut icon">
+<link href="http://www.ovirt.org/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+<link href="http://www.ovirt.org/images/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed" sizes="57x57">
+<link href="http://www.ovirt.org/images/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="http://www.ovirt.org/images/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="./OVirt User Guide — oVirt_files/application.css" rel="stylesheet" type="text/css">
+<link href="./OVirt User Guide — oVirt_files/print.css" rel="stylesheet" type="text/css" media="print">
+<style type="text/css"></style><style type="text/css"></style><link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head>
+<body class=" source-md">
+<header class="masthead hidden-print" id="branding" role="banner">
+<section class="hgroup">
+<h1>
+<a href="http://www.ovirt.org/"><img id="logo" class="logo is-svg" alt="oVirt" src="./OVirt User Guide — oVirt_files/logo.svg">
+</a></h1>
+</section>
+<div id="access">
+<nav role="navigation">
+<ul class="nav nav-pills">
+<li class="nav-link-home" role="menuitem">
+<a href="http://www.ovirt.org/">Home</a>
+</li>
+
+<li class="nav-link-blog" role="menuitem">
+<a href="http://www.ovirt.org/blog/">Blog</a>
+</li>
+
+<li class="nav-link-download" role="menuitem">
+<a href="http://www.ovirt.org/download/">Download</a>
+</li>
+
+<li class="nav-link-documentation" role="menuitem">
+<a href="http://www.ovirt.org/documentation/">Documentation</a>
+</li>
+
+<li class="nav-link-develop" role="menuitem">
+<a href="http://www.ovirt.org/develop/">Develop</a>
+</li>
+
+<li class="nav-link-community" role="menuitem">
+<a href="http://www.ovirt.org/community/">Community</a>
+</li>
+
+<li class="nav-link-search" role="menuitem">
+<a href="http://www.ovirt.org/search/">Search</a>
+</li>
+
+</ul>
+</nav>
+
+</div>
+</header>
+
+<section class="page-wrap" id="page-wrap">
+<section class="page" id="page">
+<ul class="breadcrumb">
+<li><a href="http://www.ovirt.org/documentation/">Documentation</a></li>
+<li><a href="http://www.ovirt.org/documentation/user-guide/">User-guide</a></li>
+<li class="active">OVirt User Guide</li>
+</ul>
+
+<section class="container content" id="content">
+<div class="alert alert-warning">
+<div class="pull-right">
+<a>Hover for more info</a>
+</div>
+<div class="frontmatter-metadata">
+<table class="metadata">
+<caption>Frontmatter Metadata</caption>
+<tbody><tr>
+<th>title</th>
+<td>OVirt User Guide</td>
+</tr>
+<tr>
+<th>category</th>
+<td>documentation</td>
+</tr>
+<tr>
+<th>authors</th>
+<td>bproffitt</td>
+</tr>
+<tr>
+<th>wiki_title</th>
+<td>OVirt User Guide</td>
+</tr>
+<tr>
+<th>wiki_revision_count</th>
+<td>2</td>
+</tr>
+<tr>
+<th>wiki_last_updated</th>
+<td>2014-10-03</td>
+</tr>
+</tbody></table>
+</div>
+Original Wiki page:
+<a href="http://old.ovirt.org/OVirt_User_Guide" target="_blank">
+OVirt User Guide
+</a>
+</div>
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser.
+<a href="http://browsehappy.com/">Upgrade your browser today</a> or
+<a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<h1 id="ovirt-user-guide">OVirt User Guide</h1>
+
+<h2 id="accessing-the-user-portal">⁠Accessing the User Portal</h2>
+
+<h3 id="logging-in-to-the-user-portal">Logging in to the User Portal</h3>
+
+<p>Log in to the oVirt User Portal directly from your web browser.</p>
+
+<p><strong>Procedure 1.1. Logging in to the User Portal</strong></p>
+
+<ol>
+  <li>
+    <p>Enter the provided <strong>User Portal URL</strong> in the address bar of your web browser. The address must be in the format of <code>https://server.example.com/UserPortal</code>. The login screen displays.
+Alternately, enter the provided <strong>server address</strong> into the web browser, to access the welcome screen. Click <strong>User Portal</strong> to be directed to the User Portal.</p>
+
+    <p>⁠</p>
+
+    <p><img alt="The User Portal Login Selection Screen" title="The User Portal Login Selection Screen" src="./OVirt User Guide — oVirt_files/Portal_Selection.png"></p>
+
+    <p><strong>Figure 1.1. The User Portal Login Selection Screen</strong></p>
+  </li>
+  <li>
+    <p>Enter your <strong>User Name</strong> and <strong>Password</strong>. Use the <strong>Domain</strong> drop-down menu to select the correct domain.
+⁠</p>
+
+    <p><img alt="The User Portal Login Screen" title="The User Portal Login Screen" src="./OVirt User Guide — oVirt_files/User_Portal_Login.png"></p>
+
+    <p><strong>Figure 1.2. The User Portal Login Screen</strong></p>
+
+    <ul>
+      <li>If you have only one running virtual machine in use, select the <strong>Connect Automatically</strong> check box and connect directly to your virtual machine.</li>
+      <li>If you have more than one running virtual machine or do not want to automatically connect to a virtual machine, do not select the <strong>Connect Automatically</strong> check box.</li>
+      <li>Select the language in which the User Portal is presented by using the drop-down menu at the lower-right of the login window.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Click <strong>Login</strong>. The list of virtual machines assigned to you displays.
+⁠</p>
+
+    <p><img alt="User Portal" title="User Portal" src="./OVirt User Guide — oVirt_files/User_Portal.png"></p>
+
+    <p><strong>Figure 1.3. User Portal</strong></p>
+  </li>
+</ol>
+
+<h3 id="logging-out-of-the-user-portal">Logging out of the User Portal</h3>
+
+<p>⁠</p>
+
+<p><strong>Logging out of the User Portal:</strong></p>
+
+<ul>
+  <li>At the title bar of the User Portal, click <strong>Sign out</strong>. You are logged out and the User Portal login screen displays.</li>
+</ul>
+
+<h3 id="logging-in-for-the-first-time-installing-the-engine-certificate">Logging in for the First Time: Installing the Engine Certificate</h3>
+
+<h4 id="installing-ovirt-certificate-in-firefox">Installing oVirt Certificate in Firefox</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>The first time you access the User Portal, you must install the certificate used by oVirt to avoid security warnings.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 1.2. Installing oVirt Certificate in Firefox</strong></p>
+
+<ol>
+  <li>Navigate to the URL for the User Portal in Firefox.</li>
+  <li>Click <strong>Add Exception</strong> to open the <strong>Add Security Exception</strong> window.</li>
+  <li>Ensure the <strong>Permanently store this exception</strong> check box is selected.</li>
+  <li>Click the <strong>Confirm Security Exception</strong> button.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have installed the certificate used by the Red hat Enterprise Virtualization Manager and security warnings no longer appear when you access the User Portal.</p>
+
+<h2 id="installing-supporting-components">⁠Installing Supporting Components</h2>
+
+<h3 id="installing-console-components">Installing Console Components</h3>
+
+<h4 id="console-components">Console Components</h4>
+
+<p>A console is a graphical window that allows you to view the start up screen, shut down screen and desktop of a virtual machine, and to interact with that virtual machine in a similar way to a physical machine. In oVirt, the default application for opening a console to a virtual machine is Remote Viewer, which must be installed on the client machine prior to use.</p>
+
+<h4 id="installing-remote-viewer-on-linux">Installing Remote Viewer on Linux</h4>
+
+<p>Remote Viewer is an application for opening a graphical console to virtual machines. Remote Viewer is a SPICE client that is included the virt-viewer package provided by the <code>Red Hat Enterprise Linux Workstation (v. 6 for x86_64)</code> channel.</p>
+
+<p><strong>Procedure 2.1. Installing Remote Viewer on Linux</strong></p>
+
+<ol>
+  <li>
+    <p>Run the following command to install the spice-xpi package and dependencies:
+    # yum install spice-xpi</p>
+  </li>
+  <li>
+    <p>Run the following command to check whether the <strong>virt-viewer</strong> package has already been installed on your system:
+    # rpm -q virt-viewer
+    virt-viewer-0.5.2-18.el6_4.2.x86_64</p>
+
+    <p>If the virt-viewer package has not been installed, run the following command to install the package and its dependencies:</p>
+
+<pre class="highlight plaintext"><code># yum install virt-viewer
+</code></pre>
+  </li>
+  <li>
+    <p>Restart Firefox for your changes to take effect.</p>
+  </li>
+</ol>
+
+<p>The SPICE plug-in is now installed. You can now connect to your virtual machines using the SPICE protocol.</p>
+
+<h2 id="the-basic-tab">⁠The Basic Tab</h2>
+
+<h3 id="basic-tab-graphical-interface">Basic Tab Graphical Interface</h3>
+
+<p>The <strong>Basic</strong> tab enables you to view and use all the virtual machines that are available to you. The screen consists of three areas: the title bar, a virtual machines area, and a details pane. A number of control buttons allow you to work with the virtual machines.</p>
+
+<p><img alt="The User Portal" title="The User Portal" src="./OVirt User Guide — oVirt_files/User_Portal_Callouts.png"></p>
+
+<p><strong>Figure 3.1. The User Portal</strong></p>
+
+<p>The title bar (1) includes the name of the <strong>User</strong> logged in to the portal and the <strong>Sign Out</strong> button.</p>
+
+<p>In the virtual machines area, the name of the virtual machines or virtual machine pools assigned to you display (2). The logo of the virtual machine's operating system also displays (3). When a virtual machine is powered up, you can connect to it by double-clicking on the virtual machine's logo.</p>
+
+<p>On each virtual machine's icon, buttons allow you to play, stop or pause a virtual machine. The buttons perform the same functions as buttons on a media player (4).</p>
+
+<ul>
+  <li><img alt="" title="fig:Up.png" src="./OVirt User Guide — oVirt_files/VM_Powered_Up.png"> The green play button starts up the virtual machine. It is available when the virtual machine is paused, stopped or powered off.</li>
+  <li><img alt="" title="fig:Down.png" src="./OVirt User Guide — oVirt_files/Down.png"> The red stop button stops the virtual machine. It is available when the virtual machine is running.</li>
+  <li><img alt="" title="fig:Suspend.png" src="./OVirt User Guide — oVirt_files/Suspend.png"> The blue pause button temporarily halts the virtual machine. To restart it, press the green play button.</li>
+  <li><img alt="" title="fig:Reboot.png" src="./OVirt User Guide — oVirt_files/Reboot.png"> The green reboot button reboots the virtual machine. It is available when the virtual machine is running.</li>
+</ul>
+
+<p>The status of the virtual machine is indicated by the text below the virtual machine's icon - <strong>Machine is Ready</strong> or <strong>Machine is Down</strong>.</p>
+
+<p>Clicking on a virtual machine displays the statistics of the selected virtual machine on the details pane to the right (5), including the operating system, defined memory, number of cores and size of virtual drives. You can also configure connection protocol options (6) such as enabling the use of USB devices or local drives.</p>
+
+<h3 id="running-virtual-machines">Running Virtual Machines</h3>
+
+<h4 id="running-virtual-machines---overview">Running Virtual Machines - Overview</h4>
+
+<p>In the User Portal, virtual machines are represented by icons that indicate both type and status. The icons indicate whether a virtual machine is part of a virtual machine pool or is a standalone Windows or Linux virtual machine. The icons also reflect whether the virtual machine is running or stopped.</p>
+
+<p>The User Portal displays a list of the virtual machines assigned to you. You can turn on one or more virtual machines, connect, and log in. You can access virtual machines that are running different operating systems, and you can use multiple virtual machines simultaneously.</p>
+
+<p>In contrast, if you have only one running virtual machine and have enabled automatic connection, you can bypass the User Portal and log in directly to the virtual machine, similar to how you log in to a physical machine.</p>
+
+<h4 id="turning-on-a-virtual-machine">Turning on a Virtual Machine</h4>
+
+<p>To use a virtual machine in the User Portal, you must turn it on and then connect to it. If a virtual machine is turned off, it is grayed out and displays <strong>Machine is Down</strong>.</p>
+
+<p>You can be assigned an individual virtual machine or assigned to one or more virtual machines that are part of a virtual machine pool. Virtual machines in a pool are all clones of a base template, and have the same operating system and installed applications.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> When you take a virtual machine from a virtual machine pool, you are not guaranteed to receive the same VM each time. However, if you configure console options for a VM taken from a virtual machine pool, those options are saved as the default for all VMs taken from that virtual machine pool.</p>
+
+</div>
+<p>⁠</p>
+
+<p><strong>Procedure 3.1. Turning on a Virtual Machine</strong></p>
+
+<ol>
+  <li>Turn on the standalone virtual machine or take a virtual machine from a pool as follows:
+    <ul>
+      <li>
+        <p>To turn on a standalone virtual machine, select the virtual machine icon and click the <img alt="" title="fig:Up.png" src="./OVirt User Guide — oVirt_files/VM_Powered_Up.png"> button.
+⁠</p>
+
+        <p><img alt="Turn on virtual machine" title="Turn on virtual machine" src="./OVirt User Guide — oVirt_files/VM_Powered_Down.png"></p>
+
+        <p><strong>Figure 3.2. Turn on virtual machine</strong></p>
+      </li>
+      <li>
+        <p>To take a virtual machine from a pool, select the virtual machine pool icon and click the <img alt="" title="fig:Up.png" src="./OVirt User Guide — oVirt_files/VM_Powered_Up.png"> button.
+⁠</p>
+
+        <p><img alt="Take virtual machine from a pool" title="Take virtual machine from a pool" src="./OVirt User Guide — oVirt_files/VM_From_Pool.png"></p>
+
+        <p><strong>Figure 3.3. Take virtual machine from a pool</strong></p>
+
+        <p>If there is an available virtual machine in the pool, an icon for that virtual machine will appear in your list. The rest of this procedure then applies to that virtual machine. If you can take multiple virtual machines from a pool, the icon for the virtual machine pool will change into an icon for the last virtual machine you have taken when you take the maximum number of virtual machines possible for that pool.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>The virtual machine powers up.
+⁠</p>
+
+    <p><img alt="Virtual machine powering up" title="Virtual machine powering up" src="./OVirt User Guide — oVirt_files/Extended_VM_Powering_Up.png"></p>
+
+    <p><strong>Figure 3.4. Virtual machine powering up</strong></p>
+  </li>
+  <li>
+    <p>When the virtual machine is powered up, the icon is no longer grayed out. The text displays as <strong>Machine is Ready</strong>. You are now ready to connect.
+⁠</p>
+
+    <p><img alt="Virtual machine turned on" title="Virtual machine turned on" src="./OVirt User Guide — oVirt_files/VM_Powered_Up.png"></p>
+
+    <p><strong>Figure 3.5. Virtual machine turned on</strong></p>
+  </li>
+</ol>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> You can only connect to a virtual machine after it has powered up.</p>
+
+</div>
+<p>#### Connecting to a Powered-On Virtual Machine</p>
+
+<p>After a virtual machine has been turned on, you can connect to it, log in, and start work the same way that you would with a physical machine. The text "Machine is Ready" displays on virtual machines that are powered up.</p>
+
+<p><strong>Procedure 3.2. Connecting to a Powered on Virtual Machine</strong></p>
+
+<ol>
+  <li>
+    <p>Double-click on the selected virtual machine to connect.
+⁠</p>
+
+    <p><img alt="Connect to Virtual Machine" title="Connect to Virtual Machine" src="./OVirt User Guide — oVirt_files/Extended_Connect_to_a_VM.png"></p>
+
+    <p><strong>Figure 3.6. Connect to Virtual Machine</strong></p>
+  </li>
+  <li>
+    <p>A console window of the virtual machine displays. You can now use the virtual machine in the same way that you would use a physical desktop.</p>
+  </li>
+</ol>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> The first time you connect with SPICE, you are prompted to install the appropriate SPICE component or plug-in. If it is the first time you are connecting from a Red Hat Enterprise Linux computer, install the SPICE plug-in for Mozilla Firefox. If you are connecting from a Windows computer, install the ActiveX plug-in.</p>
+
+</div>
+<p>#### Logging Out of a Virtual Machine</p>
+
+<p>It is recommended that you log out from a virtual machine before shutting it down, to minimize the risk of data loss. Additionally, if you attempt to forcefully shut down a virtual machine from the User Portal, it might freeze with a status of <strong>Powering Down</strong>. To gracefully turn off a virtual machine, use the following steps.</p>
+
+<p><strong>Procedure 3.3. Shutting Down a Virtual Machine</strong></p>
+
+<ol>
+  <li>Log out of the guest operating system.</li>
+  <li>If you were using your virtual machine in full screen mode, press <strong>Shift</strong>+<strong>F11</strong> to exit full screen mode, and close the virtual machine's console window. You are now returned to the User Portal.</li>
+  <li>To shut down the virtual machine, click the <img alt="" title="fig:Down.png" src="./OVirt User Guide — oVirt_files/Down.png"> button. The virtual machine is grayed out and displays as "Machine is Down" when it has been turned off.</li>
+</ol>
+
+<h2 id="chapter-4-the-extended-tab">⁠Chapter 4. The Extended Tab</h2>
+
+<h3 id="the-extended-tab-graphical-interface">The Extended Tab Graphical Interface</h3>
+
+<p>The <strong>Extended</strong> tab graphical interface enables you to access and monitor all the virtual resources that are available to you. Eight elements of the <strong>Extended</strong> tab are explained below.</p>
+
+<p><img alt="The Extended Tab" title="The Extended Tab" src="./OVirt User Guide — oVirt_files/Extended_Tab_Callouts.png"></p>
+
+<p><strong>Figure 4.1. The Extended Tab</strong></p>
+
+<p><strong>Table 4.1. The Extended Tab</strong></p>
+
+<table>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><p>Number</p></th>
+<th align="left"><p>Element Name</p></th>
+<th align="left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>1</p></td>
+<td align="left"><p>Title Bar</p></td>
+<td align="left"><p>Includes the name of the <strong>User</strong> logged in to the portal and the <strong>Sign Out</strong> button.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>2</p></td>
+<td align="left"><p>User Portal View Option Tabs</p></td>
+<td align="left"><p>Power Users have access to the <strong>Extended</strong> tab of the User Portal and the <strong>Basic</strong> tab of the User Portal. The <strong>Basic</strong> view is the default view for users with basic permissions.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>3</p></td>
+<td align="left"><p>Navigation Pane</p></td>
+<td align="left"><p>The Navigation Pane allows you to toggle between the Virtual Machines, Templates, and Resources tabs.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>4</p></td>
+<td align="left"><p>Management Bar</p></td>
+<td align="left"><p>The management bar is used to create and make changes to virtual machines.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>5</p></td>
+<td align="left"><p>Virtual Machine List</p></td>
+<td align="left"><p>The list of virtual machines, with the operating systems installed on them and their statuses (running, paused, or stopped).</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>6</p></td>
+<td align="left"><p>Virtual Machine Control Buttons</p></td>
+<td align="left"><p>Virtual Machine Control Buttons allow you to play, stop, pause, or power off virtual machines.</p>
+<ul>
+<li><img src="./OVirt User Guide — oVirt_files/Up.png" title="fig:Up.png" alt="Up.png"> The green play button starts the virtual machine. It is available when the virtual machine is paused, stopped or powered off.</li>
+<li><img src="./OVirt User Guide — oVirt_files/Down(1).png" title="fig:Down.png" alt="Down.png"> The red stop button stops the virtual machine. It is available when the virtual machine is running.</li>
+<li><img src="./OVirt User Guide — oVirt_files/Suspend(1).png" title="fig:Suspend.png" alt="Suspend.png"> The blue pause button temporarily halts the virtual machine. To restart it, press the green play button.</li>
+<li><img src="./OVirt User Guide — oVirt_files/Power.png" title="fig:Power.png" alt="Power.png"> The power button turns off the virtual machine. It is available when the virtual machine is running.</li>
+<li><img src="./OVirt User Guide — oVirt_files/Reboot(1).png" title="fig:Reboot.png" alt="Reboot.png"> The reboot button restarts the virtual machine. It is available when the virtual machine is running.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>7</p></td>
+<td align="left"><p>Console Button</p></td>
+<td align="left"><p>The console button launches a SPICE window and connects to machines that have been powered-up.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>8</p></td>
+<td align="left"><p>Details Pane</p></td>
+<td align="left"><p>The Details Pane displays the statistics of the virtual machine selected in the Navigation Pane.</p></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Details Pane Tab Functions:</strong></p>
+
+<ul>
+  <li>The <strong>General</strong> tab displays basic software and hardware information of the virtual machine, including its name, operating system, display protocol and defined memory.</li>
+  <li>The <strong>Network Interfaces</strong> tab displays the name, type and speed of the network connected to the virtual machine. You can add, edit and remove network interfaces using this tab.</li>
+  <li>The <strong>Disks</strong> tab displays the name, size and format of the disk attached to the virtual machine. You can add, edit and remove virtual disks using this tab.</li>
+  <li>The <strong>Snapshots</strong> tab displays a view of the virtual machine's operating system and applications. You can create and use snapshots using this tab.</li>
+  <li>The <strong>Permissions</strong> tab displays the users and roles assigned to each virtual machine. You can assign and remove user permissions using this tab.</li>
+  <li>The <strong>Events</strong> tab displays the description and time of events which affect the virtual machine.</li>
+  <li>The <strong>Applications</strong> tab displays the applications which have been installed on the virtual machine.</li>
+  <li>The <strong>Monitor</strong> tab displays the CPU Usage, Memory Usage, and Network Usage statistics for the machine selected in the Navigation Pane.</li>
+  <li>The <strong>Sessions</strong> tab displays the Logged-In User, Console User, and Console Client IP for the machine selected in the Navigation Pane.</li>
+</ul>
+
+<h3 id="running-virtual-machines-1">Running Virtual machines</h3>
+
+<h4 id="running-virtual-machines-introduction">Running Virtual Machines Introduction</h4>
+
+<p>This chapter describes how to run, connect to and stop virtual machines on the Power User Portal. You can use multiple virtual machines simultaneously, or use machines running different operating systems.</p>
+
+<h4 id="connecting-to-virtual-machines">Connecting to Virtual Machines</h4>
+
+<p>After you have logged into the portal, you can start, stop, or connect to the virtual machines that are displayed.</p>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure describes how to start a stopped virtual machine, and how to connect to the virtual machine.</p>
+
+<p><strong>Procedure 4.1. Connecting to Virtual Machines</strong></p>
+
+<ol>
+  <li>
+    <p>Select the virtual machine to which you want to connect, then click the Play <img alt="" title="fig:Up.png" src="./OVirt User Guide — oVirt_files/VM_Powered_Up.png"> button. The virtual machine powers up.
+<img alt="Virtual machine turned off" title="Virtual machine turned off" src="./OVirt User Guide — oVirt_files/Extended_VM_Powered_Down.png"></p>
+
+    <p><strong>Figure 4.2. Virtual machine turned off</strong></p>
+
+    <p>The Stop symbol next to the virtual machine's name changes to a Powering Up symbol.When the virtual machine is turned on, the Play symbol displays next to the virtual machine's name.</p>
+
+    <p>⁠</p>
+
+    <p><img alt="Virtual machine turned on" title="Virtual machine turned on" src="./OVirt User Guide — oVirt_files/Extended_VM_Powering_Up.png"></p>
+
+    <p><strong>Figure 4.3. Virtual machine powering up</strong></p>
+  </li>
+  <li>
+    <p>Click the <strong>Console</strong> button to connect to the virtual machine.
+⁠</p>
+
+    <p><img alt="Connect to virtual machine" title="Connect to virtual machine" src="./OVirt User Guide — oVirt_files/Extended_Connect_to_a_VM.png"></p>
+
+    <p><strong>Figure 4.4. Connect to virtual machine</strong></p>
+  </li>
+  <li>
+    <p>If it is the first time connecting with SPICE, you will be prompted to install the appropriate SPICE component or plug-in. If you are connecting from a Windows computer, install the ActiveX component. If you are connecting from a Red Hat Enterprise Linux computer, install the Mozilla Firefox plug-in.</p>
+  </li>
+</ol>
+
+<p>A console window of the virtual machine displays. You can now use the virtual machine in the same way that you would use a physical desktop.</p>
+
+<p><strong>Result</strong></p>
+
+<p>You have started a stopped virtual machine and connected to it.</p>
+
+<div class="alert alert-info">
+  <p><strong>Warning:</strong> By default, a virtual machine running Windows 7 will be suspended after an hour of inactivity. This prevents users from connecting to the virtual machine from the User Portal. To avoid this, disable the power-saving feature on the guest's power manager.</p>
+
+</div>
+<p>#### Turning Off a Virtual Machine from the User Portal</p>
+
+<p>If you attempt to turn off a virtual machine from the User Portal, it might freeze with a status of <strong>Powering Down</strong>, indicating that it has not completely shut down. Use the following procedure to gracefully turn off a virtual machine from within the User Portal.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> To minimize the risk of data loss, log off from a virtual machine before turning it off.</p>
+
+</div>
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to turn off a virtual machine from the User Portal.</p>
+
+<p><strong>Procedure 4.2. Turning Off a Virtual Machine from the User Portal</strong></p>
+
+<ol>
+  <li>Log out of the guest operating system.</li>
+  <li>If you were using your virtual machine in full screen mode, press <strong>Shift</strong>+<strong>F11</strong> to exit full screen mode, and close the virtual machine's console window. You are now returned to the User Portal.</li>
+  <li>To turn off the virtual machine, click the <img alt="" title="fig:Down.png" src="./OVirt User Guide — oVirt_files/Down.png"> button. The Stop symbol appears next to the name of the virtual machine when it has been turned off.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have turned off a virtual machine.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> You can also turn off virtual machines gracefully using the native method from within the virtual machine itself. For example, in Windows virtual machines you can click <strong>Start</strong> → <strong>Shut Down</strong>, and in Red Hat Enterprise Linux virtual machines you can click <strong>System</strong> → <strong>Shut Down</strong>.</p>
+
+</div>
+<p>#### Rebooting a Virtual Machine from the User Portal</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> To minimize the risk of data loss, log off from a virtual machine before rebooting.</p>
+
+</div>
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to reboot a virtual machine from the User Portal.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.3. Rebooting a Virtual Machine from the User Portal</strong></p>
+
+<ol>
+  <li>Log out of the guest operating system.</li>
+  <li>If you were using your virtual machine in full screen mode, press <strong>Shift</strong>+<strong>F11</strong> to exit full screen mode, and close the virtual machine's console window. You are now returned to the User Portal.</li>
+  <li>To reboot the virtual machine, click the <img alt="" title="fig:Reboot.png" src="./OVirt User Guide — oVirt_files/Reboot.png"> button. The Reboot symbol appears next to the name of the virtual machine while it is rebooting, then changes back to a Play symbol when reboot completes.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have rebooted a virtual machine.</p>
+
+<h3 id="creating-virtual-machines">Creating Virtual Machines</h3>
+
+<h4 id="creating-a-virtual-machine">Creating a Virtual Machine</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>You can create a virtual machine using a blank template and configure all of its settings.</p>
+
+<p><strong>Procedure 4.4. Creating a Virtual Machine</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab.</li>
+  <li>
+    <p>Click the <strong>New VM</strong> button to open the <strong>New Virtual Machine</strong> window.
+⁠</p>
+
+    <p><img alt="The New Virtual Machine Window" title="The New Virtual Machine Window" src="./OVirt User Guide — oVirt_files/New_Virtual_Machine.png"></p>
+
+    <p><strong>Figure 4.5. The New Virtual Machine Window</strong></p>
+  </li>
+  <li>On the <strong>General</strong> tab, fill in the <strong>Name</strong> and <strong>Operating System</strong> fields. You can accept the default settings for other fields, or change them if required.</li>
+  <li>Alternatively, click the <strong>Initial Run</strong>, <strong>Console</strong>, <strong>Host</strong>, <strong>Resource Allocation</strong>, <strong>Boot Options</strong>, and <strong>Custom Properties</strong> tabs in turn to define options for your virtual machine.</li>
+  <li>Click <strong>OK</strong> to create the virtual machine and close the window. The <strong>New Virtual Machine - Guide Me</strong> window opens.</li>
+  <li>Use the Guide Me buttons to complete configuration or click <strong>Configure Later</strong> to close the window.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The new virtual machine is created and displays in the list of virtual machines with a status of <code>Down</code>. Before you can use this virtual machine, add at least one network interface and one virtual disk, and install an operating system.</p>
+
+<h4 id="creating-a-virtual-machine-based-on-a-template">Creating a Virtual Machine Based on a Template</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>You can create virtual machines based on templates. This allows you to create virtual machines that are pre-configured with an operating system, network interfaces, applications and other resources.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> Virtual machines created based on a template depend on that template. This means that you cannot remove that template from the Manager if there is a virtual machine that was created based on that template. However, you can clone a virtual machine from a template to remove the dependency on that template.</p>
+
+</div>
+<p><strong>Procedure 4.5. Creating a Virtual Machine Based on a Template</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab.</li>
+  <li>Click the <strong>New VM</strong> button to open the <strong>New Virtual Machine</strong> window.</li>
+  <li>Select the <strong>Cluster</strong> on which the virtual machine will run.</li>
+  <li>Select a template from the <strong>Based on Template</strong> drop-down menu.</li>
+  <li>Select a template sub version from the <strong>Template Sub Version</strong> drop-down menu.</li>
+  <li>Enter a <strong>Name</strong>, <strong>Description</strong> and any <strong>Comments</strong>, and accept the default values inherited from the template in the rest of the fields. You can change them if needed.</li>
+  <li>
+    <p>Click the <strong>Resource Allocation</strong> tab.
+⁠</p>
+
+    <p><img alt="Provisioning - Thin" title="Provisioning - Thin" src="./OVirt User Guide — oVirt_files/New_Virtual_Machine_Resource_Allocation.png"></p>
+
+    <p><strong>Figure 4.6. Provisioning - Thin</strong></p>
+  </li>
+  <li>Select the <strong>Thin</strong> radio button in the <strong>Storage Allocation</strong> area.</li>
+  <li>Select the disk provisioning policy from the <strong>Allocation Policy</strong> drop-down menu. This policy affects the speed of the clone operation and the amount of disk space the new virtual machine initially requires.
+    <ul>
+      <li>Selecting <strong>Thin Provision</strong> results in a faster clone operation and provides optimized usage of storage capacity. Disk space is allocated only as it is required. This is the default selection.</li>
+      <li>Selecting <strong>Preallocated</strong> results in a slower clone operation and provides optimized virtual machine read and write operations. All disk space requested in the template is allocated at the time of the clone operation.</li>
+    </ul>
+  </li>
+  <li>Use the <strong>Target</strong> drop-down menu to select the storage domain on which the virtual machine's virtual disk will be stored.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The virtual machine is created and displayed in the list in the <strong>Virtual Machines</strong> tab. You can now log on to the virtual machine and begin using it, or assign users to it.</p>
+
+<h4 id="creating-a-cloned-virtual-machine-based-on-a-template">Creating a Cloned Virtual Machine Based on a Template</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>Cloned virtual machines are similar to virtual machines based on templates. However, while a cloned virtual machine inherits settings in the same way as a virtual machine based on a template, a cloned virtual machine does not depend on the template on which it was based after it has been created.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> If you clone a virtual machine from a template, the name of the template on which that virtual machine was based is displayed in the <strong>General</strong> tab of the <strong>Edit Virtual Machine</strong> window for that virtual machine. If you change the name of that template, the name of the template in the <strong>General</strong> tab will also be updated. However, if you delete the template from the Manager, the original name of that template will be displayed instead.</p>
+
+</div>
+<p>⁠</p>
+
+<p><strong>Procedure 4.6. Cloning a Virtual Machine Based on a Template</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab.</li>
+  <li>Click the <strong>New VM</strong> button to open the <strong>New Virtual Machine</strong> window.</li>
+  <li>Select the <strong>Cluster</strong> on which the virtual machine will run.</li>
+  <li>Select a template from the <strong>Based on Template</strong> drop-down menu.</li>
+  <li>Select a template sub version from the <strong>Template Sub Version</strong> drop-down menu.</li>
+  <li>Enter a <strong>Name</strong>, <strong>Description</strong> and any <strong>Comments</strong>. You can accept the default values inherited from the template in the rest of the fields, or change them if required.</li>
+  <li>
+    <p>Click the <strong>Resource Allocation</strong> tab.
+⁠</p>
+
+    <p><img alt="Provisioning - Clone" title="Provisioning - Clone" src="./OVirt User Guide — oVirt_files/New_Virtual_Machine_Clone_Allocation.png"></p>
+
+    <p><strong>Figure 4.7. Provisioning - Clone</strong></p>
+  </li>
+  <li>Select the <strong>Clone</strong> radio button in the <strong>Storage Allocation</strong> area.</li>
+  <li>Select the disk provisioning policy from the <strong>Allocation Policy</strong> drop-down menu. This policy affects the speed of the clone operation and the amount of disk space the new virtual machine initially requires.
+    <ul>
+      <li>Selecting <strong>Thin Provision</strong> results in a faster clone operation and provides optimized usage of storage capacity. Disk space is allocated only as it is required. This is the default selection.</li>
+      <li>Selecting <strong>Preallocated</strong> results in a slower clone operation and provides optimized virtual machine read and write operations. All disk space requested in the template is allocated at the time of the clone operation.</li>
+    </ul>
+  </li>
+  <li>Use the <strong>Target</strong> drop-down menu to select the storage domain on which the virtual machine's virtual disk will be stored.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> Cloning a virtual machine may take some time. A new copy of the template's disk must be created. During this time, the virtual machine's status is first <strong>Image Locked</strong>, then <strong>Down</strong>.</p>
+
+</div>
+<p><strong>Result</strong></p>
+
+<p>The virtual machine is created and displayed in the list in the <strong>Virtual Machines</strong> tab. You can now assign users to it, and can begin using it when the clone operation is complete.</p>
+
+<h3 id="configuring-virtual-machines">Configuring Virtual Machines</h3>
+
+<h4 id="completing-the-configuration-of-a-virtual-machine-by-defining-network-interfaces-and-hard-disks">Completing the Configuration of a Virtual Machine by Defining Network Interfaces and Hard Disks</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>Before you can use your newly created virtual machine, the <strong>Guide Me</strong> window prompts you to configure at least one network interface and one virtual disk for the virtual machine.</p>
+
+<p><strong>Procedure 4.7. Completing the Configuration of a Virtual Machine by Defining Network Interfaces and Hard Disks</strong></p>
+
+<ol>
+  <li>On the <strong>New Virtual Machine - Guide Me</strong> window, click the <strong>Configure Network Interfaces</strong> button to open the <strong>New Network Interface</strong> window. You can accept the default values or change them as necessary.</li>
+  <li>Enter the <strong>Name</strong> of the network interface.</li>
+  <li>Use the drop-down menus to select the <strong>Network</strong> and the <strong>Type</strong> of network interface for the new virtual machine. The <strong>Link State</strong> is set to <strong>Up</strong> by default when the NIC is defined on the virtual machine and connected to the network.
+    <div class="alert alert-info">
+      <p><strong>Note:</strong> The options on the <strong>Network</strong> and <strong>Type</strong> fields are populated by the networks available to the cluster, and the NICs available to the virtual machine.</p>
+
+    </div>
+  </li>
+  <li>If applicable, select the <strong>Specify custom MAC address</strong> check box and enter the network interface's MAC address.</li>
+  <li>Click the arrow next to <strong>Advanced Parameters</strong> to configure the <strong>Port Mirroring</strong> and <strong>Card Status</strong> fields, if necessary.</li>
+  <li>Click <strong>OK</strong> to close the <strong>New Network Interface</strong> window and open the <strong>New Virtual Machine - Guide Me</strong> window.</li>
+  <li>Click the <strong>Configure Virtual Disk</strong> button to open the <strong>New Virtual Disk</strong> window.</li>
+  <li>
+    <p>Add either an <strong>Internal</strong> virtual disk or an <strong>External</strong> LUN to the virtual machine.
+⁠</p>
+
+    <p><img alt="Add Virtual Disk Window" title="Add Virtual Disk Window" src="./OVirt User Guide — oVirt_files/Add_Virtual_Disk.png"></p>
+
+    <p><strong>Figure 4.7. Add Virtual Disk Window</strong></p>
+  </li>
+  <li>Click <strong>OK</strong> to close the <strong>New Virtual Disk</strong> window. The <strong>New Virtual Machine - Guide Me</strong> window opens with changed context. There is no further mandatory configuration.</li>
+  <li>Click <strong>Configure Later</strong> to close the window.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have added a network interface and a virtual disk to your virtual machine.</p>
+
+<h3 id="editing-virtual-machines">Editing Virtual Machines</h3>
+
+<h4 id="editing-virtual-machine-properties">Editing Virtual Machine Properties</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>Changes to storage, operating system or networking parameters can adversely affect the virtual machine. Ensure that you have the correct details before attempting to make any changes. Virtual machines must be powered off before some changes can be made to them. This procedure explains how to edit a virtual machine. It is necessary to edit a virtual machines in order to change its settings.</p>
+
+<p>The following fields can be edited while a virtual machine is running:</p>
+
+<ul>
+  <li><strong>Name</strong></li>
+  <li><strong>Description</strong></li>
+  <li><strong>Comment</strong></li>
+  <li><strong>Delete Protection</strong></li>
+  <li><strong>Network Interfaces</strong></li>
+  <li><strong>Use Cloud-Init/Sysprep</strong> (and its properties)</li>
+  <li><strong>Use custom migration downtime</strong></li>
+  <li><strong>Highly Available</strong></li>
+  <li><strong>Priority for Run/Migration queue</strong></li>
+  <li><strong>Watchdog Model</strong></li>
+  <li><strong>Watchdog Action</strong></li>
+  <li><strong>Physical Memory Guaranteed</strong></li>
+  <li><strong>Memory Balloon Device Enabled</strong></li>
+  <li><strong>VirtIO-SCSI Enabled</strong></li>
+  <li><strong>First Device</strong></li>
+  <li><strong>Second Device</strong></li>
+  <li><strong>Attach CD</strong></li>
+  <li><strong>kernel path</strong></li>
+  <li><strong>initrd path</strong></li>
+  <li><strong>kernel parameters</strong></li>
+</ul>
+
+<p>To change all other settings, the virtual machine must be powered off.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.8. Editing a virtual machine:</strong></p>
+
+<ol>
+  <li>Select the virtual machine to be edited.</li>
+  <li>Click the <strong>Edit</strong> button to open the <strong>Edit Virtual Machine</strong> window.</li>
+  <li>Change the <strong>General</strong>, <strong>System</strong>, <strong>Initial Run</strong>, <strong>Console</strong>, <strong>Host</strong>, <strong>High Availability</strong>, <strong>Resource Allocation</strong>, <strong>Boot Options</strong>, and <strong>Custom Options</strong> fields as required.</li>
+  <li>Click <strong>OK</strong> to save your changes. Your changes will be applied once you restart your virtual machine.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have changed the settings of a virtual machine by editing it.</p>
+
+<h4 id="editing-a-network-interface">Editing a Network Interface</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure describes editing a network interface. In order to change any network settings, you must edit the network interface.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.9. Editing a Network Interface</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Click the <strong>Network Interfaces</strong> tab of the details pane and select the network interface to edit.</li>
+  <li>Click <strong>Edit</strong> to open the <strong>Edit Network Interface</strong> window. This dialog contains the same fields as the <strong>New Network Interface</strong> dialog.</li>
+  <li>Click <strong>OK</strong> to save your changes once you are finished.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have now changed the network interface by editing it.</p>
+
+<h4 id="extending-the-size-of-an-online-virtual-disk">Extending the Size of an Online Virtual Disk</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to extend the size of a virtual drive while the virtual drive is attached to a virtual machine.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.10. Extending the Size of an Online Virtual Disk</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Select the <strong>Disks</strong> tab in the details pane.</li>
+  <li>Select a target disk from the list in the details pane.</li>
+  <li>Click <strong>Edit</strong> in the details pane.</li>
+  <li>Enter a value in the <code>Extend size by(GB)</code> field.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The target disk's status becomes <code>locked</code> for a short time, during which the drive is resized. When the resizing of the drive is complete, the status of the drive becomes <code>OK</code>.</p>
+
+<h4 id="floating-disks">Floating Disks</h4>
+
+<p>Floating disks are disks that are not associated with any virtual machine.</p>
+
+<p>Floating disks can minimize the amount of time required to set up virtual machines. Designating a floating disk as storage for a VM makes it unnecessary to wait for disk preallocation at the time of a VM's creation.</p>
+
+<p>Floating disks can be attached to virtual machines or designated as shareable disks, which can be used with one or more VMs.</p>
+
+<h4 id="associating-a-virtual-disk-with-a-virtual-machine">Associating a Virtual Disk with a Virtual Machine</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to associate a virtual disk with a virtual machine. Once the virtual disk is associated with the virtual machine, the VM is able to access it.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.11. Associating a Virtual Disk with a Virtual Machine</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>In the details pane, select the <strong>Disks</strong> tab.</li>
+  <li>Click <strong>Add</strong> in the menu at the top of the Details Pane.</li>
+  <li>Type the size in GB of the disk into the <strong>Size(GB)</strong> field.</li>
+  <li>Type the disk alias into the <strong>Alias</strong> field.</li>
+  <li>Click <strong>OK</strong> in the bottom right corner of the <strong>Add Virtual Disk</strong> window. The disk you have associated with the virtual machine appears in the details pane after a short time.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The virtual disk is associated with the virtual machine.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> No Quota resources are consumed by attaching virtual disks to, or detaching virtual disks from, virtual machines.</p>
+
+</div>
+<div class="alert alert-info">
+  <p><strong>Note:</strong> Using the above procedure, it is now possible to attach a virtual disk to more than one virtual machine.</p>
+
+</div>
+<p>#### Changing the CD for a Virtual Machine</p>
+
+<p><strong>Summary</strong></p>
+
+<p>You can change the CD accessible to a virtual machine while that virtual machine is running.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> You can only use ISO files that have been added to the ISO domain of the cluster in which the virtual machine is a member. Therefore, you must upload ISO files to that domain before you can make those ISO files accessible to virtual machines.</p>
+
+</div>
+<p>⁠</p>
+
+<p><strong>Procedure 4.12. Changing the CD for a Virtual Machine</strong></p>
+
+<ol>
+  <li>From the <strong>Virtual Machines</strong> tab, select a virtual machine that is currently running.</li>
+  <li>
+    <p>Click <strong>Change CD</strong> to open the <strong>Change CD</strong> window.
+⁠</p>
+
+    <p><img alt="The Change CD Window" title="The Change CD Window" src="./OVirt User Guide — oVirt_files/Navigation_Tabs_Change_CD.png"></p>
+
+    <p><strong>Figure 4.9. The Change CD Window</strong></p>
+  </li>
+  <li>From the drop-down menu:
+    <ul>
+      <li>Select <code>[Eject]</code> to eject the CD currently accessible to the virtual machine. Or,</li>
+      <li>Select an ISO file from the list to eject the CD currently accessible to the virtual machine and mount that ISO file as a CD.</li>
+    </ul>
+  </li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have ejected the CD previously accessible to the virtual machine, or ejected the CD previously accessible to the virtual machine and made a new CD accessible to that virtual machine</p>
+
+<h4 id="smart-card-authentication">Smart card Authentication</h4>
+
+<p>Smart cards are an external hardware security feature, most commonly seen in credit cards, but also used by many businesses as authentication tokens. Smart cards can be used to protect oVirt virtual machines.</p>
+
+<h4 id="enabling-and-disabling-smart-cards">Enabling and Disabling Smart cards</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>The following procedures explain how to enable and disable the Smart card feature for virtual machines.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.13. Enabling Smart cards</strong></p>
+
+<ol>
+  <li>Ensure that the Smart card hardware is plugged into the client machine and is installed according to manufacturer's directions.</li>
+  <li>Select the desired virtual machine.</li>
+  <li>Click the <strong>Edit</strong> button. The <strong>Edit Virtual Machine</strong> window appears.</li>
+  <li>Select the <strong>Console</strong> tab, and select the check box labeled <strong>Smartcard enabled</strong>, then click <strong>OK</strong>.</li>
+  <li>Run the virtual machine by clicking the <strong>Console</strong> icon or through the User Portal. Smart card authentication is now passed from the client hardware to the virtual machine.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have enabled Smart card authentication for the virtual machine.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> If the Smart card hardware is not correctly installed, enabling the Smart card feature will result in the virtual machine failing to load properly.</p>
+
+</div>
+<p>⁠</p>
+
+<p><strong>Procedure 4.14. Disabling Smart cards</strong></p>
+
+<ol>
+  <li>Select the desired virtual machine.</li>
+  <li>Click the <strong>Edit</strong> button. The <strong>Edit Virtual Machine</strong> window appears.</li>
+  <li>Select the <strong>Console</strong> tab, and clear the check box labeled <strong>Smartcard enabled</strong>, then click <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have disabled Smart card authentication for the virtual machine.</p>
+
+<h3 id="removing-virtual-machines">Removing Virtual Machines</h3>
+
+<h4 id="removing-a-virtual-machine">Removing a Virtual Machine</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>Remove a virtual machine from the oVirt environment.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> The <strong>Remove</strong> button is disabled while virtual machines are running; you must shut down a virtual machine before you can remove it.</p>
+
+</div>
+<p>⁠</p>
+
+<p><strong>Procedure 4.15. Removing a Virtual Machine</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select the virtual machine to remove.</li>
+  <li>Click <strong>Remove</strong> to open the <strong>Remove Virtual Machine(s)</strong> window.</li>
+  <li>Optionally, select the <strong>Remove Disk(s)</strong> check box to remove the virtual disks attached to the virtual machine together with the virtual machine. If the <strong>Remove Disk(s)</strong> check box is cleared, then the virtual disks remain in the environment as floating disks.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The virtual machine is removed from the environment and is no longer listed in the <strong>Virtual Machines</strong> resource tab. If you selected the <strong>Remove Disk(s)</strong> check box, then the virtual disks attached to the virtual machine are also removed.</p>
+
+<h3 id="snapshots">Snapshots</h3>
+
+<h4 id="managing-snapshots">Managing Snapshots</h4>
+
+<p>Before you make changes to your virtual machine, it is recommended to use snapshots to back up all the virtual machine's existing data. A snapshot displays a view of the VM's operating system and all its applications at a given point in time, and can be used to restore a VM to a previous state.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> Live snapshots can only be taken on Data Centers running oVirt 3.1 or higher. Otherwise, the virtual machine must first be powered down.</p>
+
+</div>
+<p>#### Creating Snapshots</p>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to create a snapshot of a virtual machine.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.16. Creating a snapshot of a virtual machine</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Select the <strong>Snapshots</strong> tab in the details pane.</li>
+  <li>Click <strong>Create</strong>. The <strong>Create Snapshot</strong> dialog displays.</li>
+  <li>Enter a description for the snapshot, select <strong>Disks to include</strong> using the check boxes. and click <strong>OK</strong>.</li>
+  <li>A new snapshot of the virtual machine's operating system and applications is created. It displays in a list on the left side of the <strong>Snapshots</strong> tab.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have taken a snapshot of a virtual machine.</p>
+
+<h4 id="cloning-snapshots">Cloning Snapshots</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to clone a virtual machine from a snapshot.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.17. Cloning Snapshots</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Select the <strong>Snapshots</strong> tab in the details pane.</li>
+  <li>Select the snapshot from which to create a clone in the list in the details pane.</li>
+  <li>Click <strong>Clone</strong> at the top of the details pane. The <strong>Clone VM from Snapshot</strong> window opens. This window is similar to the <strong>New VM</strong> window.</li>
+  <li>Fill in the parameters and click <strong>OK</strong> in the lower-right corner of the <strong>Clone VM from Snapshot</strong> window.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have cloned a virtual machine from a snapshot.</p>
+
+<h4 id="using-a-snapshot-to-restore-a-virtual-machine">Using a Snapshot to Restore a Virtual Machine</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>A snapshot can be used to restore a virtual machine to its previous state.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.18. Using a snapshot to restore a virtual machine</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Click the <strong>Snapshots</strong> tab in the details pane to list the available snapshots.</li>
+  <li>Select a snapshot to restore in the left side-pane. The snapshot details display in the right side-pane.</li>
+  <li>Click the drop-down list beside <strong>Preview</strong> to open the <strong>Custom Preview Snapshot</strong> window.</li>
+  <li>Use the check boxes to select the <strong>VM Configuration</strong>, <strong>Memory</strong>, and disk(s) you want to restore, then click <strong>OK</strong>. This allows you to create and restore from a customized snapshot using the configuration and disk(s) from multiple snapshots. The status of the snapshot changes to <code>Preview Mode</code>. The status of the virtual machine briefly changes to <code>Image Locked</code> before returning to <code>Down</code>.</li>
+  <li>Start the virtual machine; it runs using the disk image of the snapshot.</li>
+  <li>Click <strong>Commit</strong> to permanently restore the virtual machine to the condition of the snapshot. Any subsequent snapshots are erased. Alternatively, click the <strong>Undo</strong> button to deactivate the snapshot and return the virtual machine to its previous state.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The virtual machine is restored to its state at the time of the snapshot, or returned to its state before the preview of the snapshot.</p>
+
+<h4 id="deleting-snapshots">Deleting Snapshots</h4>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure describes how to delete a snapshot.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.19. Deleting a Snapshot</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Select the <strong>Snapshots</strong> tab. A list of snapshots displays.</li>
+  <li>Select the snapshot to delete, then click <strong>Delete</strong>n. A dialog prompts you to confirm the deletion. Click <strong>OK</strong> to continue.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have deleted a snapshot.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> Deleting a snapshot does not remove any information from the virtual machine - it simply removes a return-point. However, restoring a virtual machine from a snapshot deletes any content that was written to the virtual machine after the time the snapshot was taken.</p>
+
+</div>
+<p>### Templates</p>
+
+<h4 id="introduction-to-templates">Introduction to Templates</h4>
+
+<p>A template is a copy of a preconfigured virtual machine, used to simplify the subsequent, repeated creation of similar virtual machines. Templates capture installed software and software configurations, as well as the hardware configuration, of the original virtual machine.</p>
+
+<p>When you create a template from a virtual machine, a read-only copy of the virtual machine's disk is taken. The read-only disk becomes the base disk image of the new template, and of any virtual machines created from the template. As such, the template cannot be deleted whilst virtual machines created from the template exist in the environment.</p>
+
+<p>Virtual machines created from a template use the same NIC type and driver as the original virtual machine, but utilize separate and unique MAC addresses.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> A virtual machine may require to be sealed before being used to create a template.</p>
+
+</div>
+<p>#### Template Tasks</p>
+
+<h5 id="creating-a-template">Creating a Template</h5>
+
+<p><strong>Summary</strong></p>
+
+<p>Create a template from an existing virtual machine to use as a blueprint for creating additional virtual machines.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.20. Creating a Template from an Existing Virtual Machine</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Ensure the virtual machine is powered down and has a status of <code>Down</code>.</li>
+  <li>Click <strong>Make Template</strong> to open the <strong>New Template</strong> window.
+<img alt="The New Template window" title="fig:The New Template window" src="./OVirt User Guide — oVirt_files/New_template.png">
+<strong>Figure 4.10. The New Template window</strong></li>
+  <li>Enter a <strong>Name</strong>, <strong>Description</strong>, and <strong>Comment</strong> for the template.</li>
+  <li>From the <strong>Cluster</strong> drop-down menu, select the cluster with which the template will be associated. By default, this will be the same as that of the source virtual machine.</li>
+  <li>Optionally, select the <strong>Create as a Sub Template version</strong> check box, select a <strong>Root Template</strong> and enter a <strong>Sub Version Name</strong> to create the new template as a sub template of an existing template.</li>
+  <li>In the <strong>Disks Allocation</strong> section, enter an alias for the disk in the <strong>Alias</strong> text field and select the storage domain on which the disk will be stored from the <strong>Target</strong> drop-down list. By default, these will be the same as those of the source virtual machine.</li>
+  <li>The <strong>Allow all users to access this Template</strong> check box is selected by default. This makes the template public.</li>
+  <li>The <strong>Copy VM permissions</strong> check box is not selected by default. Select this check box to copy the permissions of the source virtual machine to the template.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The virtual machine displays a status of <code>Image Locked</code> while the template is being created. The process of creating a template may take up to an hour depending on the size of the virtual machine disk and your storage hardware. When complete, the template is added to the <strong>Templates</strong> tab. You can now create new virtual machines based on the template.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> When a template is made, the virtual machine is copied so that both the existing virtual machine and its template are usable after template creation.</p>
+
+</div>
+<p>##### Editing a Template</p>
+
+<p><strong>Summary</strong></p>
+
+<p>Once a template has been created, its properties can be edited. Because a template is a copy of a virtual machine, the options available when editing a template are identical to those in the <strong>Edit Virtual Machine</strong> window.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.21. Editing a Template</strong></p>
+
+<ol>
+  <li>Use the <strong>Templates</strong> resource tab, tree mode, or the search function to find and select the template in the results list.</li>
+  <li>Click <strong>Edit</strong> to open the <strong>Edit Template</strong> window.</li>
+  <li>Change the necessary properties and click <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>The properties of the template are updated. The <strong>Edit Template</strong> window will not close if a property field is invalid.</p>
+
+<h5 id="deleting-a-template">Deleting a Template</h5>
+
+<p><strong>Summary</strong></p>
+
+<p>Delete a template from your oVirt environment.</p>
+
+<p><strong>Warning</strong></p>
+
+<p>If you have used a template to create a virtual machine, make sure that you do not delete the template as the virtual machine needs it to continue running.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.22. Deleting a Template</strong></p>
+
+<ol>
+  <li>Use the resource tabs, tree mode, or the search function to find and select the template in the results list.</li>
+  <li>Click <strong>Remove</strong> to open the <strong>Remove Template(s)</strong> window.</li>
+  <li>Click <strong>OK</strong> to remove the template.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have removed the template.</p>
+
+<h4 id="templates-and-permissions">Templates and Permissions</h4>
+
+<h5 id="managing-system-permissions-for-a-template">Managing System Permissions for a Template</h5>
+
+<p>As the <strong>SuperUser</strong>, the system administrator manages all aspects of the Administration Portal. More specific administrative roles can be assigned to other users. These restricted administrator roles are useful for granting a user administrative privileges that limit them to a specific resource. For example, a <strong>DataCenterAdmin</strong> role has administrator privileges only for the assigned data center with the exception of the storage for that data center, and a <strong>ClusterAdmin</strong> has administrator privileges only for the assigned cluster.</p>
+
+<p>A template administrator is a system administration role for templates in a data center. This role can be applied to specific virtual machines, to a data center, or to the whole virtualized environment; this is useful to allow different users to manage certain virtual resources.</p>
+
+<p>The template administrator role permits the following actions:</p>
+
+<ul>
+  <li>Create, edit, export, and remove associated templates.</li>
+  <li>Import and export templates.</li>
+</ul>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> You can only assign roles and permissions to existing users.</p>
+
+</div>
+<p>### Resources</p>
+
+<h4 id="monitoring-power-user-portal-resources">Monitoring Power User Portal Resources</h4>
+
+<p>Before making configuration changes to virtual machines in the User Portal, it is recommended that you take an inventory of the resources available. This is to ensure the resources are sufficient for peak performance and to avoid overloading the hosts running the virtual machines.</p>
+
+<p>The <strong>Resources</strong> tab in the navigation pane shows a cumulative view of all the resources available in the User Portal, and the performance and statistics of each virtual machine.</p>
+
+<p><img alt="Resources tab" title="Resources tab" src="./OVirt User Guide — oVirt_files/Resource_Tab.png"></p>
+
+<p><strong>Figure 4.11. Resources tab</strong></p>
+
+<ul>
+  <li><strong>Virtual CPUs</strong>: This box displays the number of your machines' virtual CPUs in use, and the consumption of CPU quota used by you and others.</li>
+  <li><strong>Memory</strong>: This box displays the consumption of memory quota used by you and others, and available memory as defined by the quota.</li>
+  <li><strong>Storage</strong>: This box displays the consumption of storage quota by you and others, the total size of all your virtual disks, and the number and total size of your virtual machines' snapshots. It also displays a breakdown of storage details for each virtual machine. Click the <strong>+</strong> button next to the virtual machine name to display all the virtual disks attached to the virtual machine.</li>
+</ul>
+
+<h4 id="quota---a-users-introduction">Quota - A User's Introduction</h4>
+
+<p>When you create a virtual machine, the virtual machine consumes CPU and storage resources from its data center. Quota compares the amount of virtual resources consumed by the creation of the virtual machine to the storage allowance and the run-time allowance set by the system administrator.</p>
+
+<p>If you do not have enough of either kind of allowance, you are not allowed to create the virtual machine. Avoid exceeding your quota limit by using the Resources tab to monitor your CPU and storage consumption.</p>
+
+<h4 id="what-to-do-when-you-exceed-your-quota">What to Do When You Exceed Your Quota</h4>
+
+<p>oVirt provides a resource-limitation tool called <em>quota</em>, which allows system administrators to limit the amount of CPU and storage each user can consume. Quota compares the amount of virtual resources consumed when you use the virtual machine to the storage allowance and the run-time allowance set by the system administrator.</p>
+
+<p>When you exceed your quota, a pop-up window informs you that you have exceeded your quota, and you will no longer have access to virtual resources. For example, this can happen if you have too many concurrently running virtual machines in your environment.</p>
+
+<p>To regain access to your virtual machines, do one of the following:</p>
+
+<ul>
+  <li>Shut down the virtual machines that you do not need. This will bring your resource consumption down to a level at which it is not in excess of the quota, and you will be able to run virtual machines again.</li>
+  <li>If you cannot shut down any existing virtual machines, contact your system administrator to extend your quota allowance or remove any unused virtual machines.</li>
+</ul>
+
+<h3 id="virtual-machines-and-permissions">Virtual Machines and Permissions</h3>
+
+<h4 id="managing-system-permissions-for-a-virtual-machine">Managing System Permissions for a Virtual Machine</h4>
+
+<p>As the <strong>SuperUser</strong>, the system administrator manages all aspects of the Administration Portal. More specific administrative roles can be assigned to other users. These restricted administrator roles are useful for granting a user administrative privileges that limit them to a specific resource. For example, a <strong>DataCenterAdmin</strong> role has administrator privileges only for the assigned data center with the exception of the storage for that data center, and a <strong>ClusterAdmin</strong> has administrator privileges only for the assigned cluster.</p>
+
+<p>A <strong>UserVmManager</strong> is a system administration role for virtual machines in a data center. This role can be applied to specific virtual machines, to a data center, or to the whole virtualized environment; this is useful to allow different users to manage certain virtual resources.</p>
+
+<p>The user virtual machine administrator role permits the following actions:</p>
+
+<ul>
+  <li>Create, edit, and remove virtual machines.</li>
+  <li>Run, suspend, shutdown, and stop virtual machines.</li>
+</ul>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> You can only assign roles and permissions to existing users.</p>
+
+</div>
+<p>Many end users are concerned solely with the virtual machine resources of the virtualized environment. As a result, oVirt provides several user roles which enable the user to manage virtual machines specifically, but not other resources in the data center.</p>
+
+<h4 id="assigning-virtual-machines-to-users">Assigning Virtual Machines to Users</h4>
+
+<p>If you are creating virtual machines for users other than yourself, you have to assign roles to the users before they can use the virtual machines. Note that permissions can only be assigned to existing users. See the <em>oVirt Installation Guide</em> for details on creating user accounts.</p>
+
+<p>The oVirt User Portal supports three default roles: User, PowerUser and UserVmManager. However, customized roles can be configured via oVirt Administration Portal. The default roles are described below.</p>
+
+<ul>
+  <li>A <strong>User</strong> can connect to and use virtual machines. This role is suitable for desktop end users performing day-to-day tasks.</li>
+  <li>A <strong>PowerUser</strong> can create virtual machines and view virtual resources. This role is suitable if you are an administrator or manager who needs to provide virtual resources for your employees.</li>
+  <li>A <strong>UserVmManager</strong> can edit and remove virtual machines, assign user permissions, use snapshots and use templates. It is suitable if you need to make configuration changes to your virtual environment.</li>
+</ul>
+
+<p>When you create a virtual machine, you automatically inherit <strong>UserVmManager</strong> privileges. This enables you to make changes to the virtual machine and assign permissions to the users you manage, or users who are in your Identity Management (IdM) or RHDS group.</p>
+
+<p>See <em>oVirt Installation Guide</em> for more information on directory services support in oVirt.</p>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to add permissions to users.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.23. Assigning Permissions to Users</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>On the details pane, select the <strong>Permissions</strong> tab.</li>
+  <li>Click <strong>New</strong>. The <strong>Add Permission to User</strong> dialog displays. Enter a Name, or User Name, or part thereof in the <strong>Search</strong> text box, and click <strong>Go</strong>. A list of possible matches display in the results list.</li>
+  <li>Select the check box of the user to be assigned the permissions. Scroll through the <strong>Role to Assign</strong> list and select <strong>UserRole</strong>. Click <strong>OK</strong>.</li>
+  <li>The user's name and role display in the list of users permitted to access this virtual machine.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have added permissions to a user.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> If a user is assigned permissions to only one virtual machine, Single Sign On (SSO) can be configured for the virtual machine. SSO enables the user to bypass the User Portal and log in directly to the virtual machine. SSO can be enabled or disabled via the User Portal on a per virtual machine basis.</p>
+
+</div>
+<p>#### Removing Access to Virtual Machines from Users</p>
+
+<p><strong>Summary</strong></p>
+
+<p>This procedure explains how to remove user permissions.</p>
+
+<p>⁠</p>
+
+<p><strong>Procedure 4.24. Removing Access to Virtual Machines from Users</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>On the details pane, select the <strong>Permissions</strong> tab.</li>
+  <li>Click <strong>Remove</strong>. A warning message displays, asking you to confirm removal of the selected permissions.</li>
+  <li>To proceed, click <strong>OK</strong>. To abort, click <strong>Cancel</strong>.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have now removed permissions from a user.</p>
+
+<h2 id="configuring-console-options">⁠Configuring Console Options</h2>
+
+<h3 id="console-options">Console Options</h3>
+
+<h4 id="introduction-to-connection-protocols">Introduction to Connection Protocols</h4>
+
+<p>Connection protocols are the underlying technology used to provide graphical consoles for virtual machines and allow users to work with virtual machines in a similar way as they would with physical machines. oVirt currently supports the following connection protocols:</p>
+
+<p><strong>SPICE</strong></p>
+
+<p>Simple Protocol for Independent Computing Environments (SPICE) is the recommended connection protocol for both Linux virtual machines and Windows virtual machines. SPICE is installed and executed on the client that connects to the virtual machine.</p>
+
+<p><strong>VNC</strong></p>
+
+<p>Virtual Network Computing (VNC) can be used to open consoles to both Linux virtual machines and Windows virtual machines. To open a console to a virtual machine using VNC, you must use Remote Viewer or a VNC client.</p>
+
+<p><strong>RDP</strong></p>
+
+<p>Remote Desktop Protocol (RDP) can only be used to open consoles to Windows virtual machines, and is only available when you access a virtual machines from a Windows machine on which Remote Desktop has been installed. Moreover, before you can connect to a Windows virtual machine using RDP, you must set up remote sharing on the virtual machine and configure the firewall to allow remote desktop connections.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> SPICE is not currently supported on virtual machines running Windows 8. If a Windows 8 virtual machine is configured to use the SPICE protocol, it will detect the absence of the required SPICE drivers and automatically fall back to using RDP.</p>
+
+</div>
+<p>#### Accessing Console Options</p>
+
+<p>In the User Portal, you can configure several options for opening graphical consoles for virtual machines, such as the method of invocation and whether to enable or disable USB redirection.</p>
+
+<p><strong>Procedure 5.1. Accessing Console Options</strong></p>
+
+<ol>
+  <li>Select a running virtual machine.</li>
+  <li>Click the edit console options button to open the <strong>Console Options</strong> window.</li>
+</ol>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> Further options specific to each of the connection protocols, such as the keyboard layout when using the VNC connection protocol, can be configured in the <strong>Console</strong> tab of the <strong>Edit Virtual Machine</strong> window.</p>
+
+</div>
+<p>#### SPICE Console Options</p>
+
+<p>When the SPICE connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
+
+<p><img alt="The Console Options window" title="The Console Options window" src="./OVirt User Guide — oVirt_files/Console_Options.png"></p>
+
+<p><strong>Figure 5.1. The Console Options window</strong></p>
+
+<p><strong>Console Invocation</strong></p>
+
+<ul>
+  <li><strong>Auto</strong>: oVirt automatically selects the method for invoking the console.</li>
+  <li><strong>Native client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Viewer.</li>
+  <li><strong>Browser plugin</strong>: When you connect to the console of the virtual machine, you are connected directly via Remote Viewer.</li>
+  <li><strong>SPICE HTML5 browser client (Tech preview)</strong>: When you connect to the console of the virtual machine, a browser tab is opened that acts as the console.</li>
+</ul>
+
+<p><strong>SPICE Options</strong></p>
+
+<ul>
+  <li><strong>Map control-alt-delete shortcut to ctrl+alt+end</strong>: Select this check box to map the <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> key combination to <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> inside the virtual machine.</li>
+  <li><strong>Enable USB Auto-Share</strong>: Select this check box to automatically redirect USB devices to the virtual machine. If this option is not selected, USB devices will connect to the client machine instead of the guest virtual machine. To use the USB device on the guest machine, manually enable it in the SPICE client menu.</li>
+  <li><strong>Open in Full Screen</strong>: Select this check box for the virtual machine console to automatically open in full screen when you connect to the virtual machine. Press <strong>SHIFT</strong>+<strong>F11</strong> to toggle full screen mode on or off.</li>
+  <li><strong>Enable SPICE Proxy</strong>: Select this check box to enable the SPICE proxy.</li>
+  <li><strong>Enable WAN options</strong>: Select this check box to enable WAN color depth and effects for the virtual machine console. Select this check box for only Windows virtual machines. Selecting this check box sets the parameters <em>WAN-DisableEffects</em> and <em>WAN-ColorDepth</em>. Selecting <strong>Enable WAN options</strong> sets <em>Wan-DisableEffects</em> to <em>animation</em> and sets the color depth to 16 bits.</li>
+</ul>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> The <strong>Browser plugin</strong> console option is only available when accessing the Administration and User Portals through Internet Explorer. This console options uses the version of Remote Viewer provided by the <code>SpiceX.cab</code> installation program. For all other browsers, the <strong>Native client</strong> console option is the default. This console option uses the version of Remote Viewer provided by the <code>virt-viewer-x86.msi</code> and <code>virt-viewer-x64.msi</code> installation files.</p>
+
+</div>
+<p>#### VNC Console Options</p>
+
+<p>When the VNC connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
+
+<p><strong>Console Invocation</strong></p>
+
+<ul>
+  <li><strong>Native Client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Viewer.</li>
+  <li><strong>NoVNC</strong>: When you connect to the console of the virtual machine, a browser tab is opened that acts as the console.</li>
+</ul>
+
+<p><strong>VNC Options</strong></p>
+
+<ul>
+  <li><strong>Map control-alt-delete shortcut to ctrl+alt+end</strong>: Select this check box to map the <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> key combination to <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> inside the virtual machine.</li>
+</ul>
+
+<h4 id="rdp-console-options">RDP Console Options</h4>
+
+<p>When the RDP connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
+
+<p><strong>Console Invocation</strong></p>
+
+<ul>
+  <li><strong>Auto</strong>: The Manager automatically selects the method for invoking the console.</li>
+  <li><strong>Native client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Desktop.</li>
+</ul>
+
+<p><strong>RDP Options</strong></p>
+
+<ul>
+  <li><strong>Use Local Drives</strong>: Select this check box to make the drives on the client machine to be accessible on the guest virtual machine.</li>
+</ul>
+
+<h3 id="remote-viewer-options">Remote Viewer Options</h3>
+
+<h4 id="remote-viewer-options-1">Remote Viewer Options</h4>
+
+<p>When you specify the <strong>Native client</strong> or <strong>Browser plugin</strong> console invocation options, you will connect to virtual machines using Remote Viewer. The Remote Viewer window provides a number of options for interacting with the virtual machine to which it is connected.⁠</p>
+
+<p><strong>Table 5.1. Remote Viewer Options</strong></p>
+
+<table>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><p>Option</p></th>
+<th align="left"><p>Hotkey</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>File</p></td>
+<td align="left"><ul>
+<li><strong>Screenshot</strong>: Takes a screen capture of the active window and saves it in a location of your specification.</li>
+<li><strong>USB device selection</strong>: If USB redirection has been enabled on your virtual machine, the USB device plugged into your client machine can be accessed from this menu.</li>
+<li><strong>Quit</strong>: Closes the console. The hot key for this option is <strong>Shift</strong>+<strong>Ctrl</strong>+<strong>Q</strong>.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left"><p>View</p></td>
+<td align="left"><ul>
+<li><strong>Full screen</strong>: Toggles full screen mode on or off. When enabled, full screen mode expands the virtual machine to fill the entire screen. When disabled, the virtual machine is displayed as a window. The hot key for enabling or disabling full screen is <strong>SHIFT</strong>+<strong>F11</strong>.</li>
+<li><strong>Zoom</strong>: Zooms in and out of the console window. <strong>Ctrl</strong>+<strong>+</strong> zooms in, <strong>Ctrl</strong>+<strong>-</strong> zooms out, and <strong>Ctrl</strong>+<strong>0</strong> returns the screen to its original size.</li>
+<li><strong>Automatically resize</strong>: Tick to enable the guest resolution to automatically scale according to the size of the console window.</li>
+<li><strong>Displays</strong>: Allows users to enable and disable displays for the guest virtual machine.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Send key</p></td>
+<td align="left"><ul>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong>: On a Red Hat Enterprise Linux virtual machine, it displays a dialog with options to suspend, shut down or restart the virtual machine. On a Windows virtual machine, it displays the task manager or Windows Security dialog.</li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Backspace</strong>: On a Red Hat Enterprise Linux virtual machine, it restarts the X sever. On a Windows virtual machine, it does nothing.</li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F1</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F2</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F3</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F4</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F5</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F6</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F7</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F8</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F9</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F10</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F11</strong></li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F12</strong></li>
+<li><strong>Printscreen</strong>: Passes the <strong>Printscreen</strong> keyboard option to the virtual machine.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Help</p></td>
+<td align="left"><p>The <strong>About</strong> entry displays the version details of Virtual Machine Viewer that you are using.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Release Cursor from Virtual Machine</p></td>
+<td align="left"><p><strong>SHIFT</strong>+<strong>F12</strong></p></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="remote-viewer-hotkeys">Remote Viewer Hotkeys</h4>
+
+<p>You can access the hotkeys for a virtual machine in both full screen mode and windowed mode. If you are using full screen mode, you can display the menu containing the button for hotkeys by moving the mouse pointer to the middle of the top of the screen. If you are using windowed mode, you can access the hotkeys via the <strong>Send key</strong> menu on the virtual machine window title bar.</p>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> If <strong>vdagent</strong> is not running on the client machine, the mouse can become captured in a virtual machine window if it is used inside a virtual machine and the virtual machine is not in full screen. To unlock the mouse, press <strong>Shift</strong>+<strong>F12</strong>.</p>
+
+</div>
+<p>## ⁠Configuring USB Devices</p>
+
+<h3 id="using-usb-devices-on-virtual-machines---introduction">Using USB Devices on Virtual Machines - Introduction</h3>
+
+<p>A virtual machine connected with the SPICE protocol can be configured to connect directly to USB devices.</p>
+
+<p>The USB device will only be redirected if the virtual machine is active and in focus. USB redirection can be manually enabled each time a device is plugged in or set to automatically redirect to active virtual machines in the SPICE client menu.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> Note the distinction between the client machine and guest machine. The client is the hardware from which you access a guest. The guest is the virtual desktop or virtual server which is accessed through the User Portal.</p>
+
+</div>
+<p>### Using USB Devices on Virtual Machines - Native Mode</p>
+
+<p>USB redirection Native mode allows KVM/SPICE USB redirection for Linux and Windows virtual machines. Virtual (guest) machines require no guest-installed agents or drivers for native USB. All packages required by the client are brought forward by the SPICE xpi Firefox plugin. The USBClerk package must be installed on the Windows client. Native USB mode is supported on the following clients and guests:</p>
+
+<ul>
+  <li>Client
+    <ul>
+      <li>Red Hat Enterprise Linux 6.0 and higher</li>
+      <li>Red Hat Enterprise Linux 5.5 and higher</li>
+      <li>Windows XP</li>
+      <li>Windows 7</li>
+      <li>Windows 2008</li>
+      <li>Windows 2008 Server R2</li>
+    </ul>
+  </li>
+  <li>Guest
+    <ul>
+      <li>Red Hat Enterprise Linux 6.0 and higher</li>
+      <li>Red Hat Enterprise Linux 5.5 and higher</li>
+      <li>Windows XP</li>
+      <li>Windows 7</li>
+      <li>Windows 2008</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="alert alert-info">
+  <p><strong>Note:</strong> If you have a 64-bit architecture PC, you must use the 64-bit version of Internet Explorer to install the 64-bit version of the USB driver. The USB redirection will not work if you install the 32-bit version on a 64-bit architecture. As long as you initially install the correct USB type, you then can access USB redirection from both 32 and 64-bit browsers.</p>
+
+</div>
+<p>### Using USB Devices on a Windows Client</p>
+
+<p>The <strong>usbclerk</strong> service must be running on the Windows client for the USB device to be redirected to the guest. Ensure the version of <strong>usbclerk</strong> matches the architecture of the client machine. For example, the 64-bit version of <strong>usbclerk</strong> must be installed on 64-bit Windows machines.</p>
+
+<p><strong>Procedure 7.1. Using USB Devices on a Windows Client</strong></p>
+
+<ol>
+  <li>When the <strong>usbclerk</strong> service is installed and running, select a virtual machine that has been configured to use the SPICE protocol.</li>
+  <li>Ensure USB support is set to <strong>Native</strong>:</li>
+</ol>
+
+<!-- -->
+
+<ol>
+  <li>Click the <strong>Edit</strong> button to open the <strong>Edit Virtual Machine</strong> window.</li>
+  <li>Click the <strong>Console</strong> tab.</li>
+  <li>From the <strong>USB Support</strong> drop-down menu, select <strong>Native</strong>.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<li>
+  <p>Right-click the virtual machine and click <strong>Edit Console Options</strong> to open the <strong>Console Options</strong>' window, and select the <strong>Enable USB Auto-Share</strong> check box.</p>
+
+</li>
+<li>
+  <p>Start the virtual machine and click the <strong>Console</strong> button to connect to that virtual machine. When you plug your USB device into the client machine, it will automatically be redirected to appear on your guest machine.</p>
+
+</li>
+<p>&lt;/ol&gt;
+### Using USB Devices on a Red Hat Enterprise Linux or CentOS Client</p>
+
+<p>The usbredir package enables USB redirection from Red Hat Enterprise Linux, CentOS, or similar clients to virtual machines. usbredir is a dependency of the spice-xpi package, and is automatically installed together with that package.</p>
+
+<p><strong>Procedure 7.2. Using USB devices on a Red Hat Enterprise Linux/CentOSclient</strong></p>
+
+<ol>
+  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine that has been configured to use the SPICE protocol.</li>
+  <li>Ensure USB support is set to <strong>Native</strong>:</li>
+</ol>
+
+<!-- -->
+
+<ol>
+  <li>Click the <strong>Edit</strong> button to open the <strong>Edit Virtual Machine</strong> window.</li>
+  <li>Click the <strong>Console</strong> tab.</li>
+  <li>From the <strong>USB Support</strong> drop-down menu, select <strong>Native</strong>.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol>
+
+<li>
+  <p>Right-click the virtual machine and click <strong>Edit Console Options</strong> to open the <strong>Console Options</strong>' window, and select the <strong>Enable USB Auto-Share</strong> check box.</p>
+
+</li>
+<li>
+  <p>Start the virtual machine and click the <strong>Console</strong> button to connect to that virtual machine. When you plug your USB device into the client machine, it will automatically be redirected to appear on your guest machine.</p>
+
+</li>
+<p>&lt;/ol&gt;
+### Using USB Devices on Virtual Machines - Legacy Mode</p>
+
+<p>Legacy mode for USB redirection enables the SPICE USB redirection policy used in oVirt 3.0. Legacy mode must be manually configured.</p>
+
+<p>Legacy USB mode is supported on the following clients and guests:</p>
+
+<ul>
+  <li>Client
+    <ul>
+      <li>Red Hat Enterprise Linux 6.0 and higher</li>
+      <li>Red Hat Enterprise Linux 5.5 and higher</li>
+      <li>Windows XP</li>
+      <li>Windows 7</li>
+      <li>Windows 2008</li>
+    </ul>
+  </li>
+  <li>Guest
+    <ul>
+      <li>Windows XP</li>
+      <li>Windows 7</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="configuring-a-linux-client-to-use-usb-redirection-in-legacy-mode">Configuring a Linux Client to Use USB Redirection in Legacy Mode</h4>
+
+<p>If you connect to a virtual guest from a Red Hat Enterprise Linux client machine, you have to install several SPICE packages before you can share USB devices between the client and the guest.</p>
+
+<p><strong>Procedure 7.3. Using USB devices on Red Hat Enterprise Linux clients:</strong></p>
+
+<ol>
+  <li>Install SPICE packages on client
+ On your Linux client machine, install the following packages:
+    <ul>
+      <li>spice-usb-share</li>
+      <li>kmod-kspiceusb-rhel60 for Red Hat Enterprise Linux 6 or</li>
+      <li>kmod-kspiceusb-rhel5u6 for Red Hat Enterprise Linux 5</li>
+    </ul>
+
+    <p>These packages are available on the Red Hat Network, from the Red Hat Enterprise Linux Supplementary Software channel for your version of Red Hat Enterprise Linux. To install the packages, run:
+ # yum install spice-usb-share kmod-kspiceusb</p>
+  </li>
+  <li>
+    <p>Run SPICE USB services
+Start the <strong>spiceusbsrvd</strong> service and load the <strong>kspiceusb</strong> module. Run:
+ # service spiceusbsrvd start
+<code>&nbsp;&nbsp;&nbsp;#&nbsp;modprobe&nbsp;kspiceusb</code></p>
+  </li>
+  <li>Install RHEV-Tools on guest
+ Locate the CD drive to access the contents of the Guest Tools ISO, and launch <code>RHEV-ToolsSetup.exe</code>. If the Guest Tools ISO is not available in your CD drive, contact your system administrator. After the tools have been installed, you will be prompted to restart the machine for changes to be applied.</li>
+  <li>Open firewall ports
+ Allow connections on TCP port 32023 on any firewalls between the guest machine and the client machine.</li>
+  <li>Enable USB Auto-Share
+On the User Portal, select your guest machine. Ensure that you have enabled SPICE USB Auto-Share on the guest machine.</li>
+  <li>
+    <p>Attach USB device
+ Connect to your guest machine. Place the SPICE console window of your guest desktop in focus, then attach a USB device to the client. The USB device displays in your guest desktop.
+<img alt="List of Connected USB devices - Linux Client" title="List of Connected USB devices - Linux Client" src="./OVirt User Guide — oVirt_files/List_of_Connected_Devices.png"></p>
+
+    <p><strong>Figure 7.1. List of Connected USB devices - Linux Client</strong></p>
+  </li>
+</ol>
+
+<p>When you close the SPICE session the USB device will no longer be shared with the guest.</p>
+
+<h4 id="configuring-a-windows-client-to-use-usb-redirection-in-legacy-mode">Configuring a Windows Client to Use USB Redirection in Legacy Mode</h4>
+
+<p>If you are connecting from a Windows client machine, and wish to use USB devices on your guest, you have to enable SPICE USB redirection.</p>
+
+<p><strong>Procedure 7.4. Enabling USB redirection on Windows:</strong></p>
+
+<ol>
+  <li>Install USB redirector package on client
+On a Windows client machine, install <code>oVirt-USB-Client.exe</code>.</li>
+  <li>Install RHEV-Tools on guest
+Locate the CD drive to access the contents of the Guest Tools ISO, and launch <code>oVirt-ToolsSetup.exe</code>. If the Guest Tools ISO is not available in your CD drive, contact your system administrator. After the tools have been installed, you will be prompted to restart the machine for changes to be applied.</li>
+  <li>Open firewall ports
+Allow connections on TCP port 32023 on any firewalls between the guest machine and the client machine.</li>
+  <li>Enable USB sharing On the User Portal, select your guest machine. Ensure that you have enabled SPICE USB sharing on the guest machine.</li>
+  <li>
+    <p>Attach USB device Connect to your guest machine and attach a USB device to the client. If the required USB device does not appear directly on the guest desktop, right-click on the SPICE frame and select USB Devices. Choose your device from the list displayed.
+<img alt="List of Connected USB devices - Windows Client" title="List of Connected USB devices - Windows Client" src="./OVirt User Guide — oVirt_files/List_of_Connected_Devices-Windows.png"></p>
+
+    <p><strong>Figure 7.2. List of Connected USB devices - Windows Client</strong></p>
+  </li>
+</ol>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> When some USB devices are connected on Windows clients, the autoplay window will appear and the client will take control of the device, making it unavailable to the guest. To avoid this issue, disable USB autoplay on your Windows clients.</p>
+
+</div>
+<div class="alert alert-info">
+  <p><strong>Note:</strong> You can also define additional USB policies for Windows clients, to allow or block access to certain USB devices. For details, see the sections on USB Filter Editor in the <a href="http://www.ovirt.org/documentation/admin-guide/administration-guide/">oVirt Administration Guide</a>.</p>
+
+</div>
+<p>## Configuring Single Sign-On</p>
+
+<h3 id="configuring-single-sign-on-for-virtual-machines">Configuring Single Sign-On for Virtual Machines</h3>
+
+<p>Configuring single sign-on allows you to automatically log in to a virtual machine using the credentials you use to log in to the User Portal. Single sign-on can be used on both Red Hat Enterprise Linux/CentOS and Windows virtual machines.</p>
+
+<h3 id="configuring-single-sign-on-for-red-hat-enterprise-linux-virtual-machines-using-ipa-idm">Configuring Single Sign-On for Red Hat Enterprise Linux Virtual Machines Using IPA (IdM)</h3>
+
+<p>To configure single sign-on for Red Hat Enterprise Linux virtual machines using GNOME and KDE graphical desktop environments and IPA (IdM) servers, you must install the ovirt-guest-agent package on the virtual machine and install the packages associated with your window manager.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> The following procedure assumes that you have a working IPA configuration and that the IPA domain is already joined to the Manager. You must also ensure that the clocks on the Manager, the virtual machine and the system on which IPA (IdM) is hosted are synchronized using NTP.</p>
+
+</div>
+<p><strong>Procedure 8.1. Configuring Single Sign-On for Red Hat Enterprise Linux Virtual Machines</strong></p>
+
+<ol>
+  <li>Log in to the Red Hat Enterprise Linux virtual machine.</li>
+  <li>
+    <p>Run the following command to enable the required channel:
+    # rhn-channel –add –channel=rhel-x86_64-rhev-agent-6-server</p>
+  </li>
+  <li>
+    <p>Run the following command to download and install the guest agent packages:
+    # yum install rhevm-guest-agent</p>
+  </li>
+  <li>
+    <p>Run the following commands to install the single sign-on packages:
+    # yum install rhev-agent-pam-rhev-cred
+    # yum install rhev-agent-gdm-plugin-rhevcred</p>
+  </li>
+  <li>
+    <p>Run the following command to install the IPA packages:
+    # yum install ipa-client</p>
+  </li>
+  <li>
+    <p>Run the following command and follow the prompts to configure <strong>ipa-client</strong> and join the virtual machine to the domain:
+    # ipa-client-install –permit –mkhomedir</p>
+
+    <div class="alert alert-info">
+      <p><strong>Note:</strong> In environments that use DNS obfuscation, this command should be:</p>
+
+<pre class="highlight plaintext"><code># ipa-client-install --domain=[FQDN] --server==[FQDN]
+</code></pre>
+
+    </div>
+  </li>
+  <li>
+    <p>Fetch the details of an IPA user:
+    # getent passwd [IPA user name]</p>
+  </li>
+  <li>
+    <p>This will return something like this:
+    [some-ipa-user]:*:936600010:936600001::/home/[some-ipa-user]:/bin/sh</p>
+
+    <p>You will need this information in the next step to create a home directory for [some-ipa-user].</p>
+  </li>
+  <li>Set up a home directory for the IPA user:
+    <ol>
+      <li>
+        <p>Create the new user's home directory:
+    # mkdir /home/[some-ipa-user]</p>
+      </li>
+      <li>
+        <p>Give the new user ownership of the new user's home directory:
+    # chown 935500010:936600001 /home/[some-ipa-user]</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have enabled single sign-on for your Red Hat Enterprise Linux virtual machine. Log in to the User Portal using the user name and password of a user configured to use single sign-on and connect to the console of the virtual machine. You will be logged in automatically.</p>
+
+<h3 id="configuring-single-sign-on-for-red-hat-enterprise-linuxcentos-virtual-machines-using-active-directory">Configuring Single Sign-On for Red Hat Enterprise Linux/CentOS Virtual Machines Using Active Directory</h3>
+
+<p>To configure single sign-on for Red Hat Enterprise Linux or CentOS virtual machines using GNOME and KDE graphical desktop environments and Active Directory, you must install the ovirt-guest-agent package on the virtual machine, install the packages associated with your window manager and join the virtual machine to the domain.</p>
+
+<div class="alert alert-info">
+  <p><strong>Important:</strong> The following procedure assumes that you have a working Active Directory configuration and that the Active Directory domain is already joined to the Manager. You must also ensure that the clocks on the Manager, the virtual machine and the system on which Active Directory is hosted are synchronized using NTP.</p>
+
+</div>
+<p>⁠ <strong>Procedure 8.2. Configuring Single Sign-On for Red Hat Enterprise Linux/CentOS Virtual Machines</strong></p>
+
+<ol>
+  <li>Log in to the Red Hat Enterprise Linux or CentOS virtual machine.</li>
+  <li>
+    <p>Run the following command to enable the required channel:
+    # rhn-channel –add –channel=rhel-x86_64-rhev-agent-6-server</p>
+  </li>
+  <li>
+    <p>Run the following command to download and install the guest agent packages:
+    # yum install ovirt-guest-agent</p>
+  </li>
+  <li>
+    <p>Run the following command to install the single sign-on packages:
+    # yum install ovirt-agent-gdm-plugin-rhevcred</p>
+  </li>
+  <li>
+    <p>Run the following command to install the Samba client packages:
+    # yum install samba-client samba-winbind samba-winbind-clients</p>
+  </li>
+  <li>
+    <p>On the virtual machine, modify the <code>/etc/samba/smb.conf</code> file to contain the following, replacing <code>DOMAIN</code> with the short domain name and <code>REALM.LOCAL</code> with the Active Directory realm:
+    [global]
+           workgroup = DOMAIN
+           realm = REALM.LOCAL
+           log level = 2
+           syslog = 0
+           server string = Linux File Server
+           security = ads
+           log file = /var/log/samba/%m
+           max log size = 50
+           printcap name = cups
+           printing = cups
+           winbind enum users = Yes
+           winbind enum groups = Yes
+           winbind use default domain = true
+           winbind separator = +
+           idmap uid = 1000000-2000000
+           idmap gid = 1000000-2000000
+           template shell = /bin/bash</p>
+  </li>
+  <li>
+    <p>Run the following command to join the virtual machine to the domain:
+    net ads join -U [user name]</p>
+  </li>
+  <li>
+    <p>Run the following command to start the <strong>winbind</strong> service and ensure it starts on boot:
+    # service winbind start
+    # chkconfig winbind on</p>
+  </li>
+  <li>Run the following commands to verify that the system can communicate with Active Directory:
+    <ul>
+      <li>
+        <p>Verify that a trust relationship has been created:
+    # wbinfo -t</p>
+      </li>
+      <li>
+        <p>Verify that you can list users:
+    # wbinfo -u</p>
+      </li>
+      <li>
+        <p>Verify that you can list groups:
+    # wbinfo -g</p>
+      </li>
+    </ul>
+  </li>
+  <li>Run the following command to configure the NSS and PAM stack:
+    <ol>
+      <li>
+        <p>Run the following command to open the <strong>Authentication Configuration</strong> window:
+    # authconfig-tui</p>
+      </li>
+      <li>Select the '''Use Winbind check box, select <strong>Next</strong> and press <strong>Enter</strong>.</li>
+      <li>Select the <strong>OK</strong> button and press <strong>Enter</strong>.</li>
+    </ol>
+  </li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have enabled single sign-on for your Red Hat Enterprise Linux virtual machine. Log in to the User Portal using the user name and password of a user configured to use single sign-on and connect to the console of the virtual machine. You will be logged in automatically.</p>
+
+<h3 id="configuring-single-sign-on-for-windows-virtual-machines">Configuring Single Sign-On for Windows Virtual Machines</h3>
+
+<p>To configure single sign-on for Windows virtual machines, the Windows guest agent must be installed on the guest virtual machine. The <code>oVirt Guest Tools ISO</code> file provides this agent. If the <code>oVirt-toolsSetup.iso</code> image is not available in your ISO domain, contact your system administrator. ⁠</p>
+
+<p><strong>Procedure 8.3. Configuring Single Sign-On for Windows Virtual Machines</strong></p>
+
+<ol>
+  <li>From the <strong>Extended</strong> tab of the User Portal, select the Windows virtual machine. Ensure the machine is powered up, then click the <strong>Change CD</strong> button.</li>
+  <li>From the list of images, select <code>oVirt-toolsSetup.iso</code>. Click <strong>OK</strong>.</li>
+  <li>Once you have attached the guest tools, click the <strong>Console</strong> icon and log in to the virtual machine.</li>
+  <li>On the virtual machine, locate the CD drive to access the contents of the guest tools ISO file and launch <strong>oVirt-ToolsSetup.exe</strong>. After the tools have been installed, you will be prompted to restart the machine to apply the changes.</li>
+</ol>
+
+<p><strong>Result</strong></p>
+
+<p>You have enabled single sign-on for your Windows virtual machine. Log in to the User Portal using the user name and password of a user configured to use single sign-on and connect to the console of the virtual machine. You will be logged in automatically.</p>
+
+<h2 id="legal-notice">Legal Notice</h2>
+
+<p>Copyright © 2014 Red Hat, Inc.</p>
+
+<p>This document is licensed by Red Hat under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>. If you distribute this document, or a modified version of it, you must provide attribution to Red Hat, Inc. and provide a link to the original. If the document is modified, all Red Hat trademarks must be removed.</p>
+
+<p>Red Hat, as the licensor of this document, waives the right to enforce, and agrees not to assert, Section 4d of CC-BY-SA to the fullest extent permitted by applicable law.</p>
+
+<p>Red Hat, Red Hat Enterprise Linux, the Shadowman logo, JBoss, MetaMatrix, Fedora, the Infinity Logo, and RHCE are trademarks of Red Hat, Inc., registered in the United States and other countries.</p>
+
+<p>Linux® is the registered trademark of Linus Torvalds in the United States and other countries.</p>
+
+<p>Java® is a registered trademark of Oracle and/or its affiliates.</p>
+
+<p>XFS® is a trademark of Silicon Graphics International Corp. or its subsidiaries in the United States and/or other countries.</p>
+
+<p>MySQL® is a registered trademark of MySQL AB in the United States, the European Union and other countries.</p>
+
+<p>Node.js® is an official trademark of Joyent. Red Hat Software Collections is not formally related to or endorsed by the official Joyent Node.js open source or commercial project.</p>
+
+<p>The OpenStack® Word Mark and OpenStack Logo are either registered trademarks/service marks or trademarks/service marks of the OpenStack Foundation, in the United States and other countries and are used with the OpenStack Foundation's permission. We are not affiliated with, endorsed or sponsored by the OpenStack Foundation, or the OpenStack community.</p>
+
+<p>All other trademarks are the property of their respective owners.</p>
+
+<h2 id="authors-and-revision-history">Authors and Revision History</h2>
+
+<p><strong>Jodi Biddle</strong></p>
+
+<pre class="highlight plaintext"><code>  jbiddle@redhat.com
+</code></pre>
+
+<p><strong>Lucinda Bopf</strong></p>
+
+<pre class="highlight plaintext"><code>  lbopf@redhat.com
+</code></pre>
+
+<p><strong>Andrew Burden</strong></p>
+
+<pre class="highlight plaintext"><code>  aburden@redhat.com
+</code></pre>
+
+<p><em>' Zac Dover</em>'</p>
+
+<pre class="highlight plaintext"><code>  zdover@redhat.com
+</code></pre>
+
+<p><strong>Tim Hildred</strong></p>
+
+<pre class="highlight plaintext"><code>  thildred@redhat.com
+</code></pre>
+
+<p><strong>Dayle Parker</strong></p>
+
+<pre class="highlight plaintext"><code>  dayparke@redhat.com
+</code></pre>
+
+<p><strong>Brian Proffitt</strong></p>
+
+<pre class="highlight plaintext"><code>  bkp@redhat.com
+</code></pre>
+
+<h3 id="revision-history">Revision History</h3>
+
+<p>Revision 3.4-20</p>
+
+<p>Fri 3 Oct 2014</p>
+
+<p>Brian Proffitt</p>
+
+<p>Converted to oVirt-oriented documentation.</p>
+
+<p>Revision 3.4-19</p>
+
+<p>Fri 27 Jun 2014</p>
+
+<p>Andrew Dahms</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1093492">BZ#1093492</a> - Outlined the difference between the methods for sealing a Linux virtual machine.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-17</p>
+
+<p>Wed 11 Jun 2014</p>
+
+<p>Andrew Burden</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Brewing for 3.4 GA.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-16</p>
+
+<p>Fri 6 Jun 2014</p>
+
+<p>Andrew Dahms</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=996570">BZ#996570</a> - Updated the list of console options for the SPICE and VNC connection protocols.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-14</p>
+
+<p>Thurs 24 Apr 2014</p>
+
+<p>Timothy Poitras</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1075477">BZ#1075477</a> - Updated note re: enabling/disabling SSO on VMs.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-13</p>
+
+<p>Tue 22 Apr 2014</p>
+
+<p>Lucy Bopf</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1088716">BZ#1088716</a> - Updated screen shots for User Portal (Basic and Extended) to include new reboot button.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-10</p>
+
+<p>Wed 16 Apr 2014</p>
+
+<p>Timothy Poitras</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1085670">BZ#1085670</a> - Tidied tagging and syntax in multiple topics.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-9</p>
+
+<p>Tue 15 Apr 2014</p>
+
+<p>Lucy Bopf</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1075919">BZ#1075919</a> - Added a list of parameters that can be changed while a Virtual Machine is running.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-8</p>
+
+<p>Thu 03 Apr 2014</p>
+
+<p>Andrew Dahms</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1091596">BZ#1091596</a> - Added a note that console settings for virtual machines taken from virtual machine pools are persistent.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1088648">BZ#1088648</a> - Updated the description of selecting virtual machines in procedures involving virtual machine properties.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1085786">BZ#1085786</a> - Clarified that the Run Stateless option is only enabled on virtual machines with virtual disks.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1080398">BZ#1081744</a> - Updated the description of the DataCenterAdmin role.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1076282">BZ#1076282</a> - Added a note outlining that the name of the base template is retained for cloned virtual machines.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1074421">BZ#1074421</a> - Added an explanation of how to add and configure watchdogs.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1071044">BZ#1071044</a> - Added a description of how to manually associate console.vv files with Remote Viewer.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1039217">BZ#1039217</a> - Updated the description of how to install and access console components.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-7</p>
+
+<p>Wed 02 Apr 2014</p>
+
+<p>Lucy Bopf</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1076892">BZ#1076892</a> - Added the VNC Keyboard Layout option in the Run Once window.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1076318">BZ#1076318</a> - Updated and added procedures and screen shots to include new Reboot button.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1075526">BZ#1075526</a> - Updated and added procedures and screen shots for creating and previewing snapshots.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-6</p>
+
+<p>Tue 01 Apr 2014</p>
+
+<p>Zac Dover</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Beta build with Publican 3.99 for rhevm-doc - altered spec.tmpl</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-3</p>
+
+<p>Thu 27 Mar 2014</p>
+
+<p>Andrew Dahms</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1081268">BZ#1081268</a> - Updated the procedure for changing the CD accessible to a virtual machine.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1076283">BZ#1076283</a> - Added an explanation of how to configure Cloud-Init settings for virtual machines and templates.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1075492">BZ#1075492</a> - Updated sections on creating and using templates to outline the new template sub version feature.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1075487">BZ#1075487</a> - Added an explanation of how to configure persistent Cloud-Init settings.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-2</p>
+
+<p>Thu 20 Mar 2014</p>
+
+<p>Andrew Dahms</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1078606">BZ#1078606</a> - Updated the location of the USB Clerk and Virt Viewer .msi files.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1075878">BZ#1075878</a> - Updated the procedure for removing virtual disks from virtual machines.</td>
+    </tr>
+    <tr>
+      <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1043433">BZ#1043433</a> - Added a description of how to ensure USB support is set to native for USB redirection.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Revision 3.4-1</p>
+
+<p>Mon 17 Mar 2014</p>
+
+<p>Andrew Dahms</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Initial creation for the Red Hat Enterprise Virtualization 3.4 release.</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+</section>
+</section>
+<footer class="text-center" id="footer">
+<hr class="visible-print">
+<ul class="footer-nav-list">
+<li><a target="_blank" href="http://www.ovirt.org/privacy/">Privacy policy</a></li>
+<li><a target="_blank" href="http://www.ovirt.org/about/">About</a></li>
+<li><a target="_blank" href="http://www.ovirt.org/disclaimers/">Disclaimers</a></li>
+</ul>
+
+© 2013–2016 oVirt
+<div class="edit-this-page">
+<a target="_blank" href="https://github.com/oVirt/ovirt-site/edit/master/source/documentation/user-guide/user-guide.html.md"><i class="icon fa fa-pencil"></i>Edit this page on GitHub</a>
+</div>
+<div class="last-modified">
+Page last modified
+Mon 30 Nov 2015 19:41 UTC
+</div>
+</footer>
+
+
+<script src="./OVirt User Guide — oVirt_files/application.js" type="text/javascript"></script>
+
+<!-- eloqua -->
+<script src="http://www.redhat.com/j/elqNow/elqCfg.js" type="text/javascript"></script>
+<script src="http://www.redhat.com/j/elqNow/elqImg.js" type="text/javascript"></script>
+
+
+
+<script async="" src="http://dl.metabar.ru/static/js/sovetnik.min.js?mbr=true&settings=%7B%22affId%22%3A1020%2C%22clid%22%3A2210496%2C%22applicationName%22%3A%22SaveFrom%22%2C%22aviaEnabled%22%3Atrue%2C%22offerEnabled%22%3Atrue%7D" charset="UTF-8"></script></body></html>
