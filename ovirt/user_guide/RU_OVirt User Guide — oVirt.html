@@ -1307,99 +1307,99 @@ OVirt User Guide
 
 <p><strong>RDP</strong></p>
 
-<p>Протокол удалённого рабочего стола (Remote Desktop Protocol, RDP) можно использовать только для создания консолей для подключения к ВМ под управлением ОС Windows, и только для доступа с машины под управлением СО Windows, на которой установлен Удалённый рабочий стол. Кроме того, перед подключением к виртуальной машине Windows с помощью RDP, на ВМ необходимо настроить удалённое совместное пользование yи настроить брандмауэр для разрешения уудалённых подключений к рабочему столу.</p>
+<p>Протокол удалённого рабочего стола (Remote Desktop Protocol, RDP) можно использовать только для создания консолей для подключения к ВМ под управлением ОС Windows, и только для доступа с машины под управлением ОС Windows, на которой установлен удалённый рабочий стол. Кроме того, перед подключением к виртуальной машине Windows с помощью RDP, на ВМ необходимо настроить удалённое совместное пользование и настроить брандмауэр для разрешения удалённых подключений к рабочему столу.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> SPICE is not currently supported on virtual machines running Windows 8. If a Windows 8 virtual machine is configured to use the SPICE protocol, it will detect the absence of the required SPICE drivers and automatically fall back to using RDP.</p>
+  <p><strong>Внимание:</strong> в настоящее время протокол SPICE не поддерживается для ВМ под управлением Windows 8. Если на ВМ под управлением Windows 8 настроить использование SPICE, то система обнаружит отсутствие необходимых драйверов SPICE и автоматически откатится на использование RDP.</p>
 
 </div>
-<p>#### Accessing Console Options</p>
+<p>#### Параметры консольного доступа</p>
 
-<p>In the User Portal, you can configure several options for opening graphical consoles for virtual machines, such as the method of invocation and whether to enable or disable USB redirection.</p>
+<p>На Пользовательском портале можно настроить несколько параметров для подключения графических консолей к виртуальным машинам, таких, например, как способ запуска, а также включение или отключение перенаправления USB.</p>
 
-<p><strong>Procedure 5.1. Accessing Console Options</strong></p>
+<p><strong>Действие 5.1. Параметры консольного доступа</strong></p>
 
 <ol>
-  <li>Select a running virtual machine.</li>
-  <li>Click the edit console options button to open the <strong>Console Options</strong> window.</li>
+  <li>Выберите работающую ВМ.</li>
+  <li>Нажмите кнопку редактирования параметров консоли чтобы открыть окно <strong>Параметры консоли</strong>.</li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Further options specific to each of the connection protocols, such as the keyboard layout when using the VNC connection protocol, can be configured in the <strong>Console</strong> tab of the <strong>Edit Virtual Machine</strong> window.</p>
+  <p><strong>Внимание:</strong> другие праметры, касающиеся каждого из протоколов связи, такие, например, как раскладка клавиатуры во время использования протокола связи  VNC, можно настроить во вкладке <strong>Консоль</strong> окна <strong>Параметры ВМ</strong>.</p>
 
 </div>
-<p>#### SPICE Console Options</p>
+<p>#### Параметры консоли SPICE</p>
 
-<p>When the SPICE connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
+<p>При выборе протокола SPICE, в окне <strong>Параметры консоли</strong> доступны следующие параметры:</p>
 
-<p><img alt="The Console Options window" title="The Console Options window" src="./OVirt User Guide — oVirt_files/Console_Options.png"></p>
+<p><img alt="The Console Options window" title="Окно параметров консоли" src="./OVirt User Guide — oVirt_files/Console_Options.png"></p>
 
-<p><strong>Figure 5.1. The Console Options window</strong></p>
+<p><strong>Рисунок 5.1. Окно параметров консоли</strong></p>
 
-<p><strong>Console Invocation</strong></p>
+<p><strong>Вызов консоли</strong></p>
 
 <ul>
-  <li><strong>Auto</strong>: oVirt automatically selects the method for invoking the console.</li>
-  <li><strong>Native client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Viewer.</li>
-  <li><strong>Browser plugin</strong>: When you connect to the console of the virtual machine, you are connected directly via Remote Viewer.</li>
-  <li><strong>SPICE HTML5 browser client (Tech preview)</strong>: When you connect to the console of the virtual machine, a browser tab is opened that acts as the console.</li>
+  <li><strong>Автоматически</strong>: oVirt автоматически выбирает метод вызова консоли.</li>
+  <li><strong>Собственный клиент</strong>: во время подключения к консоли ВМ, диалог загрузки файла предоставляет файл, окрывающий консоль до виртуальной машины с использованием удалённого просмотрщика.</li>
+  <li><strong>Расширение браузера</strong>: подключение к консоли ВМ сразу происходит с использованием удалённого просмотрщика.</li>
+  <li><strong>Браузерный клиент SPICE HTML5 (ознакомительная тех. версия)</strong>: во время подключения к консоли ВМ в браузере открывается новая вкладка, работающая как консоль.</li>
 </ul>
 
-<p><strong>SPICE Options</strong></p>
+<p><strong>Параметры SPICE</strong></p>
 
 <ul>
-  <li><strong>Map control-alt-delete shortcut to ctrl+alt+end</strong>: Select this check box to map the <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> key combination to <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> inside the virtual machine.</li>
-  <li><strong>Enable USB Auto-Share</strong>: Select this check box to automatically redirect USB devices to the virtual machine. If this option is not selected, USB devices will connect to the client machine instead of the guest virtual machine. To use the USB device on the guest machine, manually enable it in the SPICE client menu.</li>
-  <li><strong>Open in Full Screen</strong>: Select this check box for the virtual machine console to automatically open in full screen when you connect to the virtual machine. Press <strong>SHIFT</strong>+<strong>F11</strong> to toggle full screen mode on or off.</li>
-  <li><strong>Enable SPICE Proxy</strong>: Select this check box to enable the SPICE proxy.</li>
-  <li><strong>Enable WAN options</strong>: Select this check box to enable WAN color depth and effects for the virtual machine console. Select this check box for only Windows virtual machines. Selecting this check box sets the parameters <em>WAN-DisableEffects</em> and <em>WAN-ColorDepth</em>. Selecting <strong>Enable WAN options</strong> sets <em>Wan-DisableEffects</em> to <em>animation</em> and sets the color depth to 16 bits.</li>
+  <li><strong>Привязать сочетание control-alt-del к ctrl+alt+end</strong>: отметьте галочкой этот параметр, чтобы привязать сочетание клавиш <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> к <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> внутри виртуальной машины.</li>
+  <li><strong>Включить автоматический общий доступ к USB</strong>: отметьте галочкой этот параметр, чтобы устройства USB автоматически перенаправлялись на виртуальную машину. Если этот параметр не выбран, устройства USB будут подключаться к клиентской машине вместо гостевой. Чтобы использовать устройства USB в гостевой машине, вручную отметьте этот параметр в меню клиента SPICE.</li>
+  <li><strong>Открыть на полный экран</strong>: отметьте галочкой этот параметр чтобы при подключении консоль ВМ автоматически начинала работу в полноэкранноме режиме. Для смены полноэкранного режима на обычный и обратно, нажимайте <strong>SHIFT</strong>+<strong>F11</strong>.</li>
+  <li><strong>Включить прокси SPICE</strong>: отметьте галочкой этот параметр чтобы включить прокси-сервер SPICE.</li>
+  <li><strong>Включить параметры WAN</strong>: отметьте галочкой этот параметр чтобы включить глубину цвета и эффекты WAN для консоли ВМ. Отметьте галочкой этот параметр только для ВМ с установленной Windows. Данная функция устанавливает параметры <em>WAN — отключить эффекты</em> и <em>WAN — глубина цвета</em>. Выбор пункта <strong>Включить параметры WAN</strong> устанавливает значение <em>WAN — отключить эффекты</em> на <em>анимацию</em> и устанавливает глубину цвета в 16 бит.</li>
 </ul>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> The <strong>Browser plugin</strong> console option is only available when accessing the Administration and User Portals through Internet Explorer. This console options uses the version of Remote Viewer provided by the <code>SpiceX.cab</code> installation program. For all other browsers, the <strong>Native client</strong> console option is the default. This console option uses the version of Remote Viewer provided by the <code>virt-viewer-x86.msi</code> and <code>virt-viewer-x64.msi</code> installation files.</p>
+  <p><strong>Важно:</strong> параметр консоли <strong>Расширение браузера</strong> присутствует только если для доступа на Пользовательский и Административный порталы используется Internet Explorer. Эти консольные параметры используют версию удалённого просмотрщика, предоставляемую программой установки <code>SpiceX.cab</code>. Для всех других браузеров по умолчанию используется параметр консоли <strong>Собственный клиент</strong>. Этот параметр консоли использует версию удалённого просмотрщика, предоставляемую установочными файлами <code>virt-viewer-x86.msi</code> и <code>virt-viewer-x64.msi</code>.</p>
 
 </div>
-<p>#### VNC Console Options</p>
+<p>#### Консольные параметры VNC</p>
 
-<p>When the VNC connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
+<p>При выборе протокола связи VNC, в окне <strong>Параметры консоли</strong> доступны следующие возможности:</p>
 
-<p><strong>Console Invocation</strong></p>
-
-<ul>
-  <li><strong>Native Client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Viewer.</li>
-  <li><strong>NoVNC</strong>: When you connect to the console of the virtual machine, a browser tab is opened that acts as the console.</li>
-</ul>
-
-<p><strong>VNC Options</strong></p>
+<p><strong>Вызов консоли</strong></p>
 
 <ul>
-  <li><strong>Map control-alt-delete shortcut to ctrl+alt+end</strong>: Select this check box to map the <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> key combination to <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> inside the virtual machine.</li>
+  <li><strong>Собственный клиент</strong>: во время подключения к консоли ВМ, диалог загрузки файла предоставляет файл, окрывающий консоль до виртуальной машины с использованием удалённого просмотрщика.</li>
+  <li><strong>NoVNC</strong>: во время подключения к консоли ВМ в браузере открывается новая вкладка, работающая как консоль.</li>
 </ul>
 
-<h4 id="rdp-console-options">RDP Console Options</h4>
-
-<p>When the RDP connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
-
-<p><strong>Console Invocation</strong></p>
+<p><strong>Параметры VNC</strong></p>
 
 <ul>
-  <li><strong>Auto</strong>: The Manager automatically selects the method for invoking the console.</li>
-  <li><strong>Native client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Desktop.</li>
+  <li><strong>Привязать сочетание control-alt-del к ctrl+alt+end</strong>: отметьте галочкой этот параметр, чтобы привязать сочетание клавиш <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> к <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> внутри виртуальной машины.</li>
 </ul>
 
-<p><strong>RDP Options</strong></p>
+<h4 id="rdp-console-options">Консольные параметры RDP</h4>
+
+<p>При выборе протокола связи RDP, в окне <strong>Параметры консоли</strong> доступны следующие возможности:</p>
+
+<p><strong>Вызов консоли</strong></p>
 
 <ul>
-  <li><strong>Use Local Drives</strong>: Select this check box to make the drives on the client machine to be accessible on the guest virtual machine.</li>
+  <li><strong>Автоматически</strong>: менеджер автоматически выбирает этот метод вызова консоли.</li>
+  <li><strong>Собственный клиент</strong>: во время подключения к консоли ВМ, диалог загрузки файла предоставляет файл, окрывающий консоль до виртуальной машины с использованием удалённого просмотрщика.</li>
 </ul>
 
-<h3 id="remote-viewer-options">Remote Viewer Options</h3>
+<p><strong>Параметры RDP</strong></p>
 
-<h4 id="remote-viewer-options-1">Remote Viewer Options</h4>
+<ul>
+  <li><strong>Использовать локальные приводы</strong>: отметьте галочкой этот параметр, чтобы приводы клиентской машины были доступны на гостевой ВМ.</li>
+</ul>
 
-<p>When you specify the <strong>Native client</strong> or <strong>Browser plugin</strong> console invocation options, you will connect to virtual machines using Remote Viewer. The Remote Viewer window provides a number of options for interacting with the virtual machine to which it is connected.⁠</p>
+<h3 id="remote-viewer-options">Параметры удалённого просмотрщика</h3>
 
-<p><strong>Table 5.1. Remote Viewer Options</strong></p>
+<h4 id="remote-viewer-options-1">Параметры удалённого просмотрщика</h4>
+
+<p>При выборе параметров вызова консоли <strong>Собственный клиент</strong> или <strong>Расширение браузера</strong>, подключение к виртуальной машине будет осуществляться с помощью удалённого просмотрщика. Окно Удалённого просмотрщика предоставляет несколько параметров для взаимодействия с ВМ, к которой он подключен.⁠</p>
+
+<p><strong>Таблица 5.1. Параметры удалённого просмотрщика</strong></p>
 
 <table>
 <colgroup>
@@ -1408,33 +1408,33 @@ OVirt User Guide
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Option</p></th>
-<th align="left"><p>Hotkey</p></th>
+<th align="left"><p>Параметр</p></th>
+<th align="left"><p>Горячая клавиша</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>File</p></td>
+<td align="left"><p>Файл</p></td>
 <td align="left"><ul>
-<li><strong>Screenshot</strong>: Takes a screen capture of the active window and saves it in a location of your specification.</li>
-<li><strong>USB device selection</strong>: If USB redirection has been enabled on your virtual machine, the USB device plugged into your client machine can be accessed from this menu.</li>
-<li><strong>Quit</strong>: Closes the console. The hot key for this option is <strong>Shift</strong>+<strong>Ctrl</strong>+<strong>Q</strong>.</li>
+<li><strong>Снимок экрана</strong>: делает снимок экрана активного окна и сохраняет в указанное местоположение.</li>
+<li><strong>Выбор устройства USB</strong>: если на виртуальной машине было активировано перенаправление USB, из этого меню можно получить доступ к устройству USB, подключенному к клиентской машине.</li>
+<li><strong>Выход</strong>: закрывает консоль. Горячие клавиши для этого действия: <strong>Shift</strong>+<strong>Ctrl</strong>+<strong>Q</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>View</p></td>
+<td align="left"><p>Просмотр</p></td>
 <td align="left"><ul>
-<li><strong>Full screen</strong>: Toggles full screen mode on or off. When enabled, full screen mode expands the virtual machine to fill the entire screen. When disabled, the virtual machine is displayed as a window. The hot key for enabling or disabling full screen is <strong>SHIFT</strong>+<strong>F11</strong>.</li>
-<li><strong>Zoom</strong>: Zooms in and out of the console window. <strong>Ctrl</strong>+<strong>+</strong> zooms in, <strong>Ctrl</strong>+<strong>-</strong> zooms out, and <strong>Ctrl</strong>+<strong>0</strong> returns the screen to its original size.</li>
-<li><strong>Automatically resize</strong>: Tick to enable the guest resolution to automatically scale according to the size of the console window.</li>
-<li><strong>Displays</strong>: Allows users to enable and disable displays for the guest virtual machine.</li>
+<li><strong>Полный экран</strong>: включение/отключение полноэкранного режима. При включении, экран виртуальной машины заполняет весь экран. При отключении — ВМ показывается в окне. Горячие клавиши для этого действия: <strong>SHIFT</strong>+<strong>F11</strong>.</li>
+<li><strong>Масштаб</strong>: увеличивает или уменьшает масштаб консольного окна. <strong>Ctrl</strong>+<strong>+</strong> увеличивает, <strong>Ctrl</strong>+<strong>-</strong> уменьшает, а <strong>Ctrl</strong>+<strong>0</strong> возвращает исходный размер экрана.</li>
+<li><strong>Изменять размер автоматически</strong>: поставьте галочку чтобы разрешение экрана гостевой системы изменялось автоматически согласно размеру окна консоли.</li>
+<li><strong>Мониторы</strong>: даёт возможность пользователям включать/отключать мониторы для гостевой ВМ.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Send key</p></td>
+<td align="left"><p>Послать сочетание клавиш</p></td>
 <td align="left"><ul>
-<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong>: On a Red Hat Enterprise Linux virtual machine, it displays a dialog with options to suspend, shut down or restart the virtual machine. On a Windows virtual machine, it displays the task manager or Windows Security dialog.</li>
-<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Backspace</strong>: On a Red Hat Enterprise Linux virtual machine, it restarts the X sever. On a Windows virtual machine, it does nothing.</li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong>: на виртуальной машине с установленной ОС Red Hat Enterprise Linux будет показан диалог с возможностями заморозить, выключить или перезапустить ВМ. На ВМ с установленной Windows будет вызван менеджер задач или диалог безопасности Windows.</li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Backspace</strong>: на виртуальной машине с установленной ОС Red Hat Enterprise Linux будет перезапущен сервер графической системы X. Для ВМ с установленной Windows действий нет.</li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F1</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F2</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F3</strong></li>
@@ -1447,59 +1447,59 @@ OVirt User Guide
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F10</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F11</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F12</strong></li>
-<li><strong>Printscreen</strong>: Passes the <strong>Printscreen</strong> keyboard option to the virtual machine.</li>
+<li><strong>Printscreen</strong>: передаёт клавиатурный параметр <strong>Printscreen</strong> виртуальной машине.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Help</p></td>
-<td align="left"><p>The <strong>About</strong> entry displays the version details of Virtual Machine Viewer that you are using.</p></td>
+<td align="left"><p>Справка</p></td>
+<td align="left"><p>Пункт <strong>О программе</strong> показывает версию используемого просмотрщика виртуальных машин.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Release Cursor from Virtual Machine</p></td>
+<td align="left"><p>Освободить курсор</p></td>
 <td align="left"><p><strong>SHIFT</strong>+<strong>F12</strong></p></td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="remote-viewer-hotkeys">Remote Viewer Hotkeys</h4>
+<h4 id="remote-viewer-hotkeys">Горячие клавиши удалённого просмотрщика</h4>
 
-<p>You can access the hotkeys for a virtual machine in both full screen mode and windowed mode. If you are using full screen mode, you can display the menu containing the button for hotkeys by moving the mouse pointer to the middle of the top of the screen. If you are using windowed mode, you can access the hotkeys via the <strong>Send key</strong> menu on the virtual machine window title bar.</p>
-
-<div class="alert alert-info">
-  <p><strong>Note:</strong> If <strong>vdagent</strong> is not running on the client machine, the mouse can become captured in a virtual machine window if it is used inside a virtual machine and the virtual machine is not in full screen. To unlock the mouse, press <strong>Shift</strong>+<strong>F12</strong>.</p>
-
-</div>
-<p>## ⁠Configuring USB Devices</p>
-
-<h3 id="using-usb-devices-on-virtual-machines---introduction">Using USB Devices on Virtual Machines - Introduction</h3>
-
-<p>A virtual machine connected with the SPICE protocol can be configured to connect directly to USB devices.</p>
-
-<p>The USB device will only be redirected if the virtual machine is active and in focus. USB redirection can be manually enabled each time a device is plugged in or set to automatically redirect to active virtual machines in the SPICE client menu.</p>
+<p>Доступ к горячим клавишам ВМ присутствует как в полноэкранном, так и в оконном режиме. Чтобы вызвать меню с кнопкой горячих клавиш в полноэкранном режиме, передвиньте курсор на середину верхней части экрана. В оконном режиме используйте меню <strong>Послать сочетание клавиш</strong> на панели заголовка виртуальной машины.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Note the distinction between the client machine and guest machine. The client is the hardware from which you access a guest. The guest is the virtual desktop or virtual server which is accessed through the User Portal.</p>
+  <p><strong>Внимание:</strong> если на клиентской машине не запущен <strong>vdagent</strong>, и ВМ работает в оконном режиме, то окно ВМ может захватить курсор мыши. Чтобы освободить курсор, нажмите <strong>Shift</strong>+<strong>F12</strong>.</p>
 
 </div>
-<p>### Using USB Devices on Virtual Machines - Native Mode</p>
+<p>## ⁠Настройка устройств USB</p>
 
-<p>USB redirection Native mode allows KVM/SPICE USB redirection for Linux and Windows virtual machines. Virtual (guest) machines require no guest-installed agents or drivers for native USB. All packages required by the client are brought forward by the SPICE xpi Firefox plugin. The USBClerk package must be installed on the Windows client. Native USB mode is supported on the following clients and guests:</p>
+<h3 id="using-usb-devices-on-virtual-machines---introduction">Использование устройств USB на виртуальных машинах: введение</h3>
+
+<p>Виртуальную машину, подключенную по протоколу SPICE, можно настроить на прямое подключение устройств USB.</p>
+
+<p>Устройство USB будет перенаправлено только в том случае, если ВМ активна и находится в фокусе. Перенаправление USB можно включать вручную каждый раз при подключении устройства, или же можно настроить автоматическое перенаправление на активные ВМ в меню клиента SPICE.</p>
+
+<div class="alert alert-info">
+  <p><strong>Важно:</strong> обратите внимание на различия между клиентской машиной и гостевой машиной. Клиент — это аппаратная машина, с которой осуществляется подключение к гостю. Гость — это виртуальный рабочий стол, доступ к которому происходит через Пользовательский портал.</p>
+
+</div>
+<p>### Работа с устройствами USB на виртуальных машинах: встроенный режим</p>
+
+<p>Встроенный режим перенаправления USB позволяет использовать перенаправления KVM/SPICE на ВМ как с установленной ОС Linux, так и с установленной ОС Windows. Во встроенном режиме виртуальным (гостевым) машинам не требуются гостевые агенты или драйверы USB. Все пакеты, необходимые клиенту, доставляются модулем SPICE xpi для Firefox. На клиентской машине с Windows необходимо установить пакет USBClerk. Встроенный режим USB поддерживается для следующих клиентских и гостевых машин:</p>
 
 <ul>
-  <li>Client
+  <li>Клиент
     <ul>
-      <li>Red Hat Enterprise Linux 6.0 and higher</li>
-      <li>Red Hat Enterprise Linux 5.5 and higher</li>
+      <li>Red Hat Enterprise Linux 6.0 и выше</li>
+      <li>Red Hat Enterprise Linux 5.5 и выше</li>
       <li>Windows XP</li>
       <li>Windows 7</li>
       <li>Windows 2008</li>
       <li>Windows 2008 Server R2</li>
     </ul>
   </li>
-  <li>Guest
+  <li>Гость
     <ul>
-      <li>Red Hat Enterprise Linux 6.0 and higher</li>
-      <li>Red Hat Enterprise Linux 5.5 and higher</li>
+      <li>Red Hat Enterprise Linux 6.0 и выше</li>
+      <li>Red Hat Enterprise Linux 5.5 и выше</li>
       <li>Windows XP</li>
       <li>Windows 7</li>
       <li>Windows 2008</li>
@@ -1508,84 +1508,84 @@ OVirt User Guide
 </ul>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> If you have a 64-bit architecture PC, you must use the 64-bit version of Internet Explorer to install the 64-bit version of the USB driver. The USB redirection will not work if you install the 32-bit version on a 64-bit architecture. As long as you initially install the correct USB type, you then can access USB redirection from both 32 and 64-bit browsers.</p>
+  <p><strong>Внимание:</strong> для 64-битной архитектуры необходимо использовать 64-битную версию Internet Explorer для установки 64-битной версии драйвера USB. Перенаправление USB не будет работать, если на 64-битную архитектуру была установлена 32-битная версия драйвера. Если изначально был установлен корректный тип USB, доступ к перенаправлению USB будет доступен как для 32-битных версий браузеров, так и для 64-битных.</p>
 
 </div>
-<p>### Using USB Devices on a Windows Client</p>
+<p>### Использование устройств USB на клиенте Windows</p>
 
-<p>The <strong>usbclerk</strong> service must be running on the Windows client for the USB device to be redirected to the guest. Ensure the version of <strong>usbclerk</strong> matches the architecture of the client machine. For example, the 64-bit version of <strong>usbclerk</strong> must be installed on 64-bit Windows machines.</p>
+<p>Чтобы устройство USB могло быть перенаправлено на гостевую машину, на клиенте Windows должна быть запущена служба <strong>usbclerk</strong>. Убедитесь, что версия <strong>usbclerk</strong> совпадает с архитектурой клиентской машины. Например, 64-битная версия <strong>usbclerk</strong> должна быть установлена на 64-битной машине Windows.</p>
 
-<p><strong>Procedure 7.1. Using USB Devices on a Windows Client</strong></p>
+<p><strong>Действие 7.1. Использование устройств USB на клиенте с Windows</strong></p>
 
 <ol>
-  <li>When the <strong>usbclerk</strong> service is installed and running, select a virtual machine that has been configured to use the SPICE protocol.</li>
-  <li>Ensure USB support is set to <strong>Native</strong>:</li>
+  <li>При настроенной и запущенной службе <strong>usbclerk</strong> выберите ВМ, настроенную на использование протокола SPICE.</li>
+  <li>Убедитесь, что поддержка USB выставлена как <strong>Встроенная</strong>:</li>
 </ol>
 
 <!-- -->
 
 <ol>
-  <li>Click the <strong>Edit</strong> button to open the <strong>Edit Virtual Machine</strong> window.</li>
-  <li>Click the <strong>Console</strong> tab.</li>
-  <li>From the <strong>USB Support</strong> drop-down menu, select <strong>Native</strong>.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Нажмите кнопку <strong>Изменить</strong> чтобы открыть окно <strong>Параметры ВМ</strong>.</li>
+  <li>Перейдите на вкладку <strong>Консоль</strong>.</li>
+  <li>В выпадающем меню <strong>Поддержка USB</strong> выберите <strong>Встроенная</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
 <li>
-  <p>Right-click the virtual machine and click <strong>Edit Console Options</strong> to open the <strong>Console Options</strong>' window, and select the <strong>Enable USB Auto-Share</strong> check box.</p>
+  <p>Щелкните ПКМ по виртуальной машине и выберите пункт <strong>Параметры консоли</strong> чтобы открыть окно <strong>Параметры консоли</strong>. Отметьте галочкой пункт <strong>Включить автоматический общий доступ к USB</strong>.</p>
 
 </li>
 <li>
-  <p>Start the virtual machine and click the <strong>Console</strong> button to connect to that virtual machine. When you plug your USB device into the client machine, it will automatically be redirected to appear on your guest machine.</p>
+  <p>Запустите ВМ и нажмите кнопку <strong>Консоль</strong> чтобы подключиться к этой ВМ. При подключении устройства USB к клиентской машине, это устройство будет автоматически перенаправлено и появится в гостевой машине.</p>
 
 </li>
 <p>&lt;/ol&gt;
-### Using USB Devices on a Red Hat Enterprise Linux or CentOS Client</p>
+### Использование устройств USB на клиентской машине с Red Hat Enterprise Linux или CentOS</p>
 
-<p>The usbredir package enables USB redirection from Red Hat Enterprise Linux, CentOS, or similar clients to virtual machines. usbredir is a dependency of the spice-xpi package, and is automatically installed together with that package.</p>
+<p>Пакет usbredir делает возможным перенаправление USB на виртуальные машины с клиентских машин Red Hat Enterprise Linux, CentOS или аналогичных. usbredir является пакетной зависимостью для spice-xpi и поэтому устанавливается автоматически вместе с этой программой.</p>
 
-<p><strong>Procedure 7.2. Using USB devices on a Red Hat Enterprise Linux/CentOSclient</strong></p>
+<p><strong>Действие 7.2. Использование устройств USB на клиенте Red Hat Enterprise Linux/CentOS</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine that has been configured to use the SPICE protocol.</li>
-  <li>Ensure USB support is set to <strong>Native</strong>:</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ, настроенную на использование протокола SPICE.</li>
+  <li>Убедитесь, что поддержка USB является <strong>Встроенной</strong>:</li>
 </ol>
 
 <!-- -->
 
 <ol>
-  <li>Click the <strong>Edit</strong> button to open the <strong>Edit Virtual Machine</strong> window.</li>
-  <li>Click the <strong>Console</strong> tab.</li>
-  <li>From the <strong>USB Support</strong> drop-down menu, select <strong>Native</strong>.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Нажмите на кнопку <strong>Изменить</strong> чтобы открыть окно <strong>Параметры ВМ</strong>.</li>
+  <li>Перейти на вкладку <strong>Консоль</strong>.</li>
+  <li>В выпадающем меню <strong>Поддержка USB</strong> выберите пункт <strong>Встроенная</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
 <li>
-  <p>Right-click the virtual machine and click <strong>Edit Console Options</strong> to open the <strong>Console Options</strong>' window, and select the <strong>Enable USB Auto-Share</strong> check box.</p>
+  <p>Щелкните ПКМ по виртуальной машине и выберите пункт <strong>Параметры консоли</strong> чтобы открыть окно <strong>Параметры консоли</strong>. Отметьте галочкой пункт <strong>Включить автоматический общий доступ к USB</strong>.</p>
 
 </li>
 <li>
-  <p>Start the virtual machine and click the <strong>Console</strong> button to connect to that virtual machine. When you plug your USB device into the client machine, it will automatically be redirected to appear on your guest machine.</p>
+  <p>Запустите ВМ и нажмите кнопку <strong>Консоль</strong> чтобы подключиться к этой ВМ. При подключении устройства USB к клиентской машине, это устройство будет автоматически перенаправлено и появится в гостевой машине.</p>
 
 </li>
 <p>&lt;/ol&gt;
-### Using USB Devices on Virtual Machines - Legacy Mode</p>
+### Работа с устройствами USB на виртуальных машинах — поддержка устаревших версий</p>
 
-<p>Legacy mode for USB redirection enables the SPICE USB redirection policy used in oVirt 3.0. Legacy mode must be manually configured.</p>
+<p>Поддержка устаревших версий перенаправления USB включает в себя политику перенаправления SPICE USB, используемую в oVirt версии 3.0. Устаревший режим настраивается вручную.</p>
 
-<p>Legacy USB mode is supported on the following clients and guests:</p>
+<p>Устаревший режим USB поддерживается для следующих гостевых и клиентских машин:</p>
 
 <ul>
-  <li>Client
+  <li>Клиент
     <ul>
-      <li>Red Hat Enterprise Linux 6.0 and higher</li>
-      <li>Red Hat Enterprise Linux 5.5 and higher</li>
+      <li>Red Hat Enterprise Linux 6.0 и выше</li>
+      <li>Red Hat Enterprise Linux 5.5 и выше</li>
       <li>Windows XP</li>
       <li>Windows 7</li>
       <li>Windows 2008</li>
     </ul>
   </li>
-  <li>Guest
+  <li>Гость
     <ul>
       <li>Windows XP</li>
       <li>Windows 7</li>
@@ -1593,118 +1593,116 @@ OVirt User Guide
   </li>
 </ul>
 
-<h4 id="configuring-a-linux-client-to-use-usb-redirection-in-legacy-mode">Configuring a Linux Client to Use USB Redirection in Legacy Mode</h4>
+<h4 id="configuring-a-linux-client-to-use-usb-redirection-in-legacy-mode">Настройка клиента с ОС Linux для использования устаревшего режима перенаправления USB</h4>
 
-<p>If you connect to a virtual guest from a Red Hat Enterprise Linux client machine, you have to install several SPICE packages before you can share USB devices between the client and the guest.</p>
+<p>Если подключение к виртуальному гостю выполнено с клиентской машины под управлением Red Hat Enterprise Linux, то перед тем, как начать работу с общими для гостя и клиента устройствами USB, необходимо установить несколько пакетов SPICE.</p>
 
-<p><strong>Procedure 7.3. Using USB devices on Red Hat Enterprise Linux clients:</strong></p>
+<p><strong>Действие 7.3. Использование устройств USB на клиентах под управлением Red Hat Enterprise Linux:</strong></p>
 
 <ol>
-  <li>Install SPICE packages on client
- On your Linux client machine, install the following packages:
+  <li>Установка пакетов SPICE на клиенте.</p> На клиентской машине под управлением Linux установите следующие пакеты:
     <ul>
       <li>spice-usb-share</li>
-      <li>kmod-kspiceusb-rhel60 for Red Hat Enterprise Linux 6 or</li>
-      <li>kmod-kspiceusb-rhel5u6 for Red Hat Enterprise Linux 5</li>
+      <li>kmod-kspiceusb-rhel60 для Red Hat Enterprise Linux 6 или</li>
+      <li>kmod-kspiceusb-rhel5u6 для Red Hat Enterprise Linux 5</li>
     </ul>
 
-    <p>These packages are available on the Red Hat Network, from the Red Hat Enterprise Linux Supplementary Software channel for your version of Red Hat Enterprise Linux. To install the packages, run:
- # yum install spice-usb-share kmod-kspiceusb</p>
+    <p>Эти пакеты доступны в Red Hat Network, в канале Red Hat Enterprise Linux Supplementary Software установленной версии Red Hat Enterprise Linux. Чтобы установить пакеты, введите:</p>
+ <code>&nbsp;&nbsp;&nbsp;#&nbsp;yum&nbsp;install&nbsp;spice-usb-share&nbsp;kmod-kspiceusb</code></p>
   </li>
   <li>
-    <p>Run SPICE USB services
-Start the <strong>spiceusbsrvd</strong> service and load the <strong>kspiceusb</strong> module. Run:
- # service spiceusbsrvd start
+    <p>Запуск служб SPICE USB.</p> Запустите службу <strong>spiceusbsrvd</strong> и загрузите модуль <strong>kspiceusb</strong>. Введите:</p>
+ <code>&nbsp;&nbsp;&nbsp;#&nbsp;service&nbsp;spiceusbsrvd&nbsp;start</code></p>
 <code>&nbsp;&nbsp;&nbsp;#&nbsp;modprobe&nbsp;kspiceusb</code></p>
   </li>
-  <li>Install RHEV-Tools on guest
- Locate the CD drive to access the contents of the Guest Tools ISO, and launch <code>RHEV-ToolsSetup.exe</code>. If the Guest Tools ISO is not available in your CD drive, contact your system administrator. After the tools have been installed, you will be prompted to restart the machine for changes to be applied.</li>
-  <li>Open firewall ports
- Allow connections on TCP port 32023 on any firewalls between the guest machine and the client machine.</li>
-  <li>Enable USB Auto-Share
-On the User Portal, select your guest machine. Ensure that you have enabled SPICE USB Auto-Share on the guest machine.</li>
+  <li>Установите RHEV-Tools на гостевой машине.</p>
+ На диске CD найдите Guest Tools ISO и запустите установочный файл <code>RHEV-ToolsSetup.exe</code>. Если Guest Tools ISO отсутствует на CD диске, обратитесь к системному администратору. После установки будет предложено перезагрузить машину для применения изменений.</li>
+  <li>Откройте порты брандмауэра</p>
+ В любых брандмауэрах между гостевой и клиентской машинами разрешите подключения к TCP порту 32023.</li>
+  <li>Включите автоматический общий доступ к USB</p>
+Выберите нужную гостевую машину на Пользовательском портале. Убедитесь, что на гостевой машине включён автоматический общий доступ к SPICE USB.</li>
   <li>
-    <p>Attach USB device
- Connect to your guest machine. Place the SPICE console window of your guest desktop in focus, then attach a USB device to the client. The USB device displays in your guest desktop.
-<img alt="List of Connected USB devices - Linux Client" title="List of Connected USB devices - Linux Client" src="./OVirt User Guide — oVirt_files/List_of_Connected_Devices.png"></p>
+    <p>Подключите устройство USB</p>
+ Подключитесь к гостевой машине. Поместите в фокус консольное окно SPICE на гостевом рабочем столе, затем подключите устройство USB на клиентской машине. Устройство USB будет показано на гостевом рабочем столе.
+<img alt="List of Connected USB devices - Linux Client" title="Список подключенных устройств USB — клиент с ОС Linux" src="./OVirt User Guide — oVirt_files/List_of_Connected_Devices.png"></p>
 
-    <p><strong>Figure 7.1. List of Connected USB devices - Linux Client</strong></p>
+    <p><strong>Рисунок 7.1. Список подключенных устройств USB — клиент с ОС Linux</strong></p>
   </li>
 </ol>
 
-<p>When you close the SPICE session the USB device will no longer be shared with the guest.</p>
+<p>После закрытия сеанса SPICE, устройство USB перестанет быть доступным для гостя.</p>
 
-<h4 id="configuring-a-windows-client-to-use-usb-redirection-in-legacy-mode">Configuring a Windows Client to Use USB Redirection in Legacy Mode</h4>
+<h4 id="configuring-a-windows-client-to-use-usb-redirection-in-legacy-mode">Настройка клиента с ОС Windows для использования устаревшего режима перенаправления USB</h4>
 
-<p>If you are connecting from a Windows client machine, and wish to use USB devices on your guest, you have to enable SPICE USB redirection.</p>
+<p>При подключении с клиентской машины под управлением ОС Windows, для работы с устройствами USB необходимо влкючить перенаправление SPICE USB.</p>
 
-<p><strong>Procedure 7.4. Enabling USB redirection on Windows:</strong></p>
+<p><strong>Действие 7.4. Включение перенаправления USB в Windows:</strong></p>
 
 <ol>
-  <li>Install USB redirector package on client
-On a Windows client machine, install <code>oVirt-USB-Client.exe</code>.</li>
-  <li>Install RHEV-Tools on guest
-Locate the CD drive to access the contents of the Guest Tools ISO, and launch <code>oVirt-ToolsSetup.exe</code>. If the Guest Tools ISO is not available in your CD drive, contact your system administrator. After the tools have been installed, you will be prompted to restart the machine for changes to be applied.</li>
-  <li>Open firewall ports
-Allow connections on TCP port 32023 on any firewalls between the guest machine and the client machine.</li>
-  <li>Enable USB sharing On the User Portal, select your guest machine. Ensure that you have enabled SPICE USB sharing on the guest machine.</li>
+  <li>Установить пакет для перенаправления USB на клиенте</p>
+На клиенте с Windows установите <code>oVirt-USB-Client.exe</code>.</li>
+  <li>Установить RHEV-Tools на госте</p>
+На диске CD найдите Guest Tools ISO и запустите установочный файл <code>oVirt-ToolsSetup.exe</code>. Если Guest Tools ISO отсутствует на CD диске, обратитесь к системному администратору. После установки будет предложено перезагрузить машину для применения изменений.</li>
+  <li>Откройте порты брандмауэра</p>
+В любых брандмауэрах между гостевой и клиентской машинами разрешите подключения к TCP порту 32023.</li>
+  <li>Включите автоматический общий доступ к USB на Пользовательском портале, выберите нужную гостевую машину. Убедитесь, что на гостевой машине включён автоматический общий доступ к SPICE USB.</li>
   <li>
-    <p>Attach USB device Connect to your guest machine and attach a USB device to the client. If the required USB device does not appear directly on the guest desktop, right-click on the SPICE frame and select USB Devices. Choose your device from the list displayed.
-<img alt="List of Connected USB devices - Windows Client" title="List of Connected USB devices - Windows Client" src="./OVirt User Guide — oVirt_files/List_of_Connected_Devices-Windows.png"></p>
+    <p>Подключите устройство USB.</p> Подключитесь к гостевой машине, затем подключите устройство USB на клиентской машине. Если нужное устройство USB не появилось непосредственно на рабочем столе, сделайте щелчок ПКМ по рамке SPICE и выберите устроства USB. Выберите устройство в списке.
+<img alt="List of Connected USB devices - Windows Client" title="Список подключенных устройств USB — клиент с Windows" src="./OVirt User Guide — oVirt_files/List_of_Connected_Devices-Windows.png"></p>
 
-    <p><strong>Figure 7.2. List of Connected USB devices - Windows Client</strong></p>
+    <p><strong>Рисунок 7.2. Список подключенных устройств USB — клиент с Windows</strong></p>
   </li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> When some USB devices are connected on Windows clients, the autoplay window will appear and the client will take control of the device, making it unavailable to the guest. To avoid this issue, disable USB autoplay on your Windows clients.</p>
+  <p><strong>Важно:</strong> во время поключения некоторых устройств USB к клиенту с Windows может появиться окно автозапуска, и киент захватит управление устройством, делая его недоступным для гостя. Чтобы этого избежать, отключите автозапуск USB на клиентах с установленной ОС Windows.</p>
 
 </div>
 <div class="alert alert-info">
-  <p><strong>Note:</strong> You can also define additional USB policies for Windows clients, to allow or block access to certain USB devices. For details, see the sections on USB Filter Editor in the <a href="http://www.ovirt.org/documentation/admin-guide/administration-guide/">oVirt Administration Guide</a>.</p>
+  <p><strong>Внимание:</strong> также можно настроить дополнительные политики USB для клиентов с установленной ОС Windows для разрешения или блокировки доступа к определённым устройствам USB. Подробности см. в разделе по редактору фильтров USB <a href="http://www.ovirt.org/documentation/admin-guide/administration-guide/">Руководства по администрированию oVirt</a>.</p>
 
 </div>
-<p>## Configuring Single Sign-On</p>
+<p>## Настройка единого входа</p>
 
-<h3 id="configuring-single-sign-on-for-virtual-machines">Configuring Single Sign-On for Virtual Machines</h3>
+<h3 id="configuring-single-sign-on-for-virtual-machines">Настройка единого входа для виртуальных машин</h3>
 
-<p>Configuring single sign-on allows you to automatically log in to a virtual machine using the credentials you use to log in to the User Portal. Single sign-on can be used on both Red Hat Enterprise Linux/CentOS and Windows virtual machines.</p>
+<p>Настройка единого входа даёт возможность автоматической авторизации на виртуальной машине с помощью данных авторизации, используемых на Пользовательском портале. Единый вход можно использовать как на машинах с установленной Red Hat Enterprise Linux/CentOS, так и на машинах с установленной Windows.</p>
 
-<h3 id="configuring-single-sign-on-for-red-hat-enterprise-linux-virtual-machines-using-ipa-idm">Configuring Single Sign-On for Red Hat Enterprise Linux Virtual Machines Using IPA (IdM)</h3>
+<h3 id="configuring-single-sign-on-for-red-hat-enterprise-linux-virtual-machines-using-ipa-idm">Настройка единого входа с помощью IPA (IdM) для ВМ с Red Hat Enterprise Linux</h3>
 
-<p>To configure single sign-on for Red Hat Enterprise Linux virtual machines using GNOME and KDE graphical desktop environments and IPA (IdM) servers, you must install the ovirt-guest-agent package on the virtual machine and install the packages associated with your window manager.</p>
+<p>Чтобы настроить единый вход для ВМ с установленной Red Hat Enterprise Linux с использованием графического окружения GNOME/KDE и серверов IPA (IdM), на ВМ необходимо установить пакет ovirt-guest-agent, а также пакеты выбранного оконного менеджера.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> The following procedure assumes that you have a working IPA configuration and that the IPA domain is already joined to the Manager. You must also ensure that the clocks on the Manager, the virtual machine and the system on which IPA (IdM) is hosted are synchronized using NTP.</p>
+  <p><strong>Важно:</strong> для выполнения следующего действия необходима настроенная конфигурация IPA и домен IPA, уже присоединённый к менеджеру. Также необходимо убедиться, что часы менеджера, виртуальных машин и хоста, где расположена IPA (IdM), были синхронизированы с помощью протокола NTP.</p>
 
 </div>
-<p><strong>Procedure 8.1. Configuring Single Sign-On for Red Hat Enterprise Linux Virtual Machines</strong></p>
+<p><strong>Действие 8.1. Настройка единого входа для виртуальных машин с установленной ОС Red Hat Enterprise Linux</strong></p>
 
 <ol>
-  <li>Log in to the Red Hat Enterprise Linux virtual machine.</li>
+  <li>Авторизуйтесь на машине Red Hat Enterprise Linux.</li>
   <li>
-    <p>Run the following command to enable the required channel:
+    <p>Для включения необходимого канала ПО введите следующую команду:</p>
     # rhn-channel –add –channel=rhel-x86_64-rhev-agent-6-server</p>
   </li>
   <li>
-    <p>Run the following command to download and install the guest agent packages:
+    <p>Для загрузки и установки пакетов гостевого агента введите следующую команду:</p>
     # yum install rhevm-guest-agent</p>
   </li>
   <li>
-    <p>Run the following commands to install the single sign-on packages:
-    # yum install rhev-agent-pam-rhev-cred
+    <p>Для установки пакетов единого входа:</p>
+    # yum install rhev-agent-pam-rhev-cred</p>
     # yum install rhev-agent-gdm-plugin-rhevcred</p>
   </li>
   <li>
-    <p>Run the following command to install the IPA packages:
+    <p>Для установки пакетов IPA:</p>
     # yum install ipa-client</p>
   </li>
   <li>
-    <p>Run the following command and follow the prompts to configure <strong>ipa-client</strong> and join the virtual machine to the domain:
+    <p>Введите следующую команду и следуйте указаниям командной строки для настройки <strong>ipa-client</strong> и присоединения ВМ к домену:</p>
     # ipa-client-install –permit –mkhomedir</p>
 
     <div class="alert alert-info">
-      <p><strong>Note:</strong> In environments that use DNS obfuscation, this command should be:</p>
+      <p><strong>Внимание:</strong> в окружении, где используется обфускация DNS, используется следующая команда:</p>
 
 <pre class="highlight plaintext"><code># ipa-client-install --domain=[FQDN] --server==[FQDN]
 </code></pre>
@@ -1712,64 +1710,64 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
     </div>
   </li>
   <li>
-    <p>Fetch the details of an IPA user:
-    # getent passwd [IPA user name]</p>
+    <p>Получение сведений о пользователе IPA:</p>
+    # getent passwd [имя_пользователя_IPA]</p>
   </li>
   <li>
-    <p>This will return something like this:
-    [some-ipa-user]:*:936600010:936600001::/home/[some-ipa-user]:/bin/sh</p>
+    <p>Будет возвращена информация, похожая на следующую:</p>
+    [пользователь_IPA]:*:936600010:936600001::/home/[пользователь_IPA]:/bin/sh</p>
 
-    <p>You will need this information in the next step to create a home directory for [some-ipa-user].</p>
+    <p>Эта информация понадобится при выполнении следующего шага для создания домашнего каталога для [пользователя_IPA].</p>
   </li>
-  <li>Set up a home directory for the IPA user:
+  <li>Настройка домашнего каталога для пользователя IPA:</p>
     <ol>
       <li>
-        <p>Create the new user's home directory:
+        <p>Создать домашний каталог для нового пользователя:</p>
     # mkdir /home/[some-ipa-user]</p>
       </li>
       <li>
-        <p>Give the new user ownership of the new user's home directory:
+        <p>Присвоить новому пользователю права на владение нового домашнего каталога:</p>
     # chown 935500010:936600001 /home/[some-ipa-user]</p>
       </li>
     </ol>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have enabled single sign-on for your Red Hat Enterprise Linux virtual machine. Log in to the User Portal using the user name and password of a user configured to use single sign-on and connect to the console of the virtual machine. You will be logged in automatically.</p>
+<p>Мы включили единый вход на виртуальной машине с установленной ОС Red Hat Enterprise Linux. Авторизуйтесь на Пользовательском портале с использованием имени пользователя и пароля пользователя с настроенным единым входом, и подключитесь к консоли ВМ. Будет выполнена автоматическая авторизация.</p>
 
-<h3 id="configuring-single-sign-on-for-red-hat-enterprise-linuxcentos-virtual-machines-using-active-directory">Configuring Single Sign-On for Red Hat Enterprise Linux/CentOS Virtual Machines Using Active Directory</h3>
+<h3 id="configuring-single-sign-on-for-red-hat-enterprise-linuxcentos-virtual-machines-using-active-directory">Настройка единого входа с использованием Active Directory для виртуальных машин с установленной Red Hat Enterprise Linux/CentOS </h3>
 
-<p>To configure single sign-on for Red Hat Enterprise Linux or CentOS virtual machines using GNOME and KDE graphical desktop environments and Active Directory, you must install the ovirt-guest-agent package on the virtual machine, install the packages associated with your window manager and join the virtual machine to the domain.</p>
+<p>Чтобы настроить единый вход для ВМ с установленной Red Hat Enterprise Linux или CentOS с использованием графического окружения GNOME/KDE и Active Directory, на ВМ необходимо установить пакет ovirt-guest-agent, а также пакеты выбранного оконного менеджера, и присоединить машину к домену.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> The following procedure assumes that you have a working Active Directory configuration and that the Active Directory domain is already joined to the Manager. You must also ensure that the clocks on the Manager, the virtual machine and the system on which Active Directory is hosted are synchronized using NTP.</p>
+  <p><strong>Важно:</strong> для выполнения следующего действия необходима настроенная конфигурация Active Directory и домен Active Directory, уже присоединённый к менеджеру. Также необходимо убедиться, что часы менеджера, виртуальных машин и хоста, где расположен Active Directory, были синхронизированы с помощью протокола NTP.</p>
 
 </div>
-<p>⁠ <strong>Procedure 8.2. Configuring Single Sign-On for Red Hat Enterprise Linux/CentOS Virtual Machines</strong></p>
+<p>⁠ <strong>Действие 8.2. Настройка единого входа для виртуальных машин с установленной ОС Red Hat Enterprise Linux/CentOS</strong></p>
 
 <ol>
-  <li>Log in to the Red Hat Enterprise Linux or CentOS virtual machine.</li>
+  <li>Авторизуйтесь на машине Red Hat Enterprise Linux или CentOS.</li>
   <li>
-    <p>Run the following command to enable the required channel:
+    <p>Для включения необходимого канала ПО введите следующую команду:</p>
     # rhn-channel –add –channel=rhel-x86_64-rhev-agent-6-server</p>
   </li>
   <li>
-    <p>Run the following command to download and install the guest agent packages:
+    <p>Для загрузки и установки пакетов гостевого агента введите следующую команду:</p>
     # yum install ovirt-guest-agent</p>
   </li>
   <li>
-    <p>Run the following command to install the single sign-on packages:
+    <p>Для установки пакетов единого входа:</p>
     # yum install ovirt-agent-gdm-plugin-rhevcred</p>
   </li>
   <li>
-    <p>Run the following command to install the Samba client packages:
+    <p>Для установки пакетов клиента Samba:</p>
     # yum install samba-client samba-winbind samba-winbind-clients</p>
   </li>
   <li>
-    <p>On the virtual machine, modify the <code>/etc/samba/smb.conf</code> file to contain the following, replacing <code>DOMAIN</code> with the short domain name and <code>REALM.LOCAL</code> with the Active Directory realm:
-    [global]
+    <p>На виртуальной машине измените файл <code>/etc/samba/smb.conf</code> так, чтобы он был следующего содержания, заменив <code>DOMAIN</code> коротким именем домена, а <code>REALM.LOCAL</code> областью Active Directory:</p>
+    <pre class="highlight plaintext"><code>[global]
            workgroup = DOMAIN
            realm = REALM.LOCAL
            log level = 2
@@ -1786,91 +1784,91 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
            winbind separator = +
            idmap uid = 1000000-2000000
            idmap gid = 1000000-2000000
-           template shell = /bin/bash</p>
+           template shell = /bin/bash</code></p>
   </li>
   <li>
-    <p>Run the following command to join the virtual machine to the domain:
+    <p>Для присоединения ВМ к домену выполните следующую команду:</p>
     net ads join -U [user name]</p>
   </li>
   <li>
-    <p>Run the following command to start the <strong>winbind</strong> service and ensure it starts on boot:
-    # service winbind start
+    <p>Для запуска службы <strong>winbind</strong> и добавления её в автостарт при загрузке системы:</p>
+    # service winbind start</p>
     # chkconfig winbind on</p>
   </li>
-  <li>Run the following commands to verify that the system can communicate with Active Directory:
+  <li>Проверка возможности обмена информацией системы с Active Directory:
     <ul>
       <li>
-        <p>Verify that a trust relationship has been created:
+        <p>Проверка доверенного отношения:</p>
     # wbinfo -t</p>
       </li>
       <li>
-        <p>Verify that you can list users:
+        <p>Проверка возможности вывести список пользователей:</p>
     # wbinfo -u</p>
       </li>
       <li>
-        <p>Verify that you can list groups:
+        <p>Проверка возможности вывести список групп:</p>
     # wbinfo -g</p>
       </li>
     </ul>
   </li>
-  <li>Run the following command to configure the NSS and PAM stack:
+  <li>Для настройки NSS и стека PAM:</p>
     <ol>
       <li>
-        <p>Run the following command to open the <strong>Authentication Configuration</strong> window:
+        <p>Чтобы открыть окно <strong>Параметры аутентификации</strong> выполните команду:</p>
     # authconfig-tui</p>
       </li>
-      <li>Select the '''Use Winbind check box, select <strong>Next</strong> and press <strong>Enter</strong>.</li>
-      <li>Select the <strong>OK</strong> button and press <strong>Enter</strong>.</li>
+      <li>Отметьте галочкой пункт «Использовать Winbind», нажмите <strong>Далее</strong>, нажмите <strong>Enter</strong>.</li>
+      <li>Нажмите кнопку <strong>OK</strong>, нажмите <strong>Enter</strong>.</li>
     </ol>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have enabled single sign-on for your Red Hat Enterprise Linux virtual machine. Log in to the User Portal using the user name and password of a user configured to use single sign-on and connect to the console of the virtual machine. You will be logged in automatically.</p>
+<p>Мы включили единый вход для виртуальной машины с установленной ОС Red Hat Enterprise Linux. Авторизуйтесь на Пользовательском портале с использованием имени пользователя и пароля пользователя с настроенным единым входом, и подключитесь к консоли ВМ. Будет выполнена автоматическая авторизация.</p>
 
-<h3 id="configuring-single-sign-on-for-windows-virtual-machines">Configuring Single Sign-On for Windows Virtual Machines</h3>
+<h3 id="configuring-single-sign-on-for-windows-virtual-machines">Настройка единого входа для виртуальных машин с установленной ОС Windows</h3>
 
-<p>To configure single sign-on for Windows virtual machines, the Windows guest agent must be installed on the guest virtual machine. The <code>oVirt Guest Tools ISO</code> file provides this agent. If the <code>oVirt-toolsSetup.iso</code> image is not available in your ISO domain, contact your system administrator. ⁠</p>
+<p>Чтобы настроить единый вход для ВМ с установленной Windows, на гостевую ВМ необходимо установить гостевой агент Windows, предоставляемый файлом <code>oVirt Guest Tools ISO</code>. Если образ <code>oVirt-toolsSetup.iso</code> недоступен в домене ISO, свяжитесь с системным администратором. ⁠</p>
 
-<p><strong>Procedure 8.3. Configuring Single Sign-On for Windows Virtual Machines</strong></p>
+<p><strong>Действие 8.3. Настройка единого входа для ВМ с установленной ОС Windows</strong></p>
 
 <ol>
-  <li>From the <strong>Extended</strong> tab of the User Portal, select the Windows virtual machine. Ensure the machine is powered up, then click the <strong>Change CD</strong> button.</li>
-  <li>From the list of images, select <code>oVirt-toolsSetup.iso</code>. Click <strong>OK</strong>.</li>
-  <li>Once you have attached the guest tools, click the <strong>Console</strong> icon and log in to the virtual machine.</li>
-  <li>On the virtual machine, locate the CD drive to access the contents of the guest tools ISO file and launch <strong>oVirt-ToolsSetup.exe</strong>. After the tools have been installed, you will be prompted to restart the machine to apply the changes.</li>
+  <li>На вкладке <strong>Расширенный</strong> Пользовательского портала выберите ВМ с Windows. Убедитесь, что она работает, затем нажмите на кнопку <strong>Сменить CD</strong>.</li>
+  <li>В списке образов выберите <code>oVirt-toolsSetup.iso</code>. Нажмите <strong>OK</strong>.</li>
+  <li>После подключения guest tools нажмите на значок <strong>Console</strong> и выполните вход на ВМ.</li>
+  <li>В виртуальной машине выберите привод CD для доступа к содержимому файла образа ISO guest tools и запустите <strong>oVirt-ToolsSetup.exe</strong>. После установки будет предложено перезагрузить машину для применения изменений.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have enabled single sign-on for your Windows virtual machine. Log in to the User Portal using the user name and password of a user configured to use single sign-on and connect to the console of the virtual machine. You will be logged in automatically.</p>
+<p>Мы включили единый вход на виртуальной машине с установленной ОС Windows. Авторизуйтесь на Пользовательском портале с использованием имени пользователя и пароля пользователя с настроенным единым входом, и подключитесь к консоли ВМ. Будет выполнена автоматическая авторизация.</p>
 
-<h2 id="legal-notice">Legal Notice</h2>
+<h2 id="legal-notice">Правовая информация</h2>
 
 <p>Copyright © 2014 Red Hat, Inc.</p>
 
-<p>This document is licensed by Red Hat under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>. If you distribute this document, or a modified version of it, you must provide attribution to Red Hat, Inc. and provide a link to the original. If the document is modified, all Red Hat trademarks must be removed.</p>
+<p>Этот документ предоставляется компанией Red Hat по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>. В случае распространения этого документа или его изменённой версии, необходимо указание авторства Red Hat, Inc. и предоставление ссылки на оригинал. В случае изменения документа, все товарные знаки Red Hat должны быть удалены.</p>
 
-<p>Red Hat, as the licensor of this document, waives the right to enforce, and agrees not to assert, Section 4d of CC-BY-SA to the fullest extent permitted by applicable law.</p>
+<p>Как лицензиар данного документа, компания Red Hat будет отменять или не утверждать раздел 4d лицензии CC-BY-SA во всех установленных законом случаях.</p>
 
-<p>Red Hat, Red Hat Enterprise Linux, the Shadowman logo, JBoss, MetaMatrix, Fedora, the Infinity Logo, and RHCE are trademarks of Red Hat, Inc., registered in the United States and other countries.</p>
+<p>Red Hat, Red Hat Enterprise Linux, логотип Shadowman, JBoss, MetaMatrix, Fedora, логотип Infinity и RHCE являются товарными знаками Red Hat, Inc., зарегистрированными в США и других странах.</p>
 
-<p>Linux® is the registered trademark of Linus Torvalds in the United States and other countries.</p>
+<p>Linux® является зарегистрированным товарным знаком Линуса Торвальдса (Linus Torvalds) в США и других странах.</p>
 
-<p>Java® is a registered trademark of Oracle and/or its affiliates.</p>
+<p>Java® является зарегистрированным товарным знаком Oracle и/или зависимых обществ.</p>
 
-<p>XFS® is a trademark of Silicon Graphics International Corp. or its subsidiaries in the United States and/or other countries.</p>
+<p>XFS® является зарегистрированным товарным знаком Silicon Graphics International Corp. или её дочерних компаний в США и/или в других странах.</p>
 
-<p>MySQL® is a registered trademark of MySQL AB in the United States, the European Union and other countries.</p>
+<p>MySQL® является зарегистрированным товарным знаком MySQL AB в США, Европейском Союзе и в других странах.</p>
 
-<p>Node.js® is an official trademark of Joyent. Red Hat Software Collections is not formally related to or endorsed by the official Joyent Node.js open source or commercial project.</p>
+<p>Node.js® является официальным товарным знаком Joyent. Red Hat Software Collections не являются формально санкционированными или связанными с официальным коммерческим или открытым проектом Joyent Node.js.</p>
 
-<p>The OpenStack® Word Mark and OpenStack Logo are either registered trademarks/service marks or trademarks/service marks of the OpenStack Foundation, in the United States and other countries and are used with the OpenStack Foundation's permission. We are not affiliated with, endorsed or sponsored by the OpenStack Foundation, or the OpenStack community.</p>
+<p>Текстовый символ OpenStack® и логотип OpenStack являются либо зарегистрированными товарными знаками/знаками обслуживания либо товарными знаками/знаками обслуживания OpenStack Foundation в США и других странах, и используются с разрешения OpenStack Foundation. Мы не связаны, не санкционированы и не финансируемся ни фондом OpenStack Foundation ни сообществом OpenStack.</p>
 
-<p>All other trademarks are the property of their respective owners.</p>
+<p>Все другие товарные знаки являются собственностью их соответствующих владельцев.</p>
 
-<h2 id="authors-and-revision-history">Authors and Revision History</h2>
+<h2 id="authors-and-revision-history">Авторы и история редакций</h2>
 
 <p><strong>Jodi Biddle</strong></p>
 
@@ -1907,9 +1905,9 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
 <pre class="highlight plaintext"><code>  bkp@redhat.com
 </code></pre>
 
-<h3 id="revision-history">Revision History</h3>
+<h3 id="revision-history">История редакций</h3>
 
-<p>Revision 3.4-20</p>
+<p>Редакция 3.4-20</p>
 
 <p>Fri 3 Oct 2014</p>
 
@@ -1917,7 +1915,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
 
 <p>Converted to oVirt-oriented documentation.</p>
 
-<p>Revision 3.4-19</p>
+<p>Редакция 3.4-19</p>
 
 <p>Fri 27 Jun 2014</p>
 
@@ -1931,7 +1929,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-17</p>
+<p>Редакция 3.4-17</p>
 
 <p>Wed 11 Jun 2014</p>
 
@@ -1945,7 +1943,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-16</p>
+<p>Редакция 3.4-16</p>
 
 <p>Fri 6 Jun 2014</p>
 
@@ -1959,7 +1957,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-14</p>
+<p>Редакция 3.4-14</p>
 
 <p>Thurs 24 Apr 2014</p>
 
@@ -1973,7 +1971,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-13</p>
+<p>Редакция 3.4-13</p>
 
 <p>Tue 22 Apr 2014</p>
 
@@ -1987,7 +1985,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-10</p>
+<p>Редакция 3.4-10</p>
 
 <p>Wed 16 Apr 2014</p>
 
@@ -2001,7 +1999,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-9</p>
+<p>Редакция 3.4-9</p>
 
 <p>Tue 15 Apr 2014</p>
 
@@ -2015,7 +2013,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-8</p>
+<p>Редакция 3.4-8</p>
 
 <p>Thu 03 Apr 2014</p>
 
@@ -2050,7 +2048,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-7</p>
+<p>Редакция 3.4-7</p>
 
 <p>Wed 02 Apr 2014</p>
 
@@ -2070,7 +2068,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-6</p>
+<p>Редакция 3.4-6</p>
 
 <p>Tue 01 Apr 2014</p>
 
@@ -2084,7 +2082,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-3</p>
+<p>Редакция 3.4-3</p>
 
 <p>Thu 27 Mar 2014</p>
 
@@ -2107,7 +2105,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-2</p>
+<p>Редакция 3.4-2</p>
 
 <p>Thu 20 Mar 2014</p>
 
@@ -2127,7 +2125,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
   </tbody>
 </table>
 
-<p>Revision 3.4-1</p>
+<p>Редакция 3.4-1</p>
 
 <p>Mon 17 Mar 2014</p>
 
@@ -2157,7 +2155,7 @@ Allow connections on TCP port 32023 on any firewalls between the guest machine a
 <a target="_blank" href="https://github.com/oVirt/ovirt-site/edit/master/source/documentation/user-guide/user-guide.html.md"><i class="icon fa fa-pencil"></i>Edit this page on GitHub</a>
 </div>
 <div class="last-modified">
-Page last modified
+Последнее изменение страницы
 Mon 30 Nov 2015 19:41 UTC
 </div>
 </footer>
