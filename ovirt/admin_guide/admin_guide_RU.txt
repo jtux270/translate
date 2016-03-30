@@ -1,8 +1,40 @@
 Summary — Описание задачи
 procedure — Действие
 
+Нажмите на кнопку
+
 oVirt Node hosts cannot be added to clusters that have been enabled for 
 
 Gluster service for use as Red Hat Storage nodes.
+
+
+Mode 1 (active-backup policy) sets all interfaces to the backup state while one remains active. Upon failure on the active interface, a backup interface replaces it as the only active interface in the bond. The MAC address of the bond in mode 1 is visible on only one port (the network adapter), to prevent confusion for the switch. Mode 1 provides fault tolerance and is supported in oVirt.
+
+В режиме 1 (политика active-backup, «активный-запасной») все интерфейсы переводятся в запасной режим, кроме одного, который остаётся активным. В случае сбоя активного интерфейса, его заменяет запасной, который в свою очередь становится единственным активным интерфейсом в связке. MAC-адрес связки в режиме 1 является видимым только на одном порту (сетевого адаптера), для предотвращения …   Режим 1 предоставляет устойчивость к отказам и поддерживается в oVirt.
+
+
+Mode 2 (XOR policy) selects an interface to transmit packages to based on the result of an XOR operation on the source and destination MAC addresses modulo NIC slave count. This calculation ensures that the same interface is selected for each destination MAC address used. Mode 2 provides fault tolerance and load balancing and is supported in oVirt.
+
+
+В режиме 2 (политика XOR) выбирается интерфейс для передачи ему пакетов на основании результата выполнения операции XOR с количеством подчинённых интерфейсов modulo NIC на исходном и целевом MAC-адресах. Этот расчёт является гарантией того, что для каждого используемого целевого MAC-адреса выбирается один и тот же интерфейс. Режим 2 предоставляет устойчивость к отказам и балансировку нагрузки и поддерживается в oVirt.
+
+Mode 4 (IEEE 802.3ad policy) creates aggregation groups for which included interfaces share the speed and duplex settings. Mode 4 uses all interfaces in the active aggregation group in accordance with the IEEE 802.3ad specification and is supported in oVirt.
+
+В режиме 4 (политика IEEE 802.3ad) содаются группы агрегации, в которых включенные в группу интерфейсы используют общие параметры скорости и дуплекса. В режиме 4 все интерфейсы в активной группе агрегации используются в соответствии со стандартом IEEE 802.3ad, этот режим поддерживается в oVirt.
+
+  Mode 5 (adaptive transmit load balancing policy) ensures the outgoing traffic distribution is according to the load on each interface and that the current interface receives all incoming traffic. If the interface assigned to receive traffic fails, another interface is assigned the receiving role instead. Mode 5 is supported in oVirt.
+
+
+Режим 5 (политика адаптивной балансировки передаваемой нагрузки) гарантирует распределение исходящего трафика в соответствии с нагрузкой каждого интерфейса, также гарантируется принятие всего входящего трафика текущим интерфейсом. В случае сбоя интерфейса, принимающего трафик, принимающая роль назначается другому интерфейсу. Режим 5 поддерживается в oVirt.
+
+
+http://centos.name/?page/tipsandtricks/BondingInterfaces
+
+
+
+
+
+
+
 
 
