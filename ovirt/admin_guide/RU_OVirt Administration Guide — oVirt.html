@@ -29,31 +29,31 @@ oVirt
 <nav role="navigation">
 <ul class="nav nav-pills">
 <li class="nav-link-home" role="menuitem">
-<a href="http://www.ovirt.org/">Home</a>
+<a href="http://www.ovirt.org/">Домашняя страница</a>
 </li>
 
 <li class="nav-link-blog" role="menuitem">
-<a href="http://www.ovirt.org/blog/">Blog</a>
+<a href="http://www.ovirt.org/blog/">Блог</a>
 </li>
 
 <li class="nav-link-download" role="menuitem">
-<a href="http://www.ovirt.org/download/">Download</a>
+<a href="http://www.ovirt.org/download/">Загрузки</a>
 </li>
 
 <li class="nav-link-documentation" role="menuitem">
-<a href="http://www.ovirt.org/documentation/">Documentation</a>
+<a href="http://www.ovirt.org/documentation/">Документация</a>
 </li>
 
 <li class="nav-link-develop" role="menuitem">
-<a href="http://www.ovirt.org/develop/">Develop</a>
+<a href="http://www.ovirt.org/develop/">Разработка</a>
 </li>
 
 <li class="nav-link-community" role="menuitem">
-<a href="http://www.ovirt.org/community/">Community</a>
+<a href="http://www.ovirt.org/community/">Сообщество</a>
 </li>
 
 <li class="nav-link-search" role="menuitem">
-<a href="http://www.ovirt.org/search/">Search</a>
+<a href="http://www.ovirt.org/search/">Поиск</a>
 </li>
 
 </ul>
@@ -65,46 +65,46 @@ oVirt
 <section class="page-wrap" id="page-wrap">
 <section class="page" id="page">
 <ul class="breadcrumb">
-<li><a href="http://www.ovirt.org/documentation/">Documentation</a></li>
-<li><a href="http://www.ovirt.org/documentation/admin-guide/">Admin-guide</a></li>
-<li class="active">OVirt Administration Guide</li>
+<li><a href="http://www.ovirt.org/documentation/">Документация</a></li>
+<li><a href="http://www.ovirt.org/documentation/admin-guide/">Руководство администратора</a></li>
+<li class="active">Руководство администратора OVirt</li>
 </ul>
 
 <section class="container content" id="content">
 <div class="alert alert-warning">
 <div class="pull-right">
-<a>Hover for more info</a>
+<a>Наведите курсор для подробностей</a>
 </div>
 <div class="frontmatter-metadata">
 <table class="metadata">
-<caption>Frontmatter Metadata</caption>
+<caption>Метаданные Frontmatter</caption>
 <tbody><tr>
-<th>title</th>
-<td>OVirt Administration Guide</td>
+<th>название</th>
+<td>Руководство администратора OVirt</td>
 </tr>
 <tr>
-<th>category</th>
-<td>documentation</td>
+<th>категория</th>
+<td>документация</td>
 </tr>
 <tr>
-<th>authors</th>
+<th>авторы</th>
 <td>bproffitt, omachace, vered, wdennis</td>
 </tr>
 <tr>
-<th>wiki_title</th>
+<th>заголовок_wiki</th>
 <td>OVirt Administration Guide</td>
 </tr>
 <tr>
-<th>wiki_revision_count</th>
+<th>количество_ревизий_wiki</th>
 <td>7</td>
 </tr>
 <tr>
-<th>wiki_last_updated</th>
+<th>последнее_обновление_wiki</th>
 <td>2015-11-16</td>
 </tr>
 </tbody></table>
 </div>
-Original Wiki page:
+Оригинал страницы на Wiki:
 <a href="http://old.ovirt.org/OVirt_Administration_Guide" target="_blank">
 OVirt Administration Guide
 </a>
@@ -2566,250 +2566,250 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 
 <p><strong>Описание задачи</strong></p>
 
-<p>Диспетчер пула хранилища (SPM) is a management role given to one of the hosts in a data center to maintain access control over the storage domains. The SPM must always be available, and the SPM role will be assigned to another host if the SPM host becomes unavailable. As the SPM role uses some of the host's available resources, it is important to prioritize hosts that can afford the resources.</p>
+<p>Диспетчер пула хранилища (SPM) — это управляющая роль, присваиваемая одному из хостов в дата-центре для поддержания контроля над доступом к доменам хранилищ. SPM всегда должен быть доступен, и в случае если хост, выполняющий роль SPM, становится недоступен, эта роль присваивается другому хосту. Поскольку роль SPM использует некоторые из доступных ресурсов хоста, очень важно выставить приоритеты для хостов, которые могут обеспечить эти ресурсы.</p>
 
-<p>The Storage Pool Manager (SPM) priority setting of a host alters the likelihood of the host being assigned the SPM role: a host with high SPM priority will be assigned the SPM role before a host with low SPM priority.</p>
-
-<p>⁠</p>
-
-<p><strong>Procedure&nbsp;6.4.&nbsp;Configuring SPM settings</strong></p>
-
-<ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Host</strong> window.</li>
-  <li>Click the <strong>SPM</strong> tab to display the <strong>SPM Priority</strong> settings.</li>
-  <li>Use the radio buttons to select the appropriate SPM priority for the host.</li>
-  <li>Click <strong>OK</strong> to save the settings and close the window.</li>
-</ol>
-
-<p><strong>Result</strong></p>
-
-<p>You have configured the SPM priority of the host.</p>
-
-<h4 id="editing-a-resource-2">Editing a Resource</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>Edit the properties of a resource.</p>
+<p>Параметры приоритетов хоста SPM изменяют возможность присвоения хосту роли SPM: возможность присвоения роли SPM хосту с высоким приоритетом SPM выше, чем эта возможность для хоста с более низким приоритетом SPM.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.5.&nbsp;Editing a Resource</strong></p>
+<p><strong>Действие&nbsp;6.4.&nbsp;Настройка параметров SPM</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select the resource in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit</strong> window.</li>
-  <li>Change the necessary properties and click <strong>OK</strong>.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Параметры хоста</strong>.</li>
+  <li>Перейдите на вкладку <strong>SPM</strong> чтобы увидеть параметры <strong>Приоритет SPM</strong>.</li>
+  <li>С помощью галочек отметьте необходимый приоритет SPM для этого хоста.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохранить конфигурацию и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The new properties are saved to the resource. The <strong>Edit</strong> window will not close if a property field is invalid.</p>
+<p>Мы настроили приоритет SPM хоста.</p>
 
-<h4 id="approving-newly-added-ovirt-node-hosts">Approving Newly Added oVirt Node Hosts</h4>
+<h4 id="editing-a-resource-2">Изменение ресурса</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You have to install your oVirt Node hosts before you can approve them in oVirt. Read about installing oVirt Nodes in the <em>oVirt Installation Guide</em>.</p>
+<p>Изменение параметров ресурса.</p>
 
-<p>Once installed, the oVirt Node host is visible in the Administration Portal but not active. Approve it so that it can host virtual machines.</p>
+<p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.6.&nbsp;Approving newly added oVirt Node hosts</strong></p>
+<p><strong>Действие&nbsp;6.5.&nbsp;Изменение ресурса</strong></p>
 
 <ol>
-  <li>In the <strong>Hosts</strong> tab, select the host you recently installed using the oVirt Node host installation media. This host shows a status of <code>Pending Approval</code>.</li>
-  <li>Click the <strong>Approve</strong> button.</li>
+  <li>Используйте ресурсные вкладки, режим дерева или поисковый функционал чтобы найти и выделить нужный ресурс в списке результатов.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить</strong>.</li>
+  <li>Измените необходимые параметры и нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The host's status changes to <code>Up</code> and it can be used to run virtual machines.</p>
+<p>Новые параметры ресурса сохранены. Окно <strong>Изменить</strong> нельзя будет закрыть, если были введены некорректные параметры.</p>
+
+<h4 id="approving-newly-added-ovirt-node-hosts">Утверждение новых хостов oVirt Node</h4>
+
+<p><strong>Описание задачи</strong></p>
+
+<p>Перед утверждением в oVirt, хосты oVirt Node необходимо установить. Подробности см. в <em>Руководстве по установке oVirt</em>.</p>
+
+<p>Сразу после установки хост oVirt Node становится видимым на Портале администрирования, но ещё не является активным. Для размещения на хосте виртуальных машин хост необходимо утвердить.</p>
+
+<p><strong>Действие&nbsp;6.6.&nbsp;Утверждение новых хостов oVirt Node</strong></p>
+
+<ol>
+  <li>Во вкладке <strong>Хосты</strong> выберите хост, недавно установленный с помощью oVirt Node. Такой хост имеет статус <code>Ожидает утверждение</code>.</li>
+  <li>Нажмите на кнопку <strong>Утвердить</strong>.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Статус хоста сменяется на <code>Работает</code>, и на хосте теперь можно размещать виртуальные машины.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> You can also add this host using the procedure in <a href="http://www.ovirt.org/documentation/admin-guide/administration-guide/#Adding_an_Enterprise_Linux_Host">“Adding an Enterprise Linux Host”</a>, which utilizes the oVirt Node host's IP address and the password that was set on the <strong>oVirt Engine</strong> screen.</p>
+  <p><strong>Внимание:</strong> добавить хост можно также с помощью действий, описанных в разделе <a href="http://www.ovirt.org/documentation/admin-guide/administration-guide/#Adding_an_Enterprise_Linux_Host">«Добавление хоста Enterprise Linux»</a>, с использованием IP адреса хоста oVirt Node и пароля, заданного в <strong>ЦУ oVirt</strong>.</p>
 
 </div>
 
-<h4 id="moving-a-host-to-maintenance-mode">Moving a Host to Maintenance Mode</h4>
+<h4 id="moving-a-host-to-maintenance-mode">Включение режима обслуживания на хосте</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Many common maintenance tasks, including network configuration and deployment of software updates, require that hosts be placed into maintenance mode. When a host is placed into maintenance mode oVirt attempts to migrate all running virtual machines to alternative hosts.</p>
+<p>Многие повседневные задачи обслуживания хостов, включая настройку сети и применение обновлений ПО, выполняются в режиме обслуживания хостов. При переводе хоста в режим обслуживания, oVirt попытается перенести все выполняющиеся ВМ на альтернативные хосты.</p>
 
-<p>The normal prerequisites for live migration apply, in particular there must be at least one active host in the cluster with capacity to run the migrated virtual machines.</p>
-
-<p>⁠</p>
-
-<p><strong>Procedure&nbsp;6.7.&nbsp;Moving a Host to Maintenance Mode</strong></p>
-
-<ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click <strong>Maintenance</strong> to open the <strong>Maintenance Host(s)</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to initiate maintenance mode.</li>
-</ol>
-
-<p>Result:</p>
-
-<p>All running virtual machines are migrated to alternative hosts. The <strong>Status</strong> field of the host changes to <code>Preparing for Maintenance</code>, and finally <code>Maintenance</code> when the operation completes successfully.</p>
-
-<h4 id="activating-a-host-from-maintenance-mode">Activating a Host from Maintenance Mode</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>A host that has been placed into maintenance mode, or recently added to the environment, must be activated before it can be used.</p>
+<p>Применяются стандартные тебования к динамической миграции, в частности, в кластере должен присутствовать как минимум один активный хост, обладающий ресурсами, необходимыми для работы перенесённых ВМ.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.8.&nbsp;Activating a Host from Maintenance Mode</strong></p>
+<p><strong>Действие&nbsp;6.7.&nbsp;Перевод хоста в режим обслуживания</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click <strong>Activate</strong>.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Нажмите <strong>Обслуживание</strong> чтобы открыть подтверждающее окно <strong>Обслуживание хостов</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы запустить режим обслуживания.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p>Итог:</p>
 
-<p>The host status changes to <code>Unassigned</code>, and finally <code>Up</code> when the operation is complete. Virtual machines can now run on the host.</p>
+<p>Все выполняемые ВМ переносятся на альтернативные хосты. В поле <strong>Статус</strong> появляется надпись <code>Подготовка к обслуживанию</code>, а затем, после успешного завершения действия, <code>Обслуживание</code>.</p>
 
-<h4 id="removing-a-host">Removing a Host</h4>
+<h4 id="activating-a-host-from-maintenance-mode">Активация хоста после обслуживания</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Remove a host from your virtualized environment.</p>
-
-<p><strong>Procedure&nbsp;6.9.&nbsp;Removing a host</strong></p>
-
-<ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Place the host into maintenance mode.</li>
-  <li>Click <strong>Remove</strong> to open the <strong>Remove Host(s)</strong> confirmation window.</li>
-  <li>Select the <strong>Force Remove</strong> check box if the host is part of a Red Hat Storage cluster and has volume bricks on it, or if the host is non-responsive.</li>
-  <li>Click <strong>OK</strong>.</li>
-</ol>
-
-<p><strong>Result</strong></p>
-
-<p>Your host has been removed from the environment and is no longer visible in the <strong>Hosts</strong> tab.</p>
-
-<h4 id="customizing-hosts-with-tags">Customizing Hosts with Tags</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>You can use tags to store information about your hosts. You can then search for hosts based on tags.</p>
+<p>Хост, переведённый в режим обслуживания или недавно добавленный в окружение, необходимо активировать перед использованием.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.10.&nbsp;Customizing hosts with tags</strong></p>
+<p><strong>Действие&nbsp;6.8.&nbsp;Активация хоста после обслуживания</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Нажмите кнопку <strong>Активировать</strong>.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Статус хоста меняется на <code>Не присвоен</code>, а затем, после успешного завершения действия, на <code>Работает</code>. Виртуальные машины теперь могут работать на хосте.</p>
+
+<h4 id="removing-a-host">Удаление хоста</h4>
+
+<p><strong>Описание задачи</strong></p>
+
+<p>Уаление хоста из вируализированного окружения.</p>
+
+<p><strong>Действие&nbsp;6.9.&nbsp;Удаление хоста</strong></p>
+
+<ol>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Переведите хост в режим обслуживания.</li>
+  <li>Нажмите <strong>Удалить</strong> чтобы открыть подтверждающее окно <strong>Удалить хост(ы)</strong>.</li>
+  <li>Отметьте галочкой пункт <strong>Удалить принудительно</strong>, если хост является частью кластера хранилища Red Hat Storage с кипичами томов, или если хост не отвечает.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Хост был удалён из окружения и больше не показывается во вкладке <strong>Хосты</strong>.</p>
+
+<h4 id="customizing-hosts-with-tags">Назначение тегов хостам</h4>
+
+<p><strong>Описание задачи</strong></p>
+
+<p>Для сохранения информации о хостах можно использовать теги, и затем использовать поиск хостов на основе тегов</p>
+
+<p>⁠</p>
+
+<p><strong>Действие&nbsp;6.10.&nbsp;Назначение тегов хостам</strong></p>
+
+<ol>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
   <li>
-    <p>Click <strong>Assign Tags</strong> to open the <strong>Assign Tags</strong> window.
+    <p>Нажмите кнопку <strong>Назначить теги</strong> чтобы открыть окно <strong>Назначить теги</strong>.
 ⁠</p>
 
-    <p><img alt="Assign Tags Window" title="Assign Tags Window" src="./OVirt Administration Guide — oVirt_files/Assign_Tags.png"></p>
+    <p><img alt="Assign Tags Window" title="Окно назначения тегов" src="./OVirt Administration Guide — oVirt_files/Assign_Tags.png"></p>
 
-    <p><strong>Figure&nbsp;6.1.&nbsp;Assign Tags Window</strong></p>
+    <p><strong>Рисунок&nbsp;6.1.&nbsp;Окно назначения тегов</strong></p>
   </li>
-  <li>The <strong>Assign Tags</strong> window lists all available tags. Select the check boxes of applicable tags.</li>
-  <li>Click <strong>OK</strong> to assign the tags and close the window.</li>
+  <li>Все доступные теги перечислены в окне <strong>Назначить теги</strong>. Отметьте галочками теги, которые нужно назначить.</li>
+  <li>Нажмите <strong>OK</strong> чтобы назначить теги и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have added extra, searchable information about your host as tags.</p>
+<p>Мы добавили к хостам дополнительную информацию, доступную для поиска, в виде тегов.</p>
 
-<h3 id="hosts-and-networking">Hosts and Networking</h3>
+<h3 id="hosts-and-networking">Хосты и сети</h3>
 
-<h4 id="refreshing-host-capabilities">Refreshing Host Capabilities</h4>
+<h4 id="refreshing-host-capabilities">Обновление сведений о характеристиках хоста</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>When a network interface card is added to a host, the capabilities of the host must be refreshed to display that network interface card in oVirt.</p>
+<p>При добавлении карты сетевого интерфейса к хосту, характеристики хоста необходимо затем обновить для того, чтобы карта сетевого интерфейса стала доступна в oVirt.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.11.&nbsp;To Refresh Host Capabilities</strong></p>
+<p><strong>Действие&nbsp;6.11.&nbsp;Обновить сведения о характеристиках хоста</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select a host in the results list.</li>
-  <li>Click the <strong>Refresh Capabilities</strong> button.</li>
+  <li>Используйте ресурсные вкладки, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Нажмите на кнопку <strong>Обновить сведения о характеристиках хоста</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The list of network interface cards in the <strong>Network Interfaces</strong> tab of the details pane for the selected host is updated. Any new network interface cards can now be used in oVirt.</p>
+<p>Обновляется список карт сетевых интерфейсов выбранного хоста во вкладке <strong>Сетевые интерфейсы</strong> на панели сведений. Любые добавленные сетевые интерфейсы теперь можно использовать в oVirt.</p>
 
-<h4 id="editing-host-network-interfaces-and-assigning-logical-networks-to-hosts">Editing Host Network Interfaces and Assigning Logical Networks to Hosts</h4>
+<h4 id="editing-host-network-interfaces-and-assigning-logical-networks-to-hosts">Изменение параметров сетевых интерфейсов хоста и назначение логических сетей хостам</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can change the settings of physical host network interfaces, move the management network from one physical host network interface to another, and assign logical networks to physical host network interfaces.</p>
+<p>Можно сменить значения параметров физических сетевых интерфейсов хоста, переместить сеть управления с одного физического сетевого интерфейса хоста на другой и назначить логические сети физическому сетевому интерфейсу хоста.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> You cannot assign logical networks offered by external providers to physical host network interfaces; such networks are dynamically assigned to hosts as they are required by virtual machines.</p>
+  <p><strong>Важно:</strong> нельзя назначить физическому сетевому интерфейсу хоста логические сети, предоставляемые внешним поставщиком; такие сети назначаются динамически по мере требований виртуальных машин.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.12.&nbsp;Editing Host Network Interfaces and Assigning Logical Networks to Hosts</strong></p>
+<p><strong>Действие&nbsp;6.12.&nbsp;Изменение параметров сетевых интерфейсов хоста и назначение логических сетей хостам</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results.</li>
-  <li>Click the <strong>Network Interfaces</strong> tab in the details pane.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Сетевые интерфейсы</strong> на панели сведений.</li>
   <li>
-    <p>Click the <strong>Setup Host Networks</strong> button to open the <strong>Setup Host Networks</strong> window.
+    <p>Нажмите на кнопку <strong>Настройка сетей хоста</strong> чтобы открыть окно <strong>Настройка сетей хоста</strong>.
 ⁠</p>
 
-    <p><img alt="The Setup Host Networks window" title="The Setup Host Networks window" src="./OVirt Administration Guide — oVirt_files/Setup_Host_Networks.png"></p>
+    <p><img alt="The Setup Host Networks window" title="Окно изменения параметров сетей" src="./OVirt Administration Guide — oVirt_files/Setup_Host_Networks.png"></p>
 
-    <p><strong>Figure&nbsp;6.2.&nbsp;The Setup Host Networks window</strong></p>
+    <p><strong>Рисунок&nbsp;6.2.&nbsp;Окно изменения параметров сетей</strong></p>
   </li>
-  <li>Attach a logical network to a physical host network interface by selecting and dragging the logical network into the <strong>Assigned Logical Networks</strong> area next to the physical host network interface. Alternatively, right-click the logical network and select a network interface from the drop-down menu.</li>
-  <li>Configure the logical network:
+  <li>Присоедините логическую сеть к физическому сетевому интерфейсу хоста, выбрав и перетащив логическую сеть в область <strong>Назначенные логические сети</strong> рядом с физическим сетевым интерфейсом хоста. Или сделайте щелчок ПКМ по логической сети и выберите сетевой интерфейс в выпадающем меню.</li>
+  <li>Настройте логическую сеть:
     <ol>
-      <li>Hover your cursor over an assigned logical network and click the pencil icon to open the <strong>Edit Management Network</strong> window.</li>
-      <li>Select a <strong>Boot Protocol</strong> from:
+      <li>Наведите курсор на назначенную логическую сеть и нажмите на значок карандаша чтобы открыть окно <strong>Изменить сеть управления</strong>.</li>
+      <li>Выберите <strong>Протокол загрузки</strong> из следующих возможных:
         <ul>
           <li><strong>None</strong>,</li>
           <li><strong>DHCP</strong>, or</li>
-          <li><strong>Static</strong>. If you selected <strong>Static</strong>, enter the <strong>IP</strong>, <strong>Subnet Mask</strong>, and the <strong>Gateway</strong>.</li>
+          <li><strong>Статический</strong>. Если был выбран <strong>Статический</strong>, введите значения <strong>IP</strong>, <strong>Маски подсети</strong> и <strong>Шлюза</strong>.</li>
         </ul>
       </li>
-      <li>Click <strong>OK</strong>.</li>
-      <li>If your logical network definition is not synchronized with the network configuration on the host, select the <strong>Sync network</strong> check box.</li>
+      <li>Нажмите <strong>OK</strong>.</li>
+      <li>Если определение логической сети не синхронизировано с параметрами сети на хосте, отметьте галочкой параметр <strong>Синхронизировать сеть</strong>.</li>
     </ol>
   </li>
-  <li>Select the <strong>Verify connectivity between Host and Engine</strong> check box to check network connectivity; this action will only work if the host is in maintenance mode.</li>
-  <li>Select the <strong>Save network configuration</strong> check box to make the changes persistent when the environment is rebooted.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Отметьте галочкой параметр <strong>Проверьте доступность соединения между хостом и ЦУ</strong> для провкерки доступности сетевого соединения; этодействие можно выполнить только если хост находится в режиме обслуживания.</li>
+  <li>Отметьте галочкой параметр <strong>Сохранить параметры сети</strong> чтобы параметры сохранились и после перезагрузки окружения.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have assigned logical networks to and configured a physical host network interface.</p>
+<p>Мы назначили логическую сеть хосту и настроили физический сетевой интерфейс хоста.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> If not all network interface cards for the host are displayed, click the <strong>Refresh Capabilities</strong> button to update the list of network interface cards available for that host.</p>
+  <p><strong>Внимание:</strong> если отображаются не все карты сетевых интерфейсов хоста, нажмите на кнопку <strong>Обновить сведения о характеристиках хоста</strong> чтобы обновить сведения о сетевых картах, доступных для этого хоста.</p>
 
 </div>
 
-<h4 id="bonds">Bonds</h4>
+<h4 id="bonds">Связки</h4>
 
-<h5 id="bonding-logic-in-ovirt">Bonding Logic in oVirt</h5>
+<h5 id="bonding-logic-in-ovirt">Логика создания связок в oVirt</h5>
 
-<p>oVirt Administration Portal allows you to create bond devices using a graphical interface. There are several distinct bond creation scenarios, each with its own logic.</p>
+<p>Портал администрирования oVirt даёт возможность создавать устройства связок, используя графический интерфейс. Существует несколько различных сценариев создания связок, у каждого из которых своя логика.</p>
 
-<p>Two factors that affect bonding logic are:</p>
+<p>Факторы, влияющие на логику создания связок:</p>
 
 <ul>
-  <li>Are either of the devices already carrying logical networks?</li>
-  <li>Are the devices carrying compatible logical networks? A single device cannot carry both VLAN tagged and non-VLAN tagged logical networks.</li>
+  <li>Используется ли уже любое из устройств в логической сети?</li>
+  <li>Являются ли совместимыми логические сети, в которых используются эти устройства? Одно отдельное устройство может использоваться либо в логической сети с тегом VLAN, либо в сети с тегом не-VLAN.</li>
 </ul>
 
 <p>⁠</p>
 
-<p><strong>Table&nbsp;6.5.&nbsp;Bonding Scenarios and Their Results</strong></p>
+<p><strong>Таблица&nbsp;6.5.&nbsp;Сценарии создания связок и их результаты</strong></p>
 
 <table>
 <colgroup>
@@ -2818,144 +2818,143 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Bonding Scenario</p></th>
-<th align="left"><p><strong>Result</strong></p></th>
+<th align="left"><p>Сценарий создания связки</p></th>
+<th align="left"><p><strong>Результат</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>NIC + NIC</p></td>
-<td align="left"><p>The <strong>Create New Bond</strong> window is displayed, and you can configure a new bond device. If the network interfaces carry incompatible logical networks, the bonding operation fails until you detach incompatible logical networks from the devices forming your new bond.</p></td>
+<td align="left"><p>Показывается окно <strong>Добавить связку</strong>, где можно настроить новое устройство связки. Если сетевые интерфейсы заняты в несовместимых логических сетях, операция создания связки не будет успешно выполнена до тех пор, пока несовместимая логическая сеть не будет отсоединена от устройства, используемого в новой связке.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>NIC + Bond</p></td>
-<td align="left"><p>The NIC is added to the bond device. Logical networks carried by the NIC and the bond are all added to the resultant bond device if they are compatible. If the bond devices carry incompatible logical networks, the bonding operation fails until you detach incompatible logical networks from the devices forming your new bond.</p></td>
+<td align="left"><p>NIC + связка</p></td>
+<td align="left"><p>NIC добавляется к устройству, используемому в связке. Логические сети, в которых занята NIC, и связка добавляются в итоговое устройство связки, если они совместимы. Если устройства связки используются в несовместимых логических сетях, то операция связки не будет успешно выполнена до тех пор, пока несовместимые логические сети не будет отсоединены от устройств, используемых в новой связке.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Bond + Bond</p></td>
-<td align="left"><p>If the bond devices are not attached to logical networks, or are attached to compatible logical networks, a new bond device is created. It contains all of the network interfaces, and carries all logical networks, of the component bond devices. The <strong>Create New Bond</strong> window is displayed, allowing you to configure your new bond. If the bond devices carry incompatible logical networks, the bonding operation fails until you detach incompatible logical networks from the devices forming your new bond.</p></td>
+<td align="left"><p>Связка + связка</p></td>
+<td align="left"><p>Если устройства связки не присоединены к логическим сетям, или присоединены к совместимым логическим сетям, то создаётся новое устройство связки. Оно содержит в себе все сетвые интерфейсы и используется во всех логических сетях составных устройств связки. Показывается окно <strong>Добавить связку</strong>, в котором можно настроить новую связку. Если исходные устройства связки используются в несовместимых логических сетях, операция создания связки не будет успешно выполнена до тех пор, пока несовместимая логическая сеть не будет отсоединена от устройства, используемого в новой связке.</p></td>
 </tr>
 </tbody>
 </table>
 
-<h5 id="bonding-modes">Bonding Modes</h5>
+<h5 id="bonding-modes">Режимы связок</h5>
 
-<p>oVirt supports the following common bonding modes:</p>
+<p>oVirt поддерживает следующие распространённые режимы связок:</p>
 
 <ul>
-  <li>Mode 1 (active-backup policy) sets all interfaces to the backup state while one remains active. Upon failure on the active interface, a backup interface replaces it as the only active interface in the bond. The MAC address of the bond in mode 1 is visible on only one port (the network adapter), to prevent confusion for the switch. Mode 1 provides fault tolerance and is supported in oVirt.</li>
-  <li>Mode 2 (XOR policy) selects an interface to transmit packages to based on the result of an XOR operation on the source and destination MAC addresses modulo NIC slave count. This calculation ensures that the same interface is selected for each destination MAC address used. Mode 2 provides fault tolerance and load balancing and is supported in oVirt.</li>
-  <li>Mode 4 (IEEE 802.3ad policy) creates aggregation groups for which included interfaces share the speed and duplex settings. Mode 4 uses all interfaces in the active aggregation group in accordance with the IEEE 802.3ad specification and is supported in oVirt.</li>
-  <li>Mode 5 (adaptive transmit load balancing policy) ensures the outgoing traffic distribution is according to the load on each interface and that the current interface receives all incoming traffic. If the interface assigned to receive traffic fails, another interface is assigned the receiving role instead. Mode 5 is supported in oVirt.</li>
+  <li>В режиме 1 (политика active-backup, «активный-запасной») все интерфейсы переводятся в запасной режим, кроме одного, который остаётся активным. В случае сбоя активного интерфейса, его заменяет запасной, который в свою очередь становится единственным активным интерфейсом в связке. MAC-адрес связки в режиме 1 является видимым только на одном порту (сетевого адаптера), для не допущения неправильной работы коммутационного оборудования. Режим 1 предоставляет отказоустойчивость и поддерживается в oVirt.</li>
+  <li>В режиме 2 (политика XOR) выполняется передача на основе [(исходный MAC-адрес → XOR → MAC-адрес получателя) %число интерфейсов]. Этот расчёт XOR является гарантией того, что для каждого используемого целевого MAC-адреса будет выбран один и тот же интерфейс. Режим 2 предоставляет отказоустойчивость и балансировку нагрузки и поддерживается в oVirt.</li>
+  <li>В режиме 4 (политика IEEE 802.3ad) содаются группы агрегации, в которых включенные в группу интерфейсы используют общие параметры скорости и дуплекса. В режиме 4 все интерфейсы в активной группе агрегации используются в соответствии со стандартом IEEE 802.3ad, этот режим поддерживается в oVirt.</li>
+  <li>Режим 5 (политика адаптивной балансировки передаваемой нагрузки) гарантирует распределение исходящего трафика в соответствии с нагрузкой каждого интерфейса, также гарантируется принятие всего входящего трафика текущим интерфейсом. В случае сбоя интерфейса, принимающего трафик, принимающая роль назначается другому интерфейсу. Режим 5 поддерживается в oVirt.</li>
 </ul>
 
-<h5 id="creating-a-bond-device-using-the-administration-portal">Creating a Bond Device Using the Administration Portal</h5>
+<h5 id="creating-a-bond-device-using-the-administration-portal">Создание устройства связки через Портал администрирования</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can bond compatible network devices together. This type of configuration can increase available bandwidth and reliability. You can bond multiple network interfaces, pre-existing bond devices, and combinations of the two.</p>
+<p>Совместимые сетевые устройства можно связать вместе. Этот тип конфигурации может увеличить пропускную способность и надёжность соединения. Можно создавать связки из нескольких сетевых интерфейсов, из уже существующих устройств связок, а также связки этих двух конфигураций.</p>
 
-<p>A bond cannot carry both vlan tagged and non-vlan traffic.</p>
+<p>Связка не может использоваться одновременно для передачи трафика с тегом vlan и для передачи трафика с тегом не-vlan.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.13.&nbsp;Creating a Bond Device using the Administration Portal</strong></p>
+<p><strong>Действие&nbsp;6.13.&nbsp;Создание устройства связки через Портал администрирования</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click the <strong>Network Interfaces</strong> tab in the details pane to list the physical network interfaces attached to the host.</li>
-  <li>Click <strong>Setup Host Networks</strong> to open the <strong>Setup Host Networks</strong> window.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Сетевые интерфейсы</strong> на панели сведений чтобы увидеть список всех физических сетевых интерфейсов, присоединённых к хосту.</li>
+  <li>Нажмите <strong>Настроить сети хоста</strong> чтобы открыть окно <strong>Настроить сети хоста</strong>.</li>
   <li>
-    <p>Select and drag one of the devices over the top of another device and drop it to open the <strong>Create New Bond</strong> window. Alternatively, right-click the device and select another device from the drop-down menu.
-If the devices are incompatible, for example one is vlan tagged and the other is not, the bond operation fails with a suggestion on how to correct the compatibility issue.</p>
+    <p>Выберите и перетащите одно устройство на другое, чтобы открыть окно <strong>Добавить связку</strong>. Или сделайте щелчок ПКМ по устройству и выберите другое устройство в выпадающем меню. Если устройства несовместимы, например, если одно устройство имеет тег VLAN, а другое — нет, то операция создания связки не будет выполнена, а также будет выведен совет по исправлению проблемы совместимости.</p>
 
     <p>⁠</p>
 
-    <p><img alt="Bond Devices Window" title="Bond Devices Window" src="./OVirt Administration Guide — oVirt_files/Create_New_Bond.png"></p>
+    <p><img alt="Bond Devices Window" title="Окно с устройствами для связки" src="./OVirt Administration Guide — oVirt_files/Create_New_Bond.png"></p>
 
-    <p><strong>Figure&nbsp;6.3.&nbsp;Bond Devices Window</strong></p>
+    <p><strong>Рисунок&nbsp;6.3.&nbsp;Окно с устройствами для связки</strong></p>
   </li>
-  <li>Select the <strong>Bond Name</strong> and <strong>Bonding Mode</strong> from the drop-down menus. Bonding modes 1, 2, 4, and 5 can be selected. Any other mode can be configured using the <strong>Custom</strong> option.</li>
-  <li>Click <strong>OK</strong> to create the bond and close the <strong>Create New Bond</strong> window.</li>
-  <li>Assign a logical network to the newly created bond device.</li>
-  <li>Optionally choose to <strong>Verify connectivity between Host and Engine</strong> and <strong>Save network configuration</strong>.</li>
-  <li>Click <strong>OK</strong> accept the changes and close the <strong>Setup Host Networks</strong> window.</li>
+  <li>Выберите <strong>Имя связки</strong> и <strong>Режим связки</strong> из выпадающего меню. Для выбора доступны режимы связки 1, 2, 4 и 5. Любой другой режим можно настроить, нажав на кнопку <strong>Пользовательский</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы создать связку и закрыть окно <strong>Добавить связку</strong>.</li>
+  <li>Назначьте логическую сеть добавленной связке.</li>
+  <li>По желанию отметьте пункт <strong>Проверить доступность соединения между хостом и ЦУ</strong> и <strong>Сохранить параметры сети</strong>.</li>
+  <li>Нажмите <strong>OK</strong> для принятие изменений и закрытия окна <strong>Настроить сети хоста</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>Your network devices are linked into a bond device and can be edited as a single interface. The bond device is listed in the <strong>Network Interfaces</strong> tab of the details pane for the selected host.</p>
+<p>Сетевые устройства связаны и имеют теперь единый интерфейс, параметры которого можно изменять. Устройство связки присутствует во вкладке <strong>Сетевые интерфейсы</strong> выбранного хоста на панели сведений.</p>
 
-<p>Bonding must be enabled for the ports of the switch used by the host. The process by which bonding is enabled is slightly different for each switch; consult the manual provided by your switch vendor for detailed information on how to enable bonding.</p>
+<p>Возможность создания связки должна быть включена на портах коммутационного оборудования, используемого хостом. Процесс включения связок для портов несколько отличается для разных моделей коммутаторов; обратитесь к руководству по эксплуатации своего оборудования чтобы получить информацию.</p>
 
-<h5 id="example-uses-of-custom-bonding-options-with-host-interfaces">Example Uses of Custom Bonding Options with Host Interfaces</h5>
+<h5 id="example-uses-of-custom-bonding-options-with-host-interfaces">Примеры использования пользовательских параметров для связок интерфейсов хоста</h5>
 
-<p>You can create customized bond devices by selecting <strong>Custom</strong> from the <strong>Bonding Mode</strong> of the <strong>Create New Bond</strong> window. The following examples should be adapted for your needs. For a comprehensive list of bonding options and their descriptions, see the <a href="https://www.kernel.org/doc/Documentation/networking/bonding.txt"><em>Linux Ethernet Bonding Driver HOWTO</em></a> on Kernel.org.</p>
+<p>Чтобы создать индивидуальные устройства связок нужно выбрать пункт <strong>Пользовательский</strong> меню <strong>Режим связки</strong> окна <strong>Добавить связку</strong>. Примеры, приведённые ниже, адаптируйте под свои требования. Полный список параметров связок с их описанием см. в руководстве <a href="https://www.kernel.org/doc/Documentation/networking/bonding.txt"><em>Linux Ethernet Bonding Driver HOWTO</em></a> на Kernel.org.</p>
 
 <p>⁠</p>
 
-<p><strong>Example&nbsp;6.1.&nbsp;xmit_hash_policy</strong></p>
+<p><strong>Пример&nbsp;6.1.&nbsp;xmit_hash_policy</strong></p>
 
-<p>This option defines the transmit load balancing policy for bonding modes 2 and 4. For example, if the majority of your traffic is between many different IP addresses, you may want to set a policy to balance by IP address. You can set this load-balancing policy by selecting a <strong>Custom</strong> bonding mode, and entering the following into the text field:</p>
+<p>Этот параметр определяет политику адаптивной балансировки передаваемой нагрузки в режимах связки 2 и 4. Например, если подавляющая часть трафика распределяется между множеством IP адресов, то может понадобиться политика баланса по IP адресам. Установить эту политику можно, выбрав режим связки <strong>Пользовательский</strong>, и далее введя в текстовом поле:</p>
 
 <pre class="highlight plaintext"><code>mode=4 xmit_hash_policy=layer2+3
 </code></pre>
 
 <p>⁠</p>
 
-<p><strong>Example&nbsp;6.2.&nbsp;ARP Monitoring</strong></p>
+<p><strong>Пример&nbsp;6.2.&nbsp;Контроль ARP</strong></p>
 
-<p>ARP monitor is useful for systems which can't or don't report link-state properly via ethtool. Set an <em><code>arp_interval</code></em> on the bond device of the host by selecting a <strong>Custom</strong> bonding mode, and entering the following into the text field:</p>
+<p>Контроль ARP удобен в тех системах, где отсутствуют условия для корректных сообщений о состоянии связи через ethtool. Укажите <em><code>arp_interval</code></em> на устройстве связки хоста, выбрав режим связки <strong>Пользовательский</strong> и введя в текстовом поле:</p>
 
 <pre class="highlight plaintext"><code>mode=1 arp_interval=1 arp_ip_target=192.168.0.2
 </code></pre>
 
 <p>⁠</p>
 
-<p><strong>Example&nbsp;6.3.&nbsp;Primary</strong></p>
+<p><strong>Пример&nbsp;6.3.&nbsp;Первичный</strong></p>
 
-<p>You may want to designate a NIC with higher throughput as the primary interface in a bond device. Designate which NIC is primary by selecting a <strong>Custom</strong> bonding mode, and entering the following into the text field:</p>
+<p>Может понадобиться назначить NIC с самой высокой пропускной способностью в качестве первичного интерфейса устройства связки. Укажите первичный NIC, выбрав <strong>Пользовательский</strong> режим связки и введя в текстовом поле:</p>
 
 <pre class="highlight plaintext"><code>mode=1 primary=eth0
 </code></pre>
 
-<h4 id="saving-a-host-network-configuration">Saving a Host Network Configuration</h4>
+<h4 id="saving-a-host-network-configuration">Сохранение сетевой конфигурации хоста</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>One of the options when configuring a host network is to save the configuration as you apply it, making the changes persistent.</p>
+<p>Одной из возможностей при настройке сети хоста является сохранение конфигурации после её применения, делая изменения постоянными.</p>
 
-<p>Any changes made to the host network configuration will be temporary if you did not select the <strong>Save network configuration</strong> check box in the <strong>Setup Host Networks</strong> window.</p>
+<p>Все изменения, сделанные в сетевой конфигурации хоста, будут временными, если не отметить галочкой параметр <strong>Сохранить сетевую конфигурацию</strong> в окне <strong>Настроить сети хоста</strong>.</p>
 
-<p>Save the host network configuration to make it persistent.</p>
+<p>Сохранение сетевой конфигурации в качестве постоянной.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.14.&nbsp;Saving a host network configuration</strong></p>
+<p><strong>Действие&nbsp;6.14.&nbsp;Сохранение сетевой конфигурации хоста</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click the <strong>Network Interfaces</strong> tab on the Details pane to list the NICs on the host, their address, and other specifications.</li>
-  <li>Click the <strong>Save Network Configuration</strong> button.</li>
-  <li>The host network configuration is saved and the following message is displayed on the task bar: "Network changes were saved on host <em>[Hostname]</em>."</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Сетевые интерфейсы</strong> на панели сведений чтобы увидеть список всех NIC хоста, их адреса и другие спецификации.</li>
+  <li>Нажмите на кнопку <strong>Сохранить сетевую конфигурацию</strong>.</li>
+  <li>Сетевая конфигураци хоста сохранена. На панели задач будет показано следующее сообщение: «Изменения сетевых параметров хоста <em>[Имя_хоста]</em> сохранены.»</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The host's network configuration is saved persistently and will survive reboots.</p>
+<p>Сетевая конфигурация хоста была сохранена как постоянная и не изменится после перезагрузки.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Saving the host network configuration also updates the list of available network interfaces for the host. This behavior is similar to that of the <strong>Refresh Capabilities</strong> button.</p>
+  <p><strong>Внимание:</strong> во время сохранения сетевой конфигурации хоста также обновляется список сетевых интерфейсов, доступных для хоста. Это поведение аналогично поведению кнопки <strong>Обновить сведения о характеристиках хоста</strong>.</p>
 
 </div>
 
-<h3 id="host-resilience">Host Resilience</h3>
+<h3 id="host-resilience">Устойчивость хоста</h3>
 
-<h4 id="host-high-availability">Host High Availability</h4>
+<h4 id="host-high-availability">Высокая доступность хоста</h4>
 
-<p>oVirt uses fencing to keep the hosts in a cluster responsive. A <strong>Non Responsive</strong> host is different from a <strong>Non Operational</strong> host. <strong>Non Operational</strong> hosts can be communicated with by oVirt, but have an incorrect configuration, for example a missing logical network. <strong>Non Responsive</strong> hosts cannot be communicated with by oVirt.</p>
+<p>Для поддержания нормального реагирования хостов в кластере oVirt использует операции блокады. Хост со статусом <strong>Не отвечает</strong> отличается от хоста со статусом <strong>Нерабочее состояние</strong>. Хосты в <strong>Нерабочем состоянии</strong> не теряли связи с oVirt, но имеют неправильные настройки, например, в конфигурации отсутствует логическая сеть. У <strong>Не отвечающих</strong> хостов связь с oVirt отсуствует.</p>
 
-<p>If a host with a power management device loses communication with oVirt, it can be fenced (rebooted) from the Administration Portal. All the virtual machines running on that host are stopped, and highly available virtual machines are started on a different host.</p>
+<p>Если хост, имеющий устройство управления питанием, теряет связь с oVirt, то его можно поместить в блокаду (перезапустить) через Портал администрирования. Все ВМ, выполняющиеся на этом хосте, останавливаются, а машины с высокой доступностью запускаются на другом хосте.</p>
 
 <p>All power management operations are done using a proxy host, as opposed to directly by oVirt. At least two hosts are required for power management operations.</p>
 
