@@ -2541,14 +2541,14 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
   <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
   <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Параметры хоста</strong>.</li>
   <li>Перейдите на вкладку <strong>Управление питанием</strong> чтобы увидеть параметры управления питанием.</li>
-  <li>Отметьте галочкой параметр <strong>Включить управление питанием</strong>чтобы получить доступ к полям параметров.</li>
+  <li>Отметьте галочкой пункт <strong>Включить управление питанием</strong> чтобы получить доступ к полям параметров.</li>
   <li>В случае, если настраивается новое устройство управления питанием, то параметр <strong>Первичный</strong> выбирается по умолчанию. Если добавляется ещё одно устройство, необходимо выбрать <strong>Вторичный</strong>.</li>
-  <li>Отметьте галочкой параметр <strong>Параллельно</strong> для параллельного использования нескольких агентов операции блокады.</li>
+  <li>Отметьте галочкой пункт <strong>Параллельно</strong> для параллельного использования нескольких агентов операции блокады.</li>
   <li>В соответствующие поля введите <strong>Адрес</strong>, <strong>Имя пользователя</strong> и <strong>Пароль</strong> устройства управления питанием.</li>
   <li>В выпадающем меню выберите <strong>Тип</strong> устройства управления питанием.</li>
   <li>Введите номер <strong>Порта</strong>, используемого устройством управления питанием для обмена информацией с хостом.</li>
-  <li>Введите <strong>Параметры</strong> для устройства управления питанием. Используется список параметров вида <strong>ключ=значение</strong> или <strong>ключ</strong>, разделённых запятой.</li>
-  <li>Отметьте галочкой параметр <strong>Защищённое</strong> для включения защищённого подключения устройства управления питанием к хосту.</li>
+  <li>Введите <strong>Параметры</strong>, передаваемые устройству управления питанием. Используется список параметров вида <strong>ключ=значение</strong> или <strong>ключ</strong>, разделённых запятой.</li>
+  <li>Отметьте галочкой пункт <strong>Защищённое</strong> для включения защищённого подключения устройства управления питанием к хосту.</li>
   <li>Нажмите <strong>Тест</strong> для проверки правильности настроенных параметров.</li>
   <li>Нажмите <strong>OK</strong> для сохранения параметров и закрытия окна.</li>
 </ol>
@@ -2617,7 +2617,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 <p><strong>Действие&nbsp;6.6.&nbsp;Утверждение новых хостов oVirt Node</strong></p>
 
 <ol>
-  <li>Во вкладке <strong>Хосты</strong> выберите хост, недавно установленный с помощью oVirt Node. Такой хост имеет статус <code>Ожидает утверждение</code>.</li>
+  <li>Во вкладке <strong>Хосты</strong> выберите новый хост, установленный с помощью oVirt Node. Такой хост имеет статус <code>Ожидает утверждение</code>.</li>
   <li>Нажмите на кнопку <strong>Утвердить</strong>.</li>
 </ol>
 
@@ -2772,7 +2772,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
       <li>Выберите <strong>Протокол загрузки</strong> из следующих возможных:
         <ul>
           <li><strong>None</strong>,</li>
-          <li><strong>DHCP</strong>, or</li>
+          <li><strong>DHCP</strong> или</li>
           <li><strong>Статический</strong>. Если был выбран <strong>Статический</strong>, введите значения <strong>IP</strong>, <strong>Маски подсети</strong> и <strong>Шлюза</strong>.</li>
         </ul>
       </li>
@@ -2780,7 +2780,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
       <li>Если определение логической сети не синхронизировано с параметрами сети на хосте, отметьте галочкой параметр <strong>Синхронизировать сеть</strong>.</li>
     </ol>
   </li>
-  <li>Отметьте галочкой параметр <strong>Проверьте доступность соединения между хостом и ЦУ</strong> для провкерки доступности сетевого соединения; этодействие можно выполнить только если хост находится в режиме обслуживания.</li>
+  <li>Отметьте галочкой параметр <strong>Проверьте доступность соединения между хостом и ЦУ</strong> для проверки доступности сетевого соединения; это действие можно выполнить, только если хост находится в режиме обслуживания.</li>
   <li>Отметьте галочкой параметр <strong>Сохранить параметры сети</strong> чтобы параметры сохранились и после перезагрузки окружения.</li>
   <li>Нажмите <strong>OK</strong>.</li>
 </ol>
@@ -2833,7 +2833,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 </tr>
 <tr class="odd">
 <td align="left"><p>Связка + связка</p></td>
-<td align="left"><p>Если устройства связки не присоединены к логическим сетям, или присоединены к совместимым логическим сетям, то создаётся новое устройство связки. Оно содержит в себе все сетвые интерфейсы и используется во всех логических сетях составных устройств связки. Показывается окно <strong>Добавить связку</strong>, в котором можно настроить новую связку. Если исходные устройства связки используются в несовместимых логических сетях, операция создания связки не будет успешно выполнена до тех пор, пока несовместимая логическая сеть не будет отсоединена от устройства, используемого в новой связке.</p></td>
+<td align="left"><p>Если устройства связки не присоединены к логическим сетям, или присоединены к совместимым логическим сетям, то создаётся новое устройство связки. Оно содержит в себе все сетевые интерфейсы и используется во всех логических сетях составных устройств связки. Показывается окно <strong>Добавить связку</strong>, в котором можно настроить новую связку. Если исходные устройства связки используются в несовместимых логических сетях, операция создания связки не будет успешно выполнена до тех пор, пока несовместимая логическая сеть не будет отсоединена от устройства, используемого в новой связке.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2853,7 +2853,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 
 <p><strong>Описание задачи</strong></p>
 
-<p>Совместимые сетевые устройства можно связать вместе. Этот тип конфигурации может увеличить пропускную способность и надёжность соединения. Можно создавать связки из нескольких сетевых интерфейсов, из уже существующих устройств связок, а также связки этих двух конфигураций.</p>
+<p>Совместимые сетевые устройства можно связать вместе. Этот тип конфигурации может увеличить пропускную способность и надёжность соединения. Можно создавать связки из нескольких сетевых интерфейсов, из уже существующих устройств связок, а также связки из этих двух элементов.</p>
 
 <p>Связка не может использоваться одновременно для передачи трафика с тегом vlan и для передачи трафика с тегом не-vlan.</p>
 
@@ -2952,218 +2952,218 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 
 <h4 id="host-high-availability">Высокая доступность хоста</h4>
 
-<p>Для поддержания нормального реагирования хостов в кластере oVirt использует операции блокады. Хост со статусом <strong>Не отвечает</strong> отличается от хоста со статусом <strong>Нерабочее состояние</strong>. Хосты в <strong>Нерабочем состоянии</strong> не теряли связи с oVirt, но имеют неправильные настройки, например, в конфигурации отсутствует логическая сеть. У <strong>Не отвечающих</strong> хостов связь с oVirt отсуствует.</p>
+<p>Для поддержания нормального реагирования хостов в кластере oVirt использует операции блокады. Хост со статусом <strong>Не отвечает</strong> отличается от хоста со статусом <strong>Нерабочее состояние</strong>. Хосты в <strong>Нерабочем состоянии</strong> не теряли связи с oVirt, но имеют неправильные настройки, например, в конфигурации отсутствует логическая сеть. У <strong>Не отвечающих</strong> хостов связь с oVirt отсутствует.</p>
 
 <p>Если хост, имеющий устройство управления питанием, теряет связь с oVirt, то его можно поместить в блокаду (перезапустить) через Портал администрирования. Все ВМ, выполняющиеся на этом хосте, останавливаются, а машины с высокой доступностью запускаются на другом хосте.</p>
 
-<p>All power management operations are done using a proxy host, as opposed to directly by oVirt. At least two hosts are required for power management operations.</p>
+<p>Все действия по управлению питанием выполняются с использованием хоста прокси, а не с помощью прямого управления oVirt. Для действий по управлению питанием необходимо минимум два хоста.</p>
 
-<p>Fencing allows a cluster to react to unexpected host failures as well as enforce power saving, load balancing, and virtual machine availability policies. You should configure the fencing parameters for your host's power management device and test their correctness from time to time.</p>
+<p>Операция блокады даёт кластеру возможность отреагировать на неожиданный сбой хоста, а также улучшить экономию энергии, балансировку нагрузки, а также политики доступности виртуальных машин. Администратор должен настроить параметры операции блокады для устройства управления питанием хоста, и время от времени тестировать их корректность.</p>
 
-<p>Hosts can be fenced automatically using the power management parameters, or manually by right-clicking on a host and using the options on the menu. In a fencing operation, an unresponsive host is rebooted, and if the host does not return to an active status within a prescribed time, it remains unresponsive pending manual intervention and troubleshooting.</p>
+<p>Хосты можно поместить в блокаду автоматически, с помощью параметров управления питанием, или вручную, нажав ПКМ на хост и выбрав пункты в меню. Неотвечающий хост перезапускается из блокады, и если в течение установленного времени хост не возвращается в активное состояние, то он остаётся в статусе «Не отвечает», в ожидании ручного вмешательства и решения проблемы.</p>
 
-<p>If the host is required to run virtual machines that are highly available, power management must be enabled and configured.</p>
+<p>Для выполнения на хосте виртуальных машин с высокой доступностью, необходимо включить и настроить управление питанием.</p>
 
-<h4 id="power-management-by-proxy-in-ovirt">Power Management by Proxy in oVirt</h4>
+<h4 id="power-management-by-proxy-in-ovirt">Управление питанием через прокси в oVirt</h4>
 
-<p>oVirt does not communicate directly with fence agents. Instead, oVirt uses a proxy to send power management commands to a host power management device. oVirt uses VDSM to execute power management device actions, so another host in the environment is used as a fencing proxy.</p>
+<p>oVirt не имеет прямой сязи с агентами операции блокады. Для передачи команд устройству управления питанием хоста oVirt использует прокси. Для выполнения действий по управлению питанием oVirt использует VDSM, поэтому другой хост из окружения oVirt используется как прокси для операции блокады.</p>
 
-<p>You can select between:</p>
+<p>Возможный выбор:</p>
 
 <ul>
-  <li>Any host in the same cluster as the host requiring fencing.</li>
-  <li>Any host in the same data center as the host requiring fencing.</li>
+  <li>Любой хост в том же кластере, что и хост, для которого нужна операции блокады.</li>
+  <li>Любой хост в том же дата-центре, что и хост, для которого нужна операции блокады.</li>
 </ul>
 
-<p>A viable fencing proxy host has a status of either <em>UP</em> or <em>Maintenance</em>.</p>
+<p>Работоспособный хост имеет статус <em>Работает</em> или <em>Обслуживание</em>.</p>
 
-<h4 id="setting-fencing-parameters-on-a-host">Setting Fencing Parameters on a Host</h4>
+<h4 id="setting-fencing-parameters-on-a-host">Установка параметров проведения блокады на хосте</h4>
 
-<p>The parameters for host fencing are set using the <strong>Power Management</strong> fields on the <strong>New Host</strong> or <strong>Edit Host</strong> windows. Power management enables the system to fence a troublesome host using an additional interface such as a Remote Access Card (RAC).</p>
+<p>Параметры для операции блокады на хосте устанавливаются в разделе <strong>Управление питанием</strong> окна <strong>Добавить хост</strong> или <strong>Параметры хоста</strong>. Функционал управления питанием даёт возможность системе поместить проблемный хост в блокаду с помощью дополнительного интерфейса, например, карты удалённого доступа RAC.</p>
 
-<p>All power management operations are done using a proxy host, as opposed to directly by oVirt. At least two hosts are required for power management operations.</p>
+<p>Все действия по управлению питанием выполняются с использованием хоста прокси, а не с помощью прямого управления oVirt. Для действий по управлению питанием необходимо минимум два хоста.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.15.&nbsp;Setting fencing parameters on a host</strong></p>
+<p><strong>Действие&nbsp;6.15.&nbsp;Установка параметров операции блокады на хосте</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Host</strong> window.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Параметры хоста</strong> window.</li>
   <li>
-    <p>Click the <strong>Power Management</strong> tab.
+    <p>Перейдите на вкладку <strong>Управление питанием</strong>.
 ⁠</p>
 
-    <p><img alt="Power Management Settings" title="Power Management Settings" src="./OVirt Administration Guide — oVirt_files/Edit_Host_Power_Management.png"></p>
+    <p><img alt="Power Management Settings" title="Параметры управления питанием" src="./OVirt Administration Guide — oVirt_files/Edit_Host_Power_Management.png"></p>
 
-    <p><strong>Figure&nbsp;6.4.&nbsp;Power Management Settings</strong></p>
+    <p><strong>Рисунок&nbsp;6.4.&nbsp;Параметры управления питанием</strong></p>
   </li>
-  <li>Select the <strong>Enable Power Management</strong> check box to enable the fields.</li>
-  <li>The <strong>Primary</strong> option is selected by default if you are configuring a new power management device. If you are adding a new device, set it to <strong>Secondary</strong>.</li>
-  <li>Select the <strong>Concurrent</strong> check box to enable multiple fence agents to be used concurrently.</li>
-  <li>Enter the <strong>Address</strong>, <strong>User Name</strong>, and <strong>Password</strong> of the power management device.</li>
-  <li>Select the power management device <strong>Type</strong> from the drop-down menu.</li>
-  <li>Enter the <strong>Port</strong> number used by the power management device to communicate with the host.</li>
-  <li>Enter the specific <strong>Options</strong> of the power management device. Use a comma-separated list of 'key=value' or 'key' entries.</li>
-  <li>Click the <strong>Test</strong> button to test the power management device. <em>Test Succeeded, Host Status is: on</em> will display upon successful verification.
+  <li>Отметьте галочкой пункт <strong>Включить управление питанием</strong> чтобы получить доступ к полям параметров.</li>
+  <li>В случае, если настраивается новое устройство управления питанием, то параметр <strong>Первичный</strong> выбирается по умолчанию. Если добавляется ещё одно устройство, необходимо выбрать <strong>Вторичный</strong>.</li>
+  <li>Отметьте галочкой пункт <strong>Параллельно</strong> для параллельного использования нескольких агентов операции блокады.</li>
+  <li>В соответствующие поля введите <strong>Адрес</strong>, <strong>Имя пользователя</strong> и <strong>Пароль</strong> устройства управления питанием.</li>
+  <li>В выпадающем меню выберите <strong>Тип</strong> устройства управления питанием.</li>
+  <li>Введите номер <strong>Порта</strong>, используемого устройством управления питанием для обмена информацией с хостом.</li>
+  <li>Введите <strong>Параметры</strong>, передаваемые устройству управления питанием. Используется список параметров вида 'ключ=значение' или 'ключ', разделённых запятой.</li>
+  <li>Нажмите на кнопку <strong>Тест</strong> для проверки устройства управления питанием. В случае удачной проверки будет показано сообщение <em>Тест пройден, статус хоста: работает</em>.
     <div class="alert alert-info">
-      <p><strong>Warning:</strong> Power management parameters (userid, password, options, etc) are tested by oVirt only during setup and manually after that. If you choose to ignore alerts about incorrect parameters, or if the parameters are changed on the power management hardware without the corresponding change in oVirt, fencing is likely to fail when most needed.</p>
+      <p><strong>Внимание:</strong> параметры управления питанием (идентификатор пользователя, пароль, передаваемые параметры и т.д.) проверяются oVirt только во время настройки и затем вручную. Если предупреждения о неправильных значениях параметроы будут проигнорированы администратором, или если параметры изменяются на аппаратном уровне устройства управления питанием без внесения соотвествующих изменений в oVirt, то скорей всего в самый необходимый момент операция блокады не сможет быть выполнена.</p>
 
     </div>
   </li>
-  <li>Click <strong>OK</strong> to save the changes and close the window.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохранить изменения и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You are returned to the list of hosts. Note that the exclamation mark next to the host's name has now disappeared, signifying that power management has been successfully configured.</p>
+<p>Мы вернулись к списку хостов. Обратите внимание, что теперь восклицательный знак рядом с именем хоста исчез, что означает успешно настроенное управление питанием.</p>
 
-<h4 id="soft-fencing-hosts">Soft-Fencing Hosts</h4>
+<h4 id="soft-fencing-hosts">Мягкая блокада хостов</h4>
 
-<p>Sometimes a host becomes non-responsive due to an unexpected problem, and though VDSM is unable to respond to requests, the virtual machines that depend upon VDSM remain alive and accessible. In these situations, restarting VDSM returns VDSM to a responsive state and resolves this issue.</p>
+<p>Иногда хост перестаёт отвечать по причине неожиданно возникших проблем, и хотя VDSM не может ответить на запросы, виртуальные машины, зависящие от VDSM, по-прежнему работают и доступны. В таких ситуациях перезапуск VDSM возвращает VDSM в состояние нормального реагирования и решает проблему.</p>
 
-<p>oVirt 3.3 introduces "soft-fencing over SSH". Prior to oVirt 3.3, non-responsive hosts were fenced only by external fencing devices. In oVirt 3.3, the fencing process has been expanded to include "SSH Soft Fencing", a process whereby oVirt attempts to restart VDSM via SSH on non-responsive hosts. If oVirt fails to restart VDSM via SSH, the responsibility for fencing falls to the external fencing agent if an external fencing agent has been configured.</p>
+<p>В oVirt версии 3.3 был впервые представлен функционал «мягкой блокады через SSH». До выхода oVirt версии 3.3 операция блокады не отвечающих хостов проводилась только внешними устройствами блокады. В oVirt 3.3 процесс операции блокады был расширен и теперь включает в себя «мягкую блокаду через SSH» — процесс, с помощью которого oVirt пытается выполнить перезапуск VDSM на не отвечающих хостах с помощью SSH. Если oVirt не сможет перезапустить VDSM через SSH, ответственность за проведение операции  блокады переходит на внешнего агента, если он был ранее настроен.</p>
 
-<p>Soft-fencing over SSH works as follows. Fencing must be configured and enabled on the host, and a valid proxy host (a second host, in an UP state, in the data center) must exist. When the connection between oVirt and the host times out, the following happens:</p>
+<p>Мягкая блокада через SSH работает следующим образом. На хосте должны быть включены и настроены параметры проведения операции блокады, а также должен существовать подходящий хост прокси (второй хост, с рабочим статусом, в дата-центре). Когда время ожидания соединения между oVirt и хостом истекает, то происходит следующее:</p>
 
 <ol>
-  <li>On the first network failure, the status of the host changes to "connecting".</li>
-  <li>oVirt then makes three attempts to ask VDSM for its status, or it waits for an interval determined by the load on the host. The formula for determining the length of the interval is configured by the configuration values TimeoutToResetVdsInSeconds (the default is 60 seconds) + [DelayResetPerVmInSeconds (the default is 0.5 seconds)]*(the count of running vms on host) + [DelayResetForSpmInSeconds (the default is 20 seconds)] * 1 (if host runs as SPM) or 0 (if the host does not run as SPM). To give VDSM the maximum amount of time to respond, oVirt chooses the longer of the two options mentioned above (three attempts to retrieve the status of VDSM or the interval determined by the above formula).</li>
-  <li>If the host does not respond when that interval has elapsed, <code>vdsm restart</code> is executed via SSH.</li>
-  <li>If <code>vdsm restart</code> does not succeed in re-establishing the connection between the host and oVirt, the status of the host changes to <code>Non Responsive</code> and, if power management is configured, fencing is handed off to the external fencing agent.</li>
+  <li>При первом сбое сети статус хоста меняется на «Идёт подключение».</li>
+  <li>Затем oVirt делает три попытки запросить статус у VDSM, или же ждёт в течении интервала времени, определяемого загрузкой хоста. Формула для расчёта длины этого интервала строится на основе заданных значений TimeoutToResetVdsInSeconds (по умолчанию 60 сек) + [DelayResetPerVmInSeconds (по умолчанию 0.5 сек)]*(число выполняемых ВМ на хосте) + [DelayResetForSpmInSeconds (по умолчанию 20 сек)] * 1 (если хост работает как SPM) или 0 (если хост не работает как SPM). Чтобы дать VDSM максимально возможное время для ответа, oVirt выбирает наиболее долгую по времени возможность из описанных выше (три попытки получить статус VDSM или интервал, рассчитываемый по вышеуказанной формуле).</li>
+  <li>Если по истечении этого интервала хост не отвечает, через SSH выполняется команда <code>vdsm restart</code>.</li>
+  <li>Если <code>vdsm restart</code> не даст результата в виде восстановления соединения между хостом и oVirt, статус хоста сменяется на <code>Не отвечает</code>, и в случае настроенного управления питанием, выполнение операции блокады передаётся внешнему агенту.</li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Soft-fencing over SSH can be executed on hosts that have no power management configured. This is distinct from "fencing": fencing can be executed only on hosts that have power management configured.</p>
+  <p><strong>Внимание:</strong> мягкую блокаду через SSH можно выполнить на хостах, где не настроено управление питанием. В этом её отличие от обычной операции блокады, которую можно выполнить только на хостах с настроенным управлением питанием.</p>
 
 </div>
 
-<h4 id="using-host-power-management-functions">Using Host Power Management Functions</h4>
+<h4 id="using-host-power-management-functions">Использование функций управления питанием хоста</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>When power management has been configured for a host, you can access a number of options from the Administration Portal interface. While each power management device has its own customizable options, they all support the basic options to start, stop, and restart a host.</p>
+<p>После того, как для хоста было настроено управление питанием, через интерфейс Портала администрирования становятся доступными несколько возможных действий. Хотя у каждого устройства управления питанием есть свои настраиваемые параметры, все они поддерживают базовые возможности для запуска, останова и перезапуска хоста.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.16.&nbsp;Using Host Power Management Functions</strong></p>
+<p><strong>Действие&nbsp;6.16.&nbsp;Использование функций управления питанием хоста</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click the <strong>Power Management</strong> drop-down menu.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Нажмите на выпадающее меню <strong>Управление питанием</strong>.</li>
   <li>
-    <p>Select one of the following options:</p>
+    <p>Выберите одну из следующих возможностей:</p>
 
     <ul>
-      <li><strong>Restart</strong>: This option stops the host and waits until the host's status changes to <code>Down</code>. When the agent has verified that the host is down, the highly available virtual machines are restarted on another host in the cluster. The agent then restarts this host. When the host is ready for use its status displays as <code>Up</code>.</li>
-      <li><strong>Start</strong>: This option starts the host and lets it join a cluster. When it is ready for use its status displays as <code>Up</code>.</li>
-      <li><strong>Stop</strong>: This option powers off the host. Before using this option, ensure that the virtual machines running on the host have been migrated to other hosts in the cluster. Otherwise the virtual machines will crash and only the highly available virtual machines will be restarted on another host. When the host has been stopped its status displays as <code>Non-Operational</code>.</li>
+      <li><strong>Перезапуск</strong>: этот параметр останавливает хост и ждёт смены статуса хоста на <code>Отключен</code>. После того, как агент убедился в том, что хост отключен, виртуальные машины с высокой доступностью перезапускаются на другом хосте кластера. Затем агент перезапускает хост. Когда хост снова готов к работе, его статус меняется на <code>Работает</code>.</li>
+      <li><strong>Запустить</strong>: этот параметр запускает хост и даёт ему присоединиться к кластеру. Когда хост готов к работе, его статус меняется на <code>Работает</code>.</li>
+      <li><strong>Остановить</strong>: этот параметр отключает питание хоста. Перед использованием этого параметра убедитесь, что ВМ, выполняющиеся на этом хосте, были заранее перенесены на другой хост в кластере. В противном случае работа ВМ будет завершена аварийно, и только машины с высокой доступностью будет возможно перезапустить на другом хосте. После остановки хоста его статус меняется на <code>Нерабочее состояние</code>.</li>
     </ul>
 
     <div class="alert alert-info">
-      <p><strong>Important:</strong> When two fencing agents are defined on a host, they can be used concurrently or sequentially. For concurrent agents, both agents have to respond to the Stop command for the host to be stopped; and when one agent responds to the Start command, the host will go up. For sequential agents, to start or stop a host, the primary agent is used first; if it fails, the secondary agent is used.</p>
+      <p><strong>Важно:</strong> если для хоста определены два агента блокады, их можно использовать параллельно или последовательно. Для остановки хоста, параллельные агенты должны оба отреагировать на команду остановки; и если один из агентов отреагирует на команду запуска, хост начнёт работу. В случае последовательных агентов, для запуска или остановки хоста сначала используется первичный агент; в случае его сбоя используется вторичный агент.</p>
 
     </div>
   </li>
-  <li>Selecting one of the above options opens a confirmation window. Click <strong>OK</strong> to confirm and proceed.</li>
+  <li>При выборе одного из вышеописанных параметров открывается окно подтверждения. Нажмите <strong>OK</strong> чтобы подтвердить и продолжить.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The selected action is performed.</p>
+<p>Выполняется выбранное действие.</p>
 
-<h4 id="manually-fencing-or-isolating-a-non-responsive-host">Manually Fencing or Isolating a Non Responsive Host</h4>
+<h4 id="manually-fencing-or-isolating-a-non-responsive-host">Ручная блокада или изоляция не отвечающего хоста</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>If a host unpredictably goes into a non-responsive state, for example, due to a hardware failure; it can significantly affect the performance of the environment. If you do not have a power management device, or it is incorrectly configured, you can reboot the host manually.</p>
+<p>Хост может перестать отвечать на запросы в случае, например, аппаратного сбоя; это может сильно повлиять на производительность окружения. Если устройство управления питанием отсутствует или настроено неправильно, хост можно перезапустить вручную.</p>
 
 <div class="alert alert-info">
-  <p><strong>Warning:</strong> Do not use the <strong>Confirm host has been rebooted</strong> option unless you have manually rebooted the host. Using this option while the host is still running can lead to a virtual machine image corruption.</p>
+  <p><strong>Предупреждение:</strong> не используйте параметр <strong>Подтвердить, что хост был перезапущен</strong>, если хост не был перезапущен вручную. Использование этого параметра во время работы хоста может привести к повреждению образа ВМ.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;6.17.&nbsp;Manually fencing or isolating a non-responsive host</strong></p>
+<p><strong>Действие&nbsp;6.17.&nbsp;Ручная блокада или изоляция не отвечающего хоста</strong></p>
 
 <ol>
-  <li>On the <strong>Hosts</strong> tab, select the host. The status must display as <code>non-responsive</code>.</li>
-  <li>Manually reboot the host. This could mean physically entering the lab and rebooting the host.</li>
-  <li>On the Administration Portal, right-click the host entry and select the <strong>Confirm Host has been rebooted</strong> button.</li>
-  <li>A message displays prompting you to ensure that the host has been shut down or rebooted. Select the <strong>Approve Operation</strong> check box and click <strong>OK</strong>.</li>
+  <li>Выберите хост во вкладке <strong>Хосты</strong>. Хост должен иметь статус <code>не отвечает</code>.</li>
+  <li>Перезапустите хост вручную. Это может означать физический перезапуск аппаратного обеспечения.</li>
+  <li>На Портале администрирования нажмите ПКМ на элементе хоста и нажмите на кнопку<strong>Подтвердить, что хост был перезапущен</strong>.</li>
+  <li>Будет выведено сообщение с просьбой подтвердить, что хост был перезапущен или выключен. Отметьте галочкой пункт <strong>Подтвердить операцию</strong> и нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have manually rebooted your host, allowing highly available virtual machines to be started on active hosts. You confirmed your manual fencing action in the Administrator Portal, and the host is back online.</p>
+<p>Мы перезапустили хост вручную, позволив перезапустить высокодоступные ВМ на активном хосте. Мы подтвердили действие ручной блокады на Портале администрирования, и хост снова в сети.</p>
 
-<h2 id="storage">⁠Storage</h2>
+<h2 id="storage">⁠Хранилище</h2>
 
-<p>oVirt uses a centralized storage system for virtual machine disk images, ISO files and snapshots. Storage networking can be implemented using:</p>
+<p>Для хранения образов ВМ, файлов ISO и снимков oVirt использует централизованную систему хранилища. Сетевые хранилища можно создавать, используя следующие технологии:</p>
 
 <ul>
-  <li>Network File System (NFS)</li>
-  <li>GlusterFS exports</li>
-  <li>Other POSIX compliant file systems</li>
-  <li>Internet Small Computer System Interface (iSCSI)</li>
-  <li>Local storage attached directly to the virtualization hosts</li>
-  <li>Fibre Channel Protocol (FCP)</li>
-  <li>Parallel NFS (pNFS)</li>
+  <li>Сетевая файловая система (NFS)</li>
+  <li>Экспортированные тома GlusterFS</li>
+  <li>Другие POSIX-совместимые ФС</li>
+  <li>Протокол iSCSI</li>
+  <li>Локальные хранилища, напрямую присоединённые к хостам виртуализации</li>
+  <li>Транспортный протокол FCP (Fibre Channel Protocol)</li>
+  <li>Файловая система parallel NFS (pNFS)</li>
 </ul>
 
-<p>Setting up storage is a prerequisite for a new data center because a data center cannot be initialized unless storage domains are attached and activated.</p>
+<p>Настройка хранилища является необходимым условием для нового дата-центра, поскольку дата-центр невозможно инициализировать без подключённых и активированных доменов хранилищ.</p>
 
-<p>As an oVirt system administrator, you need to create, configure, attach and maintain storage for the virtualized enterprise. You should be familiar with the storage types and their use. Read your storage array vendor's guides, and refer to the <em>Red Hat Enterprise Linux Storage Administration Guide</em> for more information on the concepts, protocols, requirements or general usage of storage.</p>
+<p>Системный администратор oVirt должен создать, настроить, присоединить и поддерживать работу хранилища вируализированного проекта. Администратор должен быть знаком с типами хранилищ и их использованием. Прочитайте руководства вашего поставщика массива хранения данных, а также обратитесь к <em>Руководству по администрированию хранилищ Red Hat Enterprise Linux</em>, чтобы получить дополнительную информацию о протоколах, требованиях и принципах работы хранилищ.</p>
 
-<p>The oVirt platform enables you to assign and manage storage using the Administration Portal's <strong>Storage</strong> tab. The <strong>Storage</strong> results list displays all the storage domains, and the details pane shows general information about the domain.</p>
+<p>Платформа oVirt предоставляет возможность назначать хранилища и управлять ими во вкладке <strong>Хранилище</strong> Портала администрирования. В списке на вкладке <strong>Хранилище</strong> показаны все домены хранилищ, а на панели сведений находится общая информация о домене.</p>
 
-<p>oVirt platform has three types of storage domains:</p>
+<p>Платформа oVirt предлагает три типа доменов хранилищ:</p>
 
 <ul>
-  <li><strong>Data Domain:</strong> A data domain holds the virtual hard disks and OVF files of all the virtual machines and templates in a data center. In addition, snapshots of the virtual machines are also stored in the data domain. The data domain cannot be shared across data centers. Storage domains of multiple types (iSCSI, NFS, FC, POSIX, and Gluster) can be added to the same data center, provided they are all shared, rather than local, domains. You must attach a data domain to a data center before you can attach domains of other types to it.</li>
-  <li><strong>ISO Domain:</strong> ISO domains store ISO files (or logical CDs) used to install and boot operating systems and applications for the virtual machines. An ISO domain removes the data center's need for physical media. An ISO domain can be shared across different data centers.</li>
+  <li><strong>Домен данных:</strong> домен данных содержит виртуальные жёсткие диски и файлы OVF всех виртуальных машин и шаблонов дата-центра. Снимки ВМ также хранятся в домене данных. Домен данных нельзя сделать общим для нескольких дата-центров. Домены хранилищ различных типов (iSCSI, NFS, FC, POSIX и Gluster) можно добавить к одному и тому же дата-центру, при условии что это общие, а не локальные домены. Домен данных необходимо присоединить к дата-центру до присоединения к нему доменов других типов.</li>
+  <li><strong>Домен ISO:</strong> в доменах ISO хранятся файлы ISO (или логические CD), используемые для устаноки и загрузки ОС и приложений ВМ. Домен ISO делает ненужным физические носители информации для дата-центра. Домен ISO можно сделать общим для разных дата-центров.</li>
   <li>
-    <p><strong>Export Domain:</strong> Export domains are temporary storage repositories that are used to copy and move images between data centers and oVirt environments. Export domains can be used to backup virtual machines. An export domain can be moved between data centers, however, it can only be active in one data center at a time.
-<strong>Important</strong></p>
+    <p><strong>Домен экспорта:</strong> домены экспорта — это временные репозитории хранилища, используемые для копирования и перемещения образов между дата-центрами о окружением oVirt. Домены экспорта можно использовать для создания резервных копий ВМ. Домен экспорта можно перемещать между дата-центрами, но он может быть активен только для одного из дата-центров.
+<strong>Важно</strong></p>
 
-    <p>Support for export storage domains backed by storage on anything other than NFS is being deprecated. While existing export storage domains imported from oVirt 2.2 environments remain supported new export storage domains must be created on NFS storage.</p>
+    <p>Поддержка доменов экспорта, реализованных на чём-то ином, кроме NFS, устарела. Поддержка осуществляется только для уже существующих доменов экспорта, импортированных из окружений oVirt 2.2, новые же домены хранилищ должны создаваться только с использованием NFS.</p>
   </li>
 </ul>
 
-<p>Only commence configuring and attaching storage for your oVirt environment once you have determined the storage needs of your data center(s).</p>
+<p>Приступайте к настройке и присоединению хранилищ к окружению oVirt только после того, как были определены необходимиые требования дата-центра к хранилищу.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> To add storage domains you must be able to successfully access the Administration Portal, and there must be at least one host connected with a status of <strong>Up</strong>.</p>
+  <p><strong>Важно:</strong> для добавления доменов хранилищ необходимо быть авторизованным на Портале администрирования, кроме того, требуется наличие минимум одного подключенного хоста со статусом <strong>Работает</strong>.</p>
 
 </div>
 
-<h3 id="understanding-storage-domains">Understanding Storage Domains</h3>
+<h3 id="understanding-storage-domains">Основные сведения о доменах хранилищ</h3>
 
-<p>A storage domain is a collection of images that have a common storage interface. A storage domain contains complete images of templates and virtual machines (including snapshots), or ISO files. A storage domain can be made of either block devices (SAN - iSCSI or FCP) or a file system (NAS - NFS, GlusterFS, or other POSIX compliant file systems).</p>
+<p>Домен хранилища — это собрание образов с общим интерфейсом хранилища. Домен хранилища содержит полные образы шаблонов и виртуальных машин (включая снимки), или файлы ISO. Домен хранилища может быть создан либо на основе блочных устройств (SAN - iSCSI или FCP) либо на основе файловой системы (NAS - NFS, GlusterFS или другая POSIX-совместимая ОС).</p>
 
-<p>On NFS, all virtual disks, templates, and snapshots are files.</p>
+<p>В NFS все виртуальные диски, шаблоны и снимки являются файлами.</p>
 
-<p>On SAN (iSCSI/FCP), each virtual disk, template or snapshot is a logical volume. Block devices are aggregated into a logical entity called a volume group, and then divided by LVM (Logical Volume Manager) into logical volumes for use as virtual hard disks.</p>
+<p>В SAN (iSCSI/FCP) каждый виртуальный диск, шаблон или снимок является логическим томом. Блочные устройства собираются в логическую сущность под названием «группа томов», а затем распределяются менеджером LVM (Logical Volume Manager) по логическим томам для использования в качестве виртуальных жёстких дисков.</p>
 
-<p>Virtual disks can have one of two formats, either Qcow2 or RAW. The type of storage can be either Sparse or Preallocated. Snapshots are always sparse but can be taken for disks created either as RAW or sparse.</p>
+<p>Виртуальные диски могут иметь один из двух форматов: Qcow2 или RAW. Тип хранилища может быть либо разреженным либо предварительно выделенным. Снимки всегда имеют разреженный тип, но они могут быть сделаны с дисков, созданных как RAW или как разреженные.</p>
 
-<p>Virtual machines that share the same storage domain can be migrated between hosts that belong to the same cluster.</p>
+<p>ВМ, разделяющие общий домен хранилища, можно переносить между хостами, принадлежащими одному и тому кластеру.</p>
 
-<h3 id="storage-metadata-versions-in-ovirt">Storage Metadata Versions in oVirt</h3>
+<h3 id="storage-metadata-versions-in-ovirt">Версии метаданных хранилищ в oVirt</h3>
 
-<p>oVirt stores information about storage domains as metadata on the storage domains themselves. Each major release of oVirt has seen improved implementations of storage metadata.</p>
+<p>oVirt хранит информацию о доменах хранилищ в виде метаданных в самих доменах хранилищ. Каждый мажорный релиз в oVirt появляются улучшенные реализации метаданных хранилища.</p>
 
 <ul>
-  <li><em>V1 metadata (oVirt 2.x series)</em> Each storage domain contains metadata describing its own structure, and all of the names of physical volumes that are used to back virtual machine disk images. Master domains additionally contain metadata for all the domains and physical volume names in the storage pool. The total size of this metadata is limited to 2 kb, limiting the number of storage domains that can be in a pool. Template and virtual machine base images are read only. V1 metadata is applicable to NFS, iSCSI, and FC storage domains.</li>
-  <li><em>V2 metadata (oVirt 3.0)</em> All storage domain and pool metadata is stored as logical volume tags rather than written to a logical volume. Metadata about virtual machine disk volumes is still stored in a logical volume on the domains. Physical volume names are no longer included in the metadata. Template and virtual machine base images are read only. V2 metadata is applicable to iSCSI, and FC storage domains.</li>
-  <li><em>V3 metadata (oVirt 3.1+)</em> All storage domain and pool metadata is stored as logical volume tags rather than written to a logical volume. Metadata about virtual machine disk volumes is still stored in a logical volume on the domains. Virtual machine and template base images are no longer read only. This change enables live snapshots, live storage migration, and clone from snapshot. Support for unicode metadata is added, for non-English volume names. V3 metadata is applicable to NFS, GlusterFS, POSIX, iSCSI, and FC storage domains.</li>
+  <li><em>Метаданные V1 (oVirt версий 2.x)</em> Каждый домен хранилища содержит метаданные, описывающие собственную структуру и все имена физических томов, использующихся для резервирования образов дисков ВМ. Главные домены дополнительно содержат метаданные всех доменов и имён физических томов в пуле хранилища. Лимит на общий размер этих метаданных равен 2КБ, что ограничивает число доменов хранилищ в пуле. Базовые образы шаблонов и ВМ доступны только для чтения. Метаданные V1 применяются на доменах хранилищ NFS, iSCSI и FC.</li>
+  <li><em>Метаданные V2 (oVirt версии 3.0)</em> Все метаданные домена хранилища и пула хранятся в виде тегов логических томов, а не записываются на логический том. Метаданные томов дисков ВМ по-прежнему хранятся на логическом томе в доменах. Имена физических томов больше не включаются в метаданные. Базовые образы шаблонов и ВМ доступны только для чтения. Метаданные V2 применяются на доменах хранилищ iSCSI и FC.</li>
+  <li><em>Метаданные V3 (oVirt версий 3.1+)</em> Все метаданные домена хранилища и пула хранятся в виде тегов логических томов, а не записываются на логический том. Метаданные томов дисков ВМ по-прежнему хранятся на логическом томе в доменах. Базовые образы шаблонов и ВМ больше не имеют режим доступа только для чтения. Это изменение делает возможным динамическое создание снимков, динамическую миграцию хранилищ и клонирование на базе снимков. Добавлена поддержка метаданных в формате юникод, имена томов стало можно писать не только латиницей. Метаданные V3 применяются на доменах хранилищ NFS, GlusterFS, POSIX, iSCSI и FC.</li>
 </ul>
 
-<h3 id="preparing-and-adding-file-based-storage">Preparing and Adding File-Based Storage</h3>
+<h3 id="preparing-and-adding-file-based-storage">Подготовка и добавление хранилищ на базе файлов</h3>
 
-<h4 id="preparing-nfs-storage">Preparing NFS Storage</h4>
+<h4 id="preparing-nfs-storage">Подготовка хранилища NFS</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
 <p>These steps must be taken to prepare an NFS file share on a server running Red Hat Enterprise Linux 6 for use with oVirt.</p>
 
