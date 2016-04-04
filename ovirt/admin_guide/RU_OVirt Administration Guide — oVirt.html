@@ -3123,14 +3123,14 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
   <li><strong>Домен данных:</strong> домен данных содержит виртуальные жёсткие диски и файлы OVF всех виртуальных машин и шаблонов дата-центра. Снимки ВМ также хранятся в домене данных. Домен данных нельзя сделать общим для нескольких дата-центров. Домены хранилищ различных типов (iSCSI, NFS, FC, POSIX и Gluster) можно добавить к одному и тому же дата-центру, при условии что это общие, а не локальные домены. Домен данных необходимо присоединить к дата-центру до присоединения к нему доменов других типов.</li>
   <li><strong>Домен ISO:</strong> в доменах ISO хранятся файлы ISO (или логические CD), используемые для устаноки и загрузки ОС и приложений ВМ. Домен ISO делает ненужным физические носители информации для дата-центра. Домен ISO можно сделать общим для разных дата-центров.</li>
   <li>
-    <p><strong>Домен экспорта:</strong> домены экспорта — это временные репозитории хранилища, используемые для копирования и перемещения образов между дата-центрами о окружением oVirt. Домены экспорта можно использовать для создания резервных копий ВМ. Домен экспорта можно перемещать между дата-центрами, но он может быть активен только для одного из дата-центров.
-<strong>Важно</strong></p>
-
-    <p>Поддержка доменов экспорта, реализованных на чём-то ином, кроме NFS, устарела. Поддержка осуществляется только для уже существующих доменов экспорта, импортированных из окружений oVirt 2.2, новые же домены хранилищ должны создаваться только с использованием NFS.</p>
+    <p><strong>Домен экспорта:</strong> домены экспорта — это временные репозитории хранилища, используемые для копирования и перемещения образов между дата-центрами о окружением oVirt. Домены экспорта можно использовать для создания резервных копий ВМ. Домен экспорта можно перемещать между дата-центрами, но он может быть активен только для одного из дата-центров.</p>
+<div class="alert alert-info">
+<p><strong>Важно</strong>
+    <p>Поддержка доменов экспорта, реализованных на чём-то ином, кроме NFS, устарела. Поддержка осуществляется только для уже существующих доменов экспорта, импортированных из окружений oVirt 2.2, новые же домены хранилищ должны создаваться только с использованием NFS.</p></div>
   </li>
 </ul>
 
-<p>Приступайте к настройке и присоединению хранилищ к окружению oVirt только после того, как были определены необходимиые требования дата-центра к хранилищу.</p>
+<p>Приступайте к настройке и присоединению хранилищ к окружению oVirt только после того, как были определены необходимые требования дата-центра к хранилищу.</p>
 
 <div class="alert alert-info">
   <p><strong>Важно:</strong> для добавления доменов хранилищ необходимо быть авторизованным на Портале администрирования, кроме того, требуется наличие минимум одного подключенного хоста со статусом <strong>Работает</strong>.</p>
@@ -3165,28 +3165,28 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 
 <p><strong>Описание задачи</strong></p>
 
-<p>These steps must be taken to prepare an NFS file share on a server running Red Hat Enterprise Linux 6 for use with oVirt.</p>
+<p>Шаги, необходимые для подготовки общего файлового ресурса NFS на сервере под управлением Red Hat Enterprise Linux 6 к работе в oVirt.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.1.&nbsp;Preparing NFS Storage</strong></p>
+<p><strong>Действие&nbsp;7.1.&nbsp;Подготовка хранилища NFS</strong></p>
 
 <ol>
   <li>
-    <p><strong>Install nfs-utils</strong>
-NFS functionality is provided by the nfs-utils package. Before file shares can be created, check that the package is installed by querying the RPM database for the system:</p>
+    <p><strong>Установка nfs-utils</strong>
+Фуционал NFS предоставляется пакетом nfs-utils. Перед созданием общего файлового ресурса проверьте, что этот пакет установлен, путём запроса системной базы данных RPM:</p>
 
 <pre class="highlight plaintext"><code>$ rpm -qi nfs-utils
 </code></pre>
 
-    <p>If the nfs-utils package is installed then the package information will be displayed. If no output is displayed then the package is not currently installed. Install it using <code>yum</code> while logged in as the <code>root</code> user:</p>
+    <p>Если пакет nfs-utils установлен, будет показана информация о пакете. В противном случае — пакет не установлен. Установите его с помощью <code>yum</code>, получив права пользователя <code>root</code>:</p>
 
 <pre class="highlight plaintext"><code># yum install nfs-utils
 </code></pre>
   </li>
   <li>
-    <p><strong>Configure Boot Scripts</strong>
-To ensure that NFS shares are always available when the system is operational both the <code>nfs</code> and <code>rpcbind</code> services must start at boot time. Use the <code>chkconfig</code> command while logged in as <code>root</code> to modify the boot scripts.</p>
+    <p><strong>Настройка загрузочных скриптов</strong>
+Для того, чтобы обеспечить доступность общих файловых ресурсов NFS на работающей системе, службы <code>nfs</code> и <code>rpcbind</code> должны запускаться во время загрузки системы. Для изменения загрузочных скриптов используйте команду <code>chkconfig</code>, получив предварительно права <code>root</code>.</p>
 
 <pre class="highlight plaintext"><code># chkconfig --add rpcbind
 # chkconfig --add nfs
@@ -3194,611 +3194,609 @@ To ensure that NFS shares are always available when the system is operational bo
 # chkconfig nfs on
 </code></pre>
 
-    <p>Once the boot script configuration has been done, start the services for the first time.</p>
+    <p>После настройки загрузочных скриптов запустите службы в первый раз.</p>
 
 <pre class="highlight plaintext"><code># service rpcbind start
 # service nfs start
 </code></pre>
   </li>
   <li>
-    <p><strong>Create Directory</strong>
-Create the directory you wish to share using NFS.</p>
+    <p><strong>Создание каталога</strong>
+Создайте каталог, который нужно сделать общим с помощью NFS.</p>
 
 <pre class="highlight plaintext"><code># mkdir /exports/iso
 </code></pre>
 
-    <p>Replace <em>/exports/iso</em> with the name, and path of the directory you wish to use.</p>
+    <p>Замените <em>/exports/iso</em> на имя и путь каталога, который нужно использовать.</p>
   </li>
   <li>
-    <p><strong>Export Directory</strong>
-To be accessible over the network using NFS the directory must be exported. NFS exports are controlled using the <code>/etc/exports</code> configuration file. Each export path appears on a separate line followed by a tab character and any additional NFS options. Exports to be attached to oVirt must have the read, and write, options set.</p>
+    <p><strong>Экспорт каталога</strong>
+Чтобы каталог был доступным в сети с помощью NFS, его нужно экспортировать. Экспортируемые ресурсы NFS контролируются с помощью конфигурационного файла <code>/etc/exports</code>. Каждый путь экспорта размещается в отдельной строке, за ним следует символ табуляции и любые дополнительные параметры, передаваемые NFS. Для экспортируемых ресурсов, которые необходимо присоединить к oVirt, необходимо установить права чтения и записи.</p>
 
-    <p>To grant read, and write access to <code>/exports/iso</code> using NFS for example you add the following line to the <code>/etc/exports</code> file.</p>
+    <p>Чтобы установить доступ на чтение и запись для каталога <code>/exports/iso</code> с ипользованием NFS, нужно добавить следующую строчку в файл <code>/etc/exports</code>.</p>
 
 <pre class="highlight plaintext"><code>/exports/iso       *(rw)
 </code></pre>
 
-    <p>Again, replace <em>/exports/iso</em> with the name, and path of the directory you wish to use.</p>
+    <p>Не забудьте заменить <em>/exports/iso</em> на имя и путь используемого каталога.</p>
   </li>
   <li>
-    <p><strong>Reload NFS Configuration</strong>
-For the changes to the <code>/etc/exports</code> file to take effect the service must be told to reload the configuration. To force the service to reload the configuration run the following command as <code>root</code>:</p>
+    <p><strong>Перезагрузка конфигурации NFS</strong>
+Чтобы изменения, внесённые в файл <code>/etc/exports</code> вступили в силу, необходимо перезапустить службу NFS. Чтобы принудительно перезапустить конфигурацию службы, выполните следующую команду с правами пользователя <code>root</code>:</p>
 
 <pre class="highlight plaintext"><code># service nfs reload
 </code></pre>
   </li>
   <li>
-    <p><strong>Set Permissions</strong>
-The NFS export directory must be configured for read write access and must be owned by vdsm:kvm. If these users do not exist on your external NFS server use the following command, assuming that <code>/exports/iso</code> is the directory to be used as an NFS share.</p>
+    <p><strong>Настройка прав доступа</strong>
+Экспортный каталог NFS необходимо настроить на доступ для чтения/записи, и установить владельца vdsm:kvm. Если эти пользователи не существуют на внешнем сервере NFS, используйте следующую команду, где в качестве каталога, используемого как общий файловый ресурс NFS, служит <code>/exports/iso</code>:</p>
 
 <pre class="highlight plaintext"><code># chown -R 36:36 /exports/iso
 </code></pre>
 
-    <p>The permissions on the directory must be set to allow read and write access to the owner, and read and execute access to the group and other users. The owner will also have execute access to the directory. The permissions are set using the <code>chmod</code> command. The following command arguments set the required permissions on the <code>/exports/iso</code> directory.</p>
+    <p>Права доступа для этого каталога должны быть следующими: доступ на чтение/запись для владельца и чтение/выполнение для группы и других пользователей. У владельца также будут права на выполнение в этом каталоге. Права доступа устанавливаются с помощью команды <code>chmod</code>. Следующие аргументы команды устанавливают требуемые права доступа для каталога <code>/exports/iso</code>.</p>
 
 <pre class="highlight plaintext"><code># chmod 0755 /exports/iso
 </code></pre>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The NFS file share has been created, and is ready to be attached by oVirt.</p>
+<p>Мы создали общий файловый ресурс NFS, и он готов для присоединения к oVirt.</p>
 
-<h4 id="attaching-nfs-storage">Attaching NFS Storage</h4>
+<h4 id="attaching-nfs-storage">Присоединение хранилища NFS</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>An NFS type <strong>Storage Domain</strong> is a mounted NFS share that is attached to a data center. It is used to provide storage for virtualized guest images and ISO boot media. Once NFS storage has been exported it must be attached to oVirt using the Administration Portal.</p>
+<p><strong>Домен хранилища</strong> с типом NFS — это монтируемый общий ресурс NFS, присоединённый к дата-центру. Он используется для предоставления хранилища для образов виртуализированной гостевой ОС и загрузочных источников ISO. После экспорта хранилища NFS, его необходимо присоединить к oVirt с помощью Портала администрирования.</p>
 
-<p>NFS data domains can be added to NFS data centers. You can add NFS, ISO, and export storage domains to data centers of any type.</p>
+<p>Домены данных NFS можно добавить к дата-центрам NFS. К дата-центрам любого типа можно присоединить домены хранилищ с типом NFS, ISO и экспорт.</p>
 
-<p><strong>Procedure&nbsp;7.2.&nbsp;Attaching NFS Storage</strong></p>
+<p><strong>Действие&nbsp;7.2.&nbsp;Присоединение хранилища NFS</strong></p>
 
 <ol>
-  <li>Click the <strong>Storage</strong> resource tab to list the existing storage domains.</li>
+  <li>Перейдите на ресурсную вкладку <strong>Хранилище</strong>, чтобы увидеть список существующих доменов хранилищ.</li>
   <li>
-    <p>Click <strong>New Domain</strong> to open the <strong>New Domain</strong> window.
+    <p>Нажмите <strong>Добавить домен</strong> чтобы открыть окно <strong>Добавить домен</strong>.
 ⁠</p>
 
-    <p><img alt="NFS Storage" title="NFS Storage" src="./OVirt Administration Guide — oVirt_files/New_Domain.png"></p>
+    <p><img alt="NFS Storage" title="Хранилище NFS" src="./OVirt Administration Guide — oVirt_files/New_Domain.png"></p>
 
-    <p><strong>Figure&nbsp;7.1.&nbsp;NFS Storage</strong></p>
+    <p><strong>Рисунок&nbsp;7.1.&nbsp;Хранилище NFS</strong></p>
   </li>
-  <li>Enter the <strong>Name</strong> of the storage domain.</li>
-  <li>Select the <strong>Data Center</strong>, <strong>Domain Function / Storage Type</strong>, and <strong>Use Host</strong> from the drop-down menus. If applicable, select the <strong>Format</strong> from the drop-down menu.</li>
-  <li>Enter the <strong>Export Path</strong> to be used for the storage domain. The export path should be in the format of <code>192.168.0.10:/data or domain.example.com:/data</code></li>
-  <li>Click <strong>Advanced Parameters</strong> to enable further configurable settings. It is recommended that the values of these parameters not be modified.
+  <li>Введите <strong>Имя</strong> домена хранилища.</li>
+  <li>В выпадающем меню выберите <strong>Дата-центр</strong>, <strong>Функцию домена / Тип хранилища</strong> и <strong>Использовать хост</strong>. В случае необходимости также выберите <strong>Формат</strong>.</li>
+  <li>Введите <strong>Путь экпорта</strong>, который будет использован для домена хранилища. Путь экспорта должен  иметь формат <code>192.168.0.10:/данные или domain.example.com:/данные</code></li>
+  <li>Нажмите <strong>Дополнительные параметры</strong> чтобы включить дополнительные параметры конфигурации. Рекомендуется не изименять значения этих параметров.
     <div class="alert alert-info">
-      <p><strong>Important:</strong> All communication to the storage domain is from the selected host and not directly from oVirt. At least one active host must be attached to the chosen Data Center before the storage is configured.</p>
+      <p><strong>Важно:</strong> связь с доменом хранилища осуществляется с выбранного хоста, а не напрямую из oVirt. Перед настройкой хранилища к выбранному дата-центру необходимо присоединить как минимум один активный хост.</p>
 
     </div>
   </li>
-  <li>Click <strong>OK</strong> to create the storage domain and close the window.</li>
+  <li>Нажмите <strong>OK</strong> чтобы создать домен хранилища и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The new NFS data domain is displayed on the <strong>Storage</strong> tab with a status of <code>Locked</code> while the disk prepares. It is automatically attached to the data center upon completion.</p>
+<p>Новый домен данных NFS показывается на вкладке <strong>Хранилище</strong> и имеет статус <code>Заблокирован</code>, пока идёт подготовка диска. После этого он автоматически присоединится к дата-центру.</p>
 
-<h4 id="preparing-local-storage">Preparing Local Storage</h4>
+<h4 id="preparing-local-storage">Подготовка локального хранилища</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>A local storage domain can be set up on a host. When you set up host to use local storage, the host automatically gets added to a new data center and cluster that no other hosts can be added to. Multiple host clusters require that all hosts have access to all storage domains, which is not possible with local storage. Virtual machines created in a single host cluster cannot be migrated, fenced or scheduled.</p>
+<p>Домен локального хранилища можно настроить на хосте. При подготовке хоста для использования локального хранилища, хост автоматически присоединяется к новому дата-центру и кластеру, к которому нельзя присоединить никакие другие хосты. Для кластеров с несколькими хостами необходимо, чтобы все хосты имели доступ ко всем доменам хранилищ, что невозможно для локального хранилища. Виртуальные машины, созданные на кластере с одним хостом, невоможно перенести, провести для них операцию блокады или использовать с планировщиком.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> On the "oVirt Node" system the only path permitted for use as local storage is <code>/data/images</code>. This directory already exists with the correct permissions on Hypervisor installations. The steps in this procedure are only required when preparing local storage on an oVirt hypervisor installed on a stock OS, such as Fedora or Centos.</p>
+  <p><strong>Важно:</strong> в системах «oVirt Node» единственным разрешённым путём для использования под локальное хранилище является <code>/data/images</code>. На установках гипервизоров этот каталог уже существует и имеет соответствующие права доступа. Шаги, описанные в этом действии, необходимы только для подготовки локального хранилища, устанавливаемого на стоковых ОС, таких, как Fedora или Centos.</p>
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.3.&nbsp;Preparing Local Storage</strong></p>
+<p><strong>Действие&nbsp;7.3.&nbsp;Подготовка локального хранилища</strong></p>
 
 <ol>
   <li>
-    <p>On the virtualization host, create the directory to be used for the local storage.
+    <p>На хосте виртуализации создайте каталог, который будет использоваться под локальное хранилище.</p>
     # mkdir -p /data/images</p>
   </li>
   <li>
-    <p>Ensure that the directory has permissions allowing read/write access to the <code>vdsm</code> user (UID 36) and <code>kvm</code> group (GID 36).
-    # chown 36:36 /data /data/images</p>
-
-<pre class="highlight plaintext"><code># chmod 0755 /data /data/images
+    <p>Убедитесь, что права доступа для этого каталога разрешают чтение/запись пользователю <code>vdsm</code> (UID 36) и группе <code>kvm</code> (GID 36).<pre class="highlight plaintext"><code># chown 36:36 /data /data/images
+# chmod 0755 /data /data/images
 </code></pre>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>Your local storage is ready to be added to the oVirt environment.</p>
+<p>Локальное хранилище готово для добавления в окружение oVirt.</p>
 
-<h4 id="adding-local-storage">Adding Local Storage</h4>
+<h4 id="adding-local-storage">Добавление локального хранилища</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Storage local to your host has been prepared. Now use oVirt to add it to the host.</p>
+<p>Локальное хранилище для хоста было приготовлено. Теперь с помощью oVirt добавьте его к хосту.</p>
 
-<p>Adding local storage to a host in this manner causes the host to be put in a new data center and cluster. The local storage configuration window combines the creation of a data center, a cluster, and storage into a single process.</p>
+<p>Такой способ добавления локального хранилища помещает хост в новый дата-центр и кластер. В окне настройки локального хранилища создание дата-центра, кластера и хранилища объединено в один процесс.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.4.&nbsp;Adding Local Storage</strong></p>
+<p><strong>Действие&nbsp;7.4.&nbsp;Добавление локального хранилища</strong></p>
 
 <ol>
-  <li>Use the <strong>Hosts</strong> resource tab, tree mode, or the search function to find and select the host in the results list.</li>
-  <li>Click <strong>Maintenance</strong> to open the <strong>Maintenance Host(s)</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to initiate maintenance mode.</li>
+  <li>Используйте ресурсную вкладку <strong>Хосты</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный хост в списке результатов.</li>
+  <li>Нажмите <strong>Обслуживание</strong> чтобы открыть окно подтверждения <strong>Обслуживание хоста</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы инициировать режим обслуживания.</li>
   <li>
-    <p>Click <strong>Configure Local Storage</strong> to open the <strong>Configure Local Storage</strong> window.
+    <p>Нажмите <strong>Настроить локальное хранилище</strong> чтобы открыть окно <strong>Настроить локальное хранилище</strong>.
 ⁠</p>
 
-    <p><img alt="Configure Local Storage Window" title="Configure Local Storage Window" src="./OVirt Administration Guide — oVirt_files/Configure_Local_Storage.png"></p>
+    <p><img alt="Configure Local Storage Window" title="Окно параметров локального хранилища" src="./OVirt Administration Guide — oVirt_files/Configure_Local_Storage.png"></p>
 
-    <p><strong>Figure&nbsp;7.2.&nbsp;Configure Local Storage Window</strong></p>
+    <p><strong>Рисунок&nbsp;7.2.&nbsp;Окно параметров локального хранилища</strong></p>
   </li>
-  <li>Click the <strong>Edit</strong> buttons next to the <strong>Data Center</strong>, <strong>Cluster</strong>, and <strong>Storage</strong> fields to configure and name the local storage domain.</li>
-  <li>Set the path to your local storage in the text entry field.</li>
-  <li>If applicable, select the <strong>Optimization</strong> tab to configure the memory optimization policy for the new local storage cluster.</li>
-  <li>Click <strong>OK</strong> to save the settings and close the window.</li>
+  <li>Нажмите кнопки <strong>Изменить</strong> рядом с полями <strong>Дата-центр</strong>, <strong>Кластер</strong> и <strong>Хранилище</strong> чтобы настроить и указать имя домена локального хранилища.</li>
+  <li>В текстовом поле укажите путь к локальному хранилищу.</li>
+  <li>В случае необходимости перейдите на вкладку <strong>Оптимизация</strong> чтобы настроить политику оптимизации памяти для нового кластера локального хранилища.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохранить параметры и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>Your host comes online in a data center of its own.</p>
+<p>Хост появляется на своём дата-центре.</p>
 
-<h3 id="adding-posix-compliant-file-system-storage">Adding POSIX Compliant File System Storage</h3>
+<h3 id="adding-posix-compliant-file-system-storage">Добавление хранилища на основе файловой системы, поддерживающей стандарты POSIX</h3>
 
-<p>oVirt&nbsp;3.1 and higher supports the use of POSIX (native) file systems for storage. POSIX file system support allows you to mount file systems using the same mount options that you would normally use when mounting them manually from the command line. This functionality is intended to allow access to storage not exposed using NFS, iSCSI, or FCP.</p>
+<p>oVirt версии 3.1 и выше поддерживает использование хранилищ на базе файловых систем POSIX (встроенных). Поддержка файловых систем POSIX дваёт возможность монтирования ФС с помощью тех же параметров монтирования, что используются при монтировании вручную через командную строку. Этот фнукционал предназначен для доступа к хранилищу, доступ к которому не открыт с помощью NFS, iSCSI или FCP.</p>
 
-<p>Any POSIX compliant filesystem used as a storage domain in oVirt <strong>MUST</strong> support sparse files and direct I/O. The Common Internet File System (CIFS), for example, does not support direct I/O, making it incompatible with oVirt.</p>
+<p>Все ФС, поддерживающие стандарт POSIX, используемые под домен хранилища в oVirt, <strong>ДОЛЖНЫ</strong> поддерживать резрежённые файлы и прямой ввод/вывод. Файловая система CIFS, например, не поддерживает прямой ввод/вывод, что делает её несовместимой с oVirt.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Do <em>not</em> mount NFS storage by creating a POSIX compliant file system Storage Domain. Always create an NFS Storage Domain instead.</p>
+  <p><strong>Важно:</strong> <em>не</em> монтируйте хранилище NFS с помощью создания домена хранилища на файловой системе, поддерживающей POSIX. Всегда создавайте домен хранилища на NFS.</p>
 
 </div>
 
-<h4 id="attaching-posix-compliant-file-system-storage">Attaching POSIX Compliant File System Storage</h4>
+<h4 id="attaching-posix-compliant-file-system-storage">Присоединение хранилища на POSIX-совместимой файловой системе</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You want to use a POSIX compliant file system that is not exposed using NFS, iSCSI, or FCP as a storage domain.</p>
+<p>Для домена хранилища нам нужно использовать совместимую с POSIX файловую систему, не открытую для доступа с помощью NFS, iSCSI или FCP.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.5.&nbsp;Attaching POSIX Compliant File System Storage</strong></p>
+<p><strong>Действие&nbsp;7.5.&nbsp;Присоединение хранилища на POSIX-совместимой ФС</strong></p>
 
 <ol>
-  <li>Click the <strong>Storage</strong> resource tab to list the existing storage domains in the results list.</li>
+  <li>Перейдите на вкладку <strong>Хранилище</strong> чтобы увидеть список существующих доменов хранилищ.</li>
   <li>
-    <p>Click <strong>New Domain</strong> to open the <strong>New Domain</strong> window.
+    <p>Нажмите <strong>Добавить домен</strong> чтобы открыть окно <strong>Добавить домен</strong>.
 ⁠</p>
 
-    <p><img alt="POSIX Storage" title="POSIX Storage" src="./OVirt Administration Guide — oVirt_files/New_Domain_Posix.png"></p>
+    <p><img alt="POSIX Storage" title="Хранилище POSIX" src="./OVirt Administration Guide — oVirt_files/New_Domain_Posix.png"></p>
 
-    <p><strong>Figure&nbsp;7.3.&nbsp;POSIX Storage</strong></p>
+    <p><strong>Рисунок&nbsp;7.3.&nbsp;Хранилище POSIX</strong></p>
   </li>
-  <li>Enter the <strong>Name</strong> for the storage domain.</li>
-  <li>Select the <strong>Data Center</strong> to be associated with the storage domain. The Data Center selected must be of type <strong>POSIX (POSIX compliant FS)</strong>. Alternatively, select <code>(none)</code>.</li>
-  <li>Select <code>Data / POSIX compliant FS</code> from the <strong>Domain Function / Storage Type</strong> drop-down menu. If applicable, select the <strong>Format</strong> from the drop-down menu.</li>
-  <li>Select a host from the <strong>Use Host</strong> drop-down menu. Only hosts within the selected data center will be listed. The host that you select will be used to connect the storage domain.</li>
-  <li>Enter the <strong>Path</strong> to the POSIX file system, as you would normally provide it to the <code>mount</code> command.</li>
-  <li>Enter the <strong>VFS Type</strong>, as you would normally provide it to the <code>mount</code> command using the <em><code>-t</code></em> argument. See <code>man mount</code> for a list of valid VFS types.</li>
-  <li>Enter additional <strong>Mount Options</strong>, as you would normally provide them to the <code>mount</code> command using the <em><code>-o</code></em> argument. The mount options should be provided in a comma-separated list. See <code>man mount</code> for a list of valid mount options.</li>
-  <li>Click <strong>OK</strong> to attach the new Storage Domain and close the window.</li>
+  <li>Введите <strong>Имя</strong> домена хранилища.</li>
+  <li>Выберите <strong>Дата-центр</strong>, который будет связан с доменом хранилища. Дата-центр должен иметь тип <strong>POSIX (ФС, совместимая с POSIX)</strong>. Или выберите <code>(нет)</code>.</li>
+  <li>Выберите пункт <code>Данные / POSIX совместимая ФС</code> из выпадающего меню <strong>Функция домена / Тип хранилища</strong>. Если необходимо, выберите также пункт <strong>Формат</strong>.</li>
+  <li>В выпадающем меню <strong>Использовать хост</strong> выберите хост. Будут показаны только хосты, принадлежащие одному дата-центру. Выбранный хост будет использован для подключения домена хранилища.</li>
+  <li>Укажите <strong>Путь</strong> до POSIX ФС, точно также, как указывается путь команде <code>mount</code>.</li>
+  <li>Укажите <strong>Тип VFS</strong>, точно также, как указывается тип ФС команде <code>mount</code> с помощью аргумента <em><code>-t</code></em>. Список доступных ФС см. в <code>man mount</code>.</li>
+  <li>Введите дополнительные <strong>Параметры монтирования</strong>, точно также, как они указываются для команды <code>mount</code> с помощью аргумента <em><code>-o</code></em>. Параметры монтирования передаются списком, разделённым запятыми. Список достпных параметров монтирования см.в <code>man mount</code>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы присоединить новый домен хранилища и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have used a supported mechanism to attach an unsupported file system as a storage domain.</p>
+<p>Мы использовали поддерживаемый механизм для присоединения неподдерживаемой ФС в качестве домена хранилища.</p>
 
-<h3 id="preparing-and-adding-block-storage">Preparing and Adding Block Storage</h3>
+<h3 id="preparing-and-adding-block-storage">Подготовка и добавление блочного хранилища</h3>
 
-<h4 id="preparing-iscsi-storage">Preparing iSCSI Storage</h4>
+<h4 id="preparing-iscsi-storage">Подготовка хранилища iSCSI</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>These steps must be taken to export iSCSI storage device from a server running Red Hat Enterprise Linux 6 to use as a storage domain with oVirt.</p>
+<p>Шаги, необходимые для экспорта устройства хранилища iSCSI с сервера под управлением Red Hat Enterprise Linux 6 для использования его в качестве домена хранилища в oVirt.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.6.&nbsp;Preparing iSCSI Storage</strong></p>
+<p><strong>Действие&nbsp;7.6.&nbsp;Подготовка хранилища iSCSI</strong></p>
 
 <ol>
   <li>
-    <p>Install the <strong>scsi-target-utils</strong> package using the <code>yum</code> command as root on your storage server.
-    # yum install -y scsi-target-utils</p>
+    <p>На сервере хранилища установите пакет <strong>scsi-target-utils</strong> с помощью команды <code>yum</code> с привилегиями пользователя <code>root</code>.
+    <pre class="highlight plaintext"><code># yum install -y scsi-target-utils</code></pre>
   </li>
   <li>
-    <p>Add the devices or files you want to export to the <code>/etc/tgt/targets.conf</code> file. Here is a generic example of a basic addition to the <code>targets.conf</code> file:
+    <p>Добавьте файловые устройства, которые нужно экспортировать, в файл <code>/etc/tgt/targets.conf</code>.  Вот универсальный пример основных добавлений в файл <code>targets.conf</code>:
     <target iqn.year-month.com.example:server.targetx="">
-              backing-store /PATH/TO/DEVICE1 # Becomes LUN 1
-              backing-store /PATH/TO/DEVICE2 # Becomes LUN 2
-              backing-store /PATH/TO/DEVICE3 # Becomes LUN 3
+              backing-store /PATH/TO/DEVICE1 # Becomes LUN 1</p>
+              backing-store /PATH/TO/DEVICE2 # Becomes LUN 2</p>
+              backing-store /PATH/TO/DEVICE3 # Becomes LUN 3</p>
     </target></p>
 
-    <p>Targets are conventionally defined using the year and month they are created, the reversed fully qualified domain that the server is in, the server name, and a target number.</p>
+    <p>В соответствии с принятой схемой, цели определены годом и месяцем их создания, обратным полным доменным именем домена, на котором находится сервер, именем сервера и номером цели.</p>
   </li>
   <li>
-    <p>Start the <strong>tgtd</strong> service.
-    # service tgtd start</p>
+    <p>Запустите службу <strong>tgtd</strong>.
+    <pre class="highlight plaintext"><code># service tgtd start</code></pre>
   </li>
   <li>
-    <p>Make the <strong>tgtd</strong> start persistently across reboots.
-    # chkconfig tgtd on</p>
+    <p>Сделайте службу <strong>tgtd</strong> автоматически запускаемой при старте системы.</p>
+    <pre class="highlight plaintext"><code># chkconfig tgtd on</code></pre>
   </li>
   <li>
-    <p>Open an iptables firewall port to allow clients to access your iSCSI export. By default, iSCSI uses port 3260. This example inserts a firewall rule at position 6 in the INPUT table.
+    <p>Откройте порт в брандмауэре iptables, чтобы разрешить клиентам доступ к экспортированному устройству iSCSI. По умолчанию iSCSI использует порт 3260. В примере ниже добавляется правило на позицию номер 6 в таблице INPUT.</p>
     # iptables -I INPUT 6 -p tcp –dport 3260 -j ACCEPT</p>
   </li>
   <li>
-    <p>Save the iptables rule you just created.
+    <p>Сохраните созданное правило iptables.</p>
     # service iptables save</p>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have created a basic iSCSI export. You can use it as an iSCSI data domain.</p>
+<p>Мы создали основное устройство экспорта iSCSI, которое можно использовать как домен данных iSCSI.</p>
 
-<h4 id="adding-iscsi-storage">Adding iSCSI Storage</h4>
+<h4 id="adding-iscsi-storage">Добавление хранилища iSCSI</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>oVirt platform supports iSCSI storage by creating a storage domain from a volume group made of pre-existing LUNs. Neither volume groups nor LUNs can be attached to more than one storage domain at a time.</p>
+<p>Платформа oVirt поддерживает хранилище iSCSI с помощью создания домена хранилища из группы томов, состоящей из ранее созданных LUN. Ни группы томов ни LUN не могут быть присоединены более чем к одному домену хранилища одновременно.</p>
 
-<p>For information regarding the setup and configuration of iSCSI on Red Hat Enterprise Linux, see the <em>Red Hat Enterprise Linux Storage Administration Guide</em>.</p>
+<p>Подробности установки и настройки iSCSI на Red Hat Enterprise Linux см. в <em>Руководстве администратора хранилищ Red Hat Enterprise Linux</em>.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> You can only add an iSCSI storage domain to a data center that is set up for iSCSI storage type.</p>
+  <p><strong>Внимание:</strong> добавлять домен хранилища iSCSI можно только к дата-центру, настроенному для хранилищ с типом iSCSI.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.7.&nbsp;Adding iSCSI Storage</strong></p>
+<p><strong>Действие&nbsp;7.7.&nbsp;Добавление хранилища iSCSI</strong></p>
 
 <ol>
-  <li>Click the <strong>Storage</strong> resource tab to list the existing storage domains in the results list.</li>
-  <li>Click the <strong>New Domain</strong> button to open the <strong>New Domain</strong> window.</li>
+  <li>Перейдите на ресурсную вкладку <strong>Хранилище</strong> чтобы увидеть список существующих доменов хранилищ.</li>
+  <li>Нажмите на кнопку <strong>Добавить домен</strong> чтобы открыть окно <strong>Добавить домен</strong>.</li>
   <li>
-    <p>Enter the <strong>Name</strong> of the new storage domain.
+    <p>Введите <strong>Имя</strong> нового домена хранилища.
 ⁠</p>
 
-    <p><img alt="New iSCSI Domain" title="New iSCSI Domain" src="./OVirt Administration Guide — oVirt_files/New_Domain_iscsi.png"></p>
+    <p><img alt="New iSCSI Domain" title="Новый домен iSCSI" src="./OVirt Administration Guide — oVirt_files/New_Domain_iscsi.png"></p>
 
-    <p><strong>Figure&nbsp;7.4.&nbsp;New iSCSI Domain</strong></p>
+    <p><strong>Рисунок&nbsp;7.4.&nbsp;Новый домен iSCSI</strong></p>
   </li>
-  <li>Use the <strong>Data Center</strong> drop-down menu to select an iSCSI data center. If you do not yet have an appropriate iSCSI data center, select <code>(none)</code>.</li>
-  <li>Use the drop-down menus to select the <strong>Domain Function / Storage Type</strong> and the <strong>Format</strong>. The storage domain types that are not compatible with the chosen data center are not available.</li>
-  <li>Select an active host in the <strong>Use Host</strong> field. If this is not the first data domain in a data center, you must select the data center's SPM host.
+  <li>В выпадающем меню <strong>Дата-центр</strong> выберите дата-центр iSCSI. В случае отсутствия подходящего дата-центра iSCSI, выберите <code>(нет)</code>.</li>
+  <li>В выпадающем меню выберите <strong>Функция домена / Тип хранилища</strong> и <strong>Формат</strong>. Типы доменов хранилищ, несовместимые с выбранным дата-центром, недоступны.</li>
+  <li>В поле <strong>Использовать хост</strong> выберите активный хост. Если это не первый домен данных в этом дата-центре, необходимо выбрать хост диспетчера пула хранилища (SPM) этого дата-центра.
     <div class="alert alert-info">
-      <p><strong>Important:</strong> All communication to the storage domain is via the selected host and not directly from oVirt. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.</p>
+      <p><strong>Важно:</strong> связь с доменом хранилища осуществляется с выбранного хоста, а не напрямую из oVirt. Перед настройкой хранилища к выбранному дата-центру необходимо присоединить как минимум один активный хост.</p>
 
     </div>
   </li>
   <li>
-    <p>oVirt is able to map either iSCSI targets to LUNs, or LUNs to iSCSI targets. The <strong>New Domain</strong> window automatically displays known targets with unused LUNs when iSCSI is selected as the storage type. If the target that you are adding storage from is not listed then you can use target discovery to find it, otherwise proceed to the next step.
-<strong>iSCSI Target Discovery</strong></p>
+    <p>oVirt может либо сопоставить таргеты iSCSI с номерами LUN, либо номера LUN с таргетами iSCSI. В окне <strong>Добавить домен</strong>, при выборе типа хранилища iSCSI автоматически показываются известные таргеты с неиспользуемыми номерами LUN. Если таргет, из которого добавляется хранилище, отсутствует в списке, для его нахождения можно использовать обнаружение таргетов iSCSI; в противном случае переходите к следующему шагу.</p>
+<strong>Обнаружение таргетов iSCSI</strong></p>
 
     <ol>
-      <li>Click <strong>Discover Targets</strong> to enable target discovery options. When targets have been discovered and logged in to, the <strong>New Domain</strong> window automatically displays targets with LUNs unused by the environment.
+      <li>Нажмите <strong>Обнаружение таргетов</strong> чтобы активировать параметры обнаружения целей. После обнаружения и соединения с таргетом, окно <strong>Добавить домен</strong> автоматически отобразит таргеты с LUN, не используемыми в окружении.
         <div class="alert alert-info">
-          <p><strong>Note:</strong> LUNs used externally to the environment are also displayed.</p>
+          <p><strong>Внимание:</strong> номера LUN, используемые вне окружения, тоже показываются.</p>
 
         </div>
-        <p>You can use the <strong>Discover Targets</strong> options to add LUNs on many targets, or multiple paths to the same LUNs.</p>
+        <p>С помощью параметров <strong>Обнаружения таргетов</strong> можно добавлять номера LUN нескольким целям, или добавлять несколько путей одному и тому же LUN.</p>
       </li>
-      <li>Enter the fully qualified domain name or IP address of the iSCSI host in the <strong>Address</strong> field.</li>
-      <li>Enter the port to connect to the host on when browsing for targets in the <strong>Port</strong> field. The default is <code>3260</code>.</li>
-      <li>If the Challenge Handshake Authentication Protocol (CHAP) is being used to secure the storage, select the <strong>User Authentication</strong> check box. Enter the <strong>CHAP user name</strong> and <strong>CHAP password</strong>.</li>
-      <li>Click the <strong>Discover</strong> button.</li>
-      <li>Select the target to use from the discovery results and click the <strong>Login</strong> button. Alternatively, click the <strong>Login All</strong> to log in to all of the discovered targets.</li>
+      <li>Введите полное доменное имя или адрес IP хоста iSCSI в поле <strong>Адрес</strong>.</li>
+      <li>В поле <strong>Порт</strong> введите номер порта, через который будет производиться подключение к хосту во время обнаружения таргетов. По умолчанию используется <code>3260</code>.</li>
+      <li>Если для защиты хранилища применяется протокол CHAP, отметьте галочкой пункт <strong>Аутентификация пользователя</strong>. Введите <strong>Имя пользователя CHAP</strong> и <strong>Пароль CHAP</strong>.</li>
+      <li>Нажмите кнопку <strong>Обнаружить</strong>.</li>
+      <li>Выберите один из обнаруженных таргетов и нажмите кнопку <strong>Вход в систему</strong>. Или нажмите <strong>Вход в систему (все)</strong> чтобы авторизоваться на всех обнаруженных таргетах.</li>
     </ol>
   </li>
-  <li>Click the <strong>+</strong> button next to the desired target. This will expand the entry and display all unused LUNs attached to the target.</li>
-  <li>Select the check box for each LUN that you are using to create the storage domain.</li>
-  <li>Click <strong>OK</strong> to create the storage domain and close the window.</li>
+  <li>Нажмите кнопку <strong>+</strong> рядом с нужным таргетом. Элемент будет развёрнут, что покажет все неиспользуемые LUN, присоединённые к таргету.</li>
+  <li>Отметьте галочкой каждый LUN, который будет использован для создания домена хранилища.</li>
+  <li>Нажмите <strong>OK</strong> чтобы создать домен хранилища и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The new iSCSI storage domain displays on the storage tab. This can take up to 5 minutes.</p>
+<p>Во вкладке хранилищ появится домен хранилища iSCSI. Это действие может занять до 5 минут.</p>
 
-<h4 id="adding-fcp-storage">Adding FCP Storage</h4>
+<h4 id="adding-fcp-storage">Добавление хранилища FCP</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>oVirt platform supports SAN storage by creating a storage domain from a volume group made of pre-existing LUNs. Neither volume groups nor LUNs can be attached to more than one storage domain at a time.</p>
+<p>Платформа oVirt поддерживает хранилище SAN с помощью создания домена хранилища из группы томов, созданной из уже существующих LUN. Ни группы томов ни LUN не могут быть присоединены более чем к одному домену хранилища одновременно.</p>
 
-<p>oVirt system administrators need a working knowledge of Storage Area Networks (SAN) concepts. SAN usually uses Fibre Channel Protocol (FCP) for traffic between hosts and shared external storage. For this reason, SAN may occasionally be referred to as FCP storage.</p>
+<p>Системные администраторы oVirt должны обладать практическими знаниями приниципов сетей хранения данных SAN. Для обмена информацией между хостами и общим внешним хранилищем в SAN обычно используется протокол FCP. В связи с этим, SAN иногда называют «хранилищем FCP».</p>
 
-<p>For information regarding the setup and configuration of FCP or multipathing on Red Hat Enterprise Linux, please refer to the <em>Storage Administration Guide</em> and <em>DM Multipath Guide</em>.</p>
+<p>Подробности о настройках и параметрах FCP или о многоканальности в Red Hat Enterprise Linux см. в <em>Руководстве по администрированию хранилищ</em> и <em>Руководстве по многоканальности DM</em>.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> You can only add an FCP storage domain to a data center that is set up for FCP storage type.</p>
+  <p><strong>Внимание:</strong> добавлять домен хранилища FCP можно только к дата-центру, настроенному для хранилищ с типом FCP.</p>
 
 </div>
-<p><strong>Procedure&nbsp;7.8.&nbsp;Adding FCP Storage</strong></p>
+<p><strong>Действие&nbsp;7.8.&nbsp;Добавление хранилища FCP</strong></p>
 
 <ol>
-  <li>Click the <strong>Storage</strong> resource tab to list all storage domains in the virtualized environment.</li>
-  <li>Click <strong>New Domain</strong> to open the <strong>New Domain</strong> window.</li>
+  <li>Перейдите на ресурсную вкладку <strong>Хранилище</strong> чтобы увидеть список существующих доменов хранилищ.</li>
+  <li>Нажмите на кнопку <strong>Добавить домен</strong> чтобы открыть окно <strong>Добавить домен</strong>.</li>
   <li>
-    <p>Enter the <strong>Name</strong> of the storage domain
+    <p>Введите <strong>Имя</strong> домена хранилища
 ⁠</p>
 
     <p><img alt="Adding FCP Storage" title="Adding FCP Storage" src="./OVirt Administration Guide — oVirt_files/New_Domain_FCP.png"></p>
 
-    <p><strong>Figure&nbsp;7.5.&nbsp;Adding FCP Storage</strong></p>
+    <p><strong>Рисунок&nbsp;7.5.&nbsp;Добавление хранилища FCP</strong></p>
   </li>
-  <li>Use the <strong>Data Center</strong> drop-down menu to select an FCP data center. If you do not yet have an appropriate FCP data center, select <code>(none)</code>.</li>
-  <li>Use the drop-down menus to select the <strong>Domain Function / Storage Type</strong> and the <strong>Format</strong>. The storage domain types that are not compatible with the chosen data center are not available.</li>
+  <li>В выпадающем меню <strong>Дата-центр</strong> выберите дата-центр FCP. Если подходящий дата-центр FCP отсутствует, выберите <code>(нет)</code>.</li>
+  <li>В выпадающем меню выберите пункты <strong>Функция домена / Тип хранилища</strong> и <strong>Формат</strong>. Типы доменов хранилищ, несовместимые с выбранным дата-центром, будут недоступны.</li>
   <li>
-    <p>Select an active host in the <strong>Use Host</strong> field. If this is not the first data domain in a data center, you must select the data center's SPM host.
-<strong>Important</strong></p>
+    <p>В поле <strong>Использовать хост</strong> выберите активный хост. Если это не первый домен данных в этом дата-центре, необходимо выбрать хост диспетчера пула хранилища (SPM) этого дата-центра.
+<strong>Важно:</strong></p>
 
-    <p>All communication to the storage domain is via the selected host and not directly from oVirt. At least one active host must exist in the system, and be attached to the chosen data center, before the storage is configured.</p>
+    <p> связь с доменом хранилища осуществляется с выбранного хоста, а не напрямую из oVirt. Перед настройкой хранилища к выбранному дата-центру необходимо присоединить как минимум один активный хост.</p>
   </li>
-  <li>The <strong>New Domain</strong> window automatically displays known targets with unused LUNs when <strong>Data / Fibre Channel</strong> is selected as the storage type. Select the <strong>LUN ID</strong> check box to select all of the available LUNs.</li>
-  <li>Click <strong>OK</strong> to create the storage domain and close the window.</li>
+  <li>При выборе типа хранилища <strong>Данные / Оптоволоконный канал</strong> в окне <strong>Добавить домен</strong> будут автоматически показаны известные таргеты с неиспользуемыми LUN. Отметьте пункт <strong>LUN ID</strong> для выбора всех доступных LUN.</li>
+  <li>Нажмите <strong>OK</strong> чтобы создать домен хранилища и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The new FCP data domain displays on the <strong>Storage</strong> tab. It will remain with a <code>Locked</code> status while it is being prepared for use. When ready, it is automatically attached to the data center.</p>
+<p>Новый домен данных FCP появляется во вкладке <strong>Хранилище</strong>. Во время подготовки к использованию он будет иметь статус <code>Заблокирован</code>. Готовый домен автоматичсеки присоединяется к дата-центру.</p>
 
-<h4 id="unusable-luns-in-ovirt">Unusable LUNs in oVirt</h4>
+<h4 id="unusable-luns-in-ovirt">Неиспользуемые LUN в oVirt</h4>
 
-<p>In certain circumstances, oVirt will not allow you to use a LUN to create a storage domain or virtual machine hard disk.</p>
+<p>В определённых условиях oVirt не позволит использовать LUN для создания домена хранилища или жёсткого диска ВМ.</p>
 
 <ul>
-  <li>LUNs that are already part of the current oVirt environment are automatically prevented from being used.</li>
-  <li>LUNs that are already being used by the SPM host will also display as in use. You can choose to forcefully over ride the contents of these LUNs, but the operation is not guaranteed to succeed.</li>
+  <li>LUN, уже являющиеся частью текущего окружения oVirt, автоматически предохраняются от использования.</li>
+  <li>LUN, уже использующиеся хостом-диспетчером пула хранилища (SPM), также показываются как используемые. Можно выбрать возможность принудительно перезаписать содержимое этих LUNs, но успех этой операции не гарантируется.</li>
 </ul>
 
-<h3 id="storage-tasks">Storage Tasks</h3>
+<h3 id="storage-tasks">Задачи хранилища</h3>
 
-<h4 id="importing-existing-iso-or-export-storage-domains">Importing Existing ISO or Export Storage Domains</h4>
+<h4 id="importing-existing-iso-or-export-storage-domains">Импорт существующего домена ISO или домена экспорта</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You have an ISO or export domain that you have been using with a different data center. You want to attach it to the data center you are using, and import virtual machines or use ISOs.</p>
+<p>Существует домен ISO или домен экспорта, ранее используемый с другим дата-центром. Домен необходимо присоединить к используемому дата-центру, и импортировать ВМ или использовать образы ISO.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.9.&nbsp;Importing an Existing ISO or Export Storage Domain</strong></p>
+<p><strong>Действие&nbsp;7.9.&nbsp;Импорт существующего домена ISO или домена экспорта</strong></p>
 
 <ol>
-  <li>Click the <strong>Storage</strong> resource tab to list all the available storage domains in the results list.</li>
+  <li>Перейдите на ресурсную вкладку <strong>Хранилище</strong> чтобы увидеть список существующих доменов хранилищ.</li>
   <li>
-    <p>Click <strong>Import Domain</strong> to open the <strong>Import Pre-Configured Domain</strong> window.
+    <p>Нажмите на кнопку <strong>Импортировать домен</strong> чтобы открыть окно <strong>Импортировать предварительно настроенный домен</strong>.
 ⁠</p>
 
-    <p><img alt="Import Domain" title="Import Domain" src="./OVirt Administration Guide — oVirt_files/Import_Domain.png"></p>
+    <p><img alt="Import Domain" title="Импорт домена" src="./OVirt Administration Guide — oVirt_files/Import_Domain.png"></p>
 
-    <p><strong>Figure&nbsp;7.6.&nbsp;Import Pre-Configured Domain</strong></p>
+    <p><strong>Рисунок&nbsp;7.6.&nbsp;Импорт предаварительно настроенного домена</strong></p>
   </li>
-  <li>Select the appropriate <strong>Domain Function / Storage Type</strong> from the following:
+  <li>Выберите нужные <strong>Функция домена / Тип хранилища</strong> из следующих:
     <ul>
       <li>ISO</li>
-      <li>Export</li>
+      <li>Экспорт</li>
     </ul>
 
-    <p>The <strong>Domain Function / Storage Type</strong> determines the availability of the <strong>Format</strong> field.</p>
+    <p>Пункты <strong>Функция домена / Тип хранилища</strong> определяет доступность поля <strong>Формат</strong>.</p>
   </li>
-  <li>Select the SPM host from the <strong>Use host</strong> drop-down menu.
+  <li>Выберите хост SPM в выпадающем меню <strong>Использовать хост</strong>.
     <div class="alert alert-info">
-      <p><strong>Important:</strong>All communication to the storage domain is via the selected host and not from oVirt. At least one host must be active and have access to the storage before the storage can be configured.</p>
+      <p><strong>Важно:</strong> связь с доменом хранилища осуществляется с выбранного хоста, а не напрямую из oVirt. До начала настройки хранилища должен существовать как минимум один активный хост с доступом к хранилищу.</p>
 
     </div>
   </li>
-  <li>Enter the <strong>Export path</strong> of the storage. The export path can be either a static <strong>IP address</strong> or a resolvable hostname. For example, <code>192.168.0.10:/Images/ISO</code> or <code>storage.demo.redhat.com:/exports/iso</code>.</li>
-  <li>Click <strong>OK</strong> to import the domain and close the window.</li>
-  <li>The storage domain is imported and displays on the <strong>Storage</strong> tab. The next step is to attach it to a data center. This is described later in this chapter, .</li>
+  <li>Введите <strong>Путь экпорта</strong> хранилища. Путь экспорта может быть либо статическим <strong>Адресом IP</strong> либо разрешаемым именем хоста. Например, <code>192.168.0.10:/Images/ISO</code> или <code>storage.demo.redhat.com:/exports/iso</code>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы импортировать домен и закрыть окно.</li>
+  <li>Домен хранилища импортируется и появляется на вкладке <strong>Хранилище</strong>. Следующий шаг: присоединение его к дата-центру. Это действие будет описано позже в данной главе.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have imported your export or ISO domain to you data center. Attach it to a data center to use it.</p>
+<p>Мы импортировали домен ISO или домен экспорта в наш дата-центр. Для работы с ним присоедините его к дата-центру.</p>
 
-<h4 id="populating-the-iso-storage-domain">Populating the ISO Storage Domain</h4>
+<h4 id="populating-the-iso-storage-domain">Заполнение домена хранилища ISO</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>An ISO storage domain is attached to a data center, ISO images must be uploaded to it. oVirt provides an ISO uploader tool that ensures that the images are uploaded into the correct directory path, with the correct user permissions.</p>
+<p>Домен хранилища ISO был присоединён к дата-центру, теперь в хранилище необходимо загрузить образы ISO. oVirt предоставляет инструмент-загрузщик ISO, гарантирующий, что образы будут загружены по правильному пути и с корректными правами доступа.</p>
 
-<p>The creation of ISO images from physical media is not described in this document. It is assumed that you have access to the images required for your environment.</p>
+<p>Создание образов ISO физических носителей не описано в данном документе. Предполагается, что доступ к образам, требуемым для окружения, уже имеется.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.10.&nbsp;Populating the ISO Storage Domain</strong></p>
+<p><strong>Действие&nbsp;7.10.&nbsp;Заполнение домена хранилища ISO</strong></p>
 
 <ol>
-  <li>Copy the required ISO image to a temporary directory on the system running oVirt.</li>
-  <li>Log in to the system running oVirt as the <code>root</code> user.</li>
+  <li>Скопируйте нужный образ ISO во временный каталог системы, где работает oVirt.</li>
+  <li>Выполните вход в систему с работающей oVirt с правами пользователя <code>root</code>.</li>
   <li>
-    <p>Use the <code>engine-iso-uploader</code> command to upload the ISO image. This action will take some time, the amount of time varies depending on the size of the image being uploaded and available network bandwidth.
+    <p>С помощью команды <code>engine-iso-uploader</code> загрузите образ ISO. Для выполнения этого действия понадобится некоторое время, в зависимости от размера образа и пропускной способности доступного канала.
 ⁠</p>
 
-    <p><strong>Example&nbsp;7.1.&nbsp;ISO Uploader Usage</strong></p>
+    <p><strong>Пример&nbsp;7.1.&nbsp;Использование загрузчика ISO</strong></p>
 
-    <p>In this example the ISO image <code>RHEL6.iso</code> is uploaded to the ISO domain called <code>ISODomain</code> using NFS. The command will prompt for an administrative user name and password. The user name must be provided in the form <em>user name</em>@<em>domain</em>.</p>
+    <p>В данном примере образ ISO <code>RHEL6.iso</code> загружается на домен ISO с именем <code>ISODomain</code>, использующий NFS. Команда запросит имя и пароль администратора. Имя пользователя должно быть указано в форме <em>имя_пользователя</em>@<em>домен</em>.</p>
 
 <pre class="highlight plaintext"><code># engine-iso-uploader --iso-domain=ISODomain upload RHEL6.iso
 </code></pre>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The ISO image is uploaded and appears in the ISO storage domain specified. It is also available in the list of available boot media when creating virtual machines in the data center which the storage domain is attached to.</p>
+<p>Образ ISO был загружен и появился на указанном домене хранилища ISO. Он также появляется в списке доступных загрузочных носителей при создании ВМ в дата-центре, к которому присоединён домен хранилища.</p>
 
-<h4 id="moving-storage-domains-to-maintenance-mode">Moving Storage Domains to Maintenance Mode</h4>
+<h4 id="moving-storage-domains-to-maintenance-mode">Перевод доменов хранилища в режим обслуживания</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Detaching and removing storage domains requires that they be in maintenance mode. This is required to redesignate another data domain as the master data domain.</p>
+<p>Для отсоединения и перемещения доменов хранилищ необходимо, чтобы домены находились в режиме обслуживания. Это необходимо для переназначения другого домена данных в качестве основного домена данных.</p>
 
-<p>Editing domains and expanding iSCSI domains by adding more LUNs can only be done when the domain is active.</p>
+<p>Изменение параметров доменов и расширение доменов iSCSI с помощью добавления LUN можно выполнять только если домен является активным.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Put any active ISO and export domains in maintenance mode using this procedure.</p>
+  <p><strong>Важно:</strong> переведите любой активный домен ISO и домен экспорта в режим обслуживания, выполнив это действие.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.11.&nbsp;Moving storage domains to maintenance mode</strong></p>
+<p><strong>Действие&nbsp;7.11.&nbsp;Перевод доменов хранилища в режим обслуживания</strong></p>
 
 <ol>
-  <li>Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the storage domain in the results list.</li>
-  <li>Shut down and move all the virtual machines running on the storage domain.</li>
-  <li>Click the <strong>Data Centers</strong> tab in the details pane.</li>
-  <li>Click <strong>Maintenance</strong> to open the <strong>Maintenance Storage Domain(s)</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to initiate maintenance mode. The storage domain is deactivated and has an <code>Inactive</code> status in the results list.</li>
+  <li>Используйте ресурсную вкладку <strong>Хранилище</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный домен хранилища в списке результатов.</li>
+  <li>Выключите и переместите все ВМ, выполняющиеся в домене хранилища.</li>
+  <li>Перейдите на вкладку <strong>Дата-центры</strong> на панели сведений.</li>
+  <li>Нажмите <strong>Обслуживание</strong> чтобы открыть подтверждающее окно <strong>Обслуживание доменов хранилищ</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы инициировать ражим обслуживания. Домен хранилища деактивируется и имеет статус <code>Неактивен</code> в списке результатов.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You can now edit, detach, remove, or reactivate the inactive storage domains from the data center.</p>
+<p>Теперь мы можем изменять, отсоединять, удалять или повторно активировать домены хранилищ в дата-центре.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> You can also activate, detach and place domains into maintenance mode using the Storage tab on the details pane of the data center it is associated with.</p>
+  <p><strong>Внимание:</strong> активировать, отсоединять и переводить домены в режим обслуживания можно также с помощью вкладки «Хранилище» на панели сведений того дата-центра, с которым связан домен.</p>
 
 </div>
 
-<h4 id="editing-a-resource-3">Editing a Resource</h4>
+<h4 id="editing-a-resource-3">Изменение ресурса</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Edit the properties of a resource.</p>
+<p>Изменение свойств ресурса.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.12.&nbsp;Editing a Resource</strong></p>
+<p><strong>Действие&nbsp;7.12.&nbsp;Изменение ресурса</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select the resource in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit</strong> window.</li>
-  <li>Change the necessary properties and click <strong>OK</strong>.</li>
+  <li>Используйте ресурсные вкладки, режим дерева или поисковый функционал чтобы найти и выделить ресурс в списке результатов.</li>
+  <li>Нажмите кнопку <strong>Изменить</strong> чтобы открыть окно <strong>Изменить</strong>.</li>
+  <li>Измените необходимые параметры и нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The new properties are saved to the resource. The <strong>Edit</strong> window will not close if a property field is invalid.</p>
+<p>Ресурс сохранён с новыми параметрами. Окно <strong>Изменить</strong> нельзя будет закрыть, если были введены недопустимые значения.</p>
 
-<h4 id="activating-storage-domains">Activating Storage Domains</h4>
+<h4 id="activating-storage-domains">Активация доменов хранилищ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>If you have been making changes to a data center's storage, you have to put storage domains into maintenance mode. Activate a storage domain to resume using it.</p>
+<p>Если были изменены параметры хранилища дата-центра, домены хранилищ необходимо перевести в режим обслуживания. Активируйте домен хранилища чтобы возобновить его работу.</p>
 
 <ol>
-  <li>Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the inactive storage domain in the results list.</li>
-  <li>Click the <strong>Data Centers</strong> tab in the details pane.</li>
-  <li>Select the appropriate data center and click <strong>Activate</strong>.
+  <li>Используйте ресурсную вкладку <strong>Хранилище</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный домен хранилища в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Дата-центры</strong> на панели сведений.</li>
+  <li>Выделите нужный дата-центр и нажмите <strong>Активировать</strong>.
     <div class="alert alert-info">
-      <p><strong>Important:</strong> If you attempt to activate the ISO domain before activating the data domain, an error message displays and the domain is not activated.</p>
+      <p><strong>Важно:</strong> при попытке активировать домен ISO до активации домена данных, будет показано сообщение об ошибке, и домен не будет активирован.</p>
 
     </div>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>Your storage domain is active and ready for use.</p>
+<p>Наш домен хранилища активен и готов к работе.</p>
 
-<h4 id="removing-a-storage-domain">Removing a Storage Domain</h4>
+<h4 id="removing-a-storage-domain">Удаление домена хранилища</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You have a storage domain in your data center that you want to remove from the virtualized environment.</p>
-
-<p>⁠</p>
-
-<p><strong>Procedure&nbsp;7.13.&nbsp;Removing a Storage Domain</strong></p>
-
-<ol>
-  <li>Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the appropriate storage domain in the results list.</li>
-  <li>Move the domain into maintenance mode to deactivate it.</li>
-  <li>Detach the domain from the data center.</li>
-  <li>Click <strong>Remove</strong> to open the <strong>Remove Storage</strong> confirmation window.</li>
-  <li>Select a host from the list.</li>
-  <li>Click <strong>OK</strong> to remove the storage domain and close the window.</li>
-</ol>
-
-<p><strong>Summary</strong></p>
-
-<p>The storage domain is permanently removed from the environment.</p>
-
-<h4 id="destroying-a-storage-domain">Destroying a Storage Domain</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>A storage domain encountering errors may not be able to be removed through the normal procedure. Destroying a storage domain will forcibly remove the storage domain from the virtualized environment without reference to the export directory.</p>
-
-<p>When the storage domain is destroyed, you are required to manually fix the export directory of the storage domain before it can be used again.</p>
+<p>У нас есть домен хранилища, который нужно удалить из виртуализованного окружения.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.14.&nbsp;Destroying a Storage Domain</strong></p>
+<p><strong>Действие&nbsp;7.13.&nbsp;Удаление домена хранилища</strong></p>
 
 <ol>
-  <li>Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the appropriate storage domain in the results list.</li>
-  <li>Right-click the storage domain and select <strong>Destroy</strong> to open the <strong>Destroy Storage Domain</strong> confirmation window.</li>
-  <li>Select the <strong>Approve operation</strong> check box and click <strong>OK</strong> to destroy the storage domain and close the window.</li>
+  <li>Используйте ресурсную вкладку <strong>Хранилище</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный домен хранилища в списке результатов.</li>
+  <li>Переведите домен в режим обслуживания для его деактивации.</li>
+  <li>Отсоедините от дата-центра.</li>
+  <li>Нажмите <strong>Удалить</strong> чтобы открыть окно подтверждения <strong>Удалить хранилище</strong>.</li>
+  <li>Выберите хост в списке.</li>
+  <li>Нажмите <strong>OK</strong> чтобы удалить домен хранилища и зкрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The storage domain has been destroyed. Manually clean the export directory for the storage domain to recycle it.</p>
+<p>Домен хранилища окончательно удалён из окружения.</p>
 
-<h4 id="detaching-the-export-domain">Detaching the Export Domain</h4>
+<h4 id="destroying-a-storage-domain">Разрушение домена хранилища</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Detach the export domain from the data center to import the templates to another data center.</p>
+<p>Домен хранилища, на котором возникли ошибки, бывает невозможно удалить с помощью стандартной процедуры. Разрушение домена хранилища принудительно удалит его их виртуализованного окружения без ссылки на каталог экспорта.</p>
+
+<p>После разрушения домена хранилища необходимо вручную исправить каталог экспорта домена хранилища перед тем, как работать с ним снова.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.15.&nbsp;Detaching an Export Domain from the Data Center</strong></p>
+<p><strong>Действие&nbsp;7.14.&nbsp;Разрушение домена хранилища</strong></p>
 
 <ol>
-  <li>Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the export domain in the results list.</li>
-  <li>Click the <strong>Data Centers</strong> tab in the details pane and select the export domain.</li>
-  <li>Click <strong>Maintenance</strong> to open the <strong>Maintenance Storage Domain(s)</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to initiate maintenance mode.</li>
-  <li>Click <strong>Detach</strong> to open the <strong>Detach Storage</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to detach the export domain.</li>
+  <li>Используйте ресурсную вкладку <strong>Хранилище</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный домен хранилища в списке результатов.</li>
+  <li>Нажмите ПКМ на домене хранилища и выберите пункт <strong>Разрушить</strong> чтобы открыть подтверждающее окно <strong>Разрушить домен хранилища</strong>.</li>
+  <li>Отметьте галочкой пункт <strong>Подтвердить операцию</strong> и нажмите <strong>OK</strong> чтобы разрушить домен хранилища и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The export domain has been detached from the data center, ready to be attached to another data center.</p>
+<p>Домен хранилища был разрушен. Вручную очистите каталог экпорта домена хранилища для его повторного использования.</p>
 
-<h4 id="attaching-an-export-domain-to-a-data-center">Attaching an Export Domain to a Data Center</h4>
+<h4 id="detaching-the-export-domain">Отсоединение домена экспорта</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Attach the export domain to a data center.</p>
+<p>Отсоедините домен экспорта от дата-центра чтобы импортировать шаблоны в другой дата-центр.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;7.16.&nbsp;Attaching an Export Domain to a Data Center</strong></p>
+<p><strong>Действие&nbsp;7.15.&nbsp;Отсоединение домена экспорта от дата-центра</strong></p>
 
 <ol>
-  <li>Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the export domain in the results list.</li>
-  <li>Click the <strong>Data Centers</strong> tab in the details pane.</li>
-  <li>Click <strong>Attach</strong> to open the <strong>Attach to Data Center</strong> window.</li>
-  <li>Select the radio button of the appropriate data center.</li>
-  <li>Click <strong>OK</strong> to attach the export domain.</li>
+  <li>Используйте ресурсную вкладку <strong>Хранилище</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный домен экспорта в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Дата-центры</strong> на панели сведений и выберите домен экспорта.</li>
+  <li>Нажмите <strong>Обслуживание</strong> чтобы открыть окно подвтерждения <strong>Обслуживание доменов хранилищ</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы инициировать режим обслуживания.</li>
+  <li>Нажмите <strong>Отсоединить</strong> чтобы открыть окно подтверждения <strong>Отсоединить хранилище</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы отсоединить домен экспорта.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The export domain is attached to the data center and is automatically activated.</p>
+<p>Домен экспорта был отсоединён от дата-центра и готов для присоединения к другому дата-центру.</p>
 
-<h2 id="virtual-machines">Virtual Machines</h2>
+<h4 id="attaching-an-export-domain-to-a-data-center">Присоединение домена экспорта к дата-центру</h4>
 
-<h3 id="introduction-to-virtual-machines">Introduction to Virtual Machines</h3>
+<p><strong>Описание задачи</strong></p>
+
+<p>Присоединение домена экспорта к дата-центру.</p>
+
+<p>⁠</p>
+
+<p><strong>Действие&nbsp;7.16.&nbsp;Присоединение домена экспорта к дата-центру</strong></p>
+
+<ol>
+  <li>Используйте ресурсную вкладку <strong>Хранилище</strong>, режим дерева или поисковый функционал чтобы найти и выделить нужный домен экспорта в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Дата-центры</strong> на панели сведений.</li>
+  <li>Нажмите <strong>Присоединить</strong> чтобы открыть окно <strong>Присоединить к дата-центру</strong>.</li>
+  <li>Отметьте галочкой нужный дата-центр.</li>
+  <li>Нажмите <strong>OK</strong> чтобы присоединить домен экспорта.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Домен экспорта был присоединён к дата-центру и автоматически активирован.</p>
+
+<h2 id="virtual-machines">Виртуальные машины</h2>
+
+<h3 id="introduction-to-virtual-machines">Введение в виртуальные машины</h3>
 
 <p>A virtual machine is a software implementation of a computer. The oVirt environment enables you to create virtual desktops and virtual servers.</p>
 
