@@ -5719,145 +5719,145 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 
 <ol>
   <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите работающую ВМ.</li>
-  <li>Нажмите на кнопку «Заморозить» ( <img alt="" title="Заморозить" src="./OVirt Administration Guide — oVirt_files/Suspend.png"> ). Alternatively, right-click the virtual machine and select <strong>Suspend</strong>.</li>
+  <li>Нажмите на кнопку «Заморозить» ( <img alt="" title="Заморозить" src="./OVirt Administration Guide — oVirt_files/Suspend.png"> ). Или нажмите ПКМ на машине и выберите <strong>Заморозить</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The <strong>Status</strong> of the virtual machine changes to <code>Paused</code>.</p>
+<p><strong>Статус</strong> ВМ сменяется на <code>Приостановлено</code>.</p>
 
-<h5 id="rebooting-a-virtual-machine">Rebooting a Virtual Machine</h5>
+<h5 id="rebooting-a-virtual-machine">Перезагрузка виртуальной машины</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>If the guest agent is installed on a virtual machine, you can reboot that virtual machine from within the Administration Portal.</p>
+<p>Если на ВМ установлен гостевой агент, перезагрузить эту машину можно через Портал администрирования.</p>
 
-<p><strong>Procedure&nbsp;8.30.&nbsp;Rebooting a Virtual Machine</strong></p>
+<p><strong>Действие&nbsp;8.30.&nbsp;Перезагрузка виртуальной машины</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a running virtual machine.</li>
-  <li>Click the Reboot ( <img alt="" title="fig:Reboot.png" src="./OVirt Administration Guide — oVirt_files/Reboot.png"> ) button. Alternatively, right-click the virtual machine and select <strong>Reboot</strong>.</li>
-  <li>Click <strong>OK</strong> in the <strong>Reboot Virtual Machine(s)</strong> confirmation window.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите работающую ВМ.</li>
+  <li>Нажмите на кнопку ( <img alt="" title="Перезагрузка" src="./OVirt Administration Guide — oVirt_files/Reboot.png"> ). Или сделайте щелчок ПКМ по машине и выберите <strong>Перезагрузить</strong>.</li>
+  <li>В подтверждающем окне <strong>Перезагрузить ВМ</strong> нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The <strong>Status</strong> of the virtual machine changes to <code>Reboot In Progress</code> before returning to <code>Up</code>.</p>
+<p><strong>Статус</strong> ВМ сменяется на <code>Идёт перезагрузка</code>, а затем на <code>Работает</code>.</p>
 
-<h4 id="console-options">Console Options</h4>
+<h4 id="console-options">Параметры консоли</h4>
 
-<h5 id="introduction-to-connection-protocols">Introduction to Connection Protocols</h5>
+<h5 id="introduction-to-connection-protocols">Введение в протоколы связи</h5>
 
-<p>Connection protocols are the underlying technology used to provide graphical consoles for virtual machines and allow users to work with virtual machines in a similar way as they would with physical machines. oVirt currently supports the following connection protocols:</p>
+<p>Протоколы связи — это технологии, лежащие в основе принципа графических консолей для виртуальных машин, и позволяющие пользователям работать с виртуальными машинами точно также, как и с физическими. В настоящее время oVirt поддерживает следующие протоколы связи:</p>
 
 <p>SPICE</p>
 
-<p>Simple Protocol for Independent Computing Environments (SPICE) is the recommended connection protocol for both Linux virtual machines and Windows virtual machines. SPICE is installed and executed on the client that connects to the virtual machine.</p>
+<p>Простой протокол для независимой вычислительной среды (Simple Protocol for Independent Computing Environments, SPICE) — это рекомендуемый протокол связи как для машин под управлением ОС Linux, так и для машин под управлением ОС Windows. SPICE устанавливается и работает на клиенте, который подключается к ВМ.</p>
 
 <p>VNC</p>
 
-<p>Virtual Network Computing (VNC) can be used to open consoles to both Linux virtual machines and Windows virtual machines. To open a console to a virtual machine using VNC, you must use Remote Viewer or a VNC client.</p>
+<p>С помощью системы Virtual Network Computing (VNC) можно создавать консоли удалённого доступа как к машинам под управлением ОС Linux, так и к машинам под управлением ОС Windows. Чтобы создать консоль для подключения к ВМ с помощью VNC, нужно использовать удалённый просмотрщик или клиент VNC.</p>
 
 <p>RDP</p>
 
-<p>Remote Desktop Protocol (RDP) can only be used to open consoles to Windows virtual machines, and is only available when you access a virtual machines from a Windows machine on which Remote Desktop has been installed. Moreover, before you can connect to a Windows virtual machine using RDP, you must set up remote sharing on the virtual machine and configure the firewall to allow remote desktop connections.</p>
+<p>Протокол удалённого рабочего стола (Remote Desktop Protocol, RDP) можно использовать только для создания консолей для подключения к ВМ под управлением ОС Windows, и только для доступа с машины под управлением ОС Windows, на которой установлен удалённый рабочий стол. Кроме того, перед подключением к виртуальной машине Windows с помощью RDP, на ВМ необходимо настроить удалённое совместное пользование и настроить брандмауэр для разрешения удалённых подключений к рабочему столу.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> SPICE is not currently supported on virtual machines running Windows 8. If a Windows 8 virtual machine is configured to use the SPICE protocol, it will detect the absence of the required SPICE drivers and automatically fall back to using RDP.</p>
+  <p><strong>Внимание:</strong> в настоящее время протокол SPICE не поддерживается для ВМ под управлением Windows 8. Если на ВМ под управлением Windows 8 настроить использование SPICE, то система обнаружит отсутствие необходимых драйверов SPICE и автоматически откатится на использование RDP.</p>
 
 </div>
 
-<h5 id="accessing-console-options">Accessing Console Options</h5>
+<h5 id="accessing-console-options">Параметры консольного доступа</h5>
 
-<p>In the Administration Portal, you can configure several options for opening graphical consoles for virtual machines, such as the method of invocation and whether to enable or disable USB redirection.</p>
+<p>На Портале администрирования можно настроить несколько параметров для подключения графических консолей к виртуальным машинам, таких, например, как способ запуска, а также включение или отключение перенаправления USB.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.31.&nbsp;Accessing Console Options</strong></p>
+<p><strong>Действие&nbsp;8.31.&nbsp;Параметры консольного доступа</strong></p>
 
 <ol>
-  <li>Select a running virtual machine.</li>
-  <li>Right-click the virtual machine and click the <strong>Edit Console Options</strong> button to open the <strong>Console Options</strong> window.</li>
+  <li>Выберите работающую ВМ.</li>
+  <li>Нажмите ПКМ на машине и выберите пункт меню <strong>Параметры консоли</strong> чтобы открыть окно <strong>Параметры консоли</strong>.</li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Further options specific to each of the connection protocols, such as the keyboard layout when using the VNC connection protocol, can be configured in the <strong>Console</strong> tab of the <strong>Edit Virtual Machine</strong> window.</p>
+  <p><strong>Внимание:</strong> другие праметры, касающиеся каждого из протоколов связи, такие, например, как раскладка клавиатуры во время использования протокола связи  VNC, можно настроить во вкладке <strong>Консоль</strong> окна <strong>Параметры ВМ</strong>.</p>
 
 </div>
 
-<h5 id="spice-console-options">SPICE Console Options</h5>
+<h5 id="spice-console-options">Параметры консоли SPICE</h5>
 
-<p>When the SPICE connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
+<p>При выборе протокола SPICE, в окне <strong>Параметры консоли</strong> доступны следующие параметры:</p>
 
-<p><img alt="The Console Options window" title="The Console Options window" src="./OVirt Administration Guide — oVirt_files/Console_Options.png"></p>
+<p><img alt="The Console Options window" title="Окно параметров консоли" src="./OVirt Administration Guide — oVirt_files/Console_Options.png"></p>
 
-<p><strong>Figure&nbsp;8.9.&nbsp;The Console Options window</strong></p>
+<p><strong>Рисунок&nbsp;8.9.&nbsp;Окно параметров консоли</strong></p>
 
-<p><strong>Console Invocation</strong></p>
+<p><strong>Вызов консоли</strong></p>
 
 <ul>
-  <li><strong>Auto</strong>: oVirt automatically selects the method for invoking the console.</li>
-  <li><strong>Native client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Viewer.</li>
-  <li><strong>Browser plugin</strong>: When you connect to the console of the virtual machine, you are connected directly via Remote Viewer.</li>
-  <li><strong>SPICE HTML5 browser client (Tech preview)</strong>: When you connect to the console of the virtual machine, a browser tab is opened that acts as the console.</li>
+  <li><strong>Автоматически</strong>: oVirt автоматически выбирает метод вызова консоли.</li>
+  <li><strong>Собственный клиент</strong>: во время подключения к консоли ВМ, диалог загрузки файла предоставляет файл, окрывающий консоль до виртуальной машины с использованием удалённого просмотрщика.</li>
+  <li><strong>Расширение браузера</strong>: подключение к консоли ВМ сразу происходит с использованием удалённого просмотрщика.</li>
+  <li><strong>Браузерный клиент SPICE HTML5 (ознакомительная тех. версия)</strong>: во время подключения к консоли ВМ в браузере открывается новая вкладка, работающая как консоль.</li>
 </ul>
 
-<p><strong>SPICE Options</strong></p>
+<p><strong>Параметры SPICE</strong></p>
 
 <ul>
-  <li><strong>Map control-alt-delete shortcut to ctrl+alt+end</strong>: Select this check box to map the <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> key combination to <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> inside the virtual machine.</li>
-  <li><strong>Enable USB Auto-Share</strong>: Select this check box to automatically redirect USB devices to the virtual machine. If this option is not selected, USB devices will connect to the client machine instead of the guest virtual machine. To use the USB device on the guest machine, manually enable it in the SPICE client menu.</li>
-  <li><strong>Open in Full Screen</strong>: Select this check box for the virtual machine console to automatically open in full screen when you connect to the virtual machine. Press <strong>SHIFT</strong>+<strong>F11</strong> to toggle full screen mode on or off.</li>
-  <li><strong>Enable SPICE Proxy</strong>: Select this check box to enable the SPICE proxy.</li>
-  <li><strong>Enable WAN options</strong>: Select this check box to enable WAN color depth and effects for the virtual machine console. Select this check box for only Windows virtual machines. Selecting this check box sets the parameters <em>WAN-DisableEffects</em> and <em>WAN-ColorDepth</em>. Selecting <strong>Enable WAN options</strong> sets <em>Wan-DisableEffects</em> to <em>animation</em> and sets the color depth to 16 bits.</li>
+  <li><strong>Привязать сочетание control-alt-del к ctrl+alt+end</strong>: отметьте галочкой этот параметр, чтобы привязать сочетание клавиш <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> к <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> внутри виртуальной машины.</li>
+  <li><strong>Включить автоматический общий доступ к USB</strong>: отметьте галочкой этот параметр, чтобы устройства USB автоматически перенаправлялись на виртуальную машину. Если этот параметр не выбран, устройства USB будут подключаться к клиентской машине вместо гостевой. Чтобы использовать устройства USB в гостевой машине, вручную отметьте этот параметр в меню клиента SPICE.</li>
+  <li><strong>Открыть на полный экран</strong>: отметьте галочкой этот параметр чтобы при подключении консоль ВМ автоматически начинала работу в полноэкранноме режиме. Для смены полноэкранного режима на обычный и обратно, нажимайте <strong>SHIFT</strong>+<strong>F11</strong>.</li>
+  <li><strong>Включить прокси SPICE</strong>: отметьте галочкой этот параметр чтобы включить прокси-сервер SPICE.</li>
+  <li><strong>Включить параметры WAN</strong>: отметьте галочкой этот параметр чтобы включить глубину цвета и эффекты WAN для консоли ВМ. Отметьте галочкой этот параметр только для ВМ с установленной Windows. Данная функция устанавливает параметры <em>WAN — отключить эффекты</em> и <em>WAN — глубина цвета</em>. Выбор пункта <strong>Включить параметры WAN</strong> устанавливает значение <em>WAN — отключить эффекты</em> на <em>анимацию</em> и устанавливает глубину цвета в 16 бит.</li>
 </ul>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> The <strong>Browser plugin</strong> console option is only available when accessing the Administration and User Portals through Internet Explorer. This console options uses the version of Remote Viewer provided by the <code>SpiceX.cab</code> installation program. For all other browsers, the <strong>Native client</strong> console option is the default. This console option uses the version of Remote Viewer provided by the <code>virt-viewer-x86.msi</code> and <code>virt-viewer-x64.msi</code> installation files.</p>
+  <p><strong>Важно:</strong> параметр консоли <strong>Расширение браузера</strong> присутствует только если для доступа на Пользовательский и Административный порталы используется Internet Explorer. Эти консольные параметры используют версию удалённого просмотрщика, предоставляемую программой установки <code>SpiceX.cab</code>. Для всех других браузеров по умолчанию используется параметр консоли <strong>Собственный клиент</strong>. Этот параметр консоли использует версию удалённого просмотрщика, предоставляемую установочными файлами <code>virt-viewer-x86.msi</code> и <code>virt-viewer-x64.msi</code>.</p>
 
 </div>
 
-<h5 id="vnc-console-options">VNC Console Options</h5>
+<h5 id="vnc-console-options">Консольные параметры VNC</h5>
 
-<p>When the VNC connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
+<p>При выборе протокола связи VNC, в окне <strong>Параметры консоли</strong> доступны следующие возможности:</p>
 
-<p><strong>Console Invocation</strong></p>
-
-<ul>
-  <li><strong>Native Client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Viewer.</li>
-  <li><strong>NoVNC</strong>: When you connect to the console of the virtual machine, a browser tab is opened that acts as the console.</li>
-</ul>
-
-<p><strong>VNC Options</strong></p>
+<p><strong>Вызов консоли</strong></p>
 
 <ul>
-  <li><strong>Map control-alt-delete shortcut to ctrl+alt+end</strong>: Select this check box to map the <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> key combination to <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> inside the virtual machine.</li>
+  <li><strong>Собственный клиент</strong>: во время подключения к консоли ВМ, диалог загрузки файла предоставляет файл, окрывающий консоль до виртуальной машины с использованием удалённого просмотрщика.</li>
+  <li><strong>NoVNC</strong>: во время подключения к консоли ВМ в браузере открывается новая вкладка, работающая как консоль.</li>
 </ul>
 
-<h5 id="rdp-console-options">RDP Console Options</h5>
-
-<p>When the RDP connection protocol is selected, the following options are available in the <strong>Console Options</strong> window.</p>
-
-<p><strong>Console Invocation</strong></p>
+<p><strong>Параметры VNC</strong></p>
 
 <ul>
-  <li><strong>Auto</strong>: oVirt automatically selects the method for invoking the console.</li>
-  <li><strong>Native client</strong>: When you connect to the console of the virtual machine, a file download dialog provides you with a file that opens a console to the virtual machine via Remote Desktop.</li>
+  <li><strong>Привязать сочетание control-alt-del к ctrl+alt+end</strong>: отметьте галочкой этот параметр, чтобы привязать сочетание клавиш <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong> к <strong>Ctrl</strong>+<strong>Alt</strong>+<strong>End</strong> внутри виртуальной машины.</li>
 </ul>
 
-<p><strong>RDP Options</strong></p>
+<h5 id="rdp-console-options">Консольные параметры RDP</h5>
+
+<p>При выборе протокола связи RDP, в окне <strong>Параметры консоли</strong> доступны следующие возможности:</p>
+
+<p><strong>Вызов консоли</strong></p>
 
 <ul>
-  <li><strong>Use Local Drives</strong>: Select this check box to make the drives on the client machine to be accessible on the guest virtual machine.</li>
+  <li><strong>Автоматически</strong>: oVirt автоматически выбирает этот метод вызова консоли.</li>
+  <li><strong>Собственный клиент</strong>: во время подключения к консоли ВМ, диалог загрузки файла предоставляет файл, окрывающий консоль до виртуальной машины с использованием удалённого просмотрщика.</li>
 </ul>
 
-<h4 id="remote-viewer-options">Remote Viewer Options</h4>
+<p><strong>Параметры RDP</strong></p>
 
-<h5 id="remote-viewer-options-1">Remote Viewer Options</h5>
+<ul>
+  <li><strong>Использовать локальные приводы</strong>: отметьте галочкой этот параметр, чтобы приводы клиентской машины были доступны на гостевой ВМ.</li>
+</ul>
 
-<p>When you specify the <strong>Native client</strong> or <strong>Browser plugin</strong> console invocation options, you will connect to virtual machines using Remote Viewer. The Remote Viewer window provides a number of options for interacting with the virtual machine to which it is connected.⁠</p>
+<h4 id="remote-viewer-options">Параметры удалённого просмотрщика</h4>
 
-<p><strong>Table&nbsp;8.17.&nbsp;Remote Viewer Options</strong></p>
+<h5 id="remote-viewer-options-1">Параметры удалённого просмотрщика</h5>
+
+<p>При выборе параметров вызова консоли <strong>Собственный клиент</strong> или <strong>Расширение браузера</strong>, подключение к виртуальной машине будет осуществляться с помощью удалённого просмотрщика. Окно Удалённого просмотрщика предоставляет несколько параметров для взаимодействия с ВМ, к которой он подключен.⁠</p>
+
+<p><strong>Таблица&nbsp;8.17.&nbsp;Параметры удалённого просмотрщика</strong></p>
 
 <table>
 <colgroup>
@@ -5866,33 +5866,33 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Option</p></th>
-<th align="left"><p>Hotkey</p></th>
+<th align="left"><p>Параметр</p></th>
+<th align="left"><p>Горячая клавиша</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>File</p></td>
+<td align="left"><p>Файл</p></td>
 <td align="left"><ul>
-<li><strong>Screenshot</strong>: Takes a screen capture of the active window and saves it in a location of your specification.</li>
-<li><strong>USB device selection</strong>: If USB redirection has been enabled on your virtual machine, the USB device plugged into your client machine can be accessed from this menu.</li>
-<li><strong>Quit</strong>: Closes the console. The hot key for this option is <strong>Shift</strong>+<strong>Ctrl</strong>+<strong>Q</strong>.</li>
+<li><strong>Снимок экрана</strong>: делает снимок экрана активного окна и сохраняет в указанное местоположение.</li>
+<li><strong>Выбор устройства USB</strong>: если на виртуальной машине было активировано перенаправление USB, из этого меню можно получить доступ к устройству USB, подключенному к клиентской машине.</li>
+<li><strong>Выход</strong>: закрывает консоль. Горячие клавиши для этого действия: <strong>Shift</strong>+<strong>Ctrl</strong>+<strong>Q</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>View</p></td>
+<td align="left"><p>Просмотр</p></td>
 <td align="left"><ul>
-<li><strong>Full screen</strong>: Toggles full screen mode on or off. When enabled, full screen mode expands the virtual machine to fill the entire screen. When disabled, the virtual machine is displayed as a window. The hot key for enabling or disabling full screen is <strong>SHIFT</strong>+<strong>F11</strong>.</li>
-<li><strong>Zoom</strong>: Zooms in and out of the console window. <strong>Ctrl</strong>+<strong>+</strong> zooms in, <strong>Ctrl</strong>+<strong>-</strong> zooms out, and <strong>Ctrl</strong>+<strong>0</strong> returns the screen to its original size.</li>
-<li><strong>Automatically resize</strong>: Tick to enable the guest resolution to automatically scale according to the size of the console window.</li>
-<li><strong>Displays</strong>: Allows users to enable and disable displays for the guest virtual machine.</li>
+<li><strong>Полный экран</strong>: включение/отключение полноэкранного режима. При включении, экран виртуальной машины заполняет весь экран. При отключении — ВМ показывается в окне. Горячие клавиши для этого действия: <strong>SHIFT</strong>+<strong>F11</strong>.</li>
+<li><strong>Масштаб</strong>: увеличивает или уменьшает масштаб консольного окна. <strong>Ctrl</strong>+<strong>+</strong> увеличивает, <strong>Ctrl</strong>+<strong>-</strong> уменьшает, а <strong>Ctrl</strong>+<strong>0</strong> возвращает исходный размер экрана.</li>
+<li><strong>Изменять размер автоматически</strong>: отметьте галочкой этот пункт чтобы разрешение экрана гостевой системы изменялось автоматически в соответствии с размером окна консоли.</li>
+<li><strong>Мониторы</strong>: даёт возможность пользователям включать/отключать мониторы для гостевой ВМ.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Send key</p></td>
+<td align="left"><p>Послать сочетание клавиш</p></td>
 <td align="left"><ul>
-<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong>: On a Red Hat Enterprise Linux virtual machine, it displays a dialog with options to suspend, shut down or restart the virtual machine. On a Windows virtual machine, it displays the task manager or Windows Security dialog.</li>
-<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Backspace</strong>: On a Red Hat Enterprise Linux virtual machine, it restarts the X sever. On a Windows virtual machine, it does nothing.</li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Del</strong>: на виртуальной машине с установленной ОС Red Hat Enterprise Linux будет показан диалог с возможностями заморозить, выключить или перезапустить ВМ. На ВМ с установленной Windows будет вызван менеджер задач или диалог безопасности Windows.</li>
+<li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>Backspace</strong>: на виртуальной машине с установленной ОС Red Hat Enterprise Linux будет перезапущен сервер графической системы X. Для ВМ с установленной Windows действий нет.</li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F1</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F2</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F3</strong></li>
@@ -5905,685 +5905,685 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F10</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F11</strong></li>
 <li><strong>Ctrl</strong>+<strong>Alt</strong>+<strong>F12</strong></li>
-<li><strong>Printscreen</strong>: Passes the <strong>Printscreen</strong> keyboard option to the virtual machine.</li>
+<li><strong>Printscreen</strong>: передаёт клавиатурный параметр <strong>Printscreen</strong> виртуальной машине.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Help</p></td>
-<td align="left"><p>The <strong>About</strong> entry displays the version details of Virtual Machine Viewer that you are using.</p></td>
+<td align="left"><p>Справка</p></td>
+<td align="left"><p>Пункт <strong>О программе</strong> показывает версию используемого просмотрщика виртуальных машин.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Release Cursor from Virtual Machine</p></td>
+<td align="left"><p>Освободить курсор</p></td>
 <td align="left"><p><strong>SHIFT</strong>+<strong>F12</strong></p></td>
 </tr>
 </tbody>
 </table>
 
-<h5 id="remote-viewer-hotkeys">Remote Viewer Hotkeys</h5>
+<h5 id="remote-viewer-hotkeys">Горячие клавиши удалённого просмотрщика</h5>
 
-<p>You can access the hotkeys for a virtual machine in both full screen mode and windowed mode. If you are using full screen mode, you can display the menu containing the button for hotkeys by moving the mouse pointer to the middle of the top of the screen. If you are using windowed mode, you can access the hotkeys via the <strong>Send key</strong> menu on the virtual machine window title bar.</p>
+<p>Доступ к горячим клавишам ВМ присутствует как в полноэкранном, так и в оконном режиме. Чтобы вызвать меню с кнопкой горячих клавиш в полноэкранном режиме, передвиньте курсор на середину верхней части экрана. В оконном режиме используйте меню <strong>Послать сочетание клавиш</strong> на панели заголовка виртуальной машины.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> If <strong>vdagent</strong> is not running on the client machine, the mouse can become captured in a virtual machine window if it is used inside a virtual machine and the virtual machine is not in full screen. To unlock the mouse, press <strong>Shift</strong>+<strong>F12</strong>.</p>
+  <p><strong>Внимание:</strong> если на клиентской машине не запущен <strong>vdagent</strong>, и ВМ работает в оконном режиме, то окно ВМ может захватить курсор мыши. Чтобы освободить курсор, нажмите <strong>Shift</strong>+<strong>F12</strong>.</p>
 
 </div>
 
-<h3 id="removing-virtual-machines">Removing Virtual Machines</h3>
+<h3 id="removing-virtual-machines">Удаление виртуальных машин</h3>
 
-<h4 id="removing-a-virtual-machine">Removing a Virtual Machine</h4>
+<h4 id="removing-a-virtual-machine">Удаление виртуальных машин</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Remove a virtual machine from the oVirt environment.</p>
+<p>Удаление виртуальной машины из окружения oVirt.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> The <strong>Remove</strong> button is disabled while virtual machines are running; you must shut down a virtual machine before you can remove it.</p>
+  <p><strong>Важно:</strong> во время выполнения ВМ, кнопка <strong>Удалить</strong> неактивна; чтобы получить возможность удалить ВМ, её нужно сначала выключить.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.32.&nbsp;Removing a Virtual Machine</strong></p>
+<p><strong>Действие&nbsp;8.32.&nbsp;Удаление виртуальной машины</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select the virtual machine to remove.</li>
-  <li>Click <strong>Remove</strong> to open the <strong>Remove Virtual Machine(s)</strong> window.</li>
-  <li>Optionally, select the <strong>Remove Disk(s)</strong> check box to remove the virtual disks attached to the virtual machine together with the virtual machine. If the <strong>Remove Disk(s)</strong> check box is cleared, then the virtual disks remain in the environment as floating disks.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ для удаления.</li>
+  <li>Нажмите <strong>Удалить</strong> чтобы открыть окно <strong>Удалить ВМ</strong>.</li>
+  <li>При необходимости также отметьте галочкой пункт <strong>Удалить диск(и)</strong> чтобы вместе с машиной удалить также и подключённые к ней виртуальные диски. Если пункт <strong>Удалить диск(и)</strong> не отмечен, виртуальные диски останутся в среде в качестве плавающих дисков.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine is removed from the environment and is no longer listed in the <strong>Virtual Machines</strong> resource tab. If you selected the <strong>Remove Disk(s)</strong> check box, then the virtual disks attached to the virtual machine are also removed.</p>
+<p>Виртуальная машина была удалена из среды и отсутствует в списке машин в ресурсной вкладке <strong>Виртуальные машины</strong>. При отмеченном пункте <strong>Удалить диск(и)</strong> также удаляются и виртуальные диски, подключенные к ВМ.</p>
 
-<h3 id="snapshots">⁠Snapshots</h3>
+<h3 id="snapshots">⁠Снимки</h3>
 
-<h4 id="creating-a-snapshot-of-a-virtual-machine">Creating a Snapshot of a Virtual Machine</h4>
+<h4 id="creating-a-snapshot-of-a-virtual-machine">Создание снимка виртуальной машины</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>A snapshot is a view of a virtual machine's operating system and applications on any or all available disks at a given point in time. Take a snapshot of a virtual machine before you make a change to it that may have unintended consequences. You can use a snapshot to return a virtual machine to a previous state.</p>
+<p>Снимок — это представление операционной системы и приложений ВМ на любом или на всех доступных дисках в заданной точке времени. Перед тем, как вносить изменения в параметры ВМ, которые могут привести к непредвиденным последствиям, сделайте снимок этой машины. С помощью снимка машину можно будет вернуть в предыдущее состояние.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Live snapshots can only be created for virtual machines running on 3.1-or-higher-compatible data centers. Virtual machines in 3.0-or-lower-compatible data centers must be shut down before a snapshot can be created.</p>
+  <p><strong>Внимание:</strong> динамические снимки можно создавать только для машин, работающих в дата-центрах, своместимых с версией oVirt 3.1 или более поздней. ВМ, работающие в дата-центрах, совместимых с версией 3.0 или более ранней, должны быть выключены перед созданием снимка.</p>
 
 </div>
-<p><strong>Procedure&nbsp;8.33.&nbsp;Creating a Snapshot of a Virtual Machine</strong></p>
+<p><strong>Действие&nbsp;8.33.&nbsp;Создание снимка виртуальной машины</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
   <li>
-    <p>Click <strong>Create Snapshot</strong> to open the <strong>Create Snapshot</strong> window.
+    <p>Нажмите <strong>Создать снимок</strong> чтобы открыть окно <strong>Создать снимок</strong>.
 ⁠</p>
 
-    <p><img alt="Create snapshot" title="Create snapshot" src="./OVirt Administration Guide — oVirt_files/Create_Snapshot.png"></p>
+    <p><img alt="Create snapshot" title="Создать снимок" src="./OVirt Administration Guide — oVirt_files/Create_Snapshot.png"></p>
 
-    <p><strong>Figure&nbsp;8.10.&nbsp;Create snapshot</strong></p>
+    <p><strong>Рисунок&nbsp;8.10.&nbsp;Создать снимок</strong></p>
   </li>
-  <li>Enter a description for the snapshot.</li>
-  <li>Select <strong>Disks to include</strong> using the check boxes.</li>
-  <li>Use the <strong>Save Memory</strong> check box to denote whether you wish to include the virtual machine's memory in the snapshot.</li>
-  <li>Click <strong>OK</strong> to create the snapshot and close the window.</li>
+  <li>Введите описание снимка.</li>
+  <li>Отметьте галочками нужные диски в списке <strong>Включая диски:</strong>.</li>
+  <li>Отметьте галочкой параметр <strong>Сохранить память</strong>, чтобы указать, нужно ли включать память машины в снимок.</li>
+  <li>Нажмите <strong>OK</strong> чтобы создать снимок и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine's operating system and applications on the selected disk(s) are stored in a snapshot that can be previewed or restored. The snapshot is created with a status of <code>Locked</code>, which changes to <code>Ok</code>. When you click on the snapshot, its details are shown on the <strong>General</strong>, <strong>Disks</strong>, <strong>Network Interfaces</strong>, and <strong>Installed Applications</strong> tabs in the right side-pane of the details pane.</p>
+<p>Операционная система и приложения ВМ на выбранных дисках сохраненыв снимке, который можно предварительно просмотреть или сохранить. Снимок создаётся со статусом <code>Заблокирован</code>, который затем сменяется на <code>Ok</code>. При щелчке на снимке, сведения о нём показываются во вкладках <strong>Общие</strong>, <strong>Диски</strong>, <strong>Сетевые интерфейсы</strong> и <strong>Установленные приложения</strong> в правой боковой области панели сведений.</p>
 
-<h4 id="using-a-snapshot-to-restore-a-virtual-machine">Using a Snapshot to Restore a Virtual Machine</h4>
+<h4 id="using-a-snapshot-to-restore-a-virtual-machine">Использование снимка для восстановления ВМ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>A snapshot can be used to restore a virtual machine to its previous state.</p>
+<p>Снимок может быть использован для восстановления предыдущего состояния виртуальной машины.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.34.&nbsp;Using a snapshot to restore a virtual machine</strong></p>
+<p><strong>Действие&nbsp;8.34.&nbsp;Использование снимка для восстановления ВМ</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click the <strong>Snapshots</strong> tab in the details pane to list the available snapshots.</li>
-  <li>Select a snapshot to restore in the left side-pane. The snapshot details display in the right side-pane.</li>
-  <li>Click the drop-down list beside <strong>Preview</strong> to open the <strong>Custom Preview Snapshot</strong> window.</li>
-  <li>Use the check boxes to select the <strong>VM Configuration</strong>, <strong>Memory</strong>, and disk(s) you want to restore, then click <strong>OK</strong>. This allows you to create and restore from a customized snapshot using the configuration and disk(s) from multiple snapshots. The status of the snapshot changes to <code>Preview Mode</code>. The status of the virtual machine briefly changes to <code>Image Locked</code> before returning to <code>Down</code>.</li>
-  <li>Start the virtual machine; it runs using the disk image of the snapshot.</li>
-  <li>Click <strong>Commit</strong> to permanently restore the virtual machine to the condition of the snapshot. Any subsequent snapshots are erased. Alternatively, click the <strong>Undo</strong> button to deactivate the snapshot and return the virtual machine to its previous state.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Перейдите на вкладку <strong>Снимки</strong> на панели сведений чтобы увидеть список доступных снимков.</li>
+  <li>В левой боковой панели выберите снимок для восстановления. Сведения о снимке показываются на правой боковой панели.</li>
+  <li>Нажмите на выпадающий список рядом с кнопкой <strong>Предварительный просмотр</strong> чтобы открыть окно <strong>Настраиваемый предварительный просмотр снимка</strong>.</li>
+  <li>Отметьте галочками <strong>Параметры ВМ</strong>, <strong>Память</strong> и диски, которые нужно восстановить, затем нажмите <strong>OK</strong>. Это даёт возможность создать настраиваемый снимок для восстановления, используя параметры и диски из нескольких снимков. Статус снимка сменяется на <code>Режим предварительного просмотра</code>. Статус ВМ на короткое время сменяется на <code>Образ заблокирован</code> перед тем, как снова смениться на <code>Выключена</code>.</li>
+  <li>Запустите ВМ; она выполняется с использованием образа диска из снимка.</li>
+  <li>Нажмите <strong>Зафиксировать</strong> чтобы закрепить восстановление ВМ до состояния снимка. Любые последующие снимки удаляются. Или нажмите на кнопку <strong>Отменить</strong> чтобы деактивировать снимок и вернуть ВМ в предыдущее состояние.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine is restored to its state at the time of the snapshot, or returned to its state before the preview of the snapshot.</p>
+<p>Статус виртуальной машины восстановлен до статуса того момента, когда был сделан снимок, или возвращён до статуса, который машина имела перед предварительным просмотром снимка.</p>
 
-<h4 id="creating-a-virtual-machine-from-a-snapshot">Creating a Virtual Machine from a Snapshot</h4>
+<h4 id="creating-a-virtual-machine-from-a-snapshot">Создание ВМ из снимка</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You have created a snapshot from a virtual machine. Now you can use that snapshot to create another virtual machine.</p>
+<p>Мы создали снимок из виртуальной машины. Теперь можно использовать этот снимок для создания другой ВМ.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.35.&nbsp;Creating a virtual machine from a snapshot</strong></p>
+<p><strong>Действие&nbsp;8.35.&nbsp;Создание ВМ из снимка</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click the <strong>Snapshots</strong> tab in the details pane to list the available snapshots for the virtual machines.</li>
-  <li>Select a snapshot in the list displayed and click <strong>Clone</strong> to open the <strong>Clone VM from Snapshot</strong> window.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Перейдите на вкладку <strong>Снимки</strong> на панели сведений чтобы увидеть список доступных снимков.</li>
+  <li>Выберите в списке снимок и нажмите <strong>Клонировать</strong> чтобы открыть окно <strong>Клонировать ВМ из снимка</strong>.</li>
   <li>
-    <p>Enter the <strong>Name</strong> and <strong>Description</strong> of the virtual machine to be created.
+    <p>Введите <strong>Имя</strong> и <strong>Описание</strong> создаваемой ВМ.
 ⁠</p>
 
-    <p><img alt="Clone a Virtual Machine from a Snapshot" title="Clone a Virtual Machine from a Snapshot" src="./OVirt Administration Guide — oVirt_files/Clone_VM_Snapshot.png"></p>
+    <p><img alt="Clone a Virtual Machine from a Snapshot" title="Клонирование ВМ из снимка" src="./OVirt Administration Guide — oVirt_files/Clone_VM_Snapshot.png"></p>
 
-    <p><strong>Figure&nbsp;8.11.&nbsp;Clone a Virtual Machine from a Snapshot</strong></p>
+    <p><strong>Рисунок&nbsp;8.11.&nbsp;Клонирование ВМ из снимка</strong></p>
   </li>
-  <li>Click <strong>OK</strong> to create the virtual machine and close the window.</li>
+  <li>Нажмите <strong>OK</strong> чтоб создать ВМ и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>After a short time, the cloned virtual machine appears in the <strong>Virtual Machines</strong> tab in the navigation pane. It appears in the navigation pane with a status of <code>Image Locked</code>. The virtual machine will remain in this state until oVirt completes the creation of the virtual machine. A virtual machine with a preallocated 20GB hard drive takes about fifteen minutes to create. Sparsely-allocated virtual disks take less time to create than do preallocated virtual disks.</p>
+<p>Через некоторое время клонированная ВМ появляется во вкладке <strong>Виртуальные машины</strong> на панели навигации. Клонированная ВМ появляется со статусом <code>Образ заблокирован</code>. Виртуальная машина будет оставаться в этом статусе до тех пор, пока oVirt не завершит создание ВМ. Виртуальная машина с выделенными 20ГБ дискового пространства создаётся в течении примерно 15 минут. Виртуальные диски с разрежённым выделением создаются быстрее, чем предварительно выделенные диски.</p>
 
-<p>When the virtual machine is ready to use, its status changes from <code>Image Locked</code> to <code>Down</code> in the <strong>Virtual Machines</strong> tab in the navigation pane.</p>
+<p>Когда виртуальная машина готова к использованию, её статус сменяется с <code>Образ заблокирован</code> на <code>Отключена</code>, во вкладке  <strong>Виртуальные машины</strong> на панели навигации.</p>
 
-<h4 id="deleting-a-snapshot">Deleting a Snapshot</h4>
+<h4 id="deleting-a-snapshot">Удаление снимка</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Delete a snapshot and permanently remove it from the virtualized environment.</p>
+<p>Окончательное удаление снимка из виртуализированного окружения.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.36.&nbsp;Deleting a Snapshot</strong></p>
+<p><strong>Действие&nbsp;8.36.&nbsp;Удаление снимка</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
   <li>
-    <p>Click the <strong>Snapshots</strong> tab in the details pane to list available snapshots for the virtual machine.
+    <p>Перейдите на вкладку <strong>Снимки</strong> на панели сведений чтобы увидеть список доступных снимков.
 ⁠</p>
 
-    <p><img alt="Snapshot List" title="Snapshot List" src="./OVirt Administration Guide — oVirt_files/Snapshot_List.png"></p>
+    <p><img alt="Snapshot List" title="Список снимков" src="./OVirt Administration Guide — oVirt_files/Snapshot_List.png"></p>
 
-    <p><strong>Figure&nbsp;8.12.&nbsp;Snapshot List</strong></p>
+    <p><strong>Рисунок&nbsp;8.12.&nbsp;Список снимков</strong></p>
   </li>
-  <li>Select the snapshot to delete.</li>
-  <li>In the Navigation pane, shut down the running virtual machine associated with the snapshot to be deleted.</li>
-  <li>Click <strong>Delete</strong> to open the <strong>Delete Snapshot</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to delete the snapshot and close the window.</li>
+  <li>Выберите снимок для удаления.</li>
+  <li>На панели навигации выключите работающие ВМ, связанные с удаляемым снимком.</li>
+  <li>Нажмите <strong>Удалить</strong> чтобы открыть подтверждающее окно <strong>Удалить снимок</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы удалить снимок и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have removed a virtual machine snapshot. Removing a snapshot does not affect the virtual machine.</p>
+<p>Мы удалили снимок виртуальной машины. Удаление снимка не отражается на виртуальной машине.</p>
 
-<h3 id="affinity-groups">⁠Affinity Groups</h3>
+<h3 id="affinity-groups">⁠Группы схожести (affinity)</h3>
 
-<h4 id="introduction-to-virtual-machine-affinity">Introduction to Virtual Machine Affinity</h4>
+<h4 id="introduction-to-virtual-machine-affinity">Введение в понятие схожести для ВМ</h4>
 
-<p>Virtual machine affinity allows you to define sets of rules that specify whether certain virtual machines run together on the same host or run separately on different hosts. This allows you to create advanced workload scenarios for addressing challenges such as strict licensing requirements and workloads demanding high availability.</p>
+<p>Схожесть (affinity) виртуальных машин даёт возможность определить наборы правил, определяющих, будут ли конкретные ВМ выполняться вместе на одном хосте или отдельно на различных хостах. Это позволяет создавать продвинутые сценарии рабочей нагрузки, например, отвечающие строгим условиям соблюдения лицензионных соглашений или условиям рабочей нагрузки, требующей высокой доступности.</p>
 
-<p>Virtual machine affinity is applied to virtual machines by adding virtual machines to one or more affinity groups. An affinity group is a group of two or more virtual machines for which a set of identical parameters and conditions apply. These parameters include positive (run together) affinity that ensures the virtual machines in an affinity group run on the same host, and negative (run independently) affinity that ensures the virtual machines in an affinity group run on different hosts.</p>
+<p>Схожесть виртуальных машин применяется к машинам при помощи добавления машин в одну или более групп схожести. Группа схожести — это группа из двух или более виртуальных машин, к которым применяется набор идентичных параметров и условий. Эти параметры могут иметь положительную схожесть (работа вместе), обеспечивающую виртуальным машинам, состоящим в группе схожести, выполнение на одном и том же хосте, и отрицательную схожесть (работа отдельно друг от друга) обеспечивающую виртуальным машинам, состоящим в группе схожести, выполнение на разных хостах.</p>
 
-<p>A further set of conditions can then be applied to these parameters. For example, you can apply hard enforcement, which is a condition that ensures the virtual machines in the affinity group run on the same host or different hosts regardless of external conditions, or soft enforcement, which is a condition that indicates a preference for virtual machines in an affinity group to run on the same host or different hosts when possible.</p>
+<p>Далее к этим параметрам может применяться дополнительный набор условий. К примеру, жёсткое принудительное применение условий схожести, обеспечивающее работу ВМ в группе схожести на одном хосте независимо от внешних условий, или мягкое принудительное применение, что является признаком, указывающим на то, что машины в группе схожести, при наличии возможности, предпочтительно работают либо на одном хосте либо на разных.</p>
 
-<p>The combination of an affinity group, its parameters and conditions are collectively known as an affinity policy.</p>
+<p>Комбинация группы схожести вместе с её параметрами и условиями называется «политикой схожести».</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Affinity groups are applied to virtual machines on the cluster level. When a virtual machine is moved from one cluster to another, that virtual machine is removed from all affinity groups in the source cluster.</p>
+  <p><strong>Внимание:</strong> группы схожести применяются к виртуальным машинам на уровне кластера. При перемещении виртуальной машины из одного кластера в другой, эта машина удаляется из всех групп схожести на исходном кластере.</p>
 
 </div>
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Affinity groups will only take effect when the <code>VmAffinityGroups</code> filter module or weights module is enabled in the cluster policy applied to clusters in which affinity groups are defined. The <code>VmAffinityGroups</code> filter module is used to implement hard enforcement, and the <code>VmAffinityGroups</code> weights module is used to implement soft enforcement.</p>
+  <p><strong>Важно:</strong> группы схожести вступают в силу только тогда, когда в политике кластера, применяющейся на кластерах, где определены группы схожести, включен модуль фильтра <code>VmAffinityGroups</code> или модуль весовых коэффициентов. Модуль фильтра <code>VmAffinityGroups</code> используется для реализации жёсткого принудительного применения условий схожести, а модуль весовых коэффициентов <code>VmAffinityGroups</code> используется для реализации мягкого принудительного применения.</p>
 
 </div>
 
-<h4 id="creating-an-affinity-group">Creating an Affinity Group</h4>
+<h4 id="creating-an-affinity-group">Создание групп схожести</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can create new affinity groups for applying affinity policies to virtual machines.</p>
+<p>Создать новые группы схожести для применения политик схожести к виртуальным машинам.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.37.&nbsp;Creating an Affinity Group</strong></p>
+<p><strong>Действие&nbsp;8.37.&nbsp;Создание групп схожести</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click the <strong>Affinity Groups</strong> tab in the details pane.</li>
-  <li>Click the <strong>New</strong> button to open the <strong>New Affinity Group</strong> window.</li>
-  <li>Enter a name and description for the affinity group in the <strong>Name</strong> text field and <strong>Description</strong> text field.</li>
-  <li>Select the <strong>Positive</strong> check box to apply positive affinity, or ensure this check box is cleared to apply negative affinity.</li>
-  <li>Select the <strong>Enforcing</strong> check box to apply hard enforcement, or ensure this check box is cleared to apply soft enforcement.</li>
-  <li>Use the drop-down menu to select the virtual machines to be added to the affinity group. Use the <strong>+</strong> and <strong>-</strong> buttons to add or remove additional virtual machines.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Перейдите на вкладку <strong>Группы схожести</strong> на панели сведений.</li>
+  <li>Нажмите на кнопку <strong>Добавить</strong> чтобы открыть окно <strong>Добавить группу схожести</strong>.</li>
+  <li>Введите имя и описание для группы схожести в текстовых полях <strong>Имя</strong> и <strong>Описание</strong>.</li>
+  <li>Отметьте галочкой пункт <strong>Положительная</strong>, чтобы применить положительную схожесть, или убедитесь, что этот параметр не отмечен, для применения отрицательной схожести.</li>
+  <li>Отметьте галочкой пункт <strong>Принудительно</strong>, чтобы применить жёсткое принуждение, или убедитесь, что этот параметр не отмечен, чтобы применить мягкое принуждение.</li>
+  <li>В выпадающем меню выберите ВМ, которые нужно добавить в группу схожести. Используйте кнопки <strong>+</strong> и <strong>-</strong> для добавления/удаления машин из групп.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have created a virtual machine affinity group and specified the parameters and conditions to be applied to the virtual machines that are members of that group.</p>
+<p>Мы создали группу схожести виртуальных машин и указали параметры и условия, которые должны применяться к машинам-участникам этой группы.</p>
 
-<h4 id="editing-an-affinity-group">Editing an Affinity Group</h4>
+<h4 id="editing-an-affinity-group">Изменение групп схожести</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can edit the settings of existing affinity groups.</p>
+<p>Изменение параметров существующих групп схожести.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.38.&nbsp;Editing an Affinity Group</strong></p>
+<p><strong>Действие&nbsp;8.38.&nbsp;Изменение групп схожести</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click the <strong>Affinity Groups</strong> tab in the details pane.</li>
-  <li>Click the <strong>Edit</strong> button to open the <strong>Edit Affinity Group</strong> window.</li>
-  <li>Change the <strong>Positive</strong> and <strong>Enforcing</strong> check boxes to the preferred values and use the <strong>+</strong> and <strong>-</strong> buttons to add or remove virtual machines to or from the affinity group.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Перейдите на вкладку <strong>Группы схожести</strong> на панели сведений.</li>
+  <li>Нажмите на кнопку <strong>Изменить</strong> чтобы открыть окно <strong>Параметры группы схожести</strong>.</li>
+  <li>Отметьте флажками предпочитаемые значения в пунктах <strong>Положительная</strong> и <strong>Принудительно</strong>, и с помощью кнопок <strong>+</strong> и <strong>-</strong> добавьте машины или удалите машины из группы схожести.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have edited an affinity group.</p>
+<p>Мы изменили группу схожести.</p>
 
-<h4 id="removing-an-affinity-group">Removing an Affinity Group</h4>
+<h4 id="removing-an-affinity-group">Удаление групп схожести</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can remove an existing affinity group.</p>
+<p>Удаление группы схожести.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.39.&nbsp;Removing an Affinity Group</strong></p>
+<p><strong>Действие&nbsp;8.39.&nbsp;Удаление группы схожести</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click the <strong>Affinity Groups</strong> tab in the details pane.</li>
-  <li>Click the <strong>Remove</strong> button and click <strong>OK</strong> when prompted to remove the affinity group.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Перейдите на вкладку <strong>Группы схожести</strong> на панели сведений.</li>
+  <li>Нажмите на кнопку <strong>Удалить</strong> и нажмите <strong>OK</strong> в окне подтверждения чтобы удалить группу схожести.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have removed an affinity group, and the affinity policy that applied to the virtual machines that were members of that affinity group no longer applies.</p>
+<p>Мы удалили группу схожести, и политика схожести, которая применялась к ВМ-участникам этой группы, больше к ним не применяется.</p>
 
-<h3 id="importing-and-exporting-virtual-machines">⁠Importing and Exporting Virtual Machines</h3>
+<h3 id="importing-and-exporting-virtual-machines">⁠Импорт и экспорт виртуальных машин</h3>
 
-<h4 id="exporting-and-importing-virtual-machines-and-templates">Exporting and Importing Virtual Machines and Templates</h4>
+<h4 id="exporting-and-importing-virtual-machines-and-templates">Импорт и экспорт виртуальных машин и шаблонов</h4>
 
-<p>Virtual machines and templates can be exported from and imported to data centers in the same oVirt environment, or a different oVirt environment. oVirt allows you to import and export virtual machines (and templates) stored in Open Virtual Machine Format (OVF).</p>
+<p>Виртуальные машины и шаблоны можно экспортировать из дата-центров и импортировать в дата-центры того же или другого окружения oVirt. oVirt предоставляет возможность импорта и экспорта ВМ (и шаблонов) в формате Open Virtual Machine (OVF).</p>
 
-<p>There are three stages to exporting and importing virtual machines and templates:</p>
+<p>Процесс импорта и экспорта ВМ и шаблонов состоит из трёх частей:</p>
 
 <ol>
-  <li>Export the virtual machine or template to an export domain.</li>
-  <li>Detach the export domain from one data center, and attach it to another. You can attach it to a different data center in the same oVirt environment, or attach it to a data center in a separate oVirt environment that is managed by another installation of oVirt.</li>
-  <li>Import the virtual machine or template into the data center to which the export domain is attached.</li>
+  <li>Экспорт ВМ или шаблона в домен экспорта.</li>
+  <li>Отсоединение домена экспорта от одного дата-центра и присоединение его к другому дата-центру. Присоединить домен можно или к другому дата-центру в том же окружении oVirt, или к дата-центру в отдельном окружении oVirt под управлением другого установленного экземпляра oVirt.</li>
+  <li>Импорт виртуальной машины или шаблона в дата-центр, к которому был присоединён домен экспорта.</li>
 </ol>
 
-<p>A virtual machine must be stopped before it can be moved across data centers. If the virtual machine was created using a template, the template must exist in the destination data center for the virtual machine to work, or the virtual machine must be exported with the <strong>Collapse Snapshots</strong> option selected.</p>
+<p>Перед перемещением между дата-центрами, виртуальная машина должна быть остановлена. Если ВМ была создана на основе шаблона, то, для возможности работы этой машины, шаблон должен существовать в целевом дата-центре, или же машина должна быть экспортирована с выбранным параметром <strong>Свернуть снимки</strong>.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> When you export or import a virtual machine or template, the properties of that virtual machine or template are preserved, including basic details such as the name and description, resource allocation, and high availability settings.</p>
+  <p><strong>Внимание:</strong> во время экспорта или импорта ВМ или шаблона, свойства этой машины или шаблона сохраняются, включая такие базовые параметры, как имя и описание, выделение ресурсов и параметры высокой доступности.</p>
 
 </div>
 
-<h4 id="overview-of-the-export-and-import-process">Overview of the Export and Import Process</h4>
+<h4 id="overview-of-the-export-and-import-process">Обзор процессов экспорта и импорта</h4>
 
-<p>The export domain allows you to move virtual machines and templates between oVirt environments.</p>
+<p>Домен экспорта даёт возможность перемещать ВМ и шаблоны между окружениями oVirt.</p>
 
-<p>To export or import virtual machines and templates, an active export domain must be attached to the data center containing the virtual machine or template to be exported or imported. An export domain acts as a temporary storage area containing two directories for each exported virtual machine or template. One directory contains the OVF (Open Virtualization Format) files for the virtual machine or template. The other directory holds the disk image or images for the virtual machine or template.</p>
+<p>Для возможности экспорта или импорта ВМ и шаблонов, к дата-центру, содержащему ВМ или шаблон, предназначенные для экспорта/импорта, должен быть присоединён активный домен экспорта. Домен экспорта играет роль временной области хранения, с отдельным каталогом для каждой экспортируемой ВМ или шаблона. В одном каталоге находятся файлы машины или шаблона в формате OVF (Open Virtualization Format). В другом каталоге — образ или образы диска машины или шаблона.</p>
 
-<p>You can also import virtual machines from other virtualization providers such as Xen, VMware or Windows virtual machines using the V2V feature. V2V converts virtual machines and places them in the export domain.</p>
+<p>Также существует возможность импорта ВМ, созданных другими поставщиками виртуализации, например, Xen, VMware или виртуальные машины Windows, с помощью функционала V2V (Virtual to virtual). V2V конвертирует виртуальные машины и помещает их в домен экспорта.</p>
 
-<p>For more information on V2V, see the <em>Red Hat Enterprise Linux V2V Guide</em>.</p>
+<p>Подробную информацию о V2V см. в <em>Руководстве по Red Hat Enterprise Linux V2V</em>.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> An export domain can only be active in one data center at a given time. This means that the export domain must be attached to either the source data center or the destination data center.</p>
+  <p><strong>Внимание:</strong> только один домен экспорта может быть активным в одном дата-центре в заданный момент времени. Это означает, что домен экспорта должен быть присоединён либо к исходному дата-центру либо к целевому.</p>
 
 </div>
-<p>Exporting virtual machines and templates from one data center to another requires some preparation. Ensure that:</p>
+<p>Процесс экспорта ВМ и шаблонов из одного дата-центра в другой дата-центр требует некоторых приготовлений. Убедитесь, что:</p>
 
 <ul>
-  <li>An export domain exists, and is attached to the source data center.</li>
-  <li>The virtual machine is shut down.</li>
-  <li>If the virtual machine was created based on a template, that template must reside on the destination data center or be exported with the virtual machine.</li>
+  <li>Домен экспорта существует и присоединён к исходному дата-центру.</li>
+  <li>Виртуальная машина выключена.</li>
+  <li>Если ВМ была создана на базе шаблона, то этот шаблон должен находиться в целевом дата-центре или быть экспортирован вместе с ВМ.</li>
 </ul>
 
-<p>When the virtual machine or template has been exported to the export domain, you can import that virtual machine or template into the destination data center. If the destination data center is in the same oVirt environment as the source data center, delete the original virtual machine or template from the source data center after the export has completed.</p>
+<p>После экспорта ВМ или шаблона в домен экспорта, эту ВМ или шаблон можно импортировать в целевой дата-центр. Если целевой дата-центр находится в том же окружении oVirt, что и исходный дата-центр, удалите первоначальную ВМ или шаблон из исходного дата-центра после завершения операции экспорта.</p>
 
-<h4 id="graphical-overview-for-exporting-and-importing-virtual-machines-and-templates">Graphical Overview for Exporting and Importing Virtual Machines and Templates</h4>
+<h4 id="graphical-overview-for-exporting-and-importing-virtual-machines-and-templates">Графический обзор процессов экспорта и импорта виртуальных машин и шаблонов</h4>
 
 <p><strong>Summary</strong></p>
 
-<p>This procedure provides a graphical overview of the steps required to export a virtual machine or template from one data center and import that virtual machine or template into another data center.</p>
+<p>В данном разделе представлен графический обзор этапов, необходимых для экспорта ВМ или шаблона из одного дата-центра, и импорта этой ВМ или шаблона в другой дата-центр.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.40.&nbsp;Exporting and Importing Virtual Machines and Templates</strong></p>
+<p><strong>Действие&nbsp;8.40.&nbsp;Экспорт и импорт виртуальных машин и шбалонов</strong></p>
 
 <ol>
   <li>
-    <p>Attach the export domain to the source data center.
+    <p>Присоедините домен экспорта к исходному дата-центру.
 ⁠</p>
 
-    <p><img alt="Attach Export Domain" title="Attach Export Domain" src="./OVirt Administration Guide — oVirt_files/Export1.png"></p>
+    <p><img alt="Attach Export Domain" title="Присоединение домена экспорта" src="./OVirt Administration Guide — oVirt_files/Export1.png"></p>
 
-    <p><strong>Figure&nbsp;8.13.&nbsp;Attach Export Domain</strong></p>
+    <p><strong>Рисунок&nbsp;8.13.&nbsp;Присоединение домена экспорта</strong></p>
   </li>
   <li>
-    <p>Export the virtual machine or template to the export domain.
+    <p>Экспорт ВМ или шаблона в домен экспорта.
 ⁠</p>
 
-    <p><img alt="Export the Virtual Resource" title="Export the Virtual Resource" src="./OVirt Administration Guide — oVirt_files/Export2.png"></p>
+    <p><img alt="Export the Virtual Resource" title="Экспорт виртуального ресурса" src="./OVirt Administration Guide — oVirt_files/Export2.png"></p>
 
-    <p><strong>Figure&nbsp;8.14.&nbsp;Export the Virtual Resource</strong></p>
+    <p><strong>Рисунок&nbsp;8.14.&nbsp;Экспорт виртуального ресурса</strong></p>
   </li>
   <li>
-    <p>Detach the export domain from the source data center.
+    <p>Отсоединение домена экспорта от исходного дата-центра.
 ⁠</p>
 
-    <p><img alt="Detach Export Domain" title="Detach Export Domain" src="./OVirt Administration Guide — oVirt_files/Export3.png"></p>
+    <p><img alt="Detach Export Domain" title="Отсоединение домена экспорта" src="./OVirt Administration Guide — oVirt_files/Export3.png"></p>
 
-    <p><strong>Figure&nbsp;8.15.&nbsp;Detach Export Domain</strong></p>
+    <p><strong>Рисунок&nbsp;8.15.&nbsp;Отсоединение домена экспорта</strong></p>
   </li>
   <li>
-    <p>Attach the export domain to the destination data center.
+    <p>Присоединение домена экспорта к целевому дата-центру.
 ⁠</p>
 
-    <p><img alt="Attach the Export Domain" title="Attach the Export Domain" src="./OVirt Administration Guide — oVirt_files/Export4.png"></p>
+    <p><img alt="Attach the Export Domain" title="Присоединение домена экспорта" src="./OVirt Administration Guide — oVirt_files/Export4.png"></p>
 
-    <p><strong>Figure&nbsp;8.16.&nbsp;Attach the Export Domain</strong></p>
+    <p><strong>Рисунок&nbsp;8.16.&nbsp;Присоединение домена экспорта</strong></p>
   </li>
   <li>
-    <p>Import the virtual machine or template into the destination data center.
+    <p>Импорт ВМ или шаблона в целевой дата-центр.
 ⁠</p>
 
-    <p><img alt="Import the virtual resource" title="Import the virtual resource" src="./OVirt Administration Guide — oVirt_files/Export5.png"></p>
+    <p><img alt="Import the virtual resource" title="Импорт виртуального ресурса" src="./OVirt Administration Guide — oVirt_files/Export5.png"></p>
 
-    <p><strong>Figure&nbsp;8.17.&nbsp;Import the virtual resource</strong></p>
+    <p><strong>Рисунок&nbsp;8.17.&nbsp;Импорт виртуального ресурса</strong></p>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine or template is imported to the destination data center.</p>
+<p>Виртуальная машина или шаблон перенесены в целевой дата-центр.</p>
 
-<h4 id="exporting-a-virtual-machine-to-the-export-domain">Exporting a Virtual Machine to the Export Domain</h4>
+<h4 id="exporting-a-virtual-machine-to-the-export-domain">Экспорт ВМ в домен экспорта</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Export a virtual machine to the export domain so that it can be imported into a different data center. Before you begin, the export domain must be attached to the data center that contains the virtual machine to be exported.</p>
+<p>Эспорт ВМ в домен экспорта для дальнейшего её импорта в другой дата-центр. Перед началом операции домен экспорта должен быть прикреплён к дата-центру, содержащему виртуальную машину, предназначенную для экспорта.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.41.&nbsp;Exporting a Virtual Machine to the Export Domain</strong></p>
+<p><strong>Действие&nbsp;8.41.&nbsp;Экспорт ВМ в домен экспорта</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click <strong>Export</strong> to open the <strong>Export Virtual Machine</strong> window.</li>
-  <li>Select the <strong>Force Override</strong> check box to override existing images of the virtual machine on the export domain. Select the <strong>Collapse Snapshots</strong> check box to create a single export volume per disk. Selecting this option will remove snapshot restore points and include the template in a template-based virtual machine. This removes any dependencies a virtual machine has on a template.</li>
-  <li>Click <strong>OK</strong> to export the virtual machine and close the window.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Нажмите <strong>Экспорт</strong> чтобы открыть окно <strong>Экспорт ВМ</strong> window.</li>
+  <li>Отметьте галочкой пункт <strong>Принудительно заменить</strong> чтобы переопределить образы машины, существующие в домене экспорта. Отметьте пункт <strong>Свернуть снимки</strong> чтобы создать отдельный том экпорта для каждого отдельного диcка. При выборе этого параметра будут удалены точки восстановления снимка, а шаблон будет включен в виртуальную машину, созданную на базе шаблона, что удаляет зависимость ВМ от шаблона.</li>
+  <li>Нажмите <strong>OK</strong> чтобы экспортировать ВМ и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The export of the virtual machine begins. The virtual machine displays in the Virtual Machines list with an <code>Image Locked</code> status as it is exported. Depending on the size of your virtual machine hard disk images, and your storage hardware, this can take up to an hour. Use the <strong>Events</strong> tab to view the progress.</p>
+<p>Начинается процесс экспорта ВМ. ВМ показыается в списке машин и имеет статус <code>Образ заблокирован</code>, т.к. идёт её экспорт. Этот процесс может занять до часа времени, в зависимости от размеров образов жёстких дисков машины и аппаратных возможностей хранилища. Для просмотре хода выполнения экспорта перейдите на вкладку <strong>События</strong>.</p>
 
-<p>When complete, the virtual machine has been exported to the export domain and displays on the <strong>VM Import</strong> tab of the export domain's details pane.</p>
+<p>После завершения процесса, виртуальная машина экспортируется в домен экспорта и появляется во вкладке <strong>Импорт ВМ</strong> на панели сведений домена экспорта.</p>
 
-<h4 id="importing-a-virtual-machine-into-the-destination-data-center">Importing a Virtual Machine into the Destination Data Center</h4>
+<h4 id="importing-a-virtual-machine-into-the-destination-data-center">Импорт ВМ в целевой дата-центр</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You have a virtual machine on an export domain. Before the virtual machine can be imported to a new data center, the export domain must be attached to the destination data center.</p>
+<p>Виртуальная машина находится в домене экспорта. Перед переносом ВМ в новый дата-центр, домен экспорта должен быть присоединён к целевому дата-центру.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.42.&nbsp;Importing a Virtual Machine into the Destination Data Center</strong></p>
+<p><strong>Действие&nbsp;8.42.&nbsp;Импорт ВМ в целевой дата-центр</strong></p>
 
 <ol>
-  <li>Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the export domain in the results list. The export domain must have a status of <code>Active</code></li>
-  <li>Select the <strong>VM Import</strong> tab in the details pane to list the available virtual machines to import.</li>
-  <li>Select one or more virtual machines to import and click <strong>Import</strong> to open the <strong>Import Virtual Machine(s)</strong> window.</li>
-  <li>Use the drop-down menus to select the <strong>Default Storage Domain</strong> and <strong>Cluster</strong>.</li>
-  <li>Select the <strong>Collapse Snapshots</strong> check box to remove snapshot restore points and include templates in template-based virtual machines.</li>
-  <li>Click the virtual machine to be imported and click on the <strong>Disks</strong> sub-tab. From this tab, you can use the <strong>Allocation Policy</strong> and <strong>Storage Domain</strong> drop-down lists to select whether the disk used by the virtual machine will be thinly provisioned or preallocated, and can also select the storage domain on which the disk will be stored. An icon is also displayed to indicate which of the disks to be imported acts as the boot disk for that virtual machine.</li>
-  <li>Click <strong>OK</strong> to import the virtual machines The <strong>Import Conflict</strong> window opens if the virtual machine exists in the virtualized environment.</li>
-  <li>Choose one of the following radio buttons:
+  <li>Используйте ресурсную вкладку <strong>Хранилище</strong> режим дерева или поисковый функционал чтобы найти и выделить домен экспорта в списке результатов. Домен экпорта должен иметь статус <code>Активен</code>.</li>
+  <li>Перейдите на вкладку <strong>Импорт ВМ</strong> на панели сведений чтобы увидеть список доступных для импорта ВМ.</li>
+  <li>Выберите одну или более машину, предназначенную для импорта, и нажмите <strong>Импорт</strong> чтобы открыть окно <strong>Импорт ВМ</strong>.</li>
+  <li>В выпадающем меню выберите <strong>Домен хранилища по умолчанию</strong> и <strong>Кластер</strong>.</li>
+  <li>Отметьте пункт <strong>Свернуть снимки</strong> чтобы удалить точки восстановления снимка и включить шаблоны в состав ВМ, созданных на основе шаблона.</li>
+  <li>Нажмите на импортируемую ВМ и перейдите на вкладку <strong>Диски</strong>. В этой вкладке находятся разворачиваемые списки <strong>Политика распределения</strong> и <strong>Домен хранилища</strong>, где можно выбрать, будет ли диск, используемый машиной, предварительно выделен или же это будет тонкое резервирование, а также выбрать домен хранилища, в котором будет располагаться диск. Также показывается значок, показывающий, какой из импортируемых дисков является загрузочным для этой ВМ.</li>
+  <li>Нажмите <strong>OK</strong> чтобы импортировать виртуальные машины. В случае, если ВМ уже существует в виртуализированном окружении, будет открыто окно <strong>Конфликт импорта</strong>.</li>
+  <li>Выберите один из доступных пунктов:
     <ul>
-      <li><strong>Don't import</strong></li>
-      <li><strong>Clone</strong> and enter a unique name for the virtual machine in the <strong>New Name</strong> field.</li>
+      <li><strong>Не импортировать</strong></li>
+      <li><strong>Клонировать</strong> и введите уникальное имя ВМ в поле <strong>Добавить имя</strong>.</li>
     </ul>
 
-    <p>Or select the <strong>Apply to all</strong> check box to import all duplicated virtual machines with the same suffix.</p>
+    <p>Или выберите пункт <strong>Применить ко всем</strong> для импорта всех дублированных ВМ с одинаковым суффиксом.</p>
   </li>
-  <li>Click <strong>OK</strong> to import the virtual machines and close the window.</li>
+  <li>Нажмите <strong>OK</strong> чтобы импортировать машины и закрыть окно.</li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> During a single import operation, you can only import virtual machines that share the same architecture. If any of the virtual machines to be imported have a different architecture to that of the other virtual machines to be imported, a warning will display and you will be prompted to change your selection so that only virtual machines with the same architecture will be imported.</p>
+  <p><strong>Важно:</strong> во время отдельной операции импорта можно импортировать только машины с одинаковой архитектурой. В случае отличия архитектуры одной из машин, предназначенной для импорта, от архитектуры других импортируемых машин, будет выведено предупреждение и предложена возможность изменить выбор в пользу машин только одной архитектуры.</p>
 
 </div>
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have imported the virtual machine to the destination data center. This may take some time to complete.</p>
+<p>Мы импортировали ВМ в целевой дата-центр. Выполнение этого процесса может занять некоторое время.</p>
 
-<h3 id="migrating-virtual-machines-between-hosts">⁠Migrating Virtual Machines Between Hosts</h3>
+<h3 id="migrating-virtual-machines-between-hosts">⁠Перенос ВМ между хостами</h3>
 
-<h4 id="what-is-live-migration">What is Live Migration?</h4>
+<h4 id="what-is-live-migration">Что такое динамическая миграция?</h4>
 
-<p>Live migration provides the ability to move a running virtual machine between physical hosts with no interruption to service.</p>
+<p>Динамическая миграция предоставляет возможность перемещения выполняющейся виртуальной машины между физическими хостами без перерыва в обслуживании.</p>
 
-<p>Live migration is transparent to the end user: the virtual machine remains powered on and user applications continue to run while the virtual machine is relocated to a new physical host.</p>
+<p>Процесс динамической миграции является прозрачным для конечного пользователя: во время перемещения виртуальной машины на другой физический хост, машина не прерывает работы, и пользовательские приложения продолжают выполняться.</p>
 
-<h4 id="live-migration-prerequisites">Live Migration Prerequisites</h4>
+<h4 id="live-migration-prerequisites">Необходимые условия и предпосылки для динамической миграции</h4>
 
-<p>Live migration is used to seamlessly move virtual machines to support a number of common maintenance tasks. Ensure that your oVirt environment is correctly configured to support live migration well in advance of using it.</p>
+<p>Динамическая миграция используется для бесшовного переноса виртуальных машин, в целях поддержки некоторых наиболее распространённых задач обслуживания. Задолго до использования динамической миграции необходимо убедиться, что имеющееся окружение oVirt корректно настроено для её выполнения.</p>
 
-<p>At a minimum, for successful live migration of virtual machines to be possible:</p>
+<p>Минимальные требования для проведения динамической миграции виртуальных машин:</p>
 
 <ul>
-  <li>The source and destination host must both be members of the same cluster, ensuring CPU compatibility between them.</li>
-  <li>The source and destination host must have a status of <code>Up</code>.</li>
-  <li>The source and destination host must have access to the same virtual networks and VLANs.</li>
-  <li>The source and destination host must have access to the data storage domain on which the virtual machine resides.</li>
-  <li>There must be enough CPU capacity on the destination host to support the virtual machine's requirements.</li>
-  <li>There must be enough RAM on the destination host that is not in use to support the virtual machine's requirements.</li>
-  <li>The migrating virtual machine must not have the <code>cache!=none</code> custom property set.</li>
+  <li>Исходный и целевой хосты должны оба принадлежать одному кластеру, что обеспечивает совместимость ЦП.</li>
+  <li>Исходный и целевой хосты должны оба иметь статус <code>Работает</code>.</li>
+  <li>Исходный и целевой хосты должны оба иметь доступ к одной и той же виртуальной сети и виртуальной локальной сети.</li>
+  <li>Исходный и целевой хосты должны оба иметь доступ к домену хранилища данных, где расположена ВМ.</li>
+  <li>Целевой хост должен располагать ресурсами ЦП, соответствующими требованиям виртуальной машины.</li>
+  <li>Неиспользуемый объём ОЗУ целевого хоста должен соответствовать требованиям виртуальной машины.</li>
+  <li>На переносимой ВМ не должен быть установлен параметр <code>cache!=none</code>.</li>
 </ul>
 
-<p>In addition, for best performance, the storage and management networks should be split to avoid network saturation. Virtual machine migration involves transferring large amounts of data between hosts.</p>
+<p>Кроме того, для улучшения производительности, сети хранения и сети управления должны быть разделены во избежание перегрузки сети. Миграция виртуальных машин предполагает перемещение больших объёмов данных между хостами.</p>
 
-<p>Live migration is performed using the management network. Each live migration event is limited to a maximum transfer speed of 30 MBps, and the number of concurrent migrations supported is also limited by default. Despite these measures, concurrent migrations have the potential to saturate the management network. It is recommended that separate logical networks are created for storage, display, and virtual machine data to minimize the risk of network saturation.</p>
+<p>Динамическая миграция выполняется с использованием сети управления. Каждое действие динамической миграции ограничено максимальной скоростью передачи в 30 Мбит/с, и поддерживаемое число параллельных миграций также по умолчанию ограничено. Несмотря на эти ограничения, параллельно выполняемые миграции могут потенциально перегрузить сеть управления. Для снижения этого риска рекомендуется создать отдельные логические сети для хранилища, передачи экрана и данных ВМ.</p>
 
-<h4 id="automatic-virtual-machine-migration">Automatic Virtual Machine Migration</h4>
+<h4 id="automatic-virtual-machine-migration">Автоматическая миграция виртуальных машин</h4>
 
-<p>oVirt automatically initiates live migration of all virtual machines running on a host when the host is moved into maintenance mode. The destination host for each virtual machine is assessed as the virtual machine is migrated, in order to spread the load across the cluster.</p>
+<p>oVirt автоматически запускает динамическую миграцию всех ВМ, выполняющихся на хосте, если хост помещается в режим обслуживания. В целях равномерного распределения нагрузки по кластеру, каждой ВМ во время миграции выделяется целевой хост.</p>
 
-<p>oVirt automatically initiates live migration of virtual machines in order to maintain load balancing or power saving levels in line with cluster policy. While no cluster policy is defined by default, it is recommended that you specify the cluster policy which best suits the needs of your environment. You can also disable automatic, or even manual, live migration of specific virtual machines where required.</p>
+<p>oVirt автоматически запускает динамическую миграцию ВМ в целях поддержания уровней балансировки нагрузки или энергосбережения в соответствии с требованиями политики кластера. Поскольку политика кластера по умолчанию не определена, рекомендуется указывать ту политику, которая наиболее подходит к требованиям существующего окружения. Также, при необходимости, можно отключить как автоматическую, так и ручную миграцию конкретных виртуальных машин.</p>
 
-<h4 id="preventing-automatic-migration-of-a-virtual-machine">Preventing Automatic Migration of a Virtual Machine</h4>
+<h4 id="preventing-automatic-migration-of-a-virtual-machine">Предотвращение автоматической миграции ВМ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>oVirt allows you to disable automatic migration of virtual machines. You can also disable manual migration of virtual machines by setting the virtual machine to run only on a specific host.</p>
+<p>oVirt позволяет отключить автоматическую миграцию машин. Также можно отключить ручную миграцию, привязав выполнение машины к конкретному хосту.</p>
 
-<p>The ability to disable automatic migration and require a virtual machine to run on a particular host is useful when using application high availability products, such as Red Hat High Availability or Cluster Suite.</p>
+<p>Возможность отключения автоматическуй миграции и требование выполнения машины на конкретном хосте удобно при использовании компонентов высокой доступности, таких, как Red Hat High Availability или Cluster Suite.</p>
 
-<p><strong>Procedure&nbsp;8.43.&nbsp;Preventing automatic migration of a virtual machine</strong></p>
+<p><strong>Действие&nbsp;8.43.&nbsp;Предотвращение автоматической миграции ВМ</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Virtual Machine</strong> window.</li>
-  <li>Click the <strong>Hide Advanced Options</strong> button.
-<img alt="Edit Virtual Machine Window" title="fig:Edit Virtual Machine Window" src="./OVirt Administration Guide — oVirt_files/Edit_Virtual_Machine.png">
-<strong>Figure&nbsp;8.18.&nbsp;Edit Virtual Machine Window</strong></li>
-  <li>Click the <strong>Host</strong> tab.</li>
-  <li>Use the <strong>Run On</strong> radio buttons to designate the virtual machine to run on <strong>Any Host in Cluster</strong> or a <strong>Specific</strong> host. If applicable, select a specific host from the drop-down menu.
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить ВМ</strong>.</li>
+  <li>Нажмите на кнопку <strong>Спрятать дополнительные параметры</strong>.
+<img alt="Edit Virtual Machine Window" title="Окно изменения ВМ" src="./OVirt Administration Guide — oVirt_files/Edit_Virtual_Machine.png">
+<strong>Рисунок&nbsp;8.18.&nbsp;Окно изменения ВМ</strong></li>
+  <li>Перейдите на вкладку <strong>Хост</strong>.</li>
+  <li>Отметьте параметр <strong>Запускать на</strong>, чтобы настроить выполнение машины на <strong>Любом хосте в кластере</strong> или на <strong>Конкретном</strong> хосте. Если возможно, выберите конкретный хост в выпадающем меню.
     <div class="alert alert-info">
-      <p><strong>Warning:</strong> Explicitly assigning a virtual machine to a specific host and disabling migration is mutually exclusive with oVirt high availability. Virtual machines that are assigned to a specific host can only be made highly available using third party high availability products like Red Hat High Availability.</p>
+      <p><strong>Внимание:</strong> высокая доступность oVirt и явная привязка выполнения ВМ к конкретному хосту и отключение миграции — это взаимоисключающие функции. Виртуальные машины, чьё выполнение привязано к конкретному хосту, можно сделать высокодоступными только при использовании сторонних продуктов высокой доступности, например, Red Hat High Availability.</p>
 
     </div>
   </li>
-  <li>Use the drop-down menu to affect the <strong>Migration Options</strong>. Select <strong>Do not allow migration</strong> to enable the <strong>Use Host CPU</strong> check box.</li>
-  <li>If applicable, enter relevant <strong>CPU Pinning topology</strong> commands in the text field.</li>
-  <li>Click <strong>OK</strong> to save the changes and close the window.</li>
+  <li>Для выбора <strong>Параметров миграции</strong> используйте выпадающее меню. Выберите пункт <strong>Не разрешать миграцию</strong> чтобы включить параметр <strong>Использовать ЦП хоста</strong>.</li>
+  <li>Если возможно, введите соответствующие команды <strong>Топологии привязки ЦП</strong> в текстовое поле.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохранить изменения и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have changed the migration settings for the virtual machine.</p>
+<p>Мы изменили параметры миграции ВМ.</p>
 
-<h4 id="manually-migrating-virtual-machines">Manually Migrating Virtual Machines</h4>
+<h4 id="manually-migrating-virtual-machines">Ручная миграция виртуальных машин</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>A running virtual machine can be migrated to any host within its designated host cluster. This is especially useful if the load on a particular host is too high. When bringing a server down for maintenance, migration is triggered automatically, so manual migration is not required. Migration of virtual machines does not cause any service interruption.</p>
+<p>Выполняемую ВМ можно перенести на любой хост в пределах кластера целевого хоста. Это особенно удобно, если нагрузка на конкретный хост очень высока. Во время выключения хоста и перевода его в режим обслуживания, процесс миграции запускается автоматически, поэтому ручная миграция не  требуется. Миграция виртуальных машин не вызывает никаких перерывов в работе.</p>
 
-<p>The migrating virtual machine must not have the <code>cache!=none</code> custom property set.</p>
+<p>На переносимой ВМ не должен быть установлен параметр <code>cache!=none</code>.</p>
 
-<p><strong>Procedure&nbsp;8.44.&nbsp;Manually Migrating Virtual Machines</strong></p>
+<p><strong>Действие&nbsp;8.44.&nbsp;Ручная миграция ВМ</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a running virtual machine.</li>
-  <li>Click <strong>Migrate</strong> to open the <strong>Migrate Virtual Machine(s)</strong> window.</li>
-  <li>Use the radio buttons to select whether to <strong>Select Host Automatically</strong> or to <strong>Select Destination Host</strong>, specifying the host using the drop-down menu.
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите выполняющуюся ВМ.</li>
+  <li>Нажмите <strong>Миграция</strong> чтобы открыть окно <strong>Миграция ВМ</strong>.</li>
+  <li>Отметьте галочкой параметр <strong>Выбрать хост автоматически</strong> или параметр <strong>Выбрать целевой хост</strong>, выбрав хост в выпадающем меню.
     <div class="alert alert-info">
-      <p><strong>Note:</strong> Virtual Machines migrate within their designated host cluster. When the <strong>Select Host Automatically</strong> option is selected, the system determines the host to which the virtual is migrated according to the load balancing and power management rules set up in the cluster policy.</p>
+      <p><strong>Внимание:</strong> миграция ВМ проводится в пределах кластера целевого хоста. При выбранном параметре <strong>Выбрать хост автоматически</strong>, система определяет хост, на который будет переноситься ВМ, на основе правил балансировки нагрузки и экономии энергии, указанных в политике кластера.</p>
 
     </div>
   </li>
-  <li>Click <strong>OK</strong> to commence migration and close the window.</li>
+  <li>Нажмите <strong>OK</strong> чтобы начать миграцию и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine is migrated. Once migration is complete the <strong>Host</strong> column will update to display the host the virtual machine has been migrated to.</p>
+<p>Миграция ВМ выполняется. После завершения миграции, содержимое столбца <strong>Хост</strong> будет обновлено, и там будет показан хост, на который была перенесена машина.</p>
 
-<h4 id="setting-migration-priority">Setting Migration Priority</h4>
+<h4 id="setting-migration-priority">Настройка приоритетов миграции</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>oVirt queues concurrent requests for migration of virtual machines off of a given host. Every minute the load balancing process runs. Hosts already involved in a migration event are not included in the migration cycle until their migration event has completed. When there is a migration request in the queue and available hosts in the cluster to action it, a migration event is triggered in line with the load balancing policy for the cluster.</p>
+<p>oVirt ставит в очередь одновременные запросы на миграцию от виртуальных машин вне указанного хоста. Каждую минуту выполняется процесс балансировки нагрузки. Хосты, уже участвующие в событии миграции, не включаются в цикл миграции до тех пор, пока событие не завершится. При наличии в очереди запроса на миграцию и доступных хостов в кластере, запускается событие миграции, в соответствии с политикой балансировки нагрузки кластера.</p>
 
-<p>It is possible to influence the ordering of the migration queue, for example setting mission critical virtual machines to migrate before others. oVirt allows you to set the priority of each virtual machine to facilitate this. Virtual machines migrations will be ordered by priority, those virtual machines with the highest priority will be migrated first.</p>
+<p>Порядок очереди на миграцию можно изменять, например, настроив миграцию критически важных виртуальных машин раньше остальных. Для облегчения этой задачи, oVirt предоставляет возможность указать приоритет для каждой ВМ. Порядок миграции машин будет основан на приоритете, и машины с более высоким приоритетом будут переноситься первыми.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.45.&nbsp;Setting Migration Priority</strong></p>
+<p><strong>Действие&nbsp;8.45.&nbsp;Настройка приоритета миграции</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Virtual Machine</strong> window.</li>
-  <li>Select the <strong>High Availability</strong> tab.</li>
-  <li>Use the radio buttons to set the <strong>Priority for Run/Migrate Queue</strong> of the virtual machine to one of <strong>Low</strong>, <strong>Medium</strong>, or <strong>High</strong>.</li>
-  <li>Click <strong>OK</strong> to save changes and close the window.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить ВМ</strong>.</li>
+  <li>Перейдите на вкладку <strong>Высокая доступность</strong>.</li>
+  <li>С помощью флажков установите <strong>Приоритет очереди запуска/миграции</strong> виртуальной машины на значение <strong>Низкий</strong>, <strong>Средний</strong> или <strong>Высокий</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохранить изменения и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine's migration priority has been modified.</p>
+<p>Приоритет миграции ВМ был изменён.</p>
 
-<h4 id="canceling-ongoing-virtual-machine-migrations">Canceling Ongoing Virtual Machine Migrations</h4>
+<h4 id="canceling-ongoing-virtual-machine-migrations">Отмена текущих миграций ВМ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>A virtual machine migration is taking longer than you expected. You'd like to be sure where all virtual machines are running before you make any changes to your environment.</p>
+<p>Миграция ВМ занимает больше времени, чем ожидалось. Нужно убедиться, где выполняются все машины, перед тем, как вносить изменения в параметры окружения.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;8.46.&nbsp;Canceling Ongoing Virtual Machine Migrations</strong></p>
+<p><strong>Действие&nbsp;8.46.&nbsp;Отмена текущих миграций ВМ</strong></p>
 
 <ol>
-  <li>Select the migrating virtual machine. It is displayed in the <strong>Virtual Machines</strong> resource tab with a status of <strong>Migrating from</strong>.</li>
-  <li>Click the <strong>Cancel Migration</strong> button at the top of the results list. Alternatively, right-click on the virtual machine and select <strong>Cancel Migration</strong> from the context menu.</li>
+  <li>Выберите ВМ в процессе миграции. Она показывается в ресурсной вкладке <strong>Виртуальные машины</strong> и имеет статус <strong>Переносится с</strong>.</li>
+  <li>Нажмите кнопку <strong>Отменить миграцию</strong> наверху списка результатов. Или сделайте щелчок ПКМ на машине и выберите пункт контекстного меню <strong>Отменить миграцию</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine status returns from <strong>Migrating from</strong> status to <strong>Up</strong> status.</p>
+<p>Статус ВМ изменяется с <strong>Переносится с</strong> на предыдущий статус <strong>Работает</strong>.</p>
 
-<h4 id="event-and-log-notification-upon-automatic-migration-of-highly-available-virtual-servers">Event and Log Notification upon Automatic Migration of Highly Available Virtual Servers</h4>
+<h4 id="event-and-log-notification-upon-automatic-migration-of-highly-available-virtual-servers">Уведомления о событиях и записях в журнале после выполнения автоматической миграции виртуальных серверов высокой доступности</h4>
 
-<p>When a virtual server is automatically migrated because of the high availability function, the details of an automatic migration are documented in the <strong>Events</strong> tab and in the engine log to aid in troubleshooting, as illustrated in the following examples:</p>
-
-<p>⁠</p>
-
-<p><strong>Example&nbsp;8.1.&nbsp;Notification in the Events Tab of the Web Admin Portal</strong></p>
-
-<p>Highly Available <em>Virtual_Machine_Name</em> failed. It will be restarted automatically.</p>
-
-<p><em>Virtual_Machine_Name</em> was restarted on Host <em>Host_Name</em></p>
+<p>Во время проведения автоматичсекий миграции виртуального сервера в результате функционирования высокой доступности, подробности процесса автоматичсекой миграции фиксируются во вкладке <strong>События</strong> и в журнале Центра Управления, что облегчает решение возникающих проблем, что показано в следующих примерах:</p>
 
 <p>⁠</p>
 
-<p><strong>Example&nbsp;8.2.&nbsp;Notification in oVirt engine.log</strong></p>
+<p><strong>Пример&nbsp;8.1.&nbsp;Уведомления во вкладке «События» портала веб-администрирования</strong></p>
 
-<p>This log can be found on oVirt at <code>/var/log/ovirt-engine/engine.log</code>:</p>
+<p>Сбой высокодоступной виртуальной машины <em>Имя_машины</em>. Машина будет перезапущена автоматически.</p>
 
-<p>Failed to start Highly Available VM. Attempting to restart. VM Name: <em>Virtual_Machine_Name</em>, VM Id:<em>Virtual_Machine_ID_Number</em></p>
+<p>Виртуальная машина <em>Имя_машины</em> была перезапущена на хосте <em>Имя_хоста</em></p>
 
-<h3 id="improving-uptime-with-virtual-machine-high-availability">⁠Improving Uptime with Virtual Machine High Availability</h3>
+<p>⁠</p>
 
-<h4 id="why-use-high-availability">Why Use High Availability?</h4>
+<p><strong>Пример&nbsp;8.2.&nbsp;Уведомления oVirt в журнале engine.log</strong></p>
 
-<p>High availability is recommended for virtual machines running critical workloads.</p>
+<p>Этот журнал oVirt располагается по пути <code>/var/log/ovirt-engine/engine.log</code>:</p>
 
-<p>High availability can ensure that virtual machines are restarted in the following scenarios:</p>
+<p>Сбой запуска высокодоступной ВМ. Попытка перезапуска. Имя ВМ: <em>Имя_машины</em>, Id ВМ:<em>Номер_ID_ВМ</em></p>
+
+<h3 id="improving-uptime-with-virtual-machine-high-availability">⁠Увеличение времени непрерывной работы виртуальной машины с помощью высокой доступности</h3>
+
+<h4 id="why-use-high-availability">Для чего используется высокая доступность?</h4>
+
+<p>Высокая доступность рекомендуется для виртуальных машин с особо важной рабочей нагрузкой.</p>
+
+<p>Высокая доступность гарантирует перезапуск виртуальных машин в следующих сценариях:</p>
 
 <ul>
-  <li>When a host becomes non-operational due to hardware failure.</li>
-  <li>When a host is put into maintenance mode for scheduled downtime.</li>
-  <li>When a host becomes unavailable because it has lost communication with an external storage resource.</li>
+  <li>Хост становится нерабочим в результате аппаратного сбоя.</li>
+  <li>Хост переводится в режим обслуживания в запланированном простое.</li>
+  <li>Хост становится недоступным в результате потери связи с внешним ресурсом хранения.</li>
 </ul>
 
-<p>A high availability virtual machine is automatically restarted, either on its original host or another host in the cluster.</p>
+<p>ВМ высокой доступности перезапускается автоматически, на своём хосте или на другом хосте в кластере.</p>
 
-<h4 id="what-is-high-availability">What is High Availability?</h4>
+<h4 id="what-is-high-availability">Что такое высокая доступность?</h4>
 
-<p>High availability means that a virtual machine will be automatically restarted if its process is interrupted. This happens if the virtual machine is terminated by methods other than powering off from within the guest or sending the shutdown command from oVirt. When these events occur, the highly available virtual machine is automatically restarted, either on its original host or another host in the cluster.</p>
+<p>Высокая доступность означает, что виртуальная машина будет автоматически перезапущена в том случае, если её работа будет прервана любым способом, кроме выключения методами установленной гостевой ОС или передачи команды shutdown из oVirt. В этом случае высокодоступная ВМ автоматически перезапускается, на исходном хосте или на другом хосте кластера.</p>
 
-<p>High availability is possible because oVirt constantly monitors the hosts and storage, and automatically detects hardware failure. If host failure is detected, any virtual machine configured to be highly available is automatically restarted on another host in the cluster.</p>
+<p>Высокая доступность обеспечивается постоянным наблюдением oVirt за хостами и хранилищем, в результате чего аппаратные сбои онаруживаются автоматически. В случае обнаружения сбоя хоста, любая виртуальная машина с настроенной высокой доступностью автоматически перезапускается на другом хосте кластера.</p>
 
-<p>With high availability, interruption to service is minimal because virtual machines are restarted within seconds with no user intervention required. High availability keeps your resources balanced by restarting guests on a host with low current resource utilization, or based on any workload balancing or power saving policies that you configure. This ensures that there is sufficient capacity to restart virtual machines at all times.</p>
+<p>Высокая доступность гарантирует минимальную возможность перерывов в работе ВМ, т.к. машины перезапускаются в течении нескольких секунд без необходимости каких-либо действий со стороны пользователя. Высокая доступность поддерживает баланс ресурсов, поскольку гости перезапускаются на хосте с низким текущим потреблением ресурсов или на основании любых настроенных политик балансировки нагрузки или экономии энергии. Это обеспечивает наличие достаточных ресурсов для перезапуска ВМ в любое время.</p>
 
-<h4 id="high-availability-considerations">High Availability Considerations</h4>
+<h4 id="high-availability-considerations">Рекомендации при выборе высокой доступности</h4>
 
-<p>A highly available host requires a power management device and its fencing parameters configured. In addition, for a virtual machine to be highly available when its host becomes non-operational, it needs to be started on another available host in the cluster. To enable the migration of highly available virtual machines:</p>
+<p>Для высокодоступного хоста необходимо устройство управления электропитанием с настроенными параметрами для проведения операции блокады. Кроме того, чтобы ВМ стала высокодоступной в случае нерабочего состояния её хоста, её необходимо перезапустить на другом доступном хосте кластера. Условия, необходимые для обеспечения миграции высокодоступной виртуальной машины:</p>
 
 <ul>
-  <li>Power management must be configured for the hosts running the highly available virtual machines.</li>
-  <li>The host running the highly available virtual machine must be part of a cluster which has other available hosts.</li>
-  <li>The destination host must be running.</li>
-  <li>The source and destination host must have access to the data domain on which the virtual machine resides.</li>
-  <li>The source and destination host must have access to the same virtual networks and VLANs.</li>
-  <li>There must be enough CPUs on the destination host that are not in use to support the virtual machine's requirements.</li>
-  <li>There must be enough RAM on the destination host that is not in use to support the virtual machine's requirements.</li>
+  <li>На хостах, где выполняются высокодоступные ВМ, должно быть настроено управление питанием.</li>
+  <li>В кластере, частью которого является хост, на котором выполняются высокодоступные ВМ, должны присутствовать другие доступные хосты.</li>
+  <li>Целевой хост должен быть в работоспособном состоянии.</li>
+  <li>Исходный и целевой хосты должны иметь доступ к домену данных, в котором располагается ВМ.</li>
+  <li>Исходный и целевой хосты должны иметь доступ к одним и тем же виртуальным сетям и виртуальным локальным сетям.</li>
+  <li>Объём неиспользуемых ресурсов ЦП целевого хоста должен быть достаточным для удовлетворения требований ВМ.</li>
+  <li>Объём неиспользуемых ресурсов ОЗУ целевого хоста должен быть достаточным для удовлетворения требований ВМ.</li>
 </ul>
 
-<h4 id="configuring-a-highly-available-virtual-machine">Configuring a Highly Available Virtual Machine</h4>
+<h4 id="configuring-a-highly-available-virtual-machine">Настройка параметров высокодоступной ВМ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>High availability must be configured individually for each virtual machine.</p>
+<p>Высокая доступность настраивается индивидуально для каждой ВМ.</p>
 
-<p><strong>Procedure&nbsp;8.47.&nbsp;Configuring a Highly Available Virtual Machine</strong></p>
-
-<ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Virtual Machine</strong> window.</li>
-  <li>Click the <strong>Show Advanced Options</strong> button.</li>
-  <li>Click the <strong>High Availability</strong> tab.</li>
-  <li>Select the <strong>Highly Available</strong> check box to enable high availability for the virtual machine.</li>
-  <li>Use the radio buttons to set the <strong>Priority for Run/Migrate Queue</strong> of the virtual machine to one of <strong>Low</strong>, <strong>Medium</strong>, or <strong>High</strong>. When migration is triggered, a queue is created in which the high priority virtual machines are migrated first. If a cluster is running low on resources, only the high priority virtual machines are migrated.</li>
-  <li>Click <strong>OK</strong>.</li>
-</ol>
-
-<p><strong>Result</strong></p>
-
-<p>You have configured high availability for a virtual machine. You can check if a virtual machine is highly available by selecting the virtual machine and clicking on the <strong>General</strong> tab in the details pane.</p>
-
-<h3 id="other-virtual-machine-tasks">⁠Other Virtual Machine Tasks</h3>
-
-<h4 id="enabling-sap-monitoring-for-a-virtual-machine-from-the-administration-portal">Enabling SAP monitoring for a virtual machine from the Administration Portal</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>Enable SAP monitoring on a virtual machine to be recognized by SAP monitoring systems.</p>
-
-<p><strong>Procedure&nbsp;8.48.&nbsp;Enabling SAP monitoring for a Virtual Machine from the Administration Portal</strong></p>
+<p><strong>Действие&nbsp;8.47.&nbsp;Настройка высокодоступной виртуальной машины</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click <strong>Edit</strong> button to open the <strong>Edit Virtual Machine</strong> window.</li>
-  <li>Click the <strong>Show Advanced Properties</strong> button.</li>
-  <li>Select the <strong>Custom Properties</strong> tab.
-<img alt="Custom Properties tab" title="fig:Custom Properties tab" src="./OVirt Administration Guide — oVirt_files/Edit_Virtual_Machine_CustomProperties.png">
-<strong>Figure&nbsp;8.19.&nbsp;Enable SAP</strong></li>
-  <li>Use the drop-down menu to select <code>sap_agent</code>. Ensure the secondary drop-down menu is set to <strong>True</strong>. If previous properties have been set, select the plus sign to add a new property rule and select <code>sap_agent</code>.</li>
-  <li>Click <strong>OK</strong> to save changes and close the window.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить ВМ</strong>.</li>
+  <li>Нажмите на кнопку <strong>Показать дополнительные параметры</strong>.</li>
+  <li>Перейдите на вкладку <strong>Высокая доступность</strong>.</li>
+  <li>Отметьте галочкой параметр <strong>С высокой доступностью</strong> чтобы включить высокую доступность для ВМ.</li>
+  <li>С помощью флажков установите <strong>Приоритет очереди запуска/миграции</strong> виртуальной машины на значение <strong>НИзкий</strong>, <strong>Средний</strong> или <strong>Высокий</strong>. При запуске процесса миграции создаётся очередь, и ВМ с высоким приоритетом переносятся первыми. Если кластер испытывает недостаток ресурсов, переносятся только ВМ с высоким приоритетом.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have enabled SAP monitoring for your virtual machine.</p>
+<p>Мы настроили высокую доступность для ВМ. Чтобы проверить, является ли ВМ высокодоступной, выберите машину и перейдите на вкладку <strong>Общие</strong> на панели сведений.</p>
 
-<h4 id="configuring-red-hat-enterprise-linux-54-or-higher-virtual-machines-to-use-spice">Configuring Red Hat Enterprise Linux 5.4 or Higher Virtual Machines to use SPICE</h4>
+<h3 id="other-virtual-machine-tasks">Другие задачи виртуальных машин</h3>
 
-<h5 id="using-spice-on-virtual-machines-running-versions-of-red-hat-enterprise-linux-released-prior-to-54">Using SPICE on virtual machines running versions of Red Hat Enterprise Linux released prior to 5.4</h5>
+<h4 id="enabling-sap-monitoring-for-a-virtual-machine-from-the-administration-portal">Включение мониторинга SAP через Административный портал</h4>
 
-<p>SPICE is a remote display protocol designed for virtual environments, which enables you to view a virtualized desktop or server. SPICE delivers a high quality user experience, keeps CPU consumption low, and supports high quality video streaming.</p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Using SPICE on a Linux machine significantly improves the movement of the mouse cursor on the console of the virtual machine. To use SPICE, the X-Windows system requires additional qxl drivers. The qxl drivers are provided with Red Hat Enterprise Linux 5.4 and newer. Older versions are not supported. Installing SPICE on a virtual machine running Red Hat Enterprise Linux significantly improves the performance of the graphical user interface.</p>
+<p>Включение мониторинга SAP на виртуальной машине в целях распознавания её системами мониторинга SAP.</p>
+
+<p><strong>Действие&nbsp;8.48.&nbsp;Включение мониторинга SAP через Административный портал</strong></p>
+
+<ol>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить ВМ</strong>.</li>
+  <li>Нажмите на кнопку <strong>Показать дополнительные параметры</strong>.</li>
+  <li>Перейдите на вкладку <strong>Задаваемые параметры</strong>.
+<img alt="Custom Properties tab" title="Вкладка задаваемых параметров" src="./OVirt Administration Guide — oVirt_files/Edit_Virtual_Machine_CustomProperties.png">
+<strong>Рисунок&nbsp;8.19.&nbsp;Включение SAP</strong></li>
+  <li>В выпадающем меню выберите <code>sap_agent</code>. Убедитесь, что параметр вторичного выпадающего меню установлен на <strong>Верно</strong>. Если ранее были установлены какие-либо параметры, выберите значок плюса чтобы добавить новое правило параметра, и укажите <code>sap_agent</code>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохранить изменения и закрыть окно.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Мы включили мониторинг SAP на виртуальной машине.</p>
+
+<h4 id="configuring-red-hat-enterprise-linux-54-or-higher-virtual-machines-to-use-spice">Настройка использования SPICE на ВМ под управлением Red Hat Enterprise Linux версии 5.4 или более поздней</h4>
+
+<h5 id="using-spice-on-virtual-machines-running-versions-of-red-hat-enterprise-linux-released-prior-to-54">Использование SPICE на ВМ под управлением Red Hat Enterprise Linux с версиями до 5.4</h5>
+
+<p>SPICE — это протокол удалённого экрана, предназначенный для виртуальных окружений, с помощью которого можно просматривать виртуализированный рабочий стол или сервер. SPICE предоставляет высококачественный механизм взаимодействия с пользователем, не требователен к ресурсам ЦП и поддерживает высококачественное потоковое видео.</p>
+
+<p>Использование SPICE на машинах с Linux значительно улучшает качество движения курсора мыши в консоли ВМ. Для использования SPICE, графическому серверу X-Windows необходимы дополнительные драйверы qxl. Драйверы qxl включены в состав Red Hat Enterprise Linux 5.4 и более поздних. Ранние версии не поддерживаются. Установка SPICE на ВМ под управлением Red Hat Enterprise Linux значительно улучшает производительность графического интерфейса пользователя.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Typically, this is most useful for virtual machines where the user requires the use of the graphical user interface. System administrators who are creating virtual servers may prefer not to configure SPICE if their use of the graphical user interface is minimal.</p>
+  <p><strong>Внимание:</strong> как правило, этот функционал наиболее полезен для тех ВМ, где пользователю необходима работа с графическим интерфейсом. Системные администраторы, создающие виртуальные серверы, могут отказаться от настройки SPICE в случае, если их работа с графическим интерфейсом минимальна.</p>
 
 </div>
 
-<h5 id="installing-qxl-drivers-on-virtual-machines">Installing qxl drivers on virtual machines</h5>
+<h5 id="installing-qxl-drivers-on-virtual-machines">Установка драйверов qxl на ВМ</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure installs qxl drivers on virtual machines running Red Hat Enterprise Linux 5.4 or higher.</p>
+<p>Далее описывается установка драйверов qxl на ВМ под управлением Red Hat Enterprise Linux версии 5.4 или более поздней.</p>
 
-<p><strong>Procedure&nbsp;8.49.&nbsp;Installing qxl Drivers on a Virtual Machine</strong></p>
+<p><strong>Действие&nbsp;8.49.&nbsp;Установка драйверов qxl на ВМ</strong></p>
 
 <ol>
   <li>Log in to a Red Hat Enterprise Linux virtual machine.</li>
