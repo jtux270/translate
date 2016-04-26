@@ -6497,9 +6497,9 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 
 <h4 id="what-is-high-availability">Что такое высокая доступность?</h4>
 
-<p>Высокая доступность означает, что виртуальная машина будет автоматически перезапущена в том случае, если её работа будет прервана любым способом, кроме выключения методами установленной гостевой ОС или передачи команды shutdown из oVirt. В этом случае высокодоступная ВМ автоматически перезапускается, на исходном хосте или на другом хосте кластера.</p>
+<p>Высокая доступность означает, что виртуальная машина будет автоматически перезапущена в том случае, если её работа будет прервана любым способом, кроме выключения из установленной гостевой ОС или передачи команды shutdown из oVirt. В этом случае высокодоступная ВМ автоматически перезапускается, на исходном хосте или на другом хосте кластера.</p>
 
-<p>Высокая доступность обеспечивается постоянным наблюдением oVirt за хостами и хранилищем, в результате чего аппаратные сбои онаруживаются автоматически. В случае обнаружения сбоя хоста, любая виртуальная машина с настроенной высокой доступностью автоматически перезапускается на другом хосте кластера.</p>
+<p>Высокая доступность обеспечивается постоянным наблюдением oVirt за хостами и хранилищем, в результате чего аппаратные сбои обнаруживаются автоматически. В случае обнаружения сбоя хоста, любая виртуальная машина с настроенной высокой доступностью автоматически перезапускается на другом хосте кластера.</p>
 
 <p>Высокая доступность гарантирует минимальную возможность перерывов в работе ВМ, т.к. машины перезапускаются в течении нескольких секунд без необходимости каких-либо действий со стороны пользователя. Высокая доступность поддерживает баланс ресурсов, поскольку гости перезапускаются на хосте с низким текущим потреблением ресурсов или на основании любых настроенных политик балансировки нагрузки или экономии энергии. Это обеспечивает наличие достаточных ресурсов для перезапуска ВМ в любое время.</p>
 
@@ -6531,7 +6531,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
   <li>Нажмите на кнопку <strong>Показать дополнительные параметры</strong>.</li>
   <li>Перейдите на вкладку <strong>Высокая доступность</strong>.</li>
   <li>Отметьте галочкой параметр <strong>С высокой доступностью</strong> чтобы включить высокую доступность для ВМ.</li>
-  <li>С помощью флажков установите <strong>Приоритет очереди запуска/миграции</strong> виртуальной машины на значение <strong>НИзкий</strong>, <strong>Средний</strong> или <strong>Высокий</strong>. При запуске процесса миграции создаётся очередь, и ВМ с высоким приоритетом переносятся первыми. Если кластер испытывает недостаток ресурсов, переносятся только ВМ с высоким приоритетом.</li>
+  <li>С помощью флажков установите <strong>Приоритет очереди запуска/миграции</strong> виртуальной машины на значение <strong>Низкий</strong>, <strong>Средний</strong> или <strong>Высокий</strong>. При запуске процесса миграции создаётся очередь, и ВМ с высоким приоритетом переносятся первыми. Если кластер испытывает недостаток ресурсов, переносятся только ВМ с высоким приоритетом.</li>
   <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
@@ -6586,43 +6586,43 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 <p><strong>Действие&nbsp;8.49.&nbsp;Установка драйверов qxl на ВМ</strong></p>
 
 <ol>
-  <li>Log in to a Red Hat Enterprise Linux virtual machine.</li>
-  <li>Open a terminal.</li>
-  <li>Run the following command as root:
+  <li>Авторизуйтесь на машине под управлением Red Hat Enterprise Linux.</li>
+  <li>Откройте терминал.</li>
+  <li>Выпоните следующую команду с правами root:
     # yum install xorg-x11-drv-qxl</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The qxl drivers have been installed and must now be configured.</p>
+<p>Драйверы qxl были установлены, и их теперь необходимо настроить.</p>
 
-<h5 id="configuring-qxl-drivers-on-virtual-machines">Configuring qxl drivers on virtual machines</h5>
+<h5 id="configuring-qxl-drivers-on-virtual-machines">Настройка драйверов qxl на виртуальных машинах</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can configure qxl drivers using either a graphical interface or the command line. Perform only one of the following procedures.</p>
+<p>Драйверы qxl можно настроить через графический интерфейс или в командной строке. Выполните только одно из описанных ниже действий.</p>
 
-<p><strong>Procedure&nbsp;8.50.&nbsp;Configuring qxl drivers in GNOME</strong></p>
+<p><strong>Действие&nbsp;8.50.&nbsp;Настройка драйверов qxl в GNOME</strong></p>
 
 <ol>
-  <li>Click <strong>System</strong>.</li>
-  <li>Click <strong>Administration</strong>.</li>
-  <li>Click <strong>Display</strong>.</li>
-  <li>Click the <strong>Hardware</strong> tab.</li>
-  <li>Click <strong>Video Cards Configure</strong>.</li>
-  <li>Select <strong>qxl</strong> and click <strong>OK</strong>.</li>
-  <li>Restart X Window by logging out of the virtual machine and logging back in.</li>
+  <li>Нажмите <strong>Система</strong>.</li>
+  <li>Нажмите <strong>Администрирование</strong>.</li>
+  <li>Нажмите <strong>Монитор</strong>.</li>
+  <li>Перейдите на вкладку <strong>Оборудование</strong>.</li>
+  <li>Нажмите <strong>Параметры видео-карт</strong>.</li>
+  <li>Выберите <strong>qxl</strong> и нажмите <strong>OK</strong>.</li>
+  <li>Перезапустите X Window, завершив сеанс пользователя и затем снова авторизовавшись в системе.</li>
 </ol>
 
-<p><strong>Procedure&nbsp;8.51.&nbsp;Configuring qxl drivers on the command line:</strong></p>
+<p><strong>Действие&nbsp;8.51.&nbsp;Настройка драйверов qxl в командной сроке:</strong></p>
 
 <ol>
   <li>
-    <p>Back up <code>/etc/X11/xorg.conf</code>:
+    <p>Сохраните резервную копию <code>/etc/X11/xorg.conf</code>:
     # cp /etc/X11/xorg.conf /etc/X11/xorg.conf.$$.backup</p>
   </li>
   <li>
-    <p>Make the following change to the Device section of <code>/etc/X11/xorg.conf</code>:
+    <p>Внесите следующие изменения в раздел Device файла <code>/etc/X11/xorg.conf</code>:
     Section     "Device"
     Identifier  "Videocard0"
     Driver      "qxl"
@@ -6630,31 +6630,31 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have configured qxl drivers to enable your virtual machine to use SPICE.</p>
+<p>Мы настроили драйверы qxl и настроили виртуальную машину на использование протокола SPICE.</p>
 
-<h5 id="configuring-a-virtual-machines-tablet-and-mouse-to-use-spice">Configuring a Virtual Machine's Tablet and Mouse to use SPICE</h5>
+<h5 id="configuring-a-virtual-machines-tablet-and-mouse-to-use-spice">Настройка планшетного устройства и мыши виртуальной машины для использования SPICE</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Edit the <code>/etc/X11/xorg.conf</code> file to enable SPICE for your virtual machine's tablet devices.</p>
+<p>Измените файл <code>/etc/X11/xorg.conf</code> чтобы включить SPICE для планшетных устройств ВМ.</p>
 
-<p><strong>Procedure&nbsp;8.52.&nbsp;Configuring a virtual machine's tablet and mouse to use SPICE</strong></p>
+<p><strong>Действие&nbsp;8.52.&nbsp;Настройка планшетного устройства и мыши виртуальной машины для использования SPICE</strong></p>
 
 <ol>
   <li>
-    <p>Verify that the tablet device is available on your guest:
+    <p>Убедитесь, что планшет доступен для гостевой сисетмы:
     # /sbin/lsusb -v | grep 'QEMU USB Tablet'</p>
 
-    <p>If there is no output from the command, do not continue configuring the tablet.</p>
+    <p>Если вывод этой команды отсутствует, не продолжайте настройку.</p>
   </li>
   <li>
-    <p>Back up <code>/etc/X11/xorg.conf</code> by running this command:
+    <p>Сохраните резервную копию <code>/etc/X11/xorg.conf</code>, выполнив команду:
     # cp /etc/X11/xorg.conf /etc/X11/xorg.conf.$$.backup</p>
   </li>
   <li>
-    <p>Make the following changes to /etc/X11/xorg.conf:
+    <p>Внесите следующие изменения в файл /etc/X11/xorg.conf:
     Section "ServerLayout"
     Identifier     "single head configuration"
     Screen      0  "Screen0" 0 0
@@ -6679,92 +6679,92 @@ EndSection
 </code></pre>
   </li>
   <li>
-    <p>Log out and log back into the virtual machine to restart X-Windows.</p>
+    <p>Перезапустите X Window, завершив сеанс пользователя и затем снова авторизовавшись в системе.</p>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have enabled a tablet and a mouse device on your virtual machine to use SPICE.</p>
+<p>Мы настроили мышь и планшетное устройство машины на использование SPICE.</p>
 
-<h4 id="kvm-virtual-machine-timing-management">KVM Virtual Machine Timing Management</h4>
+<h4 id="kvm-virtual-machine-timing-management">Управление временем на виртуальной машине KVM</h4>
 
-<p>Virtualization poses various challenges for virtual machine time keeping. Virtual machines which use the Time Stamp Counter (TSC) as a clock source may suffer timing issues as some CPUs do not have a constant Time Stamp Counter. Virtual machines running without accurate timekeeping can have serious affects on some networked applications as your virtual machine will run faster or slower than the actual time.</p>
+<p>Виртуализация предлагает определённые испытания для системы измерения времени виртуальной машины. Машины, использующие в качестве источника времени счетчик меток времени TSC, могут испытывать проблемы со временем, поскольку некоторые ЦП не имеют постоянного счётчика меток времени. ВМ, работающие без точной службы времени и хронометража, могут негативно повлиять на некоторые сетевые приложения, т.к. часы машины будет отставать или спешить относительно точного времени.</p>
 
-<p>KVM works around this issue by providing virtual machines with a paravirtualized clock. The KVM <code>pvclock</code> provides a stable source of timing for KVM guests that support it.</p>
+<p>KVM предлагает решение проблемы, предоставляя виртуальные машины с паравиртуализованными часами. Приложение <code>pvclock</code> виртуальных машин KVM предоставляет стабильный источник отсчёта времени для гостевых машин KVM с его поддержкой.</p>
 
-<p>Presently, only Red Hat Enterprise Linux/CentOS 5.4 and higher virtual machines fully support the paravirtualized clock.</p>
+<p>На данный момент только машины под управлением Red Hat Enterprise Linux/CentOS версии 5.4 и более поздних имеют полную поддержку паравиртуализованных часов.</p>
 
-<p>Virtual machines can have several problems caused by inaccurate clocks and counters:</p>
+<p>Виртуальные машины могут столкнуться с несколькими проблемами, причиной которых являются неточные часы и счётчики:</p>
 
 <ul>
-  <li>Clocks can fall out of synchronization with the actual time which invalidates sessions and affects networks.</li>
-  <li>Virtual machines with slower clocks may have issues migrating.</li>
+  <li>Часы могут выйти из синхронизации с точным временем, что делает сеансы работы недействительными и влияет на сети.</li>
+  <li>ВМ с опаздывающими часами могут иметь проблемы при миграции.</li>
 </ul>
 
-<p>These problems exist on other virtualization platforms and timing should always be tested.</p>
+<p>Эти проблемы существуют на других платформах виртуализации, поэтому отсчёт времени всегда необходимо подвергать проверке.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> The Network Time Protocol (NTP) daemon should be running on the host and the virtual machines. Enable the <code>ntpd</code> service:</p>
+  <p><strong>Важно:</strong> фоновая служба NTP должна выполняться и на хосте и на виртуальных машинах. Включите службу <code>ntpd</code>:</p>
 
 <pre class="highlight plaintext"><code># service ntpd start
 </code></pre>
 
-  <p>Add the ntpd service to the default startup sequence:</p>
+  <p>Добавьте службу ntpd в стандартную последовательность загрузки при запуске системы:</p>
 
 <pre class="highlight plaintext"><code># chkconfig ntpd on
 </code></pre>
 
-  <p>Using the <code>ntpd</code> service should minimize the affects of clock skew in all cases.</p>
+  <p>Использование службы <code>ntpd</code> должно свести к минимуму негативные последствия рассинхронизации часов во всех случаях.</p>
 
 </div>
-<p>The NTP servers you are trying to use must be operational and accessible to your hosts and virtual machines.</p>
+<p>Использумые серверы NTP должны быть рабочими, хосты и виртуальные машины должны иметь к ним доступ.</p>
 
-<p>Determining if your CPU has the constant Time Stamp Counter</p>
+<p>Определение, имеет ли ЦП постоянный счётчик меток времени</p>
 
-<p>Your CPU has a constant Time Stamp Counter if the <code>constant_tsc</code> flag is present. To determine if your CPU has the <code>constant_tsc</code> flag run the following command:</p>
+<p>ЦП имеет постоянный счётчик меток времени при наличии флага <code>constant_tsc</code>. Чтобы определить присутствие флага <code>constant_tsc</code>, выполните следующую команду:</p>
 
 <pre class="highlight plaintext"><code>$ cat /proc/cpuinfo | grep constant_tsc
 </code></pre>
 
-<p>If any output is given your CPU has the <code>constant_tsc</code> bit. If no output is given follow the instructions below.</p>
+<p>При наличии любого вывода для этой команды, ЦП имеет атрибут <code>constant_tsc</code>. В случае отсутствия вывода, следуйте инструкциям, указанным ниже.</p>
 
-<p>Configuring Hosts Without a Constant Time Stamp Counter</p>
+<p>Настройка хостов без постоянного счётчика меток времени</p>
 
-<p>Systems without constant time stamp counters require additional configuration. Power management features interfere with accurate time keeping and must be disabled for virtual machines to accurately keep time with KVM.</p>
+<p>Системы без постоянного счётчика меток времени требуют дополнительной настройки. Функционал управления электропитанием мешает поддержанию точного времени, поэтому для поддержания точного времени виртуальными машинами KVM, управление питанием необходимо отключать.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> These instructions are for AMD revision F CPUs only.</p>
+  <p><strong>Важно:</strong> данные инструкции применимы только для процессоров AMD ревизии F.</p>
 
 </div>
-<p>If the CPU lacks the <code>constant_tsc</code> bit, disable all power management features (<a href="https://bugzilla.redhat.com/show_bug.cgi?id=513138">BZ#513138</a>). Each system has several timers it uses to keep time. The TSC is not stable on the host, which is sometimes caused by <code>cpufreq</code> changes, deep C state, or migration to a host with a faster TSC. Deep C sleep states can stop the TSC. To prevent the kernel using deep C states append "<code>processor.max_cstate=1</code>" to the kernel boot options in the <code>grub.conf</code> file on the host:</p>
+<p>Если у ЦП отсутствует атрибут <code>constant_tsc</code>, отключите все параметры управления питанием (<a href="https://bugzilla.redhat.com/show_bug.cgi?id=513138">BZ#513138</a>). В каждой системе существует несколько счётчиков, используемых для сохранения времени. Счётчик TSC на хосте нестабилен, что иногда происходит из-за изменений <code>cpufreq</code>, спящих состояний C или миграция на хост с более быстрым TSC. Спящие состояния C могут остановить работу TSC. Чтобы запретить ядру использовать спящие состояния C, добавьте параметр "<code>processor.max_cstate=1</code>" к загрузочным параметрам в файле <code>grub.conf</code> хоста:</p>
 
 <pre class="highlight plaintext"><code>term Red Hat Enterprise Linux Server (2.6.18-159.el5)
         root (hd0,0)
     kernel /vmlinuz-2.6.18-159.el5 ro root=/dev/VolGroup00/LogVol00 rhgb quiet processor.max_cstate=1
 </code></pre>
 
-<p>Disable <code>cpufreq</code> (only necessary on hosts without the <code>constant_tsc</code>) by editing the <code>/etc/sysconfig/cpuspeed</code> configuration file and change the <code>MIN_SPEED</code> and <code>MAX_SPEED</code> variables to the highest frequency available. Valid limits can be found in the <code>/sys/devices/system/cpu/cpu*/cpufreq/scaling_available_frequencies</code> files.</p>
+<p>Отключите <code>cpufreq</code> (необходимо только на хостах без атрибута <code>constant_tsc</code>) в файле <code>/etc/sysconfig/cpuspeed</code>, и укажите для переменных <code>MIN_SPEED</code> и <code>MAX_SPEED</code> самые высокие доступные значения частоты. Допустимые пределы можно найти в файлах <code>/sys/devices/system/cpu/cpu*/cpufreq/scaling_available_frequencies</code>.</p>
 
-<p>Using the <code>engine-config</code> tool to receive alerts when hosts drift out of sync.</p>
+<p>Используйте утилиту <code>engine-config</code> для получения оповещений, если хост начнёт выбиваться из синхронизации.</p>
 
-<p>You can use the <code>engine-config</code> tool to configure alerts when your hosts drift out of sync.</p>
+<p>Используйте утилиту <code>engine-config</code> для настройки оповещений, если хост начнёт выбиваться из синхронизации.</p>
 
-<p>There are two relevant parameters for time drift on hosts: <code>EnableHostTimeDrift</code> and <code>HostTimeDriftInSec</code>. <code>EnableHostTimeDrift</code>, with a default value of false, can be enabled to receive alert notifications of host time drift. The <code>HostTimeDriftInSec</code> parameter is used to set the maximum allowable drift before alerts start being sent.</p>
+<p>Для определения смещения времени на хосте существуют два релевантных параметра: <code>EnableHostTimeDrift</code> и <code>HostTimeDriftInSec</code>. Параметр <code>EnableHostTimeDrift</code>, имеющий по умолчанию значение «ложно», можно включить для получения предупредительных уведомлений о смещениях времени на хосте. Параметр <code>HostTimeDriftInSec</code> используется для установки максимально допустимого смещения перед тем, как начнут посылаться предупреждения.</p>
 
-<p>Alerts are sent once per hour per host.</p>
+<p>Предупреждения отправляются раз в час для каждого отдельного хоста.</p>
 
-<p>Using the Paravirtualized Clock with Red Hat Enterprise Linux or CentOS virtual machines</p>
+<p>Использование паравиртуализированных часов на виртуальных машинах под управлением Red Hat Enterprise Linux или CentOS</p>
 
-<p>For certain Red Hat Enterprise Linux or CentOS virtual machines, additional kernel parameters are required. These parameters can be set by appending them to the end of the /kernel line in the /boot/grub/grub.conf file of the virtual machine.</p>
+<p>Для некоторых машин с Red Hat Enterprise Linux или CentOS требуются дополнительные параметры ядра. Послать эти параметры можно, дописав их в конец строки /kernel в файле /boot/grub/grub.conf на виртуальной машине.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> The process of configuring kernel parameters can be automated using the <code>ktune</code> package</p>
+  <p><strong>Внимание:</strong> процесс настройки параметров ядра можно автоматизировать с помощью пакета <code>ktune</code>.</p>
 
 </div>
-<p>The <code>ktune</code> package provides an interactive Bourne shell script, <code>fix_clock_drift.sh</code>. When run as the superuser, this script inspects various system parameters to determine if the virtual machine on which it is run is susceptible to clock drift under load. If so, it then creates a new <code>grub.conf.kvm</code> file in the <code>/boot/grub/</code> directory. This file contains a kernel boot line with additional kernel parameters that allow the kernel to account for and prevent significant clock drift on the KVM virtual machine. After running <code>fix_clock_drift.sh</code> as the superuser, and once the script has created the <code>grub.conf.kvm</code> file, then the virtual machine's current <code>grub.conf</code> file should be backed up manually by the system administrator, the new <code>grub.conf.kvm</code> file should be manually inspected to ensure that it is identical to <code>grub.conf</code> with the exception of the additional boot line parameters, the <code>grub.conf.kvm</code> file should finally be renamed <code>grub.conf</code>, and the virtual machine should be rebooted.</p>
+<p>Пакет <code>ktune</code> предоставляет интерактивный сценарий для Bourne shell, <code>fix_clock_drift.sh</code>. При запуске с правами супер-пользователя, этот сценарий проверяет несколько системных параметров, чтобы определить, могут ли случаться смещения времени на данной ВМ под нагрузкой. При положительном ответе сценарий создаёт новый файл <code>grub.conf.kvm</code> в каталоге <code>/boot/grub/</code>. В файле содержится строка загрузки ядра с дополнительными параметрами, с которыми ядро может просчитывать и предотвращать значительные временные смещения на виртуальных машинах KVM. После выполнения <code>fix_clock_drift.sh</code> с правами супер-пользователя, и после создания сценарием файла <code>grub.conf.kvm</code>, системный администратор должен вручную сделать резервную копию текущего файла <code>grub.conf</code>, вручную проверить файл <code>grub.conf.kvm</code> на полную идентичность файлу <code>grub.conf</code>, за исключением дополнительных загрузочных параметров ядра, переименовать файл <code>grub.conf.kvm</code> в <code>grub.conf</code> и перезагрузить виртуальную машину.</p>
 
-<p>The table below lists versions of Red Hat Enterprise Linux and the parameters required for virtual machines on systems without a constant Time Stamp Counter.</p>
+<p>В таблице ниже перечислены версии Red Hat Enterprise Linux и параметры, требующиеся виртуальным машинам в тех системах, где отсутствует постоянный счётчик меток времени.</p>
 
 <table>
 <colgroup>
@@ -6774,24 +6774,24 @@ EndSection
 <thead>
 <tr class="header">
 <th align="left"><p><strong>Red Hat Enterprise Linux</strong></p></th>
-<th align="left"><p><strong>Additional virtual machine kernel parameters</strong></p></th>
+<th align="left"><p><strong>Дополнительные параметры ядра</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>5.4 AMD64/Intel 64 with the paravirtualized clock</p></td>
-<td align="left"><p>Additional parameters are not required</p></td>
+<td align="left"><p>5.4 AMD64/Intel 64 с паравиртуализированными часами</p></td>
+<td align="left"><p>Дополнительные параметры не требуются</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>5.4 AMD64/Intel 64 without the paravirtualized clock</p></td>
+<td align="left"><p>5.4 AMD64/Intel 64 без паравиртуализированных часов</p></td>
 <td align="left"><p>notsc lpj=n</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>5.4 x86 with the paravirtualized clock</p></td>
-<td align="left"><p>Additional parameters are not required</p></td>
+<td align="left"><p>5.4 x86 с паравиртуализированными часами</p></td>
+<td align="left"><p>Дополнительные параметры не требуются</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>5.4 x86 without the paravirtualized clock</p></td>
+<td align="left"><p>5.4 x86 без паравиртуализированных часов</p></td>
 <td align="left"><p>clocksource=acpi_pm lpj=n</p></td>
 </tr>
 <tr class="odd">
@@ -6812,86 +6812,86 @@ EndSection
 </tr>
 <tr class="odd">
 <td align="left"><p>3.9 AMD64/Intel 64</p></td>
-<td align="left"><p>Additional parameters are not required</p></td>
+<td align="left"><p>Дополнительные параметры не требуются</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>3.9 x86</p></td>
-<td align="left"><p>Additional parameters are not required</p></td>
+<td align="left"><p>Дополнительные параметры не требуются</p></td>
 </tr>
 </tbody>
 </table>
 
-<p>Using the Real-Time Clock with Windows Virtual Machines</p>
+<p>Использование часов реального времени на машинах под управлением Windows</p>
 
-<p>Windows uses the both the Real-Time Clock (RTC) and the Time Stamp Counter (TSC). For Windows virtual machines the Real-Time Clock can be used instead of the TSC for all time sources which resolves virtual machine timing issues.</p>
+<p>В Windows используются как часы реального времени (RTC), так и счётчик временных меток (TSC). В ВМ с установленной Windows часы реального времени можно использовать вместо TSC для всех источников времени, что устраняет проблемы со временем на виртуальных машинах.</p>
 
-<p>To enable the Real-Time Clock for the PMTIMER clocksource (the PMTIMER usually uses the TSC) add the following line to the Windows boot settings. Windows boot settings are stored in the boot.ini file. Add the following line to the <code>boot.ini</code> file:</p>
+<p>Чтобы включить RTC для источника времени PMTIMER (PMTIMER обычно использует TSC), добавьте следующую строку к параметрам загрузки Windows. Параметры загрузки Windows хранятся в файле boot.ini. Добавьте следующую строку в файл <code>boot.ini</code>:</p>
 
 <pre class="highlight plaintext"><code>/use pmtimer
 </code></pre>
 
-<p>For more information on Windows boot settings and the pmtimer option, refer to <a href="http://support.microsoft.com/kb/833721">Available switch options for the Windows XP and the Windows Server 2003 Boot.ini files</a>.</p>
+<p>Подробности о загрузочных параметрах Windows и параметре pmtimer см. в документе <a href="https://support.microsoft.com/ru-ru/kb/833721">Параметры, используемые в файле Boot.ini в Windows XP и Windows Server 2003</a> (РУС).</p>
 
-<h4 id="monitoring-virtual-machine-login-activity-using-the-sessions-tab">Monitoring Virtual Machine Login Activity Using the Sessions Tab</h4>
+<h4 id="monitoring-virtual-machine-login-activity-using-the-sessions-tab">Наблюдение за активностью входов в систему виртуальной машины во вкладке сеансов</h4>
 
-<p>Client virtual machines connecting to oVirt will require maintenance and/or updates on occasion. The information contained in the <strong>Sessions</strong> tab allows you to monitor virtual machine login activity to avoid performing maintenance tasks on machines in active use.</p>
+<p>Клиентским виртуальным машинам, подключённым к oVirt, требуется обслуживание и/или периодические обновления. Информация, которую можно найти во вкладке <strong>Сеансы</strong>, даёт возможность контролировать активность входов в систему ВМ, чтобы избежать выполнения задач обслуживания на активно используемых машинах.</p>
 
-<p>Use the <strong>Virtual Machines</strong> resource tab, tree mode, or the search function to find and select a virtual machine in the results list. Select the <strong>Sessions</strong> tab in the details pane to display <strong>Logged-in User</strong>, <strong>Console User</strong>, and <strong>Console Client IP</strong>.</p>
+<p>Используйте ресурсную вкладку <strong>Виртуальные машины</strong>, режим дерева или поисковый функционал чтобы найти и выделить ВМ в списке результатов. Перейдите на вкладку <strong>Сеансы</strong> на панели сведений чтобы увидеть информацию об <strong>Авторизованном пользователе</strong>, <strong>Пользователе консоли</strong> и <strong>IP консольного клиента</strong>.</p>
 
-<h2 id="templates">⁠Templates</h2>
+<h2 id="templates">⁠Шаблоны</h2>
 
-<h3 id="introduction-to-templates">Introduction to Templates</h3>
+<h3 id="introduction-to-templates">Введение в шаблоны</h3>
 
-<p>A template is a copy of a preconfigured virtual machine, used to simplify the subsequent, repeated creation of similar virtual machines. Templates capture installed software and software configurations, as well as the hardware configuration, of the original virtual machine.</p>
+<p>Шаблон — это копия ранее настроенной виртуальной машины, используемая для упрощения последующих повторных созданий аналогичных ВМ. В шаблонах фиксируется установленное ПО и его параметры, а также аппаратные настройки исходной ВМ.</p>
 
-<p>When you create a template from a virtual machine, a read-only copy of the virtual machine's disk is taken. The read-only disk becomes the base disk image of the new template, and of any virtual machines created from the template. As such, the template cannot be deleted whilst virtual machines created from the template exist in the environment.</p>
+<p>При создании шаблона на базе ВМ делается копия виртуального диска машины, доступная только для чтения. Этот диск, доступный только для чтения, становится базовым образом диска нового шаблона и любой ВМ, созданной на базе этого шаблона. Поэтому шаблон не может быть удалён, пока в окружении существуют машины, созданные на его основе.</p>
 
-<p>Virtual machines created from a template use the same NIC type and driver as the original virtual machine, but utilize separate and unique MAC addresses.</p>
+<p>ВМ, созданные на основе шаблонов, используют тот же тип и драйвер NIC, что и исходная ВМ, но имеют отдельные и уникальные MAC адреса.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> A virtual machine may require to be sealed before being used to create a template.</p>
+  <p><strong>Внимание:</strong> перед использование машины для создания шаблона на её основе, виртуальную машину может понадобиться запечатать.</p>
 
 </div>
 
-<h3 id="template-tasks">Template Tasks</h3>
+<h3 id="template-tasks">Задачи работы с шаблонами</h3>
 
-<h4 id="creating-a-template">Creating a Template</h4>
+<h4 id="creating-a-template">Создание шаблона</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Create a template from an existing virtual machine to use as a blueprint for creating additional virtual machines.</p>
+<p>Создание шаблона из существующей ВМ для использования его в качестве чертежа для создания дополнительных ВМ.</p>
 
-<p><strong>Procedure&nbsp;9.1.&nbsp;Creating a Template from an Existing Virtual Machine</strong></p>
+<p><strong>Действие&nbsp;9.1.&nbsp;Создание шаблона из существующей ВМ</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Ensure the virtual machine is powered down and has a status of <code>Down</code>.</li>
-  <li>Click <strong>Make Template</strong> to open the <strong>New Template</strong> window.
-<img alt="The New Template window" title="fig:The New Template window" src="./OVirt Administration Guide — oVirt_files/New_template.png">
-<strong>Figure&nbsp;9.1.&nbsp;The New Template window</strong></li>
-  <li>Enter a <strong>Name</strong>, <strong>Description</strong>, and <strong>Comment</strong> for the template.</li>
-  <li>From the <strong>Cluster</strong> drop-down menu, select the cluster with which the template will be associated. By default, this will be the same as that of the source virtual machine.</li>
-  <li>Optionally, select the <strong>Create as a Sub Template version</strong> check box, select a <strong>Root Template</strong> and enter a <strong>Sub Version Name</strong> to create the new template as a sub template of an existing template.</li>
-  <li>In the <strong>Disks Allocation</strong> section, enter an alias for the disk in the <strong>Alias</strong> text field and select the storage domain on which the disk will be stored from the <strong>Target</strong> drop-down list. By default, these will be the same as those of the source virtual machine.</li>
-  <li>The <strong>Allow all users to access this Template</strong> check box is selected by default. This makes the template public.</li>
-  <li>The <strong>Copy VM permissions</strong> check box is not selected by default. Select this check box to copy the permissions of the source virtual machine to the template.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Убедитесь, что машина выключена и иммет статус <code>Отключена</code>.</li>
+  <li>Нажмите <strong>Создать шаблон</strong> чтобы открыть окно <strong>Добавить шаблон</strong>.
+<img alt="The New Template window" title="Окно нового шаблона" src="./OVirt Administration Guide — oVirt_files/New_template.png">
+<strong>Рисунок&nbsp;9.1.&nbsp;Окно нового шаблона</strong></li>
+  <li>Введите <strong>Имя</strong>, <strong>Описание</strong> и <strong>Комментарий</strong> для шаблона.</li>
+  <li>В выпадающем меню <strong>Кластер</strong> выберите кластер, с которым будет связан шаблон. По умолчанию это кластер исходной ВМ.</li>
+  <li>При необходимости отметьте галочкой пункт <strong>Создать как версию подшаблона</strong>, выберите <strong>Корневой шаблон</strong> и введите <strong>Имя подверсии</strong> чтобы создать новый шаблон как подшаблон уже существующего.</li>
+  <li>В разделе <strong>Распределение дисков</strong> введите псевдоним диска в текстовом поле <strong>Псевдоним</strong> и в выпадающем меню <strong>Таргет</strong> выберите домен хранилища, в котором будут храниться диски. По умолчанию, эти значения совпадают со значениями исходной ВМ.</li>
+  <li>Параметр <strong>Разрешить всем пользователям доступ к этому шаблону</strong> отмечен по умолчанию, что делает шаблон открытым для общего доступа.</li>
+  <li>Пункт <strong>Копировать права доступа ВМ</strong> по умолчанию не отмечен. Отметьте его чтобы скопировать права доступа исходной ВМ на шаблон.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine displays a status of <code>Image Locked</code> while the template is being created. The process of creating a template may take up to an hour depending on the size of the virtual machine disk and your storage hardware. When complete, the template is added to the <strong>Templates</strong> tab. You can now create new virtual machines based on the template.</p>
+<p>Во время создания шаблона машина имеет статус <code>Образ заблокирован</code>. Процесс создания шаблона может занять до часа времени, в зависимости от размера ВМ и аппаратных возможностей хранилища. После завершения, шаблон добавляется во вкладку <strong>Шаблоны</strong>. Теперь на основе этого шаблона можно создавать машины.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> When a template is made, the virtual machine is copied so that both the existing virtual machine and its template are usable after template creation.</p>
+  <p><strong>Внимание:</strong> во время создания шаблона создаётся также копия ВМ, чтобы и шаблон и существующую ВМ можно было использовать после создания шаблона.</p>
 
 </div>
 
-<h4 id="explanation-of-settings-and-controls-in-the-new-template-window">Explanation of Settings and Controls in the New Template Window</h4>
+<h4 id="explanation-of-settings-and-controls-in-the-new-template-window">Объяснение параметров и элементов управления в окне создания шаблона</h4>
 
-<p>The following table details the settings for the <strong>New Template</strong> window.⁠</p>
+<p>Ниже в таблице приводятся подробности параметров окна <strong>Новый шаблон</strong>.⁠</p>
 
-<p><strong>Table&nbsp;9.1.&nbsp;New Template and Edit Template Settings</strong></p>
+<p><strong>Таблица&nbsp;9.1.&nbsp;Параметры добавления и изменения шаблонов</strong></p>
 
 <table>
 <colgroup>
@@ -6900,13 +6900,13 @@ EndSection
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Field</p></th>
-<th align="left"><p>Description/Action</p></th>
+<th align="left"><p>Поле</p></th>
+<th align="left"><p>Описание/действие</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Name</strong></p></td>
+<td align="left"><p><strong>Имя</strong></p></td>
 <td align="left"><p>The name of the template. This is the name by which the template is listed in the <strong>Templates</strong> tab in the Administration Portal and is accessed via the REST API. This text field has a 40-character limit and must be a unique name with any combination of uppercase and lowercase letters, numbers, hyphens, and underscores.</p></td>
 </tr>
 <tr class="even">
