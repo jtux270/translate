@@ -6461,7 +6461,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
 
 <h4 id="event-and-log-notification-upon-automatic-migration-of-highly-available-virtual-servers">Уведомления о событиях и записях в журнале после выполнения автоматической миграции виртуальных серверов высокой доступности</h4>
 
-<p>Во время проведения автоматичсекий миграции виртуального сервера в результате функционирования высокой доступности, подробности процесса автоматичсекой миграции фиксируются во вкладке <strong>События</strong> и в журнале Центра Управления, что облегчает решение возникающих проблем, что показано в следующих примерах:</p>
+<p>Во время проведения автоматической миграции виртуального сервера в результате функционирования высокой доступности, подробности процесса автоматичсекой миграции фиксируются во вкладке <strong>События</strong> и в журнале Центра Управления, что облегчает решение возникающих проблем, что показано в следующих примерах:</p>
 
 <p>⁠</p>
 
@@ -6907,523 +6907,526 @@ EndSection
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Имя</strong></p></td>
-<td align="left"><p>The name of the template. This is the name by which the template is listed in the <strong>Templates</strong> tab in the Administration Portal and is accessed via the REST API. This text field has a 40-character limit and must be a unique name with any combination of uppercase and lowercase letters, numbers, hyphens, and underscores.</p></td>
+<td align="left"><p>Имя шаблона. Это имя, с которым шаблон указывается в списке шаблонов во вкладке <strong>Шаблоны</strong> Административного портала и с которым он доступен для REST API. Это текстовое поле с ограничением в 40 символов, которое должно содержать уникальное имя, состоящее из любого сочетания строчных и прописных букв, цифр, тире и знаков подчёркивания.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Description</strong></p></td>
-<td align="left"><p>A description of the template. This field is recommended but not mandatory.</p></td>
+<td align="left"><p><strong>Описание</strong></p></td>
+<td align="left"><p>Описание шаблона. Рекомендуется, но не обязательно.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Comment</strong></p></td>
-<td align="left"><p>A field for adding plain text, human-readable comments regarding the template.</p></td>
+<td align="left"><p><strong>Комментарий</strong></p></td>
+<td align="left"><p>Поле для простого текстового комментария к шаблону, в удобочитаемой форме.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Cluster</strong></p></td>
-<td align="left"><p>The cluster with which the template will be associated. This is the same as the original virtual machines by default. You can select any cluster in the data center.</p></td>
+<td align="left"><p><strong>Кластер</strong></p></td>
+<td align="left"><p>Кластер, с которым связан шаблон. По умолчанию, это кластер исходной ВМ. Можно выбрать любой кластер в дата-центре.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Create as a Sub Template version</strong></p></td>
-<td align="left"><p>Allows you to specify whether the template will be created as a new version of an existing template. Select this check box to access the settings for configuring this option.</p>
+<td align="left"><p><strong>Создать как подверсию шаблона</strong></p></td>
+<td align="left"><p>Укажите, будет ли шаблон создан как новая версия существующего шаблона. Отметьте этот флажок, чтобы получить доступ к соответствующим параметрам.</p>
 <ul>
-<li><strong>Root Template</strong>: The template under which the sub template will be added.</li>
-<li><strong>Sub Version Name</strong>: The name of the template. This is the name by which the template is accessed when creating a new virtual machine based on the template.</li>
+<li><strong>Корневой шаблон</strong>: шаблон, под которым будет добавлен подшаблон.</li>
+<li><strong>Имя подверсии</strong>: имя шаблона. Это имя, по которому осуществляется доступ к шаблону во время создания ВМ на основе шаблона.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Disks Allocation</strong></p></td>
-<td align="left"><p><strong>Alias</strong> - An alias for the virtual machine disk used by the template. By default, the alias is set to the same value as that of the source virtual machine. <strong>Virtual Size</strong> - The current actual size of the virtual disk used by the template. This value cannot be edited, and is provided for reference only. <strong>Target</strong> - The storage domain on which the virtual disk used by the template will be stored. By default, the storage domain is set to the same value as that of the source virtual machine. You can select any storage domain in the cluster.</p></td>
+<td align="left"><p><strong>Распределение дисков</strong></p></td>
+<td align="left"><p><strong>Псевдоним</strong> — псевдоним диска ВМ, используемого шаблоном. По умолчанию, псевдоним совпадает с именем диска исходной ВМ. <strong>Виртуальный размер</strong> — текущий фактический размер виртуального диска, используемого шаблоном. Это значение нельзя изменить, оно предоставляется только для ссылок на него. <strong>Таргет</strong> — домен хранилища, где будет храниться виртуальный диск, используемый шаблоном. По умолчанию совпадает с доменом хранилища исходной ВМ. Можно выбрать любой домен хранилища в кластере.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Allow all users to access this Template</strong></p></td>
-<td align="left"><p>Allows you to specify whether a template is public or private. A public template can be accessed by all users, whereas a private template can only be accessed by users with the <strong>TemplateAdmin</strong> or <strong>SuperUser</strong> roles.</p></td>
+<td align="left"><p><strong>Разрешить всем пользователям доступ к этому шаблону</strong></p></td>
+<td align="left"><p>Укажите, будет ли шаблон общедоступным или с закрытым доступом. Общедоступный шаблон доступен всем пользователям, доступ к закрытому шаблону имеют только пользователи с ролями <strong>TemplateAdmin</strong> или <strong>SuperUser</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Copy VM permissions</strong></p></td>
-<td align="left"><p>Allows you to copy explicit permissions that have been set on the source virtual machine to the template.</p></td>
+<td align="left"><p><strong>Копировать права доступа ВМ</strong></p></td>
+<td align="left"><p>Позволяет перенести на шаблон привилегии, явно настроенные для исходной ВМ.</p></td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="editing-a-template">Editing a Template</h4>
+<h4 id="editing-a-template">Изменение шаблона</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Once a template has been created, its properties can be edited. Because a template is a copy of a virtual machine, the options available when editing a template are identical to those in the <strong>Edit Virtual Machine</strong> window.</p>
+<p>После создания шаблона можно изменять его свойства. Поскольку шаблон — это копия ВМ, то параметры шаблона, доступные изменению, аналогичны параметрам, присутствующим в окне <strong>Изменить ВМ</strong>.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.2.&nbsp;Editing a Template</strong></p>
+<p><strong>Действие&nbsp;9.2.&nbsp;Editing a Template</strong></p>
 
 <ol>
-  <li>Use the <strong>Templates</strong> resource tab, tree mode, or the search function to find and select the template in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Template</strong> window.</li>
-  <li>Change the necessary properties and click <strong>OK</strong>.</li>
+  <li>Для поиска и выбора нужного шаблона, используйте ресурсную вкладку <strong>Шаблоны</strong>, древовидный режим или поисковый функционал.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить шаблон</strong>.</li>
+  <li>Внесите необходимые изменения в параметры и нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The properties of the template are updated. The <strong>Edit Template</strong> window will not close if a property field is invalid.</p>
+<p>Свойства шаблона были изменены. Окно <strong>Изменить шаблон</strong> невозможно закрыть, если поле свойства недействительно.</p>
 
-<h4 id="deleting-a-template">Deleting a Template</h4>
+<h4 id="deleting-a-template">Удаление шаблона</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Delete a template from your oVirt environment.</p>
+<p>Удалить шаблон из окружения oVirt.</p>
 
-<div class="alert alert-info">
-  <p><strong>Warning:</strong> If you have used a template to create a virtual machine, make sure that you do not delete the template as the virtual machine needs it to continue running.</p>
+<p><strong>Внимание</strong></p>
+
+<p>Если шаблон использовался для создания ВМ, убедитесь, что вы не удаляете этот шаблон, так как он необходим для продолжения работы ВМ.</p>
+
+<p>⁠</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.3.&nbsp;Deleting a Template</strong></p>
+<p><strong>Действие&nbsp;9.3.&nbsp;Удаление шаблона</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select the template in the results list.</li>
-  <li>Click <strong>Remove</strong> to open the <strong>Remove Template(s)</strong> window.</li>
-  <li>Click <strong>OK</strong> to remove the template.</li>
+  <li>Для поиска и выбора нужного шаблона, используйте ресурсную вкладку, древовидный режим или поисковый функционал.</li>
+  <li>Нажмите <strong>Удалить</strong> чтобы открыть окно <strong>Удалить шаблон(ы)</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы удалить шаблон.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have removed the template.</p>
+<p>Мы удалили шаблон.</p>
 
-<h4 id="exporting-templates">Exporting Templates</h4>
+<h4 id="exporting-templates">Экспорт шаблонов</h4>
 
-<h5 id="migrating-templates-to-the-export-domain">Migrating Templates to the Export Domain</h5>
+<h5 id="migrating-templates-to-the-export-domain">Перенос шаблонов в домен экспорта</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Export templates into the export domain to move them to another data domain, either in the same oVirt environment, or another one.</p>
+<p>Экспорт шаблонов в домен экспорта для переноса их в другой домен данных, в том же окружении oVirt, или в другом.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.4.&nbsp;Exporting Individual Templates to the Export Domain</strong></p>
+<p><strong>Действие&nbsp;9.4.&nbsp;Экспорт отдельных шаблонов в домен экспорта</strong></p>
 
 <ol>
-  <li>Use the <strong>Templates</strong> resource tab, tree mode, or the search function to find and select the template in the results list.</li>
-  <li>Click <strong>Export</strong> to open the <strong>Export Template</strong> window.
+  <li>Используйте ресурсную вкладку <strong>Шаблоны</strong>, древовидный режим или поисковый функционал чтобы найти и выделить шаблон в списке результатов.</li>
+  <li>Нажмите <strong>Экспорт</strong> чтобы открыть окно <strong>Экспорт шаблона</strong>.
     <div class="alert alert-info">
-      <p><strong>Note:</strong> Select the <strong>Force Override</strong> check box to replace any earlier version of the template on the export domain.</p>
+      <p><strong>Внимание:</strong> отметьте галочкой пункт <strong>Принудительно заменить</strong> чтобы заменить любые более ранние версии этого шаблона в домене экспорта.</p>
 
     </div>
   </li>
-  <li>Click <strong>OK</strong> to begin exporting the template; this may take up to an hour, depending on the virtual machine disk image size and your storage hardware.</li>
-  <li>Repeat these steps until the export domain contains all the templates to migrate before you start the import process. Use the <strong>Storage</strong> resource tab, tree mode, or the search function to find and select the export domain in the results list and click the <strong>Template Import</strong> tab in the details pane to view all exported templates in the export domain.</li>
+  <li>Нажмите <strong>OK</strong> чтобы начать экспорт шаблона; этот процесс может занять до часа времени, в зависимости от размера образа диска ВМ и аппаратных возможностей хранилища.</li>
+  <li>Повторяйте эти шаги до тех пор, пока все шаблоны, которые необходимо перенести, не окажутся в домене экспорта до начала процесса импорта. Используйте ресурсную вкладку <strong>Хранилище</strong>, древовидный режим или поисковый функционал чтобы найти и выделить домен экспорта в списке результатов, и перейдите на вкладку <strong>Импорт шаблонов</strong> на панели сведений, чтобы увидеть все экспортированные шаблоны в домене экспорта.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The templates have been exported to the export domain.</p>
+<p>Шаблоны были экспортированы в домен экспорта.</p>
 
-<h5 id="copying-a-templates-virtual-hard-disk">Copying a Template's Virtual Hard Disk</h5>
+<h5 id="copying-a-templates-virtual-hard-disk">Копирование виртуального жёсткого диска шаблона</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>If you are moving a virtual machine that was created from a template with the thin provisioning storage allocation option selected, the template's disks must be copied to the same storage domain as that of the virtual machine disk.</p>
+<p>При перемещении ВМ, созданной из шаблона с выбранным параметром тонкого резервирования хранилища, диски шаблона должны быть скопированы в тот же домен хранилища, где находится диск ВМ.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.5.&nbsp;Copying a Virtual Hard Disk</strong></p>
+<p><strong>Действие&nbsp;9.5.&nbsp;Копирование виртуального жёсткого диска</strong></p>
 
 <ol>
-  <li>Select the <strong>Disks</strong> tab.</li>
-  <li>Select the template disk or disks to copy.</li>
-  <li>Click the <strong>Copy</strong> button to display the <strong>Copy Disk</strong> window.</li>
-  <li>Use the drop-down menu or menus to select the <strong>Target</strong> data domain.</li>
+  <li>Перейдите на вкладку <strong>Диски</strong>.</li>
+  <li>Выберите диск шаблона или диски для копирования.</li>
+  <li>Нажмите на кнопку <strong>Копировать</strong> чтобы открыть окно <strong>Копировать диск</strong>.</li>
+  <li>В выпадающем меню выберите <strong>Целевой</strong> домен данных.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>A copy of the template's virtual hard disk has been created, either on the same, or a different, storage domain. If you were copying a template disk in preparation for moving a virtual hard disk, you can now move the virtual hard disk.</p>
+<p>Была создана копия виртуального жёсткого диска шаблона, в том же или в другом домене хранилища. Если диск шаблона копировался как приготовление к переносу виртуального жёсткого диска, виртуальный жёсткий диск теперь можно переносить.</p>
 
-<h4 id="importing-templates">Importing Templates</h4>
+<h4 id="importing-templates">Импорт шаблонов</h4>
 
-<h5 id="importing-a-template-into-a-data-center">Importing a Template into a Data Center</h5>
+<h5 id="importing-a-template-into-a-data-center">Импорт шаблона в дата-центр</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Import templates from a newly attached export domain.</p>
+<p>Импорт шаблона из недавно присоединённого домена экспорта.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.6.&nbsp;Importing a Template into a Data Center</strong></p>
+<p><strong>Действие&nbsp;9.6.&nbsp;Импорт шаблона в дата-центр</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select the newly attached export domain in the results list.</li>
-  <li>Select the <strong>Template Import</strong> tab of the details pane to display the templates that migrated across with the export domain.</li>
-  <li>Select a template and click <strong>Import</strong> to open the <strong>Import Template(s)</strong> window.</li>
-  <li>Select the templates to import.</li>
-  <li>Use the drop-down menus to select the <strong>Destination Cluster</strong> and <strong>Storage</strong> domain. Alter the <strong>Suffix</strong> if applicable. Alternatively, clear the <strong>Clone All Templates</strong> check box.</li>
-  <li>Click <strong>OK</strong> to import templates and open a notification window. Click <strong>Close</strong> to close the notification window.</li>
+  <li>Используйте ресурсные вкладки, древовидный режим или поисковый функционал чтобы найти и выделить недавно присоединённый домен экспорта в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Импорт шаблона</strong> панели сведений чтобы увидеть шаблоны в домене экспорта.</li>
+  <li>Выберите шаблон и нажмите <strong>Импорт</strong> чтобы открыть окно <strong>Импорт шаблонов</strong>.</li>
+  <li>Выберите шаблоны для импорта.</li>
+  <li>В выпадающем меню выберите <strong>Целевой кластер</strong> и домен <strong>Хранилища</strong>. Измените <strong>Суффикс</strong>, если применимо. Или снимите галочку с пункта <strong>Клонировать все шаблоны</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы импортировать шаблоны и открыть окно уведомления. Нажмите на кнопку <strong>Закрыть</strong> чтобы закрыть окно уведомления.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The template is imported into the destination data center. This can take up to an hour, depending on your storage hardware. You can view the import progress in the <strong>Events</strong> tab.</p>
+<p>Шаблон импортируется в целевой дата-центр. Эта операция может занять до часу времени, в зависимости от аппаратных возможностей хранилища. Наблюдать за выполнением операции импорта можно во вкладке <strong>События</strong>.</p>
 
-<p>Once the importing process is complete, the templates will be visible in the <strong>Templates</strong> resource tab. The templates can create new virtual machines, or run existing imported virtual machines based on that template.</p>
+<p>После завершения процесса импорта шаблон появляется в ресурсной вкладке <strong>Шаблоны</strong>. Шаблоны могут создавать новые ВМ или запускать импортированные ВМ, созданные на основе этого шаблона.</p>
 
-<h5 id="importing-a-virtual-disk-image-from-an-openstack-image-service-as-a-template">Importing a Virtual Disk Image from an OpenStack Image Service as a Template</h5>
+<h5 id="importing-a-virtual-disk-image-from-an-openstack-image-service-as-a-template">Импорт образа виртуального диска из службы OpenStack Image в качестве шаблона</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Virtual disk images managed by an OpenStack Image Service can be imported into oVirt if that OpenStack Image Service has been added to oVirt as an external provider.</p>
+<p>Образы виртуальных дисков, управляемые службой OpenStack Image Service, можно импортировать в oVirt, если эта служба OpenStack Image была добавлена в oVirt в качестве внешнего поставщика.</p>
 
 <ol>
-  <li>Click the <strong>Storage</strong> resource tab and select the OpenStack Image Service domain from the results list.</li>
-  <li>Select the image to import in the <strong>Images</strong> tab of the details pane.</li>
+  <li>Перейдите на ресурсную вкладку <strong>Хранилище</strong> и выберите домен OpenStack Image Service в списке результатов.</li>
+  <li>Выберите образ для импорта во вкладке <strong>Образы</strong> панели сведений.</li>
   <li>
-    <p>Click <strong>Import</strong> to open the <strong>Import Image(s)</strong> window.
+    <p>Нажмите <strong>Импорт</strong> чтобы открыть окно <strong>Импорт образов</strong>.
 ⁠</p>
 
-    <p><img alt="The Import Image(s) Window" title="The Import Image(s) Window" src="./OVirt Administration Guide — oVirt_files/5008.png"></p>
+    <p><img alt="The Import Image(s) Window" title="Окно импорта образов" src="./OVirt Administration Guide — oVirt_files/5008.png"></p>
 
-    <p><strong>Figure&nbsp;9.2.&nbsp;The Import Image(s) Window</strong></p>
+    <p><strong>Рисунок&nbsp;9.2.&nbsp;Окно импорта образов</strong></p>
   </li>
-  <li>From the <strong>Data Center</strong> drop-down menu, select the data center into which the virtual disk image will be imported.</li>
-  <li>From the <strong>Domain Name</strong> drop-down menu, select the storage domain in which the virtual disk image will be stored.</li>
-  <li>Optionally, select a quota from the <strong>Quota</strong> drop-down menu to apply a quota to the virtual disk image.</li>
-  <li>Select the <strong>Import as Template</strong> check box.</li>
-  <li>From the <strong>Cluster</strong> drop-down menu, select the cluster in which the virtual disk image will be made available as a template.</li>
-  <li>Click <strong>OK</strong> to import the virtual disk image.</li>
+  <li>В выпадающем меню <strong>Дата-центр</strong> выберите дата-центр, куда будет импортирован образ виртуального диска.</li>
+  <li>В выпадающем меню <strong>Имя домена</strong> выберите домен хранилища, где будет храниться образ виртуального диска.</li>
+  <li>По желанию, выберите квоту в выпадающем меню <strong>Квота</strong>, чтобы применить квоту к образу виртуального диска.</li>
+  <li>Отметьте галочкой пункт <strong>Импортировать как шаблон</strong>.</li>
+  <li>В выпадающем меню <strong>Кластер</strong> выберите кластер, в котором образ виртуального диска будет доступен как шаблон.</li>
+  <li>Нажмите <strong>OK</strong> чтобы импортировать образ виртуального диска.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The image is imported as a template and is displayed in the results list of the <strong>Templates</strong> resource tab. You can now create virtual machines based on the template.</p>
+<p>Образ импортирован как шаблон и появляется в списке результатов в ресурсной вкладке <strong>Шаблоны</strong>. Теперь на основе этого шаблона можно создавать виртуальные машины.</p>
 
-<h3 id="sealing-virtual-machines-in-preparation-for-deployment-as-templates">Sealing Virtual Machines in Preparation for Deployment as Templates</h3>
+<h3 id="sealing-virtual-machines-in-preparation-for-deployment-as-templates">Запечатывание ВМ для подготовки разворачивания в качестве шаблона</h3>
 
-<h4 id="sealing-a-linux-virtual-machine-for-deployment-as-a-template">Sealing a Linux Virtual Machine for Deployment as a Template</h4>
+<h4 id="sealing-a-linux-virtual-machine-for-deployment-as-a-template">Запечатывание ВМ под управлением Linux для разворачивания в качестве шаблона</h4>
 
-<h5 id="sealing-a-linux-virtual-machine-for-deployment-as-a-template-1">Sealing a Linux Virtual Machine for Deployment as a Template</h5>
+<h5 id="sealing-a-linux-virtual-machine-for-deployment-as-a-template-1">Запечатывание ВМ под управлением Linux для разворачивания в качестве шаблона</h5>
 
-<p>There are two main methods for sealing a Linux virtual machine in preparation for using that virtual machine to create a template: manually, or using the <code>sys-unconfig</code> command. Sealing a Linux virtual machine manually requires you to create a file on the virtual machine that acts as a flag for initiating various configuration tasks the next time you start that virtual machine. The <code>sys-unconfig</code> command allows you to automate this process. However, both of these methods also require you to manually delete files on the virtual machine that are specific to that virtual machine or might cause conflicts amongst virtual machines created based on the template you will create based on that virtual machine. As such, both are valid methods for sealing a Linux virtual machine and will achieve the same result.</p>
+<p>Существует два основных метода запечатывания ВМ с установленной Linux в качестве подготовки использования этой ВМ для создания шаблона: вручную или с использованием команды <code>sys-unconfig</code>. Ручное запечатывание ВМ с установленной Linux требует создания файла на виртуальной машине, который играет роль флага для инициирования различных задач конфигурации при следующем запуске этой ВМ. Команда <code>sys-unconfig</code> позволяет автоматизировать этот процесс. Тем не менее, оба этих способа требуют ручного удаления файлов на виртуальной машине, имеющих отношение только к этой машине или же тех, которые потенциально могут спровоцировать конфликты между виртуальными машинами, созданными на базе шаблона, который мы создаём из этой виртуальной машины. По этой причине оба эти метода запечатывания ВМ с установленной Linux являются допустимыми и достигают идентичного результата.</p>
 
-<h5 id="sealing-a-linux-virtual-machine-manually-for-deployment-as-a-template">Sealing a Linux Virtual Machine Manually for Deployment as a Template</h5>
+<h5 id="sealing-a-linux-virtual-machine-manually-for-deployment-as-a-template">Запечатывание ВМ для разворачивания в качестве шаблона вручную</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You must generalize (seal) a Linux virtual machine before creating a template based on that virtual machine.</p>
+<p>Мы должны подготовить (запечатать) ВМ с установленной Linux перед созданием шаблона на основе этой ВМ.</p>
 
-<p>⁠<strong>Procedure&nbsp;9.7.&nbsp;Sealing a Linux Virtual Machine</strong></p>
+<p>⁠<strong>Действие&nbsp;9.7.&nbsp;Запечатывание ВМ с установленной Linux</strong></p>
 
 <ol>
-  <li>Log in to the virtual machine.</li>
+  <li>Авторизация на виртуальной машине.</li>
   <li>
-    <p>Flag the system for re-configuration by running the following command as root:
+    <p>Пометка системы для повторной настройки с помощью вполнения команды с правами root:
     # touch /.unconfigured</p>
   </li>
   <li>
-    <p>Run the following command to remove ssh host keys:
+    <p>Выполните следующую команду для удаления ключей ssh хоста:
     # rm -rf /etc/ssh/ssh_host_*</p>
   </li>
-  <li>Set <code>HOSTNAME=localhost.localdomain</code> in <code>/etc/sysconfig/network</code></li>
+  <li>Укажите <code>HOSTNAME=localhost.localdomain</code> в <code>/etc/sysconfig/network</code></li>
   <li>
-    <p>Run the following command to remove <code>/etc/udev/rules.d/70-*</code>:
+    <p>Выполните следующую команду для удаления <code>/etc/udev/rules.d/70-*</code>:
     # rm -rf /etc/udev/rules.d/70-*</p>
   </li>
-  <li>Remove the <code>HWADDR</code> line and <code>UUID</code> line from <code>/etc/sysconfig/network-scripts/ifcfg-eth*</code>.</li>
-  <li>Optionally, delete all the logs from <code>/var/log</code> and build logs from <code>/root</code>.</li>
-  <li>Run the following command to shut down the virtual machine:
+  <li>Удалите строку <code>HWADDR</code> и строку <code>UUID</code> из файла <code>/etc/sysconfig/network-scripts/ifcfg-eth*</code>.</li>
+  <li>По желанию удалите все фалы журналов из каталога <code>/var/log</code> и журналы сборки из каталога <code>/root</code>.</li>
+  <li>Выполните следующую команду для выключения ВМ:
     # poweroff</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine is sealed and can be made into a template. You can deploy Linux virtual machines from this template without experiencing configuration file conflicts.</p>
+<p>Виртуальная машина запечатана и её можно превращать в шаблон. Разворачивать ВМ под управлением Linux из этого шаблона можно, не опасаясь конфликтов конфигурационных файлов.</p>
 
-<h5 id="sealing-a-linux-virtual-machine-for-deployment-as-a-template-using-sys-unconfig">Sealing a Linux Virtual Machine for Deployment as a Template using sys-unconfig</h5>
+<h5 id="sealing-a-linux-virtual-machine-for-deployment-as-a-template-using-sys-unconfig">Запечатывание ВМ для разворачивания в качестве шаблона с помощью sys-unconfig</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You must generalize (seal) a Linux virtual machine before creating a template based on that virtual machine.</p>
+<p>Мы должны подготовить (запечатать) ВМ с установленной Linux перед созданием шаблона на основе этой ВМ.</p>
 
-<p><strong>Procedure&nbsp;9.8.&nbsp;Sealing a Linux Virtual Machine using sys-unconfig</strong></p>
+<p><strong>Действие&nbsp;9.8.&nbsp;Запечатывание ВМ с помощью sys-unconfig</strong></p>
 
 <ol>
-  <li>Log in to the virtual machine.</li>
+  <li>Авторизуйтесь на виртуальной машине.</li>
   <li>
-    <p>Run the following command to remove ssh host keys:
+    <p>Выполните следующую команду для удаления ключей ssh хоста Run the following command to remove ssh host keys:
     # rm -rf /etc/ssh/ssh_host_*</p>
   </li>
-  <li>Set <code>HOSTNAME=localhost.localdomain</code> in <code>/etc/sysconfig/network</code>.</li>
-  <li>Remove the <code>HWADDR</code> line and <code>UUID</code> line from <code>/etc/sysconfig/network-scripts/ifcfg-eth*</code>.</li>
-  <li>Optionally, delete all the logs from <code>/var/log</code> and build logs from <code>/root</code>.</li>
-  <li>Run the following command:
+  <li>Укажите <code>HOSTNAME=localhost.localdomain</code> в <code>/etc/sysconfig/network</code>.</li>
+  <li>Удалите строку <code>HWADDR</code> и строку <code>UUID</code> из <code>/etc/sysconfig/network-scripts/ifcfg-eth*</code>.</li>
+  <li>По желанию удалите все фалы журналов из каталога <code>/var/log</code> и журналы сборки <code>/root</code>.</li>
+  <li>Выполните следующую команду:
     # sys-unconfig</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine shuts down; it is now sealed and can be made into a template. You can deploy Linux virtual machines from this template without experiencing configuration file conflicts.</p>
+<p>Виртуальная машина выключается; теперь она запечатана и её можно превращать в шаблон. Разворачивать ВМ под управлением Linux из этого шаблона можно, не опасаясь конфликтов конфигурационных файлов.</p>
 
-<h4 id="sealing-a-windows-virtual-machine-for-deployment-as-a-template">Sealing a Windows Virtual Machine for Deployment as a Template</h4>
+<h4 id="sealing-a-windows-virtual-machine-for-deployment-as-a-template">Запечатывание ВМ под управлением Windows для разворачивания в качестве шаблона</h4>
 
-<h5 id="considerations-when-sealing-a-windows-template-with-sysprep">Considerations when Sealing a Windows Template with Sysprep</h5>
+<h5 id="considerations-when-sealing-a-windows-template-with-sysprep">Рекомендации для запечатывания шаблона Windows с помощью Sysprep</h5>
 
-<p>A template created for Windows virtual machines must be generalized (sealed) before being used to deploy virtual machines. This ensures that machine-specific settings are not reproduced in the template.</p>
+<p>Шаблон, созданный для ВМ с установленной Windows, должен быть подготовлен (запечатан) перед его использованием для разворачивания виртуальных машин. Это гарантирует, что параметры, свойственные конкретно этой машине, не будут воспроизведены в шаблоне.</p>
 
-<p>The <strong>Sysprep</strong> tool is used to seal Windows templates before use.</p>
+<p>Для запечатывания шаблонов на основе Windows перед работой с ними используется утилита <strong>Sysprep</strong>.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Do not reboot the virtual machine during this process.</p>
+  <p><strong>Важно:</strong> не перезапускайте машину во время выполнения этого действия.</p>
 
 </div>
-<p>Before starting the <code>Sysprep</code> process, verify the following settings are configured:</p>
+<p>Перед запуском процесса <code>Sysprep</code>, убедитесь, что были настроены следующие параметры:</p>
 
 <ul>
-  <li>The Windows <strong>Sysprep</strong> parameters have been correctly defined. If not, click <strong>Edit</strong> and enter the required information in the <strong>Operating System</strong> and <strong>Domain</strong> fields.</li>
-  <li>The correct product key has been entered in the <code>engine-config</code> configuration tool. If not, run the configuration tool on oVirt as the root user, and enter the required information. The configuration keys that you need to set are <code>ProductKey</code> and <code>SysPrepPath</code>. For example, the Windows 7 configuration value is <code>ProductKeyWindow7</code> and <code>SysPrepWindows7Path</code>. Set these values with this command:
+  <li>Параметры Windows <strong>Sysprep</strong> были определены корректно. В противном случае нажмите <strong>Изменить</strong> и введите требуемую информацию в поля <strong>Операционная система</strong> и <strong>Домен</strong>.</li>
+  <li>Верный ключ продукта был указан в утилите настройки <code>engine-config</code>. В противном случае запустите утилиту настройки в oVirt с правами root, и введите требуемую информацию. Ключи, которые необходимо ввести: <code>ProductKey</code> и <code>SysPrepPath</code>. Например, значения Windows 7 — это <code>ProductKeyWindow7</code> и <code>SysPrepWindows7Path</code>. Укажите эти значения с помощью данной команды:
     # engine-config –set ProductKeyWindow7=<validproductkey> --cver=general</validproductkey></li>
 </ul>
 
-<h5 id="sealing-a-windows-xp-template">Sealing a Windows XP Template</h5>
+<h5 id="sealing-a-windows-xp-template">Запечатывание шаблона Windows XP</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Seal a Windows XP template using the <strong>Sysprep</strong> tool before using the template to deploy virtual machines.</p>
+<p>Запечатывание шаблона Windows XP с помощью утилиты <strong>Sysprep</strong> перед использованием шаблона для разворачивания виртуальной машины.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> You can also use the procedure above to seal a Windows 2003 template. The Windows 2003 <strong>Sysprep</strong> tool is available at <a href="http://www.microsoft.com/download/en/details.aspx?id=14830"></a><a href="http://www.microsoft.com/download/en/details.aspx?id=14830">http://www.microsoft.com/download/en/details.aspx?id=14830</a>.</p>
+  <p><strong>Внимание:</strong> вышеуказанную процедуру можно также использовать и для запечатывания шаблона Windows 2003. Утилита Windows 2003 <strong>Sysprep</strong> доступна по ссылке <a href="http://www.microsoft.com/download/en/details.aspx?id=14830"></a><a href="http://www.microsoft.com/download/en/details.aspx?id=14830">http://www.microsoft.com/download/en/details.aspx?id=14830</a>.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.9.&nbsp;Sealing a Windows XP Template</strong></p>
+<p><strong>Действие&nbsp;9.9.&nbsp;Запечатывание шаблона Windows XP</strong></p>
 
 <ol>
-  <li>Download <code>sysprep</code> to the virtual machine to be used as a template. The Windows XP <strong>Sysprep</strong> tool is available at <a href="http://www.microsoft.com/download/en/details.aspx?id=11282"></a><a href="http://www.microsoft.com/download/en/details.aspx?id=11282">http://www.microsoft.com/download/en/details.aspx?id=11282</a></li>
-  <li>Create a new directory: <code>c:\sysprep</code>.</li>
-  <li>Open the <code>deploy.cab</code> file and add its contents to <code>c:\sysprep</code>.</li>
-  <li>Execute <code>sysprep.exe</code> from within the folder and click <strong>OK</strong> on the welcome message to display the Sysprep tool.</li>
-  <li>Select the following check boxes:
+  <li>Загрузите <code>sysprep</code> на виртуальную машину, которая будет использоваться как шаблон. Утилита Windows XP <strong>Sysprep</strong> доступна по ссылке <a href="http://www.microsoft.com/download/en/details.aspx?id=11282"></a><a href="http://www.microsoft.com/download/en/details.aspx?id=11282">http://www.microsoft.com/download/en/details.aspx?id=11282</a></li>
+  <li>Создайте новый каталог: <code>c:\sysprep</code>.</li>
+  <li>Откройте файл <code>deploy.cab</code> и добавьте содержимое в <code>c:\sysprep</code>.</li>
+  <li>Выполните <code>sysprep.exe</code> из папки и нажмите кнопку <strong>OK</strong> приветственного сообщения чтобы открыть утилиту Sysprep.</li>
+  <li>Отметьте следующие пункты:
     <ul>
-      <li><strong>Don't reset grace period for activation</strong></li>
-      <li><strong>Use Mini-Setup</strong></li>
+      <li><strong>Не сбрасывать срок отсрочки активации </strong></li>
+      <li><strong>Использовать минимальную установку</strong></li>
     </ul>
   </li>
-  <li>Ensure that the shutdown mode is set to <code>Shut down</code> and click <strong>Reseal</strong>.</li>
-  <li>Acknowledge the pop-up window to complete the sealing process; the virtual machine shuts down automatically upon completion.</li>
+  <li>Убедитесь, что режим выключения настроен на <code>Завершить работу</code> и нажмите <strong>Запечатать</strong>.</li>
+  <li>Нажмите подтверждение во всплывающем окне для завершения процесса запечатывания; после завершения, виртуальная машина автоматически завершит работу.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The Windows XP template is sealed and ready for deploying virtual machines.</p>
+<p>Шаблон Windows XP запечатан и готов для разворачивания виртуальных машин.</p>
 
-<h5 id="sealing-a-windows-7-or-windows-2008-template">Sealing a Windows 7 or Windows 2008 Template</h5>
+<h5 id="sealing-a-windows-7-or-windows-2008-template">Запечатывание шаблона Windows 7 или Windows 2008</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Seal a Windows 7 or Windows 2008 template before using the template to deploy virtual machines.</p>
+<p>Запечатывание шаблона Windows 7 и Windows 2008 перед использованием шаблона для разворачивания виртуальной машины.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.10.&nbsp;Sealing a Windows 7 or Windows 2008 Template</strong></p>
+<p><strong>Действие&nbsp;9.10.&nbsp;Запечатывание шаблона Windows 7 или Windows 2008</strong></p>
 
 <ol>
-  <li>In the virtual machine to be used as a template, open a command line terminal and type <code>regedit</code>.</li>
-  <li>The <strong>Registry Editor</strong> window opens. On the left pane, expand <strong>HKEY_LOCAL_MACHINE</strong> → <strong>SYSTEM</strong> → <strong>SETUP</strong>.</li>
-  <li>On the main window, right-click to add a new string value using <strong>New</strong> → <strong>String Value</strong>.</li>
-  <li>Right-click on the file and select <strong>Modify</strong> to open the <strong>Edit String</strong> window.</li>
-  <li>Enter the following information in the provided fields:
+  <li>В виртуальной машине, которая будет использоваться как шаблон, откройте командную строку и введите <code>regedit</code>.</li>
+  <li>Откроется <strong>Редактор реестра</strong>. В левой панели разверните <strong>HKEY_LOCAL_MACHINE</strong> → <strong>SYSTEM</strong> → <strong>SETUP</strong>.</li>
+  <li>В главном окне сделайте щелчок ПКМ для добавления значения с помощью пунктов <strong>Создать</strong> → <strong>Строковой параметр</strong>.</li>
+  <li>Сделайте щелчок ПКМ по файлу и выберите <strong>Изменить</strong> чтобы открыть окно <strong>Изменение строкового параметра</strong>.</li>
+  <li>Введите следующие данные в указанных полях:
     <ul>
-      <li>Value name: <code>UnattendFile</code></li>
-      <li>Value data: <code>a:\sysprep.inf</code></li>
+      <li>Параметр: <code>UnattendFile</code></li>
+      <li>Значение: <code>a:\sysprep.inf</code></li>
     </ul>
   </li>
-  <li>Launch <strong>Sysprep</strong> from <code>C:\Windows\System32\sysprep\sysprep.exe</code>.</li>
-  <li>Enter the following information into the <strong>Sysprep</strong> tool:
+  <li>Запустите <strong>Sysprep</strong> по пути <code>C:\Windows\System32\sysprep\sysprep.exe</code>.</li>
+  <li>Введите следующие данные для утилиты <strong>Sysprep</strong>:
     <ul>
-      <li>Under <strong>System Cleanup Action</strong>, select <strong>Enter System Out-of-Box-Experience (OOBE)</strong>.</li>
-      <li>Select the <strong>Generalize</strong> check box if you need to change the computer's system identification number (SID).</li>
-      <li>Under <strong>Shutdown Options</strong>, select <strong>Shutdown</strong>.</li>
+      <li>В меню <strong>Действие по очистке системы</strong> выберите пункт <strong>Переход в окно приветствия системы (OOBE)</strong>.</li>
+      <li>Отметьте параметр <strong>Подготовка к использованию</strong> если необходимо сменить номер SID.</li>
+      <li>В <strong>Параметрах завершения работы</strong> выберите <strong>Завершение работы</strong>.</li>
     </ul>
 
-    <p>Click <strong>OK</strong> to complete the sealing process; the virtual machine shuts down automatically upon completion.</p>
+    <p>Нажмите <strong>OK</strong> для завершения процесса запечатывания; после завершения, виртуальная машина автоматически завершит работу.</p>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The Windows 7 or Windows 2008 template is sealed and ready for deploying virtual machines.</p>
+<p>Шаблон Windows 7 или Windows 2008 запечатан и готов для разворачивания виртуальной машины.</p>
 
-<h4 id="using-cloud-init-to-automate-the-configuration-of-virtual-machines">Using Cloud-Init to Automate the Configuration of Virtual Machines</h4>
+<h4 id="using-cloud-init-to-automate-the-configuration-of-virtual-machines">Использование Cloud-Init для автоматизации настройки виртуальной машины</h4>
 
-<h5 id="cloud-init-overview">Cloud-Init Overview</h5>
+<h5 id="cloud-init-overview">Обзор Cloud-Init</h5>
 
-<p>Cloud-Init is a tool for automating the initial setup of virtual machines such as configuring the host name, network interfaces, and authorized keys. It can be used when provisioning virtual machines that have been deployed based on a template to avoid conflicts on the network.</p>
+<p>Cloud-Init — это утилита автоматизации начальной настройки параметров виртуальных машин, таких, как имя хоста, сетевые интерфейсы и ключи авторизации. Эту утилиту можно использовать при подготовке виртуальных машин, развёрнутых на базе шаблона для избежания конфликтов в сети.</p>
 
-<p>To use this tool, the cloud-init package must first be installed on the virtual machine. Once installed, the Cloud-Init service starts during the boot process to search for instructions on what to configure. You can then use options in the <strong>Run Once</strong> window to provide these instructions one time only, or options in the <strong>New Virtual Machine</strong>, <strong>Edit Virtual Machine</strong> and <strong>Edit Template</strong> windows to provide these instructions every time the virtual machine starts.</p>
+<p>Для использования этой утилиты на виртуальной машине необходимо сначала установить пакет cloud-init. После его установки, во время загрузки системы запускается служба Cloud-Init, которая производит поиск указаний, что именно нужно настроить. Далее можно использовать параметры окна <strong>Однократный запуск</strong> чтобы предоставить эти инструкции только один раз, или параметры в окнах <strong>Добавить ВМ</strong>, <strong>Изменить ВМ</strong> и <strong>Изменить</strong> чтобы эти инструкции выполнялись каждый раз при загрузке виртуальной машины.</p>
 
-<h5 id="cloud-init-use-case-scenarios">Cloud-Init Use Case Scenarios</h5>
+<h5 id="cloud-init-use-case-scenarios">Сценарии вариантов использования Cloud-Init</h5>
 
-<p>Cloud-Init can be used to automate the configuration of virtual machines in a variety of scenarios. Several common scenarios are as follows:</p>
+<p>Cloud-Init можно использовать для автоматизации настройки параметров виртуальных машин в различных сценариях. Вот несколько распространённых сценариев:</p>
 
-<p>Virtual Machines Created Based on Templates<br>
-You can use the Cloud-Init options in the <strong>Initial Run</strong> section of the <strong>Run Once</strong> window to initialize a virtual machine that was created based on a template. This allows you to customize the virtual machine the first time that virtual machine is started.</p>
+<p>Виртуальные машины, созданные на основе шаблонов<br>
+Параметры Cloud-Init в разделе <strong>Однократный запуск</strong> окна <strong>Однократный запуск</strong> можно использовать для инициализации виртуальной машины, созданной на основе шаблона. Это даёт возможность настроить виртуальную машину во время её первого запуска.</p>
 
-<p>Virtual Machine Templates<br>
-You can use the <strong>Use Cloud-Init/Sysprep</strong> options in the <strong>Initial Run</strong> tab of the <strong>New Template</strong> and <strong>Edit Template</strong> windows to specify options for customizing virtual machines created based on that template.</p>
+<p>Шаблоны виртуальных машин<br>
+Пункты <strong>Использовать Cloud-Init/Sysprep</strong> вкладки <strong>Однократный запуск</strong> окон <strong>Добавить шаблон</strong> и <strong>Изменить шаблон</strong> можно использовать для настройки параметров виртуальных машин, созданных на базе этого шаблона.</p>
 
-<p>Virtual Machine Pools<br>
-You can use the <strong>Use Cloud-Init/Sysprep</strong> options in the <strong>Initial Run</strong> tab of the <strong>New Pool</strong> window to specify options for customizing virtual machines taken from that virtual machine pool. This allows you to specify a set of standard settings that will be applied every time a virtual machine is taken from that virtual machine pool. You can inherit or override the options specified for the template on which the virtual machine is based, or specify options for the virtual machine pool itself.</p>
+<p>Пулы виртуальных машин<br>
+Пункты <strong>Использовать Cloud-Init/Sysprep</strong> во вкладке <strong>Однократный запуск</strong> окна <strong>Добавить пул</strong> можно использовать для настройки параметров виртуальных машин, взятых из этого пула машин. Это даёт возможность указать набор стандартных параметров, которые будут применяться каждый раз, когда машина будет изыматься из этого пула. Параметры, указанные для шаблона, на котором основана машина, могут быть унаследованы или переопределены, или же можно указать параметры для самого пула машин.</p>
 
-<h5 id="installing-cloud-init">Installing Cloud-Init</h5>
+<h5 id="installing-cloud-init">Установка Cloud-Init</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Install Cloud-Init on a Red Hat or CentOS virtual machine.</p>
+<p>Установка Cloud-Init на виртуальной машине с установленной Red Hat или CentOS.</p>
 
-<p><strong>Procedure&nbsp;9.11.&nbsp;Installing Cloud-Init</strong></p>
+<p><strong>Действие&nbsp;9.11.&nbsp;Установка Cloud-Init</strong></p>
 
 <ol>
-  <li>Log on to the virtual machine.</li>
-  <li>Install the cloud-init package and dependencies:
+  <li>Авторизуйтесь на виртуальной машине.</li>
+  <li>Установите пакет cloud-init и его зависимости:
     # yum install cloud-init</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have installed the cloud-init package and dependencies.</p>
+<p>Мы установили пакет cloud-init и его зависимости.</p>
 
-<h5 id="using-cloud-init-to-initialize-a-virtual-machine">Using Cloud-Init to Initialize a Virtual Machine</h5>
+<h5 id="using-cloud-init-to-initialize-a-virtual-machine">Использование Cloud-Init для инициализации виртуальной машины</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Use Cloud-Init to automate the initial configuration of a Linux virtual machine that has been provisioned based on a template.</p>
+<p>Использование Cloud-Init для автоматизации начальной настройки ВМ с установленной Linux, подготовленной на базе шаблона.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.12.&nbsp;Using Cloud-Init to Initialize a Virtual Machine</strong></p>
+<p><strong>Действие&nbsp;9.12.&nbsp;Использование Cloud-Init для инициализации виртуальной машины</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click <strong>Run Once</strong> to open the <strong>Run Virtual Machine(s)</strong> window.</li>
-  <li>Expand the <strong>Initial Run</strong> section and select the <strong>Cloud-Init</strong> check box.</li>
-  <li>Enter a host name in the <strong>VM Hostname</strong> text field.</li>
-  <li>Select the <strong>Configure Time Zone</strong> check box and select a time zone from the <strong>Time Zone</strong> drop-down menu.</li>
-  <li>Select the <strong>Use already configured password</strong> check box to use the existing credentials, or clear that check box and enter a root password in the <strong>Root Password</strong> and <strong>Verify Root Password</strong> text fields to specify a new root password.</li>
-  <li>Enter any SSH keys to be added to the authorized hosts file on the virtual machine in the <strong>SSH Authorized Keys</strong> text area.</li>
-  <li>Select the <strong>Regenerate SSH Keys</strong> check box to regenerate SSH keys for the virtual machine.</li>
-  <li>Enter any DNS servers in the <strong>DNS Servers</strong> text field.</li>
-  <li>Enter any DNS search domains in the <strong>DNS Search Domains</strong> text field.</li>
-  <li>Select the <strong>Network</strong> check box and use the <strong>+</strong> and <strong>-</strong> buttons to add or remove network interfaces to or from the virtual machine.</li>
-  <li>Enter any custom scripts in the <strong>Custom Script</strong> text area.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Нажмите <strong>Однократный запуск</strong> чтобы открыть окно <strong>Запустить ВМ</strong>.</li>
+  <li>Разверните раздел <strong>Однократный запуск</strong> и отметьте галочкой параметр <strong>Cloud-Init</strong>.</li>
+  <li>Введите имя хоста в текстовом поле <strong>Имя хоста ВМ</strong>.</li>
+  <li>Отметьте параметр <strong>Настроить часовой пояс</strong> и выберите часовой пояс в выпадающем меню <strong>Часовой пояс</strong>.</li>
+  <li>Отметьте галочкой параметр <strong>Использовать уже настроенный пароль</strong> чтобы использовать уже существующие учётные данные, или снимите галочку и введите пароль root в текстовых полях <strong>Пароль root</strong> и <strong>Подтвердить пароль root</strong> чтобы указать новый пароль root.</li>
+  <li>Введите ключи SSH для добавления в файл авторизованных хостов на виртуальной машине в текстовое поле <strong>Назначенные ключи SSH</strong>.</li>
+  <li>Отметьте галочкой параметр <strong>Пересоздать ключи SSH</strong> чтобы заново создать ключи SSH для виртуальной машины.</li>
+  <li>Укажите любые серверы DNS в текстовом поле <strong>Серверы DNS</strong>.</li>
+  <li>Укажите любые домены поиска DNS в текстовом поле <strong>Домены поиска DNS</strong>.</li>
+  <li>Отметьте параметр <strong>Сеть</strong> и используйте клавиши <strong>+</strong> и <strong>-</strong> для добавления или удаления сетевых интерфейсов виртуальной машины.</li>
+  <li>Введите любые настраиваемые скрипты в текстовую область <strong>Настраиваемый скрипт</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Cloud-Init is only supported on cluster compatibility version 3.3 and higher.</p>
+  <p><strong>Важно:</strong> Cloud-Init поддерживается только версией совместимости кластера версии 3.3 и более поздних.</p>
 
 </div>
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine boots and the specified settings are applied.</p>
+<p>Виртуальная машина загружается, и применяются указанные параметры.</p>
 
-<h5 id="using-cloud-init-to-prepare-a-template">Using Cloud-Init to Prepare a Template</h5>
+<h5 id="using-cloud-init-to-prepare-a-template">Использование Cloud-Init для подготовки шаблона</h5>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Use Cloud-Init to specify a set of standard settings to be included in a template.</p>
+<p>Использование Cloud-Init для указания набора стандартных параметров, которые должны быть включены в шаблон.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> While the following procedure outlines how to use Cloud-Init when preparing a template, the same settings are also available in the <strong>New Virtual Machine</strong> and <strong>Edit Template</strong> windows.</p>
+  <p><strong>Внимание:</strong> хотя в нижеследующей процедуре описывается использование Cloud-Init для подготовки шаблона, те же параметры также доступны в окнах <strong>Добавить ВМ</strong> и <strong>Изменить шаблон</strong>.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;9.13.&nbsp;Using Cloud-Init to Prepare a Template</strong></p>
+<p><strong>Действие&nbsp;9.13.&nbsp;Использование Cloud-Init для подготовки шаблона</strong></p>
 
 <ol>
-  <li>Click the <strong>Virtual Machines</strong> tab and select a virtual machine.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Virtual Machine</strong> window.</li>
-  <li>Click the <strong>Initial Run</strong> tab and select the <strong>Use Cloud-Init/Sysprep</strong> check box.</li>
-  <li>Enter a host name in the <strong>VM Hostname</strong> text field.</li>
-  <li>Select the <strong>Configure Time Zone</strong> check box and select a time zone from the <strong>Time Zone</strong> drop-down menu.</li>
-  <li>Expand the <strong>Authentication</strong> section and select the <strong>Use already configured password</strong> check box to user the existing credentials, or clear that check box and enter a root password in the <strong>Root Password</strong> and <strong>Verify Root Password</strong> text fields to specify a new root password.</li>
-  <li>Enter any SSH keys to be added to the authorized hosts file on the virtual machine in the <strong>SSH Authorized Keys</strong> text area.</li>
-  <li>Select the <strong>Regenerate SSH Keys</strong> check box to regenerate SSH keys for the virtual machine.</li>
-  <li>Expand the <strong>Networks</strong> section and enter any DNS servers in the <strong>DNS Servers</strong> text field.</li>
-  <li>Enter any DNS search domains in the <strong>DNS Search Domains</strong> text field.</li>
-  <li>Select the <strong>Network</strong> check box and use the <strong>+</strong> and <strong>-</strong> buttons to add or remove network interfaces to or from the virtual machine.</li>
-  <li>Expand the <strong>Custom Script</strong> section and enter any custom scripts in the <strong>Custom Script</strong> text area.</li>
-  <li>Click <strong>Ok</strong>.</li>
+  <li>Перейдите на вкладку <strong>Виртуальные машины</strong> и выберите ВМ.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить ВМ</strong>.</li>
+  <li>Перейдите на вкладку <strong>Однократный запуск</strong> и отметьте параметр <strong>Использовать Cloud-Init/Sysprep</strong>.</li>
+  <li>Введите имя хоста в текстовое поле <strong>Имя хоста ВМ</strong>.</li>
+  <li>Отметьте параметр <strong>Настроить часовой пояс</strong> и выберите часовой пояс в выпадающем меню <strong>Часовой пояс</strong>.</li>
+  <li>Разверните раздел <strong>Авторизация</strong> и отметьте галочкой параметр <strong>Использовать уже настроенный пароль</strong> чтобы использовать уже существующие учётные данные, или снимите галочку и введите пароль root в текстовых полях <strong>Пароль root</strong> и <strong>Подтвердить пароль root</strong> чтобы указать новый пароль root.</li>
+  <li>Введите ключи SSH для добавления в файл авторизованных хостов на виртуальной машине в текстовое поле <strong>Назначенные ключи SSH</strong>.</li>
+  <li>Отметьте галочкой параметр <strong>Пересоздать ключи SSH</strong> чтобы заново создать ключи SSH для виртуальной машины.</li>
+  <li>Укажите любые серверы DNS в текстовом поле <strong>Серверы DNS</strong>.</li>
+  <li>Укажите любые домены поиска DNS в текстовом поле <strong>Домены поиска DNS</strong>.</li>
+  <li>Отметьте параметр <strong>Сеть</strong> и используйте клавиши <strong>+</strong> и <strong>-</strong> для добавления или удаления сетевых интерфейсов виртуальной машины.</li>
+  <li>Введите любые настраиваемые скрипты в текстовую область <strong>Настраиваемый скрипт</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Cloud-Init is only supported on cluster compatibility version 3.3 and higher.</p>
+  <p><strong>Важно:</strong> Cloud-Init поддерживается только версией совместимости кластера версии 3.3 и более поздних.</p>
 
 </div>
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual machine boots and the specified settings are applied.</p>
+<p>Виртуальная машина загружается, и применяются указанные параметры.</p>
 
-<h2 id="pools">⁠Pools</h2>
+<h2 id="pools">⁠Пулы</h2>
 
-<h3 id="introduction-to-virtual-machine-pools">Introduction to Virtual Machine Pools</h3>
+<h3 id="introduction-to-virtual-machine-pools">Введение в пулы виртуальных машин</h3>
 
-<p>A virtual machine pool is a group of virtual machines that are all clones of the same template and that can be used on demand by any user in a given group. Virtual machine pools allow administrators to rapidly configure a set of generalized virtual machines for users.</p>
+<p>Пул виртуальных машин — это группа виртуальных машин, являющихся клонами одного и того же шаблона, и которые могут быть использованы по запросу любым пользователем в указанной группе. Пулы ВМ дают администраторам возможность быстро настроить ряд подготовленных ВМ для пользователей.</p>
 
-<p>Users access a virtual machine pool by taking a virtual machine from the pool. When a user takes a virtual machine from a pool, they are provided with any one of the virtual machines in the pool if any are available. That virtual machine will have the same operating system and configuration as that of the template on which the pool was based, but users may not receive the same member of the pool each time they take a virtual machine. Users can also take multiple virtual machines from the same virtual machine pool depending on the configuration of that pool.</p>
+<p>Пользователи получают доступ к пулу ВМ, забирая ВМ из пула. Когда пользователь забирает ВМ из пула, ему предоставляется любая из доступных ВМ, если они есть в пуле. На этой ВМ будет та же ОС и те же настроенные параметры, что и в шаблоне, на основе которого был создан пул, но пользователи могут не получать каждый раз одну и ту же машину пула. Пользователи также могут забирать несколько ВМ из одного пула, в зависимости от параметров этого пула.</p>
 
-<p>Virtual machines in a virtual machine pool are stateless, meaning that data is not persistent across reboots. However, if a user configures console options for a virtual machine taken from a virtual machine pool, those options will be set as the default for that user for that virtual machine pool.</p>
+<p>ВМ из пула машин выполняются без сохранения состояния, что означает, что данные на машинах не сохраняются между перезагрузками. Тем не менее, если пользователь настроит консольные параметры машины, взятой из пула, то эти параметры будут параметрами по умолчанию этого пользователя в этом пуле ВМ.</p>
 
-<p>In principle, virtual machines in a pool are started when taken by a user, and shut down when the user is finished. However, virtual machine pools can also contain pre-started virtual machines. Pre-started virtual machines are kept in an up state, and remain idle until they are taken by a user. This allows users to start using such virtual machines immediately, but these virtual machines will consume system resources even while not in use due to being idle.</p>
+<p>В основном, ВМ в пуле запускаются, когда их забирает пользователь, и выключаются, когда пользователь завершает работу. Тем не менее, пул ВМ может содержать предварительно запущенные ВМ. Предварительно запущенные машины сохраняются в работающем состоянии и остаются неактивными до тех пор, пока их не возьмёт пользователь. Это даёт возможность начать работу с ВМ немедленно, но такие машины потребляют системные ресурсы и тогда, когда с ними не работают пользователи.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> Virtual machines taken from a pool are not stateless when accessed from the Administration Portal. This is because administrators need to be able to write changes to the disk if necessary.</p>
+  <p><strong>Внимание:</strong> машины, взятые из пула, выполняются с сохранением состояния, если доступ к машине получен через Портал администрирования, т.к. администраторам необходима возможность записывать изменения на диск в случае необходимости.</p>
 
 </div>
 
-<h3 id="virtual-machine-pool-tasks">Virtual Machine Pool Tasks</h3>
+<h3 id="virtual-machine-pool-tasks">Задачи пула виртуальных машин</h3>
 
-<h4 id="creating-a-virtual-machine-pool">Creating a Virtual Machine Pool</h4>
+<h4 id="creating-a-virtual-machine-pool">Создание пула ВМ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can create a virtual machine pool that contains multiple virtual machines that have been created based on a common template.</p>
+<p>Создание пула ВМ, содержащего виртуальные машины, созданные на базе общего шаблона.</p>
 
-<p><strong>Procedure&nbsp;10.1.&nbsp;Creating a Virtual Machine Pool</strong></p>
+<p><strong>Действие&nbsp;10.1.&nbsp;Создание пула ВМ</strong></p>
 
 <ol>
-  <li>Click the <strong>Pools</strong> tab.</li>
-  <li>Click the <strong>New</strong> button to open the <strong>New Pool</strong> window.
+  <li>Перейдите на вкладку <strong>Пулы</strong>.</li>
+  <li>Нажмите на кнопку <strong>Добавить</strong> чтобы открыть окно <strong>Добавить пул</strong>.
     <ul>
-      <li>Use the drop down-list to select the <strong>Cluster</strong> or use the selected default.</li>
-      <li>Use the <strong>Based on Template</strong> drop-down menu to select a template or use the selected default. If you have selected a template, optionally use the <strong>Template Sub Version</strong> drop-down menu to select a version of that template. A template provides standard settings for all the virtual machines in the pool.</li>
-      <li>Use the <strong>Operating System</strong> drop-down list to select an <strong>Operating System</strong> or use the default provided by the template.</li>
-      <li>Use the <strong>Optimized for</strong> drop-down list to optimize virtual machines for either <strong>Desktop</strong> use or <strong>Server</strong> use.</li>
+      <li>В выпадающем меню выберите <strong>Кластер</strong> или используйте выбранное значение по умолчанию.</li>
+      <li>В выпадающем меню <strong>Основана на шаблоне</strong> выберите шаблон или используйте выбранное значение по умолчанию. Если был выбран шаблон, по желанию можно использовать выпадающее меню <strong>Подверсия шаблона</strong> чтобы выбрать подверсию шаблона. Шаблон предоставляет стандартные настройки для всех ВМ в пуле.</li>
+      <li>В выпадающем меню <strong>Операционная система</strong> выберите <strong>Операционную систему</strong> или используйте значение по умолчанию в шаблоне.</li>
+      <li>В выпадающем меню <strong>Оптимизировано для</strong> выберите параметр для использования ВМ в качестве <strong>Рабочего стола</strong> или <strong>Сервера</strong>.</li>
     </ul>
   </li>
-  <li>Enter a <strong>Name</strong> and <strong>Description</strong>, any <strong>Comments</strong> and the <strong>Number of VMs</strong> for the pool.</li>
-  <li>Select the <strong>Maximum number of VMs per user</strong> that a single user is allowed to run in a session. The minimum is one.</li>
-  <li>Optionally, click the <strong>Show Advanced Options</strong> button and perform the following steps:
+  <li>Введите <strong>Имя</strong> и <strong>Описание</strong>, любые <strong>Комментарии</strong> и <strong>Количество ВМ</strong> в пуле.</li>
+  <li>Выберите <strong>Максимальное число ВМ на пользователя</strong>, максимальное количество ВМ, разрешённое запускать одному ползователю в одном сеансе. Минимальное число — 1.</li>
+  <li>По желанию, нажмите на кнопку <strong>Показать дополнительные параметры</strong> и выполните следующие шаги:
     <ol>
-      <li>Select the <strong>Console</strong> tab. At the bottom of the tab window, select the <strong>Override SPICE Proxy</strong> check box to enable the <strong>Overridden SPICE proxy address</strong> text field and specify the address of a SPICE proxy to override the global SPICE proxy, if any.</li>
-      <li>Click the <strong>Pool</strong> tab and select a <strong>Pool Type</strong>:
+      <li>Перейдите на вкладку <strong>Консоль</strong>. В нижней части окна вкладки отметьте галочкой параметр <strong>Переопределить SPICE прокси</strong> чтобы активировать текстовое поле <strong>Переназначенный адрес прокси SPICE</strong> и укажите адрес прокси SPICE для переопределения глоюального прокси SPICE, если он существует.</li>
+      <li>Перейдите на вкладку <strong>Пул</strong> и выберите <strong>Тип пула</strong>:
         <ul>
-          <li><strong>Manual</strong> - The administrator is responsible for explicitly returning the virtual machine to the pool. The virtual machine reverts to the original base image after the administrator returns it to the pool.</li>
-          <li><strong>Automatic</strong> - When the virtual machine is shut down, it automatically reverts to its base image and is returned to the virtual machine pool.</li>
+          <li><strong>Вручную</strong> — задача явного возвращения ВМ в пул лежит на администраторе. После того, как администратор вернул машину в пул, настройки машины откатываются до настроек базового шаблона.</li>
+          <li><strong>Автоматически</strong> — после выключения машины, её настройки откатываются до настроек базового шаблона, и машина возвращается в пул.</li>
         </ul>
       </li>
     </ol>
   </li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have created and configured a virtual machine pool with the specified number of identical virtual machines. You can view these virtual machines in the <strong>Virtual Machines</strong> resource tab, or in the details pane of the <strong>Pools</strong> resource tab; a virtual machine in a pool is distinguished from independent virtual machines by its icon.</p>
+<p>Мы создали и настроили пул ВМ с указанным количеством идентичных машин. Просмотреть виртуальные машины можно в ресурсной вкладке <strong>Виртуальные машины</strong> или на панели сведений ресурсной вкладки <strong>Пулы</strong>; виртуальная машина из пула отличается от независимых ВМ своим значком.</p>
 
-<h4 id="explanation-of-settings-and-controls-in-the-new-pool-window">Explanation of Settings and Controls in the New Pool Window</h4>
+<h4 id="explanation-of-settings-and-controls-in-the-new-pool-window">Объяснение параметров и элементов управления окна «Добавить пул»</h4>
 
-<h5 id="new-pool-general-settings-explained">New Pool General Settings Explained</h5>
+<h5 id="new-pool-general-settings-explained">Объяснение общих параметров добавления нового пула</h5>
 
-<p>The following table details the information required on the <strong>General</strong> tab of the <strong>New Pool</strong> window that is specific to virtual machine pools. All other settings are identical to those in the <strong>New Virtual Machine</strong> window.</p>
+<p>В таблице ниже приводятся подробности параметров пулов виртуальных машин, которые необходимо указывать во вкладке <strong>Общие</strong> окна <strong>Добавить пул</strong>. Все другие параметры идентичны параметрам в окне <strong>Добавить ВМ</strong>.</p>
 
-<p><strong>Table&nbsp;10.1.&nbsp;General settings</strong></p>
+<p><strong>Таблица&nbsp;10.1.&nbsp;Общие параметры</strong></p>
 
 <table>
 <colgroup>
@@ -7432,27 +7435,27 @@ You can use the <strong>Use Cloud-Init/Sysprep</strong> options in the <strong>I
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Field Name</p></th>
-<th align="left"><p>Description</p></th>
+<th align="left"><p>Имя поля</p></th>
+<th align="left"><p>Описание</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Number of VMs</strong></p></td>
-<td align="left"><p>Allows you to specify the number of virtual machines in the virtual machine pool that will be created and made available to the virtual machine pool when that virtual machine pools is created. By default, the maximum number of virtual machines you can create in a pool is 1000. This value can be configured using the <code>MaxVmsInPool</code> key of the <code>engine-config</code> command.</p></td>
+<td align="left"><p><strong>Число ВМ</strong></p></td>
+<td align="left"><p>Позволяет указать число создаваемых и доступных пользователю машин в пуле после его создания. По умолчанию, максимальное число виртуальных машин в пуле — 1000. Это значение настраивается с помощью ключа <code>MaxVmsInPool</code> команды <code>engine-config</code>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Maximum number of VMs per user</strong></p></td>
-<td align="left"><p>Allows you to specify the maximum number of virtual machines a single user can take from the virtual machine pool at any one time. The value of this field must be between <code>1</code> and <code>32,767</code>.</p></td>
+<td align="left"><p><strong>Максимально число ВМ на пользователя</strong></p></td>
+<td align="left"><p>Позволяет указать максимальное число ВМ, которое один пользователь может взять из пула в любое время. Значение в этом поле должно быть между <code>1</code> и <code>32,767</code>.</p></td>
 </tr>
 </tbody>
 </table>
 
-<h5 id="new-pool-pool-settings-explained">New Pool Pool Settings Explained</h5>
+<h5 id="new-pool-pool-settings-explained">Параметры пула во вкладке «Добавить пул»</h5>
 
-<p>The following table details the information required on the <strong>Pool</strong> tab of the <strong>New Pool</strong> window.</p>
+<p>В таблице ниже приводятся подробности параметров, требуемых во вкладке <strong>Пул</strong> окна <strong>Добавить пул</strong>.</p>
 
-<p>⁠<strong>Table&nbsp;10.2.&nbsp;Console settings</strong></p>
+<p>⁠<strong>Таблица&nbsp;10.2.&nbsp;Параметры консоли</strong></p>
 
 <table>
 <colgroup>
@@ -7461,80 +7464,27 @@ You can use the <strong>Use Cloud-Init/Sysprep</strong> options in the <strong>I
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Field Name</p></th>
-<th align="left"><p>Description</p></th>
+<th align="left"><p>Имя поля</p></th>
+<th align="left"><p>Описание</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Pool Type</strong></p></td>
-<td align="left"><p>This drop-down menu allows you to specify the type of the virtual machine pool. The following options are available:</p>
+<td align="left"><p><strong>Тип пула</strong></p></td>
+<td align="left"><p>В этом выпадающем меню можно указать тип пула ВМ. Доступны следующие параметры:</p>
 <ul>
-<li><strong>Automatic</strong>: After a user finishes using a virtual machine taken from a virtual machine pool, that virtual machine is automatically returned to the virtual machine pool.</li>
-<li><strong>Manual</strong>: After a user finishes using a virtual machine taken from a virtual machine pool, that virtual machine is only returned to the virtual machine pool when an administrator manually returns the virtual machine.</li>
+<li><strong>Автоматически</strong>: после того, как пользователь закончил работу с ВМ, взятой из пула, эта машина автоматически возвращается в пул.</li>
+<li><strong>Вручную</strong>: после того, как пользователь закончил работу с ВМ, взятой из пула, вернуть эту машину в пул может только администратор вручную.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<h5 id="new-pool-and-edit-pool-console-settings-explained">New Pool and Edit Pool Console Settings Explained</h5>
+<h5 id="new-pool-and-edit-pool-console-settings-explained">Объяснение консольных параметров добавления пула и изменения пула</h5>
 
-<p>The following table details the information required on the <strong>Console</strong> tab of the <strong>New Pool</strong> or <strong>Edit Pool</strong> window that is specific to virtual machine pools. All other settings are identical to those in the <strong>New Virtual Machine</strong> and <strong>Edit Virtual Machine</strong> windows.</p>
+<p>В таблице ниже приводятся подробности параметров пулов виртуальных машин, присутствующих во вкладке <strong>Консоль</strong> окна <strong>Добавить пул</strong> или <strong>Изменить пул</strong>. Все другие параметры аналогичны параметрам в окне <strong>Добавить ВМ</strong> и <strong>Изменить ВМ</strong>.</p>
 
-<p><strong>Table&nbsp;10.3.&nbsp;Console settings</strong></p>
-
-<table>
-<colgroup>
-<col width="50%">
-<col width="50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"><p>Field Name</p></th>
-<th align="left"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Override SPICE proxy</strong></p></td>
-<td align="left"><p>Select this check box to enable overriding the SPICE proxy defined in global configuration. This feature is useful in a case where the user (who is, for example, connecting via the User Portal) is outside of the network where the hypervisors reside.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Overridden SPICE proxy address</strong></p></td>
-<td align="left"><p>The proxy by which the SPICE client will connect to virtual machines. This proxy overrides both the global SPICE proxy defined for the oVirt environment and the SPICE proxy defined for the cluster to which the virtual machine pool belongs, if any. The address must be in the following format:</p>
-<pre><code>protocol://[host]:[port]</code></pre></td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="editing-a-virtual-machine-pool">Editing a Virtual Machine Pool</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>After a virtual machine pool has been created, its properties can be edited. The properties available when editing a virtual machine pool are identical to those available when creating a new virtual machine pool except that the <strong>Number of VMs</strong> property is replaced by <strong>Increase number of VMs in pool by</strong>.</p>
-
-<p>⁠</p>
-
-<p><strong>Procedure&nbsp;10.2.&nbsp;Editing a Virtual Machine Pool</strong></p>
-
-<ol>
-  <li>Use the <strong>Pools</strong> resource tab, tree mode, or the search function to find and select the virtual machine pool in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Pool</strong> window.</li>
-  <li>Edit the properties of the virtual machine pool.</li>
-  <li>Click <strong>Ok</strong>.</li>
-</ol>
-
-<p><strong>Result</strong></p>
-
-<p>The properties of an existing virtual machine pool have been edited.</p>
-
-<h4 id="explanation-of-settings-and-controls-in-the-edit-pool-window">Explanation of Settings and Controls in the Edit Pool Window</h4>
-
-<h5 id="edit-pool-general-settings-explained">Edit Pool General Settings Explained</h5>
-
-<p>The following table details the information required on the <strong>General</strong> tab of the <strong>Edit Pool</strong> window that is specific to virtual machine pools. All other settings are identical to those in the <strong>Edit Virtual Machine</strong> window.</p>
-
-<p><strong>Table&nbsp;10.4.&nbsp;General settings</strong></p>
+<p><strong>Таблица&nbsp;10.3.&nbsp;Параметры консоли</strong></p>
 
 <table>
 <colgroup>
@@ -7543,205 +7493,258 @@ You can use the <strong>Use Cloud-Init/Sysprep</strong> options in the <strong>I
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Field Name</p></th>
-<th align="left"><p>Description</p></th>
+<th align="left"><p>Имя поля</p></th>
+<th align="left"><p>Описание</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Prestarted VMs</strong></p></td>
-<td align="left"><p>Allows you to specify the number of virtual machines in the virtual machine pool that will be started before they are taken and kept in that state to be taken by users. The value of this field must be between <code>0</code> and the total number of virtual machines in the virtual machine pool.</p></td>
+<td align="left"><p><strong>Переопределить прокси SPICE</strong></p></td>
+<td align="left"><p>Отметьте галочкой этот параметр чтобы включить переопределение параметров прокси SPICE, определённых в глобальной конфигурации. Этот параметр удобен в том случае, если пользователь (подключающийся, например, через Пользовательский портал), находится вне той сети, в которой находятся гипервизоры.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Increase number of VMs in pool by</strong></p></td>
-<td align="left"><p>Allows you to increase the number of virtual machines in the virtual machine pool by the specified number.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Maximum number of VMs per user</strong></p></td>
-<td align="left"><p>Allows you to specify the maximum number of virtual machines a single user can take from the virtual machine at any one time. The value of this field must be between <code>1</code> and <code>32,767</code>.</p></td>
+<td align="left"><p><strong>Переопределённый адрес прокси SPICE</strong></p></td>
+<td align="left"><p>Прокси, через который клиент SPICE подключается к виртуальным машинам. Параметры этого прокси переопределяют как глобальные натсройки прокси SPICE, указанные для окружения oVirt, так и параметры прокси SPICE, указанные для калстера, к которому принадлежит пул ВМ, если этот прокси существует. Адрес должен иметь следующий формат:</p>
+<pre><code>протокол://[хост]:[порт]</code></pre></td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="prestarting-virtual-machines-in-a-pool">Prestarting Virtual Machines in a Pool</h4>
+<h4 id="editing-a-virtual-machine-pool">Изменение параметров пула виртуальных машин</h4>
 
-<p>The virtual machines in a virtual machine pool are powered down by default. When a user requests a virtual machine from a pool, a machine is powered up and assigned to the user. In contrast, a prestarted virtual machine is already running and waiting to be assigned to a user, decreasing the amount of time a user has to wait before being able to access a machine. When a prestarted virtual machine is shut down it is returned to the pool and restored to its original state. The maximum number of prestarted virtual machines is the number of virtual machines in the pool.</p>
+<p><strong>Описание задачи</strong></p>
 
-<p><strong>Summary</strong></p>
-
-<p>Prestarted virtual machines are suitable for environments in which users require immediate access to virtual machines which are not specifically assigned to them. Only automatic pools can have prestarted virtual machines.</p>
+<p>После создания пула ВМ можно изменить его параметры. Параметры пула ВМ, доступные для изменения, идентичны параметрам, доступным при добавлении нового пула ВМ, за исключением параметра <strong>Число ВМ</strong>, который заменяется на параметр <strong>Увеличить число ВМ в пуле на</strong>.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;10.3.&nbsp;Prestarting Virtual Machines in a Pool</strong></p>
+<p><strong>Действие&nbsp;10.2.&nbsp;Изменение параметров пула виртуальных машин</strong></p>
 
 <ol>
-  <li>Use the <strong>Pools</strong> resource tab, tree mode, or the search function to find and select the virtual machine pool in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Pool</strong> window.</li>
-  <li>Enter the number of virtual machines to be prestarted in the <strong>Prestarted VMs</strong> field.</li>
-  <li>Select the <strong>Pool</strong> tab. Ensure <strong>Pool Type</strong> is set to <strong>Automatic</strong>.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Используйте ресурсную вкладку <strong>Пулы</strong>, древовидный режим или поисковый функционал чтобы найти и выделить пул ВМ в списке результатов.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить пул</strong>.</li>
+  <li>Измените параметры пула ВМ.</li>
+  <li>Нажмите <strong>Ok</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have set a number of prestarted virtual machines in a pool. The prestarted machines are running and available for use.</p>
+<p>Свойства существующего пула ВМ были изменены.</p>
 
-<h4 id="adding-virtual-machines-to-a-virtual-machine-pool">Adding Virtual Machines to a Virtual Machine Pool</h4>
+<h4 id="explanation-of-settings-and-controls-in-the-edit-pool-window">Объяснение параметров и элементов управления окна изменения параметров пула</h4>
 
-<p><strong>Summary</strong></p>
+<h5 id="edit-pool-general-settings-explained">Объяснение общих параметров окна изменения параметров пула</h5>
 
-<p>If you require more virtual machines than originally provisioned in a virtual machine pool, add more machines to the pool.</p>
+<p>В таблице ниже приводятся подробности параметров пулов ВМ вкладки <strong>Общие</strong> окна <strong>Изменить пул</strong>. Все другие параметры аналогичны параметрам в окне <strong>Изменить ВМ</strong>.</p>
+
+<p><strong>Таблица&nbsp;10.4.&nbsp;Общие параметры</strong></p>
+
+<table>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><p>Имя поля</p></th>
+<th align="left"><p>Описание</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Предзапущенные ВМ</strong></p></td>
+<td align="left"><p>Даёт возможность указать число тех машин в пуле, работа которых будет начата до того, как их заберёт пользователь, и которые будут сохранять рабочее состояние в момент, когда их берут пользователи. Значение в этом поле должно быть между <code>0</code> и общим числом ВМ в пуле.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Увеличить число ВМ в пуле на</strong></p></td>
+<td align="left"><p>Даёт возможность увеличить число ВМ в пуле на указанное количество.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Максимальное число ВМ на пользователя</strong></p></td>
+<td align="left"><p>Даёт возможность указать максимальное число машин, которые может взять из пула пользователь в любое время. Значение этого поля должно быть между <code>1</code> и <code>32,767</code>.</p></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="prestarting-virtual-machines-in-a-pool">Предзапуск виртуальных машин в пуле</h4>
+
+<p>По умолчанию, виртуальные машины в пуле выключены. Когда пользователь запрашивает машину из пула, машина включается и назначается пользователю. И наоборот, предзапущенная ВМ уже работает, и пользователь берёт из пула работающую машину, что уменьшает время ожидания запуска машины перед тем, как получить к ней доступ. После выключения предзапущенной ВМ она возвращается в пул, и значения всех параметров откатываются до изначальных. Максимальное число предзапущенных ВМ в пуле — это общее число всех машин в пуле.</p>
+
+<p><strong>Описание задачи</strong></p>
+
+<p>Предзапущенные ВМ удобны для тех окружений, где пользователям нужен немедленный доступ к машине, не предназначенной конкретно для этого пользователя. Предзапущенные ВМ могут принадлежать только автоматическим пулам.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;10.4.&nbsp;Adding Virtual Machines to a Virtual Machine Pool</strong></p>
+<p><strong>Действие&nbsp;10.3.&nbsp;Предзапуск ВМ в пуле</strong></p>
 
 <ol>
-  <li>Use the <strong>Pools</strong> resource tab, tree mode, or the search function to find and select the virtual machine pool in the results list.</li>
-  <li>Click <strong>Edit</strong> to open the <strong>Edit Pool</strong> window.</li>
-  <li>Enter the number of additional virtual machines to add in the <strong>Increase number of VMs in pool by</strong> field.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Используйте ресурсную вкладку <strong>Пулы</strong>, древовидный режим или поисковый функционал чтобы найти и выделить пул ВМ в списке результатов.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить пул</strong>.</li>
+  <li>В поле <strong>Предзапущенные ВМ</strong> введите число предзапущенных ВМ, которые должны находиться в этом пуле.</li>
+  <li>Перейдите на вкладку <strong>Пул</strong>. Убедитесь, что <strong>Тип пула</strong> имеет значение <strong>Автоматически</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have added more virtual machines to the virtual machine pool.</p>
+<p>Мы указали необходимое количество предзапущенных машин в пуле. Предзапущенные машины работают и доступны для использования.</p>
 
-<h4 id="detaching-virtual-machines-from-a-virtual-machine-pool">Detaching Virtual Machines from a Virtual Machine Pool</h4>
+<h4 id="adding-virtual-machines-to-a-virtual-machine-pool">Добавление виртуальных машин в пул ВМ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can detach virtual machines from a virtual machine pool. Detaching a virtual machine removes it from the pool to become an independent virtual machine.</p>
+<p>Добавьте больше виртуальных машин в пул, если изначального количества машин в пуле не хватает.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;10.5.&nbsp;Detaching Virtual Machines from a Virtual Machine Pool</strong></p>
+<p><strong>Действие&nbsp;10.4.&nbsp;Добавление виртуальных машин в пул ВМ</strong></p>
 
 <ol>
-  <li>Use the <strong>Pools</strong> resource tab, tree mode, or the search function to find and select the virtual machine pool in the results list.</li>
-  <li>Ensure the virtual machine has a status of <code>Down</code> because you cannot detach a running virtual machine. Click the <strong>Virtual Machines</strong> tab in the details pane to list the virtual machines in the pool.</li>
-  <li>Select one or more virtual machines and click <strong>Detach</strong> to open the <strong>Detach Virtual Machine(s)</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to detach the virtual machine from the pool.</li>
+  <li>Используйте ресурсную вкладку <strong>Пулы</strong>, древовидный режим или поисковый функционал чтобы найти и выделить пул ВМ в списке результатов.</li>
+  <li>Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить пул</strong>.</li>
+  <li>В поле <strong>Увеличить число ВМ в пуле на</strong> ведите число дополнительных машин, которые нужно добавить в пул.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Мы добавили дополнительные ВМ в пул.</p>
+
+<h4 id="detaching-virtual-machines-from-a-virtual-machine-pool">Отсоединение виртуальных машин от пула ВМ</h4>
+
+<p><strong>Описание задачи</strong></p>
+
+<p>ВМ можно отосединить от пула. Отсоединение ВМ удаляет машину из пула, и она становится независимой ВМ.</p>
+
+<p>⁠</p>
+
+<p><strong>Действие&nbsp;10.5.&nbsp;Отсоединение виртуальных машин от пула ВМ</strong></p>
+
+<ol>
+  <li>Используйте ресурсную вкладку <strong>Пулы</strong>, древовидный режим или поисковый функционал чтобы найти и выделить пул ВМ в списке результатов.</li>
+  <li>Убедитесь, что ВМ имеет статус <code>Выключена</code>, т.к. нельзя отсоединять рабочую машину. Перейдите на вкладку <strong>ВМ</strong> на панели сведений чтобы увидеть список машин пула.</li>
+  <li>Выберите одну или более ВМ и нажмите <strong>Отсоединить</strong> чтобь открыть подтверждающее окно <strong>Отсоединить ВМ</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы отсоединить ВМ от пула.</li>
 </ol>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> The virtual machine still exists in the environment and can be viewed and accessed from the <strong>Virtual Machines</strong> resource tab. Note that the icon changes to denote that the detached virtual machine is an independent virtual machine.</p>
+  <p><strong>Внимание:</strong> отсоединённая машина по-прежнему присутствует в окружении, и к ней можно получить доступ в ресурсной вкладке <strong>ВМ</strong>. Обратите внимание, что значок отсоединённой машины меняется, указывая на то, что эта машина теперь является независимой.</p>
 
 </div>
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have detached a virtual machine from the virtual machine pool.</p>
+<p>Мы отсоединили ВМ от пула машин.</p>
 
-<h4 id="removing-a-virtual-machine-pool">Removing a Virtual Machine Pool</h4>
+<h4 id="removing-a-virtual-machine-pool">Удаление пула ВМ</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can remove a virtual machine pool from a data center. You must first either delete or detach all of the virtual machines in the pool. Detaching virtual machines from the pool will preserve them as independent virtual machines.</p>
+<p>Пул ВМ можно удалить из дата-центра. Все машины пула либо отсоединяются от пула, либо удаляются. Отсоединение машин означает, что эти машины будут сохранены как независимые виртуальные машины.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;10.6.&nbsp;Removing a Virtual Machine Pool</strong></p>
+<p><strong>Действие&nbsp;10.6.&nbsp;Удаление пула ВМ</strong></p>
 
 <ol>
-  <li>Use the <strong>Pools</strong> resource tab, tree mode, or the search function to find and select the virtual machine pool in the results list.</li>
-  <li>Click <strong>Remove</strong> to open the <strong>Remove Pool(s)</strong> confirmation window.</li>
-  <li>Click <strong>OK</strong> to remove the pool.</li>
+  <li>Используйте ресурсную вкладку <strong>Пулы</strong>, древовидный режим или поисковый функционал чтобы найти и выделить пул ВМ в списке результатов.</li>
+  <li>Нажмите <strong>Удалить</strong> чтобы открыть подтверждающее окно <strong>Удалить пул</strong>.</li>
+  <li>Нажмите <strong>OK</strong> чтобы удалить пул.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have removed the pool from the data center.</p>
+<p>Мы удалили пул из дата-центра.</p>
 
-<h3 id="trusted-compute-pools">Trusted Compute Pools</h3>
+<h3 id="trusted-compute-pools">Пулы доверенных вычислений Trusted Compute Pools</h3>
 
-<h4 id="creating-a-trusted-cluster">Creating a Trusted Cluster</h4>
+<h4 id="creating-a-trusted-cluster">Создание доверенного кластера</h4>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> If no OpenAttestation server is properly configured, this procedure will fail.</p>
+  <p><strong>Внимание:</strong> в отсутствие правильно настроенного сервера OpenAttestation эта процедура невыполнима.</p>
 
 </div>
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure explains how to set up a trusted computing pool. Trusted computing pools permit the deployment of virtual machines on trusted hosts. With the addition of attestation, administrators can ensure that verified measurement of software is running in the hosts. This provides the foundation of the secure enterprise stack.</p>
+<p>В этом разделе описывается настройка пула доверенных вычислений. Пулы доверенных вычислений дают возможность разворачивать виртуальные машины на довернных хостах. С добавлением аттестации, администраторы могут гарантировать, что на хостах выполняется проверенное ПО. Это составляет основу защищённого корпоративного стека.</p> This procedure explains how to set up a trusted computing pool. Trusted computing pools permit the deployment of virtual machines on trusted hosts. With the addition of attestation, administrators can ensure that verified measurement of software is running in the hosts. This provides the foundation of the secure enterprise stack.
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;10.7.&nbsp;Creating a Trusted Cluster</strong></p>
+<p><strong>Действие&nbsp;10.7.&nbsp;Создание доверенного кластера</strong></p>
 
 <ol>
-  <li>In the navigation pane, select the <strong>Clusters</strong> tab.</li>
-  <li>Click the <strong>New</strong> button.</li>
-  <li>In the <strong>General</strong> tab, set the cluster name.</li>
-  <li>In the <strong>General</strong> tab, select the <strong>Enable Virt Service</strong> radio button.</li>
-  <li>In the <strong>Cluster Policy</strong> tab, select <strong>Enable Trusted Service</strong> check box.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>В панели навигации выберите вкладку <strong>Кластеры</strong>.</li>
+  <li>Нажмите на кнопку <strong>Добавить</strong>.</li>
+  <li>Во вкладке <strong>Общие</strong> выберите имя кластера.</li>
+  <li>Во вкладке <strong>Общие</strong> отметьте галочкой пункт <strong>Включить службу Virt</strong>.</li>
+  <li>Во вкладке <strong>Политика кластера</strong> отметьте параметр <strong>Включить доверенную службу</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have built a trusted computing pool.</p>
+<p>Мы собрали пул доверенных вычислений.</p>
 
-<h4 id="adding-a-trusted-host">Adding a Trusted Host</h4>
+<h4 id="adding-a-trusted-host">Добавление доверенного хоста</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure explains how to add a trusted host to your oVirt environment.</p>
+<p>В этом разделе описывается добавление доверенного хоста в окружение oVirt.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;10.8.&nbsp;</strong></p>
+<p><strong>Действие&nbsp;10.8.&nbsp;</strong></p>
 
 <ol>
-  <li>Select the <strong>Hosts</strong> tab.</li>
-  <li>Click the <strong>New</strong> button.</li>
-  <li>In the <strong>General</strong> tab, set the host's name.</li>
+  <li>Перейдите на вкладку <strong>Хосты</strong>.</li>
+  <li>Нажмите на кнопку <strong>Добавить</strong>.</li>
+  <li>Во вкладке <strong>Общие</strong> укажите имя хоста.</li>
   <li>
-    <p>In the <strong>General</strong> tab, set the host's address.
-<strong>Note</strong></p>
+    <p>Во вкладке <strong>Общие</strong> укажите адрес хоста.
+<strong>Внимание</strong></p>
 
-    <p>The host designated here must be trusted by the attestation server.</p>
+    <p>Хост, который будет указан здесь, должен иметь доверие аттестационного сервера The host designated here must be trusted by the attestation server.</p>
   </li>
-  <li>In the <strong>General</strong> tab, in the <strong>Host Cluster</strong> drop-down menu, select a trusted cluster.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Во вкладке <strong>Общие</strong>, в выпадающем меню <strong>Кластер хоста</strong> выберите доверенный кластер.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have added a trusted host to your oVirt environment.</p>
+<p>Мы добавили доверенный хост в окружение oVirt.</p>
 
-<h2 id="virtual-machine-disks">⁠Virtual Machine Disks</h2>
+<h2 id="virtual-machine-disks">⁠Диски ВМ</h2>
 
-<h3 id="understanding-virtual-machine-storage">Understanding Virtual Machine Storage</h3>
+<h3 id="understanding-virtual-machine-storage">Основные сведения о хранилище виртуальных машин</h3>
 
-<p>oVirt supports three storage types: NFS, iSCSI and FCP.</p>
+<p>oVirt поддерживает три типа хранилищ: NFS, iSCSI и FCP.</p>
 
-<p>In each type, a host known as the Storage Pool Manager (SPM) manages access between hosts and storage. The SPM host is the only node that has full access within the storage pool; the SPM can modify the storage domain metadata, and the pool's metadata. All other hosts can only access virtual machine hard disk image data.</p>
+<p>В каждом типе существует хост-диспетчер пула хранилища (SPM), управляющий доступом хостов к хранилищу. Хост SPM — это единственный узел, имеющий полный доступ в пределах пула хранилища; SPM может изменять метаданные домена хранилища, а также метаданные пула. Все остальные хосты имеют доступ только к данным на образе жёсткого диска виртуальной машины.</p>
 
-<p>By default in an NFS, local, or POSIX compliant data center, the SPM creates the virtual disk using a thin provisioned format as a file in a file system.</p>
+<p>По умолчанию, в NFS, локальных или POSIX-совместимых дата-центрах, хост SPM, используя формат тонкого резервирования, создаёт виртуальный диск в виде файла на файловой системе.</p>
 
-<p>In iSCSI and other block-based data centers, the SPM creates a volume group on top of the Logical Unit Numbers (LUNs) provided, and makes logical volumes to use as virtual machine disks. Virtual machine disks on block-based storage are preallocated by default.</p>
+<p>В iSCSI и других блочных дата-центрах, хост SPM создаёт группу томов поверх предоставленных номеров LUN, и логические тома используются как диски виртуальных машин. В блочном хранилище, диски ВМ по умолчанию являются предварительно выделенными.</p>
 
-<p>If the virtual disk is preallocated, a logical volume of the specified size in GB is created. The virtual machine can be mounted on a Red Hat Enterprise Linux server using <code>kpartx</code>, <code>vgscan</code>, <code>vgchange</code> and <code>mount</code> to investigate the virtual machine's processes or problems.</p>
+<p>В случае предварительно выделенных виртуальных дисков, создаётся логический том с указанным размером в ГБ. Для исправления ошибок или исследования процессов виртуальной машины, она может быть смонтирована на сервере Red Hat Enterprise Linux с помощью <code>kpartx</code>, <code>vgscan</code>, <code>vgchange</code> и <code>mount</code>.</p>
 
-<p>If the virtual disk is a thin provisioned, a 1 GB logical volume is created. The logical volume is continuously monitored by the host on which the virtual machine is running. As soon as the usage nears a threshold the host notifies the SPM, and the SPM extends the logical volume by 1 GB. The host is responsible for resuming the virtual machine after the logical volume has been extended. If the virtual machine goes into a paused state it means that the SPM could not extend the disk in time. This occurs if the SPM is too busy or if there is not enough storage space.</p>
+<p>В случае виртуального диска, созданного с использованием тонкого резервирования, создаётся логический том размером в 1 ГБ. Логический том постоянно контролируется хостом, на котором выполняется ВМ. Как только объём использования ресурсов приближается к установленному порогу, хост оповещает SPM, и SPM увеличивает размер логического тома на 1 ГБ. Хост отвечает за возобновление работы ВМ после увеличения объёма логического тома. Если работа ВМ была приостановлена, это означает, что SPM не смог вовремя увеличить объём диска. Это случается, если SPM слишком занят, или в случае недостаточных объёмов дискового пространства.</p>
 
-<p>A virtual disk with a preallocated (RAW) format has significantly faster write speeds than a virtual disk with a thin provisioning (Qcow2) format. Thin provisioning takes significantly less time to create a virtual disk. The thin provision format is suitable for non-IO intensive virtual machines.</p>
+<p>У виртуального диска с предварительно выделенным форматом (RAW) немного более высокая скорость записи, чем у виртуального диска в формате тонкого резервирования (Qcow2). Виртуальные диски в формате тонкого резервирования создаются гораздо быстрее. Формат тонкого резервирования рекомендуется для ВМ с умеренным уровнем операций ввода-вывода.</p>
 
-<p>oVirt 3.3 and above introduced online virtual drive resizing.</p>
+<p>В oVirt версии 3.3 и более поздних была добавлена возможность динамического изменения размера виртуального диска.</p>
 
-<h3 id="understanding-virtual-disks">Understanding Virtual Disks</h3>
+<h3 id="understanding-virtual-disks">Основные сведения о виртуальных дисках</h3>
 
-<p>Virtual disks are of two types, <strong>Thin Provisioned</strong> or <strong>Preallocated</strong>. Preallocated disks are RAW formatted. Thin provisioned disks are QCOW2 formatted.</p>
+<p>Существует два типа создания виртуальных дисков — <strong>Тонкое резервирование</strong> и <strong>Предварительное выделение</strong>. Преварительно выделенные диски имеют формат RAW, диски с тонким резервированием — формат QCOW2.</p>
 
 <ul>
-  <li>Preallocated A preallocated virtual disk has reserved storage of the same size as the virtual disk itself. The backing storage device (file/block device) is presented as is to the virtual machine with no additional layering in between. This results in better performance because no storage allocation is required during runtime. On SAN (iSCSI, FCP) this is achieved by creating a block device with the same size as the virtual disk. On NFS this is achieved by filling the backing hard disk image file with zeros. Preallocating storage on an NFS storage domain presumes that the backing storage is not QCOW2 formatted and zeros will not be deduplicated in the hard disk image file. (If these assumptions are incorrect, do not select Preallocated for NFS virtual disks).</li>
-  <li>Thin Provisioned For sparse virtual disks backing storage is not reserved and is allocated as needed during runtime. This allows for storage overcommitment under the assumption that most disks are not fully utilized and that storage capacity can be utilized better. This requires the backing storage to monitor write requests and can cause some performance issues. On NFS backing storage is achieved by using files. On SAN this is achieved by creating a block device smaller than the virtual disk's defined size and communicating with the hypervisor to monitor necessary allocations. This does not require support from the underlying storage devices.</li>
+  <li>Предварительное выделение.</p> У предварительно выделенного диска есть зарезервированное хранилище, объём которого равен объёму самого диска. Запасное устройство хранения (файл/блочное устройство) представляется виртуальной машине напрямую, без промежуточного слоя, что даёт лучшую производительность, без необходимости выделения дискового пространства во время выполнения. На SAN (iSCSI, FCP) это достигается с помощью создания блочного устройства, размер которого равен размеру виртуального диска. На NFS это достигается с помощью забивания резервного образа жёсткого диска нулями. Предварительное выделенное дисковое пространство в домене хранилища NFS преполагает, что резервное хранилище не имеет формат QCOW2, и что нули не будут дублироваться в файле образа жёсткого диска. (Если эти предпосылки не выполнены, не выбирайте формат предварительногов выделения для виртуальных дисков на NFS).</li>
+  <li>Тонкое резервирование. </p>Для разрежённых виртуальных дисков резервное дисковое пространство не резервируется, а выделяется по мере необходимости во время работы.  Это даёт возможность для превышенного выделения дискового пространства при условии, что дисковое пространство большинства дисков не использовано полностью, и что возможности хранилища можно использовать лучшим образом. Для этого требуется, чтобы резервное хранилище конролировало запросы на запись, что может привести к некоторым проблемам производительности. На NFS запасное диковыое пространство реализуется с использованием файлов. На SAN это реализуется с помощью создания блочного устройства, размер которого меньше, чем установленный размер виртуального диска, и с помощью обмена информацией с гипервизором для контролирования неорбходимого выделения ресурсов. Эта схема не требует поддержки со стороноы нижележащих устройств хранения.</li>
 </ul>
 
-<p>The possible combinations of storage types and formats are described in the following table.</p>
+<p>Возможные сочетания типов хранилищ и форматов описаны ниже в таблице.</p>
 
-<p><strong>Table&nbsp;11.1.&nbsp;Permitted Storage Combinations</strong></p>
+<p><strong>Таблица&nbsp;11.1.&nbsp;Разрешённые сочетания хранилищ</strong></p>
 
 <table>
 <colgroup>
@@ -7752,170 +7755,107 @@ You can use the <strong>Use Cloud-Init/Sysprep</strong> options in the <strong>I
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Storage</p></th>
-<th align="left"><p>Format</p></th>
-<th align="left"><p>Type</p></th>
-<th align="left"><p>Note</p></th>
+<th align="left"><p>Хранилище</p></th>
+<th align="left"><p>Формат</p></th>
+<th align="left"><p>Тип</p></th>
+<th align="left"><p>Примечание</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>NFS or iSCSI/FCP</p></td>
-<td align="left"><p>RAW or Qcow2</p></td>
-<td align="left"><p>Sparse or Preallocated</p></td>
+<td align="left"><p>NFS или iSCSI/FCP</p></td>
+<td align="left"><p>RAW или Qcow2</p></td>
+<td align="left"><p>Разрежённый или предварительно выделенный</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NFS</p></td>
 <td align="left"><p>RAW</p></td>
-<td align="left"><p>Preallocated</p></td>
-<td align="left"><p>A file with an initial size which equals the amount of storage defined for the virtual disk, and has no formatting.</p></td>
+<td align="left"><p>Разрежённый</p></td>
+<td align="left"><p>Файл с изначальным размером, равным объёму дискового пространства, выделенного виртуальному диску, без форматирования.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NFS</p></td>
 <td align="left"><p>RAW</p></td>
-<td align="left"><p>Sparse</p></td>
-<td align="left"><p>A file with an initial size which is close to zero, and has no formatting.</p></td>
+<td align="left"><p>Разрежённый</p></td>
+<td align="left"><p>Файл с почти нулевым изначальным размером, без форматирования.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NFS</p></td>
 <td align="left"><p>Qcow2</p></td>
-<td align="left"><p>Sparse</p></td>
-<td align="left"><p>A file with an initial size which is close to zero, and has RAW formatting. Subsequent layers will be Qcow2 formatted.</p></td>
+<td align="left"><p>Разрежённый</p></td>
+<td align="left"><p>Файл с почти нулевым изначальным размером, в формате RAW. Последующие слои будут форматированы в Qcow2.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SAN</p></td>
 <td align="left"><p>RAW</p></td>
-<td align="left"><p>Preallocated</p></td>
-<td align="left"><p>A block device with an initial size which equals the amount of storage defined for the virtual disk, and has no formatting.</p></td>
+<td align="left"><p>Предварительно выделенный</p></td>
+<td align="left"><p>Блочное устройство с изначальным размером, равным объёму дискового пространства, выделенного виртуальному диску, без форматирования.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SAN</p></td>
 <td align="left"><p>Qcow2</p></td>
-<td align="left"><p>Preallocated</p></td>
-<td align="left"><p>A block device with an initial size which equals the amount of storage defined for the virtual disk, and has Qcow2 formatting.</p></td>
+<td align="left"><p>Предварительно выделенный</p></td>
+<td align="left"><p>Блочное устройство с изначальным размером, равным объёму дискового пространства, выделенного виртуальному диску, в формате Qcow2.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SAN</p></td>
 <td align="left"><p>Qcow2</p></td>
-<td align="left"><p>Sparse</p></td>
-<td align="left"><p>A block device with an initial size which is much smaller than the size defined for the VDisk (currently 1GB), and has Qcow2 formatting for which space is allocated as needed (currently in 1GB increments).</p></td>
+<td align="left"><p>Разрежённый</p></td>
+<td align="left"><p>Блочное устройство с изначальным размером гораздо меньше размера, определённого для виртуального диска (на данный момент — 1ГБ), в формате Qcow2, для которого дисковое пространство выделяется по мере необходимости (на данный момент — фрагментами по 1ГБ).</p></td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="shareable-disks-in-ovirt">Shareable Disks in oVirt</h3>
+<h3 id="shareable-disks-in-ovirt">Общие диски в oVirt</h3>
 
-<p>Some applications require storage to be shared between servers. oVirt allows you to mark virtual machine hard disks as <strong>shareable</strong> and attach those disks to virtual machines. That way a single virtual disk can be used by multiple cluster-aware guests.</p>
+<p>Некоторым приложениям необходимо общее хранилище для серверов. oVirt даёт возможность пометить жёсткие диски виртуальной машины меткой <strong>может быть общим</strong> и присоединить эти диски к виртуальным машинам. Таким образом один виртуальный диск может использоваться несколькими, ориентированеными на кластер гостями.</p>
 
-<p>Shared disks are not to be used in every situation. For applications like clustered database servers, and other highly available services, shared disks are appropriate. Attaching a shared disk to multiple guests that are not cluster-aware is likely to cause data corruption because their reads and writes to the disk are not coordinated.</p>
+<p>Общие диски не являются универсальным решением. Для таких приложений, как серверы баз данных, собранных в кластер, и других высокодоступных служб, общие диски подходят. Но присоединение общего диска к нескольким гостям, не ориентированным на кластер, с большой вероятностью приведёт к повреждению данных, т.к. операции чтения/записи гостей не скоординированы.</p>
 
-<p>You cannot take a snapshot of a shared disk. Virtual disks that have snapshots taken of them cannot later be marked shareable.</p>
+<p>Сделать снимок общего диска невозможно. Виртуальные диски, с которых были сделаны снимки, нельзя позже отметить как потенциально общие.</p>
 
-<p>You can mark a disk shareable either when you create it, or by editing the disk later.</p>
+<p>Отметить диск как потенциально общий можно либо во время его создания, либо изменив его свойства позже.</p>
 
-<h3 id="read-only-disks-in-ovirt">Read Only Disks in oVirt</h3>
+<h3 id="read-only-disks-in-ovirt">Диски, доступные только для чтения, в oVirt</h3>
 
-<p>Some applications require administrators to share data with read-only rights. oVirt allows you to mark virtual machine hard disks as <strong>Read Only</strong> and attach those disks to virtual machines. If a disk is marked <strong>shareable</strong>, you can add it to some virtual machines as read-only and to others as rewritable. That way, a single disk can be read by multiple cluster-aware guests, while an administrator maintains writing privileges.</p>
+<p>Некоторым приложениям требуются общие данные, доступные только для чтения. oVirt даёт возможность пометить жёсткие диски ВМ как <strong>Доступные только для чтения</strong> и присоединить эти диски к виртуальным машинам. Если диск помечен как <strong>может быть общим</strong>, его можно добавить некоторым ВМ в режиме только для чтения, а другим — как перезаписываемый. Таким образом, данные с одного диска могут читать несколько ориентированных на кластер гостей, а права на запись принадлежат администратору.</p>
 
-<p>Floating disks are always rewritable and cannot be marked read-only.</p>
+<p>Плавающие диски всегда имеют доступ на запись, их нельзя пометить как только для чтения.</p>
 
-<p>A disk cannot be switched from or to read-only while active.</p>
+<p>Поставить/убрать пометку «только для чтения» можно только на неактивный диск.</p>
 
-<p>You can mark a disk read-only either when you create it, or by editing the disk later.</p>
+<p>Отметку «только для чтения» можно поставить либо во время создания диска либо изменив параметры диска позже.</p>
 
-<h3 id="virtual-disk-tasks">Virtual Disk Tasks</h3>
+<h3 id="virtual-disk-tasks">Задачи виртуальных дисков</h3>
 
-<h4 id="creating-floating-virtual-disks">Creating Floating Virtual Disks</h4>
+<h4 id="creating-floating-virtual-disks">Создание плавающих виртуальных дисков</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can create a virtual disk that does not belong to any virtual machines. You can then attach this disk to a single virtual machine, or to multiple virtual machines if the disk is shareable.</p>
+<p>Создание виртуального диска, не принадлежащего никакой виртуальной машине. Затем этот диск можно присоединить к одной ВМ или к нескольким, если диск можно сделать общим.</p>
 
-<p><strong>Procedure&nbsp;11.1.&nbsp;Creating Floating Virtual Disks</strong></p>
+<p><strong>Действие&nbsp;11.1.&nbsp;Создание плавающих виртуальных дисков</strong></p>
 
 <ol>
-  <li>Select the <strong>Disks</strong> resource tab.</li>
-  <li>Click <strong>Add</strong> to open the <strong>Add Virtual Disk</strong> window.
-<img alt="Add Virtual Disk Window" title="fig:Add Virtual Disk Window" src="./OVirt Administration Guide — oVirt_files/Add_Virtual_Disk.png">
-<strong>Figure&nbsp;11.1.&nbsp;Add Virtual Disk Window</strong></li>
-  <li>Use the radio buttons to specify whether the virtual disk will be an <strong>Internal</strong> or <strong>External (Direct Lun)</strong> disk.</li>
-  <li>Enter the <strong>Size(GB)</strong>, <strong>Alias</strong>, and <strong>Description</strong> of the virtual disk.</li>
-  <li>Use the drop-down menus to select the <strong>Interface</strong>, <strong>Allocation Policy</strong>, <strong>Data Center</strong>, and <strong>Storage Domain</strong> of the virtual disk.</li>
-  <li>Select the <strong>Wipe After Delete</strong>, <strong>Is Bootable</strong> and <strong>Is Shareable</strong> check boxes to enable each of these options.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на ресурсную вкладку <strong>Диски</strong>.</li>
+  <li>Нажмите <strong>Добавить</strong> чтобы открыть окно <strong>Добавить виртуальный диск</strong>.
+<img alt="Add Virtual Disk Window" title="Окно добавления виртуального диска" src="./OVirt Administration Guide — oVirt_files/Add_Virtual_Disk.png">
+<strong>Рисунок&nbsp;11.1.&nbsp;Окно добавления виртуального диска</strong></li>
+  <li>Отметьте соответсвующий флажок, чтобы указать, будет ли виртуальный диск <strong>Внутренним</strong> или <strong>Внешним (прямой Lun)</strong> диском.</li>
+  <li>Введите <strong>Размер(ГБ)</strong>, <strong>Псевдоним</strong> и <strong>Описание</strong> виртуального диска.</li>
+  <li>В выпадающем меню выберите <strong>Интерфейс</strong>, <strong>Политику распределения</strong>, <strong>Дата-центр</strong> и <strong>Домен хранилища</strong> виртуального диска.</li>
+  <li>Проставьте флажки для пунктов <strong>Очистить после удаления</strong>, <strong>Загрузочный</strong> и <strong>Можно сделать общим</strong>, чтобы включить каждый из этих параметров.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have created a virtual disk that can be attached to one or more virtual machines depending on its settings.</p>
+<p>Мы создали виртуальный диск, который можно прикрепить к одной или более ВМ, в зависимости от его параметров.</p>
 
-<h4 id="explanation-of-settings-in-the-new-virtual-disk-window">Explanation of Settings in the New Virtual Disk Window</h4>
+<h4 id="explanation-of-settings-in-the-new-virtual-disk-window">Объяснение параметров окна добавления виртуального диска</h4>
 
-<p><strong>Table&nbsp;11.2.&nbsp;Add Virtual Disk Settings: Internal</strong></p>
-
-<table>
-<colgroup>
-<col width="50%">
-<col width="50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"><p>Field Name</p></th>
-<th align="left"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Size(GB)</strong></p></td>
-<td align="left"><p>The size of the new virtual disk in GB.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Alias</strong></p></td>
-<td align="left"><p>The name of the virtual disk, limited to 40 characters.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Description</strong></p></td>
-<td align="left"><p>A description of the virtual disk. This field is recommended but not mandatory.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Interface</strong></p></td>
-<td align="left"><p>The virtual interface the disk presents to virtual machines. <strong>VirtIO</strong> is faster, but requires drivers. Red Hat Enterprise Linux 5 and higher include these drivers. Windows does not include these drivers, but they can be installed from the guest tools ISO or virtual floppy disk. IDE devices do not require special drivers.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Allocation Policy</strong></p></td>
-<td align="left"><p>The provisioning policy for the new virtual disk. <strong>Preallocated</strong> allocates the entire size of the disk on the storage domain at the time the virtual disk is created. <strong>Thin Provision</strong> allocates 1 GB at the time the virtual disk is created and sets a maximum limit on the size to which the disk can grow. Preallocated virtual disks take more time to create than thinly provisioned virtual disks, but have better read and write performance. Preallocated virtual disks are recommended for servers. Thinly provisioned disks are faster to create than preallocated disks and allow for storage over-commitment. Thinly provisioned virtual disks are recommended for desktops.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Data Center</strong></p></td>
-<td align="left"><p>The data center in which the virtual disk will be available.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Storage Domain</strong></p></td>
-<td align="left"><p>The storage domain in which the virtual disk will be stored. The drop-down list shows all storage domains available in the given cluster, and also shows the total space and currently available space in the storage domain.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Wipe after delete</strong></p></td>
-<td align="left"><p>Allows you to enable enhanced security for deletion of sensitive material when the virtual disk is deleted.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Is bootable</strong></p></td>
-<td align="left"><p>Allows you to enable the bootable flag on the virtual disk.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Is Shareable</strong></p></td>
-<td align="left"><p>Allows you to attach the virtual disk to more than one virtual machine at a time.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Read Only</strong></p></td>
-<td align="left"><p>Allows you to set the disk as read-only. The same disk can be attached as read-only to one virtual machine, and as rewritable to another.</p></td>
-</tr>
-</tbody>
-</table>
-
-<p>The <strong>External (Direct Lun)</strong> settings can be displayed in either <strong>Targets &gt; LUNs</strong> or <strong>LUNs &gt; Targets</strong>. <strong>Targets &gt; LUNs</strong> sorts available LUNs according to the host on which they are discovered, whereas <strong>LUNs &gt; Targets</strong> displays a single list of LUNs.</p>
-
-<p><strong>Table&nbsp;11.3.&nbsp;Add Virtual Disk Settings: External (Direct Lun)</strong></p>
+<p><strong>Таблица&nbsp;11.2.&nbsp;Параметры добавления виртуального диска: внутренний диск</strong></p>
 
 <table>
 <colgroup>
@@ -7924,213 +7864,276 @@ You can use the <strong>Use Cloud-Init/Sysprep</strong> options in the <strong>I
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Field Name</p></th>
-<th align="left"><p>Description</p></th>
+<th align="left"><p>Имя поля</p></th>
+<th align="left"><p>Описание</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Alias</strong></p></td>
-<td align="left"><p>The name of the virtual disk, limited to 40 characters.</p></td>
+<td align="left"><p><strong>Размер(ГБ)</strong></p></td>
+<td align="left"><p>Размер нового виртуального диска в ГБ.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Description</strong></p></td>
-<td align="left"><p>A description of the virtual disk. This field is recommended but not mandatory.</p></td>
+<td align="left"><p><strong>Псевдоним</strong></p></td>
+<td align="left"><p>Имя виртуального диска, ограничение в 40 символов.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Interface</strong></p></td>
-<td align="left"><p>The virtual interface the disk presents to virtual machines. <strong>VirtIO</strong> is faster, but requires drivers. Red Hat Enterprise Linux 5 and higher include these drivers. Windows does not include these drivers, but they can be installed from the guest tools ISO or virtual floppy disk. IDE devices do not require special drivers.</p></td>
+<td align="left"><p><strong>Описание</strong></p></td>
+<td align="left"><p>Описание виртуального диска. Рекомендуется, но не обязательно.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Data Center</strong></p></td>
-<td align="left"><p>The data center in which the virtual disk will be available.</p></td>
+<td align="left"><p><strong>Интерфейс</strong></p></td>
+<td align="left"><p>Виртуальный интерфейс, представляемый диском виртуальным машинам. <strong>VirtIO</strong> работает быстрее, но требует драйверов. В ОС Red Hat Enterprise Linux версии 5 и поздних эти драйверы включены. В ОС Windows эти драйверы отсутствуют, но их можно установить с образа гостевых утилит (guest tools ISO) или с виртуальной дискеты. Устройствам IDE специальные драйверы не нужны.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Use Host</strong></p></td>
-<td align="left"><p>The host on which the LUN will be mounted. You can select any host in the data center.</p></td>
+<td align="left"><p><strong>Политика распределения</strong></p></td>
+<td align="left"><p>Политика распределения для нового вирт.диска. <strong>Предварительное выделение</strong> сразу предоставляет весь размер диска в домене хранилища во время создания виртуального диска. <strong>Тонкое резервирование</strong> предоставляет 1ГБ дискового объёма во время создания вирт.диска и устанавливает максимальный предел, до которого может быть увеличен его размер. Предварительно выделенные диски создаются дольше, чем диски с тонким резервированием, но имеют лучшую производительность операций чтения-записи. Предварительно выделенные диски рекомендуются для серверов. Диски с тонким резервированием создаются быстрее, чем предварительно выделенные диски и позволяют превышенное выделение хранилища. Диски с тонким резервированием рекомендуются для рабочих столов.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Storage Type</strong></p></td>
-<td align="left"><p>The type of external LUN to add. You can select from either <strong>iSCSI</strong> or <strong>Fibre Channel</strong>.</p></td>
+<td align="left"><p><strong>Дата-центр</strong></p></td>
+<td align="left"><p>Дата-центр, в котором будет доступен диск.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Discover Targets</strong></p></td>
-<td align="left"><p>This section can be expanded when you are using iSCSI external LUNs and <strong>Targets &gt; LUNs</strong> is selected. <strong>Address</strong> - The host name or IP address of the target server. <strong>Port</strong> - The port by which to attempt a connection to the target server. The default port is 3260. <strong>User Authentication</strong> - The iSCSI server requires User Authentication. The <strong>User Authentication</strong> field is visible when you are using iSCSI external LUNs. <strong>CHAP user name</strong> - The user name of a user with permission to log in to LUNs. This field is accessible when the <strong>User Authentication</strong> check box is selected. <strong>CHAP password</strong> - The password of a user with permission to log in to LUNs. This field is accessible when the <strong>User Authentication</strong> check box is selected.</p></td>
+<td align="left"><p><strong>Домен хранилища</strong></p></td>
+<td align="left"><p>Домен хранилища, в котором будет расположен виртуальный диск. В выпадающем меню показаны все домены хранилища, доступные в указанном кластере, а также общее и доступное на данный момент дисковое пространство в домене.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Is bootable</strong></p></td>
-<td align="left"><p>Allows you to enable the bootable flag on the virtual disk.</p></td>
+<td align="left"><p><strong>Очистить после удаления</strong></p></td>
+<td align="left"><p>Позволяет включить усиленную защиту при удалении конфиденциальных данных во время удаления виртуального диска.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Is Shareable</strong></p></td>
-<td align="left"><p>Allows you to attach the virtual disk to more than one virtual machine at a time.</p></td>
+<td align="left"><p><strong>Загрузочный</strong></p></td>
+<td align="left"><p>Позволяет отметить виртуальный диск как загрузочный.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Read Only</strong></p></td>
-<td align="left"><p>Allows you to set the disk as read-only. The same disk can be attached as read-only to one virtual machine, and as rewritable to another.</p></td>
+<td align="left"><p><strong>Может быть общим</strong></p></td>
+<td align="left"><p>Позволят присоединить виртуальный диск больше, чем к одной машине одновременно.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Только для чтения</strong></p></td>
+<td align="left"><p>Позволяет установить доступ к диску только для чтения. Один и тот же диск можно одновременно присоединить в режиме только для чтения к одной машине, и как перезаписываемый — к другой.</p></td>
 </tr>
 </tbody>
 </table>
 
-<p>Fill in the fields in the <strong>Discover Targets</strong> section and click the <strong>Discover</strong> button to discover the target server. You can then click the <strong>Login All</strong> button to list the available LUNs on the target server and, using the radio buttons next to each LUN, select the LUN to add.</p>
+<p>Параметр <strong>Внешний (Прямой Lun)</strong> может быть показан как <strong>Таргеты &gt; LUN</strong> или <strong>LUN &gt; Таргеты</strong>. <strong>Таргеты &gt; LUN</strong> сортирует доступные LUN в соответствии с хостом, на котором они обнаружены, а <strong>LUN &gt; Таргеты</strong> показывает единый список LUN.</p>
 
-<p>Using LUNs directly as virtual machine hard disk images removes a layer of abstraction between your virtual machines and their data.</p>
+<p><strong>Таблица&nbsp;11.3.&nbsp;Параметры добавления виртуального диска: Внешний (прямой Lun)</strong></p>
 
-<p>The following considerations must be made when using a direct LUN as a virtual machine hard disk image:</p>
+<table>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><p>Имя поля</p></th>
+<th align="left"><p>Описание</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Псевдоним</strong></p></td>
+<td align="left"><p>Имя виртуального диска, ограничено 40 символами.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Описание</strong></p></td>
+<td align="left"><p>Описание виртуального диска. Это поле рекомендуется, но не обязательно.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Интерфейс</strong></p></td>
+<td align="left"><p>Виртуальный интерфейс, который диск предоставляет виртуальным машинам. <strong>VirtIO</strong> работает быстрее, но требует драйверов. В ОС Red Hat Enterprise Linux версии 5 и поздних эти драйверы включены. В ОС Windows эти драйверы отсутствуют, но их можно установить с образа гостевых утилит (guest tools ISO) или с виртуальной дискеты. Устройствам IDE специальные драйверы не нужны.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Дата-центр</strong></p></td>
+<td align="left"><p>Дата-центр, в котором будет доступен виртуальный диск.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Использовать хост</strong></p></td>
+<td align="left"><p>Хост, к которому будет примонтирован LUN. Можно вбырать любой хост в дата-центре.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Тип хранилища</strong></p></td>
+<td align="left"><p>ТИп внешнего LUN для добавления. Можно выбрать <strong>iSCSI</strong> или <strong>Оптоволоконный канал</strong>.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Обнаружение таргетов</strong></p></td>
+<td align="left"><p>В случае использования внешних LUN iSCSI и выбранного пункта <strong>Таргеты &gt; LUN</strong> этот раздел можно развернуть. <strong>Адрес</strong> — имя хоста или IP-адрес целевого сервера. <strong>Порт</strong> — порт, через который будет осуществляться попытка соединения с целевывм сервером. Порт по уомлчанию — 3260. <strong>Аутентификация пользователя</strong> — серверу iSCSI требуется аутентификацию пользователя. Поле <strong>Аутентификация пользователя</strong> становится витдимым, если используются внешние LUN iSCSI. <strong>Имя пользователя CHAP</strong> — имя пользователчя, которому разрешена авторизация на LUN. Это поле становится доступным, если отмечен пункт <strong>Аутентификация пользователя</strong>. <strong>Пароль CHAP</strong> — пароль польщовтаеля с правами для авторизации на LUN. Это поле становится доступным, если отмечен пункт <strong>Аутентификация пользователя</strong>.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Загрузочный</strong></p></td>
+<td align="left"><p>Позволяет отметить виртуальный диск как загрузочный..</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Может быть общим</strong></p></td>
+<td align="left"><p>Позволят присоединить виртуальный диск больше, чем к одной машине одновременно.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Только для чтения</strong></p></td>
+<td align="left"><p>Позволяет установить доступ к диску только для чтения. Один и тот же диск можно одновременно присоединить в режиме только для чтения к одной машине, и как перезаписываемый — к другой.</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>Заполните поля в разделе <strong>Обнаружение таргетов</strong> и нажмите <strong>Обнаружить</strong> чтобы обнаружить целевой сервер. Затем можно нажать на кнопку <strong>Авторизоваться на всех</strong> чтобы получить список всех доступных LUN на целевом сервере, и с помощью флажков рядом с каждым LUN отметить LUN для добавления.</p>
+
+<p>Использование прямых LUN в качестве образов жёстких дисков ВМ убирает слой абстракции между машинами и их данными.</p>
+
+<p>При использовании прямых LUN в качестве образов жёстких дисков ВМ необходимо учитывать следующие факторы:</p>
 
 <ul>
-  <li>Live storage migration of direct LUN hard disk images is not supported.</li>
-  <li>Direct LUN disks are not included in virtual machine exports.</li>
-  <li>Direct LUN disks are not included in virtual machine snapshots.</li>
+  <li>Динамическая миграция хранилища образов жёстких дисков прямых LUN не поддерживается.</li>
+  <li>Диски прямых LUN не включаются в операции экспорта виртуальных машин.</li>
+  <li>Диски прямых LUN не включаются в снимки виртуальных машин.</li>
 </ul>
 
-<h4 id="moving-a-virtual-disk">Moving a Virtual Disk</h4>
+<h4 id="moving-a-virtual-disk">Перенос виртуального диска</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can move a virtual disk that is attached to a virtual machine or acts as a floating virtual disk from one storage domain to another</p>
+<p>Перенос виртуального диска, присоединённого к ВМ или являющегося плавающим виртуальным диском, с одного домена хранилища на другой.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> If the virtual disk is attached to a virtual machine that was created based on a template and used the thin provisioning storage allocation option, the disks for the template on which the virtual machine was based must be copied to the same storage domain as the virtual disk.</p>
+  <p><strong>Внимание:</strong> если виртуальный диск присоединён к виртуальной машине, которая была создана на базе шаблона и с использованием тонкого резервирования, то диски для этого базового шаблона должны копироваться в тот же домен хранилища, что и виртуальный диск.</p>
 
 </div>
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;11.2.&nbsp;Moving a Virtual Disk</strong></p>
+<p><strong>Действие&nbsp;11.2.&nbsp;Перенос виртуального диска</strong></p>
 
 <ol>
-  <li>Select the <strong>Disks</strong> tab.</li>
-  <li>Select the virtual disks to move.</li>
-  <li>Click the <strong>Move</strong> button to open the <strong>Move Disk(s)</strong> window.</li>
-  <li>Use the <strong>Target</strong> drop-down menus to select the storage domain to which the virtual disk will be moved.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на вкладку <strong>Диски</strong>.</li>
+  <li>Выберите виртуальные диски, которые нужно перенести.</li>
+  <li>Нажмите на кнопку <strong>Переместить</strong> чтобы открыть окно <strong>Переместить диск</strong>.</li>
+  <li>В выпадающем меню <strong>Таргет</strong> выберите домен хранилища, куда будет перемещён виртуальный диск.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual disks are moved to the target storage domain, and have a status of <code>Locked</code> while being moved.</p>
+<p>Виртуальные диски перемещаются в целевой домен хранилища, во время переноса диски имеют статус <code>Заблокирован</code>.</p>
 
-<h4 id="copying-a-virtual-disk">Copying a Virtual Disk</h4>
+<h4 id="copying-a-virtual-disk">Копирование виртуального диска</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can copy a virtual disk attached to a template from one storage domain to another.</p>
+<p>Виртуальный диск, присоединённый к шаблону, можно перенести из одного домена хранилища в другой.</p>
 
 <p>⁠</p>
 
-<p><strong>Procedure&nbsp;11.3.&nbsp;Copying a Virtual Disk</strong></p>
+<p><strong>Действие&nbsp;11.3.&nbsp;Копирование виртуального диска</strong></p>
 
 <ol>
-  <li>Select the <strong>Disks</strong> tab.</li>
-  <li>Select the virtual disks to copy.</li>
-  <li>Click the <strong>Copy</strong> button to open the <strong>Copy Disk(s)</strong> window.</li>
-  <li>Use the <strong>Target</strong> drop-down menus to select the storage domain to which the virtual disk will be copied.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>Перейдите на вкладку <strong>Диски</strong>.</li>
+  <li>Выберите виртуальные диски, которые нужно скопировать.</li>
+  <li>Нажмите на кнопку <strong>Копировать</strong> чтобы открыть окно <strong>Копировать диск</strong>.</li>
+  <li>В выпадающем меню <strong>Таргет</strong> выберите домен хранилища, куда будет скопирован виртуальный диск.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The virtual disks are copied to the target storage domain, and have a status of <code>Locked</code> while being copied.</p>
+<p>Виртуальные диски копируются в целевой домен хранилища, во время копирования диски имеют статус <code>Заблокирован</code>.</p>
 
-<h2 id="backups">⁠Backups</h2>
+<h2 id="backups">⁠Резервное копирование</h2>
 
-<h3 id="backing-up-and-restoring-ovirt">Backing Up and Restoring oVirt</h3>
+<h3 id="backing-up-and-restoring-ovirt">Резервное копирование и восстановление oVirt</h3>
 
-<h4 id="backing-up-ovirt---overview">Backing up oVirt - Overview</h4>
+<h4 id="backing-up-ovirt---overview">Обзор: резервное копирование oVirt</h4>
 
-<p>While taking complete backups of the machine on which oVirt is installed is recommended whenever changing the configuration of that machine, a utility is provided for backing up only the key files related to oVirt. This utility - the <code>engine-backup</code> command - can be used to rapidly back up the engine database and configuration files into a single file that can be easily stored.</p>
+<p>Если создание полных резервных копий машины, на которой установлена oVirt, рекомендуется каждый раз, когда вносятся изменения параметров этой машины, то для резервных копий только ключевых файлов, имеющих отношение к oVirt, предоставляется специальная утилита. Эту утилиту — команду <code>engine-backup</code> — можн использовать для быстрого создания резервной копии базы данных ЦУ и конфигурационных файлов в единый файл, который можно легко сохранить.</p>
 
-<h4 id="syntax-for-the-engine-backup-command">Syntax for the engine-backup Command</h4>
+<h4 id="syntax-for-the-engine-backup-command">Синтаксис команды engine-backup</h4>
 
-<p>The <code>engine-backup</code> command works in one of two basic modes:</p>
+<p>Команда <code>engine-backup</code> может работать в одном из двух базовых режимов:</p>
 
 <pre class="highlight plaintext"><code># engine-backup --mode=backup
 
 # engine-backup --mode=restore
 </code></pre>
 
-<p>These two modes are further extended by a set of parameters that allow you to specify the scope of the backup and different credentials for the engine database. A full list of parameters and their function is as follows:</p>
+<p>Эти два режима далее можно расширить с помощью набора параметров, который дают возможность указать диапазон создания резервной копии, а также различные учётные данные для базхы данных ЦУ. Ниже приводится полный список параметров и их значений:</p>
 
-<p><strong>Basic Options</strong></p>
+<p><strong>Базовые параметры</strong></p>
 
 <p><em><code>--mode</code></em><br>
-Specifies whether the command will perform a backup operation or a restore operation. Two options are available - <code>backup</code>, and <code>restore</code>. This is a required parameter.</p>
+Указывает, будет ли команда выполнять операцию резервного копирования или операцию восстановления. Доступно два варианта — <code>backup</code> и <code>restore</code>. Это необходимый параметр.</p>
 
 <p><em><code>--file</code></em><br>
-Specifies the path and name of a file into which backups are to be taken in backup mode, and the path and name of a file from which to read backup data in restore mode. This is a required parameter in both backup mode and restore mode.</p>
+Указывает путь и имя файла, который будет создан во время операции резервного копирования, а также путь и имя файла, из которого будет прочитаны данные для восстановления в режиме восстановления. Это необходимый параметр для обоих режимов.</p>
 
 <p><em><code>--log</code></em><br>
-Specifies the path and name of a file into which logs of the backup or restore operation are to be written. This parameter is required in both backup mode and restore mode.</p>
+Указывает путь и имя файла, в который будет записываться журнал операции резервного копирования или восстановления. Это необходимый параметр для обоих режимов.</p>
 
 <p><em><code>--scope</code></em><br>
-Specifies the scope of the backup or restore operation. There are two options - <code>all</code>, which backs up both the engine database and configuration data, and <code>db</code>, which backs up only the engine database.</p>
+Указывает диапазон операции резервного копирования или восстановления. Есть два параметра: <code>all</code>, для создания резервной копии как базы данных ЦУ oVirt, так и конфигурационных параметров, и <code>db</code>, для создания резервной копии только базы данных ЦУ oVirt.</p>
 
-<p><strong>Database Options</strong></p>
+<p><strong>Парметры базы данных</strong></p>
 
-<p>The following options are only available when using the <code>engine-backup</code> command in <code>restore</code> mode.</p>
+<p>Следующие параметры доступны только при использовании команды <code>engine-backup</code> в режиме <code>restore</code>.</p>
 
 <p><em><code>--change-db-credentials</code></em><br>
-Allows you to specify alternate credentials for restoring the engine database using credentials other than those stored in the backup itself. Specifying this parameter allows you to add the following parameters.</p>
+Даёт возможность указать альтернативные учётные данные для восстановления базы данных ЦУ, используя другие учётные данные, чем те, которые хранятся в самой базе данных. Указание этого параметра даёт возможность также добавить следующие параметры.</p>
 
 <p><em><code>--db-host</code></em><br>
-Specifies the IP address or fully qualified domain name of the host on which the database resides. This is a required parameter.</p>
+IP-адрес полного доменного имени хоста, на котором расположена база данных. Это необходимый параметр.</p>
 
 <p><em><code>--db-port</code></em><br>
-Specifies the port by which a connection to the database will be made.</p>
+Порт, через который будет создаваться подключение к базе данных.</p>
 
 <p><em><code>--db-user</code></em><br>
-Specifies the name of the user by which a connection to the database will be made. This is a required parameter.</p>
+Имя пользователя, который будет производить подключение к базе данных. Это необходимый параметр.</p>
 
 <p><em><code>--db-passfile</code></em><br>
-Specifies a file containing the password by which a connection to the database will be made. Either this parameter or the <em><code>--db-password</code></em> parameter must be specified.</p>
+Файл, в котором хранится пароль, с помощью которого будет производиться подключение к базе данных. Необходимо указать либо этот параметр, либо <em><code>--db-password</code></em>.</p>
 
 <p><em><code>--db-password</code></em><br>
-Specifies the plain text password by which a connection to the database will be made. Either this parameter or the <em><code>--db-passfile</code></em> parameter must be specified.</p>
+Простой текстовый пароль, с помощью которого будет производиться подключение к базе данных. Необходимо указать либо этот параметр, либо <em><code>--db-passfile</code></em>.</p>
 
 <p><em><code>--db-name</code></em><br>
-Specifies the name of the database to which the database will be restored. This is a required parameter.</p>
+Имя базы данных, в которую будет восстановлена база данных. Это необходимый параметр.</p>
 
 <p><em><code>--db-secured</code></em><br>
-Specifies that the connection with the database is to be secured.</p>
+Указывает, что соединение к базе данных должно быть защищено.</p>
 
 <p><em><code>--db-secured-validation</code></em><br>
-Specifies that the connection with the host is to be validated.</p>
+Указыват, что должна быть выполена проверка соединения до хоста.</p>
 
-<p><strong>Help</strong></p>
+<p><strong>Справка</strong></p>
 
 <p><em><code>--help</code></em><br>
-Provides an overview of the available modes, parameters, sample usage, how to create a new database and configure the firewall in conjunction with backing up and restoring oVirt.</p>
+Предоставляет обзор доступных режимов и параметров, а также примеры использования, примеры создания новой базы данных и настройки брандмауэра в сочетании с созданием резервной копии/восстановлением oVirt.</p>
 
-<h4 id="creating-a-backup-with-the-engine-backup-command">Creating a Backup with the engine-backup Command</h4>
+<h4 id="creating-a-backup-with-the-engine-backup-command">Создание резервной копии при помощи команды engine-backup</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>The process for creating a backup of the engine database and the configuration data for oVirt using the <code>engine-backup</code> command is straightforward and can be performed while oVirt is active.</p>
+<p>Процесс создания резервной копии базы ЦУ oVirt и параметров oVirt с использованием команды <code>engine-backup</code> достаточно прост, и его можно выполнить при активной oVirt.</p>
 
-<p><strong>Procedure&nbsp;12.1.&nbsp;Backing up oVirt</strong></p>
+<p><strong>Действие&nbsp;12.1.&nbsp;Создание резервной копии oVirt</strong></p>
 
 <ol>
-  <li>Log on to the machine running oVirt.</li>
+  <li>Авторизуйтесь на машине, где выполняется oVirt.</li>
   <li>
-    <p>Run the following command to create a full backup:
-<strong>Example&nbsp;12.1.&nbsp;Creating a Full Backup</strong>
+    <p>Выполните следующую команду для создания полной резервной копии:
+<strong>Пример&nbsp;12.1.&nbsp;Создание полной резервной копии</strong>
     # engine-backup –scope=all –mode=backup –log=[file name] –file=[file name]</p>
 
-    <p>Alternatively, run the following command to back up only the engine database:
-<strong>Example&nbsp;12.2.&nbsp;Creating an engine database Backup</strong></p>
+    <p>Или выполните команду для создания резервной копии только базы данных ЦУ oVirt:
+<strong>Пример&nbsp;12.2.&nbsp;Создание резервной копии базы данных ЦУ oVirt</strong></p>
 
 <pre class="highlight plaintext"><code># engine-backup --scope=db --mode=backup --log=[file name] --file=[file name]
 </code></pre>
   </li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>A <code>tar</code> file containing a backup of the engine database, or the engine database and the configuration data for oVirt, is created using the path and file name provided.</p>
+<p>С помощью указанного пути и имени файла создаётся файл <code>tar</code>, содержащий резервную копию базы данных ЦУ oVirt или базы данных ЦУ и конфигурационных параметров oVirt.</p>
 
-<h4 id="restoring-a-backup-with-the-engine-backup-command">Restoring a Backup with the engine-backup Command</h4>
+<h4 id="restoring-a-backup-with-the-engine-backup-command">Восстановление из резервной копии с помощью команды engine-backup</h4>
 
-<p>While the process for restoring a backup using the <code>engine-backup</code> command is straightforward, it involves several additional steps in comparison to that for creating a backup depending on the destination to which the backup is to be restored. For example, the <code>engine-backup</code> command can be used to restore backups to fresh installations of oVirt, on top of existing installations of oVirt, and using local or remote databases.</p>
+<p>Не смотря на то, что процесс восстановления из резервной копии с помощью команды <code>engine-backup</code> не представляет ничего сложного, он требует  command is straightforward, it involves several additional steps in comparison to that for creating a backup depending on the destination to which the backup is to be restored. For example, the <code>engine-backup</code> command can be used to restore backups to fresh installations of oVirt, on top of existing installations of oVirt, and using local or remote databases.</p>
 
 <div class="alert alert-info">
   <p><strong>Important:</strong> Backups can only be restored to environments of the same major release as that of the backup. For example, a backup of an oVirt version 3.3 environment can only be restored to another oVirt version 3.3 environment. To view the version of oVirt contained in a backup file, unpack the backup file and read the value in the <code>version</code> file located in the root directory of the unpacked files.</p>
