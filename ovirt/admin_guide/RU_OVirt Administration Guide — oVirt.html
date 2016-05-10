@@ -3211,7 +3211,7 @@ Below the Details pane, the <strong>Alerts</strong> tab lists all high severity 
   </li>
   <li>
     <p><strong>Экспорт каталога</strong>
-Чтобы каталог был доступным в сети с помощью NFS, его нужно экспортировать. Экспортируемые ресурсы NFS контролируются с помощью конфигурационного файла <code>/etc/exports</code>. Каждый путь экспорта размещается в отдельной строке, за ним следует символ табуляции и любые дополнительные параметры, передаваемые NFS. Для экспортируемых ресурсов, которые необходимо присоединить к oVirt, необходимо установить права чтения и записи.</p>
+Чтобы каталог был доступным в сети с помощью NFS, его нужно экспортировать. Экспортируемые ресурсы NFS контролируются с помощью файла конфигурации <code>/etc/exports</code>. Каждый путь экспорта размещается в отдельной строке, за ним следует символ табуляции и любые дополнительные параметры, передаваемые NFS. Для экспортируемых ресурсов, которые необходимо присоединить к oVirt, необходимо установить права чтения и записи.</p>
 
     <p>Чтобы установить доступ на чтение и запись для каталога <code>/exports/iso</code> с использованием NFS, нужно добавить следующую строчку в файл <code>/etc/exports</code>.</p>
 
@@ -7135,7 +7135,7 @@ EndSection
 
 <p><strong>Итог</strong></p>
 
-<p>Виртуальная машина запечатана и её можно превращать в шаблон. Разворачивать ВМ под управлением Linux из этого шаблона можно, не опасаясь конфликтов конфигурационных файлов.</p>
+<p>Виртуальная машина запечатана и её можно превращать в шаблон. Разворачивать ВМ под управлением Linux из этого шаблона можно, не опасаясь конфликтов файлов конфигурации.</p>
 
 <h5 id="sealing-a-linux-virtual-machine-for-deployment-as-a-template-using-sys-unconfig">Запечатывание ВМ для разворачивания в качестве шаблона с помощью sys-unconfig</h5>
 
@@ -7160,7 +7160,7 @@ EndSection
 
 <p><strong>Итог</strong></p>
 
-<p>Виртуальная машина выключается; теперь она запечатана и её можно превращать в шаблон. Разворачивать ВМ под управлением Linux из этого шаблона можно, не опасаясь конфликтов конфигурационных файлов.</p>
+<p>Виртуальная машина выключается; теперь она запечатана и её можно превращать в шаблон. Разворачивать ВМ под управлением Linux из этого шаблона можно, не опасаясь конфликтов файлов конфигурации.</p>
 
 <h4 id="sealing-a-windows-virtual-machine-for-deployment-as-a-template">Запечатывание ВМ под управлением Windows для разворачивания в качестве шаблона</h4>
 
@@ -8041,7 +8041,7 @@ EndSection
 
 <h4 id="backing-up-ovirt---overview">Обзор: резервное копирование oVirt</h4>
 
-<p>Если создание полных резервных копий машины, на которой установлена oVirt, рекомендуется каждый раз, когда вносятся изменения параметров этой машины, то для резервных копий только ключевых файлов, имеющих отношение к oVirt, предоставляется специальная утилита. Эту утилиту — команду <code>engine-backup</code> — можн использовать для быстрого создания резервной копии базы данных ЦУ и конфигурационных файлов в единый файл, который можно легко сохранить.</p>
+<p>Если создание полных резервных копий машины, на которой установлена oVirt, рекомендуется каждый раз, когда вносятся изменения параметров этой машины, то для резервных копий только ключевых файлов, имеющих отношение к oVirt, предоставляется специальная утилита. Эту утилиту — команду <code>engine-backup</code> — можно использовать для быстрого создания резервной копии базы данных ЦУ и файлов конфигурации в единый файл, который можно легко сохранить.</p>
 
 <h4 id="syntax-for-the-engine-backup-command">Синтаксис команды engine-backup</h4>
 
@@ -8066,7 +8066,7 @@ EndSection
 Указывает путь и имя файла, в который будет записываться журнал операции резервного копирования или восстановления. Это необходимый параметр для обоих режимов.</p>
 
 <p><em><code>--scope</code></em><br>
-Указывает диапазон операции резервного копирования или восстановления. Есть два параметра: <code>all</code>, для создания резервной копии как базы данных ЦУ oVirt, так и конфигурационных параметров, и <code>db</code>, для создания резервной копии только базы данных ЦУ oVirt.</p>
+Указывает диапазон операции резервного копирования или восстановления. Есть два параметра: <code>all</code>, для создания резервной копии как базы данных ЦУ oVirt, так и параметров клнфигурации, и <code>db</code>, для создания резервной копии только базы данных ЦУ oVirt.</p>
 
 <p><strong>Парметры базы данных</strong></p>
 
@@ -8097,7 +8097,7 @@ IP-адрес полного доменного имени хоста, на ко
 Указывает, что соединение к базе данных должно быть защищено.</p>
 
 <p><em><code>--db-secured-validation</code></em><br>
-Указыват, что должна быть выполена проверка соединения до хоста.</p>
+Указывает, что должна быть выполнена проверка соединения до хоста.</p>
 
 <p><strong>Справка</strong></p>
 
@@ -8115,12 +8115,12 @@ IP-адрес полного доменного имени хоста, на ко
 <ol>
   <li>Авторизуйтесь на машине, где выполняется oVirt.</li>
   <li>
-    <p>Выполните следующую команду для создания полной резервной копии:
-<strong>Пример&nbsp;12.1.&nbsp;Создание полной резервной копии</strong>
+    <p>Выполните следующую команду для создания полной резервной копии:</p>
+<strong>Пример&nbsp;12.1.&nbsp;Создание полной резервной копии</strong></p>
     # engine-backup –scope=all –mode=backup –log=[file name] –file=[file name]</p>
 
-    <p>Или выполните команду для создания резервной копии только базы данных ЦУ oVirt:
-<strong>Пример&nbsp;12.2.&nbsp;Создание резервной копии базы данных ЦУ oVirt</strong></p>
+    <p>Или выполните команду для создания резервной копии только базы данных ЦУ oVirt:</p>
+<strong>Пример&nbsp;12.2.&nbsp;Создание резервной копии базы данных engine</strong></p>
 
 <pre class="highlight plaintext"><code># engine-backup --scope=db --mode=backup --log=[file name] --file=[file name]
 </code></pre>
@@ -8129,186 +8129,186 @@ IP-адрес полного доменного имени хоста, на ко
 
 <p><strong>Итог</strong></p>
 
-<p>С помощью указанного пути и имени файла создаётся файл <code>tar</code>, содержащий резервную копию базы данных ЦУ oVirt или базы данных ЦУ и конфигурационных параметров oVirt.</p>
+<p>С помощью указанного пути и имени файла создаётся файл <code>tar</code>, содержащий резервную копию базы данных ЦУ oVirt или базы данных ЦУ и параметров конфигурации oVirt.</p>
 
 <h4 id="restoring-a-backup-with-the-engine-backup-command">Восстановление из резервной копии с помощью команды engine-backup</h4>
 
-<p>Не смотря на то, что процесс восстановления из резервной копии с помощью команды <code>engine-backup</code> не представляет ничего сложного, он требует  command is straightforward, it involves several additional steps in comparison to that for creating a backup depending on the destination to which the backup is to be restored. For example, the <code>engine-backup</code> command can be used to restore backups to fresh installations of oVirt, on top of existing installations of oVirt, and using local or remote databases.</p>
+<p>Не смотря на то, что процесс восстановления из резервной копии с помощью команды <code>engine-backup</code> не представляет ничего сложного, он требует нескольких дополнительных шагов, по сравнению с процессом создания резервной копии, в зависимости от цели назначения, где будет храниться созданная копия. Например, команду <code>engine-backup</code> можно использовать для восстановления резервных копий в свежую установку oVirt, поверх уже существующей установки oVirt, и с использованием локальных или удалённых баз данных.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Backups can only be restored to environments of the same major release as that of the backup. For example, a backup of an oVirt version 3.3 environment can only be restored to another oVirt version 3.3 environment. To view the version of oVirt contained in a backup file, unpack the backup file and read the value in the <code>version</code> file located in the root directory of the unpacked files.</p>
+  <p><strong>Важно:</strong> резервные копии можно восстанавливать только в окружения с той же мажорной версией, что использовалась при создании этой резервной копии. Например, резервную копию окружения oVirt версии 3.3 можно восстановить в другое окружение oVirt версии 3.3. Чтобы узнать версию  oVirt, содержащуюся в фйле резервной копии, распакуйте архив и прочитайте значение в файле <code>version</code>, расположенном в корневом каталоге распакованных файлов.</p>
 
 </div>
 
-<h4 id="restoring-a-backup-to-a-fresh-installation">Restoring a Backup to a Fresh Installation</h4>
+<h4 id="restoring-a-backup-to-a-fresh-installation">Восстановление резервной копии в свежую установку</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>The <code>engine-backup</code> command can be used to restore a backup to a fresh installation of oVirt. The following procedure must be performed on a machine on which the base operating system has been installed and the required packages for oVirt have been installed, but the <code>engine-setup</code> command has not yet been run. This procedure assumes that the backup file can be accessed from the machine on which the backup is to be restored.</p>
+<p>С помощью команды <code>engine-backup</code> можно восстановить резервную копию в свежую установку oVirt. Следующая процедура дожна быть выполнена на машине с установленной базовой ОС и установленными необходимыми пакетами для oVirt, но команда <code>engine-setup</code> ещё ни разу не выполнялась. Данная процедура подразумевает, что с машины, на которой должна быть восстановлена резервная копия, имеется доступ к файлу резервной копии.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> The <code>engine-backup</code> command does not handle the actual creation of the engine database or the initial configuration of the <code>postgresql</code> service. Therefore, these tasks must be performed manually as outlined below when restoring a backup to a fresh installation.</p>
+  <p><strong>Внимание:</strong> команда <code>engine-backup</code> не выполняет фактического создания базы данных ЦУ oVirt или начальной настройки службы <code>postgresql</code>. Соответственно, эти задачи должны быть выполнены вручную, при восстановлении резервной копии в свежую установку, как это описано ниже.</p>
 
 </div>
-<p><strong>Procedure&nbsp;12.2.&nbsp;Restoring a Backup to a Fresh Installation</strong></p>
+<p><strong>Действие&nbsp;12.2.&nbsp;Восстановление резевной копии в свежую установку</strong></p>
 
 <ol>
-  <li>Log on to the machine on which oVirt is installed.</li>
-  <li>Manually create an empty database to which the database in the backup can be restored and configure the <code>postgresql</code> service:
+  <li>Авторизуйтесь на машине, где установлена oVirt.</li>
+  <li>Вручную создайте пустую базу данных, куда должна быть помещена восстановленная резервная копия базы данных, и настройте службу <code>postgresql</code>:
     <ol>
       <li>
-        <p>Run the following commands to initialize the <code>postgresql</code> database, start the <code>postgresql</code> service and ensure this service starts on boot:
-    # service postgresql initdb
-    # service postgresql start
+        <p>Выполните следующие команды для инициализации базы данных <code>postgresql</code>, запустите службу <code>postgresql</code> и убедитесь, что служба стартует при загрузке:</p>
+    # service postgresql initdb</p>
+    # service postgresql start</p>
     # chkconfig postgresql on</p>
       </li>
       <li>
-        <p>Run the following commands to enter the postgresql command line:
-    # su postgres
+        <p>Выполните следующие команды для получения доступа к командной строке postgresql:</p>
+    # su postgres</p>
     $ psql</p>
       </li>
       <li>
-        <p>Run the following command to create a new user:
-    postgres=# create role [user name] with login encrypted password '[password]';</p>
+        <p>Выполните команду для создания нового пользователя:</p>
+    postgres=# create role [имя_пользователя] with login encrypted password '[пароль]';</p>
       </li>
       <li>
-        <p>Run the following command to create the new database:
-    postgres=# create database [database name] owner [user name] template template0 encoding 'UTF8' lc_collate 'en_US.UTF-8' lc_ctype 'en_US.UTF-8';</p>
+        <p>Выполните следующую команду для создания новой базы данных:</p>
+    postgres=# create database [имя_базы_данных] owner [имя_пользователя] template template0 encoding 'UTF8' lc_collate 'en_US.UTF-8' lc_ctype 'en_US.UTF-8';</p>
       </li>
-      <li>Edit the <code>/var/lib/pgsql/data/pg_hba.conf</code> file as follows:
+      <li>Внесите следующие изменения в файл <code>/var/lib/pgsql/data/pg_hba.conf</code>:
         <ul>
           <li>
-            <p>For local databases, replace the existing directives in the section starting with <code>Local</code> at the bottom of the file with the following directives:
-    host    [database name]    [user name]    0.0.0.0/0  md5
-    host    [database name]    [user name]    ::0/0      md5</p>
+            <p>Для локальных баз данных, замените существующие директивы в разделе, который начинается с <code>Local</code> в конце файла, на следующие директивы:</p>
+    host    [имя_базы_данных]    [имя_пользователя]    0.0.0.0/0  md5
+    host    [имя_базы_данных]    [имя_пользователя]    ::0/0      md5</p>
           </li>
           <li>
-            <p>For remote databases, add the following line immediately underneath the line starting with <code>Local</code> at the bottom of the file, replacing <em>X.X.X.X</em> with the IP address of oVirt:
-    host    [database name]    [user name]    X.X.X.X/32   md5</p>
+            <p>Для удалённых баз данных, добавьте следующие строки непосредственно ниже строки, начинающейся с <code>Local</code> в конце файла, заменив <em>X.X.X.X</em> IP-адресом oVirt:</p>
+    host    [имя_базы_данных]    [имя_пользователя]    X.X.X.X/32   md5</p>
           </li>
         </ul>
       </li>
-      <li>Run the following command to restart the <code>postgresql</code> service:
+      <li>Выполните следующую команду для перезапуска службы <code>postgresql</code>:</p>
     # service postgresql restart</li>
     </ol>
   </li>
   <li>
-    <p>Restore the backup using the <code>engine-backup</code> command with the <em><code>--change-db-credentials</code></em> parameter to pass the credentials of the new database:
-    # engine-backup –mode=restore –file=[file name] –log=[file name] –change-db-credentials –db-host=[database location] –db-name=[database name] –db-user=[user name] –db-password=[password]</p>
+    <p>Восстановите резервную копию с помощью команды <code>engine-backup</code> с параметром <em><code>--change-db-credentials</code></em> для передачи учётных данных новой базы данных:</p>
+    # engine-backup –mode=restore –file=[имя_файла] –log=[имя_файла] –change-db-credentials –db-host=[местоположение_базы_данных] –db-name=[имя_базы_данных] –db-user=[имя_пользователя] –db-password=[пароль]</p>
 
-    <p>If successful, the following output displays:</p>
+    <p>В случае правильного выполнения команды вывод будет следующим:</p>
 
 <pre class="highlight plaintext"><code>You should now run engine-setup.
 Done.
 </code></pre>
   </li>
-  <li>Run the following command and follow the prompts to configure oVirt:
+  <li>Введите следующую команду и следуйте указаниям для настройки параметров oVirt:</p>
     # engine-setup</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The engine database and configuration files for oVirt have been restored to the version in the backup.</p>
+<p>База данных ЦУ oVirt и файлы конфигурации oVirt были восстановлены до версии резервной копии.</p>
 
-<h4 id="restoring-a-backup-to-overwrite-an-existing-installation">Restoring a Backup to Overwrite an Existing Installation</h4>
+<h4 id="restoring-a-backup-to-overwrite-an-existing-installation">Восстановление резервной копии для перезаписи существующей установки</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>The <code>engine-backup</code> command can restore a backup to a machine on which oVirt has already been installed and set up. This is useful when you have taken a backup up of an installation, performed changes on that installation and then want to restore the installation from the backup.</p>
+<p>С помощью команды <code>engine-backup</code> можно восстановить резервную копию на машину с уже установленной и настроенной oVirt. Это удобно в случаях, когда была сделана резервная копия установки, в неё были внесены изменения, и её необходимо восстановить из резервной копии.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> When restoring a backup to overwrite an existing installation, you must run the <code>engine-cleanup</code> command to clean up the existing installation before using the <code>engine-backup</code> command. Because the <code>engine-backup</code> command only cleans the engine database, and does not drop the database or delete the user that owns that database, you do not need to create a new database or specify the database credentials because the user and database already exist.</p>
+  <p><strong>Внимание:</strong> при восстановлении резервной копии и перезаписи существующих файлов установки, перед использованием команды <code>engine-backup</code> необходимо выполнить команду <code>engine-cleanup</code> для очистки существующей установки. Поскольку команда <code>engine-backup</code> только очищает базу данных ЦУ oVirt, а не удаляет базу данных или пользователя-владельца, то нет необходимости создавать новую базу данных или указывать её учётные данные, т.к. пользователь и база данных уже существуют.</p>
 
 </div>
-<p><strong>Procedure&nbsp;12.3.&nbsp;Restoring a Backup to Overwrite an Existing Installation</strong></p>
+<p><strong>Действие&nbsp;12.3.&nbsp;Восстановление резервной копии для перезаписи существующей установки</strong></p>
 
 <ol>
-  <li>Log on to the machine on which oVirt is installed.</li>
+  <li>Авторизуйтесь на машине, где установлена oVirt.</li>
   <li>
-    <p>Run the following command and follow the prompts to remove the configuration files for and clean the database associated with oVirt:
+    <p>Введите следующую команду и следуйте указаниям для удаления файлов конфигурации базы данных и очистки базы данных, связанной с oVirt:</p>
     # engine-cleanup</p>
   </li>
   <li>
-    <p>Restore the backup using the <code>engine-backup</code> command:
+    <p>Восстановите резервную копию с  помощью команды <code>engine-backup</code>:</p>
     # engine-backup –mode=restore –file=[file name] –log=[file name]</p>
 
-    <p>If successful, the following output displays:</p>
+    <p>В случае успешного выполнения команды вывод будет следующим:</p>
 
 <pre class="highlight plaintext"><code>You should now run engine-setup.
 Done.
 </code></pre>
   </li>
-  <li>Run the following command and follow the prompts to re-configure the firewall and ensure the <code>ovirt-engine</code> service is correctly configured:
+  <li>Введите следующую команду и следуйте указаниям для повторной настройки брандмауэра и проверки того, что служба <code>ovirt-engine</code> настроена правильно:</p>
     # engine-setup</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The engine database and configuration files for oVirt have been restored to the version in the backup.</p>
+<p>База данных ЦУ oVirt и файлы конфигурации oVirt были восстановлены до версии резервной копии.</p>
 
-<h4 id="restoring-a-backup-with-different-credentials">Restoring a Backup with Different Credentials</h4>
+<h4 id="restoring-a-backup-with-different-credentials">Восстановление резервной копии с другими учётными данными</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>The <code>engine-backup</code> command can restore a backup to a machine on which oVirt has already been installed and set up, but the credentials of the database in the backup are different to those of the database on the machine on which the backup is to be restored. This is useful when you have taken a backup of an installation and want to restore the installation from the backup to a different system.</p>
+<p>С помощью команды <code>engine-backup</code> можно восстановить резервную копию на машину с уже установленной и настроенной oVirt, но учётные данные базы данных рехервной копии отличаются от учётных данных базы данных той машины, на которой предполагается восстановить резервную копию. Это удобно там, где резервная копия была сделана для одной системы, а восстановить резервную копию необходимо в другой.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> When restoring a backup to overwrite an existing installation, you must run the <code>engine-cleanup</code> command to clean up the existing installation before using the <code>engine-backup</code> command. Because the <code>engine-backup</code> command only cleans the engine database, and does not drop the database or delete the user that owns that database, you do not need to create a new database or specify the database credentials because the user and database already exist. However, if the credentials for the owner of the engine database are not known, you must change them before you can restore the backup.</p>
+  <p><strong>Важно:</strong>  при восстановлении резервной копии и перезаписи существующих файлов установки, перед использованием команды <code>engine-backup</code> необходимо выполнить команду <code>engine-cleanup</code> для очистки существующей установки. Поскольку команда <code>engine-backup</code> только очищает базу данных ЦУ oVirt, а не удаляет базу данных или пользователя-владельца, то нет необходимости создавать новую базу данных или указывать её учётные данные, т.к. пользователь и база данных уже существуют. Тем не менее, если учётные данные владельца базы данных неизвестны, их необходимо сменить перед восстановлением резервной копии.</p>
 
 </div>
-<p><strong>Procedure&nbsp;12.4.&nbsp;Restoring a Backup with Different Credentials</strong></p>
+<p><strong>Действие&nbsp;12.4.&nbsp;Восстановление резервной копии с другими учётными данными</strong></p>
 
 <ol>
-  <li>Log on to the machine on which oVirt is installed.</li>
+  <li>Авторизуйтесь на машине, где установлена oVirt.</li>
   <li>
-    <p>Run the following command and follow the prompts to remove the configuration files for and clean the database associated with oVirt:
+    <p>Введите следующую команду и следуйте указаниям для удаления файлов конфигурации базы данных и очистки базы данных, связанной с oVirt:</p>
     # engine-cleanup</p>
   </li>
-  <li>Change the password for the owner of the engine database if the credentials of that user are not known:
+  <li>Смените пароль владельца базы данных ЦУ oVirt, если учётные данные этого пользователя неизвестны:</p>
     <ol>
       <li>
-        <p>Run the following commands to enter the postgresql command line:
+        <p>Выполните следующие команды для получения доступа к командной строке postgresql:</p>
     # su postgres
     $ psql</p>
       </li>
       <li>
-        <p>Run the following command to change the password of the user that owns the engine database:
-    postgres=# alter role [user name] encrypted password '[new password]';</p>
+        <p>Выполните следующую клманду для смены пароля пользователя-владельца базы данных ЦУ oVirt:</p>
+    postgres=# alter role [имя_пользователя] encrypted password '[новый_пароль]';</p>
       </li>
     </ol>
   </li>
   <li>
-    <p>Restore the backup using the <code>engine-backup</code> command with the <em><code>--change-db-credentials</code></em> parameter:
+    <p>Восстановите резервную копию с помощью команды <code>engine-backup</code> с параметром <em><code>--change-db-credentials</code></em>:</p>
     # engine-backup –mode=restore –file=[file name] –log=[file name] –change-db-credentials –db-host=[database location] –db-name=[database name] –db-user=[user name] –db-password=[password]</p>
 
-    <p>If successful, the following output displays:</p>
+    <p>В случае правильного выполнения команды вывод будет следующим:</p>
 
 <pre class="highlight plaintext"><code>You should now run engine-setup.
 Done.
 </code></pre>
   </li>
-  <li>Run the following command and follow the prompts to re-configure the firewall and ensure the <code>ovirt-engine</code> service is correctly configured:
+  <li>Введите следующую команду и следуйте указаниям для повторной настройки брандмауэра и проверки того, что служба <code>ovirt-engine</code> настроена правильно:</p>
     # engine-setup</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The engine database and configuration files for oVirt have been restored to the version in the backup using the supplied credentials, and oVirt has been configured to use the new database.</p>
+<p>База данных ЦУ oVirt и файлы конфигурации oVirt были восстановлены до версии резервной копии с помощью предоставленных учётных данных, и oVirt была настроена на использование новой базы данных.</p>
 
-<h3 id="manually-backing-up-and-restoring-ovirt">Manually Backing Up and Restoring oVirt</h3>
+<h3 id="manually-backing-up-and-restoring-ovirt">Создание резервной копии и восстановление резервной копии oVirt вручную</h3>
 
-<h4 id="backing-up-the-engine-database-using-the-backupsh-script">Backing Up the Engine Database Using the backup.sh Script</h4>
+<h4 id="backing-up-the-engine-database-using-the-backupsh-script">Создание резервной копии базы данных ЦУ oVirt с помощью скрипта backup.sh Script</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>oVirt includes a script to automate database backups. Using this script on your Manager server, you can protect yourself against potential data loss.</p>
+<p>В oVirt существует скрипт для автоматического создания резервных копий базы данных. Используя этот скрипт на сервере oVirt, можно защититься от возможной потери данных.</p>
 
-<p><strong>Procedure&nbsp;12.5.&nbsp;Backing up the engine database using the backup.sh script</strong></p>
+<p><strong>Действие&nbsp;12.5.&nbsp;Создание резервной копии базы данных ЦУ oVirt с помощью скрипта backup.sh script</strong></p>
 
 <ol>
-  <li>Change into the <code>/usr/share/ovirt-engine/dbscripts/</code> directory.</li>
+  <li>Перейдите в каталог <code>/usr/share/ovirt-engine/dbscripts/</code>.</li>
   <li>
-    <p>Invoke <code>backup.sh</code> with the <em><code>-h</code></em> parameter to see the available options.
+    <p>Запустите <code>backup.sh</code> с аргументом <em><code>-h</code></em> чтобы увидеть доступные параметры.</p>
     Usage: backup.sh [-h] [-s SERVERNAME] [-p PORT] [-d DATABASE] [-l DIR] -u USERNAME [-v]</p>
 
 <pre class="highlight plaintext"><code>    -s SERVERNAME - The database servername for the database (def. localhost)
@@ -8322,19 +8322,19 @@ Done.
 for more options please run pg_dump --help
 </code></pre>
   </li>
-  <li>Invoke the <code>backup.sh</code> command again with parameters appropriate for your environment. If you are backing up the local <code>engine</code> database, the <em><code>-s, -p,</code></em> and <em><code>-d</code></em> parameters are not necessary. Use the <em><code>-l</code></em> to specify the backup directory. This will cause a <code>.sql</code> file to be created in the directory you give.</li>
-  <li>Copy the <code>.sql</code> you just created from the directory you specified to a safe remote location.</li>
+  <li>Снова запустите команду <code>backup.sh</code> с параметрами, необходимыми для имеющегося окружения. Если создаётся резервная копия локальной базы данных <code>engine</code>, параметры <em><code>-s, -p,</code></em> и <em><code>-d</code></em> не нужны. Используйте параметр <em><code>-l</code></em> чтобы указать каталог резервной копии. В результате в указанном каталоге будет создан файл в формате <code>.sql</code>.</li>
+  <li>Скопируйте только что созданный файл <code>.sql</code> из указанного каталога в защищённое удалённое местоположение.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have used the backup.sh script to backup your <code>engine</code> database.</p>
+<p>Мы использовали скрипт backup.sh для создания резервной копии базы данных <code>engine</code>.</p>
 
-<h4 id="backing-up-manager-configuration-files">Backing Up Manager Configuration Files</h4>
+<h4 id="backing-up-manager-configuration-files">Создание резервной копии файлов конфигурации oVirt</h4>
 
-<p>oVirt stores customized configurations as configuration files. These configuration files contain specific configuration details regarding a given environment, and must be backed up.</p>
+<p>Изменённые параметры хранятся в oVirt в виде конфигурацых файлов. В этих файлах содержатся конкретные подробности настроек указанного окружения, и для них необходимо создать резервную копию.</p>
 
-<p><strong>Table&nbsp;12.1.&nbsp;Files and directories that must be backed up</strong></p>
+<p><strong>Таблица&nbsp;12.1.&nbsp;Файлы и каталоги, подлежащие обязательному резервному копированию</strong></p>
 
 <table>
 <colgroup>
@@ -8343,64 +8343,64 @@ for more options please run pg_dump --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Location</p></th>
-<th align="left"><p>Overview</p></th>
+<th align="left"><p>Местоположение</p></th>
+<th align="left"><p>Краткое описание</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>/etc/ovirt-engine/</p></td>
-<td align="left"><p>A directory containing oVirt configuration files such as <code>engine-config.conf</code>.</p></td>
+<td align="left"><p>Каталог, содержащий файлы конфигурации oVirt, такие, как <code>engine-config.conf</code>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>/etc/yum/pluginconf.d/versionlock.list</p></td>
-<td align="left"><p>A file containing version information about currently installed oVirt components.</p></td>
+<td align="left"><p>Файл, содержащий информацию о версии установленных компонентов oVirt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>/etc/pki/ovirt-engine/</p></td>
-<td align="left"><p>Security certificates provided by oVirt to clients.</p></td>
+<td align="left"><p>Сертификаты безопасности, предоставляемые oVirt клиентам.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>/usr/share/jasperreports-server-pro/buildomatic/</p></td>
-<td align="left"><p>A directory containing files required to build the oVirt reports server.</p></td>
+<td align="left"><p>Каталог, содержащий файлы, необходимые для создания сервера отчётов oVirt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>/var/lib/ovirt-engine/backups/</p></td>
-<td align="left"><p>A directory containing backup files.</p></td>
+<td align="left"><p>Каталог, содержащий файлы резервных копий.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>/var/tmp/ovirt-engine/deployments/</p></td>
-<td align="left"><p>A directory containing information on deployments.</p></td>
+<td align="left"><p>Каталог, содержащий информацию о развёртываниях.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>/usr/share/ovirt-engine-reports/</p></td>
-<td align="left"><p>A directory containing configuration files related to reports. In particular, this directory contains sub-directories in which the credentials of the reports user are stored in a plain text, human-readable format.</p></td>
+<td align="left"><p>Каталог, содержащий файлы конфигурации отчётов. В частности, здесь расположены подкаталоги, в которых в текстовом удобочитаемом формате хранятся учётные записи пользователя отчётов.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>/root/.rnd</p></td>
-<td align="left"><p>A random seed file used to generate secure certificates.</p></td>
+<td align="left"><p>Файл случайного начального числа, используемый для создания сертификатов безопасности.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>/var/log/ovirt-engine/setup/</p></td>
-<td align="left"><p>A directory containing logs that contain the answers you gave to the setup configuration questions. You must use these files when restoring oVirt because they supply the same information that was used to initially configure oVirt.</p></td>
+<td align="left"><p>Каталог, содержащий журналы с ответами на установочные вопросы. Эти файлы используются при восстановлении oVirt, т.к. они предоставляют информацию, которая была указана во время начальной настройки oVirt.</p></td>
 </tr>
 </tbody>
 </table>
 
-<p>When you have backed up all the above files and directories, you can recover oVirt to a working state after an unforeseen event.</p>
+<p>При наличии резервных копий вышеуказанных файлов и каталогов, можно восстановить oVirt до рабочего состояния в случае непредвиденных событий.</p>
 
-<h4 id="restoring-the-engine-database-using-the-restoresh-script">Restoring the Engine Database Using the restore.sh Script</h4>
+<h4 id="restoring-the-engine-database-using-the-restoresh-script">Восстановление базы данных engine с помощью скрипта restore.sh</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>oVirt includes a script to automate database restoration. Using this script on your Manager server, you can recover from database corruption.</p>
+<p>В oVirt существует скрипт для автоматического восстановления базы данных. Используя этот скрипт на сервере oVirt, можно восстановить повреждённую базу данных.</p>
 
-<p><strong>Procedure&nbsp;12.6.&nbsp;Restoring the Engine Database Using the restore.sh Script</strong></p>
+<p><strong>Действие&nbsp;12.6.&nbsp;Восстановление базы данных engine с помощью скрипта restore.sh</strong></p>
 
 <ol>
-  <li>Change into the <code>/usr/share/ovirt-engine/dbscripts/</code> directory.</li>
+  <li>Перейдите в каталог <code>/usr/share/ovirt-engine/dbscripts/</code>.</li>
   <li>
-    <p>Invoke <code>restore.sh</code> with the <em><code>-h</code></em> parameter to see the available options.
+    <p>Запустите <code>restore.sh</code> с аргументом <em><code>-h</code></em> чтобы увидеть доступные параметры запуска.</p>
     Usage: restore.sh [-h] [-s SERVERNAME] [-p PORT] -u USERNAME -d DATABASE -f FILE [-r]</p>
 
 <pre class="highlight plaintext"><code>    -s SERVERNAME - The database servername for the database (def. localhost)
@@ -8414,88 +8414,88 @@ for more options please run pg_dump --help
 for more options please run pg_restore --help
 </code></pre>
   </li>
-  <li>Invoke the <code>restore.sh</code> command again with parameters appropriate for your environment. If you are restoring the local <code>engine</code> database, the <em><code>-s</code></em> and <em><code>-p</code></em> parameters are not necessary. Use the <em><code>-d</code></em> to specify name of the database you are creating. oVirt expects a primary database named <code>engine</code>. Use the <em><code>-f</code></em> to specify the <code>.sql</code> file you are restoring from.</li>
+  <li>Снова запустите команду <code>restore.sh</code> с параметрами, необходимыми для имеющегося окружения.  Если создаётся резервная копия локальной базы данных <code>engine</code>, параметры <em><code>-s</code></em> и <em><code>-p</code></em> не нужны. Используйте <em><code>-d</code></em> чтобы указать имя создаваемой базы данных. oVirt ожидает, что первичная база данных будет иметь имя <code>engine</code>. Используйте <em><code>-f</code></em> чтобы указать файл <code>.sql</code>, из которого производится восстановление.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have used the restore.sh script to restore your <code>engine</code> database.</p>
+<p>Мы использовали скрипт restore.sh чтобы восстановить базу данных <code>engine</code>.</p>
 
-<h4 id="restoring-ovirt-configuration-files">Restoring oVirt Configuration Files</h4>
+<h4 id="restoring-ovirt-configuration-files">Восстановление файлов конфигурации oVirt</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Restore a backed up copy of configuration files to oVirt.</p>
+<p>Восстановление резервной копии файлов конфигурации oVirt.</p>
 
-<p><strong>Procedure&nbsp;12.7.&nbsp;Restoring oVirt Configuration Files</strong></p>
+<p><strong>Действие&nbsp;12.7.&nbsp;Восстановление файлов конфигурации oVirt</strong></p>
 
 <ol>
   <li>
-    <p>Stop the engine service:
+    <p>Остановите службу ЦУ:
     # service ovirt-engine stop</p>
   </li>
   <li>
-    <p>Completely remove all previous installations of oVirt:
+    <p>Польностью удалите все предыдущие установки oVirt:
     # yum remove ovirt-engine</p>
   </li>
   <li>
-    <p>Remove <code>/etc/pki/ovirt-engine</code>:
+    <p>Удалите <code>/etc/pki/ovirt-engine</code>:
     # rm -rf /etc/pki/ovirt-engine</p>
   </li>
   <li>
-    <p>Remove the main <code>ovirt-engine</code> directory:
+    <p>Удалите главный каталог <code>ovirt-engine</code>:
     # rm -rf /etc/ovirt-engine</p>
   </li>
   <li>
-    <p>Install oVirt:
+    <p>Установите oVirt:
     # yum install -y ovirt-engine</p>
   </li>
   <li>
-    <p>Run <code>engine-setup</code>, giving the same answers as when you originally installed <code>ovirt-engine</code>:
+    <p>Запустите <code>engine-setup</code>, и укажите те же самые ответы, которые были даны во время первой установки <code>ovirt-engine</code>:
     # engine-setup</p>
 
-    <p>Your answers can be found in <code>/var/log/engine-setup-SETUP-DATE.log</code>, which you backed up.</p>
+    <p>Эти ответы можно найти в журнале <code>/var/log/engine-setup-SETUP-DATE.log</code>, для которого была сделана резервная копия.</p>
   </li>
   <li>
-    <p>Stop the engine service, which was restarted as a part of the previous command:
+    <p>Остановите службу ЦУ oVirt, которая была перезапущена во время выполнения предыдущей команды:
     # service ovirt-engine stop</p>
   </li>
-  <li>Restore the backed up configuration files to their original locations.</li>
+  <li>Восстановите резервные копии файлов конфигурации в их исходные местоположения.</li>
   <li>
-    <p>Make sure the ownership of the <code>.truststore</code> file is correct:
+    <p>Убедитесь, что владелец файла <code>.truststore</code> является правильным:
     # chown ovirt:ovirt /etc/pki/ovirt-engine/.truststore</p>
   </li>
   <li>
-    <p>Make sure the permissions of the <code>ovirt-engine-notifier.conf</code> file is correct:
+    <p>Убедитесь, что права доступа для файла <code>ovirt-engine-notifier.conf</code> являются правильными:
     # chmod 640 /usr/share/ovirt-engine/services/ovirt-engine-notifier/ovirt-engine-notifier.conf</p>
   </li>
-  <li>Start the engine service:
+  <li>Запустите службу ЦУ oVirt:
     # service ovirt-engine start</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have restored a backed up copy of configuration files to oVirt.</p>
+<p>Мы восстановили файлы конофигурации oVirt из резервной копии.</p>
 
-<h2 id="users-and-roles">⁠Users and Roles</h2>
+<h2 id="users-and-roles">Пользователи и роли</h2>
 
-<h3 id="introduction-to-users">Introduction to Users</h3>
+<h3 id="introduction-to-users">Введение в понятие пользователей</h3>
 
-<p>oVirt uses external directory services for user authentication and information. All user accounts must be created in external directory servers; these users are called <em>directory users</em>. The exception is the <code>admin</code> user which resides in the <code>internal</code> domain created during installation.</p>
+<p>Для аутентификации и информации о пользователях в oVirt используются службы внешних каталогов. Все учётные записи пользователей должны создаваться во внешних серверах каталогов; эти пользователи называются <em>пользователи каталога</em>. Исключением является пользователь <code>администратор</code>, который располагается во <code>внутреннем</code> домене, создаваемом во время установки.</p>
 
-<p>After a directory server is attached to oVirt, the users in the directory can be added to the Administration Portal, making them <em>oVirt users</em>. oVirt users can be assigned different roles and permissions according to the tasks they have to perform.</p>
+<p>После присоединения сервера каталогов к oVirt, пользователей из каталога можно добавить на Портал администрирования, сделав из них <em>пользователей oVirt</em>. Пользователям oVirt можно присваивать различные роли и привилегии, согласно выполняемым пользователями задачам.</p>
 
-<p>There are two types of oVirt users - end users who use and manage virtual resources from the User Portal, and administrators who maintain the system infrastructure using the Administration Portal. <code>User</code> roles and <code>admin</code> roles can be assigned to oVirt users for individual resources like virtual machines and hosts, or on a hierarchy of objects like clusters and data centers.</p>
+<p>Существует два типа пользователей oVirt — конечные пользователи, которые используют и контролируют виртуальные ресурсы через Пользовательский портал, и администраторы, поддерживающие системную инфраструктуру через Портал администрирования. Роли <code>пользователя</code> и роли <code>администратора</code> могут быть присвоены пользователям oVirt для работы с индивидуальными ресурсами, например, с виртуальными машинами и хостами, или для работы с объектами иерархии, такими, как кластеры или дата-центры.</p>
 
-<h3 id="directory-users">Directory Users</h3>
+<h3 id="directory-users">Пользователи каталога</h3>
 
-<h4 id="directory-services-support-in-ovirt">Directory Services Support in oVirt</h4>
+<h4 id="directory-services-support-in-ovirt">Поддержка служб каталога в oVirt</h4>
 
-<p>During installation oVirt creates its own internal administration user, <code>admin</code>. This account is intended for use when initially configuring the environment, and for troubleshooting. To add other users to oVirt you must attach a directory server to oVirt using the Domain Management Tool, <code>engine-manage-domains</code>.</p>
+<p>Во время установки oVirt создаёт своего собственного внутреннего пользователя-администратора, <code>admin</code>. Эта учётная запись предназначена для использования во время первоначальной настройки окружения и для устранения неполадок. Чтобы добавлять других пользователей в oVirt, небходимо присоединть к oVirt сервер каталогов с помощью утилиты управления доменами, <code>engine-manage-domains</code>.</p>
 
-<p>Once at least one directory server has been attached to oVirt, you can add users that exist in the directory server and assign roles to them using the Administration Portal. Users can be identified by their User Principal Name (UPN) of the form <code>user@domain</code>. Attachment of more than one directory server to oVirt is also supported.</p>
+<p>После присоединения как минимум одного сервера каталогов к oVirt можно добавлять пользователей, существующих на сервере, и присваивать им роли через Портал администрирования. Польщзователи идентифицируются по имени участника-пользователя (UPN) формы <code>user@domain</code>. Присоединение более одного сервера каталога к oVirt также поддерживается.</p>
 
-<p>The directory servers supported for use with oVirt 3.4 are:</p>
+<p>Следующие серверы каталогов поддерживаются в oVirt 3.4:</p>
 
 <ul>
   <li>Active Directory</li>
@@ -8504,18 +8504,18 @@ for more options please run pg_restore --help
   <li>OpenLDAP</li>
 </ul>
 
-<p>You must ensure that the correct DNS records exist for your directory server. In particular you must ensure that the DNS records for the directory server include:</p>
+<p>Необходимо убедиться, что для сервера каталога существуют корректные записи DNS. В частности, убедитесь, что записи DNS для сервера каталогов включают в себя:</p>
 
 <ul>
-  <li>A valid pointer record (PTR) for the directory server's reverse look-up address.</li>
-  <li>A valid service record (SRV) for LDAP over TCP port <code>389</code>.</li>
-  <li>A valid service record (SRV) for Kerberos over TCP port <code>88</code>.</li>
-  <li>A valid service record (SRV) for Kerberos over UDP port <code>88</code>.</li>
+  <li>Допустимая запись PTR для адреса обратного просмотра сервера каталогов.</li>
+  <li>Допустимая запись SRV для LDAP через TCP-порт <code>389</code>.</li>
+  <li>Допустимая запись SRV для Kerberos через TCP-порт <code>88</code>.</li>
+  <li>Допустимая запись SRV для Kerberos через UDP-порт <code>88</code>.</li>
 </ul>
 
-<p>If these records do not exist in DNS then you cannot add the domain to oVirt configuration using <code>engine-manage-domains</code>.</p>
+<p>Отсутствие этих записей в DNS делает невозможным добавление домена в конфигурацию oVirt с помощью <code>engine-manage-domains</code>.</p>
 
-<p>For more detailed information on installing and configuring a supported directory server, see the vendor's documentation:</p>
+<p>Подробности об установке и настройке поддерживаемых серверов каталогов см. в документации поставщиков:</p>
 
 <ul>
   <li>Active Directory - <a href="http://technet.microsoft.com/en-us/windowsserver/dd448614"></a><a href="http://technet.microsoft.com/en-us/windowsserver/dd448614">http://technet.microsoft.com/en-us/windowsserver/dd448614</a>.</li>
@@ -8525,102 +8525,102 @@ for more options please run pg_restore --help
 </ul>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> A user must be created in the directory server specifically for use as the oVirt administrative user. Do <em>not</em> use the administrative user for the directory server as the oVirt administrative user.</p>
+  <p><strong>Важно:</strong> пользователь для администрирования oVirt должен создаваться на сервере каталогов специально. <em>Не</em> используйте администратора сервера каталогов в качестве администратора oVirt.</p>
 
 </div>
 <div class="alert alert-info">
-  <p><strong>Important:</strong> It is not possible to install oVirt (rhevm) and IdM (ipa-server) on the same system. IdM is incompatible with the mod_ssl package, which is required by oVirt.</p>
+  <p><strong>Важно:</strong> установить oVirt (rhevm) и IdM (ipa-server) на одной и той же системе невозможно. IdM несовместима с пакетом mod_ssl, который требуется для oVirt.</p>
 
 </div>
 <div class="alert alert-info">
-  <p><strong>Important:</strong> If you are using Active Directory as your directory server, and you want to use <code>sysprep</code> in the creation of Templates and Virtual Machines, then the oVirt administrative user must be delegated control over the Domain to:</p>
+  <p><strong>Важно:</strong> если в качестве сервера каталогов используется Active Directory, и для создания шаблонов и виртуальных машин планируется использовать <code>sysprep</code>, то пользователю-администратору oVirt должен быть передан контроль над доменом для:</p>
 
   <ul>
-    <li><strong>Join a computer to the domain</strong></li>
-    <li><strong>Modify the membership of a group</strong></li>
+    <li><strong>Присоединения компьютера к домену</strong></li>
+    <li><strong>Изменения членства в группе</strong></li>
   </ul>
 
-  <p>For information on creation of user accounts in Active Directory, see <a href="http://technet.microsoft.com/en-us/library/cc732336.aspx"></a><a href="http://technet.microsoft.com/en-us/library/cc732336.aspx">http://technet.microsoft.com/en-us/library/cc732336.aspx</a>.</p>
+  <p>Информацию о создании учётных записей пользователей в Active Directory см. по ссылке <a href="http://technet.microsoft.com/en-us/library/cc732336.aspx"></a><a href="http://technet.microsoft.com/en-us/library/cc732336.aspx">http://technet.microsoft.com/en-us/library/cc732336.aspx</a>.</p>
 
-  <p>For information on delegation of control in Active Directory, see <a href="http://technet.microsoft.com/en-us/library/cc732524.aspx"></a><a href="http://technet.microsoft.com/en-us/library/cc732524.aspx">http://technet.microsoft.com/en-us/library/cc732524.aspx</a>.</p>
+  <p>Информацию о передаче контроля в Active Directory см. по ссылке <a href="http://technet.microsoft.com/en-us/library/cc732524.aspx"></a><a href="http://technet.microsoft.com/en-us/library/cc732524.aspx">http://technet.microsoft.com/en-us/library/cc732524.aspx</a>.</p>
 
 </div>
 <div class="alert alert-info">
-  <p><strong>Note:</strong> oVirt uses Kerberos to authenticate with directory servers. RHDS does not provide native support for Kerberos. If you are using RHDS as your directory server then you must ensure that the directory server is made a service within a valid Kerberos domain. To do this you must perform these steps while referring to the relevant directory server documentation:</p>
+  <p><strong>Внимание:</strong> для аутентификации на серевере каталогов oVirt использует Kerberos. RHDS не имеет встроенной поддержки Kerberos. При использовании RHDS в качестве сервера каталогов необходимо убедиться, что сервер каталогов является службой в допустимом домене Kerberos. Для этого необходимо выполнить следующие шаги, обращая внимание на документацию соответствующего сервера каталогов:</p>
 
   <ul>
-    <li>Configure the <code>memberOf</code> plug-in for RHDS to allow group membership. In particular ensure that the value of the <em><code>memberofgroupattr</code></em> attribute of the <code>memberOf</code> plug-in is set to <code>uniqueMember</code>. In <strong>OpenLDAP</strong>, the <code>memberOf</code> functionality is not called a "plugin". It is called an "overlay" and requires no configuration after installation. Consult the Red Hat Directory Server&nbsp;9.0 <em>Plug-in Guide</em> for more information on configuring the <code>memberOf</code> plug-in.</li>
-    <li>Define the directory server as a service of the form <code>ldap/hostname@REALMNAME</code> in the Kerberos realm. Replace <em>hostname</em> with the fully qualified domain name associated with the directory server and <em>REALMNAME</em> with the fully qualified Kerberos realm name. The Kerberos realm name must be specified in capital letters.</li>
-    <li>Generate a <code>keytab</code> file for the directory server in the Kerberos realm. The <code>keytab</code> file contains pairs of Kerberos principals and their associated encrypted keys. These keys allow the directory server to authenticate itself with the Kerberos realm. Consult the documentation for your Kerberos principle for more information on generating a <code>keytab</code> file.</li>
-    <li>Install the <code>keytab</code> file on the directory server. Then configure RHDS to recognize the <code>keytab</code> file and accept Kerberos authentication using GSSAPI. Consult the Red Hat Directory Server 9.0 <em>Administration Guide</em> for more information on configuring RHDS to use an external <code>keytab</code> file.</li>
-    <li>Test the configuration on the directory server by using the <code>kinit</code> command to authenticate as a user defined in the Kerberos realm. Once authenticated run the <code>ldapsearch</code> command against the directory server. Use the <em><code>-Y GSSAPI</code></em> parameters to ensure the use of Kerberos for authentication.</li>
+    <li>Настройте модуль <code>memberOf</code> для разрешения RHDS членства в группах. В частности, убедитесь, что атрибуту <em><code>memberofgroupattr</code></em> модуля <code>memberOf</code> присвоено значение <code>uniqueMember</code>. В <strong>OpenLDAP</strong> фунционал <code>memberOf</code> называется не «модулем» ("plugin"), а «наложением» ("overlay"), и не требует настройки после установки. Подробности настройки модуля <code>memberOf</code> см. в Red Hat Directory Server&nbsp;9.0 <em>Plug-in Guide</em>.</li>
+    <li>Определите сервер каталогов как службу формы <code>ldap/хост@ОБЛАСТЬ</code> в области Kerberos. Замените <em>хост</em> полным доменным именем, связанным с сервером каталогов, а <em>ОБЛАСТЬ</em> полным именем области Kerberos. Имя области Kerberos должно быть указано прописными (заглавными) буквами.</li>
+    <li>Создайте файл <code>keytab</code> для сервера каталогов в области Kerberos. Файл <code>keytab</code> содержит пары принципалов Kerberos и связанные с ними зашифрованные ключи. С помощью этих ключей сервер каталогов идентифицирует себя в области Kerberos. Подробности о создании файла <code>keytab</code> см. в документации принципала Kerberos.</li>
+    <li>Установите файл <code>keytab</code> на сервере каталогов. Затем настройте RHDS для опознавания файла <code>keytab</code> и примите аутентификацию Kerberos с помощью GSSAPI. Подробности настройки RHDS для использования внешнего файла <code>keytab</code> см. в <em>Руководстве по администрированию</em> Red Hat Directory Server 9.0.</li>
+    <li>Проверьте конфигурацию на сервере каталогов, используя команду <code>kinit</code> для аутентификации в качестве пользователя, определённого в области Kerberos. После выполнения аутентификации запустите команду <code>ldapsearch</code> для сервера каталогов. Используйте параметры <em><code>-Y GSSAPI</code></em>, чтобы убедиться, что для аутентификации используется Kerberos.</li>
   </ul>
 
 </div>
 
-<h3 id="user-authorization">User Authorization</h3>
+<h3 id="user-authorization">Авторизация пользователей</h3>
 
-<h4 id="user-authorization-model">User Authorization Model</h4>
+<h4 id="user-authorization-model">Модель авторизации пользователей</h4>
 
-<p>oVirt applies authorization controls based on the combination of the three components:</p>
+<p>В oVirt применяется трёхкомпонентный контроль авторизации:</p>
 
 <ul>
-  <li>The user performing the action</li>
-  <li>The type of action being performed</li>
-  <li>The object on which the action is being performed</li>
+  <li>Пользователь, выполняющий действие</li>
+  <li>Тип выполняемого действия</li>
+  <li>Объект, к которому применяется выполняемое действие</li>
 </ul>
 
-<h4 id="user-actions">User Actions</h4>
+<h4 id="user-actions">Действия пользователей</h4>
 
-<p>For an action to be successfully performed, the <code>user</code> must have the appropriate <code>permission</code> for the <code>object</code> being acted upon. Each type of action corresponds to a <code>permission</code>. There are many different permissions in the system, so for simplicity:</p>
+<p>Для успешного выполнения действия, у <code>пользователя</code> должны быть соответствующие <code>привилегии</code> на <code>объект</code>, к которому применяется действие. Каждый тип действия соответствует <code>привилегии</code>. В системе существует много различных привилегий, для более простого понимания см. схему:</p>
 
-<p><img alt="Actions" title="Actions" src="./OVirt Administration Guide — oVirt_files/No-actions.png"></p>
+<p><img alt="Actions" title="Действия" src="./OVirt Administration Guide — oVirt_files/No-actions.png"></p>
 
-<p><strong>Figure&nbsp;13.1.&nbsp;Actions</strong></p>
+<p><strong>Рисунок&nbsp;13.1.&nbsp;Действия</strong></p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Some actions are performed on more than one object. For example, copying a template to another storage domain will impact both the template and the destination storage domain. The user performing an action must have appropriate permissions for all objects the action impacts.</p>
+  <p><strong>Важно:</strong> некоторые действия применяются больше, чем к одному объекту. Например, копирование шаблона в дргой домен хранилища затрагивает как сам шаблон, так и целевой домен хранилища. Пользователь, выполняющий действие, должен иметь соответствующие привилегии для всех объектов, затронутых действием.</p>
 
 </div>
 
-<h4 id="user-permissions">User Permissions</h4>
+<h4 id="user-permissions">Привилегии пользователя</h4>
 
-<p>Permissions enable users to perform actions on objects, where objects are either individual objects or container objects.</p>
+<p>Привилегии (права доступа) дают пользователя возможность выполнять действия над объктами, где объектами являются либо индивидуальные объекты либо объекты-контейнеры.</p>
 
-<p><img alt="Permissions &amp; Roles" title="Permissions &amp; Roles" src="./OVirt Administration Guide — oVirt_files/Permissions_roles.png"></p>
+<p><img alt="Permissions &amp; Roles" title="Привилегии &amp; роли" src="./OVirt Administration Guide — oVirt_files/Permissions_roles.png"></p>
 
-<p><strong>Figure&nbsp;13.2.&nbsp;Permissions &amp; Roles</strong></p>
+<p><strong>Рисунок&nbsp;13.2.&nbsp;Привилегии &amp; роли</strong></p>
 
-<p>Any permissions that apply to a container object also apply to all members of that container. The following diagram depicts the hierarchy of objects in the system.</p>
+<p>Любые привилегии, применимые к объекту-контейнеру, также применяются ко всем составным членам этого контейнера. На диаграмме ниже показана иерархия объектов в системе.</p>
 
-<p><img alt="oVirt Object Hierarchy" title="oVirt Object Hierarchy" src="./OVirt Administration Guide — oVirt_files/Object_heirarchy.png"></p>
+<p><img alt="oVirt Object Hierarchy" title="Иерархия объектов oVirt" src="./OVirt Administration Guide — oVirt_files/Object_heirarchy.png"></p>
 
-<p><strong>Figure&nbsp;13.3.&nbsp;oVirt Object Hierarchy</strong></p>
+<p><strong>Рисунок&nbsp;13.3.&nbsp;Иерархия объектов oVirt</strong></p>
 
-<h3 id="ovirt-user-properties-and-roles">oVirt User Properties and Roles</h3>
+<h3 id="ovirt-user-properties-and-roles">Свойства и роли пользователей в oVirt</h3>
 
-<h4 id="user-properties">User Properties</h4>
+<h4 id="user-properties">Свойства пользователей</h4>
 
-<p>Roles and permissions are the properties of the user. Roles are predefined sets of privileges that permit access to different levels of physical and virtual resources. Multilevel administration provides a finely grained hierarchy of permissions. For example, a data center administrator has permissions to manage all objects in the data center, while a host administrator has system administrator permissions to a single physical host. A user can have permissions to use a single virtual machine but not make any changes to the virtual machine configurations, while another user can be assigned system permissions to a virtual machine.</p>
+<p>Роли и привилегии — это свойства пользователя. Роли — это заранее заданные наборы привилегий, дающие доступ к разным уровням физических и виртуальных ресурсов. Могоуровневое управление предоставляет тонко настроенную иерархию привилегий/прав доступа. Например, администратор дата-центра имеет права на управление всеми объектами дата-центра, в то время как администратор хоста имеет системные права только на один физический хост.  У одного пользователя могут быть права на работу с одной ВМ, но не на внесение изменений в параметры ВМ, а у другого пользователя могут быть системные привилегии на ВМ.</p>
 
-<h4 id="user-and-administrator-roles">User and Administrator Roles</h4>
+<h4 id="user-and-administrator-roles">Роли пользователя и администратора</h4>
 
-<p>oVirt provides a range of pre-configured roles, from an administrator with system-wide permissions to an end user with access to a single virtual machine. While you cannot change or remove the default roles, you can clone and customize them, or create new roles according to your requirements. There are two types of roles:</p>
+<p>oVirt предоставляет широкий диапазон заранее настроенных ролей, от администратора с системными привилегиями до конечного пользователя с доступом только к одной ВМ. Не имея возможности изменить или удалить роли по умолчанию, их можно клонировать и задать их параметры или же создать новые роли в соответствии с конкретными требованиями. Существует два типа ролей:</p>
 
 <ul>
-  <li>Administrator Role: Allows access to the <em>Administration Portal</em> for managing physical and virtual resources. An administrator role does not confer any permissions for the User Portal.</li>
-  <li>User Role: Allows access to the <em>User Portal</em> for managing and accessing virtual machines and templates. A user role does not confer any permissions for the Administration Portal.</li>
+  <li>Роль администратора: даёт доступ к <em>Порталу администрирования</em> для управления физическими и виртуальными ресурсами. Роль администратора не даёт никаких привилегий на Пользовательском портале.</li>
+  <li>Роль пользователя: даёт доступ к <em>Пользовательскому порталу</em> для доступа и управления виртуальными машинами и шаблонами. Роль пользователя не даёт никаких привилегий на Портале администрирования.</li>
 </ul>
 
-<p>For example, if you have an <code>administrator</code> role on a cluster, you can manage all virtual machines in the cluster using the <em>Administration Portal</em>. However, you cannot access any of these virtual machines in the <em>User Portal</em>; this requires a <code>user</code> role.</p>
+<p>Имея, например, роль <code>администратора</code> кластера, мы можем управлять всеми виртуальными машинами в кластере через <em>Портал администрирования</em>. Тем не мене, у нас нет доступа ни к одной из этих машин через <em>Пользовательский портал</em>; для этого нужна роль <code>пользователя</code>.</p>
 
-<h4 id="user-roles-explained">User Roles Explained</h4>
+<h4 id="user-roles-explained">Объяснение ролей пользователей</h4>
 
-<p>The table below describes basic user roles which confer permissions to access and configure virtual machines in the User Portal.</p>
+<p>Ниже в таблице описаны базовые роли пользователей, которые дают привилегии для доступа и изменения параметров виртуальных машин на Пользовательском портале.</p>
 
 <p>⁠</p>
 
-<p><strong>Table&nbsp;13.1.&nbsp;oVirt User Roles - Basic</strong></p>
+<p><strong>Таблица&nbsp;13.1.&nbsp;Базовые пользовательские роли в oVirt</strong></p>
 
 <table>
 <colgroup>
@@ -8630,37 +8630,37 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Role</p></th>
-<th align="left"><p>Privileges</p></th>
-<th align="left"><p>Notes</p></th>
+<th align="left"><p>Роль</p></th>
+<th align="left"><p>Привилегии</p></th>
+<th align="left"><p>Примечания</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>UserRole</p></td>
-<td align="left"><p>Can access and use virtual machines and pools.</p></td>
-<td align="left"><p>Can log in to the User Portal, use assigned virtual machines and pools, view virtual machine state and details.</p></td>
+<td align="left"><p>Доступ к виртуальным машинам и пулам и их использование.</p></td>
+<td align="left"><p>Может авторизоваться на Пользовательском портале, работать с присвоенными ВМ и пулами, просматривать статус и сведения о ВМ.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>PowerUserRole</p></td>
-<td align="left"><p>Can create and manage virtual machines and templates.</p></td>
-<td align="left"><p>Apply this role to a user for the whole environment with the <strong>Configure</strong> window, or for specific data centers or clusters. For example, if a PowerUserRole is applied on a data center level, the PowerUser can create virtual machines and templates in the data center.</p></td>
+<td align="left"><p>Может создавать виртуальные машины и шаблоны и управлять ими.</p></td>
+<td align="left"><p>Эта роль применяется к пользователю для всего окружения в окне <strong>Параметры</strong>, или для конкретных дата-центров или кластеров. Например, если роль PowerUserRole применяется на уровне дата-центра, то PowerUser может создавать ВМ и шаблоны в дата-центре.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>UserVmManager</p></td>
-<td align="left"><p>System administrator of a virtual machine.</p></td>
-<td align="left"><p>Can manage virtual machines, create and use snapshots, and migrate virtual machines. A user who creates a virtual machine in the User Portal is automatically assigned the UserVmManager role on the machine.</p></td>
+<td align="left"><p>Системный администратор виртуальной машины.</p></td>
+<td align="left"><p>Может управлять виртуальными машинами, создавать и использовать шаблоны, и выполнять миграцию ВМ. Пользователю, создающему ВМ на Пользовательском портале, автоматически присваивается роль UserVmManager на этой машине.</p></td>
 </tr>
 </tbody>
 </table>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> In oVirt 3.0, the <strong>PowerUserRole</strong> only granted permissions for virtual machines which are directly assigned to the PowerUser, or virtual machines created by the PowerUser. Now, the <strong>VmCreator</strong> role provides privileges previously conferred by the <strong>PowerUserRole</strong>. The <strong>PowerUserRole</strong> can now be applied on a system-wide level, or on specific data centers or clusters, and grants permissions to all virtual machines and templates within the system or specific resource. Having a <strong>PowerUserRole</strong> is equivalent to having the <strong>VmCreator</strong>, <strong>DiskCreator</strong>, and <strong>TemplateCreator</strong> roles.</p>
+  <p><strong>Внимание:</strong> в oVirt 3.0 роль <strong>PowerUserRole</strong> давала права только на машины, напрямую присвоенные пользователю PowerUser, или на машины, созданные пользователем PowerUser. На данный момент роль <strong>VmCreator</strong> предоставляет привилегии, ранее предоставляемые ролью <strong>PowerUserRole</strong>. Роль <strong>PowerUserRole</strong> теперь можно применять на общесистемном уровне или на конкретных дата-центрах или кластерах, и она даёт привилегии на все виртуальные машины и шаблоны в пределах системы или конкретного ресурса. Присвоение роли <strong>PowerUserRole</strong> эквивалентно присвоению роли <strong>VmCreator</strong>, <strong>DiskCreator</strong> и <strong>TemplateCreator</strong>.</p>
 
 </div>
-<p>The table below describes advanced user roles which allow you to do more fine tuning of permissions for resources in the User Portal.</p>
+<p>Ниже в таблице описаны расширенные роли пользователей, позволяющие производить более тонкую настройку прав доступа к ресурсам Пользовательского портала.</p>
 
-<p><strong>Table&nbsp;13.2.&nbsp;oVirt User Roles - Advanced</strong></p>
+<p><strong>Таблица&nbsp;13.2.&nbsp;Расширенные пользовательские роли в oVirt</strong></p>
 
 <table>
 <colgroup>
@@ -8670,55 +8670,55 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Role</p></th>
-<th align="left"><p>Privileges</p></th>
-<th align="left"><p>Notes</p></th>
+<th align="left"><p>Роль</p></th>
+<th align="left"><p>Привилегии</p></th>
+<th align="left"><p>Примечания</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>UserTemplateBasedVm</p></td>
-<td align="left"><p>Limited privileges to only use Templates.</p></td>
-<td align="left"><p>Can use templates to create virtual machines.</p></td>
+<td align="left"><p>Ограниченные привилегии, только использование шаблонов.</p></td>
+<td align="left"><p>Может использовать шаблоны для создания ВМ.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DiskOperator</p></td>
-<td align="left"><p>Virtual disk user.</p></td>
-<td align="left"><p>Can use, view and edit virtual disks. Inherits permissions to use the virtual machine to which the virtual disk is attached.</p></td>
+<td align="left"><p>Пользователь виртуального диска.</p></td>
+<td align="left"><p>Может использовать, просматривать и изменять виртуальные диски. Наследует привилегии на использование ВМ, к которой присоединён виртуальный диск.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VmCreator</p></td>
-<td align="left"><p>Can create virtual machines in the User Portal.</p></td>
-<td align="left"><p>This role is not applied to a specific virtual machine; apply this role to a user for the whole environment with the <strong>Configure</strong> window. Alternatively apply this role for specific data centers or clusters. When applying this role to a cluster, you must also apply the DiskCreator role on an entire data center, or on specific storage domains.</p></td>
+<td align="left"><p>Может создавать ВМ на Пользовательском портале.</p></td>
+<td align="left"><p>Эта роль не применяется к конкретной ВМ; применяйте эту роль к пользователю для всего окружения в окне <strong>Параметры</strong>. Или применяйте эту роль для конкретных дата-центров или кластеров. Применяя эту роль к кластеру, также необходимо применить роль DiskCreator ко всему дата-центру или к конкретным доменам хранилищ.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>TemplateCreator</p></td>
-<td align="left"><p>Can create, edit, manage and remove virtual machine templates within assigned resources.</p></td>
-<td align="left"><p>This role is not applied to a specific template; apply this role to a user for the whole environment with the <strong>Configure</strong> window. Alternatively apply this role for specific data centers, clusters, or storage domains.</p></td>
+<td align="left"><p>Может создавать, изменять, удалять и управлять шаблонами ВМ в пределах присвоенных ресурсов.</p></td>
+<td align="left"><p>Эта роль не применяется к конкретному шаблону; применяйте эту роль к пользователю для всего окружения в окне <strong>Параметры</strong>. Или применяйте эту роль для конкретных дата-центров или кластеров.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DiskCreator</p></td>
-<td align="left"><p>Can create, edit, manage and remove virtual machine disks within assigned clusters or data centers.</p></td>
-<td align="left"><p>This role is not applied to a specific virtual disk; apply this role to a user for the whole environment with the <strong>Configure</strong> window. Alternatively apply this role for specific data centers or storage domains.</p></td>
+<td align="left"><p>Может создавать, изменять, удалять и управлять дисками ВМ в пределах присвоенных кластеров или дата-центров.</p></td>
+<td align="left"><p>Эта роль не применяется к конкретному виртуальному диску; применяйте эту роль к пользователю для всего окружения в окне <strong>Параметры</strong>. Или применяйте эту роль для конкретных дата-центров или доменов хранилищ.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>TemplateOwner</p></td>
-<td align="left"><p>Can edit and delete the template, assign and manage user permissions for the template.</p></td>
-<td align="left"><p>This role is automatically assigned to the user who creates a template. Other users who do not have <strong>TemplateOwner</strong> permissions on a template cannot view or use the template.</p></td>
+<td align="left"><p>Может изменять и удалять шаблон, присваивать и управлять привилегиями пользователя для шаблона.</p></td>
+<td align="left"><p>Эта роль автоматически присваивается пользователю, создавшему шаблон. Другие пользователи, не имеющие привилегий <strong>TemplateOwner</strong> для шаблона, не могут просматривать или использовать шаблон.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NetworkUser</p></td>
-<td align="left"><p>Logical network and network interface user for virtual machine and template.</p></td>
-<td align="left"><p>Can attach or detach network interfaces from specific logical networks.</p></td>
+<td align="left"><p>Пользователь логической сети и сетевого интерфейса ВМ и шаблона.</p></td>
+<td align="left"><p>Может присоединять или отсоединять сетевые интерфейсы конкретных логических сетей.</p></td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="administrator-roles-explained">Administrator Roles Explained</h4>
+<h4 id="administrator-roles-explained">Объяснение ролей администратора</h4>
 
-<p>The table below describes basic administrator roles which confer permissions to access and configure resources in the Administration Portal.</p>
+<p>Ниже в таблице описаны базовые роли администратора, дающие права на доступ и изменения параметров ресурсов на Портале адинистрирования.</p>
 
-<p><strong>Table&nbsp;13.3.&nbsp;oVirt System Administrator Roles - Basic</strong></p>
+<p><strong>Таблица&nbsp;13.3.&nbsp;Базовые роли системного администратора в oVirt</strong></p>
 
 <table>
 <colgroup>
@@ -8728,37 +8728,37 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Role</p></th>
-<th align="left"><p>Privileges</p></th>
-<th align="left"><p>Notes</p></th>
+<th align="left"><p>Роль</p></th>
+<th align="left"><p>Привилегии</p></th>
+<th align="left"><p>Примечания</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>SuperUser</p></td>
-<td align="left"><p>System Administrator of the oVirt environment.</p></td>
-<td align="left"><p>Has full permissions across all objects and levels, can manage all objects across all data centers.</p></td>
+<td align="left"><p>Системный администратор окружения oVirt.</p></td>
+<td align="left"><p>Имеет полные права доступа на все объекты всех уровней, может управлять всеми объектами на всех дата-центрах.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ClusterAdmin</p></td>
-<td align="left"><p>Cluster Administrator.</p></td>
-<td align="left"><p>Possesses administrative permissions for all objects underneath a specific cluster.</p></td>
+<td align="left"><p>Администратор кластера.</p></td>
+<td align="left"><p>Обладает административными привилегиями на все объекты в пределах конкретного кластера.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DataCenterAdmin</p></td>
-<td align="left"><p>Data Center Administrator.</p></td>
-<td align="left"><p>Possesses administrative permissions for all objects underneath a specific data center except for storage.</p></td>
+<td align="left"><p>Администратор дата-центра.</p></td>
+<td align="left"><p>Обладает административными привилегиями на все объекты в пределах конкретного дата-центра кроме хранилища.</p></td>
 </tr>
 </tbody>
 </table>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Do not use the administrative user for the directory server as the oVirt administrative user. Create a user in the directory server specifically for use as the oVirt administrative user.</p>
+  <p><strong>Важно:</strong> не используйте пользователя-администратора сервера каталогов в качестве пользователя-администратора oVirt. Создайте пользователя на сервере каталогов специально для использования его в качестве администратора oVirt.</p>
 
 </div>
-<p>The table below describes advanced administrator roles which allow you to do more fine tuning of permissions for resources in the Administration Portal.</p>
+<p>Ниже в таблице описаны расширенные роли администратора, позволяющие производить более тонкую настройку прав доступа к ресурсам Портала администрирования.</p>
 
-<p><strong>Table&nbsp;13.4.&nbsp;oVirt System Administrator Roles - Advanced</strong></p>
+<p><strong>Таблица&nbsp;13.4.&nbsp;Расширенные административные роли в oVirt</strong></p>
 
 <table>
 <colgroup>
@@ -8768,264 +8768,264 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Role</p></th>
-<th align="left"><p>Privileges</p></th>
-<th align="left"><p>Notes</p></th>
+<th align="left"><p>Роль</p></th>
+<th align="left"><p>Привилегии</p></th>
+<th align="left"><p>Примечания</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>TemplateAdmin</p></td>
-<td align="left"><p>Administrator of a virtual machine template.</p></td>
-<td align="left"><p>Can create, delete, and configure the storage domains and network details of templates, and move templates between domains.</p></td>
+<td align="left"><p>Администратор шаблона ВМ.</p></td>
+<td align="left"><p>Может создавать, удалять и изменять параметры додменов хранилищ и сетевые параметры шаблонов, а также перемещать шаблоны между доменами.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>StorageAdmin</p></td>
-<td align="left"><p>Storage Administrator.</p></td>
-<td align="left"><p>Can create, delete, configure, and manage an assigned storage domain.</p></td>
+<td align="left"><p>Администратор хранилища.</p></td>
+<td align="left"><p>Может создавать, удалять, изменять параметры и управлять присвоенным доменом хранилища.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HostAdmin</p></td>
-<td align="left"><p>Host Administrator.</p></td>
-<td align="left"><p>Can attach, remove, configure, and manage a specific host.</p></td>
+<td align="left"><p>Администратор хоста.</p></td>
+<td align="left"><p>Может присоединять, удалять, изменять параметры и управлять конкретным хостом.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NetworkAdmin</p></td>
-<td align="left"><p>Network Administrator.</p></td>
-<td align="left"><p>Can configure and manage the network of a particular data center or cluster. A network administrator of a data center or cluster inherits network permissions for virtual pools within the cluster.</p></td>
+<td align="left"><p>Сетевой администратор.</p></td>
+<td align="left"><p>Может настраивать параметры и управлять сетью конкретного дата-центра или кластера. Сетевой администратор дата-центра или кластера наследует сетевые привилегии на виртуальные пулы в пределах кластера.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VmPoolAdmin</p></td>
-<td align="left"><p>System Administrator of a virtual pool.</p></td>
-<td align="left"><p>Can create, delete, and configure a virtual pool; assign and remove virtual pool users; and perform basic operations on a virtual machine in the pool.</p></td>
+<td align="left"><p>Системный администратор виртуального пула.</p></td>
+<td align="left"><p>Может создавать, удалять и настраивать параметры виртуального пула; присваивать и удалять пользователей виртуального пула; а также выполнять базовые операции на ВМ в пуле.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GlusterAdmin</p></td>
-<td align="left"><p>Gluster Storage Administrator.</p></td>
-<td align="left"><p>Can create, delete, configure, and manage Gluster storage volumes.</p></td>
+<td align="left"><p>Администратор хранилища Gluster.</p></td>
+<td align="left"><p>Может создавать, удалять, изменять параметры и управлять томами хранилища Gluster.</p></td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="ovirt-user-tasks">oVirt User Tasks</h3>
+<h3 id="ovirt-user-tasks">Задачи пользователя oVirt</h3>
 
-<h4 id="adding-users">Adding Users</h4>
+<h4 id="adding-users">Добавление пользователей</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Users in oVirt must be added from an external directory service before they can be assigned roles and permissions.</p>
+<p>Перед там, как присваивать пользователям роли и привилегии, их нужно добавить в oVirt из службы внешнего каталога .</p>
 
-<p><strong>Procedure&nbsp;13.1.&nbsp;Adding Users to oVirt</strong></p>
-
-<ol>
-  <li>Click the <strong>Users</strong> tab to display the list of authorized users.</li>
-  <li>Click <strong>Add</strong>. The <strong>Add Users and Groups</strong> window opens.
-<img alt="Add Users and Groups Window" title="fig:Add Users and Groups Window" src="./OVirt Administration Guide — oVirt_files/Add_Users.png">
-<strong>Figure&nbsp;13.4.&nbsp;Add Users and Groups Window</strong></li>
-  <li>In the <strong>Search</strong> drop down menu, select the appropriate domain. Enter a name or part of a name in the search text field, and click <strong>GO</strong>. Alternatively, click <strong>GO</strong> to view a list of all users and groups.</li>
-  <li>Select the check boxes for the appropriate users or groups.</li>
-  <li>Click <strong>OK</strong>.</li>
-</ol>
-
-<p><strong>Result</strong></p>
-
-<p>The added user displays on the <strong>Users</strong> tab.</p>
-
-<h4 id="viewing-user-information">Viewing User Information</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>You can view detailed information on each user in the <strong>Users</strong> tab.</p>
-
-<p><strong>Procedure&nbsp;13.2.&nbsp;Viewing User Information</strong></p>
+<p><strong>Действие&nbsp;13.1.&nbsp;Добавление пользователей в oVirt</strong></p>
 
 <ol>
-  <li>Click the <strong>Users</strong> tab to display the list of authorized users.</li>
-  <li>Select the user, or perform a search if the user is not visible on the results list.</li>
-  <li>The details pane displays for the selected user, usually with the <strong>General</strong> tab displaying general information, such as the domain name, email and status of the user.</li>
-  <li>The other tabs allow you to view groups, permissions, quotas, and events for the user. For example, to view the groups to which the user belongs, click the <strong>Directory Groups</strong> tab.</li>
+  <li>Перейдите на вкладку <strong>Пользователи</strong> чтобы увидеть список авторизованных пользователей.</li>
+  <li>Нажмите <strong>Добавить</strong>. Откроется окно <strong>Добавление пользователей и групп</strong>.
+<img alt="Add Users and Groups Window" title="Окно добавления пользователей и групп" src="./OVirt Administration Guide — oVirt_files/Add_Users.png">
+<strong>Рисунок&nbsp;13.4.&nbsp;Окно добавления пользователей и групп</strong></li>
+  <li>В выпадающем меню <strong>Поиск</strong> выберите соответствующий домен. Введите имя или часть имени в поле поиска и нажмите <strong>GO</strong>. Или нажмите <strong>Искать</strong> чтобы увидеть список всех пользователей и групп.</li>
+  <li>Отметьте галочками нужных пользователей и группы.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have viewed domain, permissions, quota, group and event information for a user.</p>
+<p>Добавленный пользователь появляется во вкладке <strong>Пользователи</strong>.</p>
 
-<h4 id="viewing-user-permissions-on-resources">Viewing User Permissions on Resources</h4>
+<h4 id="viewing-user-information">Просмотр информации о пользователе</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Users can be assigned permissions on specific resources or a hierarchy of resources. You can view the assigned users and their permissions on each resource.</p>
+<p>Подробные сведения о каждом пользователе можно найти во вкладке <strong>Пользователи</strong>.</p>
 
-<p><strong>Procedure&nbsp;13.3.&nbsp;Viewing User Permissions on Resources</strong></p>
+<p><strong>Действие&nbsp;13.2.&nbsp;Просмотр информации о пользователе</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select the resource in the results list.</li>
-  <li>Click the <strong>Permissions</strong> tab of the details pane to list the assigned users, the user's role, and the inherited permissions for the selected resource.</li>
+  <li>Перейдите на вкладку <strong>Пользователи</strong> чтобы увидеть список авторизованных пользователей.</li>
+  <li>Выберите пользователя или выполните поиск пользователя, если пользователь отсутствует в списке результатов.</li>
+  <li>Для выбранного пользователя будет показана панель сведений, обычно во вкладке <strong>Общие</strong>, где показана общая информация, такая, как доменное имя, почтовый адрес и статус пользователя.</li>
+  <li>В других вкладках можно просмотреть группы, права доступа, квоты и события пользователя. Например, чтобы просмотреть группы, в которых состоит пользователь, перейдите на вкладку <strong>Группы каталога</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have viewed the assigned users and their roles for a selected resource.</p>
+<p>Мы просмотрели информацию о домене, привилегиях, квоте, группе и событиях пользователя.</p>
 
-<h4 id="removing-users">Removing Users</h4>
+<h4 id="viewing-user-permissions-on-resources">Просмотр привилегий пользователя для ресурсов</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>When a user account is no longer required, remove it from oVirt.</p>
+<p>Пользователям можно назначить привилегии для конкретных ресурсов или иерархии ресурсов. Для каждого ресурса можно просмотреть назначенных пользователей и их привилегии.</p>
 
-<p><strong>Procedure&nbsp;13.4.&nbsp;Removing Users</strong></p>
+<p><strong>Действие&nbsp;13.3.&nbsp;Просмотр привилегий пользователя для ресурсов</strong></p>
 
 <ol>
-  <li>Click the <strong>Users</strong> tab to display the list of authorized users.</li>
-  <li>Select the user to be removed. Ensure the user is not running any virtual machines.</li>
-  <li>Click the <strong>Remove</strong> button. A message displays prompting you to confirm the removal. Click <strong>OK</strong>.</li>
+  <li>Используйте ресурсные вкладки, режим дерева или поисковый функционал чтобы найти и выделить ресурс в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Права доступа</strong> панели сведений чтобы увидеть список назначенных пользователей, роль пользователя и унаследованные права для выбранного рсурса.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The user is removed from oVirt, but not from the external directory.</p>
+<p>Мы просмотрели назначенных пользователей и их роли для выбранного ресурса.</p>
 
-<h4 id="configuring-roles">Configuring Roles</h4>
+<h4 id="removing-users">Удаление пользователей</h4>
 
-<p>Roles are predefined sets of privileges that can be configured from oVirt. Roles provide access and management permissions to different levels of resources in the data center, and to specific physical and virtual resources.</p>
+<p><strong>Описание задачи</strong></p>
 
-<p>With multilevel administration, any permissions which apply to a container object also apply to all individual objects within that container. For example, when a host administrator role is assigned to a user on a specific host, the user gains permissions to perform any of the available host operations, but only on the assigned host. However, if the host administrator role is assigned to a user on a data center, the user gains permissions to perform host operations on all hosts within the cluster of the data center.</p>
+<p>Если учётная запись пользователя больше не нужна, её можно удалить из oVirt.</p>
 
-<h4 id="creating-a-new-role">Creating a New Role</h4>
-
-<p><strong>Summary</strong></p>
-
-<p>If the role you require is not on oVirt's default list of roles, you can create a new role and customize it to suit your purposes.</p>
-
-<p><strong>Procedure&nbsp;13.5.&nbsp;Creating a New Role</strong></p>
+<p><strong>Действие&nbsp;13.4.&nbsp;Удаление пользователей</strong></p>
 
 <ol>
-  <li>On the header bar, click the <strong>Configure</strong> button to open the <strong>Configure</strong> window. The window shows a list of default User and Administrator roles, and any custom roles.</li>
-  <li>Click <strong>New</strong>. The <strong>New Role</strong> dialog box displays.
-<img alt="The New Role Dialog" title="fig:The New Role Dialog" src="./OVirt Administration Guide — oVirt_files/New_Role.png">
-<strong>Figure&nbsp;13.5.&nbsp;The New Role Dialog</strong></li>
-  <li>Enter the <strong>Name</strong> and <strong>Description</strong> of the new role.</li>
-  <li>Select either <strong>Admin</strong> or <strong>User</strong> as the <strong>Account Type</strong>.</li>
-  <li>Use the <strong>Expand All</strong> or <strong>Collapse All</strong> buttons to view more or fewer of the permissions for the listed objects in the <strong>Check Boxes to Allow Action</strong> list. You can also expand or collapse the options for each object.</li>
-  <li>For each of the objects, select or clear the actions you wish to permit or deny for the role you are setting up.</li>
-  <li>Click <strong>OK</strong> to apply the changes you have made. The new role displays on the list of roles.</li>
+  <li>Перейдите на вкладку <strong>Пользователи</strong> чтобы увидеть список авторизованных пользователей.</li>
+  <li>Выберите пользователя для уделения. Убедитесь, что пользователь не запустил ВМ.</li>
+  <li>Нажмите на кнопку <strong>Удалить</strong>. Будет показано сообщение с просьбой подтвердить удаление. Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have created a new role with permissions to specific resources. You can assign the new role to users.</p>
+<p>Пользователь был удалён из oVirt, но не из внешнего каталога.</p>
 
-<h4 id="editing-or-copying-a-role">Editing or Copying a Role</h4>
+<h4 id="configuring-roles">Настройка ролей</h4>
 
-<p><strong>Summary</strong></p>
+<p>Роли — это предварительно настроенный набор привилегий, которые можно настроить в oVirt. Роли предоставляют доступ и права для управления различными уровнями ресурсов в дата-центре и конкретными физическими и виртуальными ресурсами.</p>
 
-<p>You can change the settings for roles you have created, but you cannot change default roles. To change default roles, clone and modify them to suit your requirements.</p>
+<p>Во многоуровневом управлении любые права доступа, применяемые к объекту-контейнеру, также применяются ко всем отдельным объектам внутри этого контейнера. Например, когда роль администратора хоста присваивается пользователю на конкретном хосте, пользователь получает права на выполнение любой из доступных операций на хосте, но только на этом присвоенном хосте. Тем не менее, если роль администратора хоста присвоена пользователю в дата-центре, пользовтаель получает права на выполнение операций  на всех хостах в пределах кластера дата-центра.</p>
 
-<p><strong>Procedure&nbsp;13.6.&nbsp;Editing or Copying a Role</strong></p>
+<h4 id="creating-a-new-role">Создание новой роли</h4>
+
+<p><strong>Описание задачи</strong></p>
+
+<p>Если требуемая роль тсутствует в списке стандартных ролей oVirt, можно создать новую роль и настроить её согласно наначению.</p>
+
+<p><strong>Действие&nbsp;13.5.&nbsp;Создание новой роли</strong></p>
 
 <ol>
-  <li>On the header bar, click the <strong>Configure</strong> button to open the <strong>Configure</strong> window. The window shows a list of default User and Administrator roles, and any custom roles.</li>
-  <li>Select the role you wish to change. Click <strong>Edit</strong> to open the <strong>Edit Role</strong> window, or click <strong>Copy</strong> to open the <strong>Copy Role</strong> window.</li>
-  <li>If necessary, edit the <strong>Name</strong> and <strong>Description</strong> of the role.</li>
-  <li>Use the <strong>Expand All</strong> or <strong>Collapse All</strong> buttons to view more or fewer of the permissions for the listed objects. You can also expand or collapse the options for each object.</li>
-  <li>For each of the objects, select or clear the actions you wish to permit or deny for the role you are editing.</li>
-  <li>Click <strong>OK</strong> to apply the changes you have made.</li>
+  <li>На панели заголовка нажмите на кнопку <strong>Параметры</strong> чтобы открыть окно <strong>Параметры</strong>. В этом окне находится список станларных ролей пользоватекля и администратора, а также все задаваемые роли.</li>
+  <li>Нажмите <strong>Добавить</strong>. Будет показан диалог <strong>Добавить роль</strong>.
+<img alt="The New Role Dialog" title="Диалог добавления роли" src="./OVirt Administration Guide — oVirt_files/New_Role.png">
+<strong>Рисунок&nbsp;13.5.&nbsp;Диалог добавления роли</strong></li>
+  <li>Введите <strong>Имя</strong> и <strong>Описание</strong> новой роли.</li>
+  <li>Выберите <strong>Администратор</strong> или <strong>Пользователь</strong> в качестве <strong>Типа учётной записи</strong>.</li>
+  <li>Используйте кнопки <strong>Развернуть всё</strong> или <strong>Свернуть всё</strong> чтобы увидеть больше или меньше прав на указанные объекты в списке <strong>Чтобы разрешить действие, поставьте галочки</strong>. Также можно развернуть или свернуть параметры каждого объекта.</li>
+  <li>Для каждого объекта выберите или снимите отметку с действий, которые нужно ращзрешить или запретить в настраиваемой роли.</li>
+  <li>Нажмите <strong>OK</strong> для применения сделанных изменений. Новая роль будет показана в списке ролей.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have edited the properties of a role, or cloned a role.</p>
+<p>Мы создали новыую роль с правами на конкретные ресурсы. Новую роль можно присваивать пользователям.</p>
 
-<h3 id="assigning-an-administrator-or-user-role-to-a-resource">Assigning an Administrator or User Role to a Resource</h3>
+<h4 id="editing-or-copying-a-role">Изменение или копирование роли</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Assign administrator or user roles to resources to allow users to access or manage that resource.</p>
+<p>Можно изменять параметры созданных ролей, но не параметры стандартных ролей. Чтобы изменять параметры стандартных ролей, клонируйте их.</p>
 
-<p><strong>Procedure&nbsp;13.7.&nbsp;Assigning a Role to a Resource</strong></p>
+<p><strong>Действие&nbsp;13.6.&nbsp;Изменение или копирование роли</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select the resource in the results list.</li>
-  <li>Click the <strong>Permissions</strong> tab of the details pane to list the assigned users, the user's role, and the inherited permissions for the selected resource.</li>
-  <li>Click <strong>Add</strong> to open the <strong>Add Permission to User</strong> window.</li>
-  <li>Enter the name or user name of an existing user into the <strong>Search</strong> text box and click <strong>Go</strong>. Select a user from the resulting list of possible matches.</li>
-  <li>Select a role from the <strong>Role to Assign:</strong> drop-down menu.</li>
-  <li>Click <strong>OK</strong> to assign the role and close the window.</li>
+  <li>На панели заголовка нажмите на кнопку <strong>Параметры</strong> чтобы открыть окно <strong>Параметры</strong>. В этом окне находится список станларных ролей пользователя и администратора, а также все задаваемые роли.</li>
+  <li>Выберите роль для изменения. Нажмите <strong>Изменить</strong> чтобы открыть окно <strong>Изменить роль</strong>, или нажмите <strong>Копировать</strong> чтобы открыть окно <strong>Копировать роль</strong>.</li>
+  <li>При необходимости измените <strong>Имя</strong> и <strong>Описание</strong> роли.</li>
+  <li>Используйте кнопки <strong>Развернуть всё</strong> или <strong>Свернуть всё</strong> чтобы увидеть больше или меньше прав на указанные объекты в списке. Также можно развернуть или свернуть параметры каждого объекта.</li>
+  <li>Для каждого объекта выберите или снимите отметку с действий, которые нужно разрешить или запретить в настраиваемой роли.</li>
+  <li>Нажмите <strong>OK</strong> для применения сделанных изменений.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have assigned a role to a user; the user now has the inherited permissions of that role enabled for that resource.</p>
+<p>Мы изменили параметры роли или клонировали роль.</p>
 
-<h3 id="removing-an-administrator-or-user-role-from-a-resource">Removing an Administrator or User Role from a Resource</h3>
+<h3 id="assigning-an-administrator-or-user-role-to-a-resource">Присвоение роли администратора или пользователя ресурсу</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>Remove an administrator or user role from a resource; the user loses the inherited permissions associated with the role for that resource.</p>
+<p>Присвоение роли администратора или пользователя ресурсам для получения доступа к ресурсу или управления ресурсом.</p>
 
-<p><strong>Procedure&nbsp;13.8.&nbsp;Removing a Role from a Resource</strong></p>
+<p><strong>Действие&nbsp;13.7.&nbsp;Присвоение роли ресурсу</strong></p>
 
 <ol>
-  <li>Use the resource tabs, tree mode, or the search function to find and select the resource in the results list.</li>
-  <li>Click the <strong>Permissions</strong> tab of the details pane to list the assigned users, the user's role, and the inherited permissions for the selected resource.</li>
-  <li>Select the user to remove from the resource.</li>
-  <li>Click <strong>Remove</strong>. The <strong>Remove Permission</strong> window opens to confirm permissions removal.</li>
-  <li>Click <strong>OK</strong> to remove the user role.</li>
+  <li>Используйте ресурсные вкладки, режим дерева или поисковый функционал чтобы найти и выделить ресурс в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Права доступа</strong> панели сведений чтобы увидеть список назначенных пользователей, роль пользователя и унаследованные права для выбранного ресурса.</li>
+  <li>Нажмите <strong>Добавить</strong> чтобы открыть окно <strong>Добавить привилегию пользователю</strong>.</li>
+  <li>Введите имя или имя пользователя существующего пользователя в текстовое поле <strong>Поиск</strong> и нажмите <strong>Искать</strong>. Выберите пользователя из полученного списка возможных совпадений.</li>
+  <li>В выпадающем списке <strong>Присвоить роль:</strong> выберите роль.</li>
+  <li>Нажмите <strong>OK</strong> чтобы присвоить роль и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have removed the user's role, and the associated permissions, from the resource.</p>
+<p>Мы присвоили роль пользователю; у пользователя теперь есть унаследованные права этой роли на данный ресурс.</p>
 
-<h3 id="user-role-and-authorization-examples">User Role and Authorization Examples</h3>
+<h3 id="removing-an-administrator-or-user-role-from-a-resource">Удаление роли администратора или роли пользователя из ресурса</h3>
 
-<p>The following examples illustrate how to apply authorization controls for various scenarios, using the different features of the authorization system described in this chapter.</p>
+<p><strong>Описание задачи</strong></p>
 
-<p><strong>Example&nbsp;13.1.&nbsp;Cluster Permissions</strong></p>
+<p>Удаление роли администратора или роли пользователя из ресурса; пользователь теряет унаследованные права на этот ресурс, связанные с ролью.</p>
 
-<p>Sarah is the system administrator for the accounts department of a company. All the virtual resources for her department are organized under an oVirt <code>cluster</code> called <code>Accounts</code>. She is assigned the <code>ClusterAdmin</code> role on the accounts cluster. This enables her to manage all virtual machines in the cluster, since the virtual machines are child objects of the cluster. Managing the virtual machines includes editing, adding, or removing virtual resources such as disks, and taking snapshots. It does not allow her to manage any resources outside this cluster. Because <code>ClusterAdmin</code> is an administrator role, it allows her to use the Administration Portal to manage these resources, but does not give her any access via the User Portal.</p>
+<p><strong>Действие&nbsp;13.8.&nbsp;Удаление роли из ресурса</strong></p>
 
-<p><strong>Example&nbsp;13.2.&nbsp;VM PowerUser Permissions</strong></p>
+<ol>
+  <li>Используйте ресурсные вкладки, режим дерева или поисковый функционал чтобы найти и выделить ресурс в списке результатов.</li>
+  <li>Перейдите на вкладку <strong>Права доступа</strong> панели сведений чтобы увидеть список назначенных пользователей, роль пользователя и унаследованные права для выбранного ресурса.</li>
+  <li>Выберите пользователя для ужадения из ресурса.</li>
+  <li>Нажмите <strong>Удалить</strong>. Откроется окно <strong>Удалить права доступа</strong> для подтверждения удаления прав.</li>
+  <li>Нажмите <strong>OK</strong> для удаления роли пользователя.</li>
+</ol>
 
-<p>John is a software developer in the accounts department. He uses virtual machines to build and test his software. Sarah has created a virtual desktop called <code>johndesktop</code> for him. John is assigned the <code>UserVmManager</code> role on the <code>johndesktop</code> virtual machine. This allows him to access this single virtual machine using the User Portal. Because he has <code>UserVmManager</code> permissions, he can modify the virtual machine and add resources to it, such as new virtual disks. Because <code>UserVmManager</code> is a user role, it does not allow him to use the Administration Portal.</p>
+<p><strong>Итог</strong></p>
 
-<p>⁠<strong>Example&nbsp;13.3.&nbsp;Data Center Power User Role Permissions</strong></p>
+<p>Мы удалили роль пользователя и связанные привилегии из ресурса.</p>
 
-<p>Penelope is an office manager. In addition to her own responsibilities, she occasionally helps the HR manager with recruitment tasks, such as scheduling interviews and following up on reference checks. As per corporate policy, Penelope needs to use a particular application for recruitment tasks.</p>
+<h3 id="user-role-and-authorization-examples">Роль пользователя и примеры авторизации</h3>
 
-<p>While Penelope has her own machine for office management tasks, she wants to create a separate virtual machine to run the recruitment application. She is assigned <code>PowerUserRole</code> permissions for the data center in which her new virtual machine will reside. This is because to create a new virtual machine, she needs to make changes to several components within the data center, including creating the virtual machine disk image in the storage domain.</p>
+<p>Следующие примеры иллюстрируют применение контроля авторизации в различных сценариях, с использованием различных возможностей системы авторизации, описанных в этом разделе.</p>
 
-<p>Note that this is not the same as assigning <code>DataCenterAdmin</code> privileges to Penelope. As a PowerUser for a data center, Penelope can log in to the User Portal and perform virtual machine-specific actions on virtual machines within the data center. She cannot perform data center-level operations such as attaching hosts or storage to a data center.</p>
+<p><strong>Пример&nbsp;13.1.&nbsp;Кластерные привилегии</strong></p>
 
-<p><strong>Example&nbsp;13.4.&nbsp;Network Administrator Permissions</strong></p>
+<p>Света — системный администратор бухгалтерии фирмы. Все виртуальные ресурсы её отделения организованы под управлением <code>кластера</code> oVirt  с именем <code>Accounts</code>. На кластере бухгалтерии Свете присвоена роль <code>ClusterAdmin</code>, что даёт ей возможность управлять всеми виртуальными машиами кластера, т.к. машины являются дочерними объектами кластера. Управление ВМ включает в себя изменение, добавление или удаление виртуальных ресурсов, таких, как диски, а также создание снимков. Управлять любыми ресурсами вне этого кластера Света не может. Поскольку <code>ClusterAdmin</code> — это роль администратора, то она даёт возможность ей использовать Портал адмпнистраирования для управления этими ресурсами, но не даёт никакого доступа через Пользовтаельский портал.</p>
 
-<p>Chris works as the network administrator in the IT department. Her day-to-day responsibilities include creating, manipulating, and removing networks in the department's oVirt environment. For her role, she requires administrative privileges on the resources and on the networks of each resource. For example, if Chris has <code>NetworkAdmin</code> privileges on the IT department's data center, she can add and remove networks in the data center, and attach and detach networks for all virtual machines belonging to the data center.</p>
+<p><strong>Пример&nbsp;13.2.&nbsp;Привилегии PowerUser виртуальной машины</strong></p>
 
-<p>In addition to managing the networks of the company's virtualized infrastructure, Chris also has a junior network administrator reporting to her. The junior network administrator, Pat, is managing a smaller virtualized environment for the company's internal training department. Chris has assigned Pat <code>NetworkUser</code> permissions and <code>UserVmManager</code> permissions for the virtual machines used by the internal training department. With these permissions, Pat can perform simple administrative tasks such as adding network interfaces onto virtual machines in the Power User Portal. However, he does not have permissions to alter the networks for the hosts on which the virtual machines run, or the networks on the data center to which the virtual machines belong.</p>
+<p>Василий — разработчик ПО в бухгалтерии. Он использует ВМ для сборки и тестирования своих программ. Света создала для него виртуальный рабочий стол с именем <code>vasyadesktop</code>. Василию присвоена роль <code>UserVmManager</code> на виртуальной машине <code>vasyadesktop</code>. Это даёт ему возможность доступа к этой единственной ВМ через Пользовательский портал. Поскольку Василий использует привилегии <code>UserVmManager</code>, он может изменять ВМ и добавлять ей ресурсы, например, новые виртуальные диски. Поскольку <code>UserVmManager</code> — это роль пользователя, она не даёт ему возможности использовать Портал администрирования.</p>
 
-<p><strong>Example&nbsp;13.5.&nbsp;Custom Role Permissions</strong></p>
+<p>⁠<strong>Пример&nbsp;13.3.&nbsp;Привилегии роли продвинутого пользователя дата-центра</strong></p>
 
-<p>Rachel works in the IT department, and is responsible for managing user accounts in oVirt. She needs permission to add user accounts and assign them the appropriate roles and permissions. She does not use any virtual machines herself, and should not have access to administration of hosts, virtual machines, clusters or data centers. There is no built-in role which provides her with this specific set of permissions. A custom role must be created to define the set of permissions appropriate to Rachel's positi</p>
+<p>Марина — руководитель отдела. В дополнение к её собственным обязанностям, она иногда помогает начальнику отдела кадров в задачах найма работников, таких, как составление расписания собеседований и последующая проверка рекомендаций. Согласно корпоративной политике, Марине требуется использовать частное приложение для задач подбора сотрудников.</p>
 
-<p><img alt="UserManager Custom Role" title="UserManager Custom Role" src="./OVirt Administration Guide — oVirt_files/UserManager.png"></p>
+<p>Хотя у Марины есть своя собственная машина для задач управления отделом, ей необходимо создать отдельную ВМ для запуска приложения по работе с кадрами. Марине присвоены привилегии <code>PowerUserRole</code> для дата-центра, в котором будет расположена её новая ВМ, т.к. для создания новой ВМ необходимо внести изменения в некоторые компоненты в пределах дата-центра, включая создание образа диска ВМ в домене хранилища.</p>
 
-<p><strong>Figure&nbsp;13.6.&nbsp;UserManager Custom Role</strong></p>
+<p>Заметьте, что это не то же самое, что присвоение привилегий <code>DataCenterAdmin</code> Марине. Имея привилегии PowerUser для дата-центра, Марина может авторизоваться на Пользовательском портале и выполнять машино-ориентированные действия на ВМ в пределах дата-центра. Но она не может выполнять операции на уровне дата-центра, такие, как присоединение хостов или хранилища к дата-центру.</p>
 
-<p>The <strong>UserManager</strong> custom role shown above allows manipulation of users, permissions and roles. These actions are organized under <code>System</code> - the top level object of the hierarchy shown in Figure&nbsp;13.6. This means they apply to all other objects in the system. The role is set to have an <strong>Account Type</strong> of <strong>Admin</strong>. This means that when she is assigned this role, Rachel can only use the Administration Portal, not the User Portal.</p>
+<p><strong>Пример&nbsp;13.4.&nbsp;Привилегии сетевого администратора</strong></p>
 
-<h2 id="quotas-and-service-level-agreement-policy">⁠Quotas and Service Level Agreement Policy</h2>
+<p>Ольга работает сетевым администратором в отделе IT. В её повседневные задачи входит создание, удаление и управление сетями в окружении oVirt отдела. Для её роли ей требуется административные привилегии на ресурсы и сети каждого ресурса. Например, если у Ольги есть привилегии <code>NetworkAdmin</code> на дата-центра отдела IT, она может добавлять и удалять сети в дата-центр, а также присоединять и отсоединять сети для всех виртуальных машин, принадлежащих дата-центру.</p>
 
-<h3 id="introduction-to-quota">Introduction to Quota</h3>
+<p>В дополнение к задачам управления сетями виртуализованной инфраструктуры фирмы, под руководством Ольги работает младший сетевой администратор, предоставляющий ей отчёты. Младший сетевой администратор, Пётр, управляет небольшим виртуализованным окружением отделения внутрифирменной подготовки. Ольга присвоила Петру привилегии <code>NetworkUser</code> и привилегии <code>UserVmManager</code> на виртуальные машины, используемые отделением внутрифирменной подготовки. Имея эти привилегии, Пётр может выполнять простые административные задачи, например, добавление сетевых интерфейсов виртуальным машинам через Пользовательский портал. Тем не менее, у Петра нет прав изменять параметры сети хостов, на которых выполняются ВМ, или сетей дата-центра, которому принадлежат виртуальные машины.</p>
 
-<p>Quota is a resource limitation tool provided with oVirt. Quota may be thought of as a layer of limitations on top of the layer of limitations set by User Permissions.</p>
+<p><strong>Примеры&nbsp;13.5.&nbsp;Настраиваемые привилегии роли</strong></p>
 
-<p>Quota is a data center object.</p>
+<p>Татьяна работает в отделе IT и ответственна за управление учётными записями пользователей в oVirt. Ей нужны права для добавления учётных записей пользователей и присвоения им необходимых ролей и привилегий. Она не использует виртуальные машины и у неё не должно быть доступа к администрированию хостов, виртуальных машин, кластеров или дата-центров. Не существует стандартной роли, которая предоставляла бы ей такой специфический набор привилегий. Для настройки набора привилегий, необходимых Татьяне, нужно создать настраиваемую роль.</p>
 
-<p>Quota allows administrators of oVirt environments to limit user access to memory, CPU, and storage. Quota defines the memory resources and storage resources an administrator can assign users. As a result users may draw on only the resources assigned to them. When the quota resources are exhausted, oVirt does not permit further user actions.</p>
+<p><img alt="UserManager Custom Role" title="Настраиваемая роль UserManager" src="./OVirt Administration Guide — oVirt_files/UserManager.png"></p>
 
-<p>There are two different kinds of Quota:</p>
+<p><strong>Рисунок&nbsp;13.6.&nbsp;Настраиваемая роль UserManager</strong></p>
 
-<p><strong>Table&nbsp;14.1.&nbsp;The Two Different Kinds of Quota</strong></p>
+<p>Показанная выше настраиваемая роль <strong>UserManager</strong> даёт возожность управления пользователями, привилегиями и ролями. Эти действия организованы в <code>Систему</code> — объект самого высокого уровня в иерархии, показанный на Рисунке&nbsp;13.6. Это означает, что указанные действия применяются ко всем другим объектам в системе. Роль настроена на <strong>Тип учётной записи</strong> <strong>Администратора</strong>. Это означает, что после присвоения этой роли Татьяна может использовать только Портал администрирования, но не Пользовательский портал.</p>
+
+<h2 id="quotas-and-service-level-agreement-policy">⁠Квоты и политика соглашения об уровне обслуживания (SLA)</h2>
+
+<h3 id="introduction-to-quota">Что такое квота</h3>
+
+<p>Квота — это инструмент ограничения ресурсов, предоставляемых oVirt. Квоту можно представить как слой ограничений поверх слоя ограничений, установленных правами доступа пользователей.</p>
+
+<p>Квота — это объект дата-центра.</p>
+
+<p>Квота даёт возможность администраторам окружений oVirt ограничить доступ пользователей к ресурсам памяти, ЦП и хранилища. Квота определяет объём ресурсов памяти и хранилища, который администратор может выделить пользователям. В связи с этим, пользователи могут рассчитывать только на выделенные им ресурсы. При превышении квоты ресурсов oVirt запрещает дальнейшие действия пользователя.</p>
+
+<p>Существует два различных типа квоты:</p>
+
+<p><strong>Таблица&nbsp;14.1.&nbsp;Два различных типа квоты</strong></p>
 
 <table>
 <colgroup>
@@ -9034,25 +9034,25 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Quota type</p></th>
-<th align="left"><p>Definition</p></th>
+<th align="left"><p>Тип квоты</p></th>
+<th align="left"><p>Определение</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run-time Quota</p></td>
-<td align="left"><p>This quota limits the consumption of runtime resources, like CPU and memory.</p></td>
+<td align="left"><p>Квота времени выполнения</p></td>
+<td align="left"><p>Данный тип квоты ограничивает потребления ресурсов времени выполнения, таких, как ЦП и память.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Storage Quota</p></td>
-<td align="left"><p>This quota limits the amount of storage available.</p></td>
+<td align="left"><p>Квота хранилища</p></td>
+<td align="left"><p>Данный тип квоты ограничивает объём доступного хранилища.</p></td>
 </tr>
 </tbody>
 </table>
 
-<p>Quota, like SELinux, has three modes:</p>
+<p>Квота, как и SELinux, имеет три режима:</p>
 
-<p><strong>Table&nbsp;14.2.&nbsp;Quota Modes</strong></p>
+<p><strong>Таблица&nbsp;14.2.&nbsp;Режимы квоты</strong></p>
 
 <table>
 <colgroup>
@@ -9061,122 +9061,122 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Quota Mode</p></th>
-<th align="left"><p>Function</p></th>
+<th align="left"><p>Режим квоты</p></th>
+<th align="left"><p>Функционал</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Enforced</p></td>
-<td align="left"><p>This mode puts into effect the Quota that you have set in audit mode, limiting resources to the group or user affected by the quota.</p></td>
+<td align="left"><p>Принудительный</p></td>
+<td align="left"><p>Этот режим активирует квоту, настроенную в режиме аудита, ограничивая ресурсы группы пользователей, подпадающих под эту квоту.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Audit</p></td>
-<td align="left"><p>This mode allows you to change Quota settings. Choose this mode to increase or decrease the amount of runtime quota and the amount of storage quota available to users affected by it.</p></td>
+<td align="left"><p>Аудит</p></td>
+<td align="left"><p>В этом режиме можно изменять параметры квоты. Выберите этот режим для увеличения или уменьшения объёма квоты времени выполнения и объёма квоты хранилища, доступного подпадающим под эту квоту пользователям.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Disabled</p></td>
-<td align="left"><p>This mode turns off the runtime and storage limitations defined by the quota.</p></td>
+<td align="left"><p>Отключён</p></td>
+<td align="left"><p>Этот режим отключает ограничения времени выполнения и хранилища, определённые квотой.</p></td>
 </tr>
 </tbody>
 </table>
 
-<p>When a user attempts to run a virtual machine, the specifications of the virtual machine are compared to the storage allowance and the runtime allowance set in the applicable quota.</p>
+<p>При попытке пользователя запустить виртуальную машину, спецификции машины сравниваются с лимитом хранилища и с лимитом времени выполнения, указанных в применяемой квоте.</p>
 
-<p>If starting a virtual machine causes the aggregated resources of all running virtual machines covered by a quota to exceed the allowance defined in the quota, then oVirt refuses to run the virtual machine.</p>
+<p>Если при запуске виртуальной машины все объединённые ресурсы всех выполняемых виртуальных машин, охваченных квотой, превышают лимит, определённый квотой, то в этом случае oVirt откажется запускать машину.</p>
 
-<p>When a user creates a new disk, the requested disk size is added to the aggregated disk usage of all the other disks covered by the applicable quota. If the new disk takes the total aggregated disk usage above the amount allowed by the quota, disk creation fails.</p>
+<p>При создании пользователем нового диска, запрошенный размер диска добавляется к общему объёму использования дисковых ресурсов всех других дисков, охваченных применяемой квотой. Если добавление нового диска приводит к превышению общего объёма использования дисковых ресурсов, разрешённого квотой, диск не будет создан.</p>
 
-<p>Quota allows for resource sharing of the same hardware. It supports hard and soft thresholds. Administrators can use a quota to set thresholds on resources. These thresholds appear, from the user's point of view, as 100% usage of that resource. To prevent failures when the customer unexpectedly exceeds this threshold, the interface supports a "grace" amount by which the threshold can be briefly exceeded. Exceeding the threshold results in a warning sent to the customer.</p>
+<p>Квота даёт возможность предоставления общего доступа к аппаратным ресурсам. Поддерживается мягкая и жёсткая квота. Администраторы могут использовать квоту для установки порога ресурсов. С точки зрения пользователя, эти пороги представляют 100% использование этого ресурса. Для предотвращения сбоев при внезапном превышении этого порога, в интерфейсе существует поддержка «льготного» превышения порога, который включается на короткое время. При превышении порога клиенту выводится предупреждение.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Quota imposes limitations upon the running of virtual machines. Ignoring these limitations is likely to result in a situation in which you cannot use your virtual machines and virtual disks.</p>
+  <p><strong>Важно:</strong> квота налагает ограничения на выполняемые виртуальные машины. Игнорирование этих ограничений скорей всего приведёт к ситуациям, когда использование ВМ и виртуальных дисков будет невозможно.</p>
 
 </div>
-<p>When quota is running in enforced mode, virtual machines and disks that do not have quotas assigned cannot be used.</p>
+<p>При выполнении квоты в принудительном режиме, виртуальные машины и диски, не имеющие присвоенной квоты, не могут использоваться.</p>
 
-<p>To power on a virtual machine, a quota must be assigned to that virtual machine.</p>
+<p>Чтобы иметь возможность включить ВМ, ей должна быть присвоена квота.</p>
 
-<p>To create a snapshot of a virtual machine, the disk associated with the virtual machine must have a quota assigned.</p>
+<p>Чтобы иметь возможность создать снимок виртуальной машины, диску, связанному с машиной, должна быть присвоена квота.</p>
 
-<p>When creating a template from a virtual machine, you are prompted to select the quota that you want the template to consume. This allows you to set the template (and all future machines created from the template) to consume a different quota than the virtual machine and disk from which the template is generated.</p>
+<p>При создании шаблона на базе ВМ выводится сообщение о выборе квоты, которую должен потребить шаблон. Это даёт возможность настроить шаблон (и будущие ВМ, созданные на базе этого шаблона) на потребление квоты, отличной от той, которую потребляет машина и диск, на базе которых создаётся шаблон.</p>
 
-<h3 id="shared-quota-and-individually-defined-quota">Shared Quota and Individually Defined Quota</h3>
+<h3 id="shared-quota-and-individually-defined-quota">Общая и индивидуальная квота</h3>
 
-<p>Users with SuperUser permissions can create quotas for individual users or quotas for groups.</p>
+<p>Пользователи с привилегиями SuperUser могут создавать квоты для отдельных пользователей или квоты для групп.</p>
 
-<p>Group quotas can be set for Active Directory users. If a group of ten users are given a quota of 1TB of storage and one of the ten users fills the entire terabyte, then the entire group will be in excess of the quota and none of the ten users will be able to use any of the storage associated with their group.</p>
+<p>Групповые квоты можно настроить для пользователей Active Directory. Если группе, состоящей из 10 участников, присвоена квота на использование 1ТБ дискового пространства, и один из десяти пользователей использует весь 1ТБ, то вся группа превысит квоту, и ни один из 10 пользователей не сможет использовать дисковое пространство, связанное с этой группой.</p>
 
-<p>An individual user's quota is set for only the individual. Once the individual user has used up all of his or her storage or runtime quota, the user will be in excess of the quota and the user will no longer be able to use the storage associated with his or her quota.</p>
+<p>Индивидуальная пользовательская квота настраивается для одного отдельного пользователя. Как только отдельный пользователь использует всю свою квоту времени выполнения или хранилища, квота пользователя будет превышена, и этот пользователь больше не сможет использовать дисковое пространство, привязанное к его квоте.</p>
 
-<h3 id="quota-accounting">Quota Accounting</h3>
+<h3 id="quota-accounting">Расчёт квоты</h3>
 
-<p>When a quota is assigned to a consumer or a resource, each action by that consumer or on the resource involving storage, vCPU, or memory results in quota consumption or quota release.</p>
+<p>При присвоении квоты клиенту или ресурсу, каждое действие этого клиента или действие, касающееся ресурса, включая хранилище, виртуальный ЦП или память, ведёт к потреблению или высвобождению квоты.</p>
 
-<p>Since the quota acts as an upper bound that limits the user's access to resources, the quota calculations may differ from the actual current use of the user. The quota is calculated for the max growth potential and not the current usage.</p>
+<p>Поскольку квота действует как верхняя граница, ограничивающая доступ пользователя к ресурсам, то рассчитанная квота может отличаться от текущего потребления ресурсов пользователем. Квота рассчитывается на максимальный потенциальный рост, а не исходя из текущего использования.</p>
 
-<p><strong>Example&nbsp;14.1.&nbsp;Accounting example</strong></p>
+<p><strong>Пример&nbsp;14.1.&nbsp;Пример расчёта</strong></p>
 
-<p>A user runs a virtual machine with 1 vCPU and 1024 MB memory. The action consumes 1 vCPU and 1024 MB of the quota assigned to that user. When the virtual machine is stopped 1 vCPU and 1024 MB of RAM are released back to the quota assigned to that user. Run-time quota consumption is accounted for only during the actual run-time of the consumer.</p>
+<p>Пользователь работает на ВМ, имеющей 1 вЦП и 1024 МБ памяти. Действие потребляет 1 вЦП и 1024 МБ квоты, присвоенной этому пользователю. При остановке ВМ, 1 вЦП и 1024 МБ памяти высвобождается обратно в квоту. Потребление квоты времени выполнения рассчитывается только исходя из текущего времени выполнения потребителя.</p>
 
-<p>A user creates a virtual thin provision disk of 10GB. The actual disk usage may indicate only 3GB of that disk are actually in use. The quota consumption, however, would be 10GB, the max growth potential of that disk.</p>
+<p>Пользователь создаёт виртуальный диск с тонким резервированием в 10ГБ. Фактическое использование диска может указывать, что используется только 3ГБ. Тем не менее, потребление квоты будет равно 10ГБ, т.е. максимальный потенциал этого диска.</p>
 
-<h3 id="enabling-and-changing-a-quota-mode-in-a-data-center">Enabling and Changing a Quota Mode in a Data Center</h3>
+<h3 id="enabling-and-changing-a-quota-mode-in-a-data-center">Включение и изменение режима квоты в дата-центре</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure enables or changes the quota mode in a data center. You must select a quota mode before you can define quotas. You must be logged in to the Web Administration Portal to follow the steps of this procedure.</p>
+<p>Это действие включает или изменяет режим квоты в дата-центре. Перед настройкой квот необходимо выбрать режим квоты. Для выполнения шагов этого действия необходимо выполнить вход на Портале администрирования.</p>
 
-<p>Use <strong>Audit</strong> mode to test your quota to make sure it works as you expect it to. You do not need to have your quota in <strong>Audit</strong> mode to create or change a quota.</p>
+<p>Используйте режим <strong>Аудита</strong> для тестирования квоты, чтобы убедиться, что она работает так, как ожидается. Для создания или изменения парметров квоты, режим <strong>Аудита</strong> не нужен.</p>
 
-<p><strong>Procedure&nbsp;14.1.&nbsp;Enabling and Changing Quota in a Data Center</strong></p>
-
-<ol>
-  <li>Click the <strong>Data Centers</strong> tab in the Navigation Pane.</li>
-  <li>From the list of data centers displayed in the Navigation Pane, choose the data center whose quota policy you plan to edit.</li>
-  <li>Click <strong>Edit</strong> in the top left of the Navigation Pane. An <strong>Edit Data Center</strong> window opens.</li>
-  <li>In the <strong>Quota Mode</strong> drop-down, change the quota mode to <strong>Enforced</strong>.</li>
-  <li>Click <strong>OK</strong>.</li>
-</ol>
-
-<p><strong>Result</strong></p>
-
-<p>You have now enabled a quota mode at the Data Center level. If you set the quota mode to <strong>Audit</strong> during testing, then you must change it to <strong>Enforced</strong> in order for the quota settings to take effect.</p>
-
-<h3 id="creating-a-new-quota-policy">Creating a New Quota Policy</h3>
-
-<p><strong>Summary</strong></p>
-
-<p>You have enabled quota mode, either in Audit or Enforcing mode. You want to define a quota policy to manage resource usage in your data center</p>
-
-<p><strong>Procedure&nbsp;14.2.&nbsp;Creating a New Quota Policy</strong></p>
+<p><strong>Действие&nbsp;14.1.&nbsp;Включение и изменение квоты в дата-центре</strong></p>
 
 <ol>
-  <li>In tree mode, select the data center. The <strong>Quota</strong> tab appears in the Navigation Pane.</li>
-  <li>Click the <strong>Quota</strong> tab in the Navigation Pane.</li>
-  <li>Click <strong>Add</strong> in the Navigation Pane. The <strong>New Quota</strong> window opens.</li>
-  <li>Fill in the <strong>Name</strong> field with a meaningful name. Fill in the <strong>Description</strong> field with a meaningful name.</li>
-  <li>In the <strong>Memory &amp; CPU</strong> section of the <strong>New Quota</strong> window, use the green slider to set <strong>Cluster Threshold</strong>.</li>
-  <li>In the <strong>Memory &amp; CPU</strong> section of the <strong>New Quota</strong> window, use the blue slider to set <strong>Cluster Grace</strong>.</li>
-  <li>Click <strong>Edit</strong> on the bottom-right of the <strong>Memory &amp; CPU</strong> field. An <strong>Edit Quota</strong> window opens.</li>
-  <li>Under the <strong>Memory</strong> field, select either the <strong>Unlimited</strong> radio button (to allow limitless use of Memory resources in the cluster), or select the <strong>limit to</strong> radio button to set the amount of memory set by this quota. If you select the <strong>limit to</strong> radio button, input a memory quota in megabytes (MB) in the <strong>MB</strong> field.</li>
-  <li>Under the <strong>CPU</strong> field, select either the <strong>Unlimited</strong> radio button or the <strong>limit to</strong> radio button to set the amount of CPU set by this quota. If you select the <strong>limit to</strong> radio button, input a number of vCPUs in the <strong>vCpus</strong> field.</li>
-  <li>Click <strong>OK</strong> in the <strong>Edit Quota</strong> window.</li>
-  <li>In the <strong>Storage</strong> section of the <strong>New Quota</strong> window, use the green slider to set <strong>Storage Threshold</strong>.</li>
-  <li>In the <strong>Storage</strong> section of the <strong>New Quota</strong> window, use the blue slider to set <strong>Storage Grace</strong>.</li>
-  <li>Click <strong>Edit</strong> in the <strong>Storage</strong> field. The <strong>Edit Quota</strong> window opens.</li>
-  <li>Under the <strong>Storage Quota</strong> field, select either the <strong>Unlimited</strong> radio button (to allow limitless use of Storage) or the <strong>limit to</strong> radio button to set the amount of storage to which quota will limit users. If you select the <strong>limit to</strong> radio button, input a storage quota size in gigabytes (GB) in the <strong>GB</strong> field.</li>
-  <li>Click <strong>OK</strong> in the <strong>Edit Quota</strong> window. You are returned to the <strong>New Quota</strong> window.</li>
-  <li>Click <strong>OK</strong> in the <strong>New Quota</strong> window.</li>
+  <li>Перейдите на вкладку <strong>Дата-центры</strong> на панели навигации.</li>
+  <li>В списке дата-центров на панели навигации выберите дата-центр, политику квоты которого необходимо изменить.</li>
+  <li>Нажмите на кнопку <strong>Изменить</strong> в верхнем левом углу панели навигации. Откроется окно <strong>Изменить дата-центр</strong>.</li>
+  <li>В выпадающем списке <strong>Режим квоты</strong> измените режим квоты на <strong>Принудительно</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have created a new quota policy.</p>
+<p>Мы включили режим квоты на уровне дата-центра. Если во время тестирования был вклюён режим <strong>Аудит</strong>, то для того, чтобы изменения квоты вступили в силу, режим нужно поменять на <strong>Принудительно</strong>.</p>
 
-<h3 id="explanation-of-quota-threshold-settings">Explanation of Quota Threshold Settings</h3>
+<h3 id="creating-a-new-quota-policy">Создание новой политики квоты</h3>
 
-<p><strong>Table&nbsp;14.3.&nbsp;Quota thresholds and grace</strong></p>
+<p><strong>Описание задачи</strong></p>
+
+<p>Мы включили режим квоты, Аудит или Принудительный. Нам нужно определить политику квоты для управления потреблением ресурсов в дата-центре</p>
+
+<p><strong>Действие&nbsp;14.2.&nbsp;Создание новой политики квоты</strong></p>
+
+<ol>
+  <li>В режиме дерева выберите дата-центр. Вкладка <strong>Квота</strong> расположена на панели навигации.</li>
+  <li>Перейдите на владку <strong>Квота</strong> на панели навигации.</li>
+  <li>Нажмите <strong>Добавить</strong> на панели навигации. Откроется окно <strong>Добавить квоту</strong>.</li>
+  <li>В поле <strong>Имя</strong> введите значащее имя. В поле <strong>Описание</strong> введите значащее имя.</li>
+  <li>В разделе <strong>Память &amp; ЦП</strong> окна <strong>Добавить квоту</strong> с помощью зелёного бегунка установите <strong>Порог кластера</strong>.</li>
+  <li>В разделе <strong>Память &amp; ЦП</strong> окна <strong>Добавить квоту</strong> с помощью синего бегунка установите <strong>Льготу кластера</strong>.</li>
+  <li>Нажмите на кнопку <strong>Изменить</strong> в нижнем правом углу поля <strong>Память &amp; ЦП</strong>. Будет открыто окно <strong>Изменить квоту</strong>.</li>
+  <li>В поле <strong>Память</strong> отметьте флажком пункт <strong>Без ограничений</strong> (чтобы рарешить неограниченное потребление ресурсов памяти на кластере), или отметьте пункт <strong>ограничить до</strong> чтобы указать предел объёма памяти для этой квоты. При выборе пункта <strong>ограничить до</strong> введите квоту памяти в мегабайтах (МБ) в поле <strong>МБ</strong>.</li>
+  <li>В поле <strong>ЦП</strong> отметьте пункт <strong>Без ограничений</strong> или пункт <strong>ограничить до</strong> чтобы указать предел ресурсов ЦП для этой квоты. При выборе пункта <strong>ограничить до</strong>, введите число вЦП в поле <strong>вЦП</strong>.</li>
+  <li>Нажмите <strong>OK</strong> в окне <strong>Изменить квоту</strong>.</li>
+  <li>В разделе <strong>Хранилище</strong> окна <strong>Добавить квоту</strong> с помощью зелёного бегунка установите <strong>Порог хранилища</strong>.</li>
+  <li>В разделе <strong>Хранилище</strong> окна <strong>Добавить квоту</strong> с помощью синего бегунка установите <strong>Льготу хранилища</strong>.</li>
+  <li>Нажмите <strong>Изменить</strong> в поле <strong>Хранилище</strong>. Откроется окно <strong>Изменить квоту</strong>.</li>
+  <li>В поле <strong>Квота хранилища</strong> отметьте либо пункт <strong>Без ограничений</strong> (чтобы рарешить неограниченное потребление дисковых ресурсов) либо <strong>ограничить до</strong> чтобы установить предел квоты хранилища для пользователей. При выборе пункта <strong>ограничить до</strong> введите размер квоты хранилища в гигабайтах (ГБ) в поле <strong>ГБ</strong>.</li>
+  <li>Нажмите <strong>OK</strong> в окне <strong>Изменить квоту</strong>. Будет выполнено возвращение в окно <strong>Добавить квоту</strong>.</li>
+  <li>Нажмите <strong>OK</strong> в окне <strong>Добавить квоту</strong>.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Мы создали новую политику квоты.</p>
+
+<h3 id="explanation-of-quota-threshold-settings">Введение параметров порога квоты</h3>
+
+<p><strong>Таблица&nbsp;14.3.&nbsp;Пороги и льготы квоты</strong></p>
 
 <table>
 <colgroup>
@@ -9185,201 +9185,201 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Setting</p></th>
-<th align="left"><p>Definition</p></th>
+<th align="left"><p>Параметр</p></th>
+<th align="left"><p>Определение</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Cluster Threshold</p></td>
-<td align="left"><p>The amount of cluster resources available per data center.</p></td>
+<td align="left"><p>Порог кластера</p></td>
+<td align="left"><p>Объём доступных кластерных ресурсов, на каждый дата-центр.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Cluster Grace</p></td>
-<td align="left"><p>The amount of the cluster available for the data center after exhausting the data center's Cluster Threshold.</p></td>
+<td align="left"><p>Льгота кластера</p></td>
+<td align="left"><p>Объём кластерных ресурсов, доступных дата-центру после превышения порога кластера дата-центра.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Storage Threshold</p></td>
-<td align="left"><p>The amount of storage resources available per data center.</p></td>
+<td align="left"><p>Порог хранилища</p></td>
+<td align="left"><p>Объём доступных ресурсов хрнаилища, на каждый дата-центр.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Storage Grace</p></td>
-<td align="left"><p>The amount of storage available for the data center after exhausting the data center's Storage Threshold.</p></td>
+<td align="left"><p>Льгота хранилища</p></td>
+<td align="left"><p>Объём ресурсов хранилища, доступных дата-центру после превышения порога хранилища для кластера дата-центра.</p></td>
 </tr>
 </tbody>
 </table>
 
-<p>If a quota is set to 100GB with 20% Grace, then consumers are blocked from using storage after they use 120GB of storage. If the same quota has a Threshold set at 70%, then consumers receive a warning when they exceed 70GB of storage consumption (but they remain able to consume storage until they reach 120GB of storage consumption.) Both "Threshold" and "Grace" are set relative to the quota. "Threshold" may be thought of as the "soft limit", and exceeding it generates a warning. "Grace" may be thought of as the "hard limit", and exceeding it makes it impossible to consume any more storage resources.</p>
+<p>Если квота установлена на 100GB с льготой в 20%, то потребителям запрещено использовать хранилище после того, как используемый объём достигнет 120ГБ. Если та же квота имеет утановленный порог в 70%, то потребителям выводится предупреждение о том, что потребление дискового пространства превышает 70ГБ (но они по-прежнему могут потреблять ресурсы хранилища до тех пор, пока не будет достигнуто 120ГБ.) Значение как «порога», так и «льготы» указываются относительно квоты. «Порог» можно представить в виде «мягкого предела», и при его превышении выводится предупреждение. «Лимит» можно представить в виде «жёсткого предела», и после его превышения дальнейшее использование дисковых ресурсов невозможно.</p>
 
-<h3 id="assigning-a-quota-to-an-object">Assigning a Quota to an Object</h3>
+<h3 id="assigning-a-quota-to-an-object">Присвоение квоты объекту</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure explains how to associate a virtual machine with a quota.</p>
+<p>Здесь объясняется привязка ВМ к квоте.</p>
 
-<p><strong>Procedure&nbsp;14.3.&nbsp;Assigning a Quota to a Virtual Machine</strong></p>
-
-<ol>
-  <li>In the navigation pane, select the Virtual Machine to which you plan to add a quota.</li>
-  <li>Click <strong>Edit</strong>. The <strong>Edit Virtual Machine</strong> window appears.</li>
-  <li>Select the quota you want the virtual machine to consume. Use the <strong>Quota</strong> drop-down to do this.</li>
-  <li>Click <strong>OK</strong>.</li>
-</ol>
-
-<p><strong>Result</strong></p>
-
-<p>You have designated a quota for the virtual machine you selected.</p>
-
-<p><strong>Summary</strong></p>
-
-<p>This procedure explains how to associate a virtual machine disk with a quota.</p>
-
-<p><strong>Procedure&nbsp;14.4.&nbsp;Assigning a Quota to a Virtual Disk</strong></p>
+<p><strong>Действие&nbsp;14.3.&nbsp;Присвоение квоты виртуальной машине</strong></p>
 
 <ol>
-  <li>In the navigation pane, select the Virtual Machine whose disk(s) you plan to add a quota.</li>
-  <li>In the details pane, select the disk you plan to associate with a quota.</li>
-  <li>Click <strong>Edit</strong>. The <strong>Edit Virtual Disk</strong> window appears.</li>
-  <li>Select the quota you want the virtual disk to consume.</li>
-  <li>Click <strong>OK</strong>.</li>
+  <li>На панели навигации выберите ВМ, для которой планируется добавить квоту.</li>
+  <li>Нажмите <strong>Изменить</strong>. Будет показано окно <strong>Изменить ВМ</strong>.</li>
+  <li>Выберите квоту, которую должна потреблять ВМ. Для этого используйте выпадающее меню <strong>Квота</strong>.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have designated a quota for the virtual disk you selected.</p>
+<p>Мы назначили квоту для выбранной ВМ.</p>
+
+<p><strong>Описание задачи</strong></p>
+
+<p>Далее объясняется, как связать диск виртуальной машины с квотой.</p>
+
+<p><strong>Действие&nbsp;14.4.&nbsp;Присвоение квоты виртуальному диску</strong></p>
+
+<ol>
+  <li>На панели навигации выберите ВМ, дискам которой планируется добавить квоту.</li>
+  <li>На панели сведений выберите диск, который планируется связать с квотой.</li>
+  <li>Нажмите <strong>Изменить</strong>. Появится окно <strong>Изменить виртуальный диск</strong>.</li>
+  <li>Выберите квоту, которую должен потреблять виртуальный диск.</li>
+  <li>Нажмите <strong>OK</strong>.</li>
+</ol>
+
+<p><strong>Итог</strong></p>
+
+<p>Мы назначили квоту для выбранного виртуального диска.</p>
 
 <div class="alert alert-info">
-  <p><strong>Important:</strong> Quota must be selected for all objects associated with a virtual machine, in order for that virtual machine to work. If you fail to select a quota for the objects associated with a virtual machine, the virtual machine will not work. The error that oVirt throws in this situation is generic, which makes it difficult to know if the error was thrown because you did not associate a quota with all of the objects associated with the virtual machine. It is not possible to take snapshots of virtual machines that do not have an assigned quota. It is not possible to create templates of virtual machines whose virtual disks do not have assigned quotas.</p>
+  <p><strong>Важно:</strong> для того, чтобы виртуальная машина работала, квота должна быть выбрана для всех объектов, связанных с этой ВМ. В противном случае малина работать не будет. В таких случаях oVirt показывает общую ошибку, что затрудняет понимание, была ли ошибка выдана в связи с отсутствием назначенной квоты всем объектам ВМ. С машины, у которой отсутствует квота, невозможно сделать снимок. Создать шаблона ВМ, виртуальным дискам которой не назначена квота, невозможно.</p>
 
 </div>
 
-<h3 id="using-quota-to-limit-resources-by-user">Using Quota to Limit Resources by User</h3>
+<h3 id="using-quota-to-limit-resources-by-user">Использование квоты для ограничения ресурсов пользователя</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure describes how to use quotas to limit the resources a user has access to.</p>
+<p>Далее описывается использование квот для ограничения ресурсов, к которым имеет доступ пользователь.</p>
 
-<p><strong>Procedure&nbsp;14.5.&nbsp;Assigning a User to a Quota</strong></p>
+<p><strong>Действие&nbsp;14.5.&nbsp;Привязка пользователя к квоте</strong></p>
 
 <ol>
-  <li>In the tree, click the Data Center with the quota you want to associate with a User.</li>
-  <li>Click the <strong>Quota</strong> tab in the navigation pane.</li>
-  <li>Select the target quota in the list in the navigation pane.</li>
-  <li>Click the <strong>Consumers</strong> tab in the details pane.</li>
-  <li>Click <strong>Add</strong> at the top of the details pane.</li>
-  <li>In the <strong>Search</strong> field, type the name of the user you want to associate with the quota.</li>
-  <li>Click <strong>GO</strong>.</li>
-  <li>Select the check box at the left side of the row containing the name of the target user.</li>
-  <li>Click <strong>OK</strong> in the bottom right of the <strong>Assign Users and Groups to Quota</strong> window.</li>
+  <li>В режиме дерева выберите дата-центр с квотой, которую нужно привязать к пользователю.</li>
+  <li>Перейдите на владку <strong>Квота</strong> на панели навигации.</li>
+  <li>Выберите целевую квоту в списке на панели навигации.</li>
+  <li>Перейдите на владку <strong>Потребители</strong> на панели сведений.</li>
+  <li>Нажмите на кнопку <strong>Добавить</strong> в верхней части панели сведений.</li>
+  <li>В поле <strong>Поиск</strong> введите имя пользователя, который нужно связать с квотой.</li>
+  <li>Нажмите <strong>Поиск</strong>.</li>
+  <li>Отметьте галочкой имя целевого пользователя с левой стороны строки.</li>
+  <li>Нажмите на кнопку <strong>OK</strong> в правом нижнем углу окна <strong>Привязать пользователей/группы к квоте</strong>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>After a short time, the user will appear in the <strong>Consumers</strong> tab of the details pane.</p>
+<p>Через некоторое время пользовтаель появится на вкладке <strong>Потребители</strong> панели сведений.</p>
 
-<h3 id="editing-quotas">Editing Quotas</h3>
+<h3 id="editing-quotas">Изменение квот</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure describes how to change existing quotas.</p>
+<p>Далее описывается, как можно изменить существующую квоту.</p>
 
-<p><strong>Procedure&nbsp;14.6.&nbsp;Editing Quotas</strong></p>
+<p><strong>Действие&nbsp;14.6.&nbsp;Изменение квот</strong></p>
 
 <ol>
-  <li>On the tree pane, click on the data center whose quota you want to edit.</li>
-  <li>Click on the <strong>Quota</strong> tab in the Navigation Pane.</li>
-  <li>Click the name of the quota you want to edit.</li>
-  <li>Click <strong>Edit</strong> in the Navigation pane.</li>
-  <li>An <strong>Edit Quota</strong> window opens. If required, enter a meaningful name in the <strong>Name</strong> field.</li>
-  <li>If required, you can enter a meaningful description in the <strong>Description</strong> field.</li>
-  <li>Select either the <strong>All Clusters</strong> radio button or the <strong>Specific Clusters</strong> radio button. Move the <strong>Cluster Threshold</strong> and <strong>Cluster Grace</strong> sliders to the desired positions on the <strong>Memory &amp; CPU</strong> slider.</li>
-  <li>Select either the <strong>All Storage Domains</strong> radio button or the <strong>Specific Storage Domains</strong> radio button. Move the <strong>Storage Threshold</strong> and <strong>Storage Grace</strong> sliders to the desired positions on the <strong>Storage</strong> slider.</li>
-  <li>Click <strong>OK</strong> in the <strong>Edit Quota</strong> window to confirm the new quota settings.</li>
+  <li>В древовидном представлении нажмите на дата-центр, квоту которого нужно изменить.</li>
+  <li>Перейдите на вкладку <strong>Квота</strong> на панели навигации.</li>
+  <li>Нажмите на имя квоты, которую нужно изменить.</li>
+  <li>Нажмите на кнопку <strong>Изменить</strong> на панели навигации.</li>
+  <li>Появится окно <strong>Изменить квоту</strong>. При необходимсоти введите значимое имя в поле <strong>Имя</strong>.</li>
+  <li>При необходимости, введите значимое описание в поле <strong>Описание</strong>.</li>
+  <li>Отметьте галочкой либо параметр <strong>Все кластеры</strong> либо параметр <strong>Конкретные кластеры</strong>. Передвиньте ползунки <strong>Порог кластера</strong> и <strong>Льгота кластера</strong> на желаемые позиции на бегунке <strong>Память &amp; ЦП</strong>.</li>
+  <li>Отметьте галочкой либо параметр <strong>Все домены хранилищ</strong> либо <strong>Конкретные домены хранилищ</strong>. Передвиньте ползунки <strong>Порог хранилища</strong> и <strong>Льгота хранилища</strong> на желаемые позиции на бегунке <strong>Хранилище</strong>.</li>
+  <li>Нажмите <strong>OK</strong> в окне <strong>Изменить квоту</strong> для подтверждения новых значений квоты.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have changed an existing quota.</p>
+<p>Мы изменили существующую квоту.</p>
 
-<h3 id="removing-quotas">⁠Removing Quotas</h3>
+<h3 id="removing-quotas">⁠Удаление квот</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure describes how to remove quotas.</p>
+<p>Далее описывается, как можно удалить квоту.</p>
 
-<p><strong>Procedure&nbsp;14.7.&nbsp;Removing Quotas</strong></p>
+<p><strong>Действие&nbsp;14.7.&nbsp;Удаление квот</strong></p>
 
 <ol>
-  <li>On the tree pane, click on the data center whose quota you want to edit.</li>
-  <li>Click on the <strong>Quota</strong> tab in the Navigation Pane.</li>
-  <li>Click the name of the quota you want to remove.</li>
-  <li>Click <strong>Remove</strong> at the top of the Navigation pane, under the row of tabs.</li>
-  <li>Click <strong>OK</strong> in the <strong>Remove Quota(s)</strong> window to confirm the removal of this quota.</li>
+  <li>В древовидном представлении нажмите на дата-центр, квоту которого нужно изменить.</li>
+  <li>Перейдите на вкладку <strong>Квота</strong> на панели навигации.</li>
+  <li>Нажмите на имя квоты, которую нужно удалить.</li>
+  <li>Нажмите на кнопку <strong>Удалить</strong> в верхней части панели навигации, под рядом вкладок.</li>
+  <li>Нажмите <strong>OK</strong> в окне <strong>Удалить квоту</strong> для подтверждения удаления этой квоты.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have removed a quota.</p>
+<p>Мы удалили квоту.</p>
 
-<h3 id="service-level-agreement-policy-enforcement">⁠Service-level Agreement Policy Enforcement</h3>
+<h3 id="service-level-agreement-policy-enforcement">⁠Принудительное применение политики соглашения об уровне обслуживания (SLA)</h3>
 
-<p>oVirt 3.3 supports service-level agreement CPU features. These features can be accessed through the Administrator Portal.</p>
+<p>oVirt версии 3.3 поддерживает функционал SLA в процессорах. Доступ к этим возможностям можно получить через Портал администрирования.</p>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>This procedure describes how to set service-level agreement CPU features.</p>
+<p>Далее описывается настройка функционала SLA в ЦП.</p>
 
 <ol>
-  <li>Select <strong>New VM</strong> in the Navigation Pane.</li>
-  <li>Select <strong>Show Advanced Options</strong>.</li>
-  <li>Select the <strong>Resource Allocation</strong> tab.</li>
-  <li>Specify <strong>CPU Shares</strong>. Possible options are <strong>Low</strong>, <strong>Medium</strong>, <strong>High</strong>, <strong>Custom</strong>, and <strong>Disabled</strong>. Virtual machines set to <strong>High</strong> receive twice as many shares as <strong>Medium</strong>, and virtual machines set to <strong>Medium</strong> receive twice as many shares as virtual machines set to <strong>Low</strong>. <strong>Disabled</strong> instructs VDSM to use an older algorithm for determining share dispensation; usually the number of shares dispensed under these conditions is 1020.</li>
+  <li>Выберите <strong>Добавить ВМ</strong> на панели навигации.</li>
+  <li>Выберите <strong>Показать расширенные параметры</strong>.</li>
+  <li>Перейдите на вкладку <strong>Выделение ресурсов</strong>.</li>
+  <li>Укажите <strong>Ресурсы ЦП</strong>. Возможные значения: <strong>Низкое</strong>, <strong>Среднее</strong>, <strong>Высокое</strong>, <strong>Настраиваемое</strong> и <strong>Отключено</strong>. ВМ, имеющие значение <strong>Высокое</strong> получают в два раза больше ресурсов, чем ВМ со значением <strong>Среднее</strong>, а ВМ, имеющие значение <strong>Среднее</strong> получают в два раза больше ресурсов, чем ВМ со значением <strong>Низкое</strong>. Значение <strong>Отключено</strong> заставляет VDSM использовать старый алгоритм для определения раздачи ресурсов; как правило, в такой ситуации число раздаваемых ресурсов равно 1020.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have set a service-level agreement CPU policy. Users' CPU consumption is now governed by the policy you have set.</p>
+<p>Мы настроили политику соглашения об уровне обслуживания ЦП. Потребление ресурсов ЦП пользователями теперь управляется настроенной политикой.</p>
 
-<p><img alt="Description" title="Description" src="./OVirt Administration Guide — oVirt_files/SLA.png"></p>
+<p><img alt="Description" title="Описание" src="./OVirt Administration Guide — oVirt_files/SLA.png"></p>
 
-<p><strong>Figure&nbsp;14.1.&nbsp;Service-level Agreement Policy Enforcement - CPU Allocation Menu</strong></p>
+<p><strong>Рисунок&nbsp;14.1.&nbsp;Принудительное применение политики SLA: меню распределения ресурсов ЦП</strong></p>
 
-<h2 id="event-notifications">⁠Event Notifications</h2>
+<h2 id="event-notifications">Уведомление о событиях</h2>
 
-<h3 id="configuring-event-notifications">Configuring Event Notifications</h3>
+<h3 id="configuring-event-notifications">Настройка уведомлений о событиях</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>oVirt can notify designated users when specific events occur in the environment that oVirt manages. To use this functionality, you must set up a mail transfer agent to deliver messages.</p>
+<p>oVirt может рассылать уведомления назначенным пользователям об особых событиях в управляемом oVirt окружении. Чтобы использовать этот функционал, необходимо настроить почтовый агент на доставку уведомлений.</p>
 
-<p><strong>Procedure&nbsp;15.1.&nbsp;Configuring Event Notifications</strong></p>
+<p><strong>Действие&nbsp;15.1.&nbsp;Настройка уведомления о событиях</strong></p>
 
 <ol>
-  <li>Ensure you have set up the mail transfer agent with the appropriate variables.</li>
-  <li>Use the <strong>Users</strong> resource tab, tree mode, or the search function to find and select the user to which event notifications will be sent.</li>
-  <li>Click the <strong>Event Notifier</strong> tab in the details pane to list the events for which the user will be notified. This list will be blank if you have not configured any event notifications for that user.</li>
-  <li>Click <strong>Manage Events</strong> to open the <strong>Add Event Notification</strong> window.
-<img alt="The Add Events Notification Window" title="fig:The Add Events Notification Window" src="./OVirt Administration Guide — oVirt_files/Add_Event_Notification.png">
-<strong>Figure&nbsp;15.1.&nbsp;The Add Events Notification Window</strong></li>
-  <li>Use the <strong>Expand All</strong> button or the subject-specific expansion buttons to view the events.</li>
-  <li>Select the appropriate check boxes.</li>
-  <li>Enter an email address in the <strong>Mail Recipient</strong> field.</li>
-  <li>Click <strong>OK</strong> to save changes and close the window.</li>
-  <li>Add and start the <strong>ovirt-engine-notifier</strong> service on oVirt. This activates the changes you have made:
+  <li>Убедитесь, что необходимые переменные настроены на почтовом клиенте.</li>
+  <li>Используйте ресурсную вкладку <strong>Пользователи</strong> режим дерева или поисковый функционал чтобы найти и выделить пользователя, которому будут посылаться уведомелния о событиях.</li>
+  <li>Перейдите на вкладку <strong>Уведомления о событиях</strong> на панели сведений, чтобы получить список о событиях, о которых будет уведомляться пользователь. В случае, если уведомления пользователя о событиях не настроены, список будет пустым.</li>
+  <li>Нажмите <strong>Управление событиями</strong> чтобы открыть окно <strong>Добавить уведомление о событиях</strong>.
+<img alt="The Add Events Notification Window" title="Окно добавления уведомлений о событиях" src="./OVirt Administration Guide — oVirt_files/Add_Event_Notification.png">
+<strong>Рисунок&nbsp;15.1.&nbsp;Окно добавления уведомлений о событиях</strong></li>
+  <li>Используйте кнопку <strong>Развернуть всё</strong> или кнопки разворачивания отдельных элементов чтобы просмотреть события.</li>
+  <li>Отметьте галочками соответствующие параметры.</li>
+  <li>В поле <strong>Получатель почты</strong> введите почтовый адрес.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохранить изменения и закрыть окно.</li>
+  <li>Добавьте и запустите службу <strong>ovirt-engine-notifier</strong> в oVirt для включения сделанных изменений:
     # chkconfig –add ovirt-engine-notifier
     # chkconfig ovirt-engine-notifier on
     # service ovirt-engine-notifier restart</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The specified user now receives emails based on events in the oVirt environment. The selected events display on the <strong>Event Notifier</strong> tab for that user.</p>
+<p>Указанный пользователь теперь будет получать увдомления о событиях в окружении oVirt. Выбранные события показываются во вкладке <strong>Уведомления о событиях</strong> этого пользователя.</p>
 
-<h3 id="parameters-for-event-notifications-in-ovirt-engine-notifierconf">Parameters for Event Notifications in ovirt-engine-notifier.conf</h3>
+<h3 id="parameters-for-event-notifications-in-ovirt-engine-notifierconf">Параметры уведомлений о событиях в ovirt-engine-notifier.conf</h3>
 
-<p>The event notifier configuration file can be found in <code>/usr/share/ovirt-engine/services/ovirt-engine-notifier/ovirt-engine-notifier.conf</code></p>
+<p>Файл конфигурации уведомления о событиях можно найти по пути <code>/usr/share/ovirt-engine/services/ovirt-engine-notifier/ovirt-engine-notifier.conf</code></p>
 
-<p><strong>Table&nbsp;15.1.&nbsp;ovirt-engine-notifier.conf variables</strong></p>
+<p><strong>Таблица&nbsp;15.1.&nbsp;переменные ovirt-engine-notifier.conf</strong></p>
 
 <table>
 <colgroup>
@@ -9389,240 +9389,240 @@ for more options please run pg_restore --help
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Variable Name</p></th>
-<th align="left"><p>Default</p></th>
-<th align="left"><p>Remarks</p></th>
+<th align="left"><p>Имя переменной</p></th>
+<th align="left"><p>Значение по умолчанию</p></th>
+<th align="left"><p>Заметки</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>SENSITIVE_KEYS</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>A comma-separated list of keys that will not be logged.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Список, через запятую, клавиш, которые не будут загружены.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>JBOSS_HOME</p></td>
 <td align="left"><p>/usr/share/jbossas</p></td>
-<td align="left"><p>The location of the JBoss application server used by oVirt.</p></td>
+<td align="left"><p>Местоположение сервера приложений JBoss, используемого oVirt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ENGINE_ETC</p></td>
 <td align="left"><p>/etc/ovirt-engine</p></td>
-<td align="left"><p>The location of the <code>etc</code> directory used by oVirt.</p></td>
+<td align="left"><p>Местоположение каталога <code>etc</code>, используемого oVirt.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ENGINE_LOG</p></td>
 <td align="left"><p>/var/log/ovirt-engine</p></td>
-<td align="left"><p>The location of the <code>logs</code> directory used by oVirt.</p></td>
+<td align="left"><p>Местоположение каталога <code>logs</code> используемого oVirt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ENGINE_USR</p></td>
 <td align="left"><p>/usr/share/ovirt-engine</p></td>
-<td align="left"><p>The location of the <code>usr</code> directory used by oVirt.</p></td>
+<td align="left"><p>Местоположение каталога <code>usr</code> используемого oVirt.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ENGINE_JAVA_MODULEPATH</p></td>
 <td align="left"><p>${ENGINE_USR}/modules</p></td>
-<td align="left"><p>The file path to which the JBoss modules are appended.</p></td>
+<td align="left"><p>Путь, по которому добавляются модули JBoss.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NOTIFIER_DEBUG_ADDRESS</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>The address of a machine that can be used to perform remote debugging of the Java virtual machine that the notifier uses.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Адрес машины, которую можно использовать для выполнения удалённой отладки виртуальной машины Java, используемой для уведомления о событиях.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NOTIFIER_STOP_TIME</p></td>
 <td align="left"></td>
-<td align="left"><p>The time, in seconds, after which the service will time out.</p></td>
+<td align="left"><p>Лимит времени ожидания службы (сек).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NOTIFIER_STOP_INTERVAL</p></td>
 <td align="left"></td>
-<td align="left"><p>The time, in seconds, by which the timeout counter will be incremented.</p></td>
+<td align="left"><p>Время, на которое будет увеличен счётчик лимита времени (сек).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>INTERVAL_IN_SECONDS</p></td>
 <td align="left"></td>
-<td align="left"><p>The interval in seconds between instances of dispatching messages to subscribers.</p></td>
+<td align="left"><p>Временной промежуток между событиями доставки уведомлений подписчикам (сек).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IDLE_INTERVAL</p></td>
 <td align="left"></td>
-<td align="left"><p>The interval, in seconds, between which low-priority tasks will be performed.</p></td>
+<td align="left"><p>Временные промежутки, между которыми будут выполняться задачи с низким приоритетом (сек).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DAYS_TO_KEEP_HISTORY</p></td>
 <td align="left"></td>
-<td align="left"><p>This variable sets the number of days dispatched events will be preserved in the history table. If this variable is not set, events remain on the history table indefinitely.</p></td>
+<td align="left"><p>Эта переменная устанавливает число дней, в течении которых события, о которых были отправлены уведомления, хранятся в таблице журнала. Если значение переменной отсутствует, события хранятся в таблице журнала бесконечно.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>FAILED_QUERIES_NOTIFICATION_THRESHOLD</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of failed queries after which a notification email is sent. A notification email is sent after the first failure to fetch notifications, and then once every time the number of failures specified by this variable is reached. If you specify a value of <code>0</code> or <code>1</code>, an email will be sent with each failure.</p></td>
+<td align="left"><p>Число неудавшихся запросов, после которых посылается почтовое уведомление. Почтовое уведомление посылается после первого сбоя получения уведомлений, а затем по одному разу на достигнутое число сбоев, указанное этой переменной. Если указать значение <code>0</code> или <code>1</code>, почтовое уведомление будет отправляться после каждого сбоя.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>FAILED_QUERIES_NOTIFICATION_RECIPIENTS</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>The email addresses of the recipients to which notification emails will be sent. Email addresses must be separated by a comma. This entry has been deprecated by the <code>FILTER</code> variable.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Почтовые адреса получателей, которым будут посылаться почтовые уведомления. Почтовые адреса должны разделяться запятой. Эта запись устарела с появлением переменной <code>FILTER</code>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DAYS_TO_SEND_ON_STARTUP</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of days of old events that will be processed and sent when the notifier starts.</p></td>
+<td align="left"><p>Количество дней со старыми событиями, которые будут обработаны и посланы после начала посылки уведомлений.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>FILTER</p></td>
-<td align="left"><p>exclude:*</p></td>
-<td align="left"><p>The algorithm used to determine the triggers for and recipients of email notifications. The value for this variable comprises a combination of <code>include</code> or <code>exclude</code>, the event, and the recipient. For example, <code>include:VDC_START(smtp:mail@example.com) ${FILTER}</code></p></td>
+<td align="left"><p>исключая:*</p></td>
+<td align="left"><p>Алгоритм, используемый для определения событий, запускающих почтовые уведомления и их получателей. Значение этой переменной состоит из сочетания <code>include</code> или <code>exclude</code>, события и получателя. Например, <code>include:VDC_START(smtp:mail@example.com) ${FILTER}</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MAIL_SERVER</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>The SMTP mail server address. Required.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Адрес почтового сервера SMTP. Обязательный параметр.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MAIL_PORT</p></td>
 <td align="left"></td>
-<td align="left"><p>The port used for communication. Possible values include <code>25</code> for plain SMTP, <code>465</code> for SMTP with SSL, and <code>587</code> for SMTP with TLS.</p></td>
+<td align="left"><p>Порт, используемый для подключений. Возможные значение: <code>25</code> для обычного SMTP, <code>465</code> для SMTP с SSL, и <code>587</code> для SMTP с TLS.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MAIL_USER</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>If SSL is enabled to authenticate the user, then this variable must be set. This variable is also used to specify the "from" user address when the MAIL_FROM variable is not set. Some mail servers do not support this functionality. The address is in RFC822 format.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Эти переменные должны быть установлены, если для аутентификации пользователя используется SSL. Эта переменная также используется для обозначения адреса отправителя, в отсутствии настроенной переменной MAIL_FROM. Некоторыен почтовые серверы не поддерживают этот функционал. Адрес указывается в формате RFC822.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SENSITIVE_KEYS</p></td>
 <td align="left"><p>${SENSITIVE_KEYS},MAIL_PASSWORD</p></td>
-<td align="left"><p>Required to authenticate the user if the mail server requires authentication or if SSL or TLS is enabled.</p></td>
+<td align="left"><p>Необходим для аутентификации пользователя, если почтовый сервер требует аутентификации или если включен SSL или TLS.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MAIL_PASSWORD</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>Required to authenticate the user if the mail server requires authentication or if SSL or TLS is enabled.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Необходим для аутентификации пользователя, если почтовый сервер требует аутентификации или если включен SSL или TLS.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MAIL_SMTP_ENCRYPTION</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>The type of encryption to be used in communication. Possible values are <code>none</code>, <code>ssl</code>, <code>tls</code>.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Тип шифрования, используемый при подключении. Возможные значения: <code>нет</code>, <code>ssl</code>, <code>tls</code>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HTML_MESSAGE_FORMAT</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>The mail server sends messages in HTML format if this variable is set to <code>true</code>.</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>Если значение этой переменной установлено на <code>верно</code>, почтовый сервер посылает сообщения в формате HTML.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MAIL_FROM</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>This variable specifies a sender address in RFC822 format, if supported by the mail server.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Эта переменная указывает адрес отправителя в формате RFC822, если этот функционал поддерживается почтовым сервером.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MAIL_REPLY_TO</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>This variable specifies reply-to addresses in RFC822 format on sent mail, if supported by the mail server.</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Эта переменная указывает адреса ответов на отправленную почту в формате RFC822, если этот функционал поддерживается почтовым сервером.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MAIL_SEND_INTERVAL</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of SMTP messages to be sent for each IDLE_INTERVAL</p></td>
+<td align="left"><p>Число отправленных сообщений SMTP на каждый интервал IDLE_INTERVAL</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MAIL_RETRIES</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of times to attempt to send an email before failing.</p></td>
+<td align="left"><p>Число попыток отправки сообщений перед констатацией сбоя.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SNMP_MANAGER</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>The IP addresses or fully qualified domain names of machines that will act as the SNMP managers. Entries must be separated by a space and can contain a port number. For example, <code>manager1.example.com manager2.example.com:164</code></p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>IP-адреса полных доменных имён машин, которые будут выполнять роль SNMP-администраторов. Записи разделяются пробелом и могут содержать номер порта. Например, <code>manager1.example.com manager2.example.com:164</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SNMP_COMMUNITY</p></td>
-<td align="left"><p>public</p></td>
-<td align="left"><p>The default SNMP community.</p></td>
+<td align="left"><p>общедоступный</p></td>
+<td align="left"><p>SNMP-сообщество по умолчанию.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SNMP_OID</p></td>
 <td align="left"></td>
-<td align="left"><p>The default TRAP object identifiers for alerts.</p></td>
+<td align="left"><p>Идентификаторы объектов TRAP по умолчанию, для оповещений.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ENGINE_INTERVAL_IN_SECONDS</p></td>
 <td align="left"></td>
-<td align="left"><p>The interval, in seconds, between monitoring the machine on which oVirt is installed. The interval is measured from the time the monitoring is complete.</p></td>
+<td align="left"><p>Интервал между проверками машины с установленной oVirt (сек). Интервал отсчитывается от момента окончания проверки.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ENGINE_MONITOR_RETRIES</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of times the notifier attempts to monitor the status of the machine on which oVirt is installed in a given interval after a failure.</p></td>
+<td align="left"><p>Число попыток уведомителя проверить статус машины, на которой установлена oVirt, за указанный интервал после сбоя.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ENGINE_TIMEOUT_IN_SECONDS</p></td>
 <td align="left"></td>
-<td align="left"><p>The time, in seconds, to wait before the notifier attempts to monitor the status of the machine on which oVirt is installed in a given interval after a failure.</p></td>
+<td align="left"><p>Время ожидания перед попыткой уведомителя проверить статус машины, на которой установлена oVirt, за указанный интервал после сбоя.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IS_HTTPS_PROTOCOL</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>This entry must be set to <code>true</code> if JBoss is being run in secured mode.</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>Этот параметр должен иметь значение <code>верно</code>, если JBoss выполняется в защищённом режиме.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SSL_PROTOCOL</p></td>
 <td align="left"><p>TLS</p></td>
-<td align="left"><p>The protocol used by JBoss configuration connector when SSL is enabled.</p></td>
+<td align="left"><p>Протокол, используемый JBoss configuration connector при включённом SSL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SSL_IGNORE_CERTIFICATE_ERRORS</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>This value must be set to <code>true</code> if JBoss is running in secure mode and SSL errors is to be ignored.</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>Этот параметр должен иметь значение <code>верно</code>, если JBoss выполняется в защищённом режиме, и ошибки SSL должны игнорироваться.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SSL_IGNORE_HOST_VERIFICATION</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>This value must be set to <code>true</code> if JBoss is running in secure mode and host name verification is to be ignored.</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>Этот параметр должен иметь значение <code>верно</code>, если JBoss выполняется в защищённом режиме, и проверки имени хоста должны игнорироваться.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>REPEAT_NON_RESPONSIVE_NOTIFICATION</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>This variable specifies whether repeated failure messages will be sent to subscribers if the machine on which oVirt is installed is non-responsive.</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>Эта переменная указывает, должны ли повторные ообщения о сбоях посылаться подписчикам, если машина с устанолвенной oVirt не отвечает.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ENGINE_PID</p></td>
 <td align="left"><p>/var/lib/ovirt-engine/ovirt-engine.pid</p></td>
-<td align="left"><p>The path and file name of the PID of oVirt.</p></td>
+<td align="left"><p>Путь и имя файла идентификатора процесса oVirt.</p></td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="canceling-event-notifications">Canceling Event Notifications</h3>
+<h3 id="canceling-event-notifications">Отмена уведомлений о событиях</h3>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>A user has configured some unnecessary event notifications and wants them canceled.</p>
+<p>Пользователь  настроил ненужное уведомление о событиях и хочет его отменить.</p>
 
-<p><strong>Procedure&nbsp;15.2.&nbsp;Canceling Event Notifications</strong></p>
+<p><strong>Действие&nbsp;15.2.&nbsp;Отмена уведомлений о событиях</strong></p>
 
 <ol>
-  <li>In the <strong>Users</strong> tab, select the user or the user group.</li>
-  <li>Select the <strong>Event Notifier</strong> tab in the details pane to list events for which the user receives notifications.</li>
-  <li>Click <strong>Manage Events</strong> to open the <strong>Add Event Notification</strong> window.</li>
-  <li>Use the <strong>Expand All</strong> button, or the subject-specific expansion buttons, to view the events.</li>
-  <li>Clear the appropriate check boxes to remove notification for that event.</li>
-  <li>Click <strong>OK</strong> to save changes and close the window.</li>
+  <li>Во вкладке <strong>Пользователи</strong> выберите пользователя или группу пользователей.</li>
+  <li>Перейдите на вкладку <strong>Уведомления о событиях</strong> на панели сведений чтобы увидеть список событий, о которых пользователю приходят уведомления.</li>
+  <li>Нажмите <strong>Управление событиями</strong> чтобы открыть окно <strong>Добавить уведомление о событии</strong>.</li>
+  <li>Используйте кнопку <strong>Развернуть всё</strong> или кнопки разворачивания отдельных элементов чтобы просмотреть события.</li>
+  <li>Уберите галочки с нужных пунктов чтобы удалить уведомление об этом собтии.</li>
+  <li>Нажмите <strong>OK</strong> чтобы сохраниить изменения и закрыть окно.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have canceled unnecessary event notifications for the user.</p>
+<p>Мы отменили ненужные уведомления о событиях пользователю.</p>
 
-<h2 id="utilities">⁠Utilities</h2>
+<h2 id="utilities">⁠Инструментарий</h2>
 
-<h3 id="the-ovirt-engine-rename-tool">The Ovirt Engine Rename Tool</h3>
+<h3 id="the-ovirt-engine-rename-tool">Инструмент переименования ЦУ Ovirt</h3>
 
-<h4 id="the-ovirt-engine-rename-tool-1">The Ovirt Engine Rename Tool</h4>
+<h4 id="the-ovirt-engine-rename-tool-1">Инструмент переименования ЦУ Ovirt</h4>
 
-<p>When the <code>engine-setup</code> command is run in a clean environment, the command generates a number of certificates and keys that use the fully qualified domain name of oVirt supplied during the setup process. If the fully qualified domain name of oVirt must be changed later on (for example, due to migration of the machine hosting oVirt to a different domain), the records of the fully qualified domain name must be updated to reflect the new name. The <code>ovirt-engine-rename</code> command automates this task.</p>
+<p>При запуске команды <code>engine-setup</code> в чистом окружении, команда создаёт некоторое число сертификатов и ключей, которые используют полное доменное имя oVirt, предоставленное во время настройки. Если позже возникает необходимость изменения полного доменного имени oVirt (например, во время миграции машины-хоста oVirt в другой домен), то записи полного доменногг имени должны быть обновлены для отражения нового имени. Команда <code>ovirt-engine-rename</code> автоматизирует эту задачу.</p>
 
-<p>The <code>ovirt-engine-rename</code> command updates records of the fully qualified domain name of oVirt in the following locations:</p>
+<p>Команда <code>ovirt-engine-rename</code> обновляет записи полного доменного имени oVirt в следующих местоположениях:</p>
 
 <ul>
   <li>/etc/ovirt-engine/engine.conf.d/10-setup-protocols.conf</li>
@@ -9637,48 +9637,48 @@ for more options please run pg_restore --help
 </ul>
 
 <div class="alert alert-info">
-  <p><strong>Warning:</strong> While the <code>ovirt-engine-rename</code> command creates a new certificate for the web server on which oVirt runs, it does not affect the certificate for the engine or the certificate authority. Due to this, there is some risk involved in using the <code>ovirt-engine-rename</code> command, particularly in environments that have been upgraded from oVirt version 3.2 and earlier. Therefore, changing the fully qualified domain name of oVirt by running <code>engine-cleanup</code> and <code>engine-setup</code> is recommended where possible.</p>
+  <p><strong>Предупреждение:</strong> хотя команда <code>ovirt-engine-rename</code> создаёт новый сертификт для веб-сервера, на котором выполняется oVirt, она не влияет на сертификат ЦУ oVirt или на CA. По этой причине использование команды <code>ovirt-engine-rename</code> связано с некоторым риском, в частности в окружениях, обновлённых с oVirt версии 3.2 и более ранних. Поэтому, везде, где это возможно, изенение полного доменного имени oVirt рекомендуется с помощью команд <code>engine-cleanup</code> и <code>engine-setup</code>.</p>
 
 </div>
 
-<h4 id="syntax-for-the-ovirt-engine-rename-command">Syntax for the Ovirt Engine Rename Command</h4>
+<h4 id="syntax-for-the-ovirt-engine-rename-command">Синтаксис команды переименования ЦУ Ovirt</h4>
 
-<p>The basic syntax for the <code>ovirt-engine-rename</code> command is:</p>
+<p>Базовый синтаксис команды <code>ovirt-engine-rename</code>:</p>
 
 <pre class="highlight plaintext"><code># /usr/share/ovirt-engine/setup/bin/ovirt-engine-rename
 </code></pre>
 
-<p>The command also accepts the following options:</p>
+<p>Команда также принимает следующие параметры:</p>
 
 <p><em><code>--newname=[new name]</code></em><br>
-Allows you to specify the new fully qualified domain name for oVirt without user interaction.</p>
+Возможность указать новое полное доменное имя oVirt без участия пользователя.</p>
 
 <p><em><code>--log=[file]</code></em><br>
-Allows you to specify the path and name of a file into which logs of the rename operation are to be written.</p>
+Путь и имя файла, куда должен записываться журнал операции переименования.</p>
 
 <p><em><code>--config=[file]</code></em><br>
-Allows you to specify the path and file name of a configuration file to load into the rename operation.</p>
+Путь и имя файла конфигурации для загрузки во время операции переименования.</p>
 
 <p><em><code>--config-append=[file]</code></em><br>
-Allows you to specify the path and file name of a configuration file to append to the rename operation. This option can be used to specify the path and file name of an answer file.</p>
+Путь и имя файла конфигурации, добавляемого во время операции переименования. Этот параметр можно использовать чтобы указать путь и имя файла ответов.</p>
 
 <p><em><code>--generate-answer=[file]</code></em><br>
-Allows you to specify the path and file name of a file into which your answers to and the values changed by the <code>ovirt-engine-rename</code> command are recorded.</p>
+Путь и имя файла, в который записываются ответы и значения, изменяемые командой <code>ovirt-engine-rename</code>.</p>
 
-<h4 id="using-the-ovirt-engine-rename-tool">Using the Ovirt Engine Rename Tool</h4>
+<h4 id="using-the-ovirt-engine-rename-tool">Использование команды переименования ЦУ Ovirt</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can use the <code>ovirt-engine-rename</code> command to update records of the fully qualified domain name of oVirt.</p>
+<p>Команду <code>ovirt-engine-rename</code> можно использовать для обновления записей полного доменного имени oVirt.</p>
 
-<p><strong>Procedure&nbsp;16.1.&nbsp;Renaming oVirt</strong></p>
+<p><strong>Действие&nbsp;16.1.&nbsp;Переименование oVirt</strong></p>
 
 <ol>
-  <li>Prepare all DNS and other relevant records for the new fully qualified domain name.</li>
-  <li>Update the DHCP server configuration if DHCP is used.</li>
-  <li>Update the host name on oVirt.</li>
+  <li>Подготовьте все DNS и другие релвантные записи для использования нового полного доменного имени.</li>
+  <li>Обновите параметры DHCP-сервера, если используется DHCP.</li>
+  <li>Обновите имя хоста в oVirt.</li>
   <li>
-    <p>Run the following command:
+    <p>Введите следующую команду:
     # /usr/share/ovirt-engine/setup/bin/ovirt-engine-rename</p>
   </li>
   <li>
