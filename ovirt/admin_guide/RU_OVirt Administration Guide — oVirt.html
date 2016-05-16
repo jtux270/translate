@@ -9682,78 +9682,78 @@ for more options please run pg_restore --help
     # /usr/share/ovirt-engine/setup/bin/ovirt-engine-rename</p>
   </li>
   <li>
-    <p>When prompted, press <strong>Enter</strong> to stop the engine service:
+    <p>По запросу нажмите <strong>Enter</strong> для остановки службы ЦУ:
     During execution engine service will be stopped (OK, Cancel) [OK]:</p>
   </li>
-  <li>When prompted, enter the new fully qualified domain name for oVirt:
-    New fully qualified server name:[new name]</li>
+  <li>По запросу введите новое полное доменное имя oVirt:
+    New fully qualified server name:[новое_имя]</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>The <code>ovirt-engine-rename</code> command updates records of the fully qualified domain name of oVirt.</p>
+<p>Команда <code>ovirt-engine-rename</code> обновляет записи полного доменного имени oVirt.</p>
 
-<h3 id="the-domain-management-tool">The Domain Management Tool</h3>
+<h3 id="the-domain-management-tool">Инструмент управления доменом</h3>
 
-<h4 id="the-domain-management-tool-1">The Domain Management Tool</h4>
+<h4 id="the-domain-management-tool-1">Инструмент управления доменом</h4>
 
-<p>oVirt authenticates users using directory services. To add users to oVirt you must first use the internal <code>admin</code> user to add the directory service that the users must be authenticated against. You add and remove directory services domains using the included domain management tool, <code>engine-manage-domains</code>.</p>
+<p>oVirt аутентифицирует пользователей с помощью служб каталогов. Для добавления пользователей в oVirt сначала нужно, чтобы внутренний <code>администратор</code> добавил службу каталогов, в которой необходима аутентификация пользователей. Домены служб каталогов добавляются и удаляются с помощью встроенной утилиты управления доменами, <code>engine-manage-domains</code>.</p>
 
-<p>The <code>engine-manage-domains</code> command is only accessible on the machine on which oVirt is installed. The <code>engine-manage-domains</code> command must be run as the <code>root</code> user.</p>
+<p>Команда <code>engine-manage-domains</code> доступна только на машине, где установлена oVirt. Команда <code>engine-manage-domains</code> должна запускаться с правами пользователя <code>root</code>.</p>
 
-<h4 id="syntax-for-the-domain-management-tool">Syntax for the Domain Management Tool</h4>
+<h4 id="syntax-for-the-domain-management-tool">Синтаксис управления доменами</h4>
 
-<p>The usage syntax is:</p>
+<p>Используется следующий синтаксис:</p>
 
-<pre class="highlight plaintext"><code>engine-manage-domains -action=ACTION [options]
+<pre class="highlight plaintext"><code>engine-manage-domains -action=ДЕЙСТВИЕ [параметры]
 </code></pre>
 
-<p>Available actions are:</p>
+<p>Доступные действия:</p>
 
 <p><em><code>add</code></em><br>
-Add a domain to oVirt's directory services configuration.</p>
+Добавление домена в конфигурацию служб каталогов oVirt.</p>
 
 <p><em><code>edit</code></em><br>
-Edit a domain in oVirt's directory services configuration.</p>
+Изменить домен в конфигурации служб каталогов oVirt.</p>
 
 <p><em><code>delete</code></em><br>
-Delete a domain from oVirt's directory services configuration.</p>
+Удалить домен из конфигурации служб каталогов oVirt.</p>
 
 <p><em><code>validate</code></em><br>
-Validate oVirt's directory services configuration. This command attempts to authenticate each domain in the configuration using the configured user name and password.</p>
+Проверка конфигурации служб каталогов oVirt. Данная команда выполняет попытку аутентификации каждого домена в конфигурации с помощью н атсроенного пользователя и пароля.</p>
 
 <p><em><code>list</code></em><br>
-List oVirt's current directory services configuration.</p>
+Список текущей конфигурации служб каталогов oVirt.</p>
 
-<p>These options can be combined with the actions on the command line:</p>
+<p>Эти параметры можно сочетать с действиями в командной строке:</p>
 
 <p><em><code>--add-permissions</code></em><br>
-Specifies that the domain user will be given the <strong>SuperUser</strong> role in oVirt. By default, if the <em><code>--add-permissions</code></em> parameter is not specified, the <strong>SuperUser</strong> role is not assigned to the domain user. The <em><code>--add-permissions</code></em> option is optional. It is only valid when used in combination with the <em><code>add</code></em> and <em><code>edit</code></em> actions.</p>
+Указывает, что пользователю домена в oVirt будет присвоена роль <strong>SuperUser</strong>. По умолчанию, если параметр <em><code>--add-permissions</code></em> не указан, то роль <strong>SuperUser</strong> пользователю домена не присваивается. Параметр <em><code>--add-permissions</code></em> указывается по желанию. Он действителен только при использовании в сочетании с действиями <em><code>add</code></em> и <em><code>edit</code></em>.</p>
 
 <p><em><code>--change-password-msg=[MSG]</code></em><br>
-Specifies the message that is returned to the user at login when their password has expired. This allows you to direct users to a specific URL (must begin with http or https) where their password can be changed. The <em><code>--change-password-msg</code></em> option is optional, and is only valid when used in combination with the <em><code>add</code></em> and <em><code>edit</code></em> actions.</p>
+Указвает сообщение, которое будет возвращено пользователю при попытке входа в систему с просроченным паролем. Это сообщение даёт возможность направить пользователей по конкретному адресу URL (начинающемуся с http или https), где можно сменить пароль. Параметр <em><code>--change-password-msg</code></em> является опциональным и действует только при использовании в сочетании с действиями <em><code>add</code></em> и <em><code>edit</code></em>.</p>
 
 <p><em><code>--config-file=[FILE]</code></em><br>
-Specifies an alternate configuration file that the command must use. The <em><code>--config-file</code></em> parameter is always optional.</p>
+Указывает альтернативный файл конфигурации. Параметр <em><code>--config-file</code></em> всегда опционален.</p>
 
 <p><em><code>--domain=[DOMAIN]</code></em><br>
-The domain on which the action will be performed. The <em><code>--domain</code></em> parameter is mandatory for the <em><code>add</code></em>, <em><code>edit</code></em>, and <em><code>delete</code></em> actions.</p>
+Домен, в котором будет выполняться действие. Параметр <em><code>--domain</code></em> является обязательным для действий <em><code>add</code></em>, <em><code>edit</code></em> и <em><code>delete</code></em>.</p>
 
 <p><em><code>--force</code></em><br>
-Forces the command to skip confirmation of delete operations.</p>
+Принудительный пропуск подверждений при операциях удаления.</p>
 
 <p><em><code>--ldap-servers=[servers]</code></em><br>
-A comma delimited list of LDAP servers to be set to the domain.</p>
+Список серверов LDAP.</p>
 
 <p><em><code>--provider=</code></em>[PROVIDER]<br>
-The LDAP provider type of the directory server for the domain. Valid values are:</p>
+Тип поставщика LDAP сервера каталогов для домена. Действительные значения:</p>
 
 <ul>
   <li><em><code>ad</code></em> - Microsoft Active Directory.</li>
   <li><em><code>ipa</code></em> - Identity Management (IdM).</li>
-  <li><em><code>rhds</code></em> - Red Hat Directory Server. Red Hat Directory Server does not come with Kerberos. oVirt requires Kerberos authentication. Red Hat Directory Server must be running as a service inside a Kerberos domain to provide directory services to oVirt.
+  <li><em><code>rhds</code></em> - Red Hat Directory Server. В составе Red Hat Directory Server отсутствует Kerberos. oVirt требует аутентификацию Kerberos. Для предоставления служб каталога oVirt, Red Hat Directory Server должен выполняться в качестве службы внутри домена Kerberos.
     <div class="alert alert-info">
-      <p><strong>Note:</strong> To use Red Hat Directory Server as your directory server, you must have the <code>memberof</code> plug-in installed in Red Hat Directory Server. To use the <code>memberof</code> plug-in, your users must be <code>inetuser</code>.</p>
+      <p><strong>Внимание:</strong> чтобы использовать Red Hat Directory Server в качестве сервера каталогов, в Red Hat Directory Server должен быть установлен модуль <code>memberof</code>. Чтобы использовать модуль <code>memberof</code>, пользователи должны быть <code>inetuser</code>.</p>
 
     </div>
   </li>
@@ -9762,113 +9762,113 @@ The LDAP provider type of the directory server for the domain. Valid values are:
 </ul>
 
 <p><em><code>--report</code></em><br>
-When used in conjunction with the <em><code>validate</code></em> action, this command outputs a report of all validation errors encountered.</p>
+При использовании в сочетании с действием <em><code>validate</code></em>, эта команда выводит сообщение о всех возникших ошибках проверки.</p>
 
 <p><em><code>--user=[USER]</code></em><br>
-Specifies the domain user to use. The <em><code>--user</code></em> parameter is mandatory for <em><code>add</code></em>, and optional for <em><code>edit</code></em>.</p>
+Указывает, какого пользователя домена использовать. Параметр <em><code>--user</code></em> обязателен для действия <em><code>add</code></em>, и опционален для действия <em><code>edit</code></em>.</p>
 
 <p><em><code>--password-file=[FILE]</code></em><br>
-Specifies that the domain user's password is on the first line of the provided file. This option, or the <em><code>--interactive</code></em> option, must be used to provide the password for use with the <em><code>add</code></em> action.</p>
+Указывает, что пароль пользователя домена находится в первой строке предоставленного файла. Этот параметр, или параметр <em><code>--interactive</code></em> необходим для предоставления пароля при использовании с действием <em><code>add</code></em>.</p>
 
-<p>For further details on usage, see the <code>engine-manage-domains</code> command's help output:</p>
+<p>Дополнительные подробности использования см. в выводе <code>engine-manage-domains</code> с параметром help:</p>
 
 <pre class="highlight plaintext"><code># engine-manage-domains --help
 </code></pre>
 
-<h3 id="the-configuration-tool">The Configuration Tool</h3>
+<h3 id="the-configuration-tool">Инструмент конфигурации</h3>
 
-<h4 id="the-configuration-tool-1">The Configuration Tool</h4>
+<h4 id="the-configuration-tool-1">Инструмент конфигурации</h4>
 
-<p>Installing oVirt modifies only a subset of configuration settings from their defaults. Further modifications are made using the configuration tool: <code>engine-config</code>.</p>
+<p>Во время установки oVirt изменяется только набор параметров конфигурации по умолчанию. Дальнейшие изменения делаются с помощью инструмента конфигурации: <code>engine-config</code>.</p>
 
-<p>The configuration tool does not require Red Hat JBoss Enterprise Application Platform or oVirt to be running to update the configuration. Configuration key values are stored in the database; configuration changes will not be saved unless the database is operational. Changes are applied when Red Hat JBoss Enterprise Application Platform is restarted.</p>
+<p>Для запуска и обновления конфигурации, инструменту конфигурации не требуется платформа приложений Red Hat JBoss Enterprise Application Platform или oVirt. Ключевые значения конфигурации хранятся в базе данных; изменения будут сохраняться только если база данных является рабочей. Изменения применяются во время перезапуска Red Hat JBoss Enterprise Application Platform.</p>
 
-<p>oVirt stores configuration settings as a series of key-to-value pair mappings. The configuration tool allows you to:</p>
+<p>oVirt хранит параметры конфигурации в виде последовательностей парных отображений ключ-значение. Инструмент конфигурации даёт возможность:</p>
 
 <ul>
-  <li>List all available configuration keys.</li>
-  <li>List all available configuration values.</li>
-  <li>Retrieve the value of a specific configuration key.</li>
-  <li>Set the value of a specific configuration key.</li>
+  <li>Получить список всех доступных ключей конфигурации.</li>
+  <li>Получить список всех доступных значений конфигурации.</li>
+  <li>Получать значение конкретного ключа конфигурации.</li>
+  <li>Установить значение конкретного ключа конфигурации.</li>
 </ul>
 
-<p>You are also able to maintain multiple versions of oVirt's configuration with the configuration tool. Use the <em><code>--cver</code></em> parameter to specify the configuration version to be used when retrieving or setting a value for a configuration key. The default configuration version is <code>general</code>.</p>
+<p>Также имеется возможность поддерживать более одной версии конфигурации oVirt. Используйте параметр <em><code>--cver</code></em> для указания версии конфигурации, используемой для получения или устаноки значения ключа. Версия конфигурации по умолчанию: <code>general</code>.</p>
 
-<h4 id="syntax-for-engine-config-command">Syntax for engine-config Command</h4>
+<h4 id="syntax-for-engine-config-command">Синтаксис команды engine-config</h4>
 
-<p>The configuration tool is accessible on the client machine on which oVirt is installed. For full usage information consult the help output of the <code>engine-config</code> command:</p>
+<p>Этот инструмент конфигурации доступен на клиентской машине с установленной oVirt. Полную информацию об использовангии см. в выводе команды <code>engine-config</code> с параметром help:</p>
 
 <pre class="highlight plaintext"><code># engine-config --help
 </code></pre>
 
-<p><strong>Common tasks</strong></p>
+<p><strong>Типовые задачи</strong></p>
 
-<p>List available configuration keys<br>
-Use the <em><code>--list</code></em> parameter to list available configuration keys.</p>
+<p>Вывести список доступных ключей конфигурации<br>
+Используйте параметр <em><code>--list</code></em> для получения списка доступных ключей.</p>
 
 <!-- -->
 
 <pre class="highlight plaintext"><code># engine-config --list
 </code></pre>
 
-<p>Each available configuration key is listed by name and description.</p>
+<p>Для каждого доступного ключа конфигурации приводится имя и описание.</p>
 
-<p>List available configuration values<br>
-Use the <em><code>--all</code></em> parameter to list available configuration values.</p>
+<p>Вывести список доступных значений конфигурации<br>
+Используйте параметр <em><code>--all</code></em> для получения списка доступных значений.</p>
 
 <!-- -->
 
 <pre class="highlight plaintext"><code># engine-config --all
 </code></pre>
 
-<p>Each available configuration key is listed by name, current value of the key, and the configuration version.</p>
+<p>Для каждого доступного ключа конфигурации приводится имя, текущее значение ключа и версия конфигурации.</p>
 
-<p>Retrieve value of configuration key<br>
-Use the <em><code>--get</code></em> parameter to retrieve the value of a specific key.</p>
+<p>Получение значения ключа конфигурации<br>
+Используйте параметр <em><code>--get</code></em> для получения значения конкретного ключа.</p>
 
 <!-- -->
 
 <pre class="highlight plaintext"><code># engine-config --get KEY_NAME
 </code></pre>
 
-<p>Replace <em>KEY_NAME</em> with the name of the specific key to retrieve the key name, value, and the configuration version. Use the <em><code>--cver</code></em> parameter to specify the configuration version of the value to be retrieved.</p>
+<p>Замените <em>KEY_NAME</em> именем конкретного ключа для получения имяени ключа, его значения и версии конфигурации. Используйте параметр <em><code>--cver</code></em> для указания версии конфигурации при получении значения.</p>
 
-<p>Set value of configuration key<br>
-Use the <em><code>--set</code></em> parameter to set the value of a specific key. You must also set the configuration version to which the change is to apply using the <em><code>--cver</code></em> parameter.</p>
+<p>Установка значения ключа конфигурации<br>
+Используйте параметр <em><code>--set</code></em> для указания значения конкретного ключа. Также необходимо установить версию конфигурации, к которой применяются изменения, с помощью параметра <em><code>--cver</code></em>.</p>
 
 <!-- -->
 
 <pre class="highlight plaintext"><code># engine-config --set KEY_NAME=KEY_VALUE --cver=VERSION
 </code></pre>
 
-<p>Replace <em>KEY_NAME</em> with the name of the specific key to set; replace <em>KEY_VALUE</em> with the value to be set. Environments with more than one configuration version require the <em>VERSION</em> to be specified.</p>
+<p>Замените <em>KEY_NAME</em> именем конкретного ключа, который нужно установить; замените <em>KEY_VALUE</em> необходимым значением. Окружения более чем с одной версией требуют указания <em>VERSION</em>.</p>
 
-<h4 id="the-admininternal-user">The admin@internal User</h4>
+<h4 id="the-admininternal-user">Пользователь admin@internal</h4>
 
-<p>The <code>admin@internal</code> user account is automatically created upon installation of oVirt. This account is stored locally in oVirt's PostgreSQL database, separate from external directory services such as IdM or Active Directory. Unlike external directory domains, users cannot be added or deleted from the <code>internal</code> domain. The <code>admin@internal</code> user is the SuperUser of oVirt and has administrative privileges over the environment via the Administration Portal.</p>
+<p>Учётная запись пользователя <code>admin@internal</code> автоматически создаётся во время установки oVirt. Эта учётная запись хранится локально в базе данных oVirt PostgreSQL, отдельно от внешних служб каталогов, таких, как IdM или Active Directory. В отличие от внешних доменов каталогов, пользователей нельзя удалить или добавить из <code>внешнего</code> домена. Пользователь <code>admin@internal</code> — это SuperUser с административными привилегиями в окружении oVirt через Портал администрирования.</p>
 
-<p>The password for the <code>admin@internal</code> user is set during the installation of oVirt. Use the <strong>engine-config</strong> utility if you need to reset the password.</p>
+<p>Пароль пользователя <code>admin@internal</code> настраивается во время установки oVirt. Для смены пароля используйте утилиту <strong>engine-config</strong>.</p>
 
-<h4 id="changing-the-password-for-admininternal">Changing the Password for admin@internal</h4>
+<h4 id="changing-the-password-for-admininternal">Смена пароля пользователя admin@internal</h4>
 
 <ol>
-  <li>Log in to oVirt server as the <code>root</code> user.</li>
+  <li>Авторизуйтесь на сервере oVirt как пользователь <code>root</code>.</li>
   <li>
     <ul>
       <li>
-        <p>For oVirt 3.6 or newer (for more info see <a href="http://www.ovirt.org/develop/release-management/features/infra/aaa-jdbc/#Password_management">this</a> link):
+        <p>Для oVirt версии 3.6 или более поздней (подробности см. <a href="http://www.ovirt.org/develop/release-management/features/infra/aaa-jdbc/#Password_management">по ссылке</a>):</p>
     # ovirt-aaa-jdbc-tool user password-reset admin</p>
       </li>
       <li>
-        <p>For oVirt 3.5 or later:
-Use the <code>engine-config</code> utility to set a new password for the <code>admin@internal</code> user.
+        <p>Для oVirt версии 3.5 или более ранней:
+Чтобы установить новый пароль пользователя <code>admin@internal</code> используйте утилиту <code>engine-config</code> .</p>
     # engine-config -s AdminPassword=interactive</p>
 
-        <p>Use escape characters if your password includes any special characters.</p>
+        <p>Используйте экранирование, если в пароле используются специальные символы.</p>
       </li>
     </ul>
   </li>
-  <li>Restart the ovirt-engine service for the changes to take effect.</li>
+  <li>Для применения изменений перезапустите службу ovirt-engine.</li>
 </ol>
 
 <!-- -->
@@ -9876,9 +9876,9 @@ Use the <code>engine-config</code> utility to set a new password for the <code>a
 <pre class="highlight plaintext"><code># service ovirt-engine restart
 </code></pre>
 
-<h4 id="ovirt-configuration-options">oVirt Configuration Options</h4>
+<h4 id="ovirt-configuration-options">Параметры конфигурации oVirt</h4>
 
-<p><strong>Table&nbsp;16.1.&nbsp;oVirt Configuration Options</strong></p>
+<p><strong>Таблица&nbsp;16.1.&nbsp;Параметры конфигурации oVirt</strong></p>
 
 <table>
 <colgroup>
@@ -9890,1304 +9890,1304 @@ Use the <code>engine-config</code> utility to set a new password for the <code>a
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><p>Name</p></th>
-<th align="left"><p>Description</p></th>
-<th align="left"><p>Type</p></th>
-<th align="left"><p>Default Value</p></th>
-<th align="left"><p>Comments</p></th>
+<th align="left"><p>Имя</p></th>
+<th align="left"><p>Описание</p></th>
+<th align="left"><p>Тип</p></th>
+<th align="left"><p>Значение по умолчанию</p></th>
+<th align="left"><p>Комментарии</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>AbortMigrationOnError</p></td>
-<td align="left"><p>Abort ongoing migration on error</p></td>
-<td align="left"><p>Boolean</p></td>
-<td align="left"><p>v3.0: false v3.1: false v3.2: false v3.3: false</p></td>
-<td align="left"><p>Specify whether it is possible to optionally abort ongoing migration when an error occurs.</p></td>
+<td align="left"><p>Прерывание текущей миграции при возникновении ошибки</p></td>
+<td align="left"><p>Логический</p></td>
+<td align="left"><p>v3.0: ложно v3.1: ложно v3.2: ложно v3.3: ложно</p></td>
+<td align="left"><p>Указывает, можно ли по желанию прервать текущую миграцию при возникновении ошибки.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AsyncTaskPollingRate</p></td>
-<td align="left"><p>Async Task Polling Rate (in seconds)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Частота опроса асинхронных задач (в сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>How often (in seconds) oVirt queries the status of an asynchronous task in progress.</p></td>
+<td align="left"><p>Насколько часто (в секундах) oVirt опрашивает статус выполняемых асинхронных задач.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AsyncTaskZombieTaskLifeInMinutes</p></td>
-<td align="left"><p>Zombie tasks lifetime in minutes</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время жизни задач-зомби (в минутах)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>How long (in minutes) a task is allowed to run before assuming it has become a zombie and should be killed. The value affects large storage manipulations especially. When using slow storage and large virtual images, or when a task is known to take longer than 3000 minutes (50 hours), the value should be increased.</p></td>
+<td align="left"><p>Разрешённое время выполнения задачи перед тем, как она считается зомби и должна быть убита. Это значение особенно влияет на действия с большими хранилищами. При использовании медленных хранилищ и больших виртуальных образов, или же если известно, что для выполнения задачи требуется более 3000 минут (50 часов), то это значение должно быть увеличено.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AttestationPort</p></td>
-<td align="left"><p>Definition of service port for attestation service</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Определение порта службы для службы аттестации</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Which port is your attestation server listening for connections on?</p></td>
+<td align="left"><p>Какой порт прослушивает сервер аттестации</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AttestationServer</p></td>
-<td align="left"><p>Definition of FQDN of attestation server</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Определение полного доменного имени сервера аттестации</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Fully qualified domain name or IP address of your attestation server.</p></td>
+<td align="left"><p>Полное доменное имя или IP-адрес сервера аттестации.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AttestationTruststore</p></td>
-<td align="left"><p>Trust store used for securing communication with attestation service</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Хранилище доверия для защиты соединений со службой аттестации</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>TrustStore.jks</p></td>
-<td align="left"><p>Copy the TrustStore.jks keystore file from <code>/var/lib/oat-appraiser/Certificate/</code> on your attestation server to <code>/usr/share</code> on your engine server.</p></td>
+<td align="left"><p>Скопируйте файл хранилища ключей TrustStore.jks keystore из каталога <code>/var/lib/oat-appraiser/Certificate/</code> на сервере аттестации в каталог <code>/usr/share</code> на сервере oVirt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AttestationTruststorePass</p></td>
-<td align="left"><p>The password used to access trust store</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Пароль для доступа к хранилищу доверия</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>password</p></td>
-<td align="left"><p>The default password is password.</p></td>
+<td align="left"><p>Пароль по умолчанию: password.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AttestationFirstStageSize</p></td>
-<td align="left"><p>Attestation size for first stage</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Размер аттестации для первого этапа</p></td>
+<td align="left"><p>Целое</p></td>
 <td align="left"></td>
-<td align="left"><p>Used for quick initialization. Do not change unless you know why.</p></td>
+<td align="left"><p>Используется для быстрой инициализации. Не изменяйте, если не знаете, зачем.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AuditLogAgingThreshold</p></td>
-<td align="left"><p>Audit Log Aging Threshold (in days)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог устаревания журнала аудита (дни)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>How long an audit log is kept before being rotated.</p></td>
+<td align="left"><p>Сколько хранится журнал аудита перед его ротацией.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AuditLogCleanupTime</p></td>
-<td align="left"><p>Time to check for Audit Log cleanup</p></td>
-<td align="left"><p>Time</p></td>
-<td align="left"><p>At what time the Audit Log is checked for Aging and cleaned up.</p></td>
+<td align="left"><p>Время проверки для чистки журнала аудита</p></td>
+<td align="left"><p>Время</p></td>
+<td align="left"><p>В какое время призводится проверка журнала аудита на устаревание и его чистка.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AuthenticationMethod</p></td>
-<td align="left"><p>The authentication method used by oVirt</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Метод аутентификации, используемый в oVirt</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>LDAP</p></td>
-<td align="left"><p>The API used for querying users. Currently LDAP is the only supported value.</p></td>
+<td align="left"><p>API, используемый для опроса пользователей. На данный момент поддерживается только LDAP.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BlockMigrationOnSwapUsagePercentage</p></td>
-<td align="left"><p>Host swap percentage threshold (for scheduling)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Процентный порог файла подкачки хоста (для расписаний)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum percentage of swap space on the host that a VM run or migration is allowed to consume on the host. If the host is swapping beyond this percentage, a VM will not migrate over and will not be started.</p></td>
+<td align="left"><p>Максимальный процентный размер файла подкачки хоста, который может потребить ВМ во время работы или миграции. Если занимаемый хостом процент файла подкачки выходит за этот размер, перенос машины или запуск машины для работы не будет выполнен.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BootstrapMinimalVdsmVersion</p></td>
-<td align="left"><p>Minimum VDSM version</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Минимальная версия VDSM</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>The minimum version of VDSM that is acceptable when adding hosts to the Engine. Newer versions have more features.</p></td>
+<td align="left"><p>Минимальная версия VDSM, поддерживаемая при добавлении хостов в oVirt. Новые версии имеют больше возможностей.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>CABaseDirectory</p></td>
-<td align="left"><p>CA Base Directory</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Базовый каталог CA</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>/etc/pki/ovirt-engine</p></td>
-<td align="left"><p>Where oVirt Certificate Authority is located on oVirt host.</p></td>
+<td align="left"><p>Расположение центра сертификации oVirt на хосте oVirt host.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>CertificateFileName</p></td>
-<td align="left"><p>Certificate File Name</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Имя файла сертификата</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>/etc/pki/ovirt-engine/certs/engine.cer</p></td>
-<td align="left"><p>Points to the certificate file used by oVirt for SSL/TLS communication with VDSM.</p></td>
+<td align="left"><p>Указывает на файл сертификата, используемый oVirt для SSL/TLS-подключений к VDSM.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ClientModeSpiceDefault</p></td>
-<td align="left"><p>The default SPICE console protocol mode</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>Auto</p></td>
-<td align="left"><p>The default mode to use when connecting to a virtual machine using the SPICE console protocol.</p></td>
+<td align="left"><p>Стандартный консольный режим протокола SPICE</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>Автоматически</p></td>
+<td align="left"><p>Режим по умолчанию для подключений к ВМ с помощью консольного протокола SPICE.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ClientModeVncDefault</p></td>
-<td align="left"><p>The default VNC console protocol mode</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>Native</p></td>
-<td align="left"><p>The default mode to use when connecting to a virtual machine using the VNC console protocol.</p></td>
+<td align="left"><p>Стандартный консольный режим протокола VNC</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>Встроенный</p></td>
+<td align="left"><p>Режим по умолчанию для подключений к ВМ с помощью консольного протокола VNC.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ClientModeRdpDefault</p></td>
-<td align="left"><p>The default RDP console protocol mode</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>Auto</p></td>
-<td align="left"><p>The default mode to use when connecting to a virtual machine using the RDP console protocol.</p></td>
+<td align="left"><p>Стандартный консольный режим протокола RDP</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>Автоматически</p></td>
+<td align="left"><p>Режим по умолчанию для подключений к ВМ с помощью консольного протокола RDP.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ClusterEmulatedMachines</p></td>
-<td align="left"><p>Supported machine types</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Поддерживаемые типы машин</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>v3.0: rhel6.2.0 v3.1: rhel6.3.0 v3.2: rhel6.4.0 v3.3: rhel6.5.0 v3.4: rhel6.5.0</p></td>
-<td align="left"><p>The machine types supported by clusters.</p></td>
+<td align="left"><p>Типы машин, поддерживаемые кластерами.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>CpuOverCommitDurationMinutes</p></td>
-<td align="left"><p>The duration in minutes of CPU consumption to activate selection algorithm</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Продолжительность (в минутах) потребления ресурсов ЦП для активации алгоритма выбора</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>When the cluster policy is set to Even Distribution, wait for this amount of minutes after detecting CPU overcommit before triggering virtual machine migrations to rebalance the host load. This configuration value applies only for the default.</p></td>
+<td align="left"><p>При активированной политике равномерного распределения на кластере, ждать в течение указанного количества минут после обнаруженного превышенного выделения ресурсов ЦП перед запуском миграции ВМ для ребалансировки загрузки хоста. Это значение This configuration value applies only for the default.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>CustomDeviceProperties</p></td>
-<td align="left"><p>Custom device properties</p></td>
+<td align="left"><p>Настраиваемые свойства устройства</p></td>
 <td align="left"><p>DeviceCustomProperties</p></td>
-<td align="left"><p>v3.4 only: {type=interface;prop={SecurityGroups=^(?:(?:[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}, *)*[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}|)$}}</p></td>
-<td align="left"><p>Definition of custom properties for each device type.</p></td>
+<td align="left"><p>Только v3.4: {type=interface;prop={SecurityGroups=^(?:(?:[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}, *)*[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}|)$}}</p></td>
+<td align="left"><p>Определение настраиваемых свойств для каждого типа устройств.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DefaultWindowsTimeZone</p></td>
-<td align="left"><p>The default time zone for Windows virtual machines</p></td>
+<td align="left"><p>Часовой пояс по умолчанию для ВМ с Windows</p></td>
 <td align="left"><p>WindowsTimeZone</p></td>
-<td align="left"><p>GMT Standard Time</p></td>
-<td align="left"><p>The default time zone used when creating new Windows virtual machines.</p></td>
+<td align="left"><p>GMT — время по Гринвичу </p></td>
+<td align="left"><p>Часовой пояс по умолчанию при создании новых ВМ с Windows.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DefaultGeneralTimeZone</p></td>
-<td align="left"><p>The default time zone for virtual machines other than Windows virtual machines</p></td>
+<td align="left"><p>Часовой пояс по умолчанию для ВМ с ОС, отличной от Windows</p></td>
 <td align="left"><p>GeneralTimeZone</p></td>
 <td align="left"><p>Etc/GMT</p></td>
-<td align="left"><p>The default time zone used when creating virtual machines other than Windows virtual machines.</p></td>
+<td align="left"><p>Часовой пояс по умолчанию при создании новых ВМ с ОС, отличными от Windows.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DelayResetForSpmInSeconds</p></td>
-<td align="left"><p>Delay before Storage Pool Manager reset</p></td>
-<td align="left"><p>Double</p></td>
+<td align="left"><p>Задержка перед сбросом диспетчера пула хранилища</p></td>
+<td align="left"><p>Двойной</p></td>
 <td align="left"></td>
-<td align="left"><p>The additional delay, in seconds, before reset due to a communication issue when the host is the Storage Pool Manager.</p></td>
+<td align="left"><p>Дополнительная задержка (сек.) перед перезагрузкой из-за проблем со связью в случае, если хост является диспетчером пула хранилища.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DelayResetPerVmInSeconds</p></td>
-<td align="left"><p>Delay before virtual machine reset</p></td>
-<td align="left"><p>Double</p></td>
+<td align="left"><p>Задержка перед перезагрузкой ВМ</p></td>
+<td align="left"><p>Двойной</p></td>
 <td align="left"></td>
-<td align="left"><p>The additional delay, in seconds, before reset due to a communication issue for each virtual machine running on a host.</p></td>
+<td align="left"><p>Дополнительная задержка (сек.) перед перезагрузкой из-за проблем со связью для каждой ВМ, выполняемой на хосте.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DisableFenceAtStartupInSec</p></td>
-<td align="left"><p>Disable Fence Operations at oVirt Startup in seconds</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Отсрочить операции блокады при запуске oVirt на кол-во секунд</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Allow this amount of seconds after oVirt starts to detect hosts, before assuming the hosts are unresponsive and proceed to fence hosts. This value should be increased when oVirt is on a machine that has slow network startup (a VMware guest, for example).</p></td>
+<td align="left"><p>Разрешить задержку на указанное кол-во секунд после запуска oVirt для определения хостов, перед принятием решения о том, что хосты не отвечают, и переходу к выполнению операции блокады. Это значение необходимо увеличить, если oVirt находится на машине с долгой сетевой загрузкой (гость VMware, например).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DwhHeartBeatInterval</p></td>
-<td align="left"><p>The interval, in seconds at which the data warehouse is informed that the engine is running</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Интервал (сек), через который хранилище данных информируется о том, что oVirt работает</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WANDisableEffects</p></td>
-<td align="left"><p>Disabled WAN Effects value to send to the SPICE console</p></td>
+<td align="left"><p>Значение отключенных эффектов WAN, посылаемое в консоль SPICE</p></td>
 <td align="left"><p>StringMultiple</p></td>
-<td align="left"><p>animation</p></td>
-<td align="left"><p>The list of effects which will be disabled for SPICE. Possible values: <code>animation</code>, <code>wallpaper</code>, <code>font-smooth</code>, and <code>all</code>.</p></td>
+<td align="left"><p>анимация</p></td>
+<td align="left"><p>Список эффектов, отключенных в SPICE. Возможные значения: <code>анимация</code>, <code>фоновое изображение</code>, <code>сглаживание шрифтов</code> и <code>все</code>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WANColorDepth</p></td>
-<td align="left"><p>WAN Color Depth value to send to the SPICE console</p></td>
-<td align="left"><p>Integer</p></td>
-<td align="left"><p>The color depth used by the SPICE. Possible values are <code>16</code> and <code>32</code>.</p></td>
+<td align="left"><p>Значение глубины цвета WAN, посылаемое в консоль SPICE</p></td>
+<td align="left"><p>Целое число</p></td>
+<td align="left"><p>Глубина цвета, используемая SPICE. Возможнын значения: <code>16</code> и <code>32</code>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>EnableMACAntiSpoofingFilterRules</p></td>
-<td align="left"><p>Enable anti-spoofing filter rules for MAC addresses</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>Specifies whether network filtering is enabled.</p></td>
+<td align="left"><p>Включение правил фильтрации антиспуфинга для MAC-адресов</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>Включена ли сетевая фильтрация.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>EnableSpiceRootCertificateValidation</p></td>
-<td align="left"><p>Enable Spice Root Certification Validation</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>If <code>true</code>, the certificate of the host on which the virtual machine is running and oVirt setup CA certificate are sent to the SPICE client when attempting to connect to the virtual machine with SPICE, as an extra security mechanism.</p></td>
+<td align="left"><p>Включение проверки корневых сертификатов  Enable Spice Root Certification Validation</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>Если <code>верно</code>, то, при попытке подключения к ВМ через SPICE, сертификат хоста, на котором выполняется ВМ, и установочный сертификат ЦС oVirt посылаются клиенту SPICE, в качестве дополнительной меры безопасности.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>EnableUSBAsDefault</p></td>
-<td align="left"><p>Enable USB devices attachment to the virtual machine by default</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>true</p></td>
+<td align="left"><p>Подключение устройств USB к ВМ по умолчанию</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>верно</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>EnableVdsLoadBalancing</p></td>
-<td align="left"><p>Enables Host Load Balancing system</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>This config value allows the user to turn on or off (true and false, respectively) the virtual machine load balancing according to the policy configured for the cluster.</p></td>
+<td align="left"><p>Включает систему балансировки загрузки на хосте</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>Это значение позволяет пользователю влючать и отключать («верно» и «ложно», соответственно) балансировку ВМ согласно настроенной политике кластера.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>EncryptHostCommunication</p></td>
-<td align="left"><p>Encryption of host communication</p></td>
-<td align="left"><p>Boolean</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>Specify whether communication between hosts and oVirt will be encrypted.</p></td>
+<td align="left"><p>Шифрование при обмене информацией между хостами</p></td>
+<td align="left"><p>Логический</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>Будет ли шифроваться обмен информацией между хостами и oVirt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ExternalSchedulerServiceURL</p></td>
-<td align="left"><p>The location of an external scheduler</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Местоположение внешнего планировщика</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p><a href="http://localhost:18781/" class="uri">http://localhost:18781</a></p></td>
-<td align="left"><p>The location of an external scheduler.</p></td>
+<td align="left"><p>Местоположение внешнего планировщика.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ExternalSchedulerConnectionTimeout</p></td>
-<td align="left"><p>The time for which a connection to an external scheduler will be attempted before timing out</p></td>
+<td align="left"><p>Время до истечения времени ожидания, в течение которого будут производиться попытки подключения к внещнему планировщику</p></td>
 <td align="left"><p>Integer</p></td>
 <td align="left"></td>
-<td align="left"><p>This value can be set to <code>0</code> to disable this feature.</p></td>
+<td align="left"><p>Для отключения этого функционала установите значение <code>0</code>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ExternalSchedulerEnabled</p></td>
-<td align="left"><p>Specifies whether the virtual machine scheduler will consider the external filters and load balancers</p></td>
-<td align="left"><p>Boolean</p></td>
-<td align="left"><p>false</p></td>
+<td align="left"><p>Будет ли внешний планировщик учитывать внешние фильтры и балансировщики нагрузки</p></td>
+<td align="left"><p>Логическое</p></td>
+<td align="left"><p>ложно</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ExternalSchedulerResponseTimeout</p></td>
-<td align="left"><p>The time for which a response from an external scheduler will be waited on before timing out</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время до истечения времени ожидания, в течение которого будет ожидаться ответ от внешнего планировщика</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>FreeSpaceCriticalLowInGB</p></td>
-<td align="left"><p>Critical low disk space alert threshold (in GB)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Критический порог для предупреждения о нехватке места на диске (в ГБ)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Produces an alert when a Storage Domain has this amount of space left. This setting is also used in various preliminary tests for action sanity when users try to use storage domains, to prevent reaching this critical amount. Adding and importing disks will fail if the amount of space is less than the value specified here.</p></td>
+<td align="left"><p>Выводит предупреждение, если в домене хранилища остался указанный объём дискового пространства. Этот параметр также используется  в различных предварительных тестах на готовность к работе при попытках пользователей использовать домены хранилища, для предотвращения достижения данного критического объёма. Добавление и импорт дисков не будет выполнено, если доступный объём дискового пространства меньше указанного здесь значения.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>FreeSpaceLow</p></td>
-<td align="left"><p>Limit of percentage of free disk space below which it is considered low</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Процентный лимит свободного дискового пространства, ниже которого констатируется его нехватка</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>When a storage domain has this percentage of space left, it is considered low on disk space.</p></td>
+<td align="left"><p>Если свободное дисковое пространство в домене хранилища достигает указанного процента, то констатируется нехватка места на диске.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>GlusterRefreshRateHooks</p></td>
-<td align="left"><p>The refresh rate for Gluster hooks</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Частота обновления ловушек Gluster</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The refresh rate, in seconds, for Gluster hooks from Gluster servers.</p></td>
+<td align="left"><p>Частота обновления (сек.) для ловушек Gluster из серверов Gluster.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HighUtilizationForEvenlyDistribute</p></td>
-<td align="left"><p>High Utilization Limit For Evenly Distribute selection algorithm</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Лимит высокого коэффициента использования для алгоритма выбора равномерного распределения</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum number of virtual machines per host in the Evenly Distribute algorithm.</p></td>
+<td align="left"><p>Максимальное число виртуальных машин на хост в алгоритме выбора равномерного распределения.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HighUtilizationForPowerSave</p></td>
-<td align="left"><p>High Utilization Limit For Power Save selection algorithm</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Лимит высокого коэффициента использования для алгоритма выбора режима экономии энергии</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>A default for newly created clusters, in use with PowerSave load balancing algorithm, marks the higher limit of host utilization for populating hosts.</p></td>
+<td align="left"><p>Стандарт для только что созданных кластеров, используемый с алгоритмом балансировки нагрузки при экономии энергии, отмечает самый высокий лимит использования хоста при начальной загрузке данных на хосты.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HostPreparingForMaintenanceIdleTime</p></td>
-<td align="left"><p>The time to wait, in seconds, to determine if a host is idling in status <code>PreparingForMaintenance</code></p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания (сек.) для определения, простаивает ли хост со статусом <code>PreparingForMaintenance</code></p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>When the interval is met, another attempt is made to move the host into maintenance.</p></td>
+<td align="left"><p>По истечении интервала делается ещё одна попытка перевести хост в режим обслуживания.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>KeystoneAuthUrl</p></td>
-<td align="left"><p>The location of a Keystone server</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Местоположение сервера Keystone</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>The location of an OpenStack Keystone server for authenticating OpenStack providers.</p></td>
+<td align="left"><p>Местоположение сервера OpenStack Keystone для аутентификации поставщиков OpenStack.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LDAPQueryTimeout</p></td>
-<td align="left"><p>Read Timeout in seconds for LDAP queries</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Истечение времени чтения (сек.) для запросов LDAP</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The amount of time an LDAP query will read before the query is stopped.</p></td>
+<td align="left"><p>Промежуток времени, в течение которого запрос LDAP будет призводить чтение, до того, как запрос будет остановлен.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>LDAPOperationTimeout</p></td>
-<td align="left"><p>Search timeout at LDAP server side</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Истечение времени поиска на стороне сервера LDAP</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The amount of time an LDAP search will operate before it is stopped.</p></td>
+<td align="left"><p>Промежуток времени, в течение которого будет работать поиск LDAP, перед его остановкой.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LDAPConnectTimeout</p></td>
-<td align="left"><p>Connect timeout in seconds for LDAP queries</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Истечение времени подключения (сек.) для запросов LDAP</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The amount of time an LDAP query will connect before it is stopped.</p></td>
+<td align="left"><p>Промежуток времени, в течение которого будет подключен запрос LDAP, перед его остановкой.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>LocalAdminPassword</p></td>
-<td align="left"><p>Local Administrator Password</p></td>
-<td align="left"><p>Password</p></td>
-<td align="left"><p>Populated during initial setup</p></td>
-<td align="left"><p>The password for <code>admin@local</code> default user.</p></td>
+<td align="left"><p>Пароль локального администратора</p></td>
+<td align="left"><p>ПарольPassword</p></td>
+<td align="left"><p>Заполняется во время первоначальной настройки</p></td>
+<td align="left"><p>Пароль для пользователя по умолчанию <code>admin@local</code>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LogMaxPhysicalMemoryUsedThresholdInPercentage</p></td>
-<td align="left"><p>Memory usage threshold for triggering a log event</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог использования ресурсов памяти перед запуском события журнала</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum threshold of physical memory usage on a host, in percentage, that will trigger an audit log event.</p></td>
+<td align="left"><p>Максимальный порог использования физической памяти хоста, в процентах, при превышении которого будет запущено событие журнала аудита.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>LogMaxCpuUsedThresholdInPercentage</p></td>
-<td align="left"><p>CPU usage threshold for triggering a log event</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог использования ресурсов ЦП для запуска события журнала</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum threshold of CPU usage on a host, in percentage, that will trigger an audit log event.</p></td>
+<td align="left"><p>Максимальный порог использования ресурсов ЦП хоста, в процентах, при превышении которого будет запущено событие журнала аудита.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LogMaxNetworkUsedThresholdInPercentage</p></td>
-<td align="left"><p>Network usage threshold for triggering a log event</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог использования сетевых ресурсов для запуска события журнала</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum threshold of network usage on a host, in percentage, that will trigger an audit log event.</p></td>
+<td align="left"><p>Максимальный порог использования сетевых ресурсов хоста, в процентах, при превышении которого будет запущено событие журнала аудита.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>LogMinFreeSwapThresholdInMB</p></td>
-<td align="left"><p>Free swap threshold for triggering a log event</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог свободных ресурсов подкачки для запуска события журнала</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The minimum threshold of free swap memory on a host, in MB, that will trigger an audit log event.</p></td>
+<td align="left"><p>Минимальный порог свободных ресурсов подкачки на хосте (МБ), при превышении которого будет запущено событие журнала аудита.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LogMaxSwapUsedThresholdInPercentage</p></td>
-<td align="left"><p>Swap usage threshold for triggering a log event</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог использования ресурсов подкачки для запуска события журнала</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum threshold for swap memory usage on a host, in percentage, that will trigger an audit log event.</p></td>
+<td align="left"><p>Максимальный порог использования подкачки на хосте, в процентах, при превышении которого будет запущено событие журнала аудита.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>LogPhysicalMemoryThresholdInMB</p></td>
-<td align="left"><p>Threshold for logging low host memory in MB</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог для журнальной записи о низких ресурсах памяти хоста, в МБ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The minimum amount of RAM left before a host is considered low on memory. If a host's RAM is lower than this setting, it is recorded on the audit log and no action is taken.</p></td>
+<td align="left"><p>Минимальный объём оставшихся ресурсов ОЗУ перед тем, как на хосте констатируется нехватка памяти. Если объём ОЗУ хоста ниже этого значения, это записывается в журнал аудита. Никакого действия не предпринимается.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LowUtilizationForEvenlyDistribute</p></td>
-<td align="left"><p>Low Utilization Limit for Evenly Distribute selection algorithm</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Предел низкого коэффициента использования для алгоритма выбора равномерного распределения </p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Minimum number of virtual machines per host in the Evenly Distribute algorithm.</p></td>
+<td align="left"><p>Минимальное число ВМ на хост в алогоритме равномерного распределения.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>LowUtilizationForPowerSave</p></td>
-<td align="left"><p>Low Utilization Limit for Power Save selection algorithm</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Предел низкого коэффициента использования для алгоритма выбора сбережения энергии</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>A default for newly created clusters, in use with PowerSave load balancing algorithm, marks the lower limit of host utilization for populating hosts.</p></td>
+<td align="left"><p>Стандарт для только что созданных кластеров, используемый с алгоритмом балансировки нагрузки при экономии энергии, отмечает самый низкий лимит использования хоста при начальной загрузке данных на хосты.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MacPoolRanges</p></td>
-<td align="left"><p>MAC Addresses Pool Ranges</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Диапазоны пула MAC-адресов</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>The MAC address pool range to be automatically assigned to virtual machines.</p></td>
+<td align="left"><p>Диапазон пула MAC-адресов, для автоматического присвоения виртуальным машинам.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxAverageNetworkQoSValue</p></td>
-<td align="left"><p>Maximum value for Average Networks Quality of Service (Mbps)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Масимальное значение качества обслуживания в сетях средней нагрузки (Мбит/с)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxPeakNetworkQoSValue</p></td>
-<td align="left"><p>Maximum value for Peak Networks Quality of Service (Mbps)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Масимальное значение качества обслуживания в сетях пиковой нагрузки (Мбит/с)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxBurstNetworkQoSValue</p></td>
-<td align="left"><p>Maximum value for Burst Networks Quality of Service (Mb)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Масимальное значение качества обслуживания в сетях с пиковым всплеском нагрузки (МБ)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxMacsCountInPool</p></td>
-<td align="left"><p>Maximum MAC Addresses count in Pool</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число MAC-адресов в пуле</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum number of MAC addresses allowed in the MAC pool.</p></td>
+<td align="left"><p>Максимальное разрешённое число MAC-адресов в пуле.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxNumberOfHostsInStoragePool</p></td>
-<td align="left"><p>Maximum number of hosts in Storage Pool</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число хостов в пуле хранилищ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Limits the maximum number of hosts assigned to the clusters of a single Data Center. This can be increased after testing more hosts, if necessary.</p></td>
+<td align="left"><p>Ограничивает максимальное количество хостов, выделенных кластерам одного дата-центра. В случае необходимости это число может быть увеличено после тестирования дополнительных хостов.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxNumOfCpuPerSocket</p></td>
-<td align="left"><p>Maximum Number of CPU per socket</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число ЦП на сокет</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum number of virtual CPU cores that can be assigned to a single virtual CPU socket.</p></td>
+<td align="left"><p>Максимальное число ядер виртуальных ЦП, которое можно присвоить одному сокету вЦП.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxNumOfVmCpus</p></td>
-<td align="left"><p>Total Numbers of Virtual Machine CPUs</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Общее количество ЦП виртуальных машин</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"><p>3.1: 160 3.2: 160 3.3: 160 3.4: 160</p></td>
-<td align="left"><p>The maximum total amount of CPU cores assigned to a virtual machine (determined by number of cores multiplied by number of sockets).</p></td>
+<td align="left"><p>Максимальное общее число ядер ЦП, присвоенных ВМ (определяется числом ядер, умноженным на число сокетов).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxNumofVmSockets</p></td>
-<td align="left"><p>Maximum number of sockets per virtual machine</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число сокетов на ВМ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum number of virtual CPU sockets assigned to a virtual machine.</p></td>
+<td align="left"><p>Максимальное число сокетов вЦП, присвоенных виртуальной машине.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxRerunVmOnVdsCount</p></td>
-<td align="left"><p>Maximum virtual machine rerun attempts on a host</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число попыток перезапуска ВМ на хосте</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum number of attempts to start a virtual machine on a host before an error ("unable to start VM") is reported.</p></td>
+<td align="left"><p>Максимальное число попыток запустить ВМ на хосте перед выводом сообщения об ошибке («невозможно запустить ВМ»).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxSchedulerWeight</p></td>
-<td align="left"><p>Maximum schedule weighting</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Масимальный весовой коэффициент расписания</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum weight score for a single scheduler weight module.</p></td>
+<td align="left"><p>Максимальная оценка модуля весового коэффициента весового модуля одного планировщика.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxStorageVdsDelayCheckSec</p></td>
-<td align="left"><p>Max delay for check of domain in seconds</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальная задержка проверки домена в секундах</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum amount of seconds to wait for storage domain status to be returned before reporting an error.</p></td>
+<td align="left"><p>Максимальное количество секунд ожидания возвращения статуса домена хранилища перед выводом сообщения об ошибке.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxStorageVdsTimeoutCheckSec</p></td>
-<td align="left"><p>Maximum timeout for last check of domain in seconds</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное время ожидания последней проверки домена, в секундах</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>When monitoring storage, vdsmd on the hosts reports a "lastCheck" value for each domain. This setting is used to decide whether the last check happened too long ago and domain is considered in error.</p></td>
+<td align="left"><p>Во время наблюдения за хранилищем, vdsmd на хостах сообщает значение "lastCheck" для каждого домена. Этото параметр используется для определения, насколько давно была проведена последняя проверка, и в домене констатируется ошибка.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxVdsMemOverCommit</p></td>
-<td align="left"><p>Max Host Memory Over-Commit (%) for virtual desktops load</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное превышение выделения памяти хоста (%) при загрузке виртуальных рабочих столов</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The percentage of memory overcommit permitted to occur when using virtual desktop loads.</p></td>
+<td align="left"><p>Процент разрешённого превышенного выделения памяти при использовании загрузки виртуального рабочего стола.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxVdsMemOverCommitForServers</p></td>
-<td align="left"><p>Maximum Host Memory Over-Commit (%) for Virtual Servers load</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное превышение выделения памяти хоста (%) при загрузке виртуальных серверов</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The percentage of memory overcommit permitted to occur when using virtual server loads.</p></td>
+<td align="left"><p>Процент разрешённого превышенного выделения памяти при использовании загрузок виртуального сервера.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxVdsNameLength</p></td>
-<td align="left"><p>Max VDS name length</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальная длина имени VDS</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum name length for a Hypervisor host.</p></td>
+<td align="left"><p>Максимальная длина имени хоста с гипервизором.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxVmNameLengthNonWindows</p></td>
-<td align="left"><p>Maximum virtual machine name length for non-Windows operating system</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальная длина имени для не-Windows ОС</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum name length for a non-Windows virtual machine.</p></td>
+<td align="left"><p>Максимальная длина имени для не-Windows ВМ.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxVmNameLengthWindows</p></td>
-<td align="left"><p>Maximum name length in Windows</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальная длина имени в Windows</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum name length for Windows virtual machine (limitation imposed by Windows hostnames).</p></td>
+<td align="left"><p>Максимальная длина имени для ВМ с Windows (ограничения, налагаемые именами хостов в Windows).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxVmsInPool</p></td>
-<td align="left"><p>Max virtual machines in pool</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число ВМ в пуле</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Maximum number of virtual machines in a single data center.</p></td>
+<td align="left"><p>Максимальное число ВМ в одном дата-центре.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VmPoolMaxSubsequentFailures</p></td>
-<td align="left"><p>Maximum number of subsequent VM creation failures before giving up</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число сбоев при создании ВМ перед отказом от операции</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum number of subsequent failed virtual machine creations that can occur in a virtual machine pool before the operation is stopped.</p></td>
+<td align="left"><p>Максимальное число последовательных сбоев при создании ВМ, допускаемое в пуле ВМ перед остановкой операции.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NumberofFailedRunsOnVds</p></td>
-<td align="left"><p>Number of Failed Runs on Host</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число неудавшихся запусков на хосте</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Number of attempts to run virtual machines on hosts before setting host status to "Error".</p></td>
+<td align="left"><p>Число попыток запуска ВМ на хосте перед тем как хосту будет присвоен статус «Ошибка».</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NumberOfVmsForTopSizeVms</p></td>
-<td align="left"><p>Number of virtual machines with highest disk size to display</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число показываемых ВМ с наибольшим размером диска</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Number of virtual machines to display in the storage domain's virtual machine tab. Will display this amount of virtual machines, sorted by the most storage space per used virtual machine.</p></td>
+<td align="left"><p>Число ВМ для показа во вкладке виртуальных машин домена хранилища. Будет показано указанное число ВМ, отфильтрованных по наибольшему объёму диска на каждую используемую ВМ.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NumberVmRefreshesBeforeSave</p></td>
-<td align="left"><p>Number of Virtual Machine Data Refreshes Before Saving to Database</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число обновлений информации о ВМ перед сохранением в базе данных</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of host monitor iterations between refreshing virtual machines from VDSM (determines if virtual machines should be refreshed one upon each iteration)</p></td>
+<td align="left"><p>Число итераций мониторинга хоста между обновлением ВМ из VDSM (определяет, должны ли обновляться ВМ один раз на каждую итерацию)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>OnlyRequiredNetworksMandatoryForVdsSelection</p></td>
-<td align="left"><p>Specifies whether only required networks will be considered for determining if a virtual machine can be run on a host</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>If set to <code>true</code>, only networks marked as <code>Required</code> will be considered when determining if a virtual machine can be run on a given host. Otherwise, all networks that the virtual machine uses must be set up on a host for that host to be able to run the virtual machine.</p></td>
+<td align="left"><p>Указывает, будут ли учитываться только требуемые сети при определении, может ли ВМ выполняться на хосте</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>При значении <code>верно</code>, только сети, помеченные как <code>Требуется</code>, будут учитываться при определении, может ли ВМ выполняться на указанном хосте. В противном случае, для того, чтобы на хосте могла выполняться ВМ, должны быть настроены все сети, используемые этой ВМ.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>OverUtilizationForHaReservation</p></td>
-<td align="left"><p>A percentage representing the threshold for over-utilization compared to the optimal use case</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Процент, представляющий порог чрехмерного использования, по сравнению со сценарием оптимального использования</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Example - if the optimal number of highly available virtual machines for a given host is two, and this key is set to <code>200</code>, a highly available virtual machine will not be migrated using the balance method until there are at least five highly available virtual machines on that the given host.</p></td>
+<td align="left"><p>Пример: если оптимальное количество высокодоступных ВМ для указанного хоста равно двум, а данный ключ установлен на <code>200</code>, то высокодоступная ВМ не будет переноситься с использованием метода балансировки до тех пор, пока на указанном хосте не будут находиться как минимум пять высокодоступных ВМ.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ScaleDownForHaReservation</p></td>
-<td align="left"><p>A number by which the high-availability reservation weight score is divided to produce the final weight score</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число на которое делится весовой коэффициент резервирования высокой доступности, для получения окончательного весового коэффициента</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Example - if the weight score for a host is 90 and this key is set to <code>2</code>, the final score for that host is 45. This allows you to reduce the effect of the high-availability reservation weight function has on the total scoring for a host.</p></td>
+<td align="left"><p>Пример: если весовой коэффициент хоста равен 90, а данный ключ равен <code>2</code>, то окончательный коэффициент для этого хоста будет равен 45. Это даёт возможность снизить влияние весовой функции резервирования высокой доступности на итоговый коэффициент хоста.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>oVirtISOsRepositoryPath</p></td>
-<td align="left"><p>The oVirt Node installation files path</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Пути установочных файлов oVirt Node</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>/usr/share/ovirt-hypervisor</p></td>
-<td align="left"><p>The location of oVirt Node ISO images used for upgrading Hypervisor hosts.</p></td>
+<td align="left"><p>Местоположение ISO-образов oVirt Node, используемых для обновления хостов гипервизора.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>EnableVdsHaReservation</p></td>
-<td align="left"><p>Specifies whether high-availability virtual machine reservation is enabled for a cluster</p></td>
-<td align="left"><p>Boolean</p></td>
-<td align="left"><p>true</p></td>
+<td align="left"><p>Включено ли на кластере резервирования ВМ высокой доступности</p></td>
+<td align="left"><p>Логическое</p></td>
+<td align="left"><p>верно</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VdsHaReservationIntervalInMinutes</p></td>
-<td align="left"><p>The period of time, in minutes, after which a cluster will be checked for high-availability reservation</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Временной промежуток, в минутах, после которого кластер будет проверен на резервирование высокой доступности</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DefaultMaximumMigrationDowntime</p></td>
-<td align="left"><p>The maximum time a virtual machine can be down during live migration</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное время, в течении которого ВМ может быть нерабочей во время динамической миграции</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>If this key is set to <code>0</code>, the default value for VDSM will be used.</p></td>
+<td align="left"><p>Если данное значение равно <code>0</code>, то будет использовано значение по умолчанию для VDSM.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>PollUri</p></td>
-<td align="left"><p>The URI used for accessing the attestation service</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Адрес URI, используемый для дотсупа к службе аттестации</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>AttestationService/resources/PollHosts</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ProductKey2003</p></td>
-<td align="left"><p>Product Key (for Windows 2003)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows 2003)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ProductKey2003x64</p></td>
-<td align="left"><p>Product Key (for Windows 2003 x64)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows 2003 x64)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ProductKey2008</p></td>
-<td align="left"><p>Product Key (for Windows 2008)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows 2008)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ProductKey2008R2</p></td>
-<td align="left"><p>Product Key (for Windows 2008 R2)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows 2008 R2)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ProductKey2008x64</p></td>
-<td align="left"><p>Product Key (for Windows 2008 x64)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows 2008 x64)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ProductKey</p></td>
-<td align="left"><p>Product Key (for Windows XP)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows XP)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ProductKeyWindow7</p></td>
-<td align="left"><p>Product Key (for Windows 7)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows 7)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ProductKeyWindow7x64</p></td>
-<td align="left"><p>Product Key (for Windows 7 x64)</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Ключ продукта (для Windows 7 x64)</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Windows serial key to be used with sysprepped virtual machines created from a template.</p></td>
+<td align="left"><p>Серийный номер Windows, используемый для ВМ, созданных из шаблона и настроенных с помощью Sysprep.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ProductRPMVersion</p></td>
-<td align="left"><p>oVirt RPM Version</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>Automatically populated</p></td>
-<td align="left"><p>The RPM version of the currently used rhevm package.</p></td>
+<td align="left"><p>Версия RPM в oVirt</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>Заполняется автоматически</p></td>
+<td align="left"><p>Версия RPM используемого пакета rhevm.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SANWipeAfterDelete</p></td>
-<td align="left"><p>Initializing disk image is more secure but it can be time consuming and I/O intensive depending on the size of the image</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>Determines the default value (checked/unchecked) of the <strong>Wipe After Delete</strong> check box in the <strong>New Virtual Disk</strong> window. This is relevant for disks being created on SAN-based storage domains (FC/iSCSI).</p></td>
+<td align="left"><p>Инициализация образа диска более надёжна, но может занять много времени и иметь большой объём операций ввода-вывода, в зависимости от размера образа</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>Определяет значение по умолчанию (отмечено/не отмечено) флажка <strong>Очистить после удаления</strong> окна <strong>Добавить виртуалный диск</strong>. Для дисковЮ созданных в доменах хранилищ на базе SAN (FC/iSCSI).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SASL_QOP</p></td>
-<td align="left"><p>SASL quality of protection</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Качество защиты SASL</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>auth-conf</p></td>
-<td align="left"><p>Determines the quality of protection in authentication and LDAP queries (auth, auth-int, auth-conf).</p></td>
+<td align="left"><p>Определяет качество защиты аутентификации и запросов LDAP (auth, auth-int, auth-conf).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SearchResultsLimit</p></td>
-<td align="left"><p>Max Quantity of Search Results</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное количество результатов поиска</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of results to return for search queries if no specific figure is given in the web administration portal or REST.</p></td>
+<td align="left"><p>Число возвращаемых результатов поиска, в отсутствии значения, указанного на Портале администрирования или в REST.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SecureConnectionWithOATServers</p></td>
-<td align="left"><p>Determine whether use secure communication or not to access attestation service</p></td>
-<td align="left"><p>Boolean</p></td>
-<td align="left"><p>true</p></td>
+<td align="left"><p>Используется ли защищённое соединение для доступа к службе аттестации</p></td>
+<td align="left"><p>Логическое</p></td>
+<td align="left"><p>верно</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ServerRebootTimeout</p></td>
-<td align="left"><p>Host Reboot Timeout (in seconds)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания перезапуска хоста (сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Wait this amount of seconds when a host is rebooted or fenced, before determining that the host is <code>Non Responsive</code>. Can be increased for hosts that take longer to reboot.</p></td>
+<td align="left"><p>Ждать указанное кол-во секунд во время перезагрузки или проведения операции блокады хоста, перед констатацией, что хост <code>Не отвечает</code>. Для хостов с долгой перезагрузкой значение можно увеличить.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SpiceProxyDefault</p></td>
-<td align="left"><p>The address of the SPICE Proxy.</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>none</p></td>
-<td align="left"><p>When this key is set to a value, the SPICE proxy is activated (turned on). When this key is not set to a value, the SPICE proxy is not activated (turned off).</p></td>
+<td align="left"><p>Адрес SPICE-прокси.</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>нет</p></td>
+<td align="left"><p>Если для данного ключа значение указано, SPICE-прокси активируется (включается). Если для данного ключа значение не указано, SPICE-прокси не активируется (выключается).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SpiceReleaseCursorKeys</p></td>
-<td align="left"><p>Keyboard keys combination that causes the mouse cursor to be released from its grab on SPICE</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Сочетание клавиш для высвобождения курсора мышки при его захвате в SPICE</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>Shift+F12</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SpiceSecureChannels</p></td>
-<td align="left"><p>SPICE Secure Channels</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Защищённые каналы SPICE</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>smain, sinputs, scursor, splayback, srecord, sdisplay, susbredir, ssmartcard</p></td>
-<td align="left"><p>Which SPICE channels should be secured with SSL.</p></td>
+<td align="left"><p>Какие каналы SPICE должны быть защищены с помощью SSL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SpiceToggleFullScreenKeys</p></td>
-<td align="left"><p>Keyboard keys combination that toggles the full-screen state of SPICE client window</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Сочетание клавиш для включения/отключения полноэкранного режима окна клиента SPICE</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>Shift+F11</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SpiceUsbAutoShare</p></td>
-<td align="left"><p>Enable USB devices sharing by default in SPICE</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>Represents the default value (checked/unchecked) of the <strong>Enable USB Auto-Share</strong> check box in the <strong>Console Options</strong> dialog in the User Portal.</p></td>
+<td align="left"><p>Включение общего доступа к устройствам USB по умолчанию в SPICE</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>Представляет значение по умолчанию (отмечено/не отмечено) флажка <strong>Включить автоматический общий доступ к USB</strong> диалога <strong>Параметры консоли</strong> на Портале пользователей.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SpmCommandFailOverRetries</p></td>
-<td align="left"><p>Number of retries to failover the Storage Pool Manager on failed commands</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число повторных попыток отработки отказа диспетчера пула хранилища (SPM) при сбое команд</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Number of SPM selection failover retries. In case an SPM command fails, back end performs a failover - it selects a new SPM and re-runs the command.</p></td>
+<td align="left"><p>Число повторных попыток отработки отказа с выбором SPM. В случае сбоя команды SPM выполняется отработка отказа — выбирается новый SPM и команда выполняется снова.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SPMFailOverAttempts</p></td>
-<td align="left"><p>Number of attempts to connect to the Storage Pool Manager before Failover</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число попыток подключения к диспетчеру пула хранилища (SPM) перед отработкой отказа</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>When monitoring a Storage Pool, if the current SPM fails, failover does not happen immediately (see description of SpmCommandFailOverRetries). This setting defines the number of retries before deciding that the current SPM is down and a failover is required.</p></td>
+<td align="left"><p>Во время наблюдения за пулом хранилища, в случае сбоя текущего SPM, отработка отказа не происходит сразу же (см. описание SpmCommandFailOverRetries). Этот параметр определяет число повторных попыток перед констатацией отключения текущего SPM и необходимости отработки отказа.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SpmVCpuConsumption</p></td>
-<td align="left"><p>The CPU consumption of SPM embodied as number of VCPUs on the Host</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Потребление ресурсов ЦП диспетчером пула хранилища (SPM), представленное в виде кол-ва вЦП на хосте</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>When a host is the SPM, it is considered to be using this amount of extra virtual CPUs, to make up for the overhead that SPM operations generate.</p></td>
+<td align="left"><p>Если хост является SPM, считается, что он потребляет указанное кол-во дополнительных вЦП, для компенсации дополнительных затрат, создаваемых операциями SPM.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SSHInactivityTimoutSeconds</p></td>
-<td align="left"><p>SSH Inactivity Timeout (in seconds)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания неактивности SSH (сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum amount of time back end allows for an SSH session to remote hosts. After this timeout the session is killed.</p></td>
+<td align="left"><p>Максимальное кол-во времени, в течение которого разрешён сеанс SSH на удалённые хосты. После этого времени ожидания сеанс убивается.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SSHInactivityHardTimoutSeconds</p></td>
-<td align="left"><p>SSH Inactivity Hard Timeout (in seconds)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Жёсткий тайм-аут периода бездействия SSH (сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NumberOfUSBSlots</p></td>
-<td align="left"><p>Number of USB slots in virtual machines with native USB support</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число слотов USB на виртуальных машинах со встроенной поддержкой USB</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SchedulerAllowOverBooking</p></td>
-<td align="left"><p>Specify whether scheduler resource synchronization will be skipped</p></td>
-<td align="left"><p>Boolean</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>If scheduler resource synchronization is skipped, it may lead to more requests being scheduled than can be fulfilled.</p></td>
+<td align="left"><p>Будет ли пропущена синхронизация ресурсов поланировщика</p></td>
+<td align="left"><p>Логическое</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>Пропуск синхронизации ресурсов планировщика может привести к тому, что в расписание может быть внесено больше запросов, чем может быть выполнено.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SchedulerOverBookingThreshold</p></td>
-<td align="left"><p>Determines the threshold for pending Scheduling requests before Scheduling resource synchronization is skipped</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Определяет порог запросов, ожидающих внесения в расписание, перед тем, как будет пропущена синхронизация ресурсов поланировщика</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>This option is used when <code>SchedulerAllowOverBooking</code> is set to <code>true</code>.</p></td>
+<td align="left"><p>Этот парамметр используется, когда значение параметра <code>SchedulerAllowOverBooking</code> установлено на <code>верно</code>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SSLEnabled</p></td>
-<td align="left"><p>SPICE SSL Enabled</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>Whether SPICE Secure channels should be encrypted using SSL.</p></td>
+<td align="left"><p>SPICE SSL включено</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>Будут ли защищённые каналы SPICE зашифрованы с использованием SSL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>StorageDomainFailureTimeoutInMinutes</p></td>
-<td align="left"><p>Storage Domain failure timeout</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания сбоя домена хранилища</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Defines the amount of time taken before deciding domain is problematic, starting at the first failure reported by VDSM (in minutes).</p></td>
+<td align="left"><p>Определяет количество времени ожидания перед тем, как будет принято решение о проблемах в домене, начиная с первого сбоя, о котором сообщит VDSM (мин.).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>StoragePoolRefreshTimeInSeconds</p></td>
-<td align="left"><p>Storage Pool Manager Polling Rate (in seconds)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Частота опросов менеджера пула хранилища (сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Storage Pool monitoring frequency.</p></td>
+<td align="left"><p>Частота опросов пула хранилища.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SysPrep2K3Path</p></td>
-<td align="left"><p>Path to a Windows 2003 machine sysprep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 2003</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SysPrep2K8Path</p></td>
-<td align="left"><p>Path to a Windows 2008 machine sysprep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 2008</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SysPrep2K8R2Path</p></td>
-<td align="left"><p>Path to a Windows 2008 R2 machine sysprep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 2008 R2</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SysPrep2K8x64Path</p></td>
-<td align="left"><p>Path to a Windows 2008 machine sysprep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 2008</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SysPrepWindows7Path</p></td>
-<td align="left"><p>Path to a Windows 7 machine sysprep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 7</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SysPrepWindows7x64Path</p></td>
-<td align="left"><p>Path to a Windows 7 x64 machine sysprep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 7 x64</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SysPrepWindows8Path</p></td>
-<td align="left"><p>Path to a Windows 8 machine Sys-Prep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 8</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SysPrepWindows8x64Path</p></td>
-<td align="left"><p>Path to a Windows 8 x64 machine Sys-Prep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 8 x64</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SysPrepWindows2012x64Path</p></td>
-<td align="left"><p>Path to a Windows 2012 x64 machine Sys-Prep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows 2012 x64</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SysPrepXPPath</p></td>
-<td align="left"><p>Path to a Windows XP machine sysprep file</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Путь до файла sysprep машины с Windows XP</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Path to the operating system specific sysprep file template.</p></td>
+<td align="left"><p>Путь до шаблона файла sysprep конкретной ОС.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>TimeoutToResetVdsInSeconds</p></td>
-<td align="left"><p>Communication timeout in seconds before attempting reset</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания соединения перед попыткой перезагрузки (сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The amount of time a host is unresponsive before a fence command is issued. This is used in conjunction with <em><code>VDSAttemptsToResetCount</code></em>.</p></td>
+<td align="left"><p>Промежуток времени, в течение которого хост не отвечает, перед тем, как будет запущена операция блокады. Используется в сочетании с <em><code>VDSAttemptsToResetCount</code></em>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>TimeToReduceFailedRunOnVdsInMinutes</p></td>
-<td align="left"><p>Time to Reduce Failed Run on Host (in minutes)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время сокращения неудачного выполнения на хосте (мин.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The amount of time that the host will be in Error status after failing to run virtual machines.</p></td>
+<td align="left"><p>Время, в течение которого хост будет иметь статус «ошибка» после неудачных попыток запуска ВМ.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>UserDefinedVMProperties</p></td>
-<td align="left"><p>User-defined virtual machine properties</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Свойства ВМ, оперделённые пользователем</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Mostly used with VDSM hooks.</p></td>
+<td align="left"><p>Обычно используется с ловушками VDSM.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>UseFqdnForRdpIfAvailable</p></td>
-<td align="left"><p>Specify whether the fully qualified domain name will be used in connections using the RDP console protocol</p></td>
-<td align="left"><p>Boolean</p></td>
-<td align="left"><p>true</p></td>
-<td align="left"><p>If this option is enabled, the RDP console will use the fully qualified domain name of the virtual machine, if available, as reported by the guest agent. This fully qualified domain name is then used to establish the connection.</p></td>
+<td align="left"><p>Будет ли полное доменное имя использоваться в соединениях, использующих консольный протокол RDP</p></td>
+<td align="left"><p>Логическое</p></td>
+<td align="left"><p>верно</p></td>
+<td align="left"><p>Если этот параметр отмечен, консоль RDP будет использовать полное доменное имя машины, если оно доступно, по данным гостевого агента. Это полное доменное имя затем используется для установки соединения.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>UserRefreshRate</p></td>
-<td align="left"><p>Refresh Rate of Users' Data from Active Directory (in seconds)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Частота обновления данных пользователей из Active Directory (сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>How often the directory server is polled for user account updates.</p></td>
+<td align="left"><p>Как часто опрашивается сервер каталогов на предмет обновления учётных записей пользователей.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>UtilizationThresholdInPercent</p></td>
-<td align="left"><p>The Utilization Threshold (in percent)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Порог использования (в процентах)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>In load balancing, this is a default value used to calculate the maximum CPU limit to determine if the host is over-utilized. This is the percent of the value that the user set in high-utilization in the cluster.</p></td>
+<td align="left"><p>В балансировке нагрузки это значение по умолчанию, используемое для расчёта максимального предела использования ресурсов ЦП, для опеределения чрезмерного использования хоста. В процентах от значения, установленного пользователем для высокой загрузке на кластере.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ValidNumOfMonitors</p></td>
-<td align="left"><p>Valid Numbers of Monitors</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Допустимое число экранов</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Number of monitors available for SPICE-enabled virtual machines.</p></td>
+<td align="left"><p>Количество экранов, доступных для ВМ, использующих SPICE.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VdcVersion</p></td>
-<td align="left"><p>oVirt Version</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Версия oVirt</td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>Automatically set to the current version of oVirt</p></td>
+<td align="left"><p>Автоматически устанавливается в соответствии с текущей версией oVirt</p></td>
 </tr>
 <tr class="odd">
 </tr>
 <tr class="even">
 <td align="left"><p>VDSAttemptsToResetCount</p></td>
-<td align="left"><p>Number of attempts to communicate with Host before trying to reset</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число попыток установить связь с хостом до перезапуска</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The amount of times to retry communications with a host before a fence command is issued. Used in conjunction with <em><code>TimeoutToResetVdsInSeconds</code></em>.</p></td>
+<td align="left"><p>Число повторных попыток установить связь с хостом перед запуском перед тем, как будет запущена операция блокады. Используется в сочетании с <em><code>TimeoutToResetVdsInSeconds</code></em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VdsLoadBalancingeIntervalInMinutes</p></td>
-<td align="left"><p>Host Load Balancing Interval (in minutes)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Интервал балансировки нагрузки хоста (мин.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The interval between running the virtual machines' load balancer in minutes (also defines the first invocation of the load balancer).</p></td>
+<td align="left"><p>Интервал перед запуском балансировщика нагрузки виртуальных машин, в минутах (также определяет первый запуск балансировщика нагрузки).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VdsRecoveryTimeoutInMintues</p></td>
-<td align="left"><p>Host Timeout when Recovering (in minutes)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания хоста во время восстановления (мин.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>When VDSM fails/restarts, it can sometimes be in recovering mode (VDSM reports "initializing" or "recovering from reports").</p></td>
+<td align="left"><p>Во время сбоев/перезапусков VDSM может иногда находиться в режиме восстановления (VDSM сообщает "идёт инициализация" или "восстановление").</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VdsRefreshRate</p></td>
-<td align="left"><p>Time interval in seconds to poll a Host's status</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Временной интервал (сек.) для опроса статуса хоста</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>How often a Hypervisor host's status is checked.</p></td>
+<td align="left"><p>Насколько часто проверятся статус хоста гипервизора.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>vdsTimeout</p></td>
-<td align="left"><p>Host Control Communication Timeout (in seconds)</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания контрольной сязи с хостом (сек.)</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Timeout for a VDSM call - the time engine will wait for sync call to VDSM.</p></td>
+<td align="left"><p>Время ожидания вызова VDSM — время, в течение которого oVirt ожидает вызова синхронизации VDSM.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>vdsConnectionTimeout</p></td>
-<td align="left"><p>VDS connection timeout value</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Значение времени ожидания соединения с VDS</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The time to wait, in seconds, for establishment of a connection with a host.</p></td>
+<td align="left"><p>Время ожидания (сек.) для установки соеджинения с хостом.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>vdsRetries</p></td>
-<td align="left"><p>Number of times to retry VDS-related host operations</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Число попыток повтора операций хоста, связанных с VDS</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The number of times to retry host operations in the event of communication errors.</p></td>
+<td align="left"><p>Количество попыток повторить операцию хоста в случае ошибок связи.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VM32BitMaxMemorySizeInMB</p></td>
-<td align="left"><p>Maximum memory for 32-bit virtual machines</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальный объём памяти для 32-битных ВМ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The maximum memory size, in MB, for 32-bit virtual machines.</p></td>
+<td align="left"><p>Максимальный объём памяти, в МБ, для 32-битных ВМ.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VM64BitMaxMemorySizeInMB</p></td>
-<td align="left"><p>Maximum memory for 64-bit virtual machines</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальный объём памяти для 64-битных ВМ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"><p>v3.0: 524288 v3.1: 2097152 v3.2: 2097152 v3.3: 2097152 v3.4: 2097152</p></td>
 <td align="left"><p>&nbsp;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VmGracefulShutdownMessage</p></td>
-<td align="left"><p>Message displayed in Virtual Machine when Virtual Machine is being shut down from oVirt</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Сообщение, показываемое в виртуальной машине, когда машина выключается через oVirt</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>System Administrator has initiated shutdown of this Virtual Machine. Virtual Machine is shutting down.</p></td>
+<td align="left"><p>Системный администратор инициировал выключение этой виртуальной машины. Виртуальная машина выключается.</p></td>
 </tr>
 <tr class="even">
 </tr>
 <tr class="odd">
 <td align="left"><p>VMMinMemorySizeInMB</p></td>
-<td align="left"><p>Minimal memory size of virtual machine in MB</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Минимальный объём памяти ВМ в МБ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VncKeyboardLayout</p></td>
-<td align="left"><p>Keyboard Layout configuration for VNC</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Параметры раскладки клавиатуры для VNC</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>en-us</p></td>
-<td align="left"><p>Possible values: ar, da, de-ch, en-us, et, fo, fr-be, fr-ch, hu, it, li, mk, nl, no, pt, ru, sv, tr, de en-gb, es, fi, fr, fr-ca, hr, is, ja, lv, nl-be, pl, pt-br, sl, th.</p></td>
+<td align="left"><p>Возможные значения: ar, da, de-ch, en-us, et, fo, fr-be, fr-ch, hu, it, li, mk, nl, no, pt, ru, sv, tr, de en-gb, es, fi, fr, fr-ca, hr, is, ja, lv, nl-be, pl, pt-br, sl, th.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WaitForVdsInitInSec</p></td>
-<td align="left"><p>Wait for a host to complete init in SPM selection</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Ждать, пока хост завершит init в выборе SPM</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>This is a timeout for initializing host as in <em><code>VdsRecoveryTimeoutInMinutes</code></em>, but this timeout is shorter and is used during the SPM selection algorithm. If the selected host is initialized, wait for it to recover.</p></td>
+<td align="left"><p>Это время ожидания инициализации хоста, аналогично параметру в <em><code>VdsRecoveryTimeoutInMinutes</code></em>, но это время ожидания длится меньше и используется во время алгоритма выбора SPM. Если выбранный хост инициализируется, ждите его восстановления.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>FenceQuietTimeBetweenOperationsInSec</p></td>
-<td align="left"><p>Quiet time between Power Management operations in seconds</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время молчания между операциями управления питанием, в сек.</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The minimum time in seconds between two power management operations activated manually by a user.</p></td>
+<td align="left"><p>Минимальное время (сек.) между двумя операциями управления питанием, активированных вручную пользователем.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>FenceProxyDefaultPreferences</p></td>
-<td align="left"><p>The default preferences for fencing proxies</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Параметры по умолчанию для прокси операций блокады</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>cluster,dc</p></td>
-<td align="left"><p>The default fencing proxy preferences used to define how to search for a proxy host in fencing operations.</p></td>
+<td align="left"><p>Параметры по умолчанию для прокси операций блокады, используемые для метода поиска хоста прокси при проведении операции блокады.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MaxAuditLogMessageLength</p></td>
-<td align="left"><p>Maximum length of an Audit Log message</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальная длина сообщения журнала аудита</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SysPrepDefaultUser</p></td>
-<td align="left"><p>Default sysprep user name</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Имя по умолчанию пользователя sysprep</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>This user is used if the domain for sysprep is unknown or no domain is specified.</p></td>
+<td align="left"><p>Этот пользователь используется, если домен sysprep неизвестен или не указан.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SysPrepDefaultPassword</p></td>
-<td align="left"><p>Default SysPrep user password</p></td>
-<td align="left"><p>Password</p></td>
-<td align="left"><p>Empty</p></td>
-<td align="left"><p>This password is used if the domain for sysprep is unknown or no domain is specified.</p></td>
+<td align="left"><p>Пароль по умолчанию пользователя sysprep</p></td>
+<td align="left"><p>Пароль</p></td>
+<td align="left"><p>Пусто</p></td>
+<td align="left"><p>Этот пароль используется, если домен sysprep неизвестен или не указан.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>QoSInboundAverageDefaultValue</p></td>
-<td align="left"><p>The average quality of service for inbound network traffic</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Среднее резервирование канала для входящего сетевого трафика</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The average quality of service for inbound network traffic, in Mbps.</p></td>
+<td align="left"><p>Среднее резервирование канала для входящего сетевого трафика, в Мбит/с.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>QoSInboundPeakDefaultValue</p></td>
-<td align="left"><p>The quality of service for inbound network traffic during peak times</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Резервирование канала для входящего сетевого трафика в периоды высокой нагрузки</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The quality of service for inbound network traffic during peak times, in Mbps.</p></td>
+<td align="left"><p>Резервирование канала для входящего сетевого трафика в периоды высокой нагрузки, в Мбит/с.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>QoSInboundBurstDefaultValue</p></td>
-<td align="left"><p>The quality of service for inbound network traffic during bursts</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Резервирование канала для входящего сетевого трафика в пиковом всплеске</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The quality of service for inbound network traffic during bursts, in Mbps.</p></td>
+<td align="left"><p>Резервирование канала для входящего сетевого трафика в пиковом всплеске, в Мбит/с.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>QoSOutboundAverageDefaultValue</p></td>
-<td align="left"><p>The average quality of service for outbound network traffic</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Среднее резервирование канала для исходящего сетевого трафика</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The average quality of service for outbound network traffic, in Mbps.</p></td>
+<td align="left"><p>Среднее резервирование канала для исходящего сетевого трафика, в Мбит/с.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>QoSOutboundPeakDefaultValue</p></td>
-<td align="left"><p>The quality of service for outbound network traffic during peak times</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Резервирование канала для исходящего сетевого трафика в периоды пиковой нагрузки</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The quality of service for outbound network traffic during peak times, in Mbps.</p></td>
+<td align="left"><p>Резервирование канала для исходящего сетевого трафика в периоды пиковой нагрузки, в Мбит/с.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>QoSOutboundBurstDefaultValue</p></td>
-<td align="left"><p>The quality of service for outbound network traffic during bursts</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Резервирование канала для исходящего сетевого трафика в пиковом всплеске</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The quality of service for outbound network traffic during bursts, in Mbps.</p></td>
+<td align="left"><p>Резервирование канала для исходящего сетевого трафика в пиковом всплеске, в Мбит/с.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>UserSessionTimeOutInterval</p></td>
-<td align="left"><p>Session timeout interval in minutes</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Интервал времени ожидания сеанса, в минутах</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>User session timeout. Global for all types of access - User Portal/Admin Portal/Web Admin/API.</p></td>
+<td align="left"><p>Время ожидания сеанса пользователя. Глобально для всех типов доступа: Пользовательский портал/Портал администрирования/Веб-администрирование/API.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AdminPassword</p></td>
-<td align="left"><p>admin user password</p></td>
-<td align="left"><p>Password</p></td>
+<td align="left"><p>Пароль администратора</p></td>
+<td align="left"><p>Пароль</p></td>
 <td align="left"></td>
-<td align="left"><p>Password of admin user (used if no directory service is used for authentication).</p></td>
+<td align="left"><p>Пароль пользователя-администратора (в случае, если для аутентификации не используется directory service).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IPTablesConfig</p></td>
-<td align="left"><p>Iptables configuration used to auto-configure oVirt</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Параметры Iptables, используемые для автоматической настройки oVirt</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>The complete set of iptables rules that are used when automatic firewall configuration is selected when running the <code>engine-setup</code> command</p></td>
+<td align="left"><p>Полный набор правил iptables, используемый при выборе автоматической настройки брандмауэра во время выполнния команды <code>engine-setup</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>OvirtIsoPrefix</p></td>
-<td align="left"><p>oVirt ISOs files prefix</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Префикс ISO-файлов oVirt</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"><p>ovirt-node-iso, rhevh</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>OvirtInitialSupportedIsoVersion</p></td>
-<td align="left"><p>oVirt node initial Supported ISO Version</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Начальная поддерживаемая версия ISO oVirt node</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VdsLocalDisksLowFreeSpace</p></td>
-<td align="left"><p>Amount of free disk space on a host local storage domain that should be considered low, in MB</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Объём свободного дискового пространства в локальном домене хранилища хоста, который должен считаться низким, в МБ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Setting this value lower than the default of 1000 MB reduces the time available to add additional space to your data domains before virtual machine performance is affected. If you have many virtual machines, generating or receiving data, it may make sense to set this value higher.</p></td>
+<td align="left"><p>Значение ниже стандартных 1000 МБ снижает время, доступное для добавления дополнительного дискового пространства доменам данных перед тем, как начнёт ухудшаться производительность виртуальной машины. При наличии множества машин, создающих или получающих данные, более высокое значение этого параметра может оказаться полезным.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>VdsLocalDisksCriticallyLowFreeSpace</p></td>
-<td align="left"><p>Amount of free disk space on a host local storage domain that should be considered critically low, in MB</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Объём дискового пространства в локальном домене хранилища хоста, который должен считаться критически низким, в МБ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>Setting this value lower than the default of 500 MB reduces the time between when critical disk shortage messages begin being displayed and when virtual machine performance is affected. If you have many virtual machines, generating or receiving data quickly, you might find that the default value is too low, and does not provide enough time to add more storage.</p></td>
+<td align="left"><p>Значение ниже стандартных 500 МБ уменьшает промежуток времени между моментом, когда начинают выводиться сообщения о критической нехватке места и моментом, когда начинает ухудшаться производительность ВМ. При наличии множества машин, быстро создающих или получающих данные, значение по умолчанию может оказаться слишком маленьким и не предоставить достаточно времени для добавления дополнительного дискового пространства.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowDuplicateMacAddresses</p></td>
-<td align="left"><p>Enable duplicate MAC address for VM network interface</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>If enabled, allows that the same MAC address be set explicitly on several virtual NICs. Otherwise, setting a MAC address that is already in use on another virtual NIC is prohibited.</p></td>
+<td align="left"><p>Включение дублирующего MAC-адреса для сетевого интерфейса ВМ</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>При включенном параметре один и тот же MAC-адрес может быть явно установлен на нескольких виртуальных NIC. В противном случае, установка уже использующегося MAC-адреса на другую виртуальную NIC запрещена.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>JobCleanupRateInMinutes</p></td>
-<td align="left"><p>Frequency of jobs cleanup process</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Частота процесса очистки задач</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SucceededJobCleanupTimeInMinutes</p></td>
-<td align="left"><p>Time to keep successfully ended jobs</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время для сохранения успешно завершённых заданий</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>FailedJobCleanupTimeInMinutes</p></td>
-<td align="left"><p>Time to keep failed jobs</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время для сохранения задач, завершившихся сбоем</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VmPoolMonitorIntervalInMinutes</p></td>
-<td align="left"><p>Interval in minutes for monitoring number of prestarted virtual machines in virtual machine pools</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Интервал (мин.) для контролирования числа предзапущенных ВМ в пулах ВМ</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>UserMessageOfTheDay</p></td>
-<td align="left"><p>A message to be displayed in the User Portal login page</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Сообщение, показываемое на странице авторизации Пользовательского портала</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VmPoolMonitorBatchSize</p></td>
-<td align="left"><p>Maximum number of virtual machines that the virtual machine pool monitor will attempt to prestart in a single cycle</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Максимальное число ВМ, которое попробует предварительно запустить монитор пула машин за один цикл</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NetworkConnectivityCheckTimeoutInSeconds</p></td>
-<td align="left"><p>The time to wait before rolling back network changes in case the engine losses connectivity with the host in seconds</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время ожидания (сек.) перед откатом изменений сетевых параметров в случае, если oVirt теряет связь с хостом</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowClusterWithVirtGlusterEnabled</p></td>
-<td align="left"><p>Allows to create a Cluster with both Virt and Gluster services enabled</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>If enabled, the user can create a cluster with both Virt and Gluster support or one of them, otherwise the user cannot create a cluster that supports both.</p></td>
+<td align="left"><p>Возможность создать кластер с одновременно включенными службами Virt и Gluster</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>При включенном параметре пользователь может создавать кластер как с поддержкой обеих служб Virt и Gluster, так и с поддержкой только одной из них, в проивном случае кластер с поддержкой двух служб создать нельзя.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>EnableMACAntiSpoofingFilterRules</p></td>
-<td align="left"><p>Indicates if Network Filtering should be enabled or not</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>v3.0: false v3.1: false v3.2: true</p></td>
-<td align="left"><p>If enabled, MAC anti-spoofing rules are set on each virtual network interface card, ensuring that the Ethernet frames this network interface card sends have the source MAC that is assigned to it in the engine.</p></td>
+<td align="left"><p>Должна ли быть включена сетевая фильтрация</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>v3.0: ложно v3.1: ложно v3.2: верно</p></td>
+<td align="left"><p>При включенном параметре на каждой карте сетевого интерфейса установлены правила MAC-антиспуфинга, что гарантирует, что Ethernet-кадры, посылаемые этой картой, имеют исходный MAC, присвоенный карте в oVirt.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>EnableHostTimeDrift</p></td>
-<td align="left"><p>Indicates if host time-drift validation is enabled</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>false</p></td>
-<td align="left"><p>If time drift validation is enabled, oVirt will require that host system time be within a given variation of oVirt system time. The allowed difference is set by HostTimeDriftInSec</p></td>
+<td align="left"><p>Указывает, включена ли проверка дрейфа времени хоста</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>ложно</p></td>
+<td align="left"><p>При включенной проверке дрейфа времени, oVirt потребует, чтобы системное время хоста находилось в границах указанного изменения системного времени oVirt. Разрешённая разница устанавливается при помощи HostTimeDriftInSec</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>EngineMode</p></td>
-<td align="left"><p>Engine working mode</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>Active</p></td>
+<td align="left"><p>Рабочий режим oVirt</p></td>
+<td align="left"><p>Строка</p></td>
+<td align="left"><p>Активно</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HostTimeDriftInSec</p></td>
-<td align="left"><p>Allowed time drift between any Host and Engine</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Разрешённый дрейф времени между любым хостом и oVirt</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WebSocketProxy</p></td>
-<td align="left"><p>The location of a websocket proxy</p></td>
-<td align="left"><p>String</p></td>
+<td align="left"><p>Местоположение websocket-прокси</p></td>
+<td align="left"><p>Строка</p></td>
 <td align="left"></td>
-<td align="left"><p>The location of a websocket proxy. Possible values include <code>Off</code>, <code>Host:[port]</code>, <code>Engine:[port]</code>, <em>[host name]</em>, or <em>[ip address]</em>:<em>[port]</em></p></td>
+<td align="left"><p>Местоположение websocket-прокси. Возможные значения: <code>Off</code>, <code>Host:[порт]</code>, <code>Engine:[порт]</code>, <em>[имя_хоста]</em> или <em>[ip-адрес]</em>:<em>[порт]</em></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WebSocketProxyTicketValiditySeconds</p></td>
-<td align="left"><p>The time for which websocket proxy tickets are valid</p></td>
-<td align="left"><p>Integer</p></td>
+<td align="left"><p>Время, в течении которого действуют тикеты websocket-прокси</p></td>
+<td align="left"><p>Целое число</p></td>
 <td align="left"></td>
-<td align="left"><p>The time, in seconds, for validity of tickets issued for a websocket proxy.</p></td>
+<td align="left"><p>Время действия тикетов, выданных для websocket-прокси (сек.).</p></td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="the-image-uploader-tool">The Image Uploader Tool</h3>
+<h3 id="the-image-uploader-tool">Инструмент загрузки образов</h3>
 
-<h4 id="the-image-uploader-tool-1">The Image Uploader Tool</h4>
+<h4 id="the-image-uploader-tool-1">Инструмент загрузки образов</h4>
 
-<p>The <code>engine-image-uploader</code> command allows you to list export storage domains and upload virtual machine images in OVF format to an export storage domain and have them automatically recognized in oVirt.</p>
+<p>Команда <code>engine-image-uploader</code> даёт возможность получить список доменов экспорта хранилищ и загружать в домен образы виртуальной машины в формате OVF, которые автоматически распознаются в oVirt.</p>
 
 <div class="alert alert-info">
-  <p><strong>Note:</strong> The image uploader only supports gzip-compressed OVF files created by oVirt.</p>
+  <p><strong>Внимание:</strong> загрузчик образов поддерживает только файлы в формате OVF, созданные oVirt и сжатые при помощи gzip.</p>
 
 </div>
-<p>The archive contains images and master directories in the following format:</p>
+<p>Архив содержит образы и главные каталоги в следующем формате:</p>
 
 <pre class="highlight plaintext"><code>|-- images
 |   |-- [Image Group UUID]
@@ -11199,110 +11199,110 @@ Use the <code>engine-config</code> utility to set a new password for the <code>a
 |             |--- [UUID].ovf
 </code></pre>
 
-<h4 id="syntax-for-the-engine-image-uploader-command">Syntax for the engine-image-uploader Command</h4>
+<h4 id="syntax-for-the-engine-image-uploader-command">Синтаксис команды engine-image-uploader</h4>
 
-<p>The basic syntax for the image uploader command is:</p>
+<p>Базовый синтаксис команды для загрузки образов:</p>
 
 <pre class="highlight plaintext"><code>engine-image-uploader [options] list
 engine-image-uploader [options] upload [file].[file]...[file]
 </code></pre>
 
-<p>The image uploader command supports two actions - <em><code>list</code></em>, and <em><code>upload</code></em>.</p>
+<p>Команды загрузки образов поддерживает два действия: <em><code>list</code></em> и <em><code>upload</code></em>.</p>
 
 <ul>
-  <li>The <em><code>list</code></em> action lists the export storage domains to which images can be uploaded.</li>
-  <li>The <em><code>upload</code></em> action uploads images to the specified export storage domain.</li>
+  <li>Действие <em><code>list</code></em> выводит список доменов экспорта, на которые можно загрузить образы.</li>
+  <li>Действие <em><code>upload</code></em> загружает образы на указанный домен экспорта.</li>
 </ul>
 
-<p>You must specify one of the above actions when you use the image uploader command. Moreover, you must specify at least one local file to use the <em><code>upload</code></em> action.</p>
+<p>При использовании команды загрузки образов необходимо указать одно из вышеуказанных действий. Кроме того, необходимо указать как минимум один локальный файл для использования действия <em><code>upload</code></em>.</p>
 
-<p>There are several parameters to further refine the <code>engine-image-uploader</code> command. You can set defaults for any of these parameters in the <code>/etc/ovirt-engine/imageuploader.conf</code> file.</p>
+<p>Существует несколько параметров для тонкой настройки команды <code>engine-image-uploader</code>. Значения по умолчанию для любого из этих параметров можно указать в файле <code>/etc/ovirt-engine/imageuploader.conf</code>.</p>
 
-<p><strong>General Options</strong></p>
+<p><strong>Общие параметры</strong></p>
 
 <p><em><code>-h</code></em>, <em><code>--help</code></em><br>
-Displays information on how to use the image uploader command.</p>
+Информация по использованию команды для загрузки образов.</p>
 
 <p><em><code>--conf-file=[PATH]</code></em><br>
-Sets <em>[PATH]</em> as the configuration file the command will to use. The default is <code>etc/ovirt-engine/imageuploader.conf</code>.</p>
+Устанавливает <em>[ПУТЬ]</em> в качестве файла конфигурации, используемого командой. Путь по умолчанию: <code>etc/ovirt-engine/imageuploader.conf</code>.</p>
 
 <p><em><code>--log-file=[PATH]</code></em><br>
-Sets <em>[PATH]</em> as the specific file name the command will use to write log output. The default is <code>/var/log/ovirt-engine/ovirt-image-uploader/ovirt-image-uploader-[date].log</code>.</p>
+Устанавливает <em>[ПУТЬ]</em> в качестве имени файла, в который будет записываться вывод журнала. Путь по умолчанию: <code>/var/log/ovirt-engine/ovirt-image-uploader/ovirt-image-uploader-[дата].log</code>.</p>
 
 <p><em><code>--cert-file=[PATH]</code></em><br>
-Sets <em>[PATH]</em> as the certificate for validating the engine. The default is <code>/etc/pki/ovirt-engine/ca.pem</code>.</p>
+Устанавливает <em>[ПУТЬ]</em> в качестве сертификата для валидации oVirt. Путь по умолчанию: <code>/etc/pki/ovirt-engine/ca.pem</code>.</p>
 
 <p><em><code>--insecure</code></em><br>
-Specifies that no attempt will be made to verify the engine.</p>
+Указывает, что валидация oVirt проводиться не будет.</p>
 
 <p><em><code>--quiet</code></em><br>
-Sets quiet mode, reducing console output to a minimum.</p>
+Режим без сообщений; консольный вывод сведён к минимуму.</p>
 
 <p><em><code>-v</code></em>, <em><code>--verbose</code></em><br>
-Sets verbose mode, providing more console output.</p>
+Режим подробной информации, подробный консольный вывод.</p>
 
 <p><em><code>-f</code></em>, <em><code>--force</code></em><br>
-Force mode is necessary when the source file being uploaded has the same file name as an existing file in the destination export domain. This option forces the existing file to be overwritten.</p>
+Принудительный режим необходим в том случае, когда имя загружаемого исходного файла совпадает с именем уже существующего файла в целевом домене экспорта. С этим параметром существующий файл будет заменён.</p>
 
-<p><strong>oVirt Options</strong></p>
+<p><strong>Параметры oVirt</strong></p>
 
 <p><em><code>-u [USER]</code></em>, <em><code>--user=[USER]</code></em><br>
-Specifies the user whose credentials will be used to execute the command. The <em>[USER]</em> is specified in the format <em>[username]</em>@<em>[domain]</em>. The user must exist in the specified domain and be known to oVirt.</p>
+Определяет пользователя, чьи учётные данные будут использованы при выполнении команды. <em>[ПОЛЬЗОВАТЕЛЬ]</em> указывается в формате <em>[имя_пользователя]</em>@<em>[домен]</em>. Пользователь должен существовать в указанном домене и быть известным для oVirt.</p>
 
 <p><em><code>-r [FQDN]</code></em>, <em><code>--engine=[FQDN]</code></em><br>
-Specifies the IP address or fully qualified domain name of oVirt from which the images will be uploaded. It is assumed that the image uploader is being run from the same machine on which oVirt is installed. The default value is <code>localhost:443</code>.</p>
+Указывает IP-ажрес или полное доменное имя oVirt, откуда будут загружаться образы. Предполагается, что загрузчик образов запускается на той же машине, на которой установлена oVirt. Значение по умолчанию: <code>localhost:443</code>.</p>
 
-<p><strong>Export Storage Domain Options</strong></p>
+<p><strong>Параметры домена экпорта</strong></p>
 
-<p>The following options specify the export domain to which the images will be uploaded. These options cannot be used together; you must used either the <em><code>-e</code></em> option or the <em><code>-n</code></em> option.</p>
+<p>Следующие параметры указывают домен экспорта, в который будут загружены образы. Эти параметры нельзя использовать одновременно; указывается либо параметр <em><code>-e</code></em> либо параметр <em><code>-n</code></em>.</p>
 
-<p><em><code>-e</code></em> <em>[EXPORT_DOMAIN]</em>, <em><code>--export-domain=[EXPORT_DOMAIN]</code></em><br>
-Sets the storage domain <em>EXPORT_DOMAIN</em> as the destination for uploads.</p>
+<p><em><code>-e</code></em> <em>[ДОМЕН_ЭКСПОРТА]</em>, <em><code>--export-domain=[ДОМЕН_ЭКСПОРТА]</code></em><br>
+Указывается целевой домен хранилища <em>ДОМЕН_ЭКСПОРТА</em> для загрузки.</p>
 
 <p><em><code>-n</code></em> <em>[NFSSERVER]</em>, <em><code>--nfs-server=[NFSSERVER]</code></em><br>
 Sets the NFS path <em>[NFSSERVER]</em> as the destination for uploads.</p>
 
-<p><strong>Import Options</strong></p>
+<p><strong>Параметры импорта</strong></p>
 
-<p>The following options allow you to customize which attributes of the images being uploaded are included when the image is uploaded to the export domain.</p>
+<p>Следующие параметры дают возможность настроить, какие именно атрибуты загружаемых образов будут включены при загрузке образа в домен экспорта.</p>
 
 <p><em><code>-i</code></em>, <em><code>--ovf-id</code></em><br>
-Specifies that the UUID of the image will not be updated. By default, the command generates a new UUID for images that are uploaded. This ensures there is no conflict between the id of the image being uploaded and the images already in the environment.</p>
+Указывает, что UUID ораза не будет загружен. По умолчанию, команды создаёт новый UUID для загружаемых образов. Это устраняет возможный конфликт между идентификатором загружаемого образа и образов, уже существующих в окружении.</p>
 
 <p><em><code>-d</code></em>, <em><code>--disk-instance-id</code></em><br>
-Specifies that the instance ID for each disk in the image will not be renamed. By default, the command generates new UUIDs for disks in images that are uploaded. This ensures there are no conflicts between the disks on the image being uploaded and the disks already in the environment.</p>
+Указывает, что идентификатор экземпляра для каждого диска в образе не будет переименован. По умочанию, команда создаёт новые UUID для дисков в загружаемых образах. Это устраняет возможные конфликты между дисками в загружаемом образе и дисками, уже существующими в окружении.</p>
 
 <p><em><code>-m</code></em>, <em><code>--mac-address</code></em><br>
-Specifies that network components in the image will not be removed from the image. By default, the command removes network interface cards from image being uploaded to prevent conflicts with network cards on other virtual machines already in the environment. If you do not use this option, you can use the Administration Portal to add network interface cards to newly imported images and oVirt will ensure there are no MAC address conflicts.</p>
+Указывает, что сетевые компоненты в образе не будут из него удалены. По умолчанию, команда удаляет катры сетевых интерфейсов из загружаемых образов, для предотвращения конфликтов с сетвыми картами других ВИ, уже находящихся в окружении. Если этот параметр не используется, с помощью Портала администрирования можно добавить карты сетевых интерфейсов к недавно загруженным образам, и oVirt устранит возможные конфликты MAC-адресов.</p>
 
 <p><em><code>-N [NEW_IMAGE_NAME]</code></em>, <em><code>--name=[NEW_IMAGE_NAME]</code></em><br>
-Specifies a new name for the image being uploaded.</p>
+Указывает новое имя загружаемого образа.</p>
 
-<h4 id="creating-an-ovf-archive-that-is-compatible-with-the-image-uploader">Creating an OVF Archive That is Compatible With the Image Uploader</h4>
+<h4 id="creating-an-ovf-archive-that-is-compatible-with-the-image-uploader">Создание архива OVF, совместимого с загрузчиком образов</h4>
 
-<p><strong>Summary</strong></p>
+<p><strong>Описание задачи</strong></p>
 
-<p>You can create files that can be uploaded using the <code>engine-image-uploader</code> tool.</p>
+<p>Создать файлы, которые будут загружены с помощью утилиты <code>engine-image-uploader</code>.</p>
 
-<p><strong>Procedure&nbsp;16.2.&nbsp;Creating an OVF Archive That is Compatible With the Image Uploader</strong></p>
+<p><strong>Действие&nbsp;16.2.&nbsp;Создание архива OVF, совместимого с загрузчиком образов</strong></p>
 
 <ol>
-  <li>Use oVirt to create an empty export domain. An empty export domain makes it easy to see which directory contains your virtual machine.</li>
-  <li>Export your virtual machine to the empty export domain you just created.</li>
-  <li>Log in to the storage server that serves as the export domain, find the root of the NFS share and change to the subdirectory under that mount point. You started with a new export domain, there is only one directory under the exported directory. It contains the <code>images/</code> and <code>master/</code> directories.</li>
-  <li>Run the <code>tar -zcvf my.ovf images/ master/</code> command to create the tar/gzip ovf archive.</li>
-  <li>Anyone you give the resulting ovf file to (in this example, called <code>my.ovf</code>) can import it to oVirt using the <code>engine-image-uploader</code> command.</li>
+  <li>С помощью oVirt создайте пустой домен экспорта. Пустой домен экпорта облегчает поиск каталога, содержащего нужную ВМ.</li>
+  <li>Экпортируйте ВМ в тоько что созданный пустой домен экпорта.</li>
+  <li>Авторизуйтесь на сервере хранилища, который служит доменом экпорта, найдите корень общего ресурса NFS и перейдите в подкаталог в этой точке монтирования. Мы начали с нового домена экспорта, поэтому в экспортируемом каталоге существует только один подкаталог, в котором находятся каталоги <code>images/</code> и <code>master/</code>.</li>
+  <li>Выполните команду <code>tar -zcvf my.ovf images/ master/</code> для создания архива tar/gzip в формате ovf.</li>
+  <li>Любой, кому будет передан итоговый файл ovf (в этом примере названный <code>my.ovf</code>) может импортировать его в oVirt с помощью команды <code>engine-image-uploader</code>.</li>
 </ol>
 
-<p><strong>Result</strong></p>
+<p><strong>Итог</strong></p>
 
-<p>You have created a compressed OVF image file that can be distributed. Anyone you give it to can use the <code>engine-image-uploader</code> command to upload your image into their oVirt environment.</p>
+<p>Мы создали сжатый образ OVF, который можно распространять. Любой, кому будет передан файл, может использовать команду <code>engine-image-uploader</code> для загружки образа в своё окружение oVirt.</p>
 
-<h4 id="basic-engine-image-uploader-usage-examples">Basic engine-image-uploader Usage Examples</h4>
+<h4 id="basic-engine-image-uploader-usage-examples">Базовые примеры использования engine-image-uploader</h4>
 
-<p>The following is an example of how to use the engine uploader command to list export storage domains:</p>
+<p>Далее показан пример использования команды engine uploader для показа списка доменов экспорта:</p>
 
-<p><strong>Example&nbsp;16.1.&nbsp;Listing export storage domains using the image uploader</strong></p>
+<p><strong>Пример&nbsp;16.1.&nbsp;Вывод списка доменов экспорта с использованием загрузчика образов</strong></p>
 
 <pre class="highlight plaintext"><code># engine-image-uploader list
 Please provide the REST API password for the admin@internal oVirt Engine user (CTRL+D to abort):
@@ -11310,21 +11310,21 @@ Export Storage Domain Name | Datacenter  | Export Domain Status
 myexportdom               | Myowndc 　  | active
 </code></pre>
 
-<p>The following is an example of how to upload an Open Virtualization Format (ovf) file:</p>
+<p>Далее показан пример загрузки файла в формате Open Virtualization Format (ovf):</p>
 
-<p><strong>Example&nbsp;16.2.&nbsp;Uploading a file using the image uploader</strong></p>
+<p><strong>Пример&nbsp;16.2.&nbsp;Загрузка файла с помощью загрузчика образов</strong></p>
 
 <pre class="highlight plaintext"><code># engine-image-uploader -e myexportdom upload myrhel6.ovf
 Please provide the REST API password for the admin@internal oVirt Engine user (CTRL+D to abort):
 </code></pre>
 
-<h3 id="the-log-collector-tool">The Log Collector Tool</h3>
+<h3 id="the-log-collector-tool">Инструмент сборщик данных журнала</h3>
 
-<h4 id="log-collector">Log Collector</h4>
+<h4 id="log-collector">Сборщик данных журнала</h4>
 
-<p>A log collection tool is included in oVirt. This allows you to easily collect relevant logs from across the oVirt environment when requesting support.</p>
+<p>Инструмент сборщик данных журнала включен в oVirt. Это даёт возможность легко собрать необходимые файлы журналов со всего окружения oVirt вслучае необходимости помощи.</p>
 
-<p>The log collection command is <code>engine-log-collector</code>. You are required to log in as the <code>root</code> user and provide the administration credentials for the oVirt environment. The <code>engine-log-collector -h</code> command displays usage information, including a list of all valid options for the <code>engine-log-collector</code> command.</p>
+<p>КомThe log collection command is <code>engine-log-collector</code>. You are required to log in as the <code>root</code> user and provide the administration credentials for the oVirt environment. The <code>engine-log-collector -h</code> command displays usage information, including a list of all valid options for the <code>engine-log-collector</code> command.</p>
 
 <h4 id="syntax-for-engine-log-collector-command">Syntax for engine-log-collector Command</h4>
 
