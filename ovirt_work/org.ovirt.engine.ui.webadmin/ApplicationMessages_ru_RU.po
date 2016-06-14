@@ -1,0 +1,585 @@
+#. # Generated from org.ovirt.engine.ui.webadmin.ApplicationMessages# for locale default
+#. extracted from ApplicationMessages.properties, ApplicationMessages_ru_RU.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-14 16:56+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#. # 0=size
+#: additionalAvailableSizeInGB
+msgid "+ {0} GB"
+msgstr "+ {0} ГБ"
+
+#. # 0=numOfAddresses
+#: addressesVmGuestAgent
+msgid "{0} addresses"
+msgstr "{0} адресов"
+
+#. # 0=reason
+#: asyncCallFailure
+msgid "Error while loading data from server: {0}"
+msgstr "Ошибка загрузки данных с сервера: {0}"
+
+#: bootable
+msgid "Bootable"
+msgstr "Загрузочный"
+
+#. # 0=minimalClusterVersion
+#: cloneVmNotSupported
+msgid ""
+"Clone VM from Snapshot is supported only for Clusters of version {0} and "
+"above"
+msgstr ""
+"Клонирование ВМ из снимка поддерживается только для кластеров версии {0} и "
+"выше."
+
+#: clusterHasNewGlusterHosts
+msgid ""
+"Some new hosts are detected in the cluster. You can <a>Import</a> them to "
+"engine or <a>Detach</a> them from the cluster."
+msgstr ""
+"В кластере обнаружены новые хосты. Их можно <a>Импортировать</a> в ЦУ или "
+"<a>Отсоединить</a> от кластера."
+
+#. # 0=a
+#: clusterPopupMemoryOptimizationCustomLabel
+msgid "Custom Overcommit Threshold - Set to {0}% via API/CLI"
+msgstr ""
+"Пользовательский порог превышенного выделения — установлен в {0}% через "
+"API/CLI"
+
+#. # 0=a
+#: clusterPopupMemoryOptimizationForDesktopLabel
+msgid "For Desktop Load - Allow scheduling of {0}% of physical memory"
+msgstr ""
+"Для нагрузки рабочего стола — разрешить запланировать {0}% физической памяти"
+
+#. # 0=a
+#: clusterPopupMemoryOptimizationForServerLabel
+msgid "For Server Load - Allow scheduling of {0}% of physical memory"
+msgstr "Для нагрузки сервера — разрешить запланировать {0}% физической памяти"
+
+#: consoleOverrideDefinedInGlobalConfig
+msgid "global configuration"
+msgstr "глобальная конфигурация"
+
+#: consoleOverrideDefinedOnCluster
+msgid "cluster"
+msgstr "кластер"
+
+#. # 0=parentConfiguration, 1=parentSpiceProxy
+#: consoleOverrideSpiceProxyMessage
+msgid ""
+"This will override the SPICE proxy defined in {0}. Current configuration: "
+"{1}. SPICE proxy address format: [protocol://]<host>[:port]. The only "
+"supported protocol is http."
+msgstr ""
+"Это действие переопределит прокси SPICE, настроенный в {0}. Текущая "
+"конфигурация: {1}. Формат адреса прокси SPICE: [протокол://]<хост>[:порт]. "
+"Поддерживается только протокол http."
+
+#. # 0=numberOfCpus, 1=numberOfSockets, 2=numberOfCpusPerSocket
+#: cpuInfoLabel
+msgid "{0} ({1} Socket(s), {2} Core(s) per Socket)"
+msgstr "{0} (Сокетов: {1}, Ядер на сокет: {2})"
+
+#. # 0=mtu
+#: defaultMtu
+msgid "Default ({0})"
+msgstr "По умолчанию ({0})"
+
+#. # 0=currentDefault
+#: defaultTimeZoneCaption
+msgid "default: {0}"
+msgstr "по умолчанию: {0}"
+
+#. # 0=dcName
+#: detaCenterForceRemovePopupMessageLabel
+msgid ""
+"All references to objects that belong to Data Center {0} in the database "
+"will be removed. You may need to manually clean the Storage Domains in order "
+"to reuse them."
+msgstr ""
+"Все ссылки на объекты в базе данных, принадлежащие дата-центру {0}, будут "
+"удалены. Возможно, понадобится ручная чистка доменов хранилищ чтобы снова "
+"начать их использовать."
+
+#. # 0=numberOfVms, 1=vmName
+#: diskAttachedToOtherVMs
+msgid "Attached to {0} VM(s) other than {1}"
+msgstr "Присоединён к {0} ВМ, а не к {1}"
+
+#. # 0=numberOfVms
+#: diskAttachedToVMs
+msgid "Attached to {0} VM(s)"
+msgstr "Присоединён к {0} ВМ"
+
+#: diskNote
+msgid "Note that the disk is:"
+msgstr "Внимание, диск является:"
+
+#. # 0=status, 1=disksAliases
+#: disksStatusWarning
+msgid "The following disks are in status {0}: {1}"
+msgstr "Следующие диски имеют статус {0}: {1}"
+
+#: emptyProfile
+msgid "<Empty>"
+msgstr "<Пусто>"
+
+#: emptyProfileDescription
+msgid "Do not assign any profile to this virtual network interface"
+msgstr "Не привязывать никакой профиль к этому интерфейсу виртуальной сети"
+
+#. # 0=mastervolName, 1=clusterName
+#: geoRepSlaveVolumeToolTip
+msgid "Volume data from {0} of cluster {1} is replicated to this volume."
+msgstr "Данные тома из {0} кластера {1} реплицированы в этот том."
+
+#. # 0=raidType
+#: getStorageDeviceSelectionInfo
+msgid "(Choose storage devices of RAID type: {0})"
+msgstr "(Выберите устройство хранения типа RAID: {0})"
+
+#. # 0=currentDefault
+#: globalVncKeyboardLayoutCaption
+msgid "default [{0}]"
+msgstr "по умолчанию [{0}]"
+
+#. # 0=freeSize, 1=usedSize, 2=totalSize
+#: glusterCapacityInfo
+msgid "Free {0}Used {1} of total available {2}"
+msgstr "Свободно {0}Используется {1} из всего доступного {2}"
+
+#. # 0=name
+#: hostDataCenter
+msgid "Data Center: {0}"
+msgstr "Дата-центр: {0}"
+
+#: hostHasManualFenceAlert
+msgid ""
+"This host is in non responding state and has no power management configured. "
+"Please reboot manually."
+msgstr ""
+"Хост не отвечает, и на хосте не настроено управление питанием. Перезапустите "
+"его вручную."
+
+#: hostHasNICsAlert
+msgid "The Host network configuration is not saved. <a>Save</a>"
+msgstr "Параметры сети хоста не сохранены. <a>Сохранить</a>"
+
+#: hostHasNoPowerManagementAlert
+msgid ""
+"Power Management is not configured for this Host. <a>Enable Power "
+"Management</a>"
+msgstr ""
+"Для этого хоста не настроено управление питанием. <a>Включить управление "
+"питанием</a>"
+
+#: hostHasReinstallAlertInstallFailed
+msgid ""
+"Host installation failed. Fix installation issues and try to <a>Re-"
+"Install</a>"
+msgstr ""
+"Сбой установки хоста. Исправьте проблемы установки и попробуйте "
+"<a>переустановить</a>"
+
+#: hostHasReinstallAlertMaintenance
+msgid ""
+"Host is in maintenance mode, you can Activate it by pressing the Activate "
+"button. If you wish to upgrade or reinstall it click <a>here</a>."
+msgstr ""
+"Хост в режиме обслуживания, активируйте его, нажав кнопку «Активировать». "
+"Для обновления или переустановки нажмите <a>сюда</a>."
+
+#: hostHasReinstallAlertNonResponsive
+msgid ""
+"This host is in non responding state. Try to Activate it; If the problem "
+"persists, switch Host to Maintenance mode and try to reinstall it."
+msgstr ""
+"Хост не отвечает. Попробуйте активировать его; если проблема не исчезнет, "
+"переведите хост в режим обслуживания и попробуйте его переустановить."
+
+#: hostHasUpgradeAlert
+msgid ""
+"A new version is available; an upgrade option will appear once the Host is "
+"moved to maintenance mode."
+msgstr ""
+"Доступна новая версия; возможность обновления появится сразу после перевода "
+"хоста в режим обслуживания."
+
+#: hostInSupportedStatusHasUpgradeAlert
+msgid "A new version is available. <a>Upgrade</a>"
+msgstr "Доступна новая версия. <a>Обновить</a>"
+
+#: hotPlugUnplugCpuWarning
+msgid ""
+"Hot add CPUs by changing the number of sockets. Please consult documentation "
+"for your guest operating system to ensure it has proper support for CPU Hot "
+"Add"
+msgstr ""
+"Горячее добавление ЦП с помощью изменения количества сокетов. Прочитайте "
+"документацию используемой ОС, чтобы проверить наличие необходимой поддержки "
+"горячего добавления ЦП."
+
+#. # 0=lastScanDate
+#: lastDiskAlignment
+msgid "Last scan: {0}"
+msgstr "Последнее сканирование: {0}"
+
+#. # 0=mem, 1=limit
+#: limitedMemConsumption
+msgid "{0} out of {1} MB"
+msgstr "{0} из {1} МБ"
+
+#. # 0=storage, 1=limit
+#: limitedStorageConsumption
+msgid "{0} out of {1} GB"
+msgstr "{0} из {1} ГБ"
+
+#. # 0=vcpu, 1=limit
+#: limitedVcpuConsumption
+msgid "{0} out of {1} vCPUs"
+msgstr "{0} из {1} vCPU"
+
+#. # 0=storageDomainName
+#: lunAlreadyPartOfStorageDomainWarning
+msgid "LUN is already part of a Storage Domain: {0}"
+msgstr "LUN уже является частью домена хранилища: {0}"
+
+#. # 0=diskAlias
+#: lunUsedByDiskWarning
+msgid "LUN is already used by a Disk: {0}"
+msgstr "LUN уже используется диском: {0}"
+
+#. # 0=hostName
+#: manaulFencePopupMessageLabel
+msgid ""
+"Please make sure the Host ''{0}'' has been manually shut down or rebooted."
+msgstr "Убедитесь, что хост «{0}» был выключен или перезапущен вручную."
+
+#: maxAssignedVmsPerUserHelp
+msgid ""
+"Maximum number of VMs a single user can attach to from this pool. This field "
+"must be between 1 and number of VMs in this pool."
+msgstr ""
+"Максимальное количество ВМ из этого пула, которые можно присоединить к "
+"одному пользователю. Значение в этом поле должно быть между 1 и числом ВМ в "
+"этом пуле."
+
+#. # 0=maxVfs
+#: maxVfs
+msgid "0 - {0}"
+msgstr "0 — {0}"
+
+#: migrateHostDisabledVMsInServerClusters
+msgid ""
+"Host Destination is disabled since you have selected Virtual Machines in "
+"several Clusters."
+msgstr ""
+"Целевой хост отключён, поскольку было выбрано несколько ВМ на нескольких "
+"разных кластерах."
+
+#: migrateNoAvailableHost
+msgid "No available Host to migrate to."
+msgstr "Нет доступных хостов для проведения миграции."
+
+#: migrateSomeVmsAlreadyRunningOnHost
+msgid ""
+"Note that some of the selected VMs are already running on this Host and will "
+"not be migrated."
+msgstr ""
+"Внимание: некоторые из выбранных ВМ уже выполняются на этом хосте и не будут "
+"перенесены."
+
+#. # 0=status, 1=progress
+#: migratingProgress
+msgid "{0}: {1}"
+msgstr "{0}: {1}"
+
+#. # 0=milliseconds
+#: migrationDowntimeInfo
+msgid ""
+"Represents maximum number of milliseconds the VM can be down during live "
+"migration. Value of 0 means that VDSM default will be used. (Current engine-"
+"wide default is {0}ms)"
+msgstr ""
+"Отображает максимальное число миллисекунд, в течении которых ВМ может не "
+"работать во время динамической миграции. Значение 0 означает использование "
+"VDSM по умолчанию. (Текущее значение по умолчанию для всего ЦУ — {0}мс)"
+
+#: migrationSelectInfo
+msgid ""
+"When at least one of the VM activated disks use SCSI reservation, migration "
+"option is ignored and VM cannot be migrated."
+msgstr ""
+"Если хотя бы один активированный диск ВМ использует резервирование SCSI, то "
+"параметр миграции игнорируется и ВМ теряет возможность переноса."
+
+#. # 0=networkOperationMessage
+#: moveDisplayNetworkWarning
+msgid ""
+"{0}. Moving the display network will drop VM console connectivity until they "
+"are restarted."
+msgstr ""
+"{0}. Перемещение сети передачи экрана приведёт к разрыву консольного "
+"соединения ВМ. Соединение восстановится после перезапуска машин."
+
+#. # 0=name, 1=id
+#: nameId
+msgctxt "nameId"
+msgid "{0} ({1})"
+msgstr "{0} ({1})"
+
+#: nextRunConfigurationCanBeAppliedImmediately
+msgid "The following values can be applied immediately:<br/>"
+msgstr "Следующие значения можно применить немедленно:<br/>"
+
+#: nextRunConfigurationCpuValue
+msgid "- cpu<br/>"
+msgstr "— цп<br/>"
+
+#: nextRunConfigurationExists
+msgid "Some of the changes will be applied only on the vm next start."
+msgstr "Некоторые изменения будут применены только после перезапуска ВМ."
+
+#: nextRunConfigurationMemoryValue
+msgid "- memory<br/>"
+msgstr "— память<br/>"
+
+#: noSpiceProxyDefined
+msgid "No SPICE proxy defined"
+msgstr "SPICE прокси не определён"
+
+#. # 0=totalMemory
+#: numaMemory
+msgid "{0} MB"
+msgstr "{0} МБ"
+
+#. # 0=totalMemoryUsed
+#: numaMemoryUsed
+msgid "{0} MB used"
+msgstr "{0} МБ используется"
+
+#. # 0=index
+#: numaNode
+msgid "NUMA {0}"
+msgstr "NUMA {0}"
+
+#. # 0=percentage
+#: numaPercentUsed
+msgid "{0}% Used"
+msgstr "{0}% используется"
+
+#. # 0=nodeIndex
+#: numaSocketNumber
+msgid "Socket {0}"
+msgstr "Сокет {0}"
+
+#. # 0=totalCpu
+#: numaTotalCpus
+msgid "{0} CPUs"
+msgstr "{0} ЦП"
+
+#. # 0=a, 1=b
+#: or
+msgid "{0} or {1}"
+msgstr "{0} или {1}"
+
+#. # 0=numOfVms
+#: outOfXVMsInPool
+msgid "out of {0} VMs in pool"
+msgstr "из {0} ВМ пула"
+
+#. # 0=percent, 1=value
+#: percentWithValueInGB
+msgid "{0}% ({1} GB)"
+msgstr "{0}% ({1} ГБ)"
+
+#: poolNameHelp
+msgid ""
+"It is possible to specify mask for the VM indexes, for example: for pool "
+"''my??pool'' the generated names will be: my01pool,my02pool,...my99pool"
+msgstr ""
+"Возможно указать маску для индексов ВМ, например: для пула «my??pool» будут "
+"созданы имена: my01pool,my02pool,...my99pool"
+
+#: prestartedHelp
+msgid ""
+"Number of Prestarted VMs defines the number of VMs in Run state , that are "
+"waiting to be attached to Users. Accepted values: 0 to the Number of VMs "
+"that already exists in the Pool."
+msgstr ""
+"Количество предзапущенных ВМ определяет количество машин со статусом "
+"«Выполняется», которые ожидают присоединения к пользователю. Принимаются "
+"значения: от 0 до числа ВМ, уже входящих в пул."
+
+#. # 0=profileName, 1=networkName
+#: profileAndNetwork
+msgctxt "profileAndNetwork"
+msgid "{0} ({1})"
+msgstr "{0} ({1})"
+
+#. # 0=profileName, 1=networkName
+#: profileAndNetworkSelected
+msgid "{0}/{1}"
+msgstr "{0}/{1}"
+
+#. # 0=numOfVCPU
+#: quotaFreeCpus
+msgid "Free: {0} vCPU"
+msgstr "Свободно: {0} vCPU"
+
+#. # 0=jobStatus
+#: rebalanceStatusMessage
+msgid "Rebalance {0}"
+msgstr "Перебалансировка {0}"
+
+#. # 0=seconds
+#: refreshRateSeconds
+msgid "{0} sec"
+msgstr "{0} сек"
+
+#. # 0=hotkey
+#: remapCtrlAltDelete
+msgid "Map control-alt-del shortcut to {0}"
+msgstr "Привязать сочетание control-alt-del к {0}"
+
+#. # 0=roleName, 1=userName
+#: roleOnUser
+msgid "Role: {0} on User: {1}"
+msgstr "Роль: {0} юзер: {1}"
+
+#. # 0=vmName
+#: sameVmNameExists
+msgid "Virtual Machine {0} already exists"
+msgstr "Виртуальная машина {0} уже существует"
+
+#. # 0=name
+#: selectConsoleFor
+msgid "Select Console for ''{0}''"
+msgstr "Выбрать консоль для «{0}»"
+
+#: serialNumberInfo
+msgid ""
+"Policy of assigning serial numbers to running VMs. Can be Host''s UUID, "
+"Vm''s UUID or any custom value."
+msgstr ""
+"Политика присвоения серийных номеров выполняемым ВМ. Это может быть UUID "
+"хоста, UUID ВМ или любое пользовательское значение."
+
+#: shareable
+msgid "Shareable"
+msgstr "Может быть общим"
+
+#. # 0=numOfDisks, 1=diskAliases
+#: snapshotDisksLabel
+msgid "(The snapshot contains {0} disk(s): {1})"
+msgstr "(Снимок содержит {0} дисков: {1})"
+
+#. # 0=snapshotDescription, 1=diskAliases
+#: snapshotPreviewing
+msgid "{0} (Previewing: {1})"
+msgstr "{0} (Просматривается: {1})"
+
+#. # 0=storageName
+#: storageDestroyPopupMessageLabel
+msgid ""
+"All references to objects that reside on Storage Domain {0} in the database "
+"will be removed. You may need to manually clean the storage in order to "
+"reuse it."
+msgstr ""
+"Все ссылки на объекты в базе данных, расположенные в домене хранилища {0}, "
+"будут удалены. Возможно, понадобится ручная чистка доменов хранилища чтобы "
+"снова начать их использовать."
+
+#. # 0=name, 1=free, 2=total
+#: storageDomainFreeSpace
+msgid "{0} ({1} GB free of {2} GB)"
+msgstr "{0} ({1} ГБ свободно из {2} ГБ)"
+
+#. # 0=stripeSize, 1=raidType
+#: stripSizeInfoForGlusterBricks
+msgid "Stripe Size {0} KB is recommended for {1} device"
+msgstr "Для устройства {1} рекомендуется размер частей в {0} КБ"
+
+#. # 0=dcName
+#: theNetworkWillBeAddedToTheDataCenterAsWell
+msgid "The Network will be added to the Data Center {0} as well."
+msgstr "Сеть также будет добавлена в дата-центр {0}."
+
+#. # 0=reason
+#: uiCommonPublicConnectionClosed
+msgid "Connection closed: {0}"
+msgstr "Соединение разорвано: {0}"
+
+#. # 0=action, 1=reason
+#: uiCommonRunActionExecutionFailed
+msgid "Error while executing action {0}: {1}"
+msgstr "Ошибка при выполнении действия {0}: {1}"
+
+#. # 0=reason
+#: uiCommonRunActionFailed
+msgid "Error while executing action: {0}"
+msgstr "Ошибка при выполнении действия: {0}"
+
+#. # 0=reason
+#: uiCommonRunQueryFailed
+msgid "Error while executing query: {0}"
+msgstr "Ошибка при выполнении запроса: {}"
+
+#. # 0=mem
+#: unlimitedMemConsumption
+msgid "{0} out of unlimited MB"
+msgstr "{0} МБ из неограниченного количества"
+
+#. # 0=storage
+#: unlimitedStorageConsumption
+msgid "{0} out of unlimited GB"
+msgstr "{0} ГБ из неограниченного количества"
+
+#. # 0=vcpu
+#: unlimitedVcpuConsumption
+msgid "{0} out of unlimited vCPUs"
+msgstr "{0} из неограниченного количества vCPU"
+
+#. # 0=userName, 1=roleName
+#: userWithRole
+msgid "User: {0} with Role: {1}"
+msgstr "Пользователь: {0} с ролью: {1}"
+
+#. # 0=name, 1=index
+#: vNumaName
+msgid "{0}_NUMA{1}"
+msgstr "{0}_NUMA{1}"
+
+#. # 0=vlanId
+#: vlanNetwork
+msgid "(VLAN {0})"
+msgstr "(VLAN {0})"
+
+#. # 0=numOfDisks, 1=diskAliases
+#: vmDisksLabel
+msgid "The VM contains {0} disk(s): {1}"
+msgstr "ВМ содержит {0} дисков: {1}"
+
+#. # 0=vmCount, 1=incomingMigrations, 2=outgoingMigrations
+#: vmsWithInOutMigrations
+msgid ""
+"{0} VMs running, {1} are migrating to host and {2} are migrating from host"
+msgstr "{0}машин выполняется, {1} переносятся на хост и {2} переносятся с хоста"
+
+#. # 0=vmCount, 1=vmMigrating
+#: vmsWithTotalMigrations
+msgid "{0} VMs running, out of which {1} migrating"
+msgstr "{0} ВМ выполняется, из них {1} мигрируют"
