@@ -1,0 +1,398 @@
+#. extracted from CommonApplicationMessages.properties
+# jdronova <juliette.tux@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-01 10:48+0300\n"
+"PO-Revision-Date: 2016-11-03 15:23+0300\n"
+"Last-Translator: jdronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. #
+#. #
+#. # Bundle name: org.ovirt.engine.ui.common.CommonApplicationMessages
+#. #
+#. #
+#. #Thu May 19 01:24:21 EDT 2016
+#: additionalAvailableSizeInGB
+msgid "+ {0} GB"
+msgstr "+ {0} ГБ"
+
+#: addressesVmGuestAgent
+msgid "{0} addresses"
+msgstr "{0} адресов"
+
+#: asyncCallFailure
+msgid "Error while loading data from server: {0}"
+msgstr "Ошибка загрузки данных с сервера: {0}"
+
+#: bootable
+msgid "Bootable"
+msgstr "Загрузочный"
+
+#: consoleOverrideDefinedInGlobalConfig
+msgid "global configuration"
+msgstr "глобальная конфигурация"
+
+#: consoleOverrideDefinedOnCluster
+msgid "cluster"
+msgstr "кластер"
+
+#: consoleOverrideSpiceProxyMessage
+msgid ""
+"This will override the SPICE proxy defined in {0}. Current configuration: "
+"{1}. SPICE proxy address format: [protocol://]<host>[:port]. The only "
+"supported protocol is http."
+msgstr ""
+"Это действие переопределит прокси SPICE, настроенный в {0}. Текущая "
+"конфигурация: {1}. Формат адреса прокси SPICE: [протокол://]<хост>[:порт]. "
+"Поддерживается только протокол http."
+
+#: cpuInfoLabel
+msgid "{0} ({1}:{2}:{3})"
+msgstr "{0} ({1}:{2}:{3})"
+
+#: defaultTimeZoneCaption
+msgid "default: {0}"
+msgstr "по умолчанию: {0}"
+
+#: diskAttachedToOtherVMs
+msgid "Attached to {0} VM(s) other than {1}"
+msgstr "Присоединён к {0} ВМ, а не к {1}"
+
+#: diskAttachedToVMs
+msgid "Attached to {0} VM(s)"
+msgstr "Присоединён к {0} ВМ"
+
+#: diskNote
+msgid "Note that the disk is:"
+msgstr "Внимание, диск является:"
+
+#: disksStatusWarning
+msgid "The following disks are in status {0}: {1}"
+msgstr "Следующие диски имеют статус {0}: {1}"
+
+#: emptyProfile
+msgid "<Empty>"
+msgstr "<Пусто>"
+
+#: emptyProfileDescription
+msgid "Do not assign any profile to this virtual network interface"
+msgstr "Не привязывать никакой профиль к этому интерфейсу виртуальной сети"
+
+#: globalVncKeyboardLayoutCaption
+msgid "default [{0}]"
+msgstr "по умолчанию [{0}]"
+
+#: hostDataCenter
+msgid "Data Center: {0}"
+msgstr "Дата-центр: {0}"
+
+#: hotPlugUnplugCpuWarning
+msgid ""
+"Hot add CPUs by changing the number of sockets. Please consult documentation "
+"for your guest operating system to ensure it has proper support for CPU Hot "
+"Add"
+msgstr ""
+"Горячее добавление ЦП с помощью изменения количества сокетов. Прочитайте "
+"документацию используемой ОС, чтобы проверить наличие необходимой поддержки "
+"горячего добавления ЦП."
+
+#: imageUploadProgress
+msgid "Sent {0} MB"
+msgstr "Отправлено {0} МБ"
+
+#: imageUploadProgressWithTotal
+msgid "Sent {0} of {1} MB"
+msgstr "Отправлено {0} из {1} МБ"
+
+#: lastDiskAlignment
+msgid "Last scan: {0}"
+msgstr "Последнее сканирование: {0}"
+
+#: lunAlreadyPartOfStorageDomainWarning
+msgid "LUN is already part of a Storage Domain: {0}"
+msgstr "LUN уже является частью домена хранилища: {0}"
+
+#: lunUsedByDiskWarning
+msgid "LUN is already used by a Disk: {0}"
+msgstr "LUN уже используется диском: {0}"
+
+#: maxAssignedVmsPerUserHelp
+msgid ""
+"Maximum number of VMs a single user can attach to from this pool. This field "
+"must be between 1 and number of VMs in this pool."
+msgstr ""
+"Максимальное количество ВМ из этого пула, которые можно присоединить к "
+"одному пользователю. Значение в этом поле должно быть между 1 и числом ВМ в "
+"этом пуле."
+
+#: migratingProgress
+msgid "{0}: {1}"
+msgstr "{0}: {1}"
+
+#: migrationDowntimeInfo
+msgid ""
+"Represents maximum number of milliseconds the VM can be down during live "
+"migration. Value of 0 means that VDSM default will be used. (Current engine-"
+"wide default is {0}ms)"
+msgstr ""
+"Отображает максимальное число миллисекунд, в течении которых ВМ может не "
+"работать во время динамической миграции. Значение 0 означает использование "
+"VDSM по умолчанию. (Текущее значение по умолчанию для всего ЦУ — {0}мс)"
+
+#: migrationPolicyInfo
+#, fuzzy
+msgid ""
+"Represents the policy which handles the migration convergence. No migration "
+"policy means the hypervisor takes care of convergence."
+msgstr ""
+"Представляет политику, контролирующую конвергенцию миграции. Отсутствие "
+"политики означает, что конвергенцию контролирует гипервизор."
+
+#: migrationSelectInfo
+msgid ""
+"When at least one of the VM activated disks use SCSI reservation, migration "
+"option is ignored and VM cannot be migrated."
+msgstr ""
+"Если хотя бы один активированный диск ВМ использует резервирование SCSI, то "
+"параметр миграции игнорируется и ВМ теряет возможность переноса."
+
+#: nextRunConfigurationCanBeAppliedImmediately
+msgid "Changes that can be applied immediately:"
+msgstr "Следующие значения можно применить немедленно:"
+
+#: nextRunConfigurationCpuValue
+msgid "CPU"
+msgstr "ЦП"
+
+#: nextRunConfigurationExists
+msgid "Changes that require Virtual Machine restart:"
+msgstr "Изменения, требующие перезапуска ВМ:"
+
+#: nextRunConfigurationMemoryValue
+msgid "Memory"
+msgstr "Память"
+
+#: noSpiceProxyDefined
+msgid "No SPICE proxy defined"
+msgstr "SPICE прокси не определён"
+
+#: numaMemory
+msgid "{0} MB"
+msgstr "{0} МБ"
+
+#: numaMemoryUsed
+msgid "{0} MB used"
+msgstr "{0} МБ используется"
+
+#: numaNode
+msgid "NUMA {0}"
+msgstr "NUMA {0}"
+
+#: numaPercentUsed
+msgid "{0}% Used"
+msgstr "{0}% используется"
+
+#: numaSocketNumber
+msgid "Socket {0}"
+msgstr "Сокет {0}"
+
+#: numaTotalCpus
+msgid "{0} CPUs"
+msgstr "{0} ЦП"
+
+#: or
+msgid "{0} or {1}"
+msgstr "{0} или {1}"
+
+#: outOfXVMsInPool
+msgid "out of {0} VMs in pool"
+msgstr "из {0} ВМ пула"
+
+#: poolNameHelp
+msgid ""
+"It is possible to specify mask for the VM indexes, for example: for pool "
+"''my??pool'' the generated names will be: my01pool,my02pool,...my99pool"
+msgstr ""
+"Возможно указать маску для индексов ВМ, например: для пула «my??pool» будут "
+"созданы имена: my01pool,my02pool,...my99pool"
+
+#: prestartedHelp
+msgid ""
+"Number of Prestarted VMs defines the number of VMs in Run state , that are "
+"waiting to be attached to Users. Accepted values: 0 to the Number of VMs "
+"that already exists in the Pool."
+msgstr ""
+"Количество предзапущенных ВМ определяет количество машин со статусом "
+"«Выполняется», которые ожидают присоединения к пользователю. Принимаются "
+"значения: от 0 до числа ВМ, уже входящих в пул."
+
+#: principalDepartment
+msgid "Department: {0}"
+msgstr "Отдел: {0}"
+
+#: principalEmail
+msgid "E-mail: {0}"
+msgstr "Эл. почта: {0}"
+
+#: principalLoginName
+msgid "Login name: {0}"
+msgstr "Имя пользователя: {0}"
+
+#: principalName
+msgid "Name: {0} {1}"
+msgstr "Имя: {0} {1}"
+
+#: principalNamespace
+msgid "Namespace: {0}"
+msgstr "Пространство имён: {0}"
+
+#: principalNote
+msgid "Notes: {0}"
+msgstr "Примечания: {0}"
+
+#: profileAndNetwork
+msgid "{0} ({1})"
+msgstr "{0} ({1})"
+
+#: profileAndNetworkSelected
+msgid "{0}/{1}"
+msgstr "{0}/{1}"
+
+#: quotaFreeCpus
+msgid "Free: {0} vCPU"
+msgstr "Свободно: {0} vCPU"
+
+#: refreshRateSeconds
+msgid "{0} sec"
+msgstr "{0} сек"
+
+#: remapCtrlAltDelete
+msgid "Map control-alt-del shortcut to {0}"
+msgstr "Привязать сочетание control-alt-del к {0}"
+
+#: roleOnUser
+msgid "Role: {0} on User: {1}"
+msgstr "Роль: {0} юзер: {1}"
+
+#: selectConsoleFor
+msgid "Select Console for ''{0}''"
+msgstr "Выбрать консоль для «{0}»"
+
+#: serialNumberInfo
+msgid ""
+"Policy of assigning serial numbers to running VMs. Can be Host''s UUID, "
+"Vm''s UUID or any custom value."
+msgstr ""
+"Политика присвоения серийных номеров выполняемым ВМ. Это может быть UUID "
+"хоста, UUID ВМ или любое пользовательское значение."
+
+#: shareable
+msgid "Shareable"
+msgstr "Может быть общим"
+
+#: snapshotDisksLabel
+msgid "(The snapshot contains {0} disk(s): {1})"
+msgstr "(Снимок содержит {0} дисков: {1})"
+
+#: snapshotPreviewing
+msgid "{0} (Previewing: {1})"
+msgstr "{0} (Просматривается: {1})"
+
+#: storageDomainFreeSpace
+msgid "{0} ({1} GB free of {2} GB)"
+msgstr "{0} ({1} ГБ свободно из {2} ГБ)"
+
+#: templateVersionName
+msgid " ({0})"
+msgstr " ({0})"
+
+#: threadsPerCoreInfo
+msgid ""
+"Set simultaneous multithreading.\n"
+"Please check host architecture properly before changing the value.\n"
+"When not sure, keep threads-per-core set to 1.\n"
+"Recommended values for:\n"
+" - x86: 1\n"
+" - Power8: 1..8 (8 for high load VMs)"
+msgstr ""
+"Настройка одновременной многопоточности.\n"
+"Перед изменением значения, тщательно проверьте архитектуру хоста.\n"
+"Если вы не уверены, то сохраните значение 1 для параметра threads-per-core.\n"
+"Рекомендуемые значения для:\n"
+" - x86: 1\n"
+" - Power8: 1..8 (8 для ВМ с повышенной нагрузкой)"
+
+#: uiCommonPublicConnectionClosed
+msgid "Connection closed: {0}"
+msgstr "Соединение разорвано: {0}"
+
+#: uiCommonRunActionExecutionFailed
+msgid "Error while executing action {0}: {1}"
+msgstr "Ошибка при выполнении действия {0}: {1}"
+
+#: uiCommonRunActionFailed
+msgid "Error while executing action: {0}"
+msgstr "Ошибка при выполнении действия: {0}"
+
+#: uiCommonRunQueryFailed
+msgid "Error while executing query: {0}"
+msgstr "Ошибка при выполнении запроса: {}"
+
+#: uncaughtExceptionAlertMessage
+msgid ""
+"Uncaught exception occurred. Please try <a href=\"{0}\">reloading</a> the "
+"page."
+msgstr ""
+"Произошло неперехваченное исключение. Попробуйте <a href=\"{0}\">"
+"перезагрузить</a> "
+"страницу."
+
+#: uncaughtExceptionAlertMessageDetails
+msgid "Details: {0}"
+msgstr "Сведения: {0}"
+
+#: unpinnedRunningVmWarningIncompatability
+msgid ""
+"Due to host hardware incompatibility - Migration might fail or "
+"application(s) may fail."
+msgstr ""
+"По причине несовместимости оборудования хоста — может произойти сбой "
+"миграции или приложения(ий)."
+
+#: unpinnedRunningVmWarningSecurity
+msgid "Migrating Virtual Machine may contain information about old host."
+msgstr "Переносимая ВМ может содержать информацию о старом хосте."
+
+#: unpinnedRunningVmWarningTitle
+msgid "Migration option changed to allow migration:"
+msgstr "Параметры миграции изменены на разрешение миграции:"
+
+#: userWithRole
+msgid "User: {0} with Role: {1}"
+msgstr "Пользователь: {0} с ролью: {1}"
+
+#: vNumaName
+msgid "{0}_NUMA{1}"
+msgstr "{0}_NUMA{1}"
+
+#: vmDisksLabel
+msgid "The VM contains {0} disk(s): {1}"
+msgstr "ВМ содержит {0} дисков: {1}"
+
+#: warningSectionTitle
+msgid "Following changes may put VM in risk:"
+msgstr "Следующие изменения могут угрожать ВМ:"
+
+

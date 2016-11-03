@@ -1,0 +1,5691 @@
+#. extracted from AuditLogMessages.properties
+# jdronova <juliette.tux@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-31 17:33+0300\n"
+"PO-Revision-Date: 2016-11-01 10:58+0300\n"
+"Last-Translator: jdronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: VM_CLEARED
+msgid "Unused"
+msgstr ""
+
+#: SYSTEM_MASTER_DOMAIN_NOT_IN_SYNC
+msgid ""
+"Sync Error on Master Domain between Host ${VdsName} and oVirt Engine. "
+"Domain: ${StorageDomainName} is marked as Master in oVirt Engine database "
+"but not on the Storage side. Please consult with Support on how to fix this "
+"issue."
+msgstr ""
+
+#: IRS_DISK_SPACE_LOW
+msgid ""
+"Warning, Low disk space. ${StorageDomainName} domain has ${DiskSpace} GB of "
+"free space."
+msgstr ""
+
+#: IRS_DISK_SPACE_LOW_ERROR
+msgid ""
+"Critical, Low disk space. ${StorageDomainName} domain has ${DiskSpace} GB of "
+"free space."
+msgstr ""
+
+#: VDS_LOW_DISK_SPACE
+msgid ""
+"Warning, Low disk space. Host ${VdsName} has less than ${DiskSpace} MB of "
+"free space left on: ${Disks}."
+msgstr ""
+
+#: VDS_LOW_DISK_SPACE_ERROR
+msgid ""
+"Critical, Low disk space. Host ${VdsName} has less than ${DiskSpace} MB of "
+"free space left on: ${Disks}. Low disk space might cause an issue upgrading "
+"this host."
+msgstr ""
+
+#: IRS_FAILURE
+msgid "Failed to access Storage on Host ${VdsName}."
+msgstr ""
+
+#: USER_ADD
+msgid "User '${NewUserName}' was added successfully to the system."
+msgstr ""
+
+#: USER_FAILED_ADD_ADUSER
+msgid "Failed to add User '${NewUserName}' to the system."
+msgstr ""
+
+#: USER_ADD_BOOKMARK
+msgid "Bookmark ${BookmarkName} was added by ${UserName}."
+msgstr ""
+
+#: USER_ADD_BOOKMARK_FAILED
+msgid "Failed to add bookmark: ${BookmarkName} (User: ${UserName})."
+msgstr ""
+
+#: USER_ADD_VDS
+msgid "Host ${VdsName} was added by ${UserName}."
+msgstr ""
+
+#: USER_ADD_VM
+msgid "VM ${VmName} was created by ${UserName}."
+msgstr ""
+
+#: USER_ADD_VM_STARTED
+msgid "VM ${VmName} creation was initiated by ${UserName}."
+msgstr ""
+
+#: USER_ADD_VM_FINISHED_SUCCESS
+msgid "VM ${VmName} creation has been completed."
+msgstr ""
+
+#: USER_ADD_VM_FINISHED_FAILURE
+msgid "Failed to complete VM ${VmName} creation."
+msgstr ""
+
+#: USER_ADD_VM_POOL_WITH_VMS
+msgid ""
+"VM Pool ${VmPoolName} (containing ${VmsCount} VMs) was created by "
+"${UserName}."
+msgstr ""
+
+#: USER_ADD_VM_POOL_WITH_VMS_FAILED
+msgid "Failed to create VM Pool ${VmPoolName} (User: ${UserName})."
+msgstr ""
+
+#: USER_ADD_VM_POOL_WITH_VMS_ADD_VDS_FAILED
+msgid ""
+"Pool ${VmPoolName} Created, but some Vms failed to create (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ADD_VM_TEMPLATE
+msgid ""
+"Creation of Template ${VmTemplateName} from VM ${VmName} was initiated by "
+"${UserName}."
+msgstr ""
+
+#: USER_ADD_VM_TEMPLATE_FINISHED_SUCCESS
+msgid ""
+"Creation of Template ${VmTemplateName} from VM ${VmName} has been completed."
+msgstr ""
+
+#: USER_ADD_VM_TEMPLATE_FINISHED_FAILURE
+msgid ""
+"Failed to complete creation of Template ${VmTemplateName} from VM ${VmName}."
+msgstr ""
+
+#: USER_ADD_VM_TEMPLATE_FROM_TRUSTED_TO_UNTRUSTED
+msgid ""
+"The non-trusted Template ${VmTemplateName} was created from trusted Vm "
+"${VmName}."
+msgstr ""
+
+#: USER_ADD_VM_TEMPLATE_FROM_UNTRUSTED_TO_TRUSTED
+msgid ""
+"The trusted template ${VmTemplateName} was created from non-trusted Vm "
+"${VmName}."
+msgstr ""
+
+#: USER_ADD_VM_TEMPLATE_SUCCESS
+msgid "Template ${VmTemplateName} was created successfully."
+msgstr ""
+
+#: USER_ADD_VM_TEMPLATE_FAILURE
+msgid "Failed creating Template ${VmTemplateName}."
+msgstr ""
+
+#: USER_UPDATE_VM_TEMPLATE_FROM_TRUSTED_TO_UNTRUSTED
+msgid ""
+"The Template ${VmTemplateName} was updated from trusted cluster to non-"
+"trusted cluster."
+msgstr ""
+
+#: USER_UPDATE_VM_TEMPLATE_FROM_UNTRUSTED_TO_TRUSTED
+msgid ""
+"The Template ${VmTemplateName} was updated from non-trusted cluster to "
+"trusted cluster."
+msgstr ""
+
+#: USER_ADD_VM_FROM_TRUSTED_TO_UNTRUSTED
+msgid ""
+"The VM ${VmName} was created in an untrusted cluster. It was originated from "
+"the Template ${VmTemplateName} which was created in a trusted cluster."
+msgstr ""
+
+#: USER_ADD_VM_FROM_UNTRUSTED_TO_TRUSTED
+msgid ""
+"The VM ${VmName} was created in a trusted cluster. It was originated from "
+"the Template ${VmTemplateName} which was created in an untrusted cluster."
+msgstr ""
+
+#: USER_UPDATE_VM_FROM_TRUSTED_TO_UNTRUSTED
+msgid ""
+"The VM ${VmName} was updated from trusted cluster to non-trusted cluster."
+msgstr ""
+
+#: USER_UPDATE_VM_FROM_UNTRUSTED_TO_TRUSTED
+msgid ""
+"The VM ${VmName} was updated from non-trusted cluster to trusted cluster."
+msgstr ""
+
+#: USER_ADD_VM_TO_POOL
+msgid "VM ${VmName} was added to VM Pool ${VmPoolName} by ${UserName}."
+msgstr ""
+
+#: USER_ADD_VM_TO_POOL_FAILED
+msgid "Failed to add VM ${VmName} to VM Pool ${VmPoolName}(User: ${UserName})."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_POOL
+msgid ""
+"User ${AdUserName} was attached to VM Pool ${VmPoolName} by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_POOL_INTERNAL
+msgid "User ${AdUserName} was attached to VM Pool ${VmPoolName}."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_POOL_FAILED
+msgctxt "USER_ATTACH_USER_TO_POOL_FAILED"
+msgid ""
+"Failed to attach User ${AdUserName} to VM Pool ${VmPoolName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_POOL_FAILED_INTERNAL
+msgctxt "USER_ATTACH_USER_TO_POOL_FAILED_INTERNAL"
+msgid ""
+"Failed to attach User ${AdUserName} to VM Pool ${VmPoolName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_VM_FROM_POOL
+msgid ""
+"Attaching User ${AdUserName} to VM ${VmName} in VM Pool ${VmPoolName} was "
+"initiated by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_VM_FROM_POOL_FINISHED_SUCCESS
+msgid ""
+"User ${AdUserName} successfully attached to VM ${VmName} in VM Pool "
+"${VmPoolName}."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_VM_FROM_POOL_FINISHED_FAILURE
+msgid ""
+"Failed to attach user ${AdUserName} to VM ${VmName} in VM Pool "
+"${VmPoolName}."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_VM_FROM_POOL_FAILED
+msgid ""
+"Failed to attach User ${AdUserName} to VM from VM Pool ${VmPoolName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ATTACH_USER_TO_VM
+msgid "User ${AdUserName} was attached to VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: USER_CHANGE_DISK_VM
+msgid "CD ${DiskName} was inserted to VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: USER_EJECT_VM_DISK
+msgid "CD was ejected from VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: VM_DISK_ALREADY_CHANGED
+msgid ""
+"CD ${DiskName} is already inserted to VM ${VmName}, disk change action was "
+"skipped. User: ${UserName}."
+msgstr ""
+
+#: VM_DISK_ALREADY_EJECTED
+msgid ""
+"CD is already ejected from VM ${VmName}, disk change action was skipped. "
+"User: ${UserName}."
+msgstr ""
+
+#: USER_CREATE_SNAPSHOT
+msgid ""
+"Snapshot '${SnapshotName}' creation for VM '${VmName}' was initiated by "
+"${UserName}."
+msgstr ""
+
+#: USER_CREATE_SNAPSHOT_FINISHED_SUCCESS
+msgid ""
+"Snapshot '${SnapshotName}' creation for VM '${VmName}' has been completed."
+msgstr ""
+
+#: USER_CREATE_SNAPSHOT_FINISHED_FAILURE
+msgid ""
+"Failed to complete snapshot '${SnapshotName}' creation for VM '${VmName}'."
+msgstr ""
+
+#: USER_CREATE_LIVE_SNAPSHOT_FINISHED_FAILURE
+msgid ""
+"Failed to create live snapshot '${SnapshotName}' for VM '${VmName}'. VM "
+"restart is recommended. Note that using the created snapshot might cause "
+"data inconsistency."
+msgstr ""
+
+#: USER_REMOVE_SNAPSHOT
+msgid ""
+"Snapshot '${SnapshotName}' deletion for VM '${VmName}' was initiated by "
+"${UserName}."
+msgstr ""
+
+#: USER_REMOVE_SNAPSHOT_FINISHED_SUCCESS
+msgid ""
+"Snapshot '${SnapshotName}' deletion for VM '${VmName}' has been completed."
+msgstr ""
+
+#: USER_REMOVE_SNAPSHOT_FINISHED_FAILURE
+msgid "Failed to delete snapshot '${SnapshotName}' for VM '${VmName}'."
+msgstr ""
+
+#: USER_REMOVE_SNAPSHOT_FINISHED_FAILURE_PARTIAL_SNAPSHOT
+msgid ""
+"Due to partial snapshot removal, Snapshot '${SnapshotName}' of VM "
+"'${VmName}' now contains only the following disks: '${DiskAliases}'."
+msgstr ""
+
+#: USER_REMOVE_SNAPSHOT_FINISHED_FAILURE_BASE_IMAGE_NOT_FOUND
+msgid ""
+"Failed to merge images of snapshot '${SnapshotName}': base volume "
+"'${BaseVolumeId}' is missing. This may have been caused by a failed attempt "
+"to remove the parent snapshot; if this is the case, please retry deletion of "
+"the parent snapshot before deleting this one."
+msgstr ""
+
+#: USER_REMOVE_DISK_SNAPSHOT
+msgid ""
+"Disk '${DiskAlias}' from Snapshot(s) '${Snapshots}' of VM '${VmName}' "
+"deletion was initiated by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_REMOVE_DISK_SNAPSHOT
+msgid ""
+"Failed to delete Disk '${DiskAlias}' from Snapshot(s) ${Snapshots} of VM "
+"${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVE_DISK_SNAPSHOT_FINISHED_SUCCESS
+msgid ""
+"Disk '${DiskAlias}' from Snapshot(s) '${Snapshots}' of VM '${VmName}' "
+"deletion has been completed (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVE_DISK_SNAPSHOT_FINISHED_FAILURE
+msgid ""
+"Failed to complete deletion of Disk '${DiskAlias}' from snapshot(s) "
+"'${Snapshots}' of VM '${VmName}' (User: ${UserName})."
+msgstr ""
+
+#: USER_REGISTER_DISK_FINISHED_SUCCESS
+msgid ""
+"Disk '${DiskAlias}' has been successfully registered as a floating disk."
+msgstr ""
+
+#: USER_REGISTER_DISK_FINISHED_FAILURE
+msgid "Failed to register Disk '${DiskAlias}'."
+msgstr ""
+
+#: USER_DETACH_USER_FROM_POOL
+msgid ""
+"User ${AdUserName} was detached from VM Pool ${VmPoolName} by ${UserName}."
+msgstr ""
+
+#: USER_DETACH_USER_FROM_POOL_FAILED
+msgid ""
+"Failed to detach User ${AdUserName} from VM Pool ${VmPoolName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_DETACH_USER_FROM_VM
+msgid "User ${AdUserName} was detached from VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_DETACH_USER_FROM_VM
+msgid ""
+"Failed to detach User ${AdUserName} from VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_ADD_VDS
+msgid "Failed to add Host ${VdsName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_ADD_VM
+msgid "Failed to create VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_ADD_VM_TEMPLATE
+msgid ""
+"Failed to initiate creation of Template ${VmTemplateName} from VM ${VmName} "
+"(User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_ATTACH_USER_TO_VM
+msgid ""
+"Failed to attach User ${AdUserName} to VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_CHANGE_DISK_VM
+msgid ""
+"Failed to change disk in VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_CREATE_SNAPSHOT
+msgid ""
+"Failed to create Snapshot ${SnapshotName} for VM ${VmName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_CREATE_LIVE_SNAPSHOT_NO_MEMORY_FAILURE
+msgid ""
+"Failed to save memory as part of Snapshot ${SnapshotName} for VM ${VmName} "
+"(User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_REMOVE_SNAPSHOT
+msgid ""
+"Failed to remove Snapshot ${SnapshotName} for VM ${VmName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_FAILED_PAUSE_VM
+msgid "Failed to suspend VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_REMOVE_VDS
+msgid "Failed to remove Host ${VdsName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_REMOVE_VM_TEMPLATE
+msgid ""
+"Failed to initiate removal of Template ${VmTemplateName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_FAILED_RESTORE_FROM_SNAPSHOT
+msgid "Failed to restore VM ${VmName} from Snapshot (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_RESUME_VM
+msgid "Failed to resume VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_RUN_VM
+msgid "Failed to run VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_RUN_VM_AS_STATELESS_FINISHED_FAILURE
+msgid "Failed to complete starting of VM ${VmName}."
+msgstr ""
+
+#: USER_RUN_VM_AS_STATELESS_WITH_DISKS_NOT_ALLOWING_SNAPSHOT
+msgid ""
+"VM ${VmName} was run as stateless with one or more of disks that do not "
+"allow snapshots (User:${UserName})."
+msgstr ""
+
+#: USER_RUN_VM_FAILURE_STATELESS_SNAPSHOT_LEFT
+msgid ""
+"Failed to start VM ${VmName}, because exist snapshot for stateless state. "
+"Snapshot will be deleted."
+msgstr ""
+
+#: USER_FAILED_STOP_VM
+msgctxt "USER_FAILED_STOP_VM"
+msgid "Failed to power off VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
+msgstr ""
+
+#: USER_INITIATED_SHUTDOWN_VM
+msgid ""
+"VM shutdown initiated by ${UserName} on VM ${VmName} (Host: ${VdsName}) "
+"(Reason: ${Reason})."
+msgstr ""
+
+#: USER_FAILED_SHUTDOWN_VM
+msgid ""
+"Failed to initiate shutdown on VM ${VmName} (Host: ${VdsName}, User: "
+"${UserName})."
+msgstr ""
+
+#: USER_STOPPED_VM_INSTEAD_OF_SHUTDOWN
+msgid ""
+"VM ${VmName} was powered off ungracefully by ${UserName} (Host: ${VdsName}) "
+"(Reason: ${Reason})."
+msgstr ""
+
+#: USER_FAILED_STOPPING_VM_INSTEAD_OF_SHUTDOWN
+msgctxt "USER_FAILED_STOPPING_VM_INSTEAD_OF_SHUTDOWN"
+msgid "Failed to power off VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
+msgstr ""
+
+#: USER_ADD_DISK_TO_VM
+msgid ""
+"Add-Disk operation of ${DiskAlias} was initiated on VM ${VmName} by "
+"${UserName}."
+msgstr ""
+
+#: USER_ADD_DISK_TO_VM_FINISHED_SUCCESS
+msgid "The disk ${DiskAlias} was successfully added to VM ${VmName}."
+msgstr ""
+
+#: USER_ADD_DISK_TO_VM_FINISHED_FAILURE
+msgid "Add-Disk operation failed to complete on VM ${VmName}."
+msgstr ""
+
+#: USER_FAILED_ADD_DISK_TO_VM
+msgid "Add-Disk operation failed on VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_ADD_DISK
+msgid "Add-Disk operation of '${DiskAlias}' was initiated by ${UserName}."
+msgstr ""
+
+#: USER_ADD_DISK_FINISHED_SUCCESS
+msgid "The disk '${DiskAlias}' was successfully added."
+msgstr ""
+
+#: ADD_DISK_INTERNAL_FAILURE
+msgid "Add-Disk operation of '${DiskAlias}' failed to complete."
+msgstr ""
+
+#: USER_ADD_DISK_FINISHED_FAILURE
+msgid "Add-Disk operation failed to complete."
+msgstr ""
+
+#: USER_FAILED_ADD_DISK
+msgid "Add-Disk operation failed (User: ${UserName})."
+msgstr ""
+
+#: ADD_DISK_INTERNAL
+msgid "Add-Disk operation of '${DiskAlias}' was initiated by the system."
+msgstr ""
+
+#: USER_IMPORT_IMAGE
+msgid ""
+"User ${UserName} importing image ${RepoImageName} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_IMPORT_IMAGE_AS_TEMPLATE
+msgid ""
+"User ${UserName} importing image ${RepoImageName} as template "
+"${TemplateName} to domain ${StorageDomainName}."
+msgstr ""
+
+#: USER_IMPORT_IMAGE_FINISHED_SUCCESS
+msgid ""
+"User ${UserName} successfully imported image ${RepoImageName} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_IMPORT_IMAGE_AS_TEMPLATE_FINISHED_SUCCESS
+msgid ""
+"User ${UserName} successfully imported image ${RepoImageName} as template "
+"${TemplateName} to domain ${StorageDomainName}."
+msgstr ""
+
+#: USER_IMPORT_IMAGE_FINISHED_FAILURE
+msgid ""
+"User ${UserName} failed to import image ${RepoImageName} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_IMPORT_IMAGE_AS_TEMPLATE_FINISHED_FAILURE
+msgid ""
+"User ${UserName} failed to import image ${RepoImageName} as template "
+"${TemplateName} to domain ${StorageDomainName}."
+msgstr ""
+
+#: USER_EXPORT_IMAGE
+msgid ""
+"User ${UserName} exporting image ${RepoImageName} to domain "
+"${DestinationStorageDomainName}."
+msgstr ""
+
+#: USER_EXPORT_IMAGE_FINISHED_SUCCESS
+msgid ""
+"User ${UserName} successfully exported image ${RepoImageName} to domain "
+"${DestinationStorageDomainName}."
+msgstr ""
+
+#: USER_EXPORT_IMAGE_FINISHED_FAILURE
+msgid ""
+"User ${UserName} failed to export image ${RepoImageName} to domain "
+"${DestinationStorageDomainName}."
+msgstr ""
+
+#: HOT_SET_NUMBER_OF_CPUS
+msgid ""
+"Hotplug CPU: changed the number of CPUs on VM ${vmName} from "
+"${previousNumberOfCpus} to ${numberOfCpus}"
+msgstr ""
+
+#: FAILED_HOT_SET_NUMBER_OF_CPUS
+msgid ""
+"Failed to hot set number of CPUS to VM ${vmName}. Underlying error message: "
+"${ErrorMessage}"
+msgstr ""
+
+#: HOT_SET_MEMORY
+msgid ""
+"Hotset memory: changed the amount of memory on VM ${vmName} from "
+"${previousMem} to ${newMem}"
+msgstr ""
+
+#: FAILED_HOT_SET_MEMORY
+msgid ""
+"Failed to hot set memory to VM ${vmName}. Underlying error message: "
+"${ErrorMessage}"
+msgstr ""
+
+#: USER_ISCSI_BOND_HOST_RESTART_WARNING
+msgid ""
+"The following Networks has been removed from the iSCSI bond "
+"${IscsiBondName}: ${NetworkNames}. for those changes to take affect, the "
+"hosts must be moved to maintenance and activated again."
+msgstr ""
+
+#: USER_MOVE_IMAGE_GROUP_FAILED_TO_DELETE_SRC_IMAGE
+msgid ""
+"Possible failure while deleting ${DiskAlias} from the source Storage Domain "
+"${StorageDomainName} during the move operation. The Storage Domain may be "
+"manually cleaned-up from possible leftovers (User:${UserName})."
+msgstr ""
+
+#: USER_MOVE_IMAGE_GROUP_FAILED_TO_DELETE_DST_IMAGE
+msgid ""
+"Possible failure while clearing possible leftovers of ${DiskAlias} from the "
+"target Storage Domain ${StorageDomainName} after the move operation failed "
+"to copy the image to it properly. The Storage Domain may be manually "
+"cleaned-up from possible leftovers (User:${UserName})."
+msgstr ""
+
+#: USER_REMOVE_DISK_FROM_VM
+msgid "Disk was removed from VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_REMOVE_DISK_FROM_VM
+msgid "Failed to remove Disk from VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_UPDATE_VM_DISK
+msgid "VM ${VmName} ${DiskAlias} disk was updated by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_UPDATE_VM_DISK
+msgid "Failed to update VM ${VmName} disk ${DiskAlias} (User: ${UserName})."
+msgstr ""
+
+#: USER_HOTPLUG_DISK
+msgid "VM ${VmName} disk ${DiskAlias} was plugged by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_HOTPLUG_DISK
+msgid "Failed to plug disk ${DiskAlias} to VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_HOTUNPLUG_DISK
+msgid "VM ${VmName} disk ${DiskAlias} was unplugged by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_HOTUNPLUG_DISK
+msgid ""
+"Failed to unplug disk ${DiskAlias} from VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_COPIED_DISK
+msgid ""
+"User ${UserName} is copying disk ${DiskAlias} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_FAILED_COPY_DISK
+msgid ""
+"User ${UserName} failed to copy disk ${DiskAlias} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_COPIED_DISK_FINISHED_SUCCESS
+msgid ""
+"User ${UserName} finished copying disk ${DiskAlias} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_COPIED_DISK_FINISHED_FAILURE
+msgid ""
+"User ${UserName} finished with error copying disk ${DiskAlias} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_MOVED_DISK
+msgid ""
+"User ${UserName} moving disk ${DiskAlias} to domain ${StorageDomainName}."
+msgstr ""
+
+#: USER_FAILED_MOVED_VM_DISK
+msgid ""
+"User ${UserName} failed to move disk ${DiskAlias} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_MOVED_DISK_FINISHED_SUCCESS
+msgid ""
+"User ${UserName} finished moving disk ${DiskAlias} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_MOVED_DISK_FINISHED_FAILURE
+msgid ""
+"User ${UserName} have failed to move disk ${DiskAlias} to domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: USER_REMOVE_DISK_INITIATED
+msgid ""
+"Removal of Disk ${DiskAlias} from domain ${StorageDomainName} was initiated "
+"by ${UserName}."
+msgstr ""
+
+#: USER_FINISHED_REMOVE_DISK
+msgid ""
+"Disk ${DiskAlias} was successfully removed from domain ${StorageDomainName} "
+"(User ${UserName})."
+msgstr ""
+
+#: USER_FINISHED_FAILED_REMOVE_DISK
+msgid ""
+"Failed to remove disk ${DiskAlias} from storage domain ${StorageDomainName} "
+"(User: ${UserName})."
+msgstr ""
+
+#: USER_FINISHED_REMOVE_DISK_NO_DOMAIN
+msgid "Disk ${DiskAlias} was successfully removed (User ${UserName})."
+msgstr ""
+
+#: USER_FINISHED_FAILED_REMOVE_DISK_NO_DOMAIN
+msgid "Failed to remove disk ${DiskAlias} (User ${UserName})."
+msgstr ""
+
+#: USER_ATTACH_DISK_TO_VM
+msgid ""
+"Disk ${DiskAlias} was successfully attached to VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_ATTACH_DISK_TO_VM
+msgid "Failed to attach Disk ${DiskAlias} to VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_DETACH_DISK_FROM_VM
+msgid ""
+"Disk ${DiskAlias} was successfully detached from VM ${VmName} by "
+"${UserName}."
+msgstr ""
+
+#: USER_FAILED_DETACH_DISK_FROM_VM
+msgid ""
+"Failed to detach Disk ${DiskAlias} from VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_ADD_QUOTA
+msgid "Quota ${QuotaName} has been added by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_ADD_QUOTA
+msgid ""
+"Failed to add Quota ${QuotaName}. The operation was initiated by "
+"${UserName}."
+msgstr ""
+
+#: USER_UPDATE_QUOTA
+msgid "Quota ${QuotaName} has been updated by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_UPDATE_QUOTA
+msgid ""
+"Failed to update Quota ${QuotaName}. The operation was initiated by "
+"${UserName}.."
+msgstr ""
+
+#: USER_DELETE_QUOTA
+msgid "Quota ${QuotaName} has been deleted by ${UserName}."
+msgstr ""
+
+#: USER_FAILED_DELETE_QUOTA
+msgid ""
+"Failed to delete Quota ${QuotaName}. The operation was initiated by "
+"${UserName}.."
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_CLUSTER_GRACE_LIMIT
+msgid ""
+"Cluster-Quota ${QuotaName} limit exceeded and operation was blocked. "
+"Utilization: ${Utilization}, Requested: ${Requested} - Please select a "
+"different quota or contact your administrator to extend the quota."
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_CLUSTER_GRACE_LIMIT_PERMISSIVE_MODE
+msgid ""
+"Cluster-Quota ${QuotaName} limit exceeded, proceeding since in Permissive "
+"(Audit) mode. Utilization: ${Utilization}, Requested: ${Requested} - Please "
+"select a different quota or contact your administrator to extend the quota."
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_CLUSTER_LIMIT
+msgid ""
+"Cluster-Quota ${QuotaName} limit exceeded and entered the grace zone. "
+"Utilization: ${Utilization} (It is advised to select a different quota or "
+"contact your administrator to extend the quota)."
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_CLUSTER_THRESHOLD
+msgid ""
+"Cluster-Quota ${QuotaName} is about to exceed. Utilization: ${Utilization}"
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_STORAGE_GRACE_LIMIT
+msgid ""
+"Storage-Quota ${QuotaName} limit exceeded and operation was blocked. "
+"Utilization(used/requested): ${CurrentStorage}%/${Requested}% - Please "
+"select a different quota or contact your administrator to extend the quota."
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_STORAGE_GRACE_LIMIT_PERMISSIVE_MODE
+msgid ""
+"Storage-Quota ${QuotaName} limit exceeded, proceeding since in Permissive "
+"(Audit) mode. Utilization(used/requested): ${CurrentStorage}%/${Requested}% "
+"- Please select a different quota or contact your administrator to extend "
+"the quota."
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_STORAGE_LIMIT
+msgid ""
+"Storage-Quota ${QuotaName} limit exceeded and entered the grace zone. "
+"Utilization: ${CurrentStorage}% (It is advised to select a different quota "
+"or contact your administrator to extend the quota)."
+msgstr ""
+
+#: USER_EXCEEDED_QUOTA_STORAGE_THRESHOLD
+msgid ""
+"Storage-Quota ${QuotaName} is about to exceed. Utilization: "
+"${CurrentStorage}%"
+msgstr ""
+
+#: QUOTA_STORAGE_RESIZE_LOWER_THEN_CONSUMPTION
+msgid ""
+"Storage-Quota ${QuotaName}: the new size set for this quota is less than "
+"current disk utilization."
+msgstr ""
+
+#: MISSING_QUOTA_STORAGE_PARAMETERS_PERMISSIVE_MODE
+msgid "Missing Quota for Disk, proceeding since in Permissive (Audit) mode."
+msgstr ""
+
+#: MISSING_QUOTA_CLUSTER_PARAMETERS_PERMISSIVE_MODE
+msgid ""
+"Missing Quota for VM ${VmName}, proceeding since in Permissive (Audit) mode."
+msgstr ""
+
+#: USER_FAILED_TRY_BACK_TO_SNAPSHOT
+msgid ""
+"Failed to preview Snapshot ${SnapshotName} for VM ${VmName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_FAILED_UPDATE_VDS
+msgid "Failed to update Host ${VdsName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_UPDATE_VM
+msgid "Failed to update VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: SYSTEM_FAILED_UPDATE_VM
+msgid "Failed to Update VM ${VmName} that was initiated by system."
+msgstr ""
+
+#: USER_FAILED_UPDATE_VM_TEMPLATE
+msgid "Failed to update Template ${VmTemplateName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_VDS_RESTART
+msgid "Failed to restart Host ${VdsName}, (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_VDS_START
+msgid "Failed to start Host ${VdsName}, (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_VDS_STOP
+msgid "Failed to stop Host ${VdsName}, (User: ${UserName})."
+msgstr ""
+
+#: USER_PAUSE_VM
+msgid "VM ${VmName} was suspended by ${UserName} (Host: ${VdsName})."
+msgstr ""
+
+#: USER_REMOVE_BOOKMARK
+msgid "Bookmark ${BookmarkName} was removed by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_BOOKMARK_FAILED
+msgid "Failed to remove bookmark ${BookmarkName} (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVE_VDS
+msgid "Host ${VdsName} was removed by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_VM_FINISHED
+msgid "VM ${VmName} was successfully removed."
+msgstr ""
+
+#: USER_REMOVE_VM_FINISHED_WITH_ILLEGAL_DISKS
+msgid ""
+"VM ${VmName} has been removed, but the following disks could not be removed: "
+"${DisksNames}. These disks will appear in the main disks tab in illegal "
+"state, please remove manually when possible."
+msgstr ""
+
+#: USER_REMOVE_VM_FROM_POOL
+msgid "VM ${VmName} was removed from VM Pool ${VmPoolName} by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_VM_FROM_POOL_FAILED
+msgid ""
+"Failed to remove VM ${VmName} from VM Pool ${VmPoolName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_REMOVE_VM_POOL_INITIATED
+msgid "VM Pool ${VmPoolName} removal was initiated by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_VM_POOL
+msgid "VM Pool ${VmPoolName} was removed by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_VM_POOL_FAILED
+msgid "Failed to remove VM Pool ${VmPoolName} (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVE_VM_TEMPLATE
+msgid "Removal of Template ${VmTemplateName} was initiated by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_VM_TEMPLATE_FINISHED
+msgid "Removal of Template ${VmTemplateName} has been completed."
+msgstr ""
+
+#: USER_RESTORE_FROM_SNAPSHOT
+msgid "VM ${VmName} restored from Snapshot by ${UserName}."
+msgstr ""
+
+#: USER_RESTORE_FROM_SNAPSHOT_START
+msgid "Restoring VM ${VmName} from snapshot started by user ${UserName}."
+msgstr ""
+
+#: USER_RESTORE_FROM_SNAPSHOT_FINISH_SUCCESS
+msgid "VM ${VmName} restoring from Snapshot has been completed."
+msgstr ""
+
+#: USER_RESTORE_FROM_SNAPSHOT_FINISH_FAILURE
+msgid "Failed to complete restoring from Snapshot of VM ${VmName}."
+msgstr ""
+
+#: USER_RESUME_VM
+msgid "VM ${VmName} was resumed by ${UserName} (Host: ${VdsName})."
+msgstr ""
+
+#: USER_RUN_VM
+msgid "VM ${VmName} started on Host ${VdsName}"
+msgstr ""
+
+#: USER_RUN_VM_AS_STATELESS
+msgid "VM ${VmName} started on Host ${VdsName} as stateless"
+msgstr ""
+
+#: USER_RUN_VM_ON_NON_DEFAULT_VDS
+msgid ""
+"Guest ${VmName} started on Host ${VdsName}. (Default Host parameter was "
+"ignored - assigned Host was not available)."
+msgstr ""
+
+#: USER_REBOOT_VM
+msgid "User ${UserName} initiated reboot of VM ${VmName}."
+msgstr ""
+
+#: USER_FAILED_REBOOT_VM
+msgid "Failed to reboot VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_STOP_VM
+msgid ""
+"VM ${VmName} powered off by ${UserName} (Host: ${VdsName}) (Reason: "
+"${Reason})."
+msgstr ""
+
+#: VM_ALREADY_IN_REQUESTED_STATUS
+msgid ""
+"VM ${VmName} is already ${VmStatus}, ${Action} was skipped. User: "
+"${UserName}."
+msgstr ""
+
+#: USER_STOP_SUSPENDED_VM
+msgid ""
+"Suspended VM ${VmName} has had its save state cleared by ${UserName} "
+"(Reason: ${Reason})."
+msgstr ""
+
+#: USER_STOP_SUSPENDED_VM_FAILED
+msgid "Failed to power off suspended VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_TRY_BACK_TO_SNAPSHOT
+msgid ""
+"Snapshot-Preview ${SnapshotName} for VM ${VmName} was initiated by "
+"${UserName}."
+msgstr ""
+
+#: USER_TRY_BACK_TO_SNAPSHOT_FINISH_SUCCESS
+msgid "Snapshot-Preview ${SnapshotName} for VM ${VmName} has been completed."
+msgstr ""
+
+#: USER_TRY_BACK_TO_SNAPSHOT_FINISH_FAILURE
+msgid "Failed to complete Snapshot-Preview ${SnapshotName} for VM ${VmName}."
+msgstr ""
+
+#: USER_UPDATE_BOOKMARK
+msgid "Bookmark ${BookmarkName} was updated by ${UserName}."
+msgstr ""
+
+#: USER_UPDATE_BOOKMARK_FAILED
+msgid "Failed to update bookmark: ${BookmarkName} (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATE_VDS
+msgid "Host ${VdsName} configuration was updated by ${UserName}."
+msgstr ""
+
+#: USER_UPDATE_VM
+msgid "VM ${VmName} configuration was updated by ${UserName}."
+msgstr ""
+
+#: SYSTEM_UPDATE_VM
+msgid "VM ${VmName} configuration was updated by system."
+msgstr ""
+
+#: USER_EXTEND_DISK_SIZE_UPDATE_VM_FAILURE
+msgid ""
+"Failed to update VM '${VmName}' with the new volume size. VM restart is "
+"recommended."
+msgstr ""
+
+#: USER_EXTEND_DISK_SIZE_UPDATE_HOST_FAILURE
+msgid ""
+"Failed to refresh volume size on host '${VdsName}'. Please try the operation "
+"again."
+msgstr ""
+
+#: USER_EXTEND_DISK_SIZE_FAILURE
+msgid ""
+"Failed to extend size of the disk '${DiskAlias}' to ${NewSize} GB, User: "
+"${UserName}."
+msgstr ""
+
+#: USER_EXTEND_DISK_SIZE_SUCCESS
+msgid ""
+"Size of the disk '${DiskAlias}' was successfully updated to ${NewSize} GB by "
+"${UserName}."
+msgstr ""
+
+#: USER_EXTENDED_DISK_SIZE
+msgid ""
+"Extending disk '${DiskAlias}' to ${NewSize} GB was initiated by ${UserName}."
+msgstr ""
+
+#: USER_UPDATE_VM_CLUSTER_DEFAULT_HOST_CLEARED
+msgid ""
+"${VmName} cluster was updated by ${UserName}, Default host was reset to auto "
+"assign."
+msgstr ""
+
+#: USER_UPDATE_VM_POOL
+msgid "VM Pool ${VmPoolName} configuration was updated by ${UserName}."
+msgstr ""
+
+#: USER_UPDATE_VM_POOL_FAILED
+msgid ""
+"Failed to update VM Pool ${VmPoolName} configuration (User: ${UserName})."
+msgstr ""
+
+#: USER_UPDATE_VM_TEMPLATE
+msgid "Template ${VmTemplateName} configuration was updated by ${UserName}."
+msgstr ""
+
+#: USER_VDC_LOGIN
+msgid "User ${UserName} logged in."
+msgstr ""
+
+#: USER_VDC_LOGIN_FAILED
+msgid "User ${UserName} failed to log in."
+msgstr ""
+
+#: USER_LOGIN_ON_BEHALF
+msgid "Executed login on behalf - ${LoginOnBehalfLogInfo}."
+msgstr ""
+
+#: USER_LOGIN_ON_BEHALF_FAILED
+msgid "Failed to execute login on behalf - ${LoginOnBehalfLogInfo}."
+msgstr ""
+
+#: USER_VDC_LOGOUT
+msgid "User ${UserName} logged out."
+msgstr ""
+
+#: USER_VDC_LOGOUT_FAILED
+msgid "Failed to log User ${UserName} out."
+msgstr ""
+
+#: USER_VDC_SESSION_TERMINATED
+msgid "User ${UserName} forcibly logout user ${TerminatedSessionUsername}."
+msgstr ""
+
+#: USER_VDC_SESSION_TERMINATION_FAILED
+msgid ""
+"User ${UserName} failed to forcibly logout user "
+"${TerminatedSessionUsername}."
+msgstr ""
+
+#: USER_FORCE_SELECTED_SPM
+msgid "Host ${VdsName} was force selected by ${UserName}"
+msgstr ""
+
+#: USER_FORCE_SELECTED_SPM_STOP_FAILED
+msgid ""
+"Failed to force select ${VdsName} as the SPM due to a failure to stop the "
+"current SPM."
+msgstr ""
+
+#: USER_VDS_RESTART
+msgid "Host ${VdsName} was restarted by ${UserName}."
+msgstr ""
+
+#: USER_VDS_START
+msgid "Host ${VdsName} was started by ${UserName}."
+msgstr ""
+
+#: USER_VDS_STOP
+msgid "Host ${VdsName} was stopped by ${UserName}."
+msgstr ""
+
+#: VDS_ALREADY_IN_REQUESTED_STATUS
+msgid ""
+"Host ${HostName} is already ${AgentStatus}, Power Management ${Operation} "
+"operation skipped."
+msgstr ""
+
+#: VDS_AUTO_FENCE_STATUS
+msgid "Auto fence for host ${VdsName} was started."
+msgstr ""
+
+#: VDS_AUTO_FENCE_STATUS_FAILED
+msgid "Auto fence for host ${VdsName} failed."
+msgstr ""
+
+#: VDS_AUTO_FENCE_FAILED_CALL_FENCE_SPM
+msgid ""
+"Auto fence did not revoke the selected SPM (${VdsName}) since the master "
+"storage domain\n"
+" was not active or could not use another host for the fence operation."
+msgstr ""
+
+#: VDS_MANUAL_FENCE_STATUS
+msgid "Manual fence for host ${VdsName} was started."
+msgstr ""
+
+#: VDS_MANUAL_FENCE_STATUS_FAILED
+msgid "Manual fence for host ${VdsName} failed."
+msgstr ""
+
+#: VDS_MANUAL_FENCE_FAILED_CALL_FENCE_SPM
+msgid ""
+"Manual fence did not revoke the selected SPM (${VdsName}) since the master "
+"storage domain\n"
+" was not active or could not use another host for the fence operation."
+msgstr ""
+
+#: VDC_START
+msgid "Starting oVirt Engine."
+msgstr ""
+
+#: VDC_STOP
+msgid "Stopping oVirt Engine."
+msgstr ""
+
+#: VDS_ACTIVATE
+msgid "Activation of host ${VdsName} initiated by ${UserName}."
+msgstr ""
+
+#: VDS_ACTIVATE_ASYNC
+msgid "Host ${VdsName} was autorecovered."
+msgstr ""
+
+#: VDS_ACTIVATE_MANUAL_HA
+msgid ""
+"Host ${VdsName} was activated by ${UserName}, but the Hosted Engine HA "
+"service may still be in maintenance mode. If necessary, please correct this "
+"manually."
+msgstr ""
+
+#: VDS_ACTIVATE_MANUAL_HA_ASYNC
+msgid ""
+"Host ${VdsName} was autorecovered, but the Hosted Engine HA service may "
+"still be in maintenance mode. If necessary, please correct this manually."
+msgstr ""
+
+#: VDS_ACTIVATE_FAILED
+msgid "Failed to activate Host ${VdsName}.(User: ${UserName})."
+msgstr ""
+
+#: VDS_ACTIVATE_FAILED_ASYNC
+msgid "Failed to autorecover Host ${VdsName}."
+msgstr ""
+
+#: HOST_REFRESHED_CAPABILITIES
+msgid "Successfully refreshed the capabilities of host ${VdsName}."
+msgstr ""
+
+#: HOST_REFRESH_CAPABILITIES_FAILED
+msgid "Failed to refresh the capabilities of host ${VdsName}."
+msgstr ""
+
+#: HOST_INTERFACE_STATE_UP
+msgid "Interface ${InterfaceName} on host ${VdsName}, changed state to up"
+msgstr ""
+
+#: HOST_INTERFACE_STATE_DOWN
+msgid "Interface ${InterfaceName} on host ${VdsName}, changed state to down"
+msgstr ""
+
+#: HOST_BOND_SLAVE_STATE_UP
+msgid ""
+"Slave ${SlaveName} of bond ${BondName} on host ${VdsName}, changed state to "
+"up"
+msgstr ""
+
+#: HOST_BOND_SLAVE_STATE_DOWN
+msgid ""
+"Slave ${SlaveName} of bond ${BondName} on host ${VdsName}, changed state to "
+"down"
+msgstr ""
+
+#: HOST_REGISTRATION_FAILED_INVALID_CLUSTER
+msgid ""
+"No default or valid cluster was found, Host ${VdsName} registration failed"
+msgstr ""
+
+#: VDS_DETECTED
+msgid "Status of host ${VdsName} was set to ${HostStatus}."
+msgstr ""
+
+#: VDS_FAILURE
+msgid "Host ${VdsName} is non responsive."
+msgstr ""
+
+#: VDS_MAINTENANCE
+msgid "Host ${VdsName} was switched to Maintenance Mode."
+msgstr ""
+
+#: VDS_MAINTENANCE_MANUAL_HA
+msgid ""
+"Host ${VdsName} was switched to Maintenance mode, but Hosted Engine HA "
+"maintenance could not be enabled. Please enable it manually."
+msgstr ""
+
+#: VDS_MAINTENANCE_FAILED
+msgid "Failed to switch Host ${VdsName} to Maintenance mode."
+msgstr ""
+
+#: VDS_RECOVER
+msgid "Host ${VdsName} is rebooting."
+msgstr ""
+
+#: VDS_RECOVER_FAILED
+msgid "Host ${VdsName} failed to recover."
+msgstr ""
+
+#: VDS_RECOVER_FAILED_VMS_UNKNOWN
+msgid ""
+"Host ${VdsName} cannot be reached, VMs state on this host are marked as "
+"Unknown."
+msgstr ""
+
+#: VDS_NO_SELINUX_ENFORCEMENT
+msgid "Host ${VdsName} does not enforce SELinux. Current status: ${Mode}"
+msgstr ""
+
+#: VDS_PROVISION
+msgid "Installing OS on Host ${VdsName} using Hostgroup ${HostGroupName}."
+msgstr ""
+
+#: VDS_UNKNOWN_HOST
+msgid "The address of host ${VdsName} could not be determined"
+msgstr ""
+
+#: VM_DOWN
+msgid "VM ${VmName} is down. ${ExitMessage}"
+msgstr ""
+
+#: USER_SUSPEND_VM_OK
+msgid "VM ${VmName} on Host ${VdsName} is suspended."
+msgstr ""
+
+#: VM_FAILURE
+msgid "VM ${VmName} cannot be found on Host ${VdsName}."
+msgstr ""
+
+#: VM_MIGRATION_ABORT
+msgid ""
+"Migration failed: ${MigrationError} (VM: ${VmName}, Source: ${VdsName})."
+msgstr ""
+
+#: VM_MIGRATION_DONE
+msgid ""
+"Migration completed (VM: ${VmName}, Source: ${VdsName}, Destination: "
+"${DestinationVdsName}, Duration: ${Duration}, Total: ${TotalDuration}, "
+"Actual downtime: ${ActualDowntime})"
+msgstr ""
+
+#: VM_MIGRATION_FAILED
+msgid ""
+"Migration failed${DueToMigrationError} (VM: ${VmName}, Source: ${VdsName})."
+msgstr ""
+
+#: VM_MIGRATION_NO_VDS_TO_MIGRATE_TO
+msgid "No available host was found to migrate VM ${VmName} to."
+msgstr ""
+
+#: VM_MIGRATION_FAILED_DURING_MOVE_TO_MAINTENANCE
+msgid ""
+"Migration failed${DueToMigrationError} while Host is in 'preparing for "
+"maintenance' state.\n"
+"  Consider manual intervention: stopping/migrating Vms as Host's state will "
+"not\n"
+"  turn to maintenance while VMs are still running on it.(VM: ${VmName}, "
+"Source: ${VdsName}, Destination: ${DestinationVdsName})."
+msgstr ""
+
+#: VM_SET_TO_UNKNOWN_STATUS
+msgid "VM ${VmName} was set to the Unknown status."
+msgstr ""
+
+#: VM_MIGRATION_TO_SERVER_FAILED
+msgid ""
+"Migration failed${DueToMigrationError} (VM: ${VmName}, Source: ${VdsName}, "
+"Destination: ${DestinationVdsName})."
+msgstr ""
+
+#: VM_MIGRATION_START
+msgid ""
+"Migration started (VM: ${VmName}, Source: ${VdsName}, Destination: "
+"${DestinationVdsName}, User: ${UserName})."
+msgstr ""
+
+#: VM_MIGRATION_START_SYSTEM_INITIATED
+msgid ""
+"Migration initiated by system (VM: ${VmName}, Source: ${VdsName}, "
+"Destination: ${DestinationVdsName})."
+msgstr ""
+
+#: VM_MIGRATION_TRYING_RERUN
+msgid ""
+"Failed to migrate VM ${VmName} to Host "
+"${DestinationVdsName}${DueToMigrationError}. Trying to migrate to another "
+"Host."
+msgstr ""
+
+#: VM_CANCEL_MIGRATION
+msgid ""
+"Migration cancelled (VM: ${VmName}, Source: ${VdsName}, User: ${UserName})."
+msgstr ""
+
+#: VM_CANCEL_MIGRATION_FAILED
+msgid "Failed to cancel migration for VM: ${VmName}"
+msgstr ""
+
+#: VM_CANCEL_CONVERSION
+msgid ""
+"Conversion cancelled (VM: ${VmName}, Source: ${VdsName}, User: ${UserName})."
+msgstr ""
+
+#: VM_CANCEL_CONVERSION_FAILED
+msgid "Failed to cancel conversion for VM: ${VmName}"
+msgstr ""
+
+#: VM_STATUS_RESTORED
+msgid "VM ${VmName} status was restored to ${VmStatus}."
+msgstr ""
+
+#: VM_SET_TICKET
+msgid "User ${UserName} initiated console session for VM ${VmName}"
+msgstr ""
+
+#: VM_SET_TICKET_FAILED
+msgid "User ${UserName} failed to initiate a console session for VM ${VmName}"
+msgstr ""
+
+#: VDS_SLOW_STORAGE_RESPONSE_TIME
+msgid "Slow storage response time on Host ${VdsName}."
+msgstr ""
+
+#: IRS_HOSTED_ON_VDS
+msgid "Storage Pool Manager runs on Host ${VdsName} (Address: ${ServerIp})."
+msgstr ""
+
+#: USER_ATTACH_VM_POOL_TO_AD_GROUP
+msgid ""
+"Group ${GroupName} was attached to VM Pool ${VmPoolName} by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_VM_POOL_TO_AD_GROUP_INTERNAL
+msgid "Group ${GroupName} was attached to VM Pool ${VmPoolName}."
+msgstr ""
+
+#: USER_ATTACH_VM_POOL_TO_AD_GROUP_FAILED
+msgid ""
+"Failed to attach Group ${GroupName} to VM Pool ${VmPoolName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ATTACH_VM_POOL_TO_AD_GROUP_FAILED_INTERNAL
+msgid "Failed to attach Group ${GroupName} to VM Pool ${VmPoolName}."
+msgstr ""
+
+#: USER_ATTACH_VM_TO_AD_GROUP
+msgid "Group ${GroupName} was attached to VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_VM_TO_AD_GROUP_FAILED
+msgid ""
+"Failed to attach Group ${GroupName} to VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_DETACH_VM_POOL_TO_AD_GROUP
+msgid ""
+"Group ${GroupName} was detached from VM Pool ${VmPoolName} by ${UserName}."
+msgstr ""
+
+#: USER_DETACH_VM_POOL_TO_AD_GROUP_FAILED
+msgid ""
+"Failed to detach Group ${GroupName} from VM Pool ${VmPoolName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_DETACH_VM_TO_AD_GROUP
+msgid "Group ${GroupName} was detached from VM ${VmName} by ${UserName}."
+msgstr ""
+
+#: USER_DETACH_VM_TO_AD_GROUP_FAILED
+msgid ""
+"Failed to detach Group ${GroupName} from VM ${VmName} (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVE_AD_GROUP
+msgid "Group ${GroupName} was removed by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_AD_GROUP_FAILED
+msgid "Failed to remove group ${GroupName} (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_REMOVE_ADUSER
+msgid "Failed to remove User ${AdUserName} (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVE_ADUSER
+msgid "User ${AdUserName} was removed by ${UserName}."
+msgstr ""
+
+#: USER_INITIATED_RUN_VM
+msgid "Starting VM ${VmName} was initiated by ${UserName}."
+msgstr ""
+
+#: USER_INITIATED_RUN_VM_AND_PAUSE
+msgid "Starting in paused mode VM ${VmName} was initiated by ${UserName}."
+msgstr ""
+
+#: USER_STARTED_VM
+msgid "VM ${VmName} was started by ${UserName} (Host: ${VdsName})."
+msgstr ""
+
+#: USER_INITIATED_RUN_VM_FAILED
+msgid "Failed to run VM ${VmName} on Host ${VdsName}."
+msgstr ""
+
+#: VDS_FAILED_TO_RUN_VMS
+msgid ""
+"Host ${VdsName} will be switched to Error status for ${Time} minutes because "
+"it failed to run a VM."
+msgstr ""
+
+#: USER_ADD_TAG
+msgid "New Tag ${TagName} was created by ${UserName}."
+msgstr ""
+
+#: USER_ADD_TAG_FAILED
+msgid "Failed to create Tag named ${TagName} (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVE_TAG
+msgid "Tag ${TagName} was removed by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_TAG_FAILED
+msgid "Failed to remove Tag ${TagName} (User: ${UserName})."
+msgstr ""
+
+#: USER_UPDATE_TAG
+msgid "Tag ${TagName} configuration was updated by ${UserName}."
+msgstr ""
+
+#: USER_UPDATE_TAG_FAILED
+msgid "Failed to update Tag ${TagName} (User: ${UserName})."
+msgstr ""
+
+#: USER_MOVE_TAG
+msgid ""
+"Tag ${TagName} was moved from ${OldParnetTagName} to ${NewParentTagName} by "
+"${UserName}."
+msgstr ""
+
+#: USER_MOVE_TAG_FAILED
+msgid ""
+"Failed to move Tag ${TagName} from ${OldParnetTagName} to "
+"${NewParentTagName} (User: ${UserName})."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_TEMPLATE
+msgid ""
+"Tag ${TagName} was attached to Templates(s) ${TemplatesNames} by "
+"${UserName}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_TEMPLATE_FAILED
+msgid ""
+"Failed to attach Tag ${TagName} to Templates(s) ${TemplatesNames} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_USER_GROUP
+msgid ""
+"Tag ${TagName} was attached to Group(s) ${AttachGroupsNames} by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_USER_GROUP_FAILED
+msgid ""
+"Failed to attach Group(s) ${AttachGroupsNames} to Tag ${TagName} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_USER
+msgid ""
+"Tag ${TagName} was attached to User(s) ${AttachUsersNames} by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_USER_FAILED
+msgid ""
+"Failed to attach Tag ${TagName} to User(s) ${AttachUsersNames} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_VDS
+msgid "Tag ${TagName} was attached to Host(s) ${VdsNames} by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_VDS_FAILED
+msgid ""
+"Failed to attach Tag ${TagName} to Host(s) ${VdsNames} (User: ${UserName})."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_VM
+msgid "Tag ${TagName} was attached to VM(s) ${VmsNames} by ${UserName}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_VM_FAILED
+msgid ""
+"Failed to attach Tag ${TagName} to VM(s) ${VmsNames} (User: ${UserName})."
+msgstr ""
+
+#: USER_DETACH_TEMPLATE_FROM_TAG
+msgid ""
+"Tag ${TagName} was detached from Template(s) ${TemplatesNames} by "
+"${UserName}."
+msgstr ""
+
+#: USER_DETACH_TEMPLATE_FROM_TAG_FAILED
+msgid ""
+"Failed to detach Tag ${TagName} from TEMPLATE(s) ${TemplatesNames} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_DETACH_USER_GROUP_FROM_TAG
+msgid ""
+"Tag ${TagName} was detached from Group(s) ${DetachGroupsNames} by "
+"${UserName}."
+msgstr ""
+
+#: USER_DETACH_USER_GROUP_FROM_TAG_FAILED
+msgid ""
+"Failed to detach Tag ${TagName} from Group(s)  ${DetachGroupsNames} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_DETACH_USER_FROM_TAG
+msgid ""
+"Tag ${TagName} detached from User(s) ${DetachUsersNames} by ${UserName}."
+msgstr ""
+
+#: USER_DETACH_USER_FROM_TAG_FAILED
+msgid ""
+"Failed to detach Tag ${TagName} from User(s) ${DetachUsersNames} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_DETACH_VDS_FROM_TAG
+msgid "Tag ${TagName} was detached from Host(s) ${VdsNames} by ${UserName}."
+msgstr ""
+
+#: USER_DETACH_VDS_FROM_TAG_FAILED
+msgid ""
+"Failed to detach Tag ${TagName} from Host(s) ${VdsNames} (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_DETACH_VM_FROM_TAG
+msgid "Tag ${TagName} was detached from VM(s) ${VmsNames} by ${UserName}."
+msgstr ""
+
+#: USER_DETACH_VM_FROM_TAG_FAILED
+msgid ""
+"Failed to detach Tag ${TagName} from VM(s) ${VmsNames} (User: ${UserName})."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_TEMPLATE_EXISTS
+msgid "Tag ${TagName} already attached to Template(s) ${TemplatesNamesExists}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_USER_EXISTS
+msgid "Tag ${TagName} already attached to User(s) ${AttachUsersNamesExists}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_USER_GROUP_EXISTS
+msgid "Tag ${TagName} already attached to Group(s) ${AttachGroupsNamesExists}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_VDS_EXISTS
+msgid "Tag ${TagName} already attached to Host(s) ${VdsNamesExists}."
+msgstr ""
+
+#: USER_ATTACH_TAG_TO_VM_EXISTS
+msgid "Tag ${TagName} already attached to VM(s) ${VmsNamesExists}."
+msgstr ""
+
+#: USER_LOCKED_VM
+msgid "User ${GuestUser} locked VM ${VmName}."
+msgstr ""
+
+#: USER_LOGGED_IN_VM
+msgid "User ${GuestUser} logged in to VM ${VmName}."
+msgstr ""
+
+#: USER_LOGGED_OUT_VM
+msgid "User ${GuestUser} logged out from VM ${VmName}."
+msgstr ""
+
+#: USER_UNLOCKED_VM
+msgid "User ${GuestUser} unlocked VM ${VmName}."
+msgstr ""
+
+#: USER_SUSPEND_VM
+msgid ""
+"Suspending VM ${VmName} was initiated by User ${UserName} (Host: "
+"${VdsName})."
+msgstr ""
+
+#: USER_SUSPEND_VM_FINISH_SUCCESS
+msgid "Suspending VM ${VmName} has been completed."
+msgstr ""
+
+#: USER_SUSPEND_VM_FINISH_FAILURE
+msgid "Failed to complete suspending of VM ${VmName}."
+msgstr ""
+
+#: USER_SUSPEND_VM_FINISH_FAILURE_WILL_TRY_AGAIN
+msgid "Failed to complete suspending of VM ${VmName}, will try again."
+msgstr ""
+
+#: USER_FAILED_SUSPEND_VM
+msgid "Failed to suspend VM ${VmName} (Host: ${VdsName})."
+msgstr ""
+
+#: USER_VDS_MAINTENANCE
+msgid ""
+"Host ${VdsName} was switched to Maintenance mode by ${UserName} (Reason: "
+"${Reason})."
+msgstr ""
+
+#: USER_VDS_MAINTENANCE_WITHOUT_REASON
+msgid "Host ${VdsName} was switched to Maintenance mode by ${UserName}."
+msgstr ""
+
+#: USER_VDS_MAINTENANCE_MANUAL_HA
+msgid ""
+"Host ${VdsName} was switched to Maintenance mode by ${UserName}, but Hosted "
+"Engine HA maintenance could not be enabled. Please enable it manually."
+msgstr ""
+
+#: USER_VDS_MAINTENANCE_MIGRATION_FAILED
+msgid ""
+"Host ${VdsName} cannot change into maintenance mode - not all Vms have been "
+"migrated successfully. Consider manual intervention: stopping/migrating Vms: "
+"${failedVms} (User: ${UserName})."
+msgstr ""
+
+#: USER_EXPORT_VM
+msgid "VM ${VmName} exported to ${ExportPath} by ${UserName}"
+msgstr ""
+
+#: USER_EXPORT_VM_FAILED
+msgid "Failed to export VM ${VmName} to ${ExportPath} (User: ${UserName})"
+msgstr ""
+
+#: USER_EXPORT_TEMPLATE
+msgid "Template ${VmTemplateName} exported to ${ExportPath} by ${UserName}"
+msgstr ""
+
+#: USER_EXPORT_TEMPLATE_FAILED
+msgid ""
+"Failed to export Template ${VmTemplateName} to ${ExportPath} (User: "
+"${UserName})"
+msgstr ""
+
+#: VM_IMPORT
+msgid "Started VM import of ${ImportedVmName} (User: ${UserName})"
+msgstr ""
+
+#: VM_IMPORT_INFO
+msgid ""
+"Value of field ${FieldName} of imported VM ${VmName} is  ${FieldValue}. The "
+"field is reset to the default value"
+msgstr ""
+
+#: VM_IMPORT_FAILED
+msgid "Failed to import VM ${ImportedVmName} (User: ${UserName})"
+msgstr ""
+
+#: TEMPLATE_IMPORT
+msgid ""
+"Started Template import of ${ImportedVmTemplateName} (User: ${UserName})"
+msgstr ""
+
+#: TEMPLATE_IMPORT_FAILED
+msgid "Failed to import Template ${ImportedVmTemplateName} (User: ${UserName})"
+msgstr ""
+
+#: TEMPLATE_IMPORT_FROM_CONFIGURATION_SUCCESS
+msgid ""
+"Template ${VmTemplateName} has been successfully imported from the given "
+"configuration."
+msgstr ""
+
+#: TEMPLATE_IMPORT_FROM_CONFIGURATION_FAILED
+msgid ""
+"Failed to import Template ${VmTemplateName} from the given configuration."
+msgstr ""
+
+#: VM_NOT_RESPONDING
+msgid "VM ${VmName} is not responding."
+msgstr ""
+
+#: VM_PAUSED
+msgid "VM ${VmName} has been paused."
+msgstr ""
+
+#: VM_PAUSED_ENOSPC
+msgid "VM ${VmName} has been paused due to no Storage space error."
+msgstr ""
+
+#: VM_PAUSED_ERROR
+msgid "VM ${VmName} has been paused due to unknown storage error."
+msgstr ""
+
+#: VM_PAUSED_EIO
+msgid "VM ${VmName} has been paused due to storage I/O problem."
+msgstr ""
+
+#: VM_PAUSED_EPERM
+msgid "VM ${VmName} has been paused due to storage permissions problem."
+msgstr ""
+
+#: VM_RECOVERED_FROM_PAUSE_ERROR
+msgid "VM ${VmName} has recovered from paused back to up."
+msgstr ""
+
+#: VM_POWER_DOWN_FAILED
+msgid "Shutdown of VM ${VmName} failed."
+msgstr ""
+
+#: VM_MEMORY_UNDER_GUARANTEED_VALUE
+msgid ""
+"VM ${VmName} on host ${VdsName} was guaranteed ${MemGuaranteed} MB but "
+"currently has ${MemActual} MB"
+msgstr ""
+
+#: VM_BALLOON_DRIVER_ERROR
+msgid ""
+"The Balloon driver on VM ${VmName} on host ${VdsName} is requested but "
+"unavailable."
+msgstr ""
+
+#: VM_BALLOON_DRIVER_UNCONTROLLED
+msgid ""
+"The Balloon device on VM ${VmName} on host ${VdsName} is inflated but the "
+"device cannot be controlled (guest agent is down)."
+msgstr ""
+
+#: VM_IMPORT_FROM_CONFIGURATION_EXECUTED_SUCCESSFULLY
+msgid ""
+"VM ${VmName} has been successfully imported from the given configuration."
+msgstr ""
+
+#: VM_IMPORT_FROM_CONFIGURATION_ATTACH_DISKS_FAILED
+msgid ""
+"VM ${VmName} has been imported from the given configuration but the "
+"following disk(s) failed to attach: ${DiskAliases}."
+msgstr ""
+
+#: VDS_INSTALL
+msgid "Host ${VdsName} installed"
+msgstr ""
+
+#: VDS_INSTALL_FAILED
+msgid "Host ${VdsName} installation failed. ${FailedInstallMessage}."
+msgstr ""
+
+#: VDS_INITIALIZING
+msgid "Host ${VdsName} is initializing. Message: ${ErrorMessage}"
+msgstr ""
+
+#: VDS_INITIATED_RUN_AS_STATELESS_VM_NOT_YET_RUNNING
+msgid "Starting VM ${VmName} as stateless was initiated."
+msgstr ""
+
+#: VDS_INITIATED_RUN_VM
+msgid "VM ${VmName} was restarted on Host ${VdsName}"
+msgstr ""
+
+#: VDS_INITIATED_RUN_VM_AS_STATELESS
+msgid "VM ${VmName} was restarted on Host ${VdsName} as stateless"
+msgstr ""
+
+#: VDS_INITIATED_RUN_VM_FAILED
+msgid "Failed to restart VM ${VmName} on Host ${VdsName}"
+msgstr ""
+
+#: USER_ADD_CLUSTER
+msgid "Cluster ${ClusterName} was added by ${UserName}"
+msgstr ""
+
+#: USER_ADD_CLUSTER_FAILED
+msgid "Failed to add Host cluster (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVE_CLUSTER
+msgid "Host cluster ${ClusterName} was removed by ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_CLUSTER_FAILED
+msgid "Failed to remove Host cluster (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATE_CLUSTER
+msgid "Host cluster ${ClusterName} was updated by ${UserName}"
+msgstr ""
+
+#: USER_UPDATE_CLUSTER_FAILED
+msgid "Failed to update Host cluster (User: ${UserName})"
+msgstr ""
+
+#: SYSTEM_UPDATE_CLUSTER
+msgid "Host cluster ${ClusterName} was updated by system"
+msgstr ""
+
+#: SYSTEM_UPDATE_CLUSTER_FAILED
+msgid "Failed to update Host cluster by system"
+msgstr ""
+
+#: VDS_INSTALL_IN_PROGRESS
+msgid "Installing Host ${VdsName}. ${Message}."
+msgstr ""
+
+#: VDS_INSTALL_IN_PROGRESS_ERROR
+msgid "Failed to install Host ${VdsName}. ${Message}."
+msgstr ""
+
+#: VDS_INSTALL_IN_PROGRESS_WARNING
+msgid "Host ${VdsName} installation in progress . ${Message}."
+msgstr ""
+
+#: VDS_PACKAGES_IN_PROGRESS
+msgid "Package update Host ${VdsName}. ${Message}."
+msgstr ""
+
+#: VDS_PACKAGES_IN_PROGRESS_ERROR
+msgid "Failed to update packages Host ${VdsName}. ${Message}."
+msgstr ""
+
+#: VDS_PACKAGES_IN_PROGRESS_WARNING
+msgid "Host ${VdsName} update packages in progress . ${Message}."
+msgstr ""
+
+#: USER_UPDATE_VM_POOL_WITH_VMS
+msgid ""
+"VM Pool ${VmPoolName} was updated by ${UserName}, ${VmsCount} VMs were "
+"added."
+msgstr ""
+
+#: USER_UPDATE_VM_POOL_WITH_VMS_FAILED
+msgid "Failed to update VM Pool ${VmPoolName}(User: ${UserName})."
+msgstr ""
+
+#: USER_VM_POOL_MAX_SUBSEQUENT_FAILURES_REACHED
+msgid "Not all VMs where successfully created in VM Pool ${VmPoolName}."
+msgstr ""
+
+#: MAC_POOL_EMPTY
+msgid "No MAC addresses left in the MAC Address Pool."
+msgstr ""
+
+#: MAC_ADDRESS_IS_IN_USE
+msgid ""
+"Network Interface ${IfaceName} has MAC address ${MACAddr} which is in use."
+msgstr ""
+
+#: MAC_ADDRESS_IS_EXTERNAL
+msgid ""
+"VM ${VmName} has MAC address(es) ${MACAddr}, which is/are out ouf its MAC "
+"pool definitions."
+msgstr ""
+
+#: MAC_ADDRESS_IS_IN_USE_UNPLUG
+msgid ""
+"Network Interface ${IfaceName} has MAC address ${MACAddr} which is in use, "
+"therefore it is being unplugged from VM ${VmName}."
+msgstr ""
+
+#: MAC_ADDRESSES_POOL_NOT_INITIALIZED
+msgid "Mac Address Pool is not initialized. ${Message}"
+msgstr ""
+
+#: USER_PASSWORD_CHANGED
+msgid "Password changed successfully for ${UserName}"
+msgstr ""
+
+#: USER_PASSWORD_CHANGE_FAILED
+msgid "Failed to change password. (User: ${UserName})"
+msgstr ""
+
+#: USER_CLEAR_UNKNOWN_VMS
+msgid ""
+"All VMs' status on Non Responsive Host ${VdsName} were changed to 'Down' by "
+"${UserName}"
+msgstr ""
+
+#: USER_FAILED_CLEAR_UNKNOWN_VMS
+msgid ""
+"Failed to clear VMs' status on Non Responsive Host ${VdsName}. (User: "
+"${UserName})."
+msgstr ""
+
+#: CERTIFICATE_FILE_NOT_FOUND
+msgid "Could not find oVirt Engine Certificate file."
+msgstr ""
+
+#: VDS_RUN_IN_NO_KVM_MODE
+msgid "Host ${VdsName} running without virtualization hardware acceleration"
+msgstr ""
+
+#: VDS_VERSION_NOT_SUPPORTED_FOR_CLUSTER
+msgid ""
+"Host ${VdsName} is installed with VDSM version (${VdsSupportedVersions}) and "
+"cannot join cluster ${ClusterName} which is compatible with VDSM versions "
+"${CompatibilityVersion}."
+msgstr ""
+
+#: VDS_CLUSTER_VERSION_NOT_SUPPORTED
+msgid ""
+"Host ${VdsName} is compatible with versions (${VdsSupportedVersions}) and "
+"cannot join Cluster ${ClusterName} which is set to version "
+"${CompatibilityVersion}."
+msgstr ""
+
+#: VDS_ARCHITECTURE_NOT_SUPPORTED_FOR_CLUSTER
+msgid ""
+"Host ${VdsName} has architecture ${VdsArchitecture} and cannot join Cluster "
+"${ClusterName} which has architecture ${ClusterArchitecture}."
+msgstr ""
+
+#: CPU_TYPE_UNSUPPORTED_IN_THIS_CLUSTER_VERSION
+msgid ""
+"Host ${VdsName} moved to Non-Operational state as host CPU type is not "
+"supported in this cluster compatibility version or is not supported at all"
+msgstr ""
+
+#: RUN_VM_FAILED
+msgid "Cannot run VM ${VmName} on Host ${VdsName}. Error: ${ErrMsg}"
+msgstr ""
+
+#: USER_ADD_PERMISSION
+msgid ""
+"User/Group ${SubjectName}, Namespace ${Namespace}, Authorization provider: "
+"${Authz} was granted permission for Role ${RoleName} on ${VdcObjectType} "
+"${VdcObjectName}, by ${UserName}."
+msgstr ""
+
+#: USER_ADD_PERMISSION_FAILED
+msgid ""
+"User ${UserName} failed to grant permission for Role ${RoleName} on "
+"${VdcObjectType} ${VdcObjectName} to User/Group ${SubjectName}."
+msgstr ""
+
+#: USER_REMOVE_PERMISSION
+msgid ""
+"User/Group ${SubjectName} Role ${RoleName} permission was removed from "
+"${VdcObjectType} ${VdcObjectName} by ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_PERMISSION_FAILED
+msgid ""
+"User ${UserName} failed to remove permission for Role ${RoleName} from "
+"${VdcObjectType} ${VdcObjectName} to User/Group ${SubjectName}"
+msgstr ""
+
+#: USER_ADD_SYSTEM_PERMISSION
+msgid ""
+"User/Group ${SubjectName} was granted permission for Role ${RoleName} on "
+"${VdcObjectType} by ${UserName}."
+msgstr ""
+
+#: USER_ADD_SYSTEM_PERMISSION_FAILED
+msgid ""
+"User ${UserName} failed to grant permission for Role ${RoleName} on "
+"${VdcObjectType} to User/Group ${SubjectName}."
+msgstr ""
+
+#: USER_REMOVE_SYSTEM_PERMISSION
+msgid ""
+"User/Group ${SubjectName} Role ${RoleName} permission was removed from "
+"${VdcObjectType} by ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_SYSTEM_PERMISSION_FAILED
+msgid ""
+"User ${UserName} failed to remove permission for Role ${RoleName} from "
+"${VdcObjectType} to User/Group ${SubjectName}"
+msgstr ""
+
+#: USER_ADD_PROFILE
+msgid "Profile created for ${UserName}"
+msgstr ""
+
+#: USER_ADD_PROFILE_FAILED
+msgid "Failed to create profile for ${UserName}"
+msgstr ""
+
+#: USER_ADD_ROLE
+msgid "Role ${RoleName} granted to ${UserName}"
+msgstr ""
+
+#: USER_ADD_ROLE_FAILED
+msgid "Failed to grant role ${RoleName} (User ${UserName})"
+msgstr ""
+
+#: USER_REMOVE_PROFILE
+msgid "Removed profile for ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_PROFILE_FAILED
+msgid "Failed to remove profile for ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_ROLE
+msgid "Role ${RoleName} removed from ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_ROLE_FAILED
+msgid "Failed to remove role ${RoleName} (User ${UserName})"
+msgstr ""
+
+#: USER_UPDATE_PROFILE
+msgid "Updated profile for ${UserName}"
+msgstr ""
+
+#: USER_UPDATE_PROFILE_FAILED
+msgid "Failed to update profile for ${UserName}"
+msgstr ""
+
+#: USER_UPDATE_ROLE
+msgid "${UserName} Role was updated to the ${RoleName} Role"
+msgstr ""
+
+#: USER_UPDATE_ROLE_FAILED
+msgid "Failed to update role ${RoleName} to ${UserName}"
+msgstr ""
+
+#: USER_ATTACHED_ACTION_GROUP_TO_ROLE
+msgid ""
+"Action group ${ActionGroup} was attached to Role ${RoleName} by ${UserName}"
+msgstr ""
+
+#: USER_ATTACHED_ACTION_GROUP_TO_ROLE_FAILED
+msgid ""
+"Failed to attach Action group ${ActionGroup} to Role ${RoleName} (User: "
+"${UserName})"
+msgstr ""
+
+#: USER_DETACHED_ACTION_GROUP_FROM_ROLE
+msgid ""
+"Action group ${ActionGroup} was detached from Role ${RoleName} by "
+"${UserName}"
+msgstr ""
+
+#: USER_DETACHED_ACTION_GROUP_FROM_ROLE_FAILED
+msgid ""
+"Failed to attach Action group ${ActionGroup} to Role ${RoleName} by "
+"${UserName}"
+msgstr ""
+
+#: VDS_REGISTER_ERROR_UPDATING_HOST
+msgctxt "VDS_REGISTER_ERROR_UPDATING_HOST"
+msgid ""
+"Host registration failed - cannot update Host Name for Host ${VdsName2}. "
+"(Host: ${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_ERROR_UPDATING_HOST_ALL_TAKEN
+msgctxt "VDS_REGISTER_ERROR_UPDATING_HOST_ALL_TAKEN"
+msgid ""
+"Host registration failed - all available Host Names are taken. (Host: "
+"${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_HOST_IS_ACTIVE
+msgctxt "VDS_REGISTER_HOST_IS_ACTIVE"
+msgid ""
+"Host registration failed - cannot change Host Name of active Host "
+"${VdsName2}. (Host: ${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_ERROR_UPDATING_NAME
+msgctxt "VDS_REGISTER_ERROR_UPDATING_NAME"
+msgid ""
+"Host registration failed - cannot update Host Name for Host ${VdsName2}. "
+"(Host: ${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_ERROR_UPDATING_NAMES_ALL_TAKEN
+msgctxt "VDS_REGISTER_ERROR_UPDATING_NAMES_ALL_TAKEN"
+msgid ""
+"Host registration failed - all available Host Names are taken. (Host: "
+"${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_NAME_IS_ACTIVE
+msgctxt "VDS_REGISTER_NAME_IS_ACTIVE"
+msgid ""
+"Host registration failed - cannot change Host Name of active Host "
+"${VdsName2}. (Host: ${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_AUTO_APPROVE_PATTERN
+msgid ""
+"Host registration failed - auto approve pattern error. (Host: ${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_EMPTY_ID
+msgid "Host registration failed, empty host id (Host: ${VdsHostName})"
+msgstr ""
+
+#: VDS_REGISTER_FAILED
+msgid "Host registration failed. (Host: ${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_EXISTING_VDS_UPDATE_FAILED
+msgid ""
+"Host registration failed - cannot update existing Host. (Host: ${VdsName1})"
+msgstr ""
+
+#: VDS_REGISTER_SUCCEEDED
+msgid "Host ${VdsName1} registered."
+msgstr ""
+
+#: VM_MIGRATION_ON_CONNECT_CHECK_FAILED
+msgid "VM migration logic failed. (VM name: ${VmName})"
+msgstr ""
+
+#: AD_COMPUTER_ACCOUNT_SUCCEEDED
+msgid "Account creation successful."
+msgstr ""
+
+#: AD_COMPUTER_ACCOUNT_FAILED
+msgid "Account creation failed."
+msgstr ""
+
+#: VDS_CPU_LOWER_THAN_CLUSTER
+msgid ""
+"Host ${VdsName} moved to Non-Operational state as host does not meet the "
+"cluster's minimum CPU level. Missing CPU features : ${CpuFlags}"
+msgstr ""
+
+#: CPU_FLAGS_NX_IS_MISSING
+msgid ""
+"Host ${VdsName} is missing the NX cpu flag. This flag can be enabled via the "
+"host BIOS. Please set Disable Execute (XD) for an Intel host, or No Execute "
+"(NX) for AMD.  Please make sure to completely power off the host for this "
+"change to take effect."
+msgstr ""
+
+#: VDS_CPU_RETRIEVE_FAILED
+msgid ""
+"Failed to determine Host ${VdsName} CPU level - could not retrieve CPU "
+"flags."
+msgstr ""
+
+#: VDS_STORAGE_CONNECTION_FAILED_BUT_LAST_VDS
+msgid ""
+"Failed to connect Host ${VdsName} to Data Center, due to connectivity errors "
+"with the Storage. Host ${VdsName} will remain in Up state (but inactive), "
+"as it is the last Host in the Data Center, to enable manual intervention by "
+"the Administrator."
+msgstr ""
+
+#: VDS_STORAGE_VDS_STATS_FAILED
+msgid ""
+"Host ${VdsName} reports about one of the Active Storage Domains as "
+"Problematic."
+msgstr ""
+
+#: VDS_STORAGES_CONNECTION_FAILED
+msgid ""
+"Failed to connect Host ${VdsName} to the Storage Domains "
+"${failedStorageDomains}."
+msgstr ""
+
+#: VDS_SET_NONOPERATIONAL
+msgid "Host ${VdsName} moved to Non-Operational state."
+msgstr ""
+
+#: VDS_SET_NONOPERATIONAL_FAILED
+msgid "Failed to move Host ${VdsName} to Non-Operational state."
+msgstr ""
+
+#: VDS_FENCE_STATUS
+msgid "Host ${VdsName} power management was verified successfully."
+msgstr ""
+
+#: VDS_FENCE_STATUS_FAILED
+msgid "Failed to verify Host ${VdsName} power management."
+msgstr ""
+
+#: VDS_APPROVE
+msgid "Host ${VdsName} was successfully approved by user ${UserName}."
+msgstr ""
+
+#: VDS_APPROVE_FAILED
+msgid "Failed to approve Host ${VdsName}."
+msgstr ""
+
+#: VDS_FAILED_TO_GET_HOST_HARDWARE_INFO
+msgid "Could not get hardware information for host ${VdsName}"
+msgstr ""
+
+#: VM_MIGRATION_ON_CONNECT_CHECK_SUCCEEDED
+msgid "Migration check failed to execute."
+msgstr ""
+
+#: NETWORK_REMOVE_BOND
+msgid "Remove bond: ${BondName} for Host: ${VdsName} (User:${UserName})."
+msgstr ""
+
+#: NETWORK_REMOVE_BOND_FAILED
+msgid ""
+"Failed to remove bond: ${BondName} for Host: ${VdsName} (User:${UserName})."
+msgstr ""
+
+#: NETWORK_VDS_NETWORK_NOT_MATCH_CLUSTER
+msgid "Vds ${VdsName} network does not match to cluster ${ClusterName}"
+msgstr ""
+
+#: NETWORK_VDS_NETWORK_MATCH_CLUSTER
+msgid "Vds ${VdsName} network match to cluster ${ClusterName}"
+msgstr ""
+
+#: HOST_SYNC_ALL_NETWORKS_FAILED
+msgid "Failed to sync all host ${VdsName} networks"
+msgstr ""
+
+#: HOST_SYNC_ALL_NETWORKS_FINISHED
+msgid "Managed to sync all host ${VdsName} networks."
+msgstr ""
+
+#: USER_ACTIVATED_STORAGE_DOMAIN
+msgid ""
+"Storage Domain ${StorageDomainName} (Data Center ${StoragePoolName}) was "
+"activated by ${UserName}"
+msgstr ""
+
+#: USER_ACTIVATED_STORAGE_DOMAIN_ASYNC
+msgid ""
+"Storage Domain ${StorageDomainName} (Data Center ${StoragePoolName}) was "
+"autorecovered."
+msgstr ""
+
+#: RECOVERY_STORAGE_POOL
+msgid "Data Center ${StoragePoolName} was recovered by ${UserName}"
+msgstr ""
+
+#: RECOVERY_STORAGE_POOL_FAILED
+msgid "Failed to recover Data Center ${StoragePoolName}  (User:${UserName})"
+msgstr ""
+
+#: USER_ACTIVATE_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to activate Storage Domain ${StorageDomainName} (Data Center "
+"${StoragePoolName}) by ${UserName}"
+msgstr ""
+
+#: USER_ACTIVATE_STORAGE_DOMAIN_FAILED_ASYNC
+msgid ""
+"Failed to autorecover Storage Domain ${StorageDomainName} (Data Center "
+"${StoragePoolName})."
+msgstr ""
+
+#: USER_ADD_STORAGE_DOMAIN
+msgid "Storage Domain ${StorageDomainName} was added by ${UserName}"
+msgstr ""
+
+#: USER_ADD_STORAGE_DOMAIN_FAILED
+msgid "Failed to add Storage Domain ${StorageDomainName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_ADD_STORAGE_POOL
+msgid ""
+"Data Center ${StoragePoolName}, Compatibility Version "
+"${CompatibilityVersion} and Quota Type ${QuotaEnforcementType} was added by "
+"${UserName}"
+msgstr ""
+
+#: USER_ADD_STORAGE_POOL_FAILED
+msgid "Failed to add Data Center ${StoragePoolName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_ATTACH_STORAGE_DOMAIN_TO_POOL
+msgid ""
+"Storage Domain ${StorageDomainName} was attached to Data Center "
+"${StoragePoolName} by ${UserName}"
+msgstr ""
+
+#: USER_ATTACH_STORAGE_DOMAIN_TO_POOL_FAILED
+msgid ""
+"Failed to attach Storage Domain ${StorageDomainName} to Data Center "
+"${StoragePoolName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_ATTACH_STORAGE_DOMAINS_TO_POOL
+msgid ""
+"Storage Domains were attached to Data Center ${StoragePoolName} by "
+"${UserName}"
+msgstr ""
+
+#: USER_ATTACH_STORAGE_DOMAINS_TO_POOL_FAILED
+msgid ""
+"Failed to attach Storage Domains to Data Center ${StoragePoolName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: STORAGE_DOMAIN_MOVED_TO_MAINTENANCE
+msgid ""
+"Storage Domain ${StorageDomainName} (Data Center ${StoragePoolName}) "
+"successfully moved to Maintenance as it's no longer accessed by any Host of "
+"the Data Center."
+msgstr ""
+
+#: USER_DEACTIVATED_STORAGE_DOMAIN
+msgid ""
+"Storage Domain ${StorageDomainName} (Data Center ${StoragePoolName}) was "
+"deactivated and has moved to 'Preparing for maintenance' until it will no "
+"longer be accessed by any Host of the Data Center."
+msgstr ""
+
+#: USER_DEACTIVATED_LAST_MASTER_STORAGE_DOMAIN
+msgid ""
+"Storage Domain ${StorageDomainName} (Data Center ${StoragePoolName}) was "
+"deactivated."
+msgstr ""
+
+#: USER_DEACTIVATE_STORAGE_DOMAIN_FAILED
+msgctxt "USER_DEACTIVATE_STORAGE_DOMAIN_FAILED"
+msgid ""
+"Failed to deactivate Storage Domain ${StorageDomainName} (Data Center "
+"${StoragePoolName})."
+msgstr ""
+
+#: USER_DETACH_STORAGE_DOMAIN_FROM_POOL
+msgid ""
+"Storage Domain ${StorageDomainName} was detached from Data Center "
+"${StoragePoolName} by ${UserName}"
+msgstr ""
+
+#: USER_DETACH_STORAGE_DOMAIN_FROM_POOL_FAILED
+msgid ""
+"Failed to detach Storage Domain ${StorageDomainName} to Data Center "
+"${StoragePoolName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVE_STORAGE_DOMAIN
+msgid "Storage Domain ${StorageDomainName} was removed by ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to remove Storage Domain ${StorageDomainName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_SCAN_STORAGE_DOMAIN_FOR_UNREGISTERED_DISKS
+msgid ""
+"Storage Domain ${StorageDomainName} has finished to scan for unregistered "
+"disks by ${UserName}."
+msgstr ""
+
+#: USER_SCAN_STORAGE_DOMAIN_FOR_UNREGISTERED_DISKS_FAILED
+msgid ""
+"Storage Domain ${StorageDomainName} failed to scan for unregistered disks by "
+"${UserName}."
+msgstr ""
+
+#: USER_FORCE_REMOVE_STORAGE_DOMAIN
+msgid "Storage Domain ${StorageDomainName} was forcibly removed by ${UserName}"
+msgstr ""
+
+#: USER_FORCE_REMOVE_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to forcibly remove Storage Domain ${StorageDomainName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: USER_FORCE_REMOVE_STORAGE_POOL
+msgid "Data Center ${StoragePoolName} was forcibly removed by ${UserName}"
+msgstr ""
+
+#: USER_FORCE_REMOVE_STORAGE_POOL_FAILED
+msgid ""
+"Failed to forcibly remove Data Center ${StoragePoolName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: USER_REMOVE_STORAGE_POOL
+msgid "Data Center ${StoragePoolName} was removed by ${UserName}"
+msgstr ""
+
+#: USER_REMOVE_STORAGE_POOL_FAILED
+msgid "Failed to remove Data Center ${StoragePoolName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATE_STORAGE_DOMAIN
+msgid "Storage Domain ${StorageDomainName} was updated by ${UserName}"
+msgstr ""
+
+#: USER_UPDATE_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to update Storage Domain ${StorageDomainName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATE_STORAGE_POOL
+msgid "Data Center ${StoragePoolName} was updated by ${UserName}"
+msgstr ""
+
+#: UPGRADE_STORAGE_POOL_ENCOUNTERED_PROBLEMS
+msgid ""
+"Data Center ${StoragePoolName} has encountered problems during upgrade "
+"process."
+msgstr ""
+
+#: USER_UPDATE_STORAGE_POOL_FAILED
+msgid "Failed to update Data Center ${StoragePoolName}. (User: ${UserName})"
+msgstr ""
+
+#: VDS_SET_NONOPERATIONAL_NETWORK
+msgid ""
+"Host ${VdsName} does not comply with the cluster ${ClusterName} networks, "
+"the following networks are missing on host: '${Networks}'"
+msgstr ""
+
+#: VDS_NETWORKS_OUT_OF_SYNC
+msgid ""
+"Host ${VdsName}'s following network(s) are not synchronized with their "
+"Logical Network configuration: ${Networks}."
+msgstr ""
+
+#: VDS_SET_NONOPERATIONAL_IFACE_DOWN
+msgid ""
+"Host ${VdsName} moved to Non-Operational state because interfaces which are "
+"down are needed by required networks in the current cluster: "
+"'${NicsWithNetworks}'."
+msgstr ""
+
+#: BRIDGED_NETWORK_OVER_MULTIPLE_INTERFACES
+msgid ""
+"Bridged network ${NetworkName} is attached to multiple interfaces: "
+"${Interfaces} on Host ${VdsName}."
+msgstr ""
+
+#: NETWORK_WITHOUT_INTERFACES
+msgid ""
+"Network ${NetworkName} is not attached to any interface on host ${VdsName}."
+msgstr ""
+
+#: VNIC_PROFILE_UNSUPPORTED_FEATURES
+msgid ""
+"VM ${VmName} has network interface ${NicName} which is using profile "
+"${VnicProfile} with unsupported feature(s) '${UnsupportedFeatures}' by VM "
+"cluster ${ClusterName} (version ${CompatibilityVersion})."
+msgstr ""
+
+#: REMOVE_NETWORK_BY_LABEL_FAILED
+msgid ""
+"Network ${Network} cannot be removed from the following hosts: ${HostNames} "
+"in data-center ${StoragePoolName}."
+msgstr ""
+
+#: LABEL_NETWORK
+msgid ""
+"Network ${NetworkName} was labeled ${Label} in data-center "
+"${StoragePoolName}."
+msgstr ""
+
+#: LABEL_NETWORK_FAILED
+msgid ""
+"Failed to label network ${NetworkName} with label ${Label} in data-center "
+"${StoragePoolName}."
+msgstr ""
+
+#: UNLABEL_NETWORK
+msgid "Network ${NetworkName} was unlabeled in data-center ${StoragePoolName}."
+msgstr ""
+
+#: UNLABEL_NETWORK_FAILED
+msgid ""
+"Failed to unlabel network ${NetworkName} in data-center ${StoragePoolName}."
+msgstr ""
+
+#: LABEL_NIC
+msgid ""
+"Network interface card ${NicName} was labeled ${Label} on host ${VdsName}."
+msgstr ""
+
+#: LABEL_NIC_FAILED
+msgid ""
+"Failed to label network interface card ${NicName} with label ${Label} on "
+"host ${VdsName}."
+msgstr ""
+
+#: UNLABEL_NIC
+msgid ""
+"Label ${Label} was removed from network interface card ${NicName} on host "
+"${VdsName}."
+msgstr ""
+
+#: UNLABEL_NIC_FAILED
+msgid ""
+"Failed to remove label ${Label} from network interface card ${NicName} on "
+"host ${VdsName}."
+msgstr ""
+
+#: CONFIGURE_NETWORK_BY_LABELS_WHEN_CHANGING_CLUSTER_FAILED
+msgid ""
+"Failed to configure networks on host ${VdsName} while changing its cluster."
+msgstr ""
+
+#: PROVIDER_ADDED
+msgid "Provider ${ProviderName} was added. (User: ${UserName})"
+msgstr ""
+
+#: PROVIDER_ADDITION_FAILED
+msgid "Failed to add provider ${ProviderName}. (User: ${UserName})"
+msgstr ""
+
+#: PROVIDER_UPDATED
+msgid "Provider ${ProviderName} was updated. (User: ${UserName})"
+msgstr ""
+
+#: PROVIDER_UPDATE_FAILED
+msgid "Failed to update provider ${ProviderName}. (User: ${UserName})"
+msgstr ""
+
+#: PROVIDER_REMOVED
+msgid "Provider ${ProviderName} was removed. (User: ${UserName})"
+msgstr ""
+
+#: PROVIDER_REMOVAL_FAILED
+msgid "Failed to remove provider ${ProviderName}. (User: ${UserName})"
+msgstr ""
+
+#: PROVIDER_CERTIFICATE_IMPORTED
+msgid ""
+"Certificate for provider ${ProviderName} was imported. (User: ${UserName})"
+msgstr ""
+
+#: PROVIDER_CERTIFICATE_IMPORT_FAILED
+msgid ""
+"Failed importing Certificate for provider ${ProviderName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: SUBNET_ADDED
+msgid ""
+"Subnet ${SubnetName} was added on provider ${ProviderName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: SUBNET_ADDITION_FAILED
+msgid ""
+"Failed to add subnet ${SubnetName} on provider ${ProviderName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: SUBNET_REMOVED
+msgid ""
+"Subnet ${SubnetName} was removed from provider ${ProviderName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: SUBNET_REMOVAL_FAILED
+msgid ""
+"Failed to remove subnet ${SubnetName} from provider ${ProviderName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: PERSIST_NETWORK_ON_HOST
+msgid ""
+"(${Sequence}/${Total}): Applying changes for network(s) ${NetworkNames} on "
+"host ${VdsName}. (User: ${UserName})"
+msgstr ""
+
+#: PERSIST_HOST_SETUP_NETWORK_ON_HOST
+msgid ""
+"(${Sequence}/${Total}): Applying network's changes on host ${VdsName}. "
+"(User: ${UserName})"
+msgstr ""
+
+#: PERSIST_NETWORK_ON_HOST_FINISHED
+msgid ""
+"(${Sequence}/${Total}): Successfully applied changes for network(s) "
+"${NetworkNames} on host ${VdsName}. (User: ${UserName})"
+msgstr ""
+
+#: PERSIST_NETWORK_ON_HOST_FAILED
+msgid ""
+"(${Sequence}/${Total}): Failed to apply changes for network(s) "
+"${NetworkNames} on host ${VdsName}. (User: ${UserName})"
+msgstr ""
+
+#: PERSIST_SETUP_NETWORK_ON_HOST_FINISHED
+msgid ""
+"(${Sequence}/${Total}): Successfully applied changes on host ${VdsName}. "
+"(User: ${UserName})"
+msgstr ""
+
+#: PERSIST_SETUP_NETWORK_ON_HOST_FAILED
+msgid ""
+"(${Sequence}/${Total}): Failed to apply changes on host ${VdsName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: MULTI_UPDATE_NETWORK_NOT_POSSIBLE
+msgid ""
+"Cannot apply network ${NetworkName} changes to hosts on unsupported data "
+"center ${StoragePoolName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_ADD_NETWORK
+msgid "Network ${NetworkName} was added to Data Center: ${StoragePoolName}"
+msgstr ""
+
+#: NETWORK_ADD_NETWORK_FAILED
+msgid "Failed to add Network ${NetworkName} to Data Center: ${StoragePoolName}"
+msgstr ""
+
+#: NETWORK_ADD_TEMPLATE_INTERFACE
+msgid ""
+"Interface ${InterfaceName} (${InterfaceType}) was added to Template "
+"${VmTemplateName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_ADD_TEMPLATE_INTERFACE_FAILED
+msgid ""
+"Failed to add Interface ${InterfaceName} (${InterfaceType}) to Template "
+"${VmTemplateName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_ADD_VM_INTERFACE
+msgid ""
+"Interface ${InterfaceName} (${InterfaceType}) was added to VM ${VmName}. "
+"(User: ${UserName})"
+msgstr ""
+
+#: NETWORK_ADD_VM_INTERFACE_FAILED
+msgid ""
+"Failed to add Interface ${InterfaceName} (${InterfaceType}) to VM ${VmName}. "
+"(User: ${UserName})"
+msgstr ""
+
+#: NETWORK_ATTACH_NETWORK_TO_CLUSTER
+msgid "Network ${NetworkName} attached to Cluster ${ClusterName}"
+msgstr ""
+
+#: NETWORK_ATTACH_NETWORK_TO_CLUSTER_FAILED
+msgid "Failed to attach Network ${NetworkName} to Cluster ${ClusterName}"
+msgstr ""
+
+#: NETWORK_DETACH_NETWORK_TO_CLUSTER
+msgid "Network ${NetworkName} detached from Cluster ${ClusterName}"
+msgstr ""
+
+#: NETWORK_DETACH_NETWORK_TO_CLUSTER_FAILED
+msgid "Failed to detach Network ${NetworkName} from Cluster ${ClusterName}"
+msgstr ""
+
+#: REMOVE_PORT_FROM_EXTERNAL_PROVIDER_FAILED
+msgid ""
+"Failed to remove vNIC ${NicName} from external network provider "
+"${ProviderName}. The vNIC can be identified on the provider by device id "
+"${NicId}."
+msgstr ""
+
+#: NETWORK_ACTIVATE_VM_INTERFACE_SUCCESS
+msgid ""
+"Network Interface ${InterfaceName} (${InterfaceType}) was plugged to VM "
+"${VmName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_ACTIVATE_VM_INTERFACE_FAILURE
+msgid ""
+"Failed to plug Network Interface ${InterfaceName} (${InterfaceType}) to VM "
+"${VmName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_DEACTIVATE_VM_INTERFACE_SUCCESS
+msgid ""
+"Network Interface ${InterfaceName} (${InterfaceType}) was unplugged from VM "
+"${VmName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_DEACTIVATE_VM_INTERFACE_FAILURE
+msgid ""
+"Failed to unplug Network Interface ${InterfaceName} (${InterfaceType}) from "
+"VM ${VmName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_UPDTAE_NETWORK_ON_CLUSTER
+msgid "Network ${NetworkName} on Cluster ${ClusterName} updated."
+msgstr ""
+
+#: NETWORK_UPDTAE_NETWORK_ON_CLUSTER_FAILED
+msgid "Failed to update Network ${NetworkName} on Cluster ${ClusterName}."
+msgstr ""
+
+#: NETWORK_REMOVE_NETWORK
+msgid "Network ${NetworkName} was removed from Data Center: ${StoragePoolName}"
+msgstr ""
+
+#: NETWORK_REMOVE_NETWORK_FAILED
+msgid ""
+"Failed to remove Network ${NetworkName} from Data Center: ${StoragePoolName}"
+msgstr ""
+
+#: NETWORK_UPDATE_NETWORK_STARTED
+msgid ""
+"Update network ${NetworkName} on Data Center: ${StoragePoolName} was "
+"started."
+msgstr ""
+
+#: NETWORK_UPDATE_NETWORK_FINISHED
+msgid ""
+"Update network ${NetworkName} on Data Center: ${StoragePoolName} has "
+"finished successfully."
+msgstr ""
+
+#: NETWORK_UPDATE_NETWORK_FAILED
+msgid ""
+"Failed to update Network ${NetworkName} on Data Center: ${StoragePoolName}."
+msgstr ""
+
+#: UPDATE_NETWORK_ON_HOSTS_FAILED
+msgid ""
+"Failed to apply changes of Network ${NetworkName} on Data Center: "
+"${StoragePoolName} to the hosts. Failed hosts are: ${failedHosts}."
+msgstr ""
+
+#: PROPAGATE_NETWORK_CHANGES_STARTED
+msgid "Propagation of the network changes to the hosts has started."
+msgstr ""
+
+#: PROPAGATE_NETWORK_CHANGE_FINISHED
+msgid ""
+"Propagation of the network changes to the hosts has finished successfully."
+msgstr ""
+
+#: PROPAGATE_NETWORK_CHANGE_FAILED
+msgid ""
+"Propagation of the network changes to the hosts has finished. Failed hosts "
+"are: ${failedHosts}."
+msgstr ""
+
+#: NETWORK_REMOVE_TEMPLATE_INTERFACE
+msgid ""
+"Interface ${InterfaceName} (${InterfaceType}) was removed from Template "
+"${VmTemplateName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_REMOVE_TEMPLATE_INTERFACE_FAILED
+msgid ""
+"Failed to remove Interface ${InterfaceName} (${InterfaceType}) from Template "
+"${VmTemplateName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_REMOVE_VM_INTERFACE
+msgid ""
+"Interface ${InterfaceName} (${InterfaceType}) was removed from VM ${VmName}. "
+"(User: ${UserName})"
+msgstr ""
+
+#: NETWORK_REMOVE_VM_INTERFACE_FAILED
+msgid ""
+"Failed to remove Interface ${InterfaceName} (${InterfaceType}) from VM "
+"${VmName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_DISPLAY_FOR_CLUSTER_WITH_ACTIVE_VM
+msgid ""
+"Display Network (${NetworkName}) was updated for Cluster ${ClusterName} with "
+"active VMs attached. The change will be applied to those VMs after their "
+"next reboot."
+msgstr ""
+
+#: NETWORK_UPDATE_DISPLAY_FOR_HOST_WITH_ACTIVE_VM
+msgid ""
+"Display Network was updated on Host ${VdsName} with active VMs attached. The "
+"change will be applied to those VMs after their next reboot. Running VMs "
+"might loose display connectivity until then."
+msgstr ""
+
+#: NETWORK_UPDATE_DISPLAY_TO_CLUSTER
+msgid ""
+"Update Display Network (${NetworkName}) for Cluster ${ClusterName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_DISPLAY_TO_CLUSTER_FAILED
+msgid ""
+"Failed to update Display Network (${NetworkName}) for Cluster "
+"${ClusterName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_NETWORK_TO_VDS_INTERFACE
+msgid "Update Network ${NetworkName} in Host ${VdsName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_NETWORK_TO_VDS_INTERFACE_FAILED
+msgid ""
+"Failed to update Network ${NetworkName} in Host ${VdsName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_TEMPLATE_INTERFACE
+msgid ""
+"Interface ${InterfaceName} (${InterfaceType}) was updated for Template "
+"${VmTemplateName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_TEMPLATE_INTERFACE_FAILED
+msgid ""
+"Failed to update Interface ${InterfaceName} (${InterfaceType}) for Template "
+"${VmTemplateName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_VM_INTERFACE
+msgid ""
+"Interface ${InterfaceName} (${InterfaceType}) was updated for VM ${VmName}. "
+"${LinkState} (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_UPDATE_VM_INTERFACE_LINK_UP
+msgid "Link State is UP."
+msgstr ""
+
+#: NETWORK_UPDATE_VM_INTERFACE_LINK_DOWN
+msgid "Link State is DOWN."
+msgstr ""
+
+#: NETWORK_UPDATE_VM_INTERFACE_FAILED
+msgid ""
+"Failed to update Interface ${InterfaceName} (${InterfaceType}) for VM "
+"${VmName}. (User: ${UserName})"
+msgstr ""
+
+#: NETWORK_HOST_USING_WRONG_CLUSER_VLAN
+msgid ""
+"${VdsName} is having wrong vlan id: ${VlanIdHost}, expected vlan id: "
+"${VlanIdCluster}"
+msgstr ""
+
+#: NETWORK_HOST_MISSING_CLUSER_VLAN
+msgid ""
+"${VdsName} is missing vlan id: ${VlanIdCluster} that is expected by the "
+"cluster"
+msgstr ""
+
+#: INVALID_INTERFACE_FOR_MANAGEMENT_NETWORK_CONFIGURATION
+msgid ""
+"Failed to configure management network on host ${VdsName}. Host ${VdsName} "
+"has an invalid interface ${InterfaceName} for the management network "
+"configuration."
+msgstr ""
+
+#: VLAN_ID_MISMATCH_FOR_MANAGEMENT_NETWORK_CONFIGURATION
+msgid ""
+"Failed to configure management network on host ${VdsName}. Host ${VdsName} "
+"has an interface ${InterfaceName} for the management network configuration "
+"with VLAN-ID (${VlanId}), which is different from data-center definition "
+"(${MgmtVlanId})."
+msgstr ""
+
+#: SETUP_NETWORK_FAILED_FOR_MANAGEMENT_NETWORK_CONFIGURATION
+msgid ""
+"Failed to configure management network on host ${VdsName} due to setup "
+"networks failure."
+msgstr ""
+
+#: PERSIST_NETWORK_FAILED_FOR_MANAGEMENT_NETWORK
+msgid ""
+"Failed to activate host ${VdsName} due to failure in persisting the "
+"management network configuration."
+msgstr ""
+
+#: ADD_VNIC_PROFILE
+msgid ""
+"VM network interface profile ${VnicProfileName} was added to network "
+"${NetworkName} in Data Center: ${DataCenterName}. (User: ${UserName})"
+msgstr ""
+
+#: ADD_VNIC_PROFILE_FAILED
+msgid ""
+"Failed to add VM network interface profile ${VnicProfileName} to network "
+"${NetworkName} in Data Center: ${DataCenterName} (User: ${UserName})"
+msgstr ""
+
+#: UPDATE_VNIC_PROFILE
+msgid ""
+"VM network interface profile ${VnicProfileName} was updated for network "
+"${NetworkName} in Data Center: ${DataCenterName}. (User: ${UserName})"
+msgstr ""
+
+#: UPDATE_VNIC_PROFILE_FAILED
+msgid ""
+"Failed to update VM network interface profile ${VnicProfileName} for network "
+"${NetworkName} in Data Center: ${DataCenterName}. (User: ${UserName})"
+msgstr ""
+
+#: REMOVE_VNIC_PROFILE
+msgid ""
+"VM network interface profile ${VnicProfileName} was removed from network "
+"${NetworkName} in Data Center: ${DataCenterName}. (User: ${UserName})"
+msgstr ""
+
+#: REMOVE_VNIC_PROFILE_FAILED
+msgid ""
+"Failed to remove VM network interface profile ${VnicProfileName} from "
+"network ${NetworkName} in Data Center: ${DataCenterName}. (User: "
+"${UserName})"
+msgstr ""
+
+#: UPDATE_HOST_NIC_VFS_CONFIG
+msgid ""
+"The VFs configuration of network interface card ${NicName} on host "
+"${VdsName} was updated."
+msgstr ""
+
+#: UPDATE_HOST_NIC_VFS_CONFIG_FAILED
+msgid ""
+"Failed to update the VFs configuration of network interface card ${NicName} "
+"on host ${VdsName}."
+msgstr ""
+
+#: ADD_VFS_CONFIG_NETWORK
+msgid ""
+"Network ${NetworkName} was added to the VFs configuration of network "
+"interface card ${NicName} on host ${VdsName}."
+msgstr ""
+
+#: ADD_VFS_CONFIG_NETWORK_FAILED
+msgid ""
+"Failed to add ${NetworkName} to the VFs configuration of network interface "
+"card ${NicName} on host ${VdsName}."
+msgstr ""
+
+#: REMOVE_VFS_CONFIG_NETWORK
+msgid ""
+"Network ${NetworkName} was removed from the VFs configuration of network "
+"interface card ${NicName} on host ${VdsName}."
+msgstr ""
+
+#: REMOVE_VFS_CONFIG_NETWORK_FAILED
+msgid ""
+"Failed to remove ${NetworkName} from the VFs configuration of network "
+"interface card ${NicName} on host ${VdsName}."
+msgstr ""
+
+#: ADD_VFS_CONFIG_LABEL
+msgid ""
+"Label ${Label} was added to the VFs configuration of network interface card "
+"${NicName} on host ${VdsName}."
+msgstr ""
+
+#: ADD_VFS_CONFIG_LABEL_FAILED
+msgid ""
+"Failed to add ${Label} to the VFs configuration of network interface card "
+"${NicName} on host ${VdsName}."
+msgstr ""
+
+#: REMOVE_VFS_CONFIG_LABEL
+msgid ""
+"Label ${Label} was removed from the VFs configuration of network interface "
+"card ${NicName} on host ${VdsName}."
+msgstr ""
+
+#: REMOVE_VFS_CONFIG_LABEL_FAILED
+msgid ""
+"Failed to remove ${Label} from the VFs configuration of network interface "
+"card ${NicName} on host ${VdsName}."
+msgstr ""
+
+#: SYSTEM_DEACTIVATED_STORAGE_DOMAIN
+msgid ""
+"Storage Domain ${StorageDomainName} (Data Center ${StoragePoolName}) was "
+"deactivated by system because it's not visible by any of the hosts."
+msgstr ""
+
+#: SYSTEM_DEACTIVATE_STORAGE_DOMAIN_FAILED
+msgctxt "SYSTEM_DEACTIVATE_STORAGE_DOMAIN_FAILED"
+msgid ""
+"Failed to deactivate Storage Domain ${StorageDomainName} (Data Center "
+"${StoragePoolName})."
+msgstr ""
+
+#: VDS_SET_NONOPERATIONAL_DOMAIN
+msgid ""
+"Host ${VdsName} cannot access the Storage Domain(s) ${StorageDomainNames} "
+"attached to the Data Center ${StoragePoolName}. Setting Host state to Non-"
+"Operational."
+msgstr ""
+
+#: VDS_SET_NONOPERATIONAL_DOMAIN_FAILED
+msgid ""
+"Host ${VdsName} cannot access the Storage Domain(s) ${StorageDomainNames} "
+"attached to the Data Center ${StoragePoolName}. Failed to set Host state to "
+"Non-Operational."
+msgstr ""
+
+#: VDS_DOMAIN_DELAY_INTERVAL
+msgid ""
+"Storage domain ${StorageDomainName} experienced a high latency of ${Delay} "
+"seconds from host ${VdsName}. This may cause performance and functional "
+"issues. Please consult your Storage Administrator."
+msgstr ""
+
+#: USER_EXTENDED_STORAGE_DOMAIN
+msgid ""
+"Storage ${StorageDomainName} has been extended by ${UserName}. Please wait "
+"for refresh."
+msgstr ""
+
+#: USER_EXTENDED_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to extend Storage Domain ${StorageDomainName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_CONNECT_HOSTS_TO_LUN_FAILED
+msgid "Failed to connect Host ${VdsName} to device. (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVE_VG
+msgid "Volume group ${VgId} was removed by ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_VG_FAILED
+msgid "Failed to remove Volume group ${VgId}. (User: UserName)"
+msgstr ""
+
+#: USER_ACTIVATE_STORAGE_POOL
+msgid "Data Center ${StoragePoolName} was activated. (User: ${UserName})"
+msgstr ""
+
+#: USER_ACTIVATE_STORAGE_POOL_FAILED
+msgid "Failed to activate Data Center ${StoragePoolName}. (User: ${UserName})"
+msgstr ""
+
+#: SYSTEM_FAILED_CHANGE_STORAGE_POOL_STATUS
+msgid "Failed to change Data Center ${StoragePoolName} status."
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_NO_HOST_FOR_SPM
+msgid ""
+"Fencing failed on Storage Pool Manager ${VdsName} for Data Center "
+"${StoragePoolName}. Setting status to Non-Operational."
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_PROBLEMATIC
+msgid ""
+"Invalid status on Data Center ${StoragePoolName}. Setting status to Non "
+"Responsive."
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_RESET_IRS
+msgid ""
+"Data Center ${StoragePoolName} was reset. Setting status to Non Responsive "
+"(Elect new Storage Pool Manager)."
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_PROBLEMATIC_FROM_NON_OPERATIONAL
+msgid ""
+"Try to recover Data Center ${StoragePoolName}. Setting status to Non "
+"Responsive."
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_PROBLEMATIC_SEARCHING_NEW_SPM
+msgid ""
+"Data Center is being initialized, please wait for initialization to "
+"complete."
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_PROBLEMATIC_WITH_ERROR
+msgid ""
+"Invalid status on Data Center ${StoragePoolName}. Setting Data Center status "
+"to Non Responsive (On host ${VdsName}, Error: ${Error})."
+msgstr ""
+
+#: USER_CHANGE_FLOPPY_VM
+msgid "Floppy ${DiskName} was inserted in VM ${VmName} by ${UserName}"
+msgstr ""
+
+#: USER_EJECT_VM_FLOPPY
+msgid "Floppy was ejected from VM ${VmName} by ${UserName}"
+msgstr ""
+
+#: USER_FAILED_CHANGE_FLOPPY_VM
+msgid "Failed to change floppy ${DiskName} (User: ${UserName})."
+msgstr ""
+
+#: VM_DOWN_ERROR
+msgid "VM ${VmName} is down with error. ${ExitMessage}."
+msgstr ""
+
+#: NETWORK_COMMINT_NETWORK_CHANGES
+msgid "Network changes were saved on host ${VdsName}"
+msgstr ""
+
+#: NETWORK_COMMINT_NETWORK_CHANGES_FAILED
+msgid "Failed to commit network changes on ${VdsName}"
+msgstr ""
+
+#: SYSTEM_VDS_RESTART
+msgid "Host ${VdsName} was restarted by the engine."
+msgstr ""
+
+#: SYSTEM_FAILED_VDS_RESTART
+msgid "A restart initiated by the engine to Host ${VdsName} has failed."
+msgstr ""
+
+#: SYSTEM_SSH_HOST_RESTART
+msgid "Host ${VdsName} was restarted using SSH by the engine."
+msgstr ""
+
+#: SYSTEM_FAILED_SSH_HOST_RESTART
+msgid ""
+"A restart using SSH initiated by the engine to Host ${VdsName} has failed."
+msgstr ""
+
+#: FENCE_DISABLED_IN_CLUSTER_POLICY
+msgid ""
+"Fencing is disabled in Fencing Policy of the Cluster ${ClusterName}, so HA "
+"VMs running on a non-responsive host will not be restarted elsewhere."
+msgstr ""
+
+#: VDS_TIME_DRIFT_ALERT
+msgid ""
+"Host ${VdsName} has time-drift of ${Actual} seconds while maximum configured "
+"value is ${Max} seconds."
+msgstr ""
+
+#: PROXY_HOST_SELECTION
+msgid ""
+"Host ${Proxy} from ${Origin} was chosen as a proxy to execute fencing on "
+"Host ${VdsName}."
+msgstr ""
+
+#: FENCE_OPERATION_STARTED
+msgid "Power management ${Action} of Host ${VdsName} initiated."
+msgstr ""
+
+#: FENCE_OPERATION_SUCCEEDED
+msgid "Power management ${Action} of Host ${VdsName} succeeded."
+msgstr ""
+
+#: FENCE_OPERATION_FAILED
+msgid "Power management ${Action} of Host ${VdsName} failed."
+msgstr ""
+
+#: FENCE_OPERATION_USING_AGENT_AND_PROXY_STARTED
+msgid ""
+"Executing power management ${Action} on Host ${Host} using Proxy Host "
+"${ProxyHost} and Fence Agent ${AgentType}:${AgentIp}."
+msgstr ""
+
+#: FENCE_OPERATION_USING_AGENT_AND_PROXY_FAILED
+msgid ""
+"Execution of power management ${Action} on Host ${Host} using Proxy Host "
+"${ProxyHost} and Fence Agent ${AgentType}:${AgentIp} failed."
+msgstr ""
+
+#: ENGINE_NO_FULL_BACKUP
+msgid ""
+"There is no full backup available, please run engine-backup to prevent data "
+"loss in case of corruption."
+msgstr ""
+
+#: ENGINE_NO_WARM_BACKUP
+msgid ""
+"Full backup was created on ${Date} and it's too old. Please run engine-"
+"backup to prevent data loss in case of corruption."
+msgstr ""
+
+#: ENGINE_BACKUP_STARTED
+msgid "Engine backup started."
+msgstr ""
+
+#: ENGINE_BACKUP_COMPLETED
+msgid "Engine backup completed successfully."
+msgstr ""
+
+#: ENGINE_BACKUP_FAILED
+msgid "Engine backup failed."
+msgstr ""
+
+#: RECONSTRUCT_MASTER_FAILED_NO_MASTER
+msgid ""
+"No valid Data Storage Domains are available in Data Center "
+"${StoragePoolName} (please check your storage infrastructure)."
+msgstr ""
+
+#: RECONSTRUCT_MASTER_DONE
+msgid "Reconstruct Master Domain for Data Center ${StoragePoolName} completed."
+msgstr ""
+
+#: RECONSTRUCT_MASTER_FAILED
+msgid "Failed to Reconstruct Master Domain for Data Center ${StoragePoolName}."
+msgstr ""
+
+#: IMPORTEXPORT_STARTING_EXPORT_VM
+msgid "Starting export Vm ${VmName} to ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_EXPORT_VM
+msgid "Vm ${VmName} was exported successfully to ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_EXPORT_VM_FAILED
+msgid "Failed to export Vm ${VmName} to ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_STARTING_IMPORT_VM
+msgid ""
+"Starting to import Vm ${VmName} to Data Center ${StoragePoolName}, Cluster "
+"${ClusterName}"
+msgstr ""
+
+#: IMPORTEXPORT_STARTING_CONVERT_VM
+msgid "Starting to convert Vm ${VmName}"
+msgstr ""
+
+#: IMPORTEXPORT_CONVERT_FAILED
+msgid "Failed to convert Vm ${VmName}"
+msgstr ""
+
+#: IMPORTEXPORT_CANNOT_GET_OVF
+msgid "Failed to get the configuration of converted Vm ${VmName}"
+msgstr ""
+
+#: IMPORTEXPORT_INVALID_OVF
+msgid "Failed to process the configuration of converted Vm ${VmName}"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_VM
+msgid ""
+"Vm ${VmName} was imported successfully to Data Center ${StoragePoolName}, "
+"Cluster ${ClusterName}"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_VM_FAILED
+msgid ""
+"Failed to import Vm ${VmName} to Data Center ${StoragePoolName}, Cluster "
+"${ClusterName}"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_VM_FAILED_UPDATING_OVF
+msgid ""
+"Failed to import Vm ${VmName} to Data Center ${StoragePoolName}, Cluster "
+"${ClusterName}, could not update VM data in export."
+msgstr ""
+
+#: IMPORTEXPORT_STARTING_EXPORT_TEMPLATE
+msgid "Starting to export Template ${VmTemplateName} to ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_EXPORT_TEMPLATE
+msgid ""
+"Template ${VmTemplateName} was exported successfully to ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_EXPORT_TEMPLATE_FAILED
+msgid "Failed to export Template ${VmTemplateName} to ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_STARTING_IMPORT_TEMPLATE
+msgid ""
+"Starting to import Template ${VmTemplateName} to Data Center "
+"${StoragePoolName}, Cluster ${ClusterName}"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_TEMPLATE
+msgid ""
+"Template ${VmTemplateName} was imported successfully to Data Center "
+"${StoragePoolName}, Cluster ${ClusterName}"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_TEMPLATE_FAILED
+msgid ""
+"Failed to import Template ${VmTemplateName} to Data Center "
+"${StoragePoolName}, Cluster ${ClusterName}"
+msgstr ""
+
+#: IMPORTEXPORT_STARTING_REMOVE_TEMPLATE
+msgid ""
+"Starting to remove Template ${VmTemplateName} remove ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_REMOVE_TEMPLATE
+msgid "Template ${VmTemplateName} was removed from ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_REMOVE_TEMPLATE_FAILED
+msgid "Failed to remove Template ${VmTemplateName} from ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_STARTING_REMOVE_VM
+msgid "Starting to remove Vm ${VmName} remove from ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_REMOVE_VM
+msgid "Vm ${VmName} was removed from ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_REMOVE_VM_FAILED
+msgid "Failed to remove Vm ${VmName} remove from ${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_GET_VMS_INFO_FAILED
+msgid ""
+"Failed to retrieve VM/Templates information from export domain "
+"${StorageDomainName}"
+msgstr ""
+
+#: IMPORTEXPORT_GET_EXTERNAL_VMS_INFO_FAILED
+msgid "Failed to retrieve VMs information from external server ${URL}"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_TEMPLATE_FROM_TRUSTED_TO_UNTRUSTED
+msgid ""
+"The Template ${VmTemplateName} was created in trusted cluster and imported "
+"into a non-trusted cluster"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_TEMPLATE_FROM_UNTRUSTED_TO_TRUSTED
+msgid ""
+"The Template ${VmTemplateName} was created in non-trusted cluster and "
+"imported into a trusted cluster"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_VM_FROM_TRUSTED_TO_UNTRUSTED
+msgid ""
+"The VM ${VmName} was created in trusted cluster and imported into a non-"
+"trusted cluster"
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_VM_FROM_UNTRUSTED_TO_TRUSTED
+msgid ""
+"The VM ${VmName} was created in non-trusted cluster and imported into a "
+"trusted cluster"
+msgstr ""
+
+#: USER_ADD_ROLE_WITH_ACTION_GROUP
+msgid "Role ${RoleName} was added by ${UserName}"
+msgstr ""
+
+#: USER_ADD_ROLE_WITH_ACTION_GROUP_FAILED
+msgid "Failed to add role ${RoleName}"
+msgstr ""
+
+#: VDS_ALERT_FENCE_IS_NOT_CONFIGURED
+msgid "Failed to verify Power Management configuration for Host ${VdsName}."
+msgstr ""
+
+#: VDS_ALERT_FENCE_TEST_FAILED
+msgid "Power Management test failed for Host ${VdsName}.${Reason}"
+msgstr ""
+
+#: VDS_ALERT_FENCE_OPERATION_FAILED
+msgid ""
+"Failed to power fence host ${VdsName}. Please check the host status and it's "
+"power management settings, and then manually reboot it and click \"Confirm "
+"Host Has Been Rebooted\""
+msgstr ""
+
+#: VDS_ALERT_FENCE_OPERATION_SKIPPED
+msgid ""
+"Host ${VdsName} became non responsive. It has no power management "
+"configured. Please check the host status, manually reboot it, and click "
+"\"Confirm Host Has Been Rebooted\""
+msgstr ""
+
+#: VDS_ALERT_FENCE_NO_PROXY_HOST
+msgid ""
+"There is no other host in the data center that can be used to test the power "
+"management settings."
+msgstr ""
+
+#: VDS_ALERT_FENCE_STATUS_VERIFICATION_FAILED
+msgid ""
+"Failed to verify Host ${Host} ${Status} status, Please ${Status} Host "
+"${Host} manually."
+msgstr ""
+
+#: VDS_ALERT_SECONDARY_AGENT_USED_FOR_FENCE_OPERATION
+msgid "Secondary fence agent was used to ${Operation} Host ${VdsName}"
+msgstr ""
+
+#: VDS_ALERT_PM_HEALTH_CHECK_FENCE_AGENT_NON_RESPONSIVE
+msgid ""
+"Health check on Host ${VdsName} indicates that Fence-Agent ${AgentId} is "
+"non-responsive."
+msgstr ""
+
+#: VDS_ALERT_PM_HEALTH_CHECK_START_MIGHT_FAIL
+msgid ""
+"Health check on Host ${VdsName} indicates that future attempts to Start this "
+"host using Power-Management are expected to fail."
+msgstr ""
+
+#: VDS_ALERT_PM_HEALTH_CHECK_STOP_MIGHT_FAIL
+msgid ""
+"Health check on Host ${VdsName} indicates that future attempts to Stop this "
+"host using Power-Management are expected to fail."
+msgstr ""
+
+#: VDS_ALERT_PM_HEALTH_CHECK_RESTART_MIGHT_FAIL
+msgid ""
+"Health check on Host ${VdsName} indicates that future attempts to Restart "
+"this host using Power-Management are expected to fail."
+msgstr ""
+
+#: VDS_ALERT_FENCE_OPERATION_SKIPPED_BROKEN_CONNECTIVITY
+msgid ""
+"Host ${VdsName} became non responsive and was not restarted due to Fencing "
+"Policy: ${Percents} percents of the Hosts in the Cluster have connectivity "
+"issues."
+msgstr ""
+
+#: VDS_ALERT_NOT_RESTARTED_DUE_TO_POLICY
+msgid ""
+"Host ${VdsName} became non responsive and was not restarted due to the "
+"Cluster Fencing Policy."
+msgstr ""
+
+#: VDS_ALERT_FENCE_DISABLED_BY_CLUSTER_POLICY
+msgid ""
+"Host ${VdsName} became Non Responsive and was not restarted due to disabled "
+"fencing in the Cluster Fencing Policy."
+msgstr ""
+
+#: VDS_HOST_NOT_RESPONDING_CONNECTING
+msgid ""
+"Host ${VdsName} is not responding. It will stay in Connecting state for a "
+"grace period of ${Seconds} seconds and after that an attempt to fence the "
+"host will be issued."
+msgstr ""
+
+#: VDS_HOST_NOT_RESPONDING
+msgid ""
+"Host ${VdsName} is not responding. Host cannot be fenced automatically "
+"because power management for the host is disabled."
+msgstr ""
+
+#: TASK_STOPPING_ASYNC_TASK
+msgid "Stopping async task ${CommandName} that started at ${Date}"
+msgstr ""
+
+#: REFRESH_REPOSITORY_IMAGE_LIST_FAILED
+msgid ""
+"Refresh image list failed for domain(s): ${imageDomains}. Please check "
+"domain activity."
+msgstr ""
+
+#: REFRESH_REPOSITORY_IMAGE_LIST_SUCCEEDED
+msgid "Refresh image list succeeded for domain(s): ${imageDomains}"
+msgstr ""
+
+#: REFRESH_REPOSITORY_IMAGE_LIST_INCOMPLETE
+msgid ""
+"Refresh image list probably incomplete for domain ${imageDomain}, only "
+"${imageListSize} images discovered."
+msgstr ""
+
+#: NUMBER_OF_LVS_ON_STORAGE_DOMAIN_EXCEEDED_THRESHOLD
+msgid ""
+"The number of LVs on the domain ${storageDomainName} exceeded "
+"${maxNumOfLVs}, you are approaching the limit where performance may degrade."
+msgstr ""
+
+#: TASK_CLEARING_ASYNC_TASK
+msgid "Clearing asynchronous task ${CommandName} that started at ${Date}"
+msgstr ""
+
+#: VM_WAS_SET_DOWN_DUE_TO_HOST_REBOOT_OR_MANUAL_FENCE
+msgid ""
+"Vm ${VmName} was shut down due to ${VdsName} host reboot or manual fence"
+msgstr ""
+
+#: UPDATE_TAGS_VM_DEFAULT_DISPLAY_TYPE
+msgid "Vm ${VmName} tag default display type was updated"
+msgstr ""
+
+#: UPDATE_TAGS_VM_DEFAULT_DISPLAY_TYPE_FAILED
+msgid "Failed to update Vm ${VmName} tag default display type"
+msgstr ""
+
+#: CONNECT_STORAGE_SERVERS_FAILED
+msgid "Failed to connect Host ${VdsName} to Storage Servers"
+msgstr ""
+
+#: CONNECT_STORAGE_POOL_FAILED
+msgid "Failed to connect Host ${VdsName} to Storage Pool ${StoragePoolName}"
+msgstr ""
+
+#: STORAGE_DOMAIN_ERROR
+msgid ""
+"The error message for connection ${Connection} returned by VDSM was: "
+"${ErrorMessage}"
+msgstr ""
+
+#: VDS_LOW_MEM
+msgid ""
+"Available memory of host ${HostName} [${AvailableMemory} MB] is under "
+"defined threshold [${Threshold} MB]."
+msgstr ""
+
+#: VDS_HIGH_MEM_USE
+msgid ""
+"Used memory of host ${HostName} [${UsedMemory}%] exceeded defined threshold "
+"[${Threshold}%]."
+msgstr ""
+
+#: HOST_INTERFACE_HIGH_NETWORK_USE
+msgid ""
+"Host ${HostName} has network interface which exceeded the defined threshold "
+"[${Threshold}%] (${InterfaceName}: transmit rate[${TransmitRate}%], receive "
+"rate [${ReceiveRate}%])"
+msgstr ""
+
+#: VDS_HIGH_CPU_USE
+msgid ""
+"Used CPU of host ${HostName} [${UsedCpu}%] exceeded defined threshold "
+"[${Threshold}%]."
+msgstr ""
+
+#: VDS_HIGH_SWAP_USE
+msgid ""
+"Used swap memory of host ${HostName} [${UsedSwap}%] exceeded defined "
+"threshold [${Threshold}%]."
+msgstr ""
+
+#: VDS_LOW_SWAP
+msgid ""
+"Available swap memory of host ${HostName} [${AvailableSwapMemory} MB] is "
+"under defined threshold [${Threshold} MB]."
+msgstr ""
+
+#: UPDATE_OVF_FOR_STORAGE_POOL_FAILED
+msgid ""
+"Failed to update VMs/Templates OVF data in Data Center ${StoragePoolName}."
+msgstr ""
+
+#: RETRIEVE_OVF_STORE_FAILED
+msgid ""
+"Failed to retrieve VMs and Templates from the OVF disk of Storage Domain "
+"${StorageDomainName}."
+msgstr ""
+
+#: OVF_STORE_DOES_NOT_EXISTS
+msgid ""
+"This Data center compatibility version does not support importing a data "
+"domain with its entities (VMs and Templates). The imported domain will be "
+"imported without them."
+msgstr ""
+
+#: UPDATE_OVF_FOR_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to update VMs/Templates OVF data for Storage Domain "
+"${StorageDomainName} in Data Center ${StoragePoolName}."
+msgstr ""
+
+#: CREATE_OVF_STORE_FOR_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to create OVF store disk for Storage Domain ${StorageDomainName}.\n"
+" The Disk with the id ${DiskId} might be removed manually for automatic "
+"attempt to create new one. \n"
+" OVF updates won't be attempted on the created disk."
+msgstr ""
+
+#: CREATE_OVF_STORE_FOR_STORAGE_DOMAIN_INITIATE_FAILED
+msgid ""
+"Failed to create OVF store disk for Storage Domain ${StorageDomainName}. \n"
+" OVF data won't be updated meanwhile for that domain."
+msgstr ""
+
+#: UPDATE_FOR_OVF_STORES_FAILED
+msgid ""
+"Failed to update OVF disks ${DisksIds}, OVF data isn't updated on those OVF "
+"stores (Data Center ${DataCenterName}, Storage Domain ${StorageDomainName})."
+msgstr ""
+
+#: UPDATE_DESCRIPTION_FOR_DISK_FAILED
+msgid ""
+"Failed to update the meta data description of disk ${DiskName} (Data Center "
+"${DataCenterName}, Storage Domain ${StorageDomainName})."
+msgstr ""
+
+#: UPDATE_DESCRIPTION_FOR_DISK_SKIPPED_SINCE_STORAGE_DOMAIN_NOT_ACTIVE
+msgid ""
+"Not updating the metadata of Disk ${DiskName} (Data Center "
+"${DataCenterName}. Since the Storage Domain ${StorageDomainName} is not in "
+"active."
+msgstr ""
+
+#: USER_REFRESH_LUN_STORAGE_DOMAIN
+msgid "Resize LUNs operation succeeded."
+msgstr ""
+
+#: USER_REFRESH_LUN_STORAGE_DOMAIN_FAILED
+msgid "Failed to resize LUNs."
+msgstr ""
+
+#: USER_REFRESH_LUN_STORAGE_DIFFERENT_SIZE_DOMAIN_FAILED
+msgid ""
+"Failed to resize LUNs.\n"
+" Not all the hosts are seeing the same LUN size."
+msgstr ""
+
+#: UPLOAD_IMAGE_INITIATED
+msgid "Upload image to disk ${DiskAlias} was initiated by ${UserName}."
+msgstr ""
+
+#: UPLOAD_IMAGE_SUCCEEDED
+msgid "Uploading image to disk ${DiskAlias} succeeded."
+msgstr ""
+
+#: UPLOAD_IMAGE_CANCELLED
+msgid "Uploading image to disk ${DiskAlias} was cancelled."
+msgstr ""
+
+#: UPLOAD_IMAGE_FAILED
+msgid "Uploading image to disk ${DiskAlias} failed."
+msgstr ""
+
+#: UPLOAD_IMAGE_TEARDOWN_FAILED
+msgid "Failed to tear down image ${DiskAlias} after image transfer session."
+msgstr ""
+
+#: UPLOAD_IMAGE_NETWORK_ERROR
+msgid ""
+"Unable to upload image to disk ${DiskId} due to a network error. Make sure "
+"ovirt-imageio-proxy service is installed and configured, and ovirt-engine's "
+"certificate is registered as a valid CA in the browser."
+msgstr ""
+
+#: FAILED_TO_STORE_ENTIRE_DISK_FIELD_IN_DISK_DESCRIPTION_METADATA
+msgid ""
+"Failed to store field ${DiskFieldName} as a part of ${DiskAlias}'s "
+"description metadata due to storage space limitations. The field "
+"${DiskFieldName} will be truncated."
+msgstr ""
+
+#: FAILED_TO_STORE_ENTIRE_DISK_FIELD_AND_REST_OF_FIELDS_IN_DISK_DESCRIPTION_METADATA
+msgid ""
+"Failed to store field ${DiskFieldName} as a part of ${DiskAlias}'s "
+"description metadata due to storage space limitations. The value will be "
+"truncated and the following fields will not be stored at all: "
+"${DiskFieldsNames}."
+msgstr ""
+
+#: FAILED_TO_STORE_DISK_FIELDS_IN_DISK_DESCRIPTION_METADATA
+msgid ""
+"Failed to store the following fields in the description metadata of disk "
+"${DiskAlias} due to storage space limitations: ${DiskFieldsNames}."
+msgstr ""
+
+#: DELETE_OVF_STORE_FOR_STORAGE_DOMAIN_FAILED
+msgid ""
+"Failed to delete the OVF store disk for Storage Domain ${StorageDomainName}.\n"
+" In order to detach the domain please remove it manually or try to detach "
+"the domain again for another attempt."
+msgstr ""
+
+#: IMPORTEXPORT_FAILED_TO_IMPORT_VM
+msgid ""
+"Failed to read VM '${ImportedVmName}' OVF, it may be corrupted. Underlying "
+"error message: ${ErrorMessage}"
+msgstr ""
+
+#: IMPORTEXPORT_FAILED_TO_IMPORT_TEMPLATE
+msgid ""
+"Failed to read Template '${Template}' OVF, it may be corrupted. Underlying "
+"error message: ${ErrorMessage}"
+msgstr ""
+
+#: CANNOT_HIBERNATE_RUNNING_VMS_AFTER_CLUSTER_CPU_UPGRADE
+msgid ""
+"Hibernation of VMs after CPU upgrade of Cluster ${Cluster} is not supported. "
+"Please stop and restart those VMs in case you wish to hibernate them"
+msgstr ""
+
+#: STORAGE_ALERT_VG_METADATA_CRITICALLY_FULL
+msgid ""
+"The system has reached the 80% watermark on the VG metadata area size on "
+"${StorageDomainName}.\n"
+"This is due to a high number of Vdisks or large Vdisks size allocated on "
+"this specific VG."
+msgstr ""
+
+#: STORAGE_ALERT_SMALL_VG_METADATA
+msgid ""
+"The allocated VG metadata area size is smaller than 50MB on "
+"${StorageDomainName},\n"
+"which might limit its capacity (the number of Vdisks and/or their size)."
+msgstr ""
+
+#: RELOAD_CONFIGURATIONS_SUCCESS
+msgid "System Configurations reloaded successfully."
+msgstr ""
+
+#: RELOAD_CONFIGURATIONS_FAILURE
+msgid "System Configurations failed to reload."
+msgstr ""
+
+#: USER_ACCOUNT_DISABLED_OR_LOCKED
+msgid ""
+"User ${UserName} cannot login, as it got disabled or locked. Please contact "
+"the system administrator."
+msgstr ""
+
+#: USER_ACCOUNT_EXPIRED
+msgid ""
+"The account for ${UserName} got expired. Please contact the system "
+"administrator."
+msgstr ""
+
+#: USER_ACCOUNT_PASSWORD_EXPIRED
+msgid ""
+"User ${UserName} cannot login, as the user account password has expired. "
+"Please contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_INVALID_CREDENTIALS
+msgid "User ${UserName} cannot login, please verify the username and password."
+msgstr ""
+
+#: AUTH_FAILED_CLOCK_SKEW_TOO_GREAT
+msgid ""
+"User ${UserName} cannot login, the engine clock is not synchronized with "
+"directory services. Please contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_NO_KDCS_FOUND
+msgid ""
+"User ${UserName} cannot login, authentication domain cannot be found. Please "
+"contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_DNS_ERROR
+msgid ""
+"User ${UserName} cannot login, there's an error in DNS configuration. Please "
+"contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_OTHER
+msgid ""
+"User ${UserName} cannot login, unknown kerberos error. Please contact the "
+"system administrator."
+msgstr ""
+
+#: AUTH_FAILED_DNS_COMMUNICATION_ERROR
+msgid ""
+"User ${UserName} cannot login, cannot lookup DNS for SRV records. Please "
+"contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_CONNECTION_TIMED_OUT
+msgid ""
+"User ${UserName} cannot login, connection to LDAP server has timed out. "
+"Please contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_WRONG_REALM
+msgid "User ${UserName} cannot login, please verify your domain name."
+msgstr ""
+
+#: AUTH_FAILED_CONNECTION_ERROR
+msgid ""
+"User ${UserName} cannot login, connection refused or some configuration "
+"problems exist. Possible DNS error. Please contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_CANNOT_FIND_LDAP_SERVER_FOR_DOMAIN
+msgid ""
+"User ${UserName} cannot login, cannot find valid LDAP server for domain. "
+"Please contact the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_NO_USER_INFORMATION_WAS_FOUND
+msgid ""
+"User ${UserName} cannot login, no user information was found. Please contact "
+"the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_CLIENT_NOT_FOUND_IN_KERBEROS_DATABASE
+msgid ""
+"User ${UserName} cannot login, user was not found in domain. Please contact "
+"the system administrator."
+msgstr ""
+
+#: AUTH_FAILED_INTERNAL_KERBEROS_ERROR
+msgid ""
+"User ${UserName} cannot login, an internal error has ocurred in the Kerberos "
+"implementation of the JVM. Please contact the system administrator."
+msgstr ""
+
+#: ENTITY_RENAMED
+msgid ""
+"${EntityType} ${OldEntityName} was renamed from ${OldEntityName} to "
+"${NewEntityName} by ${UserName}."
+msgstr ""
+
+#: USER_ADD_EXTERNAL_JOB
+msgid "New external Job ${description} was added by user ${UserName}"
+msgstr ""
+
+#: USER_ADD_EXTERNAL_JOB_FAILED
+msgid "Failed to add new external Job ${description}"
+msgstr ""
+
+#: STORAGE_DOMAIN_TASKS_ERROR
+msgid ""
+"Storage Domain ${StorageDomainName} is down while there are tasks running on "
+"it. These tasks may fail."
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_VM_INVALID_INTERFACES
+msgid ""
+"While importing VM ${EntityName}, the Network/s ${Networks} were found to be "
+"Non-VM Networks or do not exist in Cluster or are missing a suitable VM "
+"network interface profile. Network Name was not set in the Interface/s "
+"${Interfaces}."
+msgstr ""
+
+#: IMPORTEXPORT_IMPORT_TEMPLATE_INVALID_INTERFACES
+msgid ""
+"While importing Template ${EntityName}, the Network/s ${Networks} were found "
+"to be Non-VM Networks or do not exist in Cluster. Network Name was not set "
+"in the Interface/s ${Interfaces}."
+msgstr ""
+
+#: IMPORTEXPORT_SNAPSHOT_VM_INVALID_INTERFACES
+msgid ""
+"While previewing a snapshot of VM ${EntityName}, the Network/s ${Networks} "
+"were found to be Non-VM Networks or do not exist in Cluster. Network Name "
+"was not set in the Interface/s ${Interfaces}."
+msgstr ""
+
+#: ADD_VM_FROM_SNAPSHOT_INVALID_INTERFACES
+msgid ""
+"While adding vm ${EntityName} from snapshot, the Network/s ${Networks} were "
+"found to be Non-VM Networks or do not exist in Cluster. Network Name was not "
+"set in the Interface/s ${Interfaces}."
+msgstr ""
+
+#: VDS_SET_NON_OPERATIONAL_VM_NETWORK_IS_BRIDGELESS
+msgid ""
+"Host ${VdsName} does not comply with the cluster ${ClusterName} networks, "
+"the following VM networks are non-VM networks: '${Networks}'"
+msgstr ""
+
+#: EMULATED_MACHINES_INCOMPATIBLE_WITH_CLUSTER
+msgid ""
+"Host ${VdsName} does not comply with the cluster ${ClusterName} emulated "
+"machine. The cluster emulated machine is ${clusterEmulatedMachines} and the "
+"host emulated machines are ${hostSupportedEmulatedMachines}."
+msgstr ""
+
+#: EMULATED_MACHINES_INCOMPATIBLE_WITH_CLUSTER_LEVEL
+msgid ""
+"Host ${VdsName} does not comply with the cluster ${ClusterName} emulated "
+"machines. The current cluster compatibility level supports "
+"${clusterEmulatedMachines} and the host emulated machines are "
+"${hostSupportedEmulatedMachines}."
+msgstr ""
+
+#: MIXING_RHEL_VERSIONS_IN_CLUSTER
+msgid ""
+"Not possible to mix RHEL 6.x and 7.x hosts in one cluster. Tried adding "
+"${addingRhel} host to a cluster with ${previousRhel} hosts."
+msgstr ""
+
+#: RNG_SOURCES_INCOMPATIBLE_WITH_CLUSTER
+msgid ""
+"Host ${VdsName} does not comply with the cluster ${ClusterName} Random "
+"Number Generator sources. The Hosts supported sources are: "
+"${hostSupportedRngSources}; and the cluster requirements are: "
+"${clusterRequiredRngSources}."
+msgstr ""
+
+#: HOST_FEATURES_INCOMPATIBILE_WITH_CLUSTER
+msgid ""
+"Host ${VdsName} does not comply with the list of features supported by "
+"cluster ${ClusterName}. ${UnSupportedFeature} is not supported by the Host"
+msgstr ""
+
+#. # NUMA Messages
+#: NUMA_ADD_VM_NUMA_NODE_SUCCESS
+msgid "Add VM NUMA node successfully."
+msgstr ""
+
+#: NUMA_ADD_VM_NUMA_NODE_FAILED
+msgid "Add VM NUMA node failed."
+msgstr ""
+
+#: NUMA_UPDATE_VM_NUMA_NODE_SUCCESS
+msgid "Update VM NUMA node successfully."
+msgstr ""
+
+#: NUMA_UPDATE_VM_NUMA_NODE_FAILED
+msgid "Update VM NUMA node failed."
+msgstr ""
+
+#: NUMA_REMOVE_VM_NUMA_NODE_SUCCESS
+msgid "Remove VM NUMA node successfully."
+msgstr ""
+
+#: NUMA_REMOVE_VM_NUMA_NODE_FAILED
+msgid "Remove VM NUMA node failed."
+msgstr ""
+
+#. # Gluster Messages
+#: GLUSTER_VOLUME_CREATE
+msgid "Gluster Volume ${glusterVolumeName} created on cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_CREATE_FAILED
+msgid ""
+"Creation of Gluster Volume ${glusterVolumeName} failed on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTION_ADDED
+msgid ""
+"Volume Option ${Key}=${Value} set on ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTION_MODIFIED
+msgid ""
+"Volume Option ${Key} changed to ${Value} from ${oldvalue} on "
+"${glusterVolumeName} of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTION_SET_FAILED
+msgid ""
+"Volume Option ${Key}=${Value} could not be set on ${glusterVolumeName} of "
+"cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_START
+msgid "Gluster Volume ${glusterVolumeName} of cluster ${clusterName} started."
+msgstr ""
+
+#: GLUSTER_VOLUME_START_FAILED
+msgid ""
+"Could not start Gluster Volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_STOP
+msgid "Gluster Volume ${glusterVolumeName} stopped on cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_STOP_FAILED
+msgid ""
+"Could not stop Gluster Volume ${glusterVolumeName} on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTIONS_RESET
+msgid ""
+"Volume Option ${Key}=${Value} reset on ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTIONS_RESET_ALL
+msgid ""
+"All Volume Options reset on ${glusterVolumeName} of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTIONS_RESET_FAILED
+msgid ""
+"Could not reset Gluster Volume ${glusterVolumeName} Options on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_DELETE
+msgid "Gluster Volume ${glusterVolumeName} deleted on cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_DELETE_FAILED
+msgid ""
+"Could not delete Gluster Volume ${glusterVolumeName} on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REMOVE_BRICKS
+msgid ""
+"Bricks removed from Gluster Volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REMOVE_BRICKS_FAILED
+msgid ""
+"Could not remove bricks from Gluster Volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_ADD_BRICK
+msgid ""
+"${NoOfBricks} brick(s) added to volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_ADD_BRICK_FAILED
+msgid ""
+"Failed to add bricks to the Gluster Volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REBALANCE_START
+msgid ""
+"Gluster Volume ${glusterVolumeName} rebalance started on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REBALANCE_START_FAILED
+msgid ""
+"Could not start Gluster Volume ${glusterVolumeName} rebalance on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_GEO_REP_PUB_KEY_FETCH_FAILED
+msgid "Failed to fetch public keys."
+msgstr ""
+
+#: SET_UP_PASSWORDLESS_SSH
+msgid ""
+"Password-less SSH has been setup for user ${geoRepUserName} on the nodes of "
+"remote volume ${geoRepSlaveVolumeName} from the nodes of the volume "
+"${glusterVolumeName}."
+msgstr ""
+
+#: SET_UP_PASSWORDLESS_SSH_FAILED
+msgid ""
+"Failed to setup Passwordless ssh for user ${geoRepUserName} on the nodes of "
+"remote volume ${geoRepSlaveVolumeName} from the nodes of the volume "
+"${glusterVolumeName}."
+msgstr ""
+
+#: GLUSTER_GET_PUB_KEY
+msgid "Public key fetched."
+msgstr ""
+
+#: GLUSTER_GEOREP_PUBLIC_KEY_WRITE_FAILED
+msgid "Failed to write public keys to ${VdsName}"
+msgstr ""
+
+#: GLUSTER_WRITE_PUB_KEYS
+msgid "Public keys written to ${VdsName}"
+msgstr ""
+
+#: GLUSTER_GEOREP_SETUP_MOUNT_BROKER_FAILED
+msgid ""
+"Failed to setup geo-replication mount broker for user ${geoRepUserName} on "
+"the slave volume ${geoRepSlaveVolumeName}."
+msgstr ""
+
+#: GLUSTER_SETUP_GEOREP_MOUNT_BROKER
+msgid ""
+"Geo-replication mount broker has been setup for user ${geoRepUserName} on "
+"the slave volume ${geoRepSlaveVolumeName}."
+msgstr ""
+
+#: GLUSTER_GEOREP_SESSION_CREATE_FAILED
+msgid ""
+"Failed to create geo-replication session between master volume : "
+"${glusterVolumeName} of cluster ${clusterName} and slave volume : "
+"${geoRepSlaveVolumeName} for the user ${geoRepUserName}."
+msgstr ""
+
+#: CREATE_GLUSTER_VOLUME_GEOREP_SESSION
+msgid ""
+"Created geo-replication session between master volume : ${glusterVolumeName} "
+"of cluster ${clusterName} and slave volume : ${geoRepSlaveVolumeName} for "
+"the user ${geoRepUserName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_GEO_REP_RESUME
+msgid ""
+"Geo-replication session on volume ${glusterVolumeName} of cluster "
+"${clusterName} has been resumed."
+msgstr ""
+
+#: GLUSTER_VOLUME_GEO_REP_RESUME_FAILED
+msgid ""
+"Failed to resume geo-replication session on volume ${glusterVolumeName} of "
+"cluster ${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_REBALANCE_STOP
+msgid ""
+"Gluster Volume ${glusterVolumeName} rebalance stopped of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REBALANCE_STOP_FAILED
+msgid ""
+"Could not stop rebalance of gluster volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: START_REMOVING_GLUSTER_VOLUME_BRICKS
+msgid ""
+"Started removing bricks from Volume ${glusterVolumeName} of cluster "
+"${clusterName}"
+msgstr ""
+
+#: START_REMOVING_GLUSTER_VOLUME_BRICKS_FAILED
+msgid ""
+"Could not start remove bricks from Volume ${glusterVolumeName} of cluster "
+"${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_REMOVE_BRICKS_COMMIT
+msgid ""
+"Gluster volume ${glusterVolumeName} remove bricks committed on cluster "
+"${clusterName}. ${NoOfBricks} brick(s) removed from volume "
+"${glusterVolumeName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REMOVE_BRICKS_STOP
+msgid ""
+"Stopped removing bricks from Volume ${glusterVolumeName} of cluster "
+"${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_REMOVE_BRICKS_STOP_FAILED
+msgid ""
+"Failed to stop remove bricks from Volume ${glusterVolumeName} of cluster "
+"${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_REMOVE_BRICKS_COMMIT_FAILED
+msgid ""
+"Gluster volume ${glusterVolumeName} remove bricks could not be commited on "
+"cluster ${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_REPLACE_BRICK_FAILED
+msgid ""
+"Replace Gluster Volume ${glusterVolumeName} Brick failed on cluster "
+"${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_BRICK_REPLACED
+msgid ""
+"Replaced brick '${brick}' with new brick '${newBrick}' of Gluster Volume "
+"${glusterVolumeName} on cluster ${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_REPLACE_BRICK_START
+msgid ""
+"Gluster Volume ${glusterVolumeName} Replace Brick started on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REPLACE_BRICK_START_FAILED
+msgid ""
+"Could not start Gluster Volume ${glusterVolumeName} Replace Brick on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REBALANCE_FINISHED
+msgid ""
+"${action} ${status} on volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_MIGRATE_BRICK_DATA_FINISHED
+msgid ""
+"${action} ${status} for brick(s) on volume ${glusterVolumeName} of cluster "
+"${clusterName}. Please review to abort or commit."
+msgstr ""
+
+#: GLUSTER_SERVER_ADD_FAILED
+msgid "Failed to add host ${VdsName} into Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_REBALANCE_START_DETECTED_FROM_CLI
+msgid ""
+"Detected start of rebalance on volume ${glusterVolumeName} of Cluster "
+"${ClusterName} from CLI."
+msgstr ""
+
+#: START_REMOVING_GLUSTER_VOLUME_BRICKS_DETECTED_FROM_CLI
+msgid ""
+"Detected start of brick removal for bricks ${brick} on volume "
+"${glusterVolumeName} of Cluster ${ClusterName} from CLI."
+msgstr ""
+
+#: GLUSTER_VOLUME_REBALANCE_NOT_FOUND_FROM_CLI
+msgid ""
+"Could not find information for rebalance on volume ${glusterVolumeName} of "
+"Cluster ${ClusterName} from CLI. Marking it as unknown."
+msgstr ""
+
+#: GLUSTER_VOLUME_GEO_REP_PAUSE
+msgid ""
+"Geo-replication session on volume ${glusterVolumeName} of cluster "
+"${clusterName} has been paused."
+msgstr ""
+
+#: GLUSTER_VOLUME_GEO_REP_PAUSE_FAILED
+msgid ""
+"Failed to pause geo-replication session on volume ${glusterVolumeName} of "
+"cluster ${clusterName}"
+msgstr ""
+
+#: REMOVE_GLUSTER_VOLUME_BRICKS_NOT_FOUND_FROM_CLI
+msgid ""
+"Could not find information for remove brick on volume ${glusterVolumeName} "
+"of Cluster ${ClusterName} from CLI. Marking it as unknown."
+msgstr ""
+
+#: GLUSTER_SERVER_REMOVE
+msgid "Host ${VdsName} removed from Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVER_REMOVE_FAILED
+msgid "Failed to remove host ${VdsName} from Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVERS_LIST_FAILED
+msgid ""
+"Failed to fetch gluster peer list from server ${VdsName} on Cluster "
+"${ClusterName}."
+msgstr ""
+
+#: HA_VM_FAILED
+msgid ""
+"Highly Available VM ${VmName} failed. It will be restarted automatically."
+msgstr ""
+
+#: HA_VM_RESTART_FAILED
+msgid "Restart of the Highly Available VM ${VmName} failed."
+msgstr ""
+
+#: EXCEEDED_MAXIMUM_NUM_OF_RESTART_HA_VM_ATTEMPTS
+msgid ""
+"Highly Available VM ${VmName} could not be restarted automatically, exceeded "
+"the maximum number of attempts."
+msgstr ""
+
+#: COLD_REBOOT_VM_DOWN
+msgid "VM ${VmName} is down as a part of cold reboot process"
+msgstr ""
+
+#: COLD_REBOOT_FAILED
+msgid "Cold reboot of VM ${VmName} failed"
+msgstr ""
+
+#: EXCEEDED_MAXIMUM_NUM_OF_COLD_REBOOT_VM_ATTEMPTS
+msgid ""
+"VM ${VmName} could not be rebooted, exceeded the maximum number of attempts."
+msgstr ""
+
+#: GLUSTER_VOLUME_PROFILE_START
+msgid ""
+"Gluster Volume ${glusterVolumeName} profiling started on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_PROFILE_START_FAILED
+msgid ""
+"Could not start profiling on gluster volume ${glusterVolumeName} of cluster "
+"${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_PROFILE_STOP
+msgid ""
+"Gluster Volume ${glusterVolumeName} profiling stopped on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_PROFILE_STOP_FAILED
+msgid ""
+"Could not stop Profiling on gluster volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_COMMAND_FAILED
+msgid "Gluster command [${Command}] failed on server ${VdsName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_INFO_FAILED
+msgid "Failed to fetch gluster volume list from server ${VdsName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_CREATED_FROM_CLI
+msgid ""
+"Detected new volume ${glusterVolumeName} on cluster ${ClusterName}, and "
+"added it to engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_DELETED_FROM_CLI
+msgid ""
+"Detected deletion of volume ${glusterVolumeName} on cluster ${ClusterName}, "
+"and deleted it from engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTION_SET_FROM_CLI
+msgid ""
+"Detected new option ${key}=${value} on volume ${glusterVolumeName} of "
+"cluster ${ClusterName}, and added it to engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTION_CHANGED_FROM_CLI
+msgid ""
+"Detected change in value of option ${key} from ${oldValue} to ${newValue} on "
+"volume ${glusterVolumeName} of cluster ${ClusterName}, and updated it to "
+"engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_OPTION_RESET_FROM_CLI
+msgid ""
+"Detected option ${key}=${value} reset on volume ${glusterVolumeName} of "
+"cluster ${ClusterName}, and removed it from engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_PROPERTIES_CHANGED_FROM_CLI
+msgid ""
+"Detected changes in properties of volume ${glusterVolumeName} of cluster "
+"${ClusterName}, and updated the same in engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_BRICK_ADDED_FROM_CLI
+msgid ""
+"Detected new brick ${brick} on volume ${glusterVolumeName} of cluster "
+"${ClusterName}, and added it to engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_BRICK_REMOVED_FROM_CLI
+msgid ""
+"Detected brick ${brick} removed from Volume ${glusterVolumeName} of cluster "
+"${ClusterName}, and removed it from engine DB."
+msgstr ""
+
+#: GLUSTER_SERVER_REMOVED_FROM_CLI
+msgid ""
+"Detected server ${VdsName} removed from Cluster ${ClusterName}, and removed "
+"it from engine DB."
+msgstr ""
+
+#: GLUSTER_VOLUME_STARTED_FROM_CLI
+msgid ""
+"Detected that Volume ${glusterVolumeName} of Cluster ${ClusterName} was "
+"started, and updated engine DB with it's new status."
+msgstr ""
+
+#: GLUSTER_VOLUME_STOPPED_FROM_CLI
+msgid ""
+"Detected that Volume ${glusterVolumeName} of Cluster ${ClusterName} was "
+"stopped, and updated engine DB with it's new status."
+msgstr ""
+
+#: GLUSTER_HOOK_ENABLE
+msgid "Gluster Hook ${GlusterHookName} enabled on cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_ENABLE_PARTIAL
+msgid ""
+"Gluster Hook ${GlusterHookName} enabled on some of the servers on cluster "
+"${ClusterName}. ${FailureMessage}"
+msgstr ""
+
+#: GLUSTER_HOOK_ENABLE_FAILED
+msgid ""
+"Failed to enable Gluster Hook ${GlusterHookName} on cluster ${ClusterName}. "
+"${FailureMessage}"
+msgstr ""
+
+#: GLUSTER_HOOK_DISABLE
+msgid "Gluster Hook ${GlusterHookName} disabled on cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_DISABLE_FAILED
+msgid ""
+"Failed to disable Gluster Hook ${GlusterHookName} on cluster ${ClusterName}. "
+"${FailureMessage}"
+msgstr ""
+
+#: GLUSTER_HOOK_DISABLE_PARTIAL
+msgid ""
+"Gluster Hook ${GlusterHookName} disabled on some of the servers on cluster "
+"${ClusterName}. ${FailureMessage}"
+msgstr ""
+
+#: GLUSTER_HOOK_LIST_FAILED
+msgid "Failed to retrieve hook list from ${VdsName} of Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_CONFLICT_DETECTED
+msgid "Detected conflict in hook ${HookName} of Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_DETECTED_NEW
+msgid "Detected new hook ${HookName} in Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_DETECTED_DELETE
+msgid "Detected removal of hook ${HookName} in Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_GETCONTENT_FAILED
+msgid "Failed to read content of hook ${HookName} in Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVICES_LIST_FAILED
+msgid ""
+"Could not fetch statuses of services from server ${VdsName}. Updating "
+"statuses of all services on this server to UNKNOWN."
+msgstr ""
+
+#: GLUSTER_SERVICE_TYPE_ADDED_TO_CLUSTER
+msgid ""
+"Service type ${ServiceType} was not mapped to cluster ${ClusterName}. Mapped "
+"it now."
+msgstr ""
+
+#: GLUSTER_CLUSTER_SERVICE_STATUS_CHANGED
+msgid ""
+"Status of service type ${ServiceType} changed from ${OldStatus} to "
+"${NewStatus} on cluster ${ClusterName}"
+msgstr ""
+
+#: GLUSTER_CLUSTER_SERVICE_STATUS_ADDED
+msgid ""
+"Status of service type ${ServiceType} set to ${NewStatus} on cluster "
+"${ClusterName}"
+msgstr ""
+
+#: GLUSTER_SERVICE_ADDED_TO_SERVER
+msgid ""
+"Service ${ServiceName} was not mapped to server ${VdsName}. Mapped it now."
+msgstr ""
+
+#: GLUSTER_SERVER_SERVICE_STATUS_CHANGED
+msgid ""
+"Status of service ${ServiceName} on server ${VdsName} changed from "
+"${OldStatus} to ${NewStatus}. Updating in engine now."
+msgstr ""
+
+#: GLUSTER_HOST_UUID_NOT_FOUND
+msgid ""
+"Could not find gluster uuid of server ${VdsName} on Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOST_UUID_ALREADY_EXISTS
+msgid ""
+"Gluster UUID of host ${VdsName} on Cluster ${ClusterName} already exists."
+msgstr ""
+
+#: WATCHDOG_EVENT
+msgid ""
+"Watchdog event (${wdaction}) triggered on ${VmName} at ${wdevent} (host "
+"time)."
+msgstr ""
+
+#: GLUSTER_HOOK_UPDATED
+msgid "Gluster Hook ${GlusterHookName} updated on conflicting servers."
+msgstr ""
+
+#: GLUSTER_HOOK_UPDATE_FAILED
+msgid ""
+"Failed to update Gluster Hook ${GlusterHookName} on conflicting servers. "
+"${FailureMessage}"
+msgstr ""
+
+#: GLUSTER_HOOK_ADDED
+msgid "Gluster Hook ${GlusterHookName} added on conflicting servers."
+msgstr ""
+
+#: GLUSTER_HOOK_ADD_FAILED
+msgid ""
+"Failed to add Gluster Hook ${GlusterHookName} on conflicting servers. "
+"${FailureMessage}"
+msgstr ""
+
+#: GLUSTER_HOOK_REMOVED
+msgid ""
+"Gluster Hook ${GlusterHookName} removed from all servers in cluster "
+"${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_REMOVE_FAILED
+msgid ""
+"Failed to remove Gluster Hook ${GlusterHookName} from cluster "
+"${ClusterName}. ${FailureMessage}"
+msgstr ""
+
+#: GLUSTER_HOOK_REFRESH
+msgid "Refreshed gluster hooks in Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_HOOK_REFRESH_FAILED
+msgid "Failed to refresh gluster hooks in Cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_DETAILS_REFRESH
+msgid ""
+"Refreshed details of the volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_DETAILS_REFRESH_FAILED
+msgid ""
+"Failed to refresh the details of volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_SERVICE_STARTED
+msgid ""
+"${servicetype} service started on host ${VdsName} of cluster ${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVICE_START_FAILED
+msgid ""
+"Could not start ${servicetype} service on host ${VdsName} of cluster "
+"${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVICE_STOPPED
+msgid ""
+"${servicetype} services stopped on host ${VdsName} of cluster "
+"${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVICE_STOP_FAILED
+msgid ""
+"Could not stop ${servicetype} service on host ${VdsName} of cluster "
+"${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVICES_LIST_NOT_FETCHED
+msgid ""
+"Could not fetch list of services from ${ServiceGroupType} named "
+"${ServiceGroupName}."
+msgstr ""
+
+#: GLUSTER_SERVICE_RESTARTED
+msgid ""
+"${servicetype} service re-started on host ${VdsName} of cluster "
+"${ClusterName}."
+msgstr ""
+
+#: GLUSTER_SERVICE_RESTART_FAILED
+msgid ""
+"Could not re-start ${servicetype} service on host ${VdsName} of cluster "
+"${ClusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_BRICK_ADDED
+msgid ""
+"Brick [${brickpath}] on host [${servername}] added to volume "
+"[${glusterVolumeName}] of cluster ${clusterName}"
+msgstr ""
+
+#: GLUSTER_BRICK_STATUS_CHANGED
+msgid ""
+"Detected change in status of brick ${brickpath} of volume "
+"${glusterVolumeName} of cluster ${clusterName} from ${oldValue} to "
+"${newValue} ."
+msgstr ""
+
+#: GLUSTER_BRICK_STATUS_DOWN
+msgid ""
+"Status of brick ${brickpath} of volume ${glusterVolumeName} on cluster "
+"${ClusterName} is down."
+msgstr ""
+
+#: GLUSTER_GEOREP_SESSION_DELETED_FROM_CLI
+msgid ""
+"Detected deletion of geo-replication session ${geoRepSessionKey} from volume "
+"${glusterVolumeName} of cluster ${clusterName}"
+msgstr ""
+
+#: GLUSTER_GEOREP_SESSION_DETECTED_FROM_CLI
+msgid ""
+"Detected new geo-replication session ${geoRepSessionKey} for volume "
+"${glusterVolumeName} of cluster ${clusterName}. Adding it to engine."
+msgstr ""
+
+#: GLUSTER_GEOREP_SESSION_REFRESH
+msgid ""
+"Refreshed geo-replication sessions for volume ${glusterVolumeName} of "
+"cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_GEOREP_SESSION_REFRESH_FAILED
+msgid ""
+"Failed to refresh geo-replication sessions for volume ${glusterVolumeName} "
+"of cluster ${clusterName}."
+msgstr ""
+
+#: GEOREP_SESSION_STOP
+msgid ""
+"Geo-replication session on volume ${glusterVolumeName} of cluster "
+"${clusterName} has been stopped."
+msgstr ""
+
+#: GEOREP_SESSION_STOP_FAILED
+msgid ""
+"Failed to stop geo-replication session on volume ${glusterVolumeName} of "
+"cluster ${clusterName}"
+msgstr ""
+
+#: GEOREP_SESSION_DELETED
+msgid ""
+"Geo-replication session deleted on volume ${glusterVolumeName} of cluster "
+"${clusterName}"
+msgstr ""
+
+#: GEOREP_SESSION_DELETE_FAILED
+msgid ""
+"Failed to delete geo-replication session on volume ${glusterVolumeName} of "
+"cluster ${clusterName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_GEO_REP_START
+msgid ""
+"Geo-replication session on volume ${glusterVolumeName} of cluster "
+"${clusterName} has been started."
+msgstr ""
+
+#: GLUSTER_VOLUME_GEO_REP_START_FAILED_EXCEPTION
+msgid ""
+"Failed to start geo-replication session on volume ${glusterVolumeName} of "
+"cluster ${clusterName}"
+msgstr ""
+
+#: GLUSTER_GEOREP_CONFIG_SET
+msgid ""
+"Configuration ${key} has been set to ${value} on the geo-rep session "
+"${geoRepSessionKey}."
+msgstr ""
+
+#: GLUSTER_GEOREP_CONFIG_SET_FAILED
+msgid ""
+"Failed to set the configuration ${key} to ${value} on geo-rep session "
+"${geoRepSessionKey}."
+msgstr ""
+
+#: GLUSTER_GEOREP_CONFIG_SET_DEFAULT
+msgid ""
+"Configuration of ${key} of session ${geoRepSessionKey} reset to its default "
+"value ."
+msgstr ""
+
+#: GLUSTER_GEOREP_CONFIG_SET_DEFAULT_FAILED
+msgid ""
+"Failed to set ${key} of session ${geoRepSessionKey} to its default value."
+msgstr ""
+
+#: GLUSTER_GEOREP_CONFIG_LIST
+msgid ""
+"Refreshed configuration options for geo-replication session "
+"${geoRepSessionKey}"
+msgstr ""
+
+#: GLUSTER_GEOREP_CONFIG_LIST_FAILED
+msgid ""
+"Failed to refresh configuration options for geo-replication session "
+"${geoRepSessionKey}"
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_DELETED
+msgid "Gluster volume snapshot ${snapname} deleted."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_DELETE_FAILED
+msgid "Failed to delete gluster volume snapshot ${snapname}."
+msgstr ""
+
+#: GLUSTER_VOLUME_ALL_SNAPSHOTS_DELETED
+msgid ""
+"Deleted all the gluster volume snapshots for the volume ${glusterVolumeName} "
+"of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_ALL_SNAPSHOTS_DELETE_FAILED
+msgid ""
+"Failed to delete all the gluster volume snapshots for the volume "
+"${glusterVolumeName} of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_ACTIVATED
+msgid ""
+"Activated the gluster volume snapshot ${snapname} on volume "
+"${glusterVolumeName} of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_ACTIVATE_FAILED
+msgid ""
+"Failed to activate the gluster volume snapshot ${snapname} on volume "
+"${glusterVolumeName} of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_DEACTIVATED
+msgid ""
+"De-activated the gluster volume snapshot ${snapname} on volume "
+"${glusterVolumeName} of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_DEACTIVATE_FAILED
+msgid ""
+"Failed to de-activate gluster volume snapshot ${snapname} on volume "
+"${glusterVolumeName} of cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_RESTORED
+msgid ""
+"Restored the volume ${glusterVolumeName} of cluster ${clusterName} to the "
+"state of gluster volume snapshot ${snapname}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_RESTORE_FAILED
+msgid ""
+"Failed to restore the volume ${glusterVolumeName} of cluster ${clusterName} "
+"to the state of gluster volume snapshot ${snapname}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_CONFIG_UPDATED
+msgid "Updated Gluster volume snapshot configuration(s)."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_CONFIG_UPDATE_FAILED
+msgid "Failed to update gluster volume snapshot configuration(s)."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_CONFIG_UPDATE_FAILED_PARTIALLY
+msgid ""
+"Failed to update gluster volume snapshot configuration(s) "
+"${failedSnapshotConfigs}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_SOFT_LIMIT_REACHED
+msgid ""
+"Gluster Volume Snapshot soft limit reached for the volume "
+"${glusterVolumeName} on cluster ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_HARD_LIMIT_REACHED
+msgid ""
+"Gluster Volume Snapshot hard limit reached for the volume "
+"${glusterVolumeName} on cluster ${clusterName}."
+msgstr ""
+
+#: NEW_STORAGE_DEVICE_DETECTED
+msgid ""
+"Found new storage device ${storageDevice} on host ${VdsName}, and added it "
+"to engine DB.\""
+msgstr ""
+
+#: STORAGE_DEVICE_REMOVED_FROM_THE_HOST
+msgid ""
+"Detected deletion of storage device ${storageDevice} on host ${VdsName}, and "
+"deleting it from engine DB.\""
+msgstr ""
+
+#: SYNC_STORAGE_DEVICES_IN_HOST
+msgid "Manually synced the storage devices from host ${VdsName}"
+msgstr ""
+
+#: SYNC_STORAGE_DEVICES_IN_HOST_FAILED
+msgid "Failed to sync storage devices from host ${VdsName}"
+msgstr ""
+
+#: GLUSTER_VOLUME_TYPE_UNSUPPORTED
+msgid ""
+"Detected a volume ${glusterVolumeName} with type ${glusterVolumeType} on "
+"cluster ${Cluster} and it is not fully supported by engine."
+msgstr ""
+
+#: GEOREP_OPTION_SET_FROM_CLI
+msgid ""
+"Detected new option ${key}=${value} for geo-replication session "
+"${geoRepSessionKey} on volume ${glusterVolumeName} of cluster "
+"${ClusterName}, and added it to engine."
+msgstr ""
+
+#: GEOREP_OPTION_CHANGED_FROM_CLI
+msgid ""
+"Detected change in value of option ${key} from ${oldValue} to ${value} for "
+"geo-replication session on volume ${glusterVolumeName} of cluster "
+"${ClusterName}, and updated it to engine."
+msgstr ""
+
+#: GLUSTER_MASTER_VOLUME_STOP_FAILED_DURING_SNAPSHOT_RESTORE
+msgid ""
+"Could not stop master volume ${glusterVolumeName} of cluster ${clusterName} "
+"during snapshot restore."
+msgstr ""
+
+#: GLUSTER_MASTER_VOLUME_SNAPSHOT_RESTORE_FAILED
+msgid ""
+"Could not restore master volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_CREATED
+msgid ""
+"Snapshot ${snapname} created for volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_CREATE_FAILED
+msgid ""
+"Could not create snapshot for volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: CREATE_GLUSTER_BRICK
+msgid ""
+"Brick ${brickName} created successfully on host ${vdsName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: CREATE_GLUSTER_BRICK_FAILED
+msgid ""
+"Failed to create brick ${brickName} on host ${vdsName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_SCHEDULED
+msgid ""
+"Snapshots scheduled on volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_SCHEDULE_FAILED
+msgid ""
+"Failed to schedule snapshots on the volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_RESCHEDULED
+msgid ""
+"Rescheduled snapshots on volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_RESCHEDULE_FAILED
+msgid ""
+"Failed to reschedule snapshots on volume ${glusterVolumeName} of cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_SCHEDULE_DELETED
+msgid ""
+"Snapshot schedule deleted for volume ${glusterVolumeName} of ${clusterName}."
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_DETECTED_NEW
+msgid ""
+"Found new gluster volume snapshot ${snapname} for volume "
+"${glusterVolumeName} on cluster ${ClusterName}, and added it to engine DB.\""
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_DELETED_FROM_CLI
+msgid ""
+"Detected deletion of gluster volume snapshot ${snapname} for volume "
+"${glusterVolumeName} on cluster ${ClusterName}, and deleting it from engine "
+"DB.\""
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_CLUSTER_CONFIG_DETECTED_NEW
+msgid ""
+"Found new gluster volume snapshot configuration ${snapConfigName} with value "
+"${snapConfigValue} on cluster ${ClusterName}, and added it to engine DB.\""
+msgstr ""
+
+#: GLUSTER_VOLUME_SNAPSHOT_VOLUME_CONFIG_DETECTED_NEW
+msgid ""
+"Found new gluster volume snapshot configuration ${snapConfigName} with value "
+"${snapConfigValue} for volume ${glusterVolumeName} on cluster "
+"${ClusterName}, and added it to engine DB.\""
+msgstr ""
+
+#: GLUSTER_CLI_SNAPSHOT_SCHEDULE_DISABLE_FAILED
+msgid ""
+"Failed to disable gluster CLI based snapshot schedule on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_CLI_SNAPSHOT_SCHEDULE_DISABLED
+msgid ""
+"Disabled gluster CLI based scheduling successfully on cluster "
+"${clusterName}."
+msgstr ""
+
+#: GLUSTER_SERVER_STATUS_DISCONNECTED
+msgid ""
+"Gluster server ${vdsName} set to DISCONNECTED on cluster ${clusterName}."
+msgstr ""
+
+#: VDS_UNTRUSTED
+msgid ""
+"Host ${VdsName} was set to non-operational. Host is not trusted by the "
+"attestation service."
+msgstr ""
+
+#: USER_ADDED_NETWORK_QOS
+msgid "Network QoS ${QosName} was added. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_ADD_NETWORK_QOS
+msgid "Failed to add Network QoS ${QosName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVED_NETWORK_QOS
+msgid "Network QoS ${QosName} was removed. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_NETWORK_QOS
+msgid "Failed to remove Network QoS ${QosName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATED_NETWORK_QOS
+msgid "Network QoS ${QosName} was updated. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_NETWORK_QOS
+msgid "Failed to update Network QoS ${QosName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_ADDED_QOS
+msgid "QoS ${QoSName} was added. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_ADD_QOS
+msgid "Failed to add QoS ${QoSName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVED_QOS
+msgid "QoS ${QoSName} was removed. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_QOS
+msgid "Failed to remove QoS ${QoSName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATED_QOS
+msgid "QoS ${QoSName} was updated. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_QOS
+msgid "Failed to update QoS ${QoSName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_ADD_CLUSTER_POLICY
+msgid "Scheduling Policy ${ClusterPolicy} was added. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_ADD_CLUSTER_POLICY
+msgid "Failed to add Scheduling Policy: ${ClusterPolicy}. (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATE_CLUSTER_POLICY
+msgid "Scheduling Policy ${ClusterPolicy} was updated. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_CLUSTER_POLICY
+msgid ""
+"Failed to update Scheduling Policy: ${ClusterPolicy}. (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVE_CLUSTER_POLICY
+msgid "Scheduling Policy ${ClusterPolicy} was removed. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_CLUSTER_POLICY
+msgid ""
+"Failed to remove Scheduling Policy: ${ClusterPolicy}. (User: ${UserName})"
+msgstr ""
+
+#: FAILED_TO_CONNECT_TO_SCHEDULER_PROXY
+msgid ""
+"Failed to connect to external scheduler proxy. External filters, scoring "
+"functions and load balancing will not be performed."
+msgstr ""
+
+#: EXTERNAL_SCHEDULER_PLUGIN_ERROR
+msgid ""
+"Running the external scheduler plugin '${PluginName}' failed: "
+"'${ErrorMessage}'"
+msgstr ""
+
+#: EXTERNAL_SCHEDULER_ERROR
+msgid "Running the external scheduler failed: '${ErrorMessage}'"
+msgstr ""
+
+#: EXTERNAL_EVENT_NORMAL
+msgid "An external event with NORMAL severity has been added."
+msgstr ""
+
+#: EXTERNAL_EVENT_WARNING
+msgid "An external event with WARNING severity has been added."
+msgstr ""
+
+#: EXTERNAL_EVENT_ERROR
+msgid "An external event with ERROR severity has been added."
+msgstr ""
+
+#: EXTERNAL_ALERT
+msgid "An external event with ALERT severity has been added."
+msgstr ""
+
+#: USER_UPDATED_MOM_POLICIES
+msgid "Mom policy was updated on host ${VdsName}."
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_MOM_POLICIES
+msgid "Mom policy could not be updated on host ${VdsName}."
+msgstr ""
+
+#: DISK_ALIGNMENT_SCAN_START
+msgid "Starting alignment scan of disk '${DiskAlias}'."
+msgstr ""
+
+#: DISK_ALIGNMENT_SCAN_FAILURE
+msgid "Alignment scan of disk '${DiskAlias}' failed."
+msgstr ""
+
+#: DISK_ALIGNMENT_SCAN_SUCCESS
+msgid "Alignment scan of disk '${DiskAlias}' is complete."
+msgstr ""
+
+#: VM_MEMORY_NOT_IN_RECOMMENDED_RANGE
+msgid ""
+"VM ${VmName} was configured with ${VmMemInMb}mb of memory while the "
+"recommended value range is ${VmMinMemInMb}mb - ${VmMaxMemInMb}mb"
+msgstr ""
+
+#: VM_CONSOLE_CONNECTED
+msgid "User ${UserName} is connected to VM ${VmName}."
+msgstr ""
+
+#: VM_CONSOLE_DISCONNECTED
+msgid "User ${UserName} got disconnected from VM ${VmName}."
+msgstr ""
+
+#: VDS_STATUS_CHANGE_FAILED_DUE_TO_STOP_SPM_FAILURE
+msgid ""
+"Failed to change status of host ${VdsName} due to a failure to stop the spm."
+msgstr ""
+
+#: CLUSTER_ALERT_HA_RESERVATION
+msgid ""
+"Cluster ${ClusterName} failed the HA Reservation check, HA VMs on host(s): "
+"${Hosts} will fail to migrate in case of a failover, consider adding "
+"resources or shutting down unused VMs."
+msgstr ""
+
+#: CLUSTER_ALERT_HA_RESERVATION_DOWN
+msgid "Cluster ${ClusterName} passed the HA Reservation check."
+msgstr ""
+
+#: PM_POLICY_UP_TO_MAINTENANCE
+msgid ""
+"Host ${Host} is not currently needed, activating maintenance mode in "
+"preparation for shutdown."
+msgstr ""
+
+#: PM_POLICY_MAINTENANCE_TO_DOWN
+msgid "Host ${Host} is not currently needed, shutting down."
+msgstr ""
+
+#: PM_POLICY_TO_UP
+msgid ""
+"Reactivating host ${Host} according to the current power management policy."
+msgstr ""
+
+#: USER_ADDED_AFFINITY_GROUP
+msgid "Affinity Group ${affinityGroupName} was added. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_ADD_AFFINITY_GROUP
+msgid "Failed to add Affinity Group ${affinityGroupName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATED_AFFINITY_GROUP
+msgid "Affinity Group ${affinityGroupName} was updated. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_AFFINITY_GROUP
+msgid ""
+"Failed to update Affinity Group ${affinityGroupName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVED_AFFINITY_GROUP
+msgid "Affinity Group ${affinityGroupName} was removed. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_AFFINITY_GROUP
+msgid ""
+"Failed to remove Affinity Group ${affinityGroupName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_ADDED_AFFINITY_LABEL
+msgid "Affinity Label ${labelName} was added. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_ADD_AFFINITY_LABEL
+msgid "Failed to add Affinity Label ${labelName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_UPDATED_AFFINITY_LABEL
+msgid "Affinity Label ${labelName} was updated. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_AFFINITY_LABEL
+msgid "Failed to update Affinity Label ${labelName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_REMOVED_AFFINITY_LABEL
+msgid "Affinity Label ${labelName} was removed. (User: ${UserName})"
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_AFFINITY_LABEL
+msgid "Failed to remove Affinity Label ${labelName}. (User: ${UserName})"
+msgstr ""
+
+#: USER_SET_HOSTED_ENGINE_MAINTENANCE
+msgid "Hosted Engine HA maintenance mode was updated on host ${VdsName}."
+msgstr ""
+
+#: USER_FAILED_TO_SET_HOSTED_ENGINE_MAINTENANCE
+msgid ""
+"Hosted Engine HA maintenance mode could not be updated on host ${VdsName}."
+msgstr ""
+
+#: HOSTED_ENGINE_VM_IMPORT_SUCCEEDED
+msgid "Hosted Engine VM was imported successfully"
+msgstr ""
+
+#: HOSTED_ENGINE_VM_IMPORT_FAILED
+msgid "Failed importing the Hosted Engine VM"
+msgstr ""
+
+#: HOSTED_ENGINE_SD_NOT_EXIT
+msgid ""
+"The Hosted Engine Storage Domain doesn't exist. It will be imported "
+"automatically upon data center activation, which requires adding an initial "
+"storage domain to the data center."
+msgstr ""
+
+#: HOSTED_ENGINE_SD_NOT_ACTIVE
+msgid "The Hosted Engine Storage Domain isn't Active."
+msgstr ""
+
+#: HOSTED_ENGINE_DOMAIN_IMPORT_SUCCEEDED
+msgid "Hosted Engine Storage Domain imported successfully"
+msgstr ""
+
+#: HOSTED_ENGINE_DOMAIN_IMPORT_FAILED
+msgid "Failed to import the Hosted Engine Storage Domain"
+msgstr ""
+
+#: VM_SLA_POLICY_CPU
+msgid "VM ${VmName} SLA Policy was set. CPU limit is set to ${cpuLimit}"
+msgstr ""
+
+#: VM_SLA_POLICY_STORAGE
+msgid ""
+"VM ${VmName} SLA Policy was set. Storage policy changed for disks: "
+"[${diskList}]"
+msgstr ""
+
+#: VM_SLA_POLICY_CPU_STORAGE
+msgid ""
+"VM ${VmName} SLA Policy was set. CPU limit is set to ${cpuLimit}. Storage "
+"policy changed for disks: [${diskList}]"
+msgstr ""
+
+#: FAILED_VM_SLA_POLICY
+msgid ""
+"Failed to set SLA Policy to VM ${VmName}. Underlying error message: "
+"${ErrorMessage}"
+msgstr ""
+
+#: ISCSI_BOND_ADD_SUCCESS
+msgid ""
+"iSCSI bond '${IscsiBondName}' was successfully created in Data Center "
+"'${StoragePoolName}'."
+msgstr ""
+
+#: ISCSI_BOND_ADD_SUCCESS_WITH_WARNING
+msgid ""
+"iSCSI bond '${IscsiBondName}' was successfully created in Data Center "
+"'${StoragePoolName}' but some of the hosts encountered connection issues."
+msgstr ""
+
+#: ISCSI_BOND_ADD_FAILED
+msgid ""
+"Failed to create iSCSI bond '${IscsiBondName}' in Data Center "
+"'${StoragePoolName}'."
+msgstr ""
+
+#: ISCSI_BOND_EDIT_SUCCESS
+msgid "iSCSI bond '${IscsiBondName}' was successfully updated."
+msgstr ""
+
+#: ISCSI_BOND_EDIT_SUCCESS_WITH_WARNING
+msgid ""
+"iSCSI bond '${IscsiBondName}' was successfully updated but some of the hosts "
+"encountered connection issues."
+msgstr ""
+
+#: ISCSI_BOND_EDIT_FAILED
+msgid "Failed to update iSCSI bond '${IscsiBondName}'."
+msgstr ""
+
+#: ISCSI_BOND_REMOVE_SUCCESS
+msgid ""
+"iSCSI bond '${IscsiBondName}' was removed from Data Center "
+"'${StoragePoolName}'"
+msgstr ""
+
+#: ISCSI_BOND_REMOVE_FAILED
+msgid ""
+"Failed to remove iSCSI bond '${IscsiBondName}' from Data Center "
+"'${StoragePoolName}'"
+msgstr ""
+
+#: FENCE_KDUMP_LISTENER_IS_NOT_ALIVE
+msgid ""
+"Unable to determine if Kdump is in progress on host ${VdsName}, because "
+"fence_kdump listener is not running."
+msgstr ""
+
+#: KDUMP_FLOW_DETECTED_ON_VDS
+msgid "Kdump flow is in progress on host ${VdsName}."
+msgstr ""
+
+#: KDUMP_FLOW_NOT_DETECTED_ON_VDS
+msgid "Kdump flow is not in progress on host ${VdsName}."
+msgstr ""
+
+#: KDUMP_FLOW_FINISHED_ON_VDS
+msgid "Kdump flow finished on host ${VdsName}."
+msgstr ""
+
+#: KDUMP_DETECTION_NOT_CONFIGURED_ON_VDS
+msgid ""
+"Kdump integration is enabled for host ${VdsName}, but kdump is not "
+"configured properly on host."
+msgstr ""
+
+#: MAC_POOL_ADD_SUCCESS
+msgid ""
+"MAC Pool '${MacPoolName}' (id=${MacPoolId}) was created. (User: ${UserName})"
+msgstr ""
+
+#: MAC_POOL_ADD_FAILED
+msgid "Failed to create MAC Pool '${MacPoolName}'. (User: ${UserName})"
+msgstr ""
+
+#: MAC_POOL_EDIT_SUCCESS
+msgid ""
+"MAC Pool '${MacPoolName}' (id=${MacPoolId}) was changed. (User: ${UserName})"
+msgstr ""
+
+#: MAC_POOL_EDIT_FAILED
+msgid ""
+"Failed to update MAC Pool '${MacPoolName}' (id=${MacPoolId}). (User: "
+"${UserName})"
+msgstr ""
+
+#: MAC_POOL_REMOVE_SUCCESS
+msgid ""
+"MAC Pool '${MacPoolName}' (id=${MacPoolId}) was removed. (User: ${UserName})"
+msgstr ""
+
+#: MAC_POOL_REMOVE_FAILED
+msgid ""
+"Failed to remove MAC Pool '${MacPoolName}' (id=${MacPoolId}). (User: "
+"${UserName})"
+msgstr ""
+
+#: DWH_STOPPED
+msgid "ETL Service stopped."
+msgstr ""
+
+#: DWH_STARTED
+msgid "ETL Service started."
+msgstr ""
+
+#: DWH_ERROR
+msgid "Error in ETL Service."
+msgstr ""
+
+#: USER_REMOVE_AUDIT_LOG
+msgid "Event list message ${AuditLogId} was removed by User ${UserName}."
+msgstr ""
+
+#: USER_REMOVE_AUDIT_LOG_FAILED
+msgid "User ${UserName} failed to remove event list message  ${AuditLogId}."
+msgstr ""
+
+#: VM_FAILED_TO_PRESTART_IN_POOL
+msgid ""
+"Cannot pre-start VM in pool '${VmPoolName}'. The system will continue "
+"trying."
+msgstr ""
+
+#: USER_ADDED_DISK_PROFILE
+msgid "Disk Profile ${ProfileName} was successfully added (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_ADD_DISK_PROFILE
+msgid "Failed to add Disk Profile (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVED_DISK_PROFILE
+msgid ""
+"Disk Profile ${ProfileName} was successfully removed (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_DISK_PROFILE
+msgid "Failed to remove Disk Profile ${ProfileName} (User: ${UserName})."
+msgstr ""
+
+#: USER_UPDATED_DISK_PROFILE
+msgid ""
+"Disk Profile ${ProfileName} was successfully updated (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_DISK_PROFILE
+msgid "Failed to update Disk Profile ${ProfileName} (User: ${UserName})."
+msgstr ""
+
+#: USER_ADDED_CPU_PROFILE
+msgid "CPU Profile ${ProfileName} was successfully added (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_ADD_CPU_PROFILE
+msgid "Failed to add CPU Profile (User: ${UserName})."
+msgstr ""
+
+#: USER_REMOVED_CPU_PROFILE
+msgid ""
+"CPU Profile ${ProfileName} was successfully removed (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_CPU_PROFILE
+msgid "Failed to remove CPU Profile ${ProfileName} (User: ${UserName})."
+msgstr ""
+
+#: USER_UPDATED_CPU_PROFILE
+msgid ""
+"CPU Profile ${ProfileName} was successfully updated (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_CPU_PROFILE
+msgid "Failed to update CPU Profile ${ProfileName} (User: ${UserName})."
+msgstr ""
+
+#: IMPORTEXPORT_NO_PROXY_HOST_AVAILABLE_IN_DC
+msgid ""
+"No Host in Data Center '${StoragePoolName}' can serve as a proxy to retrieve "
+"remote VMs information (User: ${UserName})."
+msgstr ""
+
+#: IMPORTEXPORT_HOST_CANNOT_SERVE_AS_PROXY
+msgid ""
+"Host ${VdsName} cannot be used as a proxy to retrieve remote VMs information "
+"since it is not up (User: ${UserName})."
+msgstr ""
+
+#: CINDER_PROVIDER_ERROR
+msgid "An error occurred on Cinder provider: '${CinderException}'"
+msgstr ""
+
+#: CINDER_DISK_CONNECTION_FAILURE
+msgid ""
+"Failed to retrieve connection information for Cinder Disk '${DiskAlias}'."
+msgstr ""
+
+#: CINDER_DISK_CONNECTION_VOLUME_DRIVER_UNSUPPORTED
+msgid "Unsupported volume driver for Cinder Disk '${DiskAlias}'."
+msgstr ""
+
+#: USER_FINISHED_FAILED_REMOVE_CINDER_DISK
+msgid ""
+"Failed to remove disk ${DiskAlias} from storage domain ${StorageDomainName}. "
+"The following entity id could not be deleted from the Cinder provider "
+"'${imageId}'. (User: ${UserName})."
+msgstr ""
+
+#: USER_ADDED_LIBVIRT_SECRET
+msgid "Authentication Key ${LibvirtSecretUUID} was added. (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_ADD_LIBVIRT_SECRET
+msgid ""
+"Failed to add Authentication Key ${LibvirtSecretUUID}. (User: ${UserName})."
+msgstr ""
+
+#: USER_UPDATE_LIBVIRT_SECRET
+msgid ""
+"Authentication Key ${LibvirtSecretUUID} was updated. (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_UPDATE_LIBVIRT_SECRET
+msgid ""
+"Failed to update Authentication Key ${LibvirtSecretUUID}. (User: "
+"${UserName})."
+msgstr ""
+
+#: USER_REMOVED_LIBVIRT_SECRET
+msgid ""
+"Authentication Key ${LibvirtSecretUUID} was removed. (User: ${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_REMOVE_LIBVIRT_SECRET
+msgid ""
+"Failed to remove Authentication Key ${LibvirtSecretUUID}. (User: "
+"${UserName})."
+msgstr ""
+
+#: FAILED_TO_REGISTER_LIBVIRT_SECRET
+msgid ""
+"Failed to register Authentication Keys for storage domain "
+"${StorageDomainName} on host ${VdsName}."
+msgstr ""
+
+#: FAILED_TO_UNREGISTER_LIBVIRT_SECRET
+msgid ""
+"Failed to unregister Authentication Keys for storage domain "
+"${StorageDomainName} on host ${VdsName}."
+msgstr ""
+
+#: FAILED_TO_REGISTER_LIBVIRT_SECRET_ON_VDS
+msgid "Failed to register Authentication Keys on host ${VdsName}."
+msgstr ""
+
+#: NO_LIBRBD_PACKAGE_AVAILABLE_ON_VDS
+msgid ""
+"Librbd1 package is not available on host ${VdsName}, which is mandatory for "
+"using Cinder storage domains."
+msgstr ""
+
+#: VDS_CANNOT_CONNECT_TO_GLUSTERFS
+msgid ""
+"Host ${VdsName} cannot connect to Glusterfs. Verify that glusterfs-cli "
+"package is installed on the host."
+msgstr ""
+
+#: VM_ADD_HOST_DEVICES
+msgid ""
+"Host devices ${NamesAdded} were attached to Vm ${VmName} by User "
+"${UserName}."
+msgstr ""
+
+#: VM_REMOVE_HOST_DEVICES
+msgid ""
+"Host devices ${NamesRemoved} were detached from Vm ${VmName} by User "
+"${UserName}."
+msgstr ""
+
+#: HOST_AVAILABLE_UPDATES_FAILED
+msgid ""
+"Failed to check for available updates on host ${VdsName} with message "
+"'${Message}'."
+msgstr ""
+
+#: HOST_UPDATES_ARE_AVAILABLE
+msgid "Host ${VdsName} has available updates: ${Packages}."
+msgstr ""
+
+#: OVIRT_NODE_UPDATES_ARE_AVAILABLE
+msgid "Host ${VdsName} has available updates."
+msgstr ""
+
+#: HOST_UPGRADE_STARTED
+msgid "Host ${VdsName} upgrade was started (User: ${UserName})."
+msgstr ""
+
+#: HOST_UPGRADE_FAILED
+msgid "Failed to upgrade Host ${VdsName} (User: ${UserName})."
+msgstr ""
+
+#: HOST_UPGRADE_FINISHED
+msgid "Host ${VdsName} upgrade was completed successfully."
+msgstr ""
+
+#: HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE
+msgctxt "HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE"
+msgid ""
+"Host ${VdsName} certification is about to expire at ${ExpirationDate}. "
+"Please renew the host's certification."
+msgstr ""
+
+#: HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT
+msgctxt "HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT"
+msgid ""
+"Host ${VdsName} certification is about to expire at ${ExpirationDate}. "
+"Please renew the host's certification."
+msgstr ""
+
+#: ENGINE_CERTIFICATION_HAS_EXPIRED
+msgid ""
+"Engine's certification has expired at ${ExpirationDate}. Please renew the "
+"engine's certification."
+msgstr ""
+
+#: ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE
+msgctxt "ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE"
+msgid ""
+"Engine's certification is about to expire at ${ExpirationDate}. Please renew "
+"the engine's certification."
+msgstr ""
+
+#: ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT
+msgctxt "ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT"
+msgid ""
+"Engine's certification is about to expire at ${ExpirationDate}. Please renew "
+"the engine's certification."
+msgstr ""
+
+#: ENGINE_CA_CERTIFICATION_HAS_EXPIRED
+msgid "Engine's CA certification has expired at ${ExpirationDate}."
+msgstr ""
+
+#: ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE
+msgctxt "ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE"
+msgid "Engine's CA certification is about to expire at ${ExpirationDate}."
+msgstr ""
+
+#: ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT
+msgctxt "ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT"
+msgid "Engine's CA certification is about to expire at ${ExpirationDate}."
+msgstr ""
+
+#: HOST_CERTIFICATION_IS_INVALID
+msgid ""
+"Host ${VdsName} certification is invalid. The certification has no peer "
+"certificates."
+msgstr ""
+
+#: HOST_CERTIFICATION_ENROLLMENT_STARTED
+msgid ""
+"Enrolling certificate for host ${VdsName} was started (User: ${UserName})."
+msgstr ""
+
+#: HOST_CERTIFICATION_ENROLLMENT_FINISHED
+msgid ""
+"Enrolling certificate for host ${VdsName} was completed successfully (User: "
+"${UserName})."
+msgstr ""
+
+#: HOST_CERTIFICATION_ENROLLMENT_FAILED
+msgid "Failed to enroll certificate for host ${VdsName} (User: ${UserName})."
+msgstr ""
+
+#: VDS_BROKER_COMMAND_FAILURE
+msgid "VDSM ${VdsName} command failed: ${message}"
+msgstr ""
+
+#: IRS_BROKER_COMMAND_FAILURE
+msgid "VDSM command failed: ${message}"
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_UP_REPORTING_HOSTS
+msgid ""
+"Data Center ${StoragePoolName} status was changed to UP as some of its hosts "
+"are in status UP."
+msgstr ""
+
+#: SYSTEM_CHANGE_STORAGE_POOL_STATUS_NON_RESPONSIVE_NO_REPORTING_HOSTS
+msgid ""
+"Data Center ${StoragePoolName} status was changed to Non Responsive as none "
+"of its hosts are in status UP."
+msgstr ""
+
+#: AFFINITY_RULES_ENFORCEMENT_MANAGER_START
+msgid "Affinity Rules Enforcement Manager started."
+msgstr ""
+
+#: FAILED_TO_FREEZE_VM
+msgid ""
+"Failed to freeze guest filesystems on VM ${VmName}. Note that using the "
+"created snapshot might cause data inconsistency."
+msgstr ""
+
+#: FAILED_TO_THAW_VM
+msgid ""
+"Failed to thaw guest filesystems on VM ${VmName}. The filesystems might be "
+"unresponsive until the VM is restarted."
+msgstr ""
+
+#: FREEZE_VM_INITIATED
+msgid "Freeze of guest filesystems on VM ${VmName} was initiated."
+msgstr ""
+
+#: FREEZE_VM_SUCCESS
+msgid "Guest filesystems on VM ${VmName} have been frozen successfully."
+msgstr ""
+
+#: THAW_VM_SUCCESS
+msgid "Guest filesystems on VM ${VmName} have been thawed successfully."
+msgstr ""
+
+#: USER_FAILED_TO_FREEZE_VM
+msgid ""
+"Failed to freeze guest filesystems on ${VmName} (Host: ${VdsName}, User: "
+"${UserName})."
+msgstr ""
+
+#: USER_FAILED_TO_THAW_VM
+msgid ""
+"Failed to thaw guest filesystems on ${VmName} (Host: ${VdsName}, User: "
+"${UserName})."
+msgstr ""
+
+#: HOST_PROTOCOL_INCOMPATIBLE_WITH_CLUSTER
+msgid ""
+"Host ${VdsName} uses not compatible protocol during activation (xmlrpc "
+"instead of jsonrpc). Please examine installation logs and VDSM logs for "
+"failures and reinstall the host."
+msgstr ""
+

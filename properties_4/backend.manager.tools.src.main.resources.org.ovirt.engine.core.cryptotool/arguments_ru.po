@@ -1,0 +1,569 @@
+#. extracted from arguments.properties
+# jdronova <juliette.tux@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-01 10:41+0300\n"
+"PO-Revision-Date: 2016-11-01 11:04+0300\n"
+"Last-Translator: jdronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: core.help.usage
+msgid "@PROGRAM_NAME@ [options] action [options]"
+msgstr ""
+
+#: core.help.header
+msgid "Password Tool."
+msgstr ""
+
+#: core.help.footer
+msgid ""
+"Available actions:\n"
+"  enc-decode - encryption decode.\n"
+"  enc-encode - encryption encode.\n"
+"  pbe-check  - password based encryption check.\n"
+"  pbe-encode - password based encryption encode."
+msgstr ""
+
+#: core.arg.help.name
+msgctxt "core.arg.help.name"
+msgid "help"
+msgstr ""
+
+#: core.arg.help.help
+msgctxt "core.arg.help.help"
+msgid "Show help."
+msgstr ""
+
+#: core.arg.help.valuetype
+msgctxt "core.arg.help.valuetype"
+msgid "java.lang.Boolean"
+msgstr ""
+
+#: core.arg.help.value
+msgctxt "core.arg.help.value"
+msgid "true"
+msgstr ""
+
+#: core.arg.help.default
+msgctxt "core.arg.help.default"
+msgid "false"
+msgstr ""
+
+#: core.arg.version.name
+msgid "version"
+msgstr ""
+
+#: core.arg.version.help
+msgid "Show version."
+msgstr ""
+
+#: core.arg.version.valuetype
+msgctxt "core.arg.version.valuetype"
+msgid "java.lang.Boolean"
+msgstr ""
+
+#: core.arg.version.value
+msgctxt "core.arg.version.value"
+msgid "true"
+msgstr ""
+
+#: core.arg.version.default
+msgctxt "core.arg.version.default"
+msgid "false"
+msgstr ""
+
+#: enc-decode.help.usage
+msgid "@PROGRAM_NAME@ enc-decode [options]"
+msgstr ""
+
+#: enc-decode.help.header
+msgid "Encryption decode."
+msgstr ""
+
+#: enc-decode.arg.help.name
+msgctxt "enc-decode.arg.help.name"
+msgid "help"
+msgstr ""
+
+#: enc-decode.arg.help.help
+msgctxt "enc-decode.arg.help.help"
+msgid "Show help."
+msgstr ""
+
+#: enc-decode.arg.help.valuetype
+msgctxt "enc-decode.arg.help.valuetype"
+msgid "java.lang.Boolean"
+msgstr ""
+
+#: enc-decode.arg.help.value
+msgctxt "enc-decode.arg.help.value"
+msgid "true"
+msgstr ""
+
+#: enc-decode.arg.help.default
+msgctxt "enc-decode.arg.help.default"
+msgid "false"
+msgstr ""
+
+#: enc-decode.arg.keystore.name
+msgid "keystore"
+msgstr ""
+
+#: enc-decode.arg.keystore.type
+msgctxt "enc-decode.arg.keystore.type"
+msgid "required_argument"
+msgstr ""
+
+#: enc-decode.arg.keystore.mandatory
+msgctxt "enc-decode.arg.keystore.mandatory"
+msgid "true"
+msgstr ""
+
+#: enc-decode.arg.keystore.metavar
+msgctxt "enc-decode.arg.keystore.metavar"
+msgid "FILE"
+msgstr ""
+
+#: enc-decode.arg.keystore.help
+msgid "Keystore"
+msgstr ""
+
+#: enc-decode.arg.keystore-type.name
+msgid "keystore-type"
+msgstr ""
+
+#: enc-decode.arg.keystore-type.type
+msgctxt "enc-decode.arg.keystore-type.type"
+msgid "required_argument"
+msgstr ""
+
+#: enc-decode.arg.keystore-type.default
+msgid "JKS"
+msgstr ""
+
+#: enc-decode.arg.keystore-type.help
+msgid "Keystore type, default: @CLI_PRM_DEFAULT@"
+msgstr ""
+
+#: enc-decode.arg.keystore-alias.name
+msgid "keystore-alias"
+msgstr ""
+
+#: enc-decode.arg.keystore-alias.alias
+msgctxt "enc-decode.arg.keystore-alias.alias"
+msgid "required_argument"
+msgstr ""
+
+#: enc-decode.arg.keystore-alias.mandatory
+msgctxt "enc-decode.arg.keystore-alias.mandatory"
+msgid "true"
+msgstr ""
+
+#: enc-decode.arg.keystore-alias.help
+msgid "Keystore alias"
+msgstr ""
+
+#: enc-decode.arg.keystore-password.name
+msgid "keystore-password"
+msgstr ""
+
+#: enc-decode.arg.keystore-password.password
+msgctxt "enc-decode.arg.keystore-password.password"
+msgid "required_argument"
+msgstr ""
+
+#: enc-decode.arg.keystore-password.default
+msgctxt "enc-decode.arg.keystore-password.default"
+msgid "interactive:"
+msgstr ""
+
+#: enc-decode.arg.keystore-password.help
+msgctxt "enc-decode.arg.keystore-password.help"
+msgid ""
+"Password can be specified in one of the following format:\n"
+"  interactive: - query password interactively [default].\n"
+"  pass:STRING - provide a password as STRING.\n"
+"  env:KEY - provide a password using environment KEY.\n"
+"  file:FILE - provide a password as 1st line of FILE."
+msgstr ""
+
+#: enc-decode.arg.key-password.name
+msgid "key-password"
+msgstr ""
+
+#: enc-decode.arg.key-password.password
+msgctxt "enc-decode.arg.key-password.password"
+msgid "required_argument"
+msgstr ""
+
+#: enc-decode.arg.key-password.help
+msgctxt "enc-decode.arg.key-password.help"
+msgid ""
+"Password can be specified in one of the following format:\n"
+"  interactive: - query password interactively [default].\n"
+"  pass:STRING - provide a password as STRING.\n"
+"  env:KEY - provide a password using environment KEY.\n"
+"  file:FILE - provide a password as 1st line of FILE."
+msgstr ""
+
+#: enc-encode.help.usage
+msgid "@PROGRAM_NAME@ enc-encode [options]"
+msgstr ""
+
+#: enc-encode.help.header
+msgid "Encryption encode."
+msgstr ""
+
+#: enc-encode.arg.help.name
+msgctxt "enc-encode.arg.help.name"
+msgid "help"
+msgstr ""
+
+#: enc-encode.arg.help.help
+msgctxt "enc-encode.arg.help.help"
+msgid "Show help."
+msgstr ""
+
+#: enc-encode.arg.help.valuetype
+msgctxt "enc-encode.arg.help.valuetype"
+msgid "java.lang.Boolean"
+msgstr ""
+
+#: enc-encode.arg.help.value
+msgctxt "enc-encode.arg.help.value"
+msgid "true"
+msgstr ""
+
+#: enc-encode.arg.help.default
+msgctxt "enc-encode.arg.help.default"
+msgid "false"
+msgstr ""
+
+#: enc-encode.arg.algorithm.name
+msgctxt "enc-encode.arg.algorithm.name"
+msgid "algorithm"
+msgstr ""
+
+#: enc-encode.arg.algorithm.type
+msgctxt "enc-encode.arg.algorithm.type"
+msgid "required_argument"
+msgstr ""
+
+#: enc-encode.arg.algorithm.default
+msgid "AES/OFB/PKCS5Padding"
+msgstr ""
+
+#: enc-encode.arg.algorithm.metavar
+msgctxt "enc-encode.arg.algorithm.metavar"
+msgid "ALGORITHM"
+msgstr ""
+
+#: enc-encode.arg.algorithm.help
+msgid "Cipher algorithm, default: @CLI_PRM_DEFAULT@"
+msgstr ""
+
+#: enc-encode.arg.key-size.name
+msgctxt "enc-encode.arg.key-size.name"
+msgid "key-size"
+msgstr ""
+
+#: enc-encode.arg.key-size.type
+msgctxt "enc-encode.arg.key-size.type"
+msgid "required_argument"
+msgstr ""
+
+#: enc-encode.arg.key-size.valuetype
+msgctxt "enc-encode.arg.key-size.valuetype"
+msgid "java.lang.Integer"
+msgstr ""
+
+#: enc-encode.arg.key-size.default
+msgctxt "enc-encode.arg.key-size.default"
+msgid "256"
+msgstr ""
+
+#: enc-encode.arg.key-size.metavar
+msgctxt "enc-encode.arg.key-size.metavar"
+msgid "NUMBER"
+msgstr ""
+
+#: enc-encode.arg.key-size.help
+msgid "Cipher key size, default: @CLI_PRM_DEFAULT@"
+msgstr ""
+
+#: enc-encode.arg.block-size.name
+msgid "block-size"
+msgstr ""
+
+#: enc-encode.arg.block-size.type
+msgctxt "enc-encode.arg.block-size.type"
+msgid "required_argument"
+msgstr ""
+
+#: enc-encode.arg.block-size.valuetype
+msgctxt "enc-encode.arg.block-size.valuetype"
+msgid "java.lang.Integer"
+msgstr ""
+
+#: enc-encode.arg.block-size.default
+msgid "100"
+msgstr ""
+
+#: enc-encode.arg.block-size.metavar
+msgctxt "enc-encode.arg.block-size.metavar"
+msgid "NUMBER"
+msgstr ""
+
+#: enc-encode.arg.block-size.help
+msgid "Block size, default: @CLI_PRM_DEFAULT@"
+msgstr ""
+
+#: enc-encode.arg.certificate.name
+msgid "certificate"
+msgstr ""
+
+#: enc-encode.arg.certificate.type
+msgctxt "enc-encode.arg.certificate.type"
+msgid "required_argument"
+msgstr ""
+
+#: enc-encode.arg.certificate.mandatory
+msgctxt "enc-encode.arg.certificate.mandatory"
+msgid "true"
+msgstr ""
+
+#: enc-encode.arg.certificate.metavar
+msgctxt "enc-encode.arg.certificate.metavar"
+msgid "FILE"
+msgstr ""
+
+#: enc-encode.arg.certificate.help
+msgid "Certificate to encryp to"
+msgstr ""
+
+#: pbe-check.help.usage
+msgid "@PROGRAM_NAME@ pbe-check [options]"
+msgstr ""
+
+#: pbe-check.help.header
+msgid "Password based encryption check."
+msgstr ""
+
+#: pbe-check.arg.help.name
+msgctxt "pbe-check.arg.help.name"
+msgid "help"
+msgstr ""
+
+#: pbe-check.arg.help.help
+msgctxt "pbe-check.arg.help.help"
+msgid "Show help."
+msgstr ""
+
+#: pbe-check.arg.help.valuetype
+msgctxt "pbe-check.arg.help.valuetype"
+msgid "java.lang.Boolean"
+msgstr ""
+
+#: pbe-check.arg.help.value
+msgctxt "pbe-check.arg.help.value"
+msgid "true"
+msgstr ""
+
+#: pbe-check.arg.help.default
+msgctxt "pbe-check.arg.help.default"
+msgid "false"
+msgstr ""
+
+#: pbe-check.arg.password.name
+msgctxt "pbe-check.arg.password.name"
+msgid "password"
+msgstr ""
+
+#: pbe-check.arg.password.type
+msgctxt "pbe-check.arg.password.type"
+msgid "required_argument"
+msgstr ""
+
+#: pbe-check.arg.password.default
+msgctxt "pbe-check.arg.password.default"
+msgid "interactive:"
+msgstr ""
+
+#: pbe-check.arg.password.metavar
+msgctxt "pbe-check.arg.password.metavar"
+msgid "PASSWORD"
+msgstr ""
+
+#: pbe-check.arg.password.matcher
+msgctxt "pbe-check.arg.password.matcher"
+msgid "(interactive:|pass:.*|env:.*|file:.*)"
+msgstr ""
+
+#: pbe-check.arg.password.help
+msgctxt "pbe-check.arg.password.help"
+msgid ""
+"Password can be specified in one of the following format:\n"
+"  interactive: - query password interactively [default].\n"
+"  pass:STRING - provide a password as STRING.\n"
+"  env:KEY - provide a password using environment KEY.\n"
+"  file:FILE - provide a password as 1st line of FILE."
+msgstr ""
+
+#: pbe-encode.help.usage
+msgid "@PROGRAM_NAME@ pbe-encode [options]"
+msgstr ""
+
+#: pbe-encode.help.header
+msgid "Password based encryption encode."
+msgstr ""
+
+#: pbe-encode.arg.help.name
+msgctxt "pbe-encode.arg.help.name"
+msgid "help"
+msgstr ""
+
+#: pbe-encode.arg.help.help
+msgctxt "pbe-encode.arg.help.help"
+msgid "Show help."
+msgstr ""
+
+#: pbe-encode.arg.help.valuetype
+msgctxt "pbe-encode.arg.help.valuetype"
+msgid "java.lang.Boolean"
+msgstr ""
+
+#: pbe-encode.arg.help.value
+msgctxt "pbe-encode.arg.help.value"
+msgid "true"
+msgstr ""
+
+#: pbe-encode.arg.help.default
+msgctxt "pbe-encode.arg.help.default"
+msgid "false"
+msgstr ""
+
+#: pbe-encode.arg.password.name
+msgctxt "pbe-encode.arg.password.name"
+msgid "password"
+msgstr ""
+
+#: pbe-encode.arg.password.type
+msgctxt "pbe-encode.arg.password.type"
+msgid "required_argument"
+msgstr ""
+
+#: pbe-encode.arg.password.default
+msgctxt "pbe-encode.arg.password.default"
+msgid "interactive:"
+msgstr ""
+
+#: pbe-encode.arg.password.metavar
+msgctxt "pbe-encode.arg.password.metavar"
+msgid "PASSWORD"
+msgstr ""
+
+#: pbe-encode.arg.password.matcher
+msgctxt "pbe-encode.arg.password.matcher"
+msgid "(interactive:|pass:.*|env:.*|file:.*)"
+msgstr ""
+
+#: pbe-encode.arg.password.help
+msgctxt "pbe-encode.arg.password.help"
+msgid ""
+"Password can be specified in one of the following format:\n"
+"  interactive: - query password interactively [default].\n"
+"  pass:STRING - provide a password as STRING.\n"
+"  env:KEY - provide a password using environment KEY.\n"
+"  file:FILE - provide a password as 1st line of FILE."
+msgstr ""
+
+#: pbe-encode.arg.algorithm.name
+msgctxt "pbe-encode.arg.algorithm.name"
+msgid "algorithm"
+msgstr ""
+
+#: pbe-encode.arg.algorithm.type
+msgctxt "pbe-encode.arg.algorithm.type"
+msgid "required_argument"
+msgstr ""
+
+#: pbe-encode.arg.algorithm.default
+msgid "PBKDF2WithHmacSHA1"
+msgstr ""
+
+#: pbe-encode.arg.algorithm.metavar
+msgctxt "pbe-encode.arg.algorithm.metavar"
+msgid "ALGORITHM"
+msgstr ""
+
+#: pbe-encode.arg.algorithm.help
+msgid "PBE algorithm, default: @CLI_PRM_DEFAULT@"
+msgstr ""
+
+#: pbe-encode.arg.key-size.name
+msgctxt "pbe-encode.arg.key-size.name"
+msgid "key-size"
+msgstr ""
+
+#: pbe-encode.arg.key-size.type
+msgctxt "pbe-encode.arg.key-size.type"
+msgid "required_argument"
+msgstr ""
+
+#: pbe-encode.arg.key-size.valuetype
+msgctxt "pbe-encode.arg.key-size.valuetype"
+msgid "java.lang.Integer"
+msgstr ""
+
+#: pbe-encode.arg.key-size.default
+msgctxt "pbe-encode.arg.key-size.default"
+msgid "256"
+msgstr ""
+
+#: pbe-encode.arg.key-size.metavar
+msgctxt "pbe-encode.arg.key-size.metavar"
+msgid "NUMBER"
+msgstr ""
+
+#: pbe-encode.arg.key-size.help
+msgid "Key size, default: @CLI_PRM_DEFAULT@"
+msgstr ""
+
+#: pbe-encode.arg.iterations.name
+msgid "iterations"
+msgstr ""
+
+#: pbe-encode.arg.iterations.type
+msgctxt "pbe-encode.arg.iterations.type"
+msgid "required_argument"
+msgstr ""
+
+#: pbe-encode.arg.iterations.valuetype
+msgctxt "pbe-encode.arg.iterations.valuetype"
+msgid "java.lang.Integer"
+msgstr ""
+
+#: pbe-encode.arg.iterations.default
+msgid "4000"
+msgstr ""
+
+#: pbe-encode.arg.iterations.metavar
+msgctxt "pbe-encode.arg.iterations.metavar"
+msgid "NUMBER"
+msgstr ""
+
+#: pbe-encode.arg.iterations.help
+msgid "Number of iterations, default: @CLI_PRM_DEFAULT@"
+msgstr ""
+

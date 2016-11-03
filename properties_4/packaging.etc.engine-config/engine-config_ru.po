@@ -1,0 +1,2198 @@
+#. extracted from engine-config.properties
+# jdronova <juliette.tux@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-01 10:57+0300\n"
+"PO-Revision-Date: 2016-11-01 11:23+0300\n"
+"Last-Translator: jdronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. #
+#. # engine-config tool properties file.
+#. # Please do not edit without proper guidance.
+#. #
+#: AffinityRulesEnforcementManagerEnabled.type
+msgctxt "AffinityRulesEnforcementManagerEnabled.type"
+msgid "Boolean"
+msgstr ""
+
+#: AffinityRulesEnforcementManagerEnabled.description
+msgid "\"Enable/Disable Affinity Rules Enforcement Manager\""
+msgstr ""
+
+#: AffinityRulesEnforcementManagerRegularInterval.type
+msgctxt "AffinityRulesEnforcementManagerRegularInterval.type"
+msgid "Integer"
+msgstr ""
+
+#: AffinityRulesEnforcementManagerRegularInterval.description
+msgid "\"Affinity Rules Enforcement Manager interval in minutes.\""
+msgstr ""
+
+#: AsyncTaskPollingRate.description
+msgid "\"Async Task Polling Rate (in seconds)\""
+msgstr ""
+
+#: AsyncTaskPollingRate.type
+msgctxt "AsyncTaskPollingRate.type"
+msgid "Integer"
+msgstr ""
+
+#: AsyncTaskZombieTaskLifeInMinutes.description
+msgid "\"Zombie tasks life-time in minutes\""
+msgstr ""
+
+#: AsyncTaskZombieTaskLifeInMinutes.type
+msgctxt "AsyncTaskZombieTaskLifeInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: AuditLogAgingThreshold.description
+msgid "\"Audit Log Aging Threshold (in days)\""
+msgstr ""
+
+#: AuditLogAgingThreshold.type
+msgctxt "AuditLogAgingThreshold.type"
+msgid "Integer"
+msgstr ""
+
+#: AuditLogCleanupTime.description
+msgid "\"Audit Log Cleanup Time\""
+msgstr ""
+
+#: BlockMigrationOnSwapUsagePercentage.description
+msgid "\"Host swap percentage threshold (for scheduling)\""
+msgstr ""
+
+#: BlockMigrationOnSwapUsagePercentage.type
+msgctxt "BlockMigrationOnSwapUsagePercentage.type"
+msgid "Integer"
+msgstr ""
+
+#: BootstrapMinimalVdsmVersion.description
+msgid "\"Minimum VDSM version\""
+msgstr ""
+
+#: BootstrapMinimalVdsmVersion.type
+msgctxt "BootstrapMinimalVdsmVersion.type"
+msgid "String"
+msgstr ""
+
+#: CpuOverCommitDurationMinutes.description
+msgid ""
+"\"The duration in minutes of CPU consumption to activate selection algorithm\""
+msgstr ""
+
+#: CpuOverCommitDurationMinutes.type
+msgctxt "CpuOverCommitDurationMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: DisableFenceAtStartupInSec.description
+msgid "\"Disable Fence Operations At oVirt Startup In Seconds\""
+msgstr ""
+
+#: DisableFenceAtStartupInSec.type
+msgctxt "DisableFenceAtStartupInSec.type"
+msgid "Integer"
+msgstr ""
+
+#: PopulateDirectLUNDiskDescriptionWithLUNId.description
+msgid ""
+"\"When creating direct LUN disk the number of characters from LUN id to "
+"populate the description with (-1 = the full id, 0 = none, >0 = number of "
+"characters)\""
+msgstr ""
+
+#: PopulateDirectLUNDiskDescriptionWithLUNId.type
+msgctxt "PopulateDirectLUNDiskDescriptionWithLUNId.type"
+msgid "Integer"
+msgstr ""
+
+#: ClusterEmulatedMachines.description
+msgid "\"Supported machine types\""
+msgstr ""
+
+#: WANDisableEffects.description
+msgid "\"Disabled WAN Effects value to send to the SPICE console\""
+msgstr ""
+
+#: WANDisableEffects.validValues
+msgid "animation,wallpaper,font-smooth,all"
+msgstr ""
+
+#: WANDisableEffects.type
+msgctxt "WANDisableEffects.type"
+msgid "StringMultiple"
+msgstr ""
+
+#: WANColorDepth.description
+msgid "\"WAN Color Depth value to send to the SPICE console\""
+msgstr ""
+
+#: WANColorDepth.validValues
+msgid "16,32"
+msgstr ""
+
+#: WANColorDepth.type
+msgctxt "WANColorDepth.type"
+msgid "Integer"
+msgstr ""
+
+#: EnableSpiceRootCertificateValidation.description
+msgid "\"Enable Spice Root Certification Validation\""
+msgstr ""
+
+#: EnableSpiceRootCertificateValidation.validValues
+msgctxt "EnableSpiceRootCertificateValidation.validValues"
+msgid "true,false"
+msgstr ""
+
+#: EnableUSBAsDefault.description
+msgid "\"Enable USB devices attachment to the VM by default\""
+msgstr ""
+
+#: EnableUSBAsDefault.validValues
+msgctxt "EnableUSBAsDefault.validValues"
+msgid "true,false"
+msgstr ""
+
+#: EnableVdsLoadBalancing.description
+msgid "\"Enables Host Load Balancing system.\""
+msgstr ""
+
+#: EnableVdsLoadBalancing.validValues
+msgctxt "EnableVdsLoadBalancing.validValues"
+msgid "true,false"
+msgstr ""
+
+#: EncryptHostCommunication.description
+msgid "\"Determine whether to use secure communication with hosts\""
+msgstr ""
+
+#: EncryptHostCommunication.type
+msgctxt "EncryptHostCommunication.type"
+msgid "Boolean"
+msgstr ""
+
+#: VdsmSSLProtocol.description
+msgid "\"Determines protocol used by vdsm\""
+msgstr ""
+
+#: VdsmSSLProtocol.type
+msgctxt "VdsmSSLProtocol.type"
+msgid "String"
+msgstr ""
+
+#: ExternalCommunicationProtocol.description
+msgid ""
+"\"Determines SSL protocol used by external communication (external providers "
+"and attestation service)\""
+msgstr ""
+
+#: ExternalCommunicationProtocol.type
+msgctxt "ExternalCommunicationProtocol.type"
+msgid "String"
+msgstr ""
+
+#: CriticalSpaceActionBlocker.description
+msgid "\"Default critical disk space alert threshold (in GB)\""
+msgstr ""
+
+#: CriticalSpaceActionBlocker.type
+msgctxt "CriticalSpaceActionBlocker.type"
+msgid "Integer"
+msgstr ""
+
+#: CriticalSpaceActionBlocker.validValues
+msgctxt "CriticalSpaceActionBlocker.validValues"
+msgid "0..2147483647"
+msgstr ""
+
+#: WarningLowSpaceIndicator.description
+msgid ""
+"\"Default limit of % free disk-space, below which it is considered low\""
+msgstr ""
+
+#: WarningLowSpaceIndicator.type
+msgctxt "WarningLowSpaceIndicator.type"
+msgid "Integer"
+msgstr ""
+
+#: WarningLowSpaceIndicator.validValues
+msgctxt "WarningLowSpaceIndicator.validValues"
+msgid "0..100"
+msgstr ""
+
+#: HighUtilizationForEvenlyDistribute.description
+msgid "\"High Utilization Limit For Evenly Distribute selection algorithm\""
+msgstr ""
+
+#: HighUtilizationForEvenlyDistribute.type
+msgctxt "HighUtilizationForEvenlyDistribute.type"
+msgid "Integer"
+msgstr ""
+
+#: HighUtilizationForPowerSave.description
+msgid "\"High Utilization Limit For Power Save selection algorithm\""
+msgstr ""
+
+#: HighUtilizationForPowerSave.type
+msgctxt "HighUtilizationForPowerSave.type"
+msgid "Integer"
+msgstr ""
+
+#: LogPhysicalMemoryThresholdInMB.description
+msgid "\"Threshold for logging low host memory in MB\""
+msgstr ""
+
+#: LogPhysicalMemoryThresholdInMB.type
+msgctxt "LogPhysicalMemoryThresholdInMB.type"
+msgid "Integer"
+msgstr ""
+
+#: LowUtilizationForEvenlyDistribute.description
+msgid "\"Low Utilization Limit For Evenly Distribute selection algorithm\""
+msgstr ""
+
+#: LowUtilizationForEvenlyDistribute.type
+msgctxt "LowUtilizationForEvenlyDistribute.type"
+msgid "Integer"
+msgstr ""
+
+#: LowUtilizationForPowerSave.description
+msgid "\"Low Utilization Limit For Power Save selection algorithm\""
+msgstr ""
+
+#: LowUtilizationForPowerSave.type
+msgctxt "LowUtilizationForPowerSave.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxNumberOfHostsInStoragePool.description
+msgid "\"Max number of hosts in Storage Pool\""
+msgstr ""
+
+#: MaxNumberOfHostsInStoragePool.type
+msgctxt "MaxNumberOfHostsInStoragePool.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxNumOfCpuPerSocket.description
+msgid "\"Max Number of CPU per socket\""
+msgstr ""
+
+#: MaxNumOfCpuPerSocket.type
+msgctxt "MaxNumOfCpuPerSocket.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxNumOfThreadsPerCpu.description
+msgid "\"Max Number of threads per CPU\""
+msgstr ""
+
+#: MaxNumOfThreadsPerCpu.type
+msgctxt "MaxNumOfThreadsPerCpu.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxNumOfThreadsPerCpu.validValues
+msgid "1..8"
+msgstr ""
+
+#: MaxNumOfVmCpus.description
+msgid "\"Total Numbers of Virtual Machine CPUs\""
+msgstr ""
+
+#: MaxNumOfVmCpus.type
+msgctxt "MaxNumOfVmCpus.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxNumOfVmSockets.description
+msgid "\"Max Number of Socket per Virtual Machine\""
+msgstr ""
+
+#: MaxNumOfVmSockets.type
+msgctxt "MaxNumOfVmSockets.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxRerunVmOnVdsCount.description
+msgid "\"Max Virtual Machine Rerun Attempts on a Host\""
+msgstr ""
+
+#: MaxRerunVmOnVdsCount.type
+msgctxt "MaxRerunVmOnVdsCount.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxSchedulerWeight.description
+msgid "\"Max weight score for a single scheduler weight module\""
+msgstr ""
+
+#: MaxSchedulerWeight.type
+msgctxt "MaxSchedulerWeight.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxStorageVdsDelayCheckSec.description
+msgid "\"Max delay for check of domain in seconds\""
+msgstr ""
+
+#: MaxStorageVdsDelayCheckSec.type
+msgctxt "MaxStorageVdsDelayCheckSec.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxStorageVdsTimeoutCheckSec.description
+msgid "\"Max timeout for last check of domain in seconds\""
+msgstr ""
+
+#: MaxStorageVdsTimeoutCheckSec.type
+msgctxt "MaxStorageVdsTimeoutCheckSec.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxVdsMemOverCommit.description
+msgid "\"Max Host Memory Over-Commit (%) for Virtual Desktops load\""
+msgstr ""
+
+#: MaxVdsMemOverCommitForServers.description
+msgid "\"Max Host Memory Over-Commit (%) for Virtual Servers load\""
+msgstr ""
+
+#: MaxVdsMemOverCommitForServers.type
+msgctxt "MaxVdsMemOverCommitForServers.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxVdsMemOverCommit.type
+msgctxt "MaxVdsMemOverCommit.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxVdsNameLength.description
+msgid "\"Max VDS name length\""
+msgstr ""
+
+#: MaxVdsNameLength.type
+msgctxt "MaxVdsNameLength.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxVmNameLength.description
+msgid "\"Max VM name length\""
+msgstr ""
+
+#: MaxVmNameLength.type
+msgctxt "MaxVmNameLength.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxVmNameLengthSysprep.description
+msgid "\"Max VM name length allowed in Sysprep\""
+msgstr ""
+
+#: MaxVmNameLengthSysprep.type
+msgctxt "MaxVmNameLengthSysprep.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxVmsInPool.description
+msgid "\"Max VMs In Pool\""
+msgstr ""
+
+#: MaxVmsInPool.type
+msgctxt "MaxVmsInPool.type"
+msgid "Integer"
+msgstr ""
+
+#: VmPoolMaxSubsequentFailures.description
+msgid "\"Maximum number of subsequent VM creation failures before giving up.\""
+msgstr ""
+
+#: VmPoolMaxSubsequentFailures.type
+msgctxt "VmPoolMaxSubsequentFailures.type"
+msgid "Integer"
+msgstr ""
+
+#: NumberOfFailedRunsOnVds.description
+msgid "\"Number of Failed Runs on Host\""
+msgstr ""
+
+#: NumberOfFailedRunsOnVds.type
+msgctxt "NumberOfFailedRunsOnVds.type"
+msgid "Integer"
+msgstr ""
+
+#: NumberVmRefreshesBeforeSave.description
+msgid "\"Number of Virtual Machine Data Refreshes Before Saving to Database\""
+msgstr ""
+
+#: NumberVmRefreshesBeforeSave.type
+msgctxt "NumberVmRefreshesBeforeSave.type"
+msgid "Integer"
+msgstr ""
+
+#: oVirtISOsRepositoryPath.description
+msgid "\"The oVirt Node installation files path\""
+msgstr ""
+
+#: OvfItemsCountPerUpdate.description
+msgid ""
+"\"Number of OVFs updated to the master domain's filesystem per OVF update "
+"call\""
+msgstr ""
+
+#: OvfItemsCountPerUpdate.type
+msgctxt "OvfItemsCountPerUpdate.type"
+msgid "Integer"
+msgstr ""
+
+#: OvfUpdateIntervalInMinutes.description
+msgid "\"Number of minutes between OVF updates\""
+msgstr ""
+
+#: OvfUpdateIntervalInMinutes.type
+msgctxt "OvfUpdateIntervalInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: StorageDomainOvfStoreCount.description
+msgid "\"Number of OVF stores per Storage Domain\""
+msgstr ""
+
+#: StorageDomainOvfStoreCount.type
+msgctxt "StorageDomainOvfStoreCount.type"
+msgid "Integer"
+msgstr ""
+
+#: StorageDomainOvfStoreCount.validValues
+msgid "0..16"
+msgstr ""
+
+#: ProductRPMVersion.description
+msgid "\"oVirt Engine RPM Version\""
+msgstr ""
+
+#: SANWipeAfterDelete.description
+msgid ""
+"\"Initializing disk image is more secure but it is time consuming and I/O "
+"intensive (depends on the size of the image)\""
+msgstr ""
+
+#: SANWipeAfterDelete.validValues
+msgctxt "SANWipeAfterDelete.validValues"
+msgid "true,false"
+msgstr ""
+
+#: SearchResultsLimit.description
+msgid "\"Max Quantity of Search Results\""
+msgstr ""
+
+#: SearchResultsLimit.type
+msgctxt "SearchResultsLimit.type"
+msgid "Integer"
+msgstr ""
+
+#: ServerRebootTimeout.description
+msgid "\"Host Reboot Timeout (in seconds)\""
+msgstr ""
+
+#: ServerRebootTimeout.type
+msgctxt "ServerRebootTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: ConsoleReleaseCursorKeys.description
+msgid ""
+"\"Keyboard keys combination that causes the mouse cursor to be released from "
+"its grab on console client window\""
+msgstr ""
+
+#: SpiceSecureChannels.description
+msgid "\"SPICE Secure Channels\""
+msgstr ""
+
+#: SpiceSecureChannels.type
+msgctxt "SpiceSecureChannels.type"
+msgid "StringMultiple"
+msgstr ""
+
+#: SpiceSecureChannels.validValues
+msgid "smain,sinputs,scursor,splayback,srecord,sdisplay,ssmartcard,susbredir"
+msgstr ""
+
+#: ConsoleToggleFullScreenKeys.description
+msgid ""
+"\"Keyboard keys combination that toggles the full-screen state of console "
+"client window\""
+msgstr ""
+
+#: SpiceUsbAutoShare.description
+msgid "\"Enable USB devices sharing by default in SPICE\""
+msgstr ""
+
+#: SpiceUsbAutoShare.validValues
+msgctxt "SpiceUsbAutoShare.validValues"
+msgid "true,false"
+msgstr ""
+
+#: FullScreenWebadminDefault.description
+msgid ""
+"\"Enable full-screen for SPICE window by default in Administration Portal and "
+"REST\""
+msgstr ""
+
+#: FullScreenWebadminDefault.type
+msgctxt "FullScreenWebadminDefault.type"
+msgid "Boolean"
+msgstr ""
+
+#: FullScreenUserportalBasicDefault.description
+msgid "\"Enable full-screen for SPICE window by default in Basic User Portal\""
+msgstr ""
+
+#: FullScreenUserportalBasicDefault.type
+msgctxt "FullScreenUserportalBasicDefault.type"
+msgid "Boolean"
+msgstr ""
+
+#: FullScreenUserportalExtendedDefault.description
+msgid "\"Enable full-screen for SPICE window by default in Power User Portal\""
+msgstr ""
+
+#: FullScreenUserportalExtendedDefault.type
+msgctxt "FullScreenUserportalExtendedDefault.type"
+msgid "Boolean"
+msgstr ""
+
+#: SpmCommandFailOverRetries.description
+msgid ""
+"\"Number of retries to failover the Storage Pool Manager on failed commands\""
+msgstr ""
+
+#: SpmCommandFailOverRetries.type
+msgctxt "SpmCommandFailOverRetries.type"
+msgid "Integer"
+msgstr ""
+
+#: SPMFailOverAttempts.description
+msgid ""
+"\"Number of attempts to connect to the Storage Pool Manager before Failover\""
+msgstr ""
+
+#: SPMFailOverAttempts.type
+msgctxt "SPMFailOverAttempts.type"
+msgid "Integer"
+msgstr ""
+
+#: SpmVCpuConsumption.description
+msgid "\"The CPU consumption of SPM embodied as number of VCPUs on the Host\""
+msgstr ""
+
+#: SpmVCpuConsumption.type
+msgctxt "SpmVCpuConsumption.type"
+msgid "Integer"
+msgstr ""
+
+#: SSHInactivityTimeoutSeconds.description
+msgid "\"SSH Inactivity Timeout (in seconds)\""
+msgstr ""
+
+#: SSHInactivityTimeoutSeconds.type
+msgctxt "SSHInactivityTimeoutSeconds.type"
+msgid "Integer"
+msgstr ""
+
+#: SSHInactivityHardTimeoutSeconds.description
+msgid "\"SSH Inactivity Hard Timeout (in seconds)\""
+msgstr ""
+
+#: SSHInactivityHardTimeoutSeconds.type
+msgctxt "SSHInactivityHardTimeoutSeconds.type"
+msgid "Integer"
+msgstr ""
+
+#: NumberOfUSBSlots.description
+msgid "\"Number of USB slots in VMs with native USB support\""
+msgstr ""
+
+#: NumberOfUSBSlots.type
+msgctxt "NumberOfUSBSlots.type"
+msgid "Integer"
+msgstr ""
+
+#: NumberOfUSBSlots.validValues
+msgid "0..6"
+msgstr ""
+
+#: SSLEnabled.description
+msgid "\"SPICE SSL Enabled\""
+msgstr ""
+
+#: SSLEnabled.validValues
+msgctxt "SSLEnabled.validValues"
+msgid "true,false"
+msgstr ""
+
+#: StorageDomainFailureTimeoutInMinutes.description
+msgid "\"Storage Domain failure timeout\""
+msgstr ""
+
+#: StorageDomainFailureTimeoutInMinutes.type
+msgctxt "StorageDomainFailureTimeoutInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: StoragePoolRefreshTimeInSeconds.description
+msgid "\"Storage Pool Manager Polling Rate (in seconds)\""
+msgstr ""
+
+#: StoragePoolRefreshTimeInSeconds.type
+msgctxt "StoragePoolRefreshTimeInSeconds.type"
+msgid "Integer"
+msgstr ""
+
+#: TimeoutToResetVdsInSeconds.description
+msgid "\"Base Communication timeout in seconds before trying to reset a host\""
+msgstr ""
+
+#: TimeoutToResetVdsInSeconds.type
+msgctxt "TimeoutToResetVdsInSeconds.type"
+msgid "Integer"
+msgstr ""
+
+#: DelayResetForSpmInSeconds.description
+msgid ""
+"\"Additional delay before reset due to a communication issue, when host is "
+"SPM\""
+msgstr ""
+
+#: DelayResetForSpmInSeconds.type
+msgctxt "DelayResetForSpmInSeconds.type"
+msgid "Double"
+msgstr ""
+
+#: DelayResetPerVmInSeconds.description
+msgid ""
+"\"Additional delay before reset due to a communication issue, per VM running "
+"on the host\""
+msgstr ""
+
+#: DelayResetPerVmInSeconds.type
+msgctxt "DelayResetPerVmInSeconds.type"
+msgid "Double"
+msgstr ""
+
+#: TimeToReduceFailedRunOnVdsInMinutes.description
+msgid "\"Time to Reduce Failed Run on Host (in minutes)\""
+msgstr ""
+
+#: TimeToReduceFailedRunOnVdsInMinutes.type
+msgctxt "TimeToReduceFailedRunOnVdsInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: UserDefinedVMProperties.description
+msgid "\"User defined VM properties\""
+msgstr ""
+
+#: UserDefinedVMProperties.type
+msgid "UserDefinedVMProperties"
+msgstr ""
+
+#: UserDefinedVMProperties.mergable
+msgctxt "UserDefinedVMProperties.mergable"
+msgid "true"
+msgstr ""
+
+#: UserDefinedVMProperties.delimiter
+msgid ";"
+msgstr ""
+
+#: UtilizationThresholdInPercent.description
+msgid "\"The Utilization Threshold (in percent)\""
+msgstr ""
+
+#: UtilizationThresholdInPercent.type
+msgctxt "UtilizationThresholdInPercent.type"
+msgid "Integer"
+msgstr ""
+
+#: ValidNumOfMonitors.description
+msgid "\"Valid Numbers of Monitors\""
+msgstr ""
+
+#: ValidNumOfMonitors.type
+msgctxt "ValidNumOfMonitors.type"
+msgid "Integer"
+msgstr ""
+
+#: VdcVersion.description
+msgid "\"oVirt Engine Version\""
+msgstr ""
+
+#: VDSAttemptsToResetCount.description
+msgid "\"Number of attempts to communicate with Host before trying to reset\""
+msgstr ""
+
+#: VDSAttemptsToResetCount.type
+msgctxt "VDSAttemptsToResetCount.type"
+msgid "Integer"
+msgstr ""
+
+#: VdsLoadBalancingIntervalInMinutes.description
+msgid "\"Host Load Balancing Interval (in minutes)\""
+msgstr ""
+
+#: VdsLoadBalancingIntervalInMinutes.type
+msgctxt "VdsLoadBalancingIntervalInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: VdsRecoveryTimeoutInMinutes.description
+msgid "\"Host Timeout when Recovering (in minutes)\""
+msgstr ""
+
+#: VdsRecoveryTimeoutInMinutes.type
+msgctxt "VdsRecoveryTimeoutInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: VdsRefreshRate.alternateKey
+msgid "Refresh vds rate,vds_refresh_rate, vds_refresh_rate_in_seconds"
+msgstr ""
+
+#: VdsRefreshRate.description
+msgid "\"Time interval in seconds to poll a Host status\""
+msgstr ""
+
+#: VdsRefreshRate.type
+msgctxt "VdsRefreshRate.type"
+msgid "Integer"
+msgstr ""
+
+#: vdsTimeout.description
+msgid "\"Host Control Communication Timeout (in seconds)\""
+msgstr ""
+
+#: vdsTimeout.type
+msgctxt "vdsTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: vdsConnectionTimeout.description
+msgid "\"Time to wait for connection establishment with hosts (in seconds)\""
+msgstr ""
+
+#: vdsConnectionTimeout.type
+msgctxt "vdsConnectionTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: vdsRetries.description
+msgid ""
+"\"Number of times to retry host operations when there are communication "
+"errors\""
+msgstr ""
+
+#: vdsRetries.type
+msgctxt "vdsRetries.type"
+msgid "Integer"
+msgstr ""
+
+#: EventProcessingPoolSize.description
+msgid "\"Pool size used for processing events\""
+msgstr ""
+
+#: EventProcessingPoolSize.type
+msgctxt "EventProcessingPoolSize.type"
+msgid "Integer"
+msgstr ""
+
+#: VmGracefulShutdownMessage.description
+msgid ""
+"\"Message displayed in Virtual Machine when Virtual Machine is being shutdown "
+"from oVirt Engine\""
+msgstr ""
+
+#: VmGracefulShutdownTimeout.description
+msgid "\"Time to wait before graceful shutdown is considered unsuccessful\""
+msgstr ""
+
+#: VmGracefulShutdownTimeout.type
+msgctxt "VmGracefulShutdownTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: VM32BitMaxMemorySizeInMB.description
+msgid "\"Maximum memory size of 32-bit virtual machine in MB\""
+msgstr ""
+
+#: VM32BitMaxMemorySizeInMB.type
+msgctxt "VM32BitMaxMemorySizeInMB.type"
+msgid "Integer"
+msgstr ""
+
+#: VM64BitMaxMemorySizeInMB.description
+msgid "\"Maximum memory size of 64-bit virtual machine in MB\""
+msgstr ""
+
+#: VM64BitMaxMemorySizeInMB.type
+msgctxt "VM64BitMaxMemorySizeInMB.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxMemorySlots.description
+msgid "\"Maximum number of vm memory slots for hot-plug memory\""
+msgstr ""
+
+#: MaxMemorySlots.type
+msgctxt "MaxMemorySlots.type"
+msgid "Integer"
+msgstr ""
+
+#: HotPlugMemoryMultiplicationSizeMb.description
+msgid ""
+"\"Multiplication factor of hot-pluggged memory in MB, by default hot plugged "
+"memory should be multiplies of 256mb\""
+msgstr ""
+
+#: HotPlugMemoryMultiplicationSizeMb.type
+msgctxt "HotPlugMemoryMultiplicationSizeMb.type"
+msgid "Integer"
+msgstr ""
+
+#: VncKeyboardLayout.description
+msgid "\"Keyboard Layout configuration for VNC\""
+msgstr ""
+
+#: VncKeyboardLayout.validValues
+msgid ""
+"ar,da,de,de-ch,en-gb,en-us,es,et,fi,fo,fr,fr-be,fr-ca,fr-"
+"ch,hr,hu,is,it,ja,lt,lv,mk,nl,nl-be,no,pl,pt,pt-br,ru,sl,sv,th,tr"
+msgstr ""
+
+#: WaitForVdsInitInSec.description
+msgid "\"Wait to a Host to complete init in SPM selection\""
+msgstr ""
+
+#: WaitForVdsInitInSec.type
+msgctxt "WaitForVdsInitInSec.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceQuietTimeBetweenOperationsInSec.description
+msgid "\"Quiet time between Power Management operations in seconds.\""
+msgstr ""
+
+#: FenceQuietTimeBetweenOperationsInSec.type
+msgctxt "FenceQuietTimeBetweenOperationsInSec.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceQuietTimeBetweenOperationsInSec.validValues
+msgid "60..600"
+msgstr ""
+
+#: FenceQuietTimeBetweenOperationsInSec.alternateKey
+msgid "Fence_Quiet_Time"
+msgstr ""
+
+#: FenceProxyDefaultPreferences.description
+msgid ""
+"\"Fence proxy default preferences used to define how to search for a proxy "
+"Host in Fence operations.\""
+msgstr ""
+
+#: FenceProxyDefaultPreferences.type
+msgctxt "FenceProxyDefaultPreferences.type"
+msgid "String"
+msgstr ""
+
+#: MaxAuditLogMessageLength.type
+msgctxt "MaxAuditLogMessageLength.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxAuditLogMessageLength.alternateKey
+msgid "Audit_Max_Msg"
+msgstr ""
+
+#: MaxAuditLogMessageLength.description
+msgid "\"Maximum length of an Audit Log message.\""
+msgstr ""
+
+#: SysPrepDefaultUser.description
+msgid "\"Default SysPrep user name\""
+msgstr ""
+
+#: SysPrepDefaultPassword.description
+msgid "\"Default SysPrep user password\""
+msgstr ""
+
+#: SysPrepDefaultPassword.type
+msgid "Password"
+msgstr ""
+
+#: UserSessionTimeOutInterval.type
+msgctxt "UserSessionTimeOutInterval.type"
+msgid "Integer"
+msgstr ""
+
+#: UserSessionTimeOutInterval.validValues
+msgid "-1,1..100000"
+msgstr ""
+
+#: UserSessionTimeOutInterval.description
+msgid ""
+"Timeout interval in minutes, after which inactive user sessions expire. A "
+"negative value indicates that sessions never expire."
+msgstr ""
+
+#: IPTablesConfig.description
+msgid "\"iptables configuration\""
+msgstr ""
+
+#: IPTablesConfigSiteCustom.description
+msgid "\"iptables site custom configuration, appended to IPTablesConfig\""
+msgstr ""
+
+#: OvirtIsoPrefix.description
+msgid "\"Ovirt ISOs files prefix\""
+msgstr ""
+
+#: OvirtInitialSupportedIsoVersion.description
+msgid "\"oVirt node initial Supported ISO Version\""
+msgstr ""
+
+#: VdsLocalDisksLowFreeSpace.description
+msgid ""
+"\"Amount of free disk space on a Host, under which a warning will be sent to "
+"the Administrator\""
+msgstr ""
+
+#: VdsLocalDisksLowFreeSpace.type
+msgctxt "VdsLocalDisksLowFreeSpace.type"
+msgid "Integer"
+msgstr ""
+
+#: VdsLocalDisksCriticallyLowFreeSpace.description
+msgid ""
+"\"Amount of free disk space on a Host, under which an error will be sent to "
+"the Administrator\""
+msgstr ""
+
+#: VdsLocalDisksCriticallyLowFreeSpace.type
+msgctxt "VdsLocalDisksCriticallyLowFreeSpace.type"
+msgid "Integer"
+msgstr ""
+
+#: JobCleanupRateInMinutes.description
+msgid "\"Frequency of jobs clean-up process\""
+msgstr ""
+
+#: JobCleanupRateInMinutes.type
+msgctxt "JobCleanupRateInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: JobCleanupRateInMinutes.validValues
+msgctxt "JobCleanupRateInMinutes.validValues"
+msgid "5..100000"
+msgstr ""
+
+#: SucceededJobCleanupTimeInMinutes.description
+msgid "\"Time to keep successfully ended jobs\""
+msgstr ""
+
+#: SucceededJobCleanupTimeInMinutes.type
+msgctxt "SucceededJobCleanupTimeInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: SucceededJobCleanupTimeInMinutes.validValues
+msgctxt "SucceededJobCleanupTimeInMinutes.validValues"
+msgid "5..100000"
+msgstr ""
+
+#: FailedJobCleanupTimeInMinutes.description
+msgid "\"Time to keep failed jobs\""
+msgstr ""
+
+#: FailedJobCleanupTimeInMinutes.type
+msgctxt "FailedJobCleanupTimeInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: FailedJobCleanupTimeInMinutes.validValues
+msgctxt "FailedJobCleanupTimeInMinutes.validValues"
+msgid "5..100000"
+msgstr ""
+
+#: VmPoolMonitorIntervalInMinutes.description
+msgid ""
+"\"Interval in minutes for monitoring number of Prestarted Vms in Vm Pools\""
+msgstr ""
+
+#: VmPoolMonitorIntervalInMinutes.type
+msgctxt "VmPoolMonitorIntervalInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: VmPoolMonitorIntervalInMinutes.validValues
+msgid "1..10080"
+msgstr ""
+
+#: VmPoolMonitorBatchSize.description
+msgid ""
+"\"Maximum number of Vms that the Vm Pool Monitor will attempt to Prestart in "
+"a single cycle\""
+msgstr ""
+
+#: VmPoolMonitorBatchSize.type
+msgctxt "VmPoolMonitorBatchSize.type"
+msgid "Integer"
+msgstr ""
+
+#: VmPoolMonitorBatchSize.validValues
+msgid "1..50"
+msgstr ""
+
+#: NetworkConnectivityCheckTimeoutInSeconds.description
+msgid ""
+"\"The time to wait before rolling back network changes in case the engine "
+"losses connectivity with the host in seconds\""
+msgstr ""
+
+#: NetworkConnectivityCheckTimeoutInSeconds.type
+msgctxt "NetworkConnectivityCheckTimeoutInSeconds.type"
+msgid "Integer"
+msgstr ""
+
+#: NetworkConnectivityCheckTimeoutInSeconds.validValues
+msgid "10..160"
+msgstr ""
+
+#: AllowClusterWithVirtGlusterEnabled.description
+msgid ""
+"\"Allows to create a Cluster with both Virt and Gluster services enabled\""
+msgstr ""
+
+#: AllowClusterWithVirtGlusterEnabled.validValues
+msgctxt "AllowClusterWithVirtGlusterEnabled.validValues"
+msgid "true,false"
+msgstr ""
+
+#: EnableMACAntiSpoofingFilterRules.description
+msgid "\"Indicates if Network Filtering should be enabled or not.\""
+msgstr ""
+
+#: EnableMACAntiSpoofingFilterRules.validValues
+msgctxt "EnableMACAntiSpoofingFilterRules.validValues"
+msgid "true,false"
+msgstr ""
+
+#: EnableHostTimeDrift.description
+msgid "\"Indecates if Host time-drift validation is enabled\""
+msgstr ""
+
+#: EnableHostTimeDrift.validValues
+msgctxt "EnableHostTimeDrift.validValues"
+msgid "true,false"
+msgstr ""
+
+#: EngineMode.description
+msgid "\"Engine working mode\""
+msgstr ""
+
+#: EngineMode.validValues
+msgid "ACTIVE,MAINTENANCE,PREPARE"
+msgstr ""
+
+#: HostTimeDriftInSec.type
+msgctxt "HostTimeDriftInSec.type"
+msgid "Integer"
+msgstr ""
+
+#: HostTimeDriftInSec.description
+msgid "\"Allowed time drift between any Host and Engine\""
+msgstr ""
+
+#: LogMaxPhysicalMemoryUsedThresholdInPercentage.description
+msgid ""
+"'Maximum percentage threshold of Physical memory usage on a host to trigger "
+"Audit-Log event'"
+msgstr ""
+
+#: LogMaxPhysicalMemoryUsedThresholdInPercentage.type
+msgctxt "LogMaxPhysicalMemoryUsedThresholdInPercentage.type"
+msgid "Integer"
+msgstr ""
+
+#: LogMaxPhysicalMemoryUsedThresholdInPercentage.validValues
+msgctxt "LogMaxPhysicalMemoryUsedThresholdInPercentage.validValues"
+msgid "0..100"
+msgstr ""
+
+#: LogMaxCpuUsedThresholdInPercentage.description
+msgid ""
+"'Maximum percentage threshold of CPU usage on a host to trigger Audit-Log "
+"event'"
+msgstr ""
+
+#: LogMaxCpuUsedThresholdInPercentage.type
+msgctxt "LogMaxCpuUsedThresholdInPercentage.type"
+msgid "Integer"
+msgstr ""
+
+#: LogMaxCpuUsedThresholdInPercentage.validValues
+msgctxt "LogMaxCpuUsedThresholdInPercentage.validValues"
+msgid "0..100"
+msgstr ""
+
+#: LogMaxNetworkUsedThresholdInPercentage.description
+msgid ""
+"'Maximum percentage threshold of Network usage on a host to trigger Audit-"
+"Log event'"
+msgstr ""
+
+#: LogMaxNetworkUsedThresholdInPercentage.type
+msgctxt "LogMaxNetworkUsedThresholdInPercentage.type"
+msgid "Integer"
+msgstr ""
+
+#: LogMaxNetworkUsedThresholdInPercentage.validValues
+msgctxt "LogMaxNetworkUsedThresholdInPercentage.validValues"
+msgid "0..100"
+msgstr ""
+
+#: LogMinFreeSwapThresholdInMB.description
+msgid ""
+"'Minimum threshold of free Swap memory on a host to trigger Audit-Log event "
+"(in MB)'"
+msgstr ""
+
+#: LogMinFreeSwapThresholdInMB.type
+msgctxt "LogMinFreeSwapThresholdInMB.type"
+msgid "Integer"
+msgstr ""
+
+#: LogMaxSwapUsedThresholdInPercentage.description
+msgid ""
+"'Maximum percentage threshold of Swap memory usage on a host to trigger "
+"Audit-Log event'"
+msgstr ""
+
+#: LogMaxSwapUsedThresholdInPercentage.type
+msgctxt "LogMaxSwapUsedThresholdInPercentage.type"
+msgid "Integer"
+msgstr ""
+
+#: LogMaxSwapUsedThresholdInPercentage.validValues
+msgctxt "LogMaxSwapUsedThresholdInPercentage.validValues"
+msgid "0..100"
+msgstr ""
+
+#: SpiceProxyDefault.description
+msgid ""
+"'Default proxy used by SPICE client to connect to the guest: "
+"[protocol://]<host>[:port]'"
+msgstr ""
+
+#: SpiceProxyDefault.type
+msgctxt "SpiceProxyDefault.type"
+msgid "String"
+msgstr ""
+
+#: RemoteViewerSupportedVersions.description
+msgid ""
+"'List of os/remote-viewer minimal version supported by oVirt. Format: "
+"\"linux:3.0;windows:2.5'"
+msgstr ""
+
+#: RemoteViewerSupportedVersions.type
+msgid "RemoteViewerSupportedVersions"
+msgstr ""
+
+#: RemoteViewerNewerVersionUrl.description
+msgid ""
+"'URL shown when the remote-viewer version check does not pass. Supported "
+"variables are: ${engine_base_url} (url from where the engine was accessed) "
+"and  ${console_client_resources_url} "
+"(obrand.common.console_client_resources_url from branding)'"
+msgstr ""
+
+#: RemoteViewerNewerVersionUrl.type
+msgctxt "RemoteViewerNewerVersionUrl.type"
+msgid "String"
+msgstr ""
+
+#: RemapCtrlAltDelDefault.description
+msgid ""
+"\"Determines whether remapping Ctrl-Alt-Delete to Ctrl-Alt-End should be "
+"preselected by default in the UI.\""
+msgstr ""
+
+#: RemapCtrlAltDelDefault.type
+msgctxt "RemapCtrlAltDelDefault.type"
+msgid "Boolean"
+msgstr ""
+
+#. # The 'Plugin' will be removed in 4.1
+#: ClientModeSpiceDefault.description
+msgid "\"Default SPICE console invocation behavior in the engine.\""
+msgstr ""
+
+#: ClientModeSpiceDefault.validValues
+msgid "Auto,Plugin,Native,Html5"
+msgstr ""
+
+#: ClientModeSpiceDefault.type
+msgctxt "ClientModeSpiceDefault.type"
+msgid "String"
+msgstr ""
+
+#: ClientModeVncDefault.description
+msgid "\"Default VNC console invocation behavior in the engine.\""
+msgstr ""
+
+#: ClientModeVncDefault.validValues
+msgid "Native,NoVnc"
+msgstr ""
+
+#: ClientModeVncDefault.type
+msgctxt "ClientModeVncDefault.type"
+msgid "String"
+msgstr ""
+
+#: ClientModeRdpDefault.description
+msgid "\"Default RDP console invocation behavior in the engine.\""
+msgstr ""
+
+#: ClientModeRdpDefault.validValues
+msgid "Auto,Plugin,Native"
+msgstr ""
+
+#: ClientModeRdpDefault.type
+msgctxt "ClientModeRdpDefault.type"
+msgid "String"
+msgstr ""
+
+#: WebSocketProxy.description
+msgid ""
+"\"Location of Websocket proxy, values are: Off (proxy is not deployed), "
+"Engine:<port> (Engine is reserved keyword meaning proxy is deployed on the "
+"same machine as the engine (on given port)), Host:<port> (Host is reserved "
+"keyword meaning proxy is deployed on each host on given port (if the "
+"deployment has more hosts, proxy must be deployed on each of them)), "
+"<hostname>:<port> (proxy is deployed on a machine identified by given "
+"hostname or ip and port).\""
+msgstr ""
+
+#: WebSocketProxy.type
+msgid "WebSocketProxyLocation"
+msgstr ""
+
+#: WebSocketProxyTicketValiditySeconds.description
+msgid "\"Validity (in seconds) of tickets issued for websocket proxy.\""
+msgstr ""
+
+#: WebSocketProxyTicketValiditySeconds.type
+msgctxt "WebSocketProxyTicketValiditySeconds.type"
+msgid "Integer"
+msgstr ""
+
+#: CustomDeviceProperties.description
+msgid "\"Definition of custom properties per each device type\""
+msgstr ""
+
+#: CustomDeviceProperties.type
+msgid "DeviceCustomProperties"
+msgstr ""
+
+#: UserDefinedNetworkCustomProperties.description
+msgid "\"User defined network custom properties.\""
+msgstr ""
+
+#: UserDefinedNetworkCustomProperties.type
+msgid "CustomProperties"
+msgstr ""
+
+#: GlusterRefreshRateHooks.description
+msgid "\"Refresh rate (in seconds) of gluster hooks from gluster servers\""
+msgstr ""
+
+#: GlusterRefreshRateHooks.type
+msgctxt "GlusterRefreshRateHooks.type"
+msgid "Integer"
+msgstr ""
+
+#: GlusterRefreshRateHooks.validValues
+msgid "30..3600"
+msgstr ""
+
+#: DefaultWindowsTimeZone.description
+msgid "\"Default time zone to be used when creating new Windows VMs\""
+msgstr ""
+
+#: DefaultWindowsTimeZone.type
+msgid "WindowsTimeZone"
+msgstr ""
+
+#: DefaultGeneralTimeZone.description
+msgid "\"Default time zone to be used when creating Linux and Other-OS VMs\""
+msgstr ""
+
+#: DefaultGeneralTimeZone.type
+msgid "GeneralTimeZone"
+msgstr ""
+
+#: OnlyRequiredNetworksMandatoryForVdsSelection.description
+msgid ""
+"\"If set to 'true', only networks marked as 'required' will be considered "
+"when determining if a host can run a VM. Otherwise, all the networks the VM "
+"utilizes have to be set-up on a host for it to be able to run the VM\""
+msgstr ""
+
+#: OnlyRequiredNetworksMandatoryForVdsSelection.validValues
+msgctxt "OnlyRequiredNetworksMandatoryForVdsSelection.validValues"
+msgid "true,false"
+msgstr ""
+
+#: MaxAverageNetworkQoSValue.description
+msgid "\"Maximum value for Average Networks QoS (Mbps)\""
+msgstr ""
+
+#: MaxAverageNetworkQoSValue.type
+msgctxt "MaxAverageNetworkQoSValue.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxPeakNetworkQoSValue.description
+msgid "\"Maximum value for Peak Networks QoS (Mbps)\""
+msgstr ""
+
+#: MaxPeakNetworkQoSValue.type
+msgctxt "MaxPeakNetworkQoSValue.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxBurstNetworkQoSValue.description
+msgid "\"Maximum value for Burst Networks QoS (Mb)\""
+msgstr ""
+
+#: MaxBurstNetworkQoSValue.type
+msgctxt "MaxBurstNetworkQoSValue.type"
+msgid "Integer"
+msgstr ""
+
+#: MaxHostNetworkQosShares.description
+msgid "\"Maximum number of shares for Host Network QoS\""
+msgstr ""
+
+#: MaxHostNetworkQosShares.type
+msgctxt "MaxHostNetworkQosShares.type"
+msgid "Integer"
+msgstr ""
+
+#: DisplayUncaughtUIExceptions.type
+msgctxt "DisplayUncaughtUIExceptions.type"
+msgid "Boolean"
+msgstr ""
+
+#: DisplayUncaughtUIExceptions.description
+msgid "\"Display uncaught UI exceptions to the user.\""
+msgstr ""
+
+#: QoSInboundAverageDefaultValue.description
+msgid "\"Default value for Network QoS Inbound Average (Mbps)\""
+msgstr ""
+
+#: QoSInboundAverageDefaultValue.type
+msgctxt "QoSInboundAverageDefaultValue.type"
+msgid "Integer"
+msgstr ""
+
+#: QoSInboundPeakDefaultValue.description
+msgid "\"Default value for Network QoS Inbound Peak (Mbps)\""
+msgstr ""
+
+#: QoSInboundPeakDefaultValue.type
+msgctxt "QoSInboundPeakDefaultValue.type"
+msgid "Integer"
+msgstr ""
+
+#: QoSInboundBurstDefaultValue.description
+msgid "\"Default value for Network QoS Inbound Burst (Mbps)\""
+msgstr ""
+
+#: QoSInboundBurstDefaultValue.type
+msgctxt "QoSInboundBurstDefaultValue.type"
+msgid "Integer"
+msgstr ""
+
+#: QoSOutboundAverageDefaultValue.description
+msgid "\"Default value for Network QoS Outbound Average (Mbps)\""
+msgstr ""
+
+#: QoSOutboundAverageDefaultValue.type
+msgctxt "QoSOutboundAverageDefaultValue.type"
+msgid "Integer"
+msgstr ""
+
+#: QoSOutboundPeakDefaultValue.description
+msgid "\"Default value for Network QoS Outbound Peak (Mbps)\""
+msgstr ""
+
+#: QoSOutboundPeakDefaultValue.type
+msgctxt "QoSOutboundPeakDefaultValue.type"
+msgid "Integer"
+msgstr ""
+
+#: QoSOutboundBurstDefaultValue.description
+msgid "\"Default value for Network QoS Outbound Burst (Mbps)\""
+msgstr ""
+
+#: QoSOutboundBurstDefaultValue.type
+msgctxt "QoSOutboundBurstDefaultValue.type"
+msgid "Integer"
+msgstr ""
+
+#: SecureConnectionWithOATServers.type
+msgctxt "SecureConnectionWithOATServers.type"
+msgid "Boolean"
+msgstr ""
+
+#: SecureConnectionWithOATServers.description
+msgid ""
+"\"Determine whether to use secure communication or not to access attestation "
+"service\""
+msgstr ""
+
+#: PollUri.type
+msgctxt "PollUri.type"
+msgid "String"
+msgstr ""
+
+#: PollUri.description
+msgid "\"The URI used for accessing the attestation service\""
+msgstr ""
+
+#: AttestationTruststore.type
+msgctxt "AttestationTruststore.type"
+msgid "String"
+msgstr ""
+
+#: AttestationTruststore.description
+msgid ""
+"\"Trust store used for securing communication with attestation service\""
+msgstr ""
+
+#: AttestationPort.type
+msgctxt "AttestationPort.type"
+msgid "Integer"
+msgstr ""
+
+#: AttestationPort.description
+msgid "\"Definition of service port for attestation service\""
+msgstr ""
+
+#: AttestationTruststorePass.type
+msgctxt "AttestationTruststorePass.type"
+msgid "String"
+msgstr ""
+
+#: AttestationTruststorePass.description
+msgid "\"The password used to access trust store\""
+msgstr ""
+
+#: AttestationServer.type
+msgctxt "AttestationServer.type"
+msgid "String"
+msgstr ""
+
+#: AttestationServer.description
+msgid "\"Definition of FQDN of attestation server\""
+msgstr ""
+
+#: AttestationFirstStageSize.type
+msgctxt "AttestationFirstStageSize.type"
+msgid "Integer"
+msgstr ""
+
+#: AttestationFirstStageSize.description
+msgid "\"Attestation size for first stage\""
+msgstr ""
+
+#: ExternalSchedulerServiceURL.description
+msgid "The URL of the external scheduler proxy"
+msgstr ""
+
+#: ExternalSchedulerServiceURL.type
+msgctxt "ExternalSchedulerServiceURL.type"
+msgid "String"
+msgstr ""
+
+#: ExternalSchedulerConnectionTimeout.description
+msgid ""
+"The timeout used connecting to the external scheduler proxy (0 to disable)"
+msgstr ""
+
+#: ExternalSchedulerConnectionTimeout.type
+msgctxt "ExternalSchedulerConnectionTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: ExternalSchedulerEnabled.description
+msgid ""
+"External scheduler enabled - if disabled, the VM scheduler will not consider "
+"the external filters and load balancers."
+msgstr ""
+
+#: ExternalSchedulerEnabled.type
+msgctxt "ExternalSchedulerEnabled.type"
+msgid "Boolean"
+msgstr ""
+
+#: ExternalSchedulerResponseTimeout.description
+msgid "The response timeout of the external scheduler proxy"
+msgstr ""
+
+#: ExternalSchedulerResponseTimeout.type
+msgctxt "ExternalSchedulerResponseTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: DwhHeartBeatInterval.description
+msgid ""
+"\"Interval in seconds after which DWH is informed that engine is running. The "
+"value has to be lower than DWH sampling interval.\""
+msgstr ""
+
+#: DwhHeartBeatInterval.type
+msgctxt "DwhHeartBeatInterval.type"
+msgid "Integer"
+msgstr ""
+
+#: HostPreparingForMaintenanceIdleTime.type
+msgctxt "HostPreparingForMaintenanceIdleTime.type"
+msgid "Integer"
+msgstr ""
+
+#: HostPreparingForMaintenanceIdleTime.description
+msgid ""
+"\"Time to wait in seconds to determine if host is idling in status "
+"PreparingForMaintenace. When that interval is met it triggers another "
+"attempt to move the host to Maintenance\""
+msgstr ""
+
+#: UseFqdnForRdpIfAvailable.type
+msgctxt "UseFqdnForRdpIfAvailable.type"
+msgid "Boolean"
+msgstr ""
+
+#: UseFqdnForRdpIfAvailable.description
+msgid ""
+"\"If this option is enabled, the RDP console will use the FQDN, which is "
+"reported by the Guest Agent, if it is available and use this to establish "
+"the RDP connection.\""
+msgstr ""
+
+#: SpeedOptimizationSchedulingThreshold.description
+msgid ""
+"\"Skip Host weights if there are more than X requests pending for scheduling "
+"(in case cluster is configured as optimize for speed).\""
+msgstr ""
+
+#: SpeedOptimizationSchedulingThreshold.type
+msgctxt "SpeedOptimizationSchedulingThreshold.type"
+msgid "Integer"
+msgstr ""
+
+#: SchedulerAllowOverBooking.description
+msgid ""
+"\"Allowing skipping Scheduling resource synchronization, which could result "
+"in overbooking\""
+msgstr ""
+
+#: SchedulerAllowOverBooking.type
+msgctxt "SchedulerAllowOverBooking.type"
+msgid "Boolean"
+msgstr ""
+
+#: SchedulerOverBookingThreshold.description
+msgid ""
+"\"Skip Scheduling resource synchronization, which could result in "
+"overbooking, if there are more than X requests pending for scheduling (in "
+"case SchedulerAllowOverBooking=true and cluster is configured as allow "
+"overbooking).\""
+msgstr ""
+
+#: SchedulerOverBookingThreshold.type
+msgctxt "SchedulerOverBookingThreshold.type"
+msgid "Integer"
+msgstr ""
+
+#: OverUtilizationForHaReservation.type
+msgctxt "OverUtilizationForHaReservation.type"
+msgid "Integer"
+msgstr ""
+
+#: OverUtilizationForHaReservation.description
+msgid ""
+"\"A percentage number that represent the over utilization threshold (default "
+"is 200%) from the optimal use case. For example in case the optimal HA VMs "
+"for a host is 2, and overUtilization is 200, HA VM will not be migrated by "
+"the balance method until the host has at least 5 HA VMs (>2*200%).\""
+msgstr ""
+
+#: ScaleDownForHaReservation.type
+msgctxt "ScaleDownForHaReservation.type"
+msgid "Integer"
+msgstr ""
+
+#: ScaleDownForHaReservation.description
+msgid ""
+"\"A number to reduce by the result of the HA Reservation weight score "
+"(default is 1). For example if the score of a host is 90 and scaleDown is 2, "
+"then the final score for this host will be 45. this parameter enable the "
+"user to reduce the impact the HA Reservation weight function has on the "
+"total scoring of the host.\""
+msgstr ""
+
+#: VdsHaReservationIntervalInMinutes.type
+msgctxt "VdsHaReservationIntervalInMinutes.type"
+msgid "Integer"
+msgstr ""
+
+#: VdsHaReservationIntervalInMinutes.description
+msgid "\"The time interval in minutes to check a cluster for HA reservation.\""
+msgstr ""
+
+#: HostsInReserve.description
+msgid ""
+"\"Keep this amount of hosts running even though there are no running Vms on "
+"them\""
+msgstr ""
+
+#: HostsInReserve.type
+msgctxt "HostsInReserve.type"
+msgid "Integer"
+msgstr ""
+
+#: EnableAutomaticHostPowerManagement.description
+msgid "Enable (true) or disable (false) automatic host power management"
+msgstr ""
+
+#: EnableAutomaticHostPowerManagement.type
+msgctxt "EnableAutomaticHostPowerManagement.type"
+msgid "String"
+msgstr ""
+
+#: DefaultMaximumMigrationDowntime.description
+msgid ""
+"\"Maximum number of milliseconds the VM can be down during live migration. "
+"Value of 0 means that VDSM default will be used.\""
+msgstr ""
+
+#: DefaultMaximumMigrationDowntime.type
+msgctxt "DefaultMaximumMigrationDowntime.type"
+msgid "Integer"
+msgstr ""
+
+#: DefaultMaximumMigrationDowntime.validValues
+msgctxt "DefaultMaximumMigrationDowntime.validValues"
+msgid "0..2147483647"
+msgstr ""
+
+#: DefaultSerialNumberPolicy.description
+msgid "Policy specifying the default assignment of serial numbers to Vms."
+msgstr ""
+
+#: DefaultSerialNumberPolicy.type
+msgctxt "DefaultSerialNumberPolicy.type"
+msgid "String"
+msgstr ""
+
+#: DefaultSerialNumberPolicy.validValues
+msgid "VM_ID,HOST_ID,CUSTOM"
+msgstr ""
+
+#: MigrationPolicies.description
+msgid "List of migration policies."
+msgstr ""
+
+#: MigrationPolicies.type
+msgid "MigrationPolicies"
+msgstr ""
+
+#: DefaultCustomSerialNumber.description
+msgid "Serial number used when DefaultSerialNumberPolicy=Custom."
+msgstr ""
+
+#: DefaultCustomSerialNumber.type
+msgctxt "DefaultCustomSerialNumber.type"
+msgid "String"
+msgstr ""
+
+#: HotPlugCpuSupported.type
+msgctxt "HotPlugCpuSupported.type"
+msgid "String"
+msgstr ""
+
+#: HotPlugCpuSupported.description
+msgid "\"A support map of hot plug cpu to architecture\""
+msgstr ""
+
+#: HotUnplugCpuSupported.type
+msgctxt "HotUnplugCpuSupported.type"
+msgid "String"
+msgstr ""
+
+#: HotUnplugCpuSupported.description
+msgid "\"A support map of hot unplug cpu to architecture\""
+msgstr ""
+
+#: MaxNumOfTriesToRunFailedAutoStartVm.description
+msgid ""
+"\"Number of attempts to restart highly available VM that went down "
+"unexpectedly\""
+msgstr ""
+
+#: MaxNumOfTriesToRunFailedAutoStartVm.type
+msgctxt "MaxNumOfTriesToRunFailedAutoStartVm.type"
+msgid "Integer"
+msgstr ""
+
+#: RetryToRunAutoStartVmIntervalInSeconds.description
+msgid ""
+"\"How often to try to restart highly available VM that went down unexpectedly "
+"(in seconds)\""
+msgstr ""
+
+#: RetryToRunAutoStartVmIntervalInSeconds.type
+msgctxt "RetryToRunAutoStartVmIntervalInSeconds.type"
+msgid "Integer"
+msgstr ""
+
+#: CSRFProtection.type
+msgctxt "CSRFProtection.type"
+msgid "Boolean"
+msgstr ""
+
+#: CSRFProtection.description
+msgid "\"Enables CSRF (Cross Site Request Forgery) protection in RESTAPI.\""
+msgstr ""
+
+#: CORSSupport.type
+msgctxt "CORSSupport.type"
+msgid "Boolean"
+msgstr ""
+
+#: CORSSupport.description
+msgid "\"Enables CORS (Cross Origin Resource Sharing) support in RESTAPI.\""
+msgstr ""
+
+#: CORSAllowedOrigins.type
+msgctxt "CORSAllowedOrigins.type"
+msgid "String"
+msgstr ""
+
+#: CORSAllowedOrigins.description
+msgid ""
+"\"When CORS (Cross Origin Resource Sharing) is enabled (using the CORSSupport "
+"parameter) this indicates which origins are allowed.\""
+msgstr ""
+
+#. # PM Health Check
+#: PMHealthCheckEnabled.type
+msgctxt "PMHealthCheckEnabled.type"
+msgid "Boolean"
+msgstr ""
+
+#: PMHealthCheckEnabled.description
+msgid "\"Enable/Disable Power Management Health Check feature.\""
+msgstr ""
+
+#: PMHealthCheckIntervalInSec.type
+msgctxt "PMHealthCheckIntervalInSec.type"
+msgid "Integer"
+msgstr ""
+
+#: PMHealthCheckIntervalInSec.description
+msgid "\"The interval in which the Power Management Health Check is running.\""
+msgstr ""
+
+#: FenceKdumpDestinationAddress.type
+msgctxt "FenceKdumpDestinationAddress.type"
+msgid "String"
+msgstr ""
+
+#: FenceKdumpDestinationAddress.description
+msgid ""
+"Defines the hostname(s) or IP address(es) to send fence_kdump messages to. "
+"If empty, engine FQDN is used. WARNING: If it's changed, please make sure it "
+"corresponds to LISTENER_ADDRESS in fence_kdump listener config file! Also "
+"it's needed to redeploy all hosts using kdump detection to activate the "
+"change!"
+msgstr ""
+
+#: FenceKdumpDestinationPort.type
+msgctxt "FenceKdumpDestinationPort.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceKdumpDestinationPort.description
+msgid ""
+"Defines the port to send fence_kdump messages to. WARNING: If it's changed, "
+"please make sure it corresponds to LISTENER_PORT in fence_kdump listener "
+"config file! Also it's needed to redeploy all hosts using kdump detection to "
+"activate the change!"
+msgstr ""
+
+#: FenceKdumpMessageInterval.type
+msgctxt "FenceKdumpMessageInterval.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceKdumpMessageInterval.description
+msgid ""
+"Defines the interval in seconds between messages sent by fence_kdump_send. "
+"WARNING: If it's changed, please make sure the new value is at least couple "
+"times lower than KDUMP_FINISHED_TIMEOUT in fence_kdump listener config file! "
+"Also it's needed to redeploy all hosts using kdump detection to activate "
+"the change!"
+msgstr ""
+
+#: FenceKdumpListenerTimeout.type
+msgctxt "FenceKdumpListenerTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceKdumpListenerTimeout.description
+msgid ""
+"Defines max timeout in seconds since last heartbeat to consider fence_kdump "
+"listener alive. WARNING: If it's changed, please make sure the new value is "
+"at least two times higher than HEARTBEAT_INTERVAL in fence_kdump listener "
+"config file!"
+msgstr ""
+
+#: KdumpStartedTimeout.type
+msgctxt "KdumpStartedTimeout.type"
+msgid "Integer"
+msgstr ""
+
+#: KdumpStartedTimeout.description
+msgid ""
+"Defines maximum timeout in seconds to wait until 1st message from kdumping "
+"host is received (host kdump flow started). WARNING: If it's changed, please "
+"make sure the new value is at least couple times higher than "
+"FenceKdumpMessageInterval in engine-config and HEARTBEAT_INTERVAL in "
+"fence_kdump listener config file!"
+msgstr ""
+
+#. # Custome fence agents configurations
+#: CustomFenceAgentMapping.description
+msgid ""
+"\"Maps a fencing agent to other agent implicitly. Format : "
+"((\\w)+[=](\\w)+[,]{0,1})+. Example: agent1=agent2,agent3=agent4\""
+msgstr ""
+
+#: CustomFenceAgentMapping.type
+msgctxt "CustomFenceAgentMapping.type"
+msgid "FenceConfig"
+msgstr ""
+
+#: CustomFenceAgentDefaultParams.description
+msgid ""
+"\"Default parameters per agent. Format ([\\w]+([=][\\w]+){0,1}[,]{0,1})+. "
+"Example: agent1=key1=val1,flag;key2=val2\""
+msgstr ""
+
+#: CustomFenceAgentDefaultParams.type
+msgctxt "CustomFenceAgentDefaultParams.type"
+msgid "FenceConfig"
+msgstr ""
+
+#: CustomFenceAgentDefaultParamsForPPC.description
+msgid ""
+"\"Default parameters per agent for PPC. Format "
+"([\\w]+([=][\\w]+){0,1}[,]{0,1})+. Example: agent1=key1=val1,flag;key2=val2\""
+msgstr ""
+
+#: CustomFenceAgentDefaultParamsForPPC.type
+msgctxt "CustomFenceAgentDefaultParamsForPPC.type"
+msgid "FenceConfig"
+msgstr ""
+
+#: CustomVdsFenceOptionMapping.description
+msgid ""
+"\"secure/port/slot mapping support per agent for PPC. Format "
+"([\\w]+[:]([\\w]*[=][\\w]*[,]{0,1}[;]{0,1}){0,3}[;]{0,1})+. Example: "
+"agent1:secure=secure;agent2:port=ipport,slot=slot\""
+msgstr ""
+
+#: CustomVdsFenceOptionMapping.type
+msgctxt "CustomVdsFenceOptionMapping.type"
+msgid "FenceConfig"
+msgstr ""
+
+#: CustomVdsFenceType.description
+msgid ""
+"\"Fence agents types. Format ((\\w)+[,]{0,1})+. Example: agent1,agent2\""
+msgstr ""
+
+#: CustomVdsFenceType.type
+msgctxt "CustomVdsFenceType.type"
+msgid "FenceConfig"
+msgstr ""
+
+#: CustomFencePowerWaitParam.type
+msgctxt "CustomFencePowerWaitParam.type"
+msgid "FenceConfig"
+msgstr ""
+
+#: CustomFencePowerWaitParam.description
+msgid ""
+"\"Maps a fencing agent to the param for delay on/off actions. Format : "
+"((\\w)+[=](\\w)+[,]{0,1})+. Example: agent1=power_wait,agent2=delay\""
+msgstr ""
+
+#. # Random Number Generator device
+#: ClusterRequiredRngSourcesDefault.description
+msgid ""
+"\"For UI only. Random Number Generator sources that are preselected when "
+"creating a new cluster (comma separated string of values 'random' and "
+"'hwrng')\""
+msgstr ""
+
+#: ClusterRequiredRngSourcesDefault.type
+msgctxt "ClusterRequiredRngSourcesDefault.type"
+msgid "StringMultiple"
+msgstr ""
+
+#: ClusterRequiredRngSourcesDefault.validValues
+msgid "random,hwrng"
+msgstr ""
+
+#: UnsupportedLocalesFilterOverrides.description
+msgid ""
+"A comma separated list of locale keys to display even though they're "
+"unsupported"
+msgstr ""
+
+#: UnsupportedLocalesFilterOverrides.type
+msgctxt "UnsupportedLocalesFilterOverrides.type"
+msgid "String"
+msgstr ""
+
+#: DefaultMTU.description
+msgid "\"Default MTU value\""
+msgstr ""
+
+#: DefaultMTU.type
+msgid "Mtu"
+msgstr ""
+
+#: FenceStartStatusRetries.type
+msgctxt "FenceStartStatusRetries.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceStartStatusRetries.description
+msgid ""
+"Defines how many status command retries are done in order to get a 'on' "
+"status after host is started from power management."
+msgstr ""
+
+#: FenceStartStatusDelayBetweenRetriesInSec.type
+msgctxt "FenceStartStatusDelayBetweenRetriesInSec.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceStartStatusDelayBetweenRetriesInSec.description
+msgid ""
+"Defines how may seconds to wait between each retry in "
+"FenceStopStatusRetries."
+msgstr ""
+
+#: FenceStopStatusRetries.type
+msgctxt "FenceStopStatusRetries.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceStopStatusRetries.description
+msgid ""
+"Defines how many status command retries are done in order to get a 'off' "
+"status after host is stopped from power management."
+msgstr ""
+
+#: FenceStopStatusDelayBetweenRetriesInSec.type
+msgctxt "FenceStopStatusDelayBetweenRetriesInSec.type"
+msgid "Integer"
+msgstr ""
+
+#: FenceStopStatusDelayBetweenRetriesInSec.description
+msgid ""
+"Defines how may seconds to wait between each retry in "
+"FenceStartStatusRetries."
+msgstr ""
+
+#: DefaultAutoConvergence.description
+msgid "\"Use auto-convergence on all migrations by default.\""
+msgstr ""
+
+#: DefaultAutoConvergence.type
+msgctxt "DefaultAutoConvergence.type"
+msgid "Boolean"
+msgstr ""
+
+#: DefaultMigrationCompression.description
+msgid "\"Use compression of same memory pages on all migrations by default.\""
+msgstr ""
+
+#: DefaultMigrationCompression.type
+msgctxt "DefaultMigrationCompression.type"
+msgid "Boolean"
+msgstr ""
+
+#: GlusterRefreshRateGeoRepStatusInSecs.description
+msgid ""
+"Refresh rate (in seconds) of the geo-replication session status and "
+"statistics"
+msgstr ""
+
+#: GlusterRefreshRateGeoRepStatusInSecs.type
+msgctxt "GlusterRefreshRateGeoRepStatusInSecs.type"
+msgid "Integer"
+msgstr ""
+
+#: GlusterRefreshRateGeoRepDiscoveryInSecs.description
+msgid "Refresh rate (in seconds) for discovery of geo-replication sessions"
+msgstr ""
+
+#: GlusterRefreshRateGeoRepDiscoveryInSecs.type
+msgctxt "GlusterRefreshRateGeoRepDiscoveryInSecs.type"
+msgid "Integer"
+msgstr ""
+
+#. # Engine backup awareness
+#: BackupCheckPeriodInHours.description
+msgid ""
+"\"Determines the period in hours on which we check for a fresh backup - "
+"default : 6 hours, set to -1 to disable this feature\""
+msgstr ""
+
+#: BackupCheckPeriodInHours.type
+msgctxt "BackupCheckPeriodInHours.type"
+msgid "Integer"
+msgstr ""
+
+#: BackupAlertPeriodInDays.description
+msgid ""
+"\"Determines the max number of days allowed without a fresh backup - default "
+": 1 day\""
+msgstr ""
+
+#: BackupAlertPeriodInDays.type
+msgctxt "BackupAlertPeriodInDays.type"
+msgid "Integer"
+msgstr ""
+
+#: HostPackagesUpdateTimeInHours.description
+msgid "Refresh rate (in hours) for available host updates check."
+msgstr ""
+
+#: UserPackageNamesForCheckUpdate.description
+msgid ""
+"A comma separated list of packages to be checked for updates by the host "
+"upgrade action."
+msgstr ""
+
+#: UserPackageNamesForCheckUpdate.type
+msgctxt "UserPackageNamesForCheckUpdate.type"
+msgid "StringMultiple"
+msgstr ""
+
+#: UserPackageNamesForCheckUpdate.mergable
+msgctxt "UserPackageNamesForCheckUpdate.mergable"
+msgid "true"
+msgstr ""
+
+#: UserPackageNamesForCheckUpdate.delimiter
+msgid ","
+msgstr ""
+
+#: CertificationValidityCheckTimeInHours.description
+msgid "Refresh rate (in hours) for available certification check."
+msgstr ""
+
+#: CertificationValidityCheckTimeInHours.type
+msgctxt "CertificationValidityCheckTimeInHours.type"
+msgid "Double"
+msgstr ""
+
+#. # Hosted Engine
+#: HostedEngineVmName.description
+msgid ""
+"The name of the Hosted Engine VM. That name will be used to perform "
+"exclusive operation by ovirt-engine on that VM."
+msgstr ""
+
+#: AutoImportHostedEngine.description
+msgid ""
+"\"Try to automatically import the hosted engine VM and its storage domain\""
+msgstr ""
+
+#: AutoImportHostedEngine.type
+msgctxt "AutoImportHostedEngine.type"
+msgid "Boolean"
+msgstr ""
+
+#: AllowEditingHostedEngine.description
+msgid "Allow/disallow editing the hosted engine VM."
+msgstr ""
+
+#: AllowEditingHostedEngine.type
+msgctxt "AllowEditingHostedEngine.type"
+msgid "Boolean"
+msgstr ""
+
+#: HostedEngineConfigDiskSizeInBytes.description
+msgid "The size of the disk containing the Hosted Engine configuration."
+msgstr ""
+
+#: HostedEngineConfigDiskSizeInBytes.type
+msgctxt "HostedEngineConfigDiskSizeInBytes.type"
+msgid "Integer"
+msgstr ""
+
+#: AlertOnNumberOfLVs.description
+msgid ""
+"The number of LVs in a block Storage Domain that will cause an alert to be "
+"issued"
+msgstr ""
+
+#: AlertOnNumberOfLVs.type
+msgctxt "AlertOnNumberOfLVs.type"
+msgid "Integer"
+msgstr ""
+
+#: AlertOnNumberOfLVs.validValues
+msgid "6..2147483647"
+msgstr ""
+

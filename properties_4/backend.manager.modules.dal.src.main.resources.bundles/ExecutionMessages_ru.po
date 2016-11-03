@@ -1,0 +1,786 @@
+#. extracted from ExecutionMessages.properties
+# jdronova <juliette.tux@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-31 17:34+0300\n"
+"PO-Revision-Date: 2016-11-01 10:58+0300\n"
+"Last-Translator: jdronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. # Job types
+#: job.AddVm
+msgctxt "job.AddVm"
+msgid "Creating VM ${VM} in Cluster ${Cluster}"
+msgstr ""
+
+#: job.AddVmFromTemplate
+msgid "Creating VM ${VM} from Template ${VmTemplate} in Cluster ${Cluster}"
+msgstr ""
+
+#: job.AddVmFromScratch
+msgctxt "job.AddVmFromScratch"
+msgid "Creating VM ${VM} in Cluster ${Cluster}"
+msgstr ""
+
+#: job.AddVmFromSnapshot
+msgid "Creating VM ${VM} from Snapshot ${Snapshot} in Cluster ${Cluster}"
+msgstr ""
+
+#: job.AddUnmanagedVms
+msgid "Adding unmanaged VMs running on Host ${VDS} to Cluster ${Cluster}"
+msgstr ""
+
+#: job.RemoveVm
+msgid "Removing VM ${VM} from system"
+msgstr ""
+
+#: job.UpdateVm
+msgid "Editing VM ${VM} properties"
+msgstr ""
+
+#: job.StopVm
+msgid "Stopping VM ${VM}"
+msgstr ""
+
+#: job.ShutdownVm
+msgid "Shutting down VM ${VM}"
+msgstr ""
+
+#: job.RebootVm
+msgid "Rebooting VM ${VM}"
+msgstr ""
+
+#: job.HibernateVm
+msgid "Performing Hibernate action on VM ${VM}"
+msgstr ""
+
+#: job.UpdateWatchdog
+msgid "Updating watchdog on VM ${VM}"
+msgstr ""
+
+#: job.AddWatchdog
+msgid "Adding watchdog to VM ${VM}"
+msgstr ""
+
+#: job.RemoveWatchdog
+msgid "Remove watchdog from VM ${VM}"
+msgstr ""
+
+#: job.RunVm
+msgid "Launching VM ${VM}"
+msgstr ""
+
+#: job.RunVmOnce
+msgid "Launching VM ${VM} in run-once mode"
+msgstr ""
+
+#: job.MigrateVm
+msgid "Migrating VM ${VM}"
+msgstr ""
+
+#: job.MigrateVmToServer
+msgid "Migrating VM ${VM} to Host ${VDS}"
+msgstr ""
+
+#. # TODO: this is a hack to handle internal migrations triggered from set-non-operational command, should be replaced
+#: job.InternalMigrateVm
+msgid "Migrating VM ${VM} because previous Host became non-operational"
+msgstr ""
+
+#: job.ExportVm
+msgid "Exporting VM ${VM} To Export Domain ${Storage}"
+msgstr ""
+
+#: job.ExportVmTemplate
+msgid "Exporting VM Template ${VmTemplate} To Export Domain ${Storage}"
+msgstr ""
+
+#: job.AddDisk
+msgid "Adding Disk"
+msgstr ""
+
+#: job.RemoveDisk
+msgid "Removing Disk ${DiskAlias}"
+msgstr ""
+
+#: job.ImportVm
+msgctxt "job.ImportVm"
+msgid "Importing VM ${VM} to Cluster ${Cluster}"
+msgstr ""
+
+#: job.ImportVmFromExternalProvider
+msgctxt "job.ImportVmFromExternalProvider"
+msgid "Importing VM ${VM} to Cluster ${Cluster}"
+msgstr ""
+
+#: job.ForceSelectSPM
+msgid "Force selecting ${VDS} as SPM for Data Center ${StoragePool}"
+msgstr ""
+
+#: job.ImportVmFromConfiguration
+msgid "Importing VM ${VM} from configuration to Cluster ${Cluster}"
+msgstr ""
+
+#: job.ImportVmTemplateFromConfiguration
+msgid ""
+"Importing Template ${VmTemplate} from configuration to Cluster ${Cluster}"
+msgstr ""
+
+#: job.RemoveVmFromImportExport
+msgid "Removing VM ${VM} image from Storage Domain ${Storage}"
+msgstr ""
+
+#: job.RemoveVmTemplateFromImportExport
+msgid "Removing VM Template ${VmTemplate} image from Storage Domain ${Storage}"
+msgstr ""
+
+#: job.ImportVmTemplate
+msgid "Importing VM Template ${VmTemplate} to Data Center ${StoragePool}"
+msgstr ""
+
+#: job.AddVds
+msgid "Adding new Host ${VDS} to Cluster ${Cluster}"
+msgstr ""
+
+#: job.MaintenanceNumberOfVdss
+msgid "Moving Host(s) ${VDS} to Maintenance"
+msgstr ""
+
+#: job.ActivateVds
+msgid "Activating Host ${VDS}"
+msgstr ""
+
+#: job.ApproveVds
+msgid "Adding new Host ${VDS} (Approve process) to Cluster ${Cluster}"
+msgstr ""
+
+#: job.StartVds
+msgid "Starting Host ${VDS} (Fencing) on Cluster ${Cluster}"
+msgstr ""
+
+#: job.StopVds
+msgid "Stopping Host ${VDS} (Fencing) on Cluster ${Cluster}"
+msgstr ""
+
+#: job.RestartVds
+msgid "Restarting Host ${VDS} (Fencing) on Cluster ${Cluster}"
+msgstr ""
+
+#: job.CommitNetworkChanges
+msgid "Applying saved network configuration to Host ${VDS}"
+msgstr ""
+
+#: job.HostSetupNetworks
+msgid "Configuring networks on host ${VDS}"
+msgstr ""
+
+#: job.AddVmTemplate
+msgid "Creating VM Template ${VmTemplate} in Data Center ${StoragePool}"
+msgstr ""
+
+#: job.AddVmTemplateFromSnapshot
+msgid ""
+"Creating VM Template ${VmTemplate} from Snapshot ${Snapshot} in Data Center "
+"${StoragePool}"
+msgstr ""
+
+#: job.RemoveVmTemplate
+msgid "Removing VM Template ${VmTemplate} from Data Center ${StoragePool}"
+msgstr ""
+
+#: job.MoveOrCopyDisk
+msgid "${Action} Disk ${DiskAlias} from ${SourceSD} to ${TargetSD}"
+msgstr ""
+
+#: job.LiveMigrateDisk
+msgid "Migrating Disk ${DiskAlias} from ${SourceSD} to ${TargetSD}"
+msgstr ""
+
+#: job.CreateAllSnapshotsFromVm
+msgid "Creating VM Snapshot ${Snapshot} for VM ${VM}"
+msgstr ""
+
+#: job.TryBackToAllSnapshotsOfVm
+msgid "Preview VM Snapshot ${Snapshot} of VM ${VM}"
+msgstr ""
+
+#: job.RestoreAllSnapshots
+msgid "Restoring VM Snapshot ${Snapshot} of VM ${VM}"
+msgstr ""
+
+#: job.UpdateVmPoolWithVms
+msgid "Configuring VM Pool ${VmPool} properties"
+msgstr ""
+
+#: job.AddLocalStorageDomain
+msgid ""
+"Adding local Storage Domain ${Storage} on Host ${VDS} to Data Center "
+"${StoragePool}"
+msgstr ""
+
+#: job.AddNFSStorageDomain
+msgid "Adding NFS Storage Domain ${Storage} to Data Center ${StoragePool}"
+msgstr ""
+
+#: job.AddPosixFsStorageDomain
+msgid "Adding Posix FS Storage Domain ${Storage} to Data Center ${StoragePool}"
+msgstr ""
+
+#: job.AddGlusterFsStorageDomain
+msgid ""
+"Adding Gluster FS Storage Domain ${Storage} to Data Center ${StoragePool}"
+msgstr ""
+
+#: job.RemoveStorageDomain
+msgid "Removing Storage Domain ${Storage}"
+msgstr ""
+
+#: job.ForceRemoveStorageDomain
+msgid ""
+"Removing Storage Domain ${Storage} (Force Remove) from Data Center "
+"${StoragePool}"
+msgstr ""
+
+#: job.AttachStorageDomainToPool
+msgid "Attaching Storage Domain ${Storage} to Data Center ${StoragePool}"
+msgstr ""
+
+#: job.DetachStorageDomainFromPool
+msgid "Detaching Storage Domain ${Storage} from Data Center ${StoragePool}"
+msgstr ""
+
+#: job.ActivateStorageDomain
+msgid "Activating Storage Domain ${Storage} on Data Center ${StoragePool}"
+msgstr ""
+
+#: job.DeactivateStorageDomain
+msgid "Deactivating Storage Domain ${Storage} in Data Center ${StoragePool}"
+msgstr ""
+
+#: job.DeactivateStorageDomainWithOvfUpdate
+msgid "Deactivating Storage Domain ${Storage} in Data Center ${StoragePool}."
+msgstr ""
+
+#: job.AddSANStorageDomain
+msgid "Adding SAN Storage Domain ${Storage}"
+msgstr ""
+
+#: job.ExtendSANStorageDomain
+msgid "Extending SAN Storage Domain ${Storage}"
+msgstr ""
+
+#: job.RefreshLunsSize
+msgid "Refresh LUN Size in Domain ${Storage}"
+msgstr ""
+
+#: job.RecoveryStoragePool
+msgid "Recovering Data Center ${StoragePool}"
+msgstr ""
+
+#: job.RemoveStoragePool
+msgid "Removing Data Center ${StoragePool}"
+msgstr ""
+
+#: job.UpdateStoragePool
+msgid "Editing Data Center ${StoragePool} properties"
+msgstr ""
+
+#: job.AddExistingFileStorageDomain
+msgid "Adding File Storage Domain ${Storage}"
+msgstr ""
+
+#: job.AddStorageServerConnection
+msgctxt "job.AddStorageServerConnection"
+msgid "Connecting Host ${VDS} to Storage server"
+msgstr ""
+
+#: job.DisconnectStorageServerConnection
+msgid "Disconnecting from Storage server on ${VDS}"
+msgstr ""
+
+#: job.RemoveStorageServerConnection
+msgid ""
+"Disconnecting from Storage server on ${VDS} and removing its connection from "
+"db"
+msgstr ""
+
+#: job.UpdateStorageServerConnection
+msgid "Updating storage connection details"
+msgstr ""
+
+#: job.ConnectStorageToVds
+msgctxt "job.ConnectStorageToVds"
+msgid "Connecting Host ${VDS} to Storage server"
+msgstr ""
+
+#: job.AddVmPoolWithVms
+msgid "Creating VM Pool ${VmPool} from template ${VmTemplate}"
+msgstr ""
+
+#: job.ChangeDisk
+msgid "Changing CD-ROM for VM ${VM}"
+msgstr ""
+
+#: job.AttachUserToVmFromPoolAndRun
+msgid "Allocating VM ${VM} from VM Pool ${VmPool} to User ${User}"
+msgstr ""
+
+#: job.AddStoragePoolWithStorages
+msgid "Adding Data Center ${StoragePool}"
+msgstr ""
+
+#: job.MaintenanceVds
+msgid "Moving Host ${VDS} to Maintenance"
+msgstr ""
+
+#: job.VdsNotRespondingTreatment
+msgid "Handling non responsive Host ${VDS}"
+msgstr ""
+
+#: job.ReconstructMasterDomain
+msgid "Reconstructing master domain on Data Center ${StoragePool}"
+msgstr ""
+
+#: job.SetNonOperationalVds
+msgid "Setting Host ${VDS} to Non-Operational mode."
+msgstr ""
+
+#: job.RemoveSnapshot
+msgid "Removing Snapshot ${Snapshot} of VM ${VM}"
+msgstr ""
+
+#: job.StartGlusterVolumeProfile
+msgid "Start Profiling on Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.StopGlusterVolumeProfile
+msgid "Stop Profiling on Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.CreateGlusterVolume
+msgid "Creating Gluster Volume ${GlusterVolume} on Cluster ${Cluster}"
+msgstr ""
+
+#: job.SetGlusterVolumeOption
+msgid "Setting Option on Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.StartGlusterVolume
+msgid "Starting Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.StopGlusterVolume
+msgid "Stopping Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.ResetGlusterVolumeOptions
+msgid "Resetting Options on Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.DeleteGlusterVolume
+msgid "Deleting Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.GlusterVolumeRemoveBricks
+msgid "Removing Bricks from Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.StartRebalanceGlusterVolume
+msgid "Rebalancing Gluster Volume ${GlusterVolume} in Cluster ${Cluster}"
+msgstr ""
+
+#: job.StartRemoveGlusterVolumeBricks
+msgid ""
+"Removing Bricks from Gluster Volume ${GlusterVolume} in Cluster ${Cluster}"
+msgstr ""
+
+#: job.ReplaceGlusterVolumeBrick
+msgid "Replacing Brick in Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.AddBricksToGlusterVolume
+msgid "Adding Bricks to Gluster Volume ${GlusterVolume}"
+msgstr ""
+
+#: job.RemoveGlusterServer
+msgid "Removing Gluster Server ${VDS}"
+msgstr ""
+
+#: job.CreateBrick
+msgid "Creating Brick ${brickName} on ${VDS}"
+msgstr ""
+
+#: job.RegisterDisk
+msgid "Registering Disk ${DiskAlias}"
+msgstr ""
+
+#: job.AddEventSubscription
+msgid "Adding subscriber ${Address} to event type ${EventType}"
+msgstr ""
+
+#: job.RemoveEventSubscription
+msgid "Removing subscriber ${Address} from event type ${EventType}"
+msgstr ""
+
+#: job.EnableGlusterHook
+msgid "Enabling Gluster Hook ${GlusterHookName}"
+msgstr ""
+
+#: job.DisableGlusterHook
+msgid "Disabling Gluster Hook ${GlusterHookName}"
+msgstr ""
+
+#: job.UpdateGlusterHook
+msgid ""
+"Updating Gluster Hook ${GlusterHookName} on conflicting servers in Cluster "
+"${Cluster}"
+msgstr ""
+
+#: job.AddGlusterHook
+msgid ""
+"Adding Gluster Hook ${GlusterHookName} on conflicting servers in Cluster "
+"${Cluster}"
+msgstr ""
+
+#: job.RemoveGlusterHook
+msgid ""
+"Removing Gluster Hook ${GlusterHookName} from all servers in Cluster "
+"${Cluster}"
+msgstr ""
+
+#: job.GetDiskAlignment
+msgid "Scanning Alignment on Disk ${DiskAlias}"
+msgstr ""
+
+#: job.AddExternalJob
+msgid "Adding an external Job"
+msgstr ""
+
+#: job.AddExternalStep
+msgid "Adding an external Step"
+msgstr ""
+
+#: job.EndExternalJob
+msgid "Ending an external Job"
+msgstr ""
+
+#: job.EndExternalStep
+msgid "Ending an external Step"
+msgstr ""
+
+#: job.ClearExternalJob
+msgid "Clearing an external Job"
+msgstr ""
+
+#: job.ImportRepoImage
+msgid "Importing Disk ${RepoImageName} to domain ${Storage}"
+msgstr ""
+
+#: job.ExportRepoImage
+msgid "Exporting Disk ${DiskAlias} from domain ${Storage}"
+msgstr ""
+
+#: job.SshSoftFencing
+msgid "Executing SSH Soft Fencing on host ${VDS}"
+msgstr ""
+
+#: job.RemoveDiskSnapshots
+msgid "Removing Disks from Snapshot(s) ${Snapshots} of VM ${VM}"
+msgstr ""
+
+#: job.VdsKdumpDetection
+msgid "Detecting kdump flow on host ${VDS}"
+msgstr ""
+
+#: job.AddFenceAgent
+msgid "Adding fence agent to host ${VDS}"
+msgstr ""
+
+#: job.RemoveFenceAgent
+msgid "Removing fence agent from host ${VDS}"
+msgstr ""
+
+#: job.UpdateFenceAgent
+msgid "Updating fence agent of host ${VDS}"
+msgstr ""
+
+#: job.SyncStorageDevices
+msgid "Scanning storage devices on the host ${VDS}"
+msgstr ""
+
+#: job.VmLogon
+msgid "Logging on to VM ${VM}"
+msgstr ""
+
+#: job.CloneVm
+msgid "Creating VM ${VM} as a clone of VM ${SourceVm}"
+msgstr ""
+
+#. # Step types
+#: step.VALIDATING
+msgid "Validating"
+msgstr ""
+
+#: step.EXECUTING
+msgid "Executing"
+msgstr ""
+
+#: step.FINALIZING
+msgid "Finalizing"
+msgstr ""
+
+#: step.INSTALLING_HOST
+msgid "Installing Host ${VDS}"
+msgstr ""
+
+#: step.TEST_POWER_MANAGEMENT
+msgid "Testing Power Management for Host ${VDS}"
+msgstr ""
+
+#: step.COPY_IMAGE
+msgid "Copying Image"
+msgstr ""
+
+#: step.MOVE_IMAGE
+msgid "Moving Image"
+msgstr ""
+
+#: step.CREATE_VOLUME
+msgid "Creating Volume"
+msgstr ""
+
+#: step.ALLOCATE_VOLUME
+msgid "Allocating Volume"
+msgstr ""
+
+#: step.DELETE_VOLUME
+msgid "Deleting Volume"
+msgstr ""
+
+#: step.DELETE_IMAGE
+msgid "Deleting Image"
+msgstr ""
+
+#: step.DOWNLOAD_IMAGE
+msgid "Downloading Image"
+msgstr ""
+
+#: step.DOWNLOAD_IMAGE_FROM_STREAM
+msgid "Uploading Image"
+msgstr ""
+
+#: step.MERGE_SNAPSHOTS
+msgid ""
+"Merging snapshots (${SourceSnapshot} into ${DestinationSnapshot}) of disk "
+"${Disk}"
+msgstr ""
+
+#: step.ADD_VM_TO_POOL
+msgid "Creating VM ${VM} for VM Pool"
+msgstr ""
+
+#: step.MIGRATE_VM
+msgid "Migrating VM ${VM} from Host ${VDS}"
+msgstr ""
+
+#: step.CREATING_SNAPSHOTS
+msgid "Creating snapshots for VM ${VM}"
+msgstr ""
+
+#: step.RUN_STATELESS_VM
+msgid "Running stateless VM ${VM}"
+msgstr ""
+
+#: step.TAKING_VM_FROM_POOL
+msgid "Taking VM ${VM} from VM pool in order to run it"
+msgstr ""
+
+#: step.CLONE_IMAGE_STRUCTURE
+msgid "Cloning image's structure"
+msgstr ""
+
+#: step.SYNC_IMAGE_DATA
+msgid "Synchronizing image data"
+msgstr ""
+
+#: step.REMOVING_VM
+msgid "Removing VM ${VM} from VM Pool"
+msgstr ""
+
+#: step.ADD_VM
+msgid "Adding VM ${VM}"
+msgstr ""
+
+#. # Gluster step types
+#: step.SETTING_GLUSTER_OPTION
+msgid ""
+"Setting option ${Key}=${Value} on volume ${GlusterVolume} of cluster "
+"${Cluster}"
+msgstr ""
+
+#: step.REBALANCING_VOLUME
+msgid ""
+"Rebalancing Gluster Volume ${GlusterVolume} in Cluster ${Cluster}.( "
+"${Status} ${info})"
+msgstr ""
+
+#: step.REMOVING_BRICKS
+msgid ""
+"Removing Bricks from Gluster Volume ${GlusterVolume} in Cluster ${Cluster}.( "
+"${Status} ${info})"
+msgstr ""
+
+#. # Non-monitored job:
+#: job.AddVmInterface
+msgid "Adding Network Interface ${InterfaceName} to VM ${VM}"
+msgstr ""
+
+#: job.RemoveVmInterface
+msgid "Removing Network Interface ${InterfaceName} from VM ${VM}"
+msgstr ""
+
+#: job.UpdateVmInterface
+msgid "Updating Network Interface ${InterfaceName} properties for VM ${VM}"
+msgstr ""
+
+#: job.UpdateVmDisk
+msgid "Updating Disk ${DiskAlias} properties for VM ${VM}"
+msgstr ""
+
+#: job.ChangeVMCluster
+msgid "Change VM ${VM} Cluster to ${Cluster}"
+msgstr ""
+
+#: job.CancelMigrateVm
+msgid "Canceling migration of VM ${VM}"
+msgstr ""
+
+#: job.CancelConvertVm
+msgid "Canceling conversion of VM ${VM}"
+msgstr ""
+
+#: job.UpdateVds
+msgid "Updating Host ${VDS} properties"
+msgstr ""
+
+#: job.RemoveVds
+msgid "Removing Host ${VDS} from Cluster ${Cluster}"
+msgstr ""
+
+#: job.ChangeVDSCluster
+msgid "Changing Host ${VDS} Cluster to ${Cluster}"
+msgstr ""
+
+#: job.AddVmTemplateInterface
+msgid "Adding Interface ${InterfaceName} to VM template ${VmTemplate}"
+msgstr ""
+
+#: job.RemoveVmTemplateInterface
+msgid "Removing Interface ${InterfaceName} from VM Template ${VmTemplate}"
+msgstr ""
+
+#: job.UpdateVmTemplateInterface
+msgid "Updating Interface ${InterfaceName} of VM Template ${VmTemplate}"
+msgstr ""
+
+#: job.RemoveVmPool
+msgid "Removing VM Pool ${VmPool} from Cluster ${Cluster}"
+msgstr ""
+
+#: job.RemoveVmFromPool
+msgid "Removing VM ${VM} from VM Pool ${VmPool}"
+msgstr ""
+
+#: job.RemoveUser
+msgid "Removing User ${User}"
+msgstr ""
+
+#: job.AddUser
+msgid "Adding User ${User}"
+msgstr ""
+
+#: job.AddCluster
+msgid "Adding Cluster ${ClusterName} to Data Center ${StoragePool}"
+msgstr ""
+
+#: job.UpdateCluster
+msgid "Updating Cluster ${Cluster}"
+msgstr ""
+
+#: job.RemoveCluster
+msgid "Deleting Cluster ${Cluster}"
+msgstr ""
+
+#: job.AttachNetworkToCluster
+msgid "Attaching Network ${Network} to Cluster ${Cluster}"
+msgstr ""
+
+#: job.DetachNetworkToCluster
+msgid "Detaching Network ${Network} from Cluster ${Cluster}"
+msgstr ""
+
+#: job.AddPermission
+msgid ""
+"Granting Permission to User/Group ${SubjectName} for entity ${ObjectType}"
+msgstr ""
+
+#: job.RemovePermission
+msgid ""
+"Revoking Permission from User/Group ${SubjectName} for entity ${ObjectType}"
+msgstr ""
+
+#: job.UpdateRole
+msgid "Updating Role ${Role}"
+msgstr ""
+
+#: job.RemoveRole
+msgid "Removing Role ${Role}"
+msgstr ""
+
+#: job.AttachActionGroupsToRole
+msgid "Attaching Action Group ${ActionGroup} to Role ${Role}"
+msgstr ""
+
+#: job.DetachActionGroupsFromRole
+msgid "Detaching Action Group ${ActionGroup} from Role ${Role}"
+msgstr ""
+
+#: job.AddRoleWithActionGroups
+msgid "Adding Role ${Role} with Action Group ${ActionGroup}"
+msgstr ""
+
+#: job.AddSystemPermission
+msgid "Granting Permission to User/Group ${SubjectName} for System"
+msgstr ""
+
+#: job.UpdateStorageDomain
+msgid "Editing Storage Domain ${Storage} properties"
+msgstr ""
+
+#: job.AddEmptyStoragePool
+msgid "Adding empty Data Center ${StoragePool}"
+msgstr ""
+
+#: job.FenceVdsManualy
+msgid "Fencing Host ${VDS} manually"
+msgstr ""
+
+#: job.AddExternalEvent
+msgid "Adding an External Event"
+msgstr ""
+
+#: job.RemoveAuditLogById
+msgid "Removing an Audit Log Entry"
+msgstr ""
+
