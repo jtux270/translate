@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-31 17:33+0300\n"
-"PO-Revision-Date: 2016-11-01 10:58+0300\n"
+"PO-Revision-Date: 2016-11-09 14:18+0300\n"
 "Last-Translator: jdronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "MIME-Version: 1.0\n"
@@ -89,114 +89,133 @@ msgstr ""
 
 #: USER_ADD_VM_FINISHED_SUCCESS
 msgid "VM ${VmName} creation has been completed."
-msgstr ""
+msgstr "Создание ВМ ${VmName} завершено"
 
 #: USER_ADD_VM_FINISHED_FAILURE
 msgid "Failed to complete VM ${VmName} creation."
-msgstr ""
+msgstr "Не удалось завершить создание ВМ ${VmName}"
 
 #: USER_ADD_VM_POOL_WITH_VMS
 msgid ""
 "VM Pool ${VmPoolName} (containing ${VmsCount} VMs) was created by "
 "${UserName}."
-msgstr ""
+msgstr "${UserName} создал пул ВМ ${VmPoolName} (количество ВМ: ${VmsCount})"
 
 #: USER_ADD_VM_POOL_WITH_VMS_FAILED
 msgid "Failed to create VM Pool ${VmPoolName} (User: ${UserName})."
-msgstr ""
+msgstr "Сбой создания пула ВМ ${VmPoolName} (Пользователь: ${UserName})."
 
 #: USER_ADD_VM_POOL_WITH_VMS_ADD_VDS_FAILED
 msgid ""
 "Pool ${VmPoolName} Created, but some Vms failed to create (User: "
 "${UserName})."
 msgstr ""
+"Пул ${VmPoolName} был создан, но некоторые ВМ создать не удалось "
+"(пользователь: "
+"${UserName})."
 
 #: USER_ADD_VM_TEMPLATE
 msgid ""
 "Creation of Template ${VmTemplateName} from VM ${VmName} was initiated by "
 "${UserName}."
 msgstr ""
+"${UserName} начал создание шаблона ${VmTemplateName} на базе ВМ ${VmName}"
 
 #: USER_ADD_VM_TEMPLATE_FINISHED_SUCCESS
 msgid ""
 "Creation of Template ${VmTemplateName} from VM ${VmName} has been completed."
-msgstr ""
+msgstr "Создание шаблона ${VmTemplateName} на базе ВМ ${VmName} завершено."
 
 #: USER_ADD_VM_TEMPLATE_FINISHED_FAILURE
 msgid ""
 "Failed to complete creation of Template ${VmTemplateName} from VM ${VmName}."
 msgstr ""
+"Не удалось завершить создание шаблона ${VmTemplateName} на базе ВМ ${VmName}."
 
 #: USER_ADD_VM_TEMPLATE_FROM_TRUSTED_TO_UNTRUSTED
 msgid ""
 "The non-trusted Template ${VmTemplateName} was created from trusted Vm "
 "${VmName}."
 msgstr ""
+"На базе доверенной ВМ ${VmName} был создан недоверенный шаблон "
+"${VmTemplateName}"
 
 #: USER_ADD_VM_TEMPLATE_FROM_UNTRUSTED_TO_TRUSTED
 msgid ""
 "The trusted template ${VmTemplateName} was created from non-trusted Vm "
 "${VmName}."
 msgstr ""
+"На базе недоверенной ВМ ${VmName} был создан доверенный шаблон "
+"${VmTemplateName}"
 
 #: USER_ADD_VM_TEMPLATE_SUCCESS
 msgid "Template ${VmTemplateName} was created successfully."
-msgstr ""
+msgstr "Шаблон ${VmTemplateName} успешно создан"
 
 #: USER_ADD_VM_TEMPLATE_FAILURE
 msgid "Failed creating Template ${VmTemplateName}."
-msgstr ""
+msgstr "Сбой создания шаблона ${VmTemplateName}."
 
 #: USER_UPDATE_VM_TEMPLATE_FROM_TRUSTED_TO_UNTRUSTED
 msgid ""
 "The Template ${VmTemplateName} was updated from trusted cluster to non-"
 "trusted cluster."
 msgstr ""
+"Шаблон ${VmTemplateName} был обновлён с доверенного кластера на недоверенный"
 
 #: USER_UPDATE_VM_TEMPLATE_FROM_UNTRUSTED_TO_TRUSTED
 msgid ""
 "The Template ${VmTemplateName} was updated from non-trusted cluster to "
 "trusted cluster."
 msgstr ""
+"Шаблон ${VmTemplateName} был обновлён с недоверенного кластера на доверенный"
 
 #: USER_ADD_VM_FROM_TRUSTED_TO_UNTRUSTED
 msgid ""
 "The VM ${VmName} was created in an untrusted cluster. It was originated from "
 "the Template ${VmTemplateName} which was created in a trusted cluster."
 msgstr ""
+"ВМ ${VmName} была создана на недоверенном кластере. ВМ была создана "
+"из шаблона ${VmTemplateName}, который был создан на доверенном кластере."
 
 #: USER_ADD_VM_FROM_UNTRUSTED_TO_TRUSTED
 msgid ""
 "The VM ${VmName} was created in a trusted cluster. It was originated from "
 "the Template ${VmTemplateName} which was created in an untrusted cluster."
 msgstr ""
+"ВМ ${VmName} была создана на доверенном кластере. ВМ была создана "
+"из шаблона ${VmTemplateName}, который был создан на недоверенном кластере."
 
 #: USER_UPDATE_VM_FROM_TRUSTED_TO_UNTRUSTED
 msgid ""
 "The VM ${VmName} was updated from trusted cluster to non-trusted cluster."
-msgstr ""
+msgstr "ВМ ${VmName} была обновлена с доверенного кластера на недоверенный."
 
 #: USER_UPDATE_VM_FROM_UNTRUSTED_TO_TRUSTED
 msgid ""
 "The VM ${VmName} was updated from non-trusted cluster to trusted cluster."
-msgstr ""
+msgstr "ВМ ${VmName} была обновлена с недоверенного кластера на доверенный."
 
 #: USER_ADD_VM_TO_POOL
 msgid "VM ${VmName} was added to VM Pool ${VmPoolName} by ${UserName}."
-msgstr ""
+msgstr "${UserName} добавил ВМ ${VmName} в пул ВМ ${VmPoolName}"
 
 #: USER_ADD_VM_TO_POOL_FAILED
 msgid "Failed to add VM ${VmName} to VM Pool ${VmPoolName}(User: ${UserName})."
 msgstr ""
+"Сбой добавления ВМ ${VmName} в пул ВМ ${VmPoolName}(пользователь: "
+"${UserName})."
 
 #: USER_ATTACH_USER_TO_POOL
 msgid ""
 "User ${AdUserName} was attached to VM Pool ${VmPoolName} by ${UserName}."
 msgstr ""
+"Пользователь ${AdUserName} был прикреплён в пулу ВМ ${VmPoolName} "
+"пользователем ${UserName}."
 
 #: USER_ATTACH_USER_TO_POOL_INTERNAL
 msgid "User ${AdUserName} was attached to VM Pool ${VmPoolName}."
-msgstr ""
+msgstr "Пользователь ${AdUserName} был прикреплён к пулу ВМ ${VmPoolName}."
 
 #: USER_ATTACH_USER_TO_POOL_FAILED
 msgctxt "USER_ATTACH_USER_TO_POOL_FAILED"
@@ -204,6 +223,9 @@ msgid ""
 "Failed to attach User ${AdUserName} to VM Pool ${VmPoolName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой прикрепления пользователя ${AdUserName} к пулу ВМ ${VmPoolName} "
+"(пользователь: "
+"${UserName})."
 
 #: USER_ATTACH_USER_TO_POOL_FAILED_INTERNAL
 msgctxt "USER_ATTACH_USER_TO_POOL_FAILED_INTERNAL"
@@ -211,70 +233,91 @@ msgid ""
 "Failed to attach User ${AdUserName} to VM Pool ${VmPoolName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой прикрепления пользователя ${AdUserName} к пулу ВМ ${VmPoolName} "
+"(пользователь: "
+"${UserName})."
 
 #: USER_ATTACH_USER_TO_VM_FROM_POOL
 msgid ""
 "Attaching User ${AdUserName} to VM ${VmName} in VM Pool ${VmPoolName} was "
 "initiated by ${UserName}."
 msgstr ""
+"Прикрепление пользователя ${AdUserName} к ВМ ${VmName} из пула ${VmPoolName} "
+"было "
+"начато ${UserName}."
 
 #: USER_ATTACH_USER_TO_VM_FROM_POOL_FINISHED_SUCCESS
 msgid ""
 "User ${AdUserName} successfully attached to VM ${VmName} in VM Pool "
 "${VmPoolName}."
 msgstr ""
+"Пользователь ${AdUserName} успешно прикреплён к ВМ ${VmName} из пула "
+"${VmPoolName}."
 
 #: USER_ATTACH_USER_TO_VM_FROM_POOL_FINISHED_FAILURE
 msgid ""
 "Failed to attach user ${AdUserName} to VM ${VmName} in VM Pool "
 "${VmPoolName}."
 msgstr ""
+"Сбой прикрепления пользователя ${AdUserName} к ВМ ${VmName} из пула "
+"${VmPoolName}."
 
 #: USER_ATTACH_USER_TO_VM_FROM_POOL_FAILED
 msgid ""
 "Failed to attach User ${AdUserName} to VM from VM Pool ${VmPoolName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой прикрепления пользователя ${AdUserName} к ВМ из пула ${VmPoolName} "
+"(пользователь: "
+"${UserName})."
 
 #: USER_ATTACH_USER_TO_VM
 msgid "User ${AdUserName} was attached to VM ${VmName} by ${UserName}."
 msgstr ""
+"Пользователь ${AdUserName} был прикреплён к ВМ ${VmName} пользователем "
+"${UserName}."
 
 #: USER_CHANGE_DISK_VM
 msgid "CD ${DiskName} was inserted to VM ${VmName} by ${UserName}."
-msgstr ""
+msgstr "${UserName} вставил CD-диск в ВМ ${VmName}"
 
 #: USER_EJECT_VM_DISK
 msgid "CD was ejected from VM ${VmName} by ${UserName}."
-msgstr ""
+msgstr "CD-диск был извлечён из ВМ ${VmName} пользователем ${UserName}."
 
 #: VM_DISK_ALREADY_CHANGED
 msgid ""
 "CD ${DiskName} is already inserted to VM ${VmName}, disk change action was "
 "skipped. User: ${UserName}."
 msgstr ""
+"CD-диск ${DiskName} уже вставлен в ВМ ${VmName}, смена диска пропущена. "
+"Пользователь: ${UserName}."
 
 #: VM_DISK_ALREADY_EJECTED
 msgid ""
 "CD is already ejected from VM ${VmName}, disk change action was skipped. "
 "User: ${UserName}."
 msgstr ""
+"CD-диск уже был извлечён из ВМ ${VmName}, смена диска пропущена. "
+"Пользователь: ${UserName}."
 
 #: USER_CREATE_SNAPSHOT
 msgid ""
 "Snapshot '${SnapshotName}' creation for VM '${VmName}' was initiated by "
 "${UserName}."
 msgstr ""
+"${UserName} начал создание снимка «${SnapshotName}» для ВМ «${VmName}»."
 
 #: USER_CREATE_SNAPSHOT_FINISHED_SUCCESS
 msgid ""
 "Snapshot '${SnapshotName}' creation for VM '${VmName}' has been completed."
-msgstr ""
+msgstr "Создание снимка «${SnapshotName}» для ВМ «${VmName}» было завершено."
 
 #: USER_CREATE_SNAPSHOT_FINISHED_FAILURE
 msgid ""
 "Failed to complete snapshot '${SnapshotName}' creation for VM '${VmName}'."
 msgstr ""
+"Не удалось завершить создание снимка «${SnapshotName}» для ВМ «${VmName}»."
 
 #: USER_CREATE_LIVE_SNAPSHOT_FINISHED_FAILURE
 msgid ""
@@ -282,27 +325,33 @@ msgid ""
 "restart is recommended. Note that using the created snapshot might cause "
 "data inconsistency."
 msgstr ""
+"Сбой создания динамического снимка «${SnapshotName}» для ВМ «${VmName}». "
+"Рекомендуется перезапустить ВМ. Обратите внимание: использование созданного "
+"снимка "
+"может привести к несовместимости данных."
 
 #: USER_REMOVE_SNAPSHOT
 msgid ""
 "Snapshot '${SnapshotName}' deletion for VM '${VmName}' was initiated by "
 "${UserName}."
-msgstr ""
+msgstr "${UserName} начал удаление снимка «${SnapshotName}» для ВМ «${VmName}»"
 
 #: USER_REMOVE_SNAPSHOT_FINISHED_SUCCESS
 msgid ""
 "Snapshot '${SnapshotName}' deletion for VM '${VmName}' has been completed."
-msgstr ""
+msgstr "Удаление снимка «${SnapshotName}» для ВМ «${VmName}» было завершено."
 
 #: USER_REMOVE_SNAPSHOT_FINISHED_FAILURE
 msgid "Failed to delete snapshot '${SnapshotName}' for VM '${VmName}'."
-msgstr ""
+msgstr "Сбой удаления снимка «${SnapshotName}» для ВМ «${VmName}»."
 
 #: USER_REMOVE_SNAPSHOT_FINISHED_FAILURE_PARTIAL_SNAPSHOT
 msgid ""
 "Due to partial snapshot removal, Snapshot '${SnapshotName}' of VM "
 "'${VmName}' now contains only the following disks: '${DiskAliases}'."
 msgstr ""
+"По причине частичного удаления снимка, снимок «${SnapshotName}» машины "
+"«${VmName}» теперь содержит следующие диски: «${DiskAliases}»."
 
 #: USER_REMOVE_SNAPSHOT_FINISHED_FAILURE_BASE_IMAGE_NOT_FOUND
 msgid ""
@@ -311,291 +360,384 @@ msgid ""
 "to remove the parent snapshot; if this is the case, please retry deletion of "
 "the parent snapshot before deleting this one."
 msgstr ""
+"Сбой слияния образов снимка «${SnapshotName}»: отсутствует базовый том "
+"«${BaseVolumeId}». Это могло произойти в результате неудачной попытки "
+"удалить родительский снимок; если это так, попробуйте повторить удаление "
+"родительского снимка перед удалением этого."
 
 #: USER_REMOVE_DISK_SNAPSHOT
 msgid ""
 "Disk '${DiskAlias}' from Snapshot(s) '${Snapshots}' of VM '${VmName}' "
 "deletion was initiated by ${UserName}."
 msgstr ""
+"${UserName} начал удаление диска «${DiskAlias}» из снимка «${Snapshots}» "
+"машины «${VmName}»"
 
 #: USER_FAILED_REMOVE_DISK_SNAPSHOT
 msgid ""
 "Failed to delete Disk '${DiskAlias}' from Snapshot(s) ${Snapshots} of VM "
 "${VmName} (User: ${UserName})."
 msgstr ""
+"Сбой удаления диска «${DiskAlias}» из снимка ${Snapshots} машины ${VmName} "
+"(пользователь: ${UserName})."
 
 #: USER_REMOVE_DISK_SNAPSHOT_FINISHED_SUCCESS
 msgid ""
 "Disk '${DiskAlias}' from Snapshot(s) '${Snapshots}' of VM '${VmName}' "
 "deletion has been completed (User: ${UserName})."
 msgstr ""
+"Удаление диска «${DiskAlias}» из снимка «${Snapshots}» машины "
+"«${VmName}» было завершено (пользователь: ${UserName})."
 
 #: USER_REMOVE_DISK_SNAPSHOT_FINISHED_FAILURE
 msgid ""
 "Failed to complete deletion of Disk '${DiskAlias}' from snapshot(s) "
 "'${Snapshots}' of VM '${VmName}' (User: ${UserName})."
 msgstr ""
+"Не удалось завершить удаление диска «${DiskAlias}» из снимка(ов) "
+"«${Snapshots}» ВМ «${VmName}» (пользователь: ${UserName})."
 
 #: USER_REGISTER_DISK_FINISHED_SUCCESS
 msgid ""
 "Disk '${DiskAlias}' has been successfully registered as a floating disk."
-msgstr ""
+msgstr "Диск «${DiskAlias}» успешно зарегистрирован как плавающий."
 
 #: USER_REGISTER_DISK_FINISHED_FAILURE
 msgid "Failed to register Disk '${DiskAlias}'."
-msgstr ""
+msgstr "Не удалось зарегистрировать диск «${DiskAlias}»"
 
 #: USER_DETACH_USER_FROM_POOL
 msgid ""
 "User ${AdUserName} was detached from VM Pool ${VmPoolName} by ${UserName}."
 msgstr ""
+"Пользователь ${AdUserName} был откреплён от пула ВМ ${VmPoolName} "
+"пользователем ${UserName}."
 
 #: USER_DETACH_USER_FROM_POOL_FAILED
 msgid ""
 "Failed to detach User ${AdUserName} from VM Pool ${VmPoolName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой открепления пользователя ${AdUserName} от пула ВМ ${VmPoolName} "
+"(пользователь: "
+"${UserName})."
 
 #: USER_DETACH_USER_FROM_VM
 msgid "User ${AdUserName} was detached from VM ${VmName} by ${UserName}."
 msgstr ""
+"Пользователь ${AdUserName} был откреплён от ВМ ${VmName} "
+"пользователем ${UserName}."
 
 #: USER_FAILED_DETACH_USER_FROM_VM
 msgid ""
 "Failed to detach User ${AdUserName} from VM ${VmName} (User: ${UserName})."
 msgstr ""
+"Не удалось открепить пользователя ${AdUserName} от ВМ ${VmName} "
+"(пользователь: ${UserName})."
 
 #: USER_FAILED_ADD_VDS
 msgid "Failed to add Host ${VdsName} (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось добавить хост ${VdsName} (пользователь: ${UserName})."
 
 #: USER_FAILED_ADD_VM
 msgid "Failed to create VM ${VmName} (User: ${UserName})."
-msgstr ""
+msgstr "Сбой создания ВМ ${VmName} (пользователь: ${UserName})."
 
 #: USER_FAILED_ADD_VM_TEMPLATE
 msgid ""
 "Failed to initiate creation of Template ${VmTemplateName} from VM ${VmName} "
 "(User: ${UserName})."
 msgstr ""
+"Не удалось начать создание шаблона ${VmTemplateName} на базе ВМ ${VmName} "
+"(пользователь: ${UserName})."
 
 #: USER_FAILED_ATTACH_USER_TO_VM
 msgid ""
 "Failed to attach User ${AdUserName} to VM ${VmName} (User: ${UserName})."
 msgstr ""
+"Сбой прикрепления пользователя ${AdUserName} к ВМ ${VmName} (пользователь: "
+"${UserName})."
 
 #: USER_FAILED_CHANGE_DISK_VM
 msgid ""
 "Failed to change disk in VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
 msgstr ""
+"Не удалось сменить диск для ВМ ${VmName} (хост: ${VdsName}, пользователь: "
+"${UserName})."
 
 #: USER_FAILED_CREATE_SNAPSHOT
 msgid ""
 "Failed to create Snapshot ${SnapshotName} for VM ${VmName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой создания снимка «${SnapshotName}» для ВМ «${VmName}» (пользователь: "
+"${UserName})."
 
 #: USER_CREATE_LIVE_SNAPSHOT_NO_MEMORY_FAILURE
 msgid ""
 "Failed to save memory as part of Snapshot ${SnapshotName} for VM ${VmName} "
 "(User: ${UserName})."
 msgstr ""
+"Не удалось сохранить память как часть снимка ${SnapshotName} для ВМ ${VmName} "
+"(пользователь: ${UserName})."
 
 #: USER_FAILED_REMOVE_SNAPSHOT
 msgid ""
 "Failed to remove Snapshot ${SnapshotName} for VM ${VmName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой удаления снимка «${SnapshotName}» для ВМ «${VmName}» (пользователь: "
+"${UserName})."
 
 #: USER_FAILED_PAUSE_VM
 msgid "Failed to suspend VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
 msgstr ""
+"Не удалось заморозить ВМ ${VmName} (хост: ${VdsName}, пользователь: "
+"${UserName})."
 
 #: USER_FAILED_REMOVE_VDS
 msgid "Failed to remove Host ${VdsName} (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось удалить хост ${VdsName} (пользователь: ${UserName})."
 
 #: USER_FAILED_REMOVE_VM_TEMPLATE
 msgid ""
 "Failed to initiate removal of Template ${VmTemplateName} (User: "
 "${UserName})."
 msgstr ""
+"Не удалось начать удаление шаблона ${VmTemplateName} (пользователь: "
+"${UserName})."
 
 #: USER_FAILED_RESTORE_FROM_SNAPSHOT
 msgid "Failed to restore VM ${VmName} from Snapshot (User: ${UserName})."
 msgstr ""
+"Не удалось восстановить ВМ ${VmName} из снимка (пользователь: ${UserName})."
 
 #: USER_FAILED_RESUME_VM
 msgid "Failed to resume VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
 msgstr ""
+"Не удалось возобновить работу ВМ ${VmName} (хост: ${VdsName}, пользователь: "
+"${UserName})."
 
 #: USER_FAILED_RUN_VM
 msgid "Failed to run VM ${VmName} (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось запустить ВМ ${VmName} (пользователь: ${UserName})."
 
 #: USER_RUN_VM_AS_STATELESS_FINISHED_FAILURE
 msgid "Failed to complete starting of VM ${VmName}."
-msgstr ""
+msgstr "Не удалось завершить запуск ВМ ${VmName}."
 
 #: USER_RUN_VM_AS_STATELESS_WITH_DISKS_NOT_ALLOWING_SNAPSHOT
 msgid ""
 "VM ${VmName} was run as stateless with one or more of disks that do not "
 "allow snapshots (User:${UserName})."
 msgstr ""
+"ВМ ${VmName} была запущена буз сохранения состояния, с одним или более дисков "
+"без возможности "
+"создания снимков (пользователь:${UserName})."
 
 #: USER_RUN_VM_FAILURE_STATELESS_SNAPSHOT_LEFT
 msgid ""
 "Failed to start VM ${VmName}, because exist snapshot for stateless state. "
 "Snapshot will be deleted."
 msgstr ""
+"Не удалось запустить ВМ ${VmName}, т.к. существует снимок для "
+"статуса без сохранения состояния. Снимок будет удалён."
 
 #: USER_FAILED_STOP_VM
 msgctxt "USER_FAILED_STOP_VM"
 msgid "Failed to power off VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
 msgstr ""
+"Не удалось выключить ВМ ${VmName} (хост: ${VdsName}, пользователь: "
+"${UserName})."
 
 #: USER_INITIATED_SHUTDOWN_VM
 msgid ""
 "VM shutdown initiated by ${UserName} on VM ${VmName} (Host: ${VdsName}) "
 "(Reason: ${Reason})."
 msgstr ""
+"Пользователь ${UserName} запустил выключение ВМ ${VmName} (хост: ${VdsName}) "
+"(причина: ${Reason})."
 
 #: USER_FAILED_SHUTDOWN_VM
 msgid ""
 "Failed to initiate shutdown on VM ${VmName} (Host: ${VdsName}, User: "
 "${UserName})."
 msgstr ""
+"Не удалось запустить выключение ВМ ${VmName} (хост: ${VdsName}, пользователь: "
+"${UserName})."
 
 #: USER_STOPPED_VM_INSTEAD_OF_SHUTDOWN
 msgid ""
 "VM ${VmName} was powered off ungracefully by ${UserName} (Host: ${VdsName}) "
 "(Reason: ${Reason})."
 msgstr ""
+"ВМ ${VmName} была жёстко выключена пользователем ${UserName} (хост: "
+"${VdsName}) "
+"(причина: ${Reason})."
 
 #: USER_FAILED_STOPPING_VM_INSTEAD_OF_SHUTDOWN
 msgctxt "USER_FAILED_STOPPING_VM_INSTEAD_OF_SHUTDOWN"
 msgid "Failed to power off VM ${VmName} (Host: ${VdsName}, User: ${UserName})."
 msgstr ""
+"Не удалось выключить ВМ ${VmName} (хост: ${VdsName}, пользователь: "
+"${UserName})."
 
 #: USER_ADD_DISK_TO_VM
 msgid ""
 "Add-Disk operation of ${DiskAlias} was initiated on VM ${VmName} by "
 "${UserName}."
 msgstr ""
+"Действие по добавлению диска ${DiskAlias} было начато на ВМ ${VmName} "
+"пользователем ${UserName}."
 
 #: USER_ADD_DISK_TO_VM_FINISHED_SUCCESS
 msgid "The disk ${DiskAlias} was successfully added to VM ${VmName}."
-msgstr ""
+msgstr "Диск ${DiskAlias} был успешно добавлен для ВМ ${VmName}."
 
 #: USER_ADD_DISK_TO_VM_FINISHED_FAILURE
 msgid "Add-Disk operation failed to complete on VM ${VmName}."
-msgstr ""
+msgstr "Не удалось завершить действие по добавлению диска на ВМ ${VmName}."
 
 #: USER_FAILED_ADD_DISK_TO_VM
 msgid "Add-Disk operation failed on VM ${VmName} (User: ${UserName})."
 msgstr ""
+"Сбой действия добавления диска на ВМ ${VmName} (пользователь: ${UserName})."
 
 #: USER_ADD_DISK
 msgid "Add-Disk operation of '${DiskAlias}' was initiated by ${UserName}."
 msgstr ""
+"Действие добавления диска для «${DiskAlias}» было начато пользователем "
+"${UserName}."
 
 #: USER_ADD_DISK_FINISHED_SUCCESS
 msgid "The disk '${DiskAlias}' was successfully added."
-msgstr ""
+msgstr "Диск «${DiskAlias}» был успешно добавлен."
 
 #: ADD_DISK_INTERNAL_FAILURE
 msgid "Add-Disk operation of '${DiskAlias}' failed to complete."
-msgstr ""
+msgstr "Не удалось завершить действие по добавлению диска «${DiskAlias}»"
 
 #: USER_ADD_DISK_FINISHED_FAILURE
 msgid "Add-Disk operation failed to complete."
-msgstr ""
+msgstr "Не удалось завершить действие по добавлению диска."
 
 #: USER_FAILED_ADD_DISK
 msgid "Add-Disk operation failed (User: ${UserName})."
-msgstr ""
+msgstr "Сбой действия добавления диска (пользователь: ${UserName})."
 
 #: ADD_DISK_INTERNAL
 msgid "Add-Disk operation of '${DiskAlias}' was initiated by the system."
-msgstr ""
+msgstr "Действие добавления диска для «${DiskAlias}» было начато системой."
 
 #: USER_IMPORT_IMAGE
 msgid ""
 "User ${UserName} importing image ${RepoImageName} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} импортирует образ ${RepoImageName} в домен "
+"${StorageDomainName}."
 
 #: USER_IMPORT_IMAGE_AS_TEMPLATE
 msgid ""
 "User ${UserName} importing image ${RepoImageName} as template "
 "${TemplateName} to domain ${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} импортирует образ ${RepoImageName} в качестве "
+"шаблона ${TemplateName} в домен ${StorageDomainName}."
 
 #: USER_IMPORT_IMAGE_FINISHED_SUCCESS
 msgid ""
 "User ${UserName} successfully imported image ${RepoImageName} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} успешно импортировал образ ${RepoImageName} в домен "
+"${StorageDomainName}."
 
 #: USER_IMPORT_IMAGE_AS_TEMPLATE_FINISHED_SUCCESS
 msgid ""
 "User ${UserName} successfully imported image ${RepoImageName} as template "
 "${TemplateName} to domain ${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} успешно импортировал образ ${RepoImageName} в "
+"качестве "
+"шаблона ${TemplateName} в домен ${StorageDomainName}."
 
 #: USER_IMPORT_IMAGE_FINISHED_FAILURE
 msgid ""
 "User ${UserName} failed to import image ${RepoImageName} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователю ${UserName} не удалось импортировать образ ${RepoImageName} в "
+"домен "
+"${StorageDomainName}."
 
 #: USER_IMPORT_IMAGE_AS_TEMPLATE_FINISHED_FAILURE
 msgid ""
 "User ${UserName} failed to import image ${RepoImageName} as template "
 "${TemplateName} to domain ${StorageDomainName}."
 msgstr ""
+"Пользователю ${UserName} не удалось импортировать образ ${RepoImageName} в "
+"качестве "
+"шаблона ${TemplateName} в домен ${StorageDomainName}."
 
 #: USER_EXPORT_IMAGE
 msgid ""
 "User ${UserName} exporting image ${RepoImageName} to domain "
 "${DestinationStorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} экспортирует образ ${RepoImageName} в домен "
+"${DestinationStorageDomainName}."
 
 #: USER_EXPORT_IMAGE_FINISHED_SUCCESS
 msgid ""
 "User ${UserName} successfully exported image ${RepoImageName} to domain "
 "${DestinationStorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} успешно экспортировал образ ${RepoImageName} в домен "
+"${DestinationStorageDomainName}."
 
 #: USER_EXPORT_IMAGE_FINISHED_FAILURE
 msgid ""
 "User ${UserName} failed to export image ${RepoImageName} to domain "
 "${DestinationStorageDomainName}."
 msgstr ""
+"Пользователю ${UserName} не удалось экспортировать образ ${RepoImageName} в "
+"домен "
+"${DestinationStorageDomainName}."
 
 #: HOT_SET_NUMBER_OF_CPUS
 msgid ""
 "Hotplug CPU: changed the number of CPUs on VM ${vmName} from "
 "${previousNumberOfCpus} to ${numberOfCpus}"
 msgstr ""
+"Горячее подключение ЦП: число ЦП для ВМ ${vmName} изменилось с "
+"${previousNumberOfCpus} на ${numberOfCpus}"
 
 #: FAILED_HOT_SET_NUMBER_OF_CPUS
 msgid ""
 "Failed to hot set number of CPUS to VM ${vmName}. Underlying error message: "
 "${ErrorMessage}"
 msgstr ""
+"Не удалось изменить число ЦП методом горячего подключения для ВМ ${vmName}. "
+"Сообщение об ошибке: ${ErrorMessage}"
 
 #: HOT_SET_MEMORY
+#, fuzzy
 msgid ""
 "Hotset memory: changed the amount of memory on VM ${vmName} from "
 "${previousMem} to ${newMem}"
 msgstr ""
+"Горячее подключение памяти: объём памяти для ВМ ${vmName} изменён с "
+"${previousMem} на ${newMem}"
 
 #: FAILED_HOT_SET_MEMORY
 msgid ""
 "Failed to hot set memory to VM ${vmName}. Underlying error message: "
 "${ErrorMessage}"
 msgstr ""
+"Не удалось изменить объём памяти методом горячего подключения для ВМ "
+"${vmName}. "
+"Сообщение об ошибке: ${ErrorMessage}"
 
 #: USER_ISCSI_BOND_HOST_RESTART_WARNING
 msgid ""
@@ -603,6 +745,11 @@ msgid ""
 "${IscsiBondName}: ${NetworkNames}. for those changes to take affect, the "
 "hosts must be moved to maintenance and activated again."
 msgstr ""
+"Следующие сети были удалены из связки iSCSI ${IscsiBondName}: "
+"${NetworkNames}. "
+"Чтобы изменения вступили в силу, хост необходимо перевести в режим "
+"обслуживания "
+"и затем активировать снова."
 
 #: USER_MOVE_IMAGE_GROUP_FAILED_TO_DELETE_SRC_IMAGE
 msgid ""
@@ -610,6 +757,9 @@ msgid ""
 "${StorageDomainName} during the move operation. The Storage Domain may be "
 "manually cleaned-up from possible leftovers (User:${UserName})."
 msgstr ""
+"Вероятный сбой при удалении ${DiskAlias} из исходного домена хранилища "
+"${StorageDomainName} во время действия перемещения. Домен хранилища "
+"можно вручную очистить от возможных остатков (пользователь:${UserName})."
 
 #: USER_MOVE_IMAGE_GROUP_FAILED_TO_DELETE_DST_IMAGE
 msgid ""
@@ -618,188 +768,251 @@ msgid ""
 "to copy the image to it properly. The Storage Domain may be manually "
 "cleaned-up from possible leftovers (User:${UserName})."
 msgstr ""
+"Вероятный сбой при очистке возможных остатков ${DiskAlias} из целевого "
+"домена хранилища ${StorageDomainName} после сбоя операции копирования "
+"во время действия по перемещению. Домен хранилища можно вручную "
+"очистить от возможных остатков (пользователь:${UserName})."
 
 #: USER_REMOVE_DISK_FROM_VM
 msgid "Disk was removed from VM ${VmName} by ${UserName}."
-msgstr ""
+msgstr "Диск был удалён из ВМ ${VmName} пользователем ${UserName}."
 
 #: USER_FAILED_REMOVE_DISK_FROM_VM
 msgid "Failed to remove Disk from VM ${VmName} (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось удалить диск из ВМ ${VmName} (пользователь: ${UserName})."
 
 #: USER_UPDATE_VM_DISK
 msgid "VM ${VmName} ${DiskAlias} disk was updated by ${UserName}."
 msgstr ""
+"Диск ${DiskAlias} машины ${VmName} был обновлён пользователем ${UserName}."
 
 #: USER_FAILED_UPDATE_VM_DISK
 msgid "Failed to update VM ${VmName} disk ${DiskAlias} (User: ${UserName})."
 msgstr ""
+"Сбой обновления диска ${DiskAlias} машины ${VmName} (пользователь: "
+"${UserName})."
 
 #: USER_HOTPLUG_DISK
 msgid "VM ${VmName} disk ${DiskAlias} was plugged by ${UserName}."
 msgstr ""
+"Диск ${DiskAlias} машины ${VmName} был подключен пользователем ${UserName}."
 
 #: USER_FAILED_HOTPLUG_DISK
 msgid "Failed to plug disk ${DiskAlias} to VM ${VmName} (User: ${UserName})."
 msgstr ""
+"Сбой подключения диска ${DiskAlias} к ВМ ${VmName} (пользователь: "
+"${UserName})."
 
 #: USER_HOTUNPLUG_DISK
 msgid "VM ${VmName} disk ${DiskAlias} was unplugged by ${UserName}."
 msgstr ""
+"Диск ${DiskAlias} машины ${VmName} был извлечён пользователем ${UserName}."
 
 #: USER_FAILED_HOTUNPLUG_DISK
 msgid ""
 "Failed to unplug disk ${DiskAlias} from VM ${VmName} (User: ${UserName})."
 msgstr ""
+"Сбой извлечения диска ${DiskAlias} для ВМ ${VmName} (пользователь: "
+"${UserName})."
 
 #: USER_COPIED_DISK
 msgid ""
 "User ${UserName} is copying disk ${DiskAlias} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} копирует диск ${DiskAlias} в домен "
+"${StorageDomainName}."
 
 #: USER_FAILED_COPY_DISK
 msgid ""
 "User ${UserName} failed to copy disk ${DiskAlias} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователю ${UserName} не удалось скопировать диск ${DiskAlias} в домен "
+"${StorageDomainName}."
 
 #: USER_COPIED_DISK_FINISHED_SUCCESS
 msgid ""
 "User ${UserName} finished copying disk ${DiskAlias} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} закончил копирование диска ${DiskAlias} в домен "
+"${StorageDomainName}."
 
 #: USER_COPIED_DISK_FINISHED_FAILURE
 msgid ""
 "User ${UserName} finished with error copying disk ${DiskAlias} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} закончил копирование диска ${DiskAlias} в домен "
+"${StorageDomainName} с ошибкой."
 
 #: USER_MOVED_DISK
 msgid ""
 "User ${UserName} moving disk ${DiskAlias} to domain ${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} перемещает диск ${DiskAlias} в домен "
+"${StorageDomainName}."
 
 #: USER_FAILED_MOVED_VM_DISK
 msgid ""
 "User ${UserName} failed to move disk ${DiskAlias} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователю ${UserName} не удалось переместить диск ${DiskAlias} в домен "
+"${StorageDomainName}."
 
 #: USER_MOVED_DISK_FINISHED_SUCCESS
 msgid ""
 "User ${UserName} finished moving disk ${DiskAlias} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователь ${UserName} закончил перемещение диска ${DiskAlias} в домен "
+"${StorageDomainName}."
 
 #: USER_MOVED_DISK_FINISHED_FAILURE
 msgid ""
 "User ${UserName} have failed to move disk ${DiskAlias} to domain "
 "${StorageDomainName}."
 msgstr ""
+"Пользователю ${UserName} не удалось переместить диск ${DiskAlias} в домен "
+"${StorageDomainName}."
 
 #: USER_REMOVE_DISK_INITIATED
 msgid ""
 "Removal of Disk ${DiskAlias} from domain ${StorageDomainName} was initiated "
 "by ${UserName}."
 msgstr ""
+"Пользователь ${UserName} начал перемещение диска ${DiskAlias} из домена "
+"${StorageDomainName}."
 
 #: USER_FINISHED_REMOVE_DISK
 msgid ""
 "Disk ${DiskAlias} was successfully removed from domain ${StorageDomainName} "
 "(User ${UserName})."
 msgstr ""
+"Диск ${DiskAlias} был успешно удалён из домена ${StorageDomainName} "
+"(пользователь ${UserName})."
 
 #: USER_FINISHED_FAILED_REMOVE_DISK
 msgid ""
 "Failed to remove disk ${DiskAlias} from storage domain ${StorageDomainName} "
 "(User: ${UserName})."
 msgstr ""
+"Сбой удаления диска ${DiskAlias} из домена хранилища ${StorageDomainName} "
+"(пользователь: ${UserName})."
 
 #: USER_FINISHED_REMOVE_DISK_NO_DOMAIN
 msgid "Disk ${DiskAlias} was successfully removed (User ${UserName})."
-msgstr ""
+msgstr "Диск ${DiskAlias} был успешно удалён (пользователь ${UserName})."
 
 #: USER_FINISHED_FAILED_REMOVE_DISK_NO_DOMAIN
 msgid "Failed to remove disk ${DiskAlias} (User ${UserName})."
-msgstr ""
+msgstr "Сбой удаления диска ${DiskAlias} (пользователь ${UserName})."
 
 #: USER_ATTACH_DISK_TO_VM
 msgid ""
 "Disk ${DiskAlias} was successfully attached to VM ${VmName} by ${UserName}."
 msgstr ""
+"Диск ${DiskAlias} был успешно присоединён к ВМ ${VmName} пользователем "
+"${UserName}."
 
 #: USER_FAILED_ATTACH_DISK_TO_VM
 msgid "Failed to attach Disk ${DiskAlias} to VM ${VmName} (User: ${UserName})."
 msgstr ""
+"Сбой присоединения ${DiskAlias} к ВМ ${VmName} (пользователь: ${UserName})."
 
 #: USER_DETACH_DISK_FROM_VM
 msgid ""
 "Disk ${DiskAlias} was successfully detached from VM ${VmName} by "
 "${UserName}."
 msgstr ""
+"Диск ${DiskAlias} был успешно отмонтирован от ВМ ${VmName} пользователем "
+"${UserName}."
 
 #: USER_FAILED_DETACH_DISK_FROM_VM
 msgid ""
 "Failed to detach Disk ${DiskAlias} from VM ${VmName} (User: ${UserName})."
 msgstr ""
+"Сбой отмонтирования диска ${DiskAlias} от ВМ ${VmName} (пользователь: "
+"${UserName})."
 
 #: USER_ADD_QUOTA
 msgid "Quota ${QuotaName} has been added by ${UserName}."
-msgstr ""
+msgstr "Квота ${QuotaName} была добавлена пользователем ${UserName}."
 
 #: USER_FAILED_ADD_QUOTA
 msgid ""
 "Failed to add Quota ${QuotaName}. The operation was initiated by "
 "${UserName}."
 msgstr ""
+"Сбой добавления квоты ${QuotaName}. Операция была начата "
+"пользователем ${UserName}."
 
 #: USER_UPDATE_QUOTA
 msgid "Quota ${QuotaName} has been updated by ${UserName}."
-msgstr ""
+msgstr "Квота ${QuotaName} была обновлена пользователем ${UserName}."
 
 #: USER_FAILED_UPDATE_QUOTA
 msgid ""
 "Failed to update Quota ${QuotaName}. The operation was initiated by "
 "${UserName}.."
 msgstr ""
+"Сбой обновления квоты ${QuotaName}. Операция была начата "
+"пользователем ${UserName}."
 
 #: USER_DELETE_QUOTA
 msgid "Quota ${QuotaName} has been deleted by ${UserName}."
-msgstr ""
+msgstr "Квота ${QuotaName} была удалена ${UserName}."
 
 #: USER_FAILED_DELETE_QUOTA
 msgid ""
 "Failed to delete Quota ${QuotaName}. The operation was initiated by "
 "${UserName}.."
 msgstr ""
+"Сбой удаления квоты ${QuotaName}. Операция была начата "
+"пользователем ${UserName}."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_GRACE_LIMIT
+#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} limit exceeded and operation was blocked. "
 "Utilization: ${Utilization}, Requested: ${Requested} - Please select a "
 "different quota or contact your administrator to extend the quota."
 msgstr ""
+"Превышен лимит для Cluster-Quota ${QuotaName}, операция была заблокирована. "
+"Использование: ${Utilization}, запрошено: ${Requested} — выберите другую "
+"квоту или попросите администратора увеличить эту."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_GRACE_LIMIT_PERMISSIVE_MODE
+#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} limit exceeded, proceeding since in Permissive "
 "(Audit) mode. Utilization: ${Utilization}, Requested: ${Requested} - Please "
 "select a different quota or contact your administrator to extend the quota."
 msgstr ""
+"Превышен лимит для Cluster-Quota ${QuotaName}, продолжаем в разрешительном "
+"режиме (аудит). Использование: ${Utilization}, запрошено: ${Requested} — "
+"выберите "
+"другую квоту или попросите администратора увеличить эту."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_LIMIT
+#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} limit exceeded and entered the grace zone. "
 "Utilization: ${Utilization} (It is advised to select a different quota or "
 "contact your administrator to extend the quota)."
 msgstr ""
+"Был превышен лимит для Cluster-Quota ${QuotaName}, начался период отсрочки. "
+"Использование: ${Utilization} (рекомендуется выбрать другую квоту или "
+"попросить администратора увеличить эту)."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_THRESHOLD
+#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} is about to exceed. Utilization: ${Utilization}"
 msgstr ""
+"Cluster-Quota ${QuotaName} почти превышена. Использование: ${Utilization}"
 
 #: USER_EXCEEDED_QUOTA_STORAGE_GRACE_LIMIT
 msgid ""
@@ -807,6 +1020,9 @@ msgid ""
 "Utilization(used/requested): ${CurrentStorage}%/${Requested}% - Please "
 "select a different quota or contact your administrator to extend the quota."
 msgstr ""
+"Был превышен лимит для Storage-Quota ${QuotaName}, операция заблокирована. "
+"Использование (использовано/запрошено): ${CurrentStorage}%/${Requested}% — "
+"выберите другую квоту или попросите администратора увеличить эту."
 
 #: USER_EXCEEDED_QUOTA_STORAGE_GRACE_LIMIT_PERMISSIVE_MODE
 msgid ""
@@ -815,88 +1031,110 @@ msgid ""
 "- Please select a different quota or contact your administrator to extend "
 "the quota."
 msgstr ""
+"Был превышен лимит для Storage-Quota ${QuotaName}, продолжаем в "
+"разрешительном "
+"режиме (аудит). Использование (использовано/запрошено): ${CurrentStorage}%"
+"/${Requested}% "
+"— выберите другую квоту или попросите администратора увеличить эту."
 
 #: USER_EXCEEDED_QUOTA_STORAGE_LIMIT
+#, fuzzy
 msgid ""
 "Storage-Quota ${QuotaName} limit exceeded and entered the grace zone. "
 "Utilization: ${CurrentStorage}% (It is advised to select a different quota "
 "or contact your administrator to extend the quota)."
 msgstr ""
+"Был превышен лимит для Storage-Quota ${QuotaName}, начался период отсрочки. "
+"Использование: ${CurrentStorage}% (рекомендуется выбрать другую квоту или "
+"попросить "
+"администратора увеличить эту)."
 
 #: USER_EXCEEDED_QUOTA_STORAGE_THRESHOLD
 msgid ""
 "Storage-Quota ${QuotaName} is about to exceed. Utilization: "
 "${CurrentStorage}%"
 msgstr ""
+"Лимит для Storage-Quota ${QuotaName} почти исчерпан. Использование: "
+"${CurrentStorage}%"
 
 #: QUOTA_STORAGE_RESIZE_LOWER_THEN_CONSUMPTION
 msgid ""
 "Storage-Quota ${QuotaName}: the new size set for this quota is less than "
 "current disk utilization."
 msgstr ""
+"Storage-Quota ${QuotaName}: новый размер, установленный для этой квоты, "
+"меньше текущего использования диска."
 
 #: MISSING_QUOTA_STORAGE_PARAMETERS_PERMISSIVE_MODE
 msgid "Missing Quota for Disk, proceeding since in Permissive (Audit) mode."
 msgstr ""
+"Для диска отсутствует квота, продолжаем в разрешительном режиме (аудит)."
 
 #: MISSING_QUOTA_CLUSTER_PARAMETERS_PERMISSIVE_MODE
 msgid ""
 "Missing Quota for VM ${VmName}, proceeding since in Permissive (Audit) mode."
 msgstr ""
+"Для ВМ ${VmName} отсутствует квота, продолжаем в разрешительном режиме "
+"(аудит)."
 
 #: USER_FAILED_TRY_BACK_TO_SNAPSHOT
 msgid ""
 "Failed to preview Snapshot ${SnapshotName} for VM ${VmName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой предварительного просмотра снимка ${SnapshotName} для ВМ ${VmName} "
+"(пользователь: ${UserName})."
 
 #: USER_FAILED_UPDATE_VDS
 msgid "Failed to update Host ${VdsName} (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось обновить хост ${VdsName} (пользователь: ${UserName})."
 
 #: USER_FAILED_UPDATE_VM
 msgid "Failed to update VM ${VmName} (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось обновить ВМ ${VmName}(пользователь: ${UserName})."
 
 #: SYSTEM_FAILED_UPDATE_VM
 msgid "Failed to Update VM ${VmName} that was initiated by system."
-msgstr ""
+msgstr "Сбой обновления ВМ ${VmName}, начатого системой."
 
 #: USER_FAILED_UPDATE_VM_TEMPLATE
 msgid "Failed to update Template ${VmTemplateName} (User: ${UserName})."
 msgstr ""
+"Не удалось обновить шаблон ${VmTemplateName} (пользователь: ${UserName})."
 
 #: USER_FAILED_VDS_RESTART
 msgid "Failed to restart Host ${VdsName}, (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось перезапустить хост ${VdsName}, (пользователь: ${UserName})."
 
 #: USER_FAILED_VDS_START
 msgid "Failed to start Host ${VdsName}, (User: ${UserName})."
-msgstr ""
+msgstr "Сбой запуска хоста ${VdsName}, (пользователь: ${UserName})."
 
 #: USER_FAILED_VDS_STOP
+#, fuzzy
 msgid "Failed to stop Host ${VdsName}, (User: ${UserName})."
-msgstr ""
+msgstr "Сбой останова хоста ${VdsName}, (пользователь: ${UserName})."
 
 #: USER_PAUSE_VM
 msgid "VM ${VmName} was suspended by ${UserName} (Host: ${VdsName})."
 msgstr ""
+"ВМ ${VmName} была заморожена пользователем ${UserName} (хост: ${VdsName})."
 
 #: USER_REMOVE_BOOKMARK
 msgid "Bookmark ${BookmarkName} was removed by ${UserName}."
-msgstr ""
+msgstr "${UserName} удалил закладку ${BookmarkName}."
 
 #: USER_REMOVE_BOOKMARK_FAILED
 msgid "Failed to remove bookmark ${BookmarkName} (User: ${UserName})"
-msgstr ""
+msgstr "Сбой удаления закладки ${BookmarkName} (пользователь: ${UserName})"
 
 #: USER_REMOVE_VDS
 msgid "Host ${VdsName} was removed by ${UserName}."
-msgstr ""
+msgstr "${UserName} удалил хост ${VdsName}."
 
 #: USER_REMOVE_VM_FINISHED
 msgid "VM ${VmName} was successfully removed."
-msgstr ""
+msgstr "ВМ ${VmName} была успешно удалена."
 
 #: USER_REMOVE_VM_FINISHED_WITH_ILLEGAL_DISKS
 msgid ""
@@ -904,252 +1142,308 @@ msgid ""
 "${DisksNames}. These disks will appear in the main disks tab in illegal "
 "state, please remove manually when possible."
 msgstr ""
+"ВМ ${VmName} была удалена, но следующие диски не удалось удалить: "
+"${DisksNames}. "
+"Эти диски появятся в главной таблице дисков с недопустимым статусом, по "
+"возможности удалите их вручную."
 
 #: USER_REMOVE_VM_FROM_POOL
 msgid "VM ${VmName} was removed from VM Pool ${VmPoolName} by ${UserName}."
 msgstr ""
+"ВМ ${VmName} была удалена из пула ВМ ${VmPoolName} пользователем ${UserName}."
 
 #: USER_REMOVE_VM_FROM_POOL_FAILED
 msgid ""
 "Failed to remove VM ${VmName} from VM Pool ${VmPoolName} (User: "
 "${UserName})."
 msgstr ""
+"Сбой удаления ВМ ${VmName} из пула ВМ ${VmPoolName} (пользователь: "
+"${UserName})."
 
 #: USER_REMOVE_VM_POOL_INITIATED
 msgid "VM Pool ${VmPoolName} removal was initiated by ${UserName}."
-msgstr ""
+msgstr "Удаление пула ВМ ${VmPoolName} было начато пользователем ${UserName}."
 
 #: USER_REMOVE_VM_POOL
 msgid "VM Pool ${VmPoolName} was removed by ${UserName}."
-msgstr ""
+msgstr "${UserName} удалил пул ВМ ${VmPoolName}."
 
 #: USER_REMOVE_VM_POOL_FAILED
 msgid "Failed to remove VM Pool ${VmPoolName} (User: ${UserName})."
-msgstr ""
+msgstr "Сбой удаления пула ВМ ${VmPoolName} (пользователь: ${UserName})."
 
 #: USER_REMOVE_VM_TEMPLATE
 msgid "Removal of Template ${VmTemplateName} was initiated by ${UserName}."
-msgstr ""
+msgstr "${UserName} начал удаление шаблона ${VmTemplateName}."
 
 #: USER_REMOVE_VM_TEMPLATE_FINISHED
 msgid "Removal of Template ${VmTemplateName} has been completed."
-msgstr ""
+msgstr "Удаление шаблона ${VmTemplateName} было завершено."
 
 #: USER_RESTORE_FROM_SNAPSHOT
 msgid "VM ${VmName} restored from Snapshot by ${UserName}."
-msgstr ""
+msgstr "ВМ ${VmName} восстановлена из снимка пользователем ${UserName}."
 
 #: USER_RESTORE_FROM_SNAPSHOT_START
 msgid "Restoring VM ${VmName} from snapshot started by user ${UserName}."
-msgstr ""
+msgstr "${UserName} начал восстановление ВМ ${VmName} из снимка."
 
 #: USER_RESTORE_FROM_SNAPSHOT_FINISH_SUCCESS
 msgid "VM ${VmName} restoring from Snapshot has been completed."
-msgstr ""
+msgstr "Восстановление ВМ ${VmName} из снимка было завершено."
 
 #: USER_RESTORE_FROM_SNAPSHOT_FINISH_FAILURE
 msgid "Failed to complete restoring from Snapshot of VM ${VmName}."
-msgstr ""
+msgstr "Не удалось завершить восстановление ВМ ${VmName} из снимка."
 
 #: USER_RESUME_VM
 msgid "VM ${VmName} was resumed by ${UserName} (Host: ${VdsName})."
 msgstr ""
+"Работа ВМ ${VmName} была возобновлена пользователем ${UserName} (хост: "
+"${VdsName})."
 
 #: USER_RUN_VM
 msgid "VM ${VmName} started on Host ${VdsName}"
-msgstr ""
+msgstr "ВМ ${VmName} начала работу на хосте ${VdsName}"
 
 #: USER_RUN_VM_AS_STATELESS
 msgid "VM ${VmName} started on Host ${VdsName} as stateless"
 msgstr ""
+"ВМ ${VmName} начала работу на хосте ${VdsName} без "
+"сохранения состояния"
 
 #: USER_RUN_VM_ON_NON_DEFAULT_VDS
 msgid ""
 "Guest ${VmName} started on Host ${VdsName}. (Default Host parameter was "
 "ignored - assigned Host was not available)."
 msgstr ""
+"Гостевая ${VmName} начала работу на хосте ${VdsName}. (Параметр хоста "
+"по умолчанию проигнорирован — назначенный хост был недоступен)"
 
 #: USER_REBOOT_VM
 msgid "User ${UserName} initiated reboot of VM ${VmName}."
-msgstr ""
+msgstr "Пользователь ${UserName} начал перезапуск ВМ ${VmName}."
 
 #: USER_FAILED_REBOOT_VM
 msgid "Failed to reboot VM ${VmName} (User: ${UserName})."
-msgstr ""
+msgstr "Сбой перезапуска ВМ ${VmName} (пользователь: ${UserName})."
 
 #: USER_STOP_VM
 msgid ""
 "VM ${VmName} powered off by ${UserName} (Host: ${VdsName}) (Reason: "
 "${Reason})."
 msgstr ""
+"${UserName} выключил ВМ ${VmName} (хост: ${VdsName}) (причина: "
+"${Reason})."
 
 #: VM_ALREADY_IN_REQUESTED_STATUS
 msgid ""
 "VM ${VmName} is already ${VmStatus}, ${Action} was skipped. User: "
 "${UserName}."
 msgstr ""
+"ВМ ${VmName} уже имеет статус ${VmStatus}, действие ${Action} было "
+"пропущено. Пользователь: ${UserName}."
 
 #: USER_STOP_SUSPENDED_VM
+#, fuzzy
 msgid ""
 "Suspended VM ${VmName} has had its save state cleared by ${UserName} "
 "(Reason: ${Reason})."
 msgstr ""
+"Сохранённый статус замороженной ВМ ${VmName} был сброшен пользователем "
+"${UserName} (причина: ${Reason})."
 
 #: USER_STOP_SUSPENDED_VM_FAILED
 msgid "Failed to power off suspended VM ${VmName} (User: ${UserName})."
-msgstr ""
+msgstr "Сбой выключения замороженной ВМ ${VmName} (пользователь: ${UserName})."
 
 #: USER_TRY_BACK_TO_SNAPSHOT
 msgid ""
 "Snapshot-Preview ${SnapshotName} for VM ${VmName} was initiated by "
 "${UserName}."
 msgstr ""
+"${UserName} начал предварительный просмотр снимка ${SnapshotName} "
+"для ВМ ${VmName}."
 
 #: USER_TRY_BACK_TO_SNAPSHOT_FINISH_SUCCESS
 msgid "Snapshot-Preview ${SnapshotName} for VM ${VmName} has been completed."
 msgstr ""
+"Предварительный просмотр снимка ${SnapshotName} для ВМ ${VmName} был завершён"
 
 #: USER_TRY_BACK_TO_SNAPSHOT_FINISH_FAILURE
 msgid "Failed to complete Snapshot-Preview ${SnapshotName} for VM ${VmName}."
 msgstr ""
+"Не удалось завершить предварительный просмотр снимка ${SnapshotName} для ВМ "
+"${VmName}."
 
 #: USER_UPDATE_BOOKMARK
 msgid "Bookmark ${BookmarkName} was updated by ${UserName}."
-msgstr ""
+msgstr "Закладка ${BookmarkName} была обновлена пользователем ${UserName}."
 
 #: USER_UPDATE_BOOKMARK_FAILED
 msgid "Failed to update bookmark: ${BookmarkName} (User: ${UserName})"
-msgstr ""
+msgstr "Сбой обновления закладки: ${BookmarkName} (пользователь: ${UserName})"
 
 #: USER_UPDATE_VDS
 msgid "Host ${VdsName} configuration was updated by ${UserName}."
-msgstr ""
+msgstr "Параметры хоста ${VdsName} были обновлены пользователем ${UserName}."
 
 #: USER_UPDATE_VM
 msgid "VM ${VmName} configuration was updated by ${UserName}."
-msgstr ""
+msgstr "Параметры ВМ ${VmName} были обновлены пользователем ${UserName}."
 
 #: SYSTEM_UPDATE_VM
 msgid "VM ${VmName} configuration was updated by system."
-msgstr ""
+msgstr "Параметры ВМ ${VmName} были обновлены системой."
 
 #: USER_EXTEND_DISK_SIZE_UPDATE_VM_FAILURE
 msgid ""
 "Failed to update VM '${VmName}' with the new volume size. VM restart is "
 "recommended."
 msgstr ""
+"Сбой обновления ВМ «${VmName}» с новым размером тома. Рекомендуется "
+"перезапуск ВМ."
 
 #: USER_EXTEND_DISK_SIZE_UPDATE_HOST_FAILURE
 msgid ""
 "Failed to refresh volume size on host '${VdsName}'. Please try the operation "
 "again."
 msgstr ""
+"Не удалось обновить сведения о размере тома на хосте «${VdsName}». Повторите "
+"действие."
 
 #: USER_EXTEND_DISK_SIZE_FAILURE
 msgid ""
 "Failed to extend size of the disk '${DiskAlias}' to ${NewSize} GB, User: "
 "${UserName}."
 msgstr ""
+"Не удалось увеличить размер диска «${DiskAlias}» до ${NewSize} ГБ, "
+"пользователь ${UserName}."
 
 #: USER_EXTEND_DISK_SIZE_SUCCESS
 msgid ""
 "Size of the disk '${DiskAlias}' was successfully updated to ${NewSize} GB by "
 "${UserName}."
 msgstr ""
+"Размер диска «${DiskAlias}» был успешно изменён до ${NewSize} ГБ "
+"пользователем "
+"${UserName}."
 
 #: USER_EXTENDED_DISK_SIZE
 msgid ""
 "Extending disk '${DiskAlias}' to ${NewSize} GB was initiated by ${UserName}."
 msgstr ""
+"${UserName} начал увеличение размера диска «${DiskAlias}» до ${NewSize} ГБ."
 
 #: USER_UPDATE_VM_CLUSTER_DEFAULT_HOST_CLEARED
 msgid ""
 "${VmName} cluster was updated by ${UserName}, Default host was reset to auto "
 "assign."
 msgstr ""
+"Кластер ${VmName} был обновлён пользователем ${UserName}, параметр хоста по "
+"умолчанию "
+"был установлен на автоматическое назначение."
 
 #: USER_UPDATE_VM_POOL
 msgid "VM Pool ${VmPoolName} configuration was updated by ${UserName}."
 msgstr ""
+"Параметры пула ВМ ${VmPoolName} были обновлены пользователем ${UserName}."
 
 #: USER_UPDATE_VM_POOL_FAILED
 msgid ""
 "Failed to update VM Pool ${VmPoolName} configuration (User: ${UserName})."
 msgstr ""
+"Сбой обновления параметров пула ВМ ${VmPoolName} (пользователь: ${UserName})."
 
 #: USER_UPDATE_VM_TEMPLATE
 msgid "Template ${VmTemplateName} configuration was updated by ${UserName}."
 msgstr ""
+"Параметры шаблона ${VmTemplateName} были обновлены пользователем ${UserName}."
 
 #: USER_VDC_LOGIN
 msgid "User ${UserName} logged in."
-msgstr ""
+msgstr "Пользователь ${UserName} выполнил вход в систему."
 
 #: USER_VDC_LOGIN_FAILED
 msgid "User ${UserName} failed to log in."
-msgstr ""
+msgstr "Пользователю ${UserName} не удалось выполнить вход в систему."
 
 #: USER_LOGIN_ON_BEHALF
+#, fuzzy
 msgid "Executed login on behalf - ${LoginOnBehalfLogInfo}."
 msgstr ""
+"Выполнен вход в систему от имени другого пользователя — "
+"${LoginOnBehalfLogInfo}."
 
 #: USER_LOGIN_ON_BEHALF_FAILED
+#, fuzzy
 msgid "Failed to execute login on behalf - ${LoginOnBehalfLogInfo}."
 msgstr ""
+"Сбой входа в систему от имени другого пользователя — ${LoginOnBehalfLogInfo}."
 
 #: USER_VDC_LOGOUT
 msgid "User ${UserName} logged out."
-msgstr ""
+msgstr "Пользователь ${UserName} вышел из системы."
 
 #: USER_VDC_LOGOUT_FAILED
 msgid "Failed to log User ${UserName} out."
-msgstr ""
+msgstr "Сбой выхода из системы для пользователя ${UserName}."
 
 #: USER_VDC_SESSION_TERMINATED
 msgid "User ${UserName} forcibly logout user ${TerminatedSessionUsername}."
 msgstr ""
+"Пользователь ${UserName} принудительно завершил сеанс пользователя "
+"${TerminatedSessionUsername}."
 
 #: USER_VDC_SESSION_TERMINATION_FAILED
 msgid ""
 "User ${UserName} failed to forcibly logout user "
 "${TerminatedSessionUsername}."
 msgstr ""
+"Пользователю ${UserName} не удалось принудительно завершить сеанс "
+"пользователя "
+"${TerminatedSessionUsername}."
 
 #: USER_FORCE_SELECTED_SPM
 msgid "Host ${VdsName} was force selected by ${UserName}"
-msgstr ""
+msgstr "Хост ${VdsName} был принудительно выбран пользователем ${UserName}"
 
 #: USER_FORCE_SELECTED_SPM_STOP_FAILED
 msgid ""
 "Failed to force select ${VdsName} as the SPM due to a failure to stop the "
 "current SPM."
 msgstr ""
+"Сбой принудительного выбора хоста ${VdsName} в качестве диспетчера пула "
+"хранилища в связи с неудачной попыткой остановить работу текущего SPM."
 
 #: USER_VDS_RESTART
 msgid "Host ${VdsName} was restarted by ${UserName}."
-msgstr ""
+msgstr "Хост ${VdsName} был перезапущен пользователем ${UserName}."
 
 #: USER_VDS_START
 msgid "Host ${VdsName} was started by ${UserName}."
-msgstr ""
+msgstr "Хост ${VdsName} был запущен пользователем ${UserName}."
 
 #: USER_VDS_STOP
 msgid "Host ${VdsName} was stopped by ${UserName}."
-msgstr ""
+msgstr "Хост ${VdsName} был остановлен пользователем ${UserName}."
 
 #: VDS_ALREADY_IN_REQUESTED_STATUS
 msgid ""
 "Host ${HostName} is already ${AgentStatus}, Power Management ${Operation} "
 "operation skipped."
 msgstr ""
+"Хост ${HostName} уже имеет статус ${AgentStatus}, действие управления "
+"питанием${Operation} "
+"было пропущено."
 
 #: VDS_AUTO_FENCE_STATUS
 msgid "Auto fence for host ${VdsName} was started."
-msgstr ""
+msgstr "Начата автоматическая операция блокады для хоста ${VdsName}."
 
 #: VDS_AUTO_FENCE_STATUS_FAILED
 msgid "Auto fence for host ${VdsName} failed."
-msgstr ""
+msgstr "Сбой автоматической операции блокады для хоста ${VdsName}."
 
 #: VDS_AUTO_FENCE_FAILED_CALL_FENCE_SPM
 msgid ""
@@ -1157,14 +1451,17 @@ msgid ""
 "storage domain\n"
 " was not active or could not use another host for the fence operation."
 msgstr ""
+"Автоматическая операция блокады не отозвала выбранный SPM (${VdsName}), т.к. "
+"главный домен хранилища\n"
+" был неактивен, или не смог использовать другой хост для операции блокады."
 
 #: VDS_MANUAL_FENCE_STATUS
 msgid "Manual fence for host ${VdsName} was started."
-msgstr ""
+msgstr "Начата ручная операция блокады для хоста ${VdsName}"
 
 #: VDS_MANUAL_FENCE_STATUS_FAILED
 msgid "Manual fence for host ${VdsName} failed."
-msgstr ""
+msgstr "Сбой ручной операции блокады для хоста ${VdsName}"
 
 #: VDS_MANUAL_FENCE_FAILED_CALL_FENCE_SPM
 msgid ""
@@ -1172,22 +1469,25 @@ msgid ""
 "storage domain\n"
 " was not active or could not use another host for the fence operation."
 msgstr ""
+"Ручная операция блокады не отозвала выбранный SPM (${VdsName}), т.к. главный "
+"домен хранилища\n"
+" был неактивен, или не смог использовать другой хост для операции блокады."
 
 #: VDC_START
 msgid "Starting oVirt Engine."
-msgstr ""
+msgstr "ЦУ oVirt начинает работу."
 
 #: VDC_STOP
 msgid "Stopping oVirt Engine."
-msgstr ""
+msgstr "ЦУ oVirt завершает работу."
 
 #: VDS_ACTIVATE
 msgid "Activation of host ${VdsName} initiated by ${UserName}."
-msgstr ""
+msgstr "${UserName} начал активацию хоста ${VdsName}"
 
 #: VDS_ACTIVATE_ASYNC
 msgid "Host ${VdsName} was autorecovered."
-msgstr ""
+msgstr "Хост ${VdsName} был восстановлен автоматически"
 
 #: VDS_ACTIVATE_MANUAL_HA
 msgid ""
@@ -1195,75 +1495,97 @@ msgid ""
 "service may still be in maintenance mode. If necessary, please correct this "
 "manually."
 msgstr ""
+"Хост ${VdsName} был активирован пользователем ${UserName}, но служба "
+"высокой доступности виртуализированного ЦУ может всё ещё находиться в режиме "
+"обслуживания. При необходимости, исправьте это вручную."
 
 #: VDS_ACTIVATE_MANUAL_HA_ASYNC
 msgid ""
 "Host ${VdsName} was autorecovered, but the Hosted Engine HA service may "
 "still be in maintenance mode. If necessary, please correct this manually."
 msgstr ""
+"Хост ${VdsName} был восстановлен автоматически, но служба высокой доступности "
+"виртуализированного ЦУ может всё ещё находиться в режиме обслуживания. При "
+"необходимости, исправьте это вручную."
 
 #: VDS_ACTIVATE_FAILED
 msgid "Failed to activate Host ${VdsName}.(User: ${UserName})."
-msgstr ""
+msgstr "Не удалось активировать хост ${VdsName}. (Пользователь: ${UserName})."
 
 #: VDS_ACTIVATE_FAILED_ASYNC
 msgid "Failed to autorecover Host ${VdsName}."
-msgstr ""
+msgstr "Сбой автоматического восстановления хоста ${VdsName}."
 
 #: HOST_REFRESHED_CAPABILITIES
+#, fuzzy
 msgid "Successfully refreshed the capabilities of host ${VdsName}."
-msgstr ""
+msgstr "Характеристики хоста ${VdsName} успешно обновлены"
 
 #: HOST_REFRESH_CAPABILITIES_FAILED
+#, fuzzy
 msgid "Failed to refresh the capabilities of host ${VdsName}."
-msgstr ""
+msgstr "Не удалось обновить характеристики хоста ${VdsName}."
 
 #: HOST_INTERFACE_STATE_UP
 msgid "Interface ${InterfaceName} on host ${VdsName}, changed state to up"
 msgstr ""
+"Статус интерфейса ${InterfaceName} на хосте ${VdsName} сменился на «запущен»"
 
 #: HOST_INTERFACE_STATE_DOWN
 msgid "Interface ${InterfaceName} on host ${VdsName}, changed state to down"
 msgstr ""
+"Статус интерфейса ${InterfaceName} на хосте ${VdsName} сменился на «отключен»"
 
 #: HOST_BOND_SLAVE_STATE_UP
 msgid ""
 "Slave ${SlaveName} of bond ${BondName} on host ${VdsName}, changed state to "
 "up"
 msgstr ""
+"Статус подчинённого интерфейса ${SlaveName} связки ${BondName} на хосте "
+"${VdsName} "
+"сменился на «запущен»."
 
 #: HOST_BOND_SLAVE_STATE_DOWN
 msgid ""
 "Slave ${SlaveName} of bond ${BondName} on host ${VdsName}, changed state to "
 "down"
 msgstr ""
+"Статус подчинённого интерфейса ${SlaveName} связки ${BondName} на хосте "
+"${VdsName} "
+"сменился на «выключен»."
 
 #: HOST_REGISTRATION_FAILED_INVALID_CLUSTER
 msgid ""
 "No default or valid cluster was found, Host ${VdsName} registration failed"
 msgstr ""
+"Не было найдено кластера по умолчанию/допустимого кластера, "
+"сбой регистрации хоста ${VdsName}"
 
 #: VDS_DETECTED
 msgid "Status of host ${VdsName} was set to ${HostStatus}."
-msgstr ""
+msgstr "Статус хоста ${VdsName} установлен на ${HostStatus}."
 
 #: VDS_FAILURE
 msgid "Host ${VdsName} is non responsive."
-msgstr ""
+msgstr "Хост ${VdsName} не отвечает."
 
 #: VDS_MAINTENANCE
 msgid "Host ${VdsName} was switched to Maintenance Mode."
-msgstr ""
+msgstr "Хост ${VdsName} переведён в режим обслуживания."
 
 #: VDS_MAINTENANCE_MANUAL_HA
+#, fuzzy
 msgid ""
 "Host ${VdsName} was switched to Maintenance mode, but Hosted Engine HA "
 "maintenance could not be enabled. Please enable it manually."
 msgstr ""
+"Хост ${VdsName} был переведён в режим обслуживания, но режим обслуживания "
+"высокой доступности виртуализированного ЦУ включить не удалось. Включите его "
+"вручную."
 
 #: VDS_MAINTENANCE_FAILED
 msgid "Failed to switch Host ${VdsName} to Maintenance mode."
-msgstr ""
+msgstr "Не удалось перевести хост ${VdsName} в режим обслуживания."
 
 #: VDS_RECOVER
 msgid "Host ${VdsName} is rebooting."
@@ -5688,4 +6010,5 @@ msgid ""
 "instead of jsonrpc). Please examine installation logs and VDSM logs for "
 "failures and reinstall the host."
 msgstr ""
+
 
