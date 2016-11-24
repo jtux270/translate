@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-31 17:33+0300\n"
-"PO-Revision-Date: 2016-11-18 15:27+0300\n"
+"PO-Revision-Date: 2016-11-24 15:35+0300\n"
 "Last-Translator: jdronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "MIME-Version: 1.0\n"
@@ -738,12 +738,11 @@ msgstr ""
 "Связанное сообщение об ошибке: ${ErrorMessage}"
 
 #: HOT_SET_MEMORY
-#, fuzzy
 msgid ""
 "Hotset memory: changed the amount of memory on VM ${vmName} from "
 "${previousMem} to ${newMem}"
 msgstr ""
-"Горячее подключение памяти: объём памяти для ВМ ${vmName} изменён с "
+"Горячее включение памяти: объём памяти для ВМ ${vmName} изменён с "
 "${previousMem} на ${newMem}"
 
 #: FAILED_HOT_SET_MEMORY
@@ -773,8 +772,8 @@ msgid ""
 "${StorageDomainName} during the move operation. The Storage Domain may be "
 "manually cleaned-up from possible leftovers (User:${UserName})."
 msgstr ""
-"Вероятный сбой при удалении ${DiskAlias} из исходного домена хранилища "
-"${StorageDomainName} во время действия перемещения. Домен хранилища "
+"Вероятный сбой при удалении ${DiskAlias} из исходного домена хранилищ "
+"${StorageDomainName} во время действия перемещения. Домен хранилищ "
 "можно вручную очистить от возможных остатков (пользователь:${UserName})."
 
 #: USER_MOVE_IMAGE_GROUP_FAILED_TO_DELETE_DST_IMAGE
@@ -785,8 +784,8 @@ msgid ""
 "cleaned-up from possible leftovers (User:${UserName})."
 msgstr ""
 "Вероятный сбой при очистке возможных остатков ${DiskAlias} из целевого "
-"домена хранилища ${StorageDomainName} после сбоя операции копирования "
-"во время действия по перемещению. Домен хранилища можно вручную "
+"домена хранилищ ${StorageDomainName} после сбоя операции копирования "
+"во время действия по перемещению. Домен хранилищ можно вручную "
 "очистить от возможных остатков (пользователь:${UserName})."
 
 #: USER_REMOVE_DISK_FROM_VM
@@ -990,7 +989,6 @@ msgstr ""
 "пользователем ${UserName}."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_GRACE_LIMIT
-#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} limit exceeded and operation was blocked. "
 "Utilization: ${Utilization}, Requested: ${Requested} - Please select a "
@@ -1001,30 +999,27 @@ msgstr ""
 "квоту или попросите администратора увеличить эту."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_GRACE_LIMIT_PERMISSIVE_MODE
-#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} limit exceeded, proceeding since in Permissive "
 "(Audit) mode. Utilization: ${Utilization}, Requested: ${Requested} - Please "
 "select a different quota or contact your administrator to extend the quota."
 msgstr ""
-"Превышен лимит для Cluster-Quota ${QuotaName}, продолжаем в разрешительном "
-"режиме (аудит). Использование: ${Utilization}, запрошено: ${Requested} — "
-"выберите "
-"другую квоту или попросите администратора увеличить эту."
+"Превышен лимит для Cluster-Quota ${QuotaName}, работа будет продолжена в "
+"разрешительном режиме (аудит). Использование: ${Utilization}, запрошено: "
+"${Requested} — выберите другую квоту или попросите администратора увеличить "
+"эту."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_LIMIT
-#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} limit exceeded and entered the grace zone. "
 "Utilization: ${Utilization} (It is advised to select a different quota or "
 "contact your administrator to extend the quota)."
 msgstr ""
-"Был превышен лимит для Cluster-Quota ${QuotaName}, начался период отсрочки. "
+"Превышен лимит для Cluster-Quota ${QuotaName}, активировался период отсрочки. "
 "Использование: ${Utilization} (рекомендуется выбрать другую квоту или "
 "попросить администратора увеличить эту)."
 
 #: USER_EXCEEDED_QUOTA_CLUSTER_THRESHOLD
-#, fuzzy
 msgid ""
 "Cluster-Quota ${QuotaName} is about to exceed. Utilization: ${Utilization}"
 msgstr ""
@@ -1054,16 +1049,14 @@ msgstr ""
 "— выберите другую квоту или попросите администратора увеличить эту."
 
 #: USER_EXCEEDED_QUOTA_STORAGE_LIMIT
-#, fuzzy
 msgid ""
 "Storage-Quota ${QuotaName} limit exceeded and entered the grace zone. "
 "Utilization: ${CurrentStorage}% (It is advised to select a different quota "
 "or contact your administrator to extend the quota)."
 msgstr ""
-"Был превышен лимит для Storage-Quota ${QuotaName}, начался период отсрочки. "
+"Превышен лимит для Storage-Quota ${QuotaName}, активировался период отсрочки. "
 "Использование: ${CurrentStorage}% (рекомендуется выбрать другую квоту или "
-"попросить "
-"администратора увеличить эту)."
+"попросить администратора увеличить эту)."
 
 #: USER_EXCEEDED_QUOTA_STORAGE_THRESHOLD
 msgid ""
@@ -1464,7 +1457,7 @@ msgid ""
 " was not active or could not use another host for the fence operation."
 msgstr ""
 "Автоматическая операция блокады не отозвала выбранный SPM (${VdsName}), т.к. "
-"главный домен хранилища\n"
+"главный домен хранилищ\n"
 " был неактивен, или не смог использовать другой хост для операции блокады."
 
 #: VDS_MANUAL_FENCE_STATUS
@@ -1584,7 +1577,6 @@ msgid "Host ${VdsName} was switched to Maintenance Mode."
 msgstr "Хост ${VdsName} переведён в режим обслуживания."
 
 #: VDS_MAINTENANCE_MANUAL_HA
-#, fuzzy
 msgid ""
 "Host ${VdsName} was switched to Maintenance mode, but Hosted Engine HA "
 "maintenance could not be enabled. Please enable it manually."
@@ -2355,9 +2347,8 @@ msgid "Host ${VdsName} installation in progress . ${Message}."
 msgstr "Выполняется установка хоста ${VdsName}. ${Message}."
 
 #: VDS_PACKAGES_IN_PROGRESS
-#, fuzzy
 msgid "Package update Host ${VdsName}. ${Message}."
-msgstr "Обновление пакета, хост  ${VdsName}. ${Message}."
+msgstr "Обновление пакетов хоста ${VdsName}. ${Message}."
 
 #: VDS_PACKAGES_IN_PROGRESS_ERROR
 msgid "Failed to update packages Host ${VdsName}. ${Message}."
@@ -3517,15 +3508,13 @@ msgstr ""
 "${StoragePoolName}. Хосты с ошибками: ${failedHosts}."
 
 #: PROPAGATE_NETWORK_CHANGES_STARTED
-#, fuzzy
 msgid "Propagation of the network changes to the hosts has started."
-msgstr "Началась передача сетевых изменений хостам."
+msgstr "Началась передача сетевых изменений на хосты."
 
 #: PROPAGATE_NETWORK_CHANGE_FINISHED
-#, fuzzy
 msgid ""
 "Propagation of the network changes to the hosts has finished successfully."
-msgstr "Передача сетевых изменений хостам завершилась успешно."
+msgstr "Передача сетевых изменений на хосты завершилась успешно."
 
 #: PROPAGATE_NETWORK_CHANGE_FAILED
 msgid ""
@@ -3699,13 +3688,11 @@ msgstr ""
 "отличается от настроенного для дата-центра (${MgmtVlanId})."
 
 #: SETUP_NETWORK_FAILED_FOR_MANAGEMENT_NETWORK_CONFIGURATION
-#, fuzzy
 msgid ""
 "Failed to configure management network on host ${VdsName} due to setup "
 "networks failure."
 msgstr ""
-"Не удалось настроить сеть управления на хосте ${VdsName} по причине "
-"сбоя настройки сети."
+"Не удалось настроить сеть управления на хосте ${VdsName}: сбой настройки сети."
 
 #: PERSIST_NETWORK_FAILED_FOR_MANAGEMENT_NETWORK
 msgid ""
@@ -3892,17 +3879,14 @@ msgstr ""
 "нерабочий."
 
 #: VDS_DOMAIN_DELAY_INTERVAL
-#, fuzzy
 msgid ""
 "Storage domain ${StorageDomainName} experienced a high latency of ${Delay} "
 "seconds from host ${VdsName}. This may cause performance and functional "
 "issues. Please consult your Storage Administrator."
 msgstr ""
-"Домен хранилищ ${StorageDomainName} испытывал большую задержку в ${Delay} "
-"сек. "
-"для хоста ${VdsName}. Это может привести к функциональным и проблемам "
-"производительности. "
-"Обратитесь к администратору хранилища."
+"Произошла задержка в ${Delay} сек. от хоста ${VdsName} до домена хранилища "
+"${StorageDomainName}. Это может привести к функциональным и производительным "
+"проблемам. Обратитесь к администратору хранилища."
 
 #: USER_EXTENDED_STORAGE_DOMAIN
 msgid ""
@@ -3966,12 +3950,11 @@ msgstr ""
 "отвечает»."
 
 #: SYSTEM_CHANGE_STORAGE_POOL_STATUS_RESET_IRS
-#, fuzzy
 msgid ""
 "Data Center ${StoragePoolName} was reset. Setting status to Non Responsive "
 "(Elect new Storage Pool Manager)."
 msgstr ""
-"Дата-центр ${StoragePoolName} был возвращён в исходное состояние. "
+"Параметры дата-центра ${StoragePoolName} были возвращены к исходным значениям."
 "Присваивается статус «не отвечает» (выберите новый диспетчер пула хранилища)."
 
 #: SYSTEM_CHANGE_STORAGE_POOL_STATUS_PROBLEMATIC_FROM_NON_OPERATIONAL
@@ -4339,6 +4322,11 @@ msgid ""
 "power management settings, and then manually reboot it and click \"Confirm "
 "Host Has Been Rebooted\""
 msgstr ""
+"Не удалось выполнить операцию блокады питания хоста ${VdsName}. Проверьте "
+"статус хоста "
+"и его настройки управления питанием, затем перезагрузите хост вручную и "
+"нажмите "
+"на кнопку «Подтвердить, что хост был перезапущен»."
 
 #: VDS_ALERT_FENCE_OPERATION_SKIPPED
 msgid ""
@@ -4346,7 +4334,7 @@ msgid ""
 "configured. Please check the host status, manually reboot it, and click "
 "\"Confirm Host Has Been Rebooted\""
 msgstr ""
-"Хост ${VdsName} перестал отвечать. На хосте не настроено управление питанием. "
+"Хост ${VdsName} не отвечает. На хосте не настроено управление питанием. "
 "Проверьте статус хоста, перезагрузите его вручную и нажмите на кнопку "
 "«Подтвердить, что хост был перезапущен»"
 
@@ -4496,15 +4484,12 @@ msgstr ""
 "${VdsName}"
 
 #: UPDATE_TAGS_VM_DEFAULT_DISPLAY_TYPE
-#, fuzzy
 msgid "Vm ${VmName} tag default display type was updated"
-msgstr "Тег тип экрана по умолчанию для ВМ ${VmName} был обновлён."
+msgstr "Тег типа экрана по умолчанию для ВМ ${VmName} был обновлён."
 
 #: UPDATE_TAGS_VM_DEFAULT_DISPLAY_TYPE_FAILED
-#, fuzzy
 msgid "Failed to update Vm ${VmName} tag default display type"
-msgstr ""
-"Не удалось обновить тег тип экрана по умолчанию для ВМ ${VmName} был обновлён."
+msgstr "Не удалось обновить тег типа экрана по умолчанию для ВМ ${VmName}."
 
 #: CONNECT_STORAGE_SERVERS_FAILED
 msgid "Failed to connect Host ${VdsName} to Storage Servers"
@@ -4691,7 +4676,7 @@ msgstr "Сбой отправки образа на диск ${DiskAlias}."
 
 #: UPLOAD_IMAGE_TEARDOWN_FAILED
 msgid "Failed to tear down image ${DiskAlias} after image transfer session."
-msgstr ""
+msgstr "Не удалось сбросить образ ${DiskAlias} после сеанса переноса образа."
 
 #: UPLOAD_IMAGE_NETWORK_ERROR
 msgid ""
@@ -5248,6 +5233,9 @@ msgid ""
 "remote volume ${geoRepSlaveVolumeName} from the nodes of the volume "
 "${glusterVolumeName}."
 msgstr ""
+"Для пользователя ${geoRepUserName} на узлах удалённого тома "
+"${geoRepSlaveVolumeName} "
+"был настроен беспарольный доступ по SHH с узлов тома ${glusterVolumeName}."
 
 #: SET_UP_PASSWORDLESS_SSH_FAILED
 msgid ""
@@ -5255,30 +5243,37 @@ msgid ""
 "remote volume ${geoRepSlaveVolumeName} from the nodes of the volume "
 "${glusterVolumeName}."
 msgstr ""
+"Не удалось настроить беспарольный доступ по SHH для пользователя "
+"${geoRepUserName} на узлах удалённого тома ${geoRepSlaveVolumeName} с узлов "
+"тома ${glusterVolumeName}."
 
 #: GLUSTER_GET_PUB_KEY
 msgid "Public key fetched."
-msgstr ""
+msgstr "Открытый ключ получен."
 
 #: GLUSTER_GEOREP_PUBLIC_KEY_WRITE_FAILED
 msgid "Failed to write public keys to ${VdsName}"
-msgstr ""
+msgstr "Не удалось записать открытые ключи на ${VdsName}"
 
 #: GLUSTER_WRITE_PUB_KEYS
 msgid "Public keys written to ${VdsName}"
-msgstr ""
+msgstr "Открытые ключи записаны на ${VdsName}"
 
 #: GLUSTER_GEOREP_SETUP_MOUNT_BROKER_FAILED
 msgid ""
 "Failed to setup geo-replication mount broker for user ${geoRepUserName} on "
 "the slave volume ${geoRepSlaveVolumeName}."
 msgstr ""
+"Сбой установки посредника монтирования геораспределенной репликации на "
+"зависимом томе ${geoRepSlaveVolumeName} для пользователя ${geoRepUserName}."
 
 #: GLUSTER_SETUP_GEOREP_MOUNT_BROKER
 msgid ""
 "Geo-replication mount broker has been setup for user ${geoRepUserName} on "
 "the slave volume ${geoRepSlaveVolumeName}."
 msgstr ""
+"Посредник монтирования георепликации установлен для пользователя "
+"${geoRepUserName} на вторичном томе ${geoRepSlaveVolumeName}."
 
 #: GLUSTER_GEOREP_SESSION_CREATE_FAILED
 msgid ""
@@ -5286,6 +5281,11 @@ msgid ""
 "${glusterVolumeName} of cluster ${clusterName} and slave volume : "
 "${geoRepSlaveVolumeName} for the user ${geoRepUserName}."
 msgstr ""
+"Не удалось настроить сеанс георепликации между главным томом "
+"${glusterVolumeName} "
+"кластера ${clusterName} и зависимым томом ${geoRepSlaveVolumeName} для "
+"пользователя "
+"${geoRepUserName}."
 
 #: CREATE_GLUSTER_VOLUME_GEOREP_SESSION
 msgid ""
@@ -5293,42 +5293,59 @@ msgid ""
 "of cluster ${clusterName} and slave volume : ${geoRepSlaveVolumeName} for "
 "the user ${geoRepUserName}."
 msgstr ""
+"Создан сеанс георепликации между главным томом ${glusterVolumeName} кластера "
+"${clusterName} и зависимым томом ${geoRepSlaveVolumeName} для пользователя "
+"${geoRepUserName}."
 
 #: GLUSTER_VOLUME_GEO_REP_RESUME
 msgid ""
 "Geo-replication session on volume ${glusterVolumeName} of cluster "
 "${clusterName} has been resumed."
 msgstr ""
+"Возобновлён сеанс георепликации на томе ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_GEO_REP_RESUME_FAILED
 msgid ""
 "Failed to resume geo-replication session on volume ${glusterVolumeName} of "
 "cluster ${clusterName}"
 msgstr ""
+"Не удалось возобновить сеанс георепликации на томе ${glusterVolumeName} "
+"кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_REBALANCE_STOP
 msgid ""
 "Gluster Volume ${glusterVolumeName} rebalance stopped of cluster "
 "${clusterName}."
 msgstr ""
+"Остановлена перебалансировка тома Gluster ${glusterVolumeName} на кластере "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_REBALANCE_STOP_FAILED
 msgid ""
 "Could not stop rebalance of gluster volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось остановить перебалансировку тома Gluster ${glusterVolumeName} на "
+"кластере "
+"${clusterName}."
 
 #: START_REMOVING_GLUSTER_VOLUME_BRICKS
 msgid ""
 "Started removing bricks from Volume ${glusterVolumeName} of cluster "
 "${clusterName}"
 msgstr ""
+"Начато удаление элементов из тома ${glusterVolumeName} кластера "
+"${clusterName}"
 
 #: START_REMOVING_GLUSTER_VOLUME_BRICKS_FAILED
 msgid ""
 "Could not start remove bricks from Volume ${glusterVolumeName} of cluster "
 "${clusterName}"
 msgstr ""
+"Не удалось начать удаление элементов из тома ${glusterVolumeName} кластера "
+"${clusterName}"
 
 #: GLUSTER_VOLUME_REMOVE_BRICKS_COMMIT
 msgid ""
@@ -5336,192 +5353,256 @@ msgid ""
 "${clusterName}. ${NoOfBricks} brick(s) removed from volume "
 "${glusterVolumeName}."
 msgstr ""
+"Удаление элементов тома Gluster ${glusterVolumeName} зафиксировано в кластере "
+"${clusterName}. Число элементов, удалённых из тома ${glusterVolumeName}: "
+"${NoOfBricks}."
 
 #: GLUSTER_VOLUME_REMOVE_BRICKS_STOP
 msgid ""
 "Stopped removing bricks from Volume ${glusterVolumeName} of cluster "
 "${clusterName}"
 msgstr ""
+"Остановлено удаление элементов из тома ${glusterVolumeName} кластера "
+"${clusterName}"
 
 #: GLUSTER_VOLUME_REMOVE_BRICKS_STOP_FAILED
 msgid ""
 "Failed to stop remove bricks from Volume ${glusterVolumeName} of cluster "
 "${clusterName}"
 msgstr ""
+"Не удалось остановить удаление элементов из тома ${glusterVolumeName} "
+"кластера "
+"${clusterName}"
 
 #: GLUSTER_VOLUME_REMOVE_BRICKS_COMMIT_FAILED
 msgid ""
 "Gluster volume ${glusterVolumeName} remove bricks could not be commited on "
 "cluster ${clusterName}"
 msgstr ""
+"Не удалось зафиксировать удаление элементов тома Gluster ${glusterVolumeName} "
+"в кластере ${clusterName}"
 
 #: GLUSTER_VOLUME_REPLACE_BRICK_FAILED
 msgid ""
 "Replace Gluster Volume ${glusterVolumeName} Brick failed on cluster "
 "${clusterName}"
 msgstr ""
+"Сбой замены элементов в томе Gluster ${glusterVolumeName} кластера "
+"${clusterName}"
 
 #: GLUSTER_VOLUME_BRICK_REPLACED
 msgid ""
 "Replaced brick '${brick}' with new brick '${newBrick}' of Gluster Volume "
 "${glusterVolumeName} on cluster ${clusterName}"
 msgstr ""
+"Элемент «${brick}» заменён на новый элемент «${newBrick}» в томе Gluster "
+"${glusterVolumeName} в кластере ${clusterName}"
 
 #: GLUSTER_VOLUME_REPLACE_BRICK_START
 msgid ""
 "Gluster Volume ${glusterVolumeName} Replace Brick started on cluster "
 "${clusterName}."
 msgstr ""
+"Начата замена элементов тома Gluster ${glusterVolumeName} в кластере "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_REPLACE_BRICK_START_FAILED
 msgid ""
 "Could not start Gluster Volume ${glusterVolumeName} Replace Brick on cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось начать замену элементов тома Gluster ${glusterVolumeName} в "
+"кластере "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_REBALANCE_FINISHED
 msgid ""
 "${action} ${status} on volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"${action} ${status} на томе ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_MIGRATE_BRICK_DATA_FINISHED
 msgid ""
 "${action} ${status} for brick(s) on volume ${glusterVolumeName} of cluster "
 "${clusterName}. Please review to abort or commit."
 msgstr ""
+"${action} ${status} для элемента(ов) тома ${glusterVolumeName} в кластере "
+"${clusterName}. Прервите выполнение или зафиксируйте действие."
 
 #: GLUSTER_SERVER_ADD_FAILED
 msgid "Failed to add host ${VdsName} into Cluster ${ClusterName}."
-msgstr ""
+msgstr "Не удалось добавить хост ${VdsName} в кластер ${ClusterName}."
 
 #: GLUSTER_VOLUME_REBALANCE_START_DETECTED_FROM_CLI
 msgid ""
 "Detected start of rebalance on volume ${glusterVolumeName} of Cluster "
 "${ClusterName} from CLI."
 msgstr ""
+"На томе ${glusterVolumeName} кластера ${ClusterName} обнаружен запуск "
+"перебалансировки из командной строки."
 
 #: START_REMOVING_GLUSTER_VOLUME_BRICKS_DETECTED_FROM_CLI
 msgid ""
 "Detected start of brick removal for bricks ${brick} on volume "
 "${glusterVolumeName} of Cluster ${ClusterName} from CLI."
 msgstr ""
+"На томе ${glusterVolumeName} кластера ${ClusterName} обнаружен запуск "
+"удаления элементов ${brick} из командной строки."
 
 #: GLUSTER_VOLUME_REBALANCE_NOT_FOUND_FROM_CLI
 msgid ""
 "Could not find information for rebalance on volume ${glusterVolumeName} of "
 "Cluster ${ClusterName} from CLI. Marking it as unknown."
 msgstr ""
+"Не удалось найти информацию о перебалансировке на томе ${glusterVolumeName} "
+"кластера "
+"${ClusterName}, выполненной через командную строку. Помечается как "
+"неизвестное."
 
 #: GLUSTER_VOLUME_GEO_REP_PAUSE
 msgid ""
 "Geo-replication session on volume ${glusterVolumeName} of cluster "
 "${clusterName} has been paused."
 msgstr ""
+"Сеанс георепликации на томе ${glusterVolumeName} кластера ${clusterName} "
+"был приостановлен."
 
 #: GLUSTER_VOLUME_GEO_REP_PAUSE_FAILED
 msgid ""
 "Failed to pause geo-replication session on volume ${glusterVolumeName} of "
 "cluster ${clusterName}"
 msgstr ""
+"Не удалось приостановить сеанс георепликации на томе ${glusterVolumeName} "
+"кластера ${clusterName}."
 
 #: REMOVE_GLUSTER_VOLUME_BRICKS_NOT_FOUND_FROM_CLI
 msgid ""
 "Could not find information for remove brick on volume ${glusterVolumeName} "
 "of Cluster ${ClusterName} from CLI. Marking it as unknown."
 msgstr ""
+"Не удалось найти информацию об удалении элемента на томе ${glusterVolumeName} "
+"кластера "
+"${ClusterName}, выполненного через командную строку. Помечается как "
+"неизвестное."
 
 #: GLUSTER_SERVER_REMOVE
 msgid "Host ${VdsName} removed from Cluster ${ClusterName}."
-msgstr ""
+msgstr "Хост ${VdsName} удалён из кластера ${ClusterName}."
 
 #: GLUSTER_SERVER_REMOVE_FAILED
 msgid "Failed to remove host ${VdsName} from Cluster ${ClusterName}."
-msgstr ""
+msgstr "Не удалось удалить хост ${VdsName} из кластера ${ClusterName}."
 
 #: GLUSTER_SERVERS_LIST_FAILED
 msgid ""
 "Failed to fetch gluster peer list from server ${VdsName} on Cluster "
 "${ClusterName}."
 msgstr ""
+"Не удалось получить список узлов gluster с сервера ${VdsName} в кластере "
+"${ClusterName}."
 
 #: HA_VM_FAILED
 msgid ""
 "Highly Available VM ${VmName} failed. It will be restarted automatically."
 msgstr ""
+"Сбой высокодоступной ВМ ${VmName}. Она будет перезапущена автоматически."
 
 #: HA_VM_RESTART_FAILED
 msgid "Restart of the Highly Available VM ${VmName} failed."
-msgstr ""
+msgstr "Сбой перезапуска высокодоступной ВМ ${VmName}."
 
 #: EXCEEDED_MAXIMUM_NUM_OF_RESTART_HA_VM_ATTEMPTS
 msgid ""
 "Highly Available VM ${VmName} could not be restarted automatically, exceeded "
 "the maximum number of attempts."
 msgstr ""
+"Не удалось автоматически перезапустить высокодоступную ВМ ${VmName}, "
+"превышено максимальное количество попыток."
 
 #: COLD_REBOOT_VM_DOWN
 msgid "VM ${VmName} is down as a part of cold reboot process"
-msgstr ""
+msgstr "В рамках процесса холодного перезапуска ВМ ${VmName} не работает."
 
 #: COLD_REBOOT_FAILED
 msgid "Cold reboot of VM ${VmName} failed"
-msgstr ""
+msgstr "Сбой холодного перезапуска ВМ ${VmName}."
 
 #: EXCEEDED_MAXIMUM_NUM_OF_COLD_REBOOT_VM_ATTEMPTS
 msgid ""
 "VM ${VmName} could not be rebooted, exceeded the maximum number of attempts."
 msgstr ""
+"Не удалось перезапустить ВМ ${VmName}, превышено максимальное количество "
+"попыток."
 
 #: GLUSTER_VOLUME_PROFILE_START
 msgid ""
 "Gluster Volume ${glusterVolumeName} profiling started on cluster "
 "${clusterName}."
 msgstr ""
+"Начато профилирование тома Gluster ${glusterVolumeName} на кластере "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_PROFILE_START_FAILED
 msgid ""
 "Could not start profiling on gluster volume ${glusterVolumeName} of cluster "
 "${clusterName}"
 msgstr ""
+"Не удалось начать профилирование на томе Gluster ${glusterVolumeName} "
+"кластера "
+"${clusterName}"
 
 #: GLUSTER_VOLUME_PROFILE_STOP
 msgid ""
 "Gluster Volume ${glusterVolumeName} profiling stopped on cluster "
 "${clusterName}."
 msgstr ""
+"Профилирование тома Gluster ${glusterVolumeName} остановлено на кластере "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_PROFILE_STOP_FAILED
 msgid ""
 "Could not stop Profiling on gluster volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось остановить профилирование на томе Gluster ${glusterVolumeName} "
+"кластера "
+"${clusterName}."
 
 #: GLUSTER_COMMAND_FAILED
 msgid "Gluster command [${Command}] failed on server ${VdsName}."
-msgstr ""
+msgstr "Сбой команды Gluster [${Command}] на сервере ${VdsName}."
 
 #: GLUSTER_VOLUME_INFO_FAILED
 msgid "Failed to fetch gluster volume list from server ${VdsName}."
-msgstr ""
+msgstr "Не удалось получить список томов gluster с сервера ${VdsName}."
 
 #: GLUSTER_VOLUME_CREATED_FROM_CLI
 msgid ""
 "Detected new volume ${glusterVolumeName} on cluster ${ClusterName}, and "
 "added it to engine DB."
 msgstr ""
+"В кластере ${ClusterName} обнаружен новый том ${glusterVolumeName}, том "
+"добавлен "
+"в БД ЦУ."
 
 #: GLUSTER_VOLUME_DELETED_FROM_CLI
 msgid ""
 "Detected deletion of volume ${glusterVolumeName} on cluster ${ClusterName}, "
 "and deleted it from engine DB."
 msgstr ""
+"В кластере ${ClusterName} обнаружено удаление тома ${glusterVolumeName}, том "
+"удалён "
+"из БД ЦУ"
 
 #: GLUSTER_VOLUME_OPTION_SET_FROM_CLI
 msgid ""
 "Detected new option ${key}=${value} on volume ${glusterVolumeName} of "
 "cluster ${ClusterName}, and added it to engine DB."
 msgstr ""
+"На томе ${glusterVolumeName} кластера ${ClusterName} обнаружен новый параметр "
+"${key}=${value}, параметр добавлен в БД ЦУ"
 
 #: GLUSTER_VOLUME_OPTION_CHANGED_FROM_CLI
 msgid ""
@@ -5529,250 +5610,329 @@ msgid ""
 "volume ${glusterVolumeName} of cluster ${ClusterName}, and updated it to "
 "engine DB."
 msgstr ""
+"На томе ${glusterVolumeName} кластера ${ClusterName} обнаружено изменение "
+"значения параметра "
+"${key} с ${oldValue} на ${newValue}, значение обновлено в БД ЦУ."
 
 #: GLUSTER_VOLUME_OPTION_RESET_FROM_CLI
 msgid ""
 "Detected option ${key}=${value} reset on volume ${glusterVolumeName} of "
 "cluster ${ClusterName}, and removed it from engine DB."
 msgstr ""
+"Обнаружен сброс параметра ${key}=${value} на томе ${glusterVolumeName} "
+"кластера ${ClusterName}, параметр удалён из БД ЦУ."
 
 #: GLUSTER_VOLUME_PROPERTIES_CHANGED_FROM_CLI
 msgid ""
 "Detected changes in properties of volume ${glusterVolumeName} of cluster "
 "${ClusterName}, and updated the same in engine DB."
 msgstr ""
+"Обнаружены изменения свойств тома ${glusterVolumeName} кластера "
+"${ClusterName}, "
+"изменения обновлены в БД ЦУ."
 
 #: GLUSTER_VOLUME_BRICK_ADDED_FROM_CLI
 msgid ""
 "Detected new brick ${brick} on volume ${glusterVolumeName} of cluster "
 "${ClusterName}, and added it to engine DB."
 msgstr ""
+"На томе ${glusterVolumeName} кластера ${ClusterName} обнаружен новый элемент "
+"${brick}, элемент добавлен в БД ЦУ."
 
 #: GLUSTER_VOLUME_BRICK_REMOVED_FROM_CLI
 msgid ""
 "Detected brick ${brick} removed from Volume ${glusterVolumeName} of cluster "
 "${ClusterName}, and removed it from engine DB."
 msgstr ""
+"Обнаружено удаление элемента ${brick} из тома ${glusterVolumeName} кластера "
+"${ClusterName}, "
+"элемент удалён из БД ЦУ."
 
 #: GLUSTER_SERVER_REMOVED_FROM_CLI
 msgid ""
 "Detected server ${VdsName} removed from Cluster ${ClusterName}, and removed "
 "it from engine DB."
 msgstr ""
+"Обнаружено удаление сервера ${VdsName} из кластера ${ClusterName}, сервер "
+"удалён "
+"из БД ЦУ."
 
 #: GLUSTER_VOLUME_STARTED_FROM_CLI
 msgid ""
 "Detected that Volume ${glusterVolumeName} of Cluster ${ClusterName} was "
 "started, and updated engine DB with it's new status."
 msgstr ""
+"Обнаружен запуск тома ${glusterVolumeName} в кластере ${ClusterName}, "
+"статус тома обновлён в БД ЦУ."
 
 #: GLUSTER_VOLUME_STOPPED_FROM_CLI
 msgid ""
 "Detected that Volume ${glusterVolumeName} of Cluster ${ClusterName} was "
 "stopped, and updated engine DB with it's new status."
 msgstr ""
+"Обнаружен останов тома ${glusterVolumeName} в кластере ${ClusterName}, "
+"статус тома обновлён в БД ЦУ."
 
 #: GLUSTER_HOOK_ENABLE
 msgid "Gluster Hook ${GlusterHookName} enabled on cluster ${ClusterName}."
-msgstr ""
+msgstr "Ловушка Gluster ${GlusterHookName} включена в кластере ${ClusterName}."
 
 #: GLUSTER_HOOK_ENABLE_PARTIAL
 msgid ""
 "Gluster Hook ${GlusterHookName} enabled on some of the servers on cluster "
 "${ClusterName}. ${FailureMessage}"
 msgstr ""
+"Ловушка Gluster ${GlusterHookName} включена на некоторых серверах кластера "
+"${ClusterName}. ${FailureMessage}"
 
 #: GLUSTER_HOOK_ENABLE_FAILED
 msgid ""
 "Failed to enable Gluster Hook ${GlusterHookName} on cluster ${ClusterName}. "
 "${FailureMessage}"
 msgstr ""
+"Не удалось включить ловушку Gluster ${GlusterHookName} в кластере "
+"${ClusterName}. "
+"${FailureMessage}"
 
 #: GLUSTER_HOOK_DISABLE
 msgid "Gluster Hook ${GlusterHookName} disabled on cluster ${ClusterName}."
 msgstr ""
+"Ловушка Gluster ${GlusterHookName} отключена в кластере ${ClusterName}."
 
 #: GLUSTER_HOOK_DISABLE_FAILED
 msgid ""
 "Failed to disable Gluster Hook ${GlusterHookName} on cluster ${ClusterName}. "
 "${FailureMessage}"
 msgstr ""
+"Не удалось отключить ловушку Gluster ${GlusterHookName} в кластере "
+"${ClusterName}. "
+"${FailureMessage}"
 
 #: GLUSTER_HOOK_DISABLE_PARTIAL
 msgid ""
 "Gluster Hook ${GlusterHookName} disabled on some of the servers on cluster "
 "${ClusterName}. ${FailureMessage}"
 msgstr ""
+"Ловушка Gluster ${GlusterHookName} отключена на некоторых серверах кластера "
+"${ClusterName}. ${FailureMessage}"
 
 #: GLUSTER_HOOK_LIST_FAILED
 msgid "Failed to retrieve hook list from ${VdsName} of Cluster ${ClusterName}."
 msgstr ""
+"Не удалось получить список ловушек из ${VdsName} кластера ${ClusterName}."
 
 #: GLUSTER_HOOK_CONFLICT_DETECTED
 msgid "Detected conflict in hook ${HookName} of Cluster ${ClusterName}."
-msgstr ""
+msgstr "Обнаружен конфликт ловушки ${HookName} кластера ${ClusterName}."
 
 #: GLUSTER_HOOK_DETECTED_NEW
 msgid "Detected new hook ${HookName} in Cluster ${ClusterName}."
-msgstr ""
+msgstr "Обнаружена новая ловушка ${HookName} в кластере ${ClusterName}."
 
 #: GLUSTER_HOOK_DETECTED_DELETE
 msgid "Detected removal of hook ${HookName} in Cluster ${ClusterName}."
-msgstr ""
+msgstr "Обнаружено удаление ловушки ${HookName} в кластере ${ClusterName}."
 
 #: GLUSTER_HOOK_GETCONTENT_FAILED
 msgid "Failed to read content of hook ${HookName} in Cluster ${ClusterName}."
 msgstr ""
+"Не удалось прочитать содержимое ловушки ${HookName} в кластере ${ClusterName}."
 
 #: GLUSTER_SERVICES_LIST_FAILED
 msgid ""
 "Could not fetch statuses of services from server ${VdsName}. Updating "
 "statuses of all services on this server to UNKNOWN."
 msgstr ""
+"Не удалось получить статусы служб с сервера ${VdsName}. Статус для всех служб "
+"этого сервера выставляется как НЕИЗВЕСТНЫЙ."
 
 #: GLUSTER_SERVICE_TYPE_ADDED_TO_CLUSTER
 msgid ""
 "Service type ${ServiceType} was not mapped to cluster ${ClusterName}. Mapped "
 "it now."
 msgstr ""
+"Соответствие типа службы ${ServiceType} не было отображено на кластере "
+"${ClusterName}. Отображено сейчас."
 
 #: GLUSTER_CLUSTER_SERVICE_STATUS_CHANGED
 msgid ""
 "Status of service type ${ServiceType} changed from ${OldStatus} to "
 "${NewStatus} on cluster ${ClusterName}"
 msgstr ""
+"Статус типа службы ${ServiceType} изменился с ${OldStatus} на "
+"${NewStatus} на кластере ${ClusterName}."
 
 #: GLUSTER_CLUSTER_SERVICE_STATUS_ADDED
 msgid ""
 "Status of service type ${ServiceType} set to ${NewStatus} on cluster "
 "${ClusterName}"
 msgstr ""
+"Статус типа службы ${ServiceType} установлен как ${NewStatus} на кластере "
+"${ClusterName}"
 
 #: GLUSTER_SERVICE_ADDED_TO_SERVER
 msgid ""
 "Service ${ServiceName} was not mapped to server ${VdsName}. Mapped it now."
 msgstr ""
+"Соответствие службы ${ServiceType} не было отображено на кластере "
+"${ClusterName}. Отображено сейчас."
 
 #: GLUSTER_SERVER_SERVICE_STATUS_CHANGED
 msgid ""
 "Status of service ${ServiceName} on server ${VdsName} changed from "
 "${OldStatus} to ${NewStatus}. Updating in engine now."
 msgstr ""
+"Статус службы ${ServiceName} на сервере ${VdsName} изменился с "
+"${OldStatus} на ${NewStatus}. Обновляем статус в ЦУ."
 
 #: GLUSTER_HOST_UUID_NOT_FOUND
 msgid ""
 "Could not find gluster uuid of server ${VdsName} on Cluster ${ClusterName}."
 msgstr ""
+"Не удалось найти gluster uuid сервера ${VdsName} в кластере ${ClusterName}."
 
 #: GLUSTER_HOST_UUID_ALREADY_EXISTS
 msgid ""
 "Gluster UUID of host ${VdsName} on Cluster ${ClusterName} already exists."
 msgstr ""
+"Gluster UUID хоста ${VdsName} на кластере ${ClusterName} уже существует."
 
 #: WATCHDOG_EVENT
 msgid ""
 "Watchdog event (${wdaction}) triggered on ${VmName} at ${wdevent} (host "
 "time)."
 msgstr ""
+"Событие модуля наблюдения (${wdaction}) сработало в ${VmName} во время "
+"${wdevent} "
+"(время хоста)"
 
 #: GLUSTER_HOOK_UPDATED
 msgid "Gluster Hook ${GlusterHookName} updated on conflicting servers."
 msgstr ""
+"Ловушка Gluster ${GlusterHookName} обновлена на конфликтующих серверах."
 
 #: GLUSTER_HOOK_UPDATE_FAILED
 msgid ""
 "Failed to update Gluster Hook ${GlusterHookName} on conflicting servers. "
 "${FailureMessage}"
 msgstr ""
+"Не удалось обновить ловушку Gluster ${GlusterHookName} на конфликтующих "
+"серверах. "
+"${FailureMessage}"
 
 #: GLUSTER_HOOK_ADDED
 msgid "Gluster Hook ${GlusterHookName} added on conflicting servers."
-msgstr ""
+msgstr "На конфликтующие сервера добавлена ловушка Gluster ${GlusterHookName}."
 
 #: GLUSTER_HOOK_ADD_FAILED
 msgid ""
 "Failed to add Gluster Hook ${GlusterHookName} on conflicting servers. "
 "${FailureMessage}"
 msgstr ""
+"Не удалось добавить ловушку Gluster ${GlusterHookName} на конфликтующие "
+"сервера. ${FailureMessage}"
 
 #: GLUSTER_HOOK_REMOVED
 msgid ""
 "Gluster Hook ${GlusterHookName} removed from all servers in cluster "
 "${ClusterName}."
 msgstr ""
+"Ловушка Gluster ${GlusterHookName} удалена со всех серверов кластера "
+"${ClusterName}."
 
 #: GLUSTER_HOOK_REMOVE_FAILED
 msgid ""
 "Failed to remove Gluster Hook ${GlusterHookName} from cluster "
 "${ClusterName}. ${FailureMessage}"
 msgstr ""
+"Не удалось удалить ловушку Gluster ${GlusterHookName} с кластера "
+"${ClusterName}. ${FailureMessage}"
 
 #: GLUSTER_HOOK_REFRESH
 msgid "Refreshed gluster hooks in Cluster ${ClusterName}."
-msgstr ""
+msgstr "Ловушки gluster обновлены в кластере ${ClusterName}."
 
 #: GLUSTER_HOOK_REFRESH_FAILED
 msgid "Failed to refresh gluster hooks in Cluster ${ClusterName}."
-msgstr ""
+msgstr "Не удалось обновить ловушки gluster в кластере ${ClusterName}."
 
 #: GLUSTER_VOLUME_DETAILS_REFRESH
 msgid ""
 "Refreshed details of the volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Обновлены сведения о томе ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_DETAILS_REFRESH_FAILED
 msgid ""
 "Failed to refresh the details of volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось обновить сведения о томе ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_SERVICE_STARTED
 msgid ""
 "${servicetype} service started on host ${VdsName} of cluster ${ClusterName}."
 msgstr ""
+"Служба ${servicetype} запущена на хосте ${VdsName} кластера ${ClusterName}."
 
 #: GLUSTER_SERVICE_START_FAILED
 msgid ""
 "Could not start ${servicetype} service on host ${VdsName} of cluster "
 "${ClusterName}."
 msgstr ""
+"Не удалось запустить службу ${servicetype} на хосте ${VdsName} кластера "
+"${ClusterName}."
 
 #: GLUSTER_SERVICE_STOPPED
 msgid ""
 "${servicetype} services stopped on host ${VdsName} of cluster "
 "${ClusterName}."
 msgstr ""
+"Службы ${servicetype} остановлены на хосте ${VdsName} кластера "
+"${ClusterName}."
 
 #: GLUSTER_SERVICE_STOP_FAILED
 msgid ""
 "Could not stop ${servicetype} service on host ${VdsName} of cluster "
 "${ClusterName}."
 msgstr ""
+"Не удалось остановить службу ${servicetype} на хосте ${VdsName} кластера "
+"${ClusterName}."
 
 #: GLUSTER_SERVICES_LIST_NOT_FETCHED
 msgid ""
 "Could not fetch list of services from ${ServiceGroupType} named "
 "${ServiceGroupName}."
 msgstr ""
+"Не удалось получить список служб из ${ServiceGroupType} с названием "
+"${ServiceGroupName}."
 
 #: GLUSTER_SERVICE_RESTARTED
 msgid ""
 "${servicetype} service re-started on host ${VdsName} of cluster "
 "${ClusterName}."
 msgstr ""
+"Служба ${servicetype} перезапущена на хъосте ${VdsName} кластера "
+"${ClusterName}."
 
 #: GLUSTER_SERVICE_RESTART_FAILED
 msgid ""
 "Could not re-start ${servicetype} service on host ${VdsName} of cluster "
 "${ClusterName}."
 msgstr ""
+"Не удалось перезапустить службу ${servicetype} на хосте ${VdsName} кластера "
+"${ClusterName}."
 
 #: GLUSTER_VOLUME_BRICK_ADDED
 msgid ""
 "Brick [${brickpath}] on host [${servername}] added to volume "
 "[${glusterVolumeName}] of cluster ${clusterName}"
 msgstr ""
+"Элемент [${brickpath}] на хосте [${servername}] добавлен в том "
+"[${glusterVolumeName}] кластера ${clusterName}"
 
 #: GLUSTER_BRICK_STATUS_CHANGED
 msgid ""
@@ -5780,215 +5940,286 @@ msgid ""
 "${glusterVolumeName} of cluster ${clusterName} from ${oldValue} to "
 "${newValue} ."
 msgstr ""
+"Обнаружено изменение статуса элемента ${brickpath} тома ${glusterVolumeName} "
+"кластера ${clusterName} с ${oldValue} на ${newValue}."
 
 #: GLUSTER_BRICK_STATUS_DOWN
 msgid ""
 "Status of brick ${brickpath} of volume ${glusterVolumeName} on cluster "
 "${ClusterName} is down."
 msgstr ""
+"Статус элемента ${brickpath} тома ${glusterVolumeName} на кластере "
+"${ClusterName} — отключен."
 
 #: GLUSTER_GEOREP_SESSION_DELETED_FROM_CLI
 msgid ""
 "Detected deletion of geo-replication session ${geoRepSessionKey} from volume "
 "${glusterVolumeName} of cluster ${clusterName}"
 msgstr ""
+"Обнаружено удаление сеанса георепликации ${geoRepSessionKey} с тома "
+"${glusterVolumeName} кластера ${clusterName}"
 
 #: GLUSTER_GEOREP_SESSION_DETECTED_FROM_CLI
 msgid ""
 "Detected new geo-replication session ${geoRepSessionKey} for volume "
 "${glusterVolumeName} of cluster ${clusterName}. Adding it to engine."
 msgstr ""
+"Обнаружен новый сеанс георепликации ${geoRepSessionKey} на томе "
+"${glusterVolumeName} кластера ${clusterName}. Добавляется в ЦУ."
 
 #: GLUSTER_GEOREP_SESSION_REFRESH
 msgid ""
 "Refreshed geo-replication sessions for volume ${glusterVolumeName} of "
 "cluster ${clusterName}."
 msgstr ""
+"Обновлены сеансы георепликации для тома ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_GEOREP_SESSION_REFRESH_FAILED
 msgid ""
 "Failed to refresh geo-replication sessions for volume ${glusterVolumeName} "
 "of cluster ${clusterName}."
 msgstr ""
+"Не удалось обновить сеансы георепликации для тома ${glusterVolumeName} "
+"кластера ${clusterName}."
 
 #: GEOREP_SESSION_STOP
 msgid ""
 "Geo-replication session on volume ${glusterVolumeName} of cluster "
 "${clusterName} has been stopped."
 msgstr ""
+"Сеанс георепликации на томе ${glusterVolumeName} в кластере "
+"${clusterName} был остановлен."
 
 #: GEOREP_SESSION_STOP_FAILED
 msgid ""
 "Failed to stop geo-replication session on volume ${glusterVolumeName} of "
 "cluster ${clusterName}"
 msgstr ""
+"Не удалось остановить сеанс георепликации на томе ${glusterVolumeName} "
+"кластера ${clusterName}"
 
 #: GEOREP_SESSION_DELETED
 msgid ""
 "Geo-replication session deleted on volume ${glusterVolumeName} of cluster "
 "${clusterName}"
 msgstr ""
+"Обнаружен сеанс георепликации на томе ${glusterVolumeName} кластера "
+"${clusterName}"
 
 #: GEOREP_SESSION_DELETE_FAILED
 msgid ""
 "Failed to delete geo-replication session on volume ${glusterVolumeName} of "
 "cluster ${clusterName}"
 msgstr ""
+"Не удалось удалить сеанс георепликации на томе ${glusterVolumeName} "
+"кластера ${clusterName}"
 
 #: GLUSTER_VOLUME_GEO_REP_START
 msgid ""
 "Geo-replication session on volume ${glusterVolumeName} of cluster "
 "${clusterName} has been started."
 msgstr ""
+"Был начат сеанс георепликации на томе ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_GEO_REP_START_FAILED_EXCEPTION
 msgid ""
 "Failed to start geo-replication session on volume ${glusterVolumeName} of "
 "cluster ${clusterName}"
 msgstr ""
+"Не удалось начать сеанс георепликации на томе ${glusterVolumeName} "
+"кластера ${clusterName}"
 
 #: GLUSTER_GEOREP_CONFIG_SET
 msgid ""
 "Configuration ${key} has been set to ${value} on the geo-rep session "
 "${geoRepSessionKey}."
 msgstr ""
+"Для параметра конфигурации ${key} сеанса георепликации ${geoRepSessionKey} "
+"было установлено "
+"значение ${value}."
 
 #: GLUSTER_GEOREP_CONFIG_SET_FAILED
 msgid ""
 "Failed to set the configuration ${key} to ${value} on geo-rep session "
 "${geoRepSessionKey}."
 msgstr ""
+"Не удалось установить значение ${value} для параметра конфигурации ${key} "
+"сеанса георепликации ${geoRepSessionKey}."
 
 #: GLUSTER_GEOREP_CONFIG_SET_DEFAULT
 msgid ""
 "Configuration of ${key} of session ${geoRepSessionKey} reset to its default "
 "value ."
 msgstr ""
+"Конфигурация ${key} сеанса ${geoRepSessionKey} сброшена до значений по "
+"умолчанию."
 
 #: GLUSTER_GEOREP_CONFIG_SET_DEFAULT_FAILED
 msgid ""
 "Failed to set ${key} of session ${geoRepSessionKey} to its default value."
 msgstr ""
+"Не удалось сбросить конфигурацию ${key} сеанса ${geoRepSessionKey} до "
+"значений по умолчанию."
 
 #: GLUSTER_GEOREP_CONFIG_LIST
 msgid ""
 "Refreshed configuration options for geo-replication session "
 "${geoRepSessionKey}"
 msgstr ""
+"Обновлены параметры конфигурации для сеанса георепликации ${geoRepSessionKey}"
 
 #: GLUSTER_GEOREP_CONFIG_LIST_FAILED
 msgid ""
 "Failed to refresh configuration options for geo-replication session "
 "${geoRepSessionKey}"
 msgstr ""
+"Не удалось обновить параметры конфигурации для сеанса георепликации "
+"${geoRepSessionKey}"
 
 #: GLUSTER_VOLUME_SNAPSHOT_DELETED
 msgid "Gluster volume snapshot ${snapname} deleted."
-msgstr ""
+msgstr "Снимок тома Gluster ${snapname} удалён"
 
 #: GLUSTER_VOLUME_SNAPSHOT_DELETE_FAILED
 msgid "Failed to delete gluster volume snapshot ${snapname}."
-msgstr ""
+msgstr "Не удалось удалить снимок тома gluster ${snapname}."
 
 #: GLUSTER_VOLUME_ALL_SNAPSHOTS_DELETED
 msgid ""
 "Deleted all the gluster volume snapshots for the volume ${glusterVolumeName} "
 "of cluster ${clusterName}."
 msgstr ""
+"Удалены все снимки тома gluster для тома ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_ALL_SNAPSHOTS_DELETE_FAILED
 msgid ""
 "Failed to delete all the gluster volume snapshots for the volume "
 "${glusterVolumeName} of cluster ${clusterName}."
 msgstr ""
+"Не удалось удалить все снимки тома gluster для тома ${glusterVolumeName} "
+"кластера ${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_ACTIVATED
 msgid ""
 "Activated the gluster volume snapshot ${snapname} on volume "
 "${glusterVolumeName} of cluster ${clusterName}."
 msgstr ""
+"Активирован снимок тома gluster ${snapname} на томе ${glusterVolumeName} "
+"кластера ${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_ACTIVATE_FAILED
 msgid ""
 "Failed to activate the gluster volume snapshot ${snapname} on volume "
 "${glusterVolumeName} of cluster ${clusterName}."
 msgstr ""
+"Не удалось активировать снимок тома gluster ${snapname} на томе "
+"${glusterVolumeName} "
+"кластера ${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_DEACTIVATED
 msgid ""
 "De-activated the gluster volume snapshot ${snapname} on volume "
 "${glusterVolumeName} of cluster ${clusterName}."
 msgstr ""
+"Отключен снимок тома gluster ${snapname} на томе ${glusterVolumeName} "
+"кластера ${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_DEACTIVATE_FAILED
 msgid ""
 "Failed to de-activate gluster volume snapshot ${snapname} on volume "
 "${glusterVolumeName} of cluster ${clusterName}."
 msgstr ""
+"Не удалось отключить снимок тома gluster ${snapname} на томе "
+"${glusterVolumeName} "
+"кластера ${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_RESTORED
 msgid ""
 "Restored the volume ${glusterVolumeName} of cluster ${clusterName} to the "
 "state of gluster volume snapshot ${snapname}."
 msgstr ""
+"Том ${glusterVolumeName} кластера ${clusterName} восстановлен до состояния "
+"снимка "
+"тома gluster ${snapname}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_RESTORE_FAILED
 msgid ""
 "Failed to restore the volume ${glusterVolumeName} of cluster ${clusterName} "
 "to the state of gluster volume snapshot ${snapname}."
 msgstr ""
+"Не удалось восстановить состояние тома ${glusterVolumeName} кластера "
+"${clusterName} до состояния снимка "
+"тома gluster ${snapname}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_CONFIG_UPDATED
 msgid "Updated Gluster volume snapshot configuration(s)."
-msgstr ""
+msgstr "Параметры снимка тома Gluster обновлены."
 
 #: GLUSTER_VOLUME_SNAPSHOT_CONFIG_UPDATE_FAILED
 msgid "Failed to update gluster volume snapshot configuration(s)."
-msgstr ""
+msgstr "Не удалось обновить параметры снимка тома Gluster."
 
 #: GLUSTER_VOLUME_SNAPSHOT_CONFIG_UPDATE_FAILED_PARTIALLY
 msgid ""
 "Failed to update gluster volume snapshot configuration(s) "
 "${failedSnapshotConfigs}."
 msgstr ""
+"Сбой обновления параметров снимков тома gluster ${failedSnapshotConfigs}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_SOFT_LIMIT_REACHED
 msgid ""
 "Gluster Volume Snapshot soft limit reached for the volume "
 "${glusterVolumeName} on cluster ${clusterName}."
 msgstr ""
+"Для тома ${glusterVolumeName} в кластере ${clusterName} достигнут мягкий "
+"предел "
+"снимка тома Gluster."
 
 #: GLUSTER_VOLUME_SNAPSHOT_HARD_LIMIT_REACHED
 msgid ""
 "Gluster Volume Snapshot hard limit reached for the volume "
 "${glusterVolumeName} on cluster ${clusterName}."
 msgstr ""
+"Для тома ${glusterVolumeName} в кластере ${clusterName} достигнут жёсткий "
+"предел "
+"снимка тома Gluster."
 
 #: NEW_STORAGE_DEVICE_DETECTED
 msgid ""
 "Found new storage device ${storageDevice} on host ${VdsName}, and added it "
 "to engine DB.\""
 msgstr ""
+"На хосте ${VdsName} найдено новое устройство хранения ${storageDevice}, "
+"устройство "
+"добавлено в БД ЦУ."
 
 #: STORAGE_DEVICE_REMOVED_FROM_THE_HOST
 msgid ""
 "Detected deletion of storage device ${storageDevice} on host ${VdsName}, and "
 "deleting it from engine DB.\""
 msgstr ""
+"На хосте ${VdsName} обнаружено удаление устройства хранения ${storageDevice}, "
+"устройство удаляется из БД ЦУ."
 
 #: SYNC_STORAGE_DEVICES_IN_HOST
 msgid "Manually synced the storage devices from host ${VdsName}"
-msgstr ""
+msgstr "Устройства хранения хоста ${VdsName} были синхронизированы вручную."
 
 #: SYNC_STORAGE_DEVICES_IN_HOST_FAILED
 msgid "Failed to sync storage devices from host ${VdsName}"
-msgstr ""
+msgstr "Не удалось синхронизировать устройства хранения хоста ${VdsName}"
 
 #: GLUSTER_VOLUME_TYPE_UNSUPPORTED
 msgid ""
 "Detected a volume ${glusterVolumeName} with type ${glusterVolumeType} on "
 "cluster ${Cluster} and it is not fully supported by engine."
 msgstr ""
+"В кластере ${Cluster} обнаружен том ${glusterVolumeName} с типом "
+"${glusterVolumeType}; "
+"Центр Управления поддерживает его не полностью."
 
 #: GEOREP_OPTION_SET_FROM_CLI
 msgid ""
@@ -5996,6 +6227,9 @@ msgid ""
 "${geoRepSessionKey} on volume ${glusterVolumeName} of cluster "
 "${ClusterName}, and added it to engine."
 msgstr ""
+"Для сеанса георепликации ${geoRepSessionKey} на томе ${glusterVolumeName} "
+"кластера "
+"${ClusterName} обнаружен новый параметр ${key}=${value} и добавлен в ЦУ."
 
 #: GEOREP_OPTION_CHANGED_FROM_CLI
 msgid ""
@@ -6003,77 +6237,109 @@ msgid ""
 "geo-replication session on volume ${glusterVolumeName} of cluster "
 "${ClusterName}, and updated it to engine."
 msgstr ""
+"Для сеанса георепликации на томе ${glusterVolumeName} кластера "
+"${ClusterName} обнаружено изменение значения параметра ${key} "
+"с ${oldValue} на ${value}; значение обновлено в ЦУ."
 
 #: GLUSTER_MASTER_VOLUME_STOP_FAILED_DURING_SNAPSHOT_RESTORE
 msgid ""
 "Could not stop master volume ${glusterVolumeName} of cluster ${clusterName} "
 "during snapshot restore."
 msgstr ""
+"Во время восстановления снимка не удалось остановить главный том "
+"${glusterVolumeName} "
+"кластера ${clusterName}"
 
 #: GLUSTER_MASTER_VOLUME_SNAPSHOT_RESTORE_FAILED
 msgid ""
 "Could not restore master volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось восстановить главный том ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_CREATED
 msgid ""
 "Snapshot ${snapname} created for volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Для тома ${glusterVolumeName} кластера ${clusterName} создан снимок "
+"${snapname}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_CREATE_FAILED
 msgid ""
 "Could not create snapshot for volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось создать снимок для тома ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: CREATE_GLUSTER_BRICK
 msgid ""
 "Brick ${brickName} created successfully on host ${vdsName} of cluster "
 "${clusterName}."
 msgstr ""
+"Элемент ${brickName} успешно создан на хосте ${vdsName} кластера "
+"${clusterName}."
 
 #: CREATE_GLUSTER_BRICK_FAILED
 msgid ""
 "Failed to create brick ${brickName} on host ${vdsName} of cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось создать элемент ${brickName} на хосте ${vdsName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_SCHEDULED
 msgid ""
 "Snapshots scheduled on volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Создано расписание создания снимков на томе ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_SCHEDULE_FAILED
 msgid ""
 "Failed to schedule snapshots on the volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Сбой внесения в расписание создания снимков на томе ${glusterVolumeName} "
+"кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_RESCHEDULED
 msgid ""
 "Rescheduled snapshots on volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Внесены изменения в расписание создания снимков на томе ${glusterVolumeName} "
+"кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_RESCHEDULE_FAILED
 msgid ""
 "Failed to reschedule snapshots on volume ${glusterVolumeName} of cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось внести изменения в расписание создания снимков на томе "
+"${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_SCHEDULE_DELETED
 msgid ""
 "Snapshot schedule deleted for volume ${glusterVolumeName} of ${clusterName}."
 msgstr ""
+"Удалено расписание создания снимков для тома ${glusterVolumeName} кластера "
+"${clusterName}."
 
 #: GLUSTER_VOLUME_SNAPSHOT_DETECTED_NEW
 msgid ""
 "Found new gluster volume snapshot ${snapname} for volume "
 "${glusterVolumeName} on cluster ${ClusterName}, and added it to engine DB.\""
 msgstr ""
+"Найден новый снимок тома gluster ${snapname} для тома ${glusterVolumeName} на "
+"кластере ${ClusterName}, "
+"снимок добавлен в БД ЦУ."
 
 #: GLUSTER_VOLUME_SNAPSHOT_DELETED_FROM_CLI
 msgid ""
@@ -6081,12 +6347,18 @@ msgid ""
 "${glusterVolumeName} on cluster ${ClusterName}, and deleting it from engine "
 "DB.\""
 msgstr ""
+"Обнаружено удаление снимка тома gluster ${snapname} для тома "
+"${glusterVolumeName} на кластере ${ClusterName}; "
+"снимок удалён из БД ЦУ."
 
 #: GLUSTER_VOLUME_SNAPSHOT_CLUSTER_CONFIG_DETECTED_NEW
 msgid ""
 "Found new gluster volume snapshot configuration ${snapConfigName} with value "
 "${snapConfigValue} on cluster ${ClusterName}, and added it to engine DB.\""
 msgstr ""
+"Обнаружена новая конфигурация снимка тома gluster ${snapConfigName} со "
+"значением "
+"${snapConfigValue} на кластере ${ClusterName}; конфигурация добавлена в БД ЦУ."
 
 #: GLUSTER_VOLUME_SNAPSHOT_VOLUME_CONFIG_DETECTED_NEW
 msgid ""
@@ -6094,174 +6366,209 @@ msgid ""
 "${snapConfigValue} for volume ${glusterVolumeName} on cluster "
 "${ClusterName}, and added it to engine DB.\""
 msgstr ""
+"Обнаружена новая конфигурация снимка тома gluster ${snapConfigName} со "
+"значением "
+"${snapConfigValue} для тома ${glusterVolumeName} на кластере ${ClusterName}, "
+"конфигурация добавлена в ДБ ЦУ."
 
 #: GLUSTER_CLI_SNAPSHOT_SCHEDULE_DISABLE_FAILED
 msgid ""
 "Failed to disable gluster CLI based snapshot schedule on cluster "
 "${clusterName}."
 msgstr ""
+"Не удалось отключить плановое создание снимков, настроенное через CLI, на "
+"кластере ${clusterName}."
 
 #: GLUSTER_CLI_SNAPSHOT_SCHEDULE_DISABLED
 msgid ""
 "Disabled gluster CLI based scheduling successfully on cluster "
 "${clusterName}."
 msgstr ""
+"Плановое создание снимков, настроенное через CLI, успешно отключено "
+"на кластере ${clusterName}."
 
 #: GLUSTER_SERVER_STATUS_DISCONNECTED
 msgid ""
 "Gluster server ${vdsName} set to DISCONNECTED on cluster ${clusterName}."
 msgstr ""
+"Сервер Gluster ${vdsName} помечен как ОТКЛЮЧЕН на кластере ${clusterName}."
 
 #: VDS_UNTRUSTED
 msgid ""
 "Host ${VdsName} was set to non-operational. Host is not trusted by the "
 "attestation service."
 msgstr ""
+"Хост ${VdsName} был помечен как нерабочий. Служба аттестации считает хост "
+"недоверенным."
 
 #: USER_ADDED_NETWORK_QOS
 msgid "Network QoS ${QosName} was added. (User: ${UserName})"
-msgstr ""
+msgstr "Сеть QoS ${QosName} была добавлена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_ADD_NETWORK_QOS
 msgid "Failed to add Network QoS ${QosName}. (User: ${UserName})"
-msgstr ""
+msgstr "Не удалось добавить сеть QoS ${QosName}. (Пользователь: ${UserName})"
 
 #: USER_REMOVED_NETWORK_QOS
 msgid "Network QoS ${QosName} was removed. (User: ${UserName})"
-msgstr ""
+msgstr "Сеть QoS ${QosName} была удалена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_REMOVE_NETWORK_QOS
 msgid "Failed to remove Network QoS ${QosName}. (User: ${UserName})"
-msgstr ""
+msgstr "Не удалось удалить сеть QoS ${QosName}. (Пользователь: ${UserName})"
 
 #: USER_UPDATED_NETWORK_QOS
 msgid "Network QoS ${QosName} was updated. (User: ${UserName})"
-msgstr ""
+msgstr "Сеть QoS ${QosName} была обновлена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_UPDATE_NETWORK_QOS
 msgid "Failed to update Network QoS ${QosName}. (User: ${UserName})"
-msgstr ""
+msgstr "Не удалось обновить сеть QoS ${QosName}. (Пользователь: ${UserName})"
 
 #: USER_ADDED_QOS
 msgid "QoS ${QoSName} was added. (User: ${UserName})"
-msgstr ""
+msgstr "QoS ${QoSName} была добавлена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_ADD_QOS
 msgid "Failed to add QoS ${QoSName}. (User: ${UserName})"
-msgstr ""
+msgstr "Не удалось добавить QoS ${QosName}. (Пользователь: ${UserName})"
 
 #: USER_REMOVED_QOS
 msgid "QoS ${QoSName} was removed. (User: ${UserName})"
-msgstr ""
+msgstr "QoS ${QosName} была удалена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_REMOVE_QOS
 msgid "Failed to remove QoS ${QoSName}. (User: ${UserName})"
-msgstr ""
+msgstr "Не удалось удалить QoS ${QosName}. (Пользователь: ${UserName})"
 
 #: USER_UPDATED_QOS
 msgid "QoS ${QoSName} was updated. (User: ${UserName})"
-msgstr ""
+msgstr "QoS ${QosName} была обновлена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_UPDATE_QOS
 msgid "Failed to update QoS ${QoSName}. (User: ${UserName})"
-msgstr ""
+msgstr "Не удалось обновить QoS ${QosName}. (Пользователь: ${UserName})"
 
 #: USER_ADD_CLUSTER_POLICY
 msgid "Scheduling Policy ${ClusterPolicy} was added. (User: ${UserName})"
 msgstr ""
+"Была добавлена политика планирования ${ClusterPolicy}. (Пользователь: "
+"${UserName})"
 
 #: USER_FAILED_TO_ADD_CLUSTER_POLICY
 msgid "Failed to add Scheduling Policy: ${ClusterPolicy}. (User: ${UserName})"
 msgstr ""
+"Не удалось добавить политику планирования ${ClusterPolicy}. (Пользователь: "
+"${UserName})"
 
 #: USER_UPDATE_CLUSTER_POLICY
 msgid "Scheduling Policy ${ClusterPolicy} was updated. (User: ${UserName})"
 msgstr ""
+"Политика планирования ${ClusterPolicy} была обновлена. (Пользователь: "
+"${UserName})"
 
 #: USER_FAILED_TO_UPDATE_CLUSTER_POLICY
 msgid ""
 "Failed to update Scheduling Policy: ${ClusterPolicy}. (User: ${UserName})"
 msgstr ""
+"Не удалось обновить политику планирования ${ClusterPolicy}. (Пользователь: "
+"${UserName})"
 
 #: USER_REMOVE_CLUSTER_POLICY
 msgid "Scheduling Policy ${ClusterPolicy} was removed. (User: ${UserName})"
 msgstr ""
+"Политика планирования ${ClusterPolicy} была удалена. (Пользователь: "
+"${UserName})"
 
 #: USER_FAILED_TO_REMOVE_CLUSTER_POLICY
 msgid ""
 "Failed to remove Scheduling Policy: ${ClusterPolicy}. (User: ${UserName})"
 msgstr ""
+"Не удалось удалить политику планирования ${ClusterPolicy}. (Пользователь: "
+"${UserName})"
 
 #: FAILED_TO_CONNECT_TO_SCHEDULER_PROXY
 msgid ""
 "Failed to connect to external scheduler proxy. External filters, scoring "
 "functions and load balancing will not be performed."
 msgstr ""
+"Не удалось подключиться к прокси внешнего планировщика. Внешние фильтры, "
+"функции количественной оценки и балансировка нагрузки выполняться не будут."
 
 #: EXTERNAL_SCHEDULER_PLUGIN_ERROR
 msgid ""
 "Running the external scheduler plugin '${PluginName}' failed: "
 "'${ErrorMessage}'"
 msgstr ""
+"Сбой запуска модуля внешнего планировщика «${PluginName}»: «${ErrorMessage}»"
 
 #: EXTERNAL_SCHEDULER_ERROR
 msgid "Running the external scheduler failed: '${ErrorMessage}'"
-msgstr ""
+msgstr "Сбой запуска внешнего планировщика: «${ErrorMessage}»"
 
 #: EXTERNAL_EVENT_NORMAL
 msgid "An external event with NORMAL severity has been added."
-msgstr ""
+msgstr "Было добавлено внешнее событие со степенью важности NORMAL."
 
 #: EXTERNAL_EVENT_WARNING
 msgid "An external event with WARNING severity has been added."
-msgstr ""
+msgstr "Было добавлено внешнее событие со степенью важности WARNING."
 
 #: EXTERNAL_EVENT_ERROR
 msgid "An external event with ERROR severity has been added."
-msgstr ""
+msgstr "Было добавлено внешнее событие со степенью важности ERROR."
 
 #: EXTERNAL_ALERT
 msgid "An external event with ALERT severity has been added."
-msgstr ""
+msgstr "Было добавлено внешнее событие со степенью важности ALERT."
 
 #: USER_UPDATED_MOM_POLICIES
 msgid "Mom policy was updated on host ${VdsName}."
 msgstr ""
+"Политика менеджера превышенного выделения памяти была обновлена на хосте "
+"${VdsName}."
 
 #: USER_FAILED_TO_UPDATE_MOM_POLICIES
 msgid "Mom policy could not be updated on host ${VdsName}."
 msgstr ""
+"Не удалось обновить политику менеджера превышенного выделения памяти на хосте "
+"${VdsName}."
 
 #: DISK_ALIGNMENT_SCAN_START
 msgid "Starting alignment scan of disk '${DiskAlias}'."
-msgstr ""
+msgstr "Начинается проверка на невыровненные блоки для диска «${DiskAlias}»"
 
 #: DISK_ALIGNMENT_SCAN_FAILURE
 msgid "Alignment scan of disk '${DiskAlias}' failed."
-msgstr ""
+msgstr "Сбой проверки на невыровненные блоки для диска «${DiskAlias}»"
 
 #: DISK_ALIGNMENT_SCAN_SUCCESS
 msgid "Alignment scan of disk '${DiskAlias}' is complete."
-msgstr ""
+msgstr "Проверка на невыровненные блоки для диска «${DiskAlias}» завершена."
 
 #: VM_MEMORY_NOT_IN_RECOMMENDED_RANGE
 msgid ""
 "VM ${VmName} was configured with ${VmMemInMb}mb of memory while the "
 "recommended value range is ${VmMinMemInMb}mb - ${VmMaxMemInMb}mb"
 msgstr ""
+"Для ВМ ${VmName} был настроен объём памяти ${VmMemInMb}МБ, но рекомендуемый "
+"диапазон "
+"памяти составляет ${VmMinMemInMb}МБ - ${VmMaxMemInMb}МБ"
 
 #: VM_CONSOLE_CONNECTED
 msgid "User ${UserName} is connected to VM ${VmName}."
-msgstr ""
+msgstr "Пользователь ${UserName} подключен к ВМ ${VmName}."
 
 #: VM_CONSOLE_DISCONNECTED
 msgid "User ${UserName} got disconnected from VM ${VmName}."
-msgstr ""
+msgstr "Пользователь ${UserName} был отключен от ВМ ${VmName}."
 
 #: VDS_STATUS_CHANGE_FAILED_DUE_TO_STOP_SPM_FAILURE
 msgid ""
 "Failed to change status of host ${VdsName} due to a failure to stop the spm."
 msgstr ""
+"Сбой изменения статуса хоста ${VdsName} т.к. не удалось остановить диспетчер "
+"пула хранилища"
 
 #: CLUSTER_ALERT_HA_RESERVATION
 msgid ""
@@ -6269,92 +6576,124 @@ msgid ""
 "${Hosts} will fail to migrate in case of a failover, consider adding "
 "resources or shutting down unused VMs."
 msgstr ""
+"Кластер ${ClusterName} не выдержал проверку на резервирование для высокой "
+"доступности, "
+"высокодоступные ВМ на хосте ${Hosts} не смогут мигрировать в случае сбоя; "
+"рассмотрите возможность "
+"добавления ресурсов или выключения неиспользуемых ВМ."
 
 #: CLUSTER_ALERT_HA_RESERVATION_DOWN
 msgid "Cluster ${ClusterName} passed the HA Reservation check."
 msgstr ""
+"Кластер ${ClusterName} выдержал проверку на резервирование для высокой "
+"доступности"
 
 #: PM_POLICY_UP_TO_MAINTENANCE
 msgid ""
 "Host ${Host} is not currently needed, activating maintenance mode in "
 "preparation for shutdown."
 msgstr ""
+"Хост ${Host} в настоящее время не нужен, запускается режим обслуживания для "
+"подготовки к выключению."
 
 #: PM_POLICY_MAINTENANCE_TO_DOWN
 msgid "Host ${Host} is not currently needed, shutting down."
-msgstr ""
+msgstr "Хост ${Host} в настоящее время не нужен, хост выключается."
 
 #: PM_POLICY_TO_UP
 msgid ""
 "Reactivating host ${Host} according to the current power management policy."
 msgstr ""
+"Хост ${Host} активируется повторно, согласно текущей политике управления "
+"питанием."
 
 #: USER_ADDED_AFFINITY_GROUP
 msgid "Affinity Group ${affinityGroupName} was added. (User: ${UserName})"
 msgstr ""
+"Группа схожести ${affinityGroupName} была добавлена. (Пользователь: "
+"${UserName})"
 
 #: USER_FAILED_TO_ADD_AFFINITY_GROUP
 msgid "Failed to add Affinity Group ${affinityGroupName}. (User: ${UserName})"
 msgstr ""
+"Не удалось добавить группу схожести ${affinityGroupName}. (Пользователь: "
+"${UserName})"
 
 #: USER_UPDATED_AFFINITY_GROUP
 msgid "Affinity Group ${affinityGroupName} was updated. (User: ${UserName})"
 msgstr ""
+"Группа схожести ${affinityGroupName} была обновлена. (Пользователь: "
+"${UserName})"
 
 #: USER_FAILED_TO_UPDATE_AFFINITY_GROUP
 msgid ""
 "Failed to update Affinity Group ${affinityGroupName}. (User: ${UserName})"
 msgstr ""
+"Не удалось обновить группу схожести ${affinityGroupName}. (Пользователь: "
+"${UserName})"
 
 #: USER_REMOVED_AFFINITY_GROUP
 msgid "Affinity Group ${affinityGroupName} was removed. (User: ${UserName})"
 msgstr ""
+"Группа схожести ${affinityGroupName} была добавлена (Пользователь: "
+"${UserName})"
 
 #: USER_FAILED_TO_REMOVE_AFFINITY_GROUP
 msgid ""
 "Failed to remove Affinity Group ${affinityGroupName}. (User: ${UserName})"
 msgstr ""
+"Не удалось удалить группу схожести ${affinityGroupName}. (Пользователь: "
+"${UserName})"
 
 #: USER_ADDED_AFFINITY_LABEL
 msgid "Affinity Label ${labelName} was added. (User: ${UserName})"
 msgstr ""
+"Была добавлена метка схожести ${labelName}. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_ADD_AFFINITY_LABEL
 msgid "Failed to add Affinity Label ${labelName}. (User: ${UserName})"
 msgstr ""
+"Не удалось добавить метку схожести ${labelName}. (Пользователь: ${UserName})"
 
 #: USER_UPDATED_AFFINITY_LABEL
 msgid "Affinity Label ${labelName} was updated. (User: ${UserName})"
 msgstr ""
+"Метка схожести ${labelName} была обновлена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_UPDATE_AFFINITY_LABEL
 msgid "Failed to update Affinity Label ${labelName}. (User: ${UserName})"
 msgstr ""
+"Не удалось обновить метку схожести ${labelName}. (Пользователь: ${UserName})"
 
 #: USER_REMOVED_AFFINITY_LABEL
 msgid "Affinity Label ${labelName} was removed. (User: ${UserName})"
-msgstr ""
+msgstr "Метка схожести ${labelName} была удалена. (Пользователь: ${UserName})"
 
 #: USER_FAILED_TO_REMOVE_AFFINITY_LABEL
 msgid "Failed to remove Affinity Label ${labelName}. (User: ${UserName})"
 msgstr ""
+"Не удалось удалить метку схожести ${labelName}. (Пользователь: ${UserName})"
 
 #: USER_SET_HOSTED_ENGINE_MAINTENANCE
 msgid "Hosted Engine HA maintenance mode was updated on host ${VdsName}."
 msgstr ""
+"Режим обслуживания высокой доступности виртуализированного ЦУ был обновлён на "
+"хосте ${VdsName}."
 
 #: USER_FAILED_TO_SET_HOSTED_ENGINE_MAINTENANCE
 msgid ""
 "Hosted Engine HA maintenance mode could not be updated on host ${VdsName}."
 msgstr ""
+"Не удалось обновить режим обслуживания высокой доступности "
+"виртуализированного ЦУ на хосте ${VdsName}."
 
 #: HOSTED_ENGINE_VM_IMPORT_SUCCEEDED
 msgid "Hosted Engine VM was imported successfully"
-msgstr ""
+msgstr "ВМ виртуализированного ЦУ была успешно импортирована"
 
 #: HOSTED_ENGINE_VM_IMPORT_FAILED
 msgid "Failed importing the Hosted Engine VM"
-msgstr ""
+msgstr "Не удалось импортировать ВМ виртуализированного ЦУ"
 
 #: HOSTED_ENGINE_SD_NOT_EXIT
 msgid ""
@@ -6362,34 +6701,47 @@ msgid ""
 "automatically upon data center activation, which requires adding an initial "
 "storage domain to the data center."
 msgstr ""
+"Домен хранилища виртуализированного ЦУ не существует. Он будет импортирован "
+"автоматически по факту активации дата-центра, для чего необходимо добавить "
+"начальной домен хранилища для дата-центра."
 
 #: HOSTED_ENGINE_SD_NOT_ACTIVE
 msgid "The Hosted Engine Storage Domain isn't Active."
-msgstr ""
+msgstr "Домен хранилища виртуализированного ЦУ не активен."
 
 #: HOSTED_ENGINE_DOMAIN_IMPORT_SUCCEEDED
 msgid "Hosted Engine Storage Domain imported successfully"
-msgstr ""
+msgstr "Домен хранилища виртуализированного ЦУ успешно импортирован"
 
 #: HOSTED_ENGINE_DOMAIN_IMPORT_FAILED
 msgid "Failed to import the Hosted Engine Storage Domain"
-msgstr ""
+msgstr "Не удалось импортировать домен хранилища виртуализированного ЦУ."
 
 #: VM_SLA_POLICY_CPU
 msgid "VM ${VmName} SLA Policy was set. CPU limit is set to ${cpuLimit}"
 msgstr ""
+"Политика соглашения об уровне обслуживания машины ${VmName} была настроена. "
+"Предел "
+"ЦП установлен в ${cpuLimit}"
 
 #: VM_SLA_POLICY_STORAGE
 msgid ""
 "VM ${VmName} SLA Policy was set. Storage policy changed for disks: "
 "[${diskList}]"
 msgstr ""
+"Политика соглашения об уровне обслуживания машины ${VmName} была настроена. "
+"Изменилась "
+"политика хранилища для дисков: [${diskList}]"
 
 #: VM_SLA_POLICY_CPU_STORAGE
 msgid ""
 "VM ${VmName} SLA Policy was set. CPU limit is set to ${cpuLimit}. Storage "
 "policy changed for disks: [${diskList}]"
 msgstr ""
+"Политика соглашения об уровне обслуживания машины ${VmName} была настроена. "
+"Предел "
+"ЦП установлен в ${cpuLimit}. Изменилась политика хранилища для дисков: "
+"[${diskList}]"
 
 #: FAILED_VM_SLA_POLICY
 msgid ""
@@ -6397,210 +6749,264 @@ msgid ""
 "${ErrorMessage}"
 msgstr ""
 "Не удалось настроить политику SLA для ВМ ${VmName}. Связанное сообщение об "
-"ошибке: "
-"${ErrorMessage}"
+"ошибке: ${ErrorMessage}"
 
 #: ISCSI_BOND_ADD_SUCCESS
 msgid ""
 "iSCSI bond '${IscsiBondName}' was successfully created in Data Center "
 "'${StoragePoolName}'."
 msgstr ""
+"Связка iSCSI «${IscsiBondName}» была успешно создана в дата-центре "
+"«${StoragePoolName}»."
 
 #: ISCSI_BOND_ADD_SUCCESS_WITH_WARNING
 msgid ""
 "iSCSI bond '${IscsiBondName}' was successfully created in Data Center "
 "'${StoragePoolName}' but some of the hosts encountered connection issues."
 msgstr ""
+"Связка iSCSI «${IscsiBondName}» была успешно создана в дата-центре "
+"«${StoragePoolName}», "
+"но для некоторых хостов наблюдаются проблемы подключения."
 
 #: ISCSI_BOND_ADD_FAILED
 msgid ""
 "Failed to create iSCSI bond '${IscsiBondName}' in Data Center "
 "'${StoragePoolName}'."
 msgstr ""
+"Не удалось создать связку iSCSI «${IscsiBondName}» в дата-центре "
+"«${StoragePoolName}»."
 
 #: ISCSI_BOND_EDIT_SUCCESS
 msgid "iSCSI bond '${IscsiBondName}' was successfully updated."
-msgstr ""
+msgstr "Связка iSCSI «${IscsiBondName}» была успешно обновлена."
 
 #: ISCSI_BOND_EDIT_SUCCESS_WITH_WARNING
 msgid ""
 "iSCSI bond '${IscsiBondName}' was successfully updated but some of the hosts "
 "encountered connection issues."
 msgstr ""
+"Связка iSCSI «${IscsiBondName}» была успешно обновлена в дата-центре "
+"«${StoragePoolName}», "
+"но для некоторых хостов наблюдаются проблемы подключения."
 
 #: ISCSI_BOND_EDIT_FAILED
 msgid "Failed to update iSCSI bond '${IscsiBondName}'."
-msgstr ""
+msgstr "Не удалось обновить связку iSCSI «${IscsiBondName}»"
 
 #: ISCSI_BOND_REMOVE_SUCCESS
 msgid ""
 "iSCSI bond '${IscsiBondName}' was removed from Data Center "
 "'${StoragePoolName}'"
 msgstr ""
+"Связка iSCSI «${IscsiBondName}» была удалена из дата-центра "
+"«${StoragePoolName}»"
 
 #: ISCSI_BOND_REMOVE_FAILED
 msgid ""
 "Failed to remove iSCSI bond '${IscsiBondName}' from Data Center "
 "'${StoragePoolName}'"
 msgstr ""
+"Не удалось удалить связку iSCSI «${IscsiBondName}» из дата-центра "
+"«${StoragePoolName}»"
 
 #: FENCE_KDUMP_LISTENER_IS_NOT_ALIVE
 msgid ""
 "Unable to determine if Kdump is in progress on host ${VdsName}, because "
 "fence_kdump listener is not running."
 msgstr ""
+"Не удалось определить ход выполнения Kdump на хосте ${VdsName}, "
+"т.к. fence_kdump не запущен."
 
 #: KDUMP_FLOW_DETECTED_ON_VDS
 msgid "Kdump flow is in progress on host ${VdsName}."
-msgstr ""
+msgstr "Последовательность операций kdump выполняется на хосте ${VdsName}."
 
 #: KDUMP_FLOW_NOT_DETECTED_ON_VDS
 msgid "Kdump flow is not in progress on host ${VdsName}."
-msgstr ""
+msgstr "Последовательность операций kdump не выполняется на хосте ${VdsName}."
 
 #: KDUMP_FLOW_FINISHED_ON_VDS
 msgid "Kdump flow finished on host ${VdsName}."
-msgstr ""
+msgstr "Последовательность операций kdump завершена на хосте ${VdsName}."
 
 #: KDUMP_DETECTION_NOT_CONFIGURED_ON_VDS
 msgid ""
 "Kdump integration is enabled for host ${VdsName}, but kdump is not "
 "configured properly on host."
 msgstr ""
+"Для хоста ${VdsName} включена интеграция kdump, но kdump на хосте "
+"настроен неправильно."
 
 #: MAC_POOL_ADD_SUCCESS
 msgid ""
 "MAC Pool '${MacPoolName}' (id=${MacPoolId}) was created. (User: ${UserName})"
 msgstr ""
+"Был создан пул адресов MAC «${MacPoolName}» (id=${MacPoolId}). (Пользователь: "
+"${UserName})"
 
 #: MAC_POOL_ADD_FAILED
 msgid "Failed to create MAC Pool '${MacPoolName}'. (User: ${UserName})"
 msgstr ""
+"Не удалось создать пул MAC адресов «${MacPoolName}». (Пользователь: "
+"${UserName})"
 
 #: MAC_POOL_EDIT_SUCCESS
 msgid ""
 "MAC Pool '${MacPoolName}' (id=${MacPoolId}) was changed. (User: ${UserName})"
 msgstr ""
+"Пул адресов MAC «${MacPoolName}» (id=${MacPoolId}) был изменён. "
+"(Пользователь: ${UserName})"
 
 #: MAC_POOL_EDIT_FAILED
 msgid ""
 "Failed to update MAC Pool '${MacPoolName}' (id=${MacPoolId}). (User: "
 "${UserName})"
 msgstr ""
+"Не удалось обновить пул адресов MAC «${MacPoolName}» (id=${MacPoolId}). "
+"(Пользователь: "
+"${UserName})"
 
 #: MAC_POOL_REMOVE_SUCCESS
 msgid ""
 "MAC Pool '${MacPoolName}' (id=${MacPoolId}) was removed. (User: ${UserName})"
 msgstr ""
+"Пул адресов MAC «${MacPoolName}» (id=${MacPoolId}) был удалён. (Пользователь: "
+"${UserName})"
 
 #: MAC_POOL_REMOVE_FAILED
 msgid ""
 "Failed to remove MAC Pool '${MacPoolName}' (id=${MacPoolId}). (User: "
 "${UserName})"
 msgstr ""
+"Не удалось удалить пул адресов MAC «${MacPoolName}» (id=${MacPoolId}). "
+"(Пользователь: "
+"${UserName})"
 
 #: DWH_STOPPED
 msgid "ETL Service stopped."
-msgstr ""
+msgstr "Служба ETL остановлена."
 
 #: DWH_STARTED
 msgid "ETL Service started."
-msgstr ""
+msgstr "Служба ETL запущена."
 
 #: DWH_ERROR
 msgid "Error in ETL Service."
-msgstr ""
+msgstr "Ошибка службы ETL"
 
 #: USER_REMOVE_AUDIT_LOG
 msgid "Event list message ${AuditLogId} was removed by User ${UserName}."
 msgstr ""
+"Сообщение списка событий ${AuditLogId} было удалено пользователем ${UserName}."
 
 #: USER_REMOVE_AUDIT_LOG_FAILED
 msgid "User ${UserName} failed to remove event list message  ${AuditLogId}."
 msgstr ""
+"Пользователю ${UserName} не удалось удалить сообщение списка событий "
+"${AuditLogId}."
 
 #: VM_FAILED_TO_PRESTART_IN_POOL
 msgid ""
 "Cannot pre-start VM in pool '${VmPoolName}'. The system will continue "
 "trying."
 msgstr ""
+"Не удалось выполнить предзапуск ВМ в пуле «${VmPoolName}». Система будет "
+"продолжать "
+"пытаться выполнить операцию."
 
 #: USER_ADDED_DISK_PROFILE
 msgid "Disk Profile ${ProfileName} was successfully added (User: ${UserName})."
 msgstr ""
+"Профиль диска ${ProfileName} был успешно добавлен (Пользователь: ${UserName})."
 
 #: USER_FAILED_TO_ADD_DISK_PROFILE
 msgid "Failed to add Disk Profile (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось добавить профиль диска (Пользователь: ${UserName})."
 
 #: USER_REMOVED_DISK_PROFILE
 msgid ""
 "Disk Profile ${ProfileName} was successfully removed (User: ${UserName})."
 msgstr ""
+"Профиль диска ${ProfileName} был успешно удалён (Пользователь: ${UserName})."
 
 #: USER_FAILED_TO_REMOVE_DISK_PROFILE
 msgid "Failed to remove Disk Profile ${ProfileName} (User: ${UserName})."
 msgstr ""
+"Не удалось удалить профиль диска ${ProfileName} (Пользователь: ${UserName})."
 
 #: USER_UPDATED_DISK_PROFILE
 msgid ""
 "Disk Profile ${ProfileName} was successfully updated (User: ${UserName})."
 msgstr ""
+"Профиль диска ${ProfileName} был успешно обновлён (Пользователь: ${UserName})."
 
 #: USER_FAILED_TO_UPDATE_DISK_PROFILE
 msgid "Failed to update Disk Profile ${ProfileName} (User: ${UserName})."
 msgstr ""
+"Не удалось обновить профиль диска ${ProfileName} (Пользователь: ${UserName})."
 
 #: USER_ADDED_CPU_PROFILE
 msgid "CPU Profile ${ProfileName} was successfully added (User: ${UserName})."
 msgstr ""
+"Профиль ЦП ${ProfileName} был успешно добавлен (Пользователь: ${UserName})."
 
 #: USER_FAILED_TO_ADD_CPU_PROFILE
 msgid "Failed to add CPU Profile (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось добавить профиль ЦП (Пользователь: ${UserName})."
 
 #: USER_REMOVED_CPU_PROFILE
 msgid ""
 "CPU Profile ${ProfileName} was successfully removed (User: ${UserName})."
 msgstr ""
+"Профиль ЦП ${ProfileName} был успешно удалён (Пользователь: ${UserName})."
 
 #: USER_FAILED_TO_REMOVE_CPU_PROFILE
 msgid "Failed to remove CPU Profile ${ProfileName} (User: ${UserName})."
 msgstr ""
+"Не удалось удалить профиль ЦП ${ProfileName} (Пользователь: ${UserName})."
 
 #: USER_UPDATED_CPU_PROFILE
 msgid ""
 "CPU Profile ${ProfileName} was successfully updated (User: ${UserName})."
 msgstr ""
+"Профиль ЦП ${ProfileName} был успешно обновлён (Пользователь: ${UserName})."
 
 #: USER_FAILED_TO_UPDATE_CPU_PROFILE
 msgid "Failed to update CPU Profile ${ProfileName} (User: ${UserName})."
 msgstr ""
+"Не удалось обновить профиль ЦП ${ProfileName} (Пользователь: ${UserName})."
 
 #: IMPORTEXPORT_NO_PROXY_HOST_AVAILABLE_IN_DC
 msgid ""
 "No Host in Data Center '${StoragePoolName}' can serve as a proxy to retrieve "
 "remote VMs information (User: ${UserName})."
 msgstr ""
+"Ни один из хостов дата-центра «${StoragePoolName}» нельзя использовать в "
+"качестве прокси "
+"для получения данных с удалённых ВМ (User: ${UserName})."
 
 #: IMPORTEXPORT_HOST_CANNOT_SERVE_AS_PROXY
 msgid ""
 "Host ${VdsName} cannot be used as a proxy to retrieve remote VMs information "
 "since it is not up (User: ${UserName})."
 msgstr ""
+"Хост ${VdsName} нельзя использовать в качестве прокси для получения данных с "
+"удалённых ВМ, "
+"т.к. он отключен. (Пользователь: ${UserName})."
 
 #: CINDER_PROVIDER_ERROR
 msgid "An error occurred on Cinder provider: '${CinderException}'"
-msgstr ""
+msgstr "Произошла ошибка на поставщике Cinder: ${CinderException}"
 
 #: CINDER_DISK_CONNECTION_FAILURE
 msgid ""
 "Failed to retrieve connection information for Cinder Disk '${DiskAlias}'."
 msgstr ""
+"Не удалось получить информацию о подключении для диска Cinder «${DiskAlias}»."
 
 #: CINDER_DISK_CONNECTION_VOLUME_DRIVER_UNSUPPORTED
 msgid "Unsupported volume driver for Cinder Disk '${DiskAlias}'."
-msgstr ""
+msgstr "Неподдерживаемый драйвер тома для диска Cinder «${DiskAlias}»."
 
 #: USER_FINISHED_FAILED_REMOVE_CINDER_DISK
 msgid ""
@@ -6608,103 +7014,136 @@ msgid ""
 "The following entity id could not be deleted from the Cinder provider "
 "'${imageId}'. (User: ${UserName})."
 msgstr ""
+"Не удалось удалить диск ${DiskAlias} из домена хранилищ ${StorageDomainName}. "
+"Следующий идентификатор объекта не удалось удалить с поставщика Cinder "
+"«${imageId}». "
+"(Пользователь: ${UserName})."
 
 #: USER_ADDED_LIBVIRT_SECRET
 msgid "Authentication Key ${LibvirtSecretUUID} was added. (User: ${UserName})."
 msgstr ""
+"Был добавлен ключ проверки подлинности ${LibvirtSecretUUID}. (Пользователь: "
+"${UserName})."
 
 #: USER_FAILED_TO_ADD_LIBVIRT_SECRET
 msgid ""
 "Failed to add Authentication Key ${LibvirtSecretUUID}. (User: ${UserName})."
 msgstr ""
+"Не удалось добавить ключ проверки подлинности ${LibvirtSecretUUID}. "
+"(Пользователь: ${UserName})."
 
 #: USER_UPDATE_LIBVIRT_SECRET
 msgid ""
 "Authentication Key ${LibvirtSecretUUID} was updated. (User: ${UserName})."
 msgstr ""
+"Ключ проверки подлинности ${LibvirtSecretUUID} был обновлён. (Пользователь: "
+"${UserName})."
 
 #: USER_FAILED_TO_UPDATE_LIBVIRT_SECRET
 msgid ""
 "Failed to update Authentication Key ${LibvirtSecretUUID}. (User: "
 "${UserName})."
 msgstr ""
+"Не удалось обновить ключ проверки подлинности ${LibvirtSecretUUID}. "
+"(Пользователь: ${UserName})."
 
 #: USER_REMOVED_LIBVIRT_SECRET
 msgid ""
 "Authentication Key ${LibvirtSecretUUID} was removed. (User: ${UserName})."
 msgstr ""
+"Ключ проверки подлинности ${LibvirtSecretUUID} был удалён. (Пользователь: "
+"${UserName})."
 
 #: USER_FAILED_TO_REMOVE_LIBVIRT_SECRET
 msgid ""
 "Failed to remove Authentication Key ${LibvirtSecretUUID}. (User: "
 "${UserName})."
 msgstr ""
+"Не удалось удалить ключ проверки подлинности ${LibvirtSecretUUID}. "
+"(Пользователь: ${UserName})."
 
 #: FAILED_TO_REGISTER_LIBVIRT_SECRET
 msgid ""
 "Failed to register Authentication Keys for storage domain "
 "${StorageDomainName} on host ${VdsName}."
 msgstr ""
+"Не удалось зарегистрировать ключи проверки подлинности для домена хранилища "
+"${StorageDomainName} на хосте ${VdsName}."
 
 #: FAILED_TO_UNREGISTER_LIBVIRT_SECRET
 msgid ""
 "Failed to unregister Authentication Keys for storage domain "
 "${StorageDomainName} on host ${VdsName}."
 msgstr ""
+"Не удалось отменить регистрацию ключей проверки подлинности для домена "
+"хранилища "
+"${StorageDomainName} на хосте ${VdsName}."
 
 #: FAILED_TO_REGISTER_LIBVIRT_SECRET_ON_VDS
 msgid "Failed to register Authentication Keys on host ${VdsName}."
 msgstr ""
+"Не удалось зарегистрировать ключи проверки подлинности на хосте ${VdsName}."
 
 #: NO_LIBRBD_PACKAGE_AVAILABLE_ON_VDS
 msgid ""
 "Librbd1 package is not available on host ${VdsName}, which is mandatory for "
 "using Cinder storage domains."
 msgstr ""
+"Пакет librbd1 недоступен на хосте ${VdsName}, пакет является обязательным для "
+"использования "
+"доменов хранилищ Cinder."
 
 #: VDS_CANNOT_CONNECT_TO_GLUSTERFS
 msgid ""
 "Host ${VdsName} cannot connect to Glusterfs. Verify that glusterfs-cli "
 "package is installed on the host."
 msgstr ""
+"Хост ${VdsName} не может подключиться к Glusterfs. Убедитесь что пакет "
+"glusterfs-cli установлен на хосте."
 
 #: VM_ADD_HOST_DEVICES
 msgid ""
 "Host devices ${NamesAdded} were attached to Vm ${VmName} by User "
 "${UserName}."
 msgstr ""
+"Устройства хоста ${NamesAdded} были присоединены к ВМ ${VmName} пользователем "
+"${UserName}."
 
 #: VM_REMOVE_HOST_DEVICES
 msgid ""
 "Host devices ${NamesRemoved} were detached from Vm ${VmName} by User "
 "${UserName}."
 msgstr ""
+"Устройства хоста ${NamesAdded} были отсоединены от ВМ ${VmName} пользователем "
+"${UserName}."
 
 #: HOST_AVAILABLE_UPDATES_FAILED
 msgid ""
 "Failed to check for available updates on host ${VdsName} with message "
 "'${Message}'."
 msgstr ""
+"Не удалось проверить доступные обновления на хосте ${VdsName}, сообщение: "
+"«${Message}»"
 
 #: HOST_UPDATES_ARE_AVAILABLE
 msgid "Host ${VdsName} has available updates: ${Packages}."
-msgstr ""
+msgstr "Доступны следующие обновления для хоста ${VdsName}: ${Packages}."
 
 #: OVIRT_NODE_UPDATES_ARE_AVAILABLE
 msgid "Host ${VdsName} has available updates."
-msgstr ""
+msgstr "Для хоста ${VdsName} доступны обновления."
 
 #: HOST_UPGRADE_STARTED
 msgid "Host ${VdsName} upgrade was started (User: ${UserName})."
-msgstr ""
+msgstr "Было начато обновление хоста ${VdsName} (Пользователь: ${UserName})."
 
 #: HOST_UPGRADE_FAILED
 msgid "Failed to upgrade Host ${VdsName} (User: ${UserName})."
-msgstr ""
+msgstr "Не удалось обновить хост ${VdsName} (пользователь: ${UserName})."
 
 #: HOST_UPGRADE_FINISHED
 msgid "Host ${VdsName} upgrade was completed successfully."
-msgstr ""
+msgstr "Обновление хоста ${VdsName} было успешно завершено."
 
 #: HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE
 msgctxt "HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE"
@@ -6712,6 +7151,8 @@ msgid ""
 "Host ${VdsName} certification is about to expire at ${ExpirationDate}. "
 "Please renew the host's certification."
 msgstr ""
+"Срок действия сертификата хоста ${VdsName} истечёт ${ExpirationDate}. "
+"Обновите сертификат хоста."
 
 #: HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT
 msgctxt "HOST_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT"
@@ -6719,12 +7160,15 @@ msgid ""
 "Host ${VdsName} certification is about to expire at ${ExpirationDate}. "
 "Please renew the host's certification."
 msgstr ""
+"Срок действия сертификата хоста ${VdsName} истечёт ${ExpirationDate}. "
+"Обновите сертификат хоста."
 
 #: ENGINE_CERTIFICATION_HAS_EXPIRED
 msgid ""
 "Engine's certification has expired at ${ExpirationDate}. Please renew the "
 "engine's certification."
 msgstr ""
+"Срок действия сертификата ЦУ истёк ${ExpirationDate}. Обновите сертификат ЦУ."
 
 #: ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE
 msgctxt "ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE"
@@ -6732,6 +7176,7 @@ msgid ""
 "Engine's certification is about to expire at ${ExpirationDate}. Please renew "
 "the engine's certification."
 msgstr ""
+"Срок действия сертификата истечёт ${ExpirationDate}. Обновите сертификат ЦУ."
 
 #: ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT
 msgctxt "ENGINE_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT"
@@ -6739,101 +7184,130 @@ msgid ""
 "Engine's certification is about to expire at ${ExpirationDate}. Please renew "
 "the engine's certification."
 msgstr ""
+"Срок действия сертификата истечёт ${ExpirationDate}. Обновите сертификат ЦУ."
 
 #: ENGINE_CA_CERTIFICATION_HAS_EXPIRED
 msgid "Engine's CA certification has expired at ${ExpirationDate}."
 msgstr ""
+"Срок действия сертификата центра сертификации для ЦУ истёк ${ExpirationDate}."
 
 #: ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE
 msgctxt "ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE"
 msgid "Engine's CA certification is about to expire at ${ExpirationDate}."
 msgstr ""
+"Срок действия сертификата центра сертификации для ЦУ истечёт "
+"${ExpirationDate}."
 
 #: ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT
 msgctxt "ENGINE_CA_CERTIFICATION_IS_ABOUT_TO_EXPIRE_ALERT"
 msgid "Engine's CA certification is about to expire at ${ExpirationDate}."
 msgstr ""
+"Срок действия сертификата центра сертификации для ЦУ истечёт "
+"${ExpirationDate}."
 
 #: HOST_CERTIFICATION_IS_INVALID
 msgid ""
 "Host ${VdsName} certification is invalid. The certification has no peer "
 "certificates."
 msgstr ""
+"Сертификация хоста ${VdsName} недействительна. Отсутствуют сертификаты узлов."
 
 #: HOST_CERTIFICATION_ENROLLMENT_STARTED
 msgid ""
 "Enrolling certificate for host ${VdsName} was started (User: ${UserName})."
 msgstr ""
+"Начата регистрация сертификата для хоста ${VdsName} (пользователь: "
+"${UserName})."
 
 #: HOST_CERTIFICATION_ENROLLMENT_FINISHED
 msgid ""
 "Enrolling certificate for host ${VdsName} was completed successfully (User: "
 "${UserName})."
 msgstr ""
+"Регистрация сертификата для хоста ${VdsName} была успешно завершена "
+"(пользователь: "
+"${UserName})."
 
 #: HOST_CERTIFICATION_ENROLLMENT_FAILED
 msgid "Failed to enroll certificate for host ${VdsName} (User: ${UserName})."
 msgstr ""
+"Не удалось зарегистрировать сертификат для хоста ${VdsName} (Пользователь: "
+"${UserName})."
 
 #: VDS_BROKER_COMMAND_FAILURE
 msgid "VDSM ${VdsName} command failed: ${message}"
-msgstr ""
+msgstr "Сбой команды VDSM ${VdsName}: ${message}"
 
 #: IRS_BROKER_COMMAND_FAILURE
 msgid "VDSM command failed: ${message}"
-msgstr ""
+msgstr "Сбой команды VDSM: ${message}"
 
 #: SYSTEM_CHANGE_STORAGE_POOL_STATUS_UP_REPORTING_HOSTS
 msgid ""
 "Data Center ${StoragePoolName} status was changed to UP as some of its hosts "
 "are in status UP."
 msgstr ""
+"Статус дата-центра ${StoragePoolName} был изменён на «включен», т.к. "
+"некоторые из его хостов работают."
 
 #: SYSTEM_CHANGE_STORAGE_POOL_STATUS_NON_RESPONSIVE_NO_REPORTING_HOSTS
 msgid ""
 "Data Center ${StoragePoolName} status was changed to Non Responsive as none "
 "of its hosts are in status UP."
 msgstr ""
+"Статус дата-центра ${StoragePoolName} был изменён на «не отвечает», т.к. "
+"ни один из его хостов не работает."
 
 #: AFFINITY_RULES_ENFORCEMENT_MANAGER_START
 msgid "Affinity Rules Enforcement Manager started."
-msgstr ""
+msgstr "Запущен менеджер принудительного применения правил схожести."
 
 #: FAILED_TO_FREEZE_VM
 msgid ""
 "Failed to freeze guest filesystems on VM ${VmName}. Note that using the "
 "created snapshot might cause data inconsistency."
 msgstr ""
+"Не удалось заморозить гостевую ФС на ВМ ${VmName}. Обратите внимание, что "
+"использование "
+"созданного снимка может привести к несовместимости данных."
 
 #: FAILED_TO_THAW_VM
 msgid ""
 "Failed to thaw guest filesystems on VM ${VmName}. The filesystems might be "
 "unresponsive until the VM is restarted."
 msgstr ""
+"Не удалось разморозить гостевые ФС машины ${VmName}. ФС могут не отвечать "
+"до перезапуска ВМ."
 
 #: FREEZE_VM_INITIATED
 msgid "Freeze of guest filesystems on VM ${VmName} was initiated."
-msgstr ""
+msgstr "Была начата заморозка гостевой ФС на ВМ ${VmName}"
 
 #: FREEZE_VM_SUCCESS
 msgid "Guest filesystems on VM ${VmName} have been frozen successfully."
-msgstr ""
+msgstr "Гостевые ФС на ВМ ${VmName} были успешно заморожены."
 
 #: THAW_VM_SUCCESS
 msgid "Guest filesystems on VM ${VmName} have been thawed successfully."
-msgstr ""
+msgstr "Гостевые ФС на ВМ ${VmName} были успешно разморожены."
 
 #: USER_FAILED_TO_FREEZE_VM
 msgid ""
 "Failed to freeze guest filesystems on ${VmName} (Host: ${VdsName}, User: "
 "${UserName})."
 msgstr ""
+"Не удалось заморозить гостевые ФС на ВМ ${VmName} (хост: ${VdsName}, "
+"пользователь: "
+"${UserName})."
 
 #: USER_FAILED_TO_THAW_VM
 msgid ""
 "Failed to thaw guest filesystems on ${VmName} (Host: ${VdsName}, User: "
 "${UserName})."
 msgstr ""
+"Не удалось разморозить гостевые ФС на ВМ ${VmName} (хост: ${VdsName}, "
+"пользователь: "
+"${UserName})."
 
 #: HOST_PROTOCOL_INCOMPATIBLE_WITH_CLUSTER
 msgid ""
@@ -6841,5 +7315,9 @@ msgid ""
 "instead of jsonrpc). Please examine installation logs and VDSM logs for "
 "failures and reinstall the host."
 msgstr ""
+"Во время активации хост ${VdsName} использует несовместимый протокол (xmlrpc "
+"вместо jsonrpc). Просмотрите журнал установки и журнал VDSM на предмет "
+"наличия "
+"сбоев и переустановите хост."
 
 

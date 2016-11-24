@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-01 10:54+0300\n"
-"PO-Revision-Date: 2016-11-07 13:18+0300\n"
+"PO-Revision-Date: 2016-11-23 14:46+0300\n"
 "Last-Translator: jdronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "MIME-Version: 1.0\n"
@@ -462,14 +462,12 @@ msgid "Gluster Geo-Replication Exception"
 msgstr "Исключение георепликации Gluster"
 
 #: GlusterGeoRepExecuteMountBrokerOptFailed
-#, fuzzy
 msgid "Failed to set geo rep mount broker option."
-msgstr "Сбой настройки параметра "
+msgstr "Сбой настройки параметра посредника монтирования георепликации"
 
 #: GlusterGeoRepExecuteMountBrokerUserAddFailed
-#, fuzzy
 msgid "Failed to add geo rep mount broker user."
-msgstr "Сбой добавления пользователя "
+msgstr "Сбой добавления пользователя посредника монтирования георепликации"
 
 #: GlusterGeoRepPublicKeyFileCreateFailed
 msgid "Failed to create gluster host public key file."
@@ -604,9 +602,8 @@ msgid "Command failed due to a missing argument"
 msgstr "Сбой команды, отсутствует аргумент"
 
 #: GlusterMountBrokerRootCreateFailed
-#, fuzzy
 msgid "Failed to create root geo-rep mount broker."
-msgstr "Сбой создания брокера монтирования для root."
+msgstr "Сбой создания посредника монтирования для root."
 
 #: GlusterPermissionDeniedException
 msgid "Permission denied"
@@ -666,28 +663,27 @@ msgstr "Сбой установки флага расписания создан
 
 #: GlusterSyntaxErrorException
 msgid "Command failed due to a Syntax error"
-msgstr ""
+msgstr "Сбой команды, ошибка синтаксиса"
 
 #: GlusterVolumeDeleteFailed
 msgid "Gluster Volume Delete Failed."
-msgstr ""
+msgstr "Сбой удаления тома Gluster"
 
 #: GlusterVolumeEmptyCheckFailed
-#, fuzzy
 msgid "Failed to check if gluster volume is empty"
-msgstr "Сбой проверки, является ли том gluster пустым"
+msgstr "Не удалось проверить том gluster на наличие содержимого"
 
 #: GlusterVolumeGeoRepSessionPauseFailed
 msgid "Failed to pause the geo-replication session."
-msgstr ""
+msgstr "Не удалось приостановить сеанс георепликации."
 
 #: GlusterVolumeGeoRepSessionResumeFailed
 msgid "Resume of geo-replication session failed on gluster volume"
-msgstr ""
+msgstr "Сбой возобновления сеанса георепликации на томе gluster"
 
 #: GlusterVolumeGeoRepSessionStartFailed
 msgid "Gluster volume geo-replication start failed"
-msgstr ""
+msgstr "Сбой запуска георепликации тома Gluster"
 
 #: GlusterVolumeGeoRepSessionStopFailed
 msgid "Failed to stop geo-replication session"
@@ -698,18 +694,19 @@ msgid ""
 "Failed to get status information of geo-replication session(s) on gluster "
 "volume"
 msgstr ""
+"Сбой получения информации о статусе сеансов георепликации на томе gluster"
 
 #: GlusterVolumeProfileStartFailed
 msgid "Gluster Volume Profile Start Failed."
-msgstr ""
+msgstr "Сбой запуска профиля тома Gluster"
 
 #: GlusterVolumeProfileStopFailed
 msgid "Gluster Volume Profile Stop Failed."
-msgstr ""
+msgstr "Сбой остановки профиля тома Gluster"
 
 #: GlusterVolumeRebalanceStartFailed
 msgid "Gluster Volume Rebalance Start Failed."
-msgstr ""
+msgstr "Сбой запуска перебалансировки тома Gluster"
 
 #: GlusterVolumeRebalanceStatusFailedException
 msgid "Failed to get gluster volume rebalance status"
@@ -725,15 +722,15 @@ msgstr "Не удалось зафиксировать удаление элем
 
 #: GlusterVolumeRemoveBricksFailed
 msgid "Gluster Volume Remove Bricks Failed."
-msgstr ""
+msgstr "Сбой удаления элементов тома Gluster"
 
 #: GlusterVolumeRemoveBricksStartFailed
 msgid "Failed to start removal of Bricks from Gluster Volume."
-msgstr ""
+msgstr "Не удалось запустить удаление элементов из тома Gluster."
 
 #: GlusterVolumeRemoveBricksStopFailed
 msgid "Failed to stop removal of Bricks from Gluster Volume."
-msgstr ""
+msgstr "Не удалось остановить удаление элементов из тома Gluster."
 
 #: GlusterVolumeRemoveBrickStatusFailed
 msgid "Failed to get status of gluster volume remove bricks"
@@ -741,7 +738,7 @@ msgstr "Сбой получения статуса удаления элемен
 
 #: GlusterVolumeReplaceBrickStartFailed
 msgid "Gluster Volume Replace Brick Start Failed."
-msgstr ""
+msgstr "Сбой запуска замены элемента тома Gluster."
 
 #: GlusterVolumeStatusAllFailedException
 msgid "Failed to get gluster tasks list"
@@ -1261,6 +1258,8 @@ msgid ""
 "Failed to authenticate with the external provider. Please confirm username "
 "and passowrd."
 msgstr ""
+"Сбой аутентификации у внешнего поставщика. Подтвердите имя пользователя "
+"и пароль."
 
 #: PROVIDER_FAILURE
 msgid ""
@@ -1727,7 +1726,7 @@ msgstr "Не удалось разморозить гостевые файлов
 
 #: ticketErr
 msgid "Error while setting SPICE ticket"
-msgstr ""
+msgstr "Ошибка во время настройки билета SPICE"
 
 #: TooManyDomainsInStoragePoolError
 msgid "Too many domains in storage pool"
@@ -1768,9 +1767,8 @@ msgid "Storage format is unsupported"
 msgstr "Этот формат хранилища не поддерживается"
 
 #: UnsupportedGlusterVolumeReplicaCountError
-#, fuzzy
 msgid "Unsupported Gluster Volume Replica Count"
-msgstr "Неподдерживаемый метод подсчёта реплик тома Gluster"
+msgstr "Неподдерживаемое число реплик тома Gluster"
 
 #: UnsupportedOperationErr
 msgid "Operation not supported"

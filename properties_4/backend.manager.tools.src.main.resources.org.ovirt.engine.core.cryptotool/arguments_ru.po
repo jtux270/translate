@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-01 10:41+0300\n"
-"PO-Revision-Date: 2016-11-01 11:04+0300\n"
+"PO-Revision-Date: 2016-11-24 16:52+0300\n"
 "Last-Translator: jdronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: core.help.usage
 msgid "@PROGRAM_NAME@ [options] action [options]"
-msgstr ""
+msgstr "@ИМЯ_ПРОГРАММЫ@ [параметры] действие [параметры]"
 
 #: core.help.header
 msgid "Password Tool."
-msgstr ""
+msgstr "Настройка паролей"
 
 #: core.help.footer
 msgid ""
@@ -34,159 +34,164 @@ msgid ""
 "  pbe-check  - password based encryption check.\n"
 "  pbe-encode - password based encryption encode."
 msgstr ""
+"Доступные действия:\n"
+"  enc-decode - расшифровка.\n"
+"  enc-encode - шифрование.\n"
+"  pbe-check  - проверка шифрования на базе пароля.\n"
+"  pbe-encode - шифрование на базе пароля."
 
 #: core.arg.help.name
 msgctxt "core.arg.help.name"
 msgid "help"
-msgstr ""
+msgstr "справка"
 
 #: core.arg.help.help
 msgctxt "core.arg.help.help"
 msgid "Show help."
-msgstr ""
+msgstr "Показать справку."
 
 #: core.arg.help.valuetype
 msgctxt "core.arg.help.valuetype"
 msgid "java.lang.Boolean"
-msgstr ""
+msgstr "java.lang.Boolean"
 
 #: core.arg.help.value
 msgctxt "core.arg.help.value"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: core.arg.help.default
 msgctxt "core.arg.help.default"
 msgid "false"
-msgstr ""
+msgstr "ложно"
 
 #: core.arg.version.name
 msgid "version"
-msgstr ""
+msgstr "Версия"
 
 #: core.arg.version.help
 msgid "Show version."
-msgstr ""
+msgstr "Показать версию."
 
 #: core.arg.version.valuetype
 msgctxt "core.arg.version.valuetype"
 msgid "java.lang.Boolean"
-msgstr ""
+msgstr "java.lang.Boolean"
 
 #: core.arg.version.value
 msgctxt "core.arg.version.value"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: core.arg.version.default
 msgctxt "core.arg.version.default"
 msgid "false"
-msgstr ""
+msgstr "ложно"
 
 #: enc-decode.help.usage
 msgid "@PROGRAM_NAME@ enc-decode [options]"
-msgstr ""
+msgstr "@ИМЯ_ПРОГРАММЫ@ enc-decode [параметры]"
 
 #: enc-decode.help.header
 msgid "Encryption decode."
-msgstr ""
+msgstr "Расшифровка."
 
 #: enc-decode.arg.help.name
 msgctxt "enc-decode.arg.help.name"
 msgid "help"
-msgstr ""
+msgstr "справка"
 
 #: enc-decode.arg.help.help
 msgctxt "enc-decode.arg.help.help"
 msgid "Show help."
-msgstr ""
+msgstr "Показать справку."
 
 #: enc-decode.arg.help.valuetype
 msgctxt "enc-decode.arg.help.valuetype"
 msgid "java.lang.Boolean"
-msgstr ""
+msgstr "java.lang.Boolean"
 
 #: enc-decode.arg.help.value
 msgctxt "enc-decode.arg.help.value"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: enc-decode.arg.help.default
 msgctxt "enc-decode.arg.help.default"
 msgid "false"
-msgstr ""
+msgstr "ложно"
 
 #: enc-decode.arg.keystore.name
 msgid "keystore"
-msgstr ""
+msgstr "хранилище ключей"
 
 #: enc-decode.arg.keystore.type
 msgctxt "enc-decode.arg.keystore.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-decode.arg.keystore.mandatory
 msgctxt "enc-decode.arg.keystore.mandatory"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: enc-decode.arg.keystore.metavar
 msgctxt "enc-decode.arg.keystore.metavar"
 msgid "FILE"
-msgstr ""
+msgstr "ФАЙЛ"
 
 #: enc-decode.arg.keystore.help
 msgid "Keystore"
-msgstr ""
+msgstr "Хранилище ключей"
 
 #: enc-decode.arg.keystore-type.name
 msgid "keystore-type"
-msgstr ""
+msgstr "тип хранилища ключей"
 
 #: enc-decode.arg.keystore-type.type
 msgctxt "enc-decode.arg.keystore-type.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-decode.arg.keystore-type.default
 msgid "JKS"
-msgstr ""
+msgstr "JKS"
 
 #: enc-decode.arg.keystore-type.help
 msgid "Keystore type, default: @CLI_PRM_DEFAULT@"
-msgstr ""
+msgstr "Тип хранилища ключей, по умолчанию: @CLI_PRM_DEFAULT@"
 
 #: enc-decode.arg.keystore-alias.name
 msgid "keystore-alias"
-msgstr ""
+msgstr "псевдоним хранилища ключей"
 
 #: enc-decode.arg.keystore-alias.alias
 msgctxt "enc-decode.arg.keystore-alias.alias"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-decode.arg.keystore-alias.mandatory
 msgctxt "enc-decode.arg.keystore-alias.mandatory"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: enc-decode.arg.keystore-alias.help
 msgid "Keystore alias"
-msgstr ""
+msgstr "Псевдоним хранилища ключей"
 
 #: enc-decode.arg.keystore-password.name
 msgid "keystore-password"
-msgstr ""
+msgstr "пароль хранилища ключей"
 
 #: enc-decode.arg.keystore-password.password
 msgctxt "enc-decode.arg.keystore-password.password"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-decode.arg.keystore-password.default
 msgctxt "enc-decode.arg.keystore-password.default"
 msgid "interactive:"
-msgstr ""
+msgstr "интерактивно:"
 
 #: enc-decode.arg.keystore-password.help
 msgctxt "enc-decode.arg.keystore-password.help"
@@ -197,15 +202,20 @@ msgid ""
 "  env:KEY - provide a password using environment KEY.\n"
 "  file:FILE - provide a password as 1st line of FILE."
 msgstr ""
+"Пароль можно указать в одном из следующих форматов:\n"
+"  интерактивно: — интерактивный запрос пароля [по умолчанию].\n"
+"  pass:СТРОКА — пароль указывается в виде СТРОКИ.\n"
+"  env:КЛЮЧ — пароль указывается с использованием КЛЮЧА окружения.\n"
+"  file:ФАЙЛ — в качестве пароля предоставляется 1 строка ФАЙЛА."
 
 #: enc-decode.arg.key-password.name
 msgid "key-password"
-msgstr ""
+msgstr "ключ-пароль"
 
 #: enc-decode.arg.key-password.password
 msgctxt "enc-decode.arg.key-password.password"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-decode.arg.key-password.help
 msgctxt "enc-decode.arg.key-password.help"
@@ -216,199 +226,204 @@ msgid ""
 "  env:KEY - provide a password using environment KEY.\n"
 "  file:FILE - provide a password as 1st line of FILE."
 msgstr ""
+"Пароль можно указать в одном из следующих форматов:\n"
+"  интерактивно: — интерактивный запрос пароля [по умолчанию].\n"
+"  pass:СТРОКА — пароль указывается в виде СТРОКИ.\n"
+"  env:КЛЮЧ — пароль указывается с использованием КЛЮЧА окружения.\n"
+"  file:ФАЙЛ — в качестве пароля предоставляется 1 строка ФАЙЛА."
 
 #: enc-encode.help.usage
 msgid "@PROGRAM_NAME@ enc-encode [options]"
-msgstr ""
+msgstr "@ИМЯ_ПРОГРАММЫ@ enc-encode [параметры]"
 
 #: enc-encode.help.header
 msgid "Encryption encode."
-msgstr ""
+msgstr "Кодировка шифрования."
 
 #: enc-encode.arg.help.name
 msgctxt "enc-encode.arg.help.name"
 msgid "help"
-msgstr ""
+msgstr "справка"
 
 #: enc-encode.arg.help.help
 msgctxt "enc-encode.arg.help.help"
 msgid "Show help."
-msgstr ""
+msgstr "Показать справку."
 
 #: enc-encode.arg.help.valuetype
 msgctxt "enc-encode.arg.help.valuetype"
 msgid "java.lang.Boolean"
-msgstr ""
+msgstr "java.lang.Boolean"
 
 #: enc-encode.arg.help.value
 msgctxt "enc-encode.arg.help.value"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: enc-encode.arg.help.default
 msgctxt "enc-encode.arg.help.default"
 msgid "false"
-msgstr ""
+msgstr "ложно"
 
 #: enc-encode.arg.algorithm.name
 msgctxt "enc-encode.arg.algorithm.name"
 msgid "algorithm"
-msgstr ""
+msgstr "алгоритм"
 
 #: enc-encode.arg.algorithm.type
 msgctxt "enc-encode.arg.algorithm.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-encode.arg.algorithm.default
 msgid "AES/OFB/PKCS5Padding"
-msgstr ""
+msgstr "AES/OFB/PKCS5Padding"
 
 #: enc-encode.arg.algorithm.metavar
 msgctxt "enc-encode.arg.algorithm.metavar"
 msgid "ALGORITHM"
-msgstr ""
+msgstr "АЛГОРИТМ"
 
 #: enc-encode.arg.algorithm.help
 msgid "Cipher algorithm, default: @CLI_PRM_DEFAULT@"
-msgstr ""
+msgstr "Алгоритм шифра, по умолчанию: @CLI_PRM_DEFAULT@"
 
 #: enc-encode.arg.key-size.name
 msgctxt "enc-encode.arg.key-size.name"
 msgid "key-size"
-msgstr ""
+msgstr "размер ключа"
 
 #: enc-encode.arg.key-size.type
 msgctxt "enc-encode.arg.key-size.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-encode.arg.key-size.valuetype
 msgctxt "enc-encode.arg.key-size.valuetype"
 msgid "java.lang.Integer"
-msgstr ""
+msgstr "java.lang.Integer"
 
 #: enc-encode.arg.key-size.default
 msgctxt "enc-encode.arg.key-size.default"
 msgid "256"
-msgstr ""
+msgstr "256"
 
 #: enc-encode.arg.key-size.metavar
 msgctxt "enc-encode.arg.key-size.metavar"
 msgid "NUMBER"
-msgstr ""
+msgstr "ЧИСЛО"
 
 #: enc-encode.arg.key-size.help
 msgid "Cipher key size, default: @CLI_PRM_DEFAULT@"
-msgstr ""
+msgstr "Ключ шифра, по умолчанию: @CLI_PRM_DEFAULT@"
 
 #: enc-encode.arg.block-size.name
 msgid "block-size"
-msgstr ""
+msgstr "размер блока"
 
 #: enc-encode.arg.block-size.type
 msgctxt "enc-encode.arg.block-size.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-encode.arg.block-size.valuetype
 msgctxt "enc-encode.arg.block-size.valuetype"
 msgid "java.lang.Integer"
-msgstr ""
+msgstr "java.lang.Integer"
 
 #: enc-encode.arg.block-size.default
 msgid "100"
-msgstr ""
+msgstr "100"
 
 #: enc-encode.arg.block-size.metavar
 msgctxt "enc-encode.arg.block-size.metavar"
 msgid "NUMBER"
-msgstr ""
+msgstr "ЧИСЛО"
 
 #: enc-encode.arg.block-size.help
 msgid "Block size, default: @CLI_PRM_DEFAULT@"
-msgstr ""
+msgstr "Размер блока, по умолчанию: @CLI_PRM_DEFAULT@"
 
 #: enc-encode.arg.certificate.name
 msgid "certificate"
-msgstr ""
+msgstr "сертификат"
 
 #: enc-encode.arg.certificate.type
 msgctxt "enc-encode.arg.certificate.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: enc-encode.arg.certificate.mandatory
 msgctxt "enc-encode.arg.certificate.mandatory"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: enc-encode.arg.certificate.metavar
 msgctxt "enc-encode.arg.certificate.metavar"
 msgid "FILE"
-msgstr ""
+msgstr "ФАЙЛ"
 
 #: enc-encode.arg.certificate.help
 msgid "Certificate to encryp to"
-msgstr ""
+msgstr "Сертификат шифрования"
 
 #: pbe-check.help.usage
 msgid "@PROGRAM_NAME@ pbe-check [options]"
-msgstr ""
+msgstr "@ИМЯ_ПРОГРАММЫ@ pbe-check [параметры]"
 
 #: pbe-check.help.header
 msgid "Password based encryption check."
-msgstr ""
+msgstr "Проверка шифрования на базе пароля."
 
 #: pbe-check.arg.help.name
 msgctxt "pbe-check.arg.help.name"
 msgid "help"
-msgstr ""
+msgstr "справка"
 
 #: pbe-check.arg.help.help
 msgctxt "pbe-check.arg.help.help"
 msgid "Show help."
-msgstr ""
+msgstr "Показать справку."
 
 #: pbe-check.arg.help.valuetype
 msgctxt "pbe-check.arg.help.valuetype"
 msgid "java.lang.Boolean"
-msgstr ""
+msgstr "java.lang.Boolean"
 
 #: pbe-check.arg.help.value
 msgctxt "pbe-check.arg.help.value"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: pbe-check.arg.help.default
 msgctxt "pbe-check.arg.help.default"
 msgid "false"
-msgstr ""
+msgstr "ложно"
 
 #: pbe-check.arg.password.name
 msgctxt "pbe-check.arg.password.name"
 msgid "password"
-msgstr ""
+msgstr "пароль"
 
 #: pbe-check.arg.password.type
 msgctxt "pbe-check.arg.password.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: pbe-check.arg.password.default
 msgctxt "pbe-check.arg.password.default"
 msgid "interactive:"
-msgstr ""
+msgstr "интерактивно:"
 
 #: pbe-check.arg.password.metavar
 msgctxt "pbe-check.arg.password.metavar"
 msgid "PASSWORD"
-msgstr ""
+msgstr "ПАРОЛЬ"
 
 #: pbe-check.arg.password.matcher
 msgctxt "pbe-check.arg.password.matcher"
 msgid "(interactive:|pass:.*|env:.*|file:.*)"
-msgstr ""
+msgstr "(interactive:|pass:.*|env:.*|file:.*)"
 
 #: pbe-check.arg.password.help
 msgctxt "pbe-check.arg.password.help"
@@ -419,64 +434,69 @@ msgid ""
 "  env:KEY - provide a password using environment KEY.\n"
 "  file:FILE - provide a password as 1st line of FILE."
 msgstr ""
+"Пароль можно указать в одном из следующих форматов:\n"
+"  интерактивно: — интерактивный запрос пароля [по умолчанию].\n"
+"  pass:СТРОКА — пароль указывается в виде СТРОКИ.\n"
+"  env:КЛЮЧ — пароль указывается с использованием КЛЮЧА окружения.\n"
+"  file:ФАЙЛ — в качестве пароля предоставляется 1 строка ФАЙЛА."
 
 #: pbe-encode.help.usage
 msgid "@PROGRAM_NAME@ pbe-encode [options]"
-msgstr ""
+msgstr "@ИМЯ_ПРОГРАММЫ@ pbe-encode [параметры]"
 
 #: pbe-encode.help.header
 msgid "Password based encryption encode."
-msgstr ""
+msgstr "Шифрование на базе пароля."
 
 #: pbe-encode.arg.help.name
 msgctxt "pbe-encode.arg.help.name"
 msgid "help"
-msgstr ""
+msgstr "справка"
 
 #: pbe-encode.arg.help.help
 msgctxt "pbe-encode.arg.help.help"
 msgid "Show help."
-msgstr ""
+msgstr "Показать справку."
 
 #: pbe-encode.arg.help.valuetype
 msgctxt "pbe-encode.arg.help.valuetype"
 msgid "java.lang.Boolean"
-msgstr ""
+msgstr "java.lang.Boolean"
 
 #: pbe-encode.arg.help.value
 msgctxt "pbe-encode.arg.help.value"
 msgid "true"
-msgstr ""
+msgstr "верно"
 
 #: pbe-encode.arg.help.default
 msgctxt "pbe-encode.arg.help.default"
 msgid "false"
-msgstr ""
+msgstr "ложно"
 
 #: pbe-encode.arg.password.name
 msgctxt "pbe-encode.arg.password.name"
 msgid "password"
-msgstr ""
+msgstr "пароль"
 
 #: pbe-encode.arg.password.type
 msgctxt "pbe-encode.arg.password.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: pbe-encode.arg.password.default
 msgctxt "pbe-encode.arg.password.default"
 msgid "interactive:"
-msgstr ""
+msgstr "интерактивно:"
 
 #: pbe-encode.arg.password.metavar
 msgctxt "pbe-encode.arg.password.metavar"
 msgid "PASSWORD"
-msgstr ""
+msgstr "ПАРОЛЬ"
 
 #: pbe-encode.arg.password.matcher
 msgctxt "pbe-encode.arg.password.matcher"
 msgid "(interactive:|pass:.*|env:.*|file:.*)"
-msgstr ""
+msgstr "(interactive:|pass:.*|env:.*|file:.*)"
 
 #: pbe-encode.arg.password.help
 msgctxt "pbe-encode.arg.password.help"
@@ -487,83 +507,89 @@ msgid ""
 "  env:KEY - provide a password using environment KEY.\n"
 "  file:FILE - provide a password as 1st line of FILE."
 msgstr ""
+"Пароль можно указать в одном из следующих форматов:\n"
+"  интерактивно: — интерактивный запрос пароля [по умолчанию].\n"
+"  pass:СТРОКА — пароль указывается в виде СТРОКИ.\n"
+"  env:КЛЮЧ — пароль указывается с использованием КЛЮЧА окружения.\n"
+"  file:ФАЙЛ — в качестве пароля предоставляется 1 строка ФАЙЛА."
 
 #: pbe-encode.arg.algorithm.name
 msgctxt "pbe-encode.arg.algorithm.name"
 msgid "algorithm"
-msgstr ""
+msgstr "алгоритм"
 
 #: pbe-encode.arg.algorithm.type
 msgctxt "pbe-encode.arg.algorithm.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: pbe-encode.arg.algorithm.default
 msgid "PBKDF2WithHmacSHA1"
-msgstr ""
+msgstr "PBKDF2WithHmacSHA1"
 
 #: pbe-encode.arg.algorithm.metavar
 msgctxt "pbe-encode.arg.algorithm.metavar"
 msgid "ALGORITHM"
-msgstr ""
+msgstr "АЛГОРИТМ"
 
 #: pbe-encode.arg.algorithm.help
 msgid "PBE algorithm, default: @CLI_PRM_DEFAULT@"
-msgstr ""
+msgstr "Алгоритм PBE, по умолчанию: @CLI_PRM_DEFAULT@"
 
 #: pbe-encode.arg.key-size.name
 msgctxt "pbe-encode.arg.key-size.name"
 msgid "key-size"
-msgstr ""
+msgstr "размер ключа"
 
 #: pbe-encode.arg.key-size.type
 msgctxt "pbe-encode.arg.key-size.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: pbe-encode.arg.key-size.valuetype
 msgctxt "pbe-encode.arg.key-size.valuetype"
 msgid "java.lang.Integer"
-msgstr ""
+msgstr "java.lang.Integer"
 
 #: pbe-encode.arg.key-size.default
 msgctxt "pbe-encode.arg.key-size.default"
 msgid "256"
-msgstr ""
+msgstr "256"
 
 #: pbe-encode.arg.key-size.metavar
 msgctxt "pbe-encode.arg.key-size.metavar"
 msgid "NUMBER"
-msgstr ""
+msgstr "ЧИСЛО"
 
 #: pbe-encode.arg.key-size.help
 msgid "Key size, default: @CLI_PRM_DEFAULT@"
-msgstr ""
+msgstr "Размер ключа, по умолчанию: @CLI_PRM_DEFAULT@"
 
 #: pbe-encode.arg.iterations.name
 msgid "iterations"
-msgstr ""
+msgstr "итерации"
 
 #: pbe-encode.arg.iterations.type
 msgctxt "pbe-encode.arg.iterations.type"
 msgid "required_argument"
-msgstr ""
+msgstr "обязательный_аргумент"
 
 #: pbe-encode.arg.iterations.valuetype
 msgctxt "pbe-encode.arg.iterations.valuetype"
 msgid "java.lang.Integer"
-msgstr ""
+msgstr "java.lang.Integer"
 
 #: pbe-encode.arg.iterations.default
 msgid "4000"
-msgstr ""
+msgstr "4000"
 
 #: pbe-encode.arg.iterations.metavar
 msgctxt "pbe-encode.arg.iterations.metavar"
 msgid "NUMBER"
-msgstr ""
+msgstr "ЧИСЛО"
 
 #: pbe-encode.arg.iterations.help
 msgid "Number of iterations, default: @CLI_PRM_DEFAULT@"
-msgstr ""
+msgstr "Число итераций, по умолчанию: @CLI_PRM_DEFAULT@"
+
 
