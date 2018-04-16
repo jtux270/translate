@@ -6,7 +6,7 @@ automount   Automount
   config      IPA configuration
   dns         Domain Name System (DNS) plugin
   group       Groups of users
-  hbac        Host based access control  Управление доступом на основе хоста
+  hbac        Host based access control  контроль доступа на основе хоста
   host        Hosts/Machines (Identity)
   hostgroup   Groups of hosts.
   krbtpolicy  Kerberos ticket policy
@@ -53,7 +53,9 @@ https://www.opennet.ru/tips/2805_ssh_auth_yubikey_password.shtml
 
 zone cut   ???????????????   http://www.circleid.com/posts/the_design_of_the_domain_name_system_part_iii_name_structure_and_delegation/
 
-stage user  — шаблонный
+stage user  — промежуточный
+preserved — законсервированный
+
   
 
 DN — distinguished name, отличительное имя
@@ -79,6 +81,62 @@ Pre-shared — Предопределенный общий
 
 Automount:
 location — локация
-map — схема монтирования
+map — отображение (прямые, косвенные, отбражения хостов)  https://www.ibm.com/support/knowledgecenter/ru/ssw_aix_71/com.ibm.aix.networkcomm/nfs_automounting.htm
 key — ключ
-Indirect Member — непрямой член
+Indirect Member — непрямой участник
+
+
+Base DN — имя базового домена
+DN — имя домена
+
+permission — полномочие
+privilege — привилегия
+right - право
+
+
+
+ПОПРАВИТЬ:
+
+
+Effective attributes → Действительные атрибуты
+
+deactivate — деактивировать
+
+disable — отключить
+enable — включить
+
+User Provisioning — подготовка пользователей — The assignment of access privileges and system resources to users, frequently automated to reduce ongoing support costs and force compliance with security policies.
+
+
+identity — идентификатор
+
+
+
+Locality  — Местонахождение
+Location — местоположение, расположение
+
+automount location — локация
+
+magic private group — особая закрытая группа
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
