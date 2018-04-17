@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-16 17:04+0300\n"
+"PO-Revision-Date: 2018-04-17 20:09+0300\n"
 "Last-Translator: Julia Dronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "ru/)\n"
@@ -1711,9 +1711,9 @@ msgid "Automember rebuild membership task completed"
 msgstr "Задание пересоздания автоматического членства завершено"
 
 #: ipalib/plugins/automember.py:787
-#, fuzzy, python-format
+#, python-format
 msgid "Task DN = '%s'"
-msgstr "DN задания= «%s»"
+msgstr "Отличительное имя задания= «%s»"
 
 #: ipalib/plugins/automember.py:790 ipalib/plugins/internal.py:812
 msgid "Automember"
@@ -3308,14 +3308,14 @@ msgstr ""
 "\n"
 "Операции с сертификатами IPA\n"
 "\n"
-"Представляет собой набор команд для управления SSL сертификатами сервера.\n"
+"Реализуется в виде набора команд для управления сертификатами SSL сервера.\n"
 "\n"
-"Запрос на сертификат представляет собой запрос подписи сертификата (CSR)\n"
+"Запрос на сертификат существует в форме запроса подписи сертификата (CSR)\n"
 "в формате PEM.\n"
 "\n"
-"Центр сертификации DogTag  использует только значение CN и принудительно "
-"устанавливает остальные значения субъекта\n"
-"равным значениям, существующим на сервере.\n"
+"Центр сертификации DogTag  использует только значение CN и принудительно"
+" устанавливает остальные значения субъекта\n"
+"равным значениям, настроенным на сервере.\n"
 "\n"
 "Сертификат хранится с принципалом службы, а принципалу службы\n"
 "требуется хост.\n"
@@ -3328,12 +3328,13 @@ msgstr ""
 "\n"
 "ПОИСК:\n"
 "\n"
-"Сертификаты можно искать по любому субъекту сертификата, по серийному "
-"номеру,\n"
+"Сертификаты можно искать по любому субъекту сертификата, по серийному"
+" номеру,\n"
 "причине отзыва, датам срока действия и дате выпуска.\n"
 "\n"
-"Во время поиска по датам, условие _от даты выполняет поиск >=, а  _до даты\n"
-"выполняет поиск <= В комбинированном поиске условия считаются как «И».\n"
+"Во время поиска по датам, условие «_от даты» (_from date) выполняет поиск >=,"
+" а «_до даты» (_to date)\n"
+"выполняет поиск <=. В комбинированном поиске условия считаются как «И».\n"
 "\n"
 "Даты считаются по GMT, для совпадения с датами в сертификатах.\n"
 "\n"
@@ -3365,10 +3366,10 @@ msgstr ""
 " Поиск сертификатов по дате выдачи:\n"
 "   ipa cert-find --issuedon-from=2013-02-01 --issuedon-to=2013-02-07\n"
 "\n"
-"В настоящее время IPA выдаёт сертификаты по запросу (или отвергает запрос) "
-"немедленно,\n"
-"поэтому поиск по статусу запроса обычно не бывает полезен. Он предназначен "
-"для использования в будущем,\n"
+"В настоящее время IPA выдаёт сертификаты по запросу (или отвергает запрос)"
+" немедленно,\n"
+"поэтому поиск по статусу запроса обычно не имеет смысла. Поиск предназначен"
+" для использования в будущем,\n"
 "или для тех случаев, когда ЦС выдаёт сертификат не сразу.\n"
 "\n"
 "Поддерживаются следующие причины отзыва:\n"
@@ -3479,9 +3480,10 @@ msgid "Serial number (hex)"
 msgstr "Серийный номер (hex)"
 
 #: ipalib/plugins/cert.py:312 ipalib/plugins/misc.py:61
-#, fuzzy
 msgid "Dictionary mapping variable name to value"
-msgstr "Словарь, отображающий имя переменной на значение"
+msgstr ""
+"Имя переменной отображения словаря, которая должна быть установлена как"
+" значение"
 
 #: ipalib/plugins/cert.py:398
 msgid "The principal for this request doesn't exist."
@@ -5090,7 +5092,7 @@ msgstr "значение итерации: допустимый интервал
 #: ipalib/plugins/dns.py:491
 #, python-format
 msgid "salt value: %(err)s"
-msgstr "значение случайных данных (соль): %(err)s"
+msgstr "значение соли: %(err)s"
 
 #: ipalib/plugins/dns.py:498
 msgid "invalid domain-name: not fully qualified"
@@ -9952,7 +9954,7 @@ msgid "Remove from CRL"
 msgstr "Удалить из CRL"
 
 #: ipalib/plugins/internal.py:407
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "<ol> <li>Create a certificate database or use an existing one. To create a "
 "new database:<br/> <code># certutil -N -d &lt;database path&gt;</code> </li> "
@@ -9962,14 +9964,14 @@ msgid ""
 "the CSR (from <em>-----BEGIN NEW CERTIFICATE REQUEST-----</em> to <em>-----"
 "END NEW CERTIFICATE REQUEST-----</em>) into the text area below: </li> </ol>"
 msgstr ""
-"<ol> <li>Создать базу данных сертификатов или использовать существующую. "
-"Создать новую "
-"базу данных:<br/> <code># certutil -N -d &lt;database path&gt;</code> </li> "
-"<li>Создать запрос CSR с субъектом <em>CN=&lt;${cn_name}&gt;,O=&lt;область&gt;"
+"<ol> <li>Создать базу данных сертификатов или использовать существующую."
+" Создать новую базу данных:<br/> <code># certutil -N -d &lt;database"
+" path&gt;</code> </li> <li>Создать запрос CSR с субъектом <em"
+">CN=&lt;${cn_name}&gt;,O=&lt;область&gt;"
 "</"
-"em>, например:<br/> <code># certutil -R -d &lt;путь_базы_данных&gt; -a -g "
-"&lt;размер ключа&gt; -s 'CN=${cn},O=${realm}'</code> </li> <li> Скопируйте и "
-"вставьте "
+"em>, например:<br/> <code># certutil -R -d &lt;путь_базы_данных&gt; -a -g"
+" &lt;размер ключа&gt; -s 'CN=${cn},O=${realm}'</code> </li> <li> Скопируйте и"
+" вставьте "
 "запрос CSR (от <em>-----BEGIN NEW CERTIFICATE REQUEST-----</em> до <em>-----"
 "END NEW CERTIFICATE REQUEST-----</em>) в поле для ввода текста ниже: </li> <"
 "/ol>"
@@ -10301,9 +10303,8 @@ msgid "Host Name"
 msgstr "Имя узла"
 
 #: ipalib/plugins/internal.py:523 ipalib/plugins/internal.py:660
-#, fuzzy
 msgid "Delete Key, Unprovision"
-msgstr "Удалить ключ, отмена подготовки"
+msgstr "Удалить ключ, отменить подготовку к работе"
 
 #: ipalib/plugins/internal.py:524
 msgid "Host Settings"
@@ -10331,7 +10332,7 @@ msgstr "Ключ Kerberos не предоставлен"
 
 #: ipalib/plugins/internal.py:530
 msgid "Kerberos Key Present, Host Provisioned"
-msgstr "Ключ Kerberos в наличии, хост подготовлен"
+msgstr "Ключ Kerberos в наличии, хост подготовлен к работе"
 
 #: ipalib/plugins/internal.py:531 ipalib/plugins/internal.py:772
 msgid "One-Time-Password"
@@ -10367,20 +10368,20 @@ msgstr "Установить одноразовый пароль"
 
 #: ipalib/plugins/internal.py:540 ipalib/plugins/internal.py:667
 msgid "Unprovision"
-msgstr "Отменить подготовку"
+msgstr "Отменить подготовку к работе"
 
 #: ipalib/plugins/internal.py:541
 msgid "Are you sure you want to unprovision this host?"
-msgstr "Точно отменить подготовку этого хоста?"
+msgstr "Точно отменить подготовку к работе этого хоста?"
 
 #: ipalib/plugins/internal.py:542 ipalib/plugins/internal.py:669
 #, python-brace-format
 msgid "Unprovisioning ${entity}"
-msgstr "Идёт отмена подготовки ${entity}"
+msgstr "Отменяется подготовка к работе ${entity}"
 
 #: ipalib/plugins/internal.py:543
 msgid "Host unprovisioned"
-msgstr "Подготовка хоста отменена"
+msgstr "Подготовка хоста к работе отменена"
 
 #: ipalib/plugins/internal.py:546
 msgid "Host Group Settings"
@@ -10650,19 +10651,19 @@ msgstr "Параметры службы"
 
 #: ipalib/plugins/internal.py:664
 msgid "Provisioning"
-msgstr "Подготовка"
+msgstr "Подготовка к работе"
 
 #: ipalib/plugins/internal.py:668
 msgid "Are you sure you want to unprovision this service?"
-msgstr "Точно отменить подготовку этой службы?"
+msgstr "Точно отменить подготовку к работе этой службы?"
 
 #: ipalib/plugins/internal.py:670
 msgid "Service unprovisioned"
-msgstr "Подготовка службы отменена"
+msgstr "Подготовка службы к работе отменена"
 
 #: ipalib/plugins/internal.py:671
 msgid "Kerberos Key Present, Service Provisioned"
-msgstr "Ключ Kerberos в наличии, служба подготовлена"
+msgstr "Ключ Kerberos в наличии, служба подготовлена к работе"
 
 #: ipalib/plugins/internal.py:674
 msgid "SSH public keys"
@@ -14815,7 +14816,6 @@ msgid "Removed certificates from service principal \"%(value)s\""
 msgstr "Удалены сертификаты субъект-службы «%(value)s»"
 
 #: ipalib/plugins/servicedelegation.py:17
-#, fuzzy
 msgid ""
 "\n"
 "Service Constrained Delegation\n"
@@ -14902,30 +14902,27 @@ msgstr ""
 "\n"
 "Цель состоит из списка принципалов, которые могут быть делегированы.\n"
 "\n"
-"Проще говоря, правило гласит, что этот принципал может делегировать\n"
-"так, как этот список принципалов, как определено этими целевыми объектами.\n"
-"\n"
 "ПРИМЕРЫ:\n"
 "\n"
 " Добавить новое правило ограниченного делегирования:\n"
 "   ipa servicedelegationrule-add ftp-delegation\n"
 "\n"
-" Добавить новый таргет ограниченного делегирования:\n"
+" Добавить новую цель ограниченного делегирования:\n"
 "   ipa servicedelegationtarget-add ftp-delegation-target\n"
 "\n"
 " Добавить принципал в правило:\n"
 "   ipa servicedelegationrule-add-member --principals=ftp/ipa.example.com     "
 "  ftp-delegation\n"
 "\n"
-" Добавить свой таргет в правило:\n"
+" Добавить свою цель в правило:\n"
 "   ipa servicedelegationrule-add-target       --servicedelegationtargets=ftp-"
 "delegation-target ftp-delegation\n"
 "\n"
-" Добавить принципала к таргету:\n"
+" Добавить принципала к цели:\n"
 "   ipa servicedelegationtarget-add-member --principals=ldap/ipa.example.com  "
 "     ftp-delegation-target\n"
 "\n"
-" Вывести информацию об указанном правиле делегирования и таргете:\n"
+" Вывести информацию об указанном правиле делегирования и цели:\n"
 "   ipa servicedelegationrule_show ftp-delegation\n"
 "   ipa servicedelegationtarget_show ftp-delegation-target\n"
 "\n"
@@ -14936,11 +14933,11 @@ msgstr ""
 "В этом примере служба ftp может получить TGT для службы ldap от\n"
 "имени привязанного пользователя.\n"
 "\n"
-"Крайне не рекомендуется изменять делегирования, поставляющиеся в\n"
-"IPA, ipa-http-delegation и его таргеты: ipa-cifs-delegation-targets и\n"
+"Крайне не рекомендуется изменять параметры делегирования, поставляющиеся в\n"
+"IPA, ipa-http-delegation и её цели: ipa-cifs-delegation-targets и\n"
 "ipa-ldap-delegation-targets. Некорректные изменения могут уничтожить "
 "возможность\n"
-"делегирования, что в итоге приведёт к остановке работы фреймворка.\n"
+"делегирования, что в итоге приведёт к остановке работы инфраструктуры.\n"
 
 #: ipalib/plugins/servicedelegation.py:93
 msgid "Allowed Target"
@@ -15101,7 +15098,6 @@ msgid "Remove member from a named service delegation target."
 msgstr "Удалить членов из указанного целевого объекта делегирования служб."
 
 #: ipalib/plugins/stageuser.py:53
-#, fuzzy
 msgid ""
 "\n"
 "Stageusers\n"
@@ -15152,31 +15148,33 @@ msgstr ""
 "\n"
 "Промежуточные пользователи\n"
 "\n"
-"Управление шаблонными записями пользователей.\n"
+"Управление записями промежуточных пользователей.\n"
 "\n"
-"Шаблонные записи пользователей находятся под контейнером: \"cn=stage users,\n"
+"Записи промежуточных пользователей находятся непосредственно под контейнером:"
+" \"cn=stage users,\n"
 "cn=accounts, cn=provisioning, SUFFIX\".\n"
-"Пользователи не могут проходить аутентификацию с этими записями (даже если "
-"записи содержат\n"
+"Пользователи не могут выполнять аутентификацию с этими записями (даже если"
+" записи содержат\n"
 "учётные данные) и являются кандидатами в активные записи.\n"
 "\n"
-"Активные записи пользователей — это пользователи Posix в контейнере: "
-"\"cn=accounts, SUFFIX\".\n"
-"Активные записи могут проходить аутентификацию при условии наличия учётных "
-"данных.\n"
+"Активные записи пользователей — это пользователи Posix под контейнером:"
+" \"cn=accounts, SUFFIX\".\n"
+"Активные записи могут проходить аутентификацию при условии наличия учётных"
+" данных.\n"
 "\n"
-"Delete user entries are Posix users directly under the container: "
+"Записи удалённых пользователей — это пользователи Posix непосредственно под"
+" контейнером: "
 "\"cn=deleted users,\n"
 "cn=accounts, cn=provisioning, SUFFIX\".\n"
-"Пользователи не могут проходить аутентификацию с этими записями (даже если "
-"записи содержат\n"
+"Пользователи не могут проходить аутентификацию с этими записями (даже если"
+" записи содержат\n"
 "учётные данные)\n"
 "\n"
 "Контейнер промежуточного пользователя содержит записи\n"
 "    - созданные командой «stageuser-add», это пользователи Posix\n"
 "    - созданные внешней системой регистрации\n"
 "\n"
-"Требования для допустимой записи промежуточного пользователя:\n"
+"Обязательные требования для допустимой записи промежуточного пользователя:\n"
 "    - RDN записи — «uid»\n"
 "    - ipaUniqueID — «autogenerate»\n"
 "\n"
@@ -15184,8 +15182,8 @@ msgstr ""
 " знать об ограничениях,\n"
 "которые могут существовать для конкретного окружения. Например, имена"
 " пользователей, начинающиеся с\n"
-"цифры, или превышающие установленную длину, могут иметь проблемы в некоторых"
-" системах UNIX.\n"
+"цифры, или превышающие установленную длину, могут создать проблемы в"
+" некоторых системах UNIX.\n"
 "Чтобы изменить формат имени пользователя, принимаемый инструментарием IPA,"
 " используйте\n"
 "«ipa config-mod».\n"
@@ -15226,7 +15224,6 @@ msgid "Added stage user \"%(value)s\""
 msgstr "Добавлен промежуточный пользователь «%(value)s»"
 
 #: ipalib/plugins/stageuser.py:271
-#, fuzzy
 msgid "Create Stage user in from a delete user"
 msgstr "Создать промежуточного пользователя из пользователя delete"
 
@@ -15303,17 +15300,14 @@ msgid "Stage user %s activated"
 msgstr "Промежуточный пользователь %s активирован"
 
 #: ipalib/plugins/stageuser.py:723
-#, fuzzy
 msgid "Add a manager to the stage user entry"
 msgstr "Добавить диспетчера в запись промежуточного пользователя"
 
 #: ipalib/plugins/stageuser.py:728
-#, fuzzy
 msgid "Remove a manager to the stage user entry"
 msgstr "Удалить диспетчера из записи промежуточного пользователя"
 
 #: ipalib/plugins/sudocmd.py:30
-#, fuzzy
 msgid ""
 "\n"
 "Sudo Commands\n"
@@ -15332,7 +15326,7 @@ msgstr ""
 "\n"
 "Команды sudo\n"
 "\n"
-"Команды, используемые в качестве составляющих для sudo\n"
+"Команды, используемые в качестве составных элементов для sudo\n"
 "\n"
 "ПРИМЕРЫ:\n"
 "\n"
@@ -15411,7 +15405,6 @@ msgid "Display Sudo Command."
 msgstr "Вывести команду sudo"
 
 #: ipalib/plugins/sudocmdgroup.py:26
-#, fuzzy
 msgid ""
 "\n"
 "Groups of Sudo Commands\n"
@@ -15437,26 +15430,26 @@ msgid ""
 "   ipa group-show localadmins\n"
 msgstr ""
 "\n"
-"Группы команд sudo\n"
+"Группы команды sudo\n"
 "\n"
-"Управление группами команд sudo.\n"
+"Управление группами команды sudo.\n"
 "\n"
 "ПРИМЕРЫ:\n"
 "\n"
-" Добавить новую группу команд sudo:\n"
+" Добавить новую группу команды sudo:\n"
 "   ipa sudocmdgroup-add --desc='administrators commands' admincmds\n"
 "\n"
-" Удалить группу команд sudo:\n"
+" Удалить группу команды sudo:\n"
 "   ipa sudocmdgroup-del admincmds\n"
 "\n"
-" Управление членством группы команды sudo, командами:\n"
+" Управление участием в группе команды sudo, следующие команды:\n"
 "   ipa sudocmdgroup-add-member --sudocmds=/usr/bin/less --sudocmds=/usr/bin/"
 "vim admincmds\n"
 "\n"
-" Управление членством группы команды sudo, командами:\n"
+" Управление участием в группе команды sudo, следующие команды:\n"
 "   ipa group-remove-member --sudocmds=/usr/bin/less admincmds\n"
 "\n"
-" Показать группу команд sudo:\n"
+" Показать группу команды sudo:\n"
 "   ipa group-show localadmins\n"
 
 #: ipalib/plugins/sudocmdgroup.py:59
@@ -15577,7 +15570,6 @@ msgstr ""
 "Sudo.\n"
 
 #: ipalib/plugins/sudorule.py:58
-#, fuzzy
 msgid ""
 "\n"
 "An order can be added to a sudorule to control the order in which they\n"
@@ -15585,9 +15577,9 @@ msgid ""
 "must be unique.\n"
 msgstr ""
 "\n"
-"В правило sudo можно добавить очерёдность, для контроля за порядком, в\n"
+"В sudorule можно добавить очерёдность для контроля за порядком, в\n"
 "котором они оцениваются (если клиент это поддерживает). Эта очерёдность\n"
-"является целым числом и должна быть уникальной.\n"
+"должна быть целым уникальным числом.\n"
 
 #: ipalib/plugins/sudorule.py:62
 msgid ""
@@ -15860,11 +15852,12 @@ msgid "Modified Sudo Rule \"%(value)s\""
 msgstr "Правило sudo «%(value)s» изменено"
 
 #: ipalib/plugins/sudorule.py:417
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%(type)s category cannot be set to 'all' while there are allowed %(objects)s"
 msgstr ""
-"категорию %(type)s нельзя присвоить «всем», если есть допустимые %(objects)s"
+"значение категории %(type)s не может быть «all», если есть допустимые "
+"%(objects)s"
 
 #: ipalib/plugins/sudorule.py:423 ipalib/plugins/user.py:135
 msgid "user"
@@ -15967,18 +15960,15 @@ msgstr ""
 "Удалить хосты и группы хостов, на которые распространяется правило sudo"
 
 #: ipalib/plugins/sudorule.py:732
-#, fuzzy
 msgid "Add users and groups for Sudo to execute as."
 msgstr ""
-"Добавить пользователей и группы, с правами которых "
-"будет выполняться sudo"
+"Добавить пользователей и группы, с правами которых может выполняться sudo"
 
 #: ipalib/plugins/sudorule.py:755 ipalib/plugins/sudorule.py:868
-#, fuzzy
 msgid "users cannot be added when runAs user or runAs group category='all'"
 msgstr ""
-"нельзя добавить пользователей, если категория runAs пользователь/runAs "
-"группа=«всё»"
+"нельзя добавить пользователей, если категория «runAs пользователь» или «runAs"
+" группа» имеет значение «all»"
 
 #: ipalib/plugins/sudorule.py:762
 #, python-format
@@ -15991,14 +15981,11 @@ msgid "RunAsUser does not accept '%(name)s' as a group name"
 msgstr "RunAsUser не принимает «%(name)s» в качестве имени группы"
 
 #: ipalib/plugins/sudorule.py:809
-#, fuzzy
 msgid "Remove users and groups for Sudo to execute as."
 msgstr ""
-"Удалить пользователей и группы, с правами которых "
-"будет выполняться sudo"
+"Удалить пользователей и группы, с правами которых может выполняться sudo"
 
 #: ipalib/plugins/sudorule.py:847
-#, fuzzy
 msgid "Add group for Sudo to execute as."
 msgstr "Добавить группу, с правами которой будет выполняться sudo"
 
@@ -16008,9 +15995,8 @@ msgid "RunAsGroup does not accept '%(name)s' as a group name"
 msgstr "RunAsGroup не принимает «%(name)s» в качестве имени группы"
 
 #: ipalib/plugins/sudorule.py:895
-#, fuzzy
 msgid "Remove group for Sudo to execute as."
-msgstr "Удалить группу из "
+msgstr "Удалить группу, с правами которой может выполняться sudo"
 
 #: ipalib/plugins/sudorule.py:914
 msgid "Add an option to the Sudo Rule."
@@ -16047,9 +16033,9 @@ msgstr ""
 "Минимальный требуемый уровень домена: 1.\n"
 
 #: ipalib/plugins/topology.py:37
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Topology management requires minimum domain level {0} "
-msgstr "Для управления топологией требуется минимальный уровень домена {0} "
+msgstr "Управление топологией требует минимального уровня домена {0} "
 
 #: ipalib/plugins/topology.py:49
 msgid "segment"
@@ -16092,9 +16078,8 @@ msgid "Right replication node - an IPA server"
 msgstr "Правый узел репликации — сервер IPA"
 
 #: ipalib/plugins/topology.py:104
-#, fuzzy
 msgid "Connectivity"
-msgstr "Подключение"
+msgstr "Возможность соединения"
 
 #: ipalib/plugins/topology.py:108
 msgid "Direction of replication between left and right replication node"
@@ -16208,13 +16193,12 @@ msgid "Modified segment \"%(value)s\""
 msgstr "Сегмент «%(value)s» изменён"
 
 #: ipalib/plugins/topology.py:248
-#, fuzzy
 msgid ""
 "Request a full re-initialization of the node retrieving data from the other "
 "node."
 msgstr ""
-"Запрос полной повторной инициализации узла с получением "
-"данных с другого узла."
+"Запросить полную повторную инициализацию узла, получающего данные с другого"
+" узла."
 
 #: ipalib/plugins/topology.py:252
 #, python-format
@@ -17028,13 +17012,12 @@ msgid "Determine whether ipa-adtrust-install has been run on this system"
 msgstr "Определить, запускалась ли в системе ipa-adtrust-install"
 
 #: ipalib/plugins/trust.py:1303
-#, fuzzy
 msgid ""
 "Determine whether Schema Compatibility plugin is configured to serve trusted "
 "domain users and groups"
 msgstr ""
-"Определить, настроен ли модуль совместимости со Schema на обслуживание "
-"пользователей и групп доверенного домена"
+"Определить, настроено ли расширение совместимости со Schema на обслуживание"
+" пользователей и групп доверенного домена"
 
 #: ipalib/plugins/trust.py:1356
 msgid "Determine whether ipa-adtrust-install has been run with sidgen task"
@@ -17053,12 +17036,10 @@ msgstr ""
 "группа не была найдена."
 
 #: ipalib/plugins/trust.py:1393
-#, fuzzy
 msgid "trust domain"
 msgstr "домен доверия"
 
 #: ipalib/plugins/trust.py:1394
-#, fuzzy
 msgid "trust domains"
 msgstr "домены доверия"
 
@@ -17075,9 +17056,8 @@ msgid "Domain name"
 msgstr "Доменное имя"
 
 #: ipalib/plugins/trust.py:1417
-#, fuzzy
 msgid "Trusted domain partner"
-msgstr "Доверенный партнёр домена"
+msgstr "Партнёр доверенного домена"
 
 #: ipalib/plugins/trust.py:1437
 msgid "Search domains of the trust"
@@ -17088,7 +17068,6 @@ msgid "Domain enabled"
 msgstr "Домен включен"
 
 #: ipalib/plugins/trust.py:1467
-#, fuzzy
 msgid "Modify trustdomain of the trust"
 msgstr "Изменить trustdomain доверия"
 
@@ -17097,7 +17076,6 @@ msgid "Allow access from the trusted domain"
 msgstr "Разрешить доступ из доверенного домена"
 
 #: ipalib/plugins/trust.py:1485
-#, fuzzy
 msgid "Remove infromation about the domain associated with the trust."
 msgstr "Удалить информацию о домене, связанном с доверием."
 
@@ -17107,21 +17085,18 @@ msgid "Removed information about the trusted domain \"%(value)s\""
 msgstr "Удалена информация о доверенном домене «%(value)s»"
 
 #: ipalib/plugins/trust.py:1502
-#, fuzzy
 msgid ""
 "cannot delete root domain of the trust, use trust-del to delete the trust "
 "itself"
 msgstr ""
-"невозможно удалить корневой домен доверия, используйте trust-del чтобы "
-"удалить само доверие"
+"невозможно удалить корневой домен доверия, используйте trust-del чтобы"
+" удалить само доверие"
 
 #: ipalib/plugins/trust.py:1564
-#, fuzzy
 msgid "Refresh list of the domains associated with the trust"
 msgstr "Обновить список доменов, связанных с доверием"
 
 #: ipalib/plugins/trust.py:1588
-#, fuzzy
 msgid ""
 "List of trust domains successfully refreshed. Use trustdomain-find command "
 "to list them."
@@ -17130,37 +17105,32 @@ msgstr ""
 "команду trustdomain-find."
 
 #: ipalib/plugins/trust.py:1605
-#, fuzzy
 msgid "List of trust domains successfully refreshed"
 msgstr "Список доменов доверия успешно обновлён"
 
 #: ipalib/plugins/trust.py:1607
-#, fuzzy
 msgid "No new trust domains were found"
 msgstr "Не найдено новых доменов доверия"
 
 #: ipalib/plugins/trust.py:1616
-#, fuzzy
 msgid "Allow use of IPA resources by the domain of the trust"
-msgstr "Разрешить использование ресурсов IPA доменами доверия"
+msgstr "Разрешить использование ресурсов IPA доменом доверия"
 
 #: ipalib/plugins/trust.py:1619
-#, fuzzy, python-format
+#, python-format
 msgid "Enabled trust domain \"%(value)s\""
-msgstr "Домен доверия «%(value)s» включен"
+msgstr "Домен доверия «%(value)s» активирован"
 
 #: ipalib/plugins/trust.py:1627
-#, fuzzy
 msgid "Root domain of the trust is always enabled for the existing trust"
-msgstr "Для существующего доверия корневой домен доверия всегда включен"
+msgstr "Корневой домен существующего доверия всегда активирован"
 
 #: ipalib/plugins/trust.py:1657
-#, fuzzy
 msgid "Disable use of IPA resources by the domain of the trust"
-msgstr "Запретить использование ресурсов IPA доменами доверия"
+msgstr "Отключить использование ресурсов IPA доменами доверия"
 
 #: ipalib/plugins/trust.py:1660
-#, fuzzy, python-format
+#, python-format
 msgid "Disabled trust domain \"%(value)s\""
 msgstr "Домен доверия «%(value)s» отключен"
 
@@ -17344,7 +17314,7 @@ msgstr "Вывести информацию о пользователе"
 #: ipalib/plugins/user.py:844
 #, fuzzy
 msgid "Undelete a delete user account."
-msgstr "Восстановить учётную запись пользователя для удаления"
+msgstr "отменить удаление учётной записи пользователя"
 
 #: ipalib/plugins/user.py:847
 #, python-format
@@ -17357,9 +17327,8 @@ msgid "user \"%s\" is already active"
 msgstr "пользователь «%s» уже активен"
 
 #: ipalib/plugins/user.py:889
-#, fuzzy
 msgid "Move deleted user into staged area"
-msgstr "Перенести удалённого пользователя в промежуточную область"
+msgstr "Перенести удалённого пользователя в промежуточное состояние"
 
 #: ipalib/plugins/user.py:892
 #, python-format
@@ -17977,12 +17946,10 @@ msgid "Vault Container"
 msgstr "Контейнер хранилища"
 
 #: ipalib/plugins/vault.py:347 ipalib/plugins/vault.py:656
-#, fuzzy
 msgid "Owner users"
 msgstr "Пользователи владельца"
 
 #: ipalib/plugins/vault.py:351 ipalib/plugins/vault.py:661
-#, fuzzy
 msgid "Owner groups"
 msgstr "Группы владельца"
 
@@ -18104,11 +18071,11 @@ msgstr "Тип хранилища"
 
 #: ipalib/plugins/vault.py:643
 msgid "Salt"
-msgstr "Случайные данные (соль)"
+msgstr "Соль"
 
 #: ipalib/plugins/vault.py:644 ipalib/plugins/vault.py:1225
 msgid "Vault salt"
-msgstr "Случайные данные (соль) хранилища"
+msgstr "Соль хранилища"
 
 #: ipalib/plugins/vault.py:650
 msgid "Public key"
@@ -18541,7 +18508,7 @@ msgid ""
 "and Samba4 python bindings.\n"
 msgstr ""
 "\n"
-"Классы для управления trust joins с использованием вызовов DCE-RPC\n"
+"Классы для управления trust joins с помощью вызовов DCE-RPC\n"
 "\n"
 "Код этого модуля сильно зависит от пакета samba4-python\n"
 "и привязок Samba4 python.\n"
@@ -18563,15 +18530,13 @@ msgid "unsupported functional level"
 msgstr "этот функциональный уровень не поддерживается"
 
 #: ipaserver/dcerpc.py:100
-#, fuzzy
 msgid ""
 "AD domain controller complains about communication sequence. It may mean "
 "unsynchronized time on both sides, for example"
 msgstr ""
-"Контроллер домена AD сообщает о неполадках в последовательности передачи "
-"данных. "
-"Причиной может быть, например, несинхронизированное время на обеих сторонах "
-"связи."
+"Контроллер домена AD сообщает о проблемах в последовательности коммуникации. "
+"Причиной может быть, например, несинхронизированное время между обеими"
+" сторонами связи."
 
 #: ipaserver/dcerpc.py:104
 msgid "CIFS server configuration does not allow access to \\\\pipe\\lsarpc"
@@ -18681,7 +18646,7 @@ msgid "CIFS credentials object"
 msgstr "объект учётных данных CIFS"
 
 #: ipaserver/dcerpc.py:854
-#, fuzzy, python-format
+#, python-format
 msgid "CIFS server %(host)s denied your credentials"
 msgstr "%(host)s CIFS сервера не принял учётные данные"
 
@@ -18699,20 +18664,19 @@ msgstr ""
 "сервер IPA и удалённый домен не могут разделять одно и то же имя NetBIOS: %s"
 
 #: ipaserver/dcerpc.py:1157
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "IPA master denied trust validation requests from AD DC %(count)d times. Most "
 "likely AD DC contacted a replica that has no trust information replicated "
 "yet. Additionally, please check that AD DNS is able to resolve %(records)s "
 "SRV records to the correct IPA server."
 msgstr ""
-"Основной сервер IPA отвёрг запросы AD DC на одобрение доверия (попыток: %"
-"(count)d). "
-"Скорей всего AD DC обратился к реплике, ещё не содержащей реплицированной "
-"информации "
-"о доверии. Кроме того, проверьте, разрешает ли AD DNS записи %(records)s SRV "
-"на "
-"правильный сервер IPA."
+"Главный сервер IPA отклонил запросы AD DC на валидацию доверия (число"
+" попыток: %"
+"(count)d). Скорей всего AD DC обратился к реплике, на которую ещё не была"
+" реплицирована информация "
+"о доверии. Кроме того, проверьте, в состоянии ли DNS AD разрешать записи "
+"%(records)s SRV на правильный сервер IPA."
 
 #: ipaserver/install/certs.py:408
 #, python-format
@@ -18736,12 +18700,12 @@ msgid "REST API is not logged in."
 msgstr "REST API не авторизован"
 
 #: ipaserver/plugins/dogtag.py:2086
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Non-2xx response from CA REST API: %(status)d %(status_text)s. "
 "%(explanation)s"
 msgstr ""
-"Non-2xx код ответа от ЦС REST API: %(status)d %(status_text)s. "
+"Не-2xx ответ от REST API центра сертификации: %(status)d %(status_text)s. "
 "%(explanation)s"
 
 #: ipaserver/plugins/join.py:53
@@ -18770,11 +18734,10 @@ msgstr ""
 "записи «%s»."
 
 #: ipaserver/plugins/ldap2.py:268
-#, fuzzy
 msgid "Could not read UPG Definition originfilter. Check your permissions."
 msgstr ""
-"Не удалось прочитать originfilter определения UPG (частных групп "
-"пользователей). Проверьте права доступа."
+"Не удалось прочитать originfilter определения UPG (частных групп"
+" пользователей). Проверьте свои полномочия."
 
 #: ipaserver/rpcserver.py:479
 msgid "Request must be a dict"
@@ -18850,7 +18813,7 @@ msgid "Unable to set LDAP_OPT_X_TLS_CERTIFICATE\n"
 msgstr "Не удалось указать LDAP_OPT_X_TLS_CERTIFICATE\n"
 
 #: ipa-client/ipa-getkeytab.c:177
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to init for ldaps(636) connection\n"
 msgstr "Невозможно выполнить init для соединения ldaps(636)\n"
 
@@ -18860,7 +18823,7 @@ msgid "Unable to set LDAP_OPT_X_TLS\n"
 msgstr "Невозможно указать LDAP_OPT_X_TLS\n"
 
 #: ipa-client/ipa-getkeytab.c:190
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to init for ldap(389) connection\n"
 msgstr "Невозможно выполнить init для соединения ldaps(398)\n"
 
@@ -18982,9 +18945,8 @@ msgid "Failed to parse config file %s\n"
 msgstr "Сбой анализа файла конфигурации %s\n"
 
 #: ipa-client/ipa-getkeytab.c:689
-#, fuzzy
 msgid "Print as little as possible"
-msgstr "Выводить как можно меньше сообщений"
+msgstr "Выводить минимум данных"
 
 #: ipa-client/ipa-getkeytab.c:689
 msgid "Output only on errors"
@@ -19041,9 +19003,8 @@ msgid "LDAP DN"
 msgstr "LDAP DN"
 
 #: ipa-client/ipa-getkeytab.c:708
-#, fuzzy
 msgid "DN to bind as if not using kerberos"
-msgstr "DN привязка, как если бы kerberos не использовался"
+msgstr "Доменное имя для привязки, как если бы kerberos не использовался"
 
 #: ipa-client/ipa-getkeytab.c:710
 msgid "LDAP password"
@@ -19063,9 +19024,9 @@ msgid "Kerberos context initialization failed\n"
 msgstr "Сбой инициализации контекста Kerberos\n"
 
 #: ipa-client/ipa-getkeytab.c:750 util/ipa_krb5.c:878
-#, fuzzy, c-format
+#, c-format
 msgid "No system preferred enctypes ?!\n"
-msgstr "Отсутствуют предпочитаемые в системе типы шифрования?\n"
+msgstr "Отсутствуют предпочитаемые в системе enctype?\n"
 
 #: ipa-client/ipa-getkeytab.c:753
 #, c-format
@@ -19078,10 +19039,10 @@ msgid "Warning: failed to convert type (#%d)\n"
 msgstr "Внимание: сбой конвертации типа (#%d)\n"
 
 #: ipa-client/ipa-getkeytab.c:776
-#, fuzzy, c-format
+#, c-format
 msgid "Bind password required when using a bind DN.\n"
 msgstr ""
-"При использовании привязки ддоменного имени, требуется пароль привязки.\n"
+"При использовании привязки доменного имени требуется пароль привязки.\n"
 
 #: ipa-client/ipa-getkeytab.c:792
 #, c-format
@@ -19094,13 +19055,12 @@ msgid "Incompatible options provided (-r and -P)\n"
 msgstr "Указаны несовместимые параметры (-r и -P)\n"
 
 #: ipa-client/ipa-getkeytab.c:809
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Warning: salt types are not honored with randomized passwords (see opt. -"
 "P)\n"
 msgstr ""
-"Внимание: типы случайных данных (соль) не … с паролями, выбранными наугад "
-"(см. параметр -P)\n"
+"Внимание: типы соли не включаются в случайные пароли (см. параметр -P)\n"
 
 #: ipa-client/ipa-getkeytab.c:821
 #, c-format
@@ -19108,17 +19068,17 @@ msgid "Invalid Service Principal Name\n"
 msgstr "Недопустимое имя принципала службы\n"
 
 #: ipa-client/ipa-getkeytab.c:829
-#, fuzzy, c-format
+#, c-format
 msgid "Kerberos Credential Cache not found. Do you have a Kerberos Ticket?\n"
-msgstr "Не найден кэш учётных данных Kerberos. Имеется ли тикет Kerberos?\n"
+msgstr "Не найден кэш учётных данных Kerberos. У вас есть тикет Kerberos?\n"
 
 #: ipa-client/ipa-getkeytab.c:837
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Kerberos User Principal not found. Do you have a valid Credential Cache?\n"
 msgstr ""
-"Принципал пользователя Kerberos не найден. Является ли действительным "
-"кэш учётных данных?"
+"Принципал пользователя Kerberos не найден. У вас есть действительный кеш"
+" учётных данных?"
 
 #: ipa-client/ipa-getkeytab.c:845
 #, c-format
@@ -19126,10 +19086,10 @@ msgid "Failed to open Keytab\n"
 msgstr "Не удалось открыть файл keytab\n"
 
 #: ipa-client/ipa-getkeytab.c:862
-#, fuzzy, c-format
+#, c-format
 msgid "Retrying with pre-4.0 keytab retrieval method...\n"
 msgstr ""
-"Повторение попытки с помощью метода получения файла до keytab до 4.0…\n"
+"Повторяем попытку, используя метод получения keytab для версий меньше 4.0…\n"
 
 #: ipa-client/ipa-getkeytab.c:872
 #, c-format
@@ -19307,7 +19267,7 @@ msgid "Error storing creds in credential cache: %s.\n"
 msgstr "Ошибка сохранения учётных данных в кэше: %s.\n"
 
 #: ipa-client/ipa-join.c:900
-#, fuzzy, c-format
+#, c-format
 msgid "Unenrollment successful.\n"
 msgstr "Отмена регистрации успешно выполнена.\n"
 
@@ -19380,7 +19340,6 @@ msgid "Quiet mode. Only errors are displayed."
 msgstr "Режим без сообщений. Показываются только ошибки."
 
 #: ipa-client/ipa-join.c:1112
-#, fuzzy
 msgid "Unenroll this host from IPA server"
 msgstr "Отменить регистрацию этого хоста на сервере IPA"
 
@@ -19535,7 +19494,7 @@ msgstr "Внимание: тип шифрования не распознан.\n
 
 #: util/ipa_krb5.c:846
 msgid "Warning unrecognized salt type.\n"
-msgstr "Внимание: нераспознанный тип случайных данных (соль).\n"
+msgstr "Внимание: нераспознанный тип соли.\n"
 
 #: util/ipa_krb5.c:886
 msgid "Out of memory!?\n"
@@ -19556,6 +19515,6 @@ msgstr "Сбой создания ключа\n"
 
 #: util/ipa_krb5.c:1051
 msgid "Bad or unsupported salt type.\n"
-msgstr "Неверный или неподдерживаемый тип случайных данных (соль).\n"
+msgstr "Неверный или неподдерживаемый тип соли.\n"
 
 
