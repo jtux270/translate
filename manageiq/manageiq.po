@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: manageiq 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-09 08:49-0400\n"
-"PO-Revision-Date: 2022-09-16 21:45+0300\n"
+"PO-Revision-Date: 2022-09-19 21:11+0300\n"
 "Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
 "Language-Team: RU\n"
 "Language: ru\n"
@@ -1730,7 +1730,6 @@ msgstr ""
 "%{role_description}\""
 
 #: ../app/helpers/container_service_helper/textual_summary.rb:59
-#, fuzzy
 msgid "%{protocol} port %{port} to pods on target port:'%{target_port}'"
 msgstr "Порт %{protocol} %{port} для подов на целевом порте:'%{target_port}'"
 
@@ -2256,6 +2255,8 @@ msgid ""
 "*The values above may contain variable parameters that are filled in at instan"
 "tiation."
 msgstr ""
+"* Значения выше могут содержать переменные параметры, заполняемые "
+"во время создания экземпляра"
 
 #: ../app/views/layouts/_adv_search_body.html.haml:48
 msgid "-- OR --"
@@ -2848,7 +2849,7 @@ msgstr ""
 #: ../app/helpers/container_service_helper/textual_summary.rb:18
 #: ../app/helpers/container_service_helper/textual_summary.rb:57
 msgid "<Unnamed>"
-msgstr ""
+msgstr "<Без имени>"
 
 #: ../app/models/manageiq/providers/redhat/infra_manager/ovirt_services.rb:1039
 #: ../app/models/manageiq/providers/redhat/infra_manager/ovirt_services.rb:1050
@@ -2991,7 +2992,7 @@ msgstr "Отдельный кластер"
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:703
 msgid "A single Container Image"
-msgstr ""
+msgstr "Отдельный образ контейнера"
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:718
 msgid "A single Datastore"
@@ -3745,7 +3746,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:79
 msgid "Add Capabilities"
-msgstr ""
+msgstr "Добавить возможности"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1100
@@ -3906,7 +3907,7 @@ msgstr ""
 
 #: ../app/controllers/cloud_object_store_container_controller.rb:53
 msgid "Add New Cloud Object Store Container"
-msgstr ""
+msgstr "Добавить новый контейнер хранилища облачн. объектов"
 
 #: ../app/controllers/cloud_tenant_controller.rb:58
 msgid "Add New Cloud Tenant"
@@ -3915,7 +3916,7 @@ msgstr ""
 #: ../app/controllers/cloud_volume_controller.rb:95
 #: ../app/controllers/cloud_volume_controller.rb:123
 msgid "Add New Cloud Volume"
-msgstr ""
+msgstr "Добавить новый облачный том"
 
 #: ../app/helpers/application_helper/toolbar/ansible_credentials_center.rb:12
 msgid "Add New Credential"
@@ -4291,7 +4292,7 @@ msgstr "Добавить новый диспетчер блочного хран
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3252
 msgid "Add a Persistent Volume"
-msgstr ""
+msgstr "Добавить постоянный том"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4198
@@ -4418,12 +4419,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1360
 msgid "Add a Volume"
-msgstr ""
+msgstr "Добавить том"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4110
 msgid "Add a Volume Mapping"
-msgstr ""
+msgstr "Добавить отображение тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1905
@@ -4486,7 +4487,7 @@ msgstr "Добавить новую облачную сеть (NSX-T)"
 #:
 #: ../app/helpers/application_helper/toolbar/cloud_object_store_containers_center.rb:15
 msgid "Add a new Cloud Object Store Container"
-msgstr ""
+msgstr "Добавить новый контейнер хранилища облачн. объектов"
 
 #: ../app/views/ems_cloud/show_list.html.haml:5
 msgid "Add a new Cloud Provider"
@@ -4498,7 +4499,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:12
 msgid "Add a new Cloud Volume"
-msgstr ""
+msgstr "Добавить новый облачный том"
 
 #: ../app/views/ems_configuration/show_list.html.haml:5
 msgid "Add a new Configuration Manager"
@@ -4740,10 +4741,13 @@ msgstr "Добавление облачной БД \"%s\" было успешн�
 msgid ""
 "Add of Cloud Object Store Container \"%s\" has been successfully queued."
 msgstr ""
+"Добавление контейнера хранилища облачных объектов \"%s\" было успешно"
+" поставлено в очередь"
 
 #: ../app/javascript/components/cloud-object-store-container-form/index.jsx:50
 msgid "Add of Cloud Object Store Container \"%s\" has failed with error: %s"
 msgstr ""
+"Сбой добавления контейнера хранилища облачных объектов \"%s\", ошибка: %s"
 
 #: ../app/javascript/components/subnet-form/index.jsx:65
 msgid "Add of Cloud Subnet \"%s\" has been successfully queued."
@@ -4755,7 +4759,7 @@ msgstr ""
 
 #: ../app/javascript/components/cloud-volume-form/index.jsx:50
 msgid "Add of Cloud Volume \"%s\" has been successfully queued."
-msgstr ""
+msgstr "Добавление облачного тома \"%s\" было успешно поставлено в очередь"
 
 #: ../app/javascript/components/ansible-credentials-form/index.jsx:59
 msgid "Add of Credential \"%s\" has been successfully queued."
@@ -4874,11 +4878,11 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_controller.rb:104
 msgid "Add of new Cloud Volume was cancelled by the user"
-msgstr ""
+msgstr "Добавление облачного тома было отменено пользователем"
 
 #: ../app/javascript/components/cloud-volume-form/index.jsx:62
 msgid "Add of new Cloud Volume was cancelled by the user."
-msgstr ""
+msgstr "Добавление облачного тома было отменено пользователем."
 
 #: ../app/controllers/application_controller/buttons.rb:393
 msgid "Add of new Custom Button was cancelled by the user"
@@ -5107,7 +5111,7 @@ msgstr ""
 
 #: ../app/controllers/mixins/containers_common_mixin.rb:45
 msgid "Adding a new Service Dialog from Container Template \"%{name}\""
-msgstr ""
+msgstr "Добавляется новый диалог службы из шаблона контейнеров \"%{name}\""
 
 #: ../app/controllers/catalog_controller.rb:825
 msgid "Adding a new Service Dialog from Orchestration Template \"%{name}\""
@@ -5160,6 +5164,8 @@ msgstr ""
 #: ../app/javascript/components/cloud-object-store-container-form/index.jsx:58
 msgid "Adding of new cloud object store container was cancelled by the user."
 msgstr ""
+"Добавление нового контейнера хранилища облачн. объектов было отменено"
+" пользователем"
 
 #: ../app/javascript/components/network-routers-interfaces-form/index.jsx:28
 msgid "Adding or removing of interface was cancelled by the user."
@@ -5462,11 +5468,11 @@ msgstr "Суммарно памяти хоста"
 
 #: ../app/helpers/ems_container_helper/textual_summary.rb:63
 msgid "Aggregate Node CPU Cores"
-msgstr ""
+msgstr "Суммарно ядер ЦП узла"
 
 #: ../app/helpers/ems_container_helper/textual_summary.rb:56
 msgid "Aggregate Node Memory"
-msgstr ""
+msgstr "Суммарно памяти узла"
 
 #. TRANSLATORS: en.yml key: dictionary.column.aggregate_vm_cpus
 #: ../config/dictionary_strings.rb:218
@@ -5693,7 +5699,7 @@ msgstr "Все кластеры для поставщика инфраструк
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:701
 msgid "All Container Images"
-msgstr ""
+msgstr "Все образы контейнеров"
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:702
 msgid "All Container Images for Containers Provider"
@@ -5702,7 +5708,7 @@ msgstr "Все образы контейнеров для поставщика �
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3350
 msgid "All Containers"
-msgstr ""
+msgstr "Все контейнеры"
 
 #: ../app/controllers/pxe_controller/pxe_customization_templates.rb:123
 #: ../app/presenters/tree_builder_pxe_customization_templates.rb:10
@@ -6924,7 +6930,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:113
 msgid "Are you sure you want to delete these volumes?"
-msgstr ""
+msgstr "Точно удалить эти тома?"
 
 #: ../app/helpers/application_helper/button/condition_delete.rb:7
 msgid "Are you sure you want to delete this %{condition_type} Condition?"
@@ -7001,7 +7007,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:91
 msgid "Are you sure you want to delete this volume?"
-msgstr ""
+msgstr "Точно удалить этот том?"
 
 #: ../app/javascript/components/remove-catalog-item-modal.jsx:135
 msgid ""
@@ -7565,37 +7571,37 @@ msgstr ""
 #: ../app/javascript/components/cloud-volume-form/attach-detach-cloud-volume-form.jsx:100
 #: ../app/views/vm_common/_attach.html.haml:29
 msgid "Attach"
-msgstr ""
+msgstr "Присоединить"
 
 #: ../app/controllers/cloud_volume_controller.rb:56
 msgid "Attach Cloud Volume \"%{name}\""
-msgstr ""
+msgstr "Присоединить облачный том \"%{name}\""
 
 #: ../app/controllers/vm_common.rb:1157
 msgid "Attach Cloud Volume to %{model} \"%{name}\""
-msgstr ""
+msgstr "Присоединить облачный том к %{model} \"%{name}\""
 
 #: ../app/controllers/vm_cloud_controller.rb:29
 msgid "Attach Cloud Volume to Instance \"%{instance_name}\""
-msgstr "Подключить облачный том к экземпляру \"%{instance_name}\""
+msgstr "Присоединить облачный том к экземпляру \"%{instance_name}\""
 
 #: ../app/views/vm_common/_attach.html.haml:9
 msgid "Attach Volume"
-msgstr ""
+msgstr "Присоединить том"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3710
 msgid "Attach Volume to Instance"
-msgstr "Подключить том к экземпляру"
+msgstr "Присоединить том к экземпляру"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_cloud_center.rb:52
 msgid "Attach a Cloud Volume to this Instance"
-msgstr "Подключить облачный том к этому экземпляру"
+msgstr "Присоединить облачный том к этому экземпляру"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1378
 msgid "Attach a Volume"
-msgstr ""
+msgstr "Присоединить том"
 
 #: ../app/helpers/application_helper/toolbar/physical_storages_center.rb:25
 msgid "Attach a new storage system"
@@ -7603,11 +7609,11 @@ msgstr "Присоединить новую систему хранилищ"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:59
 msgid "Attach selected Cloud Volume to an Instance"
-msgstr "Подключить выбранный облачный том к экземпляру"
+msgstr "Присоединить выбранный облачный том к экземпляру"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:42
 msgid "Attach this Cloud Volume to an Instance"
-msgstr "Подключить этот облачный том к экземпляру"
+msgstr "Присоединить этот облачный том к экземпляру"
 
 #: ../app/helpers/miq_event_definition_helper.rb:6
 #: ../app/views/miq_policy/_event_edit.html.haml:12
@@ -7616,7 +7622,7 @@ msgstr ""
 
 #: ../app/controllers/vm_cloud_controller.rb:91
 msgid "Attaching Cloud Volume \"%{volume_name}\" to %{vm_name} finished"
-msgstr ""
+msgstr "Присоединение облачного тома \"%{volume_name}\" к %{vm_name} завершено"
 
 #: ../app/controllers/vm_cloud_controller.rb:64
 msgid ""
@@ -7624,17 +7630,17 @@ msgid ""
 " use"
 "r"
 msgstr ""
-"Подключение облачного тома к экземпляру \"%{instance_name}\" было отменено"
+"Присоединение облачного тома к экземпляру \"%{instance_name}\" было отменено"
 " пользователем"
 
 #:
 #: ../app/javascript/components/cloud-volume-form/attach-detach-cloud-volume-form.jsx:63
 msgid "Attaching Cloud Volume was cancelled by the user."
-msgstr ""
+msgstr "Присоединение облачного тома было отменено пользователем."
 
 #: ../app/controllers/vm_cloud_controller.rb:73
 msgid "Attaching Cloud volume failed: Task start failed"
-msgstr ""
+msgstr "Сбой присоединения облачного тома: не удалось начать задачу"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4793
@@ -7642,7 +7648,7 @@ msgid ""
 "Attaching Volume %{subject} to Instance %{instance_name} completed successfull"
 "y."
 msgstr ""
-"Подключение тома %{subject} к экземпляру %{instance_name} успешно выполнено"
+"Присоединение тома %{subject} к экземпляру %{instance_name} успешно выполнено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4795
@@ -7650,13 +7656,13 @@ msgid ""
 "Attaching Volume %{subject} to Instance %{instance_name} failed: %{error_messa"
 "ge}"
 msgstr ""
-"Сбой подключения тома %{subject} к экземпляру %{instance_name}: "
+"Сбой присоединения тома %{subject} к экземпляру %{instance_name}: "
 "%{error_message}"
 
 #:
 #: ../app/javascript/components/cloud-volume-form/attach-detach-cloud-volume-form.jsx:53
 msgid "Attachment of Cloud Volume has been successfully queued."
-msgstr ""
+msgstr "Присоединение облачного тома было успешно поставлено в очередь"
 
 #: ../app/views/report/_schedule_email_options.html.haml:16
 msgid "Attachments"
@@ -8032,7 +8038,7 @@ msgstr ""
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:72
 msgid "Author"
-msgstr ""
+msgstr "Автор"
 
 #: ../app/views/dashboard/auth_error.html.haml:3
 msgid "Authorization Error"
@@ -8941,7 +8947,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:69
 msgid "Backing Ref (Container ID)"
-msgstr ""
+msgstr "Резервная отсылка (ID контейнера)"
 
 #: ../app/views/ops/_settings_replication_tab.html.haml:38
 msgid "Backlog"
@@ -8950,11 +8956,11 @@ msgstr ""
 #:
 #: ../app/javascript/components/cloud-volume-actions-form/create-backup.schema.js:14
 msgid "Backup Name"
-msgstr ""
+msgstr "Имя рез. копии"
 
 #: ../app/javascript/components/cloud-volume-actions-form/helper.js:30
 msgid "Backup of Cloud Volume \"%s\" was canceled by the user."
-msgstr ""
+msgstr "Создание рез. копии облачного тома \"%s\" было отменено пользователем."
 
 #: ../app/models/manageiq/providers/azure_stack/manager_mixin.rb:276
 msgid "Bad response from %{log}"
@@ -8976,7 +8982,7 @@ msgstr ""
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:75
 msgid "Base Snapshot"
-msgstr ""
+msgstr "Базовый снимок"
 
 #. TRANSLATORS: en.yml key: dictionary.table.base_snapshot (plural form)
 #: ../config/dictionary_strings.rb:3848
@@ -9011,7 +9017,7 @@ msgstr "На основе"
 #. TRANSLATORS: file: product/views/CloudVolumeSnapshot.yaml
 #: ../config/yaml_strings.rb:615
 msgid "Based Volumes"
-msgstr ""
+msgstr "Тома на основе снимка"
 
 #: ../app/controllers/utilization_controller.rb:238
 #: ../app/helpers/catalog_helper.rb:40
@@ -9356,7 +9362,7 @@ msgstr ""
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:39
 #: ../app/views/vm_common/_reconfigure.html.haml:139
 msgid "Bootable"
-msgstr ""
+msgstr "Загрузочный"
 
 #. TRANSLATORS: file: product/views/CloudVolume-based_volumes.yaml
 #. TRANSLATORS: file: product/views/CloudVolume.yaml
@@ -10893,12 +10899,12 @@ msgstr ""
 #. TRANSLATORS: en.yml key: dictionary.column.capabilities_add
 #: ../config/dictionary_strings.rb:294
 msgid "Capabilities Add"
-msgstr ""
+msgstr "Возможности: добавить"
 
 #. TRANSLATORS: en.yml key: dictionary.column.capabilities_drop
 #: ../config/dictionary_strings.rb:296
 msgid "Capabilities Drop"
-msgstr ""
+msgstr "Возможности: убрать"
 
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:37
 msgid "Capacity"
@@ -11179,7 +11185,7 @@ msgstr ""
 #: ../app/helpers/application_helper/toolbar/ems_container_center.rb:25
 #: ../app/helpers/application_helper/toolbar/ems_containers_center.rb:23
 msgid "Capture metrics"
-msgstr ""
+msgstr "Собрать метрики"
 
 #: ../app/helpers/application_helper/toolbar/ems_containers_center.rb:22
 msgid "Capture metrics for selected Containers Providers"
@@ -11655,9 +11661,9 @@ msgstr[2] ""
 #: ../config/dictionary_strings.rb:2694
 msgid "Chargeback for Image"
 msgid_plural "Chargebacks for Image"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Взимание средств за использование образа"
+msgstr[1] "Взимания средств за использование образа"
+msgstr[2] "Взимания средств за использование образа"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ChargebackContainerImage (plural form)
 #: ../config/dictionary_strings.rb:2696
@@ -11669,9 +11675,9 @@ msgstr ""
 #: ../config/dictionary_strings.rb:2698
 msgid "Chargeback for Projects"
 msgid_plural "Chargebacks for Projects"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Взимание средств за использование проектов"
+msgstr[1] "Взимания средств за использование проектов"
+msgstr[2] "Взимания средств за использование проектов"
 
 #: ../app/models/chargeback_vm.rb:205
 msgid "Chargeback for VMs"
@@ -12338,7 +12344,7 @@ msgstr ""
 #: ../app/views/vm_common/_reconfigure.html.haml:421
 #: ../app/views/vm_common/_reconfigure.html.haml:421
 msgid "Choose"
-msgstr "Выберите"
+msgstr "Выбрать"
 
 #: ../app/views/report/_form_filter_chargeback.html.haml:140
 msgid "Choose %{entity}"
@@ -12521,7 +12527,7 @@ msgstr "Выберите промежуточное хранилище"
 
 #: ../app/views/ems_container/_form.html.haml:26
 msgid "Choose>"
-msgstr ""
+msgstr "Выбрать>"
 
 #. TRANSLATORS: en.yml key: dictionary.column.cidr
 #: ../config/dictionary_strings.rb:306
@@ -12673,7 +12679,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1298
 msgid "Clear Cloud Object Store Container"
-msgstr ""
+msgstr "Очистить контейнер хранилища облачн. объектов"
 
 #:
 #: ../app/helpers/application_helper/toolbar/cloud_object_store_container_center.rb:14
@@ -12892,7 +12898,7 @@ msgstr "Секрет клиента"
 #: ../app/javascript/components/cloud-volume-form/clone-cloud-volume-form.jsx:64
 #: ../app/javascript/components/cloud-volume-form/clone-cloud-volume-form.jsx:85
 msgid "Clone"
-msgstr ""
+msgstr "Клонировать"
 
 #: ../app/controllers/vm_common.rb:1208
 msgid "Clone %{vm_or_template}"
@@ -12900,7 +12906,7 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_controller.rb:68
 msgid "Clone Cloud Volume \"%{name}\""
-msgstr ""
+msgstr "Клонировать облачный том \"%{name}\""
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3972
@@ -12915,7 +12921,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1386
 msgid "Clone a Volume"
-msgstr ""
+msgstr "Клонировать том"
 
 #: ../app/models/manageiq/providers/vmware/infra_manager/vm.rb:10
 msgid "Clone operation is not supported"
@@ -12923,7 +12929,7 @@ msgstr "Операция клонирования не поддерживает�
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:80
 msgid "Clone selected Cloud Volume"
-msgstr ""
+msgstr "Клонировать выбранный облачный том"
 
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:142
 msgid "Clone selected Template"
@@ -12935,7 +12941,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:62
 msgid "Clone this Cloud Volume"
-msgstr ""
+msgstr "Клонировать этот облачный том"
 
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:141
 #: ../app/helpers/application_helper/toolbar/x_miq_template_center.rb:95
@@ -12953,12 +12959,12 @@ msgstr ""
 #:
 #: ../app/javascript/components/cloud-volume-form/clone-cloud-volume-form.jsx:51
 msgid "Cloning Cloud Volume was cancelled by the user."
-msgstr ""
+msgstr "Клонирование облачного тома было отменено пользователем."
 
 #:
 #: ../app/javascript/components/cloud-volume-form/clone-cloud-volume-form.jsx:42
 msgid "Cloning of Cloud Volume has been successfully queued."
-msgstr ""
+msgstr "Клонирование облачного тома было успешно поставлено в очередь"
 
 #: ./src/dialog-editor/components/field/field.html:33
 #: ./src/dialog-editor/components/field/field.html:51
@@ -13209,7 +13215,7 @@ msgstr ""
 
 #: ../app/helpers/cloud_object_store_object_helper/textual_summary.rb:49
 msgid "Cloud Object Store Container"
-msgstr ""
+msgstr "Контейнер хранилища облачн. объектов"
 
 #: ../app/controllers/cloud_object_store_container_controller.rb:14
 #: ../app/helpers/cloud_tenant_helper/textual_summary.rb:98
@@ -13228,7 +13234,7 @@ msgstr[2] ""
 #: ../app/controllers/cloud_object_store_object_controller.rb:14
 #: ../app/helpers/cloud_object_store_container_helper/textual_summary.rb:42
 msgid "Cloud Object Store Objects"
-msgstr ""
+msgstr "Объекты хранилища облачных объектов"
 
 #: ../app/controllers/cloud_object_store_object_controller.rb:27
 msgid "Cloud Objects"
@@ -13447,7 +13453,7 @@ msgstr "Облачные подсети (OpenStack)"
 #: ../app/helpers/security_policy_rule_helper/textual_summary.rb:108
 #: ../config/yaml_strings.rb:527
 msgid "Cloud Tenant"
-msgstr ""
+msgstr "Арендатор облака"
 
 #: ../app/controllers/cloud_tenant_controller.rb:79
 msgid ""
@@ -13530,36 +13536,38 @@ msgstr ""
 #: ../app/helpers/volume_mapping_helper/textual_summary.rb:47
 #: ../config/yaml_strings.rb:570
 msgid "Cloud Volume"
-msgstr ""
+msgstr "Облачный том"
 
 #: ../app/helpers/application_helper/button/volume_attach.rb:4
 msgid "Cloud Volume \"%{name}\" cannot be attached because %{reason}"
-msgstr ""
+msgstr "Невозможно присоединить облачный том\"%{name}\", причина: %{reason}"
 
 #: ../app/helpers/application_helper/button/volume_clone.rb:4
 msgid "Cloud Volume \"%{name}\" cannot be cloned because %{reason}"
-msgstr ""
+msgstr "Невозможно клонировать облачный том \"%{name}\", причина: %{reason}"
 
 #: ../app/controllers/cloud_volume_controller.rb:148
 msgid "Cloud Volume \"%{name}\" created"
-msgstr ""
+msgstr "Облачный том \"%{name}\" создан"
 
 #: ../app/controllers/cloud_volume_controller.rb:214
 msgid "Cloud Volume \"%{name}\" updated"
-msgstr ""
+msgstr "Облачный том \"%{name}\" обновлён"
 
 #: ../app/controllers/vm_cloud_controller.rb:77
 msgid "Cloud Volume \"%{volume_name}\" cannot be attached because %{reason}"
 msgstr ""
+"Невозможно присоединить облачный том \"%{volume_name}\", причина: %{reason}"
 
 #: ../app/controllers/vm_cloud_controller.rb:130
 msgid "Cloud Volume \"%{volume_name}\" cannot be detached because %{reason}"
 msgstr ""
+"Невозможно отсоединить облачный том \"%{volume_name}\", причина: %{reason}"
 
 #: ../app/controllers/cloud_tenant_controller.rb:36
 msgid "Cloud Volume \"%{volume_name}\" is not attached to any Instances"
 msgstr ""
-"Облачный том \"%{volume_name}\" не прикреплён ни к одному из экземпляров"
+"Облачный том \"%{volume_name}\" не присоединён ни к одному из экземпляров"
 
 #. TRANSLATORS: file: product/views/CloudVolumeBackup-cloud_volume_backups.yaml
 #. TRANSLATORS: file: product/views/CloudVolumeBackup.yaml
@@ -13567,18 +13575,18 @@ msgstr ""
 #: ../app/javascript/components/cloud-volume-actions-form/restore-from-backup.schema.js:16
 #: ../config/yaml_strings.rb:603
 msgid "Cloud Volume Backup"
-msgstr ""
+msgstr "Рез. копия облачного тома"
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:108
 #: ../app/helpers/ems_storage_helper/textual_summary.rb:75
 msgid "Cloud Volume Backups"
-msgstr "Резервные копии облачного тома"
+msgstr "Рез. копии облачного тома"
 
 #. TRANSLATORS: file: product/views/CloudVolumeSnapshot-cloud_volume_snapshots.yaml
 #. TRANSLATORS: file: product/views/CloudVolumeSnapshot.yaml
 #: ../config/yaml_strings.rb:609
 msgid "Cloud Volume Snapshot"
-msgstr ""
+msgstr "Снимок облачного тома"
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:98
 #: ../app/helpers/ems_storage_helper/textual_summary.rb:71
@@ -13588,7 +13596,7 @@ msgstr "Снимки облачных томов"
 #. TRANSLATORS: file: product/views/CloudVolumeType.yaml
 #: ../config/yaml_strings.rb:617
 msgid "Cloud Volume Type"
-msgstr ""
+msgstr "Тип облачного тома"
 
 #: ../app/helpers/ems_storage_helper/textual_summary.rb:83
 msgid "Cloud Volume Types"
@@ -13596,11 +13604,11 @@ msgstr "Типы облачных томов"
 
 #: ../app/controllers/cloud_volume_controller.rb:116
 msgid "Cloud Volume creation failed: Task start failed"
-msgstr ""
+msgstr "Сбой создания облачного тома: не удалось начать задачу"
 
 #: ../app/controllers/cloud_volume_controller.rb:190
 msgid "Cloud Volume update failed: Task start failed"
-msgstr ""
+msgstr "Сбой обновления облачного тома: не удалось начать задачу"
 
 #: ../app/controllers/vm_common.rb:370
 #: ../app/helpers/availability_zone_helper/textual_summary.rb:23
@@ -13615,17 +13623,17 @@ msgstr "Облачные тома"
 
 #: ../app/helpers/cloud_volume_snapshot_helper/textual_summary.rb:20
 msgid "Cloud Volumes Based on Snapshot"
-msgstr ""
+msgstr "Облачные тома на основе снимка"
 
 #. TRANSLATORS: en.yml key: dictionary.table.based_volumes (plural form)
 #: ../config/dictionary_strings.rb:3852
 msgid "Cloud Volumes Based on Snapshots"
-msgstr ""
+msgstr "Облачные тома на основе снимков"
 
 #. TRANSLATORS: file: product/views/CloudVolume.yaml
 #: ../config/yaml_strings.rb:594
 msgid "Cloud Volumes based on Snapshot"
-msgstr ""
+msgstr "Облачные тома на основе снимка"
 
 #: ../config/model_attributes.rb:278
 msgid "Cloud database"
@@ -13641,7 +13649,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:323
 msgid "Cloud object store container"
-msgstr ""
+msgstr "Контейнер хранилища облачн. объектов"
 
 #: ../config/model_attributes.rb:332
 msgid "Cloud object store object"
@@ -13673,31 +13681,31 @@ msgstr "Вариант конфигурации арендатора облак�
 
 #: ../config/model_attributes.rb:403
 msgid "Cloud volume"
-msgstr ""
+msgstr "Облачный том"
 
 #: ../config/model_attributes.rb:420
 msgid "Cloud volume backup"
-msgstr ""
+msgstr "Рез. копия облачного тома"
 
 #: ../app/javascript/components/cloud-volume-actions-form/helper.js:36
 msgid "Cloud volume backup has been successfully queued."
-msgstr ""
+msgstr "Создание рез. копии облачного тома было успешно поставлено в очередь"
 
 #: ../app/javascript/components/cloud-volume-actions-form/helper.js:52
 msgid "Cloud volume has been successfully restored from backup."
-msgstr ""
+msgstr "Облачный том был успешно восстановлен из рез. копии"
 
 #: ../app/controllers/cloud_volume_backup_controller.rb:49
 msgid "Cloud volume restore failed: Task start failed"
-msgstr ""
+msgstr "Сбой восстановления облачного тома: не удалось начать задачу"
 
 #: ../config/model_attributes.rb:433
 msgid "Cloud volume snapshot"
-msgstr ""
+msgstr "Снимок облачного тома"
 
 #: ../config/model_attributes.rb:445
 msgid "Cloud volume type"
-msgstr ""
+msgstr "Тип облачного тома"
 
 #. TRANSLATORS: file: product/reports/180_Configuration Management - Instances/010 Amazon - Active VMs.yaml
 #: ../config/yaml_strings.rb:6493
@@ -13895,7 +13903,7 @@ msgstr ""
 #. TRANSLATORS: file: product/views/CloudObjectStoreContainer.yaml
 #: ../config/yaml_strings.rb:505
 msgid "CloudObjectStoreContainer"
-msgstr ""
+msgstr "CloudObjectStoreContainer"
 
 #: ../config/model_attributes.rb:324
 msgid "CloudObjectStoreContainer|Bytes"
@@ -13903,7 +13911,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:325
 msgid "CloudObjectStoreContainer|Ems ref"
-msgstr ""
+msgstr "CloudObjectStoreContainer|Ems ref"
 
 #: ../config/model_attributes.rb:326
 msgid "CloudObjectStoreContainer|Href slug"
@@ -14201,13 +14209,13 @@ msgstr ""
 #. TRANSLATORS: file: product/views/CloudVolume.yaml
 #: ../config/yaml_strings.rb:573
 msgid "CloudVolume"
-msgstr ""
+msgstr "CloudVolume"
 
 #. TRANSLATORS: file: product/views/CloudVolumeBackup-cloud_volume_backups.yaml
 #. TRANSLATORS: file: product/views/CloudVolumeBackup.yaml
 #: ../config/yaml_strings.rb:606
 msgid "CloudVolumeBackup"
-msgstr ""
+msgstr "CloudVolumeBackup"
 
 #: ../config/model_attributes.rb:421
 msgid "CloudVolumeBackup|Creation time"
@@ -14615,7 +14623,7 @@ msgstr "Кластеры: сравнение шаблонов"
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:146
 msgid "Cold HDD (SC1)"
-msgstr ""
+msgstr "Холодный HDD (SC1)"
 
 #: ../app/javascript/oldjs/miq_tree.js:386
 #: ../app/views/miq_policy_rsop/_rsop_results.html.haml:44
@@ -14753,7 +14761,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:73
 msgid "Command"
-msgstr ""
+msgstr "Команда"
 
 #. TRANSLATORS: file: product/views/Account-groups.yaml
 #. TRANSLATORS: file: product/views/Account-users.yaml
@@ -15318,7 +15326,7 @@ msgstr ""
 #: ../app/helpers/miq_policy_helper.rb:41
 #: ../app/presenters/menu/default_menu.rb:172 ../config/yaml_strings.rb:623
 msgid "Conditions"
-msgstr ""
+msgstr "Условия"
 
 #: ../app/helpers/application_helper/button/condition_delete.rb:12
 msgid "Conditions assigned to Policies can not be deleted"
@@ -16492,9 +16500,9 @@ msgstr "Связаться"
 #: ../config/yaml_strings.rb:695
 msgid "Container"
 msgid_plural "Container"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Контейнер"
+msgstr[1] "Контейнера"
+msgstr[2] "Контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerBuild
 #: ../config/model_display_names.rb:57 ../config/dictionary_strings.rb:2758
@@ -16525,9 +16533,9 @@ msgstr "Сборки контейнера"
 #: ../config/model_display_names.rb:59
 msgid "Container Condition"
 msgid_plural "Container Conditions"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Условие контейнера"
+msgstr[1] "Условия контейнера"
+msgstr[2] "Условия контейнера"
 
 #: ../app/controllers/container_dashboard_controller.rb:61
 #: ../app/helpers/application_helper/title.rb:35
@@ -16537,14 +16545,14 @@ msgstr "Панель мониторинга контейнера"
 #: ../app/models/container_env_var.rb:4
 msgid "Container Environment Variable"
 msgid_plural "Container Environment Variables"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Переменная окружения контейнера"
+msgstr[1] "Переменные окружения контейнера"
+msgstr[2] "Переменные окружения контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.column.container_group_name
 #: ../config/dictionary_strings.rb:396
 msgid "Container Group Name"
-msgstr ""
+msgstr "Имя группы контейнера"
 
 #: ../config/model_display_names.rb:60
 msgid "Container Groups Container Services"
@@ -16556,34 +16564,34 @@ msgstr[2] "Службы контейнеров групп контейнеров
 #. TRANSLATORS: en.yml key: dictionary.column.container_groups_count
 #: ../config/dictionary_strings.rb:398
 msgid "Container Groups Count"
-msgstr ""
+msgstr "Число групп контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerImage
 #: ../config/model_display_names.rb:61 ../config/dictionary_strings.rb:2806
 msgid "Container Image"
 msgid_plural "Container Images"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Образ контейнера"
+msgstr[1] "Образа контейнера"
+msgstr[2] "Образов контейнера"
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:652
 msgid "Container Image Analysis"
-msgstr ""
+msgstr "Анализ образа контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:651
 msgid "Container Image Analysis Complete"
-msgstr ""
+msgstr "Анализ образа контейнера завершён"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:647
 msgid "Container Image Analysis Failure"
-msgstr ""
+msgstr "Сбой анализа образа контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:640
 msgid "Container Image Analysis Request"
-msgstr ""
+msgstr "Запрос анализа образа контейнера"
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:663
 msgid "Container Image Compliance Check"
@@ -16602,44 +16610,44 @@ msgstr "Образ контейнера соответствует требов�
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:655
 msgid "Container Image Discovered"
-msgstr ""
+msgstr "Обнаружен образ контейнера"
 
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/130_Images by Failed OpenSCAP Rule Results.yaml
 #: ../config/yaml_strings.rb:6465
 msgid "Container Image Name"
-msgstr ""
+msgstr "Имя образа контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerImageRegistry (plural form)
 #: ../config/dictionary_strings.rb:2804
 msgid "Container Image Registries"
-msgstr ""
+msgstr "Реестры образов контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerImageRegistry
 #: ../config/model_display_names.rb:62 ../config/dictionary_strings.rb:2802
 msgid "Container Image Registry"
 msgid_plural "Container Image Registries"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Реестр образов контейнеров"
+msgstr[1] "Реестры образов контейнеров"
+msgstr[2] "Реестры образов контейнеров"
 
 #. TRANSLATORS: file: product/views/ContainerImage.yaml
 #: ../app/presenters/menu/default_menu.rb:131 ../config/yaml_strings.rb:738
 msgid "Container Images"
-msgstr ""
+msgstr "Образы контейнеров"
 
 #: ../config/model_display_names.rb:63
 msgid "Container Limit"
 msgid_plural "Container Limits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Лимит контейнеров"
+msgstr[1] "Лимита контейнеров"
+msgstr[2] "Лимитов контейнеров"
 
 #: ../config/model_display_names.rb:64
 msgid "Container Limit Item"
 msgid_plural "Container Limit Items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Лимит элемента контейнера"
+msgstr[1] "Лимит элементов контейнера"
+msgstr[2] "Лимит элементов контейнера"
 
 #:
 #: ../app/models/manageiq/providers/openstack/storage_manager/swift_manager/cloud_object_store_container.rb:16
@@ -16649,7 +16657,7 @@ msgstr "Имя контейнера"
 #. TRANSLATORS: en.yml key: dictionary.column.container_namespace
 #: ../config/dictionary_strings.rb:402
 msgid "Container Namespace"
-msgstr ""
+msgstr "Пространство имён контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerNode
 #. TRANSLATORS: file: product/timelines/miq_reports/tl_events_daily.yaml
@@ -16658,9 +16666,9 @@ msgstr ""
 #: ../config/yaml_strings.rb:7348
 msgid "Container Node"
 msgid_plural "Container Nodes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Узел контейнера"
+msgstr[1] "Узла контейнера"
+msgstr[2] "Узлов контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:699
@@ -16680,7 +16688,7 @@ msgstr "Узел контейнера соответствует требова�
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:671
 msgid "Container Node Failed Mount"
-msgstr ""
+msgstr "Сбой монтирования узла контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:675
@@ -16690,72 +16698,72 @@ msgstr "Недействительная ёмкость диска узла ко
 #. TRANSLATORS: en.yml key: dictionary.column.container_node_name
 #: ../config/dictionary_strings.rb:404
 msgid "Container Node Name"
-msgstr ""
+msgstr "Имя узла контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:679
 msgid "Container Node Not Ready"
-msgstr ""
+msgstr "Узел контейнера не готов"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:683
 msgid "Container Node Not Schedulable"
-msgstr ""
+msgstr "Узел контейнера не может заноситься в расписание"
 
 #: ../app/models/container_node_performance.rb:7
 #: ../config/model_display_names.rb:66
 msgid "Container Node Performance"
 msgid_plural "Container Nodes Performances"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Производительность узла контейнера"
+msgstr[1] "Производительность узлов контейнеров"
+msgstr[2] "Производительность узлов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:687
 msgid "Container Node Ready"
-msgstr ""
+msgstr "Узел контейнера готов"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:695
 msgid "Container Node Rebooted"
-msgstr ""
+msgstr "Узел контейнера перезагружен"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:691
 msgid "Container Node Schedulable"
-msgstr ""
+msgstr "Узел контейнера может заноситься в расписание"
 
 #. TRANSLATORS: file: product/views/ContainerNode.yaml
 #: ../app/presenters/menu/default_menu.rb:127 ../config/yaml_strings.rb:772
 msgid "Container Nodes"
-msgstr ""
+msgstr "Узлы контейнера"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/058_VMs with invalid allocation of RAM.yaml
 #: ../config/yaml_strings.rb:6816
 msgid "Container OS"
-msgstr ""
+msgstr "ОС контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_sets.yml
 #: ../config/yaml_strings.rb:850
 msgid "Container Operation"
-msgstr "Операции контейнера"
+msgstr "Операция контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerGroup
 #: ../config/dictionary_strings.rb:2794
 msgid "Container Pod"
-msgstr ""
+msgstr "Под контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerGroup (plural form)
 #: ../config/dictionary_strings.rb:2796
 msgid "Container Pods"
-msgstr ""
+msgstr "Поды контейнера"
 
 #: ../config/model_display_names.rb:67
 msgid "Container Port Config"
 msgid_plural "Container Port Configs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Конфигурация порта контейнера"
+msgstr[1] "Конфигурации портов контейнеров"
+msgstr[2] "Конфигурации портов контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerProject
 #. TRANSLATORS: file: product/timelines/miq_reports/tl_events_daily.yaml
@@ -16764,9 +16772,9 @@ msgstr[2] ""
 #: ../config/yaml_strings.rb:7354
 msgid "Container Project"
 msgid_plural "Container Projects"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Проект контейнера"
+msgstr[1] "Проекты контейнера"
+msgstr[2] "Проекты контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:807
@@ -16786,17 +16794,17 @@ msgstr "Проект контейнера соответствует требо�
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:803
 msgid "Container Project Discovered"
-msgstr ""
+msgstr "Обнаружен проект контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3320
 msgid "Container Project Topology"
-msgstr ""
+msgstr "Топология проекта контейнера"
 
 #. TRANSLATORS: file: product/views/ContainerProject.yaml
 #: ../config/yaml_strings.rb:787
 msgid "Container Projects"
-msgstr ""
+msgstr "Проекты контейнера"
 
 #: ../app/models/manageiq/providers/amazon/container_manager.rb:27
 msgid "Container Provider (Amazon)"
@@ -16873,16 +16881,16 @@ msgstr "Поставщики контейнеров (OpenShift)"
 #: ../config/model_display_names.rb:69 ../config/dictionary_strings.rb:2762
 msgid "Container Quota"
 msgid_plural "Container Quotas"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Квота контейнера"
+msgstr[1] "Квоты контейнера"
+msgstr[2] "Квоты контейнера"
 
 #: ../config/model_display_names.rb:70
 msgid "Container Quota Item"
 msgid_plural "Container Quota Items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Квота элемента контейнера"
+msgstr[1] "Квоты элементов контейнера"
+msgstr[2] "Квоты элементов контейнера"
 
 #: ../config/model_display_names.rb:71
 msgid "Container Quota Scope"
@@ -16894,7 +16902,7 @@ msgstr[2] "Областей применения квоты контейнера
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerQuota (plural form)
 #: ../config/dictionary_strings.rb:2764
 msgid "Container Quotas"
-msgstr ""
+msgstr "Квоты контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerReplicator
 #. TRANSLATORS: file: product/timelines/miq_reports/tl_events_daily.yaml
@@ -16903,49 +16911,49 @@ msgstr ""
 #: ../config/yaml_strings.rb:7357
 msgid "Container Replicator"
 msgid_plural "Container Replicators"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Репликатор контейнера"
+msgstr[1] "Репликатора контейнера"
+msgstr[2] "Репликаторов контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.column.container_replicator_name
 #: ../config/dictionary_strings.rb:406
 msgid "Container Replicator Name"
-msgstr ""
+msgstr "Имя репликатора контейнера"
 
 #. TRANSLATORS: file: product/views/ContainerProject.yaml
 #: ../config/yaml_strings.rb:796
 msgid "Container Replicators"
-msgstr ""
+msgstr "Репликаторы контейнера"
 
 #. TRANSLATORS: file: product/views/ContainerRoute.yaml
 #: ../config/yaml_strings.rb:811
 msgid "Container Route"
-msgstr ""
+msgstr "Маршрут контейнера"
 
 #. TRANSLATORS: file: product/views/ContainerProject.yaml
 #: ../config/yaml_strings.rb:791
 msgid "Container Routes"
-msgstr ""
+msgstr "Маршруты контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.column.container_runtime_version
 #: ../config/dictionary_strings.rb:408
 msgid "Container Runtime Version"
-msgstr ""
+msgstr "Версия среды выполнения контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerService
 #: ../config/model_display_names.rb:74 ../config/dictionary_strings.rb:2834
 msgid "Container Service"
 msgid_plural "Container Services"
-msgstr[0] "Служба контейнеров"
-msgstr[1] "Службы контейнеров"
-msgstr[2] "Служб контейнеров"
+msgstr[0] "Служба контейнера"
+msgstr[1] "Службы контейнера"
+msgstr[2] "Служб контейнера"
 
 #: ../config/model_display_names.rb:75
 msgid "Container Service Port Config"
 msgid_plural "Container Service Port Configs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Конфигурация порта службы контейнера"
+msgstr[1] "Конфигурации портов служб контейнера"
+msgstr[2] "Конфигурации портов служб контейнера"
 
 #. TRANSLATORS: file: product/views/ContainerProject.yaml
 #. TRANSLATORS: file: product/views/ContainerService.yaml
@@ -16955,12 +16963,12 @@ msgstr "Службы контейнеров"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:124
 msgid "Container Statuses Summary"
-msgstr ""
+msgstr "Сводка статусов контейнера"
 
 #: ../app/views/catalog/_form_basic_info.html.haml:148
 #: ../app/views/catalog/_sandt_tree_show.html.haml:94
 msgid "Container Template"
-msgstr ""
+msgstr "Шаблон контейнера"
 
 #:
 #: ../app/models/manageiq/providers/openshift/container_manager/container_template.rb:74
@@ -16973,33 +16981,33 @@ msgstr[2] "Шаблона контейнеров (OpenShift)"
 #: ../config/model_display_names.rb:77
 msgid "Container Template Parameter"
 msgid_plural "Container Template Parameters"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Параметр шаблона контейнера"
+msgstr[1] "Параметры шаблона контейнера"
+msgstr[2] "Параметры шаблона контейнера"
 
 #. TRANSLATORS: file: product/views/ContainerTemplate.yaml
 #: ../app/presenters/menu/default_menu.rb:132 ../config/yaml_strings.rb:821
 msgid "Container Templates"
-msgstr ""
+msgstr "Шаблоны контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::Openshift::ContainerManager::ContainerTemplate (plural form)
 #: ../config/dictionary_strings.rb:3304
 msgid "Container Templates (OpenShift)"
-msgstr ""
+msgstr "Шаблоны контейнера (OpenShift)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerVolume
 #: ../app/models/container_volume.rb:8 ../config/dictionary_strings.rb:2842
 #: ../config/model_display_names.rb:78
 msgid "Container Volume"
 msgid_plural "Container Volumes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Том контейнера"
+msgstr[1] "Тома контейнера"
+msgstr[2] "Томов контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerVolume (plural form)
 #: ../config/dictionary_strings.rb:2844
 msgid "Container Volumes"
-msgstr ""
+msgstr "Тома контейнера"
 
 #: ../config/model_attributes.rb:677
 msgid "Container build"
@@ -17011,15 +17019,15 @@ msgstr "Под сборки контейнера"
 
 #: ../config/model_attributes.rb:731
 msgid "Container condition"
-msgstr ""
+msgstr "Условие контейнера"
 
 #: ../config/model_attributes.rb:742
 msgid "Container env var"
-msgstr ""
+msgstr "Переменная окружения контейнера"
 
 #: ../config/model_attributes.rb:749
 msgid "Container group"
-msgstr ""
+msgstr "Группа контейнера"
 
 #: ../config/model_attributes.rb:804
 msgid "Container groups container services"
@@ -17027,39 +17035,39 @@ msgstr "Службы контейнеров групп контейнеров"
 
 #: ../config/model_attributes.rb:808
 msgid "Container image"
-msgstr ""
+msgstr "Образ контейнера"
 
 #: ../config/model_attributes.rb:868
 msgid "Container image registry"
-msgstr ""
+msgstr "Реестр образов контейнеров"
 
 #: ../config/model_attributes.rb:876
 msgid "Container limit"
-msgstr ""
+msgstr "Лимиты контейнера"
 
 #: ../config/model_attributes.rb:885
 msgid "Container limit item"
-msgstr ""
+msgstr "Лимит элемента контейнера"
 
 #: ../config/model_attributes.rb:896
 msgid "Container node"
-msgstr ""
+msgstr "Узел контейнера"
 
 #: ../config/model_attributes.rb:954
 msgid "Container port config"
-msgstr ""
+msgstr "Конфигурация порта контейнера"
 
 #: ../config/model_attributes.rb:963
 msgid "Container project"
-msgstr ""
+msgstr "Проект контейнера"
 
 #: ../config/model_attributes.rb:1014
 msgid "Container quota"
-msgstr ""
+msgstr "Квота контейнера"
 
 #: ../config/model_attributes.rb:1024
 msgid "Container quota item"
-msgstr ""
+msgstr "Квота элемента контейнера"
 
 #: ../config/model_attributes.rb:1036
 msgid "Container quota scope"
@@ -17067,31 +17075,31 @@ msgstr "Область применения квоты контейнера"
 
 #: ../config/model_attributes.rb:1042
 msgid "Container replicator"
-msgstr ""
+msgstr "Репликатор контейнера"
 
 #: ../config/model_attributes.rb:1089
 msgid "Container route"
-msgstr ""
+msgstr "Маршрут контейнера"
 
 #: ../config/model_attributes.rb:1109
 msgid "Container service"
-msgstr ""
+msgstr "Служба контейнера"
 
 #: ../config/model_attributes.rb:1155
 msgid "Container service port config"
-msgstr ""
+msgstr "Конфигурация порта службы контейнера"
 
 #: ../config/model_attributes.rb:1165
 msgid "Container template"
-msgstr ""
+msgstr "Шаблон контейнера"
 
 #: ../config/model_attributes.rb:1184
 msgid "Container template parameter"
-msgstr ""
+msgstr "Параметр шаблона контейнера"
 
 #: ../config/model_attributes.rb:1205
 msgid "Container volume"
-msgstr ""
+msgstr "Том контейнера"
 
 #. TRANSLATORS: file: product/views/ContainerBuild.yaml
 #: ../config/yaml_strings.rb:706
@@ -19405,17 +19413,17 @@ msgstr "Контейнеры"
 #. TRANSLATORS: file: product/views/ContainerImage.yaml
 #: ../config/yaml_strings.rb:746
 msgid "Containers Count"
-msgstr ""
+msgstr "Число контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3374
 msgid "Containers Dashboard"
-msgstr "Панели мониторинга контейнеров"
+msgstr "Панель мониторинга контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3340
 msgid "Containers Explorer"
-msgstr ""
+msgstr "Проводник контейнеров"
 
 #: ../app/models/manageiq/providers/container_manager.rb:90
 msgid "Containers Manager"
@@ -19439,7 +19447,7 @@ msgstr "Поставщики контейнеров"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3370
 msgid "Containers Topology"
-msgstr ""
+msgstr "Топология контейнеров"
 
 #: ../config/model_attributes.rb:616
 msgid "Container|Backing ref"
@@ -19447,11 +19455,11 @@ msgstr ""
 
 #: ../config/model_attributes.rb:617
 msgid "Container|Capabilities add"
-msgstr ""
+msgstr "Container|Возможности: добавить"
 
 #: ../config/model_attributes.rb:618
 msgid "Container|Capabilities drop"
-msgstr ""
+msgstr "Container|Возможности: убрать"
 
 #: ../config/model_attributes.rb:619
 msgid "Container|Command"
@@ -20355,12 +20363,12 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_controller.rb:235
 msgid "Create Backup for Cloud Volume \"%{name}\""
-msgstr ""
+msgstr "Создать рез. копию для облачного тома \"%{name}\""
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1292
 msgid "Create Cloud Object Store Container"
-msgstr ""
+msgstr "Создать контейнер хранилища облачн. объектов"
 
 #: ../app/helpers/application_helper/toolbar/cloud_tenants_center.rb:12
 msgid "Create Cloud Tenant"
@@ -20390,11 +20398,11 @@ msgstr ""
 
 #: ../app/controllers/mixins/containers_common_mixin.rb:71
 msgid "Create Service Dialog"
-msgstr ""
+msgstr "Создать диалог службы"
 
 #: ../app/helpers/application_helper/toolbar/container_template_center.rb:12
 msgid "Create Service Dialog from Container Template"
-msgstr ""
+msgstr "Создать диалог службы из шаблона контейнера"
 
 #:
 #: ../app/helpers/application_helper/toolbar/orchestration_template_center.rb:12
@@ -20413,7 +20421,7 @@ msgstr "Создать службы"
 
 #: ../app/controllers/cloud_volume_controller.rb:259
 msgid "Create Snapshot for Cloud Volume \"%{name}\""
-msgstr ""
+msgstr "Создать снимок для облачного тома \"%{name}\""
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4549
@@ -20437,11 +20445,11 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:20
 msgid "Create a Backup of selected Cloud Volume"
-msgstr ""
+msgstr "Создать рез. копию выбранного облачного тома"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:12
 msgid "Create a Backup of this Cloud Volume"
-msgstr ""
+msgstr "Создать рез. копию этого облачного тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1260
@@ -20455,21 +20463,21 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:46
 msgid "Create a Snapshot of selected Cloud Volume"
-msgstr ""
+msgstr "Создать снимок выбранного облачного тома"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:32
 msgid "Create a Snapshot of this Cloud Volume"
-msgstr ""
+msgstr "Создать снимок этого облачного тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1366
 msgid "Create a Volume Backup"
-msgstr ""
+msgstr "Создать резервную копию тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1374
 msgid "Create a Volume Snapshot"
-msgstr ""
+msgstr "Создать снимок тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4416
@@ -20575,13 +20583,14 @@ msgstr ""
 #: ../config/yaml_strings.rb:4813
 msgid ""
 "Creating Backup %{backup_name} of Volume %{subject} completed successfully."
-msgstr ""
+msgstr "Создание рез. копии %{backup_name} тома %{subject} успешно завершено."
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4815
 msgid ""
 "Creating Backup %{backup_name} of Volume %{subject} failed: %{error_message}"
 msgstr ""
+"Сбой создания рез. копии %{backup_name} тома %{subject}: %{error_message}"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4789
@@ -20589,6 +20598,8 @@ msgid ""
 "Creating Cloud Object Store Container %{cloud_container_name} completed succes"
 "sfully"
 msgstr ""
+"Создание контейнера хранилища облачн. объектов %{cloud_container_name}"
+" успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4791
@@ -20596,13 +20607,15 @@ msgid ""
 "Creating Cloud Object Store Container %{cloud_container_name} failed: %{error_"
 "message}"
 msgstr ""
+"Сбой создания контейнера хранилища облачн. объектов %{cloud_container_name}: "
+"%{error_message}"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4825
 msgid ""
 "Creating Snapshot %{snapshot_name} of Volume %{volume_name} completed successf"
 "ully."
-msgstr ""
+msgstr "Создание снимка %{snapshot_name} тома %{volume_name} успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4827
@@ -20610,16 +20623,17 @@ msgid ""
 "Creating Snapshot %{snapshot_name} of Volume %{volume_name} failed: %{error_me"
 "ssage}"
 msgstr ""
+"Сбой создания снимка %{snapshot_name} тома %{volume_name}: %{error_message}"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4801
 msgid "Creating Volume %{volume_name} completed successfully."
-msgstr ""
+msgstr "Создание тома %{volume_name} успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4803
 msgid "Creating Volume %{volume_name} failed: %{error_message}"
-msgstr ""
+msgstr "Сбой создания тома %{volume_name}: %{error_message}"
 
 #: ../app/javascript/components/settings-time-profile-form/index.jsx:64
 msgid "Creating time profile %s has been successfully queued."
@@ -20647,7 +20661,7 @@ msgstr ""
 #: ../app/controllers/mixins/containers_common_mixin.rb:78
 #: ../app/javascript/components/service-dialog-from-form/service-dialog-from.jsx:31
 msgid "Creation of a new Service Dialog was cancelled by the user"
-msgstr ""
+msgstr "Создание нового диалога службы было отменено пользователем"
 
 #: ../app/javascript/components/ops-tenant-form/ops-tenant-form.jsx:37
 msgid "Creation of new %s was canceled by the user."
@@ -20711,7 +20725,7 @@ msgstr ""
 #: ../app/helpers/container_summary_helper.rb:107
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:221
 msgid "Creation timestamp"
-msgstr ""
+msgstr "Временная метка создания"
 
 #: ../app/helpers/ansible_repository_helper/textual_summary.rb:51
 msgid "Credential"
@@ -21059,7 +21073,7 @@ msgstr "Текущая группа: %s"
 
 #: ../app/helpers/container_replicator_helper/textual_summary.rb:30
 msgid "Current pods"
-msgstr ""
+msgstr "Текущие поды"
 
 #: ../app/helpers/application_helper/button/vm_snapshot_add.rb:4
 msgid "Current user lacks permissions to create a new snapshot for this VM"
@@ -21770,7 +21784,7 @@ msgstr "Серверы имён DNS"
 #: ../app/helpers/container_group_helper/textual_summary.rb:99
 #: ../config/yaml_strings.rb:736
 msgid "DNS Policy"
-msgstr ""
+msgstr "Политика DNS"
 
 #: ../app/views/vm_common/_config.html.haml:101
 msgid "DNS Server"
@@ -22541,7 +22555,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/chargeback_rates.yml
 #: ../config/yaml_strings.rb:59
 msgid "Default Container Image Rate"
-msgstr ""
+msgstr "Тариф по умолчанию для образа контейнера"
 
 #: ../app/helpers/application_helper/button/dashboard_delete.rb:5
 msgid "Default Dashboard cannot be deleted"
@@ -22588,7 +22602,7 @@ msgstr ""
 
 #: ../app/helpers/container_project_helper/textual_summary.rb:50
 msgid "Default Limit"
-msgstr ""
+msgstr "Лимит по умолчанию"
 
 #: ../app/views/ops/_settings_server_tab.html.haml:82
 msgid "Default Locale"
@@ -22604,7 +22618,7 @@ msgstr "SmartProxy по умолчанию репозитория"
 
 #: ../app/helpers/container_project_helper/textual_summary.rb:51
 msgid "Default Request"
-msgstr ""
+msgstr "Запрос по умолчанию"
 
 #:
 #: ../app/models/manageiq/providers/vmware/infra_manager/vm_or_template_shared/operations/relocation.rb:27
@@ -22684,7 +22698,7 @@ msgstr ""
 
 #: ../app/views/miq_request/_prov_dialog_volume_fieldset.html.haml:33
 msgid "Default value is 1"
-msgstr ""
+msgstr "Значение по умолчанию: 1"
 
 #: ../app/views/condition/_form_expression.html.haml:16
 #: ../app/views/layouts/_filter_expression.html.haml:24
@@ -22708,7 +22722,7 @@ msgstr "Настроить новый инициатор хоста"
 
 #: ../app/helpers/application_helper/toolbar/volume_mappings_center.rb:25
 msgid "Define a new volume mapping"
-msgstr ""
+msgstr "Настроить новое отображение тома"
 
 #: ../app/javascript/components/host-initiator-form/index.jsx:29
 msgid "Defining of Host initiator \"%s\" has been successfully queued."
@@ -22717,7 +22731,7 @@ msgstr ""
 
 #: ../app/javascript/components/volume-mapping-form/index.jsx:33
 msgid "Defining of a new Volume mapping has been successfully queued."
-msgstr ""
+msgstr "Настройка нового отображения тома было успешно поставлено в очередь"
 
 #. TRANSLATORS: file: product/views/GenericObject.yaml
 #: ../app/helpers/generic_object_helper/textual_summary.rb:10
@@ -22898,7 +22912,7 @@ msgstr "Удалить облачные БД"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1294
 msgid "Delete Cloud Object Store Container"
-msgstr ""
+msgstr "Удалить контейнер хранилища облачн. объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1316
@@ -22920,7 +22934,7 @@ msgstr "Удалить арендатора облака"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_snapshot_center.rb:12
 msgid "Delete Cloud Volume Snapshot"
-msgstr ""
+msgstr "Удалить снимок облачного тома"
 
 #: ../app/helpers/application_helper/toolbar/conditions_center.rb:30
 #: ../app/helpers/application_helper/toolbar/conditions_center.rb:40
@@ -23092,11 +23106,11 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:90
 msgid "Delete Volume"
-msgstr ""
+msgstr "Удалить том"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:112
 msgid "Delete Volumes"
-msgstr ""
+msgstr "Удалить тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1961
@@ -23191,7 +23205,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4112
 msgid "Delete a Volume Mapping"
-msgstr ""
+msgstr "Удалить отображение тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1909
@@ -23281,8 +23295,11 @@ msgstr[2] ""
 msgid "Delete initiated for %{number} Cloud Object Store Container."
 msgid_plural "Delete initiated for %{number} Cloud Object Store Containers."
 msgstr[0] ""
+"Удаление инициировано для %{number} контейнера хранилища облачн. объектов"
 msgstr[1] ""
+"Удаление инициировано для %{number} контейнеров хранилища облачн. объектов"
 msgstr[2] ""
+"Удаление инициировано для %{number} контейнеров хранилища облачн. объектов"
 
 #: ../app/controllers/cloud_tenant_controller.rb:152
 msgid "Delete initiated for %{number} Cloud Tenant."
@@ -23294,9 +23311,9 @@ msgstr[2] "Удаление инициировано для %{number} аренд
 #: ../app/controllers/cloud_volume_snapshot_controller.rb:82
 msgid "Delete initiated for %{number} Cloud Volume Snapshot."
 msgid_plural "Delete initiated for %{number} Cloud Volume Snapshots."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Инициировано удаление %{number} снимка облачного тома"
+msgstr[1] "Инициировано удаление %{number} снимков облачного тома"
+msgstr[2] "Инициировано удаление %{number} снимков облачного тома"
 
 #: ../app/controllers/floating_ip_controller.rb:164
 msgid "Delete initiated for %{number} Floating IP."
@@ -23340,7 +23357,7 @@ msgstr "Удаление активного снимка не допускает
 
 #: ../app/controllers/cloud_volume_backup_controller.rb:97
 msgid "Delete of Backup \"%{name}\" was successfully initiated."
-msgstr ""
+msgstr "Удаление рез. копии \"%{name}\" инициирована успешно"
 
 #: ../app/controllers/application_controller/ci_processing.rb:847
 msgid "Delete of Flavor \"%{name}\" was successfully initiated."
@@ -23349,7 +23366,7 @@ msgstr "Удаление варианта конфигурации \"%{name}\" �
 #: ../app/models/cloud_object_store_object.rb:18
 #: ../app/models/cloud_object_store_container.rb:19
 msgid "Delete operation is not supported."
-msgstr "Удаление операции не поддерживается"
+msgstr "Операция удаления не поддерживается."
 
 #: ../app/controllers/report_controller.rb:759
 msgid "Delete selected Accordion and its contents"
@@ -23365,7 +23382,7 @@ msgstr "Удалить выбранные профили оповещений"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_backups_center.rb:23
 msgid "Delete selected Backups"
-msgstr ""
+msgstr "Удалить выбранные резервные копии"
 
 #: ../app/helpers/application_helper/toolbar/servicetemplates_center.rb:42
 msgid "Delete selected Catalog Items"
@@ -23382,7 +23399,7 @@ msgstr "Удалить выбранных арендаторов облака"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:104
 msgid "Delete selected Cloud Volumes"
-msgstr ""
+msgstr "Удалить выбранные облачные тома"
 
 #: ../app/helpers/application_helper/toolbar/conditions_center.rb:29
 msgid "Delete selected Conditions"
@@ -23440,7 +23457,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/volume_mappings_center.rb:32
 msgid "Delete selected volume mappings"
-msgstr ""
+msgstr "Удалить выбранные отображения томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4553
@@ -23528,7 +23545,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:83
 msgid "Delete this Cloud Volume"
-msgstr ""
+msgstr "Удалить этот облачный том"
 
 #: ../app/helpers/application_helper/toolbar/miq_widget_set_center.rb:25
 msgid "Delete this Dashboard from the Database"
@@ -23611,7 +23628,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/volume_mapping_center.rb:25
 msgid "Delete volume mapping"
-msgstr ""
+msgstr "Удалить отображение тома"
 
 #: ../app/javascript/components/provider-dashboard-charts/charts_config.js:116
 #: ../app/javascript/components/provider-dashboard-charts/charts_config.js:128
@@ -23629,13 +23646,14 @@ msgstr ""
 #: ../config/yaml_strings.rb:4817
 msgid ""
 "Deleting Backup %{subject} of Volume %{volume_name} completed successfully."
-msgstr ""
+msgstr "Удаление рез. копии %{subject} тома %{volume_name} успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4819
 msgid ""
 "Deleting Backup %{subject} of Volume %{volume_name} failed: %{error_message}"
 msgstr ""
+"Сбой удаления рез. копии %{subject} тома %{volume_name}: %{error_message}"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4843
@@ -23681,23 +23699,23 @@ msgstr ""
 #: ../config/yaml_strings.rb:4829
 msgid ""
 "Deleting Snapshot %{subject} of Volume %{volume_name} completed successfully."
-msgstr ""
+msgstr "Ужаление снимка %{subject} тома %{volume_name} успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4831
 msgid ""
 "Deleting Snapshot %{subject} of Volume %{volume_name} failed: %{error_message}"
-msgstr ""
+msgstr "Сбой удаления снимка %{subject} тома %{volume_name}: %{error_message}"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4809
 msgid "Deleting Volume %{subject} completed successfully."
-msgstr ""
+msgstr "Удаление тома %{subject} успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4811
 msgid "Deleting Volume %{subject} failed: %{error_message}"
-msgstr ""
+msgstr "Сбой удаления тома %{subject}: %{error_message}"
 
 #:
 #: ../app/javascript/oldjs/controllers/ops/pglogical_replication_form_controller.js:167
@@ -23929,11 +23947,11 @@ msgstr ""
 
 #: ../app/helpers/container_project_helper/textual_summary.rb:28
 msgid "Desired"
-msgstr ""
+msgstr "Желательное"
 
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:226
 msgid "Desired access modes"
-msgstr ""
+msgstr "Желательные режимы доступа"
 
 #:
 #: ../app/models/manageiq/providers/ibm_power_vc/inventory/parser/cloud_manager.rb:134
@@ -24038,58 +24056,58 @@ msgstr "Сбой уничтожения ВМ %{subject}: %{error_message}"
 #: ../app/javascript/components/cloud-volume-form/attach-detach-cloud-volume-form.jsx:100
 #: ../app/views/vm_common/_detach.html.haml:21
 msgid "Detach"
-msgstr ""
+msgstr "Отсоединить"
 
 #: ../app/controllers/cloud_volume_controller.rb:81
 msgid "Detach Cloud Volume \"%{name}\""
-msgstr ""
+msgstr "Отсоединить облачный том \"%{name}\""
 
 #: ../app/controllers/vm_common.rb:1161
 msgid "Detach Cloud Volume from %{model} \"%{name}\""
-msgstr ""
+msgstr "Отсоединить облачный том от %{model} \"%{name}\""
 
 #: ../app/controllers/vm_cloud_controller.rb:50
 msgid "Detach Cloud Volume from Instance \"%{instance_name}\""
-msgstr "Открепить облачный том от экземпляра \"%{instance_name}\""
+msgstr "Отсоединить облачный том от экземпляра \"%{instance_name}\""
 
 #: ../app/views/vm_common/_detach.html.haml:9
 msgid "Detach Volume"
-msgstr ""
+msgstr "Отсоединить том"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3714
 msgid "Detach Volume from Instance"
-msgstr "Открепить том от экземпляра"
+msgstr "Отсоединить том от экземпляра"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_cloud_center.rb:58
 msgid "Detach a Cloud Volume from this Instance"
-msgstr "Открепить облачный том от этого экземпляра"
+msgstr "Отсоединить облачный том от этого экземпляра"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1382
 msgid "Detach a Volume"
-msgstr ""
+msgstr "Отсоединить том"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:69
 msgid "Detach selected Cloud Volume from an Instance"
-msgstr "Открепить выбранный облачный том от экземпляра"
+msgstr "Отсоединить выбранный облачный том от экземпляра"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:52
 msgid "Detach this Cloud Volume from an Instance"
-msgstr "Открепить этот облачный том от экземпляра"
+msgstr "Отсоединить этот облачный том от экземпляра"
 
 #: ../app/controllers/vm_cloud_controller.rb:144
 msgid "Detaching Cloud Volume \"%{volume_name}\" from %{vm_name} finished"
-msgstr ""
+msgstr "Отсоединение облачного тома \"{volume_name}\" к %{vm_name} завершено"
 
 #:
 #: ../app/javascript/components/cloud-volume-form/attach-detach-cloud-volume-form.jsx:64
 msgid "Detaching Cloud Volume was cancelled by the user."
-msgstr ""
+msgstr "Отсоединение облачного тома было отменено пользователем"
 
 #: ../app/controllers/vm_cloud_controller.rb:126
 msgid "Detaching Cloud volume failed: Task start failed"
-msgstr ""
+msgstr "Сбой отсоединения облачного тома: не удалось начать задачу"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4797
@@ -24097,7 +24115,8 @@ msgid ""
 "Detaching Volume %{subject} from Instance %{instance_name} completed successfu"
 "lly."
 msgstr ""
-"Открепление тома %{subject} от экземпляра %{instance_name} успешно выполнено."
+"Отсоединение облачного тома тома %{subject} от экземпляра %{instance_name}"
+" успешно выполнено."
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4799
@@ -24105,7 +24124,8 @@ msgid ""
 "Detaching Volume %{subject} from Instance %{instance_name} failed: %{error_mes"
 "sage}"
 msgstr ""
-"Сбой открепления тома %{subject} от экземпляра %{instance_name}: "
+"Сбой отсоединения облачного тома тома %{subject} от экземпляра "
+"%{instance_name}: "
 "%{error_message}"
 
 #: ../app/controllers/vm_cloud_controller.rb:116
@@ -24114,13 +24134,14 @@ msgid ""
 " the"
 " user"
 msgstr ""
-"Открепление облачного тома от экземпляра \"%{instance_name}\" было отменено"
+"Отсоединение облачного тома облачного тома от экземпляра \"%{instance_name}\""
+" было отменено"
 " пользователем"
 
 #:
 #: ../app/javascript/components/cloud-volume-form/attach-detach-cloud-volume-form.jsx:54
 msgid "Detachment of Cloud Volume of Host has been successfully queued."
-msgstr "Открепление облачного тома хоста было успешно поставлено в очередь"
+msgstr "Отсоединение облачного тома хоста было успешно поставлено в очередь"
 
 #. TRANSLATORS: file: product/reports/300_Migration Readiness - Virtual Machines/021_Detailed - VMs NOT migration ready.yaml
 #: ../config/yaml_strings.rb:6550
@@ -24751,7 +24772,7 @@ msgstr ""
 
 #: ../app/helpers/host_initiator_helper/textual_summary.rb:56
 msgid "Directly Attached Cloud Volumes"
-msgstr "Прикреплённые напрямую облачные тома"
+msgstr "Облачные тома, присоединённые напрямую"
 
 #. TRANSLATORS: file: product/views/Storage.yaml
 #. TRANSLATORS: file: product/views/StorageCluster.yaml
@@ -25707,7 +25728,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3360
 msgid "Display Environment Variables for Containers"
-msgstr ""
+msgstr "Показать переменные окружения для контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1631
@@ -25777,7 +25798,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1282
 msgid "Display Individual Cloud Object Store Container"
-msgstr ""
+msgstr "Показать отдельный контейнер хранилища облачн. объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1308
@@ -25842,47 +25863,47 @@ msgstr "Показать отдельную сборку контейнера"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3230
 msgid "Display Individual Container Image Registries"
-msgstr ""
+msgstr "Показать реестры образов отдельного контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3174
 msgid "Display Individual Container Nodes"
-msgstr ""
+msgstr "Показать узлы отдельного контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3194
 msgid "Display Individual Container Replicators"
-msgstr ""
+msgstr "Показать репликаторы отдельного контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3314
 msgid "Display Individual Container Routes"
-msgstr ""
+msgstr "Показать маршруты отдельного контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3298
 msgid "Display Individual Container Services"
-msgstr "Показать отдельные службы контейнеров"
+msgstr "Показать службы отдельного контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3282
 msgid "Display Individual Container Template"
-msgstr ""
+msgstr "Показать шаблон отдельного контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3212
 msgid "Display Individual Container images"
-msgstr ""
+msgstr "Показать образы отдельного контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3354
 msgid "Display Individual Containers"
-msgstr ""
+msgstr "Показать отдельные контейнеры"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2812
 msgid "Display Individual Containers Providers"
-msgstr "Показать отдельных поставщиков контейнеров"
+msgstr "Показать поставщиков отдельных контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4384
@@ -26032,7 +26053,7 @@ msgstr "Показать отдельные стеки оркестрации"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3244
 msgid "Display Individual Persistent Volume"
-msgstr ""
+msgstr "Показать отдельные постоянные тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4222
@@ -26157,17 +26178,17 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4100
 msgid "Display Individual Volume Mappings"
-msgstr ""
+msgstr "Показать отдельные отображения томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1486
 msgid "Display Individual Volume Types"
-msgstr ""
+msgstr "Показать отдельные типы томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1352
 msgid "Display Individual Volumes"
-msgstr ""
+msgstr "Показать отдельные тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3634
@@ -26263,7 +26284,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1280
 msgid "Display Lists of Cloud Object Store Containers"
-msgstr ""
+msgstr "Показать списки контейнеров хранилищ облачн. объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1306
@@ -26318,47 +26339,47 @@ msgstr "Показать списки сборок контейнеров"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3228
 msgid "Display Lists of Container Image Registries"
-msgstr ""
+msgstr "Показать списки реестров образов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3210
 msgid "Display Lists of Container Images"
-msgstr ""
+msgstr "Показать списки образов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3172
 msgid "Display Lists of Container Nodes"
-msgstr ""
+msgstr "Показать списки узлов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3330
 msgid "Display Lists of Container Projects"
-msgstr ""
+msgstr "Показать списки проектов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3192
 msgid "Display Lists of Container Replicators"
-msgstr ""
+msgstr "Показать списки репликаторов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3312
 msgid "Display Lists of Container Routes"
-msgstr ""
+msgstr "Показать списки маршрутов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3296
 msgid "Display Lists of Container Services"
-msgstr "Показать список служб контейнеров"
+msgstr "Показать списки служб контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3280
 msgid "Display Lists of Container Template"
-msgstr ""
+msgstr "Показать списки шаблонов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3352
 msgid "Display Lists of Containers"
-msgstr ""
+msgstr "Показать списки контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2810
@@ -26518,7 +26539,7 @@ msgstr "Показать списки стеков оркестрации"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3242
 msgid "Display Lists of Persistent Volumes"
-msgstr ""
+msgstr "Показать списки постоянных томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4220
@@ -26653,17 +26674,17 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4098
 msgid "Display Lists of Volume Mappings"
-msgstr ""
+msgstr "Показать списки отображений томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1484
 msgid "Display Lists of Volume Types"
-msgstr ""
+msgstr "Показать списки типов томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1350
 msgid "Display Lists of Volumes"
-msgstr ""
+msgstr "Показать списки томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3620
@@ -26789,12 +26810,12 @@ msgstr "Показать временные шкалы для кластеров
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3178
 msgid "Display Timelines for Container Nodes"
-msgstr ""
+msgstr "Показать временные шкалы для узлов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3356
 msgid "Display Timelines for Containers"
-msgstr ""
+msgstr "Показать временные шкалы для контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2820
@@ -26879,12 +26900,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3334
 msgid "Display Timelines for container Projects"
-msgstr ""
+msgstr "Показать временные шкалы для проектов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3198
 msgid "Display Timelines for container Replicators"
-msgstr ""
+msgstr "Показать временные шкалы для репликаторов контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.display_type
 #: ../config/dictionary_strings.rb:770
@@ -27018,7 +27039,7 @@ msgstr ""
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:80
 msgid "Docker Version"
-msgstr ""
+msgstr "Версия докера"
 
 #: ../app/controllers/support_controller.rb:38
 #: ../app/presenters/menu/default_menu.rb:251
@@ -27391,7 +27412,7 @@ msgstr "Управляющее событие"
 
 #: ../app/helpers/container_helper/textual_summary.rb:88
 msgid "Drop Capabilities"
-msgstr ""
+msgstr "Убрать возможности"
 
 #: ../app/models/dialog_field.rb:65
 msgid "Drop Down List"
@@ -30830,7 +30851,7 @@ msgstr ""
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_ContainerManager.yaml
 #: ../config/yaml_strings.rb:1322
 msgid "EmsContainer"
-msgstr ""
+msgstr "EmsContainer"
 
 #: ../config/model_attributes.rb:1486
 msgid "EmsExtension|Company"
@@ -31244,7 +31265,7 @@ msgstr ""
 #: ../app/helpers/ems_container_helper/textual_summary.rb:122
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:2
 msgid "Endpoints"
-msgstr ""
+msgstr "Конечные точки"
 
 #: ../config/model_attributes.rb:1526
 msgid "Endpoint|Api version"
@@ -31314,7 +31335,7 @@ msgstr "Принудительная проверка схожести"
 #: ../app/helpers/container_project_helper/textual_summary.rb:28
 #: ../app/views/ops/_tenant_quota_form.html.haml:14
 msgid "Enforced"
-msgstr ""
+msgstr "Принудительно"
 
 #: ../app/views/miq_ae_tools/_results_tree.html.haml:7
 #: ../app/views/miq_ae_tools/_results_uri.html.haml:24
@@ -31422,7 +31443,7 @@ msgstr "Entitlement|Номер региона"
 #: ../app/helpers/application_helper/button/container_perf.rb:6
 #: ../app/views/ops/_label_tag_mapping_form.html.haml:13
 msgid "Entity"
-msgstr ""
+msgstr "Объект"
 
 #: ../app/views/generic_mailer/policy_action_email.html.haml:11
 #: ../app/views/generic_mailer/policy_action_email.text.haml:3
@@ -31451,7 +31472,7 @@ msgstr ""
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:76
 msgid "Entrypoint"
-msgstr ""
+msgstr "Точка вхождения"
 
 #: ../app/models/manageiq/showback/envelope.rb:37
 msgid "Envelope can't change state to CLOSED from OPEN"
@@ -31479,12 +31500,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/dictionary_strings.rb:852 ../config/yaml_strings.rb:3358
 msgid "Environment Variables"
-msgstr ""
+msgstr "Переменные окружения"
 
 #: ../app/helpers/container_helper/textual_summary.rb:138
 #: ../app/helpers/container_image_helper/textual_summary.rb:129
 msgid "Environment variables"
-msgstr ""
+msgstr "Переменные окружения"
 
 #. TRANSLATORS: en.yml key: dictionary.column.ephemeral_disk_count
 #: ../config/dictionary_strings.rb:854
@@ -31801,6 +31822,8 @@ msgstr ""
 msgid ""
 "Error when creating a Service Dialog from Container Template: %{error_message}"
 msgstr ""
+"Ошибка во время создания диалога службы из шаблона контейнера: "
+"%{error_message}"
 
 #: ../app/controllers/ops_controller/settings/common.rb:224
 msgid "Error when saving new server name: %{message}"
@@ -32387,7 +32410,6 @@ msgstr "Всё в меню-гармошке «Все элементы катал
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3346
-#, fuzzy
 msgid "Everything under All Containers Accordion"
 msgstr "Всё в меню-гармошке «Все контейнеры»"
 
@@ -32449,7 +32471,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1276
 msgid "Everything under Cloud Object Store Containers"
-msgstr ""
+msgstr "Всё в «Контейнерах хранилища облачных объектов»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1302
@@ -32474,22 +32496,22 @@ msgstr "Всё в «Арендаторах облака»"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1460
 msgid "Everything under Cloud Volume Backups"
-msgstr ""
+msgstr "Всё в «Рез. копиях облачного тома»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1444
 msgid "Everything under Cloud Volume Snapshots"
-msgstr ""
+msgstr "Всё в «Снимках облачных томов»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1480
 msgid "Everything under Cloud Volume Types"
-msgstr ""
+msgstr "Всё в «Типах облачного тома»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1346
 msgid "Everything under Cloud Volumes"
-msgstr ""
+msgstr "Всё в «Облачных томах»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1574
@@ -32534,52 +32556,52 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3260
 msgid "Everything under Container Build"
-msgstr "Всё в «Сборках контейнеров»"
+msgstr "Всё в «Сборке контейнера»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3224
 msgid "Everything under Container Image Registries"
-msgstr ""
+msgstr "Всё в «Реестрах образов контейнеров»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3206
 msgid "Everything under Container Images"
-msgstr ""
+msgstr "Всё в «Образах контейнеров»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3168
 msgid "Everything under Container Nodes"
-msgstr ""
+msgstr "Всё в «Узлах контейнера»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3326
 msgid "Everything under Container Projects"
-msgstr ""
+msgstr "Всё в «Проектах контейнера»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3188
 msgid "Everything under Container Replicators"
-msgstr ""
+msgstr "Всё в «Репликаторах контейнера»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3308
 msgid "Everything under Container Routes"
-msgstr ""
+msgstr "Всё в «Маршрутах контейнера»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3292
 msgid "Everything under Container Services"
-msgstr "Всё в «Службах контейнеров»"
+msgstr "Всё в «Службах контейнера»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3276
 msgid "Everything under Container Template"
-msgstr ""
+msgstr "Всё в «Шаблоне контейнера»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3342
 msgid "Everything under Containers"
-msgstr ""
+msgstr "Всё в «Контейнерах»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2806
@@ -32765,7 +32787,7 @@ msgstr "Всё в «Серверах PXE»"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3238
 msgid "Everything under Persistent Volumes"
-msgstr ""
+msgstr "Всё в «Постоянных томах»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4216
@@ -32950,7 +32972,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4094
 msgid "Everything under Volume Mapping"
-msgstr ""
+msgstr "Всё в «Отображениях тома»"
 
 #. TRANSLATORS: en.yml key: dictionary.column.evm_owner_email
 #: ../config/dictionary_strings.rb:866
@@ -33002,7 +33024,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:49
 msgid "Exit Code"
-msgstr ""
+msgstr "Код выхода"
 
 #: ../app/controllers/mixins/actions/host_actions/power.rb:11
 #: ../app/helpers/application_helper/toolbar/host_center.rb:149
@@ -33090,7 +33112,7 @@ msgstr ""
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:109
 msgid "Exposed Ports"
-msgstr ""
+msgstr "Порты для доступа"
 
 #: ../app/helpers/condition_helper.rb:31
 #: ../app/helpers/miq_ae_class_helper.rb:146
@@ -33168,7 +33190,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:1604
 msgid "ExtManagementSystem|Capabilities"
-msgstr ""
+msgstr "ExtManagementSystem|Возможности"
 
 #: ../config/model_attributes.rb:1605
 msgid "ExtManagementSystem|Cpu usage rate average avg over time period"
@@ -33681,7 +33703,7 @@ msgstr "Внешний шлюз"
 #: ../app/helpers/application_helper/toolbar/container_node_center.rb:33
 #: ../app/helpers/application_helper/toolbar/ems_container_center.rb:73
 msgid "External Logging"
-msgstr ""
+msgstr "Внешнее журналирование"
 
 #: ../app/models/manageiq/providers/openstack/network_manager/floating_ip.rb:31
 #: ../app/models/manageiq/providers/openstack/network_manager/floating_ip.rb:111
@@ -33774,7 +33796,7 @@ msgstr ""
 #: ../app/helpers/container_group_helper/textual_summary.rb:58
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:186
 msgid "FS Type"
-msgstr ""
+msgstr "Тип ФС"
 
 #. TRANSLATORS: en.yml key: dictionary.model.FileDepotFtp
 #: ../app/models/file_depot_ftp.rb:94 ../config/dictionary_strings.rb:2870
@@ -34343,7 +34365,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:45
 msgid "Finished At"
-msgstr ""
+msgstr "Когда завершено:"
 
 #: ../app/controllers/miq_task_controller.rb:98
 msgid "Finished Task cannot be cancelled"
@@ -35219,7 +35241,7 @@ msgstr ""
 #:
 #: ../app/javascript/components/cloud-volume-actions-form/create-backup.schema.js:37
 msgid "Force?"
-msgstr ""
+msgstr "Принудительно?"
 
 #: ../lib/manageiq/providers/foreman/engine.rb:19
 msgid "Foreman Provider"
@@ -35406,7 +35428,7 @@ msgstr "Гбайт используется"
 #: ../app/helpers/container_group_helper/textual_summary.rb:43
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:75
 msgid "GCE PD Resource"
-msgstr ""
+msgstr "Ресурс постоянного диска GCE"
 
 #:
 #: ../app/models/manageiq/providers/openstack/network_manager/cloud_network.rb:79
@@ -35451,7 +35473,7 @@ msgstr "Общее"
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:143
 msgid "General Purpose SSD (GP2)"
-msgstr ""
+msgstr "SSD общего назначения (GP2)"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/vpc/cloud_manager/provision_workflow/general.rb:23
@@ -35676,12 +35698,12 @@ msgstr[2] ""
 #: ../app/helpers/container_group_helper/textual_summary.rb:44
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:83
 msgid "Git Repository"
-msgstr ""
+msgstr "Репозиторий Git"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:45
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:91
 msgid "Git Revision"
-msgstr ""
+msgstr "Редакция Git"
 
 #: ../config/model_display_names.rb:126
 msgid "Git Tag"
@@ -35810,7 +35832,7 @@ msgstr ""
 #: ../app/helpers/container_group_helper/textual_summary.rb:50
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:131
 msgid "Glusterfs Endpoint Name"
-msgstr ""
+msgstr "Имя конечной точки Glusterfs"
 
 #: ../app/javascript/menu/miq-logo.jsx:42
 msgid "Go to my start page"
@@ -36743,7 +36765,7 @@ msgstr ""
 #: ../app/helpers/ems_container_helper/textual_summary.rb:89
 #: ../app/views/ems_container/_form.html.haml:80
 msgid "Hawkular"
-msgstr ""
+msgstr "Hawkular"
 
 #: src/report-editor/formatting-table.jsx:62
 msgid "Header"
@@ -36811,7 +36833,7 @@ msgstr ""
 #: ../app/helpers/vm_helper/textual_summary.rb:574
 #: ../app/views/vm_common/_right_size.html.haml:14
 msgid "High"
-msgstr ""
+msgstr "Высокое"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
@@ -38378,7 +38400,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:2086
 msgid "Host|Vmm buildnumber"
-msgstr "Номер сборки хоста/Vmm"
+msgstr ""
 
 #: ../config/model_attributes.rb:2087
 msgid "Host|Vmm product"
@@ -38741,17 +38763,17 @@ msgstr "ISCSI"
 #: ../app/helpers/container_group_helper/textual_summary.rb:49
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:123
 msgid "ISCSI Target Lun Number"
-msgstr ""
+msgstr "Номер LUN цели ISCSI"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:47
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:107
 msgid "ISCSI Target Portal"
-msgstr ""
+msgstr "Портал целей ISCSI"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:48
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:115
 msgid "ISCSI Target Qualified Name"
-msgstr ""
+msgstr "Полное имя цели ISCSI"
 
 #: ../app/views/shared/views/_prov_dialog.html.haml:52
 msgid "ISO"
@@ -38891,7 +38913,7 @@ msgstr "Изображение"
 
 #: ../app/controllers/mixins/containers_common_mixin.rb:131
 msgid "Image \"%{name}\": Error during 'Analysis': %{message}"
-msgstr ""
+msgstr "Образ \"%{name}\": ошибка во время 'Analysis': %{message}"
 
 #: ../app/models/manageiq/providers/amazon/cloud_manager/template.rb:25
 msgid "Image (Amazon)"
@@ -38946,7 +38968,7 @@ msgstr "Экспорт образов"
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:49
 msgid "Image Id"
-msgstr ""
+msgstr "ID изображения"
 
 #:
 #: ../app/helpers/manageiq/providers/ibm_power_vc/toolbar_overrides/ems_cloud_center.rb:15
@@ -38989,12 +39011,12 @@ msgstr ""
 #: ../app/controllers/container_image_registry_controller.rb:36
 #: ../app/presenters/menu/default_menu.rb:130
 msgid "Image Registries"
-msgstr ""
+msgstr "Реестры образов"
 
 #. TRANSLATORS: file: product/views/ContainerImage.yaml
 #: ../app/helpers/container_summary_helper.rb:156 ../config/yaml_strings.rb:744
 msgid "Image Registry"
-msgstr ""
+msgstr "Реестр образа"
 
 #: ../app/models/manageiq/providers/kubernetes/container_manager.rb:660
 msgid "Image Tag"
@@ -39317,7 +39339,7 @@ msgstr ""
 #:
 #: ../app/javascript/components/cloud-volume-actions-form/create-backup.schema.js:30
 msgid "Incremental?"
-msgstr ""
+msgstr "Инкрементное?"
 
 #: ../app/helpers/pxe_helper/textual_summary.rb:92
 #: ../app/views/pxe/_pxe_server_details.html.haml:43
@@ -40399,11 +40421,11 @@ msgstr ""
 
 #: ../app/helpers/container_template_helper/textual_summary.rb:20
 msgid "Kind"
-msgstr ""
+msgstr "Тип"
 
 #: ../app/views/ems_container/_form.html.haml:92
 msgid "KubeVirt"
-msgstr ""
+msgstr "KubeVirt"
 
 #: ../lib/manageiq/providers/kubevirt/engine.rb:19
 msgid "KubeVirt Provider"
@@ -40516,7 +40538,7 @@ msgstr ""
 
 #: ../app/helpers/volume_mapping_helper/textual_summary.rb:83
 msgid "LUN"
-msgstr ""
+msgstr "LUN"
 
 #. TRANSLATORS: file: product/reports/150_Configuration Management - Storage/040_LUN Information.yaml
 #: ../config/yaml_strings.rb:6390
@@ -40987,7 +41009,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:61
 msgid "Last State"
-msgstr ""
+msgstr "Последнее состояние"
 
 #. TRANSLATORS: en.yml key: dictionary.column.last_sync_on
 #. TRANSLATORS: file: product/reports/400_Operations- Virtual Machines/040_VMs_ Offline VMs not yet Scanned.yaml
@@ -40997,7 +41019,7 @@ msgstr ""
 
 #: ../app/helpers/container_node_helper/textual_summary.rb:32
 msgid "Last Transition Time"
-msgstr ""
+msgstr "Время последнего перехода"
 
 #. TRANSLATORS: file: product/views/AutomationRequest.yaml
 #. TRANSLATORS: file: product/views/MiqRequest.yaml
@@ -41053,7 +41075,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2840
 msgid "Launch External Logging"
-msgstr ""
+msgstr "Запустить внешнее журналирование"
 
 #: ../app/views/layouts/_empty.html.haml:9
 msgid "Learn more about this"
@@ -41183,7 +41205,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:155
 msgid "Limit CPU cores"
-msgstr ""
+msgstr "Лимит для ядер ЦП"
 
 #. TRANSLATORS: en.yml key: dictionary.column.limit_memory_bytes
 #: ../config/dictionary_strings.rb:1136
@@ -41192,15 +41214,15 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:156
 msgid "Limit Memory bytes"
-msgstr ""
+msgstr "Лимит для памяти, байт"
 
 #: ../app/helpers/container_project_helper/textual_summary.rb:49
 msgid "Limit Ranges"
-msgstr ""
+msgstr "Лимит для диапазонов"
 
 #: ../app/helpers/container_project_helper/textual_summary.rb:51
 msgid "Limit Request Ratio"
-msgstr ""
+msgstr "Лимит для частоты запросов"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/007_VMs w_Free Space _ 75% by LOB.yaml
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/054_VM Uptime - longest running.yaml
@@ -42092,7 +42114,7 @@ msgstr ""
 #: ../app/helpers/vm_helper/textual_summary.rb:574
 #: ../app/views/vm_common/_right_size.html.haml:18
 msgid "Low"
-msgstr ""
+msgstr "Низкое"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
@@ -42196,7 +42218,7 @@ msgstr ""
 
 #: ../app/helpers/container_node_helper/textual_summary.rb:77
 msgid "Machine ID"
-msgstr ""
+msgstr "ID машины"
 
 #: ../app/helpers/physical_server_helper/textual_summary.rb:104
 #: ../app/helpers/physical_storage_helper/textual_summary.rb:74
@@ -42206,7 +42228,7 @@ msgstr "Тип машины"
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:154
 msgid "Magnetic"
-msgstr ""
+msgstr "Magnetic"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2473
@@ -42376,19 +42398,19 @@ msgstr "Управление политиками выбранных элеме�
 
 #: ../app/helpers/application_helper/toolbar/ems_containers_center.rb:82
 msgid "Manage Policies for these Containers Providers"
-msgstr "Управление политиками этих поставщиков контейнеров"
+msgstr "Управление политиками для этих поставщиков контейнеров"
 
 #: ../app/helpers/application_helper/toolbar/container_nodes_center.rb:23
 msgid "Manage Policies for these Nodes"
-msgstr ""
+msgstr "Управление политиками для этих узлов"
 
 #: ../app/helpers/application_helper/toolbar/container_groups_center.rb:23
 msgid "Manage Policies for these Pods"
-msgstr ""
+msgstr "Управление политиками для этих подов"
 
 #: ../app/helpers/application_helper/toolbar/container_replicators_center.rb:23
 msgid "Manage Policies for these Replicators"
-msgstr ""
+msgstr "Управление политиками для этих репликаторов"
 
 #: ../app/helpers/application_helper/toolbar/ems_cloud_center.rb:55
 msgid "Manage Policies for this Cloud Provider"
@@ -42396,7 +42418,7 @@ msgstr "Управление политиками этого облачного 
 
 #: ../app/helpers/application_helper/toolbar/container_images_center.rb:44
 msgid "Manage Policies for this Container Image"
-msgstr ""
+msgstr "Управление политиками для этого образа контейнеров"
 
 #: ../app/helpers/application_helper/toolbar/ems_container_center.rb:95
 msgid "Manage Policies for this Containers Provider"
@@ -42405,7 +42427,7 @@ msgstr "Управление политиками этого поставщик�
 #: ../app/helpers/application_helper/toolbar/container_image_center.rb:35
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:72
 msgid "Manage Policies for this Image"
-msgstr ""
+msgstr "Управление политиками для этого образа"
 
 #: ../app/helpers/application_helper/toolbar/ems_infra_center.rb:68
 msgid "Manage Policies for this Infrastructure Provider"
@@ -42421,7 +42443,7 @@ msgstr "Управление политиками этого поставщик�
 
 #: ../app/helpers/application_helper/toolbar/container_node_center.rb:55
 msgid "Manage Policies for this Node"
-msgstr ""
+msgstr "Управление политиками для этого узла"
 
 #: ../app/helpers/application_helper/toolbar/ems_physical_infra_center.rb:47
 msgid "Manage Policies for this Physical Infrastructure Provider"
@@ -42429,11 +42451,11 @@ msgstr "Управление политиками этого поставщик�
 
 #: ../app/helpers/application_helper/toolbar/container_group_center.rb:46
 msgid "Manage Policies for this Pod"
-msgstr ""
+msgstr "Управление политиками для этого пода"
 
 #: ../app/helpers/application_helper/toolbar/container_replicator_center.rb:43
 msgid "Manage Policies for this Replicator"
-msgstr ""
+msgstr "Управление политиками для этого репликатора"
 
 #: ../app/helpers/application_helper/toolbar/resource_pool_center.rb:29
 msgid "Manage Policies for this Resource Pool"
@@ -42469,17 +42491,17 @@ msgstr "Управление политиками облачных постав�
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3218
 msgid "Manage Policies of Container Images"
-msgstr ""
+msgstr "Управление политиками образов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3184
 msgid "Manage Policies of Container Nodes"
-msgstr ""
+msgstr "Управление политиками узлов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3204
 msgid "Manage Policies of Container Replicators"
-msgstr ""
+msgstr "Управление политиками репликаторов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2836
@@ -42751,7 +42773,7 @@ msgstr ""
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:18
 msgid "Mapping"
-msgstr ""
+msgstr "Отображение"
 
 #: ../app/controllers/ops_controller/settings/label_tag_mapping.rb:213
 msgid ""
@@ -42806,7 +42828,7 @@ msgstr "Основное имя пользователя"
 #: ../app/helpers/vm_helper/textual_summary.rb:574
 #: ../app/views/vm_common/_right_size.html.haml:12
 msgid "Max"
-msgstr ""
+msgstr "Макс."
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
@@ -42834,7 +42856,7 @@ msgstr "Макс. параллельных"
 #. TRANSLATORS: en.yml key: dictionary.column.max_container_groups
 #: ../config/dictionary_strings.rb:1198
 msgid "Max Container Groups"
-msgstr ""
+msgstr "Макс. групп контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.max_derived_host_count_total
 #: ../config/dictionary_strings.rb:1228
@@ -42922,17 +42944,17 @@ msgstr "Макс. повторных попыток"
 #. TRANSLATORS: en.yml key: dictionary.column.max_stat_container_group_create_rate
 #: ../config/dictionary_strings.rb:1294
 msgid "Max Stat Container Group Create Rate"
-msgstr ""
+msgstr "Статистика макс. частоты создания группы контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.max_stat_container_group_delete_rate
 #: ../config/dictionary_strings.rb:1296
 msgid "Max Stat Container Group Delete Rate"
-msgstr ""
+msgstr "Статистика макс. частоты удаления группы контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.max_stat_container_image_registration_rate
 #: ../config/dictionary_strings.rb:1298
 msgid "Max Stat Container Image Registration Rate"
-msgstr ""
+msgstr "Статистика макс. частоты регистрации группы контейнеров"
 
 #: ../app/views/miq_ae_class/_method_inputs.html.haml:64
 msgid "Max TTL"
@@ -43009,7 +43031,7 @@ msgstr ""
 #: ../app/helpers/configured_system_helper/textual_summary.rb:140
 #: ../app/helpers/container_image_helper/textual_summary.rb:99
 msgid "Medium"
-msgstr ""
+msgstr "Среднее"
 
 #. TRANSLATORS: file: db/fixtures/miq_report_formats.yml
 #: ../config/yaml_strings.rb:4649
@@ -44905,7 +44927,7 @@ msgstr ""
 #: ../app/views/ems_container/_form.html.haml:78
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:34
 msgid "Metrics"
-msgstr ""
+msgstr "Метрики"
 
 #: ../app/helpers/application_helper/button/ems_capture_metrics.rb:23
 msgid "Metrics endpoint is not set"
@@ -45309,7 +45331,7 @@ msgstr "Выполнить миграцию этой ВМ на другой хо
 #: ../app/helpers/configuration_script_helper.rb:99
 #: ../app/helpers/container_project_helper/textual_summary.rb:50
 msgid "Min"
-msgstr ""
+msgstr "Минимум"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
@@ -45399,17 +45421,17 @@ msgstr ""
 #. TRANSLATORS: en.yml key: dictionary.column.min_stat_container_group_create_rate
 #: ../config/dictionary_strings.rb:1420
 msgid "Min Stat Container Group Create Rate"
-msgstr ""
+msgstr "Статистика мин. частоты создания группы контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.min_stat_container_group_delete_rate
 #: ../config/dictionary_strings.rb:1422
 msgid "Min Stat Container Group Delete Rate"
-msgstr ""
+msgstr "Статистика мин. частоты удаления группы контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.min_stat_container_image_registration_rate
 #: ../config/dictionary_strings.rb:1424
 msgid "Min Stat Container Image Registration Rate"
-msgstr ""
+msgstr "Статистика мин. частоты регистрации группы контейнеров"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
@@ -48729,7 +48751,7 @@ msgstr ""
 
 #: ../app/javascript/components/cloud-volume-form/index.jsx:49
 msgid "Modification of Cloud Volume \"%s\" has been successfully queued."
-msgstr ""
+msgstr "Изменение облачного тома \"%s\" было успешно поставлено в очередь"
 
 #: ../app/javascript/components/ansible-credentials-form/index.jsx:58
 msgid "Modification of Credential \"%s\" has been successfully queued."
@@ -48811,7 +48833,7 @@ msgstr "Изменить облачные БД"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1288
 msgid "Modify Cloud Object Store Container"
-msgstr ""
+msgstr "Изменить контейнер хранилища облачн. объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1314
@@ -48846,7 +48868,7 @@ msgstr "Изменить поставщиков диспетчеров конф�
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3362
 msgid "Modify Containers"
-msgstr ""
+msgstr "Изменить контейнеры"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2844
@@ -49026,7 +49048,7 @@ msgstr "Изменить серверы PXE"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3246
 msgid "Modify Persistent Volumes"
-msgstr ""
+msgstr "Изменить постоянные тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4188
@@ -49221,12 +49243,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4108
 msgid "Modify Volume Mapping"
-msgstr ""
+msgstr "Изменить отображения томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1358
 msgid "Modify Volumes"
-msgstr ""
+msgstr "Изменить тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1903
@@ -49826,7 +49848,7 @@ msgstr ""
 
 #: ../app/helpers/container_template_helper/textual_summary.rb:20
 msgid "Name*"
-msgstr ""
+msgstr "Имя*"
 
 #:
 #: ../app/javascript/components/host-initiator-form/host-initiator-form.schema.js:56
@@ -49884,7 +49906,7 @@ msgstr "Перейти в группу инициатора хоста %{group_n
 
 #: ../app/helpers/volume_mapping_helper/textual_summary.rb:49
 msgid "Navigate to the Cloud Volume of this Mapping"
-msgstr ""
+msgstr "Перейти к облачному тому этого отображения"
 
 #: ../app/helpers/volume_mapping_helper/textual_summary.rb:62
 msgid "Navigate to the Host Initiator of this Mapping"
@@ -50931,11 +50953,11 @@ msgstr ""
 
 #: ../app/views/static/cloud_volume_backup/volume_select.html.haml:19
 msgid "New Volume"
-msgstr ""
+msgstr "Новый том"
 
 #: ../app/views/static/cloud_volume_backup/volume_select.html.haml:22
 msgid "New Volume Name"
-msgstr ""
+msgstr "Новое имя тома"
 
 #: ../app/views/ops/_settings_help_menu_tab.html.haml:34
 msgid "New Window"
@@ -52051,7 +52073,7 @@ msgstr ""
 #: ../app/helpers/application_helper/toolbar/container_node_center.rb:25
 #: ../app/views/ems_infra/scaledown.html.haml:20
 msgid "Node"
-msgstr ""
+msgstr "Узел"
 
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/110_Number of Images per Node.yaml
 #: ../config/yaml_strings.rb:6457
@@ -52060,11 +52082,11 @@ msgstr ""
 
 #: ../app/helpers/container_service_helper/textual_summary.rb:14
 msgid "Node Port"
-msgstr ""
+msgstr "Порт узла"
 
 #: ../app/helpers/container_summary_helper.rb:91
 msgid "Node Selector"
-msgstr ""
+msgstr "Селектор узла"
 
 #: ../app/services/container_dashboard_service.rb:236
 #: ../app/views/ems_container/_show_dashboard.html.haml:31
@@ -52182,7 +52204,7 @@ msgstr ""
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:94
 msgid "Not Applicable"
-msgstr ""
+msgstr "Не применимо"
 
 #: ../app/helpers/compliance_summary_helper.rb:36
 #: ../app/helpers/container_summary_helper.rb:147
@@ -52822,7 +52844,7 @@ msgstr "Диспетчеры хранилища объектов"
 #: ../app/controllers/cloud_object_store_container_controller.rb:93
 #: ../app/presenters/menu/default_menu.rb:162
 msgid "Object Store Containers"
-msgstr ""
+msgstr "Контейнеры хранилища объектов"
 
 #: ../app/controllers/cloud_object_store_object_controller.rb:55
 #: ../app/presenters/menu/default_menu.rb:163
@@ -52863,7 +52885,7 @@ msgstr "Объекты"
 
 #: ../app/helpers/container_project_helper/textual_summary.rb:28
 msgid "Observed"
-msgstr ""
+msgstr "Наблюдаемое"
 
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:161
@@ -53043,7 +53065,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2842
 msgid "Open External Logging from Container Provider"
-msgstr "Открыть внешний вход в систему для поставщика контейнеров"
+msgstr "Открыть внешнее журналирование с поставщика контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4555
@@ -53111,6 +53133,9 @@ msgid ""
 "Open a new browser window with the External Logging Presentation UI. This requ"
 "ires the External Logging to be deployed on this Proider."
 msgstr ""
+"Открыть новое окно браузера с графич. интерфейсом презентации внешнего"
+" журналирования. "
+"Необходимо, чтобы на этом поставщике было развёрнуто внешнее ведение журналов."
 
 #: ../app/helpers/application_helper/toolbar/physical_server_center.rb:120
 msgid "Open a remote console for this Physical Server"
@@ -53179,15 +53204,15 @@ msgstr "Откройте полный отчёт в новом окне"
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:35
 msgid "OpenSCAP Failed Rules Summary"
-msgstr ""
+msgstr "Сводка сбойных правил OpenSCAP"
 
 #: ../app/helpers/container_summary_helper.rb:138
 msgid "OpenSCAP HTML"
-msgstr ""
+msgstr "OpenSCAP HTML"
 
 #: ../app/helpers/container_summary_helper.rb:123
 msgid "OpenSCAP Results"
-msgstr ""
+msgstr "Результаты OpenSCAP"
 
 #: ../lib/manageiq/providers/openshift/engine.rb:19
 msgid "OpenShift Provider"
@@ -53373,7 +53398,7 @@ msgstr ""
 #: ../app/helpers/container_image_helper/textual_summary.rb:58
 #: ../app/helpers/container_node_helper/textual_summary.rb:121
 msgid "Operating System Distribution"
-msgstr ""
+msgstr "Дистрибутив ОС"
 
 #: ../config/model_display_names.rb:169
 msgid "Operating System Flavor"
@@ -54259,7 +54284,7 @@ msgstr ""
 
 #: ../app/helpers/container_build_helper/textual_summary.rb:28
 msgid "Output Image"
-msgstr ""
+msgstr "Образ вывода"
 
 #. TRANSLATORS: en.yml key: dictionary.column.output_name
 #: ../config/dictionary_strings.rb:1560
@@ -54651,7 +54676,7 @@ msgstr "Номер изделия"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:61
 msgid "Partition"
-msgstr ""
+msgstr "Раздел"
 
 #:
 #: ../app/models/manageiq/providers/ibm_power_hmc/inventory/parser/infra_manager.rb:215
@@ -55499,7 +55524,7 @@ msgstr "Выполнить анализ SmartState в кластерах"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3220
 msgid "Perform SmartState Analysis on Containers"
-msgstr ""
+msgstr "Выполнить анализ SmartState в контейнерах"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3766
@@ -55622,38 +55647,38 @@ msgstr "Производительность: кластеры"
 #: ../config/dictionary_strings.rb:2790
 msgid "Performance - Container"
 msgid_plural "Performance - Containers"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Производительность: контейнер"
+msgstr[1] "Производительность: контейнера"
+msgstr[2] "Производительность: контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerNodePerformance
 #: ../config/dictionary_strings.rb:2814
 msgid "Performance - Container Node"
-msgstr ""
+msgstr "Производительность: узел контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerNodePerformance (plural form)
 #: ../config/dictionary_strings.rb:2816
 msgid "Performance - Container Nodes"
-msgstr ""
+msgstr "Производительность: узлы контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerProjectPerformance
 #: ../app/models/container_project_performance.rb:7
 #: ../config/dictionary_strings.rb:2822
 msgid "Performance - Container Project"
 msgid_plural "Performance - Container Projects"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Производительность: проект контейнера"
+msgstr[1] "Производительность: проекты контейнера"
+msgstr[2] "Производительность: проекты контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerProjectPerformance (plural form)
 #: ../config/dictionary_strings.rb:2824
 msgid "Performance - Container Projects"
-msgstr ""
+msgstr "Производительность: проекты контейнера"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerPerformance (plural form)
 #: ../config/dictionary_strings.rb:2792
 msgid "Performance - Containers"
-msgstr ""
+msgstr "Производительность: контейнеры"
 
 #. TRANSLATORS: en.yml key: dictionary.model.StoragePerformance
 #: ../app/models/storage_performance.rb:7 ../config/dictionary_strings.rb:3778
@@ -55758,27 +55783,29 @@ msgstr ""
 #. TRANSLATORS: en.yml key: dictionary.model.PersistentVolume
 #: ../config/dictionary_strings.rb:3684
 msgid "Persistent Volume"
-msgstr ""
+msgstr "Постоянный том"
 
 #: ../config/model_display_names.rb:178
+#, fuzzy
 msgid "Persistent Volume Claim"
 msgid_plural "Persistent Volume Claims"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Заявка постоянного тома"
+msgstr[1] "Заявки постоянных томов"
 msgstr[2] ""
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:51
 msgid "Persistent Volume Claim Name"
-msgstr ""
+msgstr "Имя заявки постоянного тома"
 
 #. TRANSLATORS: file: product/views/PersistentVolume.yaml
 #: ../config/yaml_strings.rb:1621
 msgid "Persistent Volumes"
-msgstr ""
+msgstr "Постоянные тома"
 
 #: ../config/model_attributes.rb:3674
+#, fuzzy
 msgid "Persistent volume claim"
-msgstr ""
+msgstr "Заявка на постоянный том"
 
 #. TRANSLATORS: file: product/views/PersistentVolume.yaml
 #: ../config/yaml_strings.rb:1623
@@ -56887,32 +56914,32 @@ msgstr "Под соответствует требованиям"
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:759
 msgid "Pod Container Created"
-msgstr ""
+msgstr "Контейнер пода создан"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:763
 msgid "Pod Container Failed"
-msgstr ""
+msgstr "Сбой контейнера пода"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:767
 msgid "Pod Container Killing"
-msgstr ""
+msgstr "Убийство контейнера пода"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:771
 msgid "Pod Container Started"
-msgstr ""
+msgstr "Контейнер пода запущен"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:775
 msgid "Pod Container Stopped"
-msgstr ""
+msgstr "Контейнер пода остановлен"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:779
 msgid "Pod Container Unhealthy"
-msgstr ""
+msgstr "Контейнер пода неработоспособный"
 
 #: ../app/javascript/components/container-projects/helper.jsx:353
 #: ../app/javascript/components/container-projects/helper.jsx:363
@@ -56962,9 +56989,9 @@ msgstr ""
 #: ../app/models/container_group_performance.rb:7
 msgid "Pod Performance"
 msgid_plural "Pod Performances"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Производительность пода"
+msgstr[1] "Производительность пода"
+msgstr[2] "Производительность пода"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:743
@@ -56974,7 +57001,7 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/100_Pod counts For Container Images by Project.yaml
 #: ../config/yaml_strings.rb:6447
 msgid "Pod counts For Container Images by Project"
-msgstr ""
+msgstr "Число подов для образов контейнеров по проектам"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:723
@@ -57420,7 +57447,7 @@ msgstr "Порт"
 
 #: ../app/helpers/container_service_helper/textual_summary.rb:25
 msgid "Port Configurations"
-msgstr ""
+msgstr "Конфигурации портов"
 
 #: ../app/presenters/tree_node/lan.rb:3
 msgid "Port Group: %{name}"
@@ -57454,7 +57481,7 @@ msgstr "Тип порта:"
 #: ../app/helpers/container_service_helper/textual_summary.rb:52
 #: ../config/yaml_strings.rb:817
 msgid "Portal IP"
-msgstr ""
+msgstr "IP портала"
 
 #. TRANSLATORS: en.yml key: dictionary.column.portal_ip
 #: ../config/dictionary_strings.rb:1618
@@ -57970,7 +57997,7 @@ msgstr "Имя пользователя для повышения привиле
 
 #: ../app/helpers/container_helper/textual_summary.rb:96
 msgid "Privileged"
-msgstr ""
+msgstr "Привилегированный"
 
 #. TRANSLATORS: en.yml key: dictionary.column.process
 #: ../config/dictionary_strings.rb:1634
@@ -58145,7 +58172,7 @@ msgstr "Название продукта"
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:63
 msgid "Product Type"
-msgstr ""
+msgstr "Тип продукта"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ProductUpdate
 #: ../config/dictionary_strings.rb:3706
@@ -58239,7 +58266,7 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/120_Projects by Number of Containers.yaml
 #: ../config/yaml_strings.rb:6459
 msgid "Projects by Number of Containers"
-msgstr ""
+msgstr "Проекты по числу контейнеров"
 
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/070_Projects by Pod Number.yaml
 #: ../config/yaml_strings.rb:6433
@@ -58254,7 +58281,7 @@ msgstr ""
 #: ../app/views/ems_container/_form.html.haml:69
 #: ../app/views/ems_container/_form.html.haml:80
 msgid "Prometheus"
-msgstr ""
+msgstr "Prometheus"
 
 #: ../app/helpers/application_helper/toolbar/diagnostics_region_center.rb:59
 #: ../app/helpers/application_helper/toolbar/diagnostics_zone_center.rb:62
@@ -58352,7 +58379,7 @@ msgstr "Свойства"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:66
 msgid "Property"
-msgstr ""
+msgstr "Свойство"
 
 #. TRANSLATORS: en.yml key: dictionary.column.proportional_set_size
 #: ../config/dictionary_strings.rb:1642
@@ -58378,7 +58405,7 @@ msgstr ""
 #: ../app/helpers/network_service_helper/textual_summary.rb:38
 #: ../config/yaml_strings.rb:560
 msgid "Protocol"
-msgstr ""
+msgstr "Протокол"
 
 #. TRANSLATORS: en.yml key: dictionary.column.prov_type
 #: ../config/dictionary_strings.rb:1644
@@ -58723,7 +58750,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:3814
 msgid "Provider|Capabilities"
-msgstr ""
+msgstr "Provider|Возможности"
 
 #: ../config/model_attributes.rb:3815
 msgid "Provider|Guid"
@@ -58903,7 +58930,7 @@ msgstr ""
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:144
 msgid "Provisioned IOPS SSD (IO1)"
-msgstr ""
+msgstr "Подготовленный IOPS SSD (IO1)"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:215
 msgid "Provisioned On"
@@ -59289,7 +59316,7 @@ msgstr ""
 
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:35
 msgid "Quantity"
-msgstr ""
+msgstr "Количество"
 
 #: ../app/models/miq_report/generator.rb:16
 msgid "Quarter"
@@ -59379,7 +59406,7 @@ msgstr "Превышена квота для маршрутизаторов"
 #: ../app/javascript/components/container-projects/helper.jsx:390
 #: ../app/javascript/components/container-projects/helper.jsx:396
 msgid "Quotas"
-msgstr ""
+msgstr "Квоты"
 
 #: ../app/controllers/ops_controller/ops_rbac.rb:158
 msgid "Quotas for %{model} \"%{name}\" were saved"
@@ -59457,27 +59484,27 @@ msgstr ""
 #: ../app/helpers/container_group_helper/textual_summary.rb:52
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:140
 msgid "Rados Ceph Monitors"
-msgstr ""
+msgstr "Мониторы Rados Ceph"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:53
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:149
 msgid "Rados Image Name"
-msgstr ""
+msgstr "Имя образа Rados"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:56
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:173
 msgid "Rados Keyring"
-msgstr ""
+msgstr "Набор ключей Rados"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:54
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:157
 msgid "Rados Pool Name"
-msgstr "Имя пула RADOS"
+msgstr "Имя пула Rados"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:55
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:165
 msgid "Rados User Name"
-msgstr ""
+msgstr "Имя пользователя Rados"
 
 #. TRANSLATORS: en.yml key: dictionary.column.ram_size_in_bytes
 #: ../config/dictionary_strings.rb:1668
@@ -59755,7 +59782,7 @@ msgstr ""
 #: ../app/helpers/container_group_helper/textual_summary.rb:59
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:194
 msgid "Read-Only"
-msgstr ""
+msgstr "Только для чтения"
 
 #. TRANSLATORS: file: product/views/ContainerGroup.yaml
 #. TRANSLATORS: file: product/views/ContainerNode.yaml
@@ -59772,12 +59799,12 @@ msgstr ""
 #: ../app/javascript/components/container-projects/helper.jsx:413
 #: ../app/javascript/spec/chart-card/chart-card.spec.js:139
 msgid "Ready Containers"
-msgstr ""
+msgstr "Готовые контейнеры"
 
 #: ../app/javascript/components/container-projects/helper.jsx:412
 #: ../app/javascript/spec/chart-card/chart-card.spec.js:138
 msgid "Ready Status"
-msgstr ""
+msgstr "Статус готовности"
 
 #: ../app/models/miq_alert.rb:443
 msgid "Real Time Performance"
@@ -62015,7 +62042,7 @@ msgstr "Удалить серверы PXE из инвентаря"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3248
 msgid "Remove Persistent Volume"
-msgstr ""
+msgstr "Удалить постоянный том"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4190
@@ -62205,7 +62232,7 @@ msgstr "Удалить ВМ из инвентаря"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1388
 msgid "Remove Volumes"
-msgstr ""
+msgstr "Удалить тома"
 
 #: ../app/presenters/widget_presenter.rb:29
 msgid "Remove Widget"
@@ -62793,7 +62820,7 @@ msgstr ""
 #: ../app/controllers/container_replicator_controller.rb:38
 #: ../app/presenters/menu/default_menu.rb:124 ../config/yaml_strings.rb:803
 msgid "Replicators"
-msgstr ""
+msgstr "Репликаторы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.replicators_count
 #: ../config/dictionary_strings.rb:1726
@@ -63078,7 +63105,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:157
 msgid "Request CPU cores"
-msgstr ""
+msgstr "Запросить ядра ЦП"
 
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/110_Provisioning Activity - by Approver.yaml
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/120_Provisioning Activity - by Datastore.yaml
@@ -63136,7 +63163,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:158
 msgid "Request Memory bytes"
-msgstr ""
+msgstr "Запросить байтов памяти"
 
 #. TRANSLATORS: file: product/views/MiqRequest.yaml
 #: ../app/views/miq_request/_request.html.haml:20
@@ -63164,7 +63191,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:153
 msgid "Request and Limits"
-msgstr ""
+msgstr "Запросы и лимиты"
 
 #: ../app/controllers/miq_request_controller.rb:119
 msgid "Request approval was cancelled by the user"
@@ -63254,7 +63281,7 @@ msgstr ""
 
 #: ../app/helpers/container_replicator_helper/textual_summary.rb:26
 msgid "Requested pods"
-msgstr ""
+msgstr "Запрошенные поды"
 
 #. TRANSLATORS: file: product/views/AutomationRequest.yaml
 #. TRANSLATORS: file: product/views/MiqRequest.yaml
@@ -63484,9 +63511,9 @@ msgstr ""
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:35
 msgid "Resource"
 msgid_plural "Resources"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Ресурс"
+msgstr[1] "Ресурса"
+msgstr[2] "Ресурсов"
 
 #: ../app/models/mixins/miq_provision_mixin.rb:314
 msgid ""
@@ -63564,7 +63591,7 @@ msgstr "Сводка пулов ресурсов"
 
 #: ../app/helpers/container_project_helper/textual_summary.rb:27
 msgid "Resource Quota"
-msgstr ""
+msgstr "Квота ресурса"
 
 #. TRANSLATORS: file: product/views/OrchestrationStackResource.yaml
 #: ../config/yaml_strings.rb:1596
@@ -64080,20 +64107,20 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1474
 msgid "Restore Backup to Volume"
-msgstr ""
+msgstr "Восстановить резервную копию в виде тома"
 
 #: ../app/controllers/cloud_volume_controller.rb:249
 msgid "Restore Cloud Volume \"%{name}\" from a Backup"
-msgstr ""
+msgstr "Восстановить облачный том \"%{name}\" из резервной копии"
 
 #: ../app/controllers/cloud_volume_backup_controller.rb:23
 msgid "Restore Cloud Volume Backup \"%{name}\""
-msgstr ""
+msgstr "Восстановить облачный том из рез. копии \"%{name}\""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_backup_center.rb:12
 #: ../app/helpers/application_helper/toolbar/cloud_volume_backups_center.rb:12
 msgid "Restore backup to Cloud Volume"
-msgstr ""
+msgstr "Восстановить резервную копию в виде тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1368
@@ -64102,24 +64129,26 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/cloud_volumes_center.rb:33
 msgid "Restore from a Backup of selected Cloud Volume"
-msgstr ""
+msgstr "Восстановить из рез. копии выбранного облачного тома"
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_center.rb:22
 msgid "Restore from a Backup of this Cloud Volume"
-msgstr ""
+msgstr "Восстановить из рез. копии этого облачного тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1370
 msgid "Restore from a Volume Backup"
-msgstr ""
+msgstr "Восстановить из рез. копии тома"
 
 #: ../app/javascript/components/cloud-volume-actions-form/helper.js:46
 msgid "Restore from backup of Cloud Volume \"%s\" was canceled by the user."
 msgstr ""
+"Восстановление из рез. копии облачного тома \"%s\" было отменено"
+" пользователем."
 
 #: ../app/javascript/components/cloud-volume-backup-form/helper.js:12
 msgid "Restore of Cloud Volume \"%s\" was canceled by the user."
-msgstr ""
+msgstr "Восстановление облачного тома \"%s\" было отменено пользователем."
 
 #:
 #: ../app/javascript/oldjs/controllers/dialog_editor/dialog_editor_controller.js:47
@@ -64128,27 +64157,30 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_backup_controller.rb:39
 msgid "Restore to Cloud Volume \"%{name}\" was cancelled by the user"
-msgstr ""
+msgstr "Восстановление в облачный том \"%{name}\" было отменено пользователем"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4821
 msgid ""
 "Restoring Backup %{subject} of Volume %{volume_name} completed successfully."
 msgstr ""
+"Восстановление тома %{volume_name} из рез. копии %{subject} успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4823
 msgid ""
 "Restoring Backup %{subject} of Volume %{volume_name} failed: %{error_message}"
 msgstr ""
+"Сбой восстановления тома %{volume_name} из рез. копии %{subject}: "
+"%{error_message}"
 
 #: ../app/javascript/components/cloud-volume-backup-form/helper.js:17
 msgid "Restoring Cloud Volume \"%s\" from backup"
-msgstr ""
+msgstr "Облачный том \"%s\" восстанавливается из рез. копии"
 
 #: ../app/controllers/cloud_volume_backup_controller.rb:65
 msgid "Restoring Cloud Volume \"%{name}\""
-msgstr ""
+msgstr "Восстанавливается облачный том \"%{name}\""
 
 #. TRANSLATORS: file: product/views/OpenscapRuleResult.yaml
 #: ../config/yaml_strings.rb:1580
@@ -64654,11 +64686,11 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:130
 msgid "Run As Non Root"
-msgstr ""
+msgstr "Запустить не как root"
 
 #: ../app/helpers/container_helper/textual_summary.rb:103
 msgid "Run As User"
-msgstr ""
+msgstr "Запустить как пользователь"
 
 #. TRANSLATORS: file: product/views/MiqReportResult-all.yaml
 #. TRANSLATORS: file: product/views/MiqReportResult.yaml
@@ -64714,7 +64746,7 @@ msgstr "Выполняется (%{number})"
 #. TRANSLATORS: en.yml key: dictionary.column.running_containers_summary
 #: ../config/dictionary_strings.rb:1778
 msgid "Running Containers Summary"
-msgstr ""
+msgstr "Сводка запущенных контейнеров"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_hourly.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_hourly_cloud.yaml
@@ -64806,19 +64838,19 @@ msgstr "SCVMM"
 
 #: ../app/helpers/container_helper/textual_summary.rb:125
 msgid "SELinux Level"
-msgstr ""
+msgstr "Уровень SELinux"
 
 #: ../app/helpers/container_helper/textual_summary.rb:115
 msgid "SELinux Role"
-msgstr ""
+msgstr "Роль SELinux"
 
 #: ../app/helpers/container_helper/textual_summary.rb:120
 msgid "SELinux Type"
-msgstr ""
+msgstr "Тип SELinux"
 
 #: ../app/helpers/container_helper/textual_summary.rb:110
 msgid "SELinux User"
-msgstr ""
+msgstr "Пользовать SELinux"
 
 #: ../app/views/ops/_email_verify_button.html.haml:15
 msgid ""
@@ -64881,6 +64913,7 @@ msgid "SSL trusting custom CA"
 msgstr "Настраиваемый ЦС доверия SSL"
 
 #: ../app/models/manageiq/providers/vmware/container_manager.rb:114
+#, fuzzy
 #: ../app/models/manageiq/providers/vmware/infra_manager.rb:129
 msgid "SSL verification"
 msgstr "Верификация SSL"
@@ -64912,7 +64945,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1392
 msgid "Safely Remove Volumes"
-msgstr ""
+msgstr "Безопасное удаление томов"
 
 #. TRANSLATORS: en.yml key: dictionary.model.FileDepotSmb
 #: ../app/models/file_depot_smb.rb:19 ../config/dictionary_strings.rb:2888
@@ -65542,7 +65575,7 @@ msgstr ""
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:62
 msgid "Secret Name"
-msgstr ""
+msgstr "Имя секрета"
 
 #: ../app/controllers/utilization_controller.rb:72
 #: ../app/views/chargeback_assignment/_form.html.haml:133
@@ -66619,7 +66652,7 @@ msgstr "Выбранное"
 
 #: ../app/helpers/container_summary_helper.rb:87
 msgid "Selector"
-msgstr ""
+msgstr "Селектор"
 
 #: ../app/views/layouts/remote_console.html.haml:20
 msgid "Send CTRL+ALT+DEL"
@@ -67039,9 +67072,9 @@ msgstr "Каталоги служб"
 #: ../config/model_display_names.rb:216
 msgid "Service Container Template"
 msgid_plural "Service Container Templates"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Шаблон контейнера службы"
+msgstr[1] "Шаблоны контейнера службы"
+msgstr[2] "Шаблоны контейнера службы"
 
 #:
 #: ../app/javascript/components/service-dialog-from-form/service-dialog-from.jsx:22
@@ -67050,7 +67083,7 @@ msgstr ""
 
 #: ../app/controllers/mixins/containers_common_mixin.rb:97
 msgid "Service Dialog \"%{name}\" was successfully created"
-msgstr ""
+msgstr "Диалог службы \"%{name}\" был успешно создан"
 
 #: ../app/controllers/miq_ae_customization_controller.rb:285
 msgid "Service Dialog Import / Export"
@@ -67064,7 +67097,7 @@ msgstr "Импорт/экспорт диалога службы"
 #: ../app/javascript/components/service-dialog-from-form/service-dialog-from.schema.js:23
 #: ../app/views/container_template/_service_dialog_from_ct.html.haml:8
 msgid "Service Dialog Name"
-msgstr ""
+msgstr "Имя диалога службы"
 
 #: ../app/controllers/miq_ae_customization_controller.rb:214
 msgid "Service Dialogs"
@@ -68745,7 +68778,7 @@ msgstr "Показать предв. просмотр взимания сред�
 
 #: ../app/helpers/ems_cloud_helper/textual_summary.rb:101
 msgid "Show Cloud Volumes"
-msgstr ""
+msgstr "Показать облачные тома"
 
 #: ../app/helpers/ems_cluster_helper/textual_summary.rb:194
 msgid "Show Cluster drift history"
@@ -68954,7 +68987,7 @@ msgstr "Показать временные шкалы для этого обл�
 
 #: ../app/helpers/application_helper/toolbar/container_center.rb:12
 msgid "Show Timelines for this Container"
-msgstr ""
+msgstr "Показать временные шкалы для этого контейнера"
 
 #: ../app/helpers/application_helper/toolbar/ems_container_center.rb:55
 msgid "Show Timelines for this Containers Provider"
@@ -68974,7 +69007,7 @@ msgstr "Показать временные шкалы для этого пос�
 
 #: ../app/helpers/application_helper/toolbar/container_node_center.rb:12
 msgid "Show Timelines for this Node"
-msgstr ""
+msgstr "Показать временные шкалы для этого узла"
 
 #: ../app/helpers/application_helper/toolbar/ems_physical_infra_center.rb:73
 msgid "Show Timelines for this Physical Infrastructure Provider"
@@ -68990,15 +69023,15 @@ msgstr "Показать временные шкалы для этого пос�
 
 #: ../app/helpers/application_helper/toolbar/container_group_center.rb:12
 msgid "Show Timelines for this Pod"
-msgstr ""
+msgstr "Показать временные шкалы для этого пода"
 
 #: ../app/helpers/application_helper/toolbar/container_project_center.rb:12
 msgid "Show Timelines for this Project"
-msgstr ""
+msgstr "Показать временные шкалы для этого проекта"
 
 #: ../app/helpers/application_helper/toolbar/container_replicator_center.rb:12
 msgid "Show Timelines for this Replicator"
-msgstr ""
+msgstr "Показать временные шкалы для этого репликатора"
 
 #: ../app/helpers/application_helper/toolbar/ems_storage_center.rb:67
 msgid "Show Timelines for this Storage Manager"
@@ -69037,11 +69070,11 @@ msgstr ""
 
 #: ../app/helpers/vm_helper/textual_summary.rb:155
 msgid "Show VMM container information"
-msgstr ""
+msgstr "Показать сведения об этом контейнере диспетчера вирт. машин"
 
 #: ../app/helpers/textual_mixins/textual_vmm_info.rb:13
 msgid "Show VMM information"
-msgstr ""
+msgstr "Показать сведения об этом диспетчере вирт. машин"
 
 #: ../app/helpers/textual_mixins/textual_devices.rb:10
 msgid "Show VMs devices"
@@ -69094,7 +69127,7 @@ msgstr ""
 
 #: ../app/helpers/cloud_tenant_helper/textual_summary.rb:101
 msgid "Show all Cloud Object Store Containers"
-msgstr ""
+msgstr "Показать все контейнеры хранилища облачн. объектов"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:397
 msgid "Show all Cloud Subnets"
@@ -69102,23 +69135,23 @@ msgstr ""
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:110
 msgid "Show all Cloud Volume Backups"
-msgstr ""
+msgstr "Показать все рез. копии облачного тома"
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:100
 msgid "Show all Cloud Volume Snapshots"
-msgstr ""
+msgstr "Показать все снимки облачных томов"
 
 #: ../app/helpers/availability_zone_helper/textual_summary.rb:26
 msgid "Show all Cloud Volumes"
-msgstr ""
+msgstr "Показать все облачные тома"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:440
 msgid "Show all Cloud Volumes attached to this VM."
-msgstr ""
+msgstr "Показать все облачные тома, присоединённые к этой ВМ"
 
 #: ../app/helpers/cloud_volume_snapshot_helper/textual_summary.rb:22
 msgid "Show all Cloud Volumes based on this Snapshot."
-msgstr ""
+msgstr "Показать все облачные тома на основе этого снимка"
 
 #: ../app/helpers/ems_configuration_helper/textual_summary.rb:56
 msgid "Show all Configuration Profiles"
@@ -69221,7 +69254,7 @@ msgstr "Показать ВМ в этом пуле ресурсов"
 
 #: ../app/helpers/ems_container_helper/textual_summary.rb:77
 msgid "Show all Volumes"
-msgstr ""
+msgstr "Показать все тома"
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:120
 msgid "Show all attached Instances"
@@ -69492,14 +69525,18 @@ msgstr "Показать арендаторов облака этой рез. к
 #: ../app/helpers/cloud_object_store_container_helper/textual_summary.rb:44
 msgid "Show this Cloud Object Store's child Cloud Object Store Objects"
 msgstr ""
+"Показать объекты дочернего хранилища облачных объектов этого хранилища"
+" облачных объектов"
 
 #: ../app/helpers/cloud_object_store_container_helper/textual_summary.rb:34
 msgid "Show this Cloud Object Store's parent Cloud Tenant"
-msgstr ""
+msgstr "Показать арендатора-родителя этого хранилища облачных объектов"
 
 #: ../app/helpers/cloud_object_store_object_helper/textual_summary.rb:54
 msgid "Show this Cloud Object's parent Cloud Object Store Container"
 msgstr ""
+"Показать контейнер-родитель хранилища облачных объектов для этого хранилища"
+" облачных объектов"
 
 #: ../app/helpers/cloud_object_store_object_helper/textual_summary.rb:40
 msgid "Show this Cloud Object's parent Cloud Tenant"
@@ -69602,7 +69639,7 @@ msgstr "Показать зону доступности этого тома"
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:80
 msgid "Show this Volume's Base Snapshot"
-msgstr ""
+msgstr "Показать базовый снимок этого тома"
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:90
 msgid "Show this Volume's Cloud Tenants"
@@ -69738,7 +69775,7 @@ msgstr "Перевести в режим ожидания"
 
 #: ../app/helpers/container_helper/textual_summary.rb:53
 msgid "Signal"
-msgstr ""
+msgstr "Сигнал"
 
 #: ../app/models/authenticator/amazon.rb:115
 msgid "SignatureMismatch - check your AWS Secret Access Key and signing method"
@@ -69831,7 +69868,7 @@ msgstr "Одиночное значение"
 #: ../app/views/vm_common/_snapshots_desc.html.haml:18
 #: ../config/yaml_strings.rb:581
 msgid "Size"
-msgstr ""
+msgstr "Размер"
 
 #. TRANSLATORS: file: product/views/StorageFile-debris_files.yaml
 #. TRANSLATORS: file: product/views/StorageFile-disk_files.yaml
@@ -70061,7 +70098,7 @@ msgstr ""
 #: ../app/javascript/components/action-form/action-form.schema.js:43
 #: ../app/javascript/components/cloud-volume-actions-form/create-snapshot.schema.js:14
 msgid "Snapshot Name"
-msgstr ""
+msgstr "Имя снимка"
 
 #. TRANSLATORS: en.yml key: dictionary.column.v_snapshot_newest_description
 #: ../config/dictionary_strings.rb:2052
@@ -70123,11 +70160,11 @@ msgstr ""
 
 #: ../app/javascript/components/cloud-volume-actions-form/helper.js:68
 msgid "Snapshot for Cloud Volume \"%s\" created"
-msgstr ""
+msgstr "Снимок облачного тома \"%s\" был создан"
 
 #: ../app/javascript/components/cloud-volume-actions-form/helper.js:62
 msgid "Snapshot for Cloud Volume \"%s\" was canceled by the user."
-msgstr ""
+msgstr "Создание снимка для облачного тома \"%s\" было отменено пользователем."
 
 #: ../app/views/vm_common/_snap.html.haml:4
 msgid "Snapshot information"
@@ -70649,7 +70686,7 @@ msgstr ""
 
 #: ../app/helpers/container_helper/textual_summary.rb:41
 msgid "Started At"
-msgstr ""
+msgstr "Когда запущен:"
 
 #: ../app/views/ops/_selected_by_roles.html.haml:51
 #: ../app/views/ops/_selected_by_servers.html.haml:26
@@ -70704,17 +70741,17 @@ msgstr ""
 #. TRANSLATORS: en.yml key: dictionary.column.stat_container_group_create_rate
 #: ../config/dictionary_strings.rb:1838
 msgid "Stat Container Group Create Rate"
-msgstr ""
+msgstr "Статистика частоты создания группы контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.stat_container_group_delete_rate
 #: ../config/dictionary_strings.rb:1840
 msgid "Stat Container Group Delete Rate"
-msgstr ""
+msgstr "Статистика частоты удаления группы контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.stat_container_image_registration_rate
 #: ../config/dictionary_strings.rb:1842
 msgid "Stat Container Image Registration Rate"
-msgstr ""
+msgstr "Статистика частоты регистрации группы контейнеров"
 
 #. TRANSLATORS: file: product/views/Container.yaml
 #. TRANSLATORS: file: product/views/MiqTask.yaml
@@ -72122,12 +72159,12 @@ msgstr "Поддерживает блочные хранилища"
 #. TRANSLATORS: en.yml key: dictionary.column.supports_cinder_volume_types
 #: ../config/dictionary_strings.rb:1882
 msgid "Supports Cinder Volume Types"
-msgstr ""
+msgstr "Поддерживает тип томов Cinder"
 
 #. TRANSLATORS: en.yml key: dictionary.column.supports_cloud_object_store_container_create
 #: ../config/dictionary_strings.rb:1884
 msgid "Supports Cloud Object Store Container Create"
-msgstr ""
+msgstr "Поддерживает создание контейнера хранилища облачн. объектов"
 
 #. TRANSLATORS: en.yml key: dictionary.column.supports_create_security_group
 #: ../config/dictionary_strings.rb:1886
@@ -72157,12 +72194,12 @@ msgstr "Поддерживает зоны доступности для тома
 #. TRANSLATORS: en.yml key: dictionary.column.supports_volume_multiattachment
 #: ../config/dictionary_strings.rb:1896
 msgid "Supports Volume Multiattachment"
-msgstr ""
+msgstr "Поддерживает присоединение нескольких томов"
 
 #. TRANSLATORS: en.yml key: dictionary.column.supports_volume_resizing
 #: ../config/dictionary_strings.rb:1898
 msgid "Supports Volume Resizing"
-msgstr ""
+msgstr "Поддерживает изменение размеров томов"
 
 #: ../app/helpers/configuration_script_helper.rb:97
 msgid "Surveys"
@@ -72411,7 +72448,7 @@ msgstr ""
 
 #: ../app/helpers/container_node_helper/textual_summary.rb:72
 msgid "System BIOS UUID"
-msgstr ""
+msgstr "BIOS UUID системы"
 
 #: ../config/model_display_names.rb:238
 msgid "System Console"
@@ -72806,7 +72843,7 @@ msgstr ""
 
 #: ../app/helpers/term_of_service_helper.rb:45
 msgid "Tagged Container Images"
-msgstr ""
+msgstr "Образы контейнеров с тегами"
 
 #: ../app/helpers/term_of_service_helper.rb:26
 msgid "Tagged Datastores"
@@ -72921,7 +72958,7 @@ msgstr ""
 
 #: ../app/helpers/container_service_helper/textual_summary.rb:14
 msgid "Target Port"
-msgstr ""
+msgstr "Целевой порт"
 
 #. TRANSLATORS: en.yml key: dictionary.column.target_type
 #: ../config/dictionary_strings.rb:1922
@@ -73869,7 +73906,7 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_snapshot_controller.rb:60
 msgid "The selected Cloud Volume Snapshot was deleted"
-msgstr ""
+msgstr "Выбранный снимок облачного тома был удалён"
 
 #: ../app/controllers/ops_controller/diagnostics.rb:477
 msgid "The selected EVM Server was deleted"
@@ -74404,7 +74441,7 @@ msgstr ""
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:145
 msgid "Throughput Optimized HDD (ST1)"
-msgstr ""
+msgstr "HDD с оптимизированной пропускной способностью (ST1)"
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:82
 msgid "Thursday"
@@ -74892,7 +74929,7 @@ msgstr "Всего настроенной памяти машины"
 #. TRANSLATORS: en.yml key: dictionary.column.total_containers
 #: ../config/dictionary_strings.rb:1948
 msgid "Total Containers"
-msgstr ""
+msgstr "Всего контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.total_cost
 #. TRANSLATORS: file: product/charts/miq_reports/vm_chargeback.yaml
@@ -75791,6 +75828,8 @@ msgstr ""
 msgid ""
 "Unable to attach Cloud Volume \"%{volume_name}\" to %{vm_name}: %{details}"
 msgstr ""
+"Не удалось присоединить облачный том \"%{volume_name}\" к %{vm_name}: "
+"%{details}"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/storage_manager/cloud_volume.rb:169
@@ -75811,7 +75850,7 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_controller.rb:152
 msgid "Unable to create Cloud Volume \"%{name}\": %{details}"
-msgstr ""
+msgstr "Не удалось создать облачный том \"%{name}\": %{details}"
 
 #: ../app/controllers/floating_ip_controller.rb:76
 msgid "Unable to create Floating IP \"%{address}\": %{details}"
@@ -75854,7 +75893,7 @@ msgstr "Не удалось удалить \"%{name}\", т.к. у него ес�
 
 #: ../app/controllers/cloud_volume_backup_controller.rb:99
 msgid "Unable to delete Backup \"%{name}\": %{details}"
-msgstr ""
+msgstr "Не удалось удалить рез. копию \"%{name}\": %{details}"
 
 #: ../app/controllers/application_controller/ci_processing.rb:849
 msgid "Unable to delete Flavor \"%{name}\": %{details}"
@@ -75868,11 +75907,13 @@ msgstr ""
 msgid ""
 "Unable to detach Cloud Volume \"%{volume_name}\" from %{vm_name}: %{details}"
 msgstr ""
+"Не удалось отсоединить облачный том \"%{volume_name}\" от %{vm_name}: "
+"%{details}"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/storage_manager/cloud_volume.rb:178
 msgid "Unable to detach volume: %{error_message}"
-msgstr "Не удалось отключить том: %{error_message}"
+msgstr "Не удалось отсоединить том: %{error_message}"
 
 #: ../app/controllers/mixins/actions/vm_actions/disassociate_floating_ip.rb:97
 msgid ""
@@ -76038,7 +76079,7 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_backup_controller.rb:70
 msgid "Unable to restore Cloud Volume \"%{name}\": %{details}"
-msgstr ""
+msgstr "Не удалось восстановить облачный том \"%{name}\": %{details}"
 
 #:
 #: ../app/models/manageiq/providers/amazon/agent_coordinator_worker/runner/response_thread.rb:66
@@ -76051,7 +76092,7 @@ msgstr ""
 
 #: ../app/controllers/cloud_volume_controller.rb:218
 msgid "Unable to update Cloud Volume \"%{name}\": %{details}"
-msgstr ""
+msgstr "Не удалось обновить облачный том \"%{name}\": %{details}"
 
 #: ../app/controllers/host_aggregate_controller.rb:176
 #: ../app/controllers/host_aggregate_controller.rb:259
@@ -76135,7 +76176,7 @@ msgstr "Неиспользованное выделенное пространс
 #: ../app/helpers/container_group_helper/textual_summary.rb:112
 #: ../app/helpers/container_node_helper/textual_summary.rb:92
 msgid "Underlying %{name}"
-msgstr ""
+msgstr "Базовый %{name}"
 
 #: ../app/views/layouts/_exp_editor.html.haml:18
 msgid "Undo the last change"
@@ -76226,7 +76267,7 @@ msgstr ""
 
 #: ../app/models/container_image.rb:82
 msgid "Unknown image source"
-msgstr ""
+msgstr "Неизвестный источник образа"
 
 #: ../app/models/mixins/ownership_mixin.rb:67
 msgid "Unknown option, '%{name}'"
@@ -76472,12 +76513,12 @@ msgstr "Когда обновлялось: "
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4805
 msgid "Updating Volume %{subject} completed successfully."
-msgstr ""
+msgstr "Обновление тома %{subject} успешно завершено"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4807
 msgid "Updating Volume %{subject} failed: %{error_message}"
-msgstr ""
+msgstr "Сбой обновления тома %{subject}: %{error_message}"
 
 #: ../app/views/catalog/_sandt_tree_show.html.haml:230
 #: ../app/views/miq_ae_customization/_dialog_import_export.html.haml:41
@@ -78487,7 +78528,7 @@ msgstr ""
 
 #: ../app/models/vm_or_template/operations/configuration.rb:137
 msgid "VM has no EMS, unable to clone volume"
-msgstr ""
+msgstr "У ВМ нет EMS, невозможно клонировать том"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:47
 msgid "VM has no EMS, unable to connect CD-ROM devices"
@@ -78659,37 +78700,37 @@ msgstr "ВМ: %{name} (нажмите для просмотра)"
 
 #: ../app/helpers/host_helper/textual_summary.rb:159
 msgid "VMM Build"
-msgstr "Сборка VMM"
+msgstr "Сборка диспетчера вирт. машин"
 
 #. TRANSLATORS: en.yml key: dictionary.column.vmm_buildnumber
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/010_Summary.yaml
 #: ../config/dictionary_strings.rb:2446 ../config/yaml_strings.rb:6011
 msgid "VMM Build Number"
-msgstr "Номер сборки VMM"
+msgstr "Номер сборки диспетчера вирт. машин"
 
 #: ../app/helpers/textual_mixins/textual_vmm_info.rb:5
 msgid "VMM Information"
-msgstr ""
+msgstr "Сведения о диспетчере вирт. машин"
 
 #. TRANSLATORS: en.yml key: dictionary.column.vmm_product
 #: ../config/dictionary_strings.rb:2448
 msgid "VMM Platform"
-msgstr ""
+msgstr "Платформа диспетчера вирт. машин"
 
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/010_Summary.yaml
 #: ../config/yaml_strings.rb:6007
 msgid "VMM Product"
-msgstr ""
+msgstr "Продукт диспетчера вирт. машин"
 
 #. TRANSLATORS: en.yml key: dictionary.column.vmm_vendor
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/010_Summary.yaml
 #: ../config/dictionary_strings.rb:2450 ../config/yaml_strings.rb:6005
 msgid "VMM Vendor"
-msgstr ""
+msgstr "Производитель диспетчера вирт. машин"
 
 #: ../app/helpers/host_helper/textual_summary.rb:155
 msgid "VMM Version"
-msgstr "Версия VMM"
+msgstr "Версия диспетчера вирт. машин"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:278
 #: ../app/helpers/textual_summary_helper.rb:215
@@ -78940,37 +78981,38 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/028_VMs with Volume Free Space -= 20%.yaml
 #: ../config/yaml_strings.rb:5806
 msgid "VMs with Volume Free Space <= 20%"
-msgstr ""
+msgstr "ВМ со свободным местом на томе <= 20%"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/005_VMs with Free Space _ 50% by Department.yaml
 #: ../config/yaml_strings.rb:5526
 msgid "VMs with Volume Free Space > 50% by Department"
-msgstr ""
+msgstr "ВМ со свободным местом на томе > 50%, по отделам"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
 #: ../config/yaml_strings.rb:5594
 msgid "VMs with Volume Free Space > 75% by Function"
-msgstr ""
+msgstr "ВМ со свободным местом на томе > 75%, по функционалу"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/007_VMs w_Free Space _ 75% by LOB.yaml
 #: ../config/yaml_strings.rb:5598
 msgid "VMs with Volume Free Space > 75% by Line of Business"
-msgstr ""
+msgstr "ВМ со свободным местом на томе > 75%, по направлению бизнеса"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:6730
 msgid "VMs with Volume Free Space >= 75%"
-msgstr ""
+msgstr "ВМ со свободным местом на томе >= 75%"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:6728
 msgid "VMs with Volume Free Space >= 75% (sorted by Datastore)"
 msgstr ""
+"ВМ со свободным местом на томе >= 75% (сортировка по хранилищам данным)"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/029_VMs with Volume Free Space -= 80%.yaml
 #: ../config/yaml_strings.rb:5808
 msgid "VMs with Volume Free Space >= 80%"
-msgstr ""
+msgstr "ВМ со свободным местом на томе >= 80%"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/053_VMs with disk free space _ 5GB.yaml
 #: ../config/yaml_strings.rb:6746
@@ -79347,7 +79389,7 @@ msgstr "Переменная"
 #, fuzzy
 #: ../app/views/miq_alert/_alert_snmp.html.haml:59
 msgid "Variable Object ID"
-msgstr "Переменный ID объекта"
+msgstr ""
 
 #:
 #: ../app/javascript/oldjs/controllers/catalog/catalog_item_form_controller.js:383
@@ -79601,7 +79643,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1278
 msgid "View Cloud Object Store Containers"
-msgstr ""
+msgstr "Просмотреть контейнеры хранилища облачн. объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1304
@@ -79666,37 +79708,37 @@ msgstr "Просмотреть сборку контейнера"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3226
 msgid "View Container Image Registries"
-msgstr ""
+msgstr "Просмотреть реестры образов контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3208
 msgid "View Container Images"
-msgstr ""
+msgstr "Просмотреть образы контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3170
 msgid "View Container Nodes"
-msgstr ""
+msgstr "Просмотреть узлы контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3322
 msgid "View Container Project Topology"
-msgstr ""
+msgstr "Просмотреть топологию проекта контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3328
 msgid "View Container Projects"
-msgstr ""
+msgstr "Просмотреть проекты контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3190
 msgid "View Container Replicators"
-msgstr ""
+msgstr "Просмотреть репликаторы контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3310
 msgid "View Container Routes"
-msgstr ""
+msgstr "Просмотреть маршруты контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3294
@@ -79706,12 +79748,12 @@ msgstr "Просмотреть службы контейнеров"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3278
 msgid "View Container Template"
-msgstr ""
+msgstr "Просмотреть шаблон контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3348
 msgid "View Containers"
-msgstr ""
+msgstr "Просмотреть контейнеры"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3376
@@ -79726,7 +79768,7 @@ msgstr "Просмотреть поставщиков контейнеров"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3372
 msgid "View Containers Topology"
-msgstr ""
+msgstr "Просмотреть топологию контейнеров"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3512
@@ -79962,7 +80004,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3240
 msgid "View Persistent Volumes"
-msgstr ""
+msgstr "Новые постоянные тома"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4218
@@ -80261,17 +80303,17 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4096
 msgid "View Volume Mappings"
-msgstr ""
+msgstr "Просмотреть отображения томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1482
 msgid "View Volume Types"
-msgstr ""
+msgstr "Новые типы облачных томов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1348
 msgid "View Volumes"
-msgstr ""
+msgstr "Просмотреть тома"
 
 #: ../app/views/ops/_settings_details_tab.html.haml:28
 #: ../app/views/ops/_settings_details_tab.html.haml:30
@@ -80675,7 +80717,7 @@ msgstr "Виртуальные машины добавлены"
 #: ../app/views/ems_container/_form.html.haml:90
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:42
 msgid "Virtualization"
-msgstr ""
+msgstr "Виртуализация"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_CloudManager_Template.yaml
 #: ../app/helpers/vm_cloud_helper/textual_summary.rb:83
@@ -81884,7 +81926,7 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/100_Newest Hosts.yaml
 #: ../config/dictionary_strings.rb:2098 ../config/yaml_strings.rb:6221
 msgid "Vmm Vendor Display"
-msgstr ""
+msgstr "Показать производителя диспетчера вирт. машин"
 
 #: ../app/javascript/components/provider-dashboard-charts/charts_config.js:89
 msgid "Vms"
@@ -81902,7 +81944,7 @@ msgstr ""
 #: ../app/views/vm_common/_attach.html.haml:13
 #: ../app/views/vm_common/_detach.html.haml:13 ../config/yaml_strings.rb:1924
 msgid "Volume"
-msgstr ""
+msgstr "Том"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/vpc/cloud_manager/provision_workflow/volumes.rb:103
@@ -81950,7 +81992,7 @@ msgstr ""
 #: ../app/controllers/cloud_volume_backup_controller.rb:117
 #: ../app/presenters/menu/default_menu.rb:155
 msgid "Volume Backups"
-msgstr ""
+msgstr "Рез. копии тома"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/storage_manager/cloud_volume.rb:116
@@ -81958,8 +82000,9 @@ msgid "Volume Base Name"
 msgstr "Базовое имя тома"
 
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:23
+#, fuzzy
 msgid "Volume Claim"
-msgstr ""
+msgstr "Заявка на том"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/005_VMs with Free Space _ 50% by Department.yaml
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
@@ -81969,7 +82012,7 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:5592
 msgid "Volume Filesystem"
-msgstr ""
+msgstr "Файловая система тома"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/005_VMs with Free Space _ 50% by Department.yaml
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
@@ -81978,17 +82021,17 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/029_VMs with Volume Free Space -= 80%.yaml
 #: ../config/yaml_strings.rb:5567
 msgid "Volume Free Space"
-msgstr ""
+msgstr "Свободное место на томе"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:6734
 msgid "Volume Free Space (%)"
-msgstr ""
+msgstr "Свободное место на томе (%)"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:6738
 msgid "Volume Free Space (bytes)"
-msgstr ""
+msgstr "Свободное место на томе (байт)"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/005_VMs with Free Space _ 50% by Department.yaml
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
@@ -81997,12 +82040,12 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/029_VMs with Volume Free Space -= 80%.yaml
 #: ../config/yaml_strings.rb:5561
 msgid "Volume Free Space Percent"
-msgstr ""
+msgstr "Проценты свободного места на томе"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:60
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:202
 msgid "Volume ID"
-msgstr ""
+msgstr "ID тома"
 
 #. TRANSLATORS: en.yml key: dictionary.table.volume_mapping
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
@@ -82010,9 +82053,9 @@ msgstr ""
 #: ../config/yaml_strings.rb:4092
 msgid "Volume Mapping"
 msgid_plural "Volume Mappings"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Отображение тома"
+msgstr[1] "Отображения тома"
+msgstr[2] "Отображений тома"
 
 #. TRANSLATORS: file: product/views/VolumeMapping.yaml
 #: ../app/controllers/volume_mapping_controller.rb:47
@@ -82021,16 +82064,16 @@ msgstr[2] ""
 #: ../app/services/ems_storage_dashboard_service.rb:55
 #: ../config/yaml_strings.rb:1916
 msgid "Volume Mappings"
-msgstr "Отображения томов"
+msgstr "Отображения тома"
 
 #:
 #: ../app/javascript/components/cloud-volume-form/cloud-volume-form.schema.js:42
 msgid "Volume Name"
-msgstr ""
+msgstr "Имя тома"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:57
 msgid "Volume Path"
-msgstr ""
+msgstr "Путь тома"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/005_VMs with Free Space _ 50% by Department.yaml
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
@@ -82039,16 +82082,16 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/029_VMs with Volume Free Space -= 80%.yaml
 #: ../config/yaml_strings.rb:5573
 msgid "Volume Size"
-msgstr ""
+msgstr "Размер тома"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:6742
 msgid "Volume Size (bytes)"
-msgstr ""
+msgstr "Размер тома (байт)"
 
 #: ../app/models/miq_template.rb:56
 msgid "Volume Snapshot"
-msgstr ""
+msgstr "Снимок тома"
 
 #:
 #: ../app/models/manageiq/providers/openstack/cloud_manager/volume_snapshot_template.rb:14
@@ -82067,7 +82110,7 @@ msgstr "Шаблоны снимков томов (Openstack)"
 #: ../app/helpers/cloud_tenant_helper/textual_summary.rb:86
 #: ../app/presenters/menu/default_menu.rb:154
 msgid "Volume Snapshots"
-msgstr ""
+msgstr "Снимки тома"
 
 #:
 #: ../app/models/manageiq/providers/openstack/cloud_manager/volume_template.rb:14
@@ -82085,12 +82128,12 @@ msgstr "Шаблоны тома (Openstack)"
 #. TRANSLATORS: en.yml key: dictionary.column.volume_type
 #: ../config/dictionary_strings.rb:2102
 msgid "Volume Type"
-msgstr ""
+msgstr "Тип тома"
 
 #: ../app/controllers/cloud_volume_type_controller.rb:29
 #: ../app/presenters/menu/default_menu.rb:156
 msgid "Volume Types"
-msgstr ""
+msgstr "Типы томов"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/005_VMs with Free Space _ 50% by Department.yaml
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
@@ -82099,17 +82142,17 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/029_VMs with Volume Free Space -= 80%.yaml
 #: ../config/yaml_strings.rb:5585
 msgid "Volume Used Space"
-msgstr ""
+msgstr "Используемое место на томе"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:6736
 msgid "Volume Used Space (%)"
-msgstr ""
+msgstr "Используемое место на томе (%)"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/052_VMs with Volume Free Space -= 75%.yaml
 #: ../config/yaml_strings.rb:6740
 msgid "Volume Used Space (bytes)"
-msgstr ""
+msgstr "Используемое место на томе (байт)"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/005_VMs with Free Space _ 50% by Department.yaml
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
@@ -82118,25 +82161,25 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/029_VMs with Volume Free Space -= 80%.yaml
 #: ../config/yaml_strings.rb:5579
 msgid "Volume Used Space Percent"
-msgstr ""
+msgstr "Проценты используемого места на томе"
 
 #: ../config/model_attributes.rb:4848
 msgid "Volume mapping"
-msgstr ""
+msgstr "Отображение тома"
 
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:179
 msgid "Volume path"
-msgstr ""
+msgstr "Путь тома"
 
 #:
 #: ../app/javascript/components/volume-mapping-form/volume-mapping-form.schema.js:85
 msgid "Volume:"
-msgstr ""
+msgstr "Том:"
 
 #. TRANSLATORS: file: product/views/VolumeMapping.yaml
 #: ../config/yaml_strings.rb:1918
 msgid "VolumeMapping"
-msgstr ""
+msgstr "VolumeMapping"
 
 #: ../config/model_attributes.rb:4849
 msgid "VolumeMapping|Ems ref"
@@ -82290,6 +82333,9 @@ msgid ""
 "Warning: ALL Objects will be permanently removed from the selected Object Stor"
 "age Containers!"
 msgstr ""
+"Предупреждение: ВСЕ объекты будут навсегда удалены из выбранных контейнеров"
+" хранилища"
+" объектов"
 
 #: ../app/helpers/application_helper/toolbar/tasks_center.rb:46
 msgid "Warning: Finished tasks will be permanently removed from the database!"
@@ -82346,7 +82392,7 @@ msgstr "Предупреждение: выбранные арендаторы о
 
 #: ../app/helpers/application_helper/toolbar/cloud_volume_backups_center.rb:27
 msgid "Warning: The selected Cloud Volume Backups will be removed!"
-msgstr ""
+msgstr "Предупреждение: выбранные рез. копии облачного тома будут удалены"
 
 #: ../app/helpers/application_helper/toolbar/ems_containers_center.rb:55
 msgid ""
@@ -82576,7 +82622,7 @@ msgstr "Предупреждение: выбранные задачи будут
 #: ../app/helpers/application_helper/toolbar/volume_mapping_center.rb:34
 #: ../app/helpers/application_helper/toolbar/volume_mappings_center.rb:42
 msgid "Warning: The selected volume mappings will be permanently deleted!"
-msgstr ""
+msgstr "Предупреждение: выбранные отображения тома будут навсегда удалены"
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:449
 #: ../app/controllers/report_controller/schedules.rb:289
@@ -83631,7 +83677,7 @@ msgstr "доступно"
 
 #: ../app/models/cloud_volume.rb:192
 msgid "available_vms must be implemented in a subclass"
-msgstr ""
+msgstr "available_vms необходимо реализовать в подкласс"
 
 #: ../app/views/layouts/_perf_options.html.haml:46
 #: ../app/views/layouts/_perf_options.html.haml:78
@@ -83646,8 +83692,8 @@ msgstr ""
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/storage_manager/cloud_volume.rb:12
 msgid "cannot attach non-shareable volume that is in use."
 msgstr ""
-"невозможно прикрепить том, который нельзя сделать общим, находящийся в"
-" использовании"
+"невозможно присоединить находящийся в использовании том, который нельзя"
+" сделать общим"
 
 #: ../app/models/ext_management_system.rb:215
 msgid "cannot be changed because the provider is paused"
@@ -83728,7 +83774,7 @@ msgstr "console_url необходимо реализовать в подкла�
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_sets.yml
 #: ../config/yaml_strings.rb:643
 msgid "container_operations"
-msgstr ""
+msgstr "container_operations"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:745
@@ -83993,7 +84039,7 @@ msgstr "настройка инициатора хоста был отменен
 
 #: ../app/javascript/components/volume-mapping-form/index.jsx:39
 msgid "defining of volume mapping was cancelled by the user"
-msgstr ""
+msgstr "настройка отображения тома была отменена пользователем"
 
 #: ../app/models/host_aggregate.rb:87
 msgid "delete_aggregate must be implemented in a subclass"
@@ -84474,7 +84520,7 @@ msgstr "экземпляры"
 
 #: ../app/models/container_template.rb:22
 msgid "instantiate must be implemented in a subclass"
-msgstr ""
+msgstr "instantiate необходимо реализовать в подклассе"
 
 #: ../app/models/chargeback/report_options.rb:89
 #: ../app/models/chargeback/report_options.rb:105
@@ -84526,7 +84572,7 @@ msgstr ""
 
 #: ../app/helpers/ems_container_helper/textual_summary.rb:101
 msgid "kubevirt"
-msgstr ""
+msgstr "kubevirt"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:433
 msgid "kubevirt URL and API port fields are needed to perform validation."
@@ -84965,7 +85011,7 @@ msgstr "processor_type"
 #: ../app/helpers/ems_container_helper/textual_summary.rb:93
 #: ../app/helpers/ems_container_helper/textual_summary.rb:97
 msgid "prometheus"
-msgstr ""
+msgstr "prometheus"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:376
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:404
@@ -85639,7 +85685,7 @@ msgstr ""
 
 #: ../app/models/cloud_volume_snapshot.rb:83
 msgid "update_snapshot must be implemented in a subclass"
-msgstr ""
+msgstr "update_snapshot необходимо реализовать в подклассе"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/cloud_manager/vm/operations.rb:74
