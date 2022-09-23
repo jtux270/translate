@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: manageiq 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-09 08:49-0400\n"
-"PO-Revision-Date: 2022-09-22 23:49+0300\n"
+"PO-Revision-Date: 2022-09-23 19:50+0300\n"
 "Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
 "Language-Team: RU\n"
 "Language: ru\n"
@@ -1966,7 +1966,7 @@ msgstr "(Отметить всё)"
 
 #: ../app/views/configuration/_ui_3.html.haml:8
 msgid "(Checked default filters will be visible.)"
-msgstr "(Отмеченные исходные фильтры будут видимыми)"
+msgstr "(Отмеченные фильтры по умолчанию будут видимыми)"
 
 #: ../app/views/layouts/_edit_to_email.html.haml:9
 msgid "(Click to remove)"
@@ -2038,10 +2038,9 @@ msgid "* Base the report on"
 msgstr "* Отчёт основан на"
 
 #: ../app/views/miq_alert/_form.html.haml:51
-#, fuzzy
 msgid "* Cannot be changed while this Alert belongs to an Alert Profile."
 msgstr ""
-"* Нельзя изменить, если данное оповещение принадлежит к профилю оповещений"
+"* Нельзя изменить, пока данное оповещение принадлежит к профилю оповещений"
 
 #: ../app/controllers/report_controller/reports/editor.rb:142
 msgid ""
@@ -2184,7 +2183,7 @@ msgstr ""
 
 #: ../app/views/layouts/_protect.html.haml:12
 msgid "* Policy Profile is only applied to some of the items below."
-msgstr ""
+msgstr "* Профиль политики применяется только к некоторым элементам ниже"
 
 #: ../app/views/ops/_zone_tree.html.haml:10
 #, fuzzy
@@ -2203,27 +2202,27 @@ msgstr ""
 #: ../app/views/ops/_settings_import_tab.html.haml:30
 #: ../app/views/ops/_settings_import_tags_tab.html.haml:20
 msgid "* Requirements: CSV formatted file."
-msgstr ""
+msgstr "* Требования: файл в формате CSV"
 
 #: ../app/views/ops/_settings_custom_logos_tab.html.haml:109
 msgid "* Requirements: File-type - ICO;"
-msgstr ""
+msgstr "* Требования: тип файла - ICO;"
 
 #: ../app/views/ops/_settings_custom_logos_tab.html.haml:79
 msgid "* Requirements: File-type - PNG;"
-msgstr ""
+msgstr "* Требования: тип файла - PNG;"
 
 #: ../app/views/ops/_settings_custom_logos_tab.html.haml:52
 msgid "* Requirements: File-type - PNG; Dimensions - 1280x1000."
-msgstr ""
+msgstr "* Требования: тип файла - PNG; разрешение: 1280x1000."
 
 #: ../app/views/ops/_settings_custom_logos_tab.html.haml:19
 msgid "* Requirements: File-type - PNG; Dimensions - 350x70."
-msgstr ""
+msgstr "* Требования: тип файла - PNG; разрешение: 350x70."
 
 #: ../app/views/catalog/_sandt_tree_show.html.haml:231
 msgid "* Requires image file in .png or .jpg format"
-msgstr ""
+msgstr "* Требуется файл изображения в формате .png или .jpg"
 
 #: ../app/javascript/components/retirement-form/retirement-form.schema.js:72
 #: ../app/views/static/retirement-form.html.haml:48
@@ -2769,7 +2768,7 @@ msgstr ""
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:5
 msgid "<Determine at Run Time>"
-msgstr ""
+msgstr "<Определить во время выполнения>"
 
 #: ../app/models/miq_report/generator/html.rb:144
 #: ../app/models/chargeback.rb:121 ../app/models/chargeback.rb:124
@@ -2787,7 +2786,7 @@ msgstr "<Empty>"
 #: ../app/views/ops/_ap_form_registry.html.haml:18
 #: ../app/views/ops/_classification_entry.html.haml:41
 msgid "<New Entry>"
-msgstr ""
+msgstr "<Новая запись>"
 
 #: ../app/controllers/ops_controller/diagnostics.rb:752
 msgid "<No Depot>"
@@ -2817,7 +2816,7 @@ msgstr ""
 #: ../app/views/miq_request/_request_dialog_details.html.haml:31
 #: ../app/views/shared/buttons/_ab_options_form.html.haml:64
 msgid "<None>"
-msgstr ""
+msgstr "<Нет>"
 
 #: ../app/views/layouts/_perf_options.html.haml:137
 msgid "<Nothing>"
@@ -2829,14 +2828,14 @@ msgstr ""
 
 #: ../app/controllers/miq_ae_tools_controller.rb:104
 msgid "<Same as import from>"
-msgstr ""
+msgstr "<Аналог «импорта из»>"
 
 #: ../app/models/dialog_field_text_box.rb:57
 #: ../app/models/dialog_field_sorted_item.rb:53
 #: ../app/models/dialog_field_date_control.rb:38
 #: ../app/models/dialog_field_check_box.rb:13
 msgid "<Script error>"
-msgstr ""
+msgstr "<Ошибка сценария>"
 
 #: ../app/controllers/report_controller/widgets.rb:330
 msgid "<To All Users>"
@@ -3167,7 +3166,7 @@ msgstr[2] "Задач потока процедур AWX"
 #: ../app/javascript/oldjs/controllers/dialog_editor/dialog_editor_controller.js:68
 #: ../app/javascript/oldjs/miq_application.js:319
 msgid "Abandon changes?"
-msgstr ""
+msgstr "Забыть изменения?"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4625
@@ -3297,13 +3296,16 @@ msgstr ""
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:85
 msgid "Access Key ID"
-msgstr ""
+msgstr "ID ключа доступа"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:85
 msgid ""
 "Access Key ID and matching Secret Access Key fields are needed to perform veri"
 "fication of credentials"
 msgstr ""
+"Для выполнения верификации учётных данных требуется поле ID ключа доступа, а"
+" также "
+"поле совпадающего ключа секретного доступа"
 
 #. TRANSLATORS: file: product/views/PersistentVolume.yaml
 #: ../config/yaml_strings.rb:1625
@@ -3535,11 +3537,11 @@ msgstr ""
 
 #: ../app/helpers/catalog_helper.rb:5
 msgid "Action Start"
-msgstr ""
+msgstr "Запустить действие"
 
 #: ../app/helpers/catalog_helper.rb:5
 msgid "Action Stop"
-msgstr ""
+msgstr "Остановить действие"
 
 #: ../app/helpers/miq_action_helper.rb:6
 #: ../app/javascript/components/action-form/action-form.schema.js:512
@@ -3707,12 +3709,13 @@ msgstr ""
 #: ../app/javascript/components/miq-alert-set-form/miq-alert-set-form.schema.js:60
 #: ../app/javascript/components/policy-profile-form/policy-profile-form.schema.js:28
 msgid "Add All"
-msgstr ""
+msgstr "Добавить всё"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1062
+#, fuzzy
 msgid "Add Atomic Catalog Item"
-msgstr ""
+msgstr "Добавить элемент в атомарный каталог"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2235
@@ -3756,7 +3759,7 @@ msgstr "Добавить возможности"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1100
 msgid "Add Catalog"
-msgstr ""
+msgstr "Добавить каталог"
 
 #:
 #: ../app/helpers/helper/manageiq/providers/nsxt/toolbar_overrides/cloud_networks_center.rb:25
@@ -3765,8 +3768,9 @@ msgstr "Добавить облачную сеть (NSX-T)"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1050
+#, fuzzy
 msgid "Add Composite Catalog Item"
-msgstr ""
+msgstr "Добавить элемент в композитный каталог"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3414
@@ -3776,7 +3780,7 @@ msgstr "Добавить поставщика диспетчера конфиг�
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3516
 msgid "Add Credentials"
-msgstr ""
+msgstr "Добавить учётные данные"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2371
@@ -3929,7 +3933,7 @@ msgstr "Добавить новый облачный том"
 
 #: ../app/helpers/application_helper/toolbar/ansible_credentials_center.rb:12
 msgid "Add New Credential"
-msgstr ""
+msgstr "Добавить новые учётные данные"
 
 #: ../app/controllers/floating_ip_controller.rb:118
 msgid "Add New Floating IP"
@@ -3949,7 +3953,7 @@ msgstr "Добавить новый сетевой маршрутизатор"
 
 #: ../app/helpers/application_helper/toolbar/ansible_repositories_center.rb:35
 msgid "Add New Repository"
-msgstr ""
+msgstr "Добавить новый репозиторий"
 
 #: ../app/controllers/security_group_controller.rb:135
 msgid "Add New Security Group"
@@ -3981,7 +3985,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3494
 msgid "Add Playbook"
-msgstr ""
+msgstr "Добавить набор сценариев"
 
 #: ../app/helpers/application_helper/toolbar/tenant_center.rb:20
 msgid "Add Project to this Tenant"
@@ -4004,7 +4008,7 @@ msgstr ""
 
 #: ./src/dialog-editor/components/box/box.html:55
 msgid "Add Section"
-msgstr ""
+msgstr "Добавить раздел"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3726
@@ -4060,7 +4064,7 @@ msgstr "Добавить типы системных образов"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2437
 msgid "Add Time Profiles"
-msgstr ""
+msgstr "Добавить профили времени"
 
 #: ../app/controllers/vm_common.rb:549
 msgid "Add VM \"%{name}\" to a Service was cancelled by the user"
@@ -4068,7 +4072,7 @@ msgstr "Добавление ВМ \"%{name}\" к службе было отме�
 
 #: ../app/helpers/application_helper/toolbar/scan_profiles_center.rb:18
 msgid "Add VM Analysis Profile"
-msgstr ""
+msgstr "Добавить профиль анализа ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1436
@@ -4105,13 +4109,15 @@ msgstr "Добавить облачного поставщика"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1102
+#, fuzzy
 msgid "Add a Composite Catalog"
-msgstr ""
+msgstr "Добавить композитный каталог"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1052
+#, fuzzy
 msgid "Add a Composite Catalog Item"
-msgstr ""
+msgstr "Добавить элемент композитного каталога"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2043
@@ -4165,12 +4171,12 @@ msgstr "Добавить «плавающий» IP"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2405
 msgid "Add a Generic Object"
-msgstr ""
+msgstr "Добавить общий объект"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2357
 msgid "Add a Generic Object Class"
-msgstr ""
+msgstr "Добавить класс общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2549
@@ -4292,7 +4298,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/miq_policy_sets_center.rb:12
 msgid "Add a New Policy Profile"
-msgstr ""
+msgstr "Добавить новый профиль политики"
 
 #: ../app/helpers/application_helper/toolbar/ems_storages_center.rb:24
 msgid "Add a New Storage Manager"
@@ -4316,7 +4322,7 @@ msgstr "Добавить физич. хранилище"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3496
 msgid "Add a Playbook"
-msgstr ""
+msgstr "Добавить набор сценариев"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2013
@@ -4336,14 +4342,13 @@ msgstr "Добавить оповещение политики"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2097
-#, fuzzy
 msgid "Add a Policy Alert Profile"
 msgstr "Добавить профиль оповещений политики"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1995
 msgid "Add a Policy Profile"
-msgstr ""
+msgstr "Добавить профиль политики"
 
 #: ../app/views/layouts/_empty.html.haml:5
 #: ../app/views/layouts/_empty.html.haml:15
@@ -4362,7 +4367,7 @@ msgstr ""
 
 #: ../app/views/catalog/_form_resources_info.html.haml:11
 msgid "Add a Resource"
-msgstr ""
+msgstr "Добавить ресурс"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2569
@@ -4557,7 +4562,7 @@ msgstr "Добавить новый «плавающий» IP"
 #: ../app/controllers/generic_object_definition_controller.rb:83
 #: ../app/helpers/application_helper/toolbar/generic_object_definitions_center.rb:11
 msgid "Add a new Generic Object Definition"
-msgstr ""
+msgstr "Добавить новое определение класса общих объектов"
 
 #: ../app/helpers/application_helper/toolbar/miq_groups_center.rb:12
 msgid "Add a new Group"
@@ -4626,7 +4631,7 @@ msgstr "Добавить новый тип системного образа"
 
 #: ../app/helpers/application_helper/toolbar/time_profiles_center.rb:12
 msgid "Add a new Time Profile"
-msgstr ""
+msgstr "Добавить новый профиль времени"
 
 #: ../app/helpers/application_helper/toolbar/users_center.rb:12
 msgid "Add a new User"
@@ -4634,7 +4639,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/scan_profiles_center.rb:17
 msgid "Add a new VM Analysis Profile"
-msgstr ""
+msgstr "Добавить новый профиль анализа ВМ"
 
 #: ../app/helpers/application_helper/toolbar/miq_widgets_center.rb:19
 msgid "Add a new Widget"
@@ -4719,7 +4724,7 @@ msgstr ""
 
 #: ../app/controllers/configuration_controller.rb:222
 msgid "Add new Time Profile"
-msgstr ""
+msgstr "Добавить новый профиль времени"
 
 #: ../app/helpers/application_helper/toolbar/host_initiator_groups_center.rb:25
 msgid "Add new host initiator group"
@@ -4740,7 +4745,7 @@ msgstr ""
 #:
 #: ../app/javascript/oldjs/controllers/catalog/catalog_item_form_controller.js:197
 msgid "Add of Catalog Item was cancelled by the user"
-msgstr ""
+msgstr "Добавление элемента каталога было отменено пользователем"
 
 #: ../app/javascript/components/cloud-database-form/cloud-database-form.jsx:50
 msgid "Add of Cloud Database \"%s\" has been successfully queued."
@@ -4772,7 +4777,7 @@ msgstr "Добавление облачного тома \"%s\" было усп�
 
 #: ../app/javascript/components/ansible-credentials-form/index.jsx:59
 msgid "Add of Credential \"%s\" has been successfully queued."
-msgstr ""
+msgstr "Добавление учётных данных \"%s\" было успешно поставлено в очередь"
 
 #: ../app/javascript/oldjs/components/miq_ae_class/namespace-form.js:53
 msgid "Add of Domain was cancelled by user."
@@ -4845,7 +4850,7 @@ msgstr "Добавление нового оповещения было отме
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:242
 msgid "Add of new Analysis Profile was cancelled by the user"
-msgstr ""
+msgstr "Добавление нового профиля анализа было отменено пользователем"
 
 #: ../app/controllers/miq_ae_class_controller.rb:1317
 msgid "Add of new Automate Class was cancelled by the user"
@@ -4865,11 +4870,11 @@ msgstr ""
 
 #: ../app/controllers/catalog_controller.rb:430
 msgid "Add of new Catalog Bundle was cancelled by the user"
-msgstr ""
+msgstr "Добавление набора каталогов было отменено пользователем"
 
 #: ../app/controllers/catalog_controller.rb:735
 msgid "Add of new Catalog was cancelled by the user"
-msgstr ""
+msgstr "Добавление нового каталога было отменено пользователем"
 
 #: ../app/controllers/ops_controller/settings/tags.rb:47
 msgid "Add of new Category was cancelled by the user"
@@ -4912,6 +4917,7 @@ msgstr "Добавление нового диалога было отменен
 #: ../app/javascript/components/generic-objects-form/index.jsx:149
 msgid "Add of new Generic Object Definition was cancelled by the user."
 msgstr ""
+"Добавление нового определения общего объекта было отменено пользователем"
 
 #: ../app/javascript/components/pxe-iso-datastore-form/index.jsx:25
 msgid "Add of new ISO Datastore was cancelled by the user"
@@ -4991,7 +4997,7 @@ msgstr "Добавить этот виджет отчётов"
 #: ../app/views/ops/_classification_entry.html.haml:10
 #: ../app/views/ops/_ldap_forest_entries.html.haml:34
 msgid "Add this entry"
-msgstr ""
+msgstr "Добавить эту запись"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4599
@@ -5033,7 +5039,7 @@ msgstr "Добавление нового профиля оповещения"
 
 #: ../app/controllers/ops_controller.rb:671
 msgid "Adding a new Analysis Profile"
-msgstr ""
+msgstr "Добавляется новый профиль анализа"
 
 #: ../app/controllers/miq_ae_class_controller.rb:695
 msgid "Adding a new Automate Class"
@@ -5059,11 +5065,11 @@ msgstr "Добавление новой группы кнопок"
 
 #: ../app/controllers/catalog_controller.rb:1107
 msgid "Adding a new Catalog"
-msgstr ""
+msgstr "Добавляется новый каталог"
 
 #: ../app/controllers/catalog_controller.rb:1317
 msgid "Adding a new Catalog Bundle"
-msgstr ""
+msgstr "Добавляется новый набор каталогов"
 
 #: ../app/controllers/ops_controller.rb:655
 msgid "Adding a new Category"
@@ -5154,11 +5160,11 @@ msgstr "Добавляется новая панель мониторинга"
 
 #: ../app/controllers/configuration_controller.rb:288
 msgid "Adding copy of '%{description}'"
-msgstr ""
+msgstr "Добавляется копия '%{description}'"
 
 #: ../app/javascript/components/settings-time-profile-form/index.jsx:28
 msgid "Adding new time profile was cancelled by the user."
-msgstr ""
+msgstr "Добавление нового профиля времени было отменено пользователем"
 
 #: ../app/javascript/components/routers-form/index.jsx:132
 msgid "Adding of Network Router %s has been successfully queued."
@@ -5264,7 +5270,7 @@ msgstr "Административное состояние"
 
 #: ./src/dialog-editor/components/modal-field/field.html:17
 msgid "Advanced"
-msgstr ""
+msgstr "Дополнительно"
 
 #: ../app/views/shared/buttons/_ab_advanced_form.html.haml:4
 msgid "Advanced Options"
@@ -5385,7 +5391,7 @@ msgstr "Том схожести"
 
 #: ../app/controllers/catalog_controller.rb:899
 msgid "After Playbook runs"
-msgstr ""
+msgstr "После запуска набора сценариев"
 
 #: ../app/views/shared/views/_alerts_list.html.haml:47
 msgid "Age"
@@ -5650,7 +5656,7 @@ msgstr ""
 #: ../app/controllers/generic_object_definition_controller.rb:203
 #: ../app/controllers/vm_common.rb:825
 msgid "All %{models}"
-msgstr ""
+msgstr "Все %{models}"
 
 #: ../app/controllers/mixins/policy_mixin.rb:355
 msgid "All %{typ} Alert Profiles"
@@ -5696,7 +5702,7 @@ msgstr "Все настроенные системы Ansible Tower"
 #: ../app/controllers/catalog_controller.rb:1688
 #: ../app/presenters/tree_builder_catalog_items.rb:13
 msgid "All Catalog Items"
-msgstr ""
+msgstr "Все элементы каталога"
 
 #: ../app/controllers/catalog_controller.rb:1692
 #: ../app/presenters/tree_builder_catalogs.rb:10
@@ -5802,7 +5808,7 @@ msgstr "Все файлы"
 
 #: ../app/presenters/tree_builder_generic_object_definition.rb:10
 msgid "All Generic Object Definitions"
-msgstr ""
+msgstr "Все определения общих объектов"
 
 #: ../app/presenters/tree_builder_report_dashboards.rb:22
 msgid "All Groups"
@@ -5962,7 +5968,7 @@ msgstr "Все арендаторы"
 #: ../app/javascript/components/settings-tasks-form/settings-tasks-form.schema.js:6
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:38
 msgid "All Users"
-msgstr ""
+msgstr "Все пользователи"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3608
@@ -6093,7 +6099,7 @@ msgstr "Все изменения были сброшены"
 #:
 #: ../app/javascript/oldjs/controllers/ops/pglogical_replication_form_controller.js:85
 msgid "All current subscriptions will be removed"
-msgstr ""
+msgstr "Все текущие подписки будут удалены"
 
 #: ../app/controllers/miq_ae_tools_controller.rb:331
 msgid "All custom classes and instances have been reset to default"
@@ -6264,7 +6270,7 @@ msgstr "Уже имеет хранилище данных ISO"
 #: ../app/helpers/view_helper.rb:133
 #: ../app/javascript/oldjs/controllers/playbook-reusable-code-mixin.js:37
 msgid "Always"
-msgstr ""
+msgstr "Всегда"
 
 #: ../app/controllers/miq_alert_controller.rb:546
 msgid "Always Notify"
@@ -6301,7 +6307,7 @@ msgstr ""
 #: ../app/controllers/application_controller/buttons.rb:748
 #: ../app/controllers/miq_action_controller.rb:376
 msgid "An Ansible Playbook must be selected"
-msgstr ""
+msgstr "Необходимо выбрать набор сценариев Ansible"
 
 #: ../app/controllers/report_controller/reports/editor.rb:1586
 msgid "An Owner must be selected"
@@ -6392,23 +6398,23 @@ msgstr ""
 
 #: ../app/helpers/miq_action_helper.rb:86
 msgid "Analysis Profile"
-msgstr ""
+msgstr "Профиль анализа"
 
 #: ../app/controllers/ops_controller.rb:673
 msgid "Analysis Profile \"%{name}\""
-msgstr ""
+msgstr "Профиль анализа \"%{name}\""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:289
 msgid "Analysis Profile \"%{name}\" was saved"
-msgstr ""
+msgstr "Профиль анализа \"%{name}\" был сохранён"
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:507
 msgid "Analysis Profile \"%{name}\": Error during 'update': %{message}"
-msgstr ""
+msgstr "Профиль анализа \"%{name}\": ошибка во время 'update': %{message}"
 
 #: ../app/controllers/miq_action_controller.rb:335
 msgid "Analysis Profile is required"
-msgstr ""
+msgstr "Требуется профиль анализа"
 
 #. TRANSLATORS: file: product/views/ScanItemSet.yaml
 #: ../app/helpers/application_helper/title.rb:59
@@ -6418,7 +6424,7 @@ msgstr ""
 #: ../app/views/ops/_settings_details_tab.html.haml:25
 #: ../config/yaml_strings.rb:1701
 msgid "Analysis Profiles"
-msgstr ""
+msgstr "Профили анализов"
 
 #: ../app/controllers/mixins/actions/host_actions/misc.rb:196
 msgid "Analyze and Compliance Check"
@@ -6491,7 +6497,7 @@ msgstr ""
 #: ../app/controllers/ansible_playbook_controller.rb:69
 #: ../app/controllers/ansible_repository_controller.rb:161
 msgid "Ansible"
-msgstr ""
+msgstr "Ansible"
 
 #: ../app/models/manageiq/providers/ibm_power_vc/cloud_manager.rb:399
 msgid "Ansible Access Method"
@@ -6504,12 +6510,12 @@ msgstr "Обновить сведения об учётных данных Ansib
 
 #: ../app/views/shared/buttons/_ab_show.html.haml:15
 msgid "Ansible Playbook"
-msgstr ""
+msgstr "Набор сценариев Ansible"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_EmbeddedAnsible_AutomationManager_Playbook.yaml
 #: ../config/yaml_strings.rb:1324
 msgid "Ansible Playbooks"
-msgstr ""
+msgstr "Наборы сценариев Ansible"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3504
@@ -6543,7 +6549,7 @@ msgstr "Настроенные системы Ansible Tower"
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_AnsibleTower_AutomationManager_Job.yaml
 #: ../config/yaml_strings.rb:1214
 msgid "Ansible Tower Job"
-msgstr ""
+msgstr "Задача Ansible Tower"
 
 #: ../app/helpers/miq_ae_class_helper.rb:148
 msgid "Ansible Tower Job Template"
@@ -6552,7 +6558,7 @@ msgstr "Шаблон задачи Ansible Tower"
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_AnsibleTower_AutomationManager_Job.yaml
 #: ../config/yaml_strings.rb:1212
 msgid "Ansible Tower Jobs"
-msgstr ""
+msgstr "Задачи Ansible Tower"
 
 #: ../lib/manageiq/providers/ansible_tower/engine.rb:19
 msgid "Ansible Tower Provider"
@@ -6649,7 +6655,7 @@ msgstr ""
 #. TRANSLATORS: file: product/views/GuestApplication.yaml
 #: ../app/controllers/mixins/explorer_show.rb:67 ../config/yaml_strings.rb:1039
 msgid "Applications"
-msgstr ""
+msgstr "Приложения"
 
 #: ../app/helpers/miq_action_helper.rb:58
 #: ../app/javascript/components/action-form/action-form.schema.js:476
@@ -6698,8 +6704,9 @@ msgid "Apply the good VM custom variable value records"
 msgstr ""
 
 #: ../app/controllers/ops_controller.rb:491
+#, fuzzy
 msgid "Apply the good import records"
-msgstr ""
+msgstr "Применить записи"
 
 #: ../app/views/layouts/listnav/_show_list.html.haml:13
 #: ../app/views/layouts/listnav/_show_list.html.haml:27
@@ -6910,13 +6917,13 @@ msgstr "Точно удалить следующую кнопку?"
 msgid ""
 "Are you sure you want to delete the following Configuration Management Provide"
 "r?"
-msgstr ""
+msgstr "Точно удалить следующего поставщика управления конфигурациями?"
 
 #: ../app/helpers/application_helper/toolbar/ems_configurations_center.rb:47
 msgid ""
 "Are you sure you want to delete the following Configuration Management Provide"
 "rs?"
-msgstr ""
+msgstr "Точно удалить следующего поставщика управления конфигурациями?"
 
 #: ../app/helpers/application_helper/toolbar/auth_key_pair_cloud_center.rb:17
 msgid "Are you sure you want to delete the following Key Pair?"
@@ -6937,11 +6944,11 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/ansible_credentials_center.rb:40
 msgid "Are you sure you want to delete the following credentials?"
-msgstr ""
+msgstr "Точно удалить следующие учётные данные?"
 
 #: ../app/helpers/application_helper/toolbar/ansible_repositories_center.rb:62
 msgid "Are you sure you want to delete the following repositories?"
-msgstr ""
+msgstr "Точно удалить следующие репозитории?"
 
 #: ../app/helpers/application_helper/toolbar/ansible_repository_center.rb:46
 msgid "Are you sure you want to delete the following repository?"
@@ -6981,11 +6988,11 @@ msgstr "Точно удалить оповещения этой политики
 
 #: ../app/helpers/application_helper/toolbar/miq_policy_set_center.rb:28
 msgid "Are you sure you want to delete this Policy Profile?"
-msgstr ""
+msgstr "Точно удалить этот профиль политики?"
 
 #: ../app/helpers/application_helper/toolbar/miq_policy_sets_center.rb:38
 msgid "Are you sure you want to delete this Policy Profiles?"
-msgstr ""
+msgstr "Точно удалить эти профили политики?"
 
 #: ../app/helpers/application_helper/toolbar/miq_request_center.rb:23
 msgid "Are you sure you want to delete this Request?"
@@ -7031,15 +7038,15 @@ msgstr "Точно удалить этот том?"
 #: ../app/javascript/components/remove-catalog-item-modal.jsx:135
 msgid ""
 "Are you sure you want to permanently delete the following catalog bundle?"
-msgstr ""
+msgstr "Точно навсегда удалить следующий набор каталогов?"
 
 #: ../app/javascript/components/remove-catalog-item-modal.jsx:138
 msgid "Are you sure you want to permanently delete the following catalog item?"
 msgid_plural ""
 "Are you sure you want to permanently delete the following catalog items?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Точно навсегда удалить следующий элемент каталога?"
+msgstr[1] "Точно навсегда удалить следующие элементы каталога?"
+msgstr[2] "Точно навсегда удалить следующие элементы каталога?"
 
 #: ../app/javascript/components/dashboard-widgets/widget-wrapper/helper.jsx:171
 msgid "Are you sure you want to remove %s from the Dashboard?"
@@ -7254,7 +7261,7 @@ msgstr "Присвоить оповещение"
 
 #: ../app/javascript/components/catalog-form/catalog-form.schema.js:49
 msgid "Assign Catalog Items"
-msgstr ""
+msgstr "Назначить элементы каталога"
 
 #: ../app/views/ops/_rbac_group_details.html.haml:189
 msgid "Assign Filters"
@@ -7271,7 +7278,7 @@ msgstr ""
 
 #: ../app/models/miq_action.rb:19
 msgid "Assign Profile to Analysis Task"
-msgstr ""
+msgstr "Назначить профиль задаче анализа"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4348
@@ -7295,7 +7302,7 @@ msgstr ""
 
 #: ../app/helpers/miq_action_helper.rb:87
 msgid "Assigned Analysis Profile"
-msgstr ""
+msgstr "Назначенный профиль анализа"
 
 #: ../app/views/ops/_rbac_group_details.html.haml:189
 msgid "Assigned Filters (read only)"
@@ -7304,11 +7311,11 @@ msgstr ""
 #. TRANSLATORS: file: product/views/PhysicalServer.yaml
 #: ../config/yaml_strings.rb:1657
 msgid "Assigned Profile"
-msgstr ""
+msgstr "Назначенный профиль"
 
 #: ../lib/manageiq/reporting/formatter/timeline_message.rb:56
 msgid "Assigned Profiles"
-msgstr ""
+msgstr "Назначенные профили"
 
 #: ../app/helpers/physical_server_helper/textual_summary.rb:237
 msgid "Assigned Server Profile"
@@ -7423,7 +7430,7 @@ msgstr "ID привязанного порта (оставьте пустым д
 #. TRANSLATORS: file: product/views/PhysicalServer.yaml
 #: ../config/yaml_strings.rb:1659
 msgid "Associated Profile"
-msgstr ""
+msgstr "Связанный профиль"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
@@ -7472,7 +7479,7 @@ msgstr ""
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:72
 msgid "Assume role ARN"
-msgstr ""
+msgstr "Предположить роль ARN"
 
 #: ../app/controllers/mixins/actions/vm_actions/policy_simulation.rb:18
 msgid "At least 1 VM must be selected for Policy Simulation"
@@ -7561,11 +7568,11 @@ msgstr "Для ручного режима необходимо указать �
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:172
 msgid "At least one hour needs to be selected"
-msgstr ""
+msgstr "Нужно выбрать минимум один час"
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:262
 msgid "At least one item must be entered to create Analysis Profile"
-msgstr ""
+msgstr "Для создания профиля анализа нужно ввести минимум один элемент"
 
 #: ../app/controllers/miq_alert_controller.rb:673
 msgid ""
@@ -7828,12 +7835,13 @@ msgstr ""
 msgid "Authentication"
 msgstr "Аутентификация"
 
+# https://master--docs-hb-v3.netlify.app/scripts/script-base/
 #: ../config/model_display_names.rb:7
 msgid "Authentication Configuration Script Base"
 msgid_plural "Authentication Configuration Script Bases"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Базовый класс сценария конфигурации аутентификации"
+msgstr[1] "Базовые классы сценария конфигурации аутентификации"
+msgstr[2] "Базовые классы сценария конфигурации аутентификации"
 
 #: ../config/model_display_names.rb:8
 msgid "Authentication Orchestration Stack"
@@ -7872,11 +7880,11 @@ msgstr "Проверка действительности аутентифика
 
 #: ../config/model_attributes.rb:102
 msgid "Authentication configuration script base"
-msgstr ""
+msgstr "Базовый класс сценария конфигурации аутентификации"
 
 #: ../app/helpers/quadicon_helper.rb:52
 msgid "Authentication credentials are valid"
-msgstr ""
+msgstr "Учётные данные аутентификации действительны"
 
 #: ../app/models/authenticator/amazon.rb:26
 msgid "Authentication failed"
@@ -8131,12 +8139,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2191
 msgid "Automate Explorer"
-msgstr ""
+msgstr "Проводник Automate"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2407
 msgid "Automate Import/Export"
-msgstr ""
+msgstr "Импорт/экспорт Automate"
 
 #: ../app/controllers/miq_ae_class_controller.rb:111
 msgid "Automate Instance"
@@ -8608,15 +8616,15 @@ msgstr ""
 #:
 #: ../app/javascript/components/policy-profile-form/policy-profile-form.schema.js:18
 msgid "Available Policies"
-msgstr ""
+msgstr "Доступные политики"
 
 #: ../app/views/miq_policy_export/_export.html.haml:63
 msgid "Available Policies:"
-msgstr ""
+msgstr "Доступные политики:"
 
 #: ../app/views/miq_policy_export/_export.html.haml:60
 msgid "Available Profiles:"
-msgstr ""
+msgstr "Доступные профили:"
 
 #: ../app/views/report/_menu_form2.html.haml:11
 msgid "Available Reports:"
@@ -8637,7 +8645,7 @@ msgstr ""
 
 #: ../app/views/report/_export_widgets.html.haml:55
 msgid "Available Widgets:"
-msgstr ""
+msgstr "Доступные виджеты:"
 
 #: ../app/javascript/components/provider-dashboard-charts/charts_config.js:45
 #: ../app/javascript/components/provider-dashboard-charts/charts_config.js:62
@@ -9121,7 +9129,7 @@ msgstr ""
 
 #: ../app/controllers/catalog_controller.rb:897
 msgid "Before Playbook runs"
-msgstr ""
+msgstr "До запуска набора сценариев"
 
 #. TRANSLATORS: en.yml key: dictionary.column.beginning_of_resource_existence_in_report_interval
 #: ../config/dictionary_strings.rb:268
@@ -9134,7 +9142,7 @@ msgstr "Принадлежит профилям оповещений"
 
 #: ../app/helpers/miq_policy_helper.rb:121
 msgid "Belongs to Profiles"
-msgstr ""
+msgstr "Принадлежит профилям"
 
 #: ../app/controllers/mixins/actions/vm_actions/reconfigure.rb:94
 msgid "Between %{min} and %{max}"
@@ -9469,7 +9477,7 @@ msgstr ""
 #: ../app/views/miq_ae_class/_git_domain_refresh.html.haml:10
 #: ../app/views/miq_ae_tools/_import_export.html.haml:91
 msgid "Branch/Tag"
-msgstr "Ветка/Тег"
+msgstr "Ветка/тег"
 
 #: ../app/views/miq_ae_class/_git_domain_refresh.html.haml:18
 #: ../app/views/miq_ae_tools/_import_export.html.haml:98
@@ -9625,7 +9633,7 @@ msgstr "Кнопка ещё не реализована"
 
 #: ../app/controllers/application_controller/explorer.rb:136
 msgid "Button not yet implemented %{model}:%{action}"
-msgstr ""
+msgstr "Кнопка ещё не реализована %{model}:%{action}"
 
 #: ../app/presenters/tree_node/custom_button.rb:3
 msgid "Button: %{button_description}"
@@ -9693,6 +9701,7 @@ msgid "C & U Data Processors"
 msgstr "Обработчики данных по ёмкости и потреблению"
 
 #: ../app/helpers/textual_summary_helper.rb:213
+#, fuzzy
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:16
 msgid "C & U Database"
 msgstr "БД ёмкости и потребления"
@@ -10661,7 +10670,7 @@ msgstr "Отменить редактирование"
 #: ../app/views/miq_policy_export/_export.html.haml:26
 #: ../app/views/miq_policy_export/import.html.haml:47
 msgid "Cancel Import"
-msgstr ""
+msgstr "Отменить импорт"
 
 #: ../app/views/vm_common/_reconfigure.html.haml:224
 #: ../app/views/vm_common/_reconfigure.html.haml:227
@@ -10675,7 +10684,7 @@ msgstr ""
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:195
 msgid "Cancel SmartState Docker password change"
-msgstr ""
+msgstr "Отменить смену пароля SmartState Docker"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2471
@@ -10711,7 +10720,7 @@ msgstr "Отменить изменение секретного ключа до
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:165
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:433
 msgid "Cancel stored token"
-msgstr ""
+msgstr "Отменить хранящийся маркёр"
 
 #: ../app/views/layouts/_adv_search_footer.html.haml:80
 msgid "Cancel the load"
@@ -10887,7 +10896,7 @@ msgstr ""
 
 #: ../app/models/miq_ae_yaml_import.rb:92
 msgid "Cannot import into a locked domain."
-msgstr ""
+msgstr "Невозможно импортировать в заблокированный домен"
 
 #: ../app/controllers/ems_infra_controller.rb:156
 msgid "Cannot parse JSON file: %{message}"
@@ -10985,6 +10994,7 @@ msgstr "Ёмкость: свободное место в средн. на соб
 
 #. TRANSLATORS: en.yml key: dictionary.column.capacity_profile_1_remaining_host_memory
 #: ../config/dictionary_strings.rb:2142
+#, fuzzy
 msgid "Capacity - Profile 1 - Available Memory for New VMs"
 msgstr "Ёмкость - Профиль 1 - доступно памяти для новых ВМ"
 
@@ -11208,8 +11218,9 @@ msgstr "Ёмкость - Профиль 2 - Метод расчёта вирт. 
 
 #. TRANSLATORS: en.yml key: dictionary.column.capacity_profile_2_vcpu_commitment_ratio
 #: ../config/dictionary_strings.rb:2196
+#, fuzzy
 msgid "Capacity - Profile 2 - vCPU Commitment Ratio"
-msgstr ""
+msgstr "Производственная мощность: профиль 2 - "
 
 #. TRANSLATORS: en.yml key: dictionary.column.derived_storage_total
 #: ../config/dictionary_strings.rb:574
@@ -11417,6 +11428,8 @@ msgstr ""
 #: ../app/helpers/ops_helper.rb:33
 msgid "Caution: Manual changes to configuration files can disable the Zone!"
 msgstr ""
+"Осторожно: внесение ручных изменений в файлы конфигурации может "
+"привести к отключению зоны."
 
 #: ../app/views/ops/_settings_label_tag_mapping_tab.html.haml:7
 msgid ""
@@ -11445,7 +11458,7 @@ msgstr ""
 #: ../app/javascript/components/async-credentials/password-field.jsx:97
 #: ../app/views/ops/_rbac_user_details.html.haml:1
 msgid "Change"
-msgstr ""
+msgstr "Изменить"
 
 #:
 #: ../app/javascript/oldjs/controllers/reconfigure/reconfigure_form_controller.js:134
@@ -11490,7 +11503,7 @@ msgstr "Изменить текущую группу"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:195
 msgid "Change stored SmartState Docker password"
-msgstr ""
+msgstr "Изменить хранящийся пароль SmartState Docker"
 
 #: ../app/views/ems_infra/_form.html.haml:116
 msgid "Change stored client key"
@@ -11507,13 +11520,13 @@ msgstr ""
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:85
 msgid "Change stored secret access key"
-msgstr ""
+msgstr "Изменить хранящийся секретный ключ доступа"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:138
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:165
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:433
 msgid "Change stored token"
-msgstr ""
+msgstr "Изменить хранящийся маркёр"
 
 #: ../app/controllers/application_controller/compare.rb:825
 #: ../app/controllers/application_controller/compare.rb:875
@@ -12293,7 +12306,7 @@ msgstr "Дочерние объекты"
 
 #: ../app/helpers/configuration_script_helper.rb:99
 msgid "Choices"
-msgstr ""
+msgstr "Варианты"
 
 #: ../app/controllers/miq_action_controller.rb:263
 #: ../app/javascript/components/auth-key-pair-cloud/auth-key-pair-cloud-form.schema.js:28
@@ -12442,7 +12455,7 @@ msgstr "Выберите категорию"
 
 #: ../app/views/report/_export.html.haml:4
 msgid "Choose a Import/Export type from the menus on the left."
-msgstr ""
+msgstr "Выберите тип импорта/экспорта в меню слева"
 
 #: ../app/views/report/_form_filter_chargeback.html.haml:187
 msgid "Choose a Label"
@@ -12540,7 +12553,7 @@ msgstr "Выберите хранилище облачных объектов"
 #:
 #: ../app/javascript/components/pvc-import-image-form/pvc-import-image-form.schema.js:59
 msgid "Choose disk type"
-msgstr ""
+msgstr "Выберите тип диска"
 
 #: ../app/views/shared/_file_chooser.html.haml:8
 msgid "Choose file"
@@ -14538,7 +14551,7 @@ msgstr "Тренды по загруженности ЦП кластера (пр
 #. TRANSLATORS: file: product/compare/ems_clusters.yaml
 #: ../config/yaml_strings.rb:5149
 msgid "Cluster Compare Template"
-msgstr "Шаблон сравнения кластеров"
+msgstr "Сравнение шаблонов кластеров"
 
 #. TRANSLATORS: file: product/reports/130_Configuration Management - Clusters/020_Hosts Affinity.yaml
 #: ../config/yaml_strings.rb:6309
@@ -15196,7 +15209,7 @@ msgstr ""
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:38
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:43
 msgid "Compressed View"
-msgstr ""
+msgstr "Сжатый режим просмотра"
 
 #: ../app/controllers/auth_key_pair_cloud_controller.rb:73
 #: ../app/controllers/availability_zone_controller.rb:38
@@ -15666,14 +15679,14 @@ msgstr "Конфигурация (%{number})"
 #: ../config/model_display_names.rb:43
 msgid "Configuration Architecture"
 msgid_plural "Configuration Architectures"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Архитектура конфигурации"
+msgstr[1] "Архитектуры конфигурации"
+msgstr[2] "Архитектуры конфигурации"
 
 #. TRANSLATORS: en.yml key: dictionary.column.configuration_architecture_name
 #: ../config/dictionary_strings.rb:382
 msgid "Configuration Architecture Name"
-msgstr ""
+msgstr "Имя архитектуры конфигурации"
 
 #: ../config/model_display_names.rb:44
 msgid "Configuration Compute Profile"
@@ -15690,30 +15703,30 @@ msgstr "Имя конфигурации профиля ресурса"
 #: ../config/model_display_names.rb:45
 msgid "Configuration Domain"
 msgid_plural "Configuration Domains"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Домен конфигурации"
+msgstr[1] "Домены конфигурации"
+msgstr[2] "Домены конфигурации"
 
 #. TRANSLATORS: en.yml key: dictionary.column.configuration_domain_name
 #: ../config/dictionary_strings.rb:386
 msgid "Configuration Domain Name"
-msgstr ""
+msgstr "Имя домена конфигурации"
 
 #: ../config/model_display_names.rb:46
 msgid "Configuration Environment"
 msgid_plural "Configuration Environments"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Окружение конфигурации"
+msgstr[1] "Окружения конфигурации"
+msgstr[2] "Окружения конфигурации"
 
 #. TRANSLATORS: en.yml key: dictionary.column.configuration_environment_name
 #: ../config/dictionary_strings.rb:388
 msgid "Configuration Environment Name"
-msgstr ""
+msgstr "Имя окружения конфигурации"
 
 #: ../app/helpers/application_helper/title.rb:33
 msgid "Configuration Jobs"
-msgstr ""
+msgstr "Задачи конфигурации"
 
 #: ../app/controllers/application_controller/miq_request_methods.rb:364
 #: ../app/helpers/configuration_profile_helper/textual_summary.rb:115
@@ -15815,44 +15828,44 @@ msgstr[2] ""
 #. TRANSLATORS: en.yml key: dictionary.column.configuration_realm_name
 #: ../config/dictionary_strings.rb:392
 msgid "Configuration Realm Name"
-msgstr ""
+msgstr "Имя области конфигурации"
 
 #: ../config/model_display_names.rb:51
 msgid "Configuration Script"
 msgid_plural "Configuration Scripts"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Сценарий конфигурации"
+msgstr[1] "Сценарии конфигурации"
+msgstr[2] "Сценарии конфигурации"
 
 #: ../config/model_display_names.rb:52
 msgid "Configuration Script Base"
 msgid_plural "Configuration Script Bases"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Базовый класс сценария конфигурации"
+msgstr[1] "Базовые классы сценария конфигурации"
+msgstr[2] "Базовые классы сценария конфигурации"
 
 #: ../config/model_display_names.rb:53
 msgid "Configuration Script Payload"
 msgid_plural "Configuration Script Payloads"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Полезная нагрузка сценария конфигурации"
+msgstr[1] "Полезные нагрузки сценариев конфигурации"
+msgstr[2] "Полезные нагрузки сценариев конфигурации"
 
 #: ../config/model_display_names.rb:54
 msgid "Configuration Tag"
 msgid_plural "Configuration Tags"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Тег конфигурации"
+msgstr[1] "Теги конфигурации"
+msgstr[2] "Теги конфигурации"
 
 #. TRANSLATORS: en.yml key: dictionary.column.config_xml
 #: ../config/dictionary_strings.rb:380
 msgid "Configuration XML"
-msgstr ""
+msgstr "XML конфигурации"
 
 #: ../app/controllers/ops_controller/settings/common.rb:264
 msgid "Configuration changes saved"
-msgstr ""
+msgstr "Изменения в конфигурации сохранены"
 
 #: ../app/controllers/host_controller.rb:61
 msgid "Configuration files of nova service"
@@ -15860,27 +15873,27 @@ msgstr "Файлы конфигурации службы Nova"
 
 #: ../config/model_attributes.rb:510
 msgid "Configuration location"
-msgstr ""
+msgstr "Местоположение конфигурации"
 
 #: ../config/model_attributes.rb:518
 msgid "Configuration organization"
-msgstr ""
+msgstr "Организация конфигурации"
 
 #: ../config/model_attributes.rb:526
 msgid "Configuration profile"
-msgstr ""
+msgstr "Профиль конфигурации"
 
 #: ../config/model_attributes.rb:545
 msgid "Configuration script base"
-msgstr ""
+msgstr "Базовый класс сценария конфигурации"
 
 #: ../config/model_attributes.rb:554
 msgid "Configuration script source"
-msgstr ""
+msgstr "Источник сценария конфигурации"
 
 #: ../app/controllers/ops_controller/settings/common.rb:432
 msgid "Configuration settings saved"
-msgstr ""
+msgstr "Параметры конфигурации сохранены"
 
 #: ../app/javascript/components/workers-form/workers-form.jsx:160
 msgid "Configuration settings saved for %s Server \"%s [%s]\" in Zone \"%s\""
@@ -15898,7 +15911,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:571
 msgid "Configuration tag"
-msgstr ""
+msgstr "Тег конфигурации"
 
 #: ../config/model_attributes.rb:511
 msgid "ConfigurationLocation|Href slug"
@@ -15931,7 +15944,7 @@ msgstr ""
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_ConfigurationManager.yaml
 #: ../config/yaml_strings.rb:1318
 msgid "ConfigurationManager"
-msgstr ""
+msgstr "ConfigurationManager"
 
 #: ../config/model_attributes.rb:519
 msgid "ConfigurationOrganization|Href slug"
@@ -16401,7 +16414,7 @@ msgstr "Подтвердить"
 
 #: ../app/views/layouts/_auth_credentials.html.haml:42
 msgid "Confirm %{password}"
-msgstr ""
+msgstr "Подтвердите %{password}"
 
 #: ../app/views/vm_common/_reconfigure.html.haml:396
 msgid "Confirm Add"
@@ -16430,17 +16443,17 @@ msgstr "Подтвердить изменение размера"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:85
 msgid "Confirm Secret Access Key"
-msgstr ""
+msgstr "Подтвердите хранящийся секретный ключ доступа"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:195
 msgid "Confirm SmartState Password"
-msgstr ""
+msgstr "Подтвердите пароль SmartState"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:138
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:165
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:433
 msgid "Confirm Token"
-msgstr ""
+msgstr "Подтвердите маркёр"
 
 #: src/rbac-forms/formPasswordFragment.jsx:58
 msgid "Confirm password"
@@ -19965,7 +19978,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2487
 msgid "Copy Analysis Profile"
-msgstr ""
+msgstr "Копировать профиль анализа"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2237
@@ -20039,7 +20052,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2439
 msgid "Copy Time Profiles"
-msgstr ""
+msgstr "Копировать профили времени"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1959
@@ -20195,11 +20208,11 @@ msgstr "Копировать выбранный шаблона оркестра�
 
 #: ../app/helpers/application_helper/toolbar/time_profiles_center.rb:29
 msgid "Copy selected Time Profile"
-msgstr ""
+msgstr "Копировать выбранный профиль времени"
 
 #: ../app/helpers/application_helper/toolbar/scan_profiles_center.rb:31
 msgid "Copy the selected Analysis Profiles"
-msgstr ""
+msgstr "Копировать выбранные профили анализа"
 
 #: ../app/helpers/application_helper/toolbar/chargeback_rates_center.rb:30
 msgid "Copy the selected Chargeback Rate to a new Chargeback Rate"
@@ -20300,7 +20313,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/scan_profile_center.rb:18
 msgid "Copy this selected Analysis Profile"
-msgstr ""
+msgstr "Копировать этот выбранный профиль анализа"
 
 #: ../app/views/miq_ae_class/_copy_objects_form.html.haml:42
 msgid "Copy to same path"
@@ -20705,7 +20718,7 @@ msgstr "Сбой создания тома %{volume_name}: %{error_message}"
 
 #: ../app/javascript/components/settings-time-profile-form/index.jsx:64
 msgid "Creating time profile %s has been successfully queued."
-msgstr ""
+msgstr "Создание профиля времени %s было успешно поставлено в очередь"
 
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/040_Recently Discovered Container Groups.yaml
 #: ../config/yaml_strings.rb:6421
@@ -20757,7 +20770,7 @@ msgstr ""
 
 #: ../app/javascript/components/ansible-credentials-form/index.jsx:70
 msgid "Creation of new Credential was canceled by the user."
-msgstr ""
+msgstr "Создание новых учётных данных было отменено пользователем"
 
 #: ../app/javascript/components/button-group/index.jsx:113
 msgid "Creation of new Custom Button Group was canceled by the user."
@@ -20780,7 +20793,7 @@ msgstr "Создание новой группы инициатора хоста
 
 #: ../app/javascript/components/policy-profile-form/index.js:53
 msgid "Creation of new Policy Profile was canceled by the user."
-msgstr ""
+msgstr "Создание нового профиля политики было отменено пользователем"
 
 #: ../app/javascript/components/zone-form/index.jsx:34
 msgid "Creation of new Zone was canceled by the user."
@@ -20911,7 +20924,7 @@ msgstr ""
 #:
 #: ../app/javascript/components/ansible-credentials-form/ansible-credentials-form.schema.js:36
 msgid "Credential type"
-msgstr ""
+msgstr "Тип учётных данных"
 
 #: ../app/controllers/mixins/manager_controller_mixin.rb:78
 msgid "Credential validation was not successful: %{details}"
@@ -20943,25 +20956,25 @@ msgstr "Учётные данные"
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::AmazonCredential (plural form)
 #: ../config/dictionary_strings.rb:2980 ../config/dictionary_strings.rb:3044
 msgid "Credentials (Amazon)"
-msgstr ""
+msgstr "Учётные данные (Amazon)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::GoogleCredential (plural form)
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::GoogleCredential (plural form)
 #: ../config/dictionary_strings.rb:2988 ../config/dictionary_strings.rb:3052
 msgid "Credentials (Google)"
-msgstr ""
+msgstr "Учётные данные (Google)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::MachineCredential (plural form)
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::MachineCredential (plural form)
 #: ../config/dictionary_strings.rb:2992 ../config/dictionary_strings.rb:3056
 msgid "Credentials (Machine)"
-msgstr ""
+msgstr "Учётные данные (Machine)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::AzureCredential (plural form)
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::AzureCredential (plural form)
 #: ../config/dictionary_strings.rb:2984 ../config/dictionary_strings.rb:3048
 msgid "Credentials (Microsoft Azure)"
-msgstr ""
+msgstr "Учётные данные (Microsoft Azure)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::NetworkCredential (plural form)
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::NetworkCredential (plural form)
@@ -20978,7 +20991,7 @@ msgstr "Учётные данные (OpenStack)"
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::RhvCredential (plural form)
 #: ../config/dictionary_strings.rb:3012
 msgid "Credentials (RHV)"
-msgstr ""
+msgstr "Учётные данные (RHV)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::RackspaceCredential (plural form)
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::RackspaceCredential (plural form)
@@ -20990,33 +21003,33 @@ msgstr "Учётные данные (Rackspace)"
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::ScmCredential (plural form)
 #: ../config/dictionary_strings.rb:3020 ../config/dictionary_strings.rb:3076
 msgid "Credentials (SCM)"
-msgstr ""
+msgstr "Учётные данные (SCM)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::Satellite6Credential (plural form)
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::Satellite6Credential (plural form)
 #: ../config/dictionary_strings.rb:3016 ../config/dictionary_strings.rb:3072
 msgid "Credentials (Satellite)"
-msgstr ""
+msgstr "Учётные данные (Satellite)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::VmwareCredential (plural form)
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::AnsibleTower::AutomationManager::VmwareCredential (plural form)
 #: ../config/dictionary_strings.rb:3024 ../config/dictionary_strings.rb:3080
 msgid "Credentials (VMware)"
-msgstr ""
+msgstr "Учётные данные (VMware)"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::VaultCredential (plural form)
 #: ../config/dictionary_strings.rb:3000
 msgid "Credentials (Vault)"
-msgstr ""
+msgstr "Учётные данные (Vault)"
 
 #. TRANSLATORS: en.yml key: dictionary.column.credentials_changed_on
 #: ../config/dictionary_strings.rb:484
 msgid "Credentials Changed On"
-msgstr ""
+msgstr "Когда изменились учётные данные"
 
 #: ../app/helpers/application_helper/button/ems_capture_metrics.rb:15
 msgid "Credentials must be valid to capture metrics"
-msgstr ""
+msgstr "Для сбора метрик учётные данные должны быть действительными"
 
 #: ../app/helpers/application_helper/button/ems_refresh.rb:7
 msgid "Credentials must be valid to refresh a provider"
@@ -21125,7 +21138,7 @@ msgstr "Текущий статус"
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:34
 msgid "Current User"
-msgstr ""
+msgstr "Текущий пользователь"
 
 #: ../app/views/ops/_settings_help_menu_tab.html.haml:34
 msgid "Current Window"
@@ -22524,7 +22537,7 @@ msgstr "День недели"
 #: ../app/javascript/oldjs/components/datetime-delay-picker.js:34
 #: ../app/views/layouts/_tl_options.html.haml:81
 msgid "Days"
-msgstr ""
+msgstr "Дни"
 
 #. TRANSLATORS: en.yml key: dictionary.column.debris_size
 #: ../config/dictionary_strings.rb:510
@@ -22600,7 +22613,7 @@ msgstr ""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:405
 msgid "Default Analysis Profile \"%{name}\" can not be deleted"
-msgstr ""
+msgstr "Нельзя удалить исходный профиль анализа \"%{name}\""
 
 #: ../app/helpers/textual_summary_helper.rb:208
 msgid "Default Authentication"
@@ -22652,11 +22665,11 @@ msgstr ""
 
 #: ../app/controllers/configuration_controller.rb:384
 msgid "Default Filters"
-msgstr ""
+msgstr "Фильтры по умолчанию"
 
 #: ../app/controllers/configuration_controller.rb:139
 msgid "Default Filters saved successfully"
-msgstr ""
+msgstr "Фильтры по умолчанию успешно сохранены"
 
 #: ../app/helpers/physical_switch_helper/textual_summary.rb:19
 #: ../app/views/vm_common/_config.html.haml:101
@@ -22707,7 +22720,7 @@ msgstr ""
 
 #: ../app/controllers/configuration_controller.rb:262
 msgid "Default Time Profile \"%{name}\" cannot be deleted"
-msgstr ""
+msgstr "Нельзя удалить исходный профиль времени \"%{name}\""
 
 #: ../app/javascript/components/data-tables/datastore/helper.js:32
 #: ../app/views/miq_ae_class/_class_fields.html.haml:22
@@ -22900,7 +22913,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2491
 msgid "Delete Analysis Profile"
-msgstr ""
+msgstr "Удалить профиль анализа"
 
 #: ../app/helpers/application_helper/toolbar/ems_automation_center.rb:33
 msgid "Delete Ansible Tower Provider"
@@ -23023,7 +23036,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/ansible_credentials_center.rb:39
 msgid "Delete Credentials"
-msgstr ""
+msgstr "Удалить учётные данные"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2379
@@ -23054,7 +23067,7 @@ msgstr "Удалить вариант конфигурации"
 #: ../app/helpers/application_helper/toolbar/generic_object_definition_center.rb:32
 #: ../app/helpers/application_helper/toolbar/generic_object_definitions_center.rb:30
 msgid "Delete Generic Object Definition"
-msgstr ""
+msgstr "Удалить определение класса общих объектов"
 
 #: ../app/helpers/application_helper/toolbar/host_aggregate_center.rb:43
 #: ../app/helpers/application_helper/toolbar/host_aggregates_center.rb:47
@@ -23092,12 +23105,12 @@ msgstr "Удалить оповещения политики"
 
 #: ../app/helpers/application_helper/toolbar/miq_policy_set_center.rb:29
 msgid "Delete Policy Profile"
-msgstr ""
+msgstr "Удалить профиль политики"
 
 #: ../app/helpers/application_helper/toolbar/miq_policy_sets_center.rb:30
 #: ../app/helpers/application_helper/toolbar/miq_policy_sets_center.rb:39
 msgid "Delete Policy Profiles"
-msgstr ""
+msgstr "Удалить профили политики"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2497
@@ -23111,7 +23124,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/ansible_repositories_center.rb:61
 msgid "Delete Repositories"
-msgstr ""
+msgstr "Удалить репозитории"
 
 #: ../app/helpers/application_helper/toolbar/ansible_repository_center.rb:45
 msgid "Delete Repository"
@@ -23165,7 +23178,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2441
 msgid "Delete Time Profiles"
-msgstr ""
+msgstr "Удалить профили времени"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1440
@@ -23238,7 +23251,7 @@ msgstr "Удалить профиль оповещений политики"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1997
 msgid "Delete a Policy Profile"
-msgstr ""
+msgstr "Удалить профиль политики"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1843
@@ -23488,7 +23501,7 @@ msgstr "Удалить выбранные оповещения политики"
 
 #: ../app/helpers/application_helper/toolbar/miq_policy_sets_center.rb:29
 msgid "Delete selected Policy Profiles"
-msgstr ""
+msgstr "Удалить выбранные профили политик"
 
 #: ../app/helpers/application_helper/toolbar/user_roles_center.rb:36
 msgid "Delete selected Roles"
@@ -23504,7 +23517,7 @@ msgstr "Удалить выбранные сохранённые отчёты"
 
 #: ../app/helpers/application_helper/toolbar/time_profiles_center.rb:37
 msgid "Delete selected Time Profiles"
-msgstr ""
+msgstr "Удалить выбранные профили времени"
 
 #: ../app/helpers/application_helper/toolbar/users_center.rb:36
 msgid "Delete selected Users"
@@ -23556,7 +23569,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/scan_profiles_center.rb:40
 msgid "Delete the selected Analysis Profiles"
-msgstr ""
+msgstr "Удалить выбранные профили анализа"
 
 #: ../app/helpers/application_helper/toolbar/user_roles_center.rb:35
 msgid "Delete the selected Roles from the VMDB"
@@ -23597,7 +23610,7 @@ msgstr "Удалить этот профиль оповещений"
 
 #: ../app/helpers/application_helper/toolbar/scan_profile_center.rb:24
 msgid "Delete this Analysis Profile"
-msgstr ""
+msgstr "Удалить этот профиль анализа"
 
 #: ../app/helpers/application_helper/toolbar/servicetemplate_center.rb:47
 msgid "Delete this Catalog Item"
@@ -24258,7 +24271,7 @@ msgstr "Подробнее"
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:47
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:52
 msgid "Details Mode"
-msgstr ""
+msgstr "Режим подробных сведений"
 
 #: ../app/views/layouts/angular-bootstrap/_endpoints_angular.html.haml:101
 #: ../app/views/layouts/angular-bootstrap/_endpoints_angular.html.haml:136
@@ -24875,7 +24888,7 @@ msgstr ""
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:307
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:313
 msgid "Disable event monitoring."
-msgstr ""
+msgstr "Отключить мониторинг событий"
 
 #: ../app/helpers/application_helper/toolbar/miq_report_schedules_center.rb:46
 #: ../app/helpers/application_helper/toolbar/miq_schedules_center.rb:45
@@ -25783,7 +25796,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1989
 msgid "Display All Policy Profiles"
-msgstr ""
+msgstr "Показать все профили политик"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1584
@@ -25899,7 +25912,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3594
 msgid "Display Individual Configuration Jobs"
-msgstr ""
+msgstr "Показать отдельные задачи конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3394
@@ -25909,12 +25922,12 @@ msgstr "Показать отдельного поставщика диспет�
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3426
 msgid "Display Individual Configuration Profile"
-msgstr ""
+msgstr "Показать профиль отдельной конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3578
 msgid "Display Individual Configuration Scripts"
-msgstr ""
+msgstr "Показать сценарии отдельной конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3444
@@ -26019,12 +26032,12 @@ msgstr "Показать отдельные «плавающие» IP"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2349
 msgid "Display Individual Generic Object Classes"
-msgstr ""
+msgstr "Показать отдельные классы общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2391
 msgid "Display Individual Generic Objects"
-msgstr ""
+msgstr "Показать отдельные общие объекты"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2545
@@ -26380,7 +26393,7 @@ msgstr "Показать списки кластеров"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3592
 msgid "Display Lists of Configuration Jobs"
-msgstr ""
+msgstr "Показать списки задач конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3392
@@ -26390,12 +26403,12 @@ msgstr "Показать списки поставщиков диспетчер�
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3424
 msgid "Display Lists of Configuration Profiles"
-msgstr ""
+msgstr "Показать списки профилей конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3576
 msgid "Display Lists of Configuration Scripts"
-msgstr ""
+msgstr "Показать списки сценариев конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3442
@@ -26500,12 +26513,12 @@ msgstr "Показать списки «плавающих» IP"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2347
 msgid "Display Lists of Generic Object Classes"
-msgstr ""
+msgstr "Показать списки классов общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2389
 msgid "Display Lists of Generic Objects"
-msgstr ""
+msgstr "Показать списки общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2543
@@ -27114,7 +27127,7 @@ msgstr ""
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:195
 msgid "Docker Registry User Name and Password for SmartState Analysis on AWS"
-msgstr ""
+msgstr "Имя пользователя реестра докера и пароль для анализа SmartState в AWS"
 
 #: ../app/helpers/container_image_helper/textual_summary.rb:80
 msgid "Docker Version"
@@ -27993,7 +28006,7 @@ msgstr "Редактировать теги хранилища данных"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2429
 msgid "Edit Default Filters"
-msgstr "Редактировать исходные фильтры"
+msgstr "Редактировать фильтры по умолчанию"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2425
@@ -30557,15 +30570,15 @@ msgstr ""
 
 #: ../app/presenters/menu/default_menu.rb:201
 msgid "Embedded Ansible"
-msgstr ""
+msgstr "Embedded Ansible"
 
 #: ../app/javascript/components/ansible-repository-form/index.jsx:37
 msgid "Embedded Ansible Provider not found."
-msgstr "Встроенный поставщик Ansible не найден"
+msgstr "Поставщик Embedded Ansible не найден"
 
 #: ../app/helpers/application_helper/button/embedded_ansible.rb:4
 msgid "Embedded Ansible Role is not enabled."
-msgstr ""
+msgstr "Роль Embedded Ansible не включена"
 
 #: ../app/javascript/components/ansible-credentials-form/index.jsx:46
 msgid "Embedded Ansible service is not available."
@@ -30573,7 +30586,7 @@ msgstr "Служба Embedded Ansible недоступна"
 
 #: ../app/presenters/menu/default_menu.rb:209
 msgid "Embedded Automate"
-msgstr ""
+msgstr "Embedded Automate"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAutomationManager
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
@@ -31143,6 +31156,9 @@ msgid ""
 "Enable event monitoring. Used to automatically resync state when changes are p"
 "erformed on VMware vCloud Director directly."
 msgstr ""
+"Включить мониторинг событий. Используется для автоматической повторной"
+" синхронизации, "
+"когда изменения происходят непосредственно в VMware vCloud Director."
 
 #: ../app/helpers/application_helper/toolbar/miq_report_schedules_center.rb:37
 #: ../app/helpers/application_helper/toolbar/miq_schedules_center.rb:36
@@ -31657,7 +31673,7 @@ msgstr ""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:282
 msgid "Error during '%{title}': %{message}"
-msgstr ""
+msgstr "Ошибка во время '%{title}': %{message}"
 
 #: ../app/controllers/vm_common.rb:556
 msgid "Error during 'Add VM to service': %{message}"
@@ -32225,7 +32241,7 @@ msgstr ""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:663
 msgid "Event log name is required"
-msgstr ""
+msgstr "Требуется имя журнала события"
 
 #: ../app/controllers/miq_alert_controller.rb:610
 msgid "Event name is required"
@@ -32440,7 +32456,7 @@ msgstr ""
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:53
 #: ../config/yaml_strings.rb:1439
 msgid "Events"
-msgstr ""
+msgstr "События"
 
 #: ../app/models/manageiq/providers/openstack/cloud_manager.rb:55
 #: ../app/models/manageiq/providers/openstack/infra_manager.rb:28
@@ -32474,17 +32490,17 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2161
 msgid "Everything under Alert Definition Profiles"
-msgstr "Всё в категории профилей определения сообщений"
+msgstr "Всё в «Профилях определения оповещений»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2143
 msgid "Everything under Alert Definitions"
-msgstr "Всё в категории определения сообщений"
+msgstr "Всё в «Определения оповещений»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2127
 msgid "Everything under Alerts Statuses"
-msgstr "Всё в категории статусов оповещений"
+msgstr "Всё в «Статусах оповещений»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1032
@@ -32610,12 +32626,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2475
 msgid "Everything under Configuration"
-msgstr ""
+msgstr "Всё в «Конфигурации»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3588
 msgid "Everything under Configuration Jobs"
-msgstr ""
+msgstr "Всё в «Задачах конфигурации»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3388
@@ -32625,7 +32641,7 @@ msgstr "Всё в «Поставщиках диспетчера конфигур
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3420
 msgid "Everything under Configuration Profiles"
-msgstr ""
+msgstr "Всё в «Профилях конфигурации»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3438
@@ -32695,7 +32711,7 @@ msgstr "Всё в «Поставщиках контейнеров»"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3510
 msgid "Everything under Credentials"
-msgstr ""
+msgstr "Всё в «Учётных данных»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4442
@@ -32715,7 +32731,7 @@ msgstr "Всё в «Шаблонах настроек»"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1767
 msgid "Everything under Dashboard"
-msgstr "Всё в категории панелей мониторинга"
+msgstr "Всё в «Панели мониторинга»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1727
@@ -32750,12 +32766,12 @@ msgstr "Всё в «Плавающих IP»"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2343
 msgid "Everything under Generic Object Classes"
-msgstr ""
+msgstr "Всё в «Классах общих объектов»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2385
 msgid "Everything under Generic Objects"
-msgstr ""
+msgstr "Всё в «Общих объектах»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4368
@@ -32915,7 +32931,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3488
 msgid "Everything under Playbooks"
-msgstr ""
+msgstr "Всё в «Наборах сценариев»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3148
@@ -32935,12 +32951,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2087
 msgid "Everything under Policy Alert Profiles"
-msgstr "Всё в категории профилей сообщений политик"
+msgstr "Всё в «Профилях оповещений политик»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2107
 msgid "Everything under Policy Alerts"
-msgstr "Всё в категории оповещений политик"
+msgstr "Всё в «Оповещениях политик»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2061
@@ -32950,7 +32966,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1985
 msgid "Everything under Policy Profiles"
-msgstr ""
+msgstr "Всё в «Профилях политик»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3536
@@ -32980,7 +32996,7 @@ msgstr "Всё в меню-гармошке «Отчёты»"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3462
 msgid "Everything under Repositories"
-msgstr ""
+msgstr "Всё в «Репозиториях»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:996
@@ -33035,7 +33051,7 @@ msgstr "Всё в «Ресурсах хранилищ»"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2716
 msgid "Everything under System Image Types"
-msgstr "Всё в категории типов системных образов"
+msgstr "Всё в «Типах системных образов»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2445
@@ -33081,7 +33097,7 @@ msgstr "Примеры (только для чтения)"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4426
 msgid "Execute Ansible Playbook"
-msgstr ""
+msgstr "Выполнить набор сценариев Ansible"
 
 #: ../app/views/layouts/_ae_resolve_options.html.haml:95
 msgid "Execute Methods"
@@ -33103,7 +33119,7 @@ msgstr ""
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:48
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:53
 msgid "Exists Mode"
-msgstr ""
+msgstr "Режим «существования»"
 
 #: ../app/helpers/container_helper/textual_summary.rb:49
 msgid "Exit Code"
@@ -33131,7 +33147,7 @@ msgstr ""
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:37
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:42
 msgid "Expanded View"
-msgstr ""
+msgstr "Развёрнутый просмотр"
 
 #: ../app/models/miq_report/generator.rb:857
 msgid "Expected scheduled time 'at' to be 'numeric', received '%{type}'"
@@ -33151,7 +33167,7 @@ msgstr ""
 #: ../app/controllers/miq_ae_class_controller.rb:2909
 #: ../app/presenters/menu/default_menu.rb:210
 msgid "Explorer"
-msgstr ""
+msgstr "Проводник"
 
 #: ../app/views/layouts/_x_edit_buttons.html.haml:62
 #: ../app/views/layouts/_x_edit_buttons.html.haml:177
@@ -34071,7 +34087,7 @@ msgstr ""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:569
 msgid "File Entry is required"
-msgstr ""
+msgstr "Требуется запись файла"
 
 #: ../app/views/ops/_ap_show.html.haml:37
 msgid "File Items"
@@ -34416,7 +34432,7 @@ msgstr ""
 
 #: ../app/views/configuration/_ui_3.html.haml:7
 msgid "Filters"
-msgstr ""
+msgstr "Фильтры"
 
 #: ../app/helpers/exp_atom_helper.rb:6 ../app/javascript/menu/search.jsx:45
 #: ../app/javascript/menu/search.jsx:82 ../app/javascript/menu/search.jsx:83
@@ -35403,7 +35419,7 @@ msgstr ""
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:86
 msgid "Friday"
-msgstr ""
+msgstr "Пятница"
 
 #. TRANSLATORS: en.yml key: dictionary.column.friendly_name
 #: ../config/dictionary_strings.rb:920
@@ -35625,36 +35641,36 @@ msgstr "Общий"
 #: ../config/model_display_names.rb:122 ../config/dictionary_strings.rb:2908
 msgid "Generic Object"
 msgid_plural "Generic Objects"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Общий объект"
+msgstr[1] "Общие объекты"
+msgstr[2] "Общие объекты"
 
 #. TRANSLATORS: en.yml key: dictionary.model.GenericObjectDefinition
 #: ../app/models/generic_object_definition.rb:155
 #: ../config/dictionary_strings.rb:2912
 msgid "Generic Object Class"
 msgid_plural "Generic Object Classes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Класс общих объектов"
+msgstr[1] "Классы общих объектов"
+msgstr[2] "Классы общих объектов"
 
 #. TRANSLATORS: en.yml key: dictionary.model.GenericObjectDefinition (plural form)
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/dictionary_strings.rb:2914 ../config/yaml_strings.rb:2341
 msgid "Generic Object Classes"
-msgstr ""
+msgstr "Классы общих объектов"
 
 #: ../app/javascript/components/generic-objects-form/index.jsx:138
 msgid "Generic Object Definition \"%s\" was added."
-msgstr ""
+msgstr "Определение класса общих объектов \"%s\" было добавлено"
 
 #: ../app/javascript/components/generic-objects-form/index.jsx:27
 msgid "Generic Object Definition \"%s\" was saved."
-msgstr ""
+msgstr "Определение класса общих объектов \"%s\" было сохранено"
 
 #: ../app/controllers/generic_object_definition_controller.rb:210
 msgid "Generic Object Definition %{record_name}"
-msgstr ""
+msgstr "Определение класса общих объектов %{record_name}"
 
 #. TRANSLATORS: file: product/views/GenericObjectDefinition.yaml
 #: ../app/controllers/generic_object_definition_controller.rb:203
@@ -35663,7 +35679,7 @@ msgstr ""
 #: ../app/views/layouts/listnav/_generic_object_definition_show_list_with_treeview.html.haml:2
 #: ../config/yaml_strings.rb:1035
 msgid "Generic Object Definitions"
-msgstr ""
+msgstr "Определения общих объектов"
 
 #. TRANSLATORS: file: product/views/GenericObject.yaml
 #: ../app/controllers/generic_object_definition_controller.rb:309
@@ -35683,15 +35699,15 @@ msgstr "Общие рабоч. процессы"
 
 #: ../config/model_attributes.rb:1843
 msgid "Generic object"
-msgstr ""
+msgstr "Общий объект"
 
 #: ../config/model_attributes.rb:1851
 msgid "Generic object definition"
-msgstr ""
+msgstr "Определение класса общих объектов"
 
 #: ../app/javascript/components/remove-generic-item-modal.jsx:46
 msgid "Generic object definition %s was successfully deleted"
-msgstr ""
+msgstr "Определение класса общих объектов \"%s\" было успешно удалено"
 
 #. TRANSLATORS: file: product/views/GenericObject.yaml
 #: ../config/yaml_strings.rb:1024
@@ -35905,7 +35921,7 @@ msgstr "Глобальные разделяемые фильтры"
 
 #: ../app/controllers/configuration_controller.rb:240
 msgid "Global Time Profile cannot be edited"
-msgstr ""
+msgstr "Нельзя редактировать глобальный профиль времени"
 
 #: ../app/views/ems_infra/_show_dashboard.html.haml:7
 msgid "Global Utilization"
@@ -38551,19 +38567,19 @@ msgstr "Почасовой таймер"
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:88
 #: ../app/javascript/oldjs/components/datetime-delay-picker.js:34
 msgid "Hours"
-msgstr ""
+msgstr "Часы"
 
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:99
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:121
 msgid "Hours (AM)"
-msgstr ""
+msgstr "Часы (до полудня)"
 
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:110
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:134
 msgid "Hours (PM)"
-msgstr ""
+msgstr "Часы (после полудня)"
 
 #: ../app/models/miq_alert.rb:420 ../app/models/miq_alert.rb:431
 #: ../app/models/miq_alert.rb:440
@@ -38787,7 +38803,7 @@ msgstr ""
 #: ../app/helpers/textual_summary_helper.rb:216
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:49
 msgid "IPMI"
-msgstr ""
+msgstr "IPMI"
 
 #. TRANSLATORS: file: product/views/Host-hosts.yaml
 #: ../app/helpers/host_helper/textual_summary.rb:151
@@ -38805,6 +38821,9 @@ msgid ""
 "IPMI IP Address, Username and matching password fields are needed to perform v"
 "erification of credentials"
 msgstr ""
+"Для проверки действительности учётных данных требуется адрес IP IPMI, имя"
+" пользователя "
+"и совпадающие поля пароля."
 
 #: ../app/helpers/automation_manager_configured_system_helper.rb:18
 #: ../app/helpers/configuration_script_helper.rb:18
@@ -40080,7 +40099,7 @@ msgstr "В запросе указаны недействительные атр
 
 #: ../app/helpers/quadicon_helper.rb:50
 msgid "Invalid authentication credentials"
-msgstr ""
+msgstr "Недействительные учётные данные аутентификации"
 
 #: ../app/controllers/mixins/generic_button_mixin.rb:99
 msgid "Invalid button action"
@@ -40092,7 +40111,7 @@ msgstr "Недопустимое определение диаграммы"
 
 #: ../app/controllers/ops_controller/settings/help_menu.rb:14
 msgid "Invalid configuration parameters."
-msgstr ""
+msgstr "Недействительные параметры конфигурации"
 
 #: ../app/models/manageiq/providers/azure/cloud_manager/cloud_database.rb:77
 msgid "Invalid database type"
@@ -40122,7 +40141,7 @@ msgstr ""
 #: ../app/views/layouts/angular-bootstrap/_auth_credentials_angular_bootstrap.html.haml:46
 #: ../app/views/static/auth-credentials.html.haml:24
 msgid "Invalid input format, please enter a GUID"
-msgstr ""
+msgstr "Недействительный формат ввода, введите GUID"
 
 #: ../app/controllers/ops_controller/diagnostics.rb:104
 #: ../app/controllers/ops_controller/settings/schedules.rb:764
@@ -40328,7 +40347,7 @@ msgstr "Шаблоны задач (Ansible Tower)"
 #: ../app/controllers/configuration_job_controller.rb:76
 #: ../app/presenters/menu/default_menu.rb:196
 msgid "Jobs"
-msgstr ""
+msgstr "Задачи"
 
 #: ../config/model_attributes.rb:2177
 msgid "Job|Agent message"
@@ -41153,7 +41172,7 @@ msgstr ""
 
 #: ../app/controllers/application_controller/explorer.rb:261
 msgid "Last selected %{record_name} no longer exists"
-msgstr ""
+msgstr "Последнее выбранное имя %{record_name} больше не существует"
 
 #: ../app/controllers/vm_common.rb:296
 msgid "Last selected Snapshot no longer exists"
@@ -42083,7 +42102,7 @@ msgstr ""
 #: ../app/views/layouts/_auth_credentials2.html.haml:10
 #: ../app/views/layouts/login.html.haml:5
 msgid "Login"
-msgstr ""
+msgstr "Вход в систему"
 
 #. TRANSLATORS: en.yml key: dictionary.column.login_logo_content_type
 #: ../config/dictionary_strings.rb:1152
@@ -42322,7 +42341,7 @@ msgstr "Magnetic"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2473
 msgid "Main Configuration"
-msgstr ""
+msgstr "Основная конфигурация"
 
 #: ../app/views/miq_ae_class/_instance_form.html.haml:4
 #: ../app/views/miq_ae_class/_method_form.html.haml:5
@@ -42600,7 +42619,7 @@ msgstr "Управление политиками поставщиков кон�
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2397
 msgid "Manage Policies of Generic Objects"
-msgstr ""
+msgstr "Управление политиками общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1530
@@ -48845,7 +48864,7 @@ msgstr "Изменение облачного тома \"%s\" было успе�
 
 #: ../app/javascript/components/ansible-credentials-form/index.jsx:58
 msgid "Modification of Credential \"%s\" has been successfully queued."
-msgstr ""
+msgstr "Изменение учётных данных \"%s\" было успешно поставлено в очередь"
 
 #: ../app/javascript/components/host-aggregate-form/index.jsx:25
 msgid "Modification of Host Aggregate %s has been successfully queued"
@@ -48948,7 +48967,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3598
 msgid "Modify Configuration Job"
-msgstr ""
+msgstr "Изменить задачу конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3404
@@ -48968,7 +48987,7 @@ msgstr "Изменить поставщиков контейнеров"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3514
 msgid "Modify Credentials"
-msgstr ""
+msgstr "Изменить учётные данные"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2704
@@ -49013,12 +49032,12 @@ msgstr "Изменить «плавающие» IP"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2351
 msgid "Modify Generic Object Classes"
-msgstr ""
+msgstr "Изменить классы общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2399
 msgid "Modify Generic Objects"
-msgstr ""
+msgstr "Изменить общие объекты"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2547
@@ -49158,7 +49177,7 @@ msgstr "Изменить физич. хранилище"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3492
 msgid "Modify Playbooks"
-msgstr ""
+msgstr "Изменить набор сценариев"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2011
@@ -49183,7 +49202,7 @@ msgstr "Изменить оповещения политики"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1993
 msgid "Modify Policy Profiles"
-msgstr ""
+msgstr "Изменить профили политик"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2495
@@ -49218,7 +49237,7 @@ msgstr "Изменить отчёты"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3466
 msgid "Modify Repositories"
-msgstr ""
+msgstr "Изменить репозитории"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1014
@@ -49318,7 +49337,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2435
 msgid "Modify Time Profiles"
-msgstr ""
+msgstr "Изменить профили времени"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2527
@@ -49367,7 +49386,7 @@ msgstr "Изменить службы"
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:70
 msgid "Monday"
-msgstr ""
+msgstr "Понедельник"
 
 #: ../app/controllers/alerts_list_controller.rb:49
 #: ../app/controllers/alerts_overview_controller.rb:35
@@ -49781,7 +49800,7 @@ msgstr "Свойства моих служб"
 #: ../app/helpers/application_helper/title.rb:31
 #: ../app/presenters/menu/default_menu.rb:235
 msgid "My Settings"
-msgstr ""
+msgstr "Мои параметры"
 
 #: ../app/controllers/miq_task_controller.rb:64
 #: ../app/helpers/application_helper/title.rb:83
@@ -51008,7 +51027,7 @@ msgstr "Никогда не проверялось"
 #: ../app/views/layouts/angular-bootstrap/_auth_credentials_angular_bootstrap.html.haml:6
 #: ../app/views/layouts/angular-bootstrap/_auth_keypair_angular_bootstrap.html.haml:6
 msgid "New "
-msgstr ""
+msgstr "Создать"
 
 #: ../app/javascript/components/miq-alert-set-form/index.jsx:59
 msgid "New Alert Profile \"%s\" has been successfully queued."
@@ -51076,7 +51095,7 @@ msgstr "Новый объект"
 
 #: ../app/javascript/oldjs/components/auth-credentials.js:36
 msgid "New password"
-msgstr ""
+msgstr "Новый пароль"
 
 #: ./dist/js/ui-components.js:1
 msgid "New section"
@@ -51338,7 +51357,7 @@ msgstr ""
 
 #: ../app/controllers/application_controller/explorer.rb:252
 msgid "No Class found for explorer tree node id '%{number}'"
-msgstr ""
+msgstr "Для id '%{number}' узла дерева проводника классов не найдено"
 
 #: ../app/models/classification.rb:410
 msgid "No Classification to Import"
@@ -51507,7 +51526,7 @@ msgstr "Нет доступных профилей политик"
 
 #: ../app/views/layouts/_protect.html.haml:5
 msgid "No Policy Profiles available."
-msgstr ""
+msgstr "Нет доступных профилей политик."
 
 #: ../app/helpers/miq_policy_helper.rb:33
 msgid ""
@@ -51630,7 +51649,7 @@ msgstr "Профили времени не найдены"
 
 #: ../app/controllers/configuration_controller.rb:256
 msgid "No Time Profiles were selected for deletion"
-msgstr ""
+msgstr "Нет профилей времени, выбранных для удаления"
 
 #: ../app/helpers/application_helper/button/container_timeline.rb:15
 msgid "No Timeline data has been collected for this %{entity}"
@@ -52369,6 +52388,8 @@ msgstr "Заметка:"
 msgid ""
 "Note: Ansible Playbook based resources can not be added to a Catalog Bundle"
 msgstr ""
+"Примечание: ресурсы на базе набора сценариев Ansible нельзя добавить "
+"в набор каталогов"
 
 #: ../app/views/ops/_settings_cu_collection_tab.html.haml:22
 msgid ""
@@ -52418,7 +52439,7 @@ msgstr ""
 #: ../app/views/layouts/angular-bootstrap/_auth_credentials_angular_bootstrap.html.haml:48
 #: ../app/views/static/auth-credentials.html.haml:26
 msgid "Note: Username must be in the format: name@realm"
-msgstr ""
+msgstr "Внимание: имя пользователя должно быть в формате: name@realm"
 
 #: ../app/views/vm_common/_reconfigure.html.haml:98
 msgid ""
@@ -52773,7 +52794,7 @@ msgstr ""
 
 #: ../app/helpers/configuration_script_helper.rb:58
 msgid "OS"
-msgstr ""
+msgstr "ОС"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/058_VMs with invalid allocation of RAM.yaml
 #: ../config/yaml_strings.rb:6818
@@ -53189,7 +53210,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3434
 msgid "Open a Configuration Profile console"
-msgstr ""
+msgstr "Открыть консоль профиля конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3454
@@ -53273,7 +53294,7 @@ msgstr "Открыть встроенную консоль для этого п�
 
 #: ../app/helpers/application_helper/toolbar/configuration_profile_center.rb:12
 msgid "Open the Configuration Profile console"
-msgstr ""
+msgstr "Открыть консоль профиля конфигурации"
 
 #: ../app/helpers/application_helper/toolbar/configured_system_center.rb:27
 msgid "Open the Configured System console"
@@ -56900,15 +56921,15 @@ msgstr "Элемент каталога наборов сценариев"
 #: ../app/helpers/application_helper/title.rb:95
 #: ../app/presenters/menu/default_menu.rb:202 ../config/yaml_strings.rb:1327
 msgid "Playbooks"
-msgstr ""
+msgstr "Наборы сценариев"
 
 #: ../app/helpers/application_helper/title.rb:93
 msgid "Playbooks (Ansible Tower)"
-msgstr ""
+msgstr "Наборы сценариев (Ansible Tower)"
 
 #: ../app/controllers/ansible_playbook_controller.rb:70
 msgid "Playbooks (Embedded Ansible)"
-msgstr ""
+msgstr "Наборы сценариев (Embedded Ansible)"
 
 #: ../app/helpers/service_helper/textual_summary.rb:333
 msgid "Plays"
@@ -57164,7 +57185,7 @@ msgstr "Политики"
 
 #: ../app/helpers/application_helper/button/policy_delete.rb:13
 msgid "Policies that belong to Profiles can not be deleted"
-msgstr ""
+msgstr "Политики, принадлежащие профилям, нельзя удалить"
 
 #: ../app/helpers/application_helper/toolbar/ansible_credential_center.rb:37
 #: ../app/helpers/application_helper/toolbar/ansible_credentials_center.rb:52
@@ -57381,7 +57402,7 @@ msgstr "Профиль политики"
 
 #: ../app/javascript/components/policy-profile-form/index.js:44
 msgid "Policy Profile \"%s\" was saved."
-msgstr ""
+msgstr "Профиль политики \"%s\" был сохранён"
 
 #. TRANSLATORS: file: product/views/MiqPolicySet.yaml
 #: ../app/controllers/miq_policy_set_controller.rb:15
@@ -57395,12 +57416,12 @@ msgstr "Профили политики"
 
 #: ../app/views/layouts/_policy_sim.html.haml:27
 msgid "Policy Profiles in Effect"
-msgstr ""
+msgstr "Действующие профили политик"
 
 #:
 #: ../app/javascript/components/policy-profile-form/policy-profile-form.schema.js:17
 msgid "Policy Selection"
-msgstr ""
+msgstr "Выбор политик"
 
 #: ../app/controllers/application_controller/policy_support.rb:88
 #: ../app/helpers/application_helper/title.rb:61
@@ -58119,7 +58140,7 @@ msgstr ""
 
 #: ../app/models/miq_template/operations.rb:6
 msgid "Process Collection is not available for Images and VM Templates."
-msgstr "Сбор процессов недоступен для ВМ и шаблонов"
+msgstr "Сбор процессов недоступен для образов и шаблонов ВМ"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7175
@@ -58314,12 +58335,12 @@ msgstr "Оповещения профиля:"
 #:
 #: ../app/javascript/components/policy-profile-form/policy-profile-form.schema.js:19
 msgid "Profile Policies"
-msgstr ""
+msgstr "Политики профилей"
 
 #: ../app/controllers/configuration_profile_controller.rb:60
 #: ../app/presenters/menu/default_menu.rb:36
 msgid "Profiles"
-msgstr ""
+msgstr "Профили"
 
 #: ../app/controllers/ops_controller/ops_rbac.rb:543
 #: ../app/helpers/application_helper/toolbar/container_project_center.rb:16
@@ -59176,7 +59197,7 @@ msgstr ""
 
 #: ../app/models/miq_provision.rb:96
 msgid "Publish"
-msgstr ""
+msgstr "Опубликовать"
 
 #: ../app/controllers/vm_common.rb:1210
 msgid "Publish %{vm_or_template}"
@@ -59185,12 +59206,12 @@ msgstr "Опубликовать %{vm_or_template}"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3702
 msgid "Publish Instance to a Template"
-msgstr "Опубликовать этот экземпляр для шаблона"
+msgstr "Опубликовать этот экземпляр как шаблон"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3874
 msgid "Publish VMs to a Template"
-msgstr "Опубликовать ВМ для шаблона"
+msgstr "Опубликовать ВМ как шаблон"
 
 #: ../app/controllers/application_controller/miq_request_methods.rb:257
 msgid "Publish Virtual Machine"
@@ -59221,19 +59242,19 @@ msgstr "Действие публикации не поддерживается"
 
 #: ../app/helpers/application_helper/toolbar/vm_infras_center.rb:177
 msgid "Publish selected VM to a Template"
-msgstr "Опубликовать выбранную ВМ для шаблона"
+msgstr "Опубликовать выбранную ВМ как шаблон"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_cloud_center.rb:162
 msgid "Publish this Instance to a Template"
-msgstr "Опубликовать этот экземпляр для шаблона"
+msgstr "Опубликовать этот экземпляр как шаблон"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:135
 msgid "Publish this VM to a Template"
-msgstr "Опубликовать эту ВМ для шаблона"
+msgstr "Опубликовать эту ВМ как шаблон"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_cloud_center.rb:163
 msgid "Publish to a Template"
-msgstr ""
+msgstr "Опубликовать как шаблон"
 
 #. TRANSLATORS: en.yml key: dictionary.column.puppet_status
 #: ../config/dictionary_strings.rb:1662
@@ -59438,11 +59459,11 @@ msgstr "Квартал"
 
 #: ../app/helpers/configuration_script_helper.rb:98
 msgid "Question Description"
-msgstr ""
+msgstr "Описание вопроса"
 
 #: ../app/helpers/configuration_script_helper.rb:98
 msgid "Question Name"
-msgstr ""
+msgstr "Имя вопроса"
 
 #: ../app/helpers/application_helper/toolbar/miq_report_center.rb:7
 msgid "Queue"
@@ -59883,7 +59904,7 @@ msgstr ""
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:22
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:95
 msgid "Read only"
-msgstr ""
+msgstr "Только для чтения"
 
 #: ../app/controllers/condition_controller.rb:179
 msgid "Read only condition can not be edited"
@@ -59949,6 +59970,8 @@ msgstr "Причина:"
 #: ../app/models/miq_template/operations.rb:9
 msgid "Reboot Guest Operation is not available for Images and VM Templates."
 msgstr ""
+"Действие перезагрузки гостевой ОС недоступно для образов "
+"и шаблонов ВМ"
 
 #: ../app/services/ems_infra_dashboard_service.rb:11
 msgid "Recent Hosts"
@@ -60163,7 +60186,7 @@ msgid ""
 "Reconfigure does not apply because you selected at least one VM Template"
 msgstr ""
 "Изменение конфигурации не будет применено, т.к. был выбран минимум "
-"один шаблон"
+"один шаблон ВМ"
 
 #: ../app/controllers/mixins/actions/vm_actions/reconfigure.rb:73
 msgid ""
@@ -60213,7 +60236,7 @@ msgstr "Изменение конфигурации не поддерживае�
 
 #: ../app/controllers/vm_common.rb:1275
 msgid "Reconfiguring %{vm_or_template} \"%{name}\""
-msgstr ""
+msgstr "Изменяется конфигурация %{vm_or_template} \"%{name}\""
 
 #: ../app/controllers/mixins/actions/vm_actions/resize.rb:80
 msgid "Reconfiguring Instance \"%{name}\" from %{old_flavor} to %{new_flavor}"
@@ -60228,7 +60251,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper.rb:875
 msgid "Record is not VmOrTemplate class"
-msgstr ""
+msgstr "Record не является классом VmOrTemplate"
 
 #: ../app/controllers/catalog_controller.rb:146
 msgid "Record not found."
@@ -61457,7 +61480,7 @@ msgstr ""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:603
 msgid "Registry Entry is required"
-msgstr ""
+msgstr "Требуется запись реестра"
 
 #: ../app/views/ops/_ap_form_registry.html.haml:8
 msgid "Registry Hive"
@@ -61691,7 +61714,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3596
 msgid "Reload Configuration jobs"
-msgstr ""
+msgstr "Задачи конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2627
@@ -61751,7 +61774,7 @@ msgstr "Рабоч. процессы удалённой консоли"
 #: ../app/helpers/textual_summary_helper.rb:217
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:45
 msgid "Remote Login"
-msgstr ""
+msgstr "Удалённый вход в систему"
 
 #: ../app/helpers/textual_mixins/textual_region.rb:24
 msgid "Remote Region"
@@ -61860,7 +61883,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3600
 msgid "Remove Configuration Job"
-msgstr ""
+msgstr "Удалить задачу конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3408
@@ -61937,12 +61960,12 @@ msgstr "Удалить «плавающие» IP"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2353
 msgid "Remove Generic Object Classes"
-msgstr ""
+msgstr "Удалить классы общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2401
 msgid "Remove Generic Objects"
-msgstr ""
+msgstr "Удалить общие объекты"
 
 #: src/amazon-security-form-group/amazon-security-form-group.jsx:109
 msgid "Remove Group"
@@ -62005,7 +62028,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:39
 msgid "Remove Image from Inventory"
-msgstr ""
+msgstr "Удалить образ из инвентаря"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1546
@@ -62067,7 +62090,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/configuration_jobs_center.rb:24
 msgid "Remove Jobs"
-msgstr ""
+msgstr "Удалить задачи"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1420
@@ -62148,7 +62171,7 @@ msgstr "Удалить стек оркестрации из инвентаря"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1118
 msgid "Remove Orchestration Template"
-msgstr ""
+msgstr "Удалить шаблон оркестрации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2686
@@ -62315,20 +62338,20 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/x_miq_template_center.rb:38
 msgid "Remove Template from Inventory"
-msgstr ""
+msgstr "Удалить шаблон из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/miq_templates_center.rb:53
 msgid "Remove Templates"
-msgstr ""
+msgstr "Удалить шаблоны"
 
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:63
 msgid "Remove Templates from Inventory"
-msgstr ""
+msgstr "Удалить шаблоны из инвентаря"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3974
 msgid "Remove Templates from the TemplateDB"
-msgstr ""
+msgstr "Удалить шаблоны из БД шаблонов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1342
@@ -62456,7 +62479,7 @@ msgstr "Удалить выбранных поставщиков контейн�
 
 #: ../app/helpers/application_helper/toolbar/ansible_credentials_center.rb:30
 msgid "Remove selected Credentials from Inventory"
-msgstr ""
+msgstr "Удалить выбранные учётные данные из инвентаря"
 
 #:
 #: ../app/helpers/application_helper/toolbar/customization_templates_center.rb:38
@@ -62487,7 +62510,7 @@ msgstr "Удалить выбранные варианты конфигурац�
 #:
 #: ../app/helpers/application_helper/toolbar/generic_object_definitions_center.rb:26
 msgid "Remove selected Generic Object Definitions from Inventory"
-msgstr ""
+msgstr "Удалить выбранные определения общих объектов из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/iso_datastores_center.rb:18
 msgid "Remove selected ISO Datastores from Inventory"
@@ -62507,7 +62530,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/configuration_jobs_center.rb:23
 msgid "Remove selected Jobs"
-msgstr ""
+msgstr "Удалить выбранные задачи"
 
 #: ../app/helpers/application_helper/toolbar/auth_key_pair_clouds_center.rb:28
 msgid "Remove selected Key Pairs from Inventory"
@@ -62546,12 +62569,12 @@ msgstr "Удалить выбранные стеки оркестрации из
 #:
 #: ../app/helpers/application_helper/toolbar/orchestration_templates_center.rb:37
 msgid "Remove selected Orchestration Templates from Inventory"
-msgstr ""
+msgstr "Удалить выбранные шаблоны оркестрации из инвентаря"
 
 #:
 #: ../app/helpers/application_helper/toolbar/orchestration_templates_center.rb:39
 msgid "Remove selected Orchestration Templates from Inventory?"
-msgstr ""
+msgstr "Удалить выбранные шаблоны оркестрации из инвентаря?"
 
 #: ../app/helpers/application_helper/toolbar/pxe_servers_center.rb:27
 msgid "Remove selected PXE Servers from Inventory"
@@ -62563,7 +62586,7 @@ msgstr "Удалить выбранных поставщиков физич. и�
 
 #: ../app/helpers/application_helper/toolbar/ansible_repositories_center.rb:53
 msgid "Remove selected Repositories from Inventory"
-msgstr ""
+msgstr "Удалить выбранные репозитории из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/resource_pools_center.rb:14
 msgid "Remove selected Resource Pools from Inventory"
@@ -62579,11 +62602,11 @@ msgstr "Удалить выбранные типы системных образ
 
 #: ../app/helpers/application_helper/toolbar/miq_templates_center.rb:52
 msgid "Remove selected Templates"
-msgstr ""
+msgstr "Удалить выбранные шаблоны"
 
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:62
 msgid "Remove selected Templates from Inventory"
-msgstr ""
+msgstr "Удалить выбранные шаблоны из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/ems_automations_center.rb:44
 #: ../app/helpers/application_helper/toolbar/ems_clusters_center.rb:34
@@ -62690,7 +62713,7 @@ msgstr "Удалить реестр встроенного ПО из инвен�
 #:
 #: ../app/helpers/application_helper/toolbar/generic_object_definition_center.rb:29
 msgid "Remove this Generic Object Definitions from Inventory"
-msgstr ""
+msgstr "Удалить эти определения общих объектов из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/iso_datastore_center.rb:12
 msgid "Remove this ISO Datastore from Inventory"
@@ -62698,7 +62721,7 @@ msgstr ""
 
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:38
 msgid "Remove this Image from Inventory"
-msgstr ""
+msgstr "Удалить этот образ из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/ems_infra_center.rb:51
 #: ../app/helpers/application_helper/toolbar/ems_physical_infra_center.rb:30
@@ -62715,7 +62738,7 @@ msgstr "Удалить этот экземпляр из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/configuration_job_center.rb:12
 msgid "Remove this Job"
-msgstr ""
+msgstr "Удалить эту задачу"
 
 #: ../app/helpers/application_helper/toolbar/auth_key_pair_cloud_center.rb:12
 msgid "Remove this Key Pair from Inventory"
@@ -62741,12 +62764,12 @@ msgstr "Удалить этот стек оркестрации из инвен�
 #:
 #: ../app/helpers/application_helper/toolbar/orchestration_template_center.rb:30
 msgid "Remove this Orchestration Template from Inventory"
-msgstr ""
+msgstr "Удалить этот шаблон оркестрации из инвентаря"
 
 #:
 #: ../app/helpers/application_helper/toolbar/orchestration_template_center.rb:33
 msgid "Remove this Orchestration Template from Inventory?"
-msgstr ""
+msgstr "Удалить этот шаблон оркестрации из инвентаря?"
 
 #: ../app/helpers/application_helper/toolbar/pxe_server_center.rb:17
 msgid "Remove this PXE Server from Inventory"
@@ -62754,7 +62777,7 @@ msgstr "Удалить этот сервер PXE из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/miq_policy_set_center.rb:20
 msgid "Remove this Policy Profile"
-msgstr ""
+msgstr "Удалить этот профиль политики"
 
 #: ../app/helpers/application_helper/toolbar/ems_automation_center.rb:29
 #: ../app/helpers/application_helper/toolbar/ems_configuration_center.rb:26
@@ -62806,7 +62829,7 @@ msgstr "Удалить этот тип системных образов"
 
 #: ../app/helpers/application_helper/toolbar/x_miq_template_center.rb:37
 msgid "Remove this Template from Inventory"
-msgstr ""
+msgstr "Удалить этот шаблон из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:53
 msgid "Remove this Virtual machine from Inventory"
@@ -62900,6 +62923,9 @@ msgid ""
 "%{task_name}\" "
 "on My Tasks screen"
 msgstr ""
+"Инициировано сохранение конфигурации репликации. Проверьте статус задачи \""
+"%{task_name}\" "
+"на экране «Мои задачи»."
 
 #:
 #: ../app/javascript/oldjs/controllers/ops/pglogical_replication_form_controller.js:83
@@ -63138,12 +63164,12 @@ msgstr "Отчёты, на данный момент использующие э
 #: ../app/helpers/application_helper/title.rb:99
 #: ../app/presenters/menu/default_menu.rb:203
 msgid "Repositories"
-msgstr ""
+msgstr "Репозитории"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::EmbeddedAnsible::AutomationManager::ConfigurationScriptSource (plural form)
 #: ../config/dictionary_strings.rb:3032
 msgid "Repositories (Embedded Ansible)"
-msgstr ""
+msgstr "Репозитории (Embedded Ansible)"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_EmbeddedAnsible_AutomationManager_Playbook.yaml
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_EmbeddedAutomationManager_ConfigurationScriptSource.yaml
@@ -63360,12 +63386,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3704
 msgid "Request to Publish Instance to a Template"
-msgstr "Запросить публикацию экземпляра в шаблон"
+msgstr "Запросить публикацию экземпляра как шаблон"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3876
 msgid "Request to Publish VMs to a Template"
-msgstr ""
+msgstr "Запросить публикацию ВМ как шаблон"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1084
@@ -63444,6 +63470,8 @@ msgstr ""
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:463
 msgid "Required if SSH login is disabled for the Default account."
 msgstr ""
+"Требуются, если для учётной записи по умолчанию отключён вход "
+"с использованием SSH"
 
 #: ../app/views/layouts/angular-bootstrap/_endpoints_angular.html.haml:104
 #: ../app/views/layouts/angular-bootstrap/_endpoints_angular.html.haml:139
@@ -63532,7 +63560,7 @@ msgstr ""
 
 #: ../app/models/miq_template/operations.rb:10
 msgid "Reset Operation is not available for Images and VM Templates."
-msgstr ""
+msgstr "Действие по сбросу параметров недоступно для образов и шаблонов ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3846
@@ -64360,7 +64388,7 @@ msgstr "Вывести экземпляры из эксплуатации"
 
 #: ../app/models/miq_template/operations.rb:11
 msgid "Retire Operation is not available for Images and VM Templates."
-msgstr ""
+msgstr "Действие вывода из эксплуатации недоступно для образов и шаблонов ВМ"
 
 #: ../app/controllers/mixins/actions/vm_actions/retire.rb:18
 msgid "Retire Orchestration Stack"
@@ -64603,7 +64631,7 @@ msgstr ""
 
 #: ../app/controllers/vm_common.rb:1283
 msgid "Right Size Recommendation for %{vm_or_template} \"%{name}\""
-msgstr ""
+msgstr "Рекомендация по размеру для %{vm_or_template} \"%{name}\""
 
 #: ../app/controllers/vm_common.rb:494
 msgid "Right Size VM '%{name}'"
@@ -64617,7 +64645,7 @@ msgstr ""
 
 #: ../app/controllers/mixins/actions/vm_actions/right_size.rb:17
 msgid "Right-Size Recommendations does not apply to selected VM Template"
-msgstr ""
+msgstr "Рекомендация по размеру не применима к выбранному шаблону ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3896
@@ -64690,7 +64718,7 @@ msgstr "Роли по серверам"
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:159
 msgid "Roll Up Daily Performance"
-msgstr ""
+msgstr "Скомбинировать ежедневную производительность"
 
 #: ../app/javascript/components/data-tables/time-profile-table/helper.js:30
 msgid "Roll Up Performance"
@@ -64804,7 +64832,7 @@ msgstr ""
 
 #: ../app/helpers/miq_action_helper.rb:90
 msgid "Run Ansible Playbook"
-msgstr ""
+msgstr "Запустить набор сценариев Ansible"
 
 #: ../app/helpers/container_helper/textual_summary.rb:130
 msgid "Run As Non Root"
@@ -64840,7 +64868,7 @@ msgstr "Запустить выбранный отчёт"
 
 #: ../app/javascript/components/action-form/action-form.schema.js:272
 msgid "Run an Ansible Playbook"
-msgstr ""
+msgstr "Запустить набор сценариев Ansible"
 
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:138
 #: ../app/views/shared/_playbook_options.html.haml:21
@@ -64851,7 +64879,7 @@ msgstr "Запустить на localhost"
 #: ../app/views/shared/_playbook_options.html.haml:26
 #: ../app/views/shared/_playbook_options.html.haml:29
 msgid "Run on the target of the Policy Event"
-msgstr ""
+msgstr "Запустить для цели события политики"
 
 #. TRANSLATORS: file: product/views/SystemService.yaml
 #: ../app/helpers/textual_mixins/textual_data_collection_state.rb:9
@@ -64921,7 +64949,7 @@ msgstr ""
 #:
 #: ../app/javascript/components/ansible-repository-form/ansible-repository-form.schema.js:58
 msgid "SCM Credentials"
-msgstr ""
+msgstr "Учётные данные SCM"
 
 #: ../app/helpers/ansible_repository_helper/textual_summary.rb:63
 msgid "SCM URL"
@@ -65095,15 +65123,15 @@ msgstr "Образец"
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:316
 msgid "Sample Analysis Profile \"%{name}\" can not be edited"
-msgstr ""
+msgstr "Нельзя удалить образец профиля анализа \"%{name}\""
 
 #: ../app/helpers/application_helper/button/ap_delete.rb:5
 msgid "Sample Analysis Profile cannot be deleted"
-msgstr ""
+msgstr "Нельзя удалить образец профиля анализа"
 
 #: ../app/helpers/application_helper/button/ap_edit.rb:5
 msgid "Sample Analysis Profile cannot be edited"
-msgstr ""
+msgstr "Нельзя редактировать образец профиля анализа"
 
 #: ../app/views/report/_db_widgets.html.haml:4
 msgid "Sample Dashboard"
@@ -65172,7 +65200,7 @@ msgstr "Satellite6"
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:90
 msgid "Saturday"
-msgstr ""
+msgstr "Суббота"
 
 #: src/rbac-forms/rbacAssignUserTags.jsx:191
 #: src/rbac-forms/rbacUserForm.jsx:102
@@ -65690,11 +65718,11 @@ msgstr ""
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:85
 msgid "Secret Access Key"
-msgstr ""
+msgstr "Секретный ключ доступа"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:85
 msgid "Secret Access Keys do not match"
-msgstr ""
+msgstr "Секретные ключи доступа не совпадают"
 
 #: ../app/views/ops/_settings_authentication_tab.html.haml:51
 msgid "Secret Key"
@@ -66226,16 +66254,17 @@ msgstr ""
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:50
 msgid "Select All Days"
-msgstr ""
+msgstr "Выбрать все дни"
 
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:92
 msgid "Select All Hours"
-msgstr ""
+msgstr "Выбрать все часы"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:301
 msgid "Select Ceilometer if eventing is not enabled on AMQP."
 msgstr ""
+"Если для протокола AMQP не включена обработка событий, выберите Ceilometer"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_namespace_center.rb:48
 msgid "Select Classes to copy"
@@ -66277,7 +66306,7 @@ msgstr ""
 
 #: ../app/views/layouts/_protect.html.haml:3
 msgid "Select Policy Profiles"
-msgstr ""
+msgstr "Выбрать профили политики"
 
 #:
 #: ../app/javascript/components/vm-server-relationship-form/vm-server-relationship-form.schema.js:8
@@ -66316,7 +66345,7 @@ msgstr "Выберите сервер PXE"
 
 #: ../app/views/layouts/_policy_sim.html.haml:16
 msgid "Select a Policy Profile to add:"
-msgstr ""
+msgstr "Выберите профиль политики для добавления:"
 
 #: ../app/views/miq_policy_rsop/_rsop_options.html.haml:26
 msgid "Select a VM to Submit the Simulation Options"
@@ -66341,25 +66370,25 @@ msgstr "Выберите узел слева для просмотра отчё�
 
 #: ../app/helpers/application_helper/toolbar/ems_clouds_center.rb:30
 msgid "Select a single Cloud Provider to edit"
-msgstr "Выбрать одного облачного поставщика для редактирования"
+msgstr "Выберите одного облачного поставщика для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/cloud_tenants_center.rb:18
 msgid "Select a single Cloud Tenant to edit"
-msgstr "Выбрать одного арендатора облака для редактирования"
+msgstr "Выберите одного арендатора облака для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/ems_containers_center.rb:42
 msgid "Select a single Containers Provider to edit"
-msgstr "Выбрать отдельного поставщика контейнеров для редактирования"
+msgstr "Выберите одного поставщика контейнеров для редактирования"
 
 #:
 #: ../app/helpers/application_helper/toolbar/customization_templates_center.rb:18
 msgid "Select a single Customization Templates to copy"
-msgstr "Выберите отдельный шаблон настроек для копирования"
+msgstr "Выберите один шаблон настроек для копирования"
 
 #:
 #: ../app/helpers/application_helper/toolbar/customization_templates_center.rb:28
 msgid "Select a single Customization Templates to edit"
-msgstr "Выберите отдельный шаблон настроек для редактирования"
+msgstr "Выберите один шаблон настроек для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/miq_widget_set_center.rb:17
 msgid "Select a single Dashboard to copy"
@@ -66367,11 +66396,11 @@ msgstr "Выберите одну панель мониторинга для к�
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_domains_center.rb:18
 msgid "Select a single Domain to edit"
-msgstr ""
+msgstr "Выберите один домен для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/miq_groups_center.rb:17
 msgid "Select a single Group to edit"
-msgstr ""
+msgstr "Выберите одну группу для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/host_aggregates_center.rb:28
 msgid "Select a single Host Aggregate to Add Host"
@@ -66387,11 +66416,11 @@ msgstr "Выберите один агрегат хостов для редак�
 
 #: ../app/helpers/application_helper/toolbar/template_clouds_center.rb:82
 msgid "Select a single Image to Provision Instances"
-msgstr "Выбрать один образ для подготовки ресурсов экземпляров"
+msgstr "Выберите один образ для подготовки ресурсов экземпляров"
 
 #: ../app/helpers/application_helper/toolbar/ems_infras_center.rb:30
 msgid "Select a single Infrastructure Provider to edit"
-msgstr "Выбрать отдельного поставщика инфраструктуры для редактирования"
+msgstr "Выберите одного поставщика инфраструктуры для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_instances_center.rb:39
 msgid "Select a single Instance to edit"
@@ -66409,39 +66438,39 @@ msgstr "Выберите один элемент для редактирован
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_methods_center.rb:34
 msgid "Select a single Method to edit"
-msgstr ""
+msgstr "Выберите один метод для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_domain_center.rb:50
 msgid "Select a single Namespace to edit"
-msgstr ""
+msgstr "Выберите одно пространство имён для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/ems_networks_center.rb:30
 msgid "Select a single Network Provider to edit"
-msgstr "Выбрать отдельного поставщика сетей для редактирования"
+msgstr "Выберите одного поставщика сетей для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/pxe_servers_center.rb:18
 msgid "Select a single PXE Servers to edit"
-msgstr "Выберите отдельный сервер PXE для редактирования"
+msgstr "Выберите один сервер PXE для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/ems_physical_infras_center.rb:29
 msgid "Select a single Physical Infrastructure Provider to edit"
-msgstr "Выбрать отдельного поставщика физич. инфраструктуры для редактирования"
+msgstr "Выберите одного поставщика физич. инфраструктуры для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/ems_automations_center.rb:33
 msgid "Select a single Provider to edit"
-msgstr "Выбрать отдельного поставщика для редактирования"
+msgstr "Выберите одного поставщика для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/user_roles_center.rb:26
 msgid "Select a single Role to copy"
-msgstr ""
+msgstr "Выберите одну роль для копирования"
 
 #: ../app/helpers/application_helper/toolbar/user_roles_center.rb:17
 msgid "Select a single Role to edit"
-msgstr ""
+msgstr "Выберите одну роль для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/ems_storages_center.rb:31
 msgid "Select a single Storage Manager to edit"
-msgstr "Выбрать отдельного диспетчера хранилищ для редактирования"
+msgstr "Выберите одного диспетчера хранилищ для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/pxe_image_types_center.rb:18
 msgid "Select a single System Image Type to edit"
@@ -66449,32 +66478,32 @@ msgstr "Выберите один тип системных образов дл�
 
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:131
 msgid "Select a single Template to Provision VMs"
-msgstr ""
+msgstr "Выберите один шаблон для подготовки ресурсов вирт. машин"
 
 #: ../app/helpers/application_helper/toolbar/miq_templates_center.rb:34
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:44
 msgid "Select a single Template to edit"
-msgstr ""
+msgstr "Выберите один шаблон для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/time_profiles_center.rb:28
 msgid "Select a single Time Profile to copy"
-msgstr ""
+msgstr "Выберите один профиль времени для копирования"
 
 #: ../app/helpers/application_helper/toolbar/time_profiles_center.rb:19
 msgid "Select a single Time Profile to edit"
-msgstr ""
+msgstr "Выберите один профиль времени для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/users_center.rb:26
 msgid "Select a single User to copy"
-msgstr ""
+msgstr "Выберите одного пользователя для копирования"
 
 #: ../app/helpers/application_helper/toolbar/users_center.rb:17
 msgid "Select a single User to edit"
-msgstr ""
+msgstr "Выберите одного пользователя для редактирования"
 
 #: ../app/helpers/application_helper/toolbar/cloud_databases_center.rb:20
 msgid "Select a single cloud database edit "
-msgstr "Выберите отдельную облачную БД для редактирования "
+msgstr "Выберите одну облачную БД для редактирования "
 
 #: ../app/helpers/application_helper/toolbar/ems_configurations_center.rb:30
 #: ../app/helpers/application_helper/toolbar/template_clouds_center.rb:44
@@ -66516,7 +66545,7 @@ msgstr ""
 #:
 #: ../app/javascript/components/ansible-repository-form/ansible-repository-form.schema.js:59
 msgid "Select credentials"
-msgstr ""
+msgstr "Выберите учётные данные"
 
 #: ../app/views/catalog/_form_basic_info.html.haml:69
 #: ../app/views/catalog/_st_angular_form.html.haml:84
@@ -66616,6 +66645,8 @@ msgid ""
 "Select the format type above to apply syntax highlighting for better readabili"
 "ty"
 msgstr ""
+"Выберите тип форматирования выше для применения подсветки синтаксиса "
+"в целях улучшения читаемости"
 
 #: ../app/helpers/application_helper/toolbar/cloud_database_center.rb:12
 msgid "Select this Cloud Database"
@@ -66630,7 +66661,7 @@ msgstr "Выбрать этот агрегат хостов"
 #: ../app/helpers/application_helper/toolbar/miq_templates_center.rb:24
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:34
 msgid "Select two or more Templates to compare"
-msgstr ""
+msgstr "Выберите один или более шаблонов для сравнения"
 
 #: ../app/helpers/application_helper/toolbar/ems_clusters_center.rb:24
 #: ../app/helpers/application_helper/toolbar/hosts_center.rb:32
@@ -66736,7 +66767,7 @@ msgstr "Выбранные серверы"
 #: ../app/views/shared/views/_prov_dialog.html.haml:268
 #: ../app/views/shared/views/_prov_dialog.html.haml:462
 msgid "Selected Template Contents"
-msgstr ""
+msgstr "Содержимое выбранных шаблонов"
 
 #: ../app/views/shared/views/_prov_dialog.html.haml:35
 msgid "Selected VM"
@@ -66756,6 +66787,8 @@ msgstr "Выбранные ВМ группы безопасности"
 msgid ""
 "Selected item can not be copied. Because it\\'s Ansible Playbook or not valid."
 msgstr ""
+"Выбранный элемент нельзя копировать. Он не является действительным или это "
+"набор сценариев Ansible"
 
 #: ../app/javascript/components/button-group/group-form.schema.js:61
 #: ../app/javascript/components/catalog-form/catalog-form.schema.js:51
@@ -67682,7 +67715,7 @@ msgstr ""
 
 #: ../app/controllers/catalog_controller.rb:126
 msgid "ServiceTemplateAnsiblePlaybook cannot be copied."
-msgstr "ServiceTemplateAnsiblePlaybook невозможно склопировать."
+msgstr "ServiceTemplateAnsiblePlaybook невозможно скопировать."
 
 #: ../config/model_attributes.rb:4230
 msgid "ServiceTemplateCatalog|Description"
@@ -68239,7 +68272,7 @@ msgstr "Настроить владельца для службы"
 
 #: ../app/controllers/mixins/actions/vm_actions/ownership.rb:128
 msgid "Set Ownership for Template"
-msgstr ""
+msgstr "Настроить владельца для шаблона"
 
 #: ../app/controllers/mixins/actions/vm_actions/ownership.rb:124
 msgid "Set Ownership for Virtual Machine"
@@ -68260,7 +68293,7 @@ msgstr "Настроить владельца для выбранных служ
 #: ../app/helpers/application_helper/toolbar/miq_templates_center.rb:43
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:53
 msgid "Set Ownership for the selected Templates"
-msgstr ""
+msgstr "Настроить владельцев для выбранных шаблонов"
 
 #: ../app/helpers/application_helper/toolbar/auth_key_pair_cloud_center.rb:25
 #: ../app/helpers/application_helper/toolbar/auth_key_pair_clouds_center.rb:19
@@ -68269,7 +68302,7 @@ msgstr ""
 #: ../app/helpers/application_helper/toolbar/vm_infras_center.rb:63
 #: ../app/helpers/application_helper/toolbar/vms_center.rb:42
 msgid "Set Ownership for the selected items"
-msgstr "Настроить владельца для выбранных элементов"
+msgstr "Настроить владельцев для выбранных элементов"
 
 #: ../app/helpers/application_helper/toolbar/servicetemplate_center.rb:58
 msgid "Set Ownership for this Catalog Item"
@@ -68277,7 +68310,7 @@ msgstr "Настроить владельца для этого элемента
 
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:31
 msgid "Set Ownership for this Image"
-msgstr ""
+msgstr "Настроить владельца для этого образа"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_cloud_center.rb:31
 msgid "Set Ownership for this Instance"
@@ -68289,7 +68322,7 @@ msgstr "Настроить владельца для этой службы"
 
 #: ../app/helpers/application_helper/toolbar/x_miq_template_center.rb:32
 msgid "Set Ownership for this Template"
-msgstr ""
+msgstr "Настроить владельца для этого шаблона"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:48
 msgid "Set Ownership for this VM"
@@ -68323,7 +68356,7 @@ msgstr "Настроить владельца служб"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3964
 msgid "Set Ownership of Templates"
-msgstr ""
+msgstr "Настроить владельцев шаблонов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3834
@@ -68343,6 +68376,7 @@ msgstr "Настроить дату вывода из эксплуатации"
 #: ../app/controllers/mixins/actions/vm_actions/retire.rb:26
 msgid "Set Retirement Date does not apply to selected VM Template"
 msgstr ""
+"Настройка даты вывода из эксплуатации не применима к выбранному шаблону ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3660
@@ -68724,6 +68758,7 @@ msgstr "Необходимо иметь привилегированный до�
 #: ../app/views/static/auth-credentials.html.haml:28
 msgid "Should have privileged access, such as root or administrator."
 msgstr ""
+"Необходимо иметь привилегированный доступ, например, root или администратор"
 
 #: ../app/helpers/report_helper/report_dashboard_widget_helper.rb:111
 #: ../app/views/layouts/_perf_options.html.haml:37
@@ -68881,6 +68916,7 @@ msgstr "Показать данные службы по ёмкости и пот
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3954
+#, fuzzy
 msgid "Show Capacity & Utilization data of Templates"
 msgstr "Показать данные шаблонов по ёмкости и потреблению"
 
@@ -69044,7 +69080,7 @@ msgstr "Показать родительский хост '%{name}'"
 #: ./src/dialog-editor/components/modal-field-template/date-time-control.html:47
 #: ./src/dialog-editor/components/modal-field-template/date-time-control.html:77
 msgid "Show Past Dates"
-msgstr ""
+msgstr "Показать прошедшие даты"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2113
@@ -69059,7 +69095,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1991
 msgid "Show Policy Profile"
-msgstr ""
+msgstr "Показать профиль политики"
 
 #: ./src/dialog-editor/components/modal-field-template/date-control.html:66
 #: ./src/dialog-editor/components/modal-field-template/date-time-control.html:70
@@ -69089,7 +69125,7 @@ msgstr "Показать отчёт: табличный"
 
 #: ../app/helpers/ansible_playbook_helper/textual_summary.rb:36
 msgid "Show Repository"
-msgstr ""
+msgstr "Показать репозиторий"
 
 #: ../app/helpers/textual_mixins/vm_common.rb:194
 msgid "Show Running Processes on this VM"
@@ -69166,7 +69202,7 @@ msgstr "Показать временные шкалы для этого дис�
 
 #: ../app/helpers/application_helper/toolbar/x_miq_template_center.rb:119
 msgid "Show Timelines for this Template"
-msgstr ""
+msgstr "Показать временные шкалы для этого шаблона"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:179
 msgid "Show Timelines for this VM"
@@ -69282,7 +69318,7 @@ msgstr "Показать все облачные тома на основе эт
 
 #: ../app/helpers/ems_configuration_helper/textual_summary.rb:56
 msgid "Show all Configuration Profiles"
-msgstr ""
+msgstr "Показать все профили конфигурации"
 
 #: ../app/helpers/configuration_profile_helper/textual_summary.rb:73
 #: ../app/helpers/ems_configuration_helper/textual_summary.rb:66
@@ -69344,11 +69380,11 @@ msgstr "Показать все сетевые маршрутизаторы"
 
 #: ../app/helpers/ansible_repository_helper/textual_summary.rb:45
 msgid "Show all Playbooks"
-msgstr ""
+msgstr "Показать все наборы сценариев"
 
 #: ../app/helpers/ansible_credential_helper/textual_summary.rb:58
 msgid "Show all Repositories"
-msgstr ""
+msgstr "Показать все репозитории"
 
 #: ../app/helpers/resource_pool_helper/textual_summary.rb:126
 msgid "Show all Resource Pools"
@@ -69758,7 +69794,7 @@ msgstr "Показать пул ресурсов этой ВМ"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:315
 msgid "Show this VM's Template"
-msgstr ""
+msgstr "Показать шаблон этой ВМ"
 
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:66
 msgid "Show this Volume's Availability Zone"
@@ -69822,6 +69858,7 @@ msgstr ""
 #: ../app/models/miq_template/operations.rb:12
 msgid "Shutdown Guest Operation is not available for Images and VM Templates."
 msgstr ""
+"Действие выключения работы гостевой ОС недоступно для образов и шаблонов ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1681
@@ -70121,19 +70158,19 @@ msgstr ""
 #: ../app/helpers/textual_summary_helper.rb:218
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:29
 msgid "SmartState Docker"
-msgstr ""
+msgstr "SmartState Docker"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:195
 msgid "SmartState Docker Password"
-msgstr ""
+msgstr "Пароль для SmartState Docker"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:195
 msgid "SmartState Docker Passwords do not match"
-msgstr ""
+msgstr "Пароли для SmartState Docker не совпадают"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:195
 msgid "SmartState Docker User Name"
-msgstr ""
+msgstr "Имя пользователя SmartState Docker"
 
 #: ../app/models/storage.rb:74
 msgid "Smartstate Analysis cannot be performed on selected Datastore"
@@ -70405,7 +70442,7 @@ msgstr "Выполнить мягкую перезагрузку этого эк
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:7
 msgid "Software"
-msgstr ""
+msgstr "Программное обеспечение"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/inventory/parser/power_virtual_servers.rb:151
@@ -70433,7 +70470,7 @@ msgstr "Порядок сортировки"
 #: ./src/dialog-editor/components/modal-field-template/radio-button.html:37
 #: ./src/dialog-editor/components/modal-field-template/tag-control.html:47
 msgid "Sort by"
-msgstr ""
+msgstr "Сортировать по"
 
 #: ./src/dialog-editor/components/modal-field-template/drop-down-list.html:181
 #: ./src/dialog-editor/components/modal-field-template/drop-down-list.html:52
@@ -70527,7 +70564,7 @@ msgstr "Исходные группы безопасности правила п
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/140_Provisioning Activity - by VM.yaml
 #: ../config/yaml_strings.rb:7271
 msgid "Source Template"
-msgstr ""
+msgstr "Исходный шаблон"
 
 #. TRANSLATORS: en.yml key: dictionary.column.source_type
 #: ../config/dictionary_strings.rb:1824
@@ -70571,7 +70608,7 @@ msgstr "Источник правила политики безопасност�
 #: ../app/models/miq_provision_virt_workflow.rb:748
 #: ../app/models/miq_provision_virt_workflow.rb:955
 msgid "Source template [%{name}] was not found"
-msgstr ""
+msgstr "Исходный шаблон [%{name}] не найден"
 
 #:
 #: ../app/views/layouts/angular-bootstrap/_auth_credentials_angular_bootstrap.html.haml:44
@@ -70711,7 +70748,7 @@ msgstr ""
 
 #: ../app/models/miq_template/operations.rb:14
 msgid "Start Operation is not available for Images and VM Templates."
-msgstr ""
+msgstr "Действие запуска недоступно для образов и шаблонов ВМ"
 
 #:
 #: ../app/javascript/components/visual-settings-form/visual-settings-form.schema.js:99
@@ -71092,7 +71129,7 @@ msgstr "Остановить"
 
 #: ../app/models/miq_template/operations.rb:15
 msgid "Stop Operation is not available for Images and VM Templates."
-msgstr ""
+msgstr "Действие останова недоступно для образов и шаблонов ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4569
@@ -71968,7 +72005,7 @@ msgstr "Обновление сведений потока невозможно"
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:39
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:79
 msgid "String"
-msgstr ""
+msgstr "Строка"
 
 #: ../app/javascript/oldjs/miq_application.js:89
 msgid "String List"
@@ -72261,7 +72298,7 @@ msgstr ""
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:66
 msgid "Sunday"
-msgstr ""
+msgstr "Воскресенье"
 
 #: ../app/helpers/application_helper/button/rbac_user_copy.rb:5
 msgid "Super Administrator can not be copied"
@@ -72338,7 +72375,7 @@ msgstr "Поддерживает изменение размеров томов"
 
 #: ../app/helpers/configuration_script_helper.rb:97
 msgid "Surveys"
-msgstr ""
+msgstr "Опросы"
 
 #: ../app/controllers/application_controller/ci_processing.rb:430
 #: ../app/helpers/application_helper/toolbar/cloud/instance_operations_button_group_mixin.rb:41
@@ -72579,7 +72616,7 @@ msgstr ""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:5
 msgid "System"
-msgstr ""
+msgstr "Система"
 
 #: ../app/helpers/container_node_helper/textual_summary.rb:72
 msgid "System BIOS UUID"
@@ -72924,7 +72961,7 @@ msgstr ""
 #: ../app/controllers/application_controller/tags.rb:93
 #: ../app/controllers/ops_controller/ops_rbac.rb:595
 msgid "Tag Edit was cancelled by the user"
-msgstr ""
+msgstr "Редактирование тегов было отменено пользователем"
 
 #: ../app/views/chargeback_assignment/_form.html.haml:95
 msgid "Tag Name"
@@ -73163,12 +73200,12 @@ msgstr[2] "Шаблонов"
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4743
 msgid "Template %{subject} has been published."
-msgstr ""
+msgstr "Шаблон %{subject} has been published."
 
 #. TRANSLATORS: en.yml key: dictionary.model.ConfigurationScript
 #: ../config/dictionary_strings.rb:2776
 msgid "Template (Ansible Tower)"
-msgstr ""
+msgstr "Шаблон (Ansible Tower)"
 
 #: ../app/models/manageiq/providers/kubevirt/infra_manager/template.rb:27
 msgid "Template (Kubevirt)"
@@ -73180,20 +73217,20 @@ msgstr[2] "Шаблонов (Kubevirt)"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3942
 msgid "Template Access Rules"
-msgstr ""
+msgstr "Правила доступа к шаблонам"
 
 #: ../app/controllers/ops_controller/settings/schedules.rb:650
 msgid "Template Analysis"
-msgstr ""
+msgstr "Анализ шаблона"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_AnsibleTower_AutomationManager_Job.yaml
 #: ../config/yaml_strings.rb:1216
 msgid "Template Name"
-msgstr ""
+msgstr "Имя шаблона"
 
 #: ../app/javascript/oldjs/controllers/schedule/schedule_form_controller.js:188
 msgid "Template Selection"
-msgstr ""
+msgstr "Выбор шаблона"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_Amazon_CloudManager_OrchestrationTemplate.yaml
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_AzureStack_CloudManager_OrchestrationTemplate.yaml
@@ -73207,33 +73244,33 @@ msgstr ""
 #: ../app/javascript/components/orchestration-template/orchestration-template-form.schema.js:67
 #: ../config/yaml_strings.rb:1197
 msgid "Template Type"
-msgstr ""
+msgstr "Тип шаблона"
 
 #. TRANSLATORS: en.yml key: dictionary.column.template_valid
 #: ../config/dictionary_strings.rb:1928
 msgid "Template Valid"
-msgstr ""
+msgstr "Действительный шаблон"
 
 #. TRANSLATORS: en.yml key: dictionary.column.template_valid_error_message
 #: ../config/dictionary_strings.rb:1926
 msgid "Template Valid Error Message"
-msgstr ""
+msgstr "Действительный шаблон, сообщение об ошибке"
 
 #: ../app/models/miq_template.rb:45
 msgid "Template and Image"
 msgid_plural "Templates and Images"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Шаблон и образ"
+msgstr[1] "Шаблоны и образы"
+msgstr[2] "Шаблоны и образы"
 
 #: ../app/controllers/catalog_controller.rb:964
 msgid "Template is required, please select one from the list"
-msgstr ""
+msgstr "Требуется шаблон, выберите один из списка"
 
 #:
 #: ../app/models/manageiq/providers/redhat/infra_manager/provision_workflow.rb:289
 msgid "Template sealing is supported only for non-Windows OS."
-msgstr "Запечатывание снимков доступно только для ОС, не являющимися Windows"
+msgstr "Запечатывание шаблонов доступно только для ОС не из семейства Windows"
 
 #. TRANSLATORS: file: product/views/ConfigurationScript.yaml
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_ExternalAutomationManager_ConfigurationScript.yaml
@@ -73259,7 +73296,7 @@ msgstr "Шаблоны"
 
 #: ../app/controllers/vm_or_template_controller.rb:29
 msgid "Templates & Images"
-msgstr ""
+msgstr "Шаблоны и образы"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:892
@@ -73269,12 +73306,12 @@ msgstr "Меню-гармошка «Шаблоны и образы»"
 #. TRANSLATORS: en.yml key: dictionary.model.ConfigurationScript (plural form)
 #: ../config/dictionary_strings.rb:2778
 msgid "Templates (Ansible Tower)"
-msgstr ""
+msgstr "Шаблоны (Ansible Tower)"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:929
 msgid "Templates Accordion"
-msgstr "Меню-гармошка «Шаблоны»"
+msgstr "Меню-гармошка шаблонов"
 
 #: ../app/helpers/configured_system_helper/textual_summary.rb:148
 #: ../app/views/configuration_profile/show.html.haml:12
@@ -73314,6 +73351,8 @@ msgid ""
 "Tenant ID, Client ID and matching Client Key fields are needed to perform veri"
 "fication of credentials"
 msgstr ""
+"Для выполнения верификации учётных данных требуется поле ID арендатора, "
+"ID клиента и совпадающие поля ключа клиента"
 
 #: ../app/models/manageiq/providers/openstack/cloud_manager.rb:145
 msgid "Tenant Mapping Enabled"
@@ -73515,12 +73554,12 @@ msgstr ""
 
 #: ../app/controllers/application_controller/ci_processing.rb:446
 msgid "Terminate"
-msgstr ""
+msgstr "Завершить работу"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3696
 msgid "Terminate the Guest OS on Instances"
-msgstr "Остановить работу гостевых ОС на экземплярах"
+msgstr "Завершить работу гостевых ОС на экземплярах"
 
 #: ../app/views/ops/_settings_server_tab.html.haml:213
 msgid "Test E-mail Address"
@@ -73556,7 +73595,7 @@ msgstr ""
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:58
 #: ../app/helpers/configuration_helper/configuration_view_helper.rb:63
 msgid "Textual View"
-msgstr ""
+msgstr "Текстовый режим просмотра"
 
 #: ../app/services/user_validation_service.rb:81
 msgid ""
@@ -73766,7 +73805,7 @@ msgstr ""
 #: ../app/models/vm_or_template/operations/relocation.rb:80
 msgid ""
 "The VM '%{name}' is already running on the same folder as the destination."
-msgstr ""
+msgstr "ВМ '%{name}' уже выполняется в папке, которая является целевой"
 
 #:
 #: ../app/models/manageiq/providers/openstack/cloud_manager/vm/operations/power.rb:12
@@ -73787,11 +73826,11 @@ msgstr ""
 
 #: ../app/models/vm_or_template/operations.rb:138
 msgid "The VM does not have a valid connection state"
-msgstr ""
+msgstr "У ВМ нет действительного статуса подключения"
 
 #: ../app/models/vm_or_template/operations.rb:132
 msgid "The VM is a template"
-msgstr ""
+msgstr "ВМ является шаблоном"
 
 #: ../app/models/vm_or_template/operations.rb:136
 msgid "The VM is not connected to a Host"
@@ -73819,11 +73858,11 @@ msgstr ""
 
 #: ../app/models/vm_or_template/operations.rb:130
 msgid "The VM is retired"
-msgstr ""
+msgstr "ВМ выведена из эксплуатации"
 
 #: ../app/models/vm_or_template/operations.rb:134
 msgid "The VM is terminated"
-msgstr ""
+msgstr "Работа ВМ завершена"
 
 #:
 #: ../app/models/manageiq/providers/vmware/infra_manager/vm/operations/guest.rb:9
@@ -74391,7 +74430,7 @@ msgstr "В этом месяце (частично)"
 
 #: ../app/helpers/miq_policy_helper.rb:123
 msgid "This Policy is not assigned to any Profiles."
-msgstr ""
+msgstr "Данная политика не присвоена ни одному из профилей"
 
 #: ../app/controllers/miq_policy_controller/policies.rb:21
 msgid "This Policy is read only and cannot be modified"
@@ -74538,7 +74577,7 @@ msgstr "Этот пользователь ограничен элементам�
 
 #: ../app/views/ops/rbac_group/_vms_templates.html.haml:3
 msgid "This user is limited to the selected folders and their children."
-msgstr ""
+msgstr "Этот пользователь ограничен выбранными папками и их родителями"
 
 #: ../app/views/ops/rbac_group/_hosts_clusters.html.haml:3
 msgid "This user is limited to the selected items and their children."
@@ -74586,7 +74625,7 @@ msgstr "HDD с оптимизированной пропускной спосо�
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:82
 msgid "Thursday"
-msgstr ""
+msgstr "Четверг"
 
 #: ../app/models/manageiq/providers/google/cloud_manager/cloud_database.rb:20
 msgid "Tier"
@@ -74630,7 +74669,7 @@ msgstr "Профиль времени"
 #: ../app/controllers/configuration_controller.rb:161
 #: ../app/controllers/configuration_controller.rb:385
 msgid "Time Profiles"
-msgstr ""
+msgstr "Профили времени"
 
 #. TRANSLATORS: file: product/reports/500_Events - Operations/120_Events_for_VM_prod_webserver.yaml
 #. TRANSLATORS: file: product/reports/500_Events - Operations/130_Reconfigure_Events_by_Department.yaml
@@ -74650,7 +74689,7 @@ msgstr "Часовой пояс"
 
 #: ../config/model_attributes.rb:4498
 msgid "Time profile"
-msgstr ""
+msgstr "Профиль времени"
 
 #: ../app/controllers/miq_alert_controller.rb:628
 msgid "Time threshold for the field criteria must be selected"
@@ -74821,7 +74860,7 @@ msgstr ""
 #: ../app/javascript/components/visual-settings-form/visual-settings-form.schema.js:108
 #: ../app/views/ops/_diagnostics_cu_repair_tab.html.haml:14
 msgid "Timezone"
-msgstr ""
+msgstr "Часовой пояс"
 
 #: src/report-editor/basic-info.jsx:29
 msgid "Title"
@@ -74881,10 +74920,13 @@ msgid ""
 msgstr ""
 
 #: ../app/helpers/ops_helper.rb:47
+#, fuzzy
 msgid ""
 "To reset back to the template's setting or to delete a setting, set the value "
 "to <<reset>>."
 msgstr ""
+"Для отката к исходным параметрам шаблона или для удаления параметров "
+"укажите значение <<reset>>."
 
 #: ../app/helpers/miq_task_helper.rb:3 ../app/helpers/view_helper.rb:78
 msgid "Today"
@@ -74948,13 +74990,13 @@ msgstr "Переключить режим обслуживания для это
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:165
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:433
 msgid "Token"
-msgstr ""
+msgstr "Маркёр"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:138
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:165
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:433
 msgid "Tokens do not match"
-msgstr ""
+msgstr "Маркёры не совпадают"
 
 #. TRANSLATORS: en.yml key: dictionary.column.tools_status
 #. TRANSLATORS: file: product/reports/400_Operations- Virtual Machines/050_VMs without VMware tools.yaml
@@ -75041,7 +75083,7 @@ msgstr "Всего кластеров"
 #. TRANSLATORS: en.yml key: dictionary.column.total_configuration_profiles
 #: ../config/dictionary_strings.rb:1944
 msgid "Total Configuration Profiles"
-msgstr ""
+msgstr "Всего профилей конфигурации"
 
 #: ../app/helpers/ems_cluster_helper/textual_summary.rb:125
 msgid "Total Configured CPUs"
@@ -75092,7 +75134,7 @@ msgstr ""
 #. TRANSLATORS: en.yml key: dictionary.column.total_direct_miq_templates
 #: ../config/dictionary_strings.rb:1950
 msgid "Total Direct Miq Templates"
-msgstr ""
+msgstr "Всего прямых шаблонов MIQ"
 
 #. TRANSLATORS: en.yml key: dictionary.column.total_direct_vms
 #: ../config/dictionary_strings.rb:1952
@@ -75172,7 +75214,7 @@ msgstr "Всего памяти"
 #. TRANSLATORS: en.yml key: dictionary.column.v_total_miq_templates
 #: ../config/dictionary_strings.rb:1962 ../config/dictionary_strings.rb:2068
 msgid "Total Miq Templates"
-msgstr ""
+msgstr "Всего шаблонов MIQ"
 
 #. TRANSLATORS: en.yml key: dictionary.column.aggregate_cpu_total_cores
 #. TRANSLATORS: file: product/reports/120_Configuration Management - Providers/010_Summary.yaml
@@ -75276,7 +75318,7 @@ msgstr "Всего подсетей"
 #. TRANSLATORS: file: product/views/ResourcePool.yaml
 #: ../config/yaml_strings.rb:1090
 msgid "Total Templates"
-msgstr ""
+msgstr "Всего шаблонов"
 
 #. TRANSLATORS: en.yml key: dictionary.column.total_unmanaged_vms
 #: ../config/dictionary_strings.rb:1976
@@ -75365,7 +75407,7 @@ msgstr ""
 #. TRANSLATORS: en.yml key: dictionary.column.total_vms_and_templates
 #: ../config/dictionary_strings.rb:1982
 msgid "Total Vms and Templates"
-msgstr ""
+msgstr "Всего ВМ и шаблонов"
 
 #. TRANSLATORS: file: product/views/HostInitiator.yaml
 #. TRANSLATORS: file: product/views/HostInitiatorGroup.yaml
@@ -75571,7 +75613,7 @@ msgstr "Попытка изменения виджета только для ч�
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:74
 msgid "Tuesday"
-msgstr ""
+msgstr "Вторник"
 
 #: ../app/helpers/application_helper/toolbar/physical_chassis_list_center.rb:45
 #: ../app/helpers/application_helper/toolbar/physical_chassis_summary_center.rb:41
@@ -76013,7 +76055,7 @@ msgid ""
 " be"
 " empty."
 msgstr ""
-"Не удалось создать копию нового шаблона \"%{name}\": содержимое нового"
+"Не удалось создать новую копию шаблона \"%{name}\": содержимое нового"
 " шаблона "
 "не может быть пустым"
 
@@ -76023,7 +76065,7 @@ msgid ""
 " content h"
 "ave to differ."
 msgstr ""
-"Не удалось создать копию нового шаблона \"%{name}\": содержимое нового "
+"Не удалось создать новую копию шаблона \"%{name}\": содержимое нового "
 "и старого шаблонов должно отличаться."
 
 #:
@@ -76032,6 +76074,8 @@ msgid ""
 "Unable to create a new template copy %s: old and new template content have to "
 "differ."
 msgstr ""
+"Не удалось создать новую копию шаблона %s: содержимое нового "
+"и старого шаблонов должно отличаться."
 
 #:
 #: ../app/models/manageiq/providers/openstack/network_manager/network_router.rb:17
@@ -76108,7 +76152,7 @@ msgstr "Не удалось найти объект с классом: [%{class_
 
 #: ../app/models/miq_provision/options_helper.rb:31
 msgid "Unable to find source Template/Vm with id [%{number}]"
-msgstr ""
+msgstr "Не удалось найти исходный шаблон/ВМ с id [%{number}]"
 
 #: ../app/models/chargeback_configured_system.rb:77
 msgid "Unable to find strategy for Configured Systems selection"
@@ -77418,6 +77462,8 @@ msgid ""
 "Used for Docker Registry credentials required to perform SmartState Analysis o"
 "n AWS."
 msgstr ""
+"Используется для учётных данных реестра Docker, необходимых для выполнения "
+"анализа SmartState в AWS"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:341
 msgid ""
@@ -77430,7 +77476,7 @@ msgstr ""
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:492
 msgid "Used for access to IPMI."
-msgstr ""
+msgstr "Используется для доступа к IPMI"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:477
 msgid "Used for access to Web Services."
@@ -77444,6 +77490,7 @@ msgstr ""
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:311
 msgid "Used to authenticate with Nuage AMQP Messaging Bus for event handling."
 msgstr ""
+"Используется для аутентификации на шине сообщений AMQP для обработки событий"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:299
 msgid ""
@@ -77496,7 +77543,7 @@ msgstr ""
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:8
 msgid "User Accounts"
-msgstr ""
+msgstr "Учётные записи пользователей"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/051_User Accounts Linux.yaml
 #: ../config/yaml_strings.rb:5885
@@ -77567,7 +77614,7 @@ msgstr ""
 
 #: ../app/controllers/configuration_controller.rb:377
 msgid "User Interface Configuration"
-msgstr ""
+msgstr "Конфигурация интерфейса пользователя"
 
 #: ../app/javascript/components/visual-settings-form/index.jsx:32
 msgid "User Interface settings saved"
@@ -77989,7 +78036,7 @@ msgstr ""
 #. TRANSLATORS: file: product/views/MiqUserRole.yaml
 #: ../config/yaml_strings.rb:1524
 msgid "VM & Template Access Restriction"
-msgstr ""
+msgstr "Ограничения доступа к ВМ и шаблонам"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7035
@@ -78102,7 +78149,7 @@ msgstr "ВМ соответствует требованиям"
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:9
 msgid "VM Configuration"
-msgstr ""
+msgstr "Конфигурация ВМ"
 
 #:
 #: ../app/helpers/application_helper/toolbar/cloud/instance_operations_button_group_mixin.rb:105
@@ -78243,7 +78290,7 @@ msgstr "Консоль VM NATIVE не поддерживается"
 #: ../app/views/catalog/_form_ovf_template_options.html.haml:19
 #: ../app/views/catalog/_sandt_tree_show.html.haml:142
 msgid "VM Name"
-msgstr ""
+msgstr "Имя ВМ"
 
 #: ../app/controllers/catalog_controller.rb:2003
 msgid "VM Name already exists, Please select a different VM Name"
@@ -78349,6 +78396,7 @@ msgstr ""
 #: ../app/models/vm/operations.rb:44
 msgid "VM Process collection requires credentials set at the Zone level."
 msgstr ""
+"Для сбора событий ВМ требуются учётные данные, настроенные на уровне зоны"
 
 #: ../app/models/miq_compare.rb:183
 msgid "VM Properties"
@@ -78370,7 +78418,7 @@ msgstr "Файлы подготовленных дисковых ресурсо�
 
 #: ../app/models/miq_request.rb:86
 msgid "VM Publish"
-msgstr ""
+msgstr "Опубликовать ВМ"
 
 #: ../app/models/miq_request.rb:113
 msgid "VM Reconfigure"
@@ -78555,26 +78603,26 @@ msgstr "Запросить приостановку ВМ (suspend)"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:313
 msgid "VM Template"
-msgstr ""
+msgstr "Шаблон ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:408
 msgid "VM Template Create Complete"
-msgstr ""
+msgstr "Создание шаблона ВМ завершено"
 
 #. TRANSLATORS: en.yml key: dictionary.model.MiqTemplate
 #: ../config/dictionary_strings.rb:3616
 msgid "VM Template and Image"
-msgstr ""
+msgstr "Шаблон и образ ВМ"
 
 #: ../app/controllers/application_controller/compare.rb:695
 msgid "VM Templates"
-msgstr ""
+msgstr "Шаблоны ВМ"
 
 #. TRANSLATORS: en.yml key: dictionary.model.MiqTemplate (plural form)
 #: ../config/dictionary_strings.rb:3618
 msgid "VM Templates and Images"
-msgstr ""
+msgstr "Шаблоны и образы ВМ"
 
 #. TRANSLATORS: file: product/reports/421_Operations - Events/VC Snapshot Events by User.yaml
 #: ../config/yaml_strings.rb:6724
@@ -78659,7 +78707,7 @@ msgstr "У ВМ нет %{table}, уничтожить ВМ невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:87
 msgid "VM has no EMS, unable to add disk"
-msgstr ""
+msgstr "У ВМ нет EMS, невозможно добавить диск"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:147
 msgid "VM has no EMS, unable to apply reconfigure spec"
@@ -78672,7 +78720,7 @@ msgstr "У ВМ нет EMS, присоединить том невозможно
 
 #: ../app/models/vm_or_template/operations.rb:16
 msgid "VM has no EMS, unable to clone"
-msgstr ""
+msgstr "У ВМ нет EMS, невозможно клонировать"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:137
 msgid "VM has no EMS, unable to clone volume"
@@ -78680,15 +78728,15 @@ msgstr "У ВМ нет EMS, невозможно клонировать том"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:47
 msgid "VM has no EMS, unable to connect CD-ROM devices"
-msgstr ""
+msgstr "У ВМ нет EMS, подключение устройств CD-ROM невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:67
 msgid "VM has no EMS, unable to connect Floppy devices"
-msgstr ""
+msgstr "У ВМ нет EMS, подключение дискет невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:27
 msgid "VM has no EMS, unable to connect all devices"
-msgstr ""
+msgstr "У ВМ нет EMS, подключение всех устройств невозможно"
 
 #:
 #: ../app/models/manageiq/providers/openstack/cloud_manager/vm/operations/configuration.rb:10
@@ -78697,31 +78745,31 @@ msgstr "У ВМ нет EMS, открепить том невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:57
 msgid "VM has no EMS, unable to disconnect CD-ROM devices"
-msgstr ""
+msgstr "У ВМ нет EMS, отключение устройств CD-ROM невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:77
 msgid "VM has no EMS, unable to disconnect Floppy devices"
-msgstr ""
+msgstr "У ВМ нет EMS, отключение дискет невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:37
 msgid "VM has no EMS, unable to disconnect all devices"
-msgstr ""
+msgstr "У ВМ нет EMS, отключение всех устройств невозможно"
 
 #: ../app/models/vm_or_template/operations.rb:26
 msgid "VM has no EMS, unable to mark as template"
-msgstr ""
+msgstr "У ВМ нет EMS, пометить как шаблон невозможно"
 
 #: ../app/models/vm_or_template/operations.rb:36
 msgid "VM has no EMS, unable to mark as vm"
-msgstr ""
+msgstr "У ВМ нет EMS, пометить как ВМ невозможно"
 
 #: ../app/models/vm_or_template/operations/relocation.rb:56
 msgid "VM has no EMS, unable to migrate VM"
-msgstr ""
+msgstr "У ВМ нет EMS, миграция ВМ невозможна"
 
 #: ../app/models/vm_or_template/operations/relocation.rb:76
 msgid "VM has no EMS, unable to move VM into a new folder"
-msgstr ""
+msgstr "У ВМ нет EMS, переместить ВМ в новую папку невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:17
 msgid "VM has no EMS, unable to reconfigure CPUs"
@@ -78733,15 +78781,15 @@ msgstr "У ВМ нет EMS, невозможно изменить конфигу
 
 #: ../app/models/vm_or_template/operations/relocation.rb:66
 msgid "VM has no EMS, unable to relocate VM"
-msgstr ""
+msgstr "У ВМ нет EMS, изменить местоположение ВМ невозможно"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:97
 msgid "VM has no EMS, unable to remove disk"
-msgstr ""
+msgstr "У ВМ нет EMS, невозможно удалить диск"
 
 #: ../app/models/vm_or_template/operations/configuration.rb:103
 msgid "VM has no EMS, unable to resize disk"
-msgstr ""
+msgstr "У ВМ нет EMS, невозможно изменить размер диска"
 
 #: ../app/models/vm_or_template/operations.rb:112
 msgid "VM has no EMS, unable to set custom attribute"
@@ -78789,7 +78837,7 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/040_Summary for VMs.yaml
 #: ../config/yaml_strings.rb:6118
 msgid "VM is a Template"
-msgstr ""
+msgstr "ВМ является шаблоном"
 
 #: ../app/helpers/application_helper/button/vm_retire_now.rb:9
 msgid "VM is already retired"
@@ -78804,14 +78852,14 @@ msgstr ""
 #: ../app/models/vm_or_template.rb:1689 ../config/dictionary_strings.rb:3810
 msgid "VM or Template"
 msgid_plural "VMs or Templates"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "ВМ или шаблон"
+msgstr[1] "Вирт. машины или шаблоны"
+msgstr[2] "Вирт. машины или шаблоны"
 
 #. TRANSLATORS: en.yml key: dictionary.model.VmOrTemplate (plural form)
 #: ../config/dictionary_strings.rb:3812
 msgid "VM or Templates"
-msgstr ""
+msgstr "ВМ или шаблоны"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/cloud_manager/provision_workflow.rb:168
@@ -78884,7 +78932,7 @@ msgstr "Версия диспетчера вирт. машин"
 #: ../app/helpers/textual_summary_helper.rb:215
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:25
 msgid "VMRC Console"
-msgstr ""
+msgstr "Консоль VMRC"
 
 #: ../app/models/vm/operations.rb:15
 msgid "VMRC Console not supported"
@@ -78937,12 +78985,12 @@ msgstr "Меню-гармошка «ВМ и зкземпляры»"
 #: ../app/controllers/vm_infra_controller.rb:29
 #: ../app/views/ops/_rbac_group_details.html.haml:198
 msgid "VMs & Templates"
-msgstr ""
+msgstr "Вирт. машины и шаблоны"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:913
 msgid "VMs & Templates Accordion"
-msgstr "Меню-гармошка «ВМ и шаблоны»"
+msgstr "Меню-гармошка «Вирт. машины и шаблоны»"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:925
@@ -78951,7 +78999,7 @@ msgstr "Меню-гармошка «ВМ»"
 
 #: ../app/controllers/mixins/vm_show_mixin.rb:121
 msgid "VMs And Templates"
-msgstr ""
+msgstr "Вирт. машины и шаблоны"
 
 #. TRANSLATORS: file: product/reports/400_Operations- Virtual Machines/022_VMs not Powered On.yaml
 #: ../config/yaml_strings.rb:6611
@@ -78988,7 +79036,7 @@ msgstr "ВМ и экземпляры"
 #. TRANSLATORS: file: product/views/VmOrTemplate.yaml
 #: ../config/yaml_strings.rb:1265
 msgid "VMs and Templates"
-msgstr ""
+msgstr "Вирт. машины и шаблоны"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/030_by MAC Address.yaml
 #: ../config/yaml_strings.rb:5812
@@ -79204,8 +79252,9 @@ msgstr ""
 
 #. TRANSLATORS: file: product/compare/vms.yaml
 #: ../config/yaml_strings.rb:5409
+#, fuzzy
 msgid "VMs: Compare Template"
-msgstr ""
+msgstr "Вирт. машины: сравнить шаблоны"
 
 #: ../app/helpers/textual_mixins/vm_common.rb:8
 msgid "VMsafe"
@@ -79301,12 +79350,12 @@ msgstr ""
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_Openstack_CloudManager_VnfdTemplate.yaml
 #: ../config/yaml_strings.rb:1362
 msgid "VNF Orchestration Template"
-msgstr ""
+msgstr "Шаблон оркестрации VNF"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_Openstack_CloudManager_VnfdTemplate.yaml
 #: ../config/yaml_strings.rb:1360
 msgid "VNF Orchestration Templates"
-msgstr ""
+msgstr "Шаблоны оркестрации VNF"
 
 #: ../app/models/manageiq/providers/openstack/cloud_manager/vnfd_template.rb:71
 msgid "VNF Template"
@@ -79505,7 +79554,7 @@ msgstr ""
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:36
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:76
 msgid "Value type"
-msgstr ""
+msgstr "Тип значения"
 
 #: ./dist/js/ui-components.js:1
 msgid "Value type is set as Integer, but the value entered is not a number"
@@ -79741,7 +79790,7 @@ msgstr "Просмотреть все типы системных образов
 #: ../app/views/ops/_settings_details_tab.html.haml:22
 #: ../app/views/ops/_settings_details_tab.html.haml:24
 msgid "View Analysis Profiles"
-msgstr ""
+msgstr "Просмотреть профили анализов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1224
@@ -79831,7 +79880,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3590
 msgid "View Configuration Jobs"
-msgstr ""
+msgstr "Просмотреть задачи конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3390
@@ -79841,7 +79890,7 @@ msgstr "Просмотреть поставщиков диспетчеров к�
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3422
 msgid "View Configuration Profiles"
-msgstr ""
+msgstr "Просмотреть профили конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3440
@@ -79921,7 +79970,7 @@ msgstr "Просмотреть топологию контейнеров"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3512
 msgid "View Credentials"
-msgstr ""
+msgstr "Просмотреть учётные данные"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4380
@@ -79980,12 +80029,12 @@ msgstr "Просмотреть «плавающие» IP"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2345
 msgid "View Generic Object Classes"
-msgstr ""
+msgstr "Просмотреть классы общих объектов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2387
 msgid "View Generic Objects"
-msgstr ""
+msgstr "Просмотреть общие объекты"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1805
@@ -80138,7 +80187,7 @@ msgstr "Просмотреть стеки оркестрации"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1108
 msgid "View Orchestration Templates"
-msgstr ""
+msgstr "Просмотреть шаблоны оркестрации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4575
@@ -80207,7 +80256,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3490
 msgid "View Playbooks"
-msgstr ""
+msgstr "Просмотреть наборы сценариев"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3150
@@ -80237,12 +80286,12 @@ msgstr "Просмотреть оповещения политики"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1987
 msgid "View Policy Profiles"
-msgstr ""
+msgstr "Просмотреть профили политик"
 
 #: ../app/helpers/application_helper/toolbar/miq_templates_center.rb:83
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:93
 msgid "View Policy Simulation for the selected Templates"
-msgstr ""
+msgstr "Просмотреть имитацию политики для выбранных шаблонов"
 
 #: ../app/helpers/application_helper/toolbar/template_clouds_center.rb:113
 #: ../app/helpers/application_helper/toolbar/vm_clouds_center.rb:102
@@ -80253,7 +80302,7 @@ msgstr "Просмотреть имитацию политики для выбр
 
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:77
 msgid "View Policy Simulation for this Image"
-msgstr ""
+msgstr "Просмотреть имитацию политики для этого образа"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_cloud_center.rb:135
 msgid "View Policy Simulation for this Instance"
@@ -80261,16 +80310,16 @@ msgstr "Просмотреть имитацию политики для этог
 
 #: ../app/helpers/application_helper/toolbar/x_miq_template_center.rb:60
 msgid "View Policy Simulation for this Template"
-msgstr ""
+msgstr "Просмотреть имитацию политики для этого шаблона"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:100
 msgid "View Policy Simulation for this VM"
-msgstr ""
+msgstr "Просмотреть имитацию политики для этой ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3770
 msgid "View Policy Simulation of Images"
-msgstr ""
+msgstr "Просмотреть имитацию политики образов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3658
@@ -80285,12 +80334,12 @@ msgstr "Просмотреть имитацию политики на физич
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3962
 msgid "View Policy Simulation of Templates"
-msgstr ""
+msgstr "Просмотреть имитацию политики шаблонов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3828
 msgid "View Policy Simulation of VMs"
-msgstr ""
+msgstr "Просмотреть имитацию политики ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3538
@@ -80305,7 +80354,7 @@ msgstr "Просмотреть отчёты"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3464
 msgid "View Repositories"
-msgstr ""
+msgstr "Просмотреть репозитории"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:998
@@ -80404,12 +80453,12 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3980
 msgid "View Template Snapshots"
-msgstr ""
+msgstr "Просмотреть снимки шаблона"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3574
 msgid "View Templates"
-msgstr ""
+msgstr "Просмотреть шаблоны"
 
 #: ../app/helpers/ops_helper.rb:97
 msgid "View Tenants"
@@ -80551,7 +80600,7 @@ msgstr "Просмотреть этот образ PXE"
 
 #: ../app/helpers/miq_policy_helper.rb:128
 msgid "View this Policy Profile"
-msgstr ""
+msgstr "Просмотреть этот профиль политики"
 
 #: ../app/views/ops/_rbac_group_details.html.haml:105
 msgid "View this Project"
@@ -80899,11 +80948,11 @@ msgstr ""
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:102
 #: ./src/dialog-editor/components/modal-field-template/text-box.html:29
 msgid "Visible"
-msgstr ""
+msgstr "Видимый"
 
 #: ../app/controllers/configuration_controller.rb:383
 msgid "Visual"
-msgstr ""
+msgstr "Визуальный"
 
 #. TRANSLATORS: en.yml key: dictionary.column.vlan_transparent
 #: ../config/dictionary_strings.rb:2104
@@ -80971,7 +81020,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:4559
 msgid "Vm or template"
-msgstr ""
+msgstr "ВМ или шаблон"
 
 #: ../config/model_attributes.rb:4560
 msgid "VmOrTemplate|Active"
@@ -82508,6 +82557,8 @@ msgid ""
 "Warning: The selected Analysis Profiles and ALL of their components will be pe"
 "rmanently removed!"
 msgstr ""
+"Предупреждение: выбранные профили анализа и ВСЕ их компоненты будут навсегда"
+" удалены"
 
 #:
 #: ../app/helpers/application_helper/toolbar/servicetemplatecatalogs_center.rb:31
@@ -82608,6 +82659,7 @@ msgid ""
 "Warning: The selected Jobs and ALL of their components will be permanently rem"
 "oved!"
 msgstr ""
+"Предупреждение: выбранные задачи и ВСЕ их компоненты будут навсегда удалены"
 
 #: ../app/helpers/application_helper/toolbar/ems_networks_center.rb:44
 msgid ""
@@ -82735,10 +82787,11 @@ msgid ""
 "Warning: The selected Templates and ALL of their components will be permanentl"
 "y removed!"
 msgstr ""
+"Предупреждение: выбранные шаблоны и ВСЕ их компоненты будут навсегда удалены"
 
 #: ../app/helpers/application_helper/toolbar/time_profiles_center.rb:41
 msgid "Warning: The selected Time Profiles will be permanently removed!"
-msgstr ""
+msgstr "Предупреждение: выбранные профили времени будут навсегда удалены"
 
 #: ../app/helpers/application_helper/toolbar/template_clouds_center.rb:66
 #: ../app/helpers/application_helper/toolbar/vm_clouds_center.rb:66
@@ -82788,6 +82841,8 @@ msgid ""
 "Warning: This Analysis Profile and ALL of its components will be permanently r"
 "emoved!"
 msgstr ""
+"Предупреждение: этот профиль анализа и ВСЕ его компоненты будут навсегда"
+" удалены"
 
 #:
 #: ../app/helpers/application_helper/toolbar/generic_object_definition_button_center.rb:18
@@ -82872,7 +82927,7 @@ msgstr "Предупреждение: этот «плавающий» IP и ВС
 #: ../app/helpers/application_helper/toolbar/generic_object_definition_center.rb:33
 #: ../app/helpers/application_helper/toolbar/generic_object_definitions_center.rb:31
 msgid "Warning: This Generic Object Definition will be permanently removed!"
-msgstr ""
+msgstr "Предупреждение: это определение общих объектов будет навсегда удалено"
 
 #: ../app/helpers/application_helper/toolbar/iso_datastore_center.rb:15
 msgid ""
@@ -82883,7 +82938,7 @@ msgstr ""
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:41
 msgid ""
 "Warning: This Image and ALL of its components will be permanently removed!"
-msgstr ""
+msgstr "Предупреждение: этот образ и ВСЕ его компоненты будут навсегда удалены"
 
 #: ../app/helpers/application_helper/toolbar/ems_infra_center.rb:54
 #: ../app/helpers/application_helper/toolbar/ems_physical_infra_center.rb:33
@@ -82903,7 +82958,7 @@ msgstr ""
 #: ../app/helpers/application_helper/toolbar/configuration_job_center.rb:15
 msgid ""
 "Warning: This Job and ALL of its components will be permanently removed!"
-msgstr ""
+msgstr "Предупреждение: эта задача и ВСЕ её компоненты будут навсегда удалены."
 
 #: ../app/helpers/application_helper/toolbar/ems_network_center.rb:34
 msgid ""
@@ -82988,6 +83043,7 @@ msgstr "Предупреждение: этот тип системных обр�
 msgid ""
 "Warning: This Template and ALL of its components will be permanently removed!"
 msgstr ""
+"Предупреждение: этот шаблон и ВСЕ его компоненты будут навсегда удалены."
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:56
 msgid ""
@@ -83052,7 +83108,7 @@ msgstr "Аутентификация веб-служб не поддержива
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:78
 msgid "Wedensday"
-msgstr ""
+msgstr "Среда"
 
 #: ../app/helpers/report_helper/timer.rb:22
 #: ../app/views/report/_form_filter_chargeback.html.haml:205
@@ -83738,7 +83794,7 @@ msgstr "Увеличить масштаб на этой диаграмме"
 
 #: ../app/models/generic_object_definition.rb:84
 msgid "[%{attrs}]: not searchable for Generic Object of %{name}"
-msgstr ""
+msgstr "[%{attrs}]: поиск общих объектов с %{name} невозможен"
 
 #: ../app/controllers/ops_controller.rb:570
 msgid "[Region: %{description} [%{region}]]"
@@ -84231,7 +84287,7 @@ msgstr "вниз"
 
 #: ../app/models/orchestration_template.rb:130
 msgid "eligible_manager_types must be implemented in subclass"
-msgstr ""
+msgstr "eligible_manager_types необходимо реализовать в подклассе"
 
 #:
 #: ../app/models/manageiq/providers/openstack/cloud_manager/host_aggregate.rb:20
@@ -84279,7 +84335,7 @@ msgstr "ems_automation"
 
 #: ../app/controllers/ems_configuration_controller.rb:82
 msgid "ems_configuration"
-msgstr ""
+msgstr "ems_configuration"
 
 #: ../app/models/cloud_volume.rb:92 ../app/models/host_initiator.rb:49
 #: ../app/models/host_initiator_group.rb:49 ../app/models/placement_group.rb:48
@@ -84690,7 +84746,7 @@ msgstr "интервал '%{interval}' не поддерживается"
 #: ../app/controllers/application_controller/explorer.rb:78
 #: ../app/controllers/application_controller/explorer.rb:189
 msgid "invalid button action"
-msgstr ""
+msgstr "Недопустимое действие кнопки"
 
 #: ../app/models/metric/ci_mixin/rollup.rb:7
 msgid "invalid interval name %{name}"
@@ -85032,11 +85088,11 @@ msgstr ""
 
 #: ../app/models/vm_or_template.rb:1353
 msgid "option :event_types is required"
-msgstr ""
+msgstr "требуется параметр :event_types"
 
 #: ../app/models/vm_or_template.rb:1355
 msgid "option :freq_threshold is required"
-msgstr ""
+msgstr "требуется параметр :freq_threshold"
 
 #: ../app/models/mixins/alert_mixin.rb:6
 msgid "option :message_filter_type is required"
@@ -85055,7 +85111,7 @@ msgstr "параметр :требуется message_filter_value"
 
 #: ../app/models/vm_or_template.rb:1354
 msgid "option :time_threshold is required"
-msgstr ""
+msgstr "требуется параметр :time_threshold"
 
 #: ../app/models/miq_region.rb:266
 msgid "options are invalid, all keys must be one of %{type}"
@@ -85090,7 +85146,7 @@ msgstr "Исходящий"
 
 #: ../app/models/orchestration_template.rb:104
 msgid "parameter_groups must be implemented in subclass"
-msgstr ""
+msgstr "parameter_groups необходимо реализовать в подклассе"
 
 #: ../app/models/user.rb:183
 msgid "password change not allowed when authentication mode is %{name}"
@@ -85099,7 +85155,7 @@ msgstr ""
 #: ../app/models/vm_or_template.rb:661 ../app/models/vm_or_template.rb:667
 #: ../app/models/vm_or_template.rb:677
 msgid "path, '%{path}', is malformed"
-msgstr ""
+msgstr "неправильный формат пути '%{path}'"
 
 #: ../app/models/metric/ci_mixin/rollup.rb:38
 msgid "perf_rollup_parents must be overridden in the mixed-in class"
@@ -85193,7 +85249,7 @@ msgstr "provider_object_release должен быть реализован по�
 
 #: ../app/models/vm_or_template.rb:1133
 msgid "raise_created_event must be implemented in a subclass"
-msgstr ""
+msgstr "raise_created_event необходимо реализовать в подклассе"
 
 #: ../app/models/manageiq/providers/cloud_manager/vm.rb:196
 msgid "raw_add_security_group must be implemented in a subclass"
@@ -85325,7 +85381,7 @@ msgstr "raw_disassociate_floating_ip необходимо реализовать
 
 #: ../app/models/vm_or_template/operations/relocation.rb:21
 msgid "raw_evacuate must be implemented in a subclass"
-msgstr ""
+msgstr "raw_evacuate необходимо реализовать в подклассе"
 
 #: ../app/models/load_balancer.rb:82
 msgid "raw_exists must be implemented in a subclass"
@@ -85333,7 +85389,7 @@ msgstr ""
 
 #: ../app/models/vm_or_template/operations/relocation.rb:13
 msgid "raw_live_migrate must be implemented in a subclass"
-msgstr ""
+msgstr "raw_live_migrate необходимо реализовать в подклассе"
 
 #: ../app/models/manageiq/providers/cloud_manager/vm.rb:227
 msgid "raw_remove_security_group must be implemented in a subclass"
@@ -85727,7 +85783,7 @@ msgstr ""
 #: ../app/models/metric/ci_mixin/rollup.rb:74
 #: ../app/models/metric/ci_mixin/rollup.rb:121
 msgid "time_profile must be passed if interval name is 'daily'"
-msgstr ""
+msgstr "если имя интервала равно 'daily', необходимо передать time_profile"
 
 #:
 #: ../app/javascript/oldjs/controllers/reconfigure/reconfigure_form_controller.js:281
@@ -85872,12 +85928,12 @@ msgstr "vApp"
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_Vmware_CloudManager_OrchestrationTemplate.yaml
 #: ../config/yaml_strings.rb:1377
 msgid "vApp Orchestration Template"
-msgstr ""
+msgstr "Шаблон оркестрации vApp"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_Vmware_CloudManager_OrchestrationTemplate.yaml
 #: ../config/yaml_strings.rb:1375
 msgid "vApp Orchestration Templates"
-msgstr ""
+msgstr "Шаблоны оркестрации vApp"
 
 #:
 #: ../app/models/manageiq/providers/vmware/cloud_manager/orchestration_template.rb:332
@@ -85987,7 +86043,7 @@ msgstr ""
 
 #: ../app/models/vm_or_template.rb:411
 msgid "vm does not belong to any host"
-msgstr "ВМ не ыпринадлежит ни одному из хостов"
+msgstr "ВМ не принадлежит ни одному из хостов"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:426
@@ -86018,7 +86074,7 @@ msgstr "vm_compliance_passed"
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_sets.yml
 #: ../config/yaml_strings.rb:385
 msgid "vm_configurational"
-msgstr ""
+msgstr "vm_configurational"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:402
@@ -86165,7 +86221,7 @@ msgstr "vm_suspend"
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:406
 msgid "vm_template"
-msgstr ""
+msgstr "vm_template"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:525
