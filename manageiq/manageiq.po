@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: manageiq 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-09 08:49-0400\n"
-"PO-Revision-Date: 2022-09-23 19:50+0300\n"
+"PO-Revision-Date: 2022-09-26 12:53+0300\n"
 "Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
 "Language-Team: RU\n"
 "Language: ru\n"
@@ -1467,7 +1467,7 @@ msgstr "%{name} не может содержать значение из чёр�
 
 #: ../app/models/miq_request_workflow/dialog_field_validation.rb:25
 msgid "%{name} must be at least %{length} characters"
-msgstr "мин. длина %{name} должна быть %{length} симв."
+msgstr "минимальная длина %{name}: %{length} симв."
 
 #: ../app/models/miq_request_workflow/dialog_field_validation.rb:38
 msgid "%{name} must be correctly formatted"
@@ -1781,13 +1781,12 @@ msgstr "Установка %{table} на [%{name}]"
 
 #: ../app/controllers/application_controller.rb:1908
 msgid "%{task} does not apply to at least one of the selected %{model}"
-msgstr ""
-"%{task} не применяется как минимум к одной из выбранных моделей %{model}"
+msgstr "%{task} не применяется минимум к одной из выбранных моделей %{model}"
 
 #: ../app/controllers/application_controller.rb:1912
 #: ../app/controllers/application_controller/ci_processing.rb:235
 msgid "%{task} does not apply to at least one of the selected items"
-msgstr "%{task} не применяется как минимум к одному из выбранных элементов"
+msgstr "%{task} не применяется минимум к одному из выбранных элементов"
 
 #: ../app/controllers/application_controller/ci_processing.rb:233
 msgid "%{task} does not apply to this item"
@@ -3554,7 +3553,7 @@ msgstr ""
 
 #: ../app/models/miq_action.rb:932
 msgid "Action is referenced in at least one policy and cannot be deleted"
-msgstr ""
+msgstr "На это действие отсылается минимум одна политика, и его нельзя удалить"
 
 #: ../app/controllers/application_controller.rb:182
 msgid "Action not implemented"
@@ -3713,9 +3712,8 @@ msgstr "Добавить всё"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1062
-#, fuzzy
 msgid "Add Atomic Catalog Item"
-msgstr "Добавить элемент в атомарный каталог"
+msgstr "Добавить элемент в разрозненный каталог"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2235
@@ -3768,9 +3766,8 @@ msgstr "Добавить облачную сеть (NSX-T)"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1050
-#, fuzzy
 msgid "Add Composite Catalog Item"
-msgstr "Добавить элемент в композитный каталог"
+msgstr "Добавить элемент в составной каталог"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3414
@@ -4109,15 +4106,13 @@ msgstr "Добавить облачного поставщика"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1102
-#, fuzzy
 msgid "Add a Composite Catalog"
-msgstr "Добавить композитный каталог"
+msgstr "Добавить составной каталог"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1052
-#, fuzzy
 msgid "Add a Composite Catalog Item"
-msgstr "Добавить элемент композитного каталога"
+msgstr "Добавить элемент составного каталога"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2043
@@ -7483,38 +7478,38 @@ msgstr "Предположить роль ARN"
 
 #: ../app/controllers/mixins/actions/vm_actions/policy_simulation.rb:18
 msgid "At least 1 VM must be selected for Policy Simulation"
-msgstr ""
+msgstr "Для имитации политики нужно выбрать хотя бы одну ВМ"
 
 #: ../app/controllers/miq_ae_customization_controller.rb:99
 #: ../app/controllers/miq_policy_export_controller.rb:35
 #: ../app/controllers/report_controller.rb:242
 msgid "At least 1 item must be selected for export"
-msgstr "Для экспорта нужно выбрать минимум 1 элемент"
+msgstr "Для экспорта нужно выбрать хотя бы 1 элемент"
 
 #: ../app/views/ops/_settings_replication_tab.html.haml:24
 msgid "At least 1 subscription must be added to save server replication type"
 msgstr ""
-"Для сохранения типа репликации сервера необходимо добавить минимум 1 подписку"
+"Для сохранения типа репликации сервера необходимо добавить хотя бы 1 подписку"
 
 #: ../app/controllers/application_controller/compare.rb:700
 msgid "At least 2 %{model} must be selected for Compare"
-msgstr ""
+msgstr "Для сравнения нужно выбрать хотя бы две %{model}"
 
 #: ../app/controllers/application_controller/compare.rb:747
 msgid "At least 2 Analyses must be selected for Drift"
-msgstr ""
+msgstr "Для смещения нужно выбрать хотя бы 2 анализа"
 
 #: ../app/controllers/miq_action_controller.rb:345
 msgid "At least one Alert must be selected"
-msgstr "Нужно выбрать минимум одно оповещение"
+msgstr "Нужно выбрать хотя бы одно оповещение"
 
 #: ../app/controllers/miq_action_controller.rb:351
 msgid "At least one Category must be selected"
-msgstr ""
+msgstr "Нужно выбрать хотя бы одну категорию"
 
 #: ../app/controllers/report_controller/widgets.rb:609
 msgid "At least one Column must be selected"
-msgstr ""
+msgstr "Нужно выбрать хотя бы один столбец"
 
 #: ../app/controllers/miq_alert_controller.rb:678
 msgid "At least one E-mail recipient must be configured"
@@ -7522,15 +7517,15 @@ msgstr "Необходимо настроить минимум одного по
 
 #: ../app/controllers/report_controller/reports/editor.rb:1578
 msgid "At least one Field must be selected"
-msgstr "Нужно выбрать минимум одно поле"
+msgstr "Нужно выбрать хотя бы одно поле"
 
 #: ../app/controllers/ops_controller/ops_rbac.rb:1428
 msgid "At least one Product Feature must be selected"
-msgstr "Нужно выбрать минимум одно свойство продукта"
+msgstr "Нужно выбрать хотя бы одно свойство продукта"
 
 #: ../app/controllers/application_controller/buttons.rb:720
 msgid "At least one Role must be selected"
-msgstr ""
+msgstr "Нужно выбрать хотя бы одну роль"
 
 #: ../app/controllers/miq_alert_set_controller.rb:88
 msgid "At least one Selection must be checked"
@@ -7538,59 +7533,60 @@ msgstr "Необходимо сделать хотя бы одно выделе�
 
 #: ../app/controllers/miq_ae_customization_controller.rb:70
 msgid "At least one Service Dialog must be selected."
-msgstr "Нужно выбрать минимум один диалог службы"
+msgstr "Нужно выбрать хотя бы один диалог службы"
 
 #: ../app/controllers/report_controller/widgets.rb:613
 msgid "At least one Shortcut must be selected"
-msgstr "Нужно выбрать минимум один ярлык"
+msgstr "Нужно выбрать хотя бы один ярлык"
 
 #: ../app/controllers/miq_action_controller.rb:370
 msgid "At least one Tag must be selected"
-msgstr ""
+msgstr "Нужно выбрать хотя бы один тег"
 
 #: ../app/controllers/report_controller/schedules.rb:279
 msgid "At least one To E-mail address must be configured"
-msgstr "Необходимо настроить адрес минимум одного получателя"
+msgstr "Необходимо настроить адрес хотя бы одного получателя"
 
 #: ../app/controllers/miq_policy_controller/events.rb:34
 msgid "At least one action must be selected to save this Policy Event"
 msgstr ""
+"Для сохранения этого события политики нужно выбрать хотя бы одно действие"
 
 #: ../app/helpers/application_helper/button/miq_ae.rb:10
 msgid "At least one domain should be enabled and unlocked"
-msgstr ""
+msgstr "Необходимо включить и разблокировать хотя бы один домен"
 
 #: ../app/controllers/application_controller/buttons.rb:751
 #: ../app/controllers/miq_action_controller.rb:378
 msgid "At least one host must be specified for manual mode"
-msgstr "Для ручного режима необходимо указать минимум один хост"
+msgstr "Для ручного режима необходимо указать хотя бы один хост"
 
 #:
 #: ../app/javascript/components/settings-time-profile-form/settings-time-profile-form.schema.js:172
 msgid "At least one hour needs to be selected"
-msgstr "Нужно выбрать минимум один час"
+msgstr "Нужно выбрать хотя бы один час"
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:262
 msgid "At least one item must be entered to create Analysis Profile"
-msgstr "Для создания профиля анализа нужно ввести минимум один элемент"
+msgstr "Для создания профиля анализа нужно ввести хотя бы один элемент"
 
 #: ../app/controllers/miq_alert_controller.rb:673
 msgid ""
 "At least one of E-mail, SNMP Trap, Timeline Event, or Management Event must be"
 " configured"
 msgstr ""
-"Необходимо настроить минимум один почтовый адрес, ловушку SNMP, событие"
+"Необходимо настроить хотя бы один почтовый адрес, ловушку SNMP, событие"
 " временной шкалы "
 "или событие управления."
 
 #: ../app/views/layouts/listnav/_compare_sections.html.haml:24
 msgid "At least one section must be selected"
-msgstr ""
+msgstr "Нужно выбрать хотя бы один раздел"
 
 #:
 #: ../app/javascript/components/settings-tasks-form/settings-tasks-form.schema.js:68
 msgid "At least one task status is required"
-msgstr ""
+msgstr "Требуется хотя бы один статус задачи"
 
 #:
 #: ../app/javascript/components/cloud-volume-form/attach-detach-cloud-volume-form.jsx:77
@@ -7751,7 +7747,7 @@ msgstr[2] ""
 
 #: ../app/views/ops/_all_tabs.html.haml:145
 msgid "Audit Log"
-msgstr ""
+msgstr "Журнал аудита"
 
 #: ../config/model_attributes.rb:58
 msgid "Audit event"
@@ -8166,7 +8162,7 @@ msgstr "Экземпляры Automate"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2409
 msgid "Automate Log"
-msgstr ""
+msgstr "Журнал Automate"
 
 #: ../app/controllers/miq_ae_class_controller.rb:121
 msgid "Automate Method"
@@ -8223,7 +8219,7 @@ msgstr[2] ""
 #: ../app/javascript/oldjs/controllers/dialog_user/dialog_user_controller.js:92
 #: ../app/javascript/oldjs/controllers/dialog_user/dialog_user_controller.js:97
 msgid "Automate failed to obtain URL."
-msgstr ""
+msgstr "Automate не удалось получить URL."
 
 #: ../config/model_attributes.rb:110
 msgid "Automate workspace"
@@ -8259,7 +8255,7 @@ msgstr "Автоматически"
 
 #: ../app/views/miq_request/_prov_dialog_cloud_quota.html.haml:21
 msgid "Automatic Placement"
-msgstr ""
+msgstr "Автоматическое размещение"
 
 #: ../app/controllers/ansible_credential_controller.rb:106
 #: ../app/controllers/ansible_playbook_controller.rb:68
@@ -9116,7 +9112,7 @@ msgstr "Основные сведения"
 
 #: ../app/views/shared/views/_prov_dialog.html.haml:192
 msgid "Basic Options"
-msgstr ""
+msgstr "Базовые параметры"
 
 #: src/report-editor/basic-info.jsx:11
 msgid "Basic Report Info"
@@ -9468,11 +9464,11 @@ msgstr ""
 
 #: ../app/models/dialog_group.rb:43
 msgid "Box %{box_label} / %{error_message}"
-msgstr ""
+msgstr "Поле %{box_label} / %{error_message}"
 
 #: ../app/models/dialog_group.rb:37
 msgid "Box %{box_label} must have at least one Element"
-msgstr ""
+msgstr "В поле %{box_label} должен быть хотя бы один элемент"
 
 #: ../app/views/miq_ae_class/_git_domain_refresh.html.haml:10
 #: ../app/views/miq_ae_tools/_import_export.html.haml:91
@@ -10649,7 +10645,6 @@ msgid "Cancel Connect"
 msgstr "Отменить подключение"
 
 #: ../app/views/catalog/_confirmation_modal.html.haml:30
-#, fuzzy
 msgid "Cancel Copy from provisioning"
 msgstr "Отменить копирование из подготовки ресурсов"
 
@@ -11276,38 +11271,38 @@ msgstr "Собрать метрики, связанные с этим поста
 #: ../app/views/catalog/_st_angular_form.html.haml:61
 #: ../config/yaml_strings.rb:1754
 msgid "Catalog"
-msgstr ""
+msgstr "Каталог"
 
 #: ../app/controllers/catalog_controller.rb:741
 msgid "Catalog \"%{name}\" was saved"
-msgstr ""
+msgstr "Каталог \"%{name}\" был сохранён"
 
 #: ../app/controllers/catalog_controller.rb:462
 msgid "Catalog Bundle \"%{name}\" was added"
-msgstr ""
+msgstr "Набор каталогов \"%{name}\" был добавлен"
 
 #: ../app/controllers/catalog_controller.rb:460
 msgid "Catalog Bundle \"%{name}\" was saved"
-msgstr ""
+msgstr "Набор каталогов \"%{name}\" был сохранён"
 
 #. TRANSLATORS: en.yml key: dictionary.table.service_template
 #: ../config/dictionary_strings.rb:4300
 msgid "Catalog Item"
-msgstr ""
+msgstr "Элемент каталога"
 
 #:
 #: ../app/javascript/oldjs/controllers/catalog/catalog_item_form_controller.js:224
 msgid "Catalog Item %s was added"
-msgstr ""
+msgstr "Элемент каталога %s был добавлен"
 
 #:
 #: ../app/javascript/oldjs/controllers/catalog/catalog_item_form_controller.js:216
 msgid "Catalog Item %s was saved"
-msgstr ""
+msgstr "Элемент каталога %s был сохранён"
 
 #: ../app/views/catalog/_st_form.html.haml:9
 msgid "Catalog Item Type"
-msgstr ""
+msgstr "Тип элемента каталога"
 
 #. TRANSLATORS: file: product/views/ServiceCatalog.yaml
 #. TRANSLATORS: file: product/views/ServiceTemplate.yaml
@@ -11316,14 +11311,14 @@ msgstr ""
 #: ../app/javascript/components/data-tables/catalog-items-table/helper.js:14
 #: ../config/yaml_strings.rb:1746
 msgid "Catalog Items"
-msgstr ""
+msgstr "Элементы каталога"
 
 #. TRANSLATORS: file: product/views/ServiceTemplate-nested_service_templates.yaml
 #: ../app/controllers/ops_controller.rb:34
 #: ../app/helpers/ops_helper/textual_summary.rb:78
 #: ../config/yaml_strings.rb:1748
 msgid "Catalog Items and Bundles"
-msgstr ""
+msgstr "Элементы и наборы каталогов"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4597
@@ -11569,7 +11564,7 @@ msgstr ""
 #: ../app/javascript/oldjs/controllers/ops/pglogical_replication_form_controller.js:87
 msgid ""
 "Changing to remote replication role will remove all current subscriptions"
-msgstr ""
+msgstr "Смена на роль удалённой репликации удалит все текущие подписки"
 
 #: ../config/model_display_names.rb:17
 msgid "Chargeable Field"
@@ -12041,7 +12036,7 @@ msgstr ""
 #: ../app/controllers/report_controller/reports/editor.rb:1709
 msgid "Charts tab is not available until at least 1 field has been selected"
 msgstr ""
-"Вкладка диаграмм не будет доступна, пока не будет выбрано как минимум 1 поле"
+"Вкладка диаграмм не будет доступна, пока не будет выбрано хотя бы 1 поле"
 
 #: ../app/controllers/physical_chassis_controller.rb:40
 #: ../app/presenters/menu/default_menu.rb:108
@@ -12796,7 +12791,7 @@ msgstr ""
 #: ../app/views/ops/_ap_form_registry.html.haml:14
 #: ../app/views/ops/_classification_entry.html.haml:39
 msgid "Click to add a new entry"
-msgstr ""
+msgstr "Нажмите для добавления новой записи"
 
 #: ../app/views/ops/_ldap_forest_entries.html.haml:22
 msgid "Click to add a new forest"
@@ -12831,7 +12826,7 @@ msgstr ""
 #: ../app/views/ops/_ap_form_registry.html.haml:100
 #: ../app/views/ops/_classification_entry.html.haml:56
 msgid "Click to delete this entry"
-msgstr ""
+msgstr "Нажмите для удаления этой записи"
 
 #: ../app/views/miq_ae_class/_class_fields.html.haml:31
 msgid "Click to delete this field from schema"
@@ -12877,17 +12872,16 @@ msgstr "Нажмите для удаления сообщения"
 
 #: ../app/views/catalog/_form_resources_info.html.haml:50
 msgid "Click to remove this Resource from the Catalog Item"
-msgstr ""
+msgstr "Нажмите для удаления этого ресурса из элементов каталога"
 
 #: ../app/views/layouts/_policy_sim.html.haml:41
 msgid "Click to remove this policy"
 msgstr ""
 
 #: ../app/views/catalog/_form_basic_info.html.haml:174
-#, fuzzy
 #: ../app/views/miq_ae_class/_copy_objects_form.html.haml:71
 msgid "Click to select Provisioning Entry Point"
-msgstr ""
+msgstr "Нажмите для выбора точки входа подготовки ресурсов"
 
 #: ../app/views/catalog/_form_basic_info.html.haml:196
 msgid "Click to select Reconfigure Entry Point"
@@ -12895,11 +12889,11 @@ msgstr "Нажмите для выбора точки входа изменен�
 
 #: ../app/views/catalog/_form_basic_info.html.haml:217
 msgid "Click to select Retirement Entry Point"
-msgstr ""
+msgstr "Нажмите для выбора точки входа вывода из эксплуатации"
 
 #: ../app/helpers/catalog_helper.rb:27
 msgid "Click to this Catalog Item"
-msgstr ""
+msgstr "Нажмите на этот элемент каталога"
 
 #: ../app/views/ops/_ap_form_file.html.haml:37
 #: ../app/views/ops/_ap_form_file.html.haml:39
@@ -12914,7 +12908,7 @@ msgstr ""
 #: ../app/views/ops/_classification_entry.html.haml:48
 #: ../app/views/ops/_classification_entry.html.haml:50
 msgid "Click to update this entry"
-msgstr ""
+msgstr "Нажмите для обновления этой записи"
 
 #: ../app/helpers/ops_helper/textual_summary.rb:127
 msgid "Click to view %{name} Group"
@@ -13077,7 +13071,7 @@ msgstr "Облако"
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:123
 #: ../app/views/miq_ae_class/_method_inputs.html.haml:54
 msgid "Cloud Credential"
-msgstr ""
+msgstr "Учётные данные облака"
 
 #: ../app/models/miq_ae_yaml_import.rb:313
 msgid ""
@@ -13388,7 +13382,7 @@ msgstr "Облачные поставщики (VMware vCloud)"
 
 #: ../app/views/miq_request/_prov_dialog_cloud_quota.html.haml:17
 msgid "Cloud Quota"
-msgstr ""
+msgstr "Квота облака"
 
 #. TRANSLATORS: en.yml key: dictionary.model.CloudResourceQuota
 #: ../config/model_display_names.rb:29 ../config/dictionary_strings.rb:2718
@@ -13576,7 +13570,7 @@ msgstr "Размещение арендатора облака"
 #: ../app/views/miq_request/_prov_dialog_cloud_quota.html.haml:19
 #: ../app/views/miq_request/_prov_dialog_cloud_quota.html.haml:23
 msgid "Cloud Tenant:"
-msgstr ""
+msgstr "Арендатор облака:"
 
 #: ../app/helpers/cloud_volume_backup_helper/textual_summary.rb:36
 #: ../app/helpers/cloud_volume_helper/textual_summary.rb:88
@@ -13598,7 +13592,7 @@ msgstr "Арендаторы облака (OpenStack)"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1216
 msgid "Cloud Topology"
-msgstr ""
+msgstr "Топология облака"
 
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:112
 msgid "Cloud Type"
@@ -14719,7 +14713,7 @@ msgstr "Собрать"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2601
 msgid "Collect All Logs"
-msgstr ""
+msgstr "Собрать все журналы"
 
 #: ../app/views/ops/_ap_form_file.html.haml:9
 #: ../app/views/ops/_ap_show.html.haml:42
@@ -14729,7 +14723,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2603
 msgid "Collect Current Logs"
-msgstr ""
+msgstr "Собрать текущие журналы"
 
 #: ../app/helpers/application_helper/toolbar/diagnostics_server_center.rb:63
 #: ../app/helpers/application_helper/toolbar/diagnostics_zone_center.rb:71
@@ -14754,7 +14748,7 @@ msgstr "Собрать все журналы с выбранного серве�
 
 #: ../app/helpers/application_helper/toolbar/diagnostics_zone_center.rb:84
 msgid "Collect all logs from the selected Zone"
-msgstr ""
+msgstr "Собрать все журналы из выбранной зоны"
 
 #: ../app/helpers/application_helper/toolbar/diagnostics_server_center.rb:70
 #: ../app/helpers/application_helper/toolbar/diagnostics_zone_center.rb:78
@@ -14775,7 +14769,7 @@ msgstr "Собрать текущие журналы с выбранного с�
 
 #: ../app/helpers/application_helper/toolbar/diagnostics_zone_center.rb:77
 msgid "Collect the current logs from the selected Zone"
-msgstr ""
+msgstr "Собрать текущие журналы с выбранной зоны"
 
 #. TRANSLATORS: file: product/views/Filesystem.yaml
 #: ../config/yaml_strings.rb:943
@@ -15260,7 +15254,7 @@ msgstr "Профиль ресурса"
 
 #: ../app/views/shared/views/_prov_dialog.html.haml:202
 msgid "Computer Details"
-msgstr ""
+msgstr "Подробности о компьютере"
 
 #. TRANSLATORS: file: product/views/EventLog-event_logs.yaml
 #: ../config/yaml_strings.rb:905
@@ -16551,8 +16545,7 @@ msgstr "Консолидация"
 msgid ""
 "Consolidation tab is not available until at least 1 field has been selected"
 msgstr ""
-"Вкладка консолидации не будет доступна, пока не будет выбрано как минимум 1"
-" поле"
+"Вкладка консолидации не будет доступна, пока не будет выбрано хотя бы 1 поле"
 
 #: ../app/presenters/menu/default_menu.rb:55
 msgid "Consumption"
@@ -19926,7 +19919,7 @@ msgstr ""
 #: ../app/views/miq_request/_prov_form_buttons.html.haml:16
 #: ../app/views/miq_request/_prov_form_buttons.html.haml:31
 msgid "Continue"
-msgstr ""
+msgstr "Продолжить"
 
 #: ../app/views/miq_request/_prov_form_buttons.html.haml:17
 msgid "Continue this provisioning request"
@@ -19965,7 +19958,7 @@ msgstr ""
 #: ../app/views/layouts/_x_edit_buttons.html.haml:87
 #: ../app/views/layouts/_x_edit_buttons.html.haml:137
 msgid "Copy"
-msgstr ""
+msgstr "Копировать"
 
 #: ../app/controllers/miq_ae_class_controller.rb:2000
 msgid "Copy %{model}"
@@ -19998,7 +19991,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1054
 msgid "Copy Composite Catalog Item"
-msgstr ""
+msgstr "Копировать элемент составного каталога"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2049
@@ -20018,7 +20011,7 @@ msgstr "Копировать шаблон настроек"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2293
 msgid "Copy Dialog"
-msgstr ""
+msgstr "Копировать диалог"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1116
@@ -20028,7 +20021,7 @@ msgstr "Копировать шаблон оркестрации"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2307
 msgid "Copy Provisioning Dialog"
-msgstr ""
+msgstr "Копировать диалог подготовки ресурсов"
 
 #:
 #: ../app/helpers/application_helper/toolbar/customization_templates_center.rb:19
@@ -20047,7 +20040,7 @@ msgstr "Копировать выбранный элемент"
 #:
 #: ../app/javascript/components/copy-catalog-form/copy-catalog-form.schema.js:36
 msgid "Copy Tags"
-msgstr ""
+msgstr "Копировать теги"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2439
@@ -20062,7 +20055,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1056
 msgid "Copy a Composite Catalog Item"
-msgstr ""
+msgstr "Копировать элемент составного каталога"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2045
@@ -20122,11 +20115,11 @@ msgstr ""
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:16
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:17
 msgid "Copy from Provisioning"
-msgstr ""
+msgstr "Копировать из подготовки ресурсов"
 
 #: ../app/views/catalog/_confirmation_modal.html.haml:35
 msgid "Copy from provisioning"
-msgstr ""
+msgstr "Копировать из подготовки ресурсов"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_tools_simulate_center.rb:6
 msgid "Copy object details for use in a Button"
@@ -20151,7 +20144,7 @@ msgstr ""
 
 #: ../app/controllers/catalog_controller.rb:784
 msgid "Copy of %{name}"
-msgstr ""
+msgstr "Копия %{name}"
 
 #: ../app/controllers/miq_request_controller.rb:194
 msgid "Copy of %{typ} Request"
@@ -20222,7 +20215,7 @@ msgstr ""
 #: ../app/helpers/application_helper/toolbar/dialogs_center.rb:28
 #: ../app/helpers/application_helper/toolbar/miq_dialogs_center.rb:28
 msgid "Copy the selected Dialog to a new Dialog"
-msgstr ""
+msgstr "Копировать выбранный диалог в новый диалог"
 
 #: ../app/helpers/application_helper/toolbar/miq_policies_center.rb:29
 msgid "Copy the selected Policy"
@@ -20271,7 +20264,7 @@ msgstr "Копировать этот шаблон настроек"
 #: ../app/helpers/application_helper/toolbar/dialog_center.rb:20
 #: ../app/helpers/application_helper/toolbar/miq_dialog_center.rb:18
 msgid "Copy this Dialog"
-msgstr ""
+msgstr "Копировать этот диалог"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_instance_center.rb:18
 msgid "Copy this Instance"
@@ -20321,7 +20314,7 @@ msgstr ""
 
 #: ../app/controllers/catalog_controller.rb:783
 msgid "Copying %{record_name}"
-msgstr ""
+msgstr "Копируется %{record_name}"
 
 #: ../app/controllers/miq_ae_customization_controller.rb:441
 msgid "Copying Dialog \"%{name}\""
@@ -20368,7 +20361,7 @@ msgstr ""
 #: ../app/javascript/components/catalog-form/catalog-form.jsx:52
 #: ../app/javascript/components/workers-form/workers-form.jsx:87
 msgid "Could not fetch the data"
-msgstr ""
+msgstr "Не удалось получить данные"
 
 #: ../app/controllers/restful_redirect_controller.rb:54
 msgid "Could not find the given \"%{model}\" record."
@@ -20511,7 +20504,7 @@ msgstr ""
 
 #: ./src/dialog-editor/components/tab-list/tab-list.html:15
 msgid "Create Tab"
-msgstr ""
+msgstr "Создать вкладку"
 
 #. TRANSLATORS: file: product/compare/vms.yaml
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/036_Snapshot Summary.yaml
@@ -21047,7 +21040,7 @@ msgstr "Учётные данные/Параметры сохранены усп
 
 #: src/topology/topologyCanvas.jsx:283
 msgid "Critical"
-msgstr ""
+msgstr "Критическое"
 
 #: ../app/helpers/quadicon_helper.rb:65
 msgid "Critical health state"
@@ -21854,7 +21847,7 @@ msgstr "Сервер DHCP"
 #: ../app/views/shared/views/_prov_dialog.html.haml:392
 #: ../app/views/shared/views/_prov_dialog.html.haml:447
 msgid "DNS"
-msgstr ""
+msgstr "DNS"
 
 #. TRANSLATORS: file: product/views/CloudSubnet.yaml
 #: ../config/yaml_strings.rb:562
@@ -22466,7 +22459,7 @@ msgstr ""
 
 #: ../app/models/dialog_field.rb:68
 msgid "Date/Time Control"
-msgstr ""
+msgstr "Контроль даты/времени"
 
 #: ../lib/miq_expression.rb:1116
 msgid "Date/Time value must not be blank"
@@ -22752,7 +22745,7 @@ msgstr "Нельзя редактировать исходные диалоги"
 
 #: ../app/helpers/application_helper/button/old_dialogs_edit_delete.rb:7
 msgid "Default dialogs cannot be removed from the VMDB"
-msgstr ""
+msgstr "Исходные диалоги нельзя удалить из БД ВМ"
 
 #:
 #: ../app/models/manageiq/providers/vmware/infra_manager/inventory/parser.rb:318
@@ -22822,15 +22815,15 @@ msgstr ""
 
 #: ../app/views/catalog/_form_resources_info.html.haml:32
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Задержка (минуты)"
 
 #: ../app/helpers/catalog_helper.rb:5
 msgid "Delay (mins) Start"
-msgstr ""
+msgstr "Начало задержки (минуты)"
 
 #: ../app/helpers/catalog_helper.rb:5
 msgid "Delay (mins) Stop"
-msgstr ""
+msgstr "Остановка задержки (минуты)"
 
 #: ../app/controllers/application_controller/ci_processing.rb:334
 #: ../app/helpers/application_helper/tasks.rb:10
@@ -23051,7 +23044,7 @@ msgstr "Удалить группу настраиваемых кнопок"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2295
 msgid "Delete Dialog"
-msgstr ""
+msgstr "Удалить диалог"
 
 #:
 #: ../app/javascript/components/generic-objects-form/generic-objects-form.schema.js:35
@@ -23120,7 +23113,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2309
 msgid "Delete Provisioning Dialog"
-msgstr ""
+msgstr "Удалить диалог подготовки ресурсов"
 
 #: ../app/helpers/application_helper/toolbar/ansible_repositories_center.rb:61
 msgid "Delete Repositories"
@@ -23916,7 +23909,7 @@ msgstr ""
 #:
 #: ../app/views/layouts/angular-bootstrap/_edit_log_depot_settings_angular_bootstrap.html.haml:5
 msgid "Depot Name"
-msgstr ""
+msgstr "Имя хранилища"
 
 #: ../app/controllers/application_controller.rb:464
 #: ../app/controllers/ops_controller/settings/schedules.rb:292
@@ -24388,15 +24381,15 @@ msgstr "Диалог \"%{name}\" был сохранён"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog %s"
-msgstr ""
+msgstr "Диалог %s"
 
 #: ../app/models/dialog.rb:73
 msgid "Dialog %{dialog_label} / %{error_message}"
-msgstr ""
+msgstr "Диалог %{dialog_label} / %{error_message}"
 
 #: ../app/models/dialog.rb:62
 msgid "Dialog %{dialog_label} must have at least one Tab"
-msgstr ""
+msgstr "У диалога %{dialog_label} должна быть минимум одна вкладка"
 
 #:
 #: ../app/javascript/oldjs/controllers/dialog_user/dialog_user_controller.js:108
@@ -24407,79 +24400,79 @@ msgstr "Диалог отменён"
 #: ../config/model_display_names.rb:92
 msgid "Dialog Field"
 msgid_plural "Dialog Fields"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Поле диалога"
+msgstr[1] "Поля диалога"
+msgstr[2] "Поля диалога"
 
 #: ../config/model_display_names.rb:93
 msgid "Dialog Field Check Box"
 msgid_plural "Dialog Field Check Boxes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Флажок поля диалога"
+msgstr[1] "Флажки поля диалога"
+msgstr[2] "Флажки поля диалога"
 
 #: ../config/model_display_names.rb:94
 msgid "Dialog Field Date Control"
 msgid_plural "Dialog Field Date Controls"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Элемент настройки даты поля диалога"
+msgstr[1] "Элементы настройки даты поля диалога"
+msgstr[2] "Элементы настройки даты поля диалога"
 
 #: ../config/model_display_names.rb:95
 msgid "Dialog Field Date Time Control"
 msgid_plural "Dialog Field Date Time Controls"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Элемент настройки даты-времени поля диалога"
+msgstr[1] "Элементы настройки даты-времени поля диалога"
+msgstr[2] "Элементы настройки даты-времени поля диалога"
 
 #: ../config/model_display_names.rb:96
 msgid "Dialog Field Drop Down List"
 msgid_plural "Dialog Field Drop Down Lists"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Выпадающий список поля диалога"
+msgstr[1] "Выпадающие списки поля диалога"
+msgstr[2] "Выпадающие списки поля диалога"
 
 #: ../config/model_display_names.rb:97
 msgid "Dialog Field Radio Button"
 msgid_plural "Dialog Field Radio Buttons"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Переключатель в поле диалога"
+msgstr[1] "Переключатели в поле диалога"
+msgstr[2] "Переключатели в поле диалога"
 
 #: ../config/model_display_names.rb:98
 msgid "Dialog Field Sorted Item"
 msgid_plural "Dialog Field Sorted Items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Отсортированный элемент поля диалога"
+msgstr[1] "Отсортированные элементы поля диалога"
+msgstr[2] "Отсортированные элементы поля диалога"
 
 #: ../config/model_display_names.rb:99
 msgid "Dialog Field Tag Control"
 msgid_plural "Dialog Field Tag Controls"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Элемент настройки тегов поля диалога"
+msgstr[1] "Элементы настройки тегов поля диалога"
+msgstr[2] "Элементы настройки тегов поля диалога"
 
 #: ../config/model_display_names.rb:100
 msgid "Dialog Field Text Area Box"
 msgid_plural "Dialog Field Text Area Boxes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Блок текстовой области поля диалога"
+msgstr[1] "Блоки текстовых областей поля диалога"
+msgstr[2] "Блоки текстовых областей поля диалога"
 
 #: ../config/model_display_names.rb:101
 msgid "Dialog Field Text Box"
 msgid_plural "Dialog Field Text Boxes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Текстовый блок поля диалога"
+msgstr[1] "Текстовые блоки поля диалога"
+msgstr[2] "Текстовые блоки поля диалога"
 
 #: ../config/model_display_names.rb:102
 msgid "Dialog Group"
 msgid_plural "Dialog Groups"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Группа диалогов"
+msgstr[1] "Группы диалогов"
+msgstr[2] "Группы диалогов"
 
 #: ../app/views/miq_request/_service_reconfigure_show.html.haml:10
 #: ../app/views/miq_request/_st_prov_show.html.haml:10
@@ -24489,9 +24482,9 @@ msgstr "Параметры диалога"
 #: ../config/model_display_names.rb:103
 msgid "Dialog Tab"
 msgid_plural "Dialog Tabs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Вкладка диалога"
+msgstr[1] "Вкладки диалога"
+msgstr[2] "Вкладки диалога"
 
 #: ../app/controllers/miq_ae_customization_controller/old_dialogs.rb:235
 msgid "Dialog Type must be selected"
@@ -24499,13 +24492,14 @@ msgstr "Необходимо выбрать тип диалога"
 
 #: ../app/controllers/application_controller/buttons.rb:728
 msgid "Dialog can be opened only by buttons for a single entity"
-msgstr ""
+msgstr "Диалог можно запустить только кнопками для отдельных элементов"
 
 #: ../app/models/dialog.rb:201
 msgid ""
 "Dialog cannot be deleted because it is connected to other components: %{compon"
 "ents}"
 msgstr ""
+"Диалог нельзя удалить, т.к. он связан с другими компонентами: %{components}"
 
 #:
 #: ../app/javascript/oldjs/controllers/dialog_editor/dialog_editor_controller.js:174
@@ -24514,27 +24508,29 @@ msgstr "Редактирование диалога было отменено п
 
 #: ../config/model_attributes.rb:1330
 msgid "Dialog field"
-msgstr ""
+msgstr "Поле диалога"
 
 #: ../app/models/dialog.rb:67
 msgid "Dialog field name cannot be duplicated on a dialog: %{duplicates}"
-msgstr ""
+msgstr "Имя поля диалога не может дублироваться в диалоге: %{duplicates}"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog field needs to have a label"
-msgstr ""
+msgstr "У поля диалога должна быть метка"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog field needs to have a name"
-msgstr ""
+msgstr "У поля диалога должно быть имя"
 
 #: ../config/model_attributes.rb:1362
 msgid "Dialog group"
-msgstr ""
+msgstr "Группа диалогов"
 
 #: ../app/controllers/catalog_controller.rb:2290
 msgid "Dialog has to be set if Display in Catalog is chosen"
 msgstr ""
+"При выбранной возможности «показать в диалоге» необходимо "
+"настроить диалог"
 
 #: ../app/views/miq_ae_customization/_dialog_import_export.html.haml:13
 msgid "Dialog name"
@@ -24543,15 +24539,15 @@ msgstr "Имя диалога"
 #:
 #: ../app/javascript/oldjs/controllers/catalog/catalog_item_form_controller.js:535
 msgid "Dialog name already exists"
-msgstr ""
+msgstr "Имя диалога уже существует"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog needs to have a label"
-msgstr ""
+msgstr "У диалога должна быть метка"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog needs to have at least one tab"
-msgstr ""
+msgstr "У диалога должна быть минимум одна вкладка"
 
 #: ../app/controllers/miq_ae_customization_controller/dialogs.rb:91
 #: ../app/controllers/miq_ae_customization_controller/old_dialogs.rb:77
@@ -24560,23 +24556,23 @@ msgstr "Диалог больше не существует"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog section needs to have a label"
-msgstr ""
+msgstr "У раздела диалога должна быть метка"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog section needs to have at least one field"
-msgstr ""
+msgstr "В разделе диалога должна быть минимум одна вкладка"
 
 #: ../config/model_attributes.rb:1372
 msgid "Dialog tab"
-msgstr ""
+msgstr "Вкладка диалога"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog tab needs to have a label"
-msgstr ""
+msgstr "У вкладки диалога должна быть метка"
 
 #: ./dist/js/ui-components.js:1
 msgid "Dialog tab needs to have at least one section"
-msgstr ""
+msgstr "Во вкладке диалога должен быть хотя бы один раздел"
 
 #: ../app/views/miq_ae_customization/editor.html.haml:16
 #: ../app/views/miq_ae_customization/editor.html.haml:18
@@ -24787,7 +24783,7 @@ msgstr "DialogTab|Номер региона"
 #. TRANSLATORS: file: product/views/Dialog.yaml
 #: ../config/yaml_strings.rb:840
 msgid "Dialogs"
-msgstr ""
+msgstr "Диалоги"
 
 #: ../app/controllers/miq_ae_customization_controller/old_dialogs.rb:107
 msgid "Dialogs \"%{name}\""
@@ -24849,7 +24845,7 @@ msgstr "Прямые ВМ"
 #: ../app/helpers/security_policy_rule_helper/textual_summary.rb:96
 #: ../config/yaml_strings.rb:949
 msgid "Direction"
-msgstr ""
+msgstr "Направление"
 
 #: ../app/helpers/host_initiator_helper/textual_summary.rb:56
 msgid "Directly Attached Cloud Volumes"
@@ -24859,7 +24855,7 @@ msgstr "Облачные тома, присоединённые напрямую
 #. TRANSLATORS: file: product/views/StorageCluster.yaml
 #: ../config/yaml_strings.rb:1787
 msgid "Directory Hierarchy"
-msgstr ""
+msgstr "Иерархия каталогов"
 
 #. TRANSLATORS: en.yml key: dictionary.column.directory_hierarchy_supported
 #: ../config/dictionary_strings.rb:630
@@ -24869,7 +24865,7 @@ msgstr "Иерархия каталогов поддерживается"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1871
 msgid "Disable"
-msgstr ""
+msgstr "Отключить"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2832
@@ -24878,12 +24874,12 @@ msgstr "Отключить поставщиков контейнеров"
 
 #: ../app/views/ops/_settings_authentication_tab.html.haml:123
 msgid "Disable Local Login"
-msgstr ""
+msgstr "Отключить локальный вход в систему"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1873
 msgid "Disable a Schedule"
-msgstr ""
+msgstr "Отключить расписание"
 
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:307
 #: ../app/views/layouts/angular/_multi_auth_credentials.html.haml:313
@@ -24911,12 +24907,12 @@ msgstr "Отключено"
 #: ../app/views/shared/buttons/_ab_advanced_form.html.haml:14
 #: ../app/views/shared/buttons/_ab_show.html.haml:113
 msgid "Disabled Button Text"
-msgstr ""
+msgstr "Отключённый текст на кнопке"
 
 #. TRANSLATORS: file: product/views/SystemService-linux_initprocesses.yaml
 #: ../config/yaml_strings.rb:1873
 msgid "Disabled Run Levels"
-msgstr ""
+msgstr "Отключённые уровни выполнения"
 
 #: ../app/views/vm_common/_disassociate_floating_ip.html.haml:4
 msgid "Disassociate Floating IP"
@@ -24979,12 +24975,12 @@ msgstr "Отключить"
 #: ../app/javascript/packs/remote_consoles_spice.js:47
 #: ../app/javascript/packs/remote_consoles_vnc.js:31
 msgid "Disconnected"
-msgstr ""
+msgstr "Отключено"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1524
 msgid "Discover"
-msgstr ""
+msgstr "Обнаружение"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1526
@@ -25008,7 +25004,7 @@ msgstr "Обнаружение диспетчеров хранилищ"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:192
 msgid "Discovered"
-msgstr ""
+msgstr "Обнаруженное"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_InfraManager.yaml
 #: ../app/helpers/ems_cloud_helper/textual_summary.rb:61
@@ -25022,8 +25018,9 @@ msgstr "Обнаруженный адрес IP"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/070_Newest VMs.yaml
 #: ../config/yaml_strings.rb:5995
+#, fuzzy
 msgid "Discovered on"
-msgstr ""
+msgstr "Когда обнаружено:"
 
 #: ../app/controllers/utilization_controller.rb:241
 #: ../app/views/utilization/_utilization_report.html.haml:20
@@ -25034,346 +25031,346 @@ msgstr "Диск"
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7069
 msgid "Disk 1 % Used"
-msgstr ""
+msgstr "Диск 1: используется %"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_1_disk_type
 #: ../config/dictionary_strings.rb:634
 msgid "Disk 1 Disk Type"
-msgstr ""
+msgstr "Диск 1: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_1_mode
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:636 ../config/yaml_strings.rb:7063
 msgid "Disk 1 Mode"
-msgstr ""
+msgstr "Диск 1: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_1_partitions_aligned
 #: ../config/dictionary_strings.rb:638
 msgid "Disk 1 Partitions Aligned"
-msgstr ""
+msgstr "Диск 1: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_1_size
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:642 ../config/yaml_strings.rb:7065
 msgid "Disk 1 Size"
-msgstr ""
+msgstr "Диск 1: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_1_size_on_disk
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:640 ../config/yaml_strings.rb:7067
 msgid "Disk 1 Size On Disk"
-msgstr ""
+msgstr "Диск 1: размер на диске"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_1_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:644
 msgid "Disk 1 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 1: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7061
 msgid "Disk 1Type"
-msgstr ""
+msgstr "Диск 1: тип"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7079
 msgid "Disk 2 % Used"
-msgstr ""
+msgstr "Диск 2: используется %"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_2_disk_type
 #: ../config/dictionary_strings.rb:646
 msgid "Disk 2 Disk Type"
-msgstr ""
+msgstr "Диск 2: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_2_mode
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:648 ../config/yaml_strings.rb:7073
 msgid "Disk 2 Mode"
-msgstr ""
+msgstr "Диск 2: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_2_partitions_aligned
 #. TRANSLATORS: en.yml key: dictionary.column.disk_9_partitions_aligned
 #: ../config/dictionary_strings.rb:650 ../config/dictionary_strings.rb:734
 msgid "Disk 2 Partitions Aligned"
-msgstr ""
+msgstr "Диск 2: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_2_size
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:654 ../config/yaml_strings.rb:7075
 msgid "Disk 2 Size"
-msgstr ""
+msgstr "Диск 2: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_2_size_on_disk
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:652 ../config/yaml_strings.rb:7077
 msgid "Disk 2 Size On Disk"
-msgstr ""
+msgstr "Диск 2: размер на диске"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7071
 msgid "Disk 2 Type"
-msgstr ""
+msgstr "Диск 2: тип"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_2_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:656
 msgid "Disk 2 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 2: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7089
 msgid "Disk 3 % Used"
-msgstr ""
+msgstr "Диск 3: используется %"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_3_disk_type
 #: ../config/dictionary_strings.rb:658
 msgid "Disk 3 Disk Type"
-msgstr ""
+msgstr "Диск 3: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_3_mode
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:660 ../config/yaml_strings.rb:7083
 msgid "Disk 3 Mode"
-msgstr ""
+msgstr "Диск 3: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_3_partitions_aligned
 #: ../config/dictionary_strings.rb:662
 msgid "Disk 3 Partitions Aligned"
-msgstr ""
+msgstr "Диск 3: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_3_size
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:666 ../config/yaml_strings.rb:7085
 msgid "Disk 3 Size"
-msgstr ""
+msgstr "Диск 3: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_3_size_on_disk
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:664 ../config/yaml_strings.rb:7087
 msgid "Disk 3 Size On Disk"
-msgstr ""
+msgstr "Диск 3: размер на диске"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7081
 msgid "Disk 3 Type"
-msgstr ""
+msgstr "Диск 3: тип"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_3_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:668
 msgid "Disk 3 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 3: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7099
 msgid "Disk 4 % Used"
-msgstr ""
+msgstr "Диск 4: используется %"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_4_disk_type
 #: ../config/dictionary_strings.rb:670
 msgid "Disk 4 Disk Type"
-msgstr ""
+msgstr "Диск 4: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_4_mode
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:672 ../config/yaml_strings.rb:7093
 msgid "Disk 4 Mode"
-msgstr ""
+msgstr "Диск 4: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_4_partitions_aligned
 #: ../config/dictionary_strings.rb:674
 msgid "Disk 4 Partitions Aligned"
-msgstr ""
+msgstr "Диск 4: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_4_size
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:678 ../config/yaml_strings.rb:7095
 msgid "Disk 4 Size"
-msgstr ""
+msgstr "Диск 4: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_4_size_on_disk
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:676 ../config/yaml_strings.rb:7097
 msgid "Disk 4 Size On Disk"
-msgstr ""
+msgstr "Диск 4: размер на диске"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7091
 msgid "Disk 4 Type"
-msgstr ""
+msgstr "Диск 4: тип"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_4_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:680
 msgid "Disk 4 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 4: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7109
 msgid "Disk 5 % Used"
-msgstr ""
+msgstr "Диск 5: используется %"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_5_disk_type
 #: ../config/dictionary_strings.rb:682
 msgid "Disk 5 Disk Type"
-msgstr ""
+msgstr "Диск 5: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_5_mode
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:684 ../config/yaml_strings.rb:7103
 msgid "Disk 5 Mode"
-msgstr ""
+msgstr "Диск 5: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_5_partitions_aligned
 #: ../config/dictionary_strings.rb:686
 msgid "Disk 5 Partitions Aligned"
-msgstr ""
+msgstr "Диск 5: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_5_size
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:690 ../config/yaml_strings.rb:7105
 msgid "Disk 5 Size"
-msgstr ""
+msgstr "Диск 5: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_5_size_on_disk
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:688 ../config/yaml_strings.rb:7107
 msgid "Disk 5 Size On Disk"
-msgstr ""
+msgstr "Диск 5: размер на диске"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7101
 msgid "Disk 5 Type"
-msgstr ""
+msgstr "Диск 5: тип"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_5_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:692
 msgid "Disk 5 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 5: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7119
 msgid "Disk 6 % Used"
-msgstr ""
+msgstr "Диск 6: используется %"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_6_disk_type
 #: ../config/dictionary_strings.rb:694
 msgid "Disk 6 Disk Type"
-msgstr ""
+msgstr "Диск 6: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_6_mode
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:696 ../config/yaml_strings.rb:7113
 msgid "Disk 6 Mode"
-msgstr ""
+msgstr "Диск 6: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_6_partitions_aligned
 #: ../config/dictionary_strings.rb:698
 msgid "Disk 6 Partitions Aligned"
-msgstr ""
+msgstr "Диск 6: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_6_size
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:702 ../config/yaml_strings.rb:7115
 msgid "Disk 6 Size"
-msgstr ""
+msgstr "Диск 6: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_6_size_on_disk
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/dictionary_strings.rb:700 ../config/yaml_strings.rb:7117
 msgid "Disk 6 Size On Disk"
-msgstr ""
+msgstr "Диск 6: размер на диске"
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/150_All Departments with Performance.yaml
 #: ../config/yaml_strings.rb:7111
 msgid "Disk 6 Type"
-msgstr ""
+msgstr "Диск 6: тип"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_6_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:704
 msgid "Disk 6 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 6: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_7_disk_type
 #: ../config/dictionary_strings.rb:706
 msgid "Disk 7 Disk Type"
-msgstr ""
+msgstr "Диск 7: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_7_mode
 #: ../config/dictionary_strings.rb:708
 msgid "Disk 7 Mode"
-msgstr ""
+msgstr "Диск 7: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_7_partitions_aligned
 #: ../config/dictionary_strings.rb:710
 msgid "Disk 7 Partitions Aligned"
-msgstr ""
+msgstr "Диск 7: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_7_size
 #: ../config/dictionary_strings.rb:714
 msgid "Disk 7 Size"
-msgstr ""
+msgstr "Диск 7: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_7_size_on_disk
 #: ../config/dictionary_strings.rb:712
 msgid "Disk 7 Size On Disk"
-msgstr ""
+msgstr "Диск 7: размер на диске"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_7_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:716
 msgid "Disk 7 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 7: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_8_disk_type
 #: ../config/dictionary_strings.rb:718
 msgid "Disk 8 Disk Type"
-msgstr ""
+msgstr "Диск 8: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_8_mode
 #: ../config/dictionary_strings.rb:720
 msgid "Disk 8 Mode"
-msgstr ""
+msgstr "Диск 8: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_8_partitions_aligned
 #: ../config/dictionary_strings.rb:722
 msgid "Disk 8 Partitions Aligned"
-msgstr ""
+msgstr "Диск 8: выровненные разделы"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_8_size
 #: ../config/dictionary_strings.rb:726
 msgid "Disk 8 Size"
-msgstr ""
+msgstr "Диск 8: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_8_size_on_disk
 #: ../config/dictionary_strings.rb:724
 msgid "Disk 8 Size On Disk"
-msgstr ""
+msgstr "Диск 8: размер на диске"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_8_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:728
 msgid "Disk 8 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 8: процент использования подготовленных ресурсов"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_9_disk_type
 #: ../config/dictionary_strings.rb:730
 msgid "Disk 9 Disk Type"
-msgstr ""
+msgstr "Диск 9: тип диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_9_mode
 #: ../config/dictionary_strings.rb:732
 msgid "Disk 9 Mode"
-msgstr ""
+msgstr "Диск 9: режим диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_9_size
 #: ../config/dictionary_strings.rb:738
 msgid "Disk 9 Size"
-msgstr ""
+msgstr "Диск 9: размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_9_size_on_disk
 #: ../config/dictionary_strings.rb:736
 msgid "Disk 9 Size On Disk"
-msgstr ""
+msgstr "Диск 9: размер на диске"
 
 #. TRANSLATORS: en.yml key: dictionary.column.disk_9_used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:740
 msgid "Disk 9 Used Percent Of Provisioned"
-msgstr ""
+msgstr "Диск 9: процент использования подготовленных ресурсов"
 
 #: ../app/helpers/physical_server_helper/textual_summary.rb:120
 msgid "Disk Capacity (bytes)"
@@ -25387,7 +25384,7 @@ msgstr "Число дисков"
 #. TRANSLATORS: file: product/reports/300_Migration Readiness - Virtual Machines/021_Detailed - VMs NOT migration ready.yaml
 #: ../config/yaml_strings.rb:6546
 msgid "Disk Device Type"
-msgstr ""
+msgstr "Тип устройства диска"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_topday.yaml
 #: ../config/yaml_strings.rb:7594
@@ -25397,7 +25394,7 @@ msgstr "Хранилище файлов диска"
 #. TRANSLATORS: file: product/charts/layouts/daily_tag_charts/Storage.yaml
 #: ../config/yaml_strings.rb:5088
 msgid "Disk Files"
-msgstr ""
+msgstr "Файлы диска"
 
 #. TRANSLATORS: en.yml key: dictionary.column.v_disk_percent_of_used
 #: ../config/dictionary_strings.rb:2358
@@ -27415,6 +27412,8 @@ msgid ""
 "Drag items here to add to the dialog. At least one item is required before sav"
 "ing"
 msgstr ""
+"Для добавления в диалог перетащите элементы сюда. Для сохранения нужен "
+"хотя бы один элемент."
 
 #: ../app/views/report/_widget_form_menu.html.haml:15
 msgid "Drag this Shortcut to a new location"
@@ -27851,9 +27850,8 @@ msgstr "Редактировать профиль анализа"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1058
-#, fuzzy
 msgid "Edit Atomic Catalog Item"
-msgstr "Редактировать элемент \"Atomic Catalog\""
+msgstr "Редактировать элемент разрозненного каталога"
 
 #:
 #: ../app/javascript/components/physical-storage-form/physical-storage-form.schema.js:81
@@ -27936,7 +27934,6 @@ msgstr "Редактировать облачный том \"%{name}\""
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1046
-#, fuzzy
 msgid "Edit Composite Catalog Item"
 msgstr "Редактировать элемент составного каталога"
 
@@ -29277,7 +29274,6 @@ msgstr "Редактировать поставщика облака"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1048
-#, fuzzy
 msgid "Edit a Composite Catalog Item"
 msgstr "Редактировать элемент составного каталога"
 
@@ -29562,7 +29558,6 @@ msgstr "Редактировать профиль определения опо�
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1060
-#, fuzzy
 msgid "Edit an Atomic Catalog Item"
 msgstr "Редактировать элемент разрозненного каталога"
 
@@ -34407,7 +34402,7 @@ msgstr ""
 #: ../app/controllers/report_controller/reports/editor.rb:1701
 msgid "Filter tab is not available until at least 1 field has been selected"
 msgstr ""
-"Вкладка фильтра не будет доступна, пока не будет выбрано как минимум 1 поле"
+"Вкладка фильтра не будет доступна, пока не будет выбрано хотя бы 1 поле"
 
 #: ../app/models/miq_user_scope.rb:31
 msgid "Filter type must be one of %{filter}"
@@ -35371,7 +35366,7 @@ msgstr "Форматируется"
 msgid ""
 "Formatting tab is not available until at least 1 field has been selected"
 msgstr ""
-"Вкладка форматирования не будет доступна, пока не будет выбрано как минимум 1"
+"Вкладка форматирования не будет доступна, пока не будет выбрано хотя бы 1"
 " поле"
 
 #: ../app/controllers/application_controller/compare.rb:926
@@ -57957,8 +57952,7 @@ msgstr ""
 #: ../app/controllers/report_controller/reports/editor.rb:1726
 msgid "Preview tab is not available until at least 1 field has been selected"
 msgstr ""
-"Вкладка предв. просмотра не будет доступна, пока не будет выбрано как минимум"
-" 1 поле"
+"Вкладка предпросмотра не будет доступна, пока не будет выбрано хотя бы 1 поле"
 
 #: ../app/views/layouts/_paging_bar.html.haml:19
 #: ../app/views/layouts/_paging_bar.html.haml:20
@@ -59157,7 +59151,7 @@ msgstr "Состояние подготовки к работе"
 #: ../app/controllers/mixins/manager_controller_mixin.rb:158
 msgid "Provisioning is not supported for at least one of the selected systems"
 msgstr ""
-"Для минимум одной из выбранных систем подготовка ресурсов не поддерживается"
+"Минимум для одной из выбранных систем подготовка ресурсов не поддерживается"
 
 #. TRANSLATORS: file: product/views/MiqProvision.yaml
 #: ../config/yaml_strings.rb:1461
@@ -60185,16 +60179,17 @@ msgstr "Изменить конфигурацию кнопки вирт. маш�
 msgid ""
 "Reconfigure does not apply because you selected at least one VM Template"
 msgstr ""
-"Изменение конфигурации не будет применено, т.к. был выбран минимум "
-"один шаблон ВМ"
+"Изменение конфигурации не будет применено, т.к. был выбран как минимум один"
+" шаблон ВМ"
 
 #: ../app/controllers/mixins/actions/vm_actions/reconfigure.rb:73
 msgid ""
 "Reconfigure does not apply because you selected at least one un-reconfigurable"
 " VM"
 msgstr ""
-"Изменение конфигурации не будет применено, т.к. была выбрана минимум "
-"одна ВМ, не подлежащая изменению конфигурации"
+"Изменение конфигурации не будет применено, т.к. была выбрана как минимум одна"
+" ВМ, не подлежащая изменению "
+"конфигурации"
 
 #: ../app/controllers/mixins/actions/vm_actions/resize.rb:69
 msgid "Reconfigure of Instance \"%{name}\" was cancelled by the user"
@@ -72039,8 +72034,7 @@ msgstr "Задание стиля для '%{item}', ошибка для трет
 #: ../app/controllers/report_controller/reports/editor.rb:1735
 msgid "Styling tab is not available until at least 1 field has been selected"
 msgstr ""
-"Вкладка задания стилей не будет доступна, пока не будет выбрано как минимум 1"
-" поле"
+"Вкладка задания стилей не будет доступна, пока не будет выбрано хотя бы 1 поле"
 
 #: ../app/views/miq_ae_class/_class_fields.html.haml:22
 msgid "Sub"
@@ -72293,8 +72287,7 @@ msgstr "Сводка всех событий VC для ВМ prod_webserver"
 #: ../app/controllers/report_controller/reports/editor.rb:1705
 msgid "Summary tab is not available until at least 1 field has been selected"
 msgstr ""
-"Вкладка сводных данных не будет доступна, пока не будет выбрано как минимум 1"
-" поле"
+"Вкладка сводных данных не будет доступна, пока не будет выбрано хотя бы 1 поле"
 
 #: ../app/javascript/components/settings-time-profile-form/helper.js:66
 msgid "Sunday"
@@ -74791,7 +74784,7 @@ msgid ""
 " been selected."
 msgstr ""
 "Вкладка временной шкалы не будет доступна, пока не будет выбрано "
-"минимум 1 поле времени из вкладки столбцов"
+"хотя бы 1 поле времени из вкладки столбцов"
 
 #: ../app/controllers/dashboard_controller.rb:628
 #: ../app/controllers/vm_common.rb:117
