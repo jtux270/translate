@@ -1,0 +1,1792 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-24 13:39+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: sahara/config.py:235
+#, python-format
+msgid "Option '%(option)s' is required for config group '%(group)s'"
+msgstr ""
+
+#: sahara/context.py:145
+msgid "Context isn't available here"
+msgstr ""
+
+#: sahara/exceptions.py:31
+msgid "An unknown exception occurred"
+msgstr ""
+
+#: sahara/exceptions.py:46
+#, python-format
+msgid ""
+"%(message)s\n"
+"Error ID: %(id)s"
+msgstr ""
+
+#: sahara/exceptions.py:55 sahara/plugins/exceptions.py:211
+#, python-format
+msgid "Object '%s' is not found"
+msgstr ""
+
+#: sahara/exceptions.py:70
+msgid "Response {response} is not unique for this query {query}."
+msgstr ""
+
+#: sahara/exceptions.py:81
+msgid "Name already exists"
+msgstr ""
+
+#: sahara/exceptions.py:85
+msgid "Invalid credentials"
+msgstr ""
+
+#: sahara/exceptions.py:91
+msgid "Invalid object reference"
+msgstr ""
+
+#: sahara/exceptions.py:96 sahara/plugins/exceptions.py:221
+#, python-format
+msgid "Error during command execution: \"%s\""
+msgstr ""
+
+#: sahara/exceptions.py:132 sahara/plugins/exceptions.py:201
+msgid "Data is invalid"
+msgstr ""
+
+#: sahara/exceptions.py:137
+msgid "Job binary internal data must be a string of length greater than zero"
+msgstr ""
+
+#: sahara/exceptions.py:143
+msgid ""
+"To work with JobBinary located in internal swift add 'user' and "
+"'password' to extra"
+msgstr ""
+
+#: sahara/exceptions.py:149
+msgid "Database object already exists"
+msgstr ""
+
+#: sahara/exceptions.py:153
+msgid "Object was not created"
+msgstr ""
+
+#: sahara/exceptions.py:158
+msgid "Operation was not canceled"
+msgstr ""
+
+#: sahara/exceptions.py:163
+msgid "Operation was not suspended"
+msgstr ""
+
+#: sahara/exceptions.py:168
+msgid "Invalid Job Status"
+msgstr ""
+
+#: sahara/exceptions.py:174
+msgid "Object was not deleted"
+msgstr ""
+
+#: sahara/exceptions.py:179
+#, python-format
+msgid "Node Group %s is missing 'floating_ip_pool' field"
+msgstr ""
+
+#: sahara/exceptions.py:198
+msgid "An error has occurred while performing a request to Swift"
+msgstr ""
+
+#: sahara/exceptions.py:208
+msgid "An error has occurred while performing a request to S3"
+msgstr ""
+
+#: sahara/exceptions.py:213
+#, python-format
+msgid "Size of data (%(size)s) is greater than maximum (%(maximum)s)"
+msgstr ""
+
+#: sahara/exceptions.py:228
+#, python-format
+msgid ""
+"An error occurred in thread '%(thread)s': %(e)s\n"
+"%(stacktrace)s"
+msgstr ""
+
+#: sahara/exceptions.py:242
+msgid "Subprocess execution has failed"
+msgstr ""
+
+#: sahara/exceptions.py:247
+#, python-format
+msgid "Feature '%s' is not implemented"
+msgstr ""
+
+#: sahara/exceptions.py:260
+#, python-format
+msgid "Heat stack failed with status %s"
+msgstr ""
+
+#: sahara/exceptions.py:268
+msgid "Heat stack failed"
+msgstr ""
+
+#: sahara/exceptions.py:274 sahara/plugins/exceptions.py:206
+msgid "The configuration has failed"
+msgstr ""
+
+#: sahara/exceptions.py:278
+msgid "The object is in an incorrect state"
+msgstr ""
+
+#: sahara/exceptions.py:284
+#, python-format
+msgid "Class %s is immutable!"
+msgstr ""
+
+#: sahara/exceptions.py:294
+msgid "System error has occurred"
+msgstr ""
+
+#: sahara/exceptions.py:299
+msgid "Failed to complete EDP operation"
+msgstr ""
+
+#: sahara/exceptions.py:304
+msgid "Failed to perform Oozie request"
+msgstr ""
+
+#: sahara/exceptions.py:309
+#, python-format
+msgid "'%(operation)s' timed out after %(timeout)i second(s)"
+msgstr ""
+
+#: sahara/exceptions.py:314
+#, python-format
+msgid "Operation with name '%s'"
+msgstr ""
+
+#: sahara/exceptions.py:316
+msgid "Operation"
+msgstr ""
+
+#: sahara/exceptions.py:321
+#, python-format
+msgid "%(message)s and following timeout was violated: %(timeout_name)s"
+msgstr ""
+
+#: sahara/exceptions.py:331
+msgid "The version you are trying to use is deprecated"
+msgstr ""
+
+#: sahara/exceptions.py:336
+msgid "You are not authorized to complete this action"
+msgstr ""
+
+#: sahara/exceptions.py:341
+#, python-format
+msgid "Image %s is not registered in Sahara"
+msgstr ""
+
+#: sahara/exceptions.py:350
+#, python-format
+msgid "Malformed message body: %(reason)s"
+msgstr ""
+
+#: sahara/exceptions.py:359
+#, python-format
+msgid ""
+"Quota exceeded for %(resource)s: Requested %(requested)s, but available "
+"%(available)s"
+msgstr ""
+
+#: sahara/exceptions.py:374
+#, python-format
+msgid "Object '%s' could not be updated"
+msgstr ""
+
+#: sahara/exceptions.py:388
+#, python-format
+msgid ""
+"Operation %(operation)s wasn't executed correctly after %(attempts)d "
+"attempts"
+msgstr ""
+
+#: sahara/exceptions.py:399
+msgid "Job execution information is invalid"
+msgstr ""
+
+#: sahara/api/base.py:22
+msgid "This API operation isn't implemented"
+msgstr ""
+
+#: sahara/api/middleware/auth_valid.py:57
+msgid "Incorrect path"
+msgstr ""
+
+#: sahara/api/middleware/auth_valid.py:64
+msgid "Token tenant != requested tenant"
+msgstr ""
+
+#: sahara/cli/sahara_status.py:43
+msgid "Sample Check"
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:32
+msgid ""
+"The path to an image to modify. This image will be modified in-place: be "
+"sure to target a copy if you wish to maintain a clean master image."
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:39
+msgid ""
+"The filesystem to mount as the root volume on the image. No value is "
+"required if only one filesystem is detected."
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:45
+msgid ""
+"If this flag is set, no changes will be made to the image; instead, the "
+"script will fail if discrepancies are found between the image and the "
+"intended state."
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:71
+msgid "Image generation for the {plugin} plugin"
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:74
+msgid "Plugin version"
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:76
+msgid "Available versions"
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:81
+msgid "{plugin} version {version}"
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:97
+msgid "Plugin"
+msgstr ""
+
+#: sahara/cli/image_pack/cli.py:98
+msgid "Available plugins"
+msgstr ""
+
+#: sahara/conductor/__init__.py:32
+msgid "Remote conductor isn't implemented yet."
+msgstr ""
+
+#: sahara/conductor/resource.py:123
+#, python-format
+msgid "Unsupported type: %s"
+msgstr ""
+
+#: sahara/db/migration/cli.py:41
+msgid "You must provide a revision or relative delta"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:337 sahara/db/sqlalchemy/api.py:551
+#, python-format
+msgid "Duplicate entry for object %(object)s. Failed on columns: %(columns)s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:351 sahara/db/sqlalchemy/api.py:366
+#: sahara/db/sqlalchemy/api.py:385 sahara/db/sqlalchemy/api.py:1478
+#: sahara/db/sqlalchemy/api.py:1506 sahara/db/sqlalchemy/api.py:1557
+#, python-format
+msgid "Cluster id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:355
+#, python-format
+msgid "Duplicate entry for Cluster: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:401 sahara/db/sqlalchemy/api.py:413
+#: sahara/db/sqlalchemy/api.py:432
+#, python-format
+msgid "Node Group id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:451 sahara/db/sqlalchemy/api.py:462
+#: sahara/db/sqlalchemy/api.py:479 sahara/db/sqlalchemy/api.py:490
+#, python-format
+msgid "Instance id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:566 sahara/db/sqlalchemy/api.py:591
+#, python-format
+msgid "Cluster Template id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:600
+#, python-format
+msgid ""
+"Cluster Template id '%s' can not be updated. It is referenced by at least"
+" one cluster."
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:625
+#, python-format
+msgid "Duplicate entry for ClusterTemplate: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:675 sahara/db/sqlalchemy/api.py:753
+#, python-format
+msgid "Duplicate entry for NodeGroupTemplate: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:689
+#, python-format
+msgid "Node Group Template id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:706
+#, python-format
+msgid "NodeGroupTemplate id '%s' not found"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:718
+#, python-format
+msgid ""
+"NodeGroupTemplate id '%s' can not be updated. It is referenced by an "
+"existing cluster."
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:827 sahara/db/sqlalchemy/api.py:868
+#, python-format
+msgid "Duplicate entry for DataSource: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:840
+#, python-format
+msgid "Data Source id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:848 sahara/db/sqlalchemy/api.py:1184
+msgid " on foreign key constraint"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:849
+#, python-format
+msgid "Data Source deletion failed%s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:860
+#, python-format
+msgid "DataSource id '%s' not found"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1035
+#, python-format
+msgid "Duplicate entry for JobExecution: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1047 sahara/db/sqlalchemy/api.py:1061
+#, python-format
+msgid "JobExecution id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1143 sahara/db/sqlalchemy/api.py:1164
+#, python-format
+msgid "Duplicate entry for Job: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1155 sahara/db/sqlalchemy/api.py:1176
+#, python-format
+msgid "Job id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1185
+#, python-format
+msgid "Job deletion failed%s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1242 sahara/db/sqlalchemy/api.py:1283
+#, python-format
+msgid "Duplicate entry for JobBinary: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1256
+#, python-format
+msgid "JobBinary id '%s' not found"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1267
+#, python-format
+msgid ""
+"The url for JobBinary Id '%s' can not be updated because it is an "
+"internal-db url."
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1278
+#, python-format
+msgid "JobBinary Id '%s' is used in a PENDING job and can not be updated."
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1306
+#, python-format
+msgid "JobBinary id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1313
+msgid "JobBinary is referenced and cannot be deleted"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1373 sahara/db/sqlalchemy/api.py:1391
+#, python-format
+msgid ""
+"Size of internal binary (%(size)sKB) is greater than the maximum "
+"(%(maximum)sKB)"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1403 sahara/db/sqlalchemy/api.py:1442
+#, python-format
+msgid "Duplicate entry for JobBinaryInternal: %s"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1416 sahara/db/sqlalchemy/api.py:1434
+#, python-format
+msgid "JobBinaryInternal id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1461 sahara/db/sqlalchemy/api.py:1524
+#, python-format
+msgid "Cluster Provision Step id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1576 sahara/db/sqlalchemy/api.py:1591
+#: sahara/db/sqlalchemy/api.py:1619
+#, python-format
+msgid "Verification id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1639
+#, python-format
+msgid "Health check id '%s' not found!"
+msgstr ""
+
+#: sahara/db/sqlalchemy/api.py:1680 sahara/db/sqlalchemy/api.py:1694
+#, python-format
+msgid "Plugin name '%s' not found!"
+msgstr ""
+
+#: sahara/plugins/base.py:98
+#, python-format
+msgid "Plugin with name '%s' already exists."
+msgstr ""
+
+#: sahara/plugins/exceptions.py:22
+#, python-format
+msgid "Chosen node group %(ng_name)s cannot be scaled : %(reason)s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:30
+msgid "Failed to decommission cluster"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:40
+#, python-format
+msgid "Cluster %(cluster_name)s cannot be scaled : %(reason)s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:51
+#, python-format
+msgid "Cluster is missing a service: %s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:54
+#, python-format
+msgid "%(message)s, required by service: %(required_by)s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:72
+#, python-format
+msgid ""
+"Hadoop cluster should contain %(expected_count)s %(component)s "
+"component(s). Actual %(component)s count is %(count)s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:95
+msgid "Cluster has invalid topology: {description}"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:108
+#, python-format
+msgid "Failed to Provision Hadoop Cluster: %s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:123
+#, python-format
+msgid "NameNode High Availability: %s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:138
+#, python-format
+msgid "ResourceManager High Availability: %s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:150
+#, python-format
+msgid "Image validation spec is in error: %s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:162
+#, python-format
+msgid "Image has failed validation: %s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:174
+#, python-format
+msgid "All validations have failed: %s"
+msgstr ""
+
+#: sahara/plugins/exceptions.py:189
+#, python-format
+msgid ""
+"Volume size: %(volume_size)s GB should be greater than value of "
+"\"dfs_datanode_du_reserved\": %(reserved)s GB"
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:40
+#, python-format
+msgid "Cluster health is %(status)s. Reason: %(reason)s"
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:128
+msgid "Health check timed out"
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:152
+#, python-format
+msgid "Instances (%s) are not available in the cluster."
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:153
+msgid "All instances are available"
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:173
+msgid "Couldn't read '/etc/resolv.conf' on instances: {}."
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:178
+msgid ""
+"Instances ({}) have incorrect '/etc/resolv.conf' file, expected "
+"nameservers: {}."
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:183
+msgid "{} {}"
+msgstr ""
+
+#: sahara/plugins/health_check_base.py:184
+msgid "All instances have correct '/etc/resolv.conf' file"
+msgstr ""
+
+#: sahara/plugins/images.py:129
+msgid "The following argument names are reserved: {names}"
+msgstr ""
+
+#: sahara/plugins/images.py:133
+msgid "Argument {name} is not required and must specify a default value."
+msgstr ""
+
+#: sahara/plugins/images.py:137
+msgid "Argument {name} specifies a default which is not one of its choices."
+msgstr ""
+
+#: sahara/plugins/images.py:285
+#, python-format
+msgid "Validator type %s not found."
+msgstr ""
+
+#: sahara/plugins/images.py:398
+msgid "Argument {name} is required for image processing."
+msgstr ""
+
+#: sahara/plugins/images.py:407
+msgid "Value for argument {name} must be one of {choices}."
+msgstr ""
+
+#: sahara/plugins/images.py:527
+msgid "Unknown distro: cannot verify or install packages."
+msgstr ""
+
+#: sahara/plugins/images.py:642 sahara/plugins/images.py:763
+#, python-format
+msgid "Script %s not found in any resource roots."
+msgstr ""
+
+#: sahara/plugins/images.py:1043
+msgid "Argument {name} not found."
+msgstr ""
+
+#: sahara/plugins/kerberos.py:38
+msgid "KDC installation failed by reason: {reason}"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:60
+msgid "Server IP of KDC server when using existing KDC"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:64
+msgid "The name of realm to be used"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:68
+msgid "Admin principal for existing KDC server"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:75
+msgid ""
+"Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy "
+"Files location"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:140
+msgid "Setting Up Kerberos clients"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:157
+msgid "Preparing policy files"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:262
+msgid "Unable to get kdc server start command"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:282
+msgid "Deploy KDC server"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:314
+msgid "Server or server ip are not provided"
+msgstr ""
+
+#: sahara/plugins/kerberos.py:393
+msgid "Setting up keytabs for users"
+msgstr ""
+
+#: sahara/plugins/labels.py:151
+#, python-format
+msgid ""
+"Label '%s' can't be updated because it's not available for plugin or its "
+"version"
+msgstr ""
+
+#: sahara/plugins/labels.py:155
+#, python-format
+msgid "Label '%s' can't be updated because it's not mutable"
+msgstr ""
+
+#: sahara/plugins/labels.py:171
+#, python-format
+msgid "Unknown plugin version '%(version)s' of %(plugin)s"
+msgstr ""
+
+#: sahara/plugins/labels.py:208
+#, python-format
+msgid "Plugin %s is not enabled"
+msgstr ""
+
+#: sahara/plugins/labels.py:217
+#, python-format
+msgid "Version %(version)s of plugin %(plugin)s is not enabled"
+msgstr ""
+
+#: sahara/plugins/provisioning.py:237
+#, python-format
+msgid "Can't find applicable target '%(applicable_target)s' for '%(config_name)s'"
+msgstr ""
+
+#: sahara/plugins/provisioning.py:244
+#, python-format
+msgid "Can't find config '%(config_name)s' in '%(applicable_target)s'"
+msgstr ""
+
+#: sahara/plugins/utils.py:62
+msgid "0 or 1"
+msgstr ""
+
+#: sahara/plugins/utils.py:93
+msgid "Start the following process(es): {process}"
+msgstr ""
+
+#: sahara/plugins/utils.py:101
+msgid "Unable to retrieve config details"
+msgstr ""
+
+#: sahara/plugins/utils.py:129
+#, python-format
+msgid "Unable to get parameter '%(param_name)s' from service %(service)s"
+msgstr ""
+
+#: sahara/plugins/fake/plugin.py:31
+msgid ""
+"It's a fake plugin that aimed to work on the CirrOS images. It doesn't "
+"install Hadoop. It's needed to be able to test provisioning part of "
+"Sahara codebase itself."
+msgstr ""
+
+#: sahara/service/engine.py:73 sahara/service/engine.py:89
+msgid "Assign IPs"
+msgstr ""
+
+#: sahara/service/engine.py:100 sahara/service/engine.py:111
+msgid "Wait for instance accessibility"
+msgstr ""
+
+#: sahara/service/engine.py:148
+msgid "Configure instances"
+msgstr ""
+
+#: sahara/service/ops.py:254
+msgid "Engine: rollback cluster"
+msgstr ""
+
+#: sahara/service/ops.py:286
+msgid "Creating cluster failed for the following reason(s): {reason}"
+msgstr ""
+
+#: sahara/service/ops.py:299
+msgid "Engine: create cluster"
+msgstr ""
+
+#: sahara/service/ops.py:306
+msgid "Plugin: configure cluster"
+msgstr ""
+
+#: sahara/service/ops.py:316
+msgid "Plugin: start cluster"
+msgstr ""
+
+#: sahara/service/ops.py:338
+msgid "Scaling cluster failed for the following reason(s): {reason}"
+msgstr ""
+
+#: sahara/service/ops.py:381
+msgid "Plugin: decommission cluster"
+msgstr ""
+
+#: sahara/service/ops.py:387
+msgid "Engine: scale cluster"
+msgstr ""
+
+#: sahara/service/ops.py:396
+msgid "Plugin: scale cluster"
+msgstr ""
+
+#: sahara/service/ops.py:414
+#, python-format
+msgid "Instance %s not found"
+msgstr ""
+
+#: sahara/service/ops.py:428
+msgid "Terminating cluster failed for the following reason(s): {reason}"
+msgstr ""
+
+#: sahara/service/ops.py:437
+msgid "Plugin: shutdown cluster"
+msgstr ""
+
+#: sahara/service/ops.py:440
+msgid "Engine: shutdown cluster"
+msgstr ""
+
+#: sahara/service/quotas.py:63
+msgid "RAM"
+msgstr ""
+
+#: sahara/service/quotas.py:64
+msgid "VCPU"
+msgstr ""
+
+#: sahara/service/quotas.py:65
+msgid "instance"
+msgstr ""
+
+#: sahara/service/quotas.py:66
+msgid "floating ip"
+msgstr ""
+
+#: sahara/service/quotas.py:67
+msgid "security group"
+msgstr ""
+
+#: sahara/service/quotas.py:68
+msgid "security group rule"
+msgstr ""
+
+#: sahara/service/quotas.py:69
+msgid "port"
+msgstr ""
+
+#: sahara/service/quotas.py:70
+msgid "volume"
+msgstr ""
+
+#: sahara/service/quotas.py:71
+msgid "volume storage"
+msgstr ""
+
+#: sahara/service/sessions.py:95
+msgid "Session type {type} not recognized"
+msgstr ""
+
+#: sahara/service/trusts.py:73
+msgid "Failed to create trust"
+msgstr ""
+
+#: sahara/service/trusts.py:120
+msgid "Failed to delete trust {0}"
+msgstr ""
+
+#: sahara/service/validation.py:48 sahara/service/validation.py:51
+msgid "'limit' must be positive integer"
+msgstr ""
+
+#: sahara/service/validation.py:71 sahara/service/validation.py:81
+#: sahara/service/validation.py:91 sahara/service/validation.py:100
+#: sahara/service/validation.py:109 sahara/service/validation.py:118
+#: sahara/service/validation.py:127 sahara/service/validation.py:136
+#, python-format
+msgid "Unknown field for sorting %s"
+msgstr ""
+
+#: sahara/service/validation.py:192
+#: sahara/service/validations/clusters_scaling.py:34 sahara/utils/api.py:428
+#, python-format
+msgid "Object with %s not found"
+msgstr ""
+
+#: sahara/service/volumes.py:113
+msgid "Mount volumes to {inst_name} instance"
+msgstr ""
+
+#: sahara/service/volumes.py:240
+msgid "Await for volume become detached"
+msgstr ""
+
+#: sahara/service/edp/job_manager.py:102
+#, python-format
+msgid "Cluster does not support job type %s"
+msgstr ""
+
+#: sahara/service/edp/job_manager.py:194
+#, python-format
+msgid "Job execution %s was not canceled"
+msgstr ""
+
+#: sahara/service/edp/job_manager.py:238
+msgid "Suspending operation can not be performed on status: {status}"
+msgstr ""
+
+#: sahara/service/edp/job_manager.py:253
+msgid "Error during suspending of job execution: {error}"
+msgstr ""
+
+#: sahara/service/edp/job_manager.py:263
+msgid "Failed to suspend job execution {jid}"
+msgstr ""
+
+#: sahara/service/edp/s3_common.py:68
+#, python-format
+msgid "Size of S3 object (%(size)sKB) is greater than maximum (%(maximum)sKB)"
+msgstr ""
+
+#: sahara/service/edp/s3_common.py:82
+#, python-format
+msgid "URL for binary in S3 must start with %s"
+msgstr ""
+
+#: sahara/service/edp/s3_common.py:87
+msgid "URL for binary in S3 must specify an object not a bucket"
+msgstr ""
+
+#: sahara/service/edp/binary_retrievers/internal_swift.py:51
+#: sahara/service/edp/job_binaries/swift/implementation.py:99
+#, python-format
+msgid "Size of swift object (%(size)sKB) is greater than maximum (%(maximum)sKB)"
+msgstr ""
+
+#: sahara/service/edp/binary_retrievers/internal_swift.py:68
+#: sahara/service/edp/job_binaries/swift/implementation.py:114
+#, python-format
+msgid "Url for binary in internal swift must start with %s"
+msgstr ""
+
+#: sahara/service/edp/binary_retrievers/internal_swift.py:74
+#: sahara/service/edp/job_binaries/swift/implementation.py:120
+msgid "Url for binary in internal swift must specify an object not a container"
+msgstr ""
+
+#: sahara/service/edp/data_sources/manager.py:49
+#, python-format
+msgid "Data source with name '%s' already exists."
+msgstr ""
+
+#: sahara/service/edp/data_sources/manager.py:60
+#, python-format
+msgid "Data sources couldn't be loaded: %s"
+msgstr ""
+
+#: sahara/service/edp/data_sources/manager.py:70
+msgid "Invalid data source"
+msgstr ""
+
+#: sahara/service/edp/data_sources/manager.py:76
+msgid "Data source url must have a scheme"
+msgstr ""
+
+#: sahara/service/edp/data_sources/hdfs/implementation.py:30
+msgid "HDFS url must not be empty"
+msgstr ""
+
+#: sahara/service/edp/data_sources/hdfs/implementation.py:34
+msgid "URL scheme must be 'hdfs'"
+msgstr ""
+
+#: sahara/service/edp/data_sources/hdfs/implementation.py:37
+msgid "HDFS url is incorrect, cannot determine a hostname"
+msgstr ""
+
+#: sahara/service/edp/data_sources/manila/implementation.py:32
+#: sahara/service/edp/job_binaries/manila/implementation.py:73
+msgid "Manila url must not be empty"
+msgstr ""
+
+#: sahara/service/edp/data_sources/manila/implementation.py:35
+#: sahara/service/edp/job_binaries/manila/implementation.py:76
+msgid "Manila url scheme must be 'manila'"
+msgstr ""
+
+#: sahara/service/edp/data_sources/manila/implementation.py:38
+#: sahara/service/edp/job_binaries/manila/implementation.py:79
+msgid "Manila url netloc must be a uuid"
+msgstr ""
+
+#: sahara/service/edp/data_sources/manila/implementation.py:41
+#: sahara/service/edp/job_binaries/manila/implementation.py:82
+msgid "Manila url path must not be empty"
+msgstr ""
+
+#: sahara/service/edp/data_sources/maprfs/implementation.py:29
+msgid "MapR FS url must not be empty"
+msgstr ""
+
+#: sahara/service/edp/data_sources/maprfs/implementation.py:33
+msgid "URL scheme must be 'maprfs'"
+msgstr ""
+
+#: sahara/service/edp/data_sources/s3/implementation.py:47
+#, python-format
+msgid "Unknown config '%s' for S3 data source"
+msgstr ""
+
+#: sahara/service/edp/data_sources/s3/implementation.py:51
+#, python-format
+msgid "Config '%s' must be boolean"
+msgstr ""
+
+#: sahara/service/edp/data_sources/s3/implementation.py:55
+msgid "S3 url must not be empty"
+msgstr ""
+
+#: sahara/service/edp/data_sources/s3/implementation.py:60
+msgid "URL scheme must be 's3' or 's3a'"
+msgstr ""
+
+#: sahara/service/edp/data_sources/s3/implementation.py:63
+msgid "Bucket name must be present"
+msgstr ""
+
+#: sahara/service/edp/data_sources/s3/implementation.py:66
+msgid "Object name must be present"
+msgstr ""
+
+#: sahara/service/edp/data_sources/swift/implementation.py:34
+msgid "No credentials provided for Swift"
+msgstr ""
+
+#: sahara/service/edp/data_sources/swift/implementation.py:38
+msgid "User is not provided in credentials for Swift"
+msgstr ""
+
+#: sahara/service/edp/data_sources/swift/implementation.py:42
+msgid "Password is not provided in credentials for Swift"
+msgstr ""
+
+#: sahara/service/edp/data_sources/swift/implementation.py:46
+msgid "Swift url must not be empty"
+msgstr ""
+
+#: sahara/service/edp/data_sources/swift/implementation.py:50
+msgid "URL scheme must be 'swift'"
+msgstr ""
+
+#: sahara/service/edp/data_sources/swift/implementation.py:59
+#, python-format
+msgid "URL must be of the form swift://container%s/object"
+msgstr ""
+
+#: sahara/service/edp/job_binaries/manager.py:49
+#, python-format
+msgid "Job binary with name '%s' already exists."
+msgstr ""
+
+#: sahara/service/edp/job_binaries/manager.py:60
+#, python-format
+msgid "Job binaries couldn't be loaded: %s"
+msgstr ""
+
+#: sahara/service/edp/job_binaries/manager.py:70
+msgid "Invalid job binary"
+msgstr ""
+
+#: sahara/service/edp/job_binaries/manager.py:77
+msgid "Job binary url must have a scheme"
+msgstr ""
+
+#: sahara/service/edp/job_binaries/internal_db/implementation.py:63
+msgid "Internal data base url must not be empty"
+msgstr ""
+
+#: sahara/service/edp/job_binaries/internal_db/implementation.py:67
+msgid "URL scheme must be 'internal-db'"
+msgstr ""
+
+#: sahara/service/edp/job_binaries/internal_db/implementation.py:70
+msgid "Internal data base url netloc must be a uuid"
+msgstr ""
+
+#: sahara/service/edp/job_binaries/s3/implementation.py:47
+msgid "Configs 'accesskey', 'secretkey', and 'endpoint' must be provided."
+msgstr ""
+
+#: sahara/service/edp/oozie/workflow_creator/base_workflow.py:49
+#, python-format
+msgid "\"%s\" child cannot be added to prepare element"
+msgstr ""
+
+#: sahara/service/edp/oozie/workflow_creator/base_workflow.py:60
+#, python-format
+msgid "\"%s\" child cannot be added to streaming element"
+msgstr ""
+
+#: sahara/service/edp/spark/engine.py:386
+#, python-format
+msgid "Spark job execution failed. Exit status = %(status)s, stdout = %(stdout)s"
+msgstr ""
+
+#: sahara/service/edp/spark/engine.py:391
+msgid "Currently Spark engine does not support scheduled EDP jobs"
+msgstr ""
+
+#: sahara/service/edp/storm/engine.py:281
+#, python-format
+msgid "Storm job execution failed. Exit status = %(status)s, stdout = %(stdout)s"
+msgstr ""
+
+#: sahara/service/edp/storm/engine.py:286
+msgid "Currently Storm engine does not support scheduled EDP jobs"
+msgstr ""
+
+#: sahara/service/health/verification_base.py:37
+#, python-format
+msgid "Cannot verify cluster. Reason: %s"
+msgstr ""
+
+#: sahara/service/health/verification_base.py:63
+msgid "Can't update verification with other updates"
+msgstr ""
+
+#: sahara/service/health/verification_base.py:80
+msgid "All verifications are disabled"
+msgstr ""
+
+#: sahara/service/health/verification_base.py:84
+msgid "Cluster is not active or doesn't exists"
+msgstr ""
+
+#: sahara/service/health/verification_base.py:89
+#, python-format
+msgid "Cluster verification in state %s"
+msgstr ""
+
+#: sahara/service/heat/heat_engine.py:213
+msgid "Create Heat stack"
+msgstr ""
+
+#: sahara/service/validations/acl.py:25
+msgid ""
+"{object} with id '{id}' could not be deleted because it wasn't created in"
+" this tenant"
+msgstr ""
+
+#: sahara/service/validations/acl.py:34
+#, python-format
+msgid ""
+"{object} with id '%s' could not be updated because it wasn't created in "
+"this tenant"
+msgstr ""
+
+#: sahara/service/validations/acl.py:42
+msgid ""
+"{object} with id '{id}' could not be deleted because it's marked as "
+"protected"
+msgstr ""
+
+#: sahara/service/validations/acl.py:60
+#, python-format
+msgid ""
+"{object} with id '%s' could not be updated because it's marked as "
+"protected"
+msgstr ""
+
+#: sahara/service/validations/base.py:69
+#, python-format
+msgid "Sahara doesn't contain plugin with name '%s'"
+msgstr ""
+
+#: sahara/service/validations/base.py:75
+#, python-format
+msgid "Requested plugin '%(name)s' doesn't support version '%(version)s'"
+msgstr ""
+
+#: sahara/service/validations/base.py:87
+#, python-format
+msgid "Requested image '%s' is not registered"
+msgstr ""
+
+#: sahara/service/validations/base.py:98
+#, python-format
+msgid "Plugin doesn't contain applicable target '%s'"
+msgstr ""
+
+#: sahara/service/validations/base.py:103
+#, python-format
+msgid ""
+"Plugin's applicable target '%(target)s' doesn't contain config with name "
+"'%(name)s'"
+msgstr ""
+
+#: sahara/service/validations/base.py:155
+msgid "Cinder is not supported"
+msgstr ""
+
+#: sahara/service/validations/base.py:166
+msgid "You must specify a volumes_size parameter"
+msgstr ""
+
+#: sahara/service/validations/base.py:182
+#, python-format
+msgid "Requested flavor '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:195
+#, python-format
+msgid "Security group '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:203
+#, python-format
+msgid "Floating IP pool %s not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:207
+#, python-format
+msgid "Duplicates in node processes have been detected: %s"
+msgstr ""
+
+#: sahara/service/validations/base.py:223
+#, python-format
+msgid "Plugin doesn't support the following node processes: %s"
+msgstr ""
+
+#: sahara/service/validations/base.py:230
+#, python-format
+msgid "Duplicates in node group names are detected: %s"
+msgstr ""
+
+#: sahara/service/validations/base.py:238
+#, python-format
+msgid "Nova availability zone '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:246
+#, python-format
+msgid "Cinder availability zone '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:254
+#, python-format
+msgid "Volume type '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:263
+#, python-format
+msgid "Cluster with name '%s' already exists"
+msgstr ""
+
+#: sahara/service/validations/base.py:274
+#, python-format
+msgid ""
+"Composite hostname %(host)s in provisioned cluster exceeds maximum limit "
+"%(limit)s characters"
+msgstr ""
+
+#: sahara/service/validations/base.py:285
+#, python-format
+msgid "Requested keypair '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:290
+#, python-format
+msgid "Network %s not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:300
+#, python-format
+msgid "Cluster template with name '%s' already exists"
+msgstr ""
+
+#: sahara/service/validations/base.py:308
+#, python-format
+msgid "Cluster template with id '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:327
+#, python-format
+msgid "NodeGroup template with name '%s' already exists"
+msgstr ""
+
+#: sahara/service/validations/base.py:334
+#, python-format
+msgid "NodeGroup template with id '%s' not found"
+msgstr ""
+
+#: sahara/service/validations/base.py:366
+#, python-format
+msgid "Cluster doesn't contain node group with name '%s'"
+msgstr ""
+
+#: sahara/service/validations/base.py:384
+#, python-format
+msgid ""
+"Number of specific instances (%(instance)s) to delete can not be greater "
+"than the count difference (%(count)s during scaling"
+msgstr ""
+
+#: sahara/service/validations/base.py:397
+#: sahara/service/validations/base.py:404
+msgid ""
+"You can only reference instances by Name or UUID, not both on the same "
+"request"
+msgstr ""
+
+#: sahara/service/validations/base.py:408
+msgid "Duplicate entry for instances to delete"
+msgstr ""
+
+#: sahara/service/validations/base.py:422
+#, python-format
+msgid "Can't add new nodegroup. Cluster already has nodegroup with name '%s'"
+msgstr ""
+
+#: sahara/service/validations/base.py:439
+#, python-format
+msgid "Requested image '%(image)s' doesn't contain required tags: %(tags)s"
+msgstr ""
+
+#: sahara/service/validations/cluster_templates.py:62
+#, python-format
+msgid "Cluster template %(id)s in use by %(clusters)s"
+msgstr ""
+
+#: sahara/service/validations/cluster_templates.py:74
+#: sahara/service/validations/node_group_templates.py:76
+#, python-format
+msgid "You must specify a %s value for your plugin_name"
+msgstr ""
+
+#: sahara/service/validations/clusters.py:80
+#: sahara/service/validations/clusters.py:96
+#, python-format
+msgid "'%s' field is not found"
+msgstr ""
+
+#: sahara/service/validations/clusters_scaling.py:49
+#, python-format
+msgid "Cluster created before Juno release can't be scaled with %(engine)s engine"
+msgstr ""
+
+#: sahara/service/validations/clusters_scaling.py:56
+#, python-format
+msgid ""
+"Cluster created with %(old_engine)s infrastructure engine can't be scaled"
+" with %(new_engine)s engine"
+msgstr ""
+
+#: sahara/service/validations/clusters_scaling.py:66
+#, python-format
+msgid "Requested plugin '%s' doesn't support cluster scaling feature"
+msgstr ""
+
+#: sahara/service/validations/clusters_scaling.py:71
+#, python-format
+msgid "Cluster cannot be scaled not in 'Active' status. Cluster status: %s"
+msgstr ""
+
+#: sahara/service/validations/node_group_templates.py:62
+#, python-format
+msgid ""
+"Node group template %(template)s is in use by cluster templates: "
+"%(users)s; and clusters: %(clusters)s"
+msgstr ""
+
+#: sahara/service/validations/plugins.py:27
+#, python-format
+msgid ""
+"Requested plugin '%s' doesn't support converting config files to cluster "
+"templates"
+msgstr ""
+
+#: sahara/service/validations/shares.py:56
+msgid "Multiple shares cannot be mounted to the same path."
+msgstr ""
+
+#: sahara/service/validations/shares.py:61
+msgid ""
+"Paths must be absolute Linux paths starting with \"/\" and may not "
+"contain nulls."
+msgstr ""
+
+#: sahara/service/validations/shares.py:69
+#, python-format
+msgid "Requested share id %s does not exist."
+msgstr ""
+
+#: sahara/service/validations/shares.py:74
+#, python-format
+msgid ""
+"Requested share id %(id)s is of type %(type)s, which is not supported by "
+"Sahara."
+msgstr ""
+
+#: sahara/service/validations/edp/base.py:58
+#, python-format
+msgid "Data source with name '%s' already exists"
+msgstr ""
+
+#: sahara/service/validations/edp/base.py:65
+#, python-format
+msgid "DataSource with id '%s' doesn't exist"
+msgstr ""
+
+#: sahara/service/validations/edp/base.py:72
+#, python-format
+msgid "Job with name '%s' already exists"
+msgstr ""
+
+#: sahara/service/validations/edp/base.py:79
+#, python-format
+msgid "JobBinaryInternal with id '%s' doesn't exist"
+msgstr ""
+
+#: sahara/service/validations/edp/base.py:87
+#, python-format
+msgid "Provided input and output DataSources reference the same location: %s"
+msgstr ""
+
+#: sahara/service/validations/edp/data_source.py:43
+msgid "Requested RANDSTR length must be positive."
+msgstr ""
+
+#: sahara/service/validations/edp/data_source.py:48
+msgid ""
+"Requested RANDSTR length is too long, please choose a value less than "
+"1024."
+msgstr ""
+
+#: sahara/service/validations/edp/data_source.py:66
+msgid "DataSource is used in a PENDING Job and can not be updated."
+msgstr ""
+
+#: sahara/service/validations/edp/job.py:27
+#, python-format
+msgid "Job binary '%s' does not exist"
+msgstr ""
+
+#: sahara/service/validations/edp/job.py:44
+#, python-format
+msgid "%s job requires main application jar"
+msgstr ""
+
+#: sahara/service/validations/edp/job.py:47
+#, python-format
+msgid "%s flow requires main script"
+msgstr ""
+
+#: sahara/service/validations/edp/job.py:52
+msgid "'mains' and 'libs' overlap"
+msgstr ""
+
+#: sahara/service/validations/edp/job.py:57
+#, python-format
+msgid "%s flow requires libs"
+msgstr ""
+
+#: sahara/service/validations/edp/job.py:60
+#, python-format
+msgid "%s flow does not use mains"
+msgstr ""
+
+#: sahara/service/validations/edp/job_binary_internal.py:34
+msgid "Sahara internal db is disabled for storing job binaries."
+msgstr ""
+
+#: sahara/service/validations/edp/job_binary_internal.py:40
+#, python-format
+msgid "%s is not a valid name"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:51
+#, python-format
+msgid "%s job must specify edp.java.main_class"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:66
+#, python-format
+msgid "%s job must specify topology_name"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:82
+#, python-format
+msgid "%s job must specify streaming mapper and reducer"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:88
+msgid "Scheduled job must specify start time"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:94
+msgid "Invalid Time Format"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:99
+msgid "Job start time should be later than now"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:110
+#, python-format
+msgid "Cluster with id '%s' doesn't exist"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:114
+#, python-format
+msgid "Job template with id '%s' doesn't exist"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:130
+#, python-format
+msgid "Cluster with id '%(cluster_id)s' doesn't support job type '%(job_type)s'"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:145
+#, python-format
+msgid "%s job requires 'input_id' and 'output_id'"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:160
+#, python-format
+msgid ""
+"Job execution with id '%s' cannot be canceled because it wasn't created "
+"in this tenant"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:166
+#, python-format
+msgid ""
+"Job Execution with id '%s' cannot be canceled because it's marked as "
+"protected"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:192
+msgid "Invalid status parameter"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:196
+msgid ""
+"Suspending operation can not be performed on an inactive or non-existent "
+"cluster"
+msgstr ""
+
+#: sahara/service/validations/edp/job_execution.py:205
+msgid "Engine doesn't support suspending job feature"
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:79
+msgid "Name must be unique within the interface for any job."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:87
+#, python-format
+msgid ""
+"Only mapping types %(mapping_types)s are allowed for job type "
+"%(job_type)s."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:95
+#: sahara/service/validations/edp/job_interface.py:100
+msgid ""
+"Locations of positional arguments must be an unbroken integer sequence "
+"ascending from 0."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:106
+msgid ""
+"Positional arguments must be given default values if they are not "
+"required."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:112
+msgid ""
+"The combination of mapping type and location must be unique within the "
+"interface for any job."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:135
+#, python-format
+msgid "Data source value '%s' is neither a valid data source ID nor a valid URL."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:142
+#, python-format
+msgid "Value '%s' is not a valid number."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:148
+#, python-format
+msgid "Value '%s' is not a valid string."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:170
+msgid ""
+"An interface was specified with the template for this job. Please pass an"
+" interface map with this job (even if empty)."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:179
+#, python-format
+msgid "Argument names: %s were not found in the interface for this job."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:185
+#, python-format
+msgid "Argument names: %s are required for this job."
+msgstr ""
+
+#: sahara/service/validations/edp/job_interface.py:201
+#, python-format
+msgid ""
+"Argument '%(name)s' was passed both through the interface and in location"
+" '%(mapping_type)s'.'%(location)s'. Please pass this through either the "
+"interface or the configuration maps, not both."
+msgstr ""
+
+#: sahara/topology/topology_helper.py:108
+#, python-format
+msgid "Unable to find file %s with compute topology"
+msgstr ""
+
+#: sahara/topology/topology_helper.py:124
+#, python-format
+msgid "Was not able to find compute node topology for VM %s"
+msgstr ""
+
+#: sahara/utils/api.py:232
+msgid "Non-dict and non-empty kwargs passed to render"
+msgstr ""
+
+#: sahara/utils/api.py:252 sahara/utils/api.py:279
+#, python-format
+msgid "Content type '%s' isn't supported"
+msgstr ""
+
+#: sahara/utils/crypto.py:55
+msgid "Private key file hasn't been created"
+msgstr ""
+
+#: sahara/utils/crypto.py:60
+msgid "Public key file hasn't been created"
+msgstr ""
+
+#: sahara/utils/proxy.py:166
+msgid "Proxy domain requested but not specified."
+msgstr ""
+
+#: sahara/utils/proxy.py:177
+#, python-format
+msgid "Failed to find domain %s"
+msgstr ""
+
+#: sahara/utils/proxy.py:182
+#, python-format
+msgid "Unexpected results found when searching for domain %s"
+msgstr ""
+
+#: sahara/utils/proxy.py:295
+#, python-format
+msgid "Failed to find user %s"
+msgstr ""
+
+#: sahara/utils/proxy.py:299
+#, python-format
+msgid "Unexpected results found when searching for user %s"
+msgstr ""
+
+#: sahara/utils/remote.py:153
+msgid ""
+"Remote driver is not loaded. Most probably you see this error because you"
+" are running Sahara in distributed mode and it is broken.Try running "
+"sahara-all instead."
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:439
+msgid "Package Installation"
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:440 sahara/utils/ssh_remote.py:461
+#, python-format
+msgid "%(fmt)s is not implemented for OS %(distrib)s"
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:460
+msgid "Repository Update"
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:635
+#, python-format
+msgid "Unknown file mode %s"
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:880
+#, python-format
+msgid "Closing HTTP session for %(host)s:%(port)s"
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:887
+#, python-format
+msgid "Session for %(host)s:%(port)s not cached"
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:894
+#, python-format
+msgid "Executing \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:901
+#, python-format
+msgid "Writing file \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:907
+#, python-format
+msgid "Writing files \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:912
+#, python-format
+msgid "Appending to file \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:918
+#, python-format
+msgid "Appending to files \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:923
+#, python-format
+msgid "Prepending to file \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:929
+#, python-format
+msgid "Reading file \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:945
+#, python-format
+msgid "Installing packages \"%s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:950
+msgid "Updating repository"
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:956
+#, python-format
+msgid ""
+"In file \"%(file)s\" replacing string \"%(old_string)s\" with "
+"\"%(new_string)s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:968
+#, python-format
+msgid ""
+"In file \"%(file)s\" replacing line beginning with string "
+"\"%(old_line_with_start_string)s\" with \"%(new_line)s\""
+msgstr ""
+
+#: sahara/utils/ssh_remote.py:994
+#, python-format
+msgid "Executing interactively \"%s\""
+msgstr ""
+
+#: sahara/utils/tempfiles.py:37
+#, python-format
+msgid "Failed to delete temp dir %(dir)s (reason: %(reason)s)"
+msgstr ""
+
+#: sahara/utils/wsgi.py:81
+msgid "cannot understand JSON"
+msgstr ""
+
+#: sahara/utils/openstack/heat.py:66
+#, python-format
+msgid "Failed to find stack %(stack)s"
+msgstr ""
+
+#: sahara/utils/openstack/heat.py:79
+msgid ""
+"Cannot delete heat stack {name}, reason: stack status: {status}, status "
+"reason: {reason}"
+msgstr ""
+
+#: sahara/utils/openstack/manila.py:71
+#, python-format
+msgid "Share with id %s was not found."
+msgstr ""
+
+#: sahara/utils/openstack/neutron.py:90
+#, python-format
+msgid "Neutron router corresponding to network %s is not found"
+msgstr ""
+

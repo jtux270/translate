@@ -1,0 +1,290 @@
+# Translations template for ceilometer.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the ceilometer project.
+#
+# Translators:
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata.
+# Дронова Юлия <juliette.tux@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: ceilometer VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-18 17:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-03-10 14:50+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Generated-By: Babel 2.0\n"
+"X-Generator: Lokalize 21.12.2\n"
+"Language-Team: RU\n"
+
+#: ceilometer/declarative.py:68
+#, python-format
+msgid "The field 'fields' is required for %s"
+msgstr "Поле 'fields' является обязательным для %s"
+
+#: ceilometer/declarative.py:81
+#, python-format
+msgid "Plugin specified, but no plugin name supplied for %s"
+msgstr "Указан модуль, но не передано имя модуля для %s"
+
+#: ceilometer/declarative.py:90
+#, python-format
+msgid "No plugin named %(plugin)s available for %(name)s"
+msgstr "Для %(name)s нет модуля с названием %(plugin)s."
+
+#: ceilometer/declarative.py:116
+#, python-format
+msgid ""
+"Parse error in JSONPath specification '%(jsonpath)s' for %(name)s: %(err)s"
+msgstr ""
+"Ошибка анализа спецификации JSONPath %(jsonpath)s для %(name)s: %(err)s"
+
+#: ceilometer/declarative.py:181
+#, python-format
+msgid ""
+"Invalid YAML syntax in Definitions file %(file)s at line: %(line)s, column: "
+"%(column)s."
+msgstr ""
+"Недопустимый синтаксис YAML в файле определений %(file)s; строка: %(line)s, "
+"столбец: %(column)s."
+
+#: ceilometer/declarative.py:187
+#, python-format
+msgid "YAML error reading Definitions file %(file)s"
+msgstr "Ошибка YAML при чтении файла определений %(file)s"
+
+#: ceilometer/monasca_client.py:66
+#, python-format
+msgid "monasca_client: using %s as Monasca endpoint"
+msgstr "monasca_client: в качестве конечной точки Monasca используется %s"
+
+#: ceilometer/notification.py:109
+#, python-format
+msgid "Could not load the following pipelines: %s"
+msgstr "Не удалось загрузить следующие конвейеры: %s"
+
+#: ceilometer/cmd/status.py:43
+msgid "Sample Check"
+msgstr "Проверка образцов"
+
+#: ceilometer/compute/virt/libvirt/inspector.py:53
+#, python-format
+msgid ""
+"Error from libvirt while looking up instance <name=%(name)s, id=%(id)s>: "
+"[Error Code %(error_code)s] %(ex)s"
+msgstr ""
+"Ошибка libvirt при поиске экземпляра <имя=%(name)s, ИД=%(id)s>: "
+"[Код ошибки: %(error_code)s] %(ex)s"
+
+#: ceilometer/compute/virt/libvirt/inspector.py:70
+#, python-format
+msgid ""
+"Failed to inspect data of instance <name=%(name)s, id=%(id)s>, domain state "
+"is SHUTOFF."
+msgstr ""
+"Не удалось проверить данные экземпляра <имя=%(name)s, ИД=%(id)s>, состояние "
+"домена - SHUTOFF."
+
+#: ceilometer/compute/virt/libvirt/inspector.py:180
+#, python-format
+msgid ""
+"Error from libvirt while checking blockStats, This may not be harmful, but "
+"please check : %(ex)s"
+msgstr ""
+"Ошибка libvirt при проверке blockStats. Потенциальной опасности может и не"
+" быть, "
+"но лучше проверьте: %(ex)s"
+
+#: ceilometer/compute/virt/libvirt/utils.py:122
+#, python-format
+msgid ""
+"Failed to inspect instance %(instance_uuid)s stats, can not get info from "
+"libvirt: %(error)s"
+msgstr ""
+"Не удалось выполнить проверку статистики экземпляра %(instance_uuid)s, сбой"
+" получения "
+"данных от libvirt: %(error)s"
+
+#: ceilometer/compute/virt/vmware/inspector.py:106
+#, python-format
+msgid "VM %s not found in VMware vSphere"
+msgstr "ВМ %s не найдена в VMware vSphere"
+
+#: ceilometer/compute/virt/vmware/inspector.py:112
+#, python-format
+msgid "VM %s is poweredOff in VMware vSphere"
+msgstr "ВМ %s выключена в VMware vSphere"
+
+#: ceilometer/event/converter.py:54
+#, python-format
+msgid "Invalid trait type '%(type)s' for trait %(trait)s"
+msgstr "Недопустимый тип %(type)s для особенности %(trait)s"
+
+#: ceilometer/event/converter.py:98 ceilometer/publisher/gnocchi.py:113
+#, python-format
+msgid "Required field %s not specified"
+msgstr "Не указано обязательное поле %s"
+
+#: ceilometer/event/converter.py:266
+#, python-format
+msgid "Dropping Notification %(type)s (uuid:%(msgid)s)"
+msgstr "Сброс уведомления %(type)s (uuid:%(msgid)s)"
+
+#: ceilometer/hardware/pollsters/generic.py:55
+#, python-format
+msgid "Missing field %s"
+msgstr "Отсутствует поле %s"
+
+#: ceilometer/hardware/pollsters/generic.py:58
+#, python-format
+msgid "Unrecognized type value %s"
+msgstr "Нераспознанное значение типа %s"
+
+#: ceilometer/ipmi/platform/intel_node_manager.py:292
+msgid "Node Manager init failed"
+msgstr "Сбой инициализации администратора узлов"
+
+#: ceilometer/ipmi/platform/ipmi_sensor.py:101
+msgid "Wrong sensor type"
+msgstr "Неверный тип датчика"
+
+#: ceilometer/ipmi/platform/ipmitool.py:40
+msgid "parse IPMI sensor data failed,unknown sensor type"
+msgstr "сбой анализа данных датчика IPMI, неизвестный тип датчика"
+
+#: ceilometer/ipmi/platform/ipmitool.py:81
+msgid "parse IPMI sensor data failed,No data retrieved from given input"
+msgstr ""
+"сбой анализа данных датчика IPMI, не получены данные из переданного ввода"
+
+#: ceilometer/ipmi/platform/ipmitool.py:103
+msgid "ipmitool output length mismatch"
+msgstr "несоответствие длины вывода ipmitool"
+
+#: ceilometer/ipmi/platform/ipmitool.py:129
+msgid "running ipmitool failure"
+msgstr "сбой выполнения ipmitool"
+
+#: ceilometer/ipmi/pollsters/node.py:58
+#, python-format
+msgid "Polling %(name)s failed for %(cnt)s times!"
+msgstr "Опрос %(name)s не удалось выполнить %(cnt)s раз."
+
+#: ceilometer/ipmi/pollsters/node.py:62 ceilometer/ipmi/pollsters/sensor.py:67
+#, python-format
+msgid "Pollster for %s is disabled!"
+msgstr "Опросчик %s отключён"
+
+#: ceilometer/ipmi/pollsters/sensor.py:62
+#, python-format
+msgid "Polling %(mtr)s sensor failed for %(cnt)s times!"
+msgstr "Опрос датчика %(mtr)s выполнить не удалось, попыток: %(cnt)s"
+
+#: ceilometer/meter/notifications.py:58
+#, python-format
+msgid "Required fields %s not specified"
+msgstr "Не указаны обязательные поля %s"
+
+#: ceilometer/meter/notifications.py:68
+#, python-format
+msgid "Invalid type %s specified"
+msgstr "Указан недопустимый тип %s"
+
+#: ceilometer/network/services/fwaas.py:47
+#, python-format
+msgid "Unknown status %(stat)s received on fw %(id)s,skipping sample"
+msgstr ""
+"Брандмауэр %(id)s получил неизвестный статус %(stat)s,пример пропускается"
+
+#: ceilometer/network/services/lbaas.py:86
+#, python-format
+msgid "Unknown status %(stat)s received on pool %(id)s, skipping sample"
+msgstr "Пул %(id)s получил неизвестный статус %(stat)s,пример пропускается"
+
+#: ceilometer/network/services/lbaas.py:133
+#, python-format
+msgid "Unknown status %(stat)s received on vip %(id)s, skipping sample"
+msgstr ""
+"Вирт. IP %(id)s получил неизвестный статус %(stat)s,пример пропускается"
+
+#: ceilometer/network/services/lbaas.py:173
+#, python-format
+msgid "Unknown status %(stat)s received on member %(id)s, skipping sample"
+msgstr ""
+"Участник %(id)s получил неизвестный статус %(stat)s,пример пропускается"
+
+#: ceilometer/network/services/lbaas.py:402
+#, python-format
+msgid "Unknown status %(stat)s received on listener %(id)s, skipping sample"
+msgstr ""
+"Слушатель %(id)s получил неизвестный статус %(stat)s,пример пропускается"
+
+#: ceilometer/network/services/lbaas.py:445
+#, python-format
+msgid ""
+"Unknown status %(stat)s received on Load Balancer %(id)s, skipping sample"
+msgstr ""
+"Балансировщик нагрузки %(id)s получил неизвестный статус %(stat)s,пример"
+" пропускается"
+
+#: ceilometer/network/services/vpnaas.py:48
+#, python-format
+msgid "Unknown status %(stat)s received on vpn %(id)s, skipping sample"
+msgstr "VPN %(id)s получил неизвестный статус %(stat)s,пример пропускается"
+
+#: ceilometer/network/statistics/opencontrail/client.py:53
+#, python-format
+msgid "Opencontrail API returned %(status)s %(reason)s"
+msgstr "API Opencontrail вернул %(status)s %(reason)s"
+
+#: ceilometer/network/statistics/opendaylight/client.py:223
+#: ceilometer/tests/unit/network/statistics/opendaylight/test_client.py:146
+#, python-format
+msgid "OpenDaylight API returned %(status)s %(reason)s"
+msgstr "OpenDaylight API вернул %(status)s %(reason)s"
+
+#: ceilometer/objectstore/rgw_client.py:50
+#, python-format
+msgid "RGW AdminOps API returned %(status)s %(reason)s"
+msgstr "Функция API RGW AdminOps вернула %(status)s %(reason)s"
+
+#: ceilometer/publisher/gnocchi.py:116
+#, python-format
+msgid "Required field %(field)s should be a %(type)s"
+msgstr "Обязательное поле %(field)s должно иметь тип %(type)s"
+
+#: ceilometer/publisher/messaging.py:94
+#, python-format
+msgid "Publishing policy is unknown (%s) force to default"
+msgstr ""
+"Неизвестная политика публикации (%s), принудительно будет "
+"применена политика по умолчанию"
+
+#: ceilometer/publisher/messaging.py:148
+#, python-format
+msgid ""
+"Publisher max local_queue length is exceeded, dropping %d oldest samples"
+msgstr ""
+"Превышена максимальная длина local_queue публикатора, сброс старых "
+"образцов в количестве %d"
+
+#: ceilometer/publisher/messaging.py:160
+#, python-format
+msgid "Failed to publish %d datapoints, queue them"
+msgstr "Не удалось опубликовать %d точек данных, поставьте их в очередь"
+
+#: ceilometer/publisher/messaging.py:164
+#, python-format
+msgid "Failed to publish %d datapoints, dropping them"
+msgstr "Не удалось опубликовать точек данных: %d, выполняется сброс"
+
+#: ceilometer/publisher/udp.py:75
+msgid "Unable to send sample over UDP"
+msgstr "Не удалось отправить образец по UDP"
+

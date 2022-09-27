@@ -1,0 +1,1828 @@
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: trove VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-17 02:42+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-04-12 06:06+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: trove/backup/models.py:333
+#, python-format
+msgid "Backup %s cannot be deleted because it is running."
+msgstr ""
+
+#: trove/backup/models.py:432
+#, python-format
+msgid "Bad location for backup object: %s"
+msgstr ""
+
+#: trove/cluster/models.py:276
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:273
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:487
+#, python-format
+msgid ""
+"This action cannot be performed on the cluster while the current cluster "
+"task is '%s'."
+msgstr ""
+
+#: trove/cluster/models.py:372
+#, python-format
+msgid "Action %s not supported"
+msgstr ""
+
+#: trove/cluster/models.py:375
+msgid "Action 'grow' not supported"
+msgstr ""
+
+#: trove/cluster/models.py:378
+msgid "Action 'shrink' not supported"
+msgstr ""
+
+#: trove/cluster/models.py:413
+msgid "Action 'restart' not supported"
+msgstr ""
+
+#: trove/cluster/models.py:416
+msgid "Action 'upgrade' not supported"
+msgstr ""
+
+#: trove/cluster/models.py:420
+msgid "Action 'configuration_attach' not supported"
+msgstr ""
+
+#: trove/cluster/models.py:487
+msgid "Action 'configuration_detach' not supported"
+msgstr ""
+
+#: trove/cluster/service.py:66 trove/extensions/mgmt/clusters/service.py:77
+#: trove/extensions/mgmt/configuration/service.py:79
+#: trove/extensions/mgmt/configuration/service.py:106
+#: trove/extensions/mgmt/instances/service.py:104
+#: trove/extensions/mgmt/instances/service.py:128
+#: trove/extensions/mgmt/quota/service.py:50 trove/instance/service.py:85
+msgid "Invalid request body."
+msgstr ""
+
+#: trove/cluster/service.py:69
+msgid "Action request should have exactly one action specified in body"
+msgstr ""
+
+#: trove/cmd/guest.py:54
+#, python-format
+msgid "Manager class not registered for datastore manager %s"
+msgstr ""
+
+#: trove/cmd/guest.py:59
+msgid ""
+"The guest_id parameter is not set. guest_info.conf was not injected into the "
+"guest or not read by guestagent"
+msgstr ""
+
+#: trove/cmd/manage.py:45
+msgid "Database downgrade is no longer supported."
+msgstr ""
+
+#: trove/cmd/manage.py:393
+#, python-format
+msgid "Possible wrong number of arguments supplied %s."
+msgstr ""
+
+#: trove/cmd/manage.py:396
+msgid "Command failed, please check log for more info."
+msgstr ""
+
+#: trove/cmd/status.py:52
+msgid "Instances with running tasks exist."
+msgstr ""
+
+#: trove/cmd/status.py:64
+msgid "instances_with_running_tasks"
+msgstr ""
+
+#: trove/cmd/status.py:66
+msgid "policy File JSON to YAML Migration"
+msgstr ""
+
+#: trove/common/auth.py:72
+#, python-format
+msgid "User with tenant id %s cannot access this resource."
+msgstr ""
+
+#: trove/common/base_wsgi.py:110
+#, python-format
+msgid "Could not bind to %(host)s:%(port)s after trying for 30 seconds"
+msgstr ""
+"Не удалось выполнить связывание с %(host)s:%(port)s в течение 30 секунд"
+
+#: trove/common/base_wsgi.py:373
+msgid "Unsupported Content-Type"
+msgstr "Не поддерживаемый  тип содержимого"
+
+#: trove/common/base_wsgi.py:376
+msgid "Malformed request body"
+msgstr "Неправильное тело запроса"
+
+#: trove/common/base_wsgi.py:727
+msgid "cannot understand JSON"
+msgstr "невозможно понять JSON"
+
+#: trove/common/base_wsgi.py:751
+msgid "cannot understand XML"
+msgstr "не удается проанализировать XML"
+
+#: trove/common/cfg.py:37
+msgid ""
+"Support for heat templates in Trove is scheduled for removal. You will no "
+"longer be able to provide a heat template to Trove for the provisioning of "
+"resources."
+msgstr ""
+
+#: trove/common/exception.py:56
+#, python-format
+msgid "Failed to save %(model_name)s because: %(error)s."
+msgstr ""
+
+#: trove/common/exception.py:61
+msgid "Invalid RPC Connection Reuse."
+msgstr ""
+
+#: trove/common/exception.py:66 trove/common/exception.py:87
+#, python-format
+msgid "Resource %(uuid)s cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:71
+msgid ""
+"The server could not comply with the request since it is either malformed or "
+"otherwise incorrect."
+msgstr ""
+"Серверу не удалось выполнить запрос, поскольку тот неправильно сформирован "
+"или по какой-либо еще причине недопустим."
+
+#: trove/common/exception.py:77
+#, python-format
+msgid "Capability '%(capability)s' cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:82
+#, python-format
+msgid "Capability '%(capability)s' is disabled."
+msgstr ""
+
+#: trove/common/exception.py:92
+#, python-format
+msgid "User %(uuid)s cannot be found on the instance."
+msgstr ""
+
+#: trove/common/exception.py:97
+msgid "Root user has never been enabled on the instance."
+msgstr ""
+
+#: trove/common/exception.py:102
+#, python-format
+msgid "Database %(uuid)s cannot be found on the instance."
+msgstr ""
+
+#: trove/common/exception.py:111
+#, python-format
+msgid "Resource %(instance_id)s can not be retrieved."
+msgstr ""
+
+#: trove/common/exception.py:116
+#, python-format
+msgid "DnsRecord with name= %(name)s not found."
+msgstr ""
+
+#: trove/common/exception.py:121
+#, python-format
+msgid "Datastore '%(datastore)s' cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:126
+#, python-format
+msgid "Datastore version '%(version)s' cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:131
+msgid "Datastores cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:136
+#, python-format
+msgid ""
+"Flavor %(id)s is not supported for datastore version "
+"%(datastore_version_id)s"
+msgstr ""
+
+#: trove/common/exception.py:142
+#, python-format
+msgid ""
+"Flavor %(id)s is already associated with datastore version "
+"%(datastore_version_id)s"
+msgstr ""
+
+#: trove/common/exception.py:148
+#, python-format
+msgid ""
+"The volume type %(id)s is not valid for datastore version "
+"%(datastore_version_id)s."
+msgstr ""
+
+#: trove/common/exception.py:154
+#, python-format
+msgid ""
+"Datastore version %(datastore_version_id)s and volume-type %(id)s mapping "
+"already exists."
+msgstr ""
+
+#: trove/common/exception.py:160
+#, python-format
+msgid ""
+"Only specific volume types are allowed for a datastore version "
+"%(datastore_version_id)s. You must specify a valid volume type."
+msgstr ""
+
+#: trove/common/exception.py:167
+#, python-format
+msgid ""
+"No valid volume types could be found for datastore version "
+"%(datastore_version_id)s."
+msgstr ""
+
+#: trove/common/exception.py:173
+#, python-format
+msgid "Datastore '%(datastore)s' has no version '%(version)s'."
+msgstr ""
+
+#: trove/common/exception.py:178
+#, python-format
+msgid "Datastore version '%(version)s' is not active."
+msgstr ""
+
+#: trove/common/exception.py:183
+#, python-format
+msgid "The datastore version '%(name)s(%(version)s)' already exists."
+msgstr ""
+
+#: trove/common/exception.py:189
+#, python-format
+msgid "Datastore versions exist for datastore %(datastore)s."
+msgstr ""
+
+#: trove/common/exception.py:194
+#, python-format
+msgid "Datastore version is in use by %(resource)s."
+msgstr ""
+
+#: trove/common/exception.py:199
+#, python-format
+msgid ""
+"Multiple datastore versions found for '%(name)s', use an UUID or specify "
+"both the name and version number to be more specific."
+msgstr ""
+
+#: trove/common/exception.py:206
+#, python-format
+msgid ""
+"Please specify datastore. Default datastore '%(datastore)s' cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:212
+msgid "Please specify datastore. No default datastore is defined."
+msgstr ""
+
+#: trove/common/exception.py:218
+#, python-format
+msgid "Default version for datastore '%(datastore)s' not found."
+msgstr ""
+
+#: trove/common/exception.py:223
+#, python-format
+msgid "Datastore manager %(datastore_manager)s cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:228
+#, python-format
+msgid ""
+"The '%(operation)s' operation is not supported for the '%(datastore)s' "
+"datastore."
+msgstr ""
+
+#: trove/common/exception.py:241
+#, python-format
+msgid ""
+"Quota limit '%(limit)s' for '%(resource)s' is too small - must be at least '-"
+"1'."
+msgstr ""
+
+#: trove/common/exception.py:247
+#, python-format
+msgid "Quota exceeded for resources: %(overs)s."
+msgstr ""
+
+#: trove/common/exception.py:252
+msgid "Instance volume quota exceeded."
+msgstr ""
+
+#: trove/common/exception.py:257
+#, python-format
+msgid "An error occurred communicating with the guest: %(original_message)s."
+msgstr ""
+
+#: trove/common/exception.py:263
+msgid "Timeout trying to connect to the Guest Agent."
+msgstr ""
+
+#: trove/common/exception.py:268
+#, python-format
+msgid "Required element/key - %(key)s was not specified."
+msgstr ""
+
+#: trove/common/exception.py:273
+#, python-format
+msgid "A database with the name \"%(name)s\" already exists."
+msgstr ""
+
+#: trove/common/exception.py:278
+#, python-format
+msgid "A user with the name \"%(name)s\" already exists."
+msgstr ""
+
+#: trove/common/exception.py:283
+msgid ""
+"A configuration group cannot be deleted if it is associated with one or more "
+"non-terminated instances. Detach the configuration group from all non-"
+"terminated instances and please try again."
+msgstr ""
+
+#: trove/common/exception.py:291
+msgid "Unable to process the contained request."
+msgstr ""
+
+#: trove/common/exception.py:296
+msgid "Configuration groups not supported by the datastore."
+msgstr ""
+
+#: trove/common/exception.py:301
+msgid "No change was requested in the size of the instance."
+msgstr ""
+
+#: trove/common/exception.py:306
+#, python-format
+msgid "Cannot find the volumes attached to compute instance %(server_id)s."
+msgstr ""
+
+#: trove/common/exception.py:312
+msgid "Failed to create volume."
+msgstr ""
+
+#: trove/common/exception.py:317
+msgid "Volume size was not specified."
+msgstr ""
+
+#: trove/common/exception.py:322
+#, python-format
+msgid "Local storage not specified in flavor ID: %(flavor)s."
+msgstr ""
+
+#: trove/common/exception.py:327
+msgid "Local storage support is not enabled."
+msgstr ""
+
+#: trove/common/exception.py:332
+msgid "Volume support is not enabled."
+msgstr ""
+
+#: trove/common/exception.py:337
+#, python-format
+msgid "Replication is not supported for the '%(datastore)s' datastore."
+msgstr ""
+
+#: trove/common/exception.py:343
+msgid "Exception encountered attaching slave to new replica source."
+msgstr ""
+
+#: trove/common/exception.py:347
+#, python-format
+msgid ""
+"The '%(operation)s' operation is not supported for slaves in replication."
+msgstr ""
+
+#: trove/common/exception.py:352
+#, python-format
+msgid ""
+"Unable to determine last GTID executed on master (from file %(binlog_file)s)."
+""
+msgstr ""
+
+#: trove/common/exception.py:358
+#, python-format
+msgid ""
+"An error occurred communicating with the task manager: %(original_message)s."
+msgstr ""
+
+#: trove/common/exception.py:364
+#, python-format
+msgid "Value could not be converted: %(msg)s."
+msgstr ""
+
+#: trove/common/exception.py:369
+msgid "Polling request timed out."
+msgstr ""
+
+#: trove/common/exception.py:374
+msgid "User does not have admin privileges."
+msgstr ""
+
+#: trove/common/exception.py:379
+#, python-format
+msgid "Policy doesn't allow %(action)s to be performed."
+msgstr ""
+
+#: trove/common/exception.py:384
+#, python-format
+msgid "The following values are invalid: %(errors)s."
+msgstr ""
+
+#: trove/common/exception.py:389
+msgid "Not Found."
+msgstr ""
+
+#: trove/common/exception.py:394
+msgid "Failed to update instances."
+msgstr ""
+
+#: trove/common/exception.py:399
+msgid "Config file not found."
+msgstr ""
+
+#: trove/common/exception.py:404
+msgid "Paste app not found."
+msgstr ""
+
+#: trove/common/exception.py:408
+msgid "Quota could not be found."
+msgstr ""
+
+#: trove/common/exception.py:412
+#, python-format
+msgid "Quota for tenant %(tenant_id)s could not be found."
+msgstr ""
+
+#: trove/common/exception.py:416
+#, python-format
+msgid "Unknown quota resources %(unknown)s."
+msgstr "Неизвестные ресурсы квоты: %(unknown)s."
+
+#: trove/common/exception.py:420
+msgid "Unable to upload Backup to swift."
+msgstr ""
+
+#: trove/common/exception.py:424
+msgid "Unable to download Backup from swift"
+msgstr ""
+
+#: trove/common/exception.py:428
+msgid "Unable to create Backup."
+msgstr ""
+
+#: trove/common/exception.py:432
+msgid "Unable to update Backup table in database."
+msgstr ""
+
+#: trove/common/exception.py:437
+msgid "Failed to delete Security Group."
+msgstr ""
+
+#: trove/common/exception.py:442
+msgid "Failed to delete Security Group Rule."
+msgstr ""
+
+#: trove/common/exception.py:447
+#, python-format
+msgid ""
+"Unable to create instance because backup %(backup_id)s is not completed. "
+"Actual state: %(state)s."
+msgstr ""
+
+#: trove/common/exception.py:452
+#, python-format
+msgid "Backup file in %(location)s was not found in the object storage."
+msgstr ""
+
+#: trove/common/exception.py:457
+#, python-format
+msgid ""
+"The datastore from which the backup was taken, %(datastore1)s, does not "
+"match the destination datastore of %(datastore2)s."
+msgstr ""
+
+#: trove/common/exception.py:463
+#, python-format
+msgid ""
+"Backup is too large for given flavor or volume. Backup size: %(backup_size)s "
+"GBs. Available size: %(disk_size)s GBs."
+msgstr ""
+
+#: trove/common/exception.py:469
+msgid "Cannot create a replica with users or databases."
+msgstr ""
+
+#: trove/common/exception.py:473
+#, python-format
+msgid "Swift account not accessible for tenant %(tenant_id)s."
+msgstr ""
+
+#: trove/common/exception.py:477
+#, python-format
+msgid "Swift is disabled for tenant %(tenant_id)s."
+msgstr ""
+
+#: trove/common/exception.py:481
+msgid "Cannot connect to Swift."
+msgstr ""
+
+#: trove/common/exception.py:485
+#, python-format
+msgid ""
+"The request indicates that user %(user)s should have access to database "
+"%(database)s, but database %(database)s is not included in the initial "
+"databases list."
+msgstr ""
+
+#: trove/common/exception.py:491
+msgid ""
+"Two or more databases share the same name in the initial databases list. "
+"Please correct the names or remove the duplicate entries."
+msgstr ""
+
+#: trove/common/exception.py:497
+msgid ""
+"Two or more users share the same name and host in the initial users list. "
+"Please correct the names or remove the duplicate entries."
+msgstr ""
+
+#: trove/common/exception.py:503
+#, python-format
+msgid ""
+"Current Swift object checksum does not match original checksum for backup "
+"%(backup_id)s."
+msgstr ""
+
+#: trove/common/exception.py:508
+#, python-format
+msgid "%(key)s is not a supported configuration parameter."
+msgstr ""
+
+#: trove/common/exception.py:512
+#, python-format
+msgid "No configuration parser found for datastore %(datastore_manager)s."
+msgstr ""
+
+#: trove/common/exception.py:517
+#, python-format
+msgid ""
+"Datastore Version on Configuration %(config_datastore_version)s does not "
+"match the Datastore Version on the instance %(instance_datastore_version)s."
+msgstr ""
+
+#: trove/common/exception.py:524
+#, python-format
+msgid ""
+"%(parameter_name)s parameter can no longer be set as of "
+"%(parameter_deleted_at)s."
+msgstr ""
+
+#: trove/common/exception.py:529
+#, python-format
+msgid ""
+"%(parameter_name)s parameter already exists for datastore version "
+"%(datastore_version)s."
+msgstr ""
+
+#: trove/common/exception.py:534
+#, python-format
+msgid ""
+"Instance %(instance_id)s already has a Configuration Group attached: "
+"%(configuration_id)s."
+msgstr ""
+
+#: trove/common/exception.py:539
+#, python-format
+msgid ""
+"The operation you have requested cannot be executed because the instance "
+"status is currently: %(status)s."
+msgstr ""
+
+#: trove/common/exception.py:545
+#, python-format
+msgid ""
+"Endpoint not found for service_type=%(service_type)s, endpoint_type="
+"%(endpoint_type)s, endpoint_region=%(endpoint_region)s."
+msgstr ""
+
+#: trove/common/exception.py:552
+msgid "Empty catalog."
+msgstr ""
+
+#: trove/common/exception.py:556
+#, python-format
+msgid ""
+"Instance with replication strategy %(guest_strategy)s cannot replicate from "
+"instance with replication strategy %(replication_strategy)s."
+msgstr ""
+
+#: trove/common/exception.py:562
+#, python-format
+msgid ""
+"The target instance has only %(slave_volume_size)sG free, but the "
+"replication snapshot contains %(dataset_size)sG of data."
+msgstr ""
+
+#: trove/common/exception.py:568
+#, python-format
+msgid ""
+"The instance has only %(free)sG free while the estimated backup size is "
+"%(backup_size)sG."
+msgstr ""
+
+#: trove/common/exception.py:573
+msgid "The replica source cannot be deleted without detaching the replicas."
+msgstr ""
+
+#: trove/common/exception.py:578
+#, python-format
+msgid "Module type '%(module_type)s' was not found."
+msgstr ""
+
+#: trove/common/exception.py:583
+msgid ""
+"A module cannot be deleted or its contents modified if it has been applied "
+"to a non-terminated instance, unless the module has been marked as "
+"'live_update.' Please remove the module from all non-terminated instances "
+"and try again."
+msgstr ""
+
+#: trove/common/exception.py:592
+#, python-format
+msgid ""
+"A module with the name '%(name)s' already exists for datastore "
+"'%(datastore)s' and datastore version '%(ds_version)s'"
+msgstr ""
+
+#: trove/common/exception.py:599
+#, python-format
+msgid ""
+"You must be admin to %(action)s a module with these options. %(options)s"
+msgstr ""
+
+#: trove/common/exception.py:605
+#, python-format
+msgid "The module is invalid: %(reason)s"
+msgstr ""
+
+#: trove/common/exception.py:609
+#, python-format
+msgid "Instance '%(instance)s' cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:613
+#, python-format
+msgid "Cluster '%(cluster)s' cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:617
+msgid "The flavor for each instance in a cluster must be the same."
+msgstr ""
+
+#: trove/common/exception.py:621
+msgid "The network for each instance in a cluster must be the same."
+msgstr ""
+
+#: trove/common/exception.py:625
+#, python-format
+msgid "Network Resource %(uuid)s cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:629
+msgid "Public network cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:633
+msgid "User network conflicts with the reserved network."
+msgstr ""
+
+#: trove/common/exception.py:637
+#, python-format
+msgid "Instance %(resource)s needs to be specified."
+msgstr ""
+
+#: trove/common/exception.py:641
+#, python-format
+msgid "Subnet %(subnet_id)s not found in the network %(network_id)s."
+msgstr ""
+
+#: trove/common/exception.py:646
+msgid "A volume size is required for each instance in the cluster."
+msgstr ""
+
+#: trove/common/exception.py:650
+msgid "The volume size for each instance in a cluster must be the same."
+msgstr ""
+
+#: trove/common/exception.py:655
+#, python-format
+msgid ""
+"The number of instances for your initial cluster must be %(num_instances)s."
+msgstr ""
+
+#: trove/common/exception.py:660
+#, python-format
+msgid ""
+"The number of instances for your initial cluster must be at least "
+"%(num_instances)s."
+msgstr ""
+
+#: trove/common/exception.py:665
+msgid ""
+"The number of instances in your cluster cannot safely be lowered below the "
+"current level based on your current fault-tolerance settings."
+msgstr ""
+
+#: trove/common/exception.py:671
+msgid "Must leave at least one instance in the cluster when shrinking."
+msgstr ""
+
+#: trove/common/exception.py:676
+#, python-format
+msgid ""
+"Instance(s) %(id)s currently in use and cannot be deleted. Details: "
+"%(reason)s"
+msgstr ""
+
+#: trove/common/exception.py:681
+msgid "Operation not supported for instances that are part of a cluster."
+msgstr ""
+
+#: trove/common/exception.py:687
+#, python-format
+msgid "The '%(operation)s' operation is not supported for cluster."
+msgstr ""
+
+#: trove/common/exception.py:691
+#, python-format
+msgid "Operation not allowed for tenant %(tenant_id)s."
+msgstr ""
+
+#: trove/common/exception.py:695
+#, python-format
+msgid "Clusters not supported for %(datastore)s-%(datastore_version)s."
+msgstr ""
+
+#: trove/common/exception.py:701
+#, python-format
+msgid "Image %(uuid)s cannot be found."
+msgstr ""
+
+#: trove/common/exception.py:706
+#, python-format
+msgid "Failed to retrieve image with tags: %(tags)s."
+msgstr ""
+
+#: trove/common/exception.py:711
+#, python-format
+msgid "You must be admin to %(action)s log '%(log)s'."
+msgstr ""
+
+#: trove/common/exception.py:716
+msgid "Log actions are not supported."
+msgstr ""
+
+#: trove/common/extensions.py:200
+#, python-format
+msgid "Extension with alias %s does not exist"
+msgstr "Расширение с псевдонимом %s не существует"
+
+#: trove/common/limits.py:80
+msgid "Limit value must be > 0"
+msgstr ""
+
+#: trove/common/limits.py:88
+#, python-format
+msgid ""
+"Only %(value)s %(verb)s request(s) can be made to %(uri)s every "
+"%(unit_string)s."
+msgstr ""
+"Только %(value)s %(verb)s запрос(ов) могут быть сделаны для %(uri)s, каждые "
+"%(unit_string)s."
+
+#: trove/common/limits.py:213
+msgid "This request was rate-limited."
+msgstr "Этот запрос ограничен по частоте."
+
+#: trove/common/limits.py:303
+msgid "Limit rules must be surrounded by parentheses"
+msgstr ""
+
+#: trove/common/limits.py:310
+msgid ""
+"Limit rules must contain the following arguments: verb, uri, regex, value, "
+"unit"
+msgstr ""
+
+#: trove/common/limits.py:325
+msgid "Invalid units specified"
+msgstr ""
+
+#: trove/common/models.py:95
+msgid "data object is None"
+msgstr ""
+
+#: trove/common/notification.py:357
+#, python-format
+msgid "Notification %s must include 'request' property"
+msgstr ""
+
+#: trove/common/notification.py:369
+#, python-format
+msgid ""
+"The following required keys not defined for notification %(name)s: %(keys)s"
+msgstr ""
+
+#: trove/common/notification.py:374
+#, python-format
+msgid "Notification %s must include a 'server_type' for correct routing"
+msgstr ""
+
+#: trove/common/utils.py:265
+#, python-format
+msgid ""
+"Time out after waiting %(time)s seconds when running proc: %(args)s "
+"%(kwargs)s."
+msgstr ""
+
+#: trove/common/wsgi.py:145
+msgid "version not supported"
+msgstr ""
+
+#: trove/common/wsgi.py:538
+msgid "Invalid service catalog json."
+msgstr "Недопустимый json каталога службы."
+
+#: trove/common/xmlutils.py:34
+msgid "Inline DTD forbidden"
+msgstr ""
+
+#: trove/common/xmlutils.py:38
+msgid "<!ENTITY> entity declaration forbidden"
+msgstr ""
+
+#: trove/common/xmlutils.py:42
+msgid "<!ENTITY> unparsed entity forbidden"
+msgstr ""
+
+#: trove/common/xmlutils.py:45
+msgid "<!ENTITY> external entity forbidden"
+msgstr ""
+
+#: trove/common/xmlutils.py:48
+msgid "<!ENTITY> notation forbidden"
+msgstr ""
+
+#: trove/common/db/models.py:88
+#, python-format
+msgid "%(desc)s is not a string. Type = %(t)s."
+msgstr ""
+
+#: trove/common/db/models.py:101
+msgid "Bug in DatastoreSchema()"
+msgstr ""
+
+#: trove/common/db/models.py:124
+msgid "Schema name empty."
+msgstr ""
+
+#: trove/common/db/models.py:128
+#, python-format
+msgid "Schema name '%(name)s' is too long. Max length = %(max_length)d."
+msgstr ""
+
+#: trove/common/db/models.py:133
+#, python-format
+msgid "'%s' is not a valid schema name."
+msgstr ""
+
+#: trove/common/db/models.py:171
+#, python-format
+msgid "Database name \"%(name)s\" is on the reserved list: %(reserved)s."
+msgstr ""
+
+#: trove/common/db/models.py:187
+#, python-format
+msgid "Cannot create database: %(error)s"
+msgstr ""
+
+#: trove/common/db/models.py:201
+#, python-format
+msgid "Cannot delete database: %(error)s"
+msgstr ""
+
+#: trove/common/db/models.py:256
+#, python-format
+msgid "'%s' is not a valid password."
+msgstr ""
+
+#: trove/common/db/models.py:287
+#, python-format
+msgid "'%s' is not a valid hostname."
+msgstr ""
+
+#: trove/common/db/models.py:308
+msgid "User name empty."
+msgstr ""
+
+#: trove/common/db/models.py:312
+#, python-format
+msgid "User name '%(name)s' is too long. Max length = %(max_length)d."
+msgstr ""
+
+#: trove/common/db/models.py:317
+#, python-format
+msgid "'%s' is not a valid user name."
+msgstr ""
+
+#: trove/common/db/models.py:406
+#, python-format
+msgid "User name \"%(name)s\" is on the reserved list: %(reserved)s."
+msgstr ""
+
+#: trove/common/db/models.py:422
+#, python-format
+msgid "Cannot create user: %(error)s"
+msgstr ""
+
+#: trove/common/db/models.py:436
+#, python-format
+msgid "Cannot delete user: %(error)s"
+msgstr ""
+
+#: trove/common/db/mongodb/models.py:74
+#, python-format
+msgid "MongoDB user's name missing %s."
+msgstr ""
+
+#: trove/common/db/mongodb/models.py:79
+msgid "MongoDB user missing database."
+msgstr ""
+
+#: trove/common/db/mongodb/models.py:83
+msgid "MongoDB user missing username."
+msgstr ""
+
+#: trove/common/db/mongodb/models.py:123
+#, python-format
+msgid "MongoDB user name \"%s\" not in <database>.<username> format."
+msgstr ""
+
+#: trove/common/db/mongodb/models.py:134
+#, python-format
+msgid "Role %s is invalid."
+msgstr ""
+
+#: trove/common/db/mongodb/models.py:157
+msgid "MongoDB user to create is missing a password."
+msgstr ""
+
+#: trove/common/db/mysql/models.py:79
+#, python-format
+msgid "%(val)s not a valid collation for charset %(char)s."
+msgstr ""
+
+#: trove/common/db/mysql/models.py:85
+#, python-format
+msgid "'%s' not a valid collation."
+msgstr ""
+
+#: trove/common/db/mysql/models.py:103
+#, python-format
+msgid "'%s' not a valid character set."
+msgstr ""
+
+#: trove/common/rpc/conductor_guest_serializer.py:42
+msgid "_deserialize_entity not implemented in ConductorGuestSerializer."
+msgstr ""
+
+#: trove/common/rpc/conductor_guest_serializer.py:58
+msgid "_deserialize_context not implemented in ConductorGuestSerializer."
+msgstr ""
+
+#: trove/common/strategies/strategy.py:55
+msgid "No namespace provided and __strategy_ns__ unset"
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/galera_common/taskmanager.py:81
+#: trove/common/strategies/cluster/experimental/galera_common/taskmanager.py:188
+msgid "Instances in cluster did not report ACTIVE"
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/galera_common/taskmanager.py:174
+msgid "Unable to determine existing cluster member(s)"
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:209
+#, python-format
+msgid ""
+"An instance with the options %(given)s is missing the MongoDB required "
+"option %(expected)s."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:216
+#, python-format
+msgid ""
+"The value %(value)s for key %(key)s is invalid. Allowed values are %(valid)s."
+""
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:237
+#, python-format
+msgid "The arguments %s are not supported by MongoDB."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:287
+msgid ""
+"This action cannot be performed on the cluster as no reference shard exists."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:340
+msgid "No instances specified for grow operation."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:372
+msgid "No instances specified for shrink operation."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:423
+#, python-format
+msgid ""
+"MongoDB cluster shrink only supports removing an entire shard. Shard "
+"%(shard)s has members: %(instances)s"
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:515
+#, python-format
+msgid "Replica instance does not have required field(s) %s."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:523
+#, python-format
+msgid "Instance type %s not supported for MongoDB cluster grow."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:554
+msgid "Duplicate member names not allowed."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:559
+#, python-format
+msgid "related_to target(s) %(targets)s do not match any specified names."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:581
+msgid ""
+"Members of the same shard have mismatching flavorRef and/or volume values."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/mongodb/api.py:615
+#, python-format
+msgid ""
+"Shard with instance %s is still active. Please remove the shard from the "
+"MongoDB cluster before shrinking."
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/redis/taskmanager.py:116
+msgid "Unable to determine existing Redis cluster member"
+msgstr ""
+
+#: trove/common/strategies/cluster/experimental/vertica/taskmanager.py:200
+msgid "Cannot remove master instance!"
+msgstr ""
+
+#: trove/configuration/models.py:42 trove/instance/models.py:557
+#: trove/instance/models.py:1776 trove/module/models.py:49
+#: trove/module/models.py:80 trove/module/models.py:118
+msgid "Argument context not defined."
+msgstr ""
+
+#: trove/configuration/models.py:44 trove/module/models.py:51
+#: trove/module/models.py:82 trove/module/models.py:120
+msgid "Argument is not defined."
+msgstr ""
+
+#: trove/configuration/models.py:139
+#, python-format
+msgid "Configuration group with ID %s could not be found."
+msgstr ""
+
+#: trove/configuration/service.py:290
+#, python-format
+msgid ""
+"Configuration groups are not supported for this datastore: %(name)s "
+"%(version)s"
+msgstr ""
+
+#: trove/configuration/service.py:301
+#, python-format
+msgid ""
+"The configuration parameter %(key)s is not supported for this datastore: "
+"%(name)s %(version)s."
+msgstr ""
+
+#: trove/configuration/service.py:314
+#, python-format
+msgid ""
+"The value provided for the configuration parameter %(key)s is not of type "
+"%(type)s."
+msgstr ""
+
+#: trove/configuration/service.py:324
+msgid ""
+"Invalid or unsupported min value defined in the configuration-parameters "
+"configuration file. Expected integer."
+msgstr ""
+
+#: trove/configuration/service.py:330
+#, python-format
+msgid ""
+"The value for the configuration parameter %(key)s is less than the minimum "
+"allowed: %(min)s"
+msgstr ""
+
+#: trove/configuration/service.py:340
+msgid ""
+"Invalid or unsupported max value defined in the configuration-parameters "
+"configuration file. Expected integer."
+msgstr ""
+
+#: trove/configuration/service.py:346
+#, python-format
+msgid ""
+"The value for the configuration parameter %(key)s is greater than the "
+"maximum allowed: %(max)s"
+msgstr ""
+
+#: trove/configuration/service.py:363
+msgid ""
+"Invalid or unsupported type defined in the configuration-parameters "
+"configuration file."
+msgstr ""
+
+#: trove/configuration/service.py:373
+#, python-format
+msgid "%s is not a supported configuration parameter."
+msgstr ""
+
+#: trove/datastore/models.py:225
+#, python-format
+msgid ""
+"Somehow we got a datastore version capability without a parent, that "
+"shouldn't happen. %s"
+msgstr ""
+
+#: trove/datastore/models.py:268
+#, python-format
+msgid "Capability Override not found for capability %s"
+msgstr ""
+
+#: trove/datastore/models.py:795
+msgid "Specify the datastore_version_id."
+msgstr ""
+
+#: trove/datastore/models.py:811
+msgid "Specify the datastore_name and datastore_version_name."
+msgstr ""
+
+#: trove/db/models.py:103
+#, python-format
+msgid "%(s_name)s Not Found"
+msgstr ""
+
+#: trove/db/models.py:110
+#, python-format
+msgid "Tenant %(s_tenant)s tried to access %(s_name)s, owned by %(s_owner)s."
+msgstr ""
+
+#: trove/db/sqlalchemy/session.py:108
+msgid "***The Database has not been setup!!!***"
+msgstr ""
+
+#: trove/dns/models.py:69
+#, python-format
+msgid "%s Not Found"
+msgstr ""
+
+#: trove/dns/designate/driver.py:74
+msgid "The entry's dns_zone must have an ID specified."
+msgstr ""
+
+#: trove/dns/designate/driver.py:99
+msgid "DNS domain is must be specified"
+msgstr ""
+
+#: trove/extensions/common/service.py:141
+#, python-format
+msgid "Cluster %s is not ready."
+msgstr ""
+
+#: trove/extensions/mgmt/clusters/service.py:84
+msgid "Invalid cluster action requested."
+msgstr ""
+
+#: trove/extensions/mgmt/configuration/service.py:60
+msgid "max_size is required for integer data type."
+msgstr ""
+
+#: trove/extensions/mgmt/configuration/service.py:63
+msgid "min_size is required for integer data type."
+msgstr ""
+
+#: trove/extensions/mgmt/configuration/service.py:69
+msgid "max_size must be greater than or equal to min_size."
+msgstr ""
+
+#: trove/extensions/mgmt/configuration/service.py:133
+#, python-format
+msgid "Parameter %s does not exist in the database."
+msgstr ""
+
+#: trove/extensions/mgmt/instances/service.py:118
+msgid "Only one action can be specified per request."
+msgstr ""
+
+#: trove/extensions/mgmt/instances/service.py:122
+#, python-format
+msgid "Invalid instance action: %s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:90
+#, python-format
+msgid "User create error: %(e)s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:115
+#, python-format
+msgid "User delete error: %(e)s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:135
+#, python-format
+msgid "User show error: %(e)s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:161 trove/extensions/mysql/service.py:201
+#: trove/extensions/mysql/service.py:228
+#, python-format
+msgid "Error loading user: %(e)s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:169
+#, python-format
+msgid "User update error: %(e)s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:206
+#, python-format
+msgid "User password update error: %(e)s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:344
+#, python-format
+msgid "Database create error: %(e)s"
+msgstr ""
+
+#: trove/extensions/mysql/service.py:365
+#, python-format
+msgid "Database delete error: %(e)s"
+msgstr ""
+
+#: trove/extensions/redis/service.py:69
+#, python-format
+msgid "Failed to do root-enable for instance '%(instance_id)s'."
+msgstr ""
+
+#: trove/extensions/redis/service.py:104
+#, python-format
+msgid "Failed to do root-disable for instance '%(instance_id)s'."
+msgstr ""
+
+#: trove/extensions/redis/service.py:170
+#, python-format
+msgid "Failed to get original auth password of instance '%(instance_id)s'."
+msgstr ""
+
+#: trove/extensions/security_group/models.py:148
+msgid "Security Group does not have id defined!"
+msgstr ""
+
+#: trove/guestagent/dbaas.py:79
+#, python-format
+msgid "Filesystem not found (%s)"
+msgstr ""
+
+#: trove/guestagent/guest_log.py:276
+msgid "Bug in _log_rotated ?"
+msgstr ""
+
+#: trove/guestagent/guest_log.py:308
+#, python-format
+msgid "Cannot publish log file '%s' as it does not exist."
+msgstr ""
+
+#: trove/guestagent/pkg.py:123
+#, python-format
+msgid "Process timeout after %i seconds."
+msgstr ""
+
+#: trove/guestagent/pkg.py:156
+msgid "Cannot install packages."
+msgstr ""
+
+#: trove/guestagent/pkg.py:193 trove/guestagent/pkg.py:438
+#, python-format
+msgid "Package %s is in a bad state."
+msgstr ""
+
+#: trove/guestagent/pkg.py:223 trove/guestagent/pkg.py:253
+#: trove/guestagent/pkg.py:331 trove/guestagent/pkg.py:364
+msgid "Invalid permissions."
+msgstr ""
+
+#: trove/guestagent/pkg.py:225 trove/guestagent/pkg.py:255
+#: trove/guestagent/pkg.py:333 trove/guestagent/pkg.py:366
+#, python-format
+msgid "Could not find package %s"
+msgstr ""
+
+#: trove/guestagent/pkg.py:231
+msgid "Package scriptlet failed"
+msgstr ""
+
+#: trove/guestagent/pkg.py:233
+msgid "Package download problem"
+msgstr ""
+
+#: trove/guestagent/pkg.py:235
+msgid "GPG key retrieval failed"
+msgstr ""
+
+#: trove/guestagent/pkg.py:301
+msgid "Error configuring package."
+msgstr ""
+
+#: trove/guestagent/pkg.py:390
+msgid "Packages are in a bad state."
+msgstr ""
+
+#: trove/guestagent/volume.py:49
+#, python-format
+msgid "\n"
+"Exc: %s"
+msgstr ""
+
+#: trove/guestagent/volume.py:92 trove/guestagent/volume.py:148
+#, python-format
+msgid "Could not format '%s'."
+msgstr ""
+
+#: trove/guestagent/volume.py:100 trove/guestagent/volume.py:156
+#, python-format
+msgid "Volume '%s' does not appear to be formatted."
+msgstr ""
+
+#: trove/guestagent/volume.py:107
+#, python-format
+msgid "'Device '%(dev)s' did not seem to be '%(type)s'."
+msgstr ""
+
+#: trove/guestagent/volume.py:111
+#, python-format
+msgid "Volume '%s' was not formatted."
+msgstr ""
+
+#: trove/guestagent/volume.py:204
+msgid "Could not migrate date."
+msgstr ""
+
+#: trove/guestagent/volume.py:224
+#, python-format
+msgid "Device '%s' is not ready."
+msgstr ""
+
+#: trove/guestagent/volume.py:285
+#, python-format
+msgid "Error resizing the filesystem with device '%s'."
+msgstr ""
+
+#: trove/guestagent/volume.py:295
+#, python-format
+msgid "Error unmounting '%s'."
+msgstr ""
+
+#: trove/guestagent/volume.py:326
+#, python-format
+msgid "Error setting readahead size to %(size)s for device %(device)s."
+msgstr ""
+
+#: trove/guestagent/volume.py:355
+#, python-format
+msgid "Could not mount '%s'."
+msgstr ""
+
+#: trove/guestagent/volume.py:373
+#, python-format
+msgid "Could not add '%s' to fstab."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:74
+#, python-format
+msgid "File does not exist: %s"
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:184
+#, python-format
+msgid "Invalid path: %s"
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:408
+#: trove/guestagent/common/operating_system.py:511
+#, python-format
+msgid "Got unknown keyword args: %r"
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:416
+#, python-format
+msgid "Service control command not available: %s"
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:419
+msgid "Candidate service names not specified."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:547
+msgid "Cannot create a blank directory."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:576
+msgid "Cannot change ownership of a blank file or directory."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:579
+msgid "Please specify owner or group, or both."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:636
+msgid "Cannot change mode of a blank file."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:667
+msgid "Missing user."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:669
+msgid "Missing group."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:702
+msgid "No file mode specified."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:726
+msgid "Cannot remove a blank file."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:750
+#: trove/guestagent/common/operating_system.py:791
+msgid "Missing source path."
+msgstr ""
+
+#: trove/guestagent/common/operating_system.py:752
+#: trove/guestagent/common/operating_system.py:793
+msgid "Missing destination path."
+msgstr ""
+
+#: trove/guestagent/datastore/manager.py:625
+#, python-format
+msgid ""
+"%(verb)s log '%(log)s' not supported - no configuration manager defined!"
+msgstr ""
+
+#: trove/guestagent/datastore/manager.py:733
+#: trove/guestagent/datastore/manager.py:762
+msgid "Module name not specified"
+msgstr ""
+
+#: trove/guestagent/datastore/manager.py:735
+msgid "Module contents not specified"
+msgstr ""
+
+#: trove/guestagent/datastore/manager.py:739
+#: trove/guestagent/datastore/manager.py:766
+#, python-format
+msgid "No driver implemented for module type '%s'"
+msgstr ""
+
+#: trove/guestagent/datastore/manager.py:743
+#, python-format
+msgid "Module not valid for datastore %s"
+msgstr ""
+
+#: trove/guestagent/datastore/service.py:210
+msgid "Database failed to start."
+msgstr ""
+
+#: trove/guestagent/datastore/service.py:240
+msgid "Database failed to stop."
+msgstr ""
+
+#: trove/guestagent/datastore/mysql_common/service.py:246
+#, python-format
+msgid "Username %(user)s is not valid: %(reason)s"
+msgstr ""
+
+#: trove/guestagent/datastore/mysql_common/service.py:284
+#, python-format
+msgid "Grant access to %s is not allowed"
+msgstr ""
+
+#: trove/guestagent/datastore/mysql_common/service.py:634
+#: trove/guestagent/datastore/mysql_common/service.py:640
+msgid "Failed to start mysql"
+msgstr ""
+
+#: trove/guestagent/datastore/mysql_common/service.py:789
+#, python-format
+msgid "Replication is not %(status)s after %(max)d seconds."
+msgstr ""
+
+#: trove/guestagent/module/driver_manager.py:59
+msgid "Driver 'type' must be lower-case"
+msgstr ""
+
+#: trove/guestagent/module/driver_manager.py:66
+#, python-format
+msgid "Driver '%(type)s' missing attribute: %(attr)s"
+msgstr ""
+
+#: trove/guestagent/module/driver_manager.py:89
+#, python-format
+msgid "Found duplicate driver: %s"
+msgstr ""
+
+#: trove/guestagent/module/module_manager.py:213
+#, python-format
+msgid "Module '%s' has not been applied"
+msgstr ""
+
+#: trove/instance/models.py:333
+#, python-format
+msgid ""
+"datastore_status must be of type InstanceServiceStatus. Got %s instead."
+msgstr ""
+
+#: trove/instance/models.py:559
+msgid "Argument id not defined."
+msgstr ""
+
+#: trove/instance/models.py:727
+msgid "Detach replicas before deleting replica source."
+msgstr ""
+
+#: trove/instance/models.py:1239
+#, python-format
+msgid ""
+"Replica volume size should not be smaller than master's, replica volume size:"
+" %(replica_size)s and master volume size: %(master_size)s."
+msgstr ""
+
+#: trove/instance/models.py:1392
+#, python-format
+msgid ""
+"The new flavor id must be different than the current flavor id of '%s'."
+msgstr ""
+
+#: trove/instance/models.py:1438
+#, python-format
+msgid "Instance %s has no volume."
+msgstr ""
+
+#: trove/instance/models.py:1441
+#, python-format
+msgid ""
+"The new volume 'size' must be larger than the current volume size of '%s'."
+msgstr ""
+
+#: trove/instance/models.py:1484 trove/instance/models.py:1495
+#, python-format
+msgid "Instance %s is not a replica."
+msgstr ""
+
+#: trove/instance/models.py:1511
+#, python-format
+msgid "Instance %s is not a replica source."
+msgstr ""
+
+#: trove/instance/models.py:1518
+#, python-format
+msgid "Replica Source %s cannot be ejected as it has a current heartbeat"
+msgstr ""
+
+#: trove/instance/models.py:1560
+#, python-format
+msgid ""
+"Instance %(instance_id)s is not currently available for an action to be "
+"performed (%(status_type)s status was %(action_status)s)."
+msgstr ""
+
+#: trove/instance/service.py:650
+msgid "Cannot enable and disable log."
+msgstr ""
+
+#: trove/module/models.py:138
+#, python-format
+msgid ""
+"Module '%(mod)s' cannot be applied  (Wrong datastore '%(ds)s' - expected "
+"'%(ds2)s')"
+msgstr ""
+
+#: trove/module/models.py:145
+#, python-format
+msgid ""
+"Module '%(mod)s' cannot be applied  (Wrong datastore version '%(ver)s' - "
+"expected '%(ver2)s')"
+msgstr ""
+
+#: trove/module/models.py:209
+#, python-format
+msgid "Tenant: %s"
+msgstr ""
+
+#: trove/module/models.py:211
+#, python-format
+msgid "Auto: %s"
+msgstr ""
+
+#: trove/module/models.py:213
+#, python-format
+msgid "Visible: %s"
+msgstr ""
+
+#: trove/module/models.py:215
+#, python-format
+msgid "Priority: %s"
+msgstr ""
+
+#: trove/module/models.py:220
+#, python-format
+msgid "Cannot make module full access: %s"
+msgstr ""
+
+#: trove/module/models.py:222
+#, python-format
+msgid "Full Access: %s"
+msgstr ""
+
+#: trove/module/models.py:303
+#, python-format
+msgid "Module with ID %s could not be found."
+msgstr ""
+
+#: trove/module/service.py:148
+msgid "You cannot set a datastore and specify --all_datastores"
+msgstr ""
+
+#: trove/module/service.py:154
+msgid ""
+"You cannot set a datastore version and specify --all_datastore_versions"
+msgstr ""
+
+#: trove/taskmanager/api.py:99
+#, python-format
+msgid "Could not transform %s"
+msgstr ""
+
+#: trove/taskmanager/manager.py:144
+#, python-format
+msgid ""
+"Unable to migrate replica %(slave)s from old replica source %(old_master)s "
+"to new source %(new_master)s on promote."
+msgstr ""
+
+#: trove/taskmanager/manager.py:164
+#, python-format
+msgid "Exception demoting old replica source %s."
+msgstr ""
+
+#: trove/taskmanager/manager.py:176
+#, python-format
+msgid ""
+"promote-to-replica-source %(id)s: The following replicas may not have been "
+"switched: %(replicas)s:\n"
+"%(err)s"
+msgstr ""
+
+#: trove/taskmanager/manager.py:221
+#, python-format
+msgid "Replicas of %s not all replicating from same master"
+msgstr ""
+
+#: trove/taskmanager/manager.py:248
+#, python-format
+msgid ""
+"Unable to migrate replica %(slave)s from old replica source %(old_master)s "
+"to new source %(new_master)s on eject."
+msgstr ""
+
+#: trove/taskmanager/manager.py:264
+#, python-format
+msgid ""
+"eject-replica-source %(id)s: The following replicas may not have been "
+"switched: %(replicas)s:\n"
+"%(err)s"
+msgstr ""
+
+#: trove/taskmanager/manager.py:407
+msgid "Cannot create multiple non-replica instances."
+msgstr ""
+
+#: trove/taskmanager/models.py:619
+#, python-format
+msgid "Error creating DNS entry for instance: %s"
+msgstr ""
+
+#: trove/taskmanager/models.py:631
+#, python-format
+msgid "Error attaching instance %s as replica."
+msgstr ""
+
+#: trove/taskmanager/models.py:671
+#, python-format
+msgid "Unable to create replication snapshot record for instance: %s"
+msgstr ""
+
+#: trove/taskmanager/models.py:730
+#, python-format
+msgid ""
+"An error occurred while deleting a bad replication snapshot from instance "
+"%(source)s."
+msgstr ""
+
+#: trove/taskmanager/models.py:791
+#, python-format
+msgid "Service not active, status: %s"
+msgstr ""
+
+#: trove/taskmanager/models.py:802
+#, python-format
+msgid ""
+"Failed to get server %(server)s for instance %(instance)s, error: %(error)s"
+msgstr ""
+
+#: trove/taskmanager/models.py:816
+#, python-format
+msgid "Server not active, status: %(status)s, fault message: %(srv_msg)s"
+msgstr ""
+
+#: trove/taskmanager/models.py:856
+#, python-format
+msgid "Failed to create server for instance %s"
+msgstr ""
+
+#: trove/taskmanager/models.py:876
+#, python-format
+msgid "Failed to create volume for instance %s"
+msgstr ""
+
+#: trove/taskmanager/models.py:1056
+#, python-format
+msgid "Failed to create DNS entry for instance %s. No IP available."
+msgstr ""
+
+#: trove/taskmanager/models.py:1497
+#, python-format
+msgid "Failed to delete swift object for backup %s."
+msgstr ""
+
+#: trove/tests/db/migrations.py:71
+#, python-format
+msgid "The following migration scripts have a downgrade implementation:\n"
+"	%s"
+msgstr ""
+

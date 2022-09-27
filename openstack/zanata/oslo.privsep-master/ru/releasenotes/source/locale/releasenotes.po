@@ -1,0 +1,193 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: oslo.privsep\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-10 10:24+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "1.13.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "1.31.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:27 stable/ussuri>:43
+msgid "1.33.3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "1.33.4"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:27
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "2.1.2"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "2.3.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current
+msgid "2.6.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current
+msgid ""
+"Add ``timeout`` as parameter to ``PrivContext`` and add "
+"``entrypoint_with_timeout`` decorator to cover the issues with commands "
+"which take random time to finish. ``PrivsepTimeout`` is raised if timeout is "
+"reached."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:32 stable/ussuri>:48
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:28 current
+msgid ""
+"By default all contexts use ``oslo_privsep.daemon``, but in some cases we "
+"may need finer grained log levels, for example nova running in debug mode "
+"could log its own privsep calls on INFO level regardless, but leave all "
+"libraries' privsep calls, such as os-brick's, to be logged in the normal "
+"DEBUG level."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 current stable/stein>:10
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:10 stable/train>:10
+#: stable/ussuri>:10 stable/victoria>:10
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid ""
+"Privsep now uses multithreading to allow concurrency in executing privileged "
+"commands. The number of concurrent threads defaults to the available CPU "
+"cores, but can be adjusted by the new ``thread_pool_size`` config option."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:34 current
+msgid "See `bug 1922052`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:36
+msgid ""
+"Support for Python 2.7 has been dropped. The minimum version of Python now "
+"supported is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid "Switch to reno for managing release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14 stable/ussuri>:14 stable/victoria>:14
+msgid ""
+"The ``oslo.privsep`` client can be called from a program using eventlet. If "
+"``eventlet.monkey_patch``, some libraries will be patched, for example "
+"``threading`` or ``os``. When the root daemon is forked from the client "
+"process, those libraries remain patched. Now, when the daemon is forked from "
+"the client process, those libraries and methods are restored to the original "
+"values. The goal is to prevent some timeouts when using eventlet threads "
+"(user threads); system threads are preemptive and the code does not need to "
+"care about the executor token."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:42 stable/ussuri>:58
+msgid ""
+"This only works for the ``ROOTWRAP`` method of starting the daemon. With the "
+"``FORK`` method we've dropped privileges and no longer have the ability to "
+"restart the daemon in privileged mode."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:32
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:36 stable/ussuri>:52
+msgid ""
+"When the privsep helper dies, the client side PrivContext now restarts the "
+"client channel and the helper so that privileged commands can continue to be "
+"processed. See `bug 1715374`_ for details. In conjunction with the fix for "
+"`bug 1794708`_ in oslo.service, the nova-compute service now behaves "
+"correctly when  it receives ``SIGHUP``."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:25 current
+msgid ""
+"``PrivContext`` accepts a new string parameter called ``logger_name`` to "
+"define the logger we want to use for the daemon logs of this context."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:19 current
+msgid ""
+"``Warning``: The daemon (the root process) task won't stop when timeout is "
+"reached. That means we'll have less available threads if the related thread "
+"never finishes."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "oslo.privsep Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Unreleased Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

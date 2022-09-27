@@ -1,0 +1,2253 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Дронова Юлия <juliette.tux@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-02 09:31+1000\n"
+"PO-Revision-Date: 2022-08-02 18:37+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 22.04.2\n"
+
+#: keystone/exception.py:99
+#, python-format
+msgid ""
+"Expecting to find %(attribute)s in %(target)s. The server could not "
+"comply with the request since it is either malformed or otherwise "
+"incorrect. The client is assumed to be in error."
+msgstr ""
+"В %(target)s ожидалось найти %(attribute)s. Серверу не удалось выполнить "
+"запрос, т.к. у запроса неправильный формат, либо он не является корректным по "
+"каким-то другим причинам. Предполагается ошибка на клиенте."
+
+#: keystone/exception.py:108
+#, python-format
+msgid "Cannot create an endpoint with an invalid URL: %(url)s."
+msgstr "Невозможно создать конечную точку с недействительным URL: %(url)s."
+
+#: keystone/exception.py:113
+#, python-format
+msgid "Password validation error: %(detail)s."
+msgstr "Ошибка при проверке правильности пароля: %(detail)s."
+
+#: keystone/exception.py:117
+#, python-format
+msgid "The password does not match the requirements: %(detail)s."
+msgstr "Пароль не отвечает требованиям: %(detail)s."
+
+#: keystone/exception.py:122
+#, python-format
+msgid ""
+"The new password cannot be identical to a previous password. The total "
+"number which includes the new password must be unique is "
+"%(unique_count)s."
+msgstr ""
+"Новый пароль не может быть идентичен предыдущему. Общее число, "
+"включающее новый пароль, должно быть уникальным и равно %(unique_count)s."
+
+#: keystone/exception.py:129
+#, python-format
+msgid ""
+"You cannot change your password at this time due to the minimum password "
+"age. Once you change your password, it must be used for %(min_age_days)d "
+"day(s) before it can be changed. Please try again in %(days_left)d day(s)"
+" or contact your administrator to reset your password."
+msgstr ""
+"Сейчас пароль невозможно изменить, т.к. на данный момент его срок жизни"
+" минимален. "
+"После смены пароля, минимальный срок дней, в течение которых он должен"
+" использоваться "
+"и не может быть изменён, составляет: %(min_age_days)d. Повторите попытку"
+" через "
+"следующее число дней: %(days_left)d, либо обратитесь к администратору для"
+" отката пароля."
+
+#: keystone/exception.py:138
+msgid ""
+"You cannot change your password at this time due to password policy "
+"disallowing password changes. Please contact your administrator to reset "
+"your password."
+msgstr ""
+"В данный момент пароль невозможно сменить, т.к политика паролей "
+"запрещает смену паролей. Для отката пароля обратитесь к администратору."
+
+#: keystone/exception.py:147
+#, python-format
+msgid "%(detail)s"
+msgstr "%(detail)s"
+
+#: keystone/exception.py:151
+msgid ""
+"Timestamp not in expected format. The server could not comply with the "
+"request since it is either malformed or otherwise incorrect. The client "
+"is assumed to be in error."
+msgstr ""
+"Неожиданный формат временной метки.  Серверу не удалось выполнить "
+"запрос, т.к. у запроса неправильный формат, либо он не является корректным по "
+"каким-то другим причинам. Предполагается ошибка на клиенте."
+
+#: keystone/exception.py:160
+#, python-format
+msgid ""
+"The given operator %(_op)s is not valid. It must be one of the following:"
+" 'eq', 'neq', 'lt', 'lte', 'gt', or 'gte'."
+msgstr ""
+"Указанный оператор %(_op)s недействителен. Должно быть что-то одно из:"
+" 'eq', 'neq', 'lt', 'lte', 'gt' или 'gte'."
+
+#: keystone/exception.py:166
+msgid ""
+"The 'expires_at' must not be before now. The server could not comply with"
+" the request since it is either malformed or otherwise incorrect. The "
+"client is assumed to be in error."
+msgstr ""
+"Значение 'expires_at' не должно быть ранее текущего времени. Серверу не"
+" удалось выполнить "
+"запрос, т.к. у запроса неправильный формат, либо он не является корректным по "
+"каким-то другим причинам. Предполагается ошибка на клиенте."
+
+#: keystone/exception.py:175
+#, python-format
+msgid ""
+"String length exceeded. The length of string '%(string)s' exceeds the "
+"limit of column %(type)s(CHAR(%(length)d))."
+msgstr ""
+"Превышена длина строки. Длина строки '%(string)s' превышает ограничение "
+"столбца %(type)s(CHAR(%(length)d))."
+
+#: keystone/exception.py:181
+#, python-format
+msgid ""
+"There are multiple %(resource)s entities named '%(name)s'. Please use ID "
+"instead of names to resolve the ambiguity."
+msgstr ""
+"Существует несколько сущностей %(resource)s с именем '%(name)s'. Для "
+"разрешения двойственного толкования используйте ID вместо имён."
+
+#: keystone/exception.py:187
+#, python-format
+msgid "Invalid application credential: %(detail)s"
+msgstr "Недействительные учётные данные приложения: %(detail)s"
+
+#: keystone/exception.py:191
+#, python-format
+msgid ""
+"The specified parent region %(parent_region_id)s would create a circular "
+"region hierarchy."
+msgstr ""
+"Указанный родительский регион %(parent_region_id)s создал бы циклическую "
+"иерархию регионов."
+
+#: keystone/exception.py:210
+#, python-format
+msgid ""
+"The password length must be less than or equal to %(size)i. The server "
+"could not comply with the request because the password is invalid."
+msgstr ""
+"Длина пароля должна быть меньше или равна %(size)i. Сервер не мог выполнить"
+" запрос "
+"в связи с недействительным паролем."
+
+#: keystone/exception.py:216
+#, python-format
+msgid ""
+"Unable to delete region %(region_id)s because it or its child regions "
+"have associated endpoints."
+msgstr ""
+"Не удалось удалить регион %(region_id)s, т.к. у него, или у регионов "
+"его потомков есть связанные конечные точки."
+
+#: keystone/exception.py:221
+#, python-format
+msgid ""
+"Unable to create additional application credentials, maximum of %(limit)d"
+" already exceeded for user."
+msgstr ""
+"Не удалось создать дополнительные учётные данные приложения, для пользователя "
+"уже превышено ограничение в %(limit)d."
+
+#: keystone/exception.py:226
+#, python-format
+msgid ""
+"Unable to create additional credentials, maximum of %(limit)d already "
+"exceeded for user."
+msgstr ""
+"Не удалось создать дополнительные учётные данные, для пользователя "
+"уже превышено ограничение в %(limit)d."
+
+#: keystone/exception.py:237
+msgid "(Disable insecure_debug mode to suppress these details.)"
+msgstr ""
+"(Чтобы эти подробности не показывались, отключите режим insecure_debug.)"
+
+#: keystone/exception.py:276
+#, python-format
+msgid "%(message)s %(amendment)s"
+msgstr "%(message)s %(amendment)s"
+
+#: keystone/exception.py:284
+msgid "The request you have made requires authentication."
+msgstr "Созданный вами запрос требует аутентификации"
+
+#: keystone/exception.py:292
+#, python-format
+msgid ""
+"Insufficient auth methods received for %(user_id)s. Auth Methods "
+"Provided: %(methods)s."
+msgstr ""
+"Для %(user_id)s получены недостаточные методы аутентификации. "
+"Предоставленные методы: %(methods)s."
+
+#: keystone/exception.py:307
+#, python-format
+msgid "Could not find auth receipt: %(receipt_id)s."
+msgstr "Не удалось найти auth receipt: %(receipt_id)s."
+
+#: keystone/exception.py:311
+#, python-format
+msgid "The password is expired and needs to be changed for user: %(user_id)s."
+msgstr ""
+"Срок действия пароля пользователя %(user_id)s истёк, и пароль необходимо"
+" сменить."
+
+#: keystone/exception.py:316
+msgid "Authentication plugin error."
+msgstr "Ошибка модуля аутентификации"
+
+#: keystone/exception.py:324
+#, python-format
+msgid "The account is disabled for user: %(user_id)s."
+msgstr "Учётная запись пользователя %(user_id)s отключена."
+
+#: keystone/exception.py:328
+#, python-format
+msgid "The account is locked for user: %(user_id)s."
+msgstr "Учётная запись пользователя %(user_id)s заблокирована."
+
+#: keystone/exception.py:332
+msgid "Attempted to authenticate with an unsupported method."
+msgstr "Попытка аутентификации с помощью неподдерживаемого метода"
+
+#: keystone/exception.py:340
+#, python-format
+msgid "Error authenticating with application credential: %(detail)s"
+msgstr "Ошибка аутентификации с учётной записью приложения: %(detail)s"
+
+#: keystone/exception.py:345
+msgid "Additional authentications steps required."
+msgstr "Требуются дополнительные шаги аутентификации"
+
+#: keystone/exception.py:353
+msgid "You are not authorized to perform the requested action."
+msgstr "Отсутствует авторизация для выполнения запрошенного действия"
+
+#: keystone/exception.py:360
+#, python-format
+msgid "You are not authorized to perform the requested action: %(action)s."
+msgstr ""
+"Отсутствует авторизация для выполнения запрошенного действия: %(action)s."
+
+#: keystone/exception.py:365
+#, python-format
+msgid ""
+"Group membership across backend boundaries is not allowed. Group in "
+"question is %(group_id)s, user is %(user_id)s."
+msgstr ""
+"Участие в группах, выходящее за границы серверной части, не допускается. "
+"Группа: %(group_id)s, пользователь: %(user_id)s."
+
+#: keystone/exception.py:371
+#, python-format
+msgid ""
+"Invalid mix of entities for policy association: only Endpoint, Service, "
+"or Region+Service allowed. Request was - Endpoint: %(endpoint_id)s, "
+"Service: %(service_id)s, Region: %(region_id)s."
+msgstr ""
+"Недействительное сочетание сущностей для привязки политики: разрешается"
+" только "
+"конечная точка, служба или регион+служба. Было запрошено: конечная точка: "
+"%(endpoint_id)s, "
+"служба: %(service_id)s, регион: %(region_id)s."
+
+#: keystone/exception.py:378
+#, python-format
+msgid "Invalid domain specific configuration: %(reason)s."
+msgstr "Недействительная конфигурация домена: %(reason)s."
+
+#: keystone/exception.py:382
+#, python-format
+msgid "Invalid resource limit: %(reason)s."
+msgstr "Недействительное ограничение использования ресурса: %(reason)s."
+
+#: keystone/exception.py:387
+#, python-format
+msgid ""
+"Keystone cannot start due to project hierarchical depth in the current "
+"deployment (project_ids: %(project_id)s) exceeds the enforcement model's "
+"maximum limit of %(max_limit_depth)s. Please use a different enforcement "
+"model to correct the issue."
+msgstr ""
+"Запуск Keystone невозможен, т.к. иерархическая глубина проекта в текущем"
+" развёртывании (project_ids: %(project_id)s) превышает максимальное"
+" ограничение глубины для принудительной модели: %(max_limit_depth)s. Для"
+" исправления"
+" проблемы используйте другую принудительную модель."
+
+#: keystone/exception.py:396
+#, python-format
+msgid "Could not find: %(target)s."
+msgstr "Не удалось найти: %(target)s."
+
+#: keystone/exception.py:402
+#, python-format
+msgid "Could not find endpoint: %(endpoint_id)s."
+msgstr "Не удалось найти конечную точку: %(endpoint_id)s."
+
+#: keystone/exception.py:406
+#, python-format
+msgid "Could not find policy: %(policy_id)s."
+msgstr "Не удалось найти политику: %(policy_id)s."
+
+#: keystone/exception.py:410
+msgid "Could not find policy association."
+msgstr "Не удалось найти привязку политики."
+
+#: keystone/exception.py:414
+#, python-format
+msgid "Could not find role: %(role_id)s."
+msgstr "Не удалось найти роль: %(role_id)s."
+
+#: keystone/exception.py:418
+#, python-format
+msgid "%(prior_role_id)s does not imply %(implied_role_id)s."
+msgstr "%(prior_role_id)s не подразумевает %(implied_role_id)s."
+
+#: keystone/exception.py:422
+#, python-format
+msgid "%(role_id)s cannot be an implied roles."
+msgstr "%(role_id)s не может быть подразумеваемой ролью"
+
+#: keystone/exception.py:426
+#, python-format
+msgid ""
+"Project %(project_id)s must be in the same domain as the role %(role_id)s"
+" being assigned."
+msgstr ""
+"Проект %(project_id)s должен находиться в том же домене, что и "
+"присваиваемая роль %(role_id)s"
+
+#: keystone/exception.py:431
+#, python-format
+msgid ""
+"role: %(role_name)s must be within the same domain as the identity "
+"provider: %(identity_provider)s."
+msgstr ""
+"роль: %(role_name)s должна находиться в том же домене, что и поставщик "
+"идентификации: %(identity_provider)s."
+
+#: keystone/exception.py:436
+msgid "Domain ID does not conform to required UUID format."
+msgstr "ID домена не отвечает требуемому формату UUID."
+
+#: keystone/exception.py:440
+#, python-format
+msgid ""
+"Could not find role assignment with role: %(role_id)s, user or group: "
+"%(actor_id)s, project, domain, or system: %(target_id)s."
+msgstr ""
+"Не удалось найти присвоение роли для роли: %(role_id)s, пользователь "
+"или группа: %(actor_id)s, проект, домен или система: %(target_id)s."
+
+#: keystone/exception.py:446
+#, python-format
+msgid "Could not find region: %(region_id)s."
+msgstr "Не удалось найти регион: %(region_id)s."
+
+#: keystone/exception.py:450
+#, python-format
+msgid "Could not find service: %(service_id)s."
+msgstr "Не удалось найти службу: %(service_id)s."
+
+#: keystone/exception.py:454
+#, python-format
+msgid "Could not find domain: %(domain_id)s."
+msgstr "Не удалось найти домен: %(domain_id)s."
+
+#: keystone/exception.py:458
+#, python-format
+msgid "Could not find project: %(project_id)s."
+msgstr "Не удалось найти проект: %(project_id)s."
+
+#: keystone/exception.py:462
+#, python-format
+msgid "Could not find project tag: %(project_tag)s."
+msgstr "Не удалось найти метку проекта: %(project_tag)s."
+
+#: keystone/exception.py:466
+#, python-format
+msgid "Could not find token: %(token_id)s."
+msgstr "Не удалось найти маркёр: %(token_id)s."
+
+#: keystone/exception.py:470
+#, python-format
+msgid "Could not find user: %(user_id)s."
+msgstr "Не удалось найти пользователь: %(user_id)s."
+
+#: keystone/exception.py:474
+#, python-format
+msgid "Could not find group: %(group_id)s."
+msgstr "Не удалось найти группу: %(group_id)s."
+
+#: keystone/exception.py:478
+#, python-format
+msgid "Could not find mapping: %(mapping_id)s."
+msgstr "Не удалось найти отображение: %(mapping_id)s."
+
+#: keystone/exception.py:482
+#, python-format
+msgid "Could not find trust: %(trust_id)s."
+msgstr "Не удалось найти доверие: %(trust_id)s."
+
+#: keystone/exception.py:486
+#, python-format
+msgid "No remaining uses for trust: %(trust_id)s."
+msgstr "Для доверия больше не осталось применений: %(trust_id)s."
+
+#: keystone/exception.py:490
+#, python-format
+msgid "Could not find credential: %(credential_id)s."
+msgstr "Не удалось найти учётные данные: %(credential_id)s."
+
+#: keystone/exception.py:494
+#, python-format
+msgid "Could not find version: %(version)s."
+msgstr "Не удалось найти версию: %(version)s."
+
+#: keystone/exception.py:498
+#, python-format
+msgid "Could not find Endpoint Group: %(endpoint_group_id)s."
+msgstr "Не удалось найти группу конечной точки: %(endpoint_group_id)s."
+
+#: keystone/exception.py:502
+#, python-format
+msgid "Could not find Identity Provider: %(idp_id)s."
+msgstr "Не удалось найти поставщика идентификации: %(idp_id)s."
+
+#: keystone/exception.py:506
+#, python-format
+msgid "Could not find Service Provider: %(sp_id)s."
+msgstr "Не удалось найти поставщика службы: %(sp_id)s."
+
+#: keystone/exception.py:510
+#, python-format
+msgid ""
+"Could not find federated protocol %(protocol_id)s for Identity Provider: "
+"%(idp_id)s."
+msgstr ""
+"Не удалось найти федеративный протокол %(protocol_id)s поставщика "
+"идентификации: %(idp_id)s."
+
+#: keystone/exception.py:521
+#, python-format
+msgid "Could not find registered limit for %(id)s."
+msgstr "Не удалось найти зарегистрированное ограничение %(id)s."
+
+#: keystone/exception.py:525
+#, python-format
+msgid "Could not find limit for %(id)s."
+msgstr "Не удалось найти ограничение %(id)s."
+
+#: keystone/exception.py:529
+msgid "Unable to create a limit that has no corresponding registered limit."
+msgstr ""
+"Невозможно создать ограничение, не имеющее соответствующего"
+" зарегистрированного ограничения."
+
+#: keystone/exception.py:534
+#, python-format
+msgid ""
+"Unable to update or delete registered limit %(id)s because there are "
+"project limits associated with it."
+msgstr ""
+"Невозможно обновить или удалить зарегистрированное ограничение %(id)s, т.к. "
+"существуют связанные с ним ограничения проектов."
+
+#: keystone/exception.py:539
+#, python-format
+msgid ""
+"Could not find %(group_or_option)s in domain configuration for domain "
+"%(domain_id)s."
+msgstr ""
+"Не удалось найти %(group_or_option)s в конфигурации домена для %(domain_id)s."
+
+#: keystone/exception.py:551
+#, python-format
+msgid "Could not find Application Credential: %(application_credential_id)s."
+msgstr ""
+"Не удалось найти учётные данные приложения: %(application_credential_id)s."
+
+#: keystone/exception.py:556
+#, python-format
+msgid "Could not find Access Rule: %(access_rule_id)s."
+msgstr "Не удалось найти правило доступа: %(access_rule_id)s."
+
+#: keystone/exception.py:560
+#, python-format
+msgid "Conflict occurred attempting to store %(type)s - %(details)s."
+msgstr ""
+"При попытке поместить %(type)s на хранение возник конфликт: %(details)s."
+
+#: keystone/exception.py:569
+msgid "An unexpected error prevented the server from fulfilling your request."
+msgstr "Серверу не удалось выполнить запрос в связи с непредвиденной ошибкой."
+
+#: keystone/exception.py:572
+#, python-format
+msgid ""
+"An unexpected error prevented the server from fulfilling your request: "
+"%(exception)s."
+msgstr ""
+"Серверу не удалось выполнить запрос в связи с непредвиденной ошибкой: "
+"%(exception)s."
+
+#: keystone/exception.py:590
+#, python-format
+msgid "Unable to consume trust %(trust_id)s. Unable to acquire lock."
+msgstr ""
+"Невозможно использовать доверие %(trust_id)s. Не удалось получить блокировку."
+
+#: keystone/exception.py:595
+#, python-format
+msgid "Malformed endpoint URL (%(endpoint)s), see ERROR log for details."
+msgstr ""
+"Неправильный формат URL конечной точки (%(endpoint)s), подробности см. в"
+" журнале ERROR."
+
+#: keystone/exception.py:600
+#, python-format
+msgid ""
+"Group %(group_id)s returned by mapping %(mapping_id)s was not found in "
+"the backend."
+msgstr ""
+"Не удалось найти в серверной части группу %(group_id)s, возвращённую"
+" отображением %(mapping_id)s."
+
+#: keystone/exception.py:605
+#, python-format
+msgid "Error while reading metadata file: %(reason)s."
+msgstr "Ошибка во время чтения файла метаданных: %(reason)s."
+
+#: keystone/exception.py:609
+#, python-format
+msgid ""
+"Local section in mapping %(mapping_id)s refers to a remote match that "
+"doesn't exist (e.g. {0} in a local section)."
+msgstr ""
+"Раздел local в отображении %(mapping_id)s отсылается на несуществующее"
+" удалённое "
+"совпадение (например, {0} в разделе local)."
+
+#: keystone/exception.py:615
+#, python-format
+msgid ""
+"Unexpected combination of grant attributes - User: %(user_id)s, Group: "
+"%(group_id)s, Project: %(project_id)s, Domain: %(domain_id)s."
+msgstr ""
+"Непредвиденное сочетание атрибутов grant: пользователь: %(user_id)s, группа: "
+"%(group_id)s, проект: %(project_id)s, домен: %(domain_id)s."
+
+#: keystone/exception.py:622
+msgid "The action you have requested has not been implemented."
+msgstr "Запрошенное действие ещё не было реализовано."
+
+#: keystone/exception.py:629
+msgid "The service you have requested is no longer available on this server."
+msgstr "Запрошенная служба больше недоступна на этом сервере"
+
+#: keystone/exception.py:636
+#, python-format
+msgid "The Keystone configuration file %(config_file)s could not be found."
+msgstr "Не удалось найти файл конфигурации Keystone %(config_file)s"
+
+#: keystone/exception.py:641
+msgid ""
+"No encryption keys found; run keystone-manage fernet_setup to bootstrap "
+"one."
+msgstr ""
+"Ключей шифрования не найдено; запустите keystone-manage fernet_setup для "
+"начальной загрузки одного ключа."
+
+#: keystone/exception.py:646
+#, python-format
+msgid ""
+"The Keystone domain-specific configuration has specified more than one "
+"SQL driver (only one is permitted): %(source)s."
+msgstr ""
+"В конфигурации Keystone, относящейся к домену, указывается больше одного "
+"драйвера SQL (допускается только один): %(source)s."
+
+#: keystone/exception.py:653
+#, python-format
+msgid ""
+"%(mod_name)s doesn't provide database migrations. The migration "
+"repository path at %(path)s doesn't exist or isn't a directory."
+msgstr ""
+"%(mod_name)s не предоставляет возможностей для миграции баз данных. "
+"Путь репозитория для миграции %(path)s не существует, или не является"
+" каталогом."
+
+#: keystone/exception.py:660
+msgid "Token version is unrecognizable or unsupported."
+msgstr "Версия маркёра не распознаётся, либо не поддерживается"
+
+#: keystone/exception.py:665
+#, python-format
+msgid ""
+"Unable to sign SAML assertion. It is likely that this server does not "
+"have xmlsec1 installed or this is the result of misconfiguration. Reason "
+"%(reason)s."
+msgstr ""
+"Невозможно подписать декларацию SAML. Скорее всего на этом сервере "
+"не установлен xmlsec1, либо в конфигурации есть ошибки. Причина %(reason)s."
+
+#: keystone/exception.py:672
+msgid ""
+"No Authorization headers found, cannot proceed with OAuth related calls. "
+"If running under HTTPd or Apache, ensure WSGIPassAuthorization is set to "
+"On."
+msgstr ""
+"Заголовки авторизации не найдены, дальнейшая обработка вызовов, имеющих "
+"отношение к OAuth, невозможна. При выполнении с использованием HTTPd или"
+" Apache, "
+"убедитесь в том, что директива WSGIPassAuthorization активирована."
+
+#: keystone/exception.py:679
+#, python-format
+msgid ""
+"Could not determine Identity Provider ID. The configuration option "
+"%(issuer_attribute)s was not found in the request environment."
+msgstr ""
+"Не удалось определить идентификатор поставщика идентификации. "
+"Параметр конфигурации %(issuer_attribute)s не найден в окружении запроса."
+
+#: keystone/exception.py:685
+msgid ""
+"An unexpected error prevented the server from accessing encrypted "
+"credentials."
+msgstr ""
+"Серверу не удалось получить доступ к зашифрованным учётным данным в "
+"связи с непредвиденной ошибкой."
+
+#: keystone/exception.py:690
+#, python-format
+msgid "Unable to establish a connection to LDAP Server (%(url)s)."
+msgstr "Не удалось подключиться к серверу LDAP (%(url)s)."
+
+#: keystone/exception.py:695
+msgid ""
+"Unable to authenticate against Identity backend - Invalid username or "
+"password"
+msgstr ""
+"Не удалось пройти аутентификацию в серверной части — неверное имя "
+"пользователя или пароль"
+
+#: keystone/exception.py:700
+msgid ""
+"Number of User/Group entities returned by LDAP exceeded size limit. "
+"Contact your LDAP administrator."
+msgstr ""
+"Число сущностей пользователь/группа, возвращённое LDAP, превышает "
+"ограничение на размер. Свяжитесь с администратором LDAP"
+
+#: keystone/exception.py:709
+#, python-format
+msgid "Failed to deserialize %(obj)s. Data is %(data)s"
+msgstr "Не удалось выполнить десериализацию %(obj)s. Данные: %(data)s"
+
+#: keystone/exception.py:716
+#, python-format
+msgid ""
+"Unable to update immutable %(type)s resource: `%(resource_id)s. Set "
+"resource option \"immutable\" to false first."
+msgstr ""
+"Не удалось обновить неизменяемый ресурс %(type)s: `%(resource_id)s. "
+"Сначала установите значение «ложно» для параметра \"immutable\" ресурса."
+
+#: keystone/exception.py:722
+#, python-format
+msgid ""
+"Unable to delete immutable %(type)s resource: `%(resource_id)s. Set "
+"resource option \"immutable\" to false first."
+msgstr ""
+"Не удалось удалить неизменяемый ресурс %(type)s: `%(resource_id)s. "
+"Сначала установите значение «ложно» для параметра \"immutable\" ресурса."
+
+#: keystone/notifications.py:273
+#, python-format
+msgid ""
+"%(event)s is not a valid notification event, must be one of: %(actions)s"
+msgstr ""
+"%(event)s не является действительным событием, должно быть что-то одно из: "
+"%(actions)s"
+
+#: keystone/notifications.py:283
+#, python-format
+msgid "Method not callable: %s"
+msgstr "Метод не является вызываемым: %s"
+
+#: keystone/api/auth.py:83
+msgid "Request must have an origin query parameter"
+msgstr "У запроса должен быть параметр origin query"
+
+#: keystone/api/auth.py:95
+#, python-format
+msgid "%(host)s is not a trusted dashboard host"
+msgstr "%(host)s не является доверенным хостом монитора ресурсов"
+
+#: keystone/api/auth.py:242
+msgid "A project-scoped token is required to produce a service catalog."
+msgstr ""
+"Для создания каталога службы необходим маркёр проекта с областью действия"
+" проект"
+
+#: keystone/api/auth.py:355
+msgid "Missing entity ID from environment"
+msgstr "Отсутствует ID объекта из окружения"
+
+#: keystone/api/credentials.py:68
+msgid "Invalid blob in credential"
+msgstr "Недействительный блоб в учётных данных"
+
+#: keystone/api/credentials.py:182
+#, python-format
+msgid "%s can not be updated for credential"
+msgstr "%s невозможно обновить для учётных данных"
+
+#: keystone/api/ec2tokens.py:55 keystone/api/s3tokens.py:57
+#: keystone/api/s3tokens.py:60
+msgid "Invalid EC2 signature."
+msgstr "Недопустимая сигнатура EC2"
+
+#: keystone/api/ec2tokens.py:59
+msgid "EC2 signature not supplied."
+msgstr "Сигнатура EC2 не предоставлена"
+
+#: keystone/api/os_ep_filter.py:88
+#, python-format
+msgid "%s field is required and cannot be empty"
+msgstr "Поле %s является обязательным и не может быть пустым"
+
+#: keystone/api/os_oauth1.py:168 keystone/api/os_oauth1.py:255
+msgid "Invalid signature"
+msgstr "Недопустимая сигнатура"
+
+#: keystone/api/os_oauth1.py:219 keystone/api/os_oauth1.py:304
+msgid "Request token is expired"
+msgstr "Срок действия маркёра запроса истёк"
+
+#: keystone/api/os_oauth1.py:238
+msgid "Provided consumer does not exist."
+msgstr "Предоставленный потребитель не существует"
+
+#: keystone/api/os_oauth1.py:244
+msgid "Provided consumer key does not match stored consumer key."
+msgstr ""
+"Предоставленный ключ потребителя не совпадает с хранящимся ключом потребителя"
+
+#: keystone/api/os_oauth1.py:252
+msgid "Provided verifier does not match stored verifier"
+msgstr "Предоставленный верификатор не совпадает с хранящимся верификатором"
+
+#: keystone/api/os_oauth1.py:261
+msgid "Request Token does not have an authorizing user id."
+msgstr "У маркёра запроса нет авторизующего ID пользователя"
+
+#: keystone/api/os_oauth1.py:293
+msgid "Cannot authorize a request token with a token issued via delegation."
+msgstr ""
+"Невозможно авторизовать маркёр запроса маркёром, выданным "
+"с помощью делегирования"
+
+#: keystone/api/os_oauth1.py:324
+msgid "authorizing user does not have role required"
+msgstr "у авторизующего пользователя отсутствует требуемая роль"
+
+#: keystone/api/os_revoke.py:45
+#, python-format
+msgid "invalidate date format %s"
+msgstr "сделать недействительным формат даты %s"
+
+#: keystone/api/os_simple_cert.py:34 keystone/api/os_simple_cert.py:42
+msgid ""
+"This API is no longer available due to the removal of support for PKI "
+"tokens."
+msgstr ""
+"Данный API больше недоступен в связи с удалением поддержки маркёров PKI"
+
+#: keystone/api/projects.py:66
+msgid ""
+"Cannot use parents_as_list and parents_as_ids query params at the same "
+"time."
+msgstr ""
+"Параметры запроса parents_as_list и parents_as_ids невозможно использовать"
+" одновременно"
+
+#: keystone/api/projects.py:72
+msgid ""
+"Cannot use subtree_as_list and subtree_as_ids query params at the same "
+"time."
+msgstr ""
+"Параметры запроса subtree_as_list и subtree_as_ids невозможно использовать"
+" одновременно"
+
+#: keystone/api/regions.py:73
+#, python-format
+msgid "Conflicting region IDs specified: \"%(url_id)s\" != \"%(ref_id)s\""
+msgstr "Указан конфликтующий ID региона: \"%(url_id)s\" != \"%(ref_id)s\""
+
+#: keystone/api/role_assignments.py:92
+msgid "scope.project.id must be specified if include_subtree is also specified"
+msgstr ""
+"если указывается include_subtree, то также необходимо указывать"
+" scope.project.id"
+
+#: keystone/api/role_assignments.py:145
+msgid "Specify a domain or project, not both"
+msgstr "Укажите домен или проект, но не то и другое"
+
+#: keystone/api/role_assignments.py:151
+msgid "Specify system or domain, not both"
+msgstr "Укажите систему или домен, но не то и другое"
+
+#: keystone/api/role_assignments.py:157
+msgid "Specify system or project, not both"
+msgstr "Укажите систему или проект, но не то и другое"
+
+#: keystone/api/role_assignments.py:163
+msgid "Specify a user or group, not both"
+msgstr "Укажите пользователя или группу, но не то и другое"
+
+#: keystone/api/role_assignments.py:178
+msgid ""
+"Combining effective and group filter will always result in an empty list."
+msgstr "Сочетание фильтров effective и group всегда даст пустой список"
+
+#: keystone/api/role_assignments.py:183
+msgid ""
+"Combining effective, domain and inherited filters will always result in "
+"an empty list."
+msgstr ""
+"Сочетание фильтров effective, domain и inherited всегда даст пустой список"
+
+#: keystone/api/s3tokens.py:88
+msgid "Credential signature mismatch"
+msgstr "Несоответствие сигнатуры учётных данных"
+
+#: keystone/api/trusts.py:66 keystone/api/trusts.py:179
+#: keystone/api/trusts.py:363 keystone/api/trusts.py:412
+msgid "Requested user has no relation to this trust"
+msgstr "Запрошенный пользователь не имеет отношения к этому доверию"
+
+#: keystone/api/trusts.py:109
+msgid ""
+"Using method 'application_credential' is not allowed for managing trusts."
+msgstr ""
+"Для управления доверием использование метода 'application_credential' не"
+" допускается"
+
+#: keystone/api/trusts.py:119
+msgid "Redelegation allowed for delegated by trust only"
+msgstr ""
+"Повторное делегирование допускается только для делегирований посредством"
+" доверий"
+
+#: keystone/api/trusts.py:283
+msgid "At least one role should be specified"
+msgstr "Необходимо указать как минимум одну роль"
+
+#: keystone/api/trusts.py:287
+msgid "The authenticated user should match the trustor"
+msgstr ""
+"Пользователь, прошедший аутентификацию, должен совпадать с лицом, "
+"делегирующим права"
+
+#: keystone/api/trusts.py:335
+msgid "Only admin or trustor can delete a trust"
+msgstr ""
+"Доверие может удалить только администратор или лицо, "
+"делегирующее права"
+
+#: keystone/api/users.py:89
+msgid ""
+"Using method 'application_credential' is not allowed for managing "
+"additional application credentials."
+msgstr ""
+"Использование метода «application_credential» не допускается для управления "
+"дополнительными учётными данными приложений"
+
+#: keystone/api/users.py:298
+#, python-format
+msgid "Error when changing user password: %s"
+msgstr "Ошибка при смене пароля пользователя: %s"
+
+#: keystone/api/users.py:417
+msgid "EC2 access key not found."
+msgstr "Ключ доступа EC2 не найден"
+
+#: keystone/api/users.py:475
+msgid "Cannot list request tokens with a token issued via delegation."
+msgstr ""
+"Невозможно получить список маркёров запроса с помощью маркёра, выданного"
+" делегированием."
+
+#: keystone/api/users.py:550 keystone/oauth1/backends/sql.py:255
+msgid "User IDs do not match"
+msgstr "ID пользователей не совпадают"
+
+#: keystone/api/users.py:608
+msgid "Cannot create an application credential with unassigned role"
+msgstr "Невозможно создать учётные данные приложения с неприсвоенной ролью"
+
+#: keystone/api/users.py:642
+msgid "Cannot create an application credential for another user."
+msgstr "Невозможно создать учётные данные приложения для другого пользователя"
+
+#: keystone/application_credential/backends/sql.py:112
+msgid "Invalid application credential ID or secret"
+msgstr "Недействительный ID или секрет учётных данных приложения"
+
+#: keystone/assignment/core.py:184
+msgid "Must specify either domain or project"
+msgstr "Необходимо указать домен или проект"
+
+#: keystone/assignment/core.py:829
+msgid "Cannot list assignments sourced from groups and filtered by user ID."
+msgstr ""
+"Невозможно создать список присвоений с источниками в группах и"
+" отфильтрованных "
+"по ID пользователя"
+
+#: keystone/assignment/core.py:1285
+#, python-format
+msgid "Role %s is not defined"
+msgstr "Роль %s не настроена"
+
+#: keystone/assignment/core.py:1324
+msgid "Update of `domain_id` is not allowed."
+msgstr "Обновление «domain_id» не допускается"
+
+#: keystone/assignment/core.py:1360
+msgid "Global role cannot imply a domain-specific role"
+msgstr ""
+"Глобальная роль не может подразумевать роли, относящейся к конкретному домену"
+
+#: keystone/assignment/backends/sql.py:142
+#, python-format
+msgid "Cannot remove role that has not been granted, %s"
+msgstr "Невозможно удалить роль, которая не была присвоена, %s"
+
+#: keystone/assignment/backends/sql.py:218
+#, python-format
+msgid "Unexpected assignment type encountered, %s"
+msgstr "Обнаружен неожиданный тип присвоения, %s"
+
+#: keystone/auth/core.py:99
+#, python-format
+msgid ""
+"Unable to reconcile identity attribute %(attribute)s as it has "
+"conflicting values %(new)s and %(old)s"
+msgstr ""
+"Невозможно выверить атрибут идентификации %(attribute)s, т.к. у него "
+"конфликтующие значения %(new)s и %(old)s."
+
+#: keystone/auth/core.py:167
+msgid "Domain name cannot contain reserved characters."
+msgstr "Доменное имя не может содержать зарезервированные символы"
+
+#: keystone/auth/core.py:189
+msgid "Project name cannot contain reserved characters."
+msgstr "Имя проекта не может содержать зарезервированные символы"
+
+#: keystone/auth/core.py:252
+#, python-format
+msgid "Could not find application credential: %s"
+msgstr "Не удалось найти учётные данные приложения: %s"
+
+#: keystone/auth/core.py:393
+#: keystone/server/flask/request_processing/middleware/auth_context.py:278
+msgid "Scoping to both domain and project is not allowed"
+msgstr ""
+"Одновременное ограничение области и для домена, и для проекта не допускается"
+
+#: keystone/auth/core.py:396
+msgid "Scoping to both domain and trust is not allowed"
+msgstr ""
+"Одновременное ограничение области и для домена, и для доверия не допускается"
+
+#: keystone/auth/core.py:399
+msgid "Scoping to both project and trust is not allowed"
+msgstr ""
+"Одновременное ограничение области и для проекта, и для доверия не допускается"
+
+#: keystone/auth/core.py:402
+msgid "Scoping to both project and system is not allowed"
+msgstr ""
+"Одновременное ограничение области и для проекта, и для системы не допускается"
+
+#: keystone/auth/core.py:405
+msgid "Scoping to both domain and system is not allowed"
+msgstr ""
+"Одновременное ограничение области и для домена, и для системы не допускается"
+
+#: keystone/auth/core.py:417
+msgid "Auth Method Plugins are not loaded."
+msgstr "Модули метода аутентификации не загружены"
+
+#: keystone/auth/schema.py:118
+msgid ""
+"Invalid input for field identity/password/user: id or name must be "
+"present."
+msgstr ""
+"Недействительный ввод для поля «идентификация/пароль/пользователь»: "
+"должно присутствовать имя или ID"
+
+#: keystone/auth/schema.py:125
+msgid ""
+"Invalid input for field identity/password/user/domain: id or name must be"
+" present."
+msgstr ""
+"Недействительный ввод для поля «идентификация/пароль/пользователь/домен»: "
+"должно присутствовать имя или ID"
+
+#: keystone/auth/schema.py:135
+msgid "Invalid input for field scope/project: id or name must be present."
+msgstr ""
+"Недействительный ввод для поля «область действия/проект»: "
+"должно присутствовать имя или ID"
+
+#: keystone/auth/schema.py:142
+msgid ""
+"Invalid input for field scope/project/domain: id or name must be present."
+msgstr ""
+"Недействительный ввод для поля «область действия/проект/домен»: "
+"должно присутствовать имя или ID"
+
+#: keystone/auth/schema.py:149
+msgid "Invalid input for field scope/domain: id or name must be present."
+msgstr ""
+"Недействительный ввод для поля «область действия/домен»: "
+"должно присутствовать имя или ID"
+
+#: keystone/auth/plugins/external.py:41
+msgid "No authenticated user"
+msgstr "Нет пользователя, прошедшего аутентификацию"
+
+#: keystone/auth/plugins/external.py:47
+#, python-format
+msgid "Unable to lookup user %s"
+msgstr "Невозможно обнаружить пользователя %s"
+
+#: keystone/auth/plugins/external.py:94
+msgid "auth_type is not Negotiate"
+msgstr "auth_type не равен Negotiate"
+
+#: keystone/auth/plugins/mapped.py:361
+msgid ""
+"Could not map user while setting ephemeral user identity. Either mapping "
+"rules must specify user id/name or REMOTE_USER environment variable must "
+"be set."
+msgstr ""
+"Не удалось создать отображение для пользователя во время настройки"
+" идентификации "
+"пользователя Ephemeral. Либо укажите в правилах отображения ID"
+" пользователя/имя, либо "
+"настройте переменную окружения REMOTE_USER."
+
+#: keystone/auth/plugins/oauth1.py:49
+msgid "Access token is expired"
+msgstr "Срок действия маркёра доступа истёк"
+
+#: keystone/auth/plugins/oauth1.py:63
+msgid "Could not validate the access token"
+msgstr "Не удалось выполнить проверку маркёра доступа"
+
+#: keystone/auth/plugins/password.py:39
+msgid "Invalid username or password"
+msgstr "Недействительное имя пользователя или пароль"
+
+#: keystone/auth/plugins/token.py:80
+msgid ""
+"Using OAuth-scoped token to create another token. Create a new OAuth-"
+"scoped token instead"
+msgstr ""
+"Для создания нового маркёра используется маркёр с областью действия OAuth. "
+"Создайте просто новый маркёр с областью действия OAuth."
+
+#: keystone/auth/plugins/token.py:85
+msgid ""
+"Using trust-scoped token to create another token. Create a new trust-"
+"scoped token instead"
+msgstr ""
+"Для создания другого маркёра используется маркёр с областью действия доверия. "
+"Создайте просто новый маркёр с областью действия доверия."
+
+#: keystone/auth/plugins/token.py:90
+msgid ""
+"Using a system-scoped token to create a project-scoped or domain-scoped "
+"token is not allowed."
+msgstr ""
+"Не допускается использование маркёров с областью действия системы для"
+" создания "
+"маркёров с областью действия проекта/домена."
+
+#: keystone/auth/plugins/token.py:100
+msgid "rescope a scoped token"
+msgstr "изменить область действия маркёра"
+
+#: keystone/auth/plugins/totp.py:117
+msgid "Invalid username or TOTP passcode"
+msgstr "Недействительное имя пользователя или код доступа к TOTP"
+
+#: keystone/catalog/core.py:89 keystone/identity/backends/ldap/common.py:1430
+#, python-format
+msgid "Duplicate ID, %s."
+msgstr "Дублирующие ID, %s."
+
+#: keystone/catalog/backends/sql.py:443
+#, python-format
+msgid "Endpoint %(endpoint_id)s not found in project %(project_id)s"
+msgstr ""
+"Не удалось найти конечную точку %(endpoint_id)s в проекте %(project_id)s"
+
+#: keystone/catalog/backends/sql.py:546
+msgid "Endpoint Group Project Association not found"
+msgstr "Связь с проектом группы конечной точки не найдена"
+
+#: keystone/cmd/cli.py:167
+msgid ""
+"ERROR: Either --bootstrap-password argument or OS_BOOTSTRAP_PASSWORD must"
+" be set."
+msgstr ""
+"ОШИБКА: необходимо либо указать аргумент «--bootstrap-password», либо "
+"настроить параметр OS_BOOTSTRAP_PASSWORD"
+
+#: keystone/cmd/cli.py:216
+msgid ""
+"All extensions have been moved into keystone core and as such its "
+"migrations are maintained by the main keystone database control. Use the "
+"command: keystone-manage db_sync"
+msgstr ""
+"Все расширения были перемещены в ядро Keystone, и поэтому "
+"миграции обслуживаются средствами контроля главной ДБ Keystone. "
+"Используйте команду «keystone-manage db_sync»"
+
+#: keystone/cmd/cli.py:526
+#, python-format
+msgid "Private key %(path)s already exists"
+msgstr "Закрытый ключ %(path)s уже существует"
+
+#: keystone/cmd/cli.py:529
+#, python-format
+msgid "Public key %(path)s already exists"
+msgstr "Открытый ключ %(path)s уже существует"
+
+#: keystone/cmd/cli.py:701
+msgid ""
+"Unable to rotate credential keys because not all credentials are "
+"encrypted with the primary key. Please make sure all credentials have "
+"been encrypted with the primary key using `keystone-manage "
+"credential_migrate`."
+msgstr ""
+"Невозможно выполнить ротацию ключей учётных данных, т.к. не все "
+"учётные данные зашифрованы первичным ключом. Убедитесь в том, что "
+"все учётные данные были зашифрованы с помощью первичного ключа и "
+"команды «keystone-manage credential_migrate»."
+
+#: keystone/cmd/cli.py:873
+msgid "At least one option must be provided"
+msgstr "Необходимо предоставить как минимум один параметр"
+
+#: keystone/cmd/cli.py:880
+msgid "--all option cannot be mixed with other options"
+msgstr "Параметр «--all» нельзя смешивать с другими параметрами"
+
+#: keystone/cmd/cli.py:887
+#, python-format
+msgid "Unknown domain '%(name)s' specified by --domain-name"
+msgstr "С помощью «--domain-name» указан неизвестный домен '%(name)s'"
+
+#: keystone/cmd/cli.py:966 keystone/tests/unit/test_cli.py:676
+msgid "At least one option must be provided, use either --all or --domain-name"
+msgstr ""
+"Необходимо предоставить как минимум один параметр, используйте либо "
+"«--all», либо «--domain-name»"
+
+#: keystone/cmd/cli.py:972 keystone/tests/unit/test_cli.py:692
+msgid "The --all option cannot be used with the --domain-name option"
+msgstr ""
+"Параметр «--all» нельзя использовать вместе с параметром «--domain-name»"
+
+#: keystone/cmd/cli.py:990 keystone/tests/unit/test_cli.py:709
+#, python-format
+msgid ""
+"Invalid domain name: %(domain)s found in config file name: %(file)s - "
+"ignoring this file."
+msgstr ""
+"В файле конфигурации %(file)s обнаружено недействительное доменное имя "
+"%(domain)s, "
+"файл игнорируется"
+
+#: keystone/cmd/cli.py:998 keystone/tests/unit/test_cli.py:650
+#, python-format
+msgid ""
+"Domain: %(domain)s already has a configuration defined - ignoring file: "
+"%(file)s."
+msgstr ""
+"У домена %(domain)s уже есть настроенная конфигурация — файл %(file)s "
+"игнорируется."
+
+#: keystone/cmd/cli.py:1012
+#, python-format
+msgid ""
+"Error parsing configuration file for domain: %(domain)s, file: %(file)s."
+msgstr "Ошибка анализа файла конфигурации домена: %(domain)s, файл: %(file)s."
+
+#: keystone/cmd/cli.py:1047
+#, python-format
+msgid "Unable to locate domain config directory: %s"
+msgstr "Не удалось найти каталог с конфигурацией домена: %s"
+
+#: keystone/cmd/cli.py:1082
+msgid ""
+"Unable to access the keystone database, please check it is configured "
+"correctly."
+msgstr ""
+"Невозможно получить доступ к БД Keystone, проверьте правильность конфигурации"
+
+#: keystone/cmd/cli.py:1151
+#, python-format
+msgid "Error while parsing rules %(path)s: %(err)s"
+msgstr "Ошибка во время анализа правил %(path)s: %(err)s"
+
+#: keystone/cmd/cli.py:1160
+#, python-format
+msgid "Error while opening file %(path)s: %(err)s"
+msgstr "Ошибка открытия файла %(path)s: %(err)s"
+
+#: keystone/cmd/cli.py:1169
+#, python-format
+msgid ""
+"assertion file %(pathname)s at line %(line_num)d expected 'key: value' "
+"but found '%(line)s' see help for file format"
+msgstr ""
+"в файле декларации %(pathname)s в строке %(line_num)d ожидался 'ключ:"
+" значение', "
+"но было обнаружено: '%(line)s', обратитесь к справке по форматам файлов"
+
+#: keystone/cmd/cli.py:1292
+#, python-format
+msgid "Invalid domain name: %(domain)s"
+msgstr "Недействительное доменное имя: %(domain)s"
+
+#: keystone/cmd/doctor/__init__.py:67
+#, python-format
+msgid ""
+"\n"
+"WARNING: %s"
+msgstr ""
+"\n"
+"ПРЕДУПРЕЖДЕНИЕ: %s"
+
+#: keystone/common/driver_hints.py:38
+msgid ""
+"Cannot truncate a driver call without hints list as first parameter after"
+" self "
+msgstr ""
+"Невозможно обрезать вызов драйвера без списка корневых ссылок "
+"в качестве первого параметра после self "
+
+#: keystone/common/json_home.py:84
+#, python-format
+msgid "Unexpected status requested for JSON Home response, %s"
+msgstr "Для ответа JSON Home запрошен непредвиденный статус, %s"
+
+#: keystone/common/manager.py:79 keystone/limit/models/base.py:31
+#, python-format
+msgid "Unable to find %(name)r driver in %(namespace)r."
+msgstr "Невозможно найти драйвер %(name)r в %(namespace)r."
+
+#: keystone/common/password_hashing.py:55
+#, python-format
+msgid "Unsupported password hashing algorithm ident: %s"
+msgstr "Неподдерживаемый идентификатор алгоритма хэширования паролей: %s"
+
+#: keystone/common/password_hashing.py:108
+#, python-format
+msgid "Password Hash Algorithm %s not found"
+msgstr "Алгоритм хэширования паролей %s не найден"
+
+#: keystone/common/tokenless_auth.py:71
+msgid "Neither Project Domain ID nor Project Domain Name was provided."
+msgstr "Не было предоставлено ни ID домена проекта, ни имя домена проекта"
+
+#: keystone/common/tokenless_auth.py:163
+msgid ""
+"User auth cannot be built due to missing either user id, or user name "
+"with domain id, or user name with domain name."
+msgstr ""
+"Невозможно создать аутентификацию пользователя в связи с отсутствием одного"
+" из "
+"следующих элементов: ID пользователя, имя пользователя и ID домена, имя"
+" пользователя "
+"и имя домена"
+
+#: keystone/common/utils.py:70
+msgid ""
+"Length of transformable resource id > 64, which is max allowed characters"
+msgstr ""
+"Длина ID подлежащего трансформации ресурса > 64, что является "
+"максимальным разрешённым количеством символов"
+
+#: keystone/common/rbac_enforcer/enforcer.py:291
+msgid "Internal error processing authentication and authorization."
+msgstr "Внутрення ошибка обработки аутентификации и авторизации"
+
+#: keystone/common/rbac_enforcer/enforcer.py:295
+msgid "auth_context did not decode anything useful"
+msgstr "расшифровка с помощью auth_context не выдала ничего полезного"
+
+#: keystone/common/rbac_enforcer/enforcer.py:369
+msgid "Internal RBAC enforcement error, invalid rule (action) name."
+msgstr ""
+"Внутренняя ошибка принудительного применения управления доступом на основе"
+" ролей, "
+"недействительное имя правила (действия)"
+
+#: keystone/common/resource_options/core.py:25
+#, python-format
+msgid "Expected boolean value, got %r"
+msgstr "Ожидалось логическое значение, получено %r"
+
+#: keystone/common/resource_options/core.py:161
+#, python-format
+msgid "Option %(option_id)s already defined in %(registry)s."
+msgstr "Параметр %(option_id)s уже был настроен в %(registry)s."
+
+#: keystone/common/resource_options/core.py:166
+#, python-format
+msgid "Option %(option_name)s already defined in %(registry)s"
+msgstr "Параметр %(option_name)s уже был настроен %(registry)s"
+
+#: keystone/common/resource_options/core.py:204
+#, python-format
+msgid "`option_id` must be a string, got %r"
+msgstr "«option_id» должен быть строкой, получен %r"
+
+#: keystone/common/resource_options/core.py:207
+#, python-format
+msgid "`option_id` must be 4 characters in length. Got %r"
+msgstr "длина «option_id» должна составлять 4 символа. Получено %r"
+
+#: keystone/common/resource_options/core.py:211
+#, python-format
+msgid "`option_name` must be a string. Got %r"
+msgstr "«option_name» должен быть строкой. Получено %r"
+
+#: keystone/common/sql/core.py:153
+msgid "Programming Error: value to be stored must be a datetime object."
+msgstr ""
+"Программная ошибка: предназначенное к хранению значение должно "
+"быть объектом datetime"
+
+#: keystone/common/sql/core.py:543 keystone/limit/backends/sql.py:156
+msgid "Duplicate entry"
+msgstr "Дублирующая запись"
+
+#: keystone/common/sql/core.py:545
+#, python-format
+msgid ""
+"Duplicate entry found with %(field)s %(name)s at domain ID %(domain_id)s"
+msgstr ""
+"В домене с ID %(domain_id)s найдена дублирующая запись с %(field)s %(name)s"
+
+#: keystone/common/sql/core.py:549
+#, python-format
+msgid "Duplicate entry found with %(field)s %(name)s"
+msgstr "Найдена дублирующая запись с %(field)s %(name)s"
+
+#: keystone/common/sql/core.py:552
+#, python-format
+msgid "Duplicate entry at domain ID %s"
+msgstr "Дублирующая запись в домене с ID %s"
+
+#: keystone/common/sql/core.py:570
+#, python-format
+msgid "An unexpected error occurred when trying to store %s"
+msgstr "При попытке поместить %s на хранение возникла непредвиденная ошибка"
+
+#: keystone/common/sql/upgrades.py:194
+msgid "Unable to downgrade schema"
+msgstr "Не удалось понизить версию схемы"
+
+#: keystone/common/validation/validators.py:33
+msgid "Password must be a string type"
+msgstr "Пароль должен иметь тип «строка»"
+
+#: keystone/common/validation/validators.py:45
+msgid "Unable to validate password due to invalid configuration"
+msgstr "Валидация пароля невозможна в связи с недействительной конфигурацией"
+
+#: keystone/common/validation/validators.py:84
+#, python-format
+msgid "Invalid input for field '%(path)s': %(message)s"
+msgstr "Недействительный ввод для поля '%(path)s': %(message)s"
+
+#: keystone/credential/providers/fernet/core.py:88
+#, python-format
+msgid "Credential could not be encrypted: %s"
+msgstr "Не удалось зашифровать учётные данные: %s"
+
+#: keystone/credential/providers/fernet/core.py:111
+msgid "Credential could not be decrypted. Please contact the administrator"
+msgstr "Не удалось расшифровать учётные данные. Свяжитесь с администратором."
+
+#: keystone/endpoint_policy/core.py:261
+#, python-format
+msgid "No policy is associated with endpoint %(endpoint_id)s."
+msgstr "С конечной точкой %(endpoint_id)s не связана ни одна политика"
+
+#: keystone/federation/core.py:199
+#, python-format
+msgid "Invalid mapping id: %s"
+msgstr "Недействительный ID отображения: %s"
+
+#: keystone/federation/idp.py:432
+#, python-format
+msgid ""
+"Unable to locate %(binary)s binary on the system. Check to make sure it "
+"is installed."
+msgstr ""
+"Невозможно найти бинарный файл %(binary)s в системе. Проверьте, установлен "
+"ли он."
+
+#: keystone/federation/idp.py:557
+#, python-format
+msgid "Cannot open certificate %(cert_file)s.Reason: %(reason)s"
+msgstr "Невозможно открыть сертификат %(cert_file)s. Причина: %(reason)s"
+
+#: keystone/federation/idp.py:623
+msgid "Ensure configuration option idp_entity_id is set."
+msgstr "Убедитесь, что параметр конфигурации «idp_entity_id» настроен"
+
+#: keystone/federation/idp.py:626
+msgid "Ensure configuration option idp_sso_endpoint is set."
+msgstr ""
+"Убедитесь в том, что параметр конфигурации «idp_sso_endpoint» настроен."
+
+#: keystone/federation/utils.py:290
+msgid "Federation token is expired"
+msgstr "Срок действия маркёра интеграции истёк"
+
+#: keystone/federation/utils.py:337
+msgid "Could not find Identity Provider identifier in environment"
+msgstr "В окружении не удалось найти ID поставщика идентификации"
+
+#: keystone/federation/utils.py:341
+msgid ""
+"Incoming identity provider identifier not included among the accepted "
+"identifiers."
+msgstr ""
+"Входящий ID поставщика идентификации не включён в принимаемые идентификаторы"
+
+#: keystone/federation/utils.py:585 keystone/federation/utils.py:592
+#, python-format
+msgid ""
+"Invalid rule: %(identity_value)s. Both 'groups' and 'domain' keywords "
+"must be specified."
+msgstr ""
+"Недействительное правило: %(identity_value)s. Необходимо указать оба "
+"ключевых слова: и 'groups' и 'domain'."
+
+#: keystone/federation/utils.py:652
+#, python-format
+msgid "User type %s not supported"
+msgstr "Тип пользователя %s не поддерживается"
+
+#: keystone/federation/utils.py:671
+msgid ""
+"Could not map any federated user properties to identity values. Check "
+"debug logs or the mapping used for additional details."
+msgstr ""
+"Не удалось отобразить ни один из параметров пользователя на "
+"значения идентификации. Подробности ищите в журнале отладки или "
+"в используемом отображении."
+
+#: keystone/federation/utils.py:923
+#, python-format
+msgid "Unexpected evaluation type \"%(eval_type)s\""
+msgstr "Непредвиденный тип оценки \"%(eval_type)s\""
+
+#: keystone/federation/utils.py:932
+#, python-format
+msgid "Identity Provider %(idp)s is disabled"
+msgstr "Использование поставщика идентификации %(idp)s отключено"
+
+#: keystone/federation/utils.py:942
+#, python-format
+msgid "Service Provider %(sp)s is disabled"
+msgstr "Использование поставщика службы %(sp)s отключено"
+
+#: keystone/federation/backends/sql.py:184
+#, python-format
+msgid "Duplicate remote ID: %s"
+msgstr "Дублирующие удалённые ID: %s"
+
+#: keystone/federation/backends/sql.py:186
+#, python-format
+msgid "Duplicate entry: %s"
+msgstr "Дублирующая запись: %s"
+
+#: keystone/identity/core.py:246
+#, python-format
+msgid "Config API entity at /domains/%s/config"
+msgstr "Конфигурация объекта API в /domains/%s/config"
+
+#: keystone/identity/core.py:252
+#, python-format
+msgid ""
+"Exceeded attempts to register domain %(domain)s to use the SQL driver, "
+"the last domain that appears to have had it is %(last_domain)s, giving up"
+msgstr ""
+"Превышено число попыток регистрации домена %(domain)s для использования "
+"драйвера SQL, похоже, что последним доменом, у которого был этот драйвер, "
+"является %(last_domain)s, отказ от дальнейших попыток"
+
+#: keystone/identity/core.py:431 keystone/identity/backends/sql.py:68
+#: keystone/identity/backends/sql.py:73
+#: keystone/identity/backends/ldap/core.py:62
+#: keystone/identity/backends/ldap/core.py:64
+#: keystone/identity/backends/ldap/core.py:70
+#: keystone/identity/backends/ldap/core.py:72
+msgid "Invalid user / password"
+msgstr "Недействительный пользователь / пароль"
+
+#: keystone/identity/core.py:606
+#, python-format
+msgid "Expected dict or list: %s"
+msgstr "Ожидался словарь или список: %s"
+
+#: keystone/identity/core.py:918
+#, python-format
+msgid "User's default project ID cannot be a domain ID: %s"
+msgstr "ID проекта пользователя по умолчанию не может ID домена: %s"
+
+#: keystone/identity/core.py:933
+#, python-format
+msgid "Could not find Identity Provider: %s"
+msgstr "Не удалось найти поставщика идентификации: %s"
+
+#: keystone/identity/core.py:941
+#, python-format
+msgid ""
+"Could not find federated protocol %(protocol)s for Identity Provider: "
+"%(idp)s."
+msgstr ""
+"Не удалось найти федеративный протокол %(protocol)s поставщика "
+"идентификации: %(idp)s."
+
+#: keystone/identity/core.py:1028
+#, python-format
+msgid "User is disabled: %s"
+msgstr "Пользователь отключён: %s"
+
+#: keystone/identity/core.py:1126 keystone/resource/core.py:923
+msgid "Cannot change Domain ID"
+msgstr "Не удалось сменить ID домена"
+
+#: keystone/identity/core.py:1166
+msgid "Cannot change user ID"
+msgstr "Не удалось сменить ID пользователя"
+
+#: keystone/identity/backends/resource_options.py:26
+msgid ""
+"Invalid data type, must be a list of lists comprised of strings. Sub-"
+"lists may not be duplicated. Strings in sub-lists may not be duplicated."
+msgstr ""
+"Недействительный тип данных, тип должен быть список списков, состоящий "
+"из строк. Строки в подчинённых списках не могут дублироваться."
+
+#: keystone/identity/backends/sql.py:317 keystone/identity/backends/sql.py:335
+#: keystone/identity/backends/ldap/core.py:147
+#, python-format
+msgid "User '%(user_id)s' not found in group '%(group_id)s'"
+msgstr "Пользователь '%(user_id)s' не найден в группе '%(group_id)s'"
+
+#: keystone/identity/backends/ldap/common.py:209
+#, python-format
+msgid "Invalid LDAP deref option: %(option)s. Choose one of: %(options)s"
+msgstr ""
+"Недействительный параметр разыменования LDAP: %(option)s. Выберите один из: "
+"%(options)s"
+
+#: keystone/identity/backends/ldap/common.py:219
+#, python-format
+msgid "Invalid LDAP TLS certs option: %(option)s. Choose one of: %(options)s"
+msgstr ""
+"Недействительный параметр сертификата TLS LDAP: %(option)s. "
+"Выберите один из: %(options)s"
+
+#: keystone/identity/backends/ldap/common.py:231
+#, python-format
+msgid "Invalid LDAP scope: %(scope)s. Choose one of: %(options)s"
+msgstr ""
+"Недействительная область действия LDAP: %(scope)s. Выберите одну из: "
+"%(options)s"
+
+#: keystone/identity/backends/ldap/common.py:599
+msgid "Invalid TLS / LDAPS combination"
+msgstr "Недействительное сочетание TLS / LDAPS"
+
+#: keystone/identity/backends/ldap/common.py:604
+#, python-format
+msgid "Invalid LDAP TLS_AVAIL option: %s. TLS not available"
+msgstr "Недействительный параметр LDAP TLS_AVAIL: %s. TLS недоступен."
+
+#: keystone/identity/backends/ldap/common.py:614
+#, python-format
+msgid "tls_cacertfile %s not found or is not a file"
+msgstr "tls_cacertfile %s не найден или не является файлом"
+
+#: keystone/identity/backends/ldap/common.py:626
+#, python-format
+msgid "tls_cacertdir %s not found or is not a directory"
+msgstr "tls_cacertdir %s не найден или не является каталогом"
+
+#: keystone/identity/backends/ldap/common.py:1354
+#, python-format
+msgid "DN attribute %(dn)s not found in LDAP"
+msgstr "Атрибут DN %(dn)s не найден в LDAP"
+
+#: keystone/identity/backends/ldap/common.py:1368
+#, python-format
+msgid "ID attribute %(id_attr)s not found in LDAP object %(dn)s"
+msgstr "Атрибут ID %(id_attr)s не найден в объекте LDAP %(dn)s"
+
+#: keystone/identity/backends/ldap/common.py:1419
+#, python-format
+msgid "Duplicate name, %s."
+msgstr "Дублирующее имя, %s."
+
+#: keystone/identity/backends/ldap/common.py:1638
+msgid ""
+"Disabling an entity where the 'enable' attribute is ignored by "
+"configuration."
+msgstr ""
+"Отключается объект с атрибутом «enable», который игнорируется "
+"в конфигурации"
+
+#: keystone/identity/backends/ldap/common.py:1649
+#, python-format
+msgid "Cannot change %(option_name)s %(attr)s"
+msgstr "Не удалось сменить %(option_name)s %(attr)s"
+
+#: keystone/identity/backends/ldap/common.py:1692
+#, python-format
+msgid "Member %(member)s is already a member of group %(group)s"
+msgstr "Участник %(member)s уже является участником группы %(group)s"
+
+#: keystone/identity/backends/ldap/core.py:35
+msgid "LDAP does not support write operations"
+msgstr "LDAP не поддерживает операции записи"
+
+#: keystone/identity/backends/ldap/core.py:201
+msgid "Cannot change user name"
+msgstr "Не удалось сменить имя пользователя"
+
+#: keystone/identity/backends/ldap/core.py:397
+#, python-format
+msgid "User %(user_id)s is already a member of group %(group_id)s"
+msgstr "Пользователь %(user_id)s уже является участником группы %(group_id)s"
+
+#: keystone/limit/models/strict_two_level.py:118
+#, python-format
+msgid ""
+"The value of the limit which project is %(project_id)s should not bigger "
+"than its parent domain %(domain_id)s."
+msgstr ""
+"Значение ограничения, проектом которого является %(project_id)s, не должно "
+"превышать значение родительского домена %(domain_id)s."
+
+#: keystone/limit/models/strict_two_level.py:147
+#, python-format
+msgid ""
+"The resource limit (%(level)s: %(id)s, resource_name: %(resource_name)s, "
+"resource_limit: %(resource_limit)s, service_id: %(service_id)s, "
+"region_id: %(region_id)s) doesn't satisfy current hierarchy model."
+msgstr ""
+"Ограничение ресурса (%(level)s: %(id)s, resource_name: %(resource_name)s, "
+"resource_limit: %(resource_limit)s, service_id: %(service_id)s, "
+"region_id: %(region_id)s) не удовлетворяет требованиям текущей модели"
+" иерархии."
+
+#: keystone/models/token_model.py:327 keystone/models/token_model.py:567
+msgid "Trustee has no delegated roles."
+msgstr "У доверенного лица нет делегированных ролей"
+
+#: keystone/models/token_model.py:467
+#, python-format
+msgid "Unable to validate token because project %(id)s is disabled"
+msgstr "Невозможно выполнить валидацию маркёра, т.к. проект %(id)s отключён"
+
+#: keystone/models/token_model.py:474 keystone/models/token_model.py:506
+#, python-format
+msgid "Unable to validate token because domain %(id)s is disabled"
+msgstr "Невозможно выполнить валидацию маркёра, т.к. домен %(id)s отключён"
+
+#: keystone/models/token_model.py:482
+msgid "User is not a trustee."
+msgstr "Пользователь не является доверенным лицом"
+
+#: keystone/models/token_model.py:488
+msgid "Trustor domain is disabled."
+msgstr "Домен лица, делегирующего права, отключён"
+
+#: keystone/models/token_model.py:494
+msgid "Trustee domain is disabled."
+msgstr "Домен доверенного лица отключён"
+
+#: keystone/models/token_model.py:501
+msgid "Trustor is disabled."
+msgstr "Лицо, делегирующее права, отключено"
+
+#: keystone/models/token_model.py:515
+#, python-format
+msgid "User %(user_id)s has no access to the system"
+msgstr "У пользователя %(user_id)s нет доступа к системе"
+
+#: keystone/models/token_model.py:525
+#, python-format
+msgid "User %(user_id)s has no access to domain %(domain_id)s"
+msgstr "У пользователя %(user_id)s нет доступа к домену %(domain_id)s"
+
+#: keystone/models/token_model.py:536
+#, python-format
+msgid "User %(user_id)s has no access to project %(project_id)s"
+msgstr "У пользователя %(user_id)s нет доступа к проекту %(project_id)s"
+
+#: keystone/oauth1/core.py:95
+#, python-format
+msgid "Validation failed with errors: %(error)s, detail message is: %(desc)s."
+msgstr "Сбой валидации с ошибками: %(error)s, подробное сообщение: %(desc)s."
+
+#: keystone/oauth1/core.py:102
+msgid "Unknown parameters found,please provide only oauth parameters."
+msgstr "Обнаружены неизвестные параметры, предоставьте только параметры oauth"
+
+#: keystone/oauth1/backends/sql.py:91
+msgid "Consumer not found"
+msgstr "Потребитель не найден"
+
+#: keystone/oauth1/backends/sql.py:177
+msgid "Request token not found"
+msgstr "Маркёр запроса не найден"
+
+#: keystone/oauth1/backends/sql.py:236
+msgid "Access token not found"
+msgstr "Маркёр доступа не найден"
+
+#: keystone/receipt/provider.py:108
+msgid "No receipt in the request"
+msgstr "В запросе отсутствует получение"
+
+#: keystone/receipt/provider.py:145 keystone/receipt/provider.py:151
+msgid "Failed to validate receipt"
+msgstr "Не удалось провести валидацию получения"
+
+#: keystone/receipt/receipt_formatters.py:94
+#, python-format
+msgid "This is not a recognized Fernet receipt %s"
+msgstr "Не является распознаваемым получением Fernet %s"
+
+#: keystone/receipt/providers/fernet/core.py:40
+#: keystone/token/providers/fernet/core.py:38
+#, python-format
+msgid "%(key_repo)s does not exist"
+msgstr "%(key_repo)s не существует"
+
+#: keystone/receipt/providers/fernet/core.py:43
+#: keystone/token/providers/fernet/core.py:41
+#, python-format
+msgid ""
+"%(key_repo)s does not contain keys, use keystone-manage fernet_setup to "
+"create Fernet keys."
+msgstr ""
+"%(key_repo)s не содержит ключей, для создания ключей Fernet используйте "
+"«keystone-manage fernet_setup»"
+
+#: keystone/resource/core.py:82
+#, python-format
+msgid "Max hierarchy depth reached for %s branch."
+msgstr "Для ветки %s достигнута максимальная глубина иерархии"
+
+#: keystone/resource/core.py:100
+msgid "Multiple domains are not supported"
+msgstr "Мультидоменность не поддерживается"
+
+#: keystone/resource/core.py:106
+msgid "only root projects are allowed to act as domains."
+msgstr "только корневые проекты могут действовать как домены."
+
+#: keystone/resource/core.py:129
+#, python-format
+msgid ""
+"Cannot create project, the parent (%(parent_id)s) is acting as a domain, "
+"but this project's domain id (%(domain_id)s) does not match the parent's "
+"id."
+msgstr ""
+"Невозможно создать проект, родитель (%(parent_id)s) действует как домен, "
+"но ID домена этого проекта (%(domain_id)s) не совпадает с ID родителя."
+
+#: keystone/resource/core.py:139
+#, python-format
+msgid ""
+"Cannot create project, since it specifies its domain_id %(domain_id)s, "
+"but specifies a parent in a different domain (%(parent_domain_id)s)."
+msgstr ""
+"Невозможно создать проект, т.к. при указании его domain_id %(domain_id)s, "
+"родитель указывается в другом домене (%(parent_domain_id)s)."
+
+#: keystone/resource/core.py:159
+#, python-format
+msgid "cannot create a project in a branch containing a disabled project: %s"
+msgstr ""
+"невозможно создать проект в ветке, в которой есть отключённый проект: %s"
+
+#: keystone/resource/core.py:167
+#, python-format
+msgid ""
+"%(entity)s name cannot contain the following reserved characters: "
+"%(chars)s"
+msgstr ""
+"имя %(entity)s не может содержать следующие зарезервированные символы: "
+"%(chars)s"
+
+#: keystone/resource/core.py:177
+#, python-format
+msgid ""
+"it is not permitted to have two projects acting as domains with the same "
+"name: %s"
+msgstr "два проекта не могут действовать как домены с один и тем же именем: %s"
+
+#: keystone/resource/core.py:181
+#, python-format
+msgid ""
+"it is not permitted to have two projects with either the same name or "
+"same id in the same domain: name is %(name)s, project id %(id)s"
+msgstr ""
+"для двух проектов не допускается одинаковое имя, либо одинаковые ID в одном"
+" домене: "
+"имя %(name)s, ID проекта %(id)s"
+
+#: keystone/resource/core.py:243
+#, python-format
+msgid "Domain is disabled: %s"
+msgstr "Домен отключён: %s"
+
+#: keystone/resource/core.py:260
+#, python-format
+msgid "Domain cannot be named %s"
+msgstr "Именем домена не может быть %s"
+
+#: keystone/resource/core.py:263
+#, python-format
+msgid "Domain cannot have ID %s"
+msgstr "ID домена не может быть %s"
+
+#: keystone/resource/core.py:278
+#, python-format
+msgid "Project is disabled: %s"
+msgstr "Проект отключён: %s"
+
+#: keystone/resource/core.py:285
+#, python-format
+msgid "Cannot enable project %s since it has disabled parents"
+msgstr ""
+"Невозможно активировать проект %s, т.к. у него есть отключённые "
+"родители"
+
+#: keystone/resource/core.py:337
+msgid "Update of `parent_id` is not allowed."
+msgstr "Обновление «parent_id» не допускается"
+
+#: keystone/resource/core.py:342
+msgid "Update of `is_domain` is not allowed."
+msgstr "Обновление «is_domain» не допускается."
+
+#: keystone/resource/core.py:358
+#, python-format
+msgid ""
+"Cannot disable project %(project_id)s since its subtree contains enabled "
+"projects."
+msgstr ""
+"Невозможно отключить проект %(project_id)s т.к. в его поддереве есть"
+" активированные "
+"проекты"
+
+#: keystone/resource/core.py:421
+msgid "Cascade update is only allowed for enabled attribute."
+msgstr "Каскадное обновление допускается только для включённых атрибутов"
+
+#: keystone/resource/core.py:493
+#, python-format
+msgid ""
+"cannot delete an enabled project acting as a domain. Please disable the "
+"project %s first."
+msgstr ""
+"невозможно удалить активированный проект, действующий как домен. Сначала "
+"отключите проект %s."
+
+#: keystone/resource/core.py:499
+#, python-format
+msgid ""
+"Cannot delete the project %s since it is not a leaf in the hierarchy. Use"
+" the cascade option if you want to delete a whole subtree."
+msgstr ""
+"Невозможно удалить проект %s, поскольку он не является листом в иерархии. "
+"При необходимости удаления всего поддерева используйте каскадное удаление."
+
+#: keystone/resource/core.py:512
+#, python-format
+msgid ""
+"Cannot delete project %(project_id)s since its subtree contains enabled "
+"projects."
+msgstr ""
+"Невозможно удалить проект %(project_id)s, т.к. в его поддереве есть"
+" включённые проекты"
+
+#: keystone/resource/core.py:546
+msgid "Project field is required and cannot be empty."
+msgstr "Поле проекта является обязательным и не может быть пустым"
+
+#: keystone/resource/core.py:816
+msgid "Cannot delete a domain that is enabled, please disable it first."
+msgstr "Невозможно удалить включённый домен, сначала отключите его"
+
+#: keystone/resource/core.py:936
+#, python-format
+msgid ""
+"Cannot create project tags for %(project_id)s, project is immutable. Set "
+"\"immutable\" option to false before creating project tags."
+msgstr ""
+"Невозможно создать метки проекта %(project_id)s, проект помечен как"
+" «неизменяемый». "
+"Перед созданием меток проекта укажите значение «ложно» для параметра"
+" \"immutable\"."
+
+#: keystone/resource/core.py:984
+#, python-format
+msgid ""
+"Cannot update project tags for %(project_id)s, project is immutable. Set "
+"\"immutable\" option to false before creating project tags."
+msgstr ""
+"Невозможно обновить метки проекта %(project_id)s, проект помечен как"
+" «неизменяемый». "
+"Перед созданием меток проекта укажите значение «ложно» для параметра"
+" \"immutable\"."
+
+#: keystone/resource/core.py:1005
+#, python-format
+msgid ""
+"Cannot delete project tags for %(project_id)s, project is immutable. Set "
+"\"immutable\" option to false before creating project tags."
+msgstr ""
+"Невозможно удалить метки проекта %(project_id)s, проект помечен как"
+" «неизменяемый». "
+"Перед созданием меток проекта укажите значение «ложно» для параметра"
+" \"immutable\"."
+
+#: keystone/resource/core.py:1092
+msgid "No options specified"
+msgstr "Параметры не указаны"
+
+#: keystone/resource/core.py:1098
+#, python-format
+msgid ""
+"The value of group %(group)s specified in the config should be a "
+"dictionary of options"
+msgstr ""
+"Значение группы %(group)s, указанное в конфигурации, должно представлять"
+" собой "
+"словарь параметров"
+
+#: keystone/resource/core.py:1122
+#, python-format
+msgid ""
+"Option %(option)s found with no group specified while checking domain "
+"configuration request"
+msgstr ""
+"При проверке запроса конфигурации домена обнаружен параметр %(option)s "
+"без указания группы"
+
+#: keystone/resource/core.py:1129
+#, python-format
+msgid "Group %(group)s is not supported for domain specific configurations"
+msgstr "Группа %(group)s не поддерживается в конфигурациях конкретных доменов"
+
+#: keystone/resource/core.py:1136
+#, python-format
+msgid ""
+"Option %(option)s in group %(group)s is not supported for domain specific"
+" configurations"
+msgstr ""
+"Параметр %(option)s в группе %(group)s не поддерживается в конфигурациях"
+" конкретных доменов"
+
+#: keystone/resource/core.py:1191
+msgid "An unexpected error occurred when retrieving domain configs"
+msgstr "При получении конфигураций доменов возникла непредвиденная ошибка"
+
+#: keystone/resource/core.py:1260 keystone/resource/core.py:1390
+#: keystone/resource/core.py:1445 keystone/resource/config_backends/sql.py:84
+#, python-format
+msgid "option %(option)s in group %(group)s"
+msgstr "параметр %(option)s в группе %(group)s"
+
+#: keystone/resource/core.py:1263 keystone/resource/core.py:1395
+#: keystone/resource/core.py:1441
+#, python-format
+msgid "group %(group)s"
+msgstr "группа %(group)s"
+
+#: keystone/resource/core.py:1265
+msgid "any options"
+msgstr "любые параметры"
+
+#: keystone/resource/core.py:1295
+msgid ""
+"Reading security compliance information for any domain other than the "
+"default domain is not allowed or supported."
+msgstr ""
+"Чтение сведений о соответствии требованиям безопасности для любого домена, "
+"кроме домена по умолчанию, не допускается или не поддерживается"
+
+#: keystone/resource/core.py:1303
+msgid ""
+"Reading security compliance values other than password_regex and "
+"password_regex_description is not allowed."
+msgstr ""
+"Чтение любых значений соответствия требованиям безопасности, кроме "
+"password_regex и password_regex_description, не допускается"
+
+#: keystone/resource/core.py:1355
+#, python-format
+msgid ""
+"Trying to update option %(option)s in group %(group)s, so that, and only "
+"that, option must be specified  in the config"
+msgstr ""
+"Попытка обновить параметр %(option)s в группе %(group)s, чтобы этот и только"
+" этот "
+"параметр был указан в конфигурации"
+
+#: keystone/resource/core.py:1360
+#, python-format
+msgid ""
+"Trying to update group %(group)s, so that, and only that, group must be "
+"specified in the config"
+msgstr ""
+"Попытка обновить группу %(group)s, чтобы эта и только эта"
+"группа была указана в конфигурации"
+
+#: keystone/resource/core.py:1369
+#, python-format
+msgid ""
+"request to update group %(group)s, but config provided contains group "
+"%(group_other)s instead"
+msgstr ""
+"запрошено обновление группы %(group)s, но предоставленная конфигурация"
+" содержит группу %(group_other)s"
+
+#: keystone/resource/core.py:1376
+#, python-format
+msgid ""
+"Trying to update option %(option)s in group %(group)s, but config "
+"provided contains option %(option_other)s instead"
+msgstr ""
+"Попытка обновления параметра %(option)s в группе %(group)s, но"
+" предоставленная "
+"конфигурация содержит параметр %(option_other)s"
+
+#: keystone/resource/core.py:1554
+#, python-format
+msgid ""
+"Reading the default for option %(option)s in group %(group)s is not "
+"supported"
+msgstr ""
+"Чтение значения по умолчанию параметра %(option)s в группе %(group)s "
+"не поддерживается"
+
+#: keystone/revoke/core.py:107
+msgid ""
+"The revoke call must not have both domain_id and project_id. This is a "
+"bug in the Keystone server. The current request is aborted."
+msgstr ""
+"Вызов revoke не должен содержать одновременно и domain_id и project_id. "
+"Это баг сервера Keystone. Текущий запрос прерывается."
+
+#: keystone/revoke/core.py:137 keystone/token/provider.py:196
+#: keystone/token/provider.py:203 keystone/token/provider.py:219
+msgid "Failed to validate token"
+msgstr "Не удалось выполнить проверку маркёра"
+
+#: keystone/server/flask/common.py:940
+msgid "No domain information specified as part of list request"
+msgstr "В запросе списка сведений о домене не указано"
+
+#: keystone/server/flask/common.py:976
+msgid ""
+"You have tried to create a resource using the admin token. As this token "
+"is not within a domain you must explicitly include a domain for this "
+"resource to belong to."
+msgstr ""
+"Вы сделали попытку создать ресурс с помощью маркёра администратора. "
+"Поскольку этот маркёр находится вне пределов домена, то необходимо явно "
+"включить домен, которому должен принадлежать ресурс."
+
+#: keystone/server/flask/request_processing/json_body.py:48
+msgid "resulting JSON load was not a dict"
+msgstr "итоговый JSON load не был словарём"
+
+#: keystone/server/flask/request_processing/middleware/auth_context.py:251
+msgid "Could not find token"
+msgstr "Не удалось найти маркёр"
+
+#: keystone/tests/common/auth.py:51
+msgid "Programming Error: Invalid arguments supplied to build scope."
+msgstr ""
+"Программная ошибка: для создания области действия предоставлены"
+" недействительные аргументы"
+
+#: keystone/token/provider.py:142
+msgid "No token in the request"
+msgstr "Маркёр в запросе отсутствует"
+
+#: keystone/token/token_formatters.py:92
+msgid "Could not recognize Fernet token"
+msgstr "Не удалось распознать маркёр Fernet"
+
+#: keystone/token/token_formatters.py:193
+#, python-format
+msgid "This is not a recognized Fernet payload version: %s"
+msgstr "Версия полезной нагрузки Fernet не распознана: %s"
+
+#: keystone/token/providers/jws/core.py:45
+#, python-format
+msgid ""
+"%(private_key)s does not exist. You can generate a key pair using "
+"`keystone-manage create_jws_keypair`."
+msgstr ""
+"%(private_key)s не существует. Создать пару ключей можно с помощью "
+"`keystone-manage create_jws_keypair`."
+
+#: keystone/token/providers/jws/core.py:50
+#, python-format
+msgid ""
+"%(public_key_repo)s does not exist. Please make sure the directory exists"
+" and is readable by the process running keystone."
+msgstr ""
+"%(public_key_repo)s не существует. Убедитесь в том, что каталог существует "
+"и доступен для чтения процессом, выполняющим Keystone."
+
+#: keystone/token/providers/jws/core.py:56
+#, python-format
+msgid ""
+"%(public_key_repo)s must contain at least one public key but it is empty."
+" You can generate a key pair using `keystone-manage create_jws_keypair`."
+msgstr ""
+"%(public_key_repo)s должен содержать минимум один открытый ключ, но он "
+"пуст. Создать пару ключей можно с помощью «keystone-manage"
+" create_jws_keypair»."
+
+#: keystone/trust/core.py:67
+#, python-format
+msgid ""
+"Remaining redelegation depth of %(redelegation_depth)d out of allowed "
+"range of [0..%(max_count)d]"
+msgstr ""
+"Оставшаяся глубина повторного делегирования — %(redelegation_depth)d из "
+"допустимого диапазона [0..%(max_count)d]"
+
+#: keystone/trust/core.py:76
+#, python-format
+msgid ""
+"Field \"remaining_uses\" is set to %(value)s while it must not be set in "
+"order to redelegate a trust"
+msgstr ""
+"В поле \"remaining_uses\" указано значение %(value)s, но в целях повторного"
+" делегирования доверия"
+"значение поля не должно быть настроено"
+
+#: keystone/trust/core.py:87
+msgid "Requested expiration time is more than redelegated trust can provide"
+msgstr ""
+"Запрошенное время окончания действия превышает значение, которое может "
+"предоставить повторно делегированное доверие"
+
+#: keystone/trust/core.py:97
+msgid "Some of requested roles are not in redelegated trust"
+msgstr ""
+"Некоторые из запрошенных ролей отсутствуют в повторно делегированном доверии"
+
+#: keystone/trust/core.py:103
+#, python-format
+msgid ""
+"Impersonation is not allowed because redelegated trust does not specify "
+"impersonation. Redelegated trust id: %s"
+msgstr ""
+"Олицетворение не допускается, т.к. повторно делегированное доверие "
+"его не подразумевает. ID повторно делегированного доверия: %s"
+
+#: keystone/trust/core.py:129
+msgid "One of the trust agents is disabled or deleted"
+msgstr "Один из агентов доверия отключён или удалён"
+
+#: keystone/trust/core.py:148
+msgid "remaining_uses must be a positive integer or null."
+msgstr ""
+"значение remaining_uses должно быть положительным целым числом или нулём"
+
+#: keystone/trust/core.py:154
+#, python-format
+msgid ""
+"Requested redelegation depth of %(requested_count)d is greater than "
+"allowed %(max_count)d"
+msgstr ""
+"Запрошенная глубина повторного делегирования %(requested_count)d "
+"превышает допустимую %(max_count)d"
+
+#: keystone/trust/core.py:161
+msgid "remaining_uses must not be set if redelegation is allowed"
+msgstr ""
+"значение remaining_uses не должно быть указано, если допускается повторное"
+" делегирование"
+
+#: keystone/trust/core.py:171
+msgid ""
+"Modifying \"redelegation_count\" upon redelegation is forbidden. Omitting"
+" this parameter is advised."
+msgstr ""
+"Изменение значения \"redelegation_count\" после повторного делегирования"
+" запрещено. "
+"Рекомендуется опустить этот параметр."
+

@@ -1,0 +1,1753 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: octavia VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-11 09:54+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: octavia/amphorae/backends/utils/haproxy_query.py:52
+msgid "HAProxy '{0}' query failed."
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:22
+msgid "A super class for all other exceptions and the catch."
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:46
+msgid "this amphora couldn't be found"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:51
+msgid "gathering information about this amphora failed"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:56
+msgid "gathering metrics failed"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:61
+msgid "the driver can't access the amphora"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:66
+msgid "gathering statistics failed"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:71
+msgid "contacting the amphora timed out"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:76
+msgid "this load balancer couldn't be deleted"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:81
+msgid "this load balancer couldn't be suspended"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:86
+msgid "this load balancer couldn't be enabled"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:91
+msgid "couldn't archive the logs"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:96
+msgid "Super class for provisioning amphora errors"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:101
+msgid "couldn't provision Listener"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:106
+msgid "couldn't provision LoadBalancer"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:111
+msgid "couldn't provision HealthMonitor"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:116
+msgid "couldn't provision Node"
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:121
+msgid "Amphora does not implement this feature."
+msgstr ""
+
+#: octavia/amphorae/driver_exceptions/exceptions.py:126
+#, python-format
+msgid "Could not connect to amphora, exception caught: %(exception)s"
+msgstr ""
+
+#: octavia/api/drivers/utils.py:62
+msgid "This feature is not implemented by this provider."
+msgstr ""
+
+#: octavia/api/drivers/utils.py:66
+msgid "This feature is not implemented by the provider."
+msgstr ""
+
+#: octavia/api/drivers/utils.py:247 octavia/api/drivers/utils.py:302
+msgid "Invalid SNI container on listener"
+msgstr ""
+
+#: octavia/api/v2/controllers/base.py:313
+#, python-format
+msgid ""
+"The client authentication CA certificate is invalid. It must be a valid x509 "
+"PEM format certificate. Error: %s"
+msgstr ""
+
+#: octavia/api/v2/controllers/base.py:330
+#, python-format
+msgid ""
+"The client authentication certificate revocation list is invalid. It must be "
+"a valid x509 PEM format certificate revocation list. Error: %s"
+msgstr ""
+
+#: octavia/api/v2/controllers/base.py:335
+msgid ""
+"The CRL specified is not valid for client certificate authority reference "
+"supplied."
+msgstr ""
+
+#: octavia/api/v2/controllers/base.py:345
+#, python-format
+msgid ""
+"The pool protocol '%(pool_protocol)s' is invalid while the listener protocol "
+"is '%(listener_protocol)s'."
+msgstr ""
+
+#: octavia/api/v2/controllers/health_monitor.py:148
+#: octavia/api/v2/controllers/health_monitor.py:305
+msgid "'http_version' must be specified when 'domain_name' is provided."
+msgstr ""
+
+#: octavia/api/v2/controllers/health_monitor.py:175
+#, python-format
+msgid ""
+"The associated pool protocol is %(pool_protocol)s, so only a %(types)s "
+"health monitor is supported."
+msgstr ""
+
+#: octavia/api/v2/controllers/health_monitor.py:189
+#, python-format
+msgid ""
+"The request delay value %(delay)s should be larger than %(conf_min_delay)s "
+"for %(type)s health monitor type."
+msgstr ""
+
+#: octavia/api/v2/controllers/health_monitor.py:223
+#, python-format
+msgid "The %(type)s type is only supported for pools of type %(protocols)s."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:163
+#, python-format
+msgid "CIDR %(cidr)s IP version incompatible with VIP %(vip)s IP version."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:184
+#, python-format
+msgid "%s protocol listener does not support TLS."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:196
+#: octavia/api/v2/controllers/listener.py:452
+#, python-format
+msgid ""
+"Certificate container references are only allowed on %s protocol listeners."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:205
+msgid ""
+"An SNI or default certificate container reference must be provided with a "
+"client CA container reference."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:213
+#, python-format
+msgid ""
+"An SNI or default certificate container reference must be provided for %s "
+"protocol listeners."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:222
+#: octavia/api/v2/controllers/listener.py:462
+#, python-format
+msgid ""
+"Client authentication setting %s requires a client CA container reference."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:230
+#: octavia/api/v2/controllers/listener.py:492
+msgid ""
+"A client authentication CA reference is required to specify a client "
+"authentication revocation list."
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:241
+#: octavia/api/v2/controllers/listener.py:512
+#: octavia/api/v2/controllers/pool.py:133
+#: octavia/api/v2/controllers/pool.py:417
+msgid "The following ciphers have been prohibited by an administrator: , "
+msgstr ""
+
+#: octavia/api/v2/controllers/listener.py:445
+#, python-format
+msgid "%s protocol listener does not support TLS or header insertion."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:138
+msgid "Supplied network does not contain a subnet for VIP address specified."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:146
+msgid "Supplied network does not contain a subnet."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:161
+msgid "Subnet(s) in the supplied network do not contain enough available IPs."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:201
+msgid ""
+"No VIP address found on the specified VIP port within the specified subnet."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:214
+msgid "Specified VIP address not found on the specified VIP port."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:222
+msgid ""
+"VIP port's subnet could not be determined. Please specify either a VIP "
+"subnet or address."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:235
+#, python-format
+msgid "use of %(object)s is disallowed by this deployment's configuration."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:298
+#: octavia/api/v2/controllers/load_balancer.py:327
+#: octavia/api/v2/controllers/load_balancer.py:348
+msgid "Invalid flavor_id."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:366
+msgid "Invalid availability_zone."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:387
+msgid "Invalid availability zone."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:404
+msgid ""
+"Missing project ID in request where one is required. An administrator should "
+"check the keystone settings in the Octavia configuration."
+msgstr ""
+
+#: octavia/api/v2/controllers/load_balancer.py:713
+#, python-format
+msgid "Cannot delete Load Balancer %s - it has children"
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:100
+msgid "Load Balancer"
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:112
+msgid "A CA certificate reference is required to specify a revocation list."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:179
+#, python-format
+msgid ""
+"session_persistence %s type for UDP and SCTP protocols only accepts: type, "
+"persistence_timeout, persistence_granularity."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:185
+#, python-format
+msgid "Cookie names are not supported for %s pools."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:192
+#, python-format
+msgid ""
+"Session persistence of type %(type)s is not supported for %(protocol)s "
+"protocol pools."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:224
+msgid "Must provide at least one of: loadbalancer_id, listener_id"
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:241
+msgid ""
+"persistence_timeout and persistence_granularity is only for UDP and SCTP "
+"protocol pools."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:328
+#, python-format
+msgid "The %(type)s type is only supported for pools of type %(protocol)s."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:364
+msgid ""
+"persistence_timeout and persistence_granularity is only for UDP protocol "
+"pools."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:386
+msgid ""
+"A CA reference cannot be removed when a certificate revocation list is "
+"present."
+msgstr ""
+
+#: octavia/api/v2/controllers/pool.py:391
+#: octavia/api/v2/controllers/pool.py:399
+msgid "A CA reference is required to specify a certificate revocation list."
+msgstr ""
+
+#: octavia/certificates/common/barbican.py:34
+msgid "Retrieved Barbican Container is not of the correct type (certificate)."
+msgstr ""
+
+#: octavia/cmd/status.py:47
+msgid ""
+"Persistence database is using sqlite backend. Verification required if "
+"persistence_connecton URL has been set properly."
+msgstr ""
+
+#: octavia/cmd/status.py:53
+msgid "Failed to connect to persistence backend for AmphoraV2 provider."
+msgstr ""
+
+#: octavia/cmd/status.py:67
+msgid ""
+"Persistence database and Jobboard backend for AmphoraV2 provider configured."
+msgstr ""
+
+#: octavia/cmd/status.py:75
+msgid ""
+"Failed to connect to jobboard backend for AmphoraV2 provider. Check jobboard "
+"configuration options in task_flow config section."
+msgstr ""
+
+#: octavia/cmd/status.py:89
+msgid "AmphoraV2 provider is not enabled."
+msgstr ""
+
+#: octavia/cmd/status.py:94
+msgid ""
+"The [oslo_policy] policy_file setting is configured for YAML policy file "
+"format."
+msgstr ""
+
+#: octavia/cmd/status.py:100
+msgid ""
+"The [oslo_policy] policy_file setting is configured for JSON policy file "
+"format. JSON format policy files have been deprecated by oslo policy. Please "
+"use the oslo policy tool to convert your policy file to YAML format. See "
+"this patch for more information: https://review.opendev.org/733650"
+msgstr ""
+
+#: octavia/cmd/status.py:107
+msgid ""
+"Unable to determine the [oslo_policy] policy_file setting file format. "
+"Please make sure your policy file is in YAML format and has the suffix of ."
+"yaml for the filename. Oslo policy has deprecated the JSON file format."
+msgstr ""
+
+#: octavia/cmd/status.py:115
+msgid "AmphoraV2 Check"
+msgstr ""
+
+#: octavia/cmd/status.py:116
+msgid "YAML Policy File"
+msgstr ""
+
+#: octavia/cmd/status.py:117
+msgid "Policy File JSON to YAML Migration"
+msgstr ""
+
+#: octavia/common/config.py:51
+msgid "The hostname Octavia is running on"
+msgstr ""
+
+#: octavia/common/config.py:53
+msgid "Name of the controller plugin to use"
+msgstr ""
+
+#: octavia/common/config.py:58 octavia/common/config.py:388
+msgid "The host IP to bind to"
+msgstr ""
+
+#: octavia/common/config.py:60 octavia/common/config.py:390
+msgid "The port to bind to"
+msgstr ""
+
+#: octavia/common/config.py:65
+msgid "The auth strategy for API requests."
+msgstr ""
+
+#: octavia/common/config.py:67
+msgid "Allow the usage of pagination"
+msgstr ""
+
+#: octavia/common/config.py:69
+msgid "Allow the usage of sorting"
+msgstr ""
+
+#: octavia/common/config.py:71
+msgid "Allow the usage of filtering"
+msgstr ""
+
+#: octavia/common/config.py:73
+msgid "Allow the usage of field selection"
+msgstr ""
+
+#: octavia/common/config.py:76
+msgid ""
+"The maximum number of items returned in a single response. The string "
+"'infinite' or a negative integer value means 'no limit'"
+msgstr ""
+
+#: octavia/common/config.py:80
+msgid ""
+"Base URI for the API for use in pagination links. This will be autodetected "
+"from the request if not overridden here."
+msgstr ""
+
+#: octavia/common/config.py:84
+msgid "Allow users to create TLS Terminated listeners?"
+msgstr ""
+
+#: octavia/common/config.py:86
+msgid "Allow users to create PING type Health Monitors?"
+msgstr ""
+
+#: octavia/common/config.py:88
+msgid ""
+"A comma separated list of dictionaries of the enabled provider driver names "
+"and descriptions. Must match the driver name in the octavia.api.drivers "
+"entrypoint. Example: amphora:The Octavia Amphora driver.,octavia:Deprecated "
+"alias of the Octavia Amphora driver."
+msgstr ""
+
+#: octavia/common/config.py:100
+msgid "Default provider driver."
+msgstr ""
+
+#: octavia/common/config.py:103
+msgid ""
+"The minimum health monitor delay interval for the UDP-CONNECT Health Monitor "
+"type. A negative integer value means 'no limit'."
+msgstr ""
+
+#: octavia/common/config.py:107
+msgid ""
+"When True, the oslo middleware healthcheck endpoint is enabled in the "
+"Octavia API."
+msgstr ""
+
+#: octavia/common/config.py:110
+msgid "The interval healthcheck plugins should cache results, in seconds."
+msgstr ""
+
+#: octavia/common/config.py:114
+msgid ""
+"Default OpenSSL cipher string (colon-separated) for new TLS-enabled "
+"listeners."
+msgstr ""
+
+#: octavia/common/config.py:118
+msgid ""
+"Default OpenSSL cipher string (colon-separated) for new TLS-enabled pools."
+msgstr ""
+
+#: octavia/common/config.py:122
+msgid ""
+"Colon separated list of OpenSSL ciphers. Usage of these ciphers will be "
+"blocked."
+msgstr ""
+
+#: octavia/common/config.py:126
+msgid "List of TLS versions to use for new TLS-enabled listeners."
+msgstr ""
+
+#: octavia/common/config.py:130
+msgid "List of TLS versions to use for new TLS-enabled pools."
+msgstr ""
+
+#: octavia/common/config.py:135
+msgid "Minimum allowed TLS version for listeners and pools."
+msgstr ""
+
+#: octavia/common/config.py:140
+msgid "List of ALPN protocols to use for new TLS-enabled listeners."
+msgstr ""
+
+#: octavia/common/config.py:146
+msgid "List of ALPN protocols to use for new TLS-enabled pools."
+msgstr ""
+
+#: octavia/common/config.py:153
+msgid "The ca which signed the client certificates"
+msgstr ""
+
+#: octavia/common/config.py:155
+msgid "The server certificate for the agent server to use"
+msgstr ""
+
+#: octavia/common/config.py:158
+msgid "The directory where new network interfaces are located"
+msgstr ""
+
+#: octavia/common/config.py:161
+msgid ""
+"The file where the network interfaces are located. Specifying this will "
+"override any value set for agent_server_network_dir."
+msgstr ""
+
+#: octavia/common/config.py:165
+msgid ""
+"The time in seconds to allow a request from the controller to run before "
+"terminating the socket."
+msgstr ""
+
+#: octavia/common/config.py:168
+msgid "Minimum TLS protocol for communication with the amphora agent."
+msgstr ""
+
+#: octavia/common/config.py:174
+msgid ""
+"List of log server ip and port pairs for Administrative logs. Additional "
+"hosts are backup to the primary server. If none is specified remote logging "
+"is disabled. Example 127.0.0.1:10514, 192.168.0.1:10514"
+msgstr ""
+
+#: octavia/common/config.py:180
+msgid ""
+"List of log server ip and port pairs for tenant traffic logs. Additional "
+"hosts are backup to the primary server. If none is specified remote logging "
+"is disabled. Example 127.0.0.1:10514, 192.168.0.1:10514"
+msgstr ""
+
+#: octavia/common/config.py:186
+msgid "LOG_LOCAL facility number to use for user traffic logs."
+msgstr ""
+
+#: octavia/common/config.py:189
+msgid "LOG_LOCAL facility number to use for amphora processes logs."
+msgstr ""
+
+#: octavia/common/config.py:193
+msgid "The log forwarding transport protocol. One of UDP or TCP."
+msgstr ""
+
+#: octavia/common/config.py:196
+msgid "The maximum attempts to retry connecting to the logging host."
+msgstr ""
+
+#: octavia/common/config.py:199
+msgid ""
+"The time, in seconds, to wait between retries connecting to the logging host."
+""
+msgstr ""
+
+#: octavia/common/config.py:202
+msgid "The queue size (messages) to buffer log messages."
+msgstr ""
+
+#: octavia/common/config.py:204
+msgid "Custom logging configuration template."
+msgstr ""
+
+#: octavia/common/config.py:206
+msgid ""
+"When True, the amphora will forward all of the system logs (except tenant "
+"traffic logs) to the admin log target(s). When False, only amphora specific "
+"admin logs will be forwarded."
+msgstr ""
+
+#: octavia/common/config.py:211
+msgid ""
+"When True, no logs will be written to the amphora filesystem. When False, "
+"log files will be written to the local filesystem."
+msgstr ""
+
+#: octavia/common/config.py:216
+msgid "The amphora ID."
+msgstr ""
+
+#: octavia/common/config.py:221
+msgid "amphora-agent will not support any other backend than keepalived_lvs."
+msgstr ""
+
+#: octavia/common/config.py:228
+msgid "The maximum attempts to retry an action with the compute service."
+msgstr ""
+
+#: octavia/common/config.py:231
+msgid "Seconds to wait before retrying an action with the compute service."
+msgstr ""
+
+#: octavia/common/config.py:234 octavia/common/config.py:248
+msgid "The seconds to backoff retry attempts."
+msgstr ""
+
+#: octavia/common/config.py:236 octavia/common/config.py:250
+msgid "The maximum interval in seconds between retry attempts."
+msgstr ""
+
+#: octavia/common/config.py:242
+msgid "The maximum attempts to retry an action with the networking service."
+msgstr ""
+
+#: octavia/common/config.py:245
+msgid "Seconds to wait before retrying an action with the networking service."
+msgstr ""
+
+#: octavia/common/config.py:253
+msgid "Seconds to wait for a port to detach from an amphora."
+msgstr ""
+
+#: octavia/common/config.py:256
+msgid "Can users supply a network_id for their VIP?"
+msgstr ""
+
+#: octavia/common/config.py:258
+msgid "Can users supply a subnet_id for their VIP?"
+msgstr ""
+
+#: octavia/common/config.py:260
+msgid "Can users supply a port_id for their VIP?"
+msgstr ""
+
+#: octavia/common/config.py:262
+msgid ""
+"List of network_ids that are valid for VIP creation. If this field is empty, "
+"no validation is performed."
+msgstr ""
+
+#: octavia/common/config.py:268
+msgid ""
+"List of IP addresses reserved from being used for member addresses. IPv6 "
+"addresses should be in expanded, uppercase form."
+msgstr ""
+
+#: octavia/common/config.py:272
+msgid ""
+"When True, users can use network resources they cannot normally see as VIP "
+"or member subnets. Making this True may allow users to access resources on "
+"subnets they do not normally have access to via neutron RBAC policies."
+msgstr ""
+
+#: octavia/common/config.py:281
+msgid "IP address the controller will listen on for heart beats"
+msgstr ""
+
+#: octavia/common/config.py:284
+msgid "Port number the controller will listen on for heart beats"
+msgstr ""
+
+#: octavia/common/config.py:288
+msgid "Number of threads performing amphora failovers."
+msgstr ""
+
+#: octavia/common/config.py:291
+msgid "Number of processes for amphora health update."
+msgstr ""
+
+#: octavia/common/config.py:294
+msgid "Number of processes for amphora stats update."
+msgstr ""
+
+#: octavia/common/config.py:297
+msgid "key used to validate amphora sending the message"
+msgstr ""
+
+#: octavia/common/config.py:301
+msgid "Interval, in seconds, to wait before failing over an amphora."
+msgstr ""
+
+#: octavia/common/config.py:305
+msgid "Sleep time between health checks in seconds."
+msgstr ""
+
+#: octavia/common/config.py:307
+msgid " sets the value of the heartbeat recv buffer"
+msgstr ""
+
+#: octavia/common/config.py:311
+msgid ""
+"List of controller ip and port pairs for the heartbeat receivers. Example "
+"127.0.0.1:5555, 192.168.0.1:5555"
+msgstr ""
+
+#: octavia/common/config.py:319
+msgid "Sleep time between sending heartbeats."
+msgstr ""
+
+#: octavia/common/config.py:323
+msgid "Driver for updating amphora health system."
+msgstr ""
+
+#: octavia/common/config.py:325
+msgid "This driver interface was removed."
+msgstr ""
+
+#: octavia/common/config.py:336
+msgid "Base directory for amphora files."
+msgstr ""
+
+#: octavia/common/config.py:339
+msgid "Base directory for cert storage."
+msgstr ""
+
+#: octavia/common/config.py:340
+msgid "Custom haproxy template."
+msgstr ""
+
+#: octavia/common/config.py:342
+msgid "Set this to False to disable connection logging."
+msgstr ""
+
+#: octavia/common/config.py:345
+msgid "Retry threshold for connecting to amphorae."
+msgstr ""
+
+#: octavia/common/config.py:348
+msgid "Retry timeout between connection attempts in seconds."
+msgstr ""
+
+#: octavia/common/config.py:352
+msgid "Retry threshold for connecting to active amphorae."
+msgstr ""
+
+#: octavia/common/config.py:355
+msgid ""
+"Retry timeout between connection attempts in seconds for active amphora."
+msgstr ""
+
+#: octavia/common/config.py:359
+msgid "Retry threshold for connecting to an amphora in failover."
+msgstr ""
+
+#: octavia/common/config.py:363
+msgid ""
+"Retry timeout between connection attempts in seconds for amphora in failover."
+""
+msgstr ""
+
+#: octavia/common/config.py:367
+msgid ""
+"Number of amphorae that could be built per controller worker, simultaneously."
+""
+msgstr ""
+
+#: octavia/common/config.py:371
+msgid "Retry threshold for waiting for a build slot for an amphorae."
+msgstr ""
+
+#: octavia/common/config.py:375
+msgid "Retry timeout between build attempts in seconds."
+msgstr ""
+
+#: octavia/common/config.py:378
+msgid ""
+"Size of the HAProxy stick table. Accepts k, m, g suffixes.  Example: 10k"
+msgstr ""
+
+#: octavia/common/config.py:384
+msgid "Log format string for user flow logging."
+msgstr ""
+
+#: octavia/common/config.py:393
+msgid ""
+"Network interface through which to reach amphora, only required if using "
+"IPv6 link local addresses."
+msgstr ""
+
+#: octavia/common/config.py:396
+msgid "The full path to haproxy"
+msgstr ""
+
+#: octavia/common/config.py:398
+msgid "The respawn count for haproxy's upstart script"
+msgstr ""
+
+#: octavia/common/config.py:400
+msgid "The respawn interval for haproxy's upstart script"
+msgstr ""
+
+#: octavia/common/config.py:402
+msgid "The time in seconds to wait for a REST API to connect."
+msgstr ""
+
+#: octavia/common/config.py:405
+msgid "The time in seconds to wait for a REST API response."
+msgstr ""
+
+#: octavia/common/config.py:409
+msgid "Frontend client inactivity timeout."
+msgstr ""
+
+#: octavia/common/config.py:412
+msgid "Backend member connection timeout."
+msgstr ""
+
+#: octavia/common/config.py:415
+msgid "Backend member inactivity timeout."
+msgstr ""
+
+#: octavia/common/config.py:418
+msgid "Time to wait for TCP packets for content inspection."
+msgstr ""
+
+#: octavia/common/config.py:421
+msgid "The client certificate to talk to the agent"
+msgstr ""
+
+#: octavia/common/config.py:423
+msgid "The ca which signed the server certificates"
+msgstr ""
+
+#: octavia/common/config.py:428
+msgid "If False, use sysvinit."
+msgstr ""
+
+#: octavia/common/config.py:430
+msgid "The number of times the database action will be attempted."
+msgstr ""
+
+#: octavia/common/config.py:433
+msgid "The initial delay before a retry attempt."
+msgstr ""
+
+#: octavia/common/config.py:435
+msgid "The time to backoff retry attempts."
+msgstr ""
+
+#: octavia/common/config.py:437
+msgid "The maximum amount of time to wait between retry attempts."
+msgstr ""
+
+#: octavia/common/config.py:441
+msgid ""
+"Default connection_limit for listeners, used when setting \"-1\" or when "
+"unsetting connection_limit with the listener API."
+msgstr ""
+
+#: octavia/common/config.py:452
+msgid "Retry attempts to wait for Amphora to become active"
+msgstr ""
+
+#: octavia/common/config.py:455
+msgid "Seconds to wait between checks on whether an Amphora has become active"
+msgstr ""
+
+#: octavia/common/config.py:459
+msgid "Nova instance flavor id for the Amphora"
+msgstr ""
+
+#: octavia/common/config.py:462
+msgid ""
+"Glance image tag for the Amphora image to boot. Use this option to be able "
+"to update the image without reconfiguring Octavia."
+msgstr ""
+
+#: octavia/common/config.py:467
+msgid ""
+"Restrict glance image selection to a specific owner ID.  This is a "
+"recommended security setting."
+msgstr ""
+
+#: octavia/common/config.py:471
+msgid ""
+"Optional SSH keypair name, in nova, that will be used for the "
+"authorized_keys inside the amphora."
+msgstr ""
+
+#: octavia/common/config.py:475
+msgid ""
+"List of networks to attach to the Amphorae. All networks defined in the list "
+"will be attached to each amphora."
+msgstr ""
+
+#: octavia/common/config.py:480
+msgid "List of security groups to attach to the Amphora."
+msgstr ""
+
+#: octavia/common/config.py:483
+msgid "Client CA for the amphora agent to use"
+msgstr ""
+
+#: octavia/common/config.py:486
+msgid "Name of the amphora driver to use"
+msgstr ""
+
+#: octavia/common/config.py:489
+msgid "Name of the compute driver to use"
+msgstr ""
+
+#: octavia/common/config.py:492
+msgid "Name of the network driver to use"
+msgstr ""
+
+#: octavia/common/config.py:496
+msgid "Name of the volume driver to use"
+msgstr ""
+
+#: octavia/common/config.py:500
+msgid "Name of the image driver to use"
+msgstr ""
+
+#: octavia/common/config.py:503
+msgid "Name of the distributor driver to use"
+msgstr ""
+
+#: octavia/common/config.py:508
+msgid "List of drivers for updating amphora statistics."
+msgstr ""
+
+#: octavia/common/config.py:513
+msgid ""
+"Load balancer topology configuration. SINGLE - One amphora per load balancer."
+" ACTIVE_STANDBY - Two amphora per load balancer."
+msgstr ""
+
+#: octavia/common/config.py:517
+msgid ""
+"If True, build cloud-init user-data that is passed to the config drive on "
+"Amphora boot instead of personality files. If False, utilize personality "
+"files."
+msgstr ""
+
+#: octavia/common/config.py:522
+msgid "Number of times an amphora delete should be retried."
+msgstr ""
+
+#: octavia/common/config.py:524
+msgid "Time, in seconds, between amphora delete retries."
+msgstr ""
+
+#: octavia/common/config.py:531
+msgid ""
+"TaskFlow engine to use. serial - Runs all tasks on a single thread. parallel "
+"- Schedules tasks onto different threads to allow for running non-dependent "
+"tasks simultaneously"
+msgstr ""
+
+#: octavia/common/config.py:537
+msgid "The maximum number of workers"
+msgstr ""
+
+#: octavia/common/config.py:539
+msgid ""
+"If True, disables the controller worker taskflow flows from reverting.  This "
+"will leave resources in an inconsistent state and should only be used for "
+"debugging purposes."
+msgstr ""
+
+#: octavia/common/config.py:548
+msgid "If True, enables TaskFlow jobboard."
+msgstr ""
+
+#: octavia/common/config.py:601
+msgid "The name of the certificate service in the keystone catalog"
+msgstr ""
+
+#: octavia/common/config.py:603 octavia/common/config.py:672
+#: octavia/common/config.py:704 octavia/common/config.py:735
+#: octavia/common/config.py:753
+msgid "A new endpoint to override the endpoint in the keystone catalog."
+msgstr ""
+
+#: octavia/common/config.py:612
+msgid ""
+"CA certificates file path for the key manager service (such as Barbican)."
+msgstr ""
+
+#: octavia/common/config.py:616 octavia/common/config.py:746
+#: octavia/common/config.py:764
+msgid "Disable certificate validation on SSL connections "
+msgstr ""
+
+#: octavia/common/config.py:622
+msgid "DB cleanup interval in seconds"
+msgstr ""
+
+#: octavia/common/config.py:625
+msgid "Amphora expiry age in seconds"
+msgstr ""
+
+#: octavia/common/config.py:628
+msgid "Load balancer expiry age in seconds"
+msgstr ""
+
+#: octavia/common/config.py:631
+msgid "Certificate check interval in seconds"
+msgstr ""
+
+#: octavia/common/config.py:635
+msgid "Seconds until certificate expiration"
+msgstr ""
+
+#: octavia/common/config.py:638
+msgid "Number of threads performing amphora certificate rotation"
+msgstr ""
+
+#: octavia/common/config.py:645
+msgid "Amphora role and priority advertisement interval in seconds."
+msgstr ""
+
+#: octavia/common/config.py:649
+msgid "VRRP health check script run interval in seconds."
+msgstr ""
+
+#: octavia/common/config.py:652
+msgid "Number of successive failures before transition to a fail state."
+msgstr ""
+
+#: octavia/common/config.py:656
+msgid "Number of consecutive successes before transition to a success state."
+msgstr ""
+
+#: octavia/common/config.py:660
+msgid "Time in seconds between gratuitous ARP announcements from the MASTER."
+msgstr ""
+
+#: octavia/common/config.py:664
+msgid ""
+"Number of gratuitous ARP announcements to make on each refresh interval."
+msgstr ""
+
+#: octavia/common/config.py:671
+msgid "The name of the nova service in the keystone catalog"
+msgstr ""
+
+#: octavia/common/config.py:675 octavia/common/config.py:707
+#: octavia/common/config.py:738 octavia/common/config.py:756
+msgid ""
+"Region in Identity service catalog to use for communication with the "
+"OpenStack services."
+msgstr ""
+
+#: octavia/common/config.py:678 octavia/common/config.py:710
+#: octavia/common/config.py:741 octavia/common/config.py:759
+msgid "Endpoint interface in identity service to use"
+msgstr ""
+
+#: octavia/common/config.py:680 octavia/common/config.py:712
+#: octavia/common/config.py:743 octavia/common/config.py:761
+msgid "CA certificates file path"
+msgstr ""
+
+#: octavia/common/config.py:683 octavia/common/config.py:717
+msgid "Disable certificate validation on SSL connections"
+msgstr ""
+
+#: octavia/common/config.py:685
+msgid ""
+"Flag to indicate if nova anti-affinity feature is turned on. This option is "
+"only used when creating amphorae in ACTIVE_STANDBY topology."
+msgstr ""
+
+#: octavia/common/config.py:690
+msgid "Sets the anti-affinity policy for nova"
+msgstr ""
+
+#: octavia/common/config.py:692
+msgid ""
+"If non-zero, generate a random name of the length provided for each amphora, "
+"in the format \"a[A-Z0-9]*\". Otherwise, the default name format will be "
+"used: \"amphora-{UUID}\"."
+msgstr ""
+
+#: octavia/common/config.py:697
+msgid "Availability zone to use for creating Amphorae"
+msgstr ""
+
+#: octavia/common/config.py:702
+msgid "The name of the cinder service in the keystone catalog"
+msgstr ""
+
+#: octavia/common/config.py:714
+msgid "Availability zone to use for creating Volume"
+msgstr ""
+
+#: octavia/common/config.py:719
+msgid "Size of volume, in GB, for Amphora instance"
+msgstr ""
+
+#: octavia/common/config.py:721
+msgid "Type of volume for Amphorae volume root disk"
+msgstr ""
+
+#: octavia/common/config.py:723
+msgid "Interval time to wait volume is created in available state"
+msgstr ""
+
+#: octavia/common/config.py:726
+msgid "Timeout to wait for volume creation success"
+msgstr ""
+
+#: octavia/common/config.py:728
+msgid "Maximum number of retries to create volume"
+msgstr ""
+
+#: octavia/common/config.py:733
+msgid "The name of the neutron service in the keystone catalog"
+msgstr ""
+
+#: octavia/common/config.py:751
+msgid "The name of the glance service in the keystone catalog"
+msgstr ""
+
+#: octavia/common/config.py:770
+msgid "Default per project load balancer quota."
+msgstr ""
+
+#: octavia/common/config.py:773
+msgid "Default per project listener quota."
+msgstr ""
+
+#: octavia/common/config.py:776
+msgid "Default per project member quota."
+msgstr ""
+
+#: octavia/common/config.py:779
+msgid "Default per project pool quota."
+msgstr ""
+
+#: octavia/common/config.py:782
+msgid "Default per project health monitor quota."
+msgstr ""
+
+#: octavia/common/config.py:785
+msgid "Default per project l7policy quota."
+msgstr ""
+
+#: octavia/common/config.py:788
+msgid "Default per project l7rule quota."
+msgstr ""
+
+#: octavia/common/config.py:793
+msgid "Enable auditing of API requests"
+msgstr ""
+
+#: octavia/common/config.py:796
+msgid ""
+"Path to audit map file for octavia-api service. Used only when API audit is "
+"enabled."
+msgstr ""
+
+#: octavia/common/config.py:799
+msgid ""
+"Comma separated list of REST API HTTP methods to be ignored during audit. "
+"For example: auditing will not be done on any GET or POST requests if this "
+"is set to \"GET,POST\". It is used only when API audit is enabled."
+msgstr ""
+
+#: octavia/common/config.py:809
+msgid "Path to the driver status unix domain socket file."
+msgstr ""
+
+#: octavia/common/config.py:812
+msgid "Path to the driver statistics unix domain socket file."
+msgstr ""
+
+#: octavia/common/config.py:816
+msgid "Path to the driver get unix domain socket file."
+msgstr ""
+
+#: octavia/common/config.py:819
+msgid "Time, in seconds, to wait for a status update request."
+msgstr ""
+
+#: octavia/common/config.py:823
+msgid ""
+"Maximum number of concurrent processes to use servicing status updates."
+msgstr ""
+
+#: octavia/common/config.py:827
+msgid "Time, in seconds, to wait for a statistics update request."
+msgstr ""
+
+#: octavia/common/config.py:831
+msgid ""
+"Maximum number of concurrent processes to use servicing statistics updates."
+msgstr ""
+
+#: octavia/common/config.py:835
+msgid "Time, in seconds, to wait for a get request."
+msgstr ""
+
+#: octavia/common/config.py:838
+msgid "Maximum number of concurrent processes to use servicing get requests."
+msgstr ""
+
+#: octavia/common/config.py:842
+msgid ""
+"Percentage of max_processes (both status and stats) in use to start logging "
+"warning messages about an overloaded driver-agent."
+msgstr ""
+
+#: octavia/common/config.py:847
+msgid ""
+"The time, in seconds, to wait for provider agents to shutdown after the exit "
+"event has been set."
+msgstr ""
+
+#: octavia/common/config.py:850
+msgid ""
+"List of enabled provider agents. The driver-agent will launch these agents "
+"at startup."
+msgstr ""
+
+#: octavia/common/exceptions.py:33
+msgid "An unknown exception occurred."
+msgstr ""
+
+#: octavia/common/exceptions.py:73 octavia/common/exceptions.py:323
+#, python-format
+msgid "%(resource)s %(id)s not found."
+msgstr ""
+
+#: octavia/common/exceptions.py:78
+msgid "Policy does not allow this request to be performed."
+msgstr ""
+
+#: octavia/common/exceptions.py:83
+#, python-format
+msgid "%(value)s is not a valid option for %(option)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:93
+#, python-format
+msgid "The selected %(option)s is not allowed in this deployment: %(value)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:99
+#, python-format
+msgid "Error parsing L7Rule: %(error)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:104
+#, python-format
+msgid "Missing details for %(type)s object: %(name)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:109
+msgid "HMAC hashes didn't match"
+msgstr ""
+
+#: octavia/common/exceptions.py:113
+msgid "Missing arguments."
+msgstr ""
+
+#: octavia/common/exceptions.py:117
+msgid "Unable to allocate network resource from config"
+msgstr ""
+
+#: octavia/common/exceptions.py:121
+msgid "Passphrase needed to decrypt key but client did not provide one."
+msgstr ""
+
+#: octavia/common/exceptions.py:126
+msgid "Could not read X509 from PEM"
+msgstr ""
+
+#: octavia/common/exceptions.py:130
+#, python-format
+msgid ""
+"The PKCS12 bundle is unreadable. Please check the PKCS12 bundle validity. In "
+"addition, make sure it does not require a pass phrase. Error: %(error)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:137
+msgid "Key and x509 certificate do not match"
+msgstr ""
+
+#: octavia/common/exceptions.py:141
+#, python-format
+msgid "Could not retrieve certificate: %(ref)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:146
+#, python-format
+msgid "Could not store certificate: %(msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:150
+#, python-format
+msgid "Could not sign the certificate request: %(msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:154
+#, python-format
+msgid ""
+"Another Listener on this Load Balancer is already using protocol "
+"%(protocol)s and protocol_port %(port)d"
+msgstr ""
+
+#: octavia/common/exceptions.py:161
+#, python-format
+msgid ""
+"Another member on this pool is already using ip %(ip_address)s on "
+"protocol_port %(port)d"
+msgstr ""
+
+#: octavia/common/exceptions.py:167
+msgid "This pool already has a health monitor"
+msgstr ""
+
+#: octavia/common/exceptions.py:172
+msgid "This listener already has a default pool"
+msgstr ""
+
+#: octavia/common/exceptions.py:177
+#, python-format
+msgid "Pool %(id)s is in use by L7 policy %(l7policy_id)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:182
+#, python-format
+msgid "%(resource)s %(id)s is immutable and cannot be updated."
+msgstr ""
+
+#: octavia/common/exceptions.py:187
+#, python-format
+msgid "Invalid state %(state)s of loadbalancer resource %(id)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:192
+#, python-format
+msgid "Too many rules on L7 policy %(id)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:197
+#, python-format
+msgid "Failed to build compute instance due to: %(fault)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:201
+msgid "Failed to get an amphora build slot."
+msgstr ""
+
+#: octavia/common/exceptions.py:205
+#, python-format
+msgid ""
+"Failed to delete compute instance. The compute service reports: "
+"%(compute_msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:210
+msgid "Failed to retrieve compute instance."
+msgstr ""
+
+#: octavia/common/exceptions.py:214
+msgid "Failed to retrieve compute instance status."
+msgstr ""
+
+#: octavia/common/exceptions.py:218
+msgid "Failed to retrieve compute virtual interfaces."
+msgstr ""
+
+#: octavia/common/exceptions.py:222
+msgid "Already an entity with that specified id."
+msgstr ""
+
+#: octavia/common/exceptions.py:227
+#, python-format
+msgid "A %(field)s of %(name)s already exists."
+msgstr ""
+
+#: octavia/common/exceptions.py:232
+msgid "There are not any READY amphora available."
+msgstr ""
+
+#: octavia/common/exceptions.py:236
+#, python-format
+msgid "Failed to retrieve image with %(tag)s tag."
+msgstr ""
+
+#: octavia/common/exceptions.py:244
+#, python-format
+msgid "Waiting for compute id %(id)s to go active timeout."
+msgstr ""
+
+#: octavia/common/exceptions.py:248
+#, python-format
+msgid "Compute driver reports port %(port)s is already in use."
+msgstr ""
+
+#: octavia/common/exceptions.py:252
+#, python-format
+msgid "Unknown exception from the compute driver: %(exc)s."
+msgstr ""
+
+#: octavia/common/exceptions.py:256
+#, python-format
+msgid "Invalid topology specified: %(topology)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:261
+#, python-format
+msgid "Invalid L7 Policy action specified: %(action)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:266
+#, python-format
+msgid "Invalid L7 Policy arguments: %(msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:271
+#, python-format
+msgid "Not a valid URL: %(url)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:275
+#, python-format
+msgid "Not a valid URLPath: %(url_path)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:280
+#, python-format
+msgid "Invalid characters in %(what)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:284
+#, python-format
+msgid "Unable to parse regular expression: %(e)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:288
+#, python-format
+msgid "Invalid L7 Rule: %(msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:292
+msgid "Failed to create server group object."
+msgstr ""
+
+#: octavia/common/exceptions.py:296
+msgid "Failed to delete server group object."
+msgstr ""
+
+#: octavia/common/exceptions.py:300
+#, python-format
+msgid "Invalid amphora operating system: %(os_name)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:304
+#, python-format
+msgid "Quota has been met for resources: %(resource)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:309
+msgid "Project busy.  Unable to lock the project.  Please try again."
+msgstr ""
+
+#: octavia/common/exceptions.py:314 octavia/common/exceptions.py:318
+msgid "Missing project ID in request where one is required."
+msgstr ""
+
+#: octavia/common/exceptions.py:328
+#, python-format
+msgid "Validation failure: %(detail)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:333
+#, python-format
+msgid "Validation failure: VIP must contain one of: %(objects)s."
+msgstr ""
+
+#: octavia/common/exceptions.py:338
+#, python-format
+msgid "Supplied sort key '%(key)s' is not valid."
+msgstr ""
+
+#: octavia/common/exceptions.py:343
+#, python-format
+msgid "Supplied sort direction '%(key)s' is not valid."
+msgstr ""
+
+#: octavia/common/exceptions.py:348
+#, python-format
+msgid "Supplied pagination marker '%(key)s' is not valid."
+msgstr ""
+
+#: octavia/common/exceptions.py:353
+#, python-format
+msgid "Supplied pagination limit '%(key)s' is not valid."
+msgstr ""
+
+#: octavia/common/exceptions.py:358
+#, python-format
+msgid "VIP security group is missing for load balancer: %(lb_id)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:362
+#, python-format
+msgid "Provider '%(prov)s' is not enabled."
+msgstr ""
+
+#: octavia/common/exceptions.py:367
+#, python-format
+msgid "Provider '%(prov)s' was not found."
+msgstr ""
+
+#: octavia/common/exceptions.py:372
+#, python-format
+msgid "Provider '%(prov)s' reports error: %(user_msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:377
+#, python-format
+msgid "Provider '%(prov)s' does not support a requested action: %(user_msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:383
+#, python-format
+msgid "Provider '%(prov)s' does not support a requested option: %(user_msg)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:389
+#, python-format
+msgid "Error with file %(file_name)s. Reason: %(reason)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:393
+#, python-format
+msgid "%(object)s %(id)s is in use and cannot be modified."
+msgstr ""
+
+#: octavia/common/exceptions.py:398
+#, python-format
+msgid "Flavor '%(flav)s' is not compatible with provider '%(prov)s'"
+msgstr ""
+
+#: octavia/common/exceptions.py:403
+msgid "Failed to delete volume instance."
+msgstr ""
+
+#: octavia/common/exceptions.py:407
+msgid "Failed to retrieve volume instance."
+msgstr ""
+
+#: octavia/common/exceptions.py:411
+#, python-format
+msgid "The networking service had a failure: %(net_error)s"
+msgstr ""
+
+#: octavia/common/exceptions.py:415
+#, python-format
+msgid "The IP Address %(ip_addr)s is invalid."
+msgstr ""
+
+#: octavia/common/validate.py:110
+msgid "L7 rule type requires a value"
+msgstr ""
+
+#: octavia/common/validate.py:328
+#, python-format
+msgid "Port %(port_id)s is already used by device %(device_id)s "
+msgstr ""
+
+#: octavia/common/validate.py:358
+msgid "VIP QoS policy is not allowed in this deployment."
+msgstr ""
+
+#: octavia/common/validate.py:387
+msgid ""
+"Supplied VIP network_id is not allowed by the configuration of this "
+"deployment."
+msgstr ""
+
+#: octavia/common/validate.py:402
+msgid ""
+"Field \"cookie_name\" can only be specified with session persistence of type "
+"\"APP_COOKIE\"."
+msgstr ""
+
+#: octavia/common/validate.py:410
+msgid "Supplied \"cookie_name\" is invalid."
+msgstr ""
+
+#: octavia/common/validate.py:414
+msgid ""
+"Field \"cookie_name\" must be specified when using the \"APP_COOKIE\" "
+"session persistence type."
+msgstr ""
+
+#: octavia/common/validate.py:420
+msgid "Invalid session_persistence provided."
+msgstr ""
+
+#: octavia/common/validate.py:448
+msgid ""
+"Default listener ciphers conflict with prohibit list. Conflicting ciphers: , "
+""
+msgstr ""
+
+#: octavia/common/validate.py:455
+msgid ""
+"Default pool ciphers conflict with prohibit list. Conflicting ciphers: , "
+msgstr ""
+
+#: octavia/common/validate.py:461
+msgid ""
+"Empty TLS version list. Either specify at least one TLS version or remove "
+"this parameter to use the default."
+msgstr ""
+
+#: octavia/common/validate.py:472
+msgid "Invalid TLS versions: , "
+msgstr ""
+
+#: octavia/common/validate.py:482
+msgid "Requested TLS versions are less than the minimum: "
+msgstr ""
+
+#: octavia/common/validate.py:501
+msgid "Default listener TLS versions are less than the minimum: "
+msgstr ""
+
+#: octavia/common/validate.py:503
+msgid "Default pool TLS versions are less than the minimum: "
+msgstr ""
+
+#: octavia/common/validate.py:515
+msgid ""
+"Empty ALPN protocol list. Either specify at least one ALPN protocol or "
+"remove this parameter to use the default."
+msgstr ""
+
+#: octavia/common/validate.py:527
+msgid "Invalid ALPN protocol: , "
+msgstr ""
+
+#: octavia/db/healthcheck.py:34
+msgid "Database health check failed due to: {err}."
+msgstr ""
+
+#: octavia/db/models.py:173
+#, python-format
+msgid ""
+"The %(key)s field can not have negative value. Current value is %(value)d."
+msgstr ""
+
+#: octavia/db/migration/cli.py:56
+msgid "You must provide a revision or relative delta"
+msgstr ""
+
+#: octavia/db/migration/cli.py:60
+msgid "Negative relative revision (downgrade) not supported"
+msgstr ""
+
+#: octavia/db/migration/cli.py:67
+msgid "Use either --delta or relative revision, not both"
+msgstr ""
+
+#: octavia/db/migration/cli.py:70
+msgid "Negative delta (downgrade) not supported"
+msgstr ""
+
+#: octavia/db/migration/cli.py:77
+msgid "Downgrade no longer supported"
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:100
+msgid "Error creating the base (VRRP) port for the VIP with port details: {}"
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:108
+msgid ""
+"Error plugging amphora (compute_id: {compute_id}) into vip network "
+"{network_id}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:132
+msgid "Error adding allowed address pair {ip} to port {port_id}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:279
+msgid "All attempts to remove security group {0} have failed."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:369
+msgid "Error deleting VIP port_id {port_id} from neutron"
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:487
+msgid "Neutron is failing to service requests due to: {}. Aborting."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:521
+msgid "Error creating neutron port on network {network_id} due to {e}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:553
+msgid ""
+"Error unplugging VIP. Could not clear allowed address pairs from port "
+"{port_id}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:597
+msgid ""
+"Error plugging amphora (compute_id: {compute_id}) into network {network_id}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:680
+msgid "Error plugging amphora (compute_id: {compute_id}) into port {port_id}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:852
+msgid "Error creating a port on network {network_id} due to {error}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:872
+msgid "Security group {name} not found."
+msgstr ""
+
+#: octavia/network/drivers/neutron/allowed_address_pairs.py:879
+msgid "Error when getting security group {name} due to {error}"
+msgstr ""
+
+#: octavia/network/drivers/neutron/base.py:197
+msgid "{resource_type} not found ({resource_type} id: {resource_id})."
+msgstr ""
+
+#: octavia/network/drivers/neutron/base.py:204
+msgid "Error retrieving {resource_type} ({resource_type} id: {resource_id}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/base.py:231
+msgid "{resource_type} not found ({resource_type} Filters: {filters}."
+msgstr ""
+
+#: octavia/network/drivers/neutron/base.py:238
+msgid "Error retrieving {resource_type} ({resource_type} Filters: {filters}."
+msgstr ""
+

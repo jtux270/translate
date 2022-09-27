@@ -1,0 +1,3818 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: openstack-ansible 23.1.0.dev16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-18 10:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../source/admin/backup-restore.rst:5
+msgid "Back up and restore your cloud"
+msgstr ""
+
+#: ../../source/admin/backup-restore.rst:7
+msgid ""
+"For disaster recovery purposes, it is a good practice to perform regular "
+"backups of the database, configuration files, network information, and "
+"OpenStack service details in your environment. For an OpenStack cloud "
+"deployed using OpenStack-Ansible, back up the ``/etc/openstack_deploy/`` "
+"directory."
+msgstr ""
+
+#: ../../source/admin/backup-restore.rst:14
+msgid "Back up and restore the ``/etc/openstack_deploy/`` directory"
+msgstr ""
+
+#: ../../source/admin/backup-restore.rst:16
+msgid ""
+"The ``/etc/openstack_deploy/`` directory contains a live inventory, host "
+"structure, network information, passwords, and options that are applied to "
+"the configuration files for each service in your OpenStack deployment. Back "
+"up the ``/etc/openstack_deploy/`` directory to a remote location."
+msgstr ""
+
+#: ../../source/admin/backup-restore.rst:22
+msgid ""
+"To restore the ``/etc/openstack_deploy/`` directory, copy the backup of the "
+"directory to your cloud environment."
+msgstr ""
+
+#: ../../source/admin/backup-restore.rst:26
+msgid "Database backups and recovery"
+msgstr ""
+
+#: ../../source/admin/backup-restore.rst:28
+msgid ""
+"MySQL data is available on the infrastructure nodes. You can recover "
+"databases, and rebuild the galera cluster. For more information, see :ref:"
+"`galera-cluster-recovery`."
+msgstr ""
+
+#: ../../source/admin/index.rst:3
+msgid "Operations Guide"
+msgstr ""
+
+#: ../../source/admin/index.rst:5
+msgid ""
+"This guide provides information about operating your OpenStack-Ansible "
+"deployment."
+msgstr ""
+
+#: ../../source/admin/index.rst:8
+msgid ""
+"For information on how to deploy your OpenStack-Ansible cloud, refer to the :"
+"deploy_guide:`Deployment Guide <index.html>` for step-by-step instructions "
+"on how to deploy the OpenStack packages and dependencies on your cloud using "
+"OpenStack-Ansible."
+msgstr ""
+
+#: ../../source/admin/index.rst:13
+msgid "For user guides, see the :dev_docs:`User Guide <user/index.html>`."
+msgstr ""
+
+#: ../../source/admin/index.rst:15
+msgid ""
+"For information on how to contribute, extend or develop OpenStack-Ansible, "
+"see the :dev_docs:`Contributors Guide <contributor/index.html>`."
+msgstr ""
+
+#: ../../source/admin/index.rst:18
+msgid ""
+"For in-depth technical information, see the :dev_docs:`OpenStack-Ansible "
+"Reference <reference/index.html>`."
+msgstr ""
+
+#: ../../source/admin/index.rst:21
+msgid ""
+"This guide ranges from first operations to verify your deployment, to the "
+"major upgrades procedures."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks.rst:3
+msgid "Maintenance tasks"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks.rst:5
+msgid ""
+"This chapter is intended for OpenStack-Ansible specific maintenance tasks."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:2
+msgid "Running ad-hoc Ansible plays"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:4
+msgid ""
+"Being familiar with running ad-hoc Ansible commands is helpful when "
+"operating your OpenStack-Ansible deployment. For a review, we can look at "
+"the structure of the following ansible command:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:12
+msgid ""
+"This command calls on Ansible to run the ``example_group`` using the ``-m`` "
+"shell module with the ``-a`` argument which is the hostname command. You can "
+"substitute example_group for any groups you may have defined. For example, "
+"if you had ``compute_hosts`` in one group and ``infra_hosts`` in another, "
+"supply either group name and run the command. You can also use the ``*`` "
+"wild card if you only know the first part of the group name, for instance if "
+"you know the group name starts with compute you would use ``compute_h*``. "
+"The ``-m`` argument is for module."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:21
+msgid ""
+"Modules can be used to control system resources or handle the execution of "
+"system commands. For more information about modules, see `Module Index "
+"<https://docs.ansible.com/ansible/modules_by_category.html>`_ and `About "
+"Modules <https://docs.ansible.com/ansible/modules.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:26
+msgid ""
+"If you need to run a particular command against a subset of a group, you "
+"could use the limit flag ``-l``. For example, if a ``compute_hosts`` group "
+"contained ``compute1``, ``compute2``, ``compute3``, and ``compute4``, and "
+"you only needed to execute a command on ``compute1`` and ``compute4`` you "
+"could limit the command as follows:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:38
+msgid "Each host is comma-separated with no spaces."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:42
+msgid ""
+"Run the ad-hoc Ansible commands from the ``openstack-ansible/playbooks`` "
+"directory."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:45
+msgid ""
+"For more information, see `Inventory <https://docs.ansible.com/ansible/"
+"intro_inventory.html>`_ and `Patterns <https://docs.ansible.com/ansible/"
+"intro_patterns.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:49
+msgid "Running the shell module"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:51
+msgid ""
+"The two most common modules used are the ``shell`` and ``copy`` modules. The "
+"``shell``  module takes the command name followed by a list of space "
+"delimited arguments. It is almost like the command module, but runs the "
+"command through a shell (``/bin/sh``) on the remote node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:56
+msgid ""
+"For example, you could use the shell module to check the amount of disk "
+"space on a set of Compute hosts:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:63
+msgid "To check on the status of your Galera cluster:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:70
+msgid ""
+"When a module is being used as an ad-hoc command, there are a few parameters "
+"that are not required. For example, for the ``chdir`` command, there is no "
+"need to :command:`chdir=/home/user ls` when running Ansible from the CLI:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:78
+msgid ""
+"For more information, see `shell - Execute commands in nodes <https://docs."
+"ansible.com/ansible/shell_module.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:82
+msgid "Running the copy module"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:84
+msgid ""
+"The copy module copies a file on a local machine to remote locations. To "
+"copy files from remote locations to the local machine you would use the "
+"fetch module. If you need variable interpolation in copied files, use the "
+"template module. For more information, see `copy - Copies files to remote "
+"locations <https://docs.ansible.com/ansible/copy_module.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:90
+msgid ""
+"The following example shows how to move a file from your deployment host to "
+"the ``/tmp`` directory on a set of remote machines:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:98
+msgid ""
+"The fetch module gathers files from remote machines and stores the files "
+"locally in a file tree, organized by the hostname from remote machines and "
+"stores them locally in a file tree, organized by hostname."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:104
+msgid ""
+"This module transfers log files that might not be present, so a missing "
+"remote file will not be an error unless ``fail_on_missing`` is set to "
+"``yes``."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:109
+msgid ""
+"The following examples shows the :file:`nova-compute.log` file being pulled "
+"from a single Compute host:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:129
+msgid "Using tags"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:131
+msgid ""
+"Tags are similar to the limit flag for groups, except tags are used to only "
+"run specific tasks within a playbook. For more information on tags, see "
+"`Tags <http://ansible-docs.readthedocs.io/zh/stable-2.0/rst/playbooks_tags."
+"html>`_ and `Understanding ansible tags <http://www.caphrim.net/ansible/2015/"
+"05/24/understanding-ansible-tags.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:138
+msgid "Ansible forks"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:140
+msgid ""
+"The default ``MaxSessions`` setting for the OpenSSH Daemon is 10. Each "
+"Ansible fork makes use of a session. By default, Ansible sets the number of "
+"forks to 5. However, you can increase the number of forks used in order to "
+"improve deployment performance in large environments."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:145
+msgid ""
+"Note that more than 10 forks will cause issues for any playbooks which use "
+"``delegate_to`` or ``local_action`` in the tasks. It is recommended that the "
+"number of forks are not raised when executing against the control plane, as "
+"this is where delegation is most often used."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:150
+msgid ""
+"The number of forks used may be changed on a permanent basis by including "
+"the appropriate change to the ``ANSIBLE_FORKS`` in your ``.bashrc`` file. "
+"Alternatively it can be changed for a particular playbook execution by using "
+"the ``--forks`` CLI parameter. For example, the following executes the nova "
+"playbook against the control plane with 10 forks, then against the compute "
+"nodes with 50 forks."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:162
+msgid "For more information about forks, please see the following references:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:164
+msgid "OpenStack-Ansible `Bug 1479812`_"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:165
+msgid "Ansible `forks`_ entry for ansible.cfg"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/ansible-modules.rst:166
+msgid "`Ansible Performance Tuning`_"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:2
+msgid "Container management"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:4
+msgid ""
+"With Ansible, the OpenStack installation process is entirely automated using "
+"playbooks written in YAML. After installation, the settings configured by "
+"the playbooks can be changed and modified. Services and containers can shift "
+"to accommodate certain environment requirements. Scaling services are "
+"achieved by adjusting services within containers, or adding new deployment "
+"groups. It is also possible to destroy containers, if needed, after changes "
+"and modifications are complete."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:13
+msgid "Scale individual services"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:15
+msgid ""
+"Individual OpenStack services, and other open source project services, run "
+"within containers. It is possible to scale out these services by modifying "
+"the ``/etc/openstack_deploy/openstack_user_config.yml`` file."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:19
+msgid ""
+"Navigate into the ``/etc/openstack_deploy/openstack_user_config.yml`` file."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:22
+msgid ""
+"Access the deployment groups section of the configuration file. Underneath "
+"the deployment group name, add an affinity value line to container scales "
+"OpenStack services:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:36
+msgid ""
+"In this example, ``galera_container`` has a container value of one. In "
+"practice, any containers that do not need adjustment can remain at the "
+"default value of one, and should not be adjusted above or below the value of "
+"one."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:41
+msgid ""
+"The affinity value for each container is set at one by default. Adjust the "
+"affinity value to zero for situations where the OpenStack services housed "
+"within a specific container will not be needed when scaling out other "
+"required services."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:46
+msgid ""
+"Update the container number listed under the ``affinity`` configuration to "
+"the desired number. The above example has ``galera_container`` set at one "
+"and ``rabbit_mq_container`` at two, which scales RabbitMQ services, but "
+"leaves Galera services fixed."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:51
+msgid ""
+"Run the appropriate playbook commands after changing the configuration to "
+"create the new containers, and install the appropriate services."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:55
+msgid ""
+"For example, run the **openstack-ansible lxc-containers-create.yml rabbitmq-"
+"install.yml** commands from the ``openstack-ansible/playbooks`` repository "
+"to complete the scaling process described in the example above:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:66
+msgid "Destroy and recreate containers"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:68
+msgid ""
+"Resolving some issues may require destroying a container, and rebuilding "
+"that container from the beginning. It is possible to destroy and re-create a "
+"container with the ``lxc-containers-destroy.yml`` and ``lxc-containers-"
+"create.yml`` commands. These Ansible scripts reside in the ``openstack-"
+"ansible/playbooks`` repository."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:74
+msgid "Navigate to the ``openstack-ansible`` directory."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:76
+msgid ""
+"Run the **openstack-ansible lxc-containers-destroy.yml** commands, "
+"specifying the target containers and the container to be destroyed."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/containers.rst:84
+msgid "Replace *``CONTAINER_NAME``* with the target container."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:2
+msgid "Firewalls"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:5
+msgid ""
+"OpenStack-Ansible does not configure firewalls for its infrastructure. It is "
+"up to the deployer to define the perimeter and its firewall configuration."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:8
+msgid ""
+"By default, OpenStack-Ansible relies on Ansible SSH connections, and needs "
+"the TCP port 22 to be opened on all hosts internally."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:11
+msgid ""
+"For more information on generic OpenStack firewall configuration, see the "
+"`Firewalls and default ports <https://docs.openstack.org/install-guide/"
+"firewalls-default-ports.html>`_"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:14
+msgid ""
+"In each of the role's respective documentatione you can find the default "
+"variables for the ports used within the scope of the role. Reviewing the "
+"documentation allow you to find the variable names if you want to use a "
+"different port."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:19
+msgid ""
+"OpenStack-Ansible's group vars conveniently expose the vars outside of the "
+"`role scope <https://opendev.org/openstack/openstack-ansible/src/inventory/"
+"group_vars/all/all.yml>`_ in case you are relying on the OpenStack-Ansible "
+"groups to configure your firewall."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:25
+msgid "Finding ports for your external load balancer"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:27
+msgid ""
+"As explained in the previous section, you can find (in each roles "
+"documentation) the default variables used for the public interface endpoint "
+"ports."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:31
+msgid ""
+"For example, the `os_glance documentation <https://docs.openstack.org/"
+"openstack-ansible-os_glance/latest/#default-variables>`_ lists the variable "
+"``glance_service_publicuri``. This contains the port used for the reaching "
+"the service externally. In this example, it is equal to "
+"``glance_service_port``, whose value is 9292."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:38
+msgid ""
+"As a hint, you could find the list of all public URI defaults by executing "
+"the following:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/firewalls.rst:48
+msgid ""
+"`Haproxy <https://opendev.org/openstack/openstack-ansible/src/commit/"
+"6520d0bb2c689ed7caa5df581be6a966133cdce0/inventory/group_vars/haproxy/"
+"haproxy.yml>`_ can be configured with OpenStack-Ansible. The automatically "
+"generated ``/etc/haproxy/haproxy.cfg`` file have enough information on the "
+"ports to open for your environment."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:2
+msgid "Galera cluster maintenance"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:4
+msgid ""
+"Routine maintenance includes gracefully adding or removing nodes from the "
+"cluster without impacting operation and also starting a cluster after "
+"gracefully shutting down all nodes."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:8
+msgid ""
+"MySQL instances are restarted when creating a cluster, when adding a node, "
+"when the service is not running, or when changes are made to the ``/etc/"
+"mysql/my.cnf`` configuration file."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:13
+msgid "Verify cluster status"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:15
+msgid ""
+"Compare the output of the following command with the following output. It "
+"should give you information about the status of your cluster."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:37
+msgid "In this example, only one node responded."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:39
+msgid ""
+"Gracefully shutting down the MariaDB service on all but one node allows the "
+"remaining operational node to continue processing SQL requests. When "
+"gracefully shutting down multiple nodes, perform the actions sequentially to "
+"retain operation."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:45
+msgid "Start a cluster"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:47
+msgid ""
+"Gracefully shutting down all nodes destroys the cluster. Starting or "
+"restarting a cluster from zero nodes requires creating a new cluster on one "
+"of the nodes."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:51
+msgid ""
+"Start a new cluster on the most advanced node. Change to the ``playbooks`` "
+"directory and check the ``seqno`` value in the ``grastate.dat`` file on all "
+"of the nodes:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:76
+msgid ""
+"In this example, all nodes in the cluster contain the same positive "
+"``seqno`` values as they were synchronized just prior to graceful shutdown. "
+"If all ``seqno`` values are equal, any node can start the new cluster."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:90
+msgid ""
+"Please also have a look at `upstream starting a cluster page <https://"
+"galeracluster.com/documentation-webpages/startingcluster.html>`_"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:92
+msgid "This can also be done with the help of ansible using the shell module:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:99
+msgid ""
+"This command results in a cluster containing a single node. The "
+"``wsrep_cluster_size`` value shows the number of nodes in the cluster."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:120
+msgid ""
+"Restart MariaDB on the other nodes (replace [0] from previous ansible "
+"command with [1:]) and verify that they rejoin the cluster."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:150
+msgid "Galera cluster recovery"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:152
+msgid ""
+"Run the ``galera-install`` playbook using the ``galera-bootstrap`` tag to "
+"automatically recover a node or an entire environment."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:155
+#: ../../source/admin/maintenance-tasks/galera.rst:217
+msgid "Run the following Ansible command to show the failed nodes:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:161
+msgid ""
+"The cluster comes back online after completion of this command. If this "
+"fails, please review `restarting the cluster`_ and `recovering the primary "
+"component`_ in the galera documentation as they're invaluable for a full "
+"cluster recovery."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:170
+msgid "Recover a single-node failure"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:172
+msgid ""
+"If a single node fails, the other nodes maintain quorum and continue to "
+"process SQL requests."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:175
+msgid ""
+"Change to the ``playbooks`` directory and run the following Ansible command "
+"to determine the failed node:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:201
+msgid "In this example, node 3 has failed."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:203
+msgid ""
+"Restart MariaDB on the failed node and verify that it rejoins the cluster."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:206
+msgid ""
+"If MariaDB fails to start, run the ``mysqld`` command and perform further "
+"analysis on the output. As a last resort, rebuild the container for the node."
+""
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:211
+msgid "Recover a multi-node failure"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:213
+msgid ""
+"When all but one node fails, the remaining node cannot achieve quorum and "
+"stops processing SQL requests. In this situation, failed nodes that recover "
+"cannot join the cluster because it no longer exists."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:238
+msgid ""
+"In this example, nodes 2 and 3 have failed. The remaining operational server "
+"indicates ``non-Primary`` because it cannot achieve quorum."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:241
+msgid ""
+"Run the following command to `rebootstrap <https://galeracluster.com/"
+"documentation-webpages/quorumreset.html>`_ the operational node into the "
+"cluster:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:263
+msgid ""
+"The remaining operational node becomes the primary node and begins "
+"processing SQL requests."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:266
+msgid ""
+"Restart MariaDB on the failed nodes and verify that they rejoin the cluster:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:294
+msgid ""
+"If MariaDB fails to start on any of the failed nodes, run the ``mysqld`` "
+"command and perform further analysis on the output. As a last resort, "
+"rebuild the container for the node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:299
+msgid "Recover a complete environment failure"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:301
+msgid ""
+"Restore from backup if all of the nodes in a Galera cluster fail (do not "
+"shutdown gracefully). Change to the ``playbook`` directory and run the "
+"following command to determine if all nodes in the cluster have failed:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:331
+msgid ""
+"All the nodes have failed if ``mysqld`` is not running on any of the nodes "
+"and all of the nodes contain a ``seqno`` value of -1."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:334
+msgid ""
+"If any single node has a positive ``seqno`` value, then that node can be "
+"used to restart the cluster. However, because there is no guarantee that "
+"each node has an identical copy of the data, we do not recommend to restart "
+"the cluster using the ``--wsrep-new-cluster`` command on one node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:341
+msgid "Rebuild a container"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:343
+msgid ""
+"Recovering from certain failures require rebuilding one or more containers."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:345
+msgid "Disable the failed node on the load balancer."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:349
+msgid ""
+"Do not rely on the load balancer health checks to disable the node. If the "
+"node is not disabled, the load balancer sends SQL requests to it before it "
+"rejoins the cluster and cause data inconsistencies."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:353
+msgid ""
+"Destroy the container and remove MariaDB data stored outside of the "
+"container:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:362
+msgid "In this example, node 3 failed."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:364
+msgid "Run the host setup playbook to rebuild the container on node 3:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:372
+msgid "The playbook restarts all other containers on the node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:374
+msgid ""
+"Run the infrastructure playbook to configure the container specifically on "
+"node 3:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:385
+msgid ""
+"The new container runs a single-node Galera cluster, which is a dangerous "
+"state because the environment contains more than one active database with "
+"potentially different data."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:414
+msgid ""
+"Restart MariaDB in the new container and verify that it rejoins the cluster."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:419
+msgid ""
+"In larger deployments, it may take some time for the MariaDB daemon to start "
+"in the new container. It will be synchronizing data from the other MariaDB "
+"servers during this time. You can monitor the status during this process by "
+"tailing the ``/var/log/mysql_logs/galera_server_error.log`` log file."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:425
+msgid ""
+"Lines starting with ``WSREP_SST`` will appear during the sync process and "
+"you should see a line with ``WSREP: SST complete, seqno: <NUMBER>`` if the "
+"sync was successful."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/galera.rst:455
+msgid "Enable the previously failed node on the load balancer."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/inventory-backups.rst:2
+msgid "Prune Inventory Backup Archive"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/inventory-backups.rst:4
+msgid ""
+"The inventory backup archive will require maintenance over a long enough "
+"period of time."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/inventory-backups.rst:9
+msgid "Bulk pruning"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/inventory-backups.rst:11
+msgid ""
+"It is possible to do mass pruning of the inventory backup. The following "
+"example will prune all but the last 15 inventories from the running archive."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/inventory-backups.rst:23
+msgid "Selective Pruning"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/inventory-backups.rst:25
+msgid ""
+"To prune the inventory archive selectively, first identify the files you "
+"wish to remove by listing them out."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/inventory-backups.rst:37
+msgid "Now delete the targeted inventory archive."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:2
+msgid "RabbitMQ cluster maintenance"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:4
+msgid ""
+"A RabbitMQ broker is a logical grouping of one or several Erlang nodes with "
+"each node running the RabbitMQ application and sharing users, virtual hosts, "
+"queues, exchanges, bindings, and runtime parameters. A collection of nodes "
+"is often referred to as a `cluster`. For more information on RabbitMQ "
+"clustering, see `RabbitMQ cluster <https://www.rabbitmq.com/clustering."
+"html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:10
+msgid ""
+"Within OpenStack-Ansible, all data and states required for operation of the "
+"RabbitMQ cluster is replicated across all nodes including the message queues "
+"providing high availability. RabbitMQ nodes address each other using domain "
+"names. The hostnames of all cluster members must be resolvable from all "
+"cluster nodes, as well as any machines where CLI tools related to RabbitMQ "
+"might be used. There are alternatives that may work in more restrictive "
+"environments. For more details on that setup, see `Inet Configuration <http:/"
+"/erlang.org/doc/apps/erts/inet_cfg.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:22
+msgid ""
+"There is currently an Ansible bug in regards to ``HOSTNAME``. If the host ``."
+"bashrc`` holds a var named ``HOSTNAME``, the container where the "
+"``lxc_container`` module attaches will inherit this var and potentially set "
+"the wrong ``$HOSTNAME``. See `the Ansible fix <https://github.com/ansible/"
+"ansible/pull/22246>`_ which will be released in Ansible version 2.3."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:30
+msgid "Create a RabbitMQ cluster"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:32
+msgid "RabbitMQ clusters can be formed in two ways:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:34
+msgid "Manually with ``rabbitmqctl``"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:36
+msgid ""
+"Declaratively (list of cluster nodes in a config, with ``rabbitmq-"
+"autocluster``, or ``rabbitmq-clusterer`` plugins)"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:41
+msgid ""
+"RabbitMQ brokers can tolerate the failure of individual nodes within the "
+"cluster. These nodes can start and stop at will as long as they have the "
+"ability to reach previously known members at the time of shutdown."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:45
+msgid ""
+"There are two types of nodes you can configure: disk and RAM nodes. Most "
+"commonly, you will use your nodes as disk nodes (preferred). Whereas RAM "
+"nodes are more of a special configuration used in performance clusters."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:49
+msgid ""
+"RabbitMQ nodes and the CLI tools use an ``erlang cookie`` to determine "
+"whether or not they have permission to communicate. The cookie is a string "
+"of alphanumeric characters and can be as short or as long as you would like."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:55
+msgid ""
+"The cookie value is a shared secret and should be protected and kept private."
+""
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:57
+msgid ""
+"The default location of the cookie on ``*nix`` environments is ``/var/lib/"
+"rabbitmq/.erlang.cookie`` or in ``$HOME/.erlang.cookie``."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:62
+msgid ""
+"While troubleshooting, if you notice one node is refusing to join the "
+"cluster, it is definitely worth checking if the erlang cookie matches the "
+"other nodes. When the cookie is misconfigured (for example, not identical), "
+"RabbitMQ will log errors such as \"Connection attempt from disallowed node\" "
+"and \"Could not auto-cluster\". See `clustering <https://www.rabbitmq.com/"
+"clustering.html>`_ for more information."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:69
+msgid ""
+"To form a RabbitMQ Cluster, you start by taking independent RabbitMQ brokers "
+"and re-configuring these nodes into a cluster configuration."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:72
+msgid ""
+"Using a 3 node example, you would be telling nodes 2 and 3 to join the "
+"cluster of the first node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:75
+msgid "Login to the 2nd and 3rd node and stop the rabbitmq application."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:77
+msgid "Join the cluster, then restart the application:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:89
+msgid "Check the RabbitMQ cluster status"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:91
+msgid "Run ``rabbitmqctl cluster_status`` from either node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:93
+msgid "You will see ``rabbit1`` and ``rabbit2`` are both running as before."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:95
+msgid ""
+"The difference is that the cluster status section of the output, both nodes "
+"are now grouped together:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:106
+msgid ""
+"To add the third RabbitMQ node to the cluster, repeat the above process by "
+"stopping the RabbitMQ application on the third node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:109
+msgid "Join the cluster, and restart the application on the third node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:111
+msgid "Execute ``rabbitmq cluster_status`` to see all 3 nodes:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:122
+msgid "Stop and restart a RabbitMQ cluster"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:124
+msgid ""
+"To stop and start the cluster, keep in mind the order in which you shut the "
+"nodes down. The last node you stop, needs to be the first node you start. "
+"This node is the `master`."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:128
+msgid ""
+"If you start the nodes out of order, you could run into an issue where it "
+"thinks the current `master` should not be the master and drops the messages "
+"to ensure that no new messages are queued while the real master is down."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:133
+msgid "RabbitMQ and mnesia"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:135
+msgid ""
+"Mnesia is a distributed database that RabbitMQ uses to store information "
+"about users, exchanges, queues, and bindings. Messages, however are not "
+"stored in the database."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:139
+msgid ""
+"For more information about Mnesia, see the `Mnesia overview <http://erlang."
+"org/doc/apps/mnesia/Mnesia_overview.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:142
+msgid ""
+"To view the locations of important Rabbit files, see `File Locations <https:/"
+"/www.rabbitmq.com/relocate.html>`_."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:146
+msgid "Repair a partitioned RabbitMQ cluster for a single-node"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:148
+msgid ""
+"Invariably due to something in your environment, you are likely to lose a "
+"node in your cluster. In this scenario, multiple LXC containers on the same "
+"host are running Rabbit and are in a single Rabbit cluster."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:152
+msgid ""
+"If the host still shows as part of the cluster, but it is not running, "
+"execute:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:159
+msgid ""
+"However, you may notice some issues with your application as clients may be "
+"trying to push messages to the un-responsive node. To remedy this, forget "
+"the node from the cluster by executing the following:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:163
+msgid "Ensure RabbitMQ is not running on the node:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:169
+msgid "On the Rabbit2 node, execute:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:175
+msgid ""
+"By doing this, the cluster can continue to run effectively and you can "
+"repair the failing node."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:180
+msgid ""
+"Watch out when you restart the node, it will still think it is part of the "
+"cluster and will require you to reset the node. After resetting, you should "
+"be able to rejoin it to other nodes as needed."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:199
+msgid "Repair a partitioned RabbitMQ cluster for a multi-node cluster"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:201
+msgid ""
+"The same concepts apply to a multi-node cluster that exist in a single-node "
+"cluster. The only difference is that the various nodes will actually be "
+"running on different hosts. The key things to keep in mind when dealing with "
+"a multi-node cluster are:"
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:206
+msgid ""
+"When the entire cluster is brought down, the last node to go down must be "
+"the first node to be brought online. If this does not happen, the nodes will "
+"wait 30 seconds for the last disc node to come back online, and fail "
+"afterwards."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:210
+msgid ""
+"If the last node to go offline cannot be brought back up, it can be removed "
+"from the cluster using the :command:`forget_cluster_node` command."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:213
+msgid ""
+"If all cluster nodes stop in a simultaneous and uncontrolled manner, (for "
+"example, with a power cut) you can be left with a situation in which all "
+"nodes think that some other node stopped after them. In this case you can "
+"use the :command:`force_boot` command on one node to make it bootable again."
+msgstr ""
+
+#: ../../source/admin/maintenance-tasks/rabbitmq-maintain.rst:219
+msgid "Consult the rabbitmqctl manpage for more information."
+msgstr ""
+
+#: ../../source/admin/monitoring-systems.rst:3
+msgid "Monitoring your environment"
+msgstr ""
+
+#: ../../source/admin/monitoring-systems.rst:5
+msgid ""
+"This is a draft monitoring system page for the proposed OpenStack-Ansible "
+"operations guide."
+msgstr ""
+
+#: ../../source/admin/openstack-firstrun.rst:3
+msgid "Verify OpenStack-Ansible Cloud"
+msgstr ""
+
+#: ../../source/admin/openstack-firstrun.rst:5
+msgid ""
+"This chapter is intended to document basic OpenStack operations to verify "
+"your OpenStack-Ansible deployment."
+msgstr ""
+
+#: ../../source/admin/openstack-firstrun.rst:8
+msgid ""
+"It explains how CLIs can be used as an admin and a user, to ensure the well-"
+"behavior of your cloud."
+msgstr ""
+
+#: ../../source/admin/openstack-operations.rst:3
+msgid "Managing your cloud"
+msgstr ""
+
+#: ../../source/admin/openstack-operations.rst:5
+msgid ""
+"This chapter is intended to document OpenStack operations tasks that are "
+"integral to the operations support in an OpenStack-Ansible deployment."
+msgstr ""
+
+#: ../../source/admin/openstack-operations.rst:8
+msgid ""
+"It explains operations such as managing images, instances, or networks."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:2
+msgid "Use the command line clients"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:4
+msgid ""
+"This section describes some of the more common commands to use your "
+"OpenStack cloud."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:7
+msgid ""
+"Log in to any utility container or install the openstack client on your "
+"machine, and run the following commands:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:10
+msgid ""
+"The **openstack flavor list** command lists the *flavors* that are available."
+" These are different disk sizes that can be assigned to images:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:27
+msgid ""
+"The **openstack floating ip list** command lists the currently available "
+"floating IP addresses and the instances they are associated with:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:41
+msgid ""
+"For more information about OpenStack client utilities, see these links:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:43
+msgid ""
+"`OpenStack API Quick Start <https://docs.openstack.org/api-quick-start/index."
+"html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:46
+msgid ""
+"`OpenStackClient commands <https://docs.openstack.org/python-openstackclient/"
+"latest/>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:49
+msgid ""
+"`Image Service (glance) CLI commands <https://docs.openstack.org/glance/"
+"latest/cli/index.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:52
+msgid ""
+"`Image Service (glance) CLI command cheat sheet <https://docs.openstack.org/"
+"python-glanceclient/latest/cli/glance.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:55
+msgid ""
+"`Compute (nova) CLI commands <https://docs.openstack.org/nova/latest/cli/"
+"index.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:58
+msgid ""
+"`Compute (nova) CLI command cheat sheet <https://docs.openstack.org/python-"
+"novaclient/latest/cli/nova.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:61
+msgid ""
+"`Networking (neutron) CLI commands <https://docs.openstack.org/neutron/"
+"latest/cli/index.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:64
+msgid ""
+"`Networking (neutron) CLI command cheat sheet <https://docs.openstack.org/"
+"python-neutronclient/latest/cli/neutron.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:67
+msgid ""
+"`Block Storage (cinder) CLI commands <https://docs.openstack.org/python-"
+"cinderclient/latest/user/shell.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:70
+msgid ""
+"`Block Storage (cinder) CLI command cheat sheet <https://docs.openstack.org/"
+"python-cinderclient/latest/cli/details.html>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:73
+msgid ""
+"`python-keystoneclient <https://pypi.org/project/python-keystoneclient/>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:75
+msgid ""
+"`python-glanceclient <https://pypi.org/project/python-glanceclient/>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:77
+msgid "`python-novaclient <https://pypi.org/project/python-novaclient/>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/cli-operations.rst:79
+msgid ""
+"`python-neutronclient <https://pypi.org/project/python-neutronclient/>`__"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:2
+msgid "Managing images"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:10
+msgid ""
+"An image represents the operating system, software, and any settings that "
+"instances may need depending on the project goals. Create images first "
+"before creating any instances."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:14
+msgid ""
+"Adding images can be done through the Dashboard, or the command line. "
+"Another option available is the ``python-openstackclient`` tool, which can "
+"be installed on the controller node, or on a workstation."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:19
+msgid "Adding an image using the Dashboard"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:21
+msgid ""
+"In order to add an image using the Dashboard, prepare an image binary file, "
+"which must be accessible over HTTP using a valid and direct URL. Images can "
+"be compressed using ``.zip`` or ``.tar.gz``."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:27
+msgid ""
+"Uploading images using the Dashboard will be available to users with "
+"administrator privileges. Operators can set user access privileges."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:31
+msgid "Log in to the Dashboard."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:33
+msgid "Select the **Admin** tab in the navigation pane and click **images**."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:35
+msgid ""
+"Click the **Create Image** button. The **Create an Image** dialog box will "
+"appear."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:38
+msgid ""
+"Enter the details of the image, including the **Image Location**, which is "
+"where the URL location of the image is required."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:41
+msgid ""
+"Click the **Create Image** button. The newly created image may take some "
+"time before it is completely uploaded since the image arrives in an image "
+"queue."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:47
+msgid "Adding an image using the command line"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:49
+msgid ""
+"The utility container provides a CLI environment for additional "
+"configuration and management."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:52
+#: ../../source/admin/openstack-operations/verify-deploy.rst:12
+msgid "Access the utility container:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-images.rst:58
+msgid ""
+"Use the openstack client within the utility container to manage all glance "
+"images. `See the openstack client official documentation on managing images "
+"<https://docs.openstack.org/image-guide/create-images-manually.html>`_."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:2
+msgid "Managing instances"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:4
+msgid "This chapter describes how to create and access instances."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:7
+msgid "Creating an instance using the Dashboard"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:9
+msgid "Using an image, create a new instance via the Dashboard options."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:11
+msgid ""
+"Log into the Dashboard, and select the **Compute** project from the drop "
+"down list."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:14
+msgid "Click the **Images** option."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:16
+msgid ""
+"Locate the image that will act as the instance base from the **Images** "
+"table."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:19
+msgid "Click **Launch** from the **Actions** column."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:21
+msgid ""
+"Check the **Launch Instances** dialog, and find the **details** tab. Enter "
+"the appropriate values for the instance."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:24
+msgid ""
+"In the Launch Instance dialog, click the **Access & Security** tab. Select "
+"the keypair. Set the security group as \"default\"."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:27
+msgid ""
+"Click the **Networking tab**. This tab will be unavailable if OpenStack "
+"networking (neutron) has not been enabled. If networking is enabled, select "
+"the networks on which the instance will reside."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:32
+msgid ""
+"Click the **Volume Options tab**. This tab will only be available if a Block "
+"Storage volume exists for the instance. Select **Don't boot from a volume** "
+"for now."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:36
+msgid ""
+"For more information on attaching Block Storage volumes to instances for "
+"persistent storage, see the *Managing volumes for persistent storage* "
+"section below."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:40
+msgid ""
+"Add customisation scripts, if needed, by clicking the **Post-Creation** tab. "
+"These run after the instance has been created. Some instances support user "
+"data, such as root passwords, or admin users. Enter the information specific "
+"to the instance here if required."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:46
+msgid ""
+"Click **Advanced Options**. Specify whether the instance uses a "
+"configuration drive to store metadata by selecting a disk partition type."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:50
+msgid ""
+"Click **Launch** to create the instance. The instance will start on a "
+"compute node. The **Instance** page will open and start creating a new "
+"instance. The **Instance** page that opens will list the instance name, "
+"size, status, and task. Power state and public and private IP addresses are "
+"also listed here."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:56
+msgid ""
+"The process will take less than a minute to complete. Instance creation is "
+"complete when the status is listed as active. Refresh the page to see the "
+"new active instance."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:60
+msgid "**Launching an instance options**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:64
+msgid "Field Name"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:65
+#: ../../source/admin/openstack-operations/managing-instances.rst:73
+#: ../../source/admin/openstack-operations/managing-instances.rst:78
+#: ../../source/admin/openstack-operations/managing-instances.rst:82
+#: ../../source/admin/openstack-operations/managing-instances.rst:87
+#: ../../source/admin/openstack-operations/managing-instances.rst:91
+#: ../../source/admin/openstack-operations/managing-instances.rst:96
+msgid "Required"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:66
+msgid "Details"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:67
+msgid "**Availability Zone**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:68
+#: ../../source/admin/openstack-operations/managing-instances.rst:102
+#: ../../source/admin/openstack-operations/managing-instances.rst:108
+#: ../../source/admin/openstack-operations/managing-instances.rst:112
+#: ../../source/admin/openstack-operations/managing-instances.rst:116
+msgid "Optional"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:69
+msgid ""
+"The availability zone in which the image service creates the instance. If no "
+"availability zones is defined, no instances will be found. The cloud "
+"provider sets the availability zone to a specific value."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:72
+msgid "**Instance Name**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:74
+msgid ""
+"The name of the new instance, which becomes the initial host name of the "
+"server. If the server name is changed in the API or directly changed, the "
+"Dashboard names remain unchanged"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:77
+msgid "**Image**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:79
+msgid ""
+"The type of container format, one of ``ami``, ``ari``, ``aki``, ``bare``, or "
+"``ovf``"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:81
+msgid "**Flavor**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:83
+msgid ""
+"The vCPU, Memory, and Disk configuration. Note that larger flavors can take "
+"a long time to create. If creating an instance for the first time and want "
+"something small with which to test, select ``m1.small``."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:86
+msgid "**Instance Count**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:88
+msgid ""
+"If creating multiple instances with this configuration, enter an integer up "
+"to the number permitted by the quota, which is ``10`` by default."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:90
+msgid "**Instance Boot Source**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:92
+msgid ""
+"Specify whether the instance will be based on an image or a snapshot. If it "
+"is the first time creating an instance, there will not yet be any snapshots "
+"available."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:95
+msgid "**Image Name**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:97
+msgid ""
+"The instance will boot from the selected image. This option will be pre-"
+"populated with the instance selected from the table. However, choose ``Boot "
+"from Snapshot`` in **Instance Boot Source**, and it will default to "
+"``Snapshot`` instead."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:101
+msgid "**Security Groups**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:103
+msgid ""
+"This option assigns security groups to an instance. The default security "
+"group activates when no customised group is specified here. Security Groups, "
+"similar to a cloud firewall, define which incoming network traffic is "
+"forwarded to instances."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:107
+msgid "**Keypair**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:109
+msgid ""
+"Specify a key pair with this option. If the image uses a static key set (not "
+"recommended), a key pair is not needed."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:111
+msgid "**Selected Networks**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:113
+msgid ""
+"To add a network to an instance, click the **+** in the **Networks field**."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:115
+msgid "**Customisation Script**"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:117
+msgid ""
+"Specify a customisation script. This script runs after the instance launches "
+"and becomes active."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:122
+msgid "Creating an instance using the command line"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:124
+msgid ""
+"On the command line, instance creation is managed with the **openstack "
+"server create** command. Before launching an instance, determine what images "
+"and flavors are available to create a new instance using the **openstack "
+"image list** and **openstack flavor list** commands."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:129
+msgid "Log in to any utility container."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:131
+msgid ""
+"Issue the **openstack server create** command with a name for the instance, "
+"along with the name of the image and flavor to use:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:167
+msgid ""
+"To check that the instance was created successfully, issue the **openstack "
+"server list** command:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:181
+msgid "Managing an instance"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:183
+msgid ""
+"Log in to the Dashboard. Select one of the projects, and click **Instances**."
+""
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:186
+msgid "Select an instance from the list of available instances."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:188
+msgid ""
+"Check the **Actions** column, and click on the **More** option. Select the "
+"instance state."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:191
+msgid "The **Actions** column includes the following options:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:193
+msgid "Resize or rebuild any instance"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:195
+msgid "View the instance console log"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:197
+msgid "Edit the instance"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:199
+msgid "Modify security groups"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:201
+msgid "Pause, resume, or suspend the instance"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:203
+msgid "Soft or hard reset the instance"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:207
+msgid "Terminate the instance under the **Actions** column."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:211
+msgid "Managing volumes for persistent storage"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:213
+msgid ""
+"Volumes attach to instances, enabling persistent storage. Volume storage "
+"provides a source of memory for instances. Administrators can attach volumes "
+"to a running instance, or move a volume from one instance to another."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:219
+msgid "Nova instances live migration"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:221
+msgid ""
+"Nova is capable of live migration instances from one host to a different "
+"host to support various operational tasks including:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:224
+msgid "Host Maintenance"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:225
+msgid "Host capacity management"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:226
+msgid "Resizing and moving instances to better hardware"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:230
+msgid "Nova configuration drive implication"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:232
+msgid ""
+"Depending on the OpenStack-Ansible version in use, Nova can be configured to "
+"force configuration drive attachments to instances. In this case, a ISO9660 "
+"CD-ROM image will be made available to the instance via the ``/mnt`` mount "
+"point. This can be used by tools, such as cloud-init, to gain access to "
+"instance metadata. This is an alternative way of accessing the Nova EC2-"
+"style Metadata."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:239
+msgid ""
+"To allow live migration of Nova instances, this forced provisioning of the "
+"config (CD-ROM) drive needs either be turned off, or the format of the "
+"configuration drive needs to be changed to a disk format like vfat, a format "
+"which both Linux and Windows instances can access."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:244
+msgid "This work around is required for all Libvirt versions prior 1.2.17."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:246
+msgid ""
+"To turn off the forced provisioning of the config drive, add the following "
+"override to the ``/etc/openstack_deploy/user_variables.yml`` file:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:253
+msgid ""
+"To change the format of the configuration drive, to a hard disk style "
+"format, use the following configuration inside the same ``/etc/"
+"openstack_deploy/user_variables.yml`` file:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:266
+msgid "Tunneling versus direct transport"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:268
+msgid ""
+"In the default configuration, Nova determines the correct transport URL for "
+"how to transfer the data from one host to the other. Depending on the "
+"``nova_virt_type`` override the following configurations are used:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:273
+msgid "kvm defaults to ``qemu+tcp://%s/system``"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:274
+msgid "qemu defaults to ``qemu+tcp://%s/system``"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:275
+msgid "xen defaults to ``xenmigr://%s/system``"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:277
+msgid "Libvirt TCP port to transfer the data to migrate."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:279
+msgid ""
+"OpenStack-Ansible changes the default setting and used a encrypted SSH "
+"connection to transfer the instance data."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:286
+msgid ""
+"Other configurations can be configured inside the ``/etc/openstack_deploy/"
+"user_variables.yml`` file:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:299
+msgid "Local versus shared storage"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:301
+msgid ""
+"By default, live migration assumes that your Nova instances are stored on "
+"shared storage and KVM/Libvirt only need to synchronize the memory and base "
+"image of the Nova instance to the new host. Live migrations on local storage "
+"will fail as a result of that assumption. Migrations with local storage can "
+"be accomplished by allowing instance disk migrations with the ``--block-"
+"migrate`` option."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:308
+msgid ""
+"Additional Nova flavor features like ephemeral storage or swap have an "
+"impact on live migration performance and success."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:311
+msgid ""
+"Cinder attached volumes also require a Libvirt version larger or equal to 1."
+"2.17."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:315
+msgid "Executing the migration"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:317
+msgid "The live migration is accessible via the nova client."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:323
+msgid "Examplarery live migration on a local storage:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:331
+msgid "Monitoring the status"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:333
+msgid ""
+"Once the live migration request has been accepted, the status can be "
+"monitored with the nova client:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:346
+msgid ""
+"To filter the list, the options  ``--host`` or ``--status`` can be used:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:352
+msgid ""
+"In cases where the live migration fails, both the source and destination "
+"compute nodes need to be checked for errors. Usually it is sufficient to "
+"search for the instance UUID only to find errors related to the live "
+"migration."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:358
+msgid "Other forms of instance migration"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:360
+msgid ""
+"Besides the live migration, Nova offers the option to migrate entire hosts "
+"in a online (live) or offline (cold) migration."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:363
+msgid "The following nova client commands are provided:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:365
+msgid "``host-evacuate-live``"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:367
+msgid ""
+"Live migrate all instances of the specified host to other hosts if resource "
+"utilzation allows. It is best to use shared storage like Ceph or NFS for "
+"host evacuation."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:372
+msgid "``host-servers-migrate``"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:374
+msgid ""
+"This command is similar to host evacuation but migrates all instances off "
+"the specified host while they are shutdown."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:378
+msgid "``resize``"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-instances.rst:380
+msgid ""
+"Changes the flavor of an Nova instance (increase) while rebooting and also "
+"migrates (cold) the instance to a new host to accommodate the new resource "
+"requirements. This operation can take considerate amount of time, depending "
+"disk image sizes."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:2
+msgid "Managing networks"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:4
+msgid ""
+"Operational considerations, like compliance, can make it necessary to manage "
+"networks. For example, adding new provider networks to the OpenStack-Ansible "
+"managed cloud. The following sections are the most common administrative "
+"tasks outlined to complete those tasks."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:9
+msgid ""
+"For more generic information on troubleshooting your network, see the "
+"`Network Troubleshooting chapter <https://wiki.openstack.org/wiki/OpsGuide/"
+"Network_Troubleshooting>`_ in the Operations Guide."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:14
+msgid ""
+"For more in-depth information on Networking, see the `Networking Guide "
+"<https://docs.openstack.org/neutron/latest/admin/>`_."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:18
+msgid "Add provider bridges using new network interfaces"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:20
+msgid ""
+"Add each provider network to your cloud to be made known to OpenStack-"
+"Ansible and the operating system before you can execute the necessary "
+"playbooks to complete the configuration."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:25
+msgid "OpenStack-Ansible configuration"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:27
+msgid ""
+"All provider networks need to be added to the OpenStack-Ansible "
+"configuration."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:30
+msgid ""
+"Edit the file ``/etc/openstack_deploy/openstack_user_config.yml`` and add a "
+"new block underneath the ``provider_networks`` section:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:45
+msgid ""
+"The ``container_bridge`` setting defines the physical network bridge used to "
+"connect the veth pair from the physical host to the container. Inside the "
+"container, the ``container_interface`` setting defines the name at which the "
+"physical network will be made available. The ``container_interface`` setting "
+"is not required when Neutron agents are deployed on bare metal. Make sure "
+"that both settings are uniquely defined across their provider networks and "
+"that the network interface is correctly configured inside your operating "
+"system. ``group_binds`` define where this network need to attached to, to "
+"either containers or physical hosts and is ultimately dependent on the "
+"network stack in use. For example, Linuxbridge versus OVS. The configuration "
+"``range`` defines Neutron physical segmentation IDs which are automatically "
+"used by end users when creating networks via mainly horizon and the Neutron "
+"API. Similar is true for the ``net_name`` configuration which defines the "
+"addressable name inside the Neutron configuration. This configuration also "
+"need to be unique across other provider networks."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:64
+msgid ""
+"For more information, see :deploy_guide:`Configure the deployment <configure."
+"html>` in the OpenStack-Ansible Deployment Guide."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:69
+msgid "Updating the node with the new configuration"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:71
+msgid ""
+"Run the appropriate playbooks depending on the ``group_binds`` section."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:73
+msgid ""
+"For example, if you update the networks requiring a change in all nodes with "
+"a linux bridge agent, assuming you have infra nodes named **infra01**, "
+"**infra02**, and **infra03**, run:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:83
+msgid "Then update the neutron configuration."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:91
+msgid "Then update your compute nodes if necessary."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:95
+msgid "Remove provider bridges from OpenStack"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:97
+msgid ""
+"Similar to adding a provider network, the removal process uses the same "
+"procedure but in a reversed order. The Neutron ports will need to be "
+"removed, prior to the removal of the OpenStack-Ansible configuration."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:101
+msgid "Unassign all Neutron floating IPs:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:105
+msgid "Export the Neutron network that is about to be removed as single UUID."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:119
+msgid "Remove all Neutron ports from the instances:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:129
+msgid "Remove Neutron router ports and DHCP agents:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:145
+msgid "Remove the Neutron network:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:152
+msgid ""
+"Remove the provider network from the ``provider_networks`` configuration of "
+"the OpenStack-Ansible configuration ``/etc/openstack_deploy/"
+"openstack_user_config.yml`` and re-run the following playbooks:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:166
+msgid "Restart a Networking agent container"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:168
+msgid ""
+"Under some circumstances, configuration or temporary issues, one specific or "
+"all neutron agents container need to be restarted."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:171
+msgid "This can be accomplished with multiple commands:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:173
+msgid "Example of rebooting still accessible containers."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:175
+msgid ""
+"This example will issue a reboot to the container named with "
+"``neutron_agents_container_hostname_name`` from inside:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:182
+msgid "Example of rebooting one container at a time, 60 seconds apart:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/managing-networks.rst:188
+msgid ""
+"If the container does not respond, it can be restarted from the physical "
+"network host:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/network-service.rst:2
+msgid "Configure your first networks"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/network-service.rst:4
+msgid ""
+"A newly deployed OpenStack-Ansible has no networks by default. If you need "
+"to add networks, you can use the openstack CLI, or you can use the ansible "
+"modules for it."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/network-service.rst:8
+msgid ""
+"An example for the latter is in the ``openstack-ansible-ops`` repository, "
+"under the ``openstack-service-setup.yml`` playbook."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:2
+msgid "Check your OpenStack-Ansible cloud"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:4
+msgid ""
+"This chapter goes through the verification steps for a basic operation of "
+"the OpenStack API and dashboard, as an administrator."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:9
+msgid ""
+"The utility container provides a CLI environment for additional "
+"configuration and testing."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:18
+msgid "Source the ``admin`` tenant credentials:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:24
+msgid "Run an OpenStack command that uses one or more APIs. For example:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:47
+msgid ""
+"With a web browser, access the Dashboard using the external load balancer IP "
+"address. This is defined by the ``external_lb_vip_address`` option in the ``/"
+"etc/openstack_deploy/openstack_user_config.yml`` file. The dashboard uses "
+"HTTPS on port 443."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:52
+msgid ""
+"Authenticate using the username ``admin`` and password defined by the "
+"``keystone_auth_admin_password`` option in the ``/etc/openstack_deploy/"
+"user_secrets.yml`` file."
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:56
+msgid ""
+"Run an OpenStack command to reveal all endpoints from your deployment. For "
+"example:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:106
+msgid ""
+"Run an OpenStack command to ensure all the compute services are working (the "
+"output depends on your configuration) For example:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:122
+msgid ""
+"Run an OpenStack command to ensure the networking services are working (the "
+"output also depends on your configuration) For example:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:141
+msgid ""
+"Run an OpenStack command to ensure the block storage services are working "
+"(depends on your configuration). For example:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:156
+msgid ""
+"Run an OpenStack command to ensure the image storage service is working "
+"(depends on your uploaded images). For example:"
+msgstr ""
+
+#: ../../source/admin/openstack-operations/verify-deploy.rst:169
+msgid ""
+"Check the backend API health on your load balancer nodes. For example, if "
+"using haproxy, ensure no backend is marked as \"DOWN\":"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:3
+msgid "Scaling your environment"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:5
+msgid ""
+"This is a draft environment scaling page for the proposed OpenStack-Ansible "
+"operations guide."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:9
+msgid "Add a new infrastructure host"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:11
+msgid ""
+"While three infrastructure hosts are recommended, if further hosts are "
+"needed in an environment, it is possible to create additional nodes."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:16
+msgid ""
+"Make sure you back up your current OpenStack environment before adding any "
+"new nodes. See :ref:`backup-restore` for more information."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:20
+msgid ""
+"Add the node to the ``infra_hosts`` stanza of the ``/etc/openstack_deploy/"
+"openstack_user_config.yml``"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:32
+msgid "Change to playbook folder on the deployment host."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:38
+msgid ""
+"Update the inventory to add new hosts. Make sure new rsyslog container names "
+"are updated. Send the updated results to ``dev/null``."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:45
+msgid ""
+"Create the ``/root/add_host.limit`` file, which contains all new node host "
+"names and their containers. Add **localhost** to the list of hosts to be "
+"able to access deployment host facts."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:57
+msgid "Run the ``setup-everything.yml`` playbook with the ``limit`` argument."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:66
+msgid "Test new infra nodes"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:68
+msgid ""
+"After creating a new infra node, test that the node runs correctly by "
+"launching a new instance. Ensure that the new node can respond to a "
+"networking connection test through the :command:`ping` command. Log in to "
+"your monitoring system, and verify that the monitors return a green signal "
+"for the new node."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:77
+msgid "Add a compute host"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:79
+msgid ""
+"Use the following procedure to add a compute host to an operational cluster."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:82
+msgid ""
+"Configure the host as a target host. See the :deploy_guide:`target hosts "
+"configuration section <targethosts.html>` of the deploy guide. for more "
+"information."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:87
+msgid ""
+"Edit the ``/etc/openstack_deploy/openstack_user_config.yml`` file and add "
+"the host to the ``compute_hosts`` stanza."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:90
+msgid "If necessary, also modify the ``used_ips`` stanza."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:92
+msgid ""
+"If the cluster is utilizing Telemetry/Metering (ceilometer), edit the ``/etc/"
+"openstack_deploy/conf.d/ceilometer.yml`` file and add the host to the "
+"``metering-compute_hosts`` stanza."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:96
+msgid ""
+"Run the following commands to add the host. Replace ``NEW_HOST_NAME`` with "
+"the name of the new host."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:107
+msgid ""
+"Alternatively you can try using new compute nodes deployment script ``/opt/"
+"openstack-ansible/scripts/add-compute.sh``."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:110
+msgid ""
+"You can provide this script with extra tasks that will be executed before or "
+"right after OSA roles. To do so you should set environment variables "
+"``PRE_OSA_TASKS`` or ``POST_OSA_TASKS`` with plays to run devided with "
+"semicolon:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:122
+msgid "Test new compute nodes"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:124
+msgid ""
+"After creating a new node, test that the node runs correctly by launching an "
+"instance on the new node."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:133
+msgid ""
+"Ensure that the new instance can respond to a networking connection test "
+"through the :command:`ping` command. Log in to your monitoring system, and "
+"verify that the monitors return a green signal for the new node."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:139
+msgid "Remove a compute host"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:141
+msgid ""
+"The `openstack-ansible-ops <https://opendev.org/openstack/openstack-ansible-"
+"ops>`_ repository contains a playbook for removing a compute host from an "
+"OpenStack-Ansible environment. To remove a compute host, follow the below "
+"procedure."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:148
+msgid ""
+"This guide describes how to remove a compute node from an OpenStack-Ansible "
+"environment completely. Perform these steps with caution, as the compute "
+"node will no longer be in service after the steps have been completed. This "
+"guide assumes that all data and instances have been properly migrated."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:153
+msgid ""
+"Disable all OpenStack services running on the compute node. This can "
+"include, but is not limited to, the ``nova-compute`` service and the neutron "
+"agent service."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:159
+msgid "Ensure this step is performed first"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:167
+msgid ""
+"Clone the ``openstack-ansible-ops`` repository to your deployment host:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:174
+msgid ""
+"Run the ``remove_compute_node.yml`` Ansible playbook with the "
+"``host_to_be_removed`` user variable set:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:183
+msgid ""
+"After the playbook completes, remove the compute node from the OpenStack-"
+"Ansible configuration file in ``/etc/openstack_deploy/openstack_user_config."
+"yml``."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:188
+msgid "Recover a compute host failure"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:190
+msgid ""
+"The following procedure addresses Compute node failure if shared storage is "
+"used."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:195
+msgid ""
+"If shared storage is not used, data can be copied from the ``/var/lib/nova/"
+"instances`` directory on the failed Compute node ``${FAILED_NODE}`` to "
+"another node ``${RECEIVING_NODE}``\\ before performing the following "
+"procedure. Please note this method is not supported."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:201
+msgid "Re-launch all instances on the failed node."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:203
+msgid "Invoke the MySQL command line tool"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:205
+msgid "Generate a list of instance UUIDs hosted on the failed node:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:211
+msgid "Set instances on the failed node to be hosted on a different node:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:218
+msgid ""
+"Reboot each instance on the failed node listed in the previous query to "
+"regenerate the XML files:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:225
+msgid ""
+"Find the volumes to check the instance has successfully booted and is at the "
+"login  :"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:236
+msgid ""
+"If rows are found, detach and re-attach the volumes using the values listed "
+"in the previous query:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:245
+msgid "Rebuild or replace the failed node as described in add-compute-host_."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:248
+msgid "Replacing failed hardware"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:250
+msgid ""
+"It is essential to plan and know how to replace failed hardware in your "
+"cluster without compromising your cloud environment."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:253
+msgid "Consider the following to help establish a hardware replacement plan:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:255
+msgid "What type of node am I replacing hardware on?"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:256
+msgid ""
+"Can the hardware replacement be done without the host going down? For "
+"example, a single disk in a RAID-10."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:258
+msgid ""
+"If the host DOES have to be brought down for the hardware replacement, how "
+"should the resources on that host be handled?"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:261
+msgid ""
+"If you have a Compute (nova) host that has a disk failure on a RAID-10, you "
+"can swap the failed disk without powering the host down. On the other hand, "
+"if the RAM has failed, you would have to power the host down. Having a plan "
+"in place for how you will manage these types of events is a vital part of "
+"maintaining your OpenStack environment."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:267
+msgid ""
+"For a Compute host, shut down the instance on the host before it goes down. "
+"For a Block Storage (cinder) host using non-redundant storage, shut down any "
+"instances with volumes attached that require that mount point. Unmount the "
+"drive within your operating system and re-mount the drive once the Block "
+"Storage host is back online."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:274
+msgid "Shutting down the Compute host"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:276
+msgid "If a Compute host needs to be shut down:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:278
+msgid "Disable the ``nova-compute`` binary:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:284
+msgid "List all running instances on the Compute host:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:291
+msgid "Use SSH to connect to the Compute host."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:293
+msgid "Confirm all instances are down:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:299
+msgid "Shut down the Compute host:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:305
+msgid ""
+"Once the Compute host comes back online, confirm everything is in working "
+"order and start the instances on the host. For example:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:314
+msgid "Enable the ``nova-compute`` service in the environment:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:321
+msgid "Shutting down the Block Storage host"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:323
+msgid "If a LVM backed Block Storage host needs to be shut down:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:325
+msgid "Disable the ``cinder-volume`` service:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:333
+msgid "List all instances with Block Storage volumes attached:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:340
+msgid "Shut down the instances:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:346
+msgid "Verify the instances are shutdown:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:352
+msgid "Shut down the Block Storage host:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:358
+msgid ""
+"Replace the failed hardware and validate the new hardware is functioning."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:360
+msgid "Enable the ``cinder-volume`` service:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:366
+msgid "Verify the services on the host are reconnected to the environment:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:372
+msgid "Start your instances and confirm all of the instances are started:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:380
+msgid "Destroying Containers"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:382
+msgid "To destroy a container, execute the following:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:391
+msgid "You will be asked two questions:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:393
+msgid ""
+"Are you sure you want to destroy the LXC containers? Are you sure you want "
+"to destroy the LXC container data?"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:396
+msgid ""
+"The first will just remove the container but leave the data in the bind "
+"mounts and logs. The second will remove the data in the bind mounts and logs "
+"too."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:400
+msgid ""
+"If you remove the containers and data for the entire galera_server container "
+"group you will lose all your databases! Also, if you destroy the first "
+"container in many host groups you will lose other important items like "
+"certificates, keys, etc. Be sure that you understand what you're doing when "
+"using this tool."
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:405
+msgid "To create the containers again, execute the following:"
+msgstr ""
+
+#: ../../source/admin/scale-environment.rst:413
+msgid ""
+"The lxc_hosts host group must be included as the playbook and roles executed "
+"require the use of facts from the hosts."
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:2
+msgid "Accessibility for multi-region Object Storage"
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:4
+msgid ""
+"In multi-region Object Storage utilizing separate database backends, objects "
+"are retrievable from an alternate location if the ``default_project_id`` for "
+"a user in the keystone database is the same across each database backend."
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:11
+msgid ""
+"It is recommended to perform the following steps before a failure occurs to "
+"avoid having to dump and restore the database."
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:14
+msgid ""
+"If a failure does occur, follow these steps to restore the database from the "
+"Primary (failed) Region:"
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:17
+msgid ""
+"Record the Primary Region output of the ``default_project_id`` for the "
+"specified user from the user table in the keystone database:"
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:22
+msgid "The user is ``admin`` in this example."
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:36
+msgid ""
+"Record the Secondary Region output of the ``default_project_id`` for the "
+"specified user from the user table in the keystone database:"
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:51
+msgid ""
+"In the Secondary Region, update the references to the ``project_id`` to "
+"match the ID from the Primary Region:"
+msgstr ""
+
+#: ../../source/admin/scaling-swift.rst:71
+msgid ""
+"The user in the Secondary Region now has access to objects PUT in the "
+"Primary Region. The Secondary Region can PUT objects accessible by the user "
+"in the Primary Region."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:3
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:5
+msgid ""
+"This chapter is intended to help troubleshoot and resolve operational issues "
+"in an OpenStack-Ansible deployment."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:9
+msgid "Networking"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:11
+msgid ""
+"This section focuses on troubleshooting general host-to-host communication "
+"required for the OpenStack control plane to function properly."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:14
+msgid "This does not cover any networking related to instance connectivity."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:16
+msgid ""
+"These instructions assume an OpenStack-Ansible installation using LXC "
+"containers, VXLAN overlay, and the Linuxbridge ml2 driver."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:20
+msgid "Network List"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:22
+msgid "``HOST_NET`` (Physical Host Management and Access to Internet)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:23
+msgid "``CONTAINER_NET`` (LXC container network used Openstack Services)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:24
+msgid "``OVERLAY_NET`` (VXLAN overlay network)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:26
+msgid "Useful network utilities and commands:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:41
+msgid "Troubleshooting host-to-host traffic on HOST_NET"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:43
+#: ../../source/admin/troubleshooting.rst:70
+#: ../../source/admin/troubleshooting.rst:122
+msgid "Perform the following checks:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:45
+#: ../../source/admin/troubleshooting.rst:72
+#: ../../source/admin/troubleshooting.rst:124
+msgid "Check physical connectivity of hosts to physical network"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:46
+#: ../../source/admin/troubleshooting.rst:73
+#: ../../source/admin/troubleshooting.rst:125
+msgid "Check interface bonding (if applicable)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:47
+#: ../../source/admin/troubleshooting.rst:74
+#: ../../source/admin/troubleshooting.rst:126
+msgid ""
+"Check VLAN configurations and any necessary trunking to edge ports on "
+"physical switch"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:49
+#: ../../source/admin/troubleshooting.rst:76
+#: ../../source/admin/troubleshooting.rst:128
+msgid ""
+"Check VLAN configurations and any necessary trunking to uplink ports on "
+"physical switches (if applicable)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:51
+msgid ""
+"Check that hosts are in the same IP subnet or have proper routing between "
+"them"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:53
+#: ../../source/admin/troubleshooting.rst:79
+#: ../../source/admin/troubleshooting.rst:131
+msgid ""
+"Check there are no iptables applied to the hosts that would deny traffic"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:55
+msgid ""
+"IP addresses should be applied to physical interface, bond interface, tagged "
+"sub-interface, or in some cases the bridge interface:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:68
+msgid "Troubleshooting host-to-host traffic on CONTAINER_NET"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:78
+#: ../../source/admin/troubleshooting.rst:130
+msgid ""
+"Check that hosts are in the same subnet or have proper routing between them"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:80
+msgid "Check to verify that physical interface is in the bridge"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:81
+msgid "Check to verify that veth-pair end from container is in ``br-mgmt``"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:83
+msgid "IP address should be applied to ``br-mgmt``:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:94
+msgid "IP address should be applied to ``eth1`` inside the LXC container:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:105
+msgid ""
+"``br-mgmt`` should contain veth-pair ends from all containers and a physical "
+"interface or tagged-subinterface:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:120
+msgid "Troubleshooting host-to-host traffic on OVERLAY_NET"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:132
+msgid "Check to verify that physcial interface is in the bridge"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:133
+msgid "Check to verify that veth-pair end from container is in ``br-vxlan``"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:135
+msgid "IP address should be applied to ``br-vxlan``:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:147
+msgid "Checking services"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:149
+msgid ""
+"You can check the status of an OpenStack service by accessing every "
+"controller node and running the :command:`service <SERVICE_NAME> status`."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:152
+msgid ""
+"See the following links for additional information to verify OpenStack "
+"services:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:155
+msgid ""
+"`Identity service (keystone) <https://ask.openstack.org/en/question/101127/"
+"how-to-check-if-keystone-is-running/>`_"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:156
+msgid ""
+"`Image service (glance) <https://docs.openstack.org/ocata/install-guide-"
+"ubuntu/glance-verify.html>`_"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:157
+msgid ""
+"`Compute service (nova) <https://docs.openstack.org/ocata/install-guide-"
+"ubuntu/nova-verify.html>`_"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:158
+msgid ""
+"`Networking service (neutron) <https://docs.openstack.org/ocata/install-"
+"guide-ubuntu/neutron-verify.html>`_"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:159
+msgid ""
+"`Block Storage service <https://docs.openstack.org/ocata/install-guide-rdo/"
+"cinder-verify.html>`_"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:160
+msgid ""
+"`Object Storage service (swift) <https://docs.openstack.org/project-install-"
+"guide/object-storage/ocata/verify.html>`_"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:163
+msgid "Restarting services"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:165
+msgid ""
+"Restart your OpenStack services by accessing every controller node. Some "
+"OpenStack services will require restart from other nodes in your environment."
+""
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:168
+msgid ""
+"The following table lists the commands to restart an OpenStack service."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:170
+msgid "Restarting OpenStack services"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:174
+msgid "OpenStack service"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:175
+msgid "Commands"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:176
+msgid "Image service"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:180
+msgid "Compute service (controller node)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:190
+msgid "Compute service (compute node)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:194
+msgid "Networking service"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:202
+msgid "Networking service (compute node)"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:206
+#: ../../source/admin/troubleshooting.rst:213
+msgid "Block Storage service"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:220
+msgid "Object Storage service"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:243
+msgid "Troubleshooting Instance connectivity issues"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:245
+msgid ""
+"This section will focus on troubleshooting general instance (VM) "
+"connectivity communication. This does not cover any networking related to "
+"instance connectivity. This is assuming a OpenStack-Ansible install using "
+"LXC containers, VXLAN overlay and the Linuxbridge ml2 driver."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:250
+msgid "**Data flow example**"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:279
+msgid "Preliminary troubleshooting questions to answer:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:281
+msgid "Which compute node is hosting the VM in question?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:282
+msgid "Which interface is used for provider network traffic?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:283
+msgid "Which interface is used for VXLAN overlay?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:284
+msgid "Is the connectivity issue ingress to the instance?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:285
+msgid "Is the connectivity issue egress from the instance?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:286
+msgid "What is the source address of the traffic?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:287
+msgid "What is the destination address of the traffic?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:288
+msgid "Is there a Neutron router in play?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:289
+msgid "Which network node (container) is the router hosted?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:290
+msgid "What is the tenant network type?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:292
+msgid "If VLAN:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:294
+#: ../../source/admin/troubleshooting.rst:364
+msgid ""
+"Does physical interface show link and all VLANs properly trunked across "
+"physical network?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:298
+#: ../../source/admin/troubleshooting.rst:368
+msgid ""
+"Check cable, seating, physical switchport configuration, interface/bonding "
+"configuration, and general network configuration. See general network "
+"troubleshooting documentation."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:300
+#: ../../source/admin/troubleshooting.rst:322
+#: ../../source/admin/troubleshooting.rst:345
+#: ../../source/admin/troubleshooting.rst:370
+#: ../../source/admin/troubleshooting.rst:386
+#: ../../source/admin/troubleshooting.rst:413
+#: ../../source/admin/troubleshooting.rst:437
+msgid "No:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:303
+#: ../../source/admin/troubleshooting.rst:373
+msgid "Good!"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:304
+#: ../../source/admin/troubleshooting.rst:327
+#: ../../source/admin/troubleshooting.rst:374
+msgid "Continue!"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:304
+#: ../../source/admin/troubleshooting.rst:327
+#: ../../source/admin/troubleshooting.rst:356
+#: ../../source/admin/troubleshooting.rst:374
+#: ../../source/admin/troubleshooting.rst:393
+#: ../../source/admin/troubleshooting.rst:417
+#: ../../source/admin/troubleshooting.rst:446
+msgid "Yes:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:308
+#: ../../source/admin/troubleshooting.rst:378
+msgid "Do not continue until physical network is properly configured."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:310
+#: ../../source/admin/troubleshooting.rst:399
+msgid ""
+"Does the instance's IP address ping from network's DHCP namespace or other "
+"instances in the same network?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:314
+msgid ""
+"Check nova console logs to see if the instance ever received its IP address "
+"initially."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:316
+#: ../../source/admin/troubleshooting.rst:344
+#: ../../source/admin/troubleshooting.rst:405
+#: ../../source/admin/troubleshooting.rst:434
+msgid ""
+"Check Neutron ``security-group-rules``, consider adding allow ICMP rule for "
+"testing."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:318
+msgid ""
+"Check that linux bridges contain the proper interfaces. on compute and "
+"network nodes."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:320
+#: ../../source/admin/troubleshooting.rst:409
+msgid "Check Neutron DHCP agent logs."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:321
+#: ../../source/admin/troubleshooting.rst:410
+msgid "Check syslogs."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:322
+#: ../../source/admin/troubleshooting.rst:411
+#: ../../source/admin/troubleshooting.rst:429
+msgid "Check Neutron linux bridge logs."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:325
+#: ../../source/admin/troubleshooting.rst:416
+msgid ""
+"Good! This suggests that the instance received its IP address and can reach "
+"local network resources."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:331
+msgid ""
+"Do not continue until instance has an IP address and can reach local network "
+"resources like DHCP."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:334
+#: ../../source/admin/troubleshooting.rst:424
+msgid ""
+"Does the instance's IP address ping from the gateway device (Neutron router "
+"namespace or another gateway device)?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:338
+#: ../../source/admin/troubleshooting.rst:428
+msgid "Check Neutron L3 agent logs (if applicable)."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:339
+msgid "Check Neutron linuxbridge logs."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:340
+#: ../../source/admin/troubleshooting.rst:430
+msgid "Check physical interface mappings."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:341
+msgid "Check Neutron Router ports (if applicable)."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:342
+#: ../../source/admin/troubleshooting.rst:385
+#: ../../source/admin/troubleshooting.rst:407
+#: ../../source/admin/troubleshooting.rst:432
+msgid ""
+"Check that linux bridges contain the proper interfaces on compute and "
+"network nodes."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:348
+msgid ""
+"Good! The instance can ping its intended gateway. The issue may be north of "
+"the gateway or related to the provider network."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:351
+msgid "Check \"gateway\" or host routes on the Neutron subnet."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:352
+#: ../../source/admin/troubleshooting.rst:442
+msgid ""
+"Check Neutron ``security-group-rules``, consider adding ICMP rule for "
+"testing."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:354
+#: ../../source/admin/troubleshooting.rst:444
+msgid "Check Neutron FloatingIP associations (if applicable)."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:355
+#: ../../source/admin/troubleshooting.rst:445
+msgid "Check Neutron Router external gateway information (if applicable)."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:356
+msgid "Check upstream routes, NATs or access-control-lists."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:360
+msgid "Do not continue until the instance can reach its gateway."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:362
+msgid "If VXLAN:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:380
+msgid "Are VXLAN VTEP addresses able to ping each other?"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:383
+msgid "Check ``br-vxlan`` interface on Compute and Network nodes"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:384
+msgid "Check veth pairs between containers and linux bridges on the host."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:389
+msgid ""
+"Check ml2 config file for local VXLAN IP and other VXLAN configuration "
+"settings."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:392
+msgid ""
+"If multicast, make sure the physical switches are properly allowing and "
+"distributing multicast traffic."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:393
+msgid "Check VTEP learning method (multicast or l2population):"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:397
+msgid "Do not continue until VXLAN endpoints have reachability to each other."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:403
+msgid ""
+"Check Nova console logs to see if the instance ever received its IP address "
+"initially."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:412
+#: ../../source/admin/troubleshooting.rst:436
+msgid ""
+"Check that Bridge Forwarding Database (fdb) contains the proper entries on "
+"both the compute and Neutron agent container."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:421
+msgid ""
+"Do not continue until instance has an IP address and can reach local network "
+"resources."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:431
+msgid "Check Neutron router ports (if applicable)."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:440
+msgid "Good! The instance can ping its intended gateway."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:441
+msgid "Check gateway or host routes on the Neutron subnet."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:446
+msgid "Check upstream routes, NATs or ``access-control-lists``."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:449
+msgid "Diagnose Image service issues"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:451
+msgid "The ``glance-api`` handles the API interactions and image store."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:453
+msgid ""
+"To troubleshoot problems or errors with the Image service, refer to :file:`/"
+"var/log/glance-api.log` inside the glance api container."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:456
+msgid ""
+"You can also conduct the following activities which may generate logs to "
+"help identity problems:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:459
+msgid "Download an image to ensure that an image can be read from the store."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:460
+msgid ""
+"Upload an image to test whether the image is registering and writing to the "
+"image store."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:462
+msgid ""
+"Run the ``openstack image list`` command to ensure that the API and registry "
+"is working."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:465
+msgid ""
+"For an example and more information, see `Verify operation <https://docs."
+"openstack.org/glance/latest/install/verify.html>_`. and `Manage Images "
+"<https://docs.openstack.org/glance/latest/admin/manage-images.html>_`"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:471
+msgid "RabbitMQ issues"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:474
+msgid "Analyze RabbitMQ queues"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:479
+msgid "Analyze OpenStack service logs and RabbitMQ logs"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:484
+msgid "Failed security hardening after host kernel upgrade from version 3.13"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:486
+msgid ""
+"Ubuntu kernel packages newer than version 3.13 contain a change in module "
+"naming from ``nf_conntrack`` to ``br_netfilter``. After upgrading the "
+"kernel, run the ``openstack-hosts-setup.yml`` playbook against those hosts. "
+"For more information, see `OSA bug 157996 <https://bugs.launchpad.net/"
+"openstack-ansible/+bug/1579963>`_."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:493
+msgid "Cached Ansible facts issues"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:495
+msgid ""
+"At the beginning of a playbook run, information about each host is gathered, "
+"such as:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:498
+msgid "Linux distribution"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:499
+msgid "Kernel version"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:500
+msgid "Network interfaces"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:502
+msgid ""
+"To improve performance, particularly in large deployments, you can cache "
+"host facts and information."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:505
+msgid ""
+"OpenStack-Ansible enables fact caching by default. The facts are cached in "
+"JSON files within ``/etc/openstack_deploy/ansible_facts``."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:508
+msgid ""
+"Fact caching can be disabled by running ``export ANSIBLE_CACHE_PLUGIN="
+"memory``. To set this permanently, set this variable in ``/usr/local/bin/"
+"openstack-ansible.rc``. Refer to the Ansible documentation on `fact "
+"caching`_ for more details."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:518
+msgid "Forcing regeneration of cached facts"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:520
+msgid ""
+"Cached facts may be incorrect if the host receives a kernel upgrade or new "
+"network interfaces. Newly created bridges also disrupt cache facts."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:523
+msgid ""
+"This can lead to unexpected errors while running playbooks, and require "
+"cached facts to be regenerated."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:526
+msgid ""
+"Run the following command to remove all currently cached facts for all hosts:"
+""
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:532
+msgid "New facts will be gathered and cached during the next playbook run."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:534
+msgid ""
+"To clear facts for a single host, find its file within ``/etc/"
+"openstack_deploy/ansible_facts/`` and remove it. Each host has a JSON file "
+"that is named after its hostname. The facts for that host will be "
+"regenerated on the next playbook run."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:541
+msgid "Failed ansible playbooks during an upgrade"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:545
+msgid "Container networking issues"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:547
+msgid ""
+"All LXC containers on the host have at least two virtual Ethernet interfaces:"
+""
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:549
+msgid "`eth0` in the container connects to `lxcbr0` on the host"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:550
+msgid "`eth1` in the container connects to `br-mgmt` on the host"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:554
+msgid ""
+"Some containers, such as ``cinder``, ``glance``, ``neutron_agents``, and "
+"``swift_proxy`` have more than two interfaces to support their functions."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:559
+msgid "Predictable interface naming"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:561
+msgid ""
+"On the host, all virtual Ethernet devices are named based on their container "
+"as well as the name of the interface inside the container:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:568
+msgid ""
+"As an example, an all-in-one (AIO) build might provide a utility container "
+"called `aio1_utility_container-d13b7132`. That container will have two "
+"network interfaces: `d13b7132_eth0` and `d13b7132_eth1`."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:572
+msgid ""
+"Another option would be to use the LXC tools to retrieve information about "
+"the utility container. For example:"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:597
+msgid ""
+"The ``Link:`` lines will show the network interfaces that are attached to "
+"the utility container."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:601
+msgid "Review container networking traffic"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:603
+msgid ""
+"To dump traffic on the ``br-mgmt`` bridge, use ``tcpdump`` to see all "
+"communications between the various containers. To narrow the focus, run "
+"``tcpdump`` only on the desired network interface of the containers."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:610
+msgid "Restoring inventory from backup"
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:612
+msgid ""
+"OpenStack-Ansible maintains a running archive of inventory. If a change has "
+"been introduced into the system that has broken inventory or otherwise has "
+"caused an unforseen issue, the inventory can be reverted to an early version."
+" The backup file ``/etc/openstack_deploy/backup_openstack_inventory.tar`` "
+"contains a set of timestamped inventories that can be restored as needed."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:618
+msgid "Example inventory restore process."
+msgstr ""
+
+#: ../../source/admin/troubleshooting.rst:632
+msgid ""
+"At the completion of this operation the inventory will be restored to the "
+"earlier version."
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:2
+msgid "Compatibility Matrix"
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:4
+msgid ""
+"All of the OpenStack-Ansible releases are compatible with specific sets of "
+"operating systems and their versions. Operating Systems have their own "
+"lifecycles, however we may drop their support before end of their EOL "
+"because of various reasons:"
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:9
+msgid "OpenStack requires a higher version of a library (ie. libvirt)"
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:10
+msgid "Python version"
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:11
+msgid "specific dependencies"
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:12
+msgid "etc."
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:14
+msgid ""
+"However, we do try to provide ``upgrade`` releases where we support both new "
+"and old Operating System versions, providing deployers the ability to "
+"properly upgrade their deployments to the new Operating System release."
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:18
+msgid ""
+"In CI we test upgrades from N to N+1 releases and only for source "
+"deployments."
+msgstr ""
+
+#: ../../source/admin/upgrades/compatibility-matrix.rst:20
+msgid ""
+"Below you will find the support matrix of Operating Systems for OpenStack-"
+"Ansible releases."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:3
+msgid "Major upgrades"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:5
+msgid ""
+"This guide provides information about the upgrade process from "
+"|previous_release_formal_name| to |current_release_formal_name| for "
+"OpenStack-Ansible."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:11
+msgid "You can only upgrade between sequential releases."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:14
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:16
+msgid ""
+"For upgrades between major versions, the OpenStack-Ansible repository "
+"provides playbooks and scripts to upgrade an environment. The ``run-upgrade."
+"sh`` script runs each upgrade playbook in the correct order, or playbooks "
+"can be run individually if necessary. Alternatively, a deployer can upgrade "
+"manually."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:21
+msgid ""
+"For more information about the major upgrade process, see :ref:`upgrading-by-"
+"using-a-script` and :ref:`upgrading-manually`."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:26
+msgid "|upgrade_warning| Test this on a development environment first."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:31
+msgid "Upgrading by using a script"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:33
+msgid ""
+"The |current_release_formal_name| release series of OpenStack-Ansible "
+"contains the code for migrating from |previous_release_formal_name| to "
+"|current_release_formal_name|."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:38
+msgid "Running the upgrade script"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:40
+msgid ""
+"To upgrade from |previous_release_formal_name| to "
+"|current_release_formal_name| by using the upgrade script, perform the "
+"following steps in the ``openstack-ansible`` directory:"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:44
+#: ../../source/admin/upgrades/minor-upgrades.rst:100
+msgid "Change directory to the repository clone root directory:"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:50
+msgid "Run the following commands:"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:57
+msgid ""
+"For more information about the steps performed by the script, see :ref:"
+"`upgrading-manually`."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:63
+msgid "Upgrading manually"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:65
+msgid ""
+"Manual upgrades are useful for scoping the changes in the upgrade process "
+"(for example, in very large deployments with strict SLA requirements), or "
+"performing other upgrade automation beyond that provided by OpenStack-"
+"Ansible."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:69
+msgid ""
+"The steps detailed here match those performed by the ``run-upgrade.sh`` "
+"script. You can safely run these steps multiple times."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:73
+msgid "Preflight checks"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:75
+msgid ""
+"Before starting with the upgrade, perform preflight health checks to ensure "
+"your environment is stable. If any of those checks fail, ensure that the "
+"issue is resolved before continuing."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:80
+msgid "Check out the |current_release_formal_name| release"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:82
+msgid ""
+"Ensure that your OpenStack-Ansible code is on the latest "
+"|current_release_formal_name| tagged release."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:90
+msgid "Prepare the shell variables"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:92
+msgid ""
+"Define these variables to reduce typing when running the remaining upgrade "
+"tasks. Because these environments variables are shortcuts, this step is "
+"optional. If you prefer, you can reference the files directly during the "
+"upgrade."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:104
+msgid "Backup the existing OpenStack-Ansible configuration"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:106
+msgid "Make a backup of the configuration of the environment:"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:114
+msgid "Bootstrap the new Ansible and OSA roles"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:116
+msgid ""
+"To ensure that there is no currently set ANSIBLE_INVENTORY to override the "
+"default inventory location, we unset the environment variable."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:123
+msgid ""
+"Bootstrap Ansible again to ensure that all OpenStack-Ansible role "
+"dependencies are in place before you run playbooks from the "
+"|current_release_formal_name| release."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:132
+msgid "Change to the playbooks directory"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:134
+msgid ""
+"Change to the playbooks directory to simplify the CLI commands from here on "
+"in the procedure, given that most playbooks executed are in this directory."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:142
+msgid "Implement changes to OSA configuration"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:144
+msgid ""
+"If there have been any OSA variable name changes or environment/inventory "
+"changes, there is a playbook to handle those changes to ensure service "
+"continuity in the environment when the new playbooks run. The playbook is "
+"tagged to ensure that any part of it can be executed on its own or skipped. "
+"Please review the contents of the playbook for more information."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:155
+msgid "Upgrade hosts"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:157
+msgid ""
+"Before installing the infrastructure and OpenStack, update the host machines."
+""
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:159
+msgid ""
+"With the introduction of the PKI ansible role, OSA now manages its own "
+"Certificate Authority (CA) when self-signed certificates are used. Before "
+"proceeding with the upgrade, you will need to override "
+"``openstack_pki_authorities`` and "
+"``openstack_pki_service_intermediate_cert_name`` in your user_variables. "
+"Otherwise, sample authorities will be generated for root and intermediate "
+"certificates and all self-signed certificates generated later will be signed "
+"with them."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:169
+msgid ""
+"Usage of non-trusted certificates for RabbitMQ is not possible due to "
+"requirements of newer ``amqp`` versions."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:172
+msgid "To generate new CA, you will need to run the following command:"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:178
+msgid ""
+"Once CA is generated, we can proceed with standard OpenStack upgrade steps:"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:184
+msgid ""
+"This command is the same setting up hosts on a new installation. The "
+"``galera_all`` and ``rabbitmq_all`` host groups are excluded to prevent "
+"reconfiguration and restarting of any of those containers as they need to be "
+"updated, but not restarted."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:189
+msgid ""
+"Once that is complete, upgrade the final host groups with the flag to "
+"prevent container restarts."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:197
+msgid "Upgrade infrastructure"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:199
+msgid ""
+"We can now go ahead with the upgrade of all the infrastructure components. "
+"To ensure that rabbitmq and mariadb are upgraded, we pass the appropriate "
+"flags."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:206
+msgid ""
+"With this complete, we can now restart the mariadb containers one at a time, "
+"ensuring that each is started, responding, and synchronized with the other "
+"nodes in the cluster before moving on to the next steps. This step allows "
+"the LXC container configuration that you applied earlier to take effect, "
+"ensuring that the containers are restarted in a controlled fashion."
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:217
+msgid "Upgrade OpenStack"
+msgstr ""
+
+#: ../../source/admin/upgrades/major-upgrades.rst:219
+msgid "We can now go ahead with the upgrade of all the OpenStack components."
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:3
+msgid "Minor version upgrade"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:5
+msgid ""
+"Upgrades between minor versions of OpenStack-Ansible require updating the "
+"repository clone to the latest minor release tag, updating the ansible "
+"roles, and then running playbooks against the target hosts. This section "
+"provides instructions for those tasks."
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:11
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:13
+msgid ""
+"To avoid issues and simplify troubleshooting during the upgrade, disable the "
+"security hardening role by setting the ``apply_security_hardening`` variable "
+"to ``False`` in the :file:`user_variables.yml` file, and backup your "
+"openstack-ansible installation."
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:19
+msgid "Execute a minor version upgrade"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:21
+msgid "A minor upgrade typically requires the following steps:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:23
+msgid "Change directory to the cloned repository's root directory:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:29
+msgid ""
+"Ensure that your OpenStack-Ansible code is on the latest "
+"|current_release_formal_name| tagged release:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:36
+msgid "Update all the dependent roles to the latest version:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:42
+msgid "Change to the playbooks directory:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:48
+msgid "Update the hosts:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:54
+msgid "Update the infrastructure:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:61
+msgid "Update all OpenStack services:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:69
+msgid ""
+"You can limit upgrades to specific OpenStack components. See the following "
+"section for details."
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:73
+msgid "Upgrade specific components"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:75
+msgid ""
+"You can limit upgrades to specific OpenStack components by running each of "
+"the component playbooks against groups."
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:78
+msgid ""
+"For example, you can update only the Compute hosts by running the following "
+"command:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:85
+msgid "To update only a single Compute host, run the following command:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:94
+msgid ""
+"Skipping the ``nova-key`` tag is necessary so that the keys on all Compute "
+"hosts are not gathered."
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:97
+msgid ""
+"To see which hosts belong to which groups, use the ``inventory-manage.py`` "
+"script to show all groups and their hosts. For example:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:106
+msgid "Show all groups and which hosts belong to them:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:112
+msgid "Show all hosts and the groups to which they belong:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:118
+msgid ""
+"To see which hosts a playbook runs against, and to see which tasks are "
+"performed, run the following commands (for example):"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:121
+msgid "Change directory to the repository clone playbooks directory:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:127
+msgid ""
+"See the hosts in the ``nova_compute`` group that a playbook runs against:"
+msgstr ""
+
+#: ../../source/admin/upgrades/minor-upgrades.rst:134
+msgid ""
+"See the tasks that are executed on hosts in the ``nova_compute`` group:"
+msgstr ""
+

@@ -1,0 +1,466 @@
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: vmware-nsx 0.0.2.dev1348\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-04-12 20:50+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-04-12 06:52+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: vmware_nsx/nsx_cluster.py:63
+#, python-format
+msgid "The following cluster attributes were not specified: %s'"
+msgstr ""
+
+#: vmware_nsx/api_client/base.py:111
+#, python-format
+msgid ""
+"[%(rid)d] Connection %(conn)s idle for %(sec)0.2f seconds; reconnecting."
+msgstr ""
+
+#: vmware_nsx/api_client/eventlet_request.py:122
+#, python-format
+msgid "[%d] Request timeout."
+msgstr ""
+
+#: vmware_nsx/api_client/eventlet_request.py:156
+#, python-format
+msgid "[%(rid)d] Error while handling request: %(req)s"
+msgstr ""
+
+#: vmware_nsx/api_client/request.py:161
+#, python-format
+msgid "[%d] Maximum redirects exceeded, aborting request"
+msgstr ""
+
+#: vmware_nsx/api_client/request.py:171
+#, python-format
+msgid "[%(rid)d] Redirecting request to: %(conn)s"
+msgstr ""
+
+#: vmware_nsx/common/sync.py:577
+#, python-format
+msgid "Fetching up to %s resources from NSX backend"
+msgstr ""
+
+#: vmware_nsx/common/sync.py:617
+#, python-format
+msgid "Running state synchronization task. Chunk: %s"
+msgstr ""
+
+#: vmware_nsx/common/sync.py:668
+#, python-format
+msgid "Synchronization for chunk %(chunk_num)d of %(total_chunks)d performed"
+msgstr ""
+
+#: vmware_nsx/db/qos_db.py:256
+#, python-format
+msgid "DSCP value (%s) will be ignored with 'trusted' marking"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:207 vmware_nsx/dhcp_meta/nsx.py:226
+#, python-format
+msgid "Performing DHCP %(action)s for resource: %(resource)s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:212
+#, python-format
+msgid "Network %s is external: no LSN to create"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:221
+#, python-format
+msgid "Logical Services Node for network %s configured successfully"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:254
+#, python-format
+msgid "DHCP is disabled for subnet %s: nothing to do"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:273
+#, python-format
+msgid "DHCP for port %s configured successfully"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:281
+#, python-format
+msgid "Network %s is external: nothing to do"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:290
+#, python-format
+msgid "Configuring metadata entry for port %s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:302
+#, python-format
+msgid "Metadata for port %s configured successfully"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:307
+#, python-format
+msgid "Handle metadata access via router: %(r)s and interface %(i)s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:324
+#, python-format
+msgid "Metadata for router %s handled successfully"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/rpc.py:59
+#, python-format
+msgid "Port %s has no IP due to subnet in deleting state"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/rpc.py:70
+#, python-format
+msgid ""
+"Subnet %s does not have a gateway, the metadata route will not be created"
+msgstr ""
+
+#: vmware_nsx/dvs/dvs.py:94
+#, python-format
+msgid "%(net_id)s with tag %(vlan_tag)s created on %(dvs)s."
+msgstr ""
+
+#: vmware_nsx/dvs/dvs.py:257
+#, python-format
+msgid "%(net_id)s delete from %(dvs)s."
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/router.py:476
+msgid ""
+"No SNAT rules cannot be applied as they are not available in this version of "
+"the NSX platform"
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/router.py:481
+msgid ""
+"No DNAT rules cannot be applied as they are not available in this version of "
+"the NSX platform"
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/switch.py:291
+#, python-format
+msgid "get_port() %(network)s %(port)s"
+msgstr ""
+
+#: vmware_nsx/nsxlib/v3/cluster.py:209
+#, python-format
+msgid "Endpoint '%(ep)s' changing from state '%(old)s' to '%(new)s'"
+msgstr ""
+
+#: vmware_nsx/nsxlib/v3/cluster.py:399
+#, python-format
+msgid ""
+"API endpoint %(ep)s at connection capacity %(max)s and has %(waiting)s "
+"waiting"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:450
+#: vmware_nsx/plugins/nsx_mh/plugin.py:502
+#: vmware_nsx/plugins/nsx_mh/plugin.py:709
+#, python-format
+msgid ""
+"NSX plugin does not support regular VIF ports on external networks. Port %s "
+"will be down."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:1502
+#: vmware_nsx/plugins/nsx_v3/plugin.py:1358
+#, python-format
+msgid ""
+"Create router failed while setting external gateway. Router:%s has been "
+"removed from DB and backend"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/managers.py:35
+#, python-format
+msgid "Configured router type driver names: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/managers.py:42
+#, python-format
+msgid "Loaded type driver names: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/managers.py:58
+#, python-format
+msgid "Registered types: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/managers.py:70
+#, python-format
+msgid "Tenant router_types: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:631
+#, python-format
+msgid "Added %(sg_id)s member to NSX security group %(vnic_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:1251
+#, python-format
+msgid ""
+"Not updating fixed IP on backend for device owner [%(dev_own)s] and port "
+"%(pid)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:2560
+msgid "Unable to set manager lock operation"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:2566
+msgid "Unable to configure aggregate publishing"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:1042
+#, python-format
+msgid "Task %(name)s completed."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:294
+msgid "Stopping TaskManager"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:341
+msgid "TaskManager terminated"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:138
+msgid "Starting NsxV3Plugin"
+msgstr ""
+
+#: vmware_nsx/services/l2gateway/nsx_v3/driver.py:78
+msgid ""
+"NSX: Default bridge cluster UUID not configured in nsx.ini. No default L2 "
+"gateway created."
+msgstr ""
+
+#: vmware_nsx/services/l2gateway/nsx_v3/driver.py:97
+msgid "Default L2 gateway is already created."
+msgstr ""
+
+#: vmware_nsx/services/qos/nsx_v/plugin.py:35
+msgid "Loading VMware NSX-V Qos Service Plugin"
+msgstr ""
+
+#: vmware_nsx/services/qos/nsx_v3/plugin.py:39
+msgid "Loading VMware Qos Service Plugin"
+msgstr ""
+
+#: vmware_nsx/shell/nsxadmin.py:227
+#, python-format
+msgid "NSX Plugin in use: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/common/formatters.py:33
+#, python-format
+msgid "%(resource_name)s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/common/formatters.py:35
+msgid "No resources found"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/common/utils.py:33
+#, python-format
+msgid "==== %(component)s %(operation)s ===="
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:92
+msgid "Backup edge deletion aborted by user"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:201
+msgid "Edge rename aborted by user"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:203
+msgid "Edge rename started"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:76
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:91
+#: vmware_nsx/tests/unit/nsx_mh/apiclient/test_api_eventlet_request.py:333
+#, python-format
+msgid "%s"
+msgstr "%s"
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:77
+#, python-format
+msgid "For edge: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:81
+#, python-format
+msgid "# of DHCP bindings in Neutron DB: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:83
+#, python-format
+msgid "# of DHCP bindings on NSXv backend: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:87
+msgid "No missing DHCP bindings found."
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:88
+msgid "Neutron DB and NSXv backend are in sync"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:90
+msgid "Missing DHCP bindings:"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:103
+#, python-format
+msgid "Updating NSXv Edge: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:83
+msgid "NSXv edges present on NSXv backend but not present in Neutron DB\n"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:87
+msgid "\n"
+"No orphaned edges found.\n"
+"Neutron DB and NSXv backend are in sync\n"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:101
+#, python-format
+msgid "Before delete; Orphaned Edges: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:109
+msgid "NSXv Edge deletion aborted by user"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:114
+#, python-format
+msgid "Deleting edge: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:117
+#, python-format
+msgid "After delete; Orphaned Edges: \n"
+"%s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:146
+msgid "NSXv edges present in Neutron DB but not present on the NSXv backend\n"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:150
+msgid "\n"
+"No edges are missing.\n"
+"Neutron DB and NSXv backend are in sync\n"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:207
+#, python-format
+msgid "Updating NSXv edge: %(edge)s with properties\n"
+"%(prop)s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/networks.py:73
+msgid "Policy already set!"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/networks.py:75
+#, python-format
+msgid "Updating NSXv switch %(dvs)s teaming policy to %(policy)s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/networks.py:79
+#, python-format
+msgid "Switch value after update: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/networks.py:83
+#, python-format
+msgid "Current switch value is: %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:89
+msgid "Spoofguard policies on NSXv but not present in Neutron Db"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:92
+msgid "Spoofguard policies in Neutron Db but not present on NSXv"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:96
+msgid ""
+"\n"
+"No missing spoofguard policies found.\n"
+"Neutron DB and NSXv backend are in sync\n"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:126
+msgid "spoofguard-policy deletion aborted by user"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:132
+msgid "spoofguard-policy successfully deleted."
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv3/resources/securitygroups.py:69
+msgid "NSX security groups cleanup aborted by user"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv3/resources/securitygroups.py:78
+#, python-format
+msgid "Deleting firewall section %(display_name)s, section id %(id)s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv3/resources/securitygroups.py:87
+#, python-format
+msgid "Deleting ns-group %(display_name)s, ns-group id %(id)s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv3/resources/securitygroups.py:110
+msgid "Neutron security groups cleanup aborted by user"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv3/resources/securitygroups.py:120
+#, python-format
+msgid "Trying to delete %(sg_id)s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv3/resources/securitygroups.py:123
+#, python-format
+msgid "Deleted security group name: %(name)s id: %(id)s"
+msgstr ""
+
+#: vmware_nsx/tests/unit/nsx_mh/apiclient/test_api_eventlet_request.py:63
+#, python-format
+msgid "spawned: %d"
+msgstr ""
+
+#: vmware_nsx/tests/unit/nsx_mh/apiclient/test_api_eventlet_request.py:75
+#, python-format
+msgid "_handle_request called: %s"
+msgstr ""
+
+#: vmware_nsx/tests/unit/nsx_mh/apiclient/test_api_eventlet_request.py:110
+#, python-format
+msgid "my_handle_request() self: %s"
+msgstr ""
+
+#: vmware_nsx/tests/unit/nsx_mh/apiclient/test_api_eventlet_request.py:111
+#, python-format
+msgid "my_handle_request() dir(self): %s"
+msgstr ""
+

@@ -1,0 +1,1022 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Glance_store Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-17 16:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext stable/rocky>:140
+msgid ""
+"'stores' and 'default_store' config options have been deprecated for removal."
+" As the replacements are experimental for Rocky release, migration away from "
+"these options in production environments is not advised before Stein release."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:44
+msgid "0.11.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "0.12.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:82
+msgid "0.16.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:40
+msgid "0.17.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "0.18.0-5"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "0.19.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "0.21.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5 stable/rocky>:165
+msgid "0.23.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:97
+msgid "0.25.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:27
+msgid "0.26.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "0.26.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "0.28.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:163
+msgid "0.29.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:128
+msgid "0.29.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:38
+msgid "1.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "1.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:87
+msgid "1.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:65
+msgid "2.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:48
+msgid "2.2.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "2.3.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:69 current stable/wallaby>:5
+msgid "2.5.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:48 current
+msgid "2.6.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current
+msgid "2.6.0-7"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:24 stable/rocky>:184
+msgid ""
+"A `BufferedReader`_ has been added to the Swift store driver in order to "
+"enable better recovery from errors during uploads of large image files.  "
+"Because this reader buffers image data, it could cause Glance to use a much "
+"larger amount of disk space, and so the Buffered Reader is *not* enabled by "
+"default."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:23
+msgid ""
+"A chunk size config option was added to the filesystem driver to allow some "
+"performance tweaking. The former hardcoded 64 KB is the current default "
+"value."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:51
+msgid ""
+"A new function, ``store_add_to_backend_with_multihash``, has been added.  "
+"This function wraps each store's ``add`` method to provide consumers with a "
+"constant interface.  It is similar to the existing ``store_add_to_backend`` "
+"function but requires the caller to specify an additional ``hashing_algo`` "
+"argument whose value is a hashlib algorithm identifier.  The function "
+"returns a 5-tuple containing a ``multihash`` value, which is a hexdigest of "
+"the stored data computed using the specified hashing algorithm."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:18
+msgid ""
+"A sparse file means that we do not actually write null byte sequences but "
+"only the data itself at a given offset, the \"holes\" which can appear will "
+"automatically be interpreted by the storage backend as null bytes, and do "
+"not really consume your storage."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:14
+msgid ""
+"Add new configuration option ``rbd_thin_provisioning`` and "
+"``filesystem_thin_provisioning`` to rbd and filesystem store to enable or "
+"not sparse upload, default are False."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:172
+msgid ""
+"Added keyword argument to ``register_store_opts`` and "
+"``create_multi_stores`` calls to configure reserved stores by the consuming "
+"service. This feature will allow a mix of operator-configured stores via "
+"enabled_backends configuration option set in the [glance_store] section of "
+"the consuming service's configuration file, and stores that are reserved for "
+"use by the consuming service."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:29
+msgid ""
+"Added support for cinder multiple stores. Operators can now configure "
+"multiple cinder stores by configuring a unique cinder_volume_type for each "
+"cinder store."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:24
+msgid ""
+"Allow glance_store to refresh token when upload or download data to Swift "
+"store. glance_store identifies if token is going to expire soon when "
+"executing request to Swift and refresh the token. For multi-tenant swift "
+"store glance_store uses trusts, for single-tenant swift store glance_store "
+"uses credentials from swift store configurations. Please also note that this "
+"feature is enabled if and only if Keystone V3 API is available and enabled."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14 stable/ussuri>:96
+msgid ""
+"At the moment use of reserved stores is only limited to filesystem store "
+"driver. Also default ``filesystem_store_datadir`` path for these stores is "
+"set to ``/var/lib/glance/<store_name>``, so with if you are using devstack "
+"for the deployment, you need to make sure you have appropriate permissions "
+"to create these reserved stores directories."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:48 stable/rocky>:208
+msgid ""
+"Be aware that depending upon how the file system is configured, the disk "
+"space used for buffering may decrease the actual disk space available for "
+"the Glance image cache, which may affect overall performance."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:153
+msgid ""
+"Bug 1606268_: Failure to upload to swift when keystone uses \"insecure\" SSL"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:26
+msgid "Bug 1618666_: Fix SafeConfigParser DeprecationWarning in Python 3.2+"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:34 origin/stable/ocata>:42
+msgid ""
+"Bug 1619487 is fixed which was causing random order of the generation of "
+"configs in Glance. See ``upgrade`` section for more details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:33
+msgid "Bug 1620214_: Sheepdog: command execution failure"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:32
+msgid "Bug 1643516_: Cinder driver: TypeError in _open_cinder_volume"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:28
+msgid ""
+"Bug 1657710_: Unit test passes only because is launched as non-root user"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:27
+msgid "Bug 1668848_: PBR 2.0.0 will break projects not using constraints"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:29
+msgid "Bug 1686063_: RBD driver can't delete image with unprotected snapshot"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:30
+msgid "Bug 1691132_: Fixed tests failing due to updated oslo.config"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:31
+msgid "Bug 1693670_: Fix doc generation for Python3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:79 stable/rocky>:239
+msgid ""
+"Bug 1733502_: Use cached auth_ref instead of getting a new one each time"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:78 stable/rocky>:238
+msgid "Bug 1738331_: Fix BufferedReader writing zero size chunks"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:155
+msgid "Bug 1764200_: Glance Cinder backed images & multiple regions"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:154
+msgid "Bug 1779455_: cinder backend causes BadRequest due to NULL mountpoint"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:14
+msgid "Bug 1784420_: Interface function for multihash not wrapped correctly"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:59
+msgid "Bug 1785641_: Fix Defaults for ConfigParser"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:60
+msgid "Bug 1808456_: Catch rdb NoSpace Exception"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:61
+msgid "Bug 1813092_: Fix some types in the FS and VMware drivers"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:62
+msgid "Bug 1815335_: Do not raise StopIteration"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:63
+msgid "Bug 1816721_: Fix python3 compatibility of rbd get_fsid"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:51
+msgid ""
+"Bug 1820817_: Swift backend can not use custom CA bundle to verify server "
+"SSL certs when those are not added to global system certs"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:56
+msgid "Bug 1839778_: Python3 swift config quotes removal"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:54
+msgid ""
+"Bug 1863691_: When Image size greater than the chunk size and the glance "
+"buffered upload for swift is enabled, glance just put 0 bytes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:57
+msgid ""
+"Bug 1863983_: Image upload is failing with NoFibreChannelVolumeDeviceFound "
+"after configuring Cinder(HP3Par FC storage) as glance backend"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:53
+msgid ""
+"Bug 1866966_: define mount_point for ``*fs`` drivers in glance cinder store"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:75
+msgid "Bug 1870289_: Add lock per share for cinder nfs mount/umount"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:74
+msgid "Bug 1875281_: API returns 503 if one of the store is mis-configured"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:88 current stable/wallaby>:49
+msgid "Bug 1915602_: Cinder store: Use v3 API by default"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:30 branch>:84 current origin/stable/newton>:30
+#: origin/stable/ocata>:38 stable/pike>:20 stable/queens>:74 stable/rocky>:10
+#: stable/rocky>:149 stable/rocky>:234 stable/stein>:55 stable/train>:146
+#: stable/ussuri>:34 stable/victoria>:53 stable/victoria>:70 stable/wallaby>:33
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:80
+msgid ""
+"Consumers relying upon the EXPERIMENTAL behavior should not upgrade past "
+"version 0.29.1.  Now that the ``multi_backend`` module is fully supported in "
+"release 1.0.0, it will not undergo any more backward-incompatible changes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:93
+msgid ""
+"Consuming services should begin the transition away from the ``glance_store."
+"backend`` module and instead use the ``glance_store.multi_backend`` module.  "
+"The ``backend`` module is expected to be removed during the 'U' development "
+"cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:133
+msgid "Critical Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:37
+msgid ""
+"Default value of the ``cinder_catalog_info`` parameter has been changed from "
+"``volumev2::publicURL`` to ``volumev3::publicURL``, so that the current v3 "
+"API is used by default instead of the deprecated v2 API."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:59 stable/rocky>:64
+#: stable/rocky>:122 stable/stein>:43 stable/train>:102
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:81
+msgid "Drop support for tempest-full"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:80
+msgid "Droped support for python 2.7 and testing for the same."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:89
+msgid ""
+"During Rocky cycle number of issues still warranting experimental status on "
+"Cinder back-end driver was addressed. The team considers the driver stable "
+"and production ready from Rocky release onwards (0.26.0)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:116
+msgid "EXPERIMENTAL: Multiple back-end stores"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:23
+msgid ""
+"Enabling this feature will also speed up image upload and save network "
+"traffic in addition to save space in the backend, as null bytes sequences "
+"are not sent over the network."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:41 current
+msgid ""
+"Fixed creating multiple instances/volumes from image if multiattach volumes "
+"are used."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:150
+msgid ""
+"Following bugs were fixed and included after 0.28.0 release: * Bug 1824533_: "
+"Do not include ETag when puting manifest in chunked uploads * Bug 1818915_: "
+"Python3: Fix return type on CooperativeReader.read * Bug 1805332_: Prevent "
+"unicode object error from zero-byte read"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:49
+msgid "Following bugs were fixed and included after 1.0.1 release:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:44
+msgid ""
+"For more details see [`bug 1820817 <https://bugs.launchpad.net/glance-store/"
+"+bug/1820817>`_]."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:52 stable/rocky>:212
+msgid ""
+"For more information, see the `Buffered Reader for Swift Driver`_ spec."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:57 current
+msgid ""
+"For the Cinder store, if using an internal user to store images, it is now "
+"possible to have the internal user and the internal project in Keystone "
+"domains other than the ``Default`` one. Two new config options "
+"``cinder_store_user_domain_name`` and ``cinder_store_project_domain_name`` "
+"are added (both default to ``Default``) and now are possible to use in the "
+"configuration of the Cinder store."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:73
+msgid ""
+"For years, `/var/lib/glance/images` has been presented as the default dir "
+"for the filesystem store. It was not part of the default value until now. "
+"New deployments and ppl overriding config files should watch for this."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:41
+msgid ""
+"From glance_store release 0.26.0 onwards Cinder driver is no longer "
+"considered as experimental."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:24 current
+msgid "Glance cinder store now supports handling of multiattach volumes."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:28
+msgid ""
+"If using Swift in the multi-tenant mode for storing images in Glance, please "
+"note that the configuration options ``swift_store_multi_tenant`` and "
+"``swift_store_config_file`` are now mutually exclusive and cannot be "
+"configured together. If you intend to use multi-tenant store, please make "
+"sure that you have not set a swift configuration file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Implemented S3 driver to use Amazon S3 or S3 compatible storage as Glance "
+"backend. This is a revival of the S3 driver supported up to Mitaka, with the "
+"addition of a multiple store support."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:28
+msgid ""
+"Implemented image uploading, downloading and deletion for cinder store. It "
+"also supports new settings to put image volumes into a specific project to "
+"hide them from users and to control them based on ACL of the images. Note "
+"that cinder store is currently considered experimental, so current deployers "
+"should be aware that the use of it in production right now may be risky."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:49
+msgid ""
+"Improved configuration options for glance_store. Please refer to the "
+"``other`` section for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:28 stable/ussuri>:110
+msgid ""
+"In this version, refactor was made how registering of filesystem "
+"configuration options for reserved stores works. Consumer just need to pass "
+"the key:value pair where key represents the name of the reserved store and "
+"value represents the actual store driver, to the glance_store."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:10 stable/train>:68 stable/ussuri>:92
+msgid "Known Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:41
+msgid ""
+"Legacy images will be moved to specific stores as per their current volume's "
+"type and the location URL will be updated respectively."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:58
+msgid ""
+"Multiple backend stores may be configured using the ``glance_store."
+"multi_backend`` module.  See the documentation of the "
+"``create_multi_stores`` function in the `glance_store Reference Guide <https:"
+"//docs.openstack.org/glance_store/latest/reference/api/modules.html>`_ for "
+"details."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:20 branch>:53 current origin/stable/mitaka>:20
+#: stable/queens>:20 stable/rocky>:47 stable/rocky>:112 stable/rocky>:180
+#: stable/stein>:19 stable/train>:54 stable/train>:168 stable/ussuri>:10
+#: stable/victoria>:10
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:69 origin/stable/newton>:70
+#: stable/pike>:48 stable/rocky>:85 stable/train>:24 stable/ussuri>:71
+#: stable/ussuri>:106
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:24
+msgid ""
+"Packagers should be aware that the rootwrap configuration files have been "
+"moved from etc/ to etc/glance/ in order to be consistent with where other "
+"projects place these files."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:77
+msgid ""
+"Partial refactoring of cinder driver of glance store to use cinderclient "
+"version 3 and some methods have been moved to class level rather than use "
+"them as module level."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 branch>:74 current origin/stable/mitaka>:10
+#: origin/stable/mitaka>:49 origin/stable/newton>:10 origin/stable/newton>:45
+#: origin/stable/newton>:87 origin/stable/ocata>:10 stable/pike>:10
+#: stable/queens>:10 stable/rocky>:32 stable/rocky>:102 stable/rocky>:170
+#: stable/stein>:10 stable/train>:43 stable/wallaby>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:14
+msgid ""
+"Prevent Unauthorized errors during uploading or donwloading data to Swift "
+"store."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:38
+msgid ""
+"Previously the VMWare Datastore was using HTTPS Connections from httplib "
+"which do not verify the connection. By switching to using requests library "
+"the VMware storage backend now verifies HTTPS connection to vCenter server "
+"and thus addresses the vulnerabilities described in OSSN-0033."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:24
+msgid ""
+"Previously, during service startup, the check to validate volume types used "
+"to raise ``BackendException`` or ``BadStoreConfiguration`` exceptions when "
+"an invalid volume type was configured hence failing the service startup. It "
+"now logs a warning and the glance service starts normally."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:26
+msgid ""
+"Python 2.7 support has been dropped. Last release of glance_store to support "
+"py2.7 is OpenStack Train. The minimum version of Python now supported by "
+"glance_store is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:47
+msgid ""
+"Removal of ``stores`` and ``default_store`` has been postponed until Train "
+"cycle to allow time to move multiple backends stores from being EXPERIMENTAL "
+"due to some unresolved issues with the feature."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:35
+msgid ""
+"Removal of the ``stores`` and ``default_store`` configuration options, which "
+"were deprecated in Rocky, has been postponed until during the Train "
+"development cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14 origin/stable/ocata>:14
+msgid ""
+"Return list of store drivers in sorted order for generating configs. More "
+"info in ``Upgrade Notes`` and ``Bug Fixes`` section."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:34
+msgid "Security Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:32 stable/rocky>:192
+msgid ""
+"Set the ``glance_store`` configuration option ``swift_buffer_on_upload`` to "
+"``True``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:35 stable/rocky>:195
+msgid ""
+"Set the ``glance_store`` configuration option ``swift_upload_buffer_dir`` to "
+"a string value representing an absolute directory path.  This directory will "
+"be used to hold the buffered data."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:54
+msgid ""
+"Some deprecated exceptions have been removed. See upgrade section for more "
+"details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:77
+msgid "Start using reno to manage release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:38
+msgid ""
+"Swift backend now can use custom CA bundle to verify SSL connection to "
+"Keystone without adding this bundle to global system ones. For this it re-"
+"uses the CA bundle specified as ``swift_store_cacert`` config option, so "
+"this bundle must verify both certificates of Swift and Keysotne API "
+"endpoints."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:118
+msgid ""
+"The 'stores' and 'default_store' configuration options have been deprecated "
+"for removal since the OpenStack Rocky release.  They are subject to removal "
+"early in the 'U' development cycle.  When these options are removed, the "
+"``glance_store.backend`` module, that depends on them, will be removed as "
+"well."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:39 stable/rocky>:199
+msgid ""
+"The Buffered Reader works by taking advantage of the way Swift stores large "
+"objects by segmenting them into discrete chunks.  Thus, the amount of disk "
+"space a Glance API node will require for buffering is a function of the "
+"``swift_store_large_object_chunk_size`` setting and the number of worker "
+"threads (configured in **glance-api.conf** as the value of ``workers``).  "
+"Disk utilization will cap at the following value"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:47
+msgid ""
+"The Glance Project Team is excited to announce the version 1.0.0 release of "
+"the glance_store library. This release marks the finalization of changes "
+"introduced on an experimental basis in previous releases beginning with 0.25."
+"0 to support the Glance `Multi-store backend support <http://specs.openstack."
+"org/openstack/glance-specs/specs/rocky/implemented/glance/multi-store."
+"html>`_ feature."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:16
+msgid ""
+"The Rocky release of glance_store contains support for computing secure hash "
+"values of stored data, but the function called by Glance to store data was "
+"not wrapped correctly, thereby making the computed secure hash value "
+"unavailable to Glance."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:101
+msgid ""
+"The S3 driver has been removed completely from the glance_store source tree. "
+"All environments running and (or) using this s3-driver piece of code and "
+"have not been migrated will stop working after the upgrade. We recommend you "
+"use a different storage backend that is still being supported by Glance. The "
+"standard deprecation path has been used to remove this. The proces requiring "
+"store driver maintainers was initiated at http://lists.openstack.org/"
+"pipermail/openstack-dev/2015-December/081966.html . Since, S3 driver did not "
+"get any maintainer, it was decided to remove it."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:106
+msgid ""
+"The Sheepdog driver is deprecated in this release and is subject to removal "
+"at the beginning of the 'U' development cycle, following the `OpenStack "
+"standard deprecation policy <https://governance.openstack.org/reference/tags/"
+"assert_follows-standard-deprecation.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:187
+msgid ""
+"The ``store_capabilities_update_min_interval`` configuration option, "
+"deprecated since the Rocky release, has been removed.  The option configured "
+"a capability that was not implemented by any glance_store drivers.  Thus its "
+"removal will have no impact on any deployments."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:111
+msgid ""
+"The driver is being removed because `Sheepdog is not maintained upstream "
+"<http://lists.wpkg.org/pipermail/sheepdog/2019-March/068451.html>`_. "
+"Additionally, the Sheepdog driver is no longer tested in the OpenStack gate."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:73
+msgid ""
+"The filesystem driver is now using a configurable chunk size. Increasing it "
+"may avoid bottlenecks."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:24
+msgid "The following bugs were fixed during the Pike release cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:52
+msgid "The following improvements were made during the Pike release cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:75
+msgid "The following improvements were made during the Ussuri release cycle:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:64
+msgid ""
+"The following list of exceptions have been deprecated since 0.10.0 release --"
+" ``Conflict``, ``ForbiddenPublicImage`` ``ProtectedImageDelete``, "
+"``BadDriverConfiguration``, ``InvalidRedirect``, ``WorkerCreationFailure``, "
+"``SchemaLoadError``, ``InvalidObject``, ``UnsupportedHeaderFeature``, "
+"``ImageDataNotFound``, ``InvalidParameterValue``, "
+"``InvalidImageStatusTransition``. This release removes these exceptions so "
+"any remnant consumption of the same must be avoided/removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:74
+msgid ""
+"The function is replaced by ``store_add_to_backend_with_multihash``, which "
+"is a similar wrapper, but which takes an additional argument allowing a "
+"caller to specify an secure hashing algorithm.  The hexdigest of this "
+"algorithm is returned as one of the multiple values returned by the function."
+"  The function also returns the md5 checksum for backward compatability."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:126
+msgid ""
+"The glance_store configuration option "
+"``store_capabilities_update_min_interval`` is deprecated in this release and "
+"is subject to removal at the beginning of the Stein development cycle, "
+"following the `OpenStack standard deprecation policy <https://governance."
+"openstack.org/reference/tags/assert_follows-standard-deprecation.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:74
+msgid ""
+"The glance_store configuration options have been improved with detailed help "
+"texts, defaults for sample configuration files, explicit choices of values "
+"for operators to choose from, and a strict range defined with ``min`` and "
+"``max`` boundaries. It is to be noted that the configuration options that "
+"take integer values now have a strict range defined with \"min\" and/or "
+"\"max\" boundaries where appropriate. This renders the configuration options "
+"incapable of taking certain values that may have been accepted before but "
+"were actually invalid. For example, configuration options specifying counts, "
+"where a negative value was undefined, would have still accepted the supplied "
+"negative value. Such options will no longer accept negative values. However, "
+"options where a negative value was previously defined (for example, -1 to "
+"mean unlimited) will remain unaffected by this change. Values that do not "
+"comply with the appropriate restrictions will prevent the service from "
+"starting. The logs will contain a message indicating the problematic "
+"configuration option and the reason why the supplied value has been rejected."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:68
+msgid ""
+"The glance_store function ``store_add_to_backend``, which is a wrapper "
+"around each store's ``add()`` method, is deprecated in this release and is "
+"subject to removal at the beginning of the Stein development cycle, "
+"following the `OpenStack standard deprecation policy <https://governance."
+"openstack.org/reference/tags/assert_follows-standard-deprecation.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:63
+msgid ""
+"The gridfs driver has been removed from the tree. The environments using "
+"this driver that were not migrated will stop working after the upgrade."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:132
+msgid ""
+"The option configures a stub method that has not been implemented for any "
+"existing store drivers.  Hence it is non-operational.  Given that it has "
+"*never* been operational, it will not be missed.  Its presence is confusing "
+"to operators and thus it is hereby deprecated for removal."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:72
+msgid ""
+"The responses from some functions in the ``glance_store.multi_backend`` "
+"module, which was EXPERIMENTAL until this release, have changed. In "
+"particular, the ``glance_store.driver.Store.add`` function which returns a "
+"tuple whose last element is a dictionary of storage system specific "
+"information, no longer contains a 'backend' key.  Instead, this key is named "
+"'store'.  This change extends to any convenience functions that wrap ``Store."
+"add``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:36
+msgid "This release adds support for Glance multihash computation."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current
+msgid ""
+"This release adds support for handling cinder's multiattach volumes in "
+"glance cinder store."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:106
+msgid ""
+"This release contains the base work for multiple back-ends changing how the "
+"back-ends get configured. Please note that in Rocky release the work is "
+"still experimental. Thus it's not advised to utilize the new configs in "
+"production environments before Stein release even though old config options "
+"are deprecated for removal."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:24 origin/stable/ocata>:32
+msgid ""
+"This version of glance_store will result in Glance generating the configs in "
+"a sorted (deterministic) order. So, preferably store releases on or after "
+"this should be used for generating any new configs if the mismatched "
+"ordering of the configs results in an issue in your environment."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid ""
+"This was a quiet development cycle for the ``glance_store`` library. No new "
+"features were added.  Several bugs were fixed and some code changes were "
+"committed to increase stability."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid ""
+"This was a quiet development cycle for the ``glance_store`` library. One new "
+"feature was added to the Filesystem store driver.  Several bugs were fixed "
+"and some code changes were committed to increase stability."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14 stable/rocky>:174
+msgid ""
+"This was a quiet development cycle for the ``glance_store`` library. One new "
+"feature was added to the Swift store driver.  Several bugs were fixed and "
+"some code changes were committed to increase stability."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:78 current stable/wallaby>:14
+msgid ""
+"This was a quiet development cycle for the ``glance_store`` library. Several "
+"bugs were fixed and some code changes were committed to increase stability."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:30 stable/rocky>:190
+msgid "To use the new reader with the Swift store, you must do the following:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:65 stable/rocky>:225
+msgid ""
+"Two new configuration options, ``swift_buffer_on_upload`` and "
+"``swift_upload_buffer_dir`` have been introduced.  These apply only to users "
+"of the Swift store and their use is optional.  See the New Features section "
+"for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:20 origin/stable/newton>:60
+#: origin/stable/newton>:97 origin/stable/ocata>:20 stable/queens>:61
+#: stable/rocky>:221 stable/stein>:31 stable/train>:89 stable/train>:183
+#: stable/ussuri>:22 stable/victoria>:37 stable/wallaby>:20
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:62
+msgid ""
+"`Add python 3.5 in classifier and envlist <https://git.openstack.org/cgit/"
+"openstack/glance_store/commit/?id="
+"963e2a0fd1c173556a2c40915ad26db28d8375a6>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:57
+msgid ""
+"`Bug #1884482 <https://bugs.launchpad.net/cinder/+bug/1884482>`_: Blocked "
+"creation of images on encrypted nfs volumes when glance store is cinder."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:34 current
+msgid ""
+"`Bug #1901138 <https://bugs.launchpad.net/glance-store/+bug/1901138>`_: "
+"Blocked creation of images when glance store is cinder, cinder backend is "
+"nfs and volumes created are qcow2 format."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:43 current
+msgid "`Bug #1904546 <https://bugs.launchpad.net/cinder/+bug/1904546>`_:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:43
+msgid ""
+"`Bug #1915163 <https://bugs.launchpad.net/glance-store/+bug/1915163>`_: "
+"Added handling to log and raise proper exception during image create when an "
+"invalid volume type is configured."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:56
+msgid ""
+"`Correct error msg variable that could be unassigned <https://git.openstack."
+"org/cgit/openstack/glance_store/commit/?id="
+"ccc9696e3f071383cd05d88ba2488f5a5ee98120>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:66
+msgid ""
+"`Documentation was reorganized according to the new standard layout <http://"
+"specs.openstack.org/openstack/docs-specs/specs/pike/os-manuals-migration."
+"html>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:54
+msgid ""
+"`Fixed string formatting in log message <https://git.openstack.org/cgit/"
+"openstack/glance_store/commit/?id="
+"802c5a785444ba9ea5888c7cd131d004ec2a19ad>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:64
+msgid ""
+"`Initialize privsep root_helper command <https://git.openstack.org/cgit/"
+"openstack/glance_store/commit/?id="
+"d16dff9a08d1104540182f3aa36758dc89603fc0>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:60
+msgid ""
+"`Replace six.iteritems() with .items() <https://git.openstack.org/cgit/"
+"openstack/glance_store/commit/?id="
+"edc19a290b05a12f39f3059b11e2b978a9362052>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:58
+msgid ""
+"`Use HostAddressOpt for store opts that accept IP and hostnames <https://git."
+"openstack.org/cgit/openstack/glance_store/commit/?id="
+"d6f3c4e2d921d8a6db8be79e4a81e393334cfa4c>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:137
+msgid ""
+"glance_store 0.29.0 was released with backwards incompatible changes. There "
+"was no corresponding releasenote to mention this. 0.29.1 has reverted said "
+"change which will be included to 1.0.0 release later on the cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:53
+msgid "glance_store._drivers.gridfs"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:91
+msgid "glance_store._drivers.s3 removed from tree."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:46 stable/rocky>:206
+msgid "swift_store_large_object_chunk_size * workers * 1000"
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "Glance_store Release Notes"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

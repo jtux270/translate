@@ -1,0 +1,557 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-04 10:31+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: murano/utils.py:37
+msgid "Environment with id {env_id} not found"
+msgstr ""
+
+#: murano/utils.py:45
+msgid "User is not authorized to access these tenant resources"
+msgstr ""
+
+#: murano/utils.py:55
+msgid "Session <SessionId {id}> is not found"
+msgstr ""
+
+#: murano/utils.py:60
+msgid ""
+"Session <SessionId {session_id}> is not tied with Environment <EnvId "
+"{environment_id}>"
+msgstr ""
+
+#: murano/utils.py:84
+msgid "Environment Template with id {id} not found"
+msgstr ""
+
+#: murano/utils.py:91
+msgid "User is not authorized to access this tenant resources"
+msgstr ""
+
+#: murano/utils.py:104
+msgid "X-Configuration-Session header which indicates to the session is missed"
+msgstr ""
+
+#: murano/utils.py:115
+msgid "Session <SessionId {0}> is not found"
+msgstr ""
+
+#: murano/utils.py:120 murano/api/v1/sessions.py:77
+#: murano/api/v1/sessions.py:123
+msgid ""
+"Session <SessionId {0}> is invalid: environment has been updated or "
+"updating right now with other session"
+msgstr ""
+
+#: murano/utils.py:127
+msgid "Session <SessionId {0}> is already in deployment state"
+msgstr ""
+
+#: murano/api/middleware/context.py:25
+msgid "Role used to identify an authenticated user as administrator."
+msgstr ""
+
+#: murano/api/middleware/ext_context.py:99
+msgid "Authorization required"
+msgstr ""
+
+#: murano/api/middleware/ext_context.py:103
+msgid "Your credentials are wrong. Please try again"
+msgstr ""
+
+#: murano/api/v1/catalog.py:55
+msgid "Content-Type must be '{type}'"
+msgstr ""
+
+#: murano/api/v1/catalog.py:109
+msgid "Uploading file is too large. The limit is {0} Mb"
+msgstr ""
+
+#: murano/api/v1/catalog.py:114
+msgid ""
+"'multipart/form-data' request body should contain 1 or 2 parts: json "
+"string and zip archive. Current body consists of {amount} part(s)"
+msgstr ""
+
+#: murano/api/v1/catalog.py:130
+msgid "There is no file package with application description"
+msgstr ""
+
+#: murano/api/v1/catalog.py:145
+msgid "Limit param must be an integer"
+msgstr ""
+
+#: murano/api/v1/catalog.py:150
+msgid "Limit param must be positive"
+msgstr ""
+
+#: murano/api/v1/catalog.py:178
+msgid "Request body must be a JSON array of operation objects."
+msgstr ""
+
+#: murano/api/v1/catalog.py:187 murano/api/v1/catalog.py:271
+msgid "Package name should be 80 characters maximum"
+msgstr ""
+
+#: murano/api/v1/catalog.py:239
+msgid "Package schema is not valid: {reason}"
+msgstr ""
+
+#: murano/api/v1/catalog.py:253
+msgid "Uploading file can't be empty"
+msgstr ""
+
+#: murano/api/v1/catalog.py:278
+msgid "Package with specified full name is already registered"
+msgstr ""
+
+#: murano/api/v1/catalog.py:284
+msgid "Couldn't load package from file: {reason}"
+msgstr ""
+
+#: murano/api/v1/catalog.py:359
+msgid "Bad value passed to filter. Got {key}, expected:{valid}"
+msgstr ""
+
+#: murano/api/v1/catalog.py:369
+msgid "Invalid sort key: {sort_key}. Must be one of the following: {available}"
+msgstr ""
+
+#: murano/api/v1/catalog.py:376
+msgid "Invalid sort direction: {0}"
+msgstr ""
+
+#: murano/api/v1/catalog.py:405
+msgid "Category name should be 80 characters maximum"
+msgstr ""
+
+#: murano/api/v1/catalog.py:411
+msgid "Category with specified name is already exist"
+msgstr ""
+
+#: murano/api/v1/catalog.py:421
+msgid ""
+"It's impossible to delete categories assigned to the package, uploaded to"
+" the catalog"
+msgstr ""
+
+#: murano/api/v1/environments.py:81
+msgid "Please, specify a name of the environment to create"
+msgstr ""
+
+#: murano/api/v1/environments.py:87 murano/api/v1/environments.py:149
+msgid "Environment name should be 255 characters maximum"
+msgstr ""
+
+#: murano/api/v1/environments.py:95 murano/api/v1/environments.py:156
+#: murano/api/v1/templates.py:199
+msgid "Environment with specified name already exists"
+msgstr ""
+
+#: murano/api/v1/environments.py:160
+msgid "Environment name must contain at least one non-white space symbol"
+msgstr ""
+
+#: murano/api/v1/environments.py:240
+msgid "Request body is empty: please, provide environment object model patch"
+msgstr ""
+
+#: murano/api/v1/services.py:72
+msgid "Request body is empty: please, provide application object model"
+msgstr ""
+
+#: murano/api/v1/sessions.py:47
+msgid ""
+"Could not open session for environment <EnvId: {env_id}>, environment has"
+" deploying or deleting status."
+msgstr ""
+
+#: murano/api/v1/sessions.py:70 murano/api/v1/sessions.py:96
+msgid ""
+"User <UserId {usr_id}> is not authorized to access session <SessionId "
+"{s_id}>."
+msgstr ""
+
+#: murano/api/v1/sessions.py:103
+msgid "Session <SessionId: {s_id}> is in deploying state and could not be deleted"
+msgstr ""
+
+#: murano/api/v1/sessions.py:130
+msgid ""
+"Session <SessionId {s_id}> is already deployed or deployment is in "
+"progress"
+msgstr ""
+
+#: murano/api/v1/static_actions.py:36
+msgid "Class name and method name must be specified for static action"
+msgstr ""
+
+#: murano/api/v1/template_applications.py:74
+msgid "The environment template {templ_id} does not exist"
+msgstr ""
+
+#: murano/api/v1/template_applications.py:99
+#: murano/api/v1/template_applications.py:128
+#: murano/api/v1/template_applications.py:159
+#: murano/api/v1/template_applications.py:183
+msgid "The template does not exist {templ_id}"
+msgstr ""
+
+#: murano/api/v1/templates.py:90
+msgid "Env Template with specified name already exists"
+msgstr ""
+
+#: murano/api/v1/templates.py:136
+msgid "Environment Template must contain at least one non-white space symbol"
+msgstr ""
+
+#: murano/api/v1/templates.py:141
+msgid "EnvTemplate body is incorrect"
+msgstr ""
+
+#: murano/api/v1/templates.py:239 murano/api/v1/templates.py:262
+msgid "User has no access to these resources."
+msgstr ""
+
+#: murano/api/v1/templates.py:251
+msgid "Env template with specified name already exists"
+msgstr ""
+
+#: murano/api/v1/templates.py:269
+msgid "EnvTemplate <TempId {temp_id}> is not found"
+msgstr ""
+
+#: murano/api/v1/templates.py:279
+msgid "Please, specify a name of the environment template."
+msgstr ""
+
+#: murano/api/v1/templates.py:285
+msgid "Environment template name should be 255 characters maximum"
+msgstr ""
+
+#: murano/cmd/status.py:35
+msgid "Policy File JSON to YAML Migration"
+msgstr ""
+
+#: murano/cmd/test_runner.py:81
+msgid ""
+"Local package is not found since \"load-packages-from\" engine parameter "
+"is not provided and specified packages is not loaded to murano-api"
+msgstr ""
+
+#: murano/cmd/test_runner.py:85
+msgid ""
+"Specified package is not found: {0} were scanned together with murano "
+"database"
+msgstr ""
+
+#: murano/cmd/test_runner.py:239
+msgid "No tests found for execution."
+msgstr ""
+
+#: murano/common/app_loader.py:59
+#, python-format
+msgid "Unable to locate paste config file for %s."
+msgstr ""
+
+#: murano/common/app_loader.py:93
+#, python-format
+msgid ""
+"Unable to load %(app_name)s from configuration file %(conf_file)s. \n"
+"Got: %(e)r"
+msgstr ""
+
+#: murano/common/cf_config.py:26
+msgid "Project for service broker"
+msgstr ""
+
+#: murano/common/cf_config.py:28
+msgid "Host for service broker"
+msgstr ""
+
+#: murano/common/cf_config.py:30
+msgid "Port for service broker"
+msgstr ""
+
+#: murano/common/cf_config.py:32
+msgid "Authentication URL"
+msgstr ""
+
+#: murano/common/cf_config.py:34
+msgid "Domain name of the user"
+msgstr ""
+
+#: murano/common/cf_config.py:36
+msgid "Domain name of the project"
+msgstr ""
+
+#: murano/common/cf_config.py:38
+msgid "Package service which should be used by service broker"
+msgstr ""
+
+#: murano/common/config.py:129
+msgid "Number of API workers"
+msgstr ""
+
+#: murano/common/config.py:132
+msgid "Maximum number of elements that can be iterated per object type."
+msgstr ""
+
+#: murano/common/config.py:176
+msgid "Statistics collection interval in minutes.Default value is 5 minutes."
+msgstr ""
+
+#: murano/common/config.py:179
+msgid "Environment audit interval in minutes. Default value is 60 minutes."
+msgstr ""
+
+#: murano/common/config.py:182
+msgid "Whether environment audit events enabled"
+msgstr ""
+
+#: murano/common/config.py:187
+msgid "Disallow the use of murano-agent"
+msgstr ""
+
+#: murano/common/config.py:189
+msgid "Path to class configuration files"
+msgstr ""
+
+#: murano/common/config.py:191
+msgid "Create resources using trust token rather than user's token"
+msgstr ""
+
+#: murano/common/config.py:194
+msgid "Enable model policy enforcer using Congress"
+msgstr ""
+
+#: murano/common/config.py:196
+msgid "Time for waiting for a response from murano agent during the deployment"
+msgstr ""
+
+#: murano/common/config.py:201
+msgid "Number of engine workers"
+msgstr ""
+
+#: murano/common/config.py:204
+msgid ""
+"List of directories to load local packages from. If not provided, "
+"packages will be loaded only API"
+msgstr ""
+
+#: murano/common/config.py:213
+msgid ""
+"Enables murano-engine to persist on disk packages downloaded during "
+"deployments. The packages would be re-used for consequent deployments."
+msgstr ""
+
+#: murano/common/config.py:220
+msgid ""
+"The service to store murano packages: murano (stands for legacy behavior "
+"using murano-api) or glance (stands for glance-glare artifact service)"
+msgstr ""
+
+#: murano/common/config.py:226
+msgid "Path to RSA key for agent message signing"
+msgstr ""
+
+#: murano/common/config.py:229
+msgid "pip URL/package spec for murano-agent"
+msgstr ""
+
+#: murano/common/utils.py:77 murano/common/utils.py:142
+msgid "Source object or path is malformed"
+msgstr ""
+
+#: murano/common/utils.py:262
+#, python-format
+msgid "Invalid filter value %s. There is no comma before opening quotation mark."
+msgstr ""
+
+#: murano/common/utils.py:267
+#, python-format
+msgid "Invalid filter value %s. There is no comma after opening quotation mark."
+msgstr ""
+
+#: murano/common/utils.py:276
+#, python-format
+msgid "Invalid filter value %s. The quote is not closed."
+msgstr ""
+
+#: murano/common/wsgi.py:114
+#, python-format
+msgid ""
+"Could not bind to %(host)s:%(port)s after trying for 30 seconds: Address "
+"already in use."
+msgstr ""
+
+#: murano/common/wsgi.py:430
+msgid "Unsupported Content-Type"
+msgstr ""
+
+#: murano/common/wsgi.py:433
+msgid "Acceptable response can not be provided"
+msgstr ""
+
+#: murano/common/wsgi.py:436
+msgid "Malformed request body"
+msgstr ""
+
+#: murano/common/wsgi.py:842 murano/common/wsgi.py:859
+msgid "cannot understand JSON"
+msgstr ""
+
+#: murano/common/wsgi.py:863
+msgid "JSON-patch must be a list."
+msgstr ""
+
+#: murano/common/wsgi.py:869
+msgid "Operations must be JSON objects."
+msgstr ""
+
+#: murano/common/wsgi.py:885
+#, python-format
+msgid "Operation \"%s\" requires a member named \"value\"."
+msgstr ""
+
+#: murano/common/wsgi.py:893 murano/common/wsgi.py:900
+#, python-format
+msgid "Unable to find '%s' in JSON Schema change"
+msgstr ""
+
+#: murano/common/wsgi.py:918
+msgid "Attribute '{0}' is invalid"
+msgstr ""
+
+#: murano/common/wsgi.py:924
+msgid ""
+"Method '{method}' is not allowed for a path with name '{name}'. Allowed "
+"operations are: {ops}"
+msgstr ""
+
+#: murano/common/wsgi.py:976
+#, python-format
+msgid "Pointer `%s` does not start with \"/\"."
+msgstr ""
+
+#: murano/common/wsgi.py:979
+#, python-format
+msgid "Pointer `%s` contains adjacent \"/\"."
+msgstr ""
+
+#: murano/common/wsgi.py:982
+#, python-format
+msgid "Pointer `%s` ends with \"/\"."
+msgstr ""
+
+#: murano/common/wsgi.py:985
+#, python-format
+msgid "Pointer `%s` does not contain a valid token."
+msgstr ""
+
+#: murano/common/wsgi.py:988
+#, python-format
+msgid ""
+"Pointer `%s` contains \"~\", which is not part of a recognized escape "
+"sequence."
+msgstr ""
+
+#: murano/common/wsgi.py:1018 murano/tests/unit/common/test_wsgi.py:470
+msgid "Nested paths are not allowed"
+msgstr ""
+
+#: murano/common/wsgi.py:1055
+msgid "cannot understand XML"
+msgstr ""
+
+#: murano/common/messaging/mqclient.py:52
+#: murano/tests/unit/common/messaging/test_mqclient.py:81
+#, python-format
+msgid "Invalid SSL version: %s"
+msgstr ""
+
+#: murano/db/catalog/api.py:45
+msgid "Package id '{pkg_id}' not found"
+msgstr ""
+
+#: murano/db/catalog/api.py:56
+msgid "Package '{pkg_id}' is not owned by tenant '{tenant}'"
+msgstr ""
+
+#: murano/db/catalog/api.py:62
+msgid "Package '{pkg_id}' is not public and not owned by tenant '{tenant}' "
+msgstr ""
+
+#: murano/db/catalog/api.py:96
+msgid "Category '{name}' doesn't exist"
+msgstr ""
+
+#: murano/db/catalog/api.py:209
+msgid "Value '{value}' of property '{path}' does not exist."
+msgstr ""
+
+#: murano/db/catalog/api.py:467 murano/db/catalog/api.py:521
+msgid "Category id '{id}' not found"
+msgstr ""
+
+#: murano/db/catalog/api.py:554
+msgid ""
+"Class with the same full name is already registered in the visibility "
+"scope"
+msgstr ""
+
+#: murano/db/catalog/api.py:568
+msgid "Package with the same Name is already made public"
+msgstr ""
+
+#: murano/db/services/core_services.py:92
+#: murano/db/services/core_services.py:112
+msgid "Environment Template <EnvId {id}> is not found"
+msgstr ""
+
+#: murano/db/services/core_services.py:142
+#: murano/db/services/core_services.py:224
+#: murano/db/services/core_services.py:247
+msgid "Environment Template <EnvId {0}> is not found"
+msgstr ""
+
+#: murano/db/services/core_services.py:168
+msgid "Environment <EnvId {0}> is not found"
+msgstr ""
+
+#: murano/db/services/environment_templates.py:75
+msgid "Environment template specified name already exists"
+msgstr ""
+
+#: murano/httpd/murano_api.py:50
+#, python-format
+msgid "Starting Murano REST API on %(host)s:%(port)s"
+msgstr ""
+
+#: murano/packages/package_base.py:139
+msgid "{0}: Unsupported Format. Only {1} allowed"
+msgstr ""
+
+#: murano/packages/package_base.py:146
+msgid "{0}: Uploaded image size {1} is too large. Max allowed size is {2}"
+msgstr ""
+
+#: murano/policy/model_policy_enforcer.py:125
+msgid "Murano object model validation failed: {0}"
+msgstr ""
+

@@ -1,0 +1,2385 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-25 09:38+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: tacker/alarm_receiver.py:32
+msgid "User name for alarm monitoring"
+msgstr ""
+
+#: tacker/alarm_receiver.py:34
+msgid "Password for alarm monitoring"
+msgstr ""
+
+#: tacker/alarm_receiver.py:36
+msgid "Project name for alarm monitoring"
+msgstr ""
+
+#: tacker/alarm_receiver.py:38
+msgid "User domain name for alarm monitoring"
+msgstr ""
+
+#: tacker/alarm_receiver.py:40
+msgid "Project domain name for alarm monitoring"
+msgstr ""
+
+#: tacker/manager.py:130
+#, python-format
+msgid "Plugin '%s' not found."
+msgstr ""
+
+#: tacker/manager.py:157
+#, python-format
+msgid "Multiple plugins for service %s were configured"
+msgstr ""
+
+#: tacker/policy.py:231
+#, python-format
+msgid ""
+"Unable to identify a target field from: %s. Match should be in the form "
+"%%(<field_name>)s"
+msgstr ""
+
+#: tacker/service.py:39
+msgid "Seconds between running components report states"
+msgstr ""
+
+#: tacker/service.py:42
+msgid "Seconds between running periodic tasks"
+msgstr ""
+
+#: tacker/service.py:45
+msgid "Number of separate worker processes for service"
+msgstr ""
+
+#: tacker/service.py:48
+msgid ""
+"Range of seconds to randomly delay when starting the periodic task "
+"scheduler to reduce stampeding. (Disable by setting to 0)"
+msgstr ""
+
+#: tacker/wsgi.py:53
+msgid "Number of backlog requests to configure the socket with"
+msgstr ""
+
+#: tacker/wsgi.py:57
+msgid ""
+"Sets the value of TCP_KEEPIDLE in seconds for each server socket. Not "
+"supported on OS X."
+msgstr ""
+
+#: tacker/wsgi.py:61
+msgid "Number of seconds to keep retrying to listen"
+msgstr ""
+
+#: tacker/wsgi.py:64
+msgid "Max header line to accommodate large tokens"
+msgstr ""
+
+#: tacker/wsgi.py:67
+msgid "Enable SSL on the API server"
+msgstr ""
+
+#: tacker/wsgi.py:69
+msgid "CA certificate file to use to verify connecting clients"
+msgstr ""
+
+#: tacker/wsgi.py:72
+msgid "Certificate file to use when starting the server securely"
+msgstr ""
+
+#: tacker/wsgi.py:75
+msgid "Private key file to use when starting the server securely"
+msgstr ""
+
+#: tacker/wsgi.py:142
+#, python-format
+msgid ""
+"Unexpected API Error. Please report this at "
+"http://bugs.launchpad.net/tacker/ and attach the Tacker API log if "
+"possible.\n"
+"%s"
+msgstr ""
+
+#: tacker/wsgi.py:211
+#, python-format
+msgid "Unable to find ssl_cert_file: %s"
+msgstr ""
+
+#: tacker/wsgi.py:217
+#, python-format
+msgid "Unable to find ssl_key_file: %s"
+msgstr ""
+
+#: tacker/wsgi.py:222
+#, python-format
+msgid "Unable to find ssl_ca_file: %s"
+msgstr ""
+
+#: tacker/wsgi.py:254
+#, python-format
+msgid "Could not bind to %(host)s:%(port)s after trying for %(time)d seconds"
+msgstr ""
+
+#: tacker/wsgi.py:539
+msgid "Cannot understand JSON"
+msgstr ""
+
+#: tacker/wsgi.py:719
+msgid "You must implement __call__"
+msgstr ""
+
+#: tacker/wsgi.py:840 tacker/api/v1/base.py:177 tacker/api/v1/base.py:305
+#: tacker/api/v1/base.py:416 tacker/api/v1/base.py:465
+msgid "The resource could not be found."
+msgstr ""
+
+#: tacker/wsgi.py:1021
+msgid "Unsupported Content-Type"
+msgstr ""
+
+#: tacker/wsgi.py:1025 tacker/api/validation/__init__.py:47
+msgid "Malformed request body"
+msgstr ""
+
+#: tacker/wsgi.py:1058 tacker/wsgi.py:1192
+#, python-format
+msgid "%(url)s returned with HTTP %(status)d"
+msgstr ""
+
+#: tacker/wsgi.py:1061
+#, python-format
+msgid "%(url)s returned a fault: %(exception)s"
+msgstr ""
+
+#: tacker/wsgi.py:1211
+#, python-format
+msgid "The requested content type %s is invalid."
+msgstr ""
+
+#: tacker/wsgi.py:1264
+msgid "Could not deserialize data"
+msgstr ""
+
+#: tacker/agent/linux/utils.py:68
+#, python-format
+msgid ""
+"\n"
+"Command: %(cmd)s\n"
+"Exit code: %(code)s\n"
+"Stdout: %(stdout)r\n"
+"Stderr: %(stderr)r"
+msgstr ""
+
+#: tacker/api/api_common.py:121
+#, python-format
+msgid "Limit must be an integer 0 or greater and not '%d'"
+msgstr ""
+
+#: tacker/api/api_common.py:138
+msgid "The number of sort_keys and sort_dirs must be same"
+msgstr ""
+
+#: tacker/api/api_common.py:143
+#, python-format
+msgid "%s is invalid attribute for sort_keys"
+msgstr ""
+
+#: tacker/api/api_common.py:147
+#, python-format
+msgid ""
+"%(invalid_dirs)s is invalid value for sort_dirs, valid value is '%(asc)s'"
+" and '%(desc)s'"
+msgstr ""
+
+#: tacker/api/api_common.py:333 tacker/api/v1/base.py:532
+#, python-format
+msgid "Unable to find '%s' in request body"
+msgstr ""
+
+#: tacker/api/api_common.py:340
+#, python-format
+msgid "Failed to parse request. Parameter '%s' not specified"
+msgstr ""
+
+#: tacker/api/api_common.py:380 tacker/tests/unit/api/v1/test_resource.py:162
+msgid "Request Failed: internal server error while processing your request."
+msgstr ""
+
+#: tacker/api/extensions.py:249
+#, python-format
+msgid "Extension with alias %s does not exist"
+msgstr ""
+
+#: tacker/api/extensions.py:253 tacker/api/extensions.py:257
+msgid "Resource not found."
+msgstr ""
+
+#: tacker/api/versions.py:43
+msgid "Unknown API version specified"
+msgstr ""
+
+#: tacker/api/common/_filters.py:360
+#, python-format
+msgid ""
+"Rule '%(rule)s' contains operator '%(operator)s' which supports only one "
+"value, but multiple values '%(values)s' are provided"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:46
+#, python-format
+msgid ""
+"Invalid input. '%(target_dict)s' must be a dictionary with keys: "
+"%(expected_keys)s"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:57
+#, python-format
+msgid ""
+"Validation of dictionary's keys failed. Expected keys: %(expected_keys)s "
+"Provided keys: %(provided_keys)s"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:71
+#, python-format
+msgid "'%(data)s' is not in %(valid_values)s"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:87
+#, python-format
+msgid "'%s' Blank strings are not permitted"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:97
+#, python-format
+msgid "'%s' is not a valid string"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:102
+#, python-format
+msgid "'%(data)s' exceeds maximum length of %(max_len)s"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:112
+#, python-format
+msgid "'%s' is not a valid boolean value"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:131 tacker/api/v1/attributes.py:463
+#: tacker/api/v1/attributes.py:495
+#, python-format
+msgid "'%s' is not an integer"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:135
+#, python-format
+msgid "'%(data)s' is too small - must be at least '%(limit)d'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:140
+#, python-format
+msgid "'%(data)s' is too large - must be no larger than '%(limit)d'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:149
+#, python-format
+msgid "'%s' contains whitespace"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:159
+#, python-format
+msgid "'%s' is not a valid MAC address"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:163
+#, python-format
+msgid "MAC address must be string: %s"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:178
+#, python-format
+msgid "'%s' is not a valid IP address"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:189
+#, python-format
+msgid "Invalid data format for IP pool: '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:208 tacker/api/v1/attributes.py:215
+#, python-format
+msgid "Invalid data format for fixed IP: '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:223
+#, python-format
+msgid "Duplicate IP address '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:239
+#, python-format
+msgid "Invalid data format for nameserver: '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:250
+#, python-format
+msgid "'%s' is not a valid nameserver"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:254
+#, python-format
+msgid "Duplicate nameserver '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:262
+#, python-format
+msgid "Invalid data format for hostroute: '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:282
+#, python-format
+msgid "Duplicate hostroute '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:299
+#: tacker/tests/unit/api/v1/test_attributes.py:464
+#: tacker/tests/unit/api/v1/test_attributes.py:478
+#: tacker/tests/unit/api/v1/test_attributes.py:486
+#, python-format
+msgid "'%(data)s' isn't a recognized IP subnet cidr, '%(cidr)s' is recommended"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:305
+#, python-format
+msgid "'%s' is not a valid IP subnet"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:313 tacker/api/v1/attributes.py:366
+#, python-format
+msgid "'%s' is not a list"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:318 tacker/api/v1/attributes.py:377
+#, python-format
+msgid "Duplicate items in the list: '%s'"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:341
+#, python-format
+msgid "'%s' is not a valid input"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:354
+#, python-format
+msgid "'%s' is not a valid UUID"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:397
+#, python-format
+msgid "Validator '%s' does not exist."
+msgstr ""
+
+#: tacker/api/v1/attributes.py:407
+#, python-format
+msgid "'%s' is not a dictionary"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:451
+#, python-format
+msgid "'%s' is not a valid dictionary or it is an empty dictionary"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:468
+#, python-format
+msgid "'%s' should be non-negative"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:487
+#, python-format
+msgid "'%s' cannot be converted to boolean"
+msgstr ""
+
+#: tacker/api/v1/attributes.py:508
+#, python-format
+msgid "'%s' is not of the form <key>=[value]"
+msgstr ""
+
+#: tacker/api/v1/base.py:73
+msgid "Native pagination depend on native sorting"
+msgstr ""
+
+#: tacker/api/v1/base.py:434
+#, python-format
+msgid "Invalid format: %s"
+msgstr ""
+
+#: tacker/api/v1/base.py:484
+msgid ""
+"Specifying 'tenant_id' other than authenticated tenant in request "
+"requires admin privileges"
+msgstr ""
+
+#: tacker/api/v1/base.py:492
+msgid "Running without keystone AuthN requires that tenant_id is specified"
+msgstr ""
+
+#: tacker/api/v1/base.py:510
+msgid "Resource body required"
+msgstr ""
+
+#: tacker/api/v1/base.py:523
+msgid "Bulk operation not supported"
+msgstr ""
+
+#: tacker/api/v1/base.py:527
+msgid "Resources required"
+msgstr ""
+
+#: tacker/api/v1/base.py:543
+#, python-format
+msgid "Failed to parse request. Required attribute '%s' not specified"
+msgstr ""
+
+#: tacker/api/v1/base.py:550
+#, python-format
+msgid "Attribute '%s' not allowed in POST"
+msgstr ""
+
+#: tacker/api/v1/base.py:555
+#, python-format
+msgid "Cannot update read-only attribute %s"
+msgstr ""
+
+#: tacker/api/v1/base.py:587
+#, python-format
+msgid "Invalid input for %(attr)s. Reason: %(reason)s."
+msgstr ""
+
+#: tacker/api/v1/base.py:596
+#, python-format
+msgid "Unrecognized attribute(s) '%s'"
+msgstr ""
+
+#: tacker/api/v1/resource.py:109
+msgid "No details."
+msgstr ""
+
+#: tacker/api/validation/__init__.py:78
+msgid "Query string is not UTF-8 encoded"
+msgstr ""
+
+#: tacker/api/validation/validators.py:59
+#, python-format
+msgid "'%s' is not a valid mac address"
+msgstr ""
+
+#: tacker/api/validation/validators.py:70
+#, python-format
+msgid "The parameter '%s' is a flag. It shouldn't contain any value."
+msgstr ""
+
+#: tacker/api/validation/validators.py:147
+#, python-format
+msgid "Invalid input for field/attribute %(path)s. Value: %(value)s. %(message)s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:204
+#: tacker/api/vnflcm/v1/controller.py:210
+#: tacker/api/vnflcm/v1/controller.py:1512
+#: tacker/conductor/conductor_server.py:1502
+#: tacker/conductor/conductor_server.py:1505
+#, python-format
+msgid "Can not find requested vnf instance: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:218
+#: tacker/api/vnflcm/v1/controller.py:224
+#, python-format
+msgid "Can not find requested vnf: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:227
+#, python-format
+msgid "Encountered error while fetching vnf: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:290
+#, python-format
+msgid "VimConnection id is not found: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:294
+#, python-format
+msgid "Region not found for the VimConnection: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:352
+msgid "Failed to create LCM occurrence"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:443
+#, python-format
+msgid ""
+"Can not find requested to NFVO,                         vnf package info:"
+" vnfdId=[%s]"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:454
+#, python-format
+msgid ""
+"Can not find requested to NFVO,                         vnf package vnfd:"
+" %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:716
+#, python-format
+msgid "Vnfc id %(vnfc_id)s not present in vnf instance %(id)s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:808
+#: tacker/tests/unit/vnflcm/test_controller.py:2013
+#, python-format
+msgid "Can not find requested vnf data: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:816
+#: tacker/tests/unit/vnflcm/test_controller.py:2046
+#, python-format
+msgid "VNF %(id)s status is %(state)s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:828
+#, python-format
+msgid "Can not find requested vnf instance data: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:853
+#, python-format
+msgid "Can not find requested vnf package vnfd: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:864
+#, python-format
+msgid ""
+"Can not find requested to NFVO,                        vnf package vnfd: "
+"%s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:970
+#: tacker/tests/unit/vnflcm/test_controller.py:4036
+#, python-format
+msgid "Can not find requested vnf lcm subscriptions: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:994
+msgid "Request query parameter error"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:1013
+#, python-format
+msgid "notificationTypes value mismatch: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:1019
+#, python-format
+msgid "operationTypes value mismatch: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:1025
+#, python-format
+msgid "operationStates value mismatch: %s"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:1055
+msgid "Number of records exceeds nextpage_opaque_marker"
+msgstr ""
+
+#: tacker/api/vnflcm/v1/controller.py:1087
+#, python-format
+msgid "Can not find requested vnf lcm subscription: %s"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:64
+#: tacker/api/vnfpkgm/v1/controller.py:71
+#: tacker/api/vnfpkgm/v1/controller.py:103
+#: tacker/api/vnfpkgm/v1/controller.py:111
+#: tacker/api/vnfpkgm/v1/controller.py:306
+#: tacker/api/vnfpkgm/v1/controller.py:313
+#: tacker/api/vnfpkgm/v1/controller.py:525
+#: tacker/api/vnfpkgm/v1/controller.py:533
+#: tacker/tests/unit/vnfpkgm/test_controller.py:107
+#: tacker/tests/unit/vnfpkgm/test_controller.py:545
+#: tacker/tests/unit/vnfpkgm/test_controller.py:614
+#: tacker/tests/unit/vnfpkgm/test_controller.py:623
+#: tacker/tests/unit/vnfpkgm/test_controller.py:632
+#: tacker/tests/unit/vnfpkgm/test_controller.py:694
+#: tacker/tests/unit/vnfpkgm/test_controller.py:832
+#, python-format
+msgid "Can not find requested vnf package: %s"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:168
+#, python-format
+msgid ""
+"VNF Package %(id)s cannot be deleted as it's operational state is "
+"%(operational_state)s and usage state is %(usage_state)s."
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:192
+#: tacker/api/vnfpkgm/v1/controller.py:321
+#: tacker/api/vnfpkgm/v1/controller.py:388
+#, python-format
+msgid "VNF Package %(id)s onboarding state is not %(onboarding)s"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:205
+#: tacker/api/vnfpkgm/v1/controller.py:266
+msgid "Vnf package not present at location"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:275
+msgid ""
+"Requests with multiple ranges are not supported in Tacker. You may make "
+"multiple single-range requests instead."
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:282
+msgid ""
+"The byte range passed in the 'Range' header did not match any available "
+"byte range in the VNF package file"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:290
+#, python-format
+msgid ""
+"Invalid start position in Range header. Start position MUST be in the "
+"inclusive range[0, %s]."
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:381
+#, python-format
+msgid "Vnf package url '%s' is invalid"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:422
+#, python-format
+msgid "VNF Package %(id)s is already in %(operationState)s operational state"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:433
+#, python-format
+msgid ""
+"Updating operational state is not allowed for VNF Package %(id)s when "
+"onboarding state is not %(onboarded)s"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:446
+#, python-format
+msgid ""
+"The userDefinedData provided in update request is as the existing "
+"userDefinedData of vnf package %(id)s. Nothing to update."
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:470
+#, python-format
+msgid ""
+"Accept header %(accept)s is invalid, it should be one of these values: "
+"%(valid_values)s"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:481
+#: tacker/api/vnfpkgm/v1/controller.py:538
+#, python-format
+msgid "VNF Package %(id)s state is not %(onboarded)s"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:507
+msgid ""
+"VNFD is implemented as multiple yaml files, Accept header should be "
+"'application/zip'."
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:555
+#, python-format
+msgid "This type of path(url) '%s' is currently not supported"
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:609
+msgid "Not Found Artifact File."
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:623
+#: tacker/conductor/conductor_server.py:544
+#, python-format
+msgid ""
+"Exception raised from glance store can be unrecoverable if it is not "
+"related to connection error. Error: %s."
+msgstr ""
+
+#: tacker/api/vnfpkgm/v1/controller.py:638
+#, python-format
+msgid "Exception raised while reading artifact file Error: %s."
+msgstr ""
+
+#: tacker/cmd/status.py:35
+msgid "Policy File JSON to YAML Migration"
+msgstr ""
+
+#: tacker/cmd/eventlet/tacker_server.py:39
+msgid ""
+"ERROR: Unable to find configuration file via the default search paths "
+"(~/.tacker/, ~/, /etc/tacker/, /etc/) and the '--config-file' option!"
+msgstr ""
+
+#: tacker/cmd/eventlet/tacker_server.py:52
+#, python-format
+msgid "ERROR: %s"
+msgstr ""
+
+#: tacker/common/config.py:37
+msgid "The host IP to bind to"
+msgstr ""
+
+#: tacker/common/config.py:39
+msgid "The port to bind to"
+msgstr ""
+
+#: tacker/common/config.py:41
+msgid "The API paste config file to use"
+msgstr ""
+
+#: tacker/common/config.py:43
+msgid "The path for API extensions"
+msgstr ""
+
+#: tacker/common/config.py:45
+msgid "The service plugins Tacker will use"
+msgstr ""
+
+#: tacker/common/config.py:47
+msgid "The type of authentication to use"
+msgstr ""
+
+#: tacker/common/config.py:49
+msgid "Allow the usage of the bulk API"
+msgstr ""
+
+#: tacker/common/config.py:51
+msgid "Allow the usage of the pagination"
+msgstr ""
+
+#: tacker/common/config.py:53
+msgid "Allow the usage of the sorting"
+msgstr ""
+
+#: tacker/common/config.py:55
+msgid ""
+"The maximum number of items returned in a single response, value was "
+"'infinite' or negative integer means no limit"
+msgstr ""
+
+#: tacker/common/config.py:59
+msgid "The hostname Tacker is running on"
+msgstr ""
+
+#: tacker/common/config.py:65
+msgid ""
+"Where to store Tacker state files. This directory must be writable by the"
+" agent."
+msgstr ""
+
+#: tacker/common/config.py:136
+#, python-format
+msgid "Unable to load %(app_name)s from configuration file %(config_path)s."
+msgstr ""
+
+#: tacker/common/csar_utils.py:573
+#, python-format
+msgid "Failed to delete csar folder: %(csar_path)s, Error: %(exc)s"
+msgstr ""
+
+#: tacker/common/driver_manager.py:37
+#, python-format
+msgid ""
+"driver '%(new_driver)s' ignored because driver '%(old_driver)s' is "
+"already registered for driver '%(type)s'"
+msgstr ""
+
+#: tacker/common/driver_manager.py:59
+#, python-format
+msgid ""
+"can't load driver '%(new_driver)s' because driver '%(old_driver)s' is "
+"already registered for driver '%(type)s'"
+msgstr ""
+
+#: tacker/common/exceptions.py:48
+#, python-format
+msgid "Improper or unknown HTTP status code used: %d"
+msgstr ""
+
+#: tacker/common/exceptions.py:62
+msgid "An unknown exception occurred."
+msgstr ""
+
+#: tacker/common/exceptions.py:90
+#, python-format
+msgid "Bad %(resource)s request: %(msg)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:95
+#, python-format
+msgid "%(resource)s %(name)s not Found"
+msgstr ""
+
+#: tacker/common/exceptions.py:103
+msgid "Not authorized."
+msgstr ""
+
+#: tacker/common/exceptions.py:108
+msgid "Forbidden"
+msgstr ""
+
+#: tacker/common/exceptions.py:113
+msgid "The service is unavailable"
+msgstr ""
+
+#: tacker/common/exceptions.py:117
+#, python-format
+msgid "User does not have admin privileges: %(reason)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:121
+#, python-format
+msgid "Policy doesn't allow %(action)s to be performed."
+msgstr ""
+
+#: tacker/common/exceptions.py:125
+#, python-format
+msgid "Failed to init policy %(policy)s because %(reason)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:129
+#, python-format
+msgid "Failed to check policy %(policy)s because %(reason)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:133
+msgid "The resource is in use"
+msgstr ""
+
+#: tacker/common/exceptions.py:137
+#, python-format
+msgid "Malformed request body: %(reason)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:141
+msgid "Bad Request - Invalid Parameters"
+msgstr ""
+
+#: tacker/common/exceptions.py:145
+msgid "Failed to create resource."
+msgstr ""
+
+#: tacker/common/exceptions.py:149
+msgid "Failed to init resource."
+msgstr ""
+
+#: tacker/common/exceptions.py:153
+msgid "The method to read a resource failed."
+msgstr ""
+
+#: tacker/common/exceptions.py:157
+#, python-format
+msgid "Invalid input for operation: %(error_message)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:161
+#, python-format
+msgid "Invalid content type %(content_type)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:165
+#, python-format
+msgid "Invalid network VLAN range: '%(vlan_range)s' - '%(error)s'"
+msgstr ""
+
+#: tacker/common/exceptions.py:175
+#, python-format
+msgid "Found duplicate extension: %(alias)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:179
+msgid "VNF configuration failed"
+msgstr ""
+
+#: tacker/common/exceptions.py:183
+#, python-format
+msgid "Invalid alarm url for VNF %(vnf_id)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:187
+#, python-format
+msgid "Trigger %(trigger_name)s does not exist for VNF %(vnf_id)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:191
+#, python-format
+msgid "Policy %(policy)s does not exist for VNF %(vnf_id)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:195
+#, python-format
+msgid ""
+"Invalid action %(action)s for policy %(policy)s, should be one of "
+"%(valid_actions)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:200
+#, python-format
+msgid ""
+"Invalid type %(type)s for policy %(policy)s, should be one of "
+"%(valid_types)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:205
+#, python-format
+msgid "%(resource)s with name %(name)s already exists"
+msgstr ""
+
+#: tacker/common/exceptions.py:209
+#, python-format
+msgid "%(_type)s already exist with given %(entry)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:229
+#, python-format
+msgid "Object action %(action)s failed because: %(reason)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:233
+#, python-format
+msgid "No vnf package with id %(id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:237
+#, python-format
+msgid "Vnf package with vnfd id %(vnfd_id)s already exists."
+msgstr ""
+
+#: tacker/common/exceptions.py:241
+#, python-format
+msgid "No vnf instance with id %(id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:245
+#, python-format
+msgid ""
+"Vnf instance %(uuid)s in %(attr)s %(state)s. Cannot %(action)s while the "
+"vnf instance is in this state."
+msgstr ""
+
+#: tacker/common/exceptions.py:250
+#, python-format
+msgid ""
+"Vnf %(uuid)s in %(attr)s %(state)s. Cannot %(action)s while the vnf is in"
+" this state."
+msgstr ""
+
+#: tacker/common/exceptions.py:255
+#, python-format
+msgid "No flavour with id '%(flavour_id)s'."
+msgstr ""
+
+#: tacker/common/exceptions.py:259
+#, python-format
+msgid "No instantiation level with id '%(inst_level_id)s'."
+msgstr ""
+
+#: tacker/common/exceptions.py:263
+#, python-format
+msgid "No vim found with id '%(vim_id)s'."
+msgstr ""
+
+#: tacker/common/exceptions.py:267
+#, python-format
+msgid "No vnf resource with id %(id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:271
+#, python-format
+msgid "No vnf package vnfd with vnfd_id %(id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:275
+#, python-format
+msgid "No vnf deployment flavour with id %(id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:279
+#, python-format
+msgid "No vnf software image  with id %(id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:283
+#, python-format
+msgid "No vnf artifact with id %(id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:287
+#, python-format
+msgid "No vnf instantiated info for vnf id %(vnf_instance_id)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:291
+#, python-format
+msgid "Vnf instantiation failed for vnf %(id)s, error: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:295
+#, python-format
+msgid "Vnf instantiation wait failed for vnf %(id)s, error: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:300
+#, python-format
+msgid "Vnf '%(id)s' failed during pre-instantiation due to error: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:305
+#, python-format
+msgid "Heal Vnf failed for vnf %(id)s, error: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:309
+#, python-format
+msgid "Change external connectivity failed for vnf %(id)s, error: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:314
+#, python-format
+msgid "Change external connectivity wait failed for vnf %(id)s, error: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:319
+msgid "Unable to create lock. Coordination backend not started."
+msgstr ""
+
+#: tacker/common/exceptions.py:323
+#, python-format
+msgid "Cannot call %(method)s on orphaned %(objtype)s object"
+msgstr ""
+
+#: tacker/common/exceptions.py:327
+msgid "The provided CSAR file is too large."
+msgstr ""
+
+#: tacker/common/exceptions.py:331
+#, python-format
+msgid "Failed to open URL %(url)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:335
+#, python-format
+msgid "Failed to find location: %(location)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:339
+#, python-format
+msgid "Invalid zip file : %(path)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:343
+#, python-format
+msgid "Failed to upload vnf package %(uuid)s to glance store: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:348
+#, python-format
+msgid "Failed to get csar zip file from glance store: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:352
+#, python-format
+msgid "Failed to get artifact file from glance store: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:356
+#, python-format
+msgid "Failed to get vnf package details: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:360
+#, python-format
+msgid "Invalid csar: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:364
+#, python-format
+msgid ""
+"The request returned a 413 Request Entity Too Large. This generally means"
+" that rate limiting or a quota threshold was breached.\n"
+"\n"
+"The response body:\n"
+"%(body)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:375
+#, python-format
+msgid "Notification Processing Failed: %(error)s"
+msgstr ""
+
+#: tacker/common/exceptions.py:379
+#, python-format
+msgid ""
+"User data for VNF package  %(id)s cannot be updated or created after "
+"%(retries)d retries."
+msgstr ""
+
+#: tacker/common/exceptions.py:384
+msgid "DB Access Error"
+msgstr ""
+
+#: tacker/common/exceptions.py:392
+msgid ""
+"The hash verification of VNF Package MgmtDriver and Tacker MgmtDriver "
+"does not match."
+msgstr ""
+
+#: tacker/common/exceptions.py:397
+#, python-format
+msgid ""
+"The %(MgmtDriver)s specified in the VNFD is inconsistent with the "
+"MgmtDriver in the configuration file."
+msgstr ""
+
+#: tacker/common/exceptions.py:402
+#, python-format
+msgid "The %(param)s in the additionalParams does not exist."
+msgstr ""
+
+#: tacker/common/exceptions.py:406
+#, python-format
+msgid "The %(param)s in the additionalParams is invalid."
+msgstr ""
+
+#: tacker/common/exceptions.py:410
+msgid "Failed to execute remote command."
+msgstr ""
+
+#: tacker/common/exceptions.py:414
+msgid "The execution of the remote command timed out."
+msgstr ""
+
+#: tacker/common/exceptions.py:418
+#, python-format
+msgid "An error occurred in MgmtDriver: %(error_message)s."
+msgstr ""
+
+#: tacker/common/exceptions.py:422
+#, python-format
+msgid ""
+"Vnf %(uuid)s in status %(state)s. Error point %(error_point)s. Cannot "
+"%(action)s while the vnf is in this state with this error point."
+msgstr ""
+
+#: tacker/common/exceptions.py:429
+#, python-format
+msgid "Invalid ip address value in resource %(id)s."
+msgstr ""
+
+#: tacker/common/utils.py:204 tacker/common/utils.py:219
+msgid "Class not found."
+msgstr ""
+
+#: tacker/common/utils.py:293
+#, python-format
+msgid "Error: cooperative_iter exception %s"
+msgstr ""
+
+#: tacker/common/utils.py:621
+#, python-format
+msgid ""
+"A memory unit is not provided for size; using the default unit "
+"%(default)s."
+msgstr ""
+
+#: tacker/common/utils.py:631
+#, python-format
+msgid "Given size %(size)s is converted to %(num)s %(unit)s."
+msgstr ""
+
+#: tacker/common/utils.py:635
+msgid "Size is not given for software image data."
+msgstr ""
+
+#: tacker/common/utils.py:639
+msgid "Error while converting unit \"{0}\" to number."
+msgstr ""
+
+#: tacker/common/utils.py:654
+msgid "Provided unit \"{0}\" is not valid. The valid units are {1}"
+msgstr ""
+
+#: tacker/conductor/conductor_server.py:552
+#, python-format
+msgid "Exception raised while reading csar file Error: %s."
+msgstr ""
+
+#: tacker/conf/conductor.py:24
+msgid ""
+"Seconds between running periodic tasks to cleanup residues of deleted vnf"
+" packages"
+msgstr ""
+
+#: tacker/conf/vnf_package.py:28
+msgid ""
+"\n"
+"Maximum size of CSAR file a user can upload in GB.\n"
+"\n"
+"An CSAR file upload greater than the size mentioned here would result\n"
+"in an CSAR upload failure. This configuration option defaults to\n"
+"1024 GB (1 TiB).\n"
+"\n"
+"NOTES:\n"
+"    * This value should only be increased after careful\n"
+"      consideration and must be set less than or equal to\n"
+"      8 EiB (~9223372036).\n"
+"    * This value must be set with careful consideration of the\n"
+"      backend storage capacity. Setting this to a very low value\n"
+"      may result in a large number of image failures. And, setting\n"
+"      this to a very large value may result in faster consumption\n"
+"      of storage. Hence, this must be set according to the nature of\n"
+"      images created and storage capacity available.\n"
+"\n"
+"Possible values:\n"
+"    * Any positive number less than or equal to 9223372036854775808\n"
+msgstr ""
+
+#: tacker/conf/vnf_package.py:51
+msgid ""
+"\n"
+"Secure hashing algorithm used for computing the 'hash' property.\n"
+"\n"
+"Possible values:\n"
+"    * sha256, sha512\n"
+"\n"
+"Related options:\n"
+"    * None\n"
+msgstr ""
+
+#: tacker/conf/vnf_package.py:64
+msgid "List of items to get from top-vnfd"
+msgstr ""
+
+#: tacker/conf/vnf_package.py:68
+msgid "Exclude node from node_template"
+msgstr ""
+
+#: tacker/conf/vnf_package.py:72
+msgid "List of types to get from lower-vnfd"
+msgstr ""
+
+#: tacker/conf/vnf_package.py:78
+msgid "List of del inputs from lower-vnfd"
+msgstr ""
+
+#: tacker/db/db_base.py:129
+msgid "Cannot create resource for another tenant"
+msgstr ""
+
+#: tacker/db/sqlalchemyutils.py:69
+#, python-format
+msgid "%s is invalid attribute for sort_key"
+msgstr ""
+
+#: tacker/db/sqlalchemyutils.py:72
+#, python-format
+msgid ""
+"The attribute '%(attr)s' is reference to other resource, can't used by "
+"sort '%(resource)s'"
+msgstr ""
+
+#: tacker/db/db_sqlalchemy/api.py:47
+#, python-format
+msgid "Unrecognized read_deleted value '%s'"
+msgstr ""
+
+#: tacker/db/migration/cli.py:35
+msgid "URL to database"
+msgstr ""
+
+#: tacker/db/migration/cli.py:38
+msgid "Database engine"
+msgstr ""
+
+#: tacker/db/migration/cli.py:59
+msgid "You must provide a revision or relative delta"
+msgstr ""
+
+#: tacker/db/migration/cli.py:88 tacker/db/migration/cli.py:101
+msgid "Timeline branches unable to generate timeline"
+msgstr ""
+
+#: tacker/db/migration/cli.py:95
+msgid "HEAD file does not match migration timeline head"
+msgstr ""
+
+#: tacker/db/migration/cli.py:147
+msgid "Resource name for which deleted entries are to be purged."
+msgstr ""
+
+#: tacker/db/migration/cli.py:150
+msgid "How long to preserve deleted data, defaults to 90"
+msgstr ""
+
+#: tacker/db/migration/cli.py:156
+msgid "Granularity to use for age argument, defaults to days."
+msgstr ""
+
+#: tacker/db/migration/cli.py:161
+msgid "Available commands"
+msgstr ""
+
+#: tacker/db/migration/purge_tables.py:90
+#, python-format
+msgid "'%s' - age should be an integer"
+msgstr ""
+
+#: tacker/db/migration/purge_tables.py:93
+#, python-format
+msgid "'%s' - age should be a positive integer"
+msgstr ""
+
+#: tacker/db/migration/purge_tables.py:97
+#, python-format
+msgid "'%s' granularity should be days, hours, minutes, or seconds"
+msgstr ""
+
+#: tacker/db/vnfm/vnfm_db.py:516
+msgid ""
+"Operation on PENDING_DELETE VNF is not permitted. Please contact your "
+"Administrator."
+msgstr ""
+
+#: tacker/extensions/common_services.py:28
+#, python-format
+msgid "Failed to create an event: %(error_str)s"
+msgstr ""
+
+#: tacker/extensions/common_services.py:32
+#, python-format
+msgid ""
+"Specified Event id %(evt_id)s is invalid. Please verify and pass a valid "
+"Event id"
+msgstr ""
+
+#: tacker/extensions/common_services.py:37
+msgid "Specified model is invalid, only Event model supported"
+msgstr ""
+
+#: tacker/extensions/common_services.py:41
+#, python-format
+msgid "Parameter input values missing for the key '%(key)s'"
+msgstr ""
+
+#: tacker/extensions/common_services.py:45
+msgid "Parameter YAML input missing"
+msgstr ""
+
+#: tacker/extensions/common_services.py:49
+#, python-format
+msgid "Invalid format. '%(error)s'"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:28 tacker/extensions/nfvo.py:32
+#: tacker/extensions/nfvo.py:264 tacker/extensions/nfvo.py:268
+#: tacker/extensions/nfvo.py:272 tacker/extensions/nfvo.py:276
+#: tacker/extensions/nfvo.py:280
+#, python-format
+msgid "%(message)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:36
+#, python-format
+msgid "VIM %(vim_id)s is still in use by VNF"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:40
+msgid "Default VIM is not defined."
+msgstr ""
+
+#: tacker/extensions/nfvo.py:44
+#, python-format
+msgid "Default VIM already exists %(vim_id)s."
+msgstr ""
+
+#: tacker/extensions/nfvo.py:48
+#, python-format
+msgid ""
+"Specified VIM id %(vim_id)s is invalid. Please verify and pass a valid "
+"VIM id"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:53
+#, python-format
+msgid "Unknown VIM region name %(region_name)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:57
+#, python-format
+msgid "Unable to find key file for VIM %(vim_id)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:61
+#, python-format
+msgid "Barbican must be enabled for VIM %(vim_id)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:65
+#, python-format
+msgid "Resource type %(type)s is unsupported by VIM"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:69
+#, python-format
+msgid ""
+"Error while trying to issue %(cmd)s to find resource type %(type)s by "
+"resource name %(name)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:74
+#, python-format
+msgid ""
+"Getting resource id from VIM with resource name %(name)s by %(cmd)s "
+"returns more than one"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:79
+#, python-format
+msgid ""
+"Getting resource id from VIM with resource name %(name)s by %(cmd)s "
+"returns nothing"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:84
+#, python-format
+msgid "VIM from VNF %(vnf_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:88 tacker/extensions/vnfm.py:149
+#, python-format
+msgid "tosca-parser failed: - %(error_msg_details)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:92
+#, python-format
+msgid "Invalid VNFFG template input: %(template)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:96
+#, python-format
+msgid ""
+"Invalid Forwarding Path contains duplicate forwarder not in order: "
+"%(forwarder)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:101
+#, python-format
+msgid "Invalid Forwarding Path contains duplicate connection point : %(cp)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:106
+#, python-format
+msgid ""
+"Specified VNFD %(vnfd_name)s in VNFFGD does not exist. Please create "
+"VNFDs before creating VNFFG"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:111
+#, python-format
+msgid ""
+"Specified CP %(cp_id)s could not be found in VNFD %(vnfd_name)s. Please "
+"check VNFD for correct Connection Point."
+msgstr ""
+
+#: tacker/extensions/nfvo.py:117
+#, python-format
+msgid ""
+"Specified CP %(cp_id)s in VNFD %(vnfd_name)s does not have forwarding "
+"capability, which is required to be included in forwarding path"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:123
+#, python-format
+msgid ""
+"Specified number_of_endpoints %(number)s is not equal to the number of "
+"connection_point %(cps)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:128
+#, python-format
+msgid "VNFFGD %(vnffgd_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:132
+#, python-format
+msgid "VNFFG Template %(vnffgd_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:136
+#, python-format
+msgid "Creating VNFFG based on %(vnffgd_id)s failed"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:140
+#, python-format
+msgid ""
+"Matching VNF Instance for VNFD %(vnfd_name)s could not be found. Please "
+"create an instance of this VNFD before creating/updating VNFFG."
+msgstr ""
+
+#: tacker/extensions/nfvo.py:146
+#, python-format
+msgid "Param values %(param_value)s is not in dict format."
+msgstr ""
+
+#: tacker/extensions/nfvo.py:150
+#, python-format
+msgid "Failed to parse VNFFG Template due to missing input param %(get_input)s."
+msgstr ""
+
+#: tacker/extensions/nfvo.py:155
+#, python-format
+msgid "VNFFG Property %(vnffg_property)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:159
+#, python-format
+msgid "Specified CP %(cp_id)s could not be found in VNF %(vnf_id)s."
+msgstr ""
+
+#: tacker/extensions/nfvo.py:164
+#, python-format
+msgid "VNFFG %(vnffg_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:168
+#, python-format
+msgid "VNFFG %(vnffg_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:172
+#, python-format
+msgid "Specified VNF instance %(vnf_name)s in VNF Mapping could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:177
+#, python-format
+msgid "Deleting VNFFG %(vnffg_id)s failed"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:181
+#, python-format
+msgid "VNFFG %(vnffg_id)s belongs to active network service %(ns_id)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:186
+#, python-format
+msgid "NFP attribute %(attribute)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:190
+#, python-format
+msgid "NFP %(nfp_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:194
+#, python-format
+msgid "NFP %(nfp_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:198
+#, python-format
+msgid "%(error)s in policy"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:202
+msgid "Criteria list can not be empty"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:206
+#, python-format
+msgid "The %(first_dict)s and %(sec_dict)s are overlapped"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:210
+#, python-format
+msgid ""
+"The path_id %(path_id)s is overlapped with NFP %(nfp_name)s in "
+"%(vnffg_name)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:215
+#, python-format
+msgid "Unsupported Policy Type: %(type)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:219
+#, python-format
+msgid "VNFD Forwarder %(vnfd)s not found in VNF Mapping %(mapping)s"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:223
+#, python-format
+msgid "VNFD Forwarder %(vnfd)s specified more than twice in requirements path"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:228
+#, python-format
+msgid "SFC %(sfc_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:232
+#, python-format
+msgid "Service Function Chain %(sfc_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:236
+#, python-format
+msgid "Classifier %(classifier_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:240
+#, python-format
+msgid "Classifier %(classifier_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:244
+msgid "VNF mapping not found/defined"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:248
+#, python-format
+msgid "The %(vnfd)s is not found in constituent VNFDs"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:252
+#, python-format
+msgid "NSD %(nsd_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:256
+#, python-format
+msgid "NS %(ns_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/nfvo.py:260
+#, python-format
+msgid "No tasks to run for %(action)s on %(resource)s"
+msgstr ""
+
+#: tacker/extensions/vnflcm.py:27 tacker/extensions/vnfm.py:157
+#, python-format
+msgid "%(msg)s"
+msgstr ""
+
+#: tacker/extensions/vnflcm.py:31
+#, python-format
+msgid "Create image failed %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:35
+msgid "More than one MGMT Driver per vnfd is not supported"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:39
+msgid "service types are not specified"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:43
+#, python-format
+msgid "VNFD %(vnfd_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:47
+#, python-format
+msgid "VNF %(vnf_id)s is still in use"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:51
+#, python-format
+msgid "Invalid Mgmt driver %(mgmt_driver_name)s."
+msgstr ""
+
+#: tacker/extensions/vnfm.py:55
+#, python-format
+msgid "VIM type %(vim_name)s is not supported as an infra driver"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:59
+#, python-format
+msgid "Expecting dict type for API attribute instead of %(atype)s "
+msgstr ""
+
+#: tacker/extensions/vnfm.py:63
+#, python-format
+msgid "creating VNF based on %(vnfd_id)s failed"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:67
+#, python-format
+msgid "VNF Update Invalid Input %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:71
+#, python-format
+msgid "VNF Update %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:75
+#, python-format
+msgid "VNF Create %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:79 tacker/extensions/vnfm.py:95
+#: tacker/extensions/vnfm.py:125 tacker/extensions/vnfm.py:129
+#, python-format
+msgid "%(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:83
+#, python-format
+msgid "VNF Delete %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:87
+#, python-format
+msgid "VNF Heal %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:91
+#, python-format
+msgid "VNF ChangeExtConn %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:99
+#, python-format
+msgid "VNF %(vnf_id)s failed to heal"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:103
+#, python-format
+msgid "VNFD %(vnfd_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:107
+#, python-format
+msgid "CNF definition file with path %(path)s is not found in vnf_artifacts."
+msgstr ""
+
+#: tacker/extensions/vnfm.py:113
+#, python-format
+msgid "CNF Create Failed with reason: %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:117
+#, python-format
+msgid "CNF Scale Failed with reason: %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:121
+#, python-format
+msgid "CNF Scale Wait Failed with reason: %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:133
+#, python-format
+msgid "service type %(service_type_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:137
+#: tacker/tests/unit/vnflcm/test_controller.py:179
+#: tacker/tests/unit/vnflcm/test_controller.py:2331
+#, python-format
+msgid "VNF %(vnf_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:141
+#, python-format
+msgid "LCM user data %(reason)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:145
+#, python-format
+msgid "Parameter YAML not well formed - %(error_msg_details)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:153
+#, python-format
+msgid "heat-translator failed: - %(error_msg_details)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:161
+msgid "IP Address input values should be in a list format"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:165
+#, python-format
+msgid ""
+"Value specified for mem_page_size is invalid: %(error_msg_details)s. The "
+"valid values are 'small', 'large', 'any' or an integer value in MB"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:171 tacker/extensions/vnfm.py:181
+#, python-format
+msgid ""
+"Invalid keys specified in VNFD - %(error_msg_details)s.Supported keys "
+"are: %(valid_keys)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:176
+#, python-format
+msgid ""
+"Invalid values specified in VNFD - %(error_msg_details)s.Supported Values"
+" are: %(valid_values)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:186
+msgid ""
+"'file' attribute is missing for tosca.artifacts.Deployment.Image.VM "
+"artifact type"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:191
+#, python-format
+msgid ""
+"Could not retrieve VNF resource IDs and types. Please check %(service)s "
+"status."
+msgstr ""
+
+#: tacker/extensions/vnfm.py:196
+#, python-format
+msgid "VNF %(vnf_id)s is not in Active state: %(message)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:200
+msgid "Metadata for alarm policy is not matched"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:204
+#, python-format
+msgid "Resource type %(resource_type)s for alarm policy is not supported"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:209
+#, python-format
+msgid ""
+"Input for substitution mapping requirements are not valid for "
+"%(requirement)s. They must be in the form of list with two entries"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:215
+#, python-format
+msgid ""
+"All the requirements for substitution_mappings are not provided. Missing "
+"requirement for %(requirement)s"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:220
+msgid "Please provide parameters for substitution mappings"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:224
+msgid "Please provide only one Scaling policy"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:228
+msgid "Please provide one network for all vdus"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:232
+#, python-format
+msgid "Found unsupported keys for %(found_keys)s "
+msgstr ""
+
+#: tacker/extensions/vnfm.py:236
+msgid "Scaling resource cannot be set to fixed ip_address or mac_address."
+msgstr ""
+
+#: tacker/extensions/vnfm.py:241
+msgid "Could not find the required params for maintenance"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:246
+#, python-format
+msgid "Invalid data format for service list: '%s'"
+msgstr ""
+
+#: tacker/extensions/vnfm.py:250
+#, python-format
+msgid "Empty list is not allowed for service list. '%s'"
+msgstr ""
+
+#: tacker/extensions/nfvo_plugins/network_service.py:56
+#, python-format
+msgid "NSD %(nsd_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo_plugins/network_service.py:60
+#, python-format
+msgid "NS %(ns_id)s could not be found"
+msgstr ""
+
+#: tacker/extensions/nfvo_plugins/network_service.py:64
+#, python-format
+msgid "NS %(ns_id)s in use"
+msgstr ""
+
+#: tacker/keymgr/barbican_key_manager.py:53
+msgid "User is not authorized to use key manager."
+msgstr ""
+
+#: tacker/keymgr/barbican_key_manager.py:121
+#, python-format
+msgid ""
+"context must be of type KeystonePassword, KeystoneToken, RequestContext, "
+"or Context, got type %s"
+msgstr ""
+
+#: tacker/keymgr/barbican_key_manager.py:137
+#, python-format
+msgid "Could not find discovery information for %s"
+msgstr ""
+
+#: tacker/keymgr/barbican_key_manager.py:180
+msgid "Key ID is None"
+msgstr ""
+
+#: tacker/keymgr/exception.py:25
+msgid "You are not authorized to complete this action."
+msgstr ""
+
+#: tacker/keymgr/exception.py:29
+#, python-format
+msgid "Key manager error: %(reason)s"
+msgstr ""
+
+#: tacker/keymgr/exception.py:33
+#, python-format
+msgid "Key not found, uuid: %(uuid)s"
+msgstr ""
+
+#: tacker/keymgr/exception.py:37
+#, python-format
+msgid "Invalid auth_type was specified, auth_type: %(type)s"
+msgstr ""
+
+#: tacker/keymgr/exception.py:41
+msgid ""
+"Insufficient credential data was provided, either \"token\" must be set "
+"in the passed conf, or a context with an \"auth_token\" property must be "
+"passed."
+msgstr ""
+
+#: tacker/nfvo/nfvo_plugin.py:77
+msgid "VIM driver for launching VNFs"
+msgstr ""
+
+#: tacker/nfvo/nfvo_plugin.py:80
+msgid "Interval to check for VIM health"
+msgstr ""
+
+#: tacker/nfvo/nfvo_plugin.py:846
+msgid ""
+"NS creation is not completed within {wait} seconds as creation of mistral"
+" execution {mistral} is not completed"
+msgstr ""
+
+#: tacker/nfvo/nfvo_plugin.py:961
+msgid ""
+"NS deletion is not completed within {wait} seconds as deletion of mistral"
+" execution {mistral} is not completed"
+msgstr ""
+
+#: tacker/nfvo/drivers/vim/kubernetes_driver.py:33
+#: tacker/nfvo/drivers/vim/openstack_driver.py:48
+msgid ""
+"Use barbican to encrypt vim password if True, save vim credentials in "
+"local file system if False"
+msgstr ""
+
+#: tacker/nfvo/drivers/vim/openstack_driver.py:56
+#: tacker/vnfm/monitor_drivers/ping/ping.py:29
+msgid "Number of ICMP packets to send"
+msgstr ""
+
+#: tacker/nfvo/drivers/vim/openstack_driver.py:58
+#: tacker/vnfm/monitor_drivers/http_ping/http_ping.py:32
+#: tacker/vnfm/monitor_drivers/ping/ping.py:31
+msgid "Number of seconds to wait for a response"
+msgstr ""
+
+#: tacker/nfvo/drivers/vim/openstack_driver.py:60
+#: tacker/vnfm/monitor_drivers/ping/ping.py:33
+msgid "Number of seconds to wait between packets"
+msgstr ""
+
+#: tacker/objects/vnf_artifact.py:108 tacker/objects/vnf_artifact.py:127
+#: tacker/objects/vnf_deployment_flavour.py:184
+#: tacker/objects/vnf_deployment_flavour.py:208
+#: tacker/objects/vnf_package.py:473 tacker/objects/vnf_package.py:499
+#: tacker/objects/vnf_software_image.py:175
+#: tacker/objects/vnf_software_image.py:195
+#, python-format
+msgid "attribute %s not lazy-loadable"
+msgstr ""
+
+#: tacker/objects/vnf_artifact.py:137
+#: tacker/objects/vnf_deployment_flavour.py:218
+#: tacker/objects/vnf_package.py:460 tacker/objects/vnf_software_image.py:206
+#, python-format
+msgid "loading %s requires recursion"
+msgstr ""
+
+#: tacker/objects/vnf_artifact.py:147 tacker/objects/vnf_instance.py:404
+#: tacker/objects/vnf_package_vnfd.py:196 tacker/objects/vnf_resources.py:132
+#: tacker/objects/vnf_software_image.py:216
+msgid "already created"
+msgstr ""
+
+#: tacker/plugins/fenix.py:30
+msgid "Time for migration_type operation"
+msgstr ""
+
+#: tacker/plugins/fenix.py:32
+msgid "Time for how long live migration can take"
+msgstr ""
+
+#: tacker/plugins/fenix.py:34
+msgid "Time for migrated node could be fully running state"
+msgstr ""
+
+#: tacker/plugins/fenix.py:37
+msgid "Number of attempts to retry for request"
+msgstr ""
+
+#: tacker/plugins/fenix.py:40
+msgid "Wait time (in seconds) between consecutive request"
+msgstr ""
+
+#: tacker/plugins/common/utils.py:31
+#, python-format
+msgid "%s is not a valid VLAN tag"
+msgstr ""
+
+#: tacker/plugins/common/utils.py:35
+msgid "End of VLAN range is less than start of VLAN range"
+msgstr ""
+
+#: tacker/tests/etc/samples/etsi/nfv/user_data_sample_userdata_invalid_script/UserData/lcm_user_data_invalid_script.py:26
+msgid "invalid user data script."
+msgstr ""
+
+#: tacker/tests/unit/api/v1/test_resource.py:71
+#: tacker/tests/unit/api/v1/test_resource.py:116
+msgid "Unmapped error"
+msgstr ""
+
+#: tacker/tests/unit/vnflcm/test_vnflcm_driver.py:74
+#: tacker/vnflcm/vnflcm_driver.py:298 tacker/vnfm/plugin.py:123
+#: tacker/vnfm/plugin.py:131
+msgid "Hosting vnf drivers tacker plugin will use"
+msgstr ""
+
+#: tacker/tests/unit/vnfm/test_plugin.py:1093 tacker/vnfm/plugin.py:1025
+#, python-format
+msgid "Scaling Policy action skipped due to status %(status)s for vnf %(vnfid)s"
+msgstr ""
+
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/fakes.py:1052
+msgid "fake_namespace,{name}"
+msgstr ""
+
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/fakes.py:1054
+msgid "v1,{kind}"
+msgstr ""
+
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/fakes.py:1062
+msgid "{name}-1234567890-abcde"
+msgstr ""
+
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/fakes.py:1064
+msgid "{name}-12345"
+msgstr ""
+
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/fakes.py:1066
+msgid "{name}-1"
+msgstr ""
+
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:183
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:222
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:274
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:310
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:373
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:411
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:447
+#: tacker/tests/unit/vnfm/infra_drivers/kubernetes/test_kubernetes_driver.py:484
+msgid ""
+"CNF Create Failed with reason: Resource creation is not completed within "
+"{wait} seconds as creation of stack {stack} is not completed"
+msgstr ""
+
+#: tacker/tests/unit/vnfpkgm/test_controller.py:649
+#, python-format
+msgid "VNF Package %s onboarding state is not CREATED"
+msgstr ""
+
+#: tacker/tosca/utils.py:1308
+#, python-format
+msgid "Added output for %s"
+msgstr ""
+
+#: tacker/vnflcm/vnflcm_driver.py:302 tacker/vnfm/plugin.py:58
+msgid ""
+"MGMT driver to communicate with Hosting VNF/logical service instance "
+"tacker plugin will use"
+msgstr ""
+
+#: tacker/vnfm/monitor.py:42
+msgid "check interval for monitor"
+msgstr ""
+
+#: tacker/vnfm/monitor.py:65
+msgid ""
+"Monitor driver to communicate with Hosting VNF/logical service instance "
+"tacker plugin will use"
+msgstr ""
+
+#: tacker/vnfm/monitor.py:222
+msgid ""
+"App monitoring driver to communicate with Hosting VNF/logical service "
+"instance tacker plugin will use"
+msgstr ""
+
+#: tacker/vnfm/monitor.py:266
+msgid ""
+"Alarm monitoring driver to communicate with Hosting VNF/logical service "
+"instance tacker plugin will use"
+msgstr ""
+
+#: tacker/vnfm/plugin.py:62
+msgid "Time interval to wait for VM to boot"
+msgstr ""
+
+#: tacker/vnfm/plugin.py:1075
+msgid " Cannot fetch details"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:55
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:69
+msgid "Number of attempts to retry for stack creation/deletion"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:59
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:73
+msgid "Wait time (in seconds) between consecutive stack create/delete retries"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:178
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:275
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1238
+msgid ""
+"Resource creation is not completed within {wait} seconds as creation of "
+"stack {stack} is not completed"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:267
+msgid ""
+"The resources are creating time out.namespace: {namespace}, name:{name}, "
+"kind: {kind}).Reason: {message}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:377
+msgid "read endpoinds failed.kind:{kind}.reason:{e}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1086
+msgid ""
+"Failed the request to read a scale information. namespace: {namespace}, "
+"name: {name}, kind: {kind}, Reason: {exception}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1109
+msgid ""
+"Failed the request to update a scale information. namespace: {namespace},"
+" name: {name}, kind: {kind}, Reason: {exception}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1161
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1321
+msgid "Target VnfResource for aspectId {aspect_id} is not found in DB"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1169
+msgid "Target kind {kind} is out of scale target"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1191
+msgid ""
+"The number of target replicas after scaling [{after_replicas}] is out of "
+"range"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1354
+msgid "CNF Scale failed caused by the Pod status is Unknown"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1360
+msgid ""
+"CNF Scale failed to complete within {wait} seconds while waiting for the "
+"aspect_id {aspect_id} to be scaled"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1773
+msgid ""
+"Failed the request to read a Pod information. namespace: {namespace}, "
+"pod_name: {name}, kind: {kind}, Reason: {exception}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1785
+msgid "Resource healing is not completedwithin {wait} seconds"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1822
+msgid ""
+"Failed the request to delete a Pod. namespace: {namespace}, pod_name: "
+"{name}, kind: {kind}, Reason: {exception}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1829
+msgid "{vnfc_instance_id} is a kind of Kubertnetes resource that is not covered"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1935
+msgid "Pod status is found Unknown"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/kubernetes_driver.py:1945
+msgid "Resource healing is not completed within {wait} seconds"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/kubernetes/k8s/translate_outputs.py:309
+#: tacker/vnfm/infra_drivers/kubernetes/k8s/translate_outputs.py:314
+msgid "{kind} create failure. Reason={reason}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:178
+msgid "failed to get Base HOT."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:211
+msgid ""
+"failed to get UserData path based on lcm-operation-user-data from "
+"additionalParams."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:223
+msgid ""
+"failed to get UserData class based on lcm-operation-user-data-class from "
+"additionalParams."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:245
+#, python-format
+msgid "fails due to timeout[sec]: %s"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:249
+msgid "return value as HOT parameter from UserData is not in dict format."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:342
+msgid ""
+"failed to get lcm-operation-user-data or lcm-operation-user-data-class "
+"from additionalParams."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:577
+msgid "action is not completed within {wait} seconds on stack {stack}"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:624
+msgid "at vnf_id {} because all parameters match the existing one."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:642
+msgid "at vnf_id {} because the target yaml is empty."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:796
+#, python-format
+msgid "VNF scaling failed for stack %(stack)s with status %(status)s"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:820
+#, python-format
+msgid "VNF scaling failed for stack %(stack)s with error %(error)s"
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/openstack.py:829
+#, python-format
+msgid ""
+"VNF scaling failed to complete within %{wait}s seconds while waiting for "
+"the stack %(stack)s to be scaled."
+msgstr ""
+
+#: tacker/vnfm/infra_drivers/openstack/translate_template.py:37
+msgid "Flavor Extra Specs"
+msgstr ""
+
+#: tacker/vnfm/lcm_user_data/abstract_user_data.py:26
+msgid "failed to execute UserData because not implemented."
+msgstr ""
+
+#: tacker/vnfm/mgmt_drivers/openwrt/openwrt.py:32
+msgid "User name to login openwrt"
+msgstr ""
+
+#: tacker/vnfm/mgmt_drivers/openwrt/openwrt.py:33
+msgid "Password to login openwrt"
+msgstr ""
+
+#: tacker/vnfm/monitor_drivers/ceilometer/ceilometer.py:30
+msgid "Address which drivers use to trigger"
+msgstr ""
+
+#: tacker/vnfm/monitor_drivers/ceilometer/ceilometer.py:32
+msgid "port number which drivers use to trigger"
+msgstr ""
+
+#: tacker/vnfm/monitor_drivers/http_ping/http_ping.py:30
+msgid "Number of times to retry"
+msgstr ""
+
+#: tacker/vnfm/monitor_drivers/http_ping/http_ping.py:34
+msgid "HTTP port number to send request"
+msgstr ""
+
+#: tacker/vnfm/monitor_drivers/ping/ping.py:35
+msgid "Number of ping retries"
+msgstr ""
+

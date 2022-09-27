@@ -1,0 +1,3846 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Glance Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-17 22:27+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/ocata>:313
+msgid "'community' - the image is available for consumption by all users"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:48
+msgid ""
+"'enabled_import_methods' is ListOpt type config option. If only one method "
+"is enabled, the format needs to be ['method'] this is not obvious as even "
+"the example does not have the '[' and ']' boundaries around the default "
+"value."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:311
+msgid "'private' - the image is accessible only to its owner"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:308
+msgid ""
+"'public' - reserved by default for images supplied by the operator for the "
+"use of all users"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:315
+msgid ""
+"'shared' - the image is completely accessible to the owner and available for "
+"consumption by any image members"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:214
+msgid ""
+"**Adding** locations is disallowed on the following image statuses - "
+"``saving``, ``deactivated``, ``deleted``, ``pending_delete``, ``killed``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:59
+msgid ""
+"**Experimental** zero-downtime database upgrade using an expand-migrate-"
+"contract series of operations is available."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:137 origin/stable/ocata>:236
+msgid ""
+"*File system store operators*: the old name, now **DEPRECATED**, was "
+"``filesystem``.  The **new** name, used in both glance and glance_store, is "
+"``file``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:133 origin/stable/ocata>:232
+msgid ""
+"*VMware datastore operators*: The old name, now **DEPRECATED**, was "
+"``vmware_datastore``.  The **new** name, used in both glance and "
+"glance_store, is ``vmware``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:25
+msgid "11.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:5
+msgid "11.0.2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:21
+msgid "12.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "12.0.0-20"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "13.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:45
+msgid "14.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "14.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:35
+msgid "15.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "15.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:103
+msgid "16.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:39
+msgid "16.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "16.0.1-11"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:39
+msgid "17.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "17.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "18.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:69
+msgid "19.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:40
+msgid "19.0.2"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "19.0.4"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:93
+msgid "20.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:30
+msgid "20.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "20.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "21.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:5
+msgid "22.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:24 current
+msgid "23.0.0.0b2"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current
+msgid "23.0.0.0b2-35"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"A change was added to the import API which provides time-based locking of an "
+"image to exclude other import operations from starting until the lock-"
+"holding task completes (see Bug 1884596_). The lock is based on the task "
+"that we start to do the work, and the UUID of that task is stored in the "
+"``os_glance_import_task`` image property, which indicates who owns the lock. "
+"If the task holding the lock fails to make progress for 60 minutes, another "
+"import operation will be allowed to steal the lock and start another import "
+"operation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:55
+msgid ""
+"A new common image property, 'description', has been added.  This allows you "
+"to specify a brief human-readable description, suitable for display in a "
+"user interface, on images.  It has been possible to do this previously using "
+"a custom image property; this change simply standardizes the usage in order "
+"to promote interoperability. This change has no effect on any property named "
+"'description' on existing images, and it is not a required image property."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:116
+msgid ""
+"A new interoperable image import method, ``web-download`` is introduced."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:135
+msgid ""
+"A new interoperable image import method, ``web-download`` is introduced.  "
+"This method allows an end user to import an image from a remote URL.  The "
+"image data is retrieved from the URL and stored in the Glance backend.  (In "
+"other words, this is a **copy-from** operation.)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:68 stable/pike>:225 stable/pike>:268
+msgid ""
+"A new policy, ``tasks_api_access`` has been introduced so that ordinary user "
+"credentials may be used by Glance to manage the tasks that accomplish the "
+"interoperable image import process without requiring that operators expose "
+"the Tasks API to end users."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:136 origin/stable/ocata>:249
+msgid ""
+"A new value for the Image 'visibility' field, 'community', is introduced."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:100
+msgid ""
+"A new value for visibility, 'shared', is introduced.  Images that have or "
+"can accept members will no longer be displayed as having 'private' "
+"visibility, reducing confusion among end users."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:122
+msgid ""
+"A plugin framework for customizing the processing of imported images before "
+"they become active is introduced in this release, along with a new plugin "
+"that injects image metadata properties into imported images."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:190
+msgid ""
+"A preview of zero-downtime database upgrades is available in this release, "
+"but it is **experimental** and **not supported for production systems**.  "
+"Please consult the `Database Management`_ section of the Glance "
+"documentation for details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:365
+msgid ""
+"A recent change to oslo.log (>= 3.17.0) set the default value of ``[DEFAULT]/"
+"use_stderr`` to ``False`` in order to prevent duplication of logs (as "
+"reported in bug \\#1588051). Since this would change the current behaviour "
+"of certain glance commands (e.g., glance-replicator, glance-cache-manage, "
+"etc.), we chose to override the default value of ``use_stderr`` to ``True`` "
+"in those commands. We also chose not to override that value in any Glance "
+"service (e.g., glance-api, glance-registry) so that duplicate logs are not "
+"created by those services. Operators that have a usecase that relies on logs "
+"being reported on standard error may set ``[DEFAULT]/use_stderr = True`` in "
+"the appropriate service's configuration file upon deployment."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:274
+msgid ""
+"A return code of ``0`` means you are currently up to date with the latest "
+"migration script version and all ``db`` upgrades are complete."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:277
+msgid ""
+"A return code of ``3`` means that an upgrade from your current database "
+"version is available and your first step is to run ``glance-manage db "
+"expand``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:280
+msgid ""
+"A return code of ``4`` means that the expansion stage is complete, and the "
+"next step is to run ``glance-manage db migrate``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:283
+msgid ""
+"A return code of ``5`` means that the expansion and data migration stages "
+"are complete, and the next step is to run ``glance-manage db contract``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:324
+msgid "Accept the Range header in requests to serve partial images."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:54
+msgid "Add ``ploop`` to the list of supported disk formats."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid "Add ``vhdx`` to list of supported disk format."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:158
+msgid ""
+"Add ability to import image into multiple stores during `interoperable image "
+"import process`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:240
+msgid ""
+"Add ability to import image into multiple stores during `interoperable image "
+"import process`_. This feature will only work if multiple stores are enabled "
+"in the deployment. It introduces 3 new optional body fields to the `import "
+"API path`:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:319
+msgid ""
+"Added ``hw:mem_encryption`` boolean in the ``OS::Nova::Flavor`` namespace, "
+"and ``hw_mem_encryption`` boolean in the ``OS::Glance::Image`` namespace."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:323
+msgid ""
+"Added ``hw_pmu`` boolean, and ``hw_cdrom_bus`` and ``hw_firmware_type`` "
+"enumerations in the ``OS::Compute::LibvirtImage`` namespace."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:327
+msgid ""
+"Added ``powervm`` to the ``hypervisor_type`` enumeration in the ``OS:::"
+"Compute::Hypervisor`` namespace."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:330
+msgid ""
+"Added ``virtio``, ``gop`` and ``none`` to the ``hw_video_model`` enumeration "
+"in the ``OS::Compute::LibvirtImage`` namespace."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:154
+msgid ""
+"Added a new command ``glance-manage db check``, the command will allow a "
+"user to check the status of upgrades in the database."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:149
+msgid ""
+"Added a plugin to inject image metadata properties to non-admin images "
+"created via the interoperable image import process."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:241
+msgid ""
+"Added a plugin to inject image metadata properties to non-admin images "
+"created via the interoperable image import process.  This plugin implements "
+"the spec `Inject metadata properties automatically to non-admin images`_.  "
+"See the spec for a discussion of the use case addressed by this plugin."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:95
+msgid ""
+"Added additional metadata for CPU thread pinning policies to 'compute-cpu-"
+"pinning.json'. Use the ``glance_manage`` tool to upgrade."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:137
+msgid ""
+"Added new import method ``copy-image`` which will copy existing image into "
+"multiple stores."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:169
+msgid ""
+"Added new import method ``copy-image`` which will copy existing image into "
+"multiple stores. The new import method will work only if multiple stores are "
+"enabled in the deployment. To use this feature operator needs to mention "
+"``copy-image`` import method in ``enabled_import_methods`` configuration "
+"option. Note that this new internal plugin applies *only* to images imported "
+"via the `interoperable image import process`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:43
+msgid ""
+"Added oslopolicy enforcer entrypoint making it possible to utilize "
+"oslopolicy-policy-generator to get uniform information about the policies. "
+"NOTE: Glance will require policy.json being present for any meaningful "
+"output."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:41
+msgid ""
+"Added policy support to allow copying image to multiple stores, even if "
+"those images are not owned by the current user's project."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:37
+msgid "Added support for cinder multiple stores."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:107
+msgid "Added support for copying existing images in multiple stores"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:105
+msgid "Added support for importing images in multiple stores"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:50
+msgid "Added support for sparse image upload for filesystem and rbd driver"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:19
+msgid ""
+"Added support for sparse image upload for filesystem and rbd driver of "
+"glance_store"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:17 stable/victoria>:46
+msgid "Added support to calculate virtual size of image based on disk format"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:27 stable/victoria>:58
+msgid "Added support to configure multiple cinder stores"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:109
+msgid "Added support to delete image from single store"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:43
+msgid ""
+"Adding locations to a non-active or non-queued image is no longer allowed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:297
+msgid ""
+"Additional values were added to the enumeration for the `hw_disk_bus`_ "
+"property in the ``OS::Compute::LibvirtImage`` namespace."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:316
+msgid ""
+"Additionally, the default value of this option has been changed in this "
+"release.  See the \"Upgrade Notes\" section of this document for more "
+"information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:219
+msgid ""
+"Additionally, you will need to verify that the task-related policies in the "
+"Glance policy.json file are set correctly.  These settings are described "
+"below."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:82
+msgid ""
+"After upgrading, deployments using the cinder backend should update their "
+"config to specify a volume type. Existing images on those backends will be "
+"updated at runtime (lazily, when they are first read) to a location URL that "
+"includes the store and volume type information."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:14 origin/stable/newton>:246
+#: origin/stable/ocata>:384
+msgid ""
+"All ``qemu-img info`` calls are now run under resource limitations that "
+"limit the CPU time and address space usage of the process running the "
+"command to 2 seconds and 1 GB respectively. This addresses the bug https://"
+"bugs.launchpad.net/glance/+bug/1449062 Current usage of \"qemu-img\" is "
+"limited to Glance tasks, which by default (since the Mitaka release) are "
+"only available to admin users. We continue to recommend that tasks only be "
+"exposed to trusted users"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:18
+msgid ""
+"All ``qemu-img info`` calls will be run under resource limitations that "
+"limit the CPU time and address space usage of the process if oslo."
+"concurrency is at least version 2.6.1. ``qemu-img info`` calls are now "
+"limited to 2 seconds and 1 GB respectively. This addresses the bug https://"
+"bugs.launchpad.net/glance/+bug/1449062 Current usage of \"qemu-img\" is "
+"limited to Glance tasks. In the Mitaka release, tasks by default will only "
+"be available to admin users. In general, we recommend that tasks only be "
+"exposed to trusted users, even in releases prior to Mitaka."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:265
+msgid ""
+"All images currently with 'public' visibility (that is, images for which "
+"'is_public' is True in the database) will have their visibility set to "
+"'public'."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:173
+msgid ""
+"All the ``glance manage db`` commands are changed appropriately to use "
+"Alembic to perform operations such as ``version``, ``upgrade``, ``sync`` and "
+"``version_control``.  Hence, the \"old-style\" migration scripts will no "
+"longer work with the Ocata glance manage db commands."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:93
+msgid ""
+"Although support has been added for Glance to be run as a WSGI application "
+"hosted by a web server, the atypical nature of the Images APIs provided by "
+"Glance, which enable transfer of copious amounts of image data, makes it "
+"difficult for this approach to work without careful configuration.  Glance "
+"relies on the use of chunked transfer encoding for image uploads, and the "
+"support of chunked transfer encoding is not required by the `WSGI "
+"specification`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:131
+msgid ""
+"An **EXPERIMENTAL** version of the Images API supplied by Glance is "
+"introduced as **2.6**.  It includes the new API calls introduced for the "
+"`refactored image import`_ functionality.  This functionality is **not** "
+"enabled by default, so the CURRENT version of the Images API remains at 2.5. "
+" There are no changes to the version 2.5 API in this release, so all version "
+"2.5 calls will work whether or not the new import functionality is enabled "
+"or not."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:294
+msgid ""
+"An enumeration of values was added for the `vmware:hw_version`_ property in "
+"the ``OS::Compute::VMwareFlavor`` namespace."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:142
+msgid ""
+"An image created by the Block Storage service will have these properties set "
+"automatically, with the deletion policy set to ``on_image_deletion``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:104
+msgid ""
+"An image must have 'shared' visibility in order to accept members. This "
+"provides a safeguard from 'private' images being shared inadvertently."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:335
+msgid ""
+"An image that has 'community' visibility in the v2 API will have "
+"``is_public`` == False in the v1 API.  It will behave like a private image, "
+"that is, only the owner (or an admin) will have access to the image, and "
+"only the owner (or an admin) will see the image in the image-list response."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:138
+msgid ""
+"An image with 'community' visibility is available for consumption by any "
+"user."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:217
+msgid ""
+"As Image Import will be always enabled, care needs to be taken that it is "
+"configured properly from this release forward. The 'enable_image_import' "
+"option is silently ignored."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:112
+msgid ""
+"As far as the Glance team can determine, the difficulties running Glance as "
+"a WSGI application are caused by issues external to Glance.  Thus the Glance "
+"team recommends that Glance be run in its normal standalone configuration, "
+"particularly in production environments.  If you choose to run Glance as a "
+"WSGI application in a web server, be sure to test your installation "
+"carefully with realistic usage scenarios."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:147
+msgid ""
+"As is standard behavior for the image-list call, other filters may be "
+"applied to the request.  For example, to see the community images supplied "
+"by user ``931efe8a-0ad7-4610-9116-c199f8807cda``, the following call would "
+"be made: ``GET v2/images?visibility=community&owner=931efe8a-0ad7-4610-9116-"
+"c199f8807cda``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:120
+msgid ""
+"As mentioned above, the default visibility of an image is 'shared'. If a "
+"user wants an image to be private and not accept any members, a visibility "
+"of 'private' can be explicitly assigned at the time of creation."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:171
+msgid ""
+"As mentioned above, the same recommendation applies to the policy-based "
+"configuration for exposing multiple image locations."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:222
+msgid ""
+"As of this release, the only service using the ``compressed`` container "
+"format is Cinder (Block Storage Service), when Cinder is configured to use "
+"compression when uploading a volume-image to Glance.  While you may expect "
+"that Cinder will be able to consume any image in ``compressed`` container "
+"format *that Cinder has created*, you should not expect Cinder to be able to "
+"successfully use an image in ``compressed`` format that it has not created "
+"itself.  Consult the `Cinder documentation <https://docs.openstack.org/"
+"cinder/latest>`_ for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:142
+msgid ""
+"As part of the multi-store efforts this release introduces deletion from "
+"single store. Through new '/v2/stores' endpoint the API user can request "
+"image to be deleted from single store instead of deleting the whole image. "
+"This feature can be used to clean up store metadata in cases where the image "
+"data has for some reason disappeared from the store already, except 410 Gone "
+"HTTP response."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:124
+msgid ""
+"As with all container formats, Glance does not verify that the data payload "
+"of an image is actually in that format.  Further, you should not expect "
+"other OpenStack services to be able to handle arbitrary compressed file "
+"formats.  Consult the documentation of any services that will consume your "
+"image for details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:205
+msgid ""
+"Attempting to set image locations to an image *not* in ``active`` or "
+"``queued`` status will now result in a HTTP Conflict (HTTP status code 409) "
+"to the user."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:104
+msgid ""
+"Automatic image conversion plugin for Interoperable Image Import. With this "
+"release operators can specify target image format and get all images created "
+"via the Image Import methods introduced in the Images API v2.6 converted "
+"automatically to that format. The feautre uses qemu-img under the hood which "
+"limits the source image formats that users can upload. Any image that fails "
+"the conversion when this plugin is enabled will fail the image creation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:285
+msgid ""
+"Be aware that if you define a policy rule for ``default`` or "
+"``context_is_admin``, that policy rule will also be used by the policies "
+"that govern permissions to perform actions using the Images API, even if "
+"these actions are not specified in the policy file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:303
+msgid "Bug 1229823_: Handle file delete races in image cache"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:302
+msgid "Bug 1482129_: Remove duplicate key from dictionary"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:88
+msgid ""
+"Bug 1483353 v1 Updates using x-image-meta-id header provoke E500 or 200"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:76
+msgid "Bug 1504184 Glance does not error gracefully on token validation error"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:64
+msgid ""
+"Bug 1505474 Glance raise 500 error when delete images with unallowed status "
+"change"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:68
+msgid ""
+"Bug 1505675 Flaky tasks test glance.tests.unit.v2.test_tasks_resource."
+"TestTasksController.test_create_with_live_time"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:84
+msgid "Bug 1505710 Wrong logging setup in replicator"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:92
+msgid ""
+"Bug 1512369 glance should declare a test-requirements.txt on swiftclient "
+"(for config generator)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:305
+msgid "Bug 1516706_: Prevent v1_api from making requests to v2_registry"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:72
+msgid ""
+"Bug 1517060 Users (without admin privileges) can change ACTIVE_IMMUTABLE "
+"properties of their own images when deactivated."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:80
+msgid ""
+"Bug 1522132 Scrubber tests are broken due to deprecated config "
+"filesystem_store_datadir under DEFAULT section"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:300
+msgid "Bug 1554412_: Provide user friendly message for FK failure"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:298
+msgid "Bug 1655727_: Invoke monkey_patching early enough for eventlet 0.20.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:299
+msgid "Bug 1657459_: Fix incompatibilities with WebOb 1.7"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:301
+msgid "Bug 1664709_: Do not serve partial image download requests from cache"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:304
+msgid "Bug 1686488_: Fix glance image-download error"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:383
+msgid "Bug 1688189_: Fix member create to handle unicode characters"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:292 stable/stein>:130
+msgid "Bug 1695299_: Support RFC1738 quoted chars in passwords"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:306
+msgid "Bug 1701346_: Fix trust auth mechanism"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:379
+msgid "Bug 1714240_: Avoid restarting a child when terminating"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:380
+msgid "Bug 1719252_: Metadefs: Fix 500 for name with more than 80 chars"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:381
+msgid "Bug 1720354_: Correctly send auth request to oslo.policy"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:382
+msgid "Bug 1733813_: Fix 500 from image-import on queued images"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:293
+msgid ""
+"Bug 1734832_: Fix unreachable 'ImageSizeLimitExceeded' exception in image-"
+"upload"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:384
+msgid "Bug 1737952_: Fix 500 if custom property name is greater than 255"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:385
+msgid "Bug 1744824_: Fix py27 eventlet issue <0.22.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:386
+msgid "Bug 1748916_: Glance default workers total overkill for modern servers"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:387
+msgid "Bug 1749297_: Fix 500 from list-tasks call with postgresql"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:131
+msgid "Bug 1750892_: Update status to active when locations replaced"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:91
+msgid "Bug 1753964_: web-download fails with default node_staging_uri"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:93
+msgid "Bug 1754634_: Image Import call does not honour enabled methods"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:92
+msgid "Bug 1759510_: Image Import fails with Python 3.5"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:294
+msgid "Bug 1765748_: Prepare for WebOb 1.8.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:132
+msgid "Bug 1770410_: Use WebOb 1.8.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:128
+msgid "Bug 1781617_: Rename ``async`` package to ``async_`` (Python 3.7)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:129
+msgid "Bug 1781627_: Handle StopIteration for Py3.7 PEP 0479"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:133
+msgid ""
+"Bug 1793057_: Provision to add new config options in sample config file"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:255
+msgid ""
+"Bug 1795950_: Fix cleaning of web-download image import in node_staging_uri"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:134
+msgid "Bug 1800601_: py3: fix recursion issue under py37"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:352
+msgid "Bug 1802587_: Make location API compatible with multiple store"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:139
+msgid "Bug 1803299_: Failure in web-dowload kept image in importing state"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:141
+msgid ""
+"Bug 1803498_: Data remains in staging area if 'file' store is not enabled"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:136
+msgid "Bug 1803643_: Fix for FK constraint violation"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:135
+msgid "Bug 1805765_: Image conversion fails"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:137
+msgid "Bug 1808063_: Guard __getattr__ on QuotaImageTagsProxy"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:215
+msgid ""
+"Bug 1808814_: admin docs: interoperable image import revision for stein"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:351
+msgid "Bug 1808868_: Add SEV-related extra spec and image properties"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:138
+msgid "Bug 1809462_: Correct typo in config option choices (Image conversion)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:140
+msgid "Bug 1818919_: py3: Fix return type on CooperativeReader.read"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:407
+msgid ""
+"Bug 1823703_: Wrong version URL when Glance is deployed behind proxy with "
+"vhost"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:345
+msgid ""
+"Bug 1836140_: Image deletion returns 500 if 'file' store is not enabled"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:207
+msgid ""
+"Bug 1843576_: Glance metadefs is missing Image property "
+"hw_vif_multiqueue_enabled"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:419
+msgid ""
+"Bug 1850412_: Useful image properties in glance - os_admin_user not "
+"documented"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14
+msgid "Bug 1855708_: Reload broken in PY3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:415
+msgid "Bug 1855708_: Reload tests broken in Py3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:211
+msgid "Bug 1856578_: docs: image schema customization restrictions"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:203
+msgid "Bug 1856581_: metadefs: OS::Glance::CommonImageProperties out of date"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:401
+msgid ""
+"Bug 1861334_: cors config defaults not used when Glance is run as WSGI app"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:431
+msgid ""
+"Bug 1861501_: Store ID fetched from URI is incorrectly encoded under py27"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:427
+msgid ""
+"Bug 1861723_: Glance is listening on TCP socket before store initialization"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:411
+msgid ""
+"Bug 1863021_: eventlet monkey patch results in assert len(_active) == 1 "
+"AssertionError"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:423
+msgid "Bug 1863879_: Multiple import fails if all-stores 'True' is passed"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:219
+msgid "Bug 1870336_: Update 'common image properties' doc"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:199
+msgid ""
+"Bug 1876419_: Failed to parse json file /etc/glance/metadefs/compute-vmware."
+"json"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:39 stable/victoria>:140
+msgid ""
+"Bug 1881958_: read-only http store should not be used if --all-stores "
+"specified for import/copy image workflow"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:81 stable/victoria>:195
+msgid ""
+"Bug 1884587_: image import copy-image API should reflect proper "
+"authorization"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:164
+msgid ""
+"Bug 1884596_: A change was added to the import API which provides time-based "
+"locking of an image to exclude other import operations from starting until "
+"the lock-holding task completes. The lock is based on the task that we start "
+"to do the work, and the UUID of that task is stored in the "
+"``os_glance_import_task`` image property, which indicates who owns the lock. "
+"If the task holding the lock fails to make progress for 60 minutes, another "
+"import operation will be allowed to steal the lock and start another import "
+"operation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:77 stable/victoria>:191
+msgid "Bug 1885003_: Interrupted copy-image may break a subsequent operation"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:63 stable/victoria>:177
+msgid ""
+"Bug 1885725_: 'copy-image' import job should not run additional plugins"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:30 stable/ussuri>:73
+#: stable/victoria>:187
+msgid "Bug 1886374_: Improve lazy loading mechanism for multiple stores"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:247
+msgid "Bug 1887099_: Invalid metadefs for watchdog"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:20 stable/ussuri>:57
+#: stable/victoria>:158
+msgid "Bug 1887994_: Mixed message in admin docs to deploy under httpd"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:26 stable/ussuri>:69
+#: stable/victoria>:183
+msgid "Bug 1888349_: glance-cache-manage utility is broken"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:223
+msgid ""
+"Bug 1888713_: Async tasks, image import not supported in pure-WSGI mode"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:45 stable/victoria>:146
+msgid "Bug 1889640_: Image import might result 'active' image with no data."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:51 stable/victoria>:152
+msgid ""
+"Bug 1889676_: \"stores\" can be set as property breaking multistore "
+"indication of stores where the images are present"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:239
+msgid ""
+"Bug 1891190_: test_reload() functional test causes hang and jobs TIMED_OUT"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:243
+msgid ""
+"Bug 1891352_: Failed import of one store will remain in progress forever if "
+"all_stores_must_succeed=True"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:259
+msgid ""
+"Bug 1895663_: Image import \"web-download\" doesn't check on download size"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:184
+msgid "Bug 1913625_: Glance will leak staging data"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:188
+msgid "Bug 1914826_: web-download with invalid url does not report error"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:192
+msgid ""
+"Bug 1916011_: test_migrate_image_after_upgrade failing because of glance "
+"cinder store change"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:47 current
+msgid "Bug 1916052_: Unable to create trust errors in glance-api"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:55 current
+msgid "Bug 1922928_: Image tasks API excludes in-progress tasks"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:51 current
+msgid ""
+"Bug 1934673_: Policy deprecations falsely claims defaulting to role based "
+"policies"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:43 current origin/stable/liberty>:60
+#: origin/stable/mitaka>:82 origin/stable/newton>:257 origin/stable/ocata>:20
+#: origin/stable/ocata>:391 stable/pike>:20 stable/pike>:284 stable/queens>:84
+#: stable/queens>:372 stable/rocky>:285 stable/stein>:121 stable/train>:10
+#: stable/train>:341 stable/ussuri>:10 stable/ussuri>:35 stable/ussuri>:397
+#: stable/victoria>:136 stable/wallaby>:180
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:24
+msgid ""
+"Changes in Python 2.7 distribution packages affected Glance's use of "
+"eventlet.  As a result, the team backported a fix from eventlet 0.22.0 to "
+"the Glance code.  (The Ocata release of OpenStack uses eventlet 0.19.0.)  "
+"See Bug 1747305_ for details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:24
+msgid ""
+"Changes in Python 2.7 distribution packages affected Glance's use of "
+"eventlet.  As a result, the team backported a fix from eventlet 0.22.0 to "
+"the Glance code.  (The Pike release of OpenStack uses eventlet 0.20.0.)  See "
+"Bug 1747304_ for details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:351
+msgid ""
+"Code for the OpenStack Artifacts Service (Glare) and its EXPERIMENTAL API "
+"has been `removed`_ from the Glance codebase."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:160
+msgid ""
+"Code for the OpenStack Artifacts Service (`Glare`_) and its EXPERIMENTAL API "
+"has been removed from the Glance codebase, as it was relocated into an "
+"independent `Glare`_ project repository during a previous release cycle. The "
+"database upgrade for the Glance Pike release drops the Glare tables (named "
+"'artifacts' and 'artifact_*') from the Glance database."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:201 stable/queens>:63
+msgid "Critical Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:108
+msgid ""
+"Currently, we are experiencing some problems in the gate when Glance is "
+"configured to run in devstack following the guidelines recommended in the "
+"documentation.  You can follow `Bug 1703856`_ to learn more."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:57
+msgid "Database downgrades have been removed from the Glance source tree."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:178
+msgid ""
+"Database versions are no longer numerical.  Instead, they are the *revision "
+"ID* of the last migration applied on the database."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:24
+msgid ""
+"Deprecate the ``show_multiple_locations`` configuration option in favor of "
+"the existing Role Based Access Control (RBAC) for Image locations which uses "
+"``policy.json`` file to define the appropriate rules."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:51
+msgid ""
+"Deprecated \"sign-the-hash\" approach for image signing. Old run_tests and "
+"related scripts have been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:151
+msgid ""
+"Deprecated values are no longer recognized for the configuration option "
+"``store_type_preference``. The two non-standard values 'filesystem' and "
+"'vmware_datastore' were DEPRECATED in Newton and are no longer operable. The "
+"correct values for those stores are 'file' and 'vmware'. See the Newton "
+"release notes for more information at https://docs.openstack.org/"
+"releasenotes/glance/newton.html#upgrade-notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:54 origin/stable/newton>:191
+#: stable/queens>:327 stable/rocky>:243 stable/ussuri>:300 stable/victoria>:92
+#: stable/wallaby>:119
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:94
+msgid ""
+"Documentation examples were changed from ``openstack`` commands back to "
+"``glance``.  This should help avoid the frustration of glance-community "
+"maintaining different client than what is referred in examples. 'python-"
+"glanceclient' is and will be the reference implementation of Images API and "
+"the team will implement all API changes to the relevant client version of "
+"the cycle as well."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:111
+msgid "Dropped support for python 2.7"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:21
+msgid ""
+"Due to some unresolved issues on consuming multiple backends work the "
+"stabilization of the feature has been pushed to Train and will stay "
+"EXPERIMENTAL on Stein."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:203
+msgid ""
+"Due to the bug in the glance_store implementation of multihash feature the "
+"first stable Rocky release (0.26.0) of glance_store does not work with "
+"Glance 17.0.0. Please note that version 0.26.1+ of the store library is "
+"required. Image creations will fail when the data is tried to be uploaded to "
+"the back-end due to missing wrapping of the function used."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:74
+msgid ""
+"During upgrade from single cinder store to multiple cinder stores, legacy "
+"images location url will be updated to the new format with respect to the "
+"volume type configured in the stores. Legacy location url: cinder://<volume-"
+"id> New location url: cinder://<store-id>/<volume-id>"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:237
+msgid ""
+"Ensure that the version 0.26.1 or higher of glance_store library is used."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:110
+msgid ""
+"Existing authorization and policies will continue to work, but we encourage "
+"operators to review the new policies and consolidate any redundant overrides "
+"with the new defaults if possible. Please review the feature section above "
+"for more details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:383
+msgid ""
+"Expired tasks are now deleted in Glance. As with other Glance resources, "
+"this is a \"soft\" deletion, that is, a deleted task is marked as "
+"``deleted`` in the database so that the task will not appear in API "
+"responses, but the information associated with the task persists in the "
+"database."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:75
+msgid "Expired tasks are now deleted."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:232
+msgid ""
+"Finally, there are no changes to the version 2.5 API in this release.  All "
+"version 2.5 calls will work whether the new import functionality is enabled "
+"or not."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:24
+msgid ""
+"Fixed some important bugs around copy-image import method and importing "
+"image to multiple stores"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:14 origin/stable/mitaka>:76
+msgid ""
+"Fixing bug 1525915; image might be transitioning from active to queued by "
+"regular user by removing last location of image (or replacing locations with "
+"empty list). This allows user to re-upload data to the image breaking "
+"Glance's promise of image data immutability. From now on, last location "
+"cannot be removed and locations cannot be replaced with empty list."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:145
+msgid "For example, ``GET v2/images?visibility=community``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:225
+msgid ""
+"For example, a user is not allowed to add a location to an image in "
+"``saving`` status. Suppose a user decides to add a location anyway. It is "
+"possible that before the user's request is processed, the transmission of "
+"data being saved is completed and the image transitioned into ``active`` "
+"status, in which case the user's add location request will succeed. To the "
+"user, however, this success will appear anomalous because in most cases, an "
+"attempt to add a location to an image in ``saving`` status will fail."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:341
+msgid ""
+"For example, configuration options specifying counts, where a negative value "
+"was undefined, would have still accepted the supplied negative value. Such "
+"options will no longer accept negative values."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:181
+msgid ""
+"For example, the Liberty migration, which was version ``42`` under the old "
+"system, will now appear as ``liberty``.  The Mitaka migrations ``43`` and "
+"``44`` appear as ``mitaka01`` and ``mitaka02``, respectively."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:337
+msgid ""
+"For more information, see the Glance specification document `Actually "
+"Deprecate the Glance Registry <http://specs.openstack.org/openstack/glance-"
+"specs/specs/queens/approved/glance/deprecate-registry.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:158
+msgid ""
+"For the Newton release, this option will still be honored. However, it is "
+"important to update ``policy.json`` file for glance-api nodes. In "
+"particular, please consider updating the policies ``delete_image_location``, "
+"``get_image_location`` and ``set_image_location`` as per your requirements. "
+"As this is an advanced option and prone to expose some risks, please check "
+"the policies to ensure security and privacy of your cloud."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:367
+msgid ""
+"For the Pike release, the legacy Glare code has been removed from the Glance "
+"code repository and the legacy 'artifacts' and 'artifact_*' database tables "
+"are dropped from the Glance database.  As the Artifacts service API was an "
+"EXPERIMENTAL API in Glance and has not used the Glance database since "
+"Mitaka, no provision is made for migrating data from the Glance database to "
+"the Glare database."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:206
+msgid ""
+"Formerly, it was possible to add members to an image whose visibility was "
+"``private``, thereby creating a \"shared\" image. In this release, an image "
+"must have a visibility of ``shared`` in order to accept member operations.  "
+"Attempting to add a member to an image with a visibility of ``private`` will "
+"result in a `4xx response`_ containing an informative message."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:167
+msgid ""
+"Future releases will ignore this option and just follow the policy rules. It "
+"is recommended that this option is disabled for public endpoints and is used "
+"only internally for service-to-service communication."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:107
+msgid "Glance API **CURRENT** ``minor`` version is now ``2.4``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:19
+msgid "Glance API ``minor`` version bumped to 2.4."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:387
+msgid ""
+"Glance and Nova contain nearly identical digital signature modules. In order "
+"to better maintain and evolve this code and to eliminate the possibility "
+"that the modules diverge, we have replaced the digital signature module in "
+"Glance with the new ``cursive`` library."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:320
+msgid ""
+"Glance had been accepting the Content-Range header for GET v2/images/"
+"{image_id}/file requests, contrary to RFC 7233. Following RFC 7233, Glance "
+"will now:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:75
+msgid ""
+"Glance is now packaged with a WSGI script entrypoint, enabling it to be run "
+"as a WSGI application hosted by a performant web server.  See `Running "
+"Glance in HTTPD <https://docs.openstack.org/glance/latest/admin/apache-httpd."
+"html>`_ in the Glance documentation for details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:49
+msgid ""
+"Glance no longer returns a 500 when 4 byte unicode characters are passed to "
+"the metadefs API."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:33 current
+msgid ""
+"Glance now has per-tenant quota support based on Keystone unified limits for "
+"resources like image and staging storage, among other things. For more "
+"information about how to configure and use these quotas, refer to the "
+"relevant section of the `Administrator Guide <https://docs.openstack.org/"
+"glance/latest/admin/quotas.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:88
+msgid ""
+"Glance now prevents setting or modifying image properties that are within "
+"the ``os_glance`` reserved namespace. Previously, individual properties "
+"(such as ``os_glance_importing_to_stores``) were inconsistently disallowed, "
+"but now the entire namespace is enforced."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:106
+msgid ""
+"Glance now provides more granular RBAC access to the images API via default "
+"personas. This work is marked as experimental in Wallaby, and will be "
+"supported in a future release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:170
+msgid ""
+"Glance now ships experimental policies that support read-only image "
+"permissions. Users with the `reader` role on a project will be able to view "
+"generic image data, without the ability to make writeable changes using the "
+"images API. Please review the features section above for more information on "
+"enabling this functionality."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:14
+msgid ""
+"Glance now supports the ``glance-direct`` import method without needing "
+"shared storage common to all API workers. By telling each API worker the URL "
+"by which it can be reached directly (from the other workers), a shared "
+"staging directory can be avoided while still allowing users to upload their "
+"data for import. See the ``worker_self_reference_url`` config option for "
+"more details, as well as the `Interoperable Image Import <https://docs."
+"openstack.org/glance/latest/admin/interoperable-image-import.html>`_ docs."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:383
+msgid ""
+"Glance now uses the `python 'cryptography' module`_ instead of the "
+"'pycrypto' module."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:74
+msgid "Glance services can now run on Windows."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:401
+msgid ""
+"Glance uses the ``cursive`` library's functionality to verify digital "
+"signatures. To familiarize yourself with this new dependency and see the "
+"list of transitive dependencies visit http://git.openstack.org/cgit/"
+"openstack/cursive"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:38
+msgid ""
+"Glance's default policies now use the `member` role on projects to protect "
+"writeable and readable image actions. Support was also added for read-only "
+"access to image resources when the `reader` role is granted to users on a "
+"project. Administrative operations, like creating public images, is still "
+"protected using the `admin` role on a project. Administrative actions will "
+"be updated in the future to consume system-scope."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:402
+msgid ""
+"HTTP Response Code 409 (Conflict) will be returned in response to an attempt "
+"to remove an image location when the image status is not ``active``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:405
+msgid ""
+"HTTP Response Code 409 (Conflict) will be returned in response to an attempt "
+"to replace an image location when the image status is not ``active`` or "
+"``queued``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:261
+msgid ""
+"Here is a list of other important bugs that have been fixed (or partially "
+"fixed) along with their descriptions."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:272
+msgid "Here is a list of possible return codes:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:220
+msgid ""
+"If ``enable_image_import`` is set **False**, requests to the v2 endpoint for "
+"URIs defined only in v2.6 will return 404 (Not Found) with a message in the "
+"response body stating \"Image import is not supported at this site.\"  "
+"Additionally, the image-create response will not contain the \"OpenStack-"
+"image-import-methods\" header."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:345
+msgid ""
+"If an image has a visiblity of 'private' when viewed in the v2 API, then "
+"that image will not accept members in the v1 API.  If a user wants to share "
+"such an image, the user can:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:336
+msgid ""
+"If configured to work in daemon mode, the Scrubber will log an error message "
+"at level critical, but will not exit the process."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:339
+msgid ""
+"If configured to work in non-daemon mode, the Scrubber will log an error "
+"message at level critical and exit with status one."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:55
+msgid ""
+"If signature verification fails upon creation, the image data will stay in "
+"the backend even though the image goes to 'killed' state. The data remains "
+"even if a user deletes the killed image record."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:158
+msgid ""
+"If the ``cinder_encryption_key_deletion_policy`` image property is missing "
+"or has any value other than ``on_image_deletion``, Glance will **not** "
+"attempt to delete the key whose identifier is the value of "
+"``cinder_encryption_key_id``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:372
+msgid ""
+"If the existing ``policy.json`` file relies on the ``default`` rule for some "
+"policies (i.e. not all policies are explicitly specified in the file) then "
+"the ``default`` rule must be explicitly set (e.g. to ``\"role:admin\"``) in "
+"the file. The new default value for the ``default`` rule is ``\"\"``, "
+"whereas since the Queens release it has been ``\"role:admin\"`` (prior to "
+"Queens it was ``\"@\"``, which allows everything). After upgrading to this "
+"release, the policy file should be replaced by one that overrides only "
+"policies that need to be different from the defaults, without relying on the "
+"``default`` rule."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:293
+msgid ""
+"If upgrade is conducted from PY27 where ssl connections has been terminated "
+"into glance-api, the termination needs to happen externally from now on."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:276
+msgid ""
+"If you are using the multistore feature, you must define configuration "
+"options for ``os_glance_tasks_store`` and ``os_glance_staging_store`` in the "
+"``glance-scrubber.conf`` file. See the \"Reserved Stores\" section of the "
+"\"Multi Store Support\" chapter of the Glance Administration Guide for more "
+"information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:153
+msgid ""
+"If you choose to use the Barbican secret identified by the value of "
+"``cinder_encryption_key_id`` for any other purpose, you risk data loss."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:297
+msgid ""
+"If you use the Glance multiple stores feature, introduced on an experimental "
+"basis in Rocky and now fully supported in the Train release, then you *must* "
+"use backing stores instead of ``work_dir`` and ``node_staging_uri`` for "
+"Glance's temporary storage **beginning right now with the current release**. "
+" See the \"Reserved Stores\" section of the \"Multi Store Support\" chapter "
+"of the Glance Administration Guide for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:320
+msgid ""
+"If you were previously aware of this option and were actually using it, we "
+"apologize for the inconvenience its removal will cause, but overall it will "
+"be better for everyone if policy configuration is confined to the policy "
+"configuration file and this backdoor is eliminated.  The migration path is "
+"to explictly mention the role you configured for this option in appropriate "
+"places in your policy configuration file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:200
+msgid ""
+"If you wish to enable the EXPERIMENTAL version 2.6 API that contains the new "
+"interoperable image import functionality, set the configuration option "
+"``enable_image_import`` to True in the glance-api.conf file.  The default "
+"value for this option is False."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:293
+msgid ""
+"If you wish to use the backend store feature now, please see the \"Reserved "
+"Stores\" section of the \"Multi Store Support\" chapter of the Glance "
+"Administration Guide for configuration information."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:93
+msgid "Image 'visibility' changes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:67
+msgid "Image Import API failure with PY35 has been fixed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:76
+msgid ""
+"Image Import call accepting all implemented methods instead of configured "
+"ones has been rectified. It only accepts import calls for the methods listed "
+"in the config option 'enabled_import_methods'"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:71
+msgid ""
+"Image Import method 'web-download' failure when 'node_staging_uri' ends with "
+"'/' has been fixed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:395
+msgid ""
+"Image location updates to an image which is not in ``active`` or ``queued`` "
+"status can introduce race conditions and security issues and hence a bad "
+"experience for users and operators. As a result, we have restricted image "
+"location updates in this release. Users will now observe the following:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:130
+msgid "Image visibility is changed using the image update (PATCH) call."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:118
+msgid "Image visibility may be specified at the time of image creation."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:269
+msgid ""
+"Images currently with 'private' visibility (that is, images for which "
+"'is_public' is False in the database) **and** that have image members, will "
+"have their visibility set to 'shared'."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:282
+msgid ""
+"Impact of the Ocata visibility changes on end users of the Images API v2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:320
+msgid "Impact of the Ocata visibility changes on the Images API v1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:30
+msgid ""
+"Implement the ability to filter images by the properties `id`, `name`, "
+"`status`,`container_format`, `disk_format` using the 'in' operator between "
+"the values. Following the pattern of existing filters, new filters are "
+"specified as query parameters using the field to filter as the key and the "
+"filter criteria as the value in the parameter. Filtering based on the "
+"principle of full compliance with the template, for example 'name = in:deb' "
+"does not match 'debian'. Changes apply exclusively to the API v2 Image "
+"entity listings An example of an acceptance criteria using the 'in' operator "
+"for name ?name=in:name1,name2,name3. These filters were added using syntax "
+"that conforms to the latest guidelines from the OpenStack API Working Group."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:34
+msgid ""
+"Implemented re-authentication with trusts when updating image status in "
+"registry after image upload. When long-running image upload takes some a lot "
+"of time (more than token expiration time) glance uses trusts to receive new "
+"token and update image status in registry. It allows users to upload big "
+"size images without increasing token expiration time."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:38
+msgid "Improved configuration option descriptions and handling."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:22 stable/victoria>:54
+msgid "Improved performance of rbd store chunk upload"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:397
+msgid ""
+"In Newton, the majority of the signature verification code was removed from "
+"Glance. ``cursive`` has been added to Glance as a dependency and will be "
+"installed by default."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:388
+msgid ""
+"In accord with current OpenStack policy, Glance log messages are `no longer "
+"translated`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:268
+msgid ""
+"In order to check the current state of your database upgrades, you may run "
+"the command ``glance-manage db check``. This will inform you of any "
+"outstanding actions you have left to take."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:108
+msgid ""
+"In order to preserve backward compatibilty with the current sharing "
+"workflow, the default visibility of an image in Ocata is 'shared'. "
+"Consistent with pre-Ocata behavior, this will allow the image to accept "
+"member operations without first updating the visibility of the image. (Keep "
+"in mind that an image with visibility 'shared' but having no members is not "
+"actually accessible to anyone other than the image owner, so this is not in "
+"itself a security problem.)"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:141
+msgid ""
+"In order to prevent users spamming other users' image-list response, "
+"community images are not included in the image-list response unless "
+"specifically requested by a user."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:362
+msgid ""
+"In the Newton release, the Glare code was relocated into its own `Glare`_ "
+"project repository.  Also in the Newton release, Glare ran an EXPERIMENTAL "
+"Artifacts API versioned as ``v1.0`` on its own endpoint and used its own "
+"database."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:328
+msgid ""
+"In the v1 API, images have an ``is_public`` field (but no ``visibility`` "
+"field).  Images for which ``is_public`` is True are the equivalent of images "
+"with 'public' visibility in the v2 API.  Images for which ``is_public`` is "
+"false are the equivalent of v2 'shared' images if they have members, or the "
+"equivalent of v2 'private' images if they have no members."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:192
+msgid ""
+"In this release, the default value of ``admin_role`` has been defined as "
+"``__NOT_A_ROLE_07697c71e6174332989d3d5f2a7d2e7c_NOT_A_ROLE__``. This "
+"effectively makes it inoperable (unless your Keystone administrator has "
+"actually created such a role and assigned it to someone, which is unlikely "
+"but possible, so you should check).  If your local policy tests (you have "
+"some, right?) indicate that your Glance policies no longer function as "
+"expected, then you have been relying on the ``admin_role`` configuration "
+"option and need to revise your policy file.  (A short term fix would be to "
+"set the ``admin_role`` option back to ``admin``, but keep in mind that it "
+"*is* a short-term fix, because this configuration option is deprecated and "
+"subject to removal.)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:182
+msgid ""
+"In this release, the stores used *must* be the filesystem store type. Our "
+"goal is that in a future release, operators will be able to configure a "
+"store type from other selected drivers as well.  In Train, however, each of "
+"these *must* be a filesystem store."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:178
+msgid ""
+"In this release, the use of stores (instead of configuring the path "
+"directly) is optional, but it will become mandatory for the 'U' release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:325
+msgid ""
+"Include a ``Content-Range`` header upon successful delivery of the requested "
+"partial content."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:174
+msgid ""
+"It is now possible for Glance to use backends accessed via the glance_store "
+"library for the temporary storage of data that previously required access to "
+"the local filesystem.  Please note the following:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:334
+msgid ""
+"It must be noted that the configuration options that take integer values now "
+"have a strict range defined with ``min`` and/or ``max`` boundaries where "
+"appropriate."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:89 stable/queens>:10 stable/queens>:44
+#: stable/queens>:161 stable/rocky>:10 stable/rocky>:150 stable/stein>:80
+#: stable/train>:194
+msgid "Known Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:365
+msgid ""
+"Latest release of ``glance_store`` library (used in the **Newton** release "
+"of Glance) will include fix for the ``glance_store`` bug 1619487."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:246
+msgid ""
+"Location metadata key ``backend`` has been changed to ``store``. Any "
+"environment that might be using the old ``backend`` key will have the key "
+"name changed through lazy update upon access."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:79
+msgid ""
+"Location updates for images are now restricted to images in ``active`` or "
+"``queued`` status. Please refer to the \"Bug Fixes\" section for more "
+"information."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:153
+msgid ""
+"Maintaining two different ways to configure, enable and/or disable a feature "
+"is painful for developers and operators, so the less granular means of "
+"controlling this feature will be eliminated in the **Ocata** release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:155
+msgid ""
+"Manual use of the ``cinder_encryption_key_*`` properties is *not* "
+"recommended."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:86
+msgid ""
+"Metadata definitions previously associated with OS::Nova::Instance have been "
+"changed to be associated with OS::Nova::Server in order to align with Heat "
+"and Searchlight."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:44
+msgid ""
+"Metadata definitions previously associated with OS::Nova::Instance have been "
+"changed to be associated with OS::Nova::Server in order to align with Heat "
+"and Searchlight. You may either upgrade them using glance-manage db "
+"load_metadefs [path] [merge] [prefer_new] or glance-manage db upgrade 44."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:84
+msgid ""
+"Multiple back-ends: No default back-end gets assigned when adding location "
+"via the locations api and not defining back-end ID on the call. This might "
+"affect specially Nova snapshots utilizing rdb back-end."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:166
+msgid ""
+"Negotiation of the 'Accept-Language' header now follows the \"Lookup\" "
+"matching scheme described in `RFC 4647, section 3.4 <https://tools.ietf.org/"
+"html/rfc4647.html#section-3.4>`_. The \"Lookup\" scheme is one of the "
+"algorithms suggested in `RFC 7231, section 5.3.5 <https://tools.ietf.org/"
+"html/rfc7231.html#section-5.3.5>`_. (This is due to a change in an "
+"underlying library, which previously used a matching scheme that did not "
+"conform to `RFC 7231 <https://tools.ietf.org/html/rfc7231.html>`_.)"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:29 current origin/stable/mitaka>:26
+#: origin/stable/newton>:81 origin/stable/ocata>:85 stable/pike>:54
+#: stable/queens>:131 stable/rocky>:83 stable/stein>:32 stable/train>:107
+#: stable/ussuri>:117 stable/victoria>:33 stable/wallaby>:10
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:151
+msgid ""
+"New Interoperable Image Import plugin has been introduced to address the use "
+"case of providing compressed images either through 'web-download' or to "
+"optimize the network utilization between the client and Glance."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:356
+msgid ""
+"Note that in either case, when dealing with an image that has 'private' "
+"visibility in the v2 API, there is a safeguard against a user "
+"unintentionally adding a member to an image and exposing data.  The "
+"safeguard is that you must perform an additional image update operation in "
+"either the v1 or v2 API before you can expose it to other users."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:277
+msgid ""
+"Note that such images will have to have their visibility updated to 'shared' "
+"before they will accept members."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:250
+msgid ""
+"Note that the plugin applies *only* to images imported via the "
+"`interoperable image import process`_.  Thus images whose data is set using "
+"the `image data upload`_ call will *not* be processed by the plugin and "
+"hence will not have properties injected.  You can force end users to use the "
+"interoperable image import process by restricting the data upload call, "
+"which is governed by the ``upload_image`` policy in the Glance ``policy."
+"json`` file.  See the documentation for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:217
+msgid ""
+"Note that there are race conditions associated with adding a location to an "
+"image in the ``active``, ``queued``, ``saving``, or ``deactivated`` status. "
+"Because these are non-terminal image statuses, it is possible that when a "
+"user attempts to add a location, a status transition could occur that might "
+"block the **add** (or might appear to allow an add that should not be "
+"allowed)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:377
+msgid "Note the code name for the \"ceph\" driver is ``rbd``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:378
+msgid "Note the ordering of the options within a store is not alphabetical."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:132
+msgid "Note: This is not a change.  It's simply mentioned for completeness."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:66
+msgid ""
+"OSprofiler support requires passing of trace information between various "
+"OpenStack services. This information is signed by one of HMAC keys, which we "
+"historically defined in glance-api-paste.ini and glance-registry-paste.ini "
+"files (together with enabled option, that in fact was duplicated in the "
+"corresponding configuration files). OSprofiler 0.3.1 and higher supports "
+"passing this information via configuration files, therefore it's recommended "
+"to modify the ``[filter:osprofiler]`` section in  \\*-paste.ini to look like "
+"``paste.filter_factor = osprofiler.web:WsgiMiddleware.factory`` and set the "
+"``hmac_keys`` option in the glance-\\*.conf files."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:44
+msgid "On this release requirements.txt were synced from global-requirements."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:289
+msgid ""
+"On top of testing and documentation fixes following bugs were addressed"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:166
+msgid ""
+"OpenStack deployments, packagers, and deployment projects which provided "
+"Glare should have begun to consume Glare from its own `Glare`_ respository "
+"during the Newton and Ocata releases.  With the Pike release, it is no "
+"longer possible to consume Glare code from the Glance repository."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:277
+msgid ""
+"Operators who use property protections with the "
+"``property_protection_rule_format`` set to  ``policies`` must still define "
+"the policy rules used for property protections in a policy file.  The "
+"content of the file may be JSON or YAML.  Additionally, we suggest that the "
+"absolute pathname of this file be set as the value of ``policy_file`` in the "
+"``[oslo_policy]`` section of the ``glance-api.conf`` file."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:345
+msgid ""
+"Options where a negative value was previously defined (for example, -1 to "
+"mean unlimited) will remain unaffected by this change."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:98 origin/stable/newton>:324
+#: origin/stable/ocata>:35 origin/stable/ocata>:414 stable/pike>:347
+#: stable/queens>:403 stable/rocky>:304 stable/stein>:162
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:62 stable/ussuri>:222
+msgid ""
+"Please keep a watch on the Glance release notes and the glance-specs "
+"repository to stay informed about developments on this issue."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:326
+msgid ""
+"Please keep in mind that as version 2.8 of the Image Service API is "
+"EXPERIMENTAL, we reserve the right to make modifications to these aspects of "
+"the API should user feedback indicate that a change is required."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:333
+msgid ""
+"Please note a change in the Scrubber's behavior in case of job fetching "
+"errors:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:327
+msgid ""
+"Please note that not all Glance storage backends support partial downloads. "
+"A Range request to a Glance server with such a backend will result in the "
+"entire image content being delivered despite the 206 response code."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:187
+msgid ""
+"Please see the Upgrades section of this document and the \"Multi Store "
+"Support\" chapter of the Glance Administration Guide for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:266
+msgid ""
+"Policy defaults are now defined in code, as they already were in other "
+"OpenStack services. After upgrading there is no need to provide a ``policy."
+"json`` file (and you should not do so) unless you want to override the "
+"default policies, and only policies you want to override need be mentioned "
+"in the file. You should no longer rely on the ``default`` rule, and "
+"especially not the default value of the rule (which has been relaxed), to "
+"assign a non-default policy to rules not explicitly specified in the policy "
+"file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:121
+msgid ""
+"Policy enforcement for several Metadata Definition delete APIs are added in "
+"this release. The following actions are enforced and added to the policy."
+"json:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:30 origin/stable/newton>:10
+#: origin/stable/ocata>:10 origin/stable/ocata>:50 stable/pike>:10
+#: stable/pike>:40 stable/queens>:108 stable/rocky>:44 stable/stein>:10
+#: stable/train>:74 stable/ussuri>:98 stable/victoria>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:95
+msgid ""
+"Prior to Ocata, an image with 'private' visibility could become shared by "
+"adding members to it, though its visibility remained 'private'.  In order to "
+"make the visibility of images more clear, in Ocata the following changes are "
+"introduced:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:259
+msgid ""
+"Prior to Ocata, the Glance database did not have a 'visibility' column, but "
+"instead used a boolean 'is_public' column, which was translated into "
+"'public' or 'private' visibility in the Images API v2 image response.  As "
+"part of the upgrade to Ocata, a 'visibility' column is introduced into the "
+"images table.  It will be populated as follows"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:227
+msgid ""
+"Python 2.7 support has been dropped. Last release of Glance to support py2.7 "
+"is OpenStack Train (Glance 19.x). The minimum version of Python now "
+"supported by Glance is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:36
+msgid ""
+"Re-introducing cache-manage utility. In Rocky the Images API v1 dependent "
+"glance-cache-manage utility was removed while removing the v1 endpoints. "
+"Stein release introduces the command refactored to utilize the Images API "
+"version 2."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:48
+msgid ""
+"Removed the deprecated 'enable_image_import' config option. Image import "
+"will be always enabled from this release onwards as designed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:59
+msgid ""
+"Rocky development cycle marks long waited milestone on Glance work. The "
+"Images API v1 which has been deprecated for years is finally removed and not "
+"available at all in Glance version 17.0.0 forward."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:68
+msgid ""
+"Sample configuration file shipped with Glance source now has reordered store "
+"drivers configuration options for future consistent ordering."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:10 origin/stable/liberty>:50
+#: origin/stable/mitaka>:10 origin/stable/mitaka>:72 origin/stable/newton>:242
+#: origin/stable/ocata>:380 stable/pike>:264 stable/queens>:356
+#: stable/rocky>:256 stable/ussuri>:368 stable/wallaby>:157
+msgid "Security Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:204
+msgid ""
+"See the \"Deprecation Notes\" section of this document for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:216
+msgid ""
+"See the documentation in the sample glance-api.conf file for more "
+"information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:184
+msgid ""
+"Several `new values`_ were added for the ``vmware_ostype`` property in the "
+"``OS::Compute::VMware`` namespace."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:341
+msgid ""
+"Since the default value for 'visibility' upon image creation is 'shared', an "
+"image freshly created using the v1 API can have members added to it, just as "
+"it did pre-Ocata."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:150
+msgid ""
+"Some additional points about ``show_multiple_locations`` configuration "
+"option deprecation."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:118 origin/stable/ocata>:217
+msgid ""
+"Some backend store names were inconsistent between glance and glance_store.  "
+"This meant that operators of the VMware datastore or file system store were "
+"required to use store names in ``glance-api.conf`` that did not correspond "
+"to any valid identifier in glance_store.  As this situation encouraged "
+"misconfiguration and operator unhappiness, we have made the store names "
+"consistent in the Newton release. What this means for you:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:317
+msgid ""
+"Some configuration is required in order to make the Interoperable Image "
+"Import functionality work correctly.  In particular, the "
+"``node_staging_uri`` value in the glance-api.conf file must be set.  See the "
+"section on Interoperable Image Import in the `Glance Administration Guide`_ "
+"for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:88
+msgid ""
+"Some documentation and test issues have been addressed in this release on "
+"top of the following bugfixes:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:360
+msgid ""
+"Some operators have reported issues with reordering observed in the sample "
+"configurations shipped with Glance release tarballs. This reordering may "
+"result into a incorrect \"diff\" of the configurations used downstream vs. "
+"newly introduced upstream."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:63
+msgid ""
+"Some security aspects were tackled for this release. Multihash, providing "
+"secure hashing for image data with future proof options marks the end of "
+"relying upon MD5 checksums when verifying image payloads. OSSN-0075 "
+"migitation lessens the risk of ID reusability on those very rare cases when "
+"a database purge is necessary."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:17
+msgid ""
+"Some work has been done on Windows compatibility and Glance Stein release is "
+"compatible running on Windows platform. Future development will be also "
+"gated on Windows based on 3rd party CI model."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:81
+msgid ""
+"Stabilization of multi-store feature; from Train onwards multi-store is "
+"considered stable feature in glance, glance_store and python-glanceclient. "
+"The community encourages everyone to adopt this new way of configuring "
+"backend stores at earliest convenience as the old configuration options are "
+"deprecated for removal to ease the burden of maintaining underlying code. "
+"Users are able to select the store they want their images to be stored "
+"during import process."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:102
+msgid "Start using reno to manage release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid ""
+"Stein release cycle has been without major changes to the Images API, this "
+"release does not introduce new Images API minor version."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:125
+msgid ""
+"Such an image will require its visibility to be updated to 'shared' before "
+"it will accept members."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:162
+msgid ""
+"The \"multihash\" implemented in this release (`Secure Hash Algorithm "
+"Support <https://specs.openstack.org/openstack/glance-specs/specs/rocky/"
+"approved/glance/multihash.html>`_) is computed only for new images.  There "
+"is no provision for computing the multihash for existing images.  Thus, "
+"users should expect to see JSON 'null' values for the ``os_hash_algo`` and "
+"``os_hash_value`` image properties on images created prior to the "
+"installation of the Rocky release at your site."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:202
+msgid ""
+"The 'visibility' enumeration has been increased from two values (``public``, "
+"``private``) to four values (``public``, ``private``, ``shared``, and "
+"``community``)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:202
+msgid ""
+"The **CURRENT** version of the Images API supplied by Glance is introduced "
+"as **2.6**.  It includes the new API calls introduced on an experimental "
+"basis in the Pike release."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:199
+msgid ""
+"The **CURRENT** version of the version 2 Images API supplied by Glance is "
+"now **2.5**.  Changes include:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:71
+msgid ""
+"The *Community Images* feature has been introduced in the Images API v2. "
+"This enables a user to make an image available for consumption by all other "
+"users.  In association with this change, the 'visibility' values for an "
+"image have been expanded to include 'community' and 'shared'."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:65
+msgid "The *minor* version of the Images API v2 is bumped to **2.5**."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:44
+msgid ""
+"The *minor* version of the Images API v2 is bumped to **2.6** to introduce "
+"an EXPERIMENTAL version of the API that includes the new calls introduced "
+"for the Minimal Viable Product delivery of the `refactored image import`_ "
+"functionality.  Version **2.5** remains the CURRENT version of the Images "
+"API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:354
+msgid ""
+"The Artifacts API was an EXPERIMENTAL API that ran on the Glance service "
+"endpoint as ``/v3`` in the Liberty release.  In the Mitaka release, the "
+"Glance ``/v3`` EXPERIMENTAL API was deprecated and the Artifacts Service ran "
+"on its own endpoint (completely independent from the Glance service "
+"endpoint) as an EXPERIMENTAL API, versioned as ``v0.1``.  In both the "
+"Liberty and Mitaka releases, Glare ran on code stored in the Glance code "
+"repository and used its own tables in the Glance database."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:144
+msgid ""
+"The Block Storage service *always* creates a new secret in Barbican when it "
+"uploads a volume as an image, keeping a 1-1 relation between each secret "
+"stored in the Key Management Service and each image of an encrypted volume "
+"stored in Glance.  Thus, deleting the Barbican secret *at the time when the "
+"image is deleted* will not cause data loss *as long as the secret is not "
+"being used for any other purpose*."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:151
+msgid ""
+"The Block Storage service will not use the secret associated with an image "
+"for any other purpose."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:112
+msgid ""
+"The CURRENT version of the Images API v2 is bumped to **2.6**. The 2.6 API "
+"was available in the previous (Pike) release as an experimental API to "
+"introduce the calls necessary for the `interoperable image import "
+"functionality`_."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:322
+msgid ""
+"The DEPRECATED Images API v1 does not have a concept of \"visibility\", and "
+"in a \"pure\" v1 deployment, you would not notice that anything had changed. "
+" Since, however, we hope that there aren't many of those around anymore, "
+"here's what you can expect to see if you use the Images API v1 in a "
+"\"mixed\" deployment."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:429
+msgid ""
+"The Database Management sections of the `Glance Administration Guide`_ have "
+"been revised and updated.  This includes information about the current "
+"experimental status of rolling upgrades and zero-downtime database upgrades."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:304
+msgid ""
+"The Glance API configuration option ``admin_role`` is deprecated in this "
+"release and is subject to removal at the beginning of the Victoria "
+"development cycle, following the `OpenStack standard deprecation policy "
+"<https://governance.openstack.org/reference/tags/assert_follows-standard-"
+"deprecation.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:96
+msgid ""
+"The Glance API configuration option ``admin_role``, having been deprecated "
+"in the Ussuri release, is now removed.  If present in a configuration file, "
+"it will be silently ignored."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:329
+msgid ""
+"The Glance API configuration option ``allow_additional_image_properties`` is "
+"deprecated in this release and is subject to removal at the beginning of the "
+"Victoria development cycle, following the `OpenStack standard deprecation "
+"policy <https://governance.openstack.org/reference/tags/assert_follows-"
+"standard-deprecation.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:247
+msgid ""
+"The Glance API configuration option ``owner_is_tenant`` is deprecated in "
+"this release and is subject to removal at the beginning of the 'S' "
+"development cycle, following the `OpenStack standard deprecation policy "
+"<https://governance.openstack.org/reference/tags/assert_follows-standard-"
+"deprecation.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:331
+msgid ""
+"The Glance Registry Service and its APIs are officially DEPRECATED in this "
+"release and are subject to removal at the beginning of the 'S' development "
+"cycle, following the `OpenStack standard deprecation policy <https://"
+"governance.openstack.org/reference/tags/assert_follows-standard-deprecation."
+"html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:101
+msgid ""
+"The Glance documentation section `Running Glance in HTTPD`_ outlines some "
+"approaches to use (and not to use) Glance with the Apache httpd server. This "
+"is the way Glance is configured as a WSGI application in devstack, so it's "
+"the method with which we've had the most experience.  If you try deploying "
+"Glance using a different web server, please consider contributing your "
+"findings to the Glance documentation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:184 stable/rocky>:191
+msgid ""
+"The Glance project team is committed to the stability of Glance.  As part of "
+"OpenStack, we are committed to `The Four Opens`_.  If the ability to run "
+"Glance under uWSGI is important to you, feel free to participate in the "
+"Glance community to help coordinate and drive such an effort.  (We gently "
+"remind you that \"participation\" includes providing testing and development "
+"resources.)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:397
+msgid ""
+"The Image Service API Reference has been updated with a section on the "
+"`Interoperable image import`_ process (also known as \"image import "
+"refactored\") and the API calls that are exposed to implement it in the "
+"EXPERIMENTAL v2.6 of the API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:343 stable/victoria>:111
+msgid ""
+"The Image ``checksum`` property contains an MD5 hash of the image data "
+"associated with an image.  MD5 has not been considered secure for some time, "
+"and in order to comply with various security standards (for example, FIPS), "
+"an implementation of the MD5 algorithm may not be available on glance nodes."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:32
+msgid ""
+"The Images (Glance) version 1 API has been DEPRECATED. Please see "
+"deprecations section for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:416
+msgid ""
+"The Interoperable Image Import section of the `Image Service API v2 "
+"Reference Guide`_ was updated to include the new ``web-download`` import "
+"method."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:165 stable/rocky>:172
+msgid ""
+"The Pike release notes pointed out that although support had been added to "
+"run Glance as a WSGI application hosted by a web server, the Glance team "
+"recommended that Glance be run in its normal standalone configuration, "
+"particularly in production environments."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:14
+msgid ""
+"The Victoria release includes some important milestones in Glance "
+"development priorities."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:308
+msgid ""
+"The `Multi-Store Backend Support <https://specs.openstack.org/openstack/"
+"glance-specs/specs/rocky/implemented/glance/multi-store.html>`_ feature is "
+"introduced on an experimental basis in the EXPERIMENTAL Image Service API "
+"version 2.8:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:230
+msgid ""
+"The `Tasks API`_ was made admin-only by default in Mitaka by restricting the "
+"following policy targets to **role:admin**: **get_task**, **get_tasks**, "
+"**add_task**, and **modify_task**."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:257
+msgid ""
+"The ``compressed`` container format was added in support of the Cinder "
+"(Block Storage Service) feature `Leverage compression accelerator <http://"
+"specs.openstack.org/openstack/cinder-specs/specs/train/leverage-compression-"
+"accelerator.html>`_. You may expect that Cinder will be able to consume any "
+"image in ``compressed`` container format *that Cinder has created*.  You "
+"should not expect, however, for other services to be able to consume such an "
+"image at the present time.  Further, you should not expect Cinder to be able "
+"to successfully use an image in ``compressed`` format that it has not "
+"created itself."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:394
+msgid ""
+"The ``cursive`` library is an OpenStack project which implements OpenStack-"
+"specific verification of digital signatures."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:181
+msgid ""
+"The ``db_downgrade`` command has been removed from the ``glance-manage`` "
+"utility and all database downgrade scripts have been removed.  In accord "
+"with OpenStack policy, Glance cannot be downgraded any more.  Operators are "
+"advised to make a full database backup of their production data before "
+"attempting any upgrade."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:103
+msgid ""
+"The ``default`` policy in ``policy.json`` now uses the admin role rather "
+"than any role. This is to make the policy file restrictive rather than "
+"permissive and tighten security."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:160
+msgid ""
+"The ``disk_format`` config option enables ``ploop`` as supported by default."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:99
+msgid ""
+"The ``disk_format`` config option enables ``vhdx`` as supported by default."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:226
+msgid ""
+"The ``enable_image_import`` configuration option was introduced as "
+"DEPRECATED in Pike and will be removed in Rocky."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:260
+msgid ""
+"The ``glance-manage`` tool has been updated to address `OSSN-0075`_. Please "
+"see the `Database Maintenance`_ section of the Glance Administration Guide "
+"for details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:68
+msgid ""
+"The ``glance-replicator`` options ``mastertoken`` and ``slavetoken`` were "
+"deprecated in the Pike release cycle. These options have now been removed. "
+"The options ``sourcetoken`` and ``targettoken`` should be used instead."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:78
+msgid ""
+"The ``inject_image_metadata`` task will no longer allow setting properties "
+"in the reserved ``os_glance_*`` namespace, in line with the blanket "
+"prohibition on such via the API. It has always been dangerous to do this, so "
+"no operator should have any such configuration in production. If any keys in "
+"this namespace are set, they will be dropped (and logged) during the "
+"injection process."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:154
+msgid ""
+"The ``os_hash_value`` image property, introduced as part of the `Secure Hash "
+"Algorithm Support <https://specs.openstack.org/openstack/glance-specs/specs/"
+"rocky/approved/glance/multihash.html>`_ (\"multihash\") feature, is limited "
+"to 128 characters.  This is sufficient to store 512 bits as a hexadecimal "
+"numeral."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:102
+msgid ""
+"The ``owner_is_tenant`` configuration option, which was deprecated in Rocky, "
+"has been removed in this release.  As announced in the spec `Deprecate "
+"owner_is_tenant <https://specs.openstack.org/openstack/glance-specs/specs/"
+"rocky/implemented/glance/spec-lite-deprecate-owner_is_tenant.html>`_, given "
+"that an operator survey indicated that this option was only used in its "
+"default value of ``True``, no database migration is included in this release."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:63
+msgid "The ``s3`` store driver has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:233
+msgid ""
+"The ``sheepdog`` storage backend driver was deprecated in the Train release "
+"and has now been removed. Any deployments still using Sheepdog storage will "
+"need to migrate to a different backend storage prior to upgrading to this "
+"release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:49
+msgid ""
+"The ``show_multiple_locations`` configuration option remains DEPRECATED but "
+"not removed in the Train release.  We continue to recommend that image "
+"locations not be exposed to end users.  See `OSSN-0065 <https://wiki."
+"openstack.org/wiki/OSSN/OSSN-0065>`_ for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:209
+msgid ""
+"The ``show_multiple_locations`` configuration option remains DEPRECATED but "
+"not removed in the Ussuri release.  We continue to recommend that image "
+"locations not be exposed to end users.  See `OSSN-0065 <https://wiki."
+"openstack.org/wiki/OSSN/OSSN-0065>`_ for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14 stable/rocky>:14 stable/stein>:96
+msgid ""
+"The ``show_multiple_locations`` configuration option remains deprecated in "
+"this release, but it has not been removed.  (It had been scheduled for "
+"removal in the Pike release.)  Please keep a watch on the Glance release "
+"notes and the glance-specs repository to stay informed about developments on "
+"this issue."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:360
+msgid ""
+"The ``web-download`` import-method, intended to be a replacement for the "
+"popular Image Service API v1 \"copy-from\" functionality, is configurable so "
+"that you can avoid the vulnerabilty described in `OSSN-0078`_.  See the "
+"Interoperable Image Import section of the `Glance Administration Guide`_ for "
+"details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:378
+msgid ""
+"The `documentation was reorganized`_ in accord with the new standard layout "
+"for OpenStack projects."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:251
+msgid ""
+"The ability to update an image to have 'community' visibility is governed by "
+"a policy target named 'communitize_image'.  The default is empty, that is, "
+"any user may communitize an image."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:186
+msgid ""
+"The change in migration engine has been undertaken in order to enable zero-"
+"downtime database upgrades, which are part of the effort to implement "
+"rolling upgrades for Glance (scheduled for the Pike release)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:284
+msgid ""
+"The configuration options ``work_dir`` and ``node_staging_uri`` are "
+"deprecated and will be removed early in the 'U' development cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:164
+msgid ""
+"The database migration engine used by Glance for database upgrades has been "
+"changed from *SQLAlchemy Migrate* to *Alembic* in this release."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current
+msgid ""
+"The database migration engine used by Glance for database upgrades was "
+"changed from *SQLAlchemy Migrate* to *Alembic* in the 14.0.0 (Ocata) release."
+" Support for *SQLAlchemy Migrate* has now been removed. This means in order "
+"to upgrade from a pre-Ocata release to Xena or later, you must upgrade to "
+"Wallaby or earlier first."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:161
+msgid ""
+"The default policy for the `metadef` API has changed from \"open to "
+"everyone\" to \"only admins can create and modify resources\". We believe "
+"that this is by far the most common use-case and the only sane default. See "
+"Bug 1916926_ for more details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:132
+msgid ""
+"The default secure hash algorithm is SHA-512.  It should be suitable for "
+"most applications."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:310
+msgid ""
+"The default value for the API configuration option ``workers`` was "
+"previously the number of CPUs available.  It has been changed to be the min "
+"of {number of CPUs, 8}.  Any value set for that option, of course, is "
+"honored.  See Bug 1748916_ for details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:295
+msgid ""
+"The default value of 'shared' may seem weird, but it preserves the pre-"
+"upgrade workflow of: (1) create an image with default visibility, (2) add "
+"members to that image.  Further, an image with a visibility of 'shared' that "
+"has no members is not accessible to other users, so it is functionally a "
+"private image."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:66
+msgid ""
+"The default value of ``[oslo_policy] policy_file`` config option has been "
+"changed from ``policy.json`` to ``policy.yaml``. Operators who are utilizing "
+"customized or previously generated static policy JSON files (which are not "
+"needed by default), should generate new policy files or convert them in YAML "
+"format. Use the `oslopolicy-convert-json-to-yaml <https://docs.openstack.org/"
+"oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml.html>`_ tool to "
+"convert a JSON to YAML formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:180
+msgid ""
+"The default value of the Glance API configuration option ``admin_role`` has "
+"been changed in this release.  If you were also using the default policy "
+"configuration, this change will not affect you.  If you were *not* using the "
+"default policy configuration, please read on."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:106
+msgid "The deprecated 'enable_v2_api' config option has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:418
+msgid ""
+"The deprecation path for the configuration option "
+"``show_multiple_locations`` has been changed because the mitigation "
+"instructions for `OSSN-0065`_ refer to this option. It is now subject to "
+"removal on or after the **Pike**  release. The help text for this option has "
+"been updated accordingly."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:229
+msgid ""
+"The discovery calls defined in the `refactored image import spec`_ remain in "
+"an abbreviated form in this release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:212
+msgid ""
+"The exact format of the compressed file is unspecified.  It is the "
+"responsibility of the consuming service to analyze the data payload and "
+"determine the compression format.  A particular OpenStack service may only "
+"support specific formats.  Thus, even if a service does support the "
+"``compressed`` container format, this does not imply that the service can "
+"handle arbitrary compression formats.  Consult the documentation for the "
+"service that will consume your image for details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:295 stable/queens>:376 stable/stein>:125
+msgid ""
+"The following are some highlights of the bug fixes included in this release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:179
+msgid ""
+"The following metadata definitions have been modified in the Pike release:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:288
+msgid ""
+"The following metadata definitions have been modified in the Queens release:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:223
+msgid ""
+"The following metadata definitions have been modified in the Rocky release:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:316
+msgid ""
+"The following metadata definitions have been modified in the Train release:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:328
+msgid ""
+"The glance configuration options have been improved with detailed help "
+"texts, defaults for sample configuration files, explicit choices of values "
+"for operators to choose from, and a strict range defined with ``min`` and "
+"``max`` boundaries."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:165
+msgid ""
+"The glance-scrubber utility is now multistore aware.  If you are using the "
+"multistore feature, you must define configuration options for "
+"``os_glance_tasks_store`` and ``os_glance_staging_store`` in the ``glance-"
+"scrubber.conf`` file.  See the \"Reserved Stores\" section of the \"Multi "
+"Store Support\" chapter of the Glance Administration Guide for more "
+"information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:119 stable/train>:252
+msgid ""
+"The identifier ``compressed`` has been added to the list of supported "
+"container formats.  The intent is that this format identifier will be used "
+"for any compressed file archive format (for example, gzip or rar) that is "
+"not otherwise covered by the existing container format identifiers."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:89
+msgid ""
+"The identifier ``ploop`` has been added to the list of supported disk "
+"formats in Glance. The respective configuration option has been updated and "
+"the default list shows ``ploop`` as a supported format."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:85
+msgid ""
+"The identifier ``vhdx`` has been added to the list of supported disk formats "
+"in Glance. The respective configuration option has been updated and the "
+"default list shows ``vhdx`` as a supported format."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:177
+msgid ""
+"The image signature verification feature has been updated to follow the "
+"\"sign-the-data\" approach, which uses a signature of the image data "
+"directly. The prior deprecated \"sign-the-hash\" approach, which uses a "
+"signature of an MD5 hash of the image data, has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:301
+msgid ""
+"The image-create operation allows a visibility to be set at the time of "
+"image creation.  This option was probably not used much given that "
+"previously there were only two visibility values available, one of which "
+"('public') is by default unassignable by end users.  Operators may wish to "
+"update their documentation or tooling to specify a visibility value when end "
+"users create images.  To summarize:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:58
+msgid ""
+"The image-list call to the Images v2 API now recognizes a ``protected`` "
+"query-string parameter.  This parameter accepts only two values: either "
+"``true`` or ``false``.  The filter is case-sensitive.  Any other value will "
+"result in a 400 response to the request.  See the `protected filter "
+"specification`_ document for details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:251
+msgid ""
+"The initial implementation of the image signature verification feature in "
+"Glance was insecure, because it relied on an MD5 hash of the image data. "
+"More details can be found in bug 1516031. This \"sign-the-hash\" approach "
+"was deprecated in Mitaka, and has been removed in Newton. Related CVE-2015-"
+"8234."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:207
+msgid ""
+"The intent of the ``compressed`` container format identifier introduced in "
+"this release is that it will be used for any compressed file archive format "
+"(for example, gzip or rar) that is not otherwise covered by the existing "
+"container format identifiers."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:311
+msgid ""
+"The internal store identifiers introduced in this release are "
+"``os_glance_tasks_store`` and ``os_glance_staging_store``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:205
+msgid ""
+"The interoperable image import functionality uses the Glance tasks engine.  "
+"This is transparent to end users, as they do *not* use the Tasks API for the "
+"interoperable image import workflow.  The operator, however, must make sure "
+"that the following configuration options are set correctly."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:198
+msgid ""
+"The introduction of the ``compressed`` container format in this release "
+"gives us the opportunity to remind you that Glance does not verify that the "
+"``container_format`` image property is accurate for *any* container format.  "
+"It is the responsibility of the image consumer to verify the image data "
+"payload format and take appropriate action in the case of a misdescribed "
+"image."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:185
+msgid ""
+"The latest release of glance_store library does not have the support for the "
+"``s3`` driver. All code references of the same have been removed from the "
+"library. As this release of Glance uses the updated glance_store library, "
+"you will find the ``s3`` driver support removed from Glance too. For example "
+"the Glance image location strategy modules no longer offer the ``s3`` driver "
+"support."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:135
+msgid ""
+"The legacy 'checksum' image property, which provides an MD5 message digest "
+"of the image data, is preserved for backward compatibility."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:175
+msgid ""
+"The lock_path config option from oslo.concurrency is now required for using "
+"the sql image_cache driver. If one is not specified it will default to the "
+"image_cache_dir and emit a warning."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:369
+msgid ""
+"The metadata definition for ``hypervisor_type`` in the ``OS::Compute::"
+"Hypervisor`` namespace has been extended to include the Virtuozzo "
+"hypervisor, designated as ``vz``.  You may upgrade the definition using:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:407
+msgid ""
+"The metadefs schemas for 'property', 'properties', 'tag', 'tags', 'object', "
+"and 'objects' previously specified a 'name' element of maximum 255 "
+"characters.  Any attempt to add a name of greater than 80 characters in "
+"length, however, resulted in a 500 response. The schemas have been corrected "
+"to specify a maximum length of 80 characters for the 'name' field."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:287
+msgid ""
+"The migration of image visibility assigns sensible values to images, namely, "
+"'private' to images that end users have *not* assigned members, and 'shared' "
+"to those images that have members at the time of the upgrade.  Previously, "
+"if an end user wanted to share a private image, a member could be added "
+"directly.  After the upgrade, the image will have to have its visibility "
+"changed to 'shared' before a member can be assigned."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:335
+msgid ""
+"The migration path for operators who were using this option in its "
+"nondefault ``False`` setting is to set the ``image_property_quota`` option "
+"to ``0``.  Since many other OpenStack services depend upon the ability to "
+"read/write custom image properties, however, we suspect that no one has been "
+"using the option with a nondefault value."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:234
+msgid ""
+"The new ``tasks_api_access`` policy target directly controls access to the "
+"Tasks API, whereas targets just mentioned indirectly affect what can be "
+"manipulated via the API by controlling what operations can be performed on "
+"Glance's internal task objects.  The key point is that if you want to expose "
+"the new interoperable image import process to end users while keeping the "
+"Tasks API admin-only, you can accomplish this by using the following "
+"settings:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:54 stable/ussuri>:214
+msgid ""
+"The plan continues to be to eliminate the option and use only policies to "
+"control image locations access.  This, however, requires some major "
+"refactoring, as discussed in the `draft Policy Refactor spec <https://review."
+"openstack.org/#/c/528021/>`_.  Further, there is no projected timeline for "
+"this change, as no one has been able to commit time to it.  (The Glance team "
+"would be happy to discuss this more with anyone interested in working on it."
+")"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:20 stable/rocky>:20 stable/stein>:102
+msgid ""
+"The plan is to eliminate the option and use only policies to control image "
+"locations access.  This, however, requires some major refactoring.  See the "
+"`draft Policy Refactor spec <https://review.openstack.org/#/c/528021/>`_ for "
+"more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:142
+msgid ""
+"The policies protecting the image API have been deprecated in favor of more "
+"consistent defaults that use the `member` and `reader` default roles from "
+"keystone. If your deployment relies on overriding the default policies, "
+"please review the new defaults and how they may impact your deployment."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:132
+msgid ""
+"The policy check that we ran when an image is not found is removed. This "
+"previously allowed an operator to override the behavior of a 404 to be a "
+"403, in contrast to the API documentation and design goals of defaulting to "
+"404 for information-hiding reasons. This check is no longer run in the case "
+"of a NotFound result from the database, so any policy attempting to control "
+"that behavior will be ignored from now on."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:269
+msgid ""
+"The properties ``cinder_encryption_key_id`` and "
+"``cinder_encryption_key_deletion_policy`` have been added to the *common "
+"image properties* and appear in the image schema.  See the \"New Features\" "
+"section of these notes for information about these image properties."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:181
+msgid ""
+"The property ``img_hide_hypervisor_id`` has been added to the namespace ``OS:"
+":Compute::LibvirtImage``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:291
+msgid ""
+"The property img_linked_clone_ has been added to the namespace ``OS::Compute:"
+":VMware``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:356
+msgid ""
+"The sample configuration files autogenerated using the oslo-config-generator "
+"tool now give consistent ordering of the store drivers configurations."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:422
+msgid ""
+"The section on Interoperable Image Import in the `Glance Administration "
+"Guide`_ has been updated.  Please see that section of the Guide for "
+"information about the configuration required to make the import "
+"functionality work correctly."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:349 stable/victoria>:117
+msgid ""
+"The secure \"multihash\" image properties, ``os_hash_algo`` and "
+"``os_hash_value`` have been available on images since glance version 17.0.0 "
+"(Rocky).  Until this point, the MD5 ``checksum`` property has been populated "
+"solely for backward compatability.  It is not, however, necessary for "
+"validating downloaded image data."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:49
+msgid ""
+"The secure RBAC personas implemented in Wallaby are marked as experimental. "
+"They will become stable in a future release. You can read more about the "
+"various personas in keystone's `Administrator Guide <https://docs.openstack."
+"org/keystone/latest/admin/service-api-protection.html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:128
+msgid ""
+"The secure hash algorithm used is an operator-configurable setting.  See the "
+"help text for 'hashing_algorithm' in the sample Glance configuration file "
+"for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:384
+msgid ""
+"The ssl support from Glance has been removed as it worked only under PY27 "
+"which is not anymore supported environment. Termination of encrypted "
+"connections needs to happen externally as soon as move to PY3 happens. Any "
+"deployment needing end to end encryption would need to put either reverse "
+"proxy (using fully blown http server like Apache or Nginx will cause "
+"significant performance hit and we advice using something more simple that "
+"does not break the http protocol) in front of the service or utilize ssl "
+"tunneling (like stunnel) between loadbalancers and glance-api."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:372
+msgid ""
+"The store drivers configuration order in the sample or autogenerated files "
+"should be expected to be alphabetical as - ``cinder``, ``filesystem``, "
+"``http``, ``rbd``, ``sheepdog``, ``swift``, ``vmware``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:307
+msgid ""
+"The store name prefix ``os_glance_*`` is reserved by Glance for internal "
+"stores.  Glance will refuse to start if a store with this prefix is included "
+"in the ``enabled_backends`` option."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:48
+msgid ""
+"The task API is being deprecated and it has been made admin only. If "
+"deployers of Glance would like to have this API as a public one, it is "
+"necessary to change the `policy.json` file and remove `role:admin` from "
+"every `task` related field."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:62
+msgid ""
+"The task API was added to allow users for uploading images asynchronously "
+"and for deployers to have more control in the upload process. Unfortunately, "
+"this API has not worked the way it was expected to. Therefore, the task API "
+"has entered a deprecation period and it is meant to be replaced by the new "
+"import API. This change makes the task API admin only by default so that it "
+"is not accidentally deployed as a public API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:147
+msgid ""
+"The unused `modify_task` policy has been deprecated for removal. It was "
+"never honored or checked as part of an API operation. As a result, it has "
+"been deprecated for removal since overriding it has no direct impact on the "
+"tasks API, which remains a deprecated, admin-only API."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:58
+msgid ""
+"The use_user_token, admin_user, admin_password, admin_tenant_name, auth_url, "
+"auth_strategy and auth_region options in the [DEFAULT] configuration section "
+"in glance-api.conf are deprecated, and will be removed in the O release. See "
+"https://wiki.openstack.org/wiki/OSSN/OSSN-0060"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:139
+msgid ""
+"The version 2.6 API is being introduced as EXPERIMENTAL because it is a "
+"Minimal Viable Product delivery of the functionality described in the "
+"`refactored image import`_ specification.  As an MVP, the responses "
+"described in that specification are abbreviated in version 2.6.  It is "
+"expected that version 2.6 will be completed in Queens, but at this time, we "
+"encourage operators to try out the new functionality, but keep in mind its "
+"EXPERIMENTAL nature."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:29 stable/rocky>:29 stable/stein>:111
+msgid ""
+"The workaround is to continue to use the ``show_multiple_locations`` option "
+"in a dedicated \"internal\" Glance node that is not accessible to end users. "
+"We continue to recommend that image locations not be exposed to end users. "
+"See `OSSN-0065 <https://wiki.openstack.org/wiki/OSSN/OSSN-0065>`_ for more "
+"information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:81
+msgid ""
+"There are some limitations with this method of deploying Glance and we do "
+"not recommend its use in production environments at this time.  See the "
+"`Known Issues`_ section of this document for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:25 stable/rocky>:25 stable/stein>:107
+msgid ""
+"There is no projected timeline for this change, as no one has been able to "
+"commit time to it.  The Glance team would be happy to discuss this more with "
+"anyone interested in working on it."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:288
+msgid ""
+"There was a bug in the **experimental** zero-downtime database upgrade path "
+"introduced in the Ocata release that prevented the **experimental** upgrade "
+"from working.  This has been fixed in the Pike release.  The bug did not "
+"affect the the normal database upgrade operation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:226
+msgid ""
+"There was a typographical error in the properties target for the ``OS:::Nova:"
+":Server`` resource type association in the ``CIM::"
+"ProcessorAllocationSettingData`` namespace.  It has been been corrected to "
+"``scheduler_hints``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:126
+msgid "These are read-only image properties and are not user-modifiable."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:287
+msgid ""
+"These local directories are used by Glance for the temporary storage of data "
+"during the interoperable image import process and by the tasks engine.  This "
+"release introduces the ability to instead use a backend filesystem store "
+"accessed via the glance_store library for this temporary storage.  Please "
+"note the following:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:129 origin/stable/ocata>:228
+msgid ""
+"This change applies only to operators using the VMware datastore or "
+"filesystem stores"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:127 origin/stable/ocata>:226
+msgid ""
+"This change applies only to operators who are using multiple image locations"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:131 origin/stable/ocata>:230
+msgid "This change applies only to the ``store_type_preference`` option"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:140 origin/stable/ocata>:239
+msgid ""
+"This change is backward compatible, that is, the old names will be "
+"recognized by the code during the deprecation period. Support for the "
+"deprecated names will be removed in the **Pike** release"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:96
+msgid ""
+"This experimental feature is optionally exposed as the EXPERIMENTAL Image "
+"Service API version 2.8.  Its use in production systems is currently **not "
+"supported**.  We encourage people to use this feature for testing purposes "
+"and report any issues so that it can be made stable and fully supported in "
+"the Stein release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:141
+msgid ""
+"This feature is enabled by default, but it is optional.  Whether it is "
+"offered at your installation depends on the value of the "
+"``enabled_import_methods`` configuration option in the ``glance-api.conf`` "
+"file (assuming, of course, that you have not disabled image import at your "
+"site)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:167
+msgid ""
+"This has necessitated a change in the location and naming convention for "
+"migration scripts.  Developers, operators, and DevOps are strongly "
+"encouraged to read through the `Database Management`_ section of the Glance "
+"documentation for details of the changes introduced in the Ocata release.  "
+"Here's a brief summary of the changes:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:273
+msgid ""
+"This is a good time to review your Glance ``policy.json`` file to make sure "
+"that if it contains a ``default`` target, the rule is fairly restrictive "
+"(\"role:admin\" or \"!\" are good choices).  The ``default`` target is used "
+"when the policy engine cannot find the target it's looking for.  This can "
+"happen when a new policy is introduced but the policy file in use is from a "
+"prior release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:175 stable/rocky>:182
+msgid ""
+"This is in addition to the chunked transfer encoding problems addressed by "
+"`Bug 1703856`_ and will be more difficult to fix.  (Additionally, as far as "
+"we are aware, the fix for `Bug 1703856`_ has never been tested at scale.) "
+"Briefly, Glance tasks are run by the API service and would have to be split "
+"out into a different service so that API alone would run under uWSGI.  The "
+"Glance project team did not have sufficient testing and development "
+"resources during the Queens cycle to attempt this (or even to discuss "
+"whether this is in fact a good idea)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid ""
+"This point release contains minor changes to keep the Ocata release of "
+"Glance stable with respect to current operating system packages."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid ""
+"This point release contains minor changes to keep the Pike release of Glance "
+"stable with respect to current operating system packages."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:132
+msgid ""
+"This prevents roles that should not have access to these APIs from "
+"performing the APIs associated with the actions above."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:101
+msgid "This release also bumps the Images API CURRENT version to 2.9"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:25
+msgid ""
+"This release also contains some feature work, life improving changes and bug "
+"fixes. Please refer the rest of the release notes and docs for details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:34
+msgid "This release has impact on API behavior."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:114
+msgid ""
+"This release implements the Glance spec `Secure Hash Algorithm Support "
+"<https://specs.openstack.org/openstack/glance-specs/specs/rocky/approved/"
+"glance/multihash.html>`_ (also known as \"multihash\").  This feature "
+"supplements the current 'checksum' image property with a self-describing "
+"secure hash.  The self-description consists of two new image properties:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:269
+msgid ""
+"This release implements the Glance spec `Secure Hash Algorithm Support "
+"<https://specs.openstack.org/openstack/glance-specs/specs/rocky/approved/"
+"glance/multihash.html>`_, which introduces a self-describing \"multihash\" "
+"to the image-show response. This feature supplements the current 'checksum' "
+"image property with a self-describing secure hash.  The default hashing "
+"algorithm is SHA-512, which is currently considered secure.  In the event "
+"that algorithm is compromised, you will immediately be able to begin using a "
+"different algorithm (as long as it's supported by the Python 'hashlib' "
+"library and has output that fits in 128 characters) by modifying the value "
+"of the 'hashing_algorithm' configuration option and either restarting or "
+"issuing a SIGHUP to Glance."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:53
+msgid ""
+"This release of OpenStack Glance introduces 2 new API versions. Images API "
+"v2.7 adds support and modifications for the Hidden Images and Multihash "
+"features introduced during Rocky cycle. Version 2.8 is included as an "
+"optional EXPERIMENTAL API for testing and preparing for multiple back-end "
+"support."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:54
+msgid ""
+"This release prevents non-admin user to change 'size' and 'checksum' "
+"properties of an image after it has been deactivated via Images API v1."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:87
+msgid ""
+"This release provides an EXPERIMENTAL implementation of the Glance spec "
+"`Multi-Store Backend Support <https://specs.openstack.org/openstack/glance-"
+"specs/specs/rocky/implemented/glance/multi-store.html>`_, which allows an "
+"operator to configure multiple backing stores so that end users may direct "
+"image data to be stored in a specific backend. See `Multi Store Support "
+"<https://docs.openstack.org/glance/latest/admin/multistores.html>`_ in the "
+"Glance Administration Guide for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:96
+msgid ""
+"This release removes endpoints and config options related to glance-registry."
+" Including but not limited to config option 'data-api' which has no "
+"production supported options left. SimpleDB has not been supported since "
+"moving DB migrations to alembic and registry is removed. All registry "
+"specific options and config files have been removed. 'glance-registry' "
+"command has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:338
+msgid ""
+"This renders the configuration options incapable of taking certain values "
+"that may have been accepted before but were actually invalid."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:112
+msgid ""
+"This will result into a non-backward compatible experience before and after "
+"**Newton** release, for users using ``add`` feature to image locations."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:273
+msgid ""
+"Those images currently with 'private' visibility (that is, images for which "
+"'is_public' is False in the database) and that have **no** image members, "
+"will have their visibility set to 'private'."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:355 stable/victoria>:123
+msgid ""
+"Thus, we are announcing the DEPRECATION in this release of the image "
+"``checksum`` property.  It will remain as an image property, but beginning "
+"with the Victoria release, the ``checksum`` will *not* be populated on new "
+"images."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:54
+msgid ""
+"To enable this functionality, you must specify `glance-api.conf [DEFAULT] "
+"enable_secure_rbac=True` and `glance-api.conf [oslo_policy] "
+"enforce_new_defaults=True`. Glance will refuse to start if misconfigured."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:109
+msgid ""
+"To partially fix an important image locations bug 1587985, an API impacting "
+"change has been merged into Glance."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:250
+msgid ""
+"To summarize: end users do **not** need access to the Tasks API in order to "
+"use the new interoperable image import process.  They do, however, need "
+"permission to access internal Glance task objects."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:132
+msgid ""
+"To support the Block Storage service (Cinder) upload-volume-to-image action "
+"when the volume is an encrypted volume type, when such an image is deleted, "
+"Glance will now contact the OpenStack Key Management service (Barbican) and "
+"request it to delete the associated encryption key. Two extra properties "
+"must be set on the image for this to work: ``cinder_encryption_key_id`` "
+"(whose value is the identifier in the OpenStack Key Management service for "
+"the encryption key used to encrypt the volume) and "
+"``cinder_encryption_key_deletion_policy`` (whose value may be either "
+"``on_image_deletion`` or ``do_not_delete``).  Please note the following:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:111
+msgid ""
+"Train release includes a change to how cache prefetching works. As the "
+"prefetcher was one of the last components still relying to the glance-"
+"registry the requirement was removed by implementing the prefetcher as part "
+"of glance-api. Crontab based prefetcher is not available anymore and the new "
+"prefetching will be set up through glance-api.conf."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:78
+msgid ""
+"Train release includes multiple important milestones in Glance development "
+"priorities."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:39
+msgid "Translations have been synced from Zanata."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:39
+msgid "Translations have been updated."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:368
+msgid ""
+"Until now every run of the oslo-config-generator resulted in random ordering "
+"of the store drivers configuration. After **Newton** release this order will "
+"remain consistent."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:209
+msgid ""
+"Until now, no image status checks were in place while **adding** a location "
+"on it. In some circumstances, this may result in a bad user experience. It "
+"may also cause problems for a security team evaluating the condition of an "
+"image in ``deactivated`` status."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 current origin/stable/mitaka>:40
+#: origin/stable/newton>:91 origin/stable/ocata>:156 stable/pike>:127
+#: stable/queens>:198 stable/rocky>:213 stable/stein>:92 stable/train>:45
+#: stable/train>:242 stable/ussuri>:165 stable/victoria>:64 stable/wallaby>:62
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:123
+msgid ""
+"Use of JSON policy files was deprecated by the ``oslo.policy`` library "
+"during the Victoria development cycle. As a result, this deprecation is "
+"being noted in the Wallaby cycle with an anticipated future removal of "
+"support by ``oslo.policy``. As such operators will need to convert to YAML "
+"policy files. Please see the upgrade notes for details on migration of any "
+"custom policy files."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:247
+msgid ""
+"Use of the plugin requires configuration as described in the `The Image "
+"Property Injection Plugin`_ section of the Glance Admin Guide."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:352
+msgid ""
+"Use the v1 API to update the image so that ``is_public`` is False.  This "
+"will reset the image's visibility to 'shared', and it will now accept member "
+"operations."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:349
+msgid ""
+"Use the v2 API to change the visibility of the image to 'shared'. Then it "
+"will accept members in either the v1 or v2 API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:254
+msgid "Users can follow workflow execution with 2 new reserved properties:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:360 stable/victoria>:128
+msgid ""
+"Users should instead rely on the secure \"multihash\" to validate image "
+"downloads.  The python-glanceclient, for example, has been using multihash "
+"validation (with an optional MD5 fallback) since version 2.13.0 (Rocky)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:266
+msgid "Using db check"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:102
+msgid ""
+"Ussuri release includes multiple important milestones in Glance development "
+"priorities."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:348
+msgid ""
+"Values which do not comply with the new restrictions will prevent the "
+"service from starting. The logs will contain a message indicating the "
+"problematic configuration option and the reason why the supplied value has "
+"been rejected."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:257
+msgid "Visibility migration of current images"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:45
+msgid ""
+"We encourage you to compare any existing overrides in your deployment with "
+"the new defaults. You can use `oslopolicy-sample-generator --namespace "
+"glance` to generate the default policies and use them for comparison."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:284
+msgid ""
+"We have tried to minimize the impact upon end users, but want to point out "
+"some issues to be aware of."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:235
+msgid ""
+"We mention this so that you can be aware of this situation in your own "
+"testing."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:254
+msgid ""
+"We recommend that all operators adopt the policy settings just described "
+"independently of the decision whether to expose the EXPERIMENTAL version 2.6 "
+"API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:170 stable/rocky>:177
+msgid ""
+"We renew that recommendation for the Queens release.  In particular, Glance "
+"tasks (which are required for the interoperable image import functionality) "
+"do not execute when Glance is run under uWSGI (which is the OpenStack "
+"recommended way to run WSGI applications hosted by a web server)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:144 origin/stable/ocata>:243
+msgid ""
+"We strongly encourage operators to modify their ``glance-api.conf`` files "
+"immediately to use the **new** names"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:309
+msgid ""
+"What this option does is to grant complete admin access to any authenticated "
+"user with a particular role.  *This overrides any policy rules configured in "
+"the policy configuration file.*  While everything will behave as expected if "
+"you are also using the default policy settings, this setting may cause "
+"anomalous behavior when you are configuring custom policies."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:214
+msgid ""
+"When ``enable_image_import`` is **True**, a new import-method, ``web-"
+"download`` is available.  (In Pike, only ``glance-direct`` was offered.)  "
+"Which import-methods you offer can be configured using the "
+"``enabled_import_methods`` option in the ``glance-api.conf`` file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:69
+msgid ""
+"When delayed delete is enabled operators are able to recover image records "
+"if the scrubber has been stopped before the data removal interval. While the "
+"image metadata is still not preserved in these cases, this provides a way to "
+"save the image data on accidental deletes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:74
+msgid ""
+"When using Interoperable Image Import workflow, the cloud operators can now "
+"enable automatic image conversion to desired format. When the plugin is "
+"enabled end-users do not have any input to its operation but their local "
+"checksum might not match with checksums recorded in Glance."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:234
+msgid ""
+"When using the multiple stores feature, each filesystem store **must** be "
+"configured with a different value for the ``filesystem_store_datadir`` "
+"option.  This is not currently enforced in the code."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:26
+msgid ""
+"While fixing race condition issue during victoria we started updating "
+"'message' property of the task which helps calculate time based on last "
+"updated time of task to burst the lock as well as show how much data has "
+"been copied of that image. As glance task API's are restricted from use by "
+"normal users we are adding new API /v2/images/{image_id}/tasks which will "
+"return all tasks associated with that image. In addition to task information "
+"this API will also return `request-id` and `user-id` to help users in "
+"debugging."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:206
+msgid ""
+"While the 2.6 API is CURRENT, whether the interoperable image import "
+"functionality it makes available is exposed to end users is controlled by a "
+"configuration option, ``enable_image_import``.  Although this option existed "
+"in the previous release, its effect is slightly different in Queens."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:195
+msgid ""
+"With the deprecation of the Images (Glance) version 1 API in the Newton "
+"release, it is subject to removal on or after the Pike release. The "
+"configuration options specific to the Images (Glance) v1 API have also been "
+"deprecated and are subject to removal. An indirectly related configuration "
+"option enable_v2_api has been deprecated too as it becomes redundant once "
+"the Images (Glance) v1 API is removed. Appropriate warning messages have "
+"been setup for the deprecated configuration options and when the Images "
+"(Glance) v1 API is enabled (being used). Operators are advised to deploy the "
+"Images (Glance) v2 API. The standard OpenStack deprecation policy will be "
+"followed for the removals."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:343
+msgid ""
+"With the introduction of the ``web-download`` import method, we consider the "
+"Image Service v2 API to have reached feature parity with the DEPRECATED v1 "
+"API in all important respects.  Support for the Image Service API v1 ends "
+"with the Queens release.  The `v1 API was deprecated in Newton`_ and will be "
+"removed from the codebase at the beginning of the Rocky development cycle.  "
+"Please plan appropriately."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:185
+msgid ""
+"With the previous default value, any user with the ``admin`` role could act "
+"in an administrative context *regardless of what your policy file defined as "
+"the administrative context*.  And this might not be a problem because "
+"usually the ``admin`` role is not assigned to \"regular\" end users.  It "
+"does become a problem, however, when operators attempt to configure "
+"different gradations of administrator."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:50
+msgid ""
+"You can now list all images that are available to you. Use the 'all' "
+"visibility option."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:195
+msgid ""
+"You may set the ``timeout`` option in the ``keystone_authtoken`` group in "
+"the **glance-api.conf** file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:187 stable/queens>:300 stable/rocky>:231
+#: stable/train>:333
+msgid "You may upgrade these definitions using:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:65
+msgid ""
+"[`Community Goal <https://governance.openstack.org/tc/goals/stein/upgrade-"
+"checkers.html>`_] Support has been added for developers to write pre-upgrade "
+"checks. Operators can run these checks using ``glance-status upgrade check``."
+" This allows operators to be more confident when upgrading their deployments "
+"by having a tool that automates programmable checks against the deployment "
+"configuration or dataset."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:251
+msgid ""
+"``all_stores_must_succeed``: Control wether the import have to succeed in "
+"all stores."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:249
+msgid "``all_stores``: To import the data in all configured stores."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:125
+msgid "``delete_metadef_namespace``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:126
+msgid "``delete_metadef_object``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:129
+msgid "``delete_metadef_tag``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:130
+msgid "``delete_metadef_tags``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:211
+msgid "``enable_image_import``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:212
+msgid "``enable_image_import`` is **True** by default (in Pike it was False)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:89
+msgid ""
+"``glance-cache-manage`` and precaching is back; during the cycle we fixed "
+"issues that caused cache management being impossible. The prefetcher code "
+"was moved into glance-api to break the dependency to glance-registry and "
+"does not run under cron anymore."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:374 stable/pike>:189
+#: stable/queens>:302 stable/rocky>:233 stable/train>:335
+msgid ""
+"``glance-manage db load_metadefs [--path <path>] [--merge] [--prefer_new]``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:140
+msgid ""
+"``glance-scrubber`` now support to restore the image's status from "
+"`pending_delete` to `active`. The usage is `glance-scrubber --restore <image-"
+"id>`. Please make sure the ``glance-scrubber`` daemon is stopped before "
+"restoring the image to avoid image data inconsistency."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:212
+msgid "``node_staging_uri``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:259
+msgid ""
+"``os_glance_failed_import``: Each time an import in a store fails, it is "
+"added to this list."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:256
+msgid ""
+"``os_glance_importing_to_stores``: list of stores that has not yet been "
+"processed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:120
+msgid ""
+"``os_hash_algo`` - this contains the name of the secure hash algorithm used "
+"to generate the value on this image"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:122
+msgid ""
+"``os_hash_value`` - this is the hexdigest computed by applying the secure "
+"hash algorithm named in the ``os_hash_algo`` property to the image data"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:128
+msgid "``remove_metadef_property``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:127
+msgid "``remove_metadef_resource_type_association``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:246
+msgid ""
+"``stores``: List containing the stores id to import the image binary data to."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:313
+msgid ""
+"a new *list stores* call, `GET /v2/info/stores <https://developer.openstack."
+"org/api-ref/image/v2/index.html#list-stores>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:315
+msgid ""
+"a new ``OpenStack-image-store-ids`` header in the `create image <https://"
+"developer.openstack.org/api-ref/image/v2/index.html#create-image>`_ response"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:318
+msgid ""
+"an ``X-Image-Meta-Store`` header may be included with the `image data upload "
+"<https://developer.openstack.org/api-ref/image/v2/index.html#upload-binary-"
+"image-data>`_ request"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:322
+msgid ""
+"an ``X-Image-Meta-Store`` header may be included with the `image import "
+"<https://developer.openstack.org/api-ref/image/v2/index.html#import-an-"
+"image>`_ request"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:305
+msgid "bug 1532243: glance fails silently if a task flow can not be loaded"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:282
+msgid ""
+"bug 1533949: Glance tasks missing configuration item \"conversion_format\""
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:312
+msgid ""
+"bug 1535231: md-meta with case insensitive string has problem during "
+"creating"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:297
+msgid "bug 1543937: db-purge fails for very large number"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:314
+msgid "bug 1555275: Tags set changes on delete"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:317
+msgid "bug 1557495: Possible race conditions during status change"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:315
+msgid "bug 1558683: Versions endpoint does not support X-Forwarded-Proto"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:310
+msgid "bug 1568723: secure_proxy_ssl_header not in sample configuration files"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:307
+msgid ""
+"bug 1568894: glance_store options missing in glance-scrubber.conf and glance-"
+"cache.conf sample files"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:303
+msgid ""
+"bug 1570789: Metadefs API returns 500 error when 4 byte unicode character is "
+"passed"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:298
+msgid ""
+"bug 1580848: There's no exception when import task is created without "
+"properties"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:302
+msgid "bug 1582304: Allow tests to run when http proxy is set"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:286
+msgid "bug 1584076: Swift ACLs disappears on v1 Glance images"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:295
+msgid ""
+"bug 1584350: etc/glance-registry.conf sample file has redundant store "
+"section"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:290
+msgid ""
+"bug 1584415: Listing images with the created_at and updated_at filters fails "
+"if an operator is not specified"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:300
+msgid "bug 1585584: Glare v0.1 is unable to create public artifact draft"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:277
+msgid ""
+"bug 1585917: member-create will raise 500 error if member-id is greater than "
+"255 characters"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:293
+msgid ""
+"bug 1590608: Services should use http_proxy_to_wsgi middleware from oslo."
+"middleware library"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:288
+msgid ""
+"bug 1591004: Unable to download image with no checksum when cache is enabled"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:284
+msgid ""
+"bug 1593177: The default policy needs to be admin for safer default "
+"deployment scenarios"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:279
+msgid ""
+"bug 1598985: glance-replicator compare output should show image name in "
+"addition to image id for missing images"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:272
+msgid ""
+"bug 1599169: glance-replicator size raises object of type 'NoneType' has no "
+"len() exception when no args provided"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:275
+msgid "bug 1599192: glance-replicator needs to display human-readable size"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:270
+msgid "bug 1602081: Glance needs to use oslo.context's policy dict"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:268
+msgid ""
+"bug 1609571: version negotiation api middleware was NOT up to date to "
+"include v2.3"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:267
+msgid "bug 1612341: Add cpu thread pinning flavor metadef"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:265
+msgid "bug 1617258: Image signature base64 needs to wrap lines"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:213
+msgid "the options in the ``[task]`` group"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:214
+msgid "the options in the ``[taskflow_executor]`` group"
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "Glance Release Notes"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

@@ -1,0 +1,1442 @@
+# Translations template for swift.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the swift project.
+# 
+# Translators:
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: swift VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-16 23:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-04-12 06:43+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Generated-By: Babel 2.0\n"
+"X-Generator: Zanata 4.3.3\n"
+"Language-Team: Russian\n"
+
+#: swift/account/auditor.py:44
+#, python-format
+msgid ""
+"The total %(key)s for the container (%(total)s) does not match the sum of "
+"%(key)s across policies (%(sum)s)"
+msgstr ""
+"Общее число %(key)s для контейнера (%(total)s) не соответствует сумме "
+"%(key)s в стратегиях (%(sum)s)"
+
+#: swift/account/server.py:327 swift/container/server.py:903
+#: swift/obj/server.py:1344
+#, python-format
+msgid "ERROR __call__ error with %(method)s %(path)s "
+msgstr "Ошибка: ошибка __call__ в %(method)s %(path)s "
+
+#: swift/common/container_sync_realms.py:61
+#: swift/common/container_sync_realms.py:71
+#, python-format
+msgid "Could not load %(conf)r: %(error)s"
+msgstr ""
+
+#: swift/common/container_sync_realms.py:85
+#, python-format
+msgid "Error in %(conf)r with mtime_check_interval: %(error)s"
+msgstr ""
+
+#: swift/common/db.py:489
+#, python-format
+msgid "Quarantined %(db_dir)s to %(quar_path)s due to %(reason)s"
+msgstr ""
+
+#: swift/common/db.py:592
+msgid "Broker error trying to rollback locked connection"
+msgstr "Ошибка посредника при попытке отката заблокированного соединения"
+
+#: swift/common/db.py:844
+#, python-format
+msgid "Invalid pending entry %(file)s: %(entry)s"
+msgstr "Недопустимая ожидающая запись %(file)s: %(entry)s"
+
+#: swift/common/db_auditor.py:76
+#, python-format
+msgid ""
+"Since %(time)s: %(server_type)s audits: %(pass)s passed audit, %(fail)s "
+"failed audit"
+msgstr ""
+
+#: swift/common/db_auditor.py:101
+msgid "Begin {} audit pass."
+msgstr ""
+
+#: swift/common/db_auditor.py:107
+msgid "ERROR auditing"
+msgstr "ОШИБКА контроля"
+
+#: swift/common/db_auditor.py:110
+#, python-format
+msgid "%(server_type)s audit pass completed: %(elapsed).02fs"
+msgstr ""
+
+#: swift/common/db_auditor.py:121
+msgid "Begin {} audit \"once\" mode"
+msgstr ""
+
+#: swift/common/db_auditor.py:126
+#, python-format
+msgid "%(server_type)s audit \"once\" mode completed: %(elapsed).02fs"
+msgstr ""
+
+#: swift/common/db_auditor.py:152
+#, python-format
+msgid "Audit Failed for %(path)s: %(err)s"
+msgstr ""
+
+#: swift/common/db_auditor.py:158
+#, python-format
+msgid "ERROR Could not get %(server_type)s info %(path)s"
+msgstr ""
+
+#: swift/common/db_replicator.py:178
+#, python-format
+msgid "ERROR reading HTTP response from %s"
+msgstr "Ошибка чтения ответа HTTP из %s"
+
+#: swift/common/db_replicator.py:254
+#, python-format
+msgid ""
+"Attempted to replicate %(count)d dbs in %(time).5f seconds (%(rate).5f/s)"
+msgstr ""
+"Попытка репликации %(count)d баз данных за %(time).5f секунд (%(rate).5f/s)"
+
+#: swift/common/db_replicator.py:260
+#, python-format
+msgid "Removed %(remove)d dbs"
+msgstr "Удалено баз данных: %(remove)d"
+
+#: swift/common/db_replicator.py:261 swift/obj/replicator.py:771
+#, python-format
+msgid "%(success)s successes, %(failure)s failures"
+msgstr "%(success)s успешно, %(failure)s с ошибками"
+
+#: swift/common/db_replicator.py:308
+#, python-format
+msgid "ERROR rsync failed with %(code)s: %(args)s"
+msgstr "Ошибка: команда rsync не выполнена с кодом %(code)s: %(args)s"
+
+#: swift/common/db_replicator.py:619 swift/common/db_replicator.py:943
+#, python-format
+msgid "Quarantining DB %s"
+msgstr "БД %s помещена в карантин"
+
+#: swift/common/db_replicator.py:622
+#, python-format
+msgid "ERROR reading db %s"
+msgstr "Ошибка чтения базы данных %s"
+
+#: swift/common/db_replicator.py:674
+#, python-format
+msgid ""
+"ERROR There are not enough handoff nodes to reach replica count for "
+"partition %s"
+msgstr ""
+
+#: swift/common/db_replicator.py:677
+#, python-format
+msgid "ERROR Remote drive not mounted %s"
+msgstr "Ошибка: удаленный накопитель не смонтирован %s"
+
+#: swift/common/db_replicator.py:679
+#, python-format
+msgid "ERROR syncing %(file)s with node %(node)s"
+msgstr "Ошибка синхронизации %(file)s с узлом %(node)s"
+
+#: swift/common/db_replicator.py:718
+#, python-format
+msgid "ERROR while trying to clean up %s"
+msgstr "Ошибка при попытке очистки %s"
+
+#: swift/common/db_replicator.py:773
+msgid "ERROR Failed to get my own IPs?"
+msgstr "Ошибка: не удалось получить собственные IP-адреса?"
+
+#: swift/common/db_replicator.py:817
+msgid "Beginning replication run"
+msgstr "Запуск репликации"
+
+#: swift/common/db_replicator.py:822
+msgid "Replication run OVER"
+msgstr "Репликация запущена поверх"
+
+#: swift/common/db_replicator.py:839
+msgid "ERROR trying to replicate"
+msgstr "Ошибка при попытке репликации"
+
+#: swift/common/manager.py:71
+msgid "WARNING: Unable to modify file descriptor limit.  Running as non-root?"
+msgstr ""
+"Предупреждение: не удалось изменить предельное значение для дескриптора "
+"файла. Запущен без прав доступа root?"
+
+#: swift/common/manager.py:78
+msgid "WARNING: Unable to modify memory limit.  Running as non-root?"
+msgstr ""
+"Предупреждение: не удалось изменить предельное значение для памяти. Запущен "
+"без прав доступа root?"
+
+#: swift/common/manager.py:85
+msgid "WARNING: Unable to modify max process limit.  Running as non-root?"
+msgstr ""
+"Предупреждение: не удалось изменить предельное значение для числа процессов. "
+"Запущен без прав доступа root?"
+
+#: swift/common/manager.py:280
+msgid "\n"
+"user quit"
+msgstr "\n"
+"Завершение работы пользователя"
+
+#: swift/common/manager.py:317 swift/common/manager.py:417
+#: swift/common/manager.py:427 swift/common/manager.py:773
+#, python-format
+msgid "No %s running"
+msgstr "%s не выполняется"
+
+#: swift/common/manager.py:330
+#, python-format
+msgid "%(server)s (%(pid)s) appears to have stopped"
+msgstr ""
+
+#: swift/common/manager.py:343
+#, python-format
+msgid "Waited %(kill_wait)s seconds for %(server)s to die; killing"
+msgstr ""
+
+#: swift/common/manager.py:348 swift/common/manager.py:645
+#, python-format
+msgid "Signal %(server)s  pid: %(pid)s  signal: %(signal)s"
+msgstr ""
+
+#: swift/common/manager.py:360
+#, python-format
+msgid "Waited %(kill_wait)s seconds for %(server)s to die; giving up"
+msgstr ""
+
+#: swift/common/manager.py:587
+msgid "Found configs:"
+msgstr "Обнаружены конфигурации:"
+
+#: swift/common/manager.py:595
+#, python-format
+msgid "Unable to locate config number %(number)s for %(server)s"
+msgstr ""
+
+#: swift/common/manager.py:599
+#, python-format
+msgid "Unable to locate config for %s"
+msgstr "Не удалось найти конфигурационный файл для %s"
+
+#: swift/common/manager.py:604
+msgid ""
+"WARNING: object-expirer.conf is deprecated. Move object-expirers' "
+"configuration into object-server.conf."
+msgstr ""
+
+#: swift/common/manager.py:651
+#, python-format
+msgid "Removing pid file %(pid_file)s with wrong pid %(pid)d"
+msgstr "Удаление файла pid %(pid_file)s с ошибочным pid %(pid)d"
+
+#: swift/common/manager.py:659
+#, python-format
+msgid "Removing stale pid file %s"
+msgstr "Удаление устаревшего файла pid %s"
+
+#: swift/common/manager.py:662
+#, python-format
+msgid "No permission to signal PID %d"
+msgstr "Нет прав доступа для отправки сигнала в PID %d"
+
+#: swift/common/manager.py:679 swift/common/manager.py:697
+#, python-format
+msgid "Removing pid file %s with invalid pid"
+msgstr "Удаление pid файла %s с неверным pid-ом"
+
+#: swift/common/manager.py:769
+#, python-format
+msgid "%(server)s #%(number)d not running (%(conf)s)"
+msgstr ""
+
+#: swift/common/manager.py:777 swift/common/manager.py:885
+#, python-format
+msgid "%(server)s running (%(pid)s - %(conf)s)"
+msgstr ""
+
+#: swift/common/manager.py:889
+#, python-format
+msgid "%(server)s running (%(pid)s - %(pid_file)s)"
+msgstr ""
+
+#: swift/common/manager.py:894
+#, python-format
+msgid "%s already started..."
+msgstr "%s уже запущен..."
+
+#: swift/common/manager.py:903
+#, python-format
+msgid "Running %s once"
+msgstr "Однократное выполнение %s"
+
+#: swift/common/manager.py:905
+#, python-format
+msgid "Starting %s"
+msgstr "Запуск %s"
+
+#: swift/common/manager.py:912
+#, python-format
+msgid "%s does not exist"
+msgstr "%s не существует"
+
+#: swift/common/request_helpers.py:205
+#, python-format
+msgid "No policy with index %s"
+msgstr "Не найдено стратегии с индексом %s"
+
+#: swift/common/utils.py:648
+#, python-format
+msgid "Unable to locate %s in libc.  Leaving as a no-op."
+msgstr "Не удалось найти %s в libc.  Оставлено как no-op."
+
+#: swift/common/utils.py:1138
+msgid ""
+"Unable to locate fallocate, posix_fallocate in libc.  Leaving as a no-op."
+msgstr ""
+"Не удалось найти fallocate, posix_fallocate в libc.  Оставлено как no-op."
+
+#: swift/common/utils.py:1223
+#, python-format
+msgid "Unable to perform fsync() on directory %(dir)s: %(err)s"
+msgstr ""
+
+#: swift/common/utils.py:1901
+#, python-format
+msgid "%s: Connection reset by peer"
+msgstr "%s: соединение сброшено на другой стороне"
+
+#: swift/common/utils.py:1903 swift/common/utils.py:1914
+#, python-format
+msgid "%(type)s: %(value)s"
+msgstr ""
+
+#: swift/common/utils.py:2023
+#, python-format
+msgid "Error sending UDP message to %(target)r: %(err)s"
+msgstr ""
+
+#: swift/common/utils.py:2236
+msgid "Connection refused"
+msgstr "Соединение отклонено"
+
+#: swift/common/utils.py:2238
+msgid "Connection reset"
+msgstr ""
+
+#: swift/common/utils.py:2240
+msgid "Host unreachable"
+msgstr "Хост недоступен"
+
+#: swift/common/utils.py:2242
+msgid "Network unreachable"
+msgstr ""
+
+#: swift/common/utils.py:2244
+msgid "Connection timeout"
+msgstr "Тайм-аут соединения"
+
+#: swift/common/utils.py:2246
+msgid "Broken pipe"
+msgstr ""
+
+#: swift/common/utils.py:2582
+msgid "UNCAUGHT EXCEPTION"
+msgstr "Необрабатываемая исключительная ситуация"
+
+#: swift/common/utils.py:2636
+msgid "Error: missing config path argument"
+msgstr "Ошибка: отсутствует аргумент пути конфигурации"
+
+#: swift/common/utils.py:2641
+#, python-format
+msgid "Error: unable to locate %s"
+msgstr "Ошибка: не удалось найти %s"
+
+#: swift/common/utils.py:3128
+#, python-format
+msgid "Unable to read config from %s"
+msgstr "Не удалось прочитать конфигурацию из %s"
+
+#: swift/common/utils.py:3135
+#, python-format
+msgid "Unable to find %(section)s config section in %(conf)s"
+msgstr ""
+
+#: swift/common/utils.py:3365
+#, python-format
+msgid "Skipping %s as it is not mounted"
+msgstr "%s будет пропущен, так как он не смонтирован"
+
+#: swift/common/utils.py:3378
+#, python-format
+msgid "Skipping %(datadir)s because %(err)s"
+msgstr ""
+
+#: swift/common/utils.py:3665
+#, python-format
+msgid "Invalid X-Container-Sync-To format %r"
+msgstr "Недопустимый формат X-Container-Sync-To %r"
+
+#: swift/common/utils.py:3670
+#, python-format
+msgid "No realm key for %r"
+msgstr "Отсутствует ключ области для %r"
+
+#: swift/common/utils.py:3674
+#, python-format
+msgid "No cluster endpoint for %(realm)r %(cluster)r"
+msgstr ""
+
+#: swift/common/utils.py:3684
+#, python-format
+msgid ""
+"Invalid scheme %r in X-Container-Sync-To, must be \"//\", \"http\", or "
+"\"https\"."
+msgstr ""
+"Недопустимая схема %r в X-Container-Sync-To, допустимые значения: \"//\", "
+"\"http\" или \"https\"."
+
+#: swift/common/utils.py:3688
+msgid "Path required in X-Container-Sync-To"
+msgstr "Требуется путь в X-Container-Sync-To"
+
+#: swift/common/utils.py:3691
+msgid "Params, queries, and fragments not allowed in X-Container-Sync-To"
+msgstr "В X-Container-Sync-To не разрешены параметры, запросы и фрагменты"
+
+#: swift/common/utils.py:3696
+#, python-format
+msgid "Invalid host %r in X-Container-Sync-To"
+msgstr "Недопустимый хост %r в X-Container-Sync-To"
+
+#: swift/common/utils.py:4547
+msgid "Invalid swift_bytes"
+msgstr ""
+
+#: swift/common/utils.py:4866
+msgid "More than one part in a single-part response?"
+msgstr ""
+
+#: swift/common/utils.py:5875
+msgid ""
+"WARNING: Unable to modify scheduling priority of process. Keeping unchanged! "
+"Check logs for more info. "
+msgstr ""
+
+#: swift/common/utils.py:5906
+msgid ""
+"WARNING: Unable to modify I/O scheduling class and priority of process. "
+"Keeping unchanged! Check logs for more info."
+msgstr ""
+
+#: swift/common/wsgi.py:206
+#, python-format
+msgid ""
+"Could not bind to %(addr)s:%(port)s after trying for %(timeout)s seconds"
+msgstr ""
+
+#: swift/common/wsgi.py:216
+msgid ""
+"WARNING: SSL should only be enabled for testing purposes. Use external SSL "
+"termination for a production deployment."
+msgstr ""
+"Предупреждение: SSL должен быть включен только в целях тестирования. "
+"Используйте внешнее завершение SSL для развертывания в рабочем режиме."
+
+#: swift/common/middleware/catch_errors.py:77
+msgid "Error: An error occurred"
+msgstr "Ошибка: произошла ошибка"
+
+#: swift/common/middleware/cname_lookup.py:169
+#, python-format
+msgid "Mapped %(given_domain)s to %(found_domain)s"
+msgstr "Преобразовано %(given_domain)s в %(found_domain)s"
+
+#: swift/common/middleware/cname_lookup.py:182
+#, python-format
+msgid "Following CNAME chain for  %(given_domain)s to %(found_domain)s"
+msgstr "Следующая цепочка CNAME для %(given_domain)s в %(found_domain)s"
+
+#: swift/common/middleware/ratelimit.py:263
+#, python-format
+msgid "Returning 497 because of blacklisting: %s"
+msgstr "Возвращено 497 из-за черного списка: %s"
+
+#: swift/common/middleware/ratelimit.py:278
+#, python-format
+msgid ""
+"Ratelimit sleep log: %(sleep)s for %(account)s/%(container)s/%(object)s"
+msgstr ""
+"Протокол тайм-аута при ограничении скорости %(sleep)s для %(account)s/"
+"%(container)s/%(object)s"
+
+#: swift/common/middleware/ratelimit.py:290
+#, python-format
+msgid "Returning 498 for %(meth)s to %(path)s. Ratelimit (Max Sleep) %(e)s"
+msgstr ""
+
+#: swift/common/middleware/ratelimit.py:311
+msgid "Warning: Cannot ratelimit without a memcached client"
+msgstr ""
+"Предупреждение: не удается ограничить скорость без клиента с кэшированием "
+"памяти"
+
+#: swift/common/middleware/recon.py:92
+msgid "Error reading recon cache file"
+msgstr "Ошибка чтения файла кэша recon"
+
+#: swift/common/middleware/recon.py:94
+msgid "Error parsing recon cache file"
+msgstr "Ошибка анализа файла кэша recon"
+
+#: swift/common/middleware/recon.py:96
+msgid "Error retrieving recon data"
+msgstr "Ошибка при получении данных recon"
+
+#: swift/common/middleware/recon.py:177
+msgid "Error listing devices"
+msgstr "Ошибка при выводе списка устройств"
+
+#: swift/common/middleware/recon.py:273
+msgid "Error reading ringfile"
+msgstr "Ошибка при чтении ringfile"
+
+#: swift/common/middleware/recon.py:283
+msgid "Error reading swift.conf"
+msgstr "Ошибка чтения swift.conf"
+
+#: swift/common/middleware/xprofile.py:230
+#, python-format
+msgid "Error on render profiling results: %s"
+msgstr "Ошибка при выводе результатов профилирования: %s"
+
+#: swift/common/middleware/crypto/crypto_utils.py:163
+msgid "ERROR get_keys() missing callback"
+msgstr ""
+
+#: swift/common/middleware/crypto/crypto_utils.py:184
+#, python-format
+msgid "Missing key for %r"
+msgstr ""
+
+#: swift/common/middleware/crypto/crypto_utils.py:186
+msgid "Did not get a keys dict"
+msgstr ""
+
+#: swift/common/middleware/crypto/crypto_utils.py:189
+#, python-format
+msgid "Bad key for %(name)r: %(err)s"
+msgstr ""
+
+#: swift/common/middleware/crypto/decrypter.py:80
+#, python-format
+msgid "Error decrypting %(resp_type)s: Missing %(key)s"
+msgstr ""
+
+#: swift/common/middleware/crypto/decrypter.py:83
+#, python-format
+msgid "Error decrypting %(resp_type)s: %(reason)s"
+msgstr ""
+
+#: swift/common/middleware/crypto/decrypter.py:181
+#, python-format
+msgid "Error decrypting header %(header)s: %(error)s"
+msgstr ""
+
+#: swift/common/middleware/crypto/decrypter.py:300
+#, python-format
+msgid "Error decrypting object: %s"
+msgstr ""
+
+#: swift/common/middleware/x_profile/exceptions.py:25
+#, python-format
+msgid "Profiling Error: %s"
+msgstr "Ошибка профилирования: %s"
+
+#: swift/common/middleware/x_profile/html_viewer.py:310
+#, python-format
+msgid "method %s is not allowed."
+msgstr "Метод %s не разрешен."
+
+#: swift/common/middleware/x_profile/html_viewer.py:321
+#, python-format
+msgid "Can not load profile data from %s."
+msgstr "Не удается загрузить данные профайла из %s."
+
+#: swift/common/middleware/x_profile/html_viewer.py:372
+#: swift/common/middleware/x_profile/html_viewer.py:402
+msgid "no log file found"
+msgstr "Не найден файл протокола"
+
+#: swift/common/middleware/x_profile/html_viewer.py:395
+#, python-format
+msgid "Data download error: %s"
+msgstr "Ошибка загрузки данных: %s"
+
+#: swift/common/middleware/x_profile/html_viewer.py:400
+msgid "python-matplotlib not installed."
+msgstr "Библиотека python-matplotlib не установлена."
+
+#: swift/common/middleware/x_profile/html_viewer.py:436
+#, python-format
+msgid "plotting results failed due to %s"
+msgstr "Ошибка в результатах plotting из-за %s"
+
+#: swift/common/middleware/x_profile/html_viewer.py:447
+msgid "The file type are forbidden to access!"
+msgstr "Запрещен доступ к этому типу файла!"
+
+#: swift/common/middleware/x_profile/html_viewer.py:468
+#, python-format
+msgid "Can not access the file %s."
+msgstr "Отсутствует доступ к файлу %s."
+
+#: swift/common/middleware/x_profile/profile_model.py:128
+msgid "odfpy not installed."
+msgstr "Библиотека odfpy не установлена."
+
+#: swift/container/server.py:241
+#, python-format
+msgid ""
+"ERROR Account update failed: different  numbers of hosts and devices in "
+"request: \"%(hosts)s\" vs \"%(devices)s\""
+msgstr ""
+
+#: swift/container/server.py:287
+#, python-format
+msgid ""
+"ERROR Account update failed with %(ip)s:%(port)s/%(device)s (will retry "
+"later): Response %(status)s %(reason)s"
+msgstr ""
+"Ошибка: обновление учетной записи не выполнено для %(ip)s:%(port)s/"
+"%(device)s (операция будет повторена позднее): Ответ: %(status)s %(reason)s"
+
+#: swift/container/server.py:296
+#, python-format
+msgid ""
+"ERROR account update failed with %(ip)s:%(port)s/%(device)s (will retry "
+"later)"
+msgstr ""
+"Ошибка: обновление учетной записи не выполнено для %(ip)s:%(port)s/"
+"%(device)s (операция будет повторена позднее)"
+
+#: swift/container/sync.py:236
+msgid ""
+"Configuration option internal_client_conf_path not defined. Using default "
+"configuration, See internal-client.conf-sample for options"
+msgstr ""
+"Опция internal_client_conf_path конфигурации не определена. Используется  "
+"конфигурация по умолчанию. Используйте intenal-client.conf-sample для "
+"информации об опциях"
+
+#: swift/container/sync.py:251
+#, python-format
+msgid "Unable to load internal client from config: %(conf)r (%(error)s)"
+msgstr ""
+
+#: swift/container/sync.py:275
+msgid "Begin container sync \"once\" mode"
+msgstr "Начать синхронизацию контейнера в \"однократном\" режиме"
+
+#: swift/container/sync.py:284
+#, python-format
+msgid "Container sync \"once\" mode completed: %.02fs"
+msgstr "Синхронизация контейнера в \"однократном\" режиме завершена: %.02fs"
+
+#: swift/container/sync.py:292
+#, python-format
+msgid ""
+"Since %(time)s: %(sync)s synced [%(delete)s deletes, %(put)s puts], %(skip)s "
+"skipped, %(fail)s failed"
+msgstr ""
+"За %(time)s операций синхронизировано %(sync)s [удалено: %(delete)s, "
+"добавлено: %(put)s], пропущено: %(skip)s, ошибки: %(fail)s"
+
+#: swift/container/sync.py:309
+#, python-format
+msgid ""
+"Container sync report: %(container)s, time window start: %(start)s, time "
+"window end: %(end)s, puts: %(puts)s, posts: %(posts)s, deletes: %(deletes)s, "
+"bytes: %(bytes)s, sync_point1: %(point1)s, sync_point2: %(point2)s, "
+"total_rows: %(total)s"
+msgstr ""
+
+#: swift/container/sync.py:389
+#, python-format
+msgid "ERROR %(db_file)s: %(validate_sync_to_err)s"
+msgstr "Ошибка %(db_file)s: %(validate_sync_to_err)s"
+
+#: swift/container/sync.py:458
+#, python-format
+msgid "ERROR Syncing %s"
+msgstr "Ошибка синхронизации %s"
+
+#: swift/container/sync.py:650
+#, python-format
+msgid "Unauth %(sync_from)r => %(sync_to)r"
+msgstr "Синхронизация %(sync_from)r => %(sync_to)r без прав доступа"
+
+#: swift/container/sync.py:656
+#, python-format
+msgid ""
+"Not found %(sync_from)r => %(sync_to)r                       - object "
+"%(obj_name)r"
+msgstr ""
+"Не найдено: %(sync_from)r => %(sync_to)r                       - объект "
+"%(obj_name)r"
+
+#: swift/container/sync.py:663 swift/container/sync.py:670
+#, python-format
+msgid "ERROR Syncing %(db_file)s %(row)s"
+msgstr "Ошибка синхронизации %(db_file)s %(row)s"
+
+#: swift/container/updater.py:93
+#, python-format
+msgid "ERROR:  Failed to get paths to drive partitions: %s"
+msgstr "Ошибка:  не удалось получить пути к разделам накопителей: %s"
+
+#: swift/container/updater.py:127
+#, python-format
+msgid "ERROR with loading suppressions from %s: "
+msgstr "Ошибка при загрузки скрытых объектов из %s: "
+
+#: swift/container/updater.py:137
+msgid "Begin container update sweep"
+msgstr "Начать сплошную проверку обновлений контейнера"
+
+#: swift/container/updater.py:171
+#, python-format
+msgid ""
+"Container update sweep of %(path)s completed: %(elapsed).02fs, %(success)s "
+"successes, %(fail)s failures, %(no_change)s with no changes"
+msgstr ""
+"Сплошная проверка обновлений контейнера в %(path)s завершена: %(elapsed)."
+"02fs, успешно: %(success)s, сбоев: %(fail)s, без изменений: %(no_change)s"
+
+#: swift/container/updater.py:185
+#, python-format
+msgid "Container update sweep completed: %.02fs"
+msgstr "Сплошная проверка обновлений контейнера завершена: %.02fs"
+
+#: swift/container/updater.py:197
+msgid "Begin container update single threaded sweep"
+msgstr "Начать однонитевую сплошную проверку обновлений контейнера"
+
+#: swift/container/updater.py:205
+#, python-format
+msgid ""
+"Container update single threaded sweep completed: %(elapsed).02fs, "
+"%(success)s successes, %(fail)s failures, %(no_change)s with no changes"
+msgstr ""
+"Сплошная однонитевая проверка обновлений контейнера завершена: %(elapsed)."
+"02fs, успешно: %(success)s, сбоев: %(fail)s, без изменений: %(no_change)s"
+
+#: swift/container/updater.py:281
+#, python-format
+msgid "Update report sent for %(container)s %(dbfile)s"
+msgstr "Отчет об обновлении отправлен для %(container)s %(dbfile)s"
+
+#: swift/container/updater.py:290
+#, python-format
+msgid "Update report failed for %(container)s %(dbfile)s"
+msgstr "Отчет об обновлении для %(container)s %(dbfile)s не выполнен"
+
+#: swift/container/updater.py:332
+#, python-format
+msgid ""
+"ERROR account update failed with %(ip)s:%(port)s/%(device)s (will retry "
+"later): "
+msgstr ""
+"Ошибка: обновление учетной записи не выполнено для %(ip)s:%(port)s/"
+"%(device)s (операция будет повторена позднее): "
+
+#: swift/container/updater.py:344
+#, python-format
+msgid "Exception with %(ip)s:%(port)s/%(device)s"
+msgstr "Исключительная ситуация в %(ip)s:%(port)s/%(device)s"
+
+#: swift/obj/auditor.py:120
+#, python-format
+msgid " - parallel, %s"
+msgstr " - параллельно, %s"
+
+#: swift/obj/auditor.py:122
+#, python-format
+msgid " - %s"
+msgstr " - %s"
+
+#: swift/obj/auditor.py:123
+#, python-format
+msgid "Begin object audit \"%(mode)s\" mode (%(audi_type)s%(description)s)"
+msgstr ""
+
+#: swift/obj/auditor.py:155
+#, python-format
+msgid ""
+"Object audit (%(type)s). Since %(start_time)s: Locally: %(passes)d passed, "
+"%(quars)d quarantined, %(errors)d errors, files/sec: %(frate).2f, bytes/sec: "
+"%(brate).2f, Total time: %(total).2f, Auditing time: %(audit).2f, Rate: "
+"%(audit_rate).2f"
+msgstr ""
+"Проверка объекта (%(type)s). После %(start_time)s: локально: успешно - "
+"%(passes)d, в карантине - %(quars)d, файлов с ошибками %(errors)d в секунду: "
+"%(frate).2f , байт/с: %(brate).2f, общее время: %(total).2f, время контроля: "
+"%(audit).2f, скорость: %(audit_rate).2f"
+
+#: swift/obj/auditor.py:189
+#, python-format
+msgid ""
+"Object audit (%(type)s) \"%(mode)s\" mode completed: %(elapsed).02fs. Total "
+"quarantined: %(quars)d, Total errors: %(errors)d, Total files/sec: %(frate)."
+"2f, Total bytes/sec: %(brate).2f, Auditing time: %(audit).2f, Rate: "
+"%(audit_rate).2f"
+msgstr ""
+"Контроль объекта (%(type)s) в режиме \"%(mode)s\" завершен: %(elapsed).02fs. "
+"Всего в карантине: %(quars)d, всего ошибок: %(errors)d, всего файлов/с: "
+"%(frate).2f, всего байт/с: %(brate).2f, время контроля: %(audit).2f, "
+"скорость: %(audit_rate).2f"
+
+#: swift/obj/auditor.py:206
+#, python-format
+msgid "Object audit stats: %s"
+msgstr "Состояние контроля объекта: %s"
+
+#: swift/obj/auditor.py:240
+#, python-format
+msgid "ERROR Trying to audit %s"
+msgstr "Ошибка при попытке контроля %s"
+
+#: swift/obj/auditor.py:287
+#, python-format
+msgid "ERROR Object %(obj)s failed audit and was quarantined: %(err)s"
+msgstr ""
+"Ошибка: контроль объекта %(obj)s не выполнен, объект помещен в карантин: "
+"%(err)s"
+
+#: swift/obj/auditor.py:378
+#, python-format
+msgid "ERROR: Unable to run auditing: %s"
+msgstr "Ошибка: не удалось запустить процесс контроля: %s"
+
+#: swift/obj/auditor.py:457 swift/obj/auditor.py:478
+#, python-format
+msgid "ERROR auditing: %s"
+msgstr "Ошибка контроля: %s"
+
+#: swift/obj/diskfile.py:614
+#, python-format
+msgid "Cannot read %(auditor_status)s (%(err)s)"
+msgstr ""
+
+#: swift/obj/diskfile.py:620
+#, python-format
+msgid "Loading JSON from %(auditor_status)s failed (%(err)s)"
+msgstr ""
+
+#: swift/obj/diskfile.py:648
+#, python-format
+msgid "Cannot write %(auditor_status)s (%(err)s)"
+msgstr ""
+
+#: swift/obj/diskfile.py:1190
+#, python-format
+msgid ""
+"Quarantined %(hsh_path)s to %(quar_path)s because it is not a directory"
+msgstr ""
+"%(hsh_path)s помещен в карантин в %(quar_path)s, так как не является "
+"каталогом"
+
+#: swift/obj/diskfile.py:1325
+msgid "Error hashing suffix"
+msgstr "Ошибка хэширования суффикса"
+
+#: swift/obj/diskfile.py:1526
+#, python-format
+msgid ""
+"Quarantined %(object_path)s to %(quar_path)s because it is not a directory"
+msgstr ""
+"%(object_path)s помещен в карантин в %(quar_path)s, так как не является "
+"каталогом"
+
+#: swift/obj/diskfile.py:1900 swift/obj/diskfile.py:1975
+#: swift/obj/diskfile.py:1987
+#, python-format
+msgid "Problem cleaning up %s"
+msgstr "Неполадка при очистке %s"
+
+#: swift/obj/diskfile.py:2299
+#, python-format
+msgid "ERROR DiskFile %(data_file)s close failure: %(exc)s : %(stack)s"
+msgstr "Ошибка: ошибка закрытия DiskFile %(data_file)s: %(exc)s : %(stack)s"
+
+#: swift/obj/diskfile.py:2650
+#, python-format
+msgid ""
+"Client path %(client)s does not match path stored in object metadata "
+"%(meta)s"
+msgstr ""
+"Путь клиента %(client)s не соответствует пути в метаданных объекта %(meta)s"
+
+#: swift/obj/diskfile.py:3073
+#, python-format
+msgid ""
+"Unexpected fragment data type (not quarantined) %(datadir)s: %(type)s at "
+"offset 0x%(offset)x"
+msgstr ""
+
+#: swift/obj/diskfile.py:3097
+#, python-format
+msgid "Problem checking EC fragment %(datadir)s: %(err)s"
+msgstr ""
+
+#: swift/obj/diskfile.py:3165
+#, python-format
+msgid "No space left on device for %(file)s (%(err)s)"
+msgstr ""
+
+#: swift/obj/diskfile.py:3174
+#, python-format
+msgid "Problem cleaning up %(datadir)s (%(err)s)"
+msgstr ""
+
+#: swift/obj/diskfile.py:3182
+#, python-format
+msgid "Problem making data file durable %(file)s (%(err)s)"
+msgstr ""
+
+#: swift/obj/expirer.py:154
+#, python-format
+msgid "Pass completed in %(time)ds; %(objects)d objects expired"
+msgstr ""
+
+#: swift/obj/expirer.py:162
+#, python-format
+msgid "Pass so far %(time)ds; %(objects)d objects expired"
+msgstr ""
+
+#: swift/obj/expirer.py:334
+#, python-format
+msgid ""
+"Pass beginning for task account %(account)s; %(container_count)s possible "
+"containers; %(obj_count)s possible objects"
+msgstr ""
+
+#: swift/obj/expirer.py:371
+#, python-format
+msgid "Exception while deleting container %(account)s %(container)s %(err)s"
+msgstr ""
+
+#: swift/obj/expirer.py:378 swift/obj/expirer.py:395
+msgid "Unhandled exception"
+msgstr "Необработанная исключительная ситуация"
+
+#: swift/obj/reconstructor.py:404
+#, python-format
+msgid "Trying to GET %(full_path)s"
+msgstr "Попытка GET-запроса %(full_path)s"
+
+#: swift/obj/reconstructor.py:423 swift/obj/reconstructor.py:930
+#, python-format
+msgid "Invalid response %(resp)s from %(full_path)s"
+msgstr "Недопустимый ответ %(resp)s  от  %(full_path)s"
+
+#: swift/obj/reconstructor.py:737
+#, python-format
+msgid "Error trying to rebuild %(path)s policy#%(policy)d frag#%(frag_index)s"
+msgstr ""
+"Ошибка при попытке перекомпоновки стратегии  %(path)s: номер#%(policy)d "
+"фрагмент#%(frag_index)s"
+
+#: swift/obj/reconstructor.py:760
+#, python-format
+msgid ""
+"%(reconstructed)d/%(total)d (%(percentage).2f%%) partitions reconstructed in "
+"%(time).2fs (%(rate).2f/sec, %(remaining)s remaining)"
+msgstr ""
+
+#: swift/obj/reconstructor.py:775 swift/obj/replicator.py:777
+#, python-format
+msgid ""
+"%(checked)d suffixes checked - %(hashed).2f%% hashed, %(synced).2f%% synced"
+msgstr ""
+"Проверено суффиксов: %(checked)d - хэшировано: %(hashed).2f%%, "
+"синхронизировано: %(synced).2f%%"
+
+#: swift/obj/reconstructor.py:782 swift/obj/replicator.py:786
+#, python-format
+msgid "Partition times: max %(max).4fs, min %(min).4fs, med %(med).4fs"
+msgstr ""
+"Время раздела: максимум: %(max).4fs, минимум: %(min).4fs, среднее: %(med)."
+"4fs"
+
+#: swift/obj/reconstructor.py:790
+#, python-format
+msgid "Nothing reconstructed for %s seconds."
+msgstr "Ничего не реконструировано за %s с."
+
+#: swift/obj/reconstructor.py:825
+msgid "Lockup detected.. killing live coros."
+msgstr "Обнаружена блокировка.. принудительное завершение работающих модулей."
+
+#: swift/obj/reconstructor.py:922
+#, python-format
+msgid "%s responded as unmounted"
+msgstr "%s ответил как размонтированный"
+
+#: swift/obj/reconstructor.py:1288 swift/obj/replicator.py:921
+#, python-format
+msgid "next_part_power set in policy '%s'. Skipping"
+msgstr ""
+
+#: swift/obj/reconstructor.py:1300
+#, python-format
+msgid "%s is not mounted"
+msgstr "%s не смонтирован"
+
+#: swift/obj/reconstructor.py:1394 swift/obj/replicator.py:613
+#, python-format
+msgid "Removing partition: %s"
+msgstr "Удаление раздела: %s"
+
+#: swift/obj/reconstructor.py:1410
+msgid "Ring change detected. Aborting current reconstruction pass."
+msgstr ""
+"Обнаружено изменение кольца. Принудительное завершение текущего прохода "
+"реконструкции."
+
+#: swift/obj/reconstructor.py:1431
+msgid "Exception in top-level reconstruction loop"
+msgstr ""
+
+#: swift/obj/reconstructor.py:1440
+msgid ""
+"Handoffs only mode still has handoffs remaining. Next pass will continue to "
+"revert handoffs."
+msgstr ""
+
+#: swift/obj/reconstructor.py:1444
+msgid ""
+"Handoffs only mode found no handoffs remaining. You should disable "
+"handoffs_only once all nodes are reporting no handoffs remaining."
+msgstr ""
+
+#: swift/obj/reconstructor.py:1484
+msgid "Running object reconstructor in script mode."
+msgstr "Запуск утилиты реконструкции объектов в режиме скрипта."
+
+#: swift/obj/reconstructor.py:1490
+#, python-format
+msgid "Object reconstruction complete (once). (%.02f minutes)"
+msgstr "Реконструкция объекта выполнена (однократно). (%.02f мин.)"
+
+#: swift/obj/reconstructor.py:1503
+msgid "Starting object reconstructor in daemon mode."
+msgstr "Запуск утилиты реконструкции объектов в режиме демона."
+
+#: swift/obj/reconstructor.py:1507
+msgid "Starting object reconstruction pass."
+msgstr "Запуск прохода реконструкции объектов."
+
+#: swift/obj/reconstructor.py:1514
+#, python-format
+msgid "Object reconstruction complete. (%.02f minutes)"
+msgstr "Реконструкция объекта выполнена. (%.02f мин.)"
+
+#: swift/obj/replicator.py:389
+#, python-format
+msgid "Killing long-running rsync after %ds: %s"
+msgstr ""
+
+#: swift/obj/replicator.py:573
+#, python-format
+msgid "Removing %s objects"
+msgstr "Удаление объектов %s"
+
+#: swift/obj/replicator.py:600
+msgid "Error syncing handoff partition"
+msgstr "Ошибка при синхронизации раздела передачи управления"
+
+#: swift/obj/replicator.py:688
+#, python-format
+msgid "%(replication_ip)s/%(device)s responded as unmounted"
+msgstr ""
+
+#: swift/obj/replicator.py:695
+#, python-format
+msgid "Invalid response %(resp)s from %(ip)s"
+msgstr "Недопустимый ответ %(resp)s от %(ip)s"
+
+#: swift/obj/replicator.py:735
+#, python-format
+msgid "Error syncing with node: %s"
+msgstr "Ошибка синхронизации с узлом %s"
+
+#: swift/obj/replicator.py:744
+msgid "Error syncing partition"
+msgstr "Ошибка синхронизации раздела"
+
+#: swift/obj/replicator.py:762
+#, python-format
+msgid ""
+"%(replicated)d/%(total)d (%(percentage).2f%%) partitions replicated in "
+"%(time).2fs (%(rate).2f/sec, %(remaining)s remaining)"
+msgstr ""
+"Реплицировано разделов: %(replicated)d/%(total)d (%(percentage).2f%%) за "
+"время %(time).2f с (%(rate).2f/с, осталось: %(remaining)s)"
+
+#: swift/obj/replicator.py:794
+#, python-format
+msgid "Nothing replicated for %s seconds."
+msgstr "Ничего не реплицировано за %s с."
+
+#: swift/obj/replicator.py:981
+msgid ""
+"Handoffs first mode still has handoffs remaining.  Aborting current "
+"replication pass."
+msgstr ""
+"В режиме передачи управления не все операции завершены. Принудительное "
+"завершение текущего прохода репликации."
+
+#: swift/obj/replicator.py:987
+msgid "Ring change detected. Aborting current replication pass."
+msgstr ""
+"Обнаружено кольцевое изменение. Принудительное завершение текущего прохода "
+"репликации."
+
+#: swift/obj/replicator.py:1018
+#, python-format
+msgid "Exception in top-level replication loop: %s"
+msgstr ""
+
+#: swift/obj/replicator.py:1085
+msgid "Running object replicator in script mode."
+msgstr "Запуск утилиты репликации объектов в режиме сценариев."
+
+#: swift/obj/replicator.py:1101
+#, python-format
+msgid "Object replication complete (once). (%.02f minutes)"
+msgstr "Репликация объекта выполнена (однократно). (%.02f мин.)"
+
+#: swift/obj/replicator.py:1128
+msgid "Starting object replicator in daemon mode."
+msgstr "Запуск утилиты репликации объектов в режиме демона."
+
+#: swift/obj/replicator.py:1133
+msgid "Starting object replication pass."
+msgstr "Запуск прохода репликации объектов."
+
+#: swift/obj/replicator.py:1140
+#, python-format
+msgid "Object replication complete. (%.02f minutes)"
+msgstr "Репликация объекта выполнена. (%.02f мин.)"
+
+#: swift/obj/server.py:333
+#, python-format
+msgid ""
+"ERROR Container update failed (saving for async update later): %(status)d "
+"response from %(ip)s:%(port)s/%(dev)s"
+msgstr ""
+"Ошибка. Обновление контейнера не выполнено (сохранение асинхронных "
+"обновлений будет выполнено позднее): %(status)d ответ от %(ip)s:%(port)s/"
+"%(dev)s"
+
+#: swift/obj/server.py:340
+#, python-format
+msgid ""
+"ERROR container update failed with %(ip)s:%(port)s/%(dev)s (saving for async "
+"update later)"
+msgstr ""
+"Ошибка. Обновление контейнера не выполнена с %(ip)s:%(port)s/%(dev)s "
+"(сохранение асинхронного обновления будет выполнено позднее)"
+
+#: swift/obj/server.py:383
+#, python-format
+msgid ""
+"ERROR Container update failed: different numbers of hosts and devices in "
+"request: \"%(hosts)s\" vs \"%(devices)s\""
+msgstr ""
+
+#: swift/obj/updater.py:128
+#, python-format
+msgid "ERROR: Unable to access %(path)s: %(error)s"
+msgstr "Ошибка: не удалось получить доступ к %(path)s: %(error)s"
+
+#: swift/obj/updater.py:143
+msgid "Begin object update sweep"
+msgstr "Начать сплошную проверку обновлений объекта"
+
+#: swift/obj/updater.py:179
+#, python-format
+msgid "Object update sweep completed: %.02fs"
+msgstr "Сплошная проверка обновлений объекта завершена: %.02fs"
+
+#: swift/obj/updater.py:188
+msgid "Begin object update single threaded sweep"
+msgstr "Начать однонитевую сплошную проверку обновлений объекта"
+
+#: swift/obj/updater.py:231
+#, python-format
+msgid "Directory %(directory)r does not map to a valid policy (%(error)s)"
+msgstr ""
+
+#: swift/obj/updater.py:252
+#, python-format
+msgid "ERROR async pending file with unexpected name %s"
+msgstr ""
+"Ошибка выполнения асинхронной передачи ожидающего файла с непредвиденным "
+"именем %s"
+
+#: swift/obj/updater.py:354
+#, python-format
+msgid "ERROR Pickle problem, quarantining %s"
+msgstr "Ошибка Pickle, %s помещается в карантин"
+
+#: swift/obj/updater.py:481
+#, python-format
+msgid ""
+"Error code %(status)d is returned from remote server %(ip)s: %(port)s / "
+"%(device)s"
+msgstr ""
+
+#: swift/obj/updater.py:487
+#, python-format
+msgid "ERROR with remote server %(ip)s:%(port)s/%(device)s"
+msgstr "Ошибка с удаленным сервером %(ip)s:%(port)s/%(device)s"
+
+#: swift/proxy/server.py:407
+#, python-format
+msgid ""
+"sorting_method is set to '%(method)s', not 'affinity'; %(label)s "
+"read_affinity setting will have no effect."
+msgstr ""
+
+#: swift/proxy/server.py:600
+msgid "ERROR Unhandled exception in request"
+msgstr "Ошибка. Необрабатываемая исключительная ситуация в запросе"
+
+#: swift/proxy/server.py:659
+#, python-format
+msgid "Node error limited %(ip)s:%(port)s (%(device)s)"
+msgstr "Ограниченная ошибка узла %(ip)s:%(port)s (%(device)s)"
+
+#: swift/proxy/server.py:676 swift/proxy/server.py:696
+#, python-format
+msgid "%(msg)s %(ip)s:%(port)s/%(device)s"
+msgstr "%(msg)s %(ip)s:%(port)s/%(device)s"
+
+#: swift/proxy/server.py:722
+#, python-format
+msgid "ERROR with %(type)s server %(ip)s:%(port)s/%(device)s re: %(info)s"
+msgstr ""
+"Ошибка с сервером %(type)s %(ip)s:%(port)s/%(device)s, возврат: %(info)s"
+
+#: swift/proxy/server.py:748
+#, python-format
+msgid ""
+"Adding required filter %(filter_name)s to pipeline at position %(insert_at)d"
+msgstr ""
+
+#: swift/proxy/server.py:756
+#, python-format
+msgid "Pipeline was modified. New pipeline is \"%s\"."
+msgstr ""
+
+#: swift/proxy/server.py:759
+#, python-format
+msgid "Pipeline is \"%s\""
+msgstr ""
+
+#: swift/proxy/controllers/account.py:73
+msgid "Account"
+msgstr "Учетная запись"
+
+#: swift/proxy/controllers/base.py:1156 swift/proxy/controllers/base.py:1200
+msgid "Trying to read object during GET (retrying)"
+msgstr ""
+
+#: swift/proxy/controllers/base.py:1311 swift/proxy/controllers/obj.py:424
+#: swift/proxy/controllers/obj.py:637 swift/proxy/controllers/obj.py:868
+#: swift/proxy/controllers/obj.py:1693 swift/proxy/controllers/obj.py:2695
+#: swift/proxy/controllers/obj.py:2936
+msgid "Object"
+msgstr "Объект"
+
+#: swift/proxy/controllers/base.py:1312 swift/proxy/controllers/obj.py:2696
+msgid "Trying to read during GET"
+msgstr "Попытка чтения во время операции GET"
+
+#: swift/proxy/controllers/base.py:1316 swift/proxy/controllers/obj.py:2700
+#, python-format
+msgid "Client did not read from proxy within %ss"
+msgstr "Клиент не прочитал данные из proxy в %ss"
+
+#: swift/proxy/controllers/base.py:1334 swift/proxy/controllers/obj.py:2718
+msgid "Trying to send to client"
+msgstr "Попытка отправки клиенту"
+
+#: swift/proxy/controllers/base.py:1378 swift/proxy/controllers/base.py:1903
+#, python-format
+msgid "Trying to %(method)s %(path)s"
+msgstr "Попытка выполнения метода %(method)s %(path)s"
+
+#: swift/proxy/controllers/base.py:1449 swift/proxy/controllers/base.py:1890
+#: swift/proxy/controllers/obj.py:483 swift/proxy/controllers/obj.py:629
+#: swift/proxy/controllers/obj.py:2788
+msgid "ERROR Insufficient Storage"
+msgstr "Ошибка - недостаточно памяти"
+
+#: swift/proxy/controllers/base.py:1452
+#, python-format
+msgid "ERROR %(status)d %(body)s From %(type)s Server"
+msgstr "Ошибка %(status)d %(body)s из сервера %(type)s"
+
+#: swift/proxy/controllers/base.py:1893
+#, python-format
+msgid "ERROR %(status)d Trying to %(method)s %(path)s From %(type)s Server"
+msgstr ""
+
+#: swift/proxy/controllers/base.py:2030
+#, python-format
+msgid "%(type)s returning 503 for %(statuses)s"
+msgstr "%(type)s возвратил 503 для %(statuses)s"
+
+#: swift/proxy/controllers/base.py:2104
+#, python-format
+msgid "autocreate account %r"
+msgstr ""
+
+#: swift/proxy/controllers/base.py:2108
+#, python-format
+msgid "Could not autocreate account %r"
+msgstr ""
+
+#: swift/proxy/controllers/container.py:106
+msgid "Container"
+msgstr "контейнер"
+
+#: swift/proxy/controllers/obj.py:425
+#, python-format
+msgid "Trying to get %(status_type)s status of PUT to %(path)s"
+msgstr ""
+
+#: swift/proxy/controllers/obj.py:488
+#, python-format
+msgid "ERROR %(status)d %(body)s From Object Server re: %(path)s"
+msgstr "Ошибка %(status)d %(body)s, ответ от сервера объекта: %(path)s"
+
+#: swift/proxy/controllers/obj.py:568
+#, python-format
+msgid "Object PUT returning 412, %(statuses)r"
+msgstr "Функция PUT объекта возвратила 412, %(statuses)r"
+
+#: swift/proxy/controllers/obj.py:581
+#, python-format
+msgid "Object PUT returning 202 for 409: %(req_timestamp)s <= %(timestamps)r"
+msgstr ""
+"Функция PUT объекта возвратила 202 для 409: %(req_timestamp)s <= "
+"%(timestamps)r"
+
+#: swift/proxy/controllers/obj.py:632
+#, python-format
+msgid "ERROR %(status)d Expect: 100-continue From Object Server"
+msgstr ""
+"Ошибка %(status)d. Ожидаемое значение от сервера объекта: 100-continue"
+
+#: swift/proxy/controllers/obj.py:638
+#, python-format
+msgid "Expect: 100-continue on %s"
+msgstr "Ожидаемое значение: 100-continue в %s"
+
+#: swift/proxy/controllers/obj.py:666
+#, python-format
+msgid "Object PUT returning 503, %(conns)s/%(nodes)s required connections"
+msgstr ""
+
+#: swift/proxy/controllers/obj.py:912 swift/proxy/controllers/obj.py:3258
+#, python-format
+msgid ""
+"Object PUT exceptions during send, %(conns)s/%(nodes)s required connections"
+msgstr ""
+
+#: swift/proxy/controllers/obj.py:934 swift/proxy/controllers/obj.py:3284
+msgid "Client disconnected without sending enough data"
+msgstr "Клиент отключен без отправки данных"
+
+#: swift/proxy/controllers/obj.py:945
+#, python-format
+msgid ""
+"Object PUT exceptions after last send, %(conns)s/%(nodes)s required "
+"connections"
+msgstr ""
+
+#: swift/proxy/controllers/obj.py:949 swift/proxy/controllers/obj.py:3354
+#, python-format
+msgid "ERROR Client read timeout (%ss)"
+msgstr "Ошибка: тайм-аут чтения клиента (%ss)"
+
+#: swift/proxy/controllers/obj.py:956 swift/proxy/controllers/obj.py:3359
+msgid "Client disconnected without sending last chunk"
+msgstr "Клиент отключился, не отправив последний фрагмент данных"
+
+#: swift/proxy/controllers/obj.py:961 swift/proxy/controllers/obj.py:3366
+msgid "ERROR Exception causing client disconnect"
+msgstr "Ошибка. Исключительная ситуация при отключении клиента"
+
+#: swift/proxy/controllers/obj.py:965 swift/proxy/controllers/obj.py:3370
+#, python-format
+msgid "ERROR Exception transferring data to object servers %s"
+msgstr ""
+"ОШИБКА. Исключительная ситуация при передаче данных на серверы объектов %s"
+
+#: swift/proxy/controllers/obj.py:1009
+#, python-format
+msgid "Object servers returned %s mismatched etags"
+msgstr "Серверы объектов вернули несоответствующие etag: %s"
+
+#: swift/proxy/controllers/obj.py:1013 swift/proxy/controllers/obj.py:3333
+#: swift/proxy/controllers/obj.py:3490
+msgid "Object PUT"
+msgstr "Функция PUT объекта"
+
+#: swift/proxy/controllers/obj.py:1694
+#, python-format
+msgid "Trying to write to %s"
+msgstr "Попытка записи в %s"
+
+#: swift/proxy/controllers/obj.py:2791
+#, python-format
+msgid "ERROR %(status)d %(body)s From Object Server"
+msgstr ""
+
+#: swift/proxy/controllers/obj.py:2986
+#, python-format
+msgid "Problem with fragment response: %s"
+msgstr ""
+
+#: swift/proxy/controllers/obj.py:3326
+#, python-format
+msgid "Not enough object servers ack'ed (got %d)"
+msgstr "Недостаточное число подтверждений с серверов объектов (получено %d)"
+

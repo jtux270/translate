@@ -1,0 +1,811 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Networking OpenDaylight Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-17 09:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext stable/pike>:65
+msgid "11.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "11.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:40
+msgid "12.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "12.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:40
+msgid "13.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "13.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "14.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "15.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "16.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:5
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:150
+msgid "3.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:20
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:5
+msgid "4.0.0-32"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:103
+msgid ""
+"A new driver to integrate OpenStack TrunkPort API with OpenDayLight backend. "
+"It supports CRUD operations for TrunkPorts. The version v2 driver will first "
+"log the call in journal table before execution. Version v1 driver doesn't "
+"log any calls."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:86
+msgid ""
+"A new driver to integrate OpenStack neutron QoS API with OpenDayLight "
+"backend. It supports CRUD operations for QoS policy and its associated rules."
+" The QoS driver in tree is of version v1, which does not log the operation "
+"request in journal table."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:79
+msgid ""
+"A new version of BGPVPN driver that integrate OpenStack Neutron BGPVPN API "
+"with OpenDaylight backend. It supports CRUD operations for BGPVPN and "
+"enables networks and routers to be associated to such BGPVPNs. This driver "
+"uses journaling mechanism, unlike v1 driver, which will first log the "
+"operation in journal table before execution."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:87
+msgid ""
+"A new version of L2Gateway driver that integrate OpenStack neutron L2Gateway "
+"API with OpenDaylight backend. It supports CRUD operations for l2gateway and "
+"l2gateway_connection. This driver uses journalling mechanism, unlike v1 "
+"driver, which will first log the operation in journal table before execution."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:95
+msgid ""
+"A new version of QoS driver that integrate OpenStack neutron QoS API with "
+"OpenDaylight backend. This driver uses journaling mechanism unlike v1 "
+"driver, which will first log the operation in journal table before execution."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:159
+msgid "Add ODL Beryllium SR4 release definition."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:179
+msgid ""
+"Add OpenDaylight Beryllium SR4 release and Beryllium 0.4.5 snapshot "
+"definition and remove Beryllium 0.4.4 snapshot as OpenDaylight Beryllium 0.4."
+"4 SR4 has been released."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:119
+msgid ""
+"Add a ceilometer driver to collect network statistics information using REST "
+"APIs exposed by network-statistics module in OpenDaylight."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:49
+msgid "Add command line tool to analyze logs"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:164
+msgid "Added FLAT type networks support."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:19 stable/queens>:14 stable/rocky>:14
+#: stable/stein>:24
+msgid "Agent aliveness will be ignored during port binding."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:39
+msgid ""
+"Agentless Port binding controller using agentdb for persistency with ODL "
+"provided host configuration."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:79
+msgid ""
+"Allocate a neutron port for each subnet to service DHCP requests within "
+"OpenDaylight controller DHCP service."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:55 stable/queens>:30 stable/rocky>:30
+#: stable/stein>:73
+msgid ""
+"As a result of this assessment we decided to remove the aliveness awareness "
+"from the code and try to bind the port disregarding that. The consequence of "
+"this is that a \"neutron agent-list\" call might show the agent as dead or "
+"alive but that's not information we should depend on to understand if we are "
+"binding to that node."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:94
+msgid ""
+"As the QoS v2 driver adapted new framework from OpenStack neutron's qos "
+"driver framework, QoS v1 driver using notification_drivers is no longer "
+"needed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:34
+msgid ""
+"BGPVPN OpenDaylight v2 driver will be enhanced to support bgpvpn-vni "
+"extension. Bgpvpn VNI resource represents the VNI to use on VXLAN "
+"encapsulated packets transferred to or from ODL managed computes themselves "
+"or for traffic from ODL-managed computers towards the DC-Gateway. Acceptance "
+"and realisation of the vni attribute in a bgpvpn is available in "
+"OpenDaylight(ODL) controller from Neon release of ODL"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:29
+msgid "BGPVPN Version 2 Driver for OpenDaylight."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:134 stable/ocata>:10 stable/ocata>:193
+#: stable/pike>:35 stable/pike>:175 stable/queens>:109
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14
+msgid "Ceilometer becomes an optional dependency"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:50
+msgid ""
+"Ceilometer driver should not be part of networking-odl because it forces a "
+"hard dependency with ceilometer into the project which does not really make "
+"sense. As such, it was decided the driver will be marked as deprecated "
+"beginning with Stein cycle and removed in the beginning of release T"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:19
+msgid ""
+"Ceilometer is marked as deprecated beginning with Stein cycle to be removed "
+"in release T"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:54
+msgid ""
+"Change the default value of port_binding_controller from network-topology to "
+"pseudo-agentdb-binding as networking-topology will be deprecated."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:34
+msgid "Changed devstack default to V2 driver."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:169
+msgid "Complement the implementation of odl lbaas driver_v2."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:187
+msgid ""
+"Complement the implementation of odl lbaas driver_v2. It supports CRUD "
+"operations for loadbalancer, listener, pool, member and healthmonitor."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14 stable/queens>:54
+msgid "Completed rows are deleted by default."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:29 stable/queens>:88
+msgid ""
+"Completed rows will now be immediately deleted upon completion. To retain "
+"the completed rows, set the completed_rows_retention configuration value "
+"explicitly."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:105
+msgid "Critical Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:104
+msgid ""
+"Currently only network type of VXLAN is statically considered to support "
+"vlan-transparent independently of OpenDaylight openstack provider. It should "
+"use capability report by OpenDaylight openstack provider statically instead "
+"of static hard code."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:124 stable/ocata>:122 stable/pike>:161
+#: stable/queens>:99 stable/stein>:46 stable/train>:36
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:49 stable/queens>:24 stable/rocky>:24
+#: stable/stein>:67
+msgid ""
+"During scale tests we saw that neutron agent aliveness mechanism is not "
+"working properly and was marking agents as down and thus failing on port "
+"binding. We assessed that aliveness in our context is not actually "
+"interesting, as we only use the agentdb mechanism to store the information "
+"we need for port binding."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:89
+msgid "Eliminate network topology based port binding"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:137
+msgid ""
+"Features include callback on new notifications and callback on reconnection "
+"which includes status information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:90
+msgid ""
+"First version of the driver to support networking-sfc API through "
+"OpenDaylight controller. This driver support CRUD operation for flow "
+"classifier, port-pair, port-pair-group and port-pair-chain. This is version "
+"1 driver and does not support the journal based implementation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:39 stable/queens>:117
+msgid "Fixes ODL Neutron NB URL path for SFC v2 Driver."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:125
+msgid ""
+"Fixes an issue with SSL websocket connections where a read timeout was "
+"causing the client to close the connection.  Read timeout is normal when no "
+"port status update is being sent by the server (ODL)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:14 stable/pike>:179 stable/queens>:113
+msgid "Fixes full sync errors with SFCv2 driver."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:121
+msgid "Fixes using TLS secured websocket when HTTPS is used in ML2 ODL URL."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:148
+msgid ""
+"For details please read 'VLAN trunking networks for NFV <https://specs."
+"openstack.org/openstack/neutron-specs/specs/kilo/nfv-vlan-trunks.html>'_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:19
+msgid ""
+"Full sync supports and ODL controller with no Neutron resources on it. This "
+"support is for the V2 driver, as V1 driver already supports this."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:14
+msgid "Host Configuration data population from agentless OpenDayLight."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:24
+msgid ""
+"If a user wants to utilize the ceilometer driver when installing networking-"
+"odl, the user should install networking-odl with the following syntax ==> "
+"networking-odl[ceilometer] In case, that driver is not needed, then only "
+"networking-odl should be used This makes sense because ceilometer driver is "
+"only loaded when neutron cfg requires network.statistics.driver and not by "
+"default"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:147
+msgid ""
+"If network topology based port binding, network-topology, is used, migrate "
+"to pseodu agent based port binding, pseudo-agentdb-binding."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:78
+msgid ""
+"If this option is configured, networking_odl will not query ODL for its "
+"feature support and will instead use the configured value. If odl_features "
+"and odl_features_json are both specified, odl_features_json will take "
+"precedence and odl_features will not be used at all."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:155
+msgid ""
+"If you're still using legacy netvirt, you need to disable flat network type "
+"explicitly when issuing set-ovs-hostconfig command."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:97
+msgid ""
+"If you've been using v1 drivers, update your configuration to use the v2 "
+"drivers. Otherwise, neutron won't boot properly if v1 drivers are still used."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:183
+msgid ""
+"In addition to existing supported types, networks of type FLAT can be also "
+"used with ODL."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:138
+msgid ""
+"Includes the following bug fixes Bug 1608659 - pseudo_agentdb_binding "
+"AttributeError."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:197
+msgid ""
+"Includes the following bug fixes Bug 1640076 - Using odl lbaas driver_v2 to "
+"create listener failed. Bug 1633030 - Using odl lbaas driver_v2 to create "
+"loadbalancer failed. Bug 1613583 - Odl lbaas driver_v2 Line 61 url_path "
+"error. Bug 1613583 - Using ODL lbaas driver_v2 to create member failed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:24
+msgid "Journal recovery for the V2 driver handles failed journal entries."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:100
+msgid "Known Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:44
+msgid "L2Gateway Driver v2 or networking-odl."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:69
+msgid ""
+"L3 flavor driver to implement L3 resource operation callbacks related to "
+"router and floating ip create delete and update."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:128
+msgid "LBaaS v1 API driver for ODL is removed. * LBaaS v2 API driver"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:114
+msgid "Maintenace lock table was added to synchronize multiple threads."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:29
+msgid "Maintenance thread for the V2 driver."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:92
+msgid ""
+"Making config paramter sync_timeout of FloatOpt type to allow use of "
+"fraction values for timeouts."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:74
+msgid "Network Statistics From OpenDaylight."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:49
+msgid "Networking SFC V1 driver for networking-odl."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:64
+msgid "Networking SFC V2 driver for networking-odl."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:133
+msgid ""
+"Networking-odl first attempts to read the ODL features from the odl_features "
+"config value. If this config value is not present, networking-odl requests "
+"the features from ODL via REST call. Note that this occurs during the plugin "
+"initialize and if ODL is unreachable networking-odl will keep trying until "
+"successful, essentially blocking networking-odl initialization (and "
+"functionality) until successful. As such, it is recommended that in "
+"production environments you manually configure the odl_features config value."
+" If you are not sure which features your ODL supports, please consult the "
+"ODL documentation or you can retrieve the list like this, $ curl -u <user>:"
+"<pass> http://<host>:8080/restconf/operational/neutron:neutron/features | "
+"python -mjson.tool Note that the features returned in the json have a "
+"namespace which should be omitted from the config value. So, if you got to "
+"features, say neutron-extensions:feature1 and neutron-extensions:feature2, "
+"the config file should have, odl_features=feature1,feature2"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:40
+msgid ""
+"Neutron-lbaas is retired in Train cycle, so all the related dependencies "
+"must be removed from networking-odl, for details see: http://lists.openstack."
+"org/pipermail/openstack-discuss/2019-May/006158.html"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:60 stable/ocata>:75 stable/ocata>:175
+#: stable/pike>:115 stable/queens>:70 stable/rocky>:65 stable/stein>:30
+#: stable/train>:20
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:63
+msgid ""
+"OpenDaylight changes are available at https://git.opendaylight.org/gerrit/#/"
+"c/63405/"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:84
+msgid ""
+"OpenDaylight feature negotiation allows for networking_odl to adapt its "
+"behavior to the features supported by the specific ODL version."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:49
+msgid ""
+"OpenStack neutron allows L3 flavors to enable multiple L3 backends in the "
+"same cloud. This is ODL L3 flavor driver to implement L3 flavors for "
+"OpenStack Neutron and OpenDaylight integration."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:144 stable/ocata>:132 stable/pike>:45
+#: stable/pike>:185 stable/queens>:20 stable/rocky>:20 stable/stein>:59
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:10 stable/ocata>:25 stable/ocata>:155
+#: stable/pike>:10 stable/pike>:70 stable/queens>:10 stable/queens>:45
+#: stable/rocky>:10 stable/rocky>:45 stable/stein>:10 stable/train>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Python 2.7 support has been dropped. Last release of networking-odl to "
+"support python 2.7 is OpenStack Train. The minimum version of Python now "
+"supported by networking-odl is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:44
+msgid "QoS Driver V1 for networking-odl."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:59
+msgid "QoS Driver V2 for networking-odl"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:82
+msgid ""
+"Reads host configuration from ODL using a REST/get and stores the "
+"information in Neutron agentdb for persistency. This host configuration is "
+"read back from agentdb and applied during port binding. Without this feature "
+"several out-of-sync race conditions were caused due to incorrect host "
+"information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:34
+msgid "Remove LbaaS v1 driver, as LbaaS removed v1 API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:151
+msgid ""
+"Removing QoS V1 driver which is using deprecated notification driver "
+"framework from OpenStack Neutron's QoS driver base."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:99
+msgid ""
+"Second version of the driver to support networking-sfc API through "
+"OpenDaylight controller. This driver support CRUD operation for flow "
+"classifier, port-pair, port-pair-group and port-pair-chain. This is version "
+"2 driver and it does support the journal based implementation, where "
+"operations are committed in the data store first and then journal thread "
+"sycn it with OpenDaylight. This implementation guarantee the ordering of the "
+"CRUD events. networking-sfc ocata or later is required. https://review."
+"openstack.org/#/c/363893/ is the corresponding patch of networking-sfc in "
+"Ocata cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:136
+msgid ""
+"Starting with Ocata, Devstack will use V2 drivers (where available) by "
+"default. To force the use of V1 architecture drivers you can specify "
+"'ODL_V2DRIVER=False' in the local.conf file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid "Support for bgpvpn-vni."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:54
+msgid "Support for vlan-transparency."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:165
+msgid ""
+"The QoS V1 driver is deprecated in the Pike cycle and will be removed in the "
+"Queens release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:103
+msgid ""
+"The V1 drivers are not actively maintained by the networking-odl team for a "
+"few cycles already and aren't guaranteed to even work. As such, the "
+"networking-odl team has decided that the drivers will be marked as "
+"deprecated beginning Queens cycle, and removed in the beginning of the Rocky "
+"cycle. If you're still using the V1 drivers, please switch to using the V2 "
+"drivers by updating the appropriate configuration values."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:78
+msgid ""
+"The ``opendaylight`` mechanism driver now supports hardware offload via SR-"
+"IOV. It allows binding direct (SR-IOV) ports. Using ``openvswitch`` 2.8.0 "
+"and 'Linux Kernel' 4.12 allows to control the SR-IOV VF via OpenFlow control "
+"plane and gain accelerated 'Open vSwitch'."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:54
+msgid ""
+"The config option odl_features_json has been added to allow specifying "
+"features in the same format ODL returns during negotiation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:64
+msgid ""
+"The config parameter sync_timeout sometimes uses the fraction value and "
+"because it is set to Intopt, that use of fraction value may end up in error."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:91
+msgid ""
+"The configuration upgrades are required to enable l3 flavors, "
+"service_providers should be added to neutron.conf based on flavor used."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:49
+msgid ""
+"The default setting for OpenDayligut openstack service provider was changed "
+"from ovsdb netvirt (odl-ovsdb-openstack) to new netvirt(odl-netvirt-"
+"openstack) for OpenDaylight Boron/Carbon or later."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:94
+msgid ""
+"The extension `vlan-transparent` is supported for Newton release, "
+"unconditionally only vxlan is considered to support its extension "
+"independent of ODL openstack provider. It's future work to allow ODL "
+"openstack provider to report list of supported network types at start up "
+"statically."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:123
+msgid ""
+"The feature is to be enabled only for ml2 mechanism V2 Driver, when config "
+"parameter enable_dhcp_service is set to True in ml2_conf.ini. Creates a new "
+"DHCP Neutron port to be serviced by OpenDaylight Netvirt when a Subnet is "
+"created or updated with enable-dhcp parameter. The allocated port is to be "
+"removed when the Subnet is deleted or updated with disbale-dhcp parameter. "
+"The port is identifed with device-id as OpenDaylight-<subnet-id> and device-"
+"owner as network:dhcp."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:68
+msgid ""
+"The full sync process looks for a \"canary\" network on the ODL controller "
+"side. If such a network is found, it doesn't do anything. If the network is "
+"missing then all the neutron resources are re-created on ODL. This supports "
+"cases when ODL controller comes online with no Neutron resources on it (also "
+"referred to as \"cold reboot\", but can happen on various cases)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:140
+msgid ""
+"The functional tests were added. It's new class of test cases, which "
+"requires pre-configured environment.  Environment to run such tests can be "
+"configured by tool in networking-odl/tools.configure_for_func_testing.sh"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:72
+msgid ""
+"The journal recovery mechanism handles failed journal entries by inspecting "
+"ODL and deciding on the correct course of action. This support should be "
+"sufficient for the majority of entry failures."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:76
+msgid ""
+"The maintenance thread was introduced in the V2 driver in order to perform "
+"various journal maintenance tasks, such as * Stale lock release * Completed "
+"entry cleanup * Full sync * Journal recovery The thread runs in a "
+"configurable interval and is HA safe so at most one will be executing "
+"regardless of how many threads are running concurrently."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:39
+msgid ""
+"The new class of test cases, functional test, has been added. So was help "
+"scripts to setup necessary environment."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:74
+msgid ""
+"The odl_features_json option accepts a JSON compatible with the JSON "
+"response from ODL's API for retrieving features (\"/restconf/operational/"
+"neutron:neutron/features\")."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:109
+msgid ""
+"The v1 drivers are removed. If you're still using v1 drivers, migrate to use "
+"the v2 drivers."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:59
+msgid ""
+"The v1 drivers, which were deprecated in the Queens cycle, are removed. All "
+"existing usages should be updated to use the v2 drivers."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:64
+msgid ""
+"This configuration is used to get the information about physical host type "
+"and other config data like supported vnic types stored in ovsdb. Networking-"
+"odl can fetch this info from OpenDaylight via REST API request and feed "
+"agents_db table in neutron, which will be used by neutron scheduler."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:74
+msgid ""
+"This tool can be used to analyze logs and determine the journal's operation "
+"efficiency. The tool tracks a journal entry's recording and processing to "
+"determine how much time it took since a journal entry was recorded until it "
+"was processed and sent to ODL."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:69
+msgid "Trunk Drivers v1 and v2 for networking-odl."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:110 stable/ocata>:112 stable/pike>:25
+#: stable/pike>:143 stable/queens>:84 stable/rocky>:87 stable/ussuri>:10
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/newton>:118
+msgid "Upgrade to use LBaaS v2 driver and migrate to use LBaaS v2 driver."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:59
+msgid ""
+"V1 drivers are marked depracated beginning with Queens cycle, to be removed "
+"in Rocky cycle."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:109
+msgid ""
+"Websocket-client provides framework to create webscket clients for ODL."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:144
+msgid ""
+"With devstack by default with OpenDaylight after Boron version, new netvirt "
+"openstack service provider(odl-netvirt-openstack) is used instead of legacy "
+"netvirt(odl-ovsdb-openstack)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:169
+msgid ""
+"network topology based port binding was removed. So is network-topology "
+"value for port_binding_controllers. Migrate pseudo-agentdb-binding port "
+"binding."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:104
+msgid ""
+"networking-odl adopts version number aligned with neutron from Pike release. "
+"The version number is bumped 11.x.x."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:126
+msgid ""
+"port binding controller, network-topology, is deprecated with OpenStack "
+"Ocata and will be removed in future openstack version."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ocata>:116
+msgid ""
+"pseudo-agentdb-binding is supported by the version of OpenDaylight Boron(0.5."
+"x) or later. So for the version of OpenDaylight Beryllium or earlier, the "
+"option, port_binding_controller, needs to be explicitly configured to be "
+"legacy-port-binding or network-topology(deprecated)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:99
+msgid ""
+"update the default value of supported network type for ovs-set-hostconfig. "
+"enable 'flat' by default 'flat' type wasn't enabled because legacy netvirt "
+"doesn't support it. Now new netvirt is introduced to deprecate legacy "
+"netvirt and New netvirt supports flat. So update default value for network "
+"type to reflect it."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:189
+msgid "version is bumped to 11:pike from 4:ocata."
+msgstr ""
+
+#: ../source/index.rst:7
+msgid "Welcome to Networking OpenDaylight Release Notes's documentation!"
+msgstr ""
+
+#: ../source/index.rst:9
+msgid "Contents:"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

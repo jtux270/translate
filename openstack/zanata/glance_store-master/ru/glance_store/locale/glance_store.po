@@ -1,0 +1,264 @@
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: glance_store VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-17 16:46+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-04-12 05:29+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: glance_store/backend.py:285
+#, python-format
+msgid "Store for scheme %s not found"
+msgstr "Хранилище для схемы %s не найдено"
+
+#: glance_store/backend.py:384 glance_store/multi_backend.py:499
+#, python-format
+msgid ""
+"The image metadata key %(key)s has an invalid type of %(type)s. Only dict, "
+"list, and unicode are supported."
+msgstr ""
+
+#: glance_store/backend.py:393 glance_store/multi_backend.py:404
+#, python-format
+msgid ""
+"The storage driver %(driver)s returned invalid  metadata %(metadata)s. This "
+"must be a dictionary type"
+msgstr ""
+
+#: glance_store/backend.py:401 glance_store/multi_backend.py:412
+#, python-format
+msgid ""
+"A bad metadata structure was returned from the %(driver)s storage driver: "
+"%(metadata)s.  %(e)s."
+msgstr ""
+
+#: glance_store/backend.py:509
+msgid "Skipping store.set_acls... not implemented."
+msgstr ""
+
+#: glance_store/driver.py:38
+msgid ""
+"\n"
+"This option will be used to provide a constructive information about\n"
+"the store backend to end users. Using /v2/stores-info call user can\n"
+"seek more information on all available backends.\n"
+"\n"
+msgstr ""
+
+#: glance_store/driver.py:96
+#, python-format
+msgid "Failed to configure store correctly: %s Disabling add method."
+msgstr ""
+
+#: glance_store/exceptions.py:45
+msgid "An unknown exception occurred"
+msgstr "Возникла неизвестная исключительная ситуация"
+
+#: glance_store/exceptions.py:66
+#, python-format
+msgid "Missing required credential: %(required)s"
+msgstr "Отсутствуют обязательные идентификационные данные: %(required)s"
+
+#: glance_store/exceptions.py:70
+#, python-format
+msgid ""
+"Incorrect auth strategy, expected \"%(expected)s\" but received "
+"\"%(received)s\""
+msgstr ""
+"Неправильная стратегия идентификации, ожидалось \"%(expected)s\", но "
+"получено \"%(received)s\""
+
+#: glance_store/exceptions.py:75
+#, python-format
+msgid "Redirecting to %(uri)s for authorization."
+msgstr "Перенаправляется на %(uri)s для предоставления доступа."
+
+#: glance_store/exceptions.py:79
+#, python-format
+msgid "Image %(image)s not found"
+msgstr ""
+
+#: glance_store/exceptions.py:83
+#, python-format
+msgid "Unknown hashing algorithm identifier: %(algo)s"
+msgstr ""
+
+#: glance_store/exceptions.py:87
+#, python-format
+msgid "Unknown scheme '%(scheme)s' found in URI"
+msgstr ""
+
+#: glance_store/exceptions.py:91
+#, python-format
+msgid "The Store URI was malformed: %(uri)s"
+msgstr ""
+
+#: glance_store/exceptions.py:95
+#, python-format
+msgid "Image %(image)s already exists"
+msgstr ""
+
+#: glance_store/exceptions.py:99
+msgid "There is not enough disk space on the image storage media."
+msgstr ""
+
+#: glance_store/exceptions.py:103
+msgid "Permission to write image storage media denied."
+msgstr ""
+
+#: glance_store/exceptions.py:107
+#, python-format
+msgid "Connect error/bad request to Auth service at URL %(url)s."
+msgstr ""
+"Ошибка соединения или неправильный запрос к службе идентификации с URL "
+"%(url)s."
+
+#: glance_store/exceptions.py:111
+#, python-format
+msgid "Auth service at URL %(url)s not found."
+msgstr "Служба идентификации с URL %(url)s не найдена."
+
+#: glance_store/exceptions.py:115
+msgid "Authorization failed."
+msgstr "Доступ не предоставлен."
+
+#: glance_store/exceptions.py:119
+msgid "You are not authenticated."
+msgstr "Вы не прошли идентификацию."
+
+#: glance_store/exceptions.py:123
+msgid "You are not authorized to complete this action."
+msgstr "У вас нет прав на выполнение этого действия."
+
+#: glance_store/exceptions.py:129
+msgid "Data supplied was not valid."
+msgstr "Предоставленные данные недопустимы."
+
+#: glance_store/exceptions.py:133
+#, python-format
+msgid ""
+"Store %(store_name)s could not be configured correctly. Reason: %(reason)s"
+msgstr ""
+
+#: glance_store/exceptions.py:138
+#, python-format
+msgid "Driver %(driver_name)s could not be loaded."
+msgstr ""
+
+#: glance_store/exceptions.py:142
+msgid "Deleting images from this store is not supported."
+msgstr ""
+
+#: glance_store/exceptions.py:146
+msgid "Getting images from this store is not supported."
+msgstr ""
+
+#: glance_store/exceptions.py:150
+#, python-format
+msgid ""
+"Getting images randomly from this store is not supported. Offset: "
+"%(offset)s, length: %(chunk_size)s"
+msgstr ""
+
+#: glance_store/exceptions.py:155
+msgid ""
+"Configuration for store failed. Adding images to this store is disabled."
+msgstr ""
+
+#: glance_store/exceptions.py:160
+#, python-format
+msgid "Maximum redirects (%(redirects)s) was exceeded."
+msgstr "Превышено максимальное количество перенаправлений (%(redirects)s)."
+
+#: glance_store/exceptions.py:164
+msgid "Response from Keystone does not contain a Glance endpoint."
+msgstr "Ответ от Keystone не содержит конечной точки Glance."
+
+#: glance_store/exceptions.py:168
+#, python-format
+msgid ""
+"Multiple 'image' service matches for region %(region)s. This generally means "
+"that a region is required and you have not supplied one."
+msgstr ""
+"Несколько соответствий службы 'image' для региона %(region)s. Обычно это "
+"означает, что регион обязателен, но вы его не указали."
+
+#: glance_store/exceptions.py:174
+msgid "Remote server where the image is present is unavailable."
+msgstr ""
+
+#: glance_store/exceptions.py:178
+msgid "The image cannot be deleted because it has snapshot(s)."
+msgstr ""
+
+#: glance_store/exceptions.py:182
+msgid ""
+"The image cannot be deleted because it is in use through the backend store "
+"outside of Glance."
+msgstr ""
+
+#: glance_store/exceptions.py:187
+#, python-format
+msgid ""
+"The glance cinder store host %(host)s which will used to perform nfs mount/"
+"umount operations isn't initialized."
+msgstr ""
+
+#: glance_store/location.py:242
+#, python-format
+msgid "Location URI must start with one of the following schemas: %s"
+msgstr ""
+
+#: glance_store/multi_backend.py:38
+msgid ""
+"\n"
+"The store identifier for the default backend in which data will be\n"
+"stored.\n"
+"\n"
+"The value must be defined as one of the keys in the dict defined\n"
+"by the ``enabled_backends`` configuration option in the DEFAULT\n"
+"configuration group.\n"
+"\n"
+"If a value is not defined for this option:\n"
+"\n"
+"* the consuming service may refuse to start\n"
+"* store_add calls that do not specify a specific backend will\n"
+"  raise a ``glance_store.exceptions.UnknownScheme`` exception\n"
+"\n"
+"Related Options:\n"
+"    * enabled_backends\n"
+"\n"
+msgstr ""
+
+#: glance_store/multi_backend.py:301
+#, python-format
+msgid "Unable to register store %s. No schemes associated with it."
+msgstr ""
+
+#: glance_store/multi_backend.py:325
+msgid "'default_backend' config option is not set."
+msgstr ""
+
+#: glance_store/multi_backend.py:331 glance_store/multi_backend.py:348
+#, python-format
+msgid "Store for identifier %s not found"
+msgstr ""
+
+#: glance_store/multi_backend.py:530 glance_store/multi_backend.py:584
+msgid "Image not found in any configured backend"
+msgstr ""
+
+#: glance_store/common/utils.py:92
+#, python-format
+msgid "Error: cooperative_iter exception %s"
+msgstr ""
+

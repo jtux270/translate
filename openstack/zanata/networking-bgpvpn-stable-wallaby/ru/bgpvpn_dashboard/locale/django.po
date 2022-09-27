@@ -1,0 +1,528 @@
+#
+# ДроноваЮ <juliette.tux@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: networking-bgpvpn VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-04-19 14:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-12-07 20:53+0300\n"
+"Last-Translator: ДроноваЮ <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-i18n-doc@kde.org>\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.08.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: bgpvpn_dashboard/common/bgpvpn.py:20
+msgid ""
+"A single BGP Route Target or a comma-separated list of BGP Route Target. "
+"Example: 64512:1 or 64512:1,64512:2,64512:3"
+msgstr ""
+"Одиночный BGP Route Target, либо список BGP RT через запятую. "
+"Пример: 64512:1 or 64512:1,64512:2,64512:3"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:34
+msgid ""
+"Bug, inconsistency between neutron-lib and networking-bgpvpn for RTRD regex"
+msgstr ""
+"Ошибка кода, несоответствие между neutron-lib и networking-bgpvpn в"
+" регулярном "
+"выражении RTRD."
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:44
+msgid "Route targets is not valid"
+msgstr "Недопустимые RT."
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:45
+#, fuzzy
+msgid "Route targets"
+msgstr "Route targets"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:52
+msgid "Import targets is not valid"
+msgstr ""
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:53
+msgid "Import targets"
+msgstr ""
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:60
+msgid "Export targets is not valid"
+msgstr ""
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:61
+msgid "Export targets"
+msgstr ""
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:72
+msgid "Project"
+msgstr "Проект"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:74
+msgid "l3"
+msgstr "l3"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:75
+msgid "l2"
+msgstr "l2"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:76
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:97
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_detail_overview.html:9
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:96
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:82
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_detail_overview.html:8
+msgid "Type"
+msgstr "Тип"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:77
+msgid "The type of VPN  and the technology behind it."
+msgstr "Тип VPN и технология, на которой он основан"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:85
+msgid "Select a project"
+msgstr "Выберите проект"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/forms.py:95
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:94
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/forms.py:32
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/network_associations/_detail_overview.html:5
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:5
+msgid "ID"
+msgstr "ID"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/panel.py:22
+#, fuzzy
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/panel.py:22
+msgid "BGPVPN Interconnections"
+msgstr "Взаимосвязи BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/tables.py:35
+msgid "Delete BGPVPN"
+msgid_plural "Delete BGPVPNs"
+msgstr[0] "Удалить BGPVPN"
+msgstr[1] "Удалить BGPVPN"
+msgstr[2] "Удалить BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/tables.py:41
+msgid "Deleted BGPVPN"
+msgid_plural "Deleted BGPVPNs"
+msgstr[0] "BGPVPN был удалён"
+msgstr[1] "BGPVPN были удалены"
+msgstr[2] "BGPVPN были удалены"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/tables.py:49
+#, python-format
+msgid "Failed to delete BGPVPN %s"
+msgstr "Не удалось удалить BGPVPN %s"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/tables.py:57
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/create.html:3
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/views.py:61
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/views.py:63
+msgid "Create BGPVPN"
+msgstr "Создать BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/tables.py:101
+#, fuzzy
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_detail_overview.html:11
+msgid "Route Targets"
+msgstr "Route Targets"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/tables.py:103
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_detail_overview.html:17
+msgid "Import Targets"
+msgstr ""
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/tables.py:105
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_detail_overview.html:23
+msgid "Export Targets"
+msgstr ""
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/views.py:41
+#, python-format
+msgid "Unable to retrieve information about the tenant %s"
+msgstr "Не удалось получить сведения об арендаторе %s"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_create.html:11
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_create_network_association.html:5
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_modify.html:5
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_modify.html:5
+msgid "Description:"
+msgstr "Описание:"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_create.html:12
+msgid "Create a new BGP VPN for any project as you need."
+msgstr "Создание BGP VPN для любого проекта по мере необходимости."
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_detail_overview.html:5
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_detail_overview.html:4
+msgid "BGPVPN Name"
+msgstr "Имя BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_detail_overview.html:7
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_detail_overview.html:6
+msgid "BGPVPN ID"
+msgstr "BGPVPN ID"
+
+#: bgpvpn_dashboard/dashboards/admin/bgpvpn/templates/bgpvpn/_detail_overview.html:29
+msgid "Project ID"
+msgstr "ID проекта"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:37
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:80
+msgid "Name"
+msgstr "Имя"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:61
+#, python-format
+msgid "Something went wrong with BGPVPN %s"
+msgstr "Что-то пошло не так для BGPVPN %s"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:64
+#, python-format
+msgid "Failed to update BGPVPN %s"
+msgstr "Не удалось обновить BGPVPN %s"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:77
+#, python-format
+msgid "BGPVPN %s was successfully updated."
+msgstr "BGPVPN %s был успешно обновлён."
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:79
+#, python-format
+msgid "Failed to create BGPVPN %s"
+msgstr "Не удалось создать BGPVPN %s"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:81
+#, python-format
+msgid "BGPVPN %s was successfully created."
+msgstr "BGPVPN %s был успешно создан."
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:84
+#, python-format
+msgid "Unsupported action type: %s"
+msgstr "Тип действий не поддерживается: %s"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:108
+msgid "Associate Network"
+msgstr "Привязать сеть"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:128
+msgid "Choose a network"
+msgstr "Выбрать сеть"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:133
+msgid "No network"
+msgstr "Без сети"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:136
+msgid "Unable to retrieve networks."
+msgstr "Не удалось получить сведения о сетях"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/forms.py:145
+#, python-format
+msgid "Unable to associate network \"%s\"."
+msgstr "Не удалось привязать сеть \"%s\"."
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:26
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:58
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:63
+msgid "Edit BGPVPN"
+msgstr "Редактировать параметры BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tables.py:58
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:34
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/create_network_association.html:3
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:114
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:119
+msgid "Create Network Association"
+msgstr "Создать сетевую привязку"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:78
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:42
+msgid "Create Router Association"
+msgstr "Создать привязку маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:83
+#: bgpvpn_dashboard/test/project/test_tables.py:50
+msgid "Networks"
+msgstr "Сети"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:84
+#: bgpvpn_dashboard/test/project/test_tables.py:69
+msgid "Routers"
+msgstr "Маршрутизаторы"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tables.py:88
+msgid "BGPVPN"
+msgstr "BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tabs.py:32
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tabs.py:33
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tabs.py:30
+msgid "Overview"
+msgstr "Обзор"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/tabs.py:43
+#, python-format
+msgid "Unable to retrieve details for bgpvpn \"%s\"."
+msgstr "Не удалось получить подробности о bgpvpn \"%s\"."
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/index.html:3
+#, fuzzy
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:39
+msgid "BGP VPNs"
+msgstr "BGP VPN"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:59
+msgid "Update Change"
+msgstr ""
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:84
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:107
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:158
+msgid "Unable to retrieve BGPVPN details."
+msgstr "Не удалось получить подробности о BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:115
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:116
+msgid "Create"
+msgstr "Создать"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/views.py:132
+msgid "Create Router associations"
+msgstr "Создать привязки маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/forms.py:37
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:11
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:31
+msgid "Advertise Extra Routes"
+msgstr "Объявить дополнительные маршруты"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:39
+msgid "Optional Parameters"
+msgstr "Необязательные параметры"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:56
+msgid "Associate Router"
+msgstr "Привязать маршрутизатор"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:62
+msgid "Create Association"
+msgstr "Создать привязку"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:63
+msgid "Create a new router association."
+msgstr "Создать новую привязку маршрутизатора."
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:80
+msgid "Choose a router"
+msgstr "Выбрать маршрутизатор"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:84
+msgid "No router"
+msgstr "Без роутера"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:86
+msgid "Unable to retrieve routers"
+msgstr "Не удалось получить сведения о маршрутизаторах"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:91
+msgid "Optional parameters"
+msgstr "Необязательные параметры"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:115
+msgid "Associate a BGPVPN to a Router"
+msgstr "Привязать BGPVPN к маршрутизатору"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:117
+#, python-format
+msgid "Router association with \"%s\" created."
+msgstr "Привязка маршрутизатора к \"%s\" была создана."
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:118
+#, python-format
+msgid "Unable to create a router association with \"%s\"."
+msgstr "Не удалось создать привязку маршрутизатора к \"%s\"."
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/workflows.py:131
+#, python-format
+msgid "Unable to associate router %s"
+msgstr "Не удалось привязать маршрутизатор %s"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tables.py:35
+msgid "Delete Network Association"
+msgid_plural "Delete Network Associations"
+msgstr[0] "Удалить сетевую привязку"
+msgstr[1] "Удалить сетевые привязки"
+msgstr[2] "Удалить сетевые привязки"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tables.py:41
+msgid "Deleted Network Association"
+msgid_plural "Deleted Network Associations"
+msgstr[0] "Сетевая привязка была удалена"
+msgstr[1] "Сетевые привязки были удалены"
+msgstr[2] "Сетевые привязки были удалены"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tables.py:50
+#, python-format
+msgid "Failed to delete Network Association %s"
+msgstr "Не удалось удалить сетевую привязку %s"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tables.py:86
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:105
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/network_associations/_detail_overview.html:5
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:5
+msgid "Association ID"
+msgstr "ID привязки"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tables.py:88
+msgid "Network"
+msgstr "Сеть"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tables.py:94
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tabs.py:61
+msgid "Network Associations"
+msgstr "Сетевые привязки"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tabs.py:50
+msgid "Unable to retrieve network details."
+msgstr "Не удалось получить подробности о сети"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/tabs.py:78
+msgid "Network associations list can not be retrieved."
+msgstr "Невозможно получить список сетевых привязок"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/network_associations/views.py:41
+msgid "Unable to retrieve network association details."
+msgstr "Не удалось получить подробности о сетевой привязки"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/forms.py:34
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:107
+msgid "Router"
+msgstr "Маршрутизатор"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:38
+msgid "Delete Router Association"
+msgid_plural "Delete Router Associations"
+msgstr[0] "Удалить привязку маршрутизатора"
+msgstr[1] "Удалить привязки маршрутизатора"
+msgstr[2] "Удалить привязки маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:44
+msgid "Deleted Router Association"
+msgid_plural "Deleted Router Associations"
+msgstr[0] "Привязка маршрутизатора была удалена"
+msgstr[1] "Привязки маршрутизатора были удалены"
+msgstr[2] "Привязки маршрутизатора были удалены"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:53
+#, python-format
+msgid "Failed to delete Router Association %s"
+msgstr "Не удалось удалить привязку маршрутизатора %s"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:61
+msgid "Update Router Association"
+msgstr "Обновить привязку маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tables.py:112
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tabs.py:62
+msgid "Router Associations"
+msgstr "Привязки маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tabs.py:51
+msgid "Unable to retrieve router details."
+msgstr "Не удалось получить подробности о маршрутизаторе"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/tabs.py:79
+msgid "Router associations list can not be retrieved."
+msgstr "Невозможно получить список привязок роутера"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/views.py:33
+#, fuzzy
+msgid "Update BGPVPN Router Associations"
+msgstr "Обновить привязки BGPVPN маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/views.py:34
+msgid "Update"
+msgstr "Обновить"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/views.py:37
+#, fuzzy
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/modify.html:3
+msgid "Update BGPVPN Router Association"
+msgstr "Обновить BGPVPN привязку маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/views.py:61
+msgid "Unable to retrieve Router Association details."
+msgstr "Не удалось получить подробности о привязке маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/router_associations/views.py:84
+msgid "Unable to retrieve router association details."
+msgstr "Не удалось получить подробности о привязке маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_associated_networks.html:5
+msgid "Associated Networks"
+msgstr "Связанные сети"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_associated_networks.html:7
+msgid "Associated Network"
+msgstr "Связанная сеть"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_associated_routers.html:5
+msgid "Associated Routers"
+msgstr "Связанные маршрутизаторы"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_associated_routers.html:7
+msgid "Associated Router"
+msgstr "Связанный маршрутизатор"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_create_network_association.html:6
+msgid "Associate a BGPVPN to a Network"
+msgstr "Привязать BGPVPN к сети"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/_modify.html:6
+msgid "You may update the editable properties of your BGP VPN here."
+msgstr "Здесь можно обновить редактируемые параметры BGP VPN"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/modify.html:3
+msgid "Update BGPVPN"
+msgstr "Обновить BGPVPN"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/network_associations/_detail_overview.html:6
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/network_associations/_detail_overview.html:8
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/network_associations/_detail_overview.html:10
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:6
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:8
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:10
+msgid "None"
+msgstr "Нет"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/network_associations/_detail_overview.html:7
+msgid "Network Name"
+msgstr "Имя сети"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/network_associations/_detail_overview.html:9
+msgid "Network ID"
+msgstr "ID сети"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:7
+msgid "Router Name"
+msgstr "Имя маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_detail_overview.html:9
+msgid "Router ID"
+msgstr "ID маршрутизатора"
+
+#: bgpvpn_dashboard/dashboards/project/bgpvpn/templates/bgpvpn/router_associations/_modify.html:6
+#, fuzzy
+msgid ""
+"You may update the editable properties of your BGPVPN Router Association "
+"here."
+msgstr ""
+"Здесь можно обновить редактируемые параметры привязки маршрутизатора BGP VPN"
+

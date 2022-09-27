@@ -1,0 +1,834 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Designate Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-02 11:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/liberty>:30
+msgid "1.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:5
+msgid "1.0.2"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "10.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "11.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:5
+msgid "12.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:20
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "2.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "5.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "6.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:25
+msgid "7.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "7.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:49
+msgid "8.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:29
+msgid "8.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "8.0.1-5"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "9.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:39
+msgid ""
+"A bug that prevented Designate from starting up when services are running a "
+"mixture of Python 2 and 3 has been fixed, but there is still an issue when "
+"running a mixture of a patched and unpatched versions of Designate under "
+"Python 3."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:71
+msgid ""
+"A new ``designate-status upgrade check`` command has been added which can be "
+"used to validate a deployment before starting services with new code. See "
+"the documentation for details: https://docs.openstack.org/designate/latest/"
+"cli/designate-status.html"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:44
+msgid ""
+"A new recordset api ``/v2/recordsets`` is exposed with GET method allowed "
+"only. The api can be used for retrieving recordsets across all the zones "
+"under a tenant. Filtering on certain fields is supported as well."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:136
+msgid ""
+"A recordset will now always report its highest priority state when it "
+"contains multiple records. The order of priority is, `ERROR`, `PENDING`, "
+"`ACTIVE` and `DELETED`."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:65
+msgid "ASync Export"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:61
+msgid "ASync Import"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:69
+msgid "Active / passive failover for designate-pool-manager periodic tasks"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:81
+msgid "Added Designate Backend"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:77
+msgid "Added InfoBlox Backend"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:40
+msgid ""
+"Added ``designate-worker`` and ``designate-producer``. This will allow for "
+"better scaling across a designate system as we move forward."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:28
+msgid ""
+"Added an experimental entrypoint for wsgi called ``designate-api-wsgi``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:24
+msgid "Added new backend driver to support the Akamai FastDNS V2 API"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:14 origin/stable/newton>:108
+msgid "Added zone_name in zone trasfer request response. Closed bug#1580014"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid "Adding distributed locking to central"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:28
+msgid ""
+"Addition of the \"attribute\" filter for scheduling zones across pools. This "
+"can be enabled in the ``[service:central]`` section of the config by adding "
+"``attribute`` to the list of values in the ``filters`` option."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:14 stable/stein>:38 stable/train>:24
+msgid ""
+"Adds a new option for pools using the ``pdns4`` backend: ``tsigkey_name``. "
+"This allows deployers to specify a tsig key that is installed in powerdns to "
+"use for AFXR requests. This key name is the name used to create the key in "
+"powerdns, not the Designate UUID based ID for the key."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:48
+msgid ""
+"All designate services will now report to designate-central when they are "
+"running. This is implmented as a heartbeat reporting system. There is also a "
+"new API endpoint in the v2 API - $API_BASE/v2/service_status. This will show "
+"the list of services running, and when they last reported as running. "
+"Currently the \"stats\" and \"capabilities\" values will be blank, but will "
+"be updated in the future as services implement them."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:14
+msgid ""
+"Allow the user to set resource quota to unlimited by assigning a negative "
+"value to the resource quota value."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:36
+msgid "An experimental agent backend to support Knot DNS 2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:32
+msgid ""
+"An experimental agent backend to support TinyDNS, the DNS resolver from the "
+"djbdns tools."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:41
+msgid "Any tooling using the V1 API needs to be reworked to use the v2 API"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:73
+msgid ""
+"Because of this the ``[service:worker]`` option ``enabled`` has been "
+"permanently removed, and in addition the ``notify`` option under the same "
+"section has been deprecated for removal."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:94
+msgid ""
+"Both ``designate-zone-manager`` and ``designate-pool-manager`` are now "
+"deprecated and will be removed in a future release."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:10 origin/stable/mitaka>:99
+#: origin/stable/newton>:100 stable/queens>:57 stable/rocky>:63
+#: stable/stein>:10 stable/train>:86
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:58
+msgid ""
+"CAA and NAPTR recordset types have been added. All users should be able to "
+"use these types  from the API and openstack client. These can be disabled "
+"(like other record types) by  setting the `[DEFAULT].supported-record-type` "
+"config variable in all designate services."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:57
+msgid "Ceilometer \"exists\" periodic event per domain"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:61
+msgid "Check for multi level tlds"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:79
+msgid ""
+"Create / Update / Delete API methods on /v2/pools/ Using these messages "
+"**will** cause unforseen issues with pools. We highly recommend that the "
+"policy file be updated to restrict create / update / delete from all users"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:20 origin/stable/mitaka>:89
+#: stable/pike>:10 stable/queens>:47
+msgid "Critical Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:88
+msgid ""
+"Custom notification handlers that created unmanaged records will need to be "
+"updated, as we no longer support the creation of unmanaged records using the "
+"sink."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:75
+msgid ""
+"Default `policy.json` file is now removed as Designate now generate the "
+"default policies from code. Please be aware that when using that file in "
+"your environment."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:75 origin/stable/newton>:78
+#: stable/wallaby>:28
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:64
+msgid ""
+"Designate can verify validity of the project id when setting quotas for it. "
+"This feature is enabled by setting a new configuration option ``[service:"
+"api]quotas_verify_project_id`` to ``True`` (default is ``False`` for "
+"backward compatibility)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:103
+msgid ""
+"Designate no longer will attempt to guess content type based on an extension "
+"to the URL. So GET /v2/zones.json is no longer an acceptable URL."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:24
+msgid ""
+"Designate now support policy in code, which means if users don't want to "
+"modify any of policy rules, they can remove or comment all of rules in "
+"policy file or even not deploy it at all. Because from now, Designate keeps "
+"all default policies under `designate/common/policies` module. Users can "
+"modify/generate `policy.yaml` file which will override policy rules in code "
+"if those rules show in `policy.yaml` file. Users also still use `policy."
+"json` file but oslo team recommend that we should use the newer YAML format "
+"instead."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:34
+msgid ""
+"Designate-Sink service now supports notification listener pooling for those "
+"oslo.messaging drivers that support this feature (currently those are "
+"``rabbit``/``kombu`` and ``kafka``). `Listener pools <https://docs.openstack."
+"org/oslo.messaging/latest/reference/notification_listener.html>`_ is an "
+"alternative to specifying several topics for notification consumers in "
+"configuration of service that emits notifications."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:67
+msgid ""
+"Fixed `bug 1768824`_ which could cause the service_statuses table to be "
+"flooded with duplicate service entries."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:101
+msgid ""
+"Fixed a bug preventing `service_statuses` from properly updating when "
+"Designate services were configured with multiple workers."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:133
+msgid ""
+"Fixed a bug with the recordset status implementation to make it report its "
+"status more accurately."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:110
+msgid ""
+"Fixed an `issue`_ when upgrading to Python 3 (where bytes and str are "
+"different types) and _update_partitions() attempts to sort types of 'str' "
+"and 'bytes', causing designate-producer to crash."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:21
+msgid "Fixes `bug 1871332`_"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:49
+msgid "Horizon Plugin moved out of tree"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:55
+msgid ""
+"If there are duplicate service entries in the service_statuses table and the "
+"db sync command fails, you may need to truncate the service_statuses table."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:39
+msgid ""
+"Import of release notes from https://wiki.openstack.org/wiki/ReleaseNotes/"
+"Liberty#OpenStack_DNS_.28Designate.29"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:118
+msgid ""
+"It was previously not possible to override the topics for various serivces "
+"(e.g. mdns), due to `bug 1832799`_. This has been fixed, and these services "
+"now use a common option name to override the topic."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:10 origin/stable/mitaka>:43
+msgid "Known Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:45 origin/stable/mitaka>:25
+#: origin/stable/newton>:20 origin/stable/ocata>:10 stable/queens>:20
+#: stable/rocky>:10 stable/rocky>:30 stable/stein>:34 stable/stein>:54
+#: stable/train>:20 stable/ussuri>:20 stable/victoria>:10
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:84
+msgid ""
+"New installs will now have pool manager disabled by default and will use the "
+"worker and producer services. To continue to use pool manager set ``enabled="
+"False`` in the ``[service:worker]`` of your config."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:29
+msgid ""
+"New method of updating Pools. We have a new sub command on the ``designate-"
+"manage`` utility."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:91
+msgid "New service designate-zone-manager"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:73
+msgid "OpenStack client integration"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid ""
+"Operators now have a choice in the type of notification payload content that "
+"Designate can emit via oslo.messaging's Notifier. The default plugin is "
+"configured to emit the same information that the notifications previous to "
+"this patch emitted. So there is no functional change. Operators can write "
+"their own notification plugins that exist in designate/notifications.py. An "
+"\"audit\" plugin is included. This plugin emits object changes, if they "
+"exist, along with zone ids, zone/recordset names. A plugin can define "
+"multiple payloads from a single notification to be emitted at once, if "
+"desirable. The selection of a plugin is defined by python entrypoints (for "
+"driver availability) and the new \"notification_plugin\" option in the "
+"\"DEFAULT\" config section."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:121 stable/queens>:71
+#: stable/stein>:97
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:61
+msgid ""
+"Pool Names are now required to be unique. If there is 2 pools with the same "
+"name - this will need to be changed before the upgrade is performed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14
+msgid "Pool-Manager removal is complete in this version of designate."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:35 origin/stable/newton>:10
+#: stable/queens>:10 stable/train>:10 stable/ussuri>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:24 origin/stable/mitaka>:93
+msgid ""
+"Previous versions of eventlet changed the behaviour of socket.send() to "
+"match socket.sendall(). in eventlet 0.18.0 this changed and it reverted to "
+"the traditional behaviour. MiniDNS has been updated to allow minidns to push "
+"large zone transfers over long range network connections"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:63
+msgid ""
+"Previously we only checked for the last label of a TLD which does not work "
+"for `co.uk` or custom internal TLDs that deployers may use"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:53
+msgid "Purging deleted domains"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:43
+msgid ""
+"Python 2.7 support has been dropped. Last release of Designate to support "
+"python 2.7 is OpenStack Train. The minimum version of Python now supported "
+"by Designate is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Python 2.7 will not be maintained past 2020 and because of that we are "
+"dropping Python 2 support."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:37
+msgid ""
+"Randomize SOA refresh interval to stagger AXFRs across multiple zones and "
+"resolvers. Introduce the new configuration parameters default-soa-refresh-"
+"min and default-soa-refresh-max"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:33
+msgid ""
+"Schedule across pools. See http://doc.openstack.org/developer/designate/"
+"pools/scheduler.html#default-provided-filters for the built in filters"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:95
+msgid "See `bug 1755788`_ for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:104
+msgid "See `bug 1827070`_ for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:44
+msgid "See `bug 1828534`_ for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:140
+msgid "See `bug 1842994`_ for more information."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:91
+msgid "See `designate/notification_handler/base.py` for more details."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:129
+msgid "Start using reno to manage release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:90
+msgid ""
+"TXT and SPF records are now validated for empty spaces in the values. If "
+"record value has empty space it should use \"\" quotation according to RFC-"
+"1035 section 5.1. Use of single quotation mark within record value requires "
+"quote symbol to be escaped with backslash."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:38
+msgid ""
+"The Akamai eDNS API endpoint has been removed, users should migrate to the "
+"Akamai v2 driver for the FastDNS V2 API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:64
+msgid ""
+"The Designate ``sink`` service will now use the heartbeat reporting system "
+"to report its status. This was already the case for all other Designate "
+"services."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:79
+msgid ""
+"The PowerDNS MySQL based backend has been deprecated since the introduction "
+"of the PowerDNS 4 driver and is now being removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:49
+msgid ""
+"The ``[service:api]`` option ``enable_host_header`` is now enabled by "
+"default."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:23
+msgid ""
+"The ``v1`` API is now off by default. To re-enable the V1 API please set "
+"``enable_api_v1 = True`` in the ``[service:api]`` section of your designate "
+"config file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid ""
+"The `format` cfg in nova and neutron notification both will remove in the "
+"Pike. Please set ``formatv4`` and ``formatv6`` in the ``[handler:"
+"nova_fixed]`` and ``[handler:neutron_floatingip]`` your designate config "
+"file. ``formatv4 = '%(octet0)s-%(octet1)s-%(octet2)s-%(octet3)s.%(zone)s'`` "
+"``formatv4 = '%(hostname)s.%(project)s.%(zone)s'`` ``formatv4 = "
+"'%(hostname)s.%(zone)s'`` ``formatv6 = '%(hostname)s.%(project)s.%(zone)s'`` "
+"``formatv6 = '%(hostname)s.%(zone)s'``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:19
+msgid ""
+"The above config which you need to put or uncomment them into/in designate "
+"config file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:16
+msgid ""
+"The central service was not using a global lock which can lead to a race "
+"condition in a high availability setup leading to missing recordsets in the "
+"DNS backend. This release includes a partial backport of a distributed "
+"locking mechanism to central."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:65
+msgid ""
+"The default option for the scheduler filters will be ``attribute, "
+"pool_id_attribute, random``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:68
+msgid ""
+"The default port which the designate-agent service listens on has changed "
+"from 53 to 5358. This matches the port we have always used in the sample "
+"configuration, and the port used in the agent backend class."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:14
+msgid ""
+"The default value of ``[oslo_policy] policy_file`` config option has been "
+"changed from ``policy.json`` to ``policy.yaml``. Operators who are utilizing "
+"customized or previously generated static policy JSON files (which are not "
+"needed by default), should generate new policy files or convert them in YAML "
+"format. Use the `oslopolicy-convert-json-to-yaml <https://docs.openstack.org/"
+"oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml.html>`_ tool to "
+"convert a JSON to YAML formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:14 origin/stable/mitaka>:47
+msgid ""
+"The fix for minidns's issues TCP can cause minidns to fail to send some "
+"messages. This manifests itself with eventlet not being able to send all the "
+"data before socket is closed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:70
+msgid ""
+"The pool-manager has been removed and can no longer be used. Instead the "
+"worker and producer service should be used."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:50
+msgid ""
+"The previously deprecated options ``api_host``, ``api_port``, ``host`` and "
+"``port`` have been permanently removed and are replaced by ``listen``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:54
+msgid ""
+"This adds the quotas api from /admin to /v2 with some changes. All users can "
+"GET /v2/quotas/<project_id> Users with \"All-Projects\" permission can view "
+"other projects (by setting X-Auth-All-Projects:True in the HTTP Headers) "
+"Users with \"All-Projects\" and \"set-quotas\" can set other projects quotas "
+"Moved the API rendering to Designate Object based rendering"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:19 stable/stein>:43 stable/train>:29
+msgid "This is only available in the 4.2.x versions (and above) of pdns."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid ""
+"This release has started the migration of our services to a ``worker`` and "
+"``producer`` model. This has started by deprecating ``designate-zone-"
+"manager`` and ``designate-pool-manager``. We have also added support for new "
+"DNS Servers, and added scheduling across pools."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:101
+msgid ""
+"To allow for python3.7 support, the `designate-worker` service was changed "
+"from a `ThreadPoolExecutor` to a `GreenThreadPoolExecutor`. This should no "
+"impact for most deployments, but in some cases it may cause performance "
+"degredation. In these cases, tuning `[service:worker].workers` and `[service:"
+"worker].threads` alleviate the issues."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:72
+msgid ""
+"To enable ``designate-worker`` and ``designate-producer`` add a section to "
+"your ``designate.conf`` called ``[service:worker]`` and add an option "
+"``enabled = True``. Then stop ``designate-pool-manager`` and ``designate-"
+"zone-manager``, and start ``designate-worker`` and ``designate-producer``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:41
+msgid ""
+"To enable listener pooling, set the option ``[service:"
+"sink]listener_pool_name`` to some string value, that must be the same for "
+"all designate-sink service instances. Default value of this option "
+"(``None``) disables notification listener pooling."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:69
+msgid ""
+"To maintain exact matching behaviour (if you have multiple pools) you will "
+"need to set the ``scheduler_filters`` option in ``[service:central]`` to "
+"``default_pool``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:54
+msgid ""
+"Update command ``designate-manage pool update``, change ``--dry_run`` to ``--"
+"dry-run``, and change ``--delete`` and ``--dry-run`` as switchs not key "
+"value pair. e.g."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:87 origin/stable/mitaka>:53
+#: origin/stable/newton>:64 stable/queens>:37 stable/rocky>:51 stable/stein>:80
+#: stable/train>:35 stable/ussuri>:34 stable/wallaby>:10
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:57
+msgid ""
+"Upgrade from Liberty to Mitaka *will* require downtime due to migration of "
+"Pool Configuration data from config files, to the database. See the Upgrade "
+"Documentation for full details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:32
+msgid ""
+"Use of JSON policy files was deprecated by the ``oslo.policy`` library "
+"during the Victoria development cycle. As a result, this deprecation is "
+"being noted in the Wallaby cycle with an anticipated future removal of "
+"support by ``oslo.policy``. As such operators will need to convert to YAML "
+"policy files. Please see the upgrade notes for details on migration of any "
+"custom policy files."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:104
+msgid "V1 API Users can now query v1/quotas/<project_id> for quotas"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:51
+msgid "V1 API has been removed"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14
+msgid "V1 API removal is complete in this version of designate."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:70
+msgid ""
+"We fixed this by introducing a new unique constraint to the service_statuses "
+"table."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:83
+msgid "default-soa-refresh configuration option"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:125
+msgid ""
+"deprecations : V1 API : An initial notice of intent, as there are operations "
+"that still require the Designate CLI interface which talks to V1, and "
+"Horizon panels that only talk to V1."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:90
+msgid ""
+"designate-agents's host and port configuration options have been deprecated, "
+"please use the new combined \"listen\" argument in place of these."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:82
+msgid ""
+"designate-api's api_host and api_port configuration options have been "
+"deprecated, please use the new combined \"listen\" argument in place of "
+"these."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:86
+msgid ""
+"designate-mdns's host and port configuration options have been deprecated, "
+"please use the new combined \"listen\" argument in place of these."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:24
+msgid ""
+"designate-mdns, designate-agent and designate-api can now bind to multiple "
+"host:port pairs via the new \"listen\" configuration arguments for eacg "
+"service."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:115
+msgid ""
+"designate-pool-manager : If a tooz backend is not used, all pool-managers "
+"will assume ownership of the pool, and multiple periodic tasks will run. "
+"This can result in unforeseen consequences."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:111
+msgid ""
+"designate-pool-manager : It is recommended to use a supported tooz backend."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:107
+msgid ""
+"designate-pool-manager : The service can do active/passive failover for "
+"periodic tasks."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:103
+msgid ""
+"designate-zone-manager : If a tooz backend is not used, all zone-managers "
+"will assume ownership of all zones, and there will be 'n' 'exists' messages "
+"per hour, where 'n' is the number of zone-manager processes."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:95
+msgid ""
+"designate-zone-manager : It is recommended to use a supported tooz backend."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:99
+msgid ""
+"designate-zone-manager : ZooKeeper is recommended, or anything supported by "
+"tooz."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:53 stable/train>:122
+msgid "e.g."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "Designate Release Notes"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

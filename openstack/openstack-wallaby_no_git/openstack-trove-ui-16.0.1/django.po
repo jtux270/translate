@@ -1,0 +1,2359 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Дронова Юлия <juliette.tux@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 22:50+0000\n"
+"PO-Revision-Date: 2022-03-09 19:10+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#: content/backup_strategies/panel.py:22 content/backup_strategies/tables.py:63
+#: content/backup_strategies/templates/backup_strategies/index.html:3
+#: content/backup_strategies/views.py:33
+msgid "Backup Strategies"
+msgstr "Стратегии резервного копирования"
+
+#: content/backup_strategies/tables.py:25
+#: content/backup_strategies/workflows/create_backup_strategy.py:68
+msgid "Create Backup Strategy"
+msgstr "Создать стратегию резервного копирования"
+
+#: content/backup_strategies/tables.py:35
+msgid "Delete Backup Strategy"
+msgid_plural "Delete Backup Strategies"
+msgstr[0] "Удалить стратегию резервного копирования"
+msgstr[1] "Удалить стратегии резервного копирования"
+msgstr[2] "Удалить стратегии резервного копирования"
+
+#: content/backup_strategies/tables.py:43
+msgid "Backup Strategy Deleted"
+msgid_plural "Backup Strategies Deleted"
+msgstr[0] "Стратегия резервного копирования удалена"
+msgstr[1] "Стратегии резервного копирования удалены"
+msgstr[2] "Стратегии резервного копирования удалены"
+
+#: content/backup_strategies/tables.py:53
+msgid "Backend"
+msgstr "Сервис заднего плана"
+
+#: content/backup_strategies/tables.py:55
+msgid "instance_id"
+msgstr "instance_id"
+
+#: content/backup_strategies/tables.py:57
+msgid "Project"
+msgstr "Проект"
+
+#: content/backup_strategies/tables.py:59
+msgid "Swift Container"
+msgstr "Контейнер Swift"
+
+#: content/backup_strategies/templates/backup_strategies/_backup_strategy_help.html:3
+msgid "Specify the backup strategy details."
+msgstr "Указать подробные сведения о стратегии резервного копирования"
+
+#: content/backup_strategies/views.py:40
+msgid "Error getting backup strategies list."
+msgstr "Ошибка при получении списка стратегий резервного копирования"
+
+#: content/backup_strategies/views.py:48
+#: content/backup_strategies/workflows/create_backup_strategy.py:67
+msgid "Backup Strategy"
+msgstr "Стратегия резервного копирования"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:30
+#: content/database_backups/workflows/create_backup.py:32
+msgid "Database Instance"
+msgstr "Экземпляр БД"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:35
+#: content/database_backups/workflows/create_backup.py:42
+msgid "Swift Container Name"
+msgstr "Имя контейнера Swift"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:37
+#: content/database_backups/workflows/create_backup.py:45
+msgid "User defined swift container name."
+msgstr "Указанное пользователем имя контейнера swift"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:41
+#: content/database_backups/workflows/create_backup.py:49
+#: content/database_configurations/tabs.py:28
+#: content/databases/templates/databases/_detail_overview.html:40
+#: content/databases/workflows/create_instance.py:89
+msgid "Details"
+msgstr "Подробности"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:51
+#: content/database_backups/workflows/create_backup.py:59
+msgid "Unable to list database instances to backup."
+msgstr "Невозможно создать список экземпляров БД для резервного копирования"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:69
+msgid "Backup strategy created"
+msgstr "Стратегия резервного копирования создана"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:70
+msgid "Unable to create backup strategy"
+msgstr "Не удалось создать стратегию резервного копирования"
+
+#: content/backup_strategies/workflows/create_backup_strategy.py:83
+msgid "Error creating backup strategy."
+msgstr "Ошибка при создании стратегии резервного копирования."
+
+#: content/database_backups/panel.py:22 content/database_backups/tables.py:190
+#: content/database_backups/views.py:36 content/databases/tables.py:838
+#: content/databases/tabs.py:147 content/ng_database_backups/panel.py:21
+#: content/ng_database_backups/templates/ng_database_backups/index.html:3
+msgid "Backups"
+msgstr "Резервные копии"
+
+#: content/database_backups/tables.py:39
+msgctxt "Current status of a Database Backup"
+msgid "Building"
+msgstr "Создаётся"
+
+#: content/database_backups/tables.py:41
+msgctxt "Current status of a Database Backup"
+msgid "Completed"
+msgstr "Выполнено"
+
+#: content/database_backups/tables.py:43
+msgctxt "Current status of a Database Backup"
+msgid "Delete Failed"
+msgstr "Сбой удаления"
+
+#: content/database_backups/tables.py:45
+msgctxt "Current status of a Database Backup"
+msgid "Failed"
+msgstr "Сбой"
+
+#: content/database_backups/tables.py:47
+msgctxt "Current status of a Database Backup"
+msgid "New"
+msgstr "Новая"
+
+#: content/database_backups/tables.py:49
+msgctxt "Current status of a Database Backup"
+msgid "Restored"
+msgstr "Восстановленная"
+
+#: content/database_backups/tables.py:51
+msgctxt "Current status of a Database Backup"
+msgid "Saving"
+msgstr "Выполняется сохранение"
+
+#: content/database_backups/tables.py:57
+#: content/database_backups/workflows/create_backup.py:90
+#: content/databases/tables.py:407
+msgid "Create Backup"
+msgstr "Создать резервную копию"
+
+#: content/database_backups/tables.py:65
+msgid "Restore Backup"
+msgstr "Восстановить из резервной копии"
+
+#: content/database_backups/tables.py:80
+msgid "Download Backup"
+msgstr "Скачать резервную копию"
+
+#: content/database_backups/tables.py:105
+msgid "Delete Backup"
+msgid_plural "Delete Backups"
+msgstr[0] "Удалить резервную копию"
+msgstr[1] "Удалить резервные копии"
+msgstr[2] "Удалить резервные копии"
+
+#: content/database_backups/tables.py:113
+msgid "Deleted Backup"
+msgid_plural "Deleted Backups"
+msgstr[0] "Резервная копия была удалена"
+msgstr[1] "Резервные копии были удалены"
+msgstr[2] "Резервные копии были удалены"
+
+#: content/database_backups/tables.py:153
+#: content/database_backups/tables.py:159
+#: content/database_clusters/tables.py:150
+#: content/database_clusters/tables.py:193
+#: content/database_clusters/tables.py:199
+#: content/database_clusters/tables.py:213 content/databases/tables.py:568
+#: content/databases/tables.py:574 content/databases/tables.py:608
+#: content/databases/tables.py:614
+msgid "Not available"
+msgstr "Недоступно"
+
+#: content/database_backups/tables.py:169
+#: content/database_backups/templates/database_backups/details.html:14
+#: content/database_backups/templates/database_backups/details.html:60
+#: content/database_backups/workflows/create_backup.py:31
+#: content/database_clusters/forms.py:394
+#: content/database_clusters/tables.py:218
+#: content/database_clusters/tables.py:291
+#: content/database_clusters/tables.py:429
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:5
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:5
+#: content/database_configurations/forms.py:32
+#: content/database_configurations/forms.py:114
+#: content/database_configurations/tables.py:189
+#: content/database_configurations/tables.py:231
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:9
+#: content/databases/forms.py:29 content/databases/forms.py:155
+#: content/databases/forms.py:200 content/databases/forms.py:288
+#: content/databases/logs/tables.py:141 content/databases/tables.py:248
+#: content/databases/tables.py:819
+#: content/databases/templates/databases/_detail_overview.html:5
+#: content/databases/templates/databases/_promote_to_replica_source.html:17
+#: content/databases/templates/databases/_promote_to_replica_source.html:27
+msgid "Name"
+msgstr "Имя"
+
+#: content/database_backups/tables.py:171
+#: content/database_backups/templates/database_backups/details.html:21
+#: content/database_clusters/forms.py:47
+#: content/database_clusters/tables.py:165
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:9
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:9
+#: content/database_configurations/forms.py:35
+#: content/database_configurations/tables.py:72
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:15
+#: content/databases/tables.py:740
+#: content/databases/templates/databases/_detail_overview.html:9
+#: content/databases/workflows/create_instance.py:58
+msgid "Datastore"
+msgstr "Хранилище данных"
+
+#: content/database_backups/tables.py:173
+#: content/database_backups/templates/database_backups/details.html:23
+#: content/database_clusters/tables.py:167
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:11
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:11
+#: content/database_configurations/tables.py:75
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:17
+#: content/databases/tables.py:742
+#: content/databases/templates/databases/_detail_overview.html:11
+msgid "Datastore Version"
+msgstr "Версия хранилища данных"
+
+#: content/database_backups/tables.py:174
+#: content/database_backups/templates/database_backups/details.html:32
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:19
+#: content/databases/tables.py:820
+#: content/databases/templates/databases/_detail_overview.html:45
+#: content/databases/templates/databases/_detail_overview.html:61
+msgid "Created"
+msgstr "Создано"
+
+#: content/database_backups/tables.py:177
+#: enabled/_1710_database_panel_group.py:18
+msgid "Database"
+msgstr "БД"
+
+#: content/database_backups/tables.py:179 content/databases/tables.py:826
+msgid "Incremental"
+msgstr "Инкрементная"
+
+#: content/database_backups/tables.py:183
+#: content/database_backups/templates/database_backups/details.html:26
+#: content/database_backups/templates/database_backups/details.html:67
+#: content/database_clusters/tables.py:231
+#: content/database_clusters/tables.py:294 content/databases/logs/tables.py:143
+#: content/databases/tables.py:753 content/databases/tables.py:831
+#: content/databases/templates/databases/_detail_overview.html:13
+#: content/databases/templates/databases/_promote_to_replica_source.html:19
+#: content/databases/templates/databases/_promote_to_replica_source.html:29
+msgid "Status"
+msgstr "Статус"
+
+#: content/database_backups/templates/database_backups/_backup_details_help.html:3
+msgid "Specify the details for the database backup."
+msgstr "Укажите подробные сведения о рез. копии БД"
+
+#: content/database_backups/templates/database_backups/_backup_details_help.html:4
+msgid ""
+"You can perform an incremental backup by specifying a parent backup. "
+"<strong>However,</strong> not all databases support incremental backups in "
+"which case this operation will result in an error."
+msgstr ""
+"Есть возможность создать инкрементную рез. копию, указав родительскую рез."
+" копию. "
+"<strong>Тем не менее,</strong> не все БД поддерживают эту возможность, и в"
+" этом случае "
+"действие закончится ошибкой."
+
+#: content/database_backups/templates/database_backups/backup.html:3
+#: content/database_backups/views.py:70
+#: content/database_backups/workflows/create_backup.py:89
+msgid "Backup Database"
+msgstr "Создать резервную копию БД"
+
+#: content/database_backups/templates/database_backups/details.html:3
+msgid "Backup Details"
+msgstr "Подробные сведения о рез. копии"
+
+#: content/database_backups/templates/database_backups/details.html:8
+msgid "Backup Overview"
+msgstr "Обзор резервной копии"
+
+#: content/database_backups/templates/database_backups/details.html:11
+msgid "Information"
+msgstr "Сведения"
+
+#: content/database_backups/templates/database_backups/details.html:16
+#: content/database_backups/workflows/create_backup.py:33
+#: content/database_configurations/forms.py:33
+#: content/database_configurations/tables.py:69
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:11
+msgid "Description"
+msgstr "Описание"
+
+#: content/database_backups/templates/database_backups/details.html:18
+#: content/database_backups/templates/database_backups/details.html:62
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:7
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:7
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:13
+#: content/databases/templates/databases/_detail_overview.html:7
+msgid "ID"
+msgstr "ID"
+
+#: content/database_backups/templates/database_backups/details.html:28
+msgid "Backup File Location"
+msgstr "Местоположение файла рез.копии"
+
+#: content/database_backups/templates/database_backups/details.html:30
+msgid "Initial Volume Size"
+msgstr "Начальный размер тома"
+
+#: content/database_backups/templates/database_backups/details.html:31
+msgid "GB"
+msgstr "Гбайт"
+
+#: content/database_backups/templates/database_backups/details.html:34
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:21
+#: content/databases/templates/databases/_detail_overview.html:63
+msgid "Updated"
+msgstr "Обновлено"
+
+#: content/database_backups/templates/database_backups/details.html:36
+msgid "Backup Duration"
+msgstr "Продолжительность создания рез.копии"
+
+#: content/database_backups/templates/database_backups/details.html:43
+msgid "Incremental Backup"
+msgstr "Инкрементная рез. копия"
+
+#: content/database_backups/templates/database_backups/details.html:46
+#: content/database_backups/workflows/create_backup.py:37
+msgid "Parent Backup"
+msgstr "Родительская рез. копия"
+
+#: content/database_backups/templates/database_backups/details.html:57
+msgid "Database Info"
+msgstr "Сведения о БД"
+
+#: content/database_backups/templates/database_backups/index.html:3
+msgid "Database Backups"
+msgstr "Резервные копии БД"
+
+#: content/database_backups/tests.py:253
+#: content/databases/workflows/create_instance.py:370
+#: content/databases/workflows/create_instance.py:411
+msgid "Restore from Backup"
+msgstr "Восстановить из резервной копии"
+
+#: content/database_backups/views.py:50
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: content/database_backups/views.py:62
+msgid "Error getting database backup list."
+msgstr "Ошибка при получении списка резервных копий БД"
+
+#: content/database_backups/views.py:81
+msgid "Backup Details: {{ backup.name }}"
+msgstr "Подробные сведения о рез. копии: {{ backup.name }}"
+
+#: content/database_backups/views.py:92
+#, python-format
+msgid "Unable to retrieve details for backup: %s"
+msgstr "Не удалось получить подробные сведения о рез. копии: %s"
+
+#: content/database_backups/views.py:100
+#, python-format
+msgid "Unable to retrieve details for parent backup: %s"
+msgstr "Не удалось получить подробные сведения о родительской рез. копии: %s"
+
+#: content/database_backups/workflows/create_backup.py:36
+msgid "Optional Backup Description"
+msgstr "Дополнительное описание рез. копии"
+
+#: content/database_backups/workflows/create_backup.py:39
+msgid "Optional parent backup"
+msgstr "Дополнительная родительская рез. копия"
+
+#: content/database_backups/workflows/create_backup.py:71
+msgid "Unable to list database backups for parent."
+msgstr "Не удалось создать список родительских рез. копий БД"
+
+#: content/database_backups/workflows/create_backup.py:75
+msgid "Select parent backup"
+msgstr "Выберите родительскую рез. копию"
+
+#: content/database_backups/workflows/create_backup.py:77
+#: content/databases/workflows/create_instance.py:450
+msgid "No backups available"
+msgstr "Нет доступных рез. копий"
+
+#: content/database_backups/workflows/create_backup.py:91
+#, python-format
+msgid "Scheduled backup \"%(name)s\"."
+msgstr "Создание рез. копии \"%(name)s\" было занесено в расписание"
+
+#: content/database_backups/workflows/create_backup.py:92
+#: content/databases/workflows/create_instance.py:540
+#, python-format
+msgid "Unable to launch %(count)s named \"%(name)s\"."
+msgstr "Не удалось запустить %(count)s с именами \"%(name)s\"."
+
+#: content/database_backups/workflows/create_backup.py:102
+#: content/databases/workflows/create_instance.py:557
+msgid "instance"
+msgstr "экземпляр"
+
+#: content/database_backups/workflows/create_backup.py:116
+msgid "Error creating database backup."
+msgstr "Ошибка при создании рез. копии БД"
+
+#: content/database_clusters/forms.py:44
+#: content/database_clusters/tables.py:163
+msgid "Cluster Name"
+msgstr "Имя кластера"
+
+#: content/database_clusters/forms.py:48
+#: content/database_configurations/forms.py:36
+#: content/databases/workflows/create_instance.py:59
+msgid "Type and version of datastore."
+msgstr "Тип и версия хранилища данных"
+
+#: content/database_clusters/forms.py:54 content/database_clusters/forms.py:408
+#: content/database_clusters/tables.py:435
+msgid "Network"
+msgstr "Сеть"
+
+#: content/database_clusters/forms.py:55 content/database_clusters/forms.py:409
+msgid "Network attached to instance."
+msgstr "Сеть, прикреплённая к экземпляру"
+
+#: content/database_clusters/forms.py:58 content/database_clusters/forms.py:389
+#: content/database_clusters/tables.py:227 content/databases/tables.py:750
+#: content/databases/templates/databases/_detail_overview.html:58
+#: content/databases/workflows/create_instance.py:49
+msgid "Volume Size"
+msgstr "Размер тома"
+
+#: content/database_clusters/forms.py:61 content/database_clusters/forms.py:392
+#: content/databases/workflows/create_instance.py:52
+msgid "Size of the volume in GB."
+msgstr "Размер тома в Гбайт"
+
+#: content/database_clusters/forms.py:63
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:20
+#: content/databases/templates/databases/_detail_overview.html:28
+#: content/databases/workflows/create_instance.py:76
+msgid "Locality"
+msgstr "Расположение"
+
+#: content/database_clusters/forms.py:68
+msgid ""
+"Specify whether instances in the cluster will be created on the same "
+"hypervisor (affinity) or on different hypervisors (anti-affinity)."
+msgstr ""
+"Укажите, будут ли экземпляры в кластере создаваться на том же "
+"гипервизоре (схожесть) или на разных гипервизорах (анти-схожесть)."
+
+#: content/database_clusters/forms.py:72 content/database_clusters/forms.py:120
+msgid "Root Password"
+msgstr "Пароль root"
+
+#: content/database_clusters/forms.py:74
+msgid "Password for root user."
+msgstr "Пароль пользователя root"
+
+#: content/database_clusters/forms.py:80 content/database_clusters/forms.py:102
+#: content/database_clusters/forms.py:113
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:17
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:17
+msgid "Number of Instances"
+msgstr "Число экземпляров"
+
+#: content/database_clusters/forms.py:84
+msgid "Number of instances in the cluster. (Read only)"
+msgstr "Число экземпляров в кластере. (Только для чтения)"
+
+#: content/database_clusters/forms.py:91 content/database_clusters/forms.py:116
+msgid "Number of Shards"
+msgstr "Число сегментов"
+
+#: content/database_clusters/forms.py:95
+msgid "Number of shards. (Read only)"
+msgstr "Число сегментов. (Только для чтения)"
+
+#: content/database_clusters/forms.py:105
+msgid "Number of instances in the cluster."
+msgstr "Число экземпляров в кластере."
+
+#: content/database_clusters/forms.py:141
+msgid "The flavor must be specified."
+msgstr "Необходимо указать вариант конфигурации"
+
+#: content/database_clusters/forms.py:146
+msgid "Password for root user must be specified."
+msgstr "Необходимо указать пароль пользователя root"
+
+#: content/database_clusters/forms.py:150
+msgid "The number of instances must be greater than 1."
+msgstr "Число экземпляров должно превышать 1."
+
+#: content/database_clusters/forms.py:155
+msgid "The number of shards must be greater than 1."
+msgstr "Число сегментов должно превышать 1."
+
+#: content/database_clusters/forms.py:173
+#: content/database_clusters/forms.py:437
+#: content/databases/workflows/create_instance.py:161
+msgid "Unable to obtain flavors."
+msgstr "Не удалось получить сведения о вариантах конфигурации"
+
+#: content/database_clusters/forms.py:192
+#: content/database_clusters/forms.py:460
+msgid "Unable to retrieve networks."
+msgstr "Не удалось получить сведения о сетях"
+
+#: content/database_clusters/forms.py:205
+#: content/database_configurations/forms.py:52
+msgid "Unable to obtain datastores."
+msgstr "Не удалось получить сведения о хранилищах данных"
+
+#: content/database_clusters/forms.py:225
+#: content/database_configurations/forms.py:63
+msgid "Unable to obtain datastore versions."
+msgstr "Не удалось получить сведения о вариантах хранилищ данных"
+
+#: content/database_clusters/forms.py:276
+#: content/database_clusters/forms.py:282
+#: content/database_clusters/forms.py:386
+#: content/database_clusters/tables.py:430
+#: content/databases/templates/databases/_detail_overview.html:53
+#: content/databases/workflows/create_instance.py:245
+#: content/databases/workflows/create_instance.py:251
+msgid "Flavor"
+msgstr "Вариант конфигурации"
+
+#: content/database_clusters/forms.py:277
+#: content/database_clusters/forms.py:387
+#: content/databases/workflows/create_instance.py:246
+msgid "Size of image to launch."
+msgstr "Размер запускаемого образа"
+
+#: content/database_clusters/forms.py:372
+#, python-format
+msgid "Launched cluster \"%s\""
+msgstr "Кластер \"%s\" был запущен"
+
+#: content/database_clusters/forms.py:377
+msgid "Unable to launch cluster."
+msgstr "Не удалось запустить кластер"
+
+#: content/database_clusters/forms.py:396
+msgid "Optional name of the instance."
+msgstr "Дополнительное имя экземпляра"
+
+#: content/database_clusters/forms.py:398
+#: content/database_clusters/tables.py:433
+msgid "Instance Type"
+msgstr "Тип экземпляра"
+
+#: content/database_clusters/forms.py:400
+msgid "Optional datastore specific type of the instance."
+msgstr "Дополнительный тип экземпляра, относящийся к хранилищу данных"
+
+#: content/database_clusters/forms.py:402
+#: content/database_clusters/tables.py:434
+msgid "Related To"
+msgstr "Имеет отношение к"
+
+#: content/database_clusters/forms.py:404
+msgid ""
+"Optional datastore specific value that defines the relationship from one "
+"instance in the cluster to another."
+msgstr ""
+"Дополнительный тип, относящийся к хранилищу данных, определяющий "
+"отношения между экземплярами в кластере."
+
+#: content/database_clusters/forms.py:479
+msgid "Unable to grow cluster."
+msgstr "Невозможно увеличить кластер"
+
+#: content/database_clusters/forms.py:487 content/databases/forms.py:207
+msgid "New Password"
+msgstr "Новый пароль"
+
+#: content/database_clusters/forms.py:488
+msgid "New password for cluster access."
+msgstr "Новый пароль для доступа к кластеру"
+
+#: content/database_clusters/forms.py:498
+#, python-format
+msgid "Root password updated for cluster \"%s\""
+msgstr "Пароль root для кластера \"%s\" был обновлён"
+
+#: content/database_clusters/forms.py:502
+msgid "Unable to reset password."
+msgstr "Не удалось сбросить пароль"
+
+#: content/database_clusters/panel.py:23
+#: content/database_clusters/tables.py:179
+#: content/database_clusters/templates/database_clusters/index.html:3
+#: content/database_clusters/templates/database_clusters/index.html:6
+msgid "Clusters"
+msgstr "Кластеры"
+
+#: content/database_clusters/tables.py:44
+msgid "Deleted cluster is not recoverable."
+msgstr "Удалённые кластеры восстановлению не подлежат"
+
+#: content/database_clusters/tables.py:49
+msgid "Delete Cluster"
+msgid_plural "Delete Clusters"
+msgstr[0] "Удалить кластер"
+msgstr[1] "Удалить кластеры"
+msgstr[2] "Удалить кластеры"
+
+#: content/database_clusters/tables.py:57
+msgid "Scheduled deletion of Cluster"
+msgid_plural "Scheduled deletion of Clusters"
+msgstr[0] "Удаление кластера занесено в расписание"
+msgstr[1] "Удаление кластеров занесено в расписание"
+msgstr[2] "Удаление кластеров занесено в расписание"
+
+#: content/database_clusters/tables.py:68 content/database_clusters/views.py:96
+msgid "Launch Cluster"
+msgstr "Запустить кластер"
+
+#: content/database_clusters/tables.py:76
+#: content/database_clusters/tables.py:386
+#: content/database_clusters/tables.py:387
+#: content/database_clusters/tables.py:411
+msgid "Grow Cluster"
+msgstr "Увеличить кластер"
+
+#: content/database_clusters/tables.py:88
+#: content/database_clusters/tables.py:248
+msgid "Shrink Cluster"
+msgid_plural "Shrink Cluster"
+msgstr[0] "Сжать кластер"
+msgstr[1] "Сжать кластер"
+msgstr[2] "Сжать кластер"
+
+#: content/database_clusters/tables.py:100
+#: content/database_clusters/templates/database_clusters/_reset_password.html:8
+#: content/database_clusters/templates/database_clusters/_reset_password.html:22
+#: content/database_clusters/templates/database_clusters/reset_password.html:3
+#: content/database_clusters/views.py:243
+msgid "Reset Root Password"
+msgstr "Сбросить пароль root"
+
+#: content/database_clusters/tables.py:143
+#, python-format
+msgid "%(name)s | %(RAM)s RAM | %(instances)s instances"
+msgstr "%(name)s | %(RAM)s RAM | %(instances)s экземпляров"
+
+#: content/database_clusters/tables.py:169
+msgid "Cluster Size"
+msgstr "Размер кластера"
+
+#: content/database_clusters/tables.py:173
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:13
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:13
+msgid "Current Task"
+msgstr "Текущая задача"
+
+#: content/database_clusters/tables.py:189 content/databases/tables.py:604
+#, python-format
+msgid "%(name)s | %(RAM)s RAM"
+msgstr "%(name)s | %(RAM)s ОЗУ"
+
+#: content/database_clusters/tables.py:207
+#: content/database_clusters/templates/database_clusters/_detail_overview_cassandra.html:11
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:11
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:11
+#: content/database_clusters/templates/database_clusters/_detail_overview_redis.html:11
+#: content/databases/tables.py:599
+#: content/databases/templates/databases/_detail_overview_cassandra.html:11
+#: content/databases/templates/databases/_detail_overview_couchbase.html:11
+#: content/databases/templates/databases/_detail_overview_mongodb.html:16
+#: content/databases/templates/databases/_detail_overview_mysql.html:11
+#: content/databases/templates/databases/_detail_overview_postgresql.html:11
+#: content/databases/templates/databases/_detail_overview_redis.html:11
+msgid "Not Assigned"
+msgstr "Не присвоено"
+
+#: content/database_clusters/tables.py:220 content/databases/logs/tables.py:142
+msgid "Type"
+msgstr "Тип"
+
+#: content/database_clusters/tables.py:222
+#: content/database_clusters/templates/database_clusters/_detail_overview_cassandra.html:9
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:9
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:9
+#: content/database_clusters/templates/database_clusters/_detail_overview_redis.html:9
+#: content/databases/forms.py:162 content/databases/forms.py:203
+#: content/databases/tables.py:743
+#: content/databases/templates/databases/_detail_overview_cassandra.html:9
+#: content/databases/templates/databases/_detail_overview_couchbase.html:9
+#: content/databases/templates/databases/_detail_overview_mongodb.html:13
+#: content/databases/templates/databases/_detail_overview_mysql.html:9
+#: content/databases/templates/databases/_detail_overview_postgresql.html:9
+#: content/databases/templates/databases/_detail_overview_redis.html:9
+#: content/databases/templates/databases/_promote_to_replica_source.html:18
+#: content/databases/templates/databases/_promote_to_replica_source.html:28
+msgid "Host"
+msgstr "Хост"
+
+#: content/database_clusters/tables.py:224 content/databases/tables.py:745
+msgid "Size"
+msgstr "Размер"
+
+#: content/database_clusters/tables.py:235
+#: content/database_clusters/tables.py:298
+#: content/database_clusters/tables.py:439 content/database_clusters/tabs.py:56
+#: content/database_configurations/tabs.py:54 content/databases/panel.py:22
+#: content/databases/tables.py:764
+#: content/databases/templates/databases/index.html:3
+#: content/databases/views.py:46
+msgid "Instances"
+msgstr "Экземпляры"
+
+#: content/database_clusters/tables.py:243
+msgid "Shrinking a cluster is not recoverable."
+msgstr "Сжатые кластеры восстановлению не подлежат"
+
+#: content/database_clusters/tables.py:256
+msgid "Scheduled Shrinking of Cluster"
+msgid_plural "Scheduled Shrinking of Cluster"
+msgstr[0] "Сжатие кластера занесено в расписание"
+msgstr[1] "Сжатие кластера занесено в расписание"
+msgstr[2] "Сжатие кластера занесено в расписание"
+
+#: content/database_clusters/tables.py:276
+msgid "Removed instances from cluster."
+msgstr "Экземпляры были удалены из кластера"
+
+#: content/database_clusters/tables.py:283
+#, python-format
+msgid "Unable to remove instances from cluster: %s"
+msgstr "Не удалось удалить экземпляры из кластера: %s"
+
+#: content/database_clusters/tables.py:305
+#: content/database_clusters/views.py:175
+#: content/database_clusters/views.py:182
+msgid "Add Instance"
+msgstr "Добавить экземпляр"
+
+#: content/database_clusters/tables.py:320
+msgid "Remove Instance"
+msgid_plural "Remove Instances"
+msgstr[0] "Удалить экземпляр"
+msgstr[1] "Удалить экземпляры"
+msgstr[2] "Удалить экземпляры"
+
+#: content/database_clusters/tables.py:328
+msgid "Removed Instance"
+msgid_plural "Removed Instances"
+msgstr[0] "Экземпляр был удалён"
+msgstr[1] "Экземпляры были удалены"
+msgstr[2] "Экземпляры были удалены"
+
+#: content/database_clusters/tables.py:370
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "Отсутствуют разрешения на %(action)s: %(objs)s"
+
+#: content/database_clusters/tables.py:376
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "Невозможно выполнить %(action)s: %(objs)s"
+
+#: content/database_clusters/tables.py:393
+msgid "Cannot grow cluster.  No instances specified."
+msgstr "Невозможно увеличить кластер. Не указаны экземпляры."
+
+#: content/database_clusters/tables.py:399
+#, python-format
+msgid ""
+"[flavor=%(flavor)s, volume=%(volume)s, name=%(name)s, type=%(type)s, "
+"related_to=%(related_to)s, nics=%(nics)s]"
+msgstr ""
+"[flavor=%(flavor)s, volume=%(volume)s, name=%(name)s, type=%(type)s, "
+"related_to=%(related_to)s, nics=%(nics)s]"
+
+#: content/database_clusters/tables.py:412
+msgid "Scheduled growing of cluster."
+msgstr "Увеличение кластера занесено в расписание."
+
+#: content/database_clusters/tables.py:418
+#, python-format
+msgid "Unable to grow cluster: %s"
+msgstr "Невозможно увеличить кластер: %s"
+
+#: content/database_clusters/tables.py:432
+msgid "Volume"
+msgstr "Том"
+
+#: content/database_clusters/tabs.py:29 content/databases/tabs.py:34
+msgid "Overview"
+msgstr "Обзор"
+
+#: content/database_clusters/tabs.py:83
+msgid "Unable to get instances data."
+msgstr "Не удалось получить данные об экземплярах"
+
+#: content/database_clusters/templates/database_clusters/_add_instance.html:5
+msgid "Specify the details of the instance to be added to the cluster."
+msgstr "Укажите подробные сведения об экземпляре, добавляемом в кластер"
+
+#: content/database_clusters/templates/database_clusters/_add_instance.html:6
+msgid ""
+"The name field is optional.   If the field is left blank a name will be "
+"generated when the cluster is grown."
+msgstr ""
+"Поле имени не является обязательным.  При пустом поле имя будет "
+"создано во время увеличения кластера."
+
+#: content/database_clusters/templates/database_clusters/_add_instance.html:7
+msgid ""
+"The 'Instance Type' and 'Related To' fields are datastore specific and "
+"optional.  See the Trove documentation for more information on using these "
+"fields."
+msgstr ""
+"Поля «Тип экземпляра» и «Имеет отношение к» относятся к хранилищу данных "
+"и не являются обязательными.  Дополнительные сведения об использовании этих"
+" параметров "
+"смотрите в документации к Trove."
+
+#: content/database_clusters/templates/database_clusters/_detail_overview.html:15
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:15
+#: content/databases/templates/databases/_detail_overview.html:55
+msgid "RAM"
+msgstr "ОЗУ"
+
+#: content/database_clusters/templates/database_clusters/_detail_overview_cassandra.html:5
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:5
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:5
+#: content/database_clusters/templates/database_clusters/_detail_overview_redis.html:5
+#: content/databases/templates/databases/_detail_overview_cassandra.html:5
+#: content/databases/templates/databases/_detail_overview_couchbase.html:5
+#: content/databases/templates/databases/_detail_overview_mongodb.html:5
+#: content/databases/templates/databases/_detail_overview_mysql.html:5
+#: content/databases/templates/databases/_detail_overview_postgresql.html:5
+#: content/databases/templates/databases/_detail_overview_redis.html:5
+msgid "Connection Information"
+msgstr "Сведения о подключениях"
+
+#: content/database_clusters/templates/database_clusters/_detail_overview_cassandra.html:14
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:16
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:14
+#: content/database_clusters/templates/database_clusters/_detail_overview_redis.html:14
+#: content/databases/templates/databases/_detail_overview_cassandra.html:16
+#: content/databases/templates/databases/_detail_overview_couchbase.html:14
+#: content/databases/templates/databases/_detail_overview_mongodb.html:23
+#: content/databases/templates/databases/_detail_overview_mysql.html:16
+#: content/databases/templates/databases/_detail_overview_postgresql.html:16
+#: content/databases/templates/databases/_detail_overview_redis.html:14
+msgid "Connection Examples"
+msgstr "Примеры подключений"
+
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:14
+#: content/databases/templates/databases/_detail_overview_cassandra.html:14
+#: content/databases/templates/databases/_detail_overview_mongodb.html:21
+#: content/databases/templates/databases/_detail_overview_mysql.html:14
+#: content/databases/templates/databases/_detail_overview_postgresql.html:14
+msgid "Database Port"
+msgstr "Порт БД"
+
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:18
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:15
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:16
+#: content/databases/templates/databases/_detail_overview_mongodb.html:25
+#: content/databases/templates/databases/_detail_overview_mysql.html:17
+#: content/databases/templates/databases/_detail_overview_mysql.html:18
+#: content/databases/templates/databases/_detail_overview_postgresql.html:17
+#: content/databases/templates/databases/_detail_overview_postgresql.html:18
+msgid "USERNAME"
+msgstr "ИМЯ ПОЛЬЗОВАТЕЛЯ"
+
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:18
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:16
+#: content/databases/templates/databases/_detail_overview_mongodb.html:25
+#: content/databases/templates/databases/_detail_overview_mysql.html:18
+#: content/databases/templates/databases/_detail_overview_postgresql.html:18
+msgid "PASSWORD"
+msgstr "ПАРОЛЬ"
+
+#: content/database_clusters/templates/database_clusters/_detail_overview_mongodb.html:18
+#: content/database_clusters/templates/database_clusters/_detail_overview_mysql.html:16
+#: content/databases/templates/databases/_detail_overview_mongodb.html:25
+#: content/databases/templates/databases/_detail_overview_mysql.html:18
+#: content/databases/templates/databases/_detail_overview_postgresql.html:18
+msgid "DATABASE"
+msgstr "БД"
+
+#: content/database_clusters/templates/database_clusters/_detail_overview_vertica.html:19
+msgid "Management Console"
+msgstr "Консоль управления"
+
+#: content/database_clusters/templates/database_clusters/_reset_password.html:17
+msgid "Specify the new root password for vertica cluster."
+msgstr "Укажите новый пароль root для кластера vertica"
+
+#: content/database_clusters/templates/database_clusters/_reset_password.html:23
+msgid "Cancel"
+msgstr "Отмена"
+
+#: content/database_clusters/templates/database_clusters/cluster_grow_details.html:7
+msgid ""
+"Specify the instances to be added to the cluster.  When all the instances "
+"are specified click 'Grow Cluster' to perform the grow operation."
+msgstr ""
+"Укажите экземпляры, которые нужно добавить в кластер.  После выбора всех "
+"экземпляров, нажмите на кнопку «Увеличить кластер» для выполнения действия."
+
+#: content/database_clusters/templates/database_clusters/cluster_shrink_details.html:7
+msgid "Select the instance(s) that will be removed from the cluster."
+msgstr "Выберите экземпляры, которые нужно удалить из кластера."
+
+#: content/database_clusters/views.py:57 content/databases/views.py:57
+msgid "Unable to retrieve database size information."
+msgstr "Не удалось получить сведения о размере БД"
+
+#: content/database_clusters/views.py:84
+msgid "Unable to retrieve database clusters."
+msgstr "Не удалось получить сведения о кластерах БД"
+
+#: content/database_clusters/views.py:99
+#: content/databases/workflows/create_instance.py:538
+msgid "Launch"
+msgstr "Запустить"
+
+#: content/database_clusters/views.py:122
+#, python-format
+msgid "Unable to retrieve details for database cluster: %s"
+msgstr "Не удалось получить подробные сведения о кластере БД: %s"
+
+#: content/database_clusters/views.py:149
+msgid "Grow Cluster: {{cluster_name}}"
+msgstr "Увеличить кластер: {{cluster_name}}"
+
+#: content/database_clusters/views.py:168
+#: content/database_clusters/views.py:222
+#: content/database_clusters/views.py:251
+msgid "Unable to retrieve cluster details."
+msgstr "Не удалось получить подробные сведения о кластере"
+
+#: content/database_clusters/views.py:178
+msgid "Add"
+msgstr "Добавить"
+
+#: content/database_clusters/views.py:214
+msgid "Shrink Cluster: {{cluster_name}}"
+msgstr "Сжать кластер: {{cluster_name}}"
+
+#: content/database_configurations/config_param_manager.py:146
+msgid "Value must be \"true\" or \"false\"."
+msgstr "Значением должно быть «верно» или «ложно»"
+
+#: content/database_configurations/config_param_manager.py:151
+msgid "Value must be a number."
+msgstr "Значением должно быть число"
+
+#: content/database_configurations/config_param_manager.py:158
+#, python-format
+msgid "Value must be of type %s."
+msgstr "Значение должно иметь тип %s."
+
+#: content/database_configurations/config_param_manager.py:162
+#, python-format
+msgid "Value must be a number between %(min)s and %(max)s."
+msgstr "Значением должно быть число в диапазоне %(min)s - %(max)s."
+
+#: content/database_configurations/config_param_manager.py:167
+#, python-format
+msgid "Value must be a number greater than or equal to %s."
+msgstr "Значением должно быть число большее или равное %s."
+
+#: content/database_configurations/config_param_manager.py:171
+#, python-format
+msgid "Value must be a number less than or equal to %s."
+msgstr "Значением должно быть число меньшее или равное %s."
+
+#: content/database_configurations/forms.py:91
+msgid "Select datastore type and version"
+msgstr "Выберите тип и версию хранилища данных"
+
+#: content/database_configurations/forms.py:105
+msgid "Created configuration group"
+msgstr "Группа конфигурации создана"
+
+#: content/database_configurations/forms.py:108
+msgid "Unable to create configuration group."
+msgstr "Не удалось создать группу конфигурации"
+
+#: content/database_configurations/forms.py:115
+#: content/database_configurations/tables.py:190
+#: content/databases/tables.py:847
+msgid "Value"
+msgstr "Значение"
+
+#: content/database_configurations/forms.py:140
+msgid "Unable to obtain list of parameters."
+msgstr "Не удалось получить список параметров"
+
+#: content/database_configurations/forms.py:158
+msgid "Unable to create list of parameters."
+msgstr "Не удалось создать список параметров"
+
+#: content/database_configurations/forms.py:190
+msgid "Successfully added parameter"
+msgstr "Параметр был успешно добавлен"
+
+#: content/database_configurations/forms.py:194
+msgid "Unable to add new parameter."
+msgstr "Не удалось добавить новый параметр"
+
+#: content/database_configurations/panel.py:22
+msgid "Configurations"
+msgstr "Конфигурации"
+
+#: content/database_configurations/tables.py:32
+#: content/database_configurations/views.py:84
+msgid "Create Configuration Group"
+msgstr "Создать группу конфигурации"
+
+#: content/database_configurations/tables.py:39 content/databases/forms.py:250
+#: content/databases/templates/databases/_detail_overview.html:18
+#: content/databases/workflows/create_instance.py:361
+msgid "Configuration Group"
+msgstr "Группа конфигурации"
+
+#: content/database_configurations/tables.py:40
+#: content/database_configurations/tables.py:79
+#: content/database_configurations/views.py:39
+msgid "Configuration Groups"
+msgstr "Группы конфигурации"
+
+#: content/database_configurations/tables.py:45
+msgid "Delete Configuration Group"
+msgid_plural "Delete Configuration Groups"
+msgstr[0] "Удалить группу конфигурации"
+msgstr[1] "Удалить группы конфигурации"
+msgstr[2] "Удалить группы конфигурации"
+
+#: content/database_configurations/tables.py:53
+msgid "Deleted Configuration Group"
+msgid_plural "Deleted Configuration Groups"
+msgstr[0] "Группа конфигурации была удалена"
+msgstr[1] "Группы конфигурации были удалены"
+msgstr[2] "Группы конфигурации были удалены"
+
+#: content/database_configurations/tables.py:65
+msgid "Configuration Group Name"
+msgstr "Имя группы конфигурации"
+
+#: content/database_configurations/tables.py:86
+#: content/database_configurations/views.py:95
+msgid "Add Parameter"
+msgstr "Добавить параметр"
+
+#: content/database_configurations/tables.py:98
+#: content/database_configurations/tables.py:99
+msgid "Apply Changes"
+msgstr "Применить изменения"
+
+#: content/database_configurations/tables.py:114
+msgid "Applied changes to server"
+msgstr "Изменения сервера были применены"
+
+#: content/database_configurations/tables.py:116
+msgid "Error applying changes"
+msgstr "Ошибка применения изменений"
+
+#: content/database_configurations/tables.py:125
+#: content/database_configurations/tables.py:126
+msgid "Discard Changes"
+msgstr "Отказаться от изменений"
+
+#: content/database_configurations/tables.py:137
+msgid "Reset Parameters"
+msgstr "Откатить параметры"
+
+#: content/database_configurations/tables.py:141
+#, python-format
+msgid "Error resetting parameters: %s"
+msgstr "Ошибка отката параметров: %s"
+
+#: content/database_configurations/tables.py:147
+msgid "Parameter"
+msgstr "Параметр"
+
+#: content/database_configurations/tables.py:148
+msgid "Parameters"
+msgstr "Параметры"
+
+#: content/database_configurations/tables.py:153
+msgid "Delete Parameter"
+msgid_plural "Delete Parameters"
+msgstr[0] "Удалить параметр"
+msgstr[1] "Удалить параметры"
+msgstr[2] "Удалить параметры"
+
+#: content/database_configurations/tables.py:161
+msgid "Deleted Parameter"
+msgid_plural "Deleted Parameters"
+msgstr[0] "Параметр был удалён"
+msgstr[1] "Параметры были удалены"
+msgstr[2] "Параметры были удалены"
+
+#: content/database_configurations/tables.py:195
+msgid "Configuration Group Values"
+msgstr "Значения группы конфигурации"
+
+#: content/database_configurations/tables.py:208
+#: content/databases/tables.py:465
+msgid "Detach Configuration Group"
+msgid_plural "Detach Configuration Groups"
+msgstr[0] "Отсоединить группу конфигурации"
+msgstr[1] "Отсоединить группы конфигурации"
+msgstr[2] "Отсоединить группы конфигурации"
+
+#: content/database_configurations/tables.py:216
+#: content/databases/tables.py:473
+msgid "Detached Configuration Group"
+msgid_plural "Detached Configuration Groups"
+msgstr[0] "Группа конфигурации была отсоединена"
+msgstr[1] "Группы конфигурации были отсоединены"
+msgstr[2] "Группы конфигурации были отсоединены"
+
+#: content/database_configurations/tables.py:235
+msgid "Configuration Group Instances"
+msgstr "Экземпляры группы конфигурации"
+
+#: content/database_configurations/tabs.py:38
+msgid "Values"
+msgstr "Значения"
+
+#: content/database_configurations/tabs.py:64
+msgid "Unable to get configuration data."
+msgstr "Не удалось получить данные группы конфигурации"
+
+#: content/database_configurations/templates/database_configurations/_add_parameter.html:5
+msgid "Select a parameter and provide a value for the configuration parameter."
+msgstr "Выберите параметр и предоставьте значение параметра конфигурации."
+
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:3
+msgid "Configuration Group Overview"
+msgstr "Обзор группы конфигурации"
+
+#: content/database_configurations/templates/database_configurations/_detail_overview.html:6
+msgid "Info"
+msgstr "Сведения"
+
+#: content/database_configurations/templates/database_configurations/detail_param.html:5
+msgid ""
+"Manage parameters of the configuration group. If the configuration group is "
+"attached with database instance, the change is applied to the instance "
+"synchronously."
+msgstr ""
+"Управление параметрами группы конфигурации. Если группа присоединена "
+"к экземпляру БД, то изменения будут применяться к экземпляру синхронно."
+
+#: content/database_configurations/views.py:46
+msgid "Error getting configuration group list."
+msgstr "Ошибка получения списка групп конфигурации"
+
+#: content/database_configurations/views.py:54
+msgid "Configuration Group Details: {{configuration.name}}"
+msgstr "Подробные сведения о группе конфигурации: {{configuration.name}}"
+
+#: content/database_configurations/views.py:70
+#, python-format
+msgid "Unable to retrieve details for configuration group: %s"
+msgstr "Не удалось получить подробные сведения о группе конфигурации: %s"
+
+#: content/databases/forms.py:31
+msgid "Character Set"
+msgstr "Набор символов"
+
+#: content/databases/forms.py:32
+msgid "Optional character set for the database."
+msgstr "Дополнительный набор символов для БД"
+
+#: content/databases/forms.py:34
+msgid "Collation"
+msgstr "Порядок сортировки"
+
+#: content/databases/forms.py:35
+msgid "Optional collation type for the database."
+msgstr "Дополнительный тип порядка сортировки для БД."
+
+#: content/databases/forms.py:45
+#, python-format
+msgid "Created database \"%s\"."
+msgstr "БД \"%s\" создана"
+
+#: content/databases/forms.py:49
+msgid "Unable to create database."
+msgstr "Не удалось создать БД"
+
+#: content/databases/forms.py:57
+msgid "Current Size (GB)"
+msgstr "Текущий размер (Гбайт)"
+
+#: content/databases/forms.py:61
+msgid "New Size (GB)"
+msgstr "Новый размер (Гбайт)"
+
+#: content/databases/forms.py:76
+msgid "New size for volume must be greater than current size."
+msgstr "Новый размер тома должен превышать текущий размер"
+
+#: content/databases/forms.py:87
+#, python-format
+msgid "Resizing volume \"%s\""
+msgstr "Изменяется размер тома \"%s\""
+
+#: content/databases/forms.py:90
+msgid "Unable to resize volume."
+msgstr "Не удалось изменить размер тома"
+
+#: content/databases/forms.py:97
+msgid "Old Flavor"
+msgstr "Старый вариант конфигурации"
+
+#: content/databases/forms.py:101
+msgid "New Flavor"
+msgstr "Новый вариант конфигурации"
+
+#: content/databases/forms.py:102
+msgid "Choose a new instance flavor."
+msgstr "Выберите вариант конфигурации для нового экземпляра"
+
+#: content/databases/forms.py:114
+msgid "Select a new flavor"
+msgstr "Выбрать новый вариант конфигурации"
+
+#: content/databases/forms.py:116
+msgid "No flavors available"
+msgstr "Нет доступных вариантов конфигураций"
+
+#: content/databases/forms.py:125
+#, python-format
+msgid "Resizing instance \"%s\""
+msgstr "Изменяется экземпляр \"%s\""
+
+#: content/databases/forms.py:128
+msgid "Unable to resize instance."
+msgstr "Не удалось изменить размер экземпляра"
+
+#: content/databases/forms.py:143
+#, python-format
+msgid "Promoted replica \"%s\" as the new replica source."
+msgstr "Уровень реплики \"%s\" был повышен до источника новой реплики"
+
+#: content/databases/forms.py:148
+msgid "Unable to promote replica as the new replica source."
+msgstr "Не удалось повысить уровень реплики до источника новой реплики"
+
+#: content/databases/forms.py:157 content/databases/tables.py:540
+#: content/databases/workflows/create_instance.py:329
+msgid "Password"
+msgstr "Пароль"
+
+#: content/databases/forms.py:162
+msgid "Optional host of user."
+msgstr "Дополнительный хост пользователя"
+
+#: content/databases/forms.py:164
+#: content/databases/templates/databases/_launch_initialize_help.html:3
+#: content/databases/workflows/create_instance.py:321
+msgid "Initial Databases"
+msgstr "Начальная БД"
+
+#: content/databases/forms.py:165
+msgid "Optional comma separated list of databases user has access to."
+msgstr ""
+"Дополнительный список БД, через запятую, к которым есть доступ у пользователя"
+
+#: content/databases/forms.py:180
+#, python-format
+msgid "Created user \"%s\"."
+msgstr "Пользователь \"%s\" был создан."
+
+#: content/databases/forms.py:184
+msgid "Unable to create user."
+msgstr "Не удалось создать пользователя"
+
+#: content/databases/forms.py:205
+msgid "New Name"
+msgstr "Новое имя"
+
+#: content/databases/forms.py:211
+msgid "New Host"
+msgstr "Новый хост"
+
+#: content/databases/forms.py:213
+msgid "A new name or new password or new host must be specified."
+msgstr "Необходимо указать новое имя, новый пароль или новый хост."
+
+#: content/databases/forms.py:229
+#, python-format
+msgid "Updated user \"%s\"."
+msgstr "Пользователь \"%s\" обновлён"
+
+#: content/databases/forms.py:233
+msgid "Unable to update user."
+msgstr "Не удалось обновить пользователя"
+
+#: content/databases/forms.py:264
+msgid "Select configuration group"
+msgstr "Выберите группу конфигурации"
+
+#: content/databases/forms.py:266
+msgid "No configuration groups available"
+msgstr "Нет доступных групп конфигурации"
+
+#: content/databases/forms.py:276
+#, python-format
+msgid "Attaching Configuration group \"%s\""
+msgstr "Присоединяется группа конфигурации \"%s\""
+
+#: content/databases/forms.py:280
+msgid "Unable to attach configuration group."
+msgstr "Не удалось присоединить группу конфигурации"
+
+#: content/databases/forms.py:290
+#: content/databases/templates/databases/_detail_overview.html:75
+#: content/databases/workflows/create_instance.py:295
+msgid "Allowed CIDRs"
+msgstr "Разрешённые CIDR"
+
+#: content/databases/forms.py:292
+msgid ""
+"Classless Inter-Domain Routing (e.g. 192.168.0.0/24, or 2001:db8::/128). Can "
+"enter multiple values separatingby a comma"
+msgstr ""
+"Бесклассовая междоменная маршрутизация, CIDR (например, 192.168.0.0/24 или"
+" 2001:db8::/128). "
+"Можно указать несколько значений, через запятую."
+
+#: content/databases/forms.py:315
+#, python-format
+msgid "Instance \"%s\" successfully updated."
+msgstr "Экземпляр \"%s\" был успешно обновлён."
+
+#: content/databases/forms.py:319
+#, python-format
+msgid "Unable to update instance \"%s\"."
+msgstr "Не удалось обновить экземпляр \"%s\"."
+
+#: content/databases/logs/tables.py:28
+msgid "Publish Log"
+msgid_plural "Publish Logs"
+msgstr[0] "Опубликовать журнал"
+msgstr[1] "Опубликовать журналы"
+msgstr[2] "Опубликовать журналы"
+
+#: content/databases/logs/tables.py:36
+msgid "Published Log"
+msgid_plural "Published Logs"
+msgstr[0] "Журнал был опубликован"
+msgstr[1] "Журналы были опубликована"
+msgstr[2] "Журналы были опубликована"
+
+#: content/databases/logs/tables.py:52
+msgid "Discard Log"
+msgid_plural "Discard Logs"
+msgstr[0] "Сбросить данные журнала"
+msgstr[1] "Сбросить данные журналов"
+msgstr[2] "Сбросить данные журналов"
+
+#: content/databases/logs/tables.py:60
+msgid "Discarded Log"
+msgid_plural "Discarded Logs"
+msgstr[0] "Данные журнала были сброшены"
+msgstr[1] "Данные журналов были сброшены"
+msgstr[2] "Данные журналов были сброшены"
+
+#: content/databases/logs/tables.py:76
+msgid "Enable Log"
+msgid_plural "Enable Logs"
+msgstr[0] "Включить журналирование"
+msgstr[1] "Включить журналирование"
+msgstr[2] "Включить журналирование"
+
+#: content/databases/logs/tables.py:84
+msgid "Enabled Log"
+msgid_plural "Enabled Logs"
+msgstr[0] "Журналирование включено"
+msgstr[1] "Журналирование включено"
+msgstr[2] "Журналирование включено"
+
+#: content/databases/logs/tables.py:100
+msgid "Disable Log"
+msgid_plural "Disable Logs"
+msgstr[0] "Отключить журналирование"
+msgstr[1] "Отключить журналирование"
+msgstr[2] "Отключить журналирование"
+
+#: content/databases/logs/tables.py:108
+msgid "Disabled Log"
+msgid_plural "Disabled Logs"
+msgstr[0] "Журналирование отключено"
+msgstr[1] "Журналирование отключено"
+msgstr[2] "Журналирование отключено"
+
+#: content/databases/logs/tables.py:127
+msgid "View Log"
+msgstr "Просмотреть журнал"
+
+#: content/databases/logs/tables.py:144
+msgid "Published (bytes)"
+msgstr "Опубликован (байт)"
+
+#: content/databases/logs/tables.py:145
+msgid "Publishable (bytes)"
+msgstr "Может быть опубликован (байт)"
+
+#: content/databases/logs/tables.py:146
+msgid "Container"
+msgstr "Контейнер"
+
+#: content/databases/logs/tables.py:150 content/databases/tabs.py:169
+msgid "Logs"
+msgstr "Журналы"
+
+#: content/databases/logs/views.py:66
+#, python-brace-format
+msgid ""
+"Unable to load {0} log\n"
+"{1}"
+msgstr ""
+"Невозможно загрузить журнал {0}\n"
+"{1}"
+
+#: content/databases/logs/views.py:71 content/databases/logs/views.py:95
+#, python-brace-format
+msgid "Unable to load {0} log for instance \"{1}\"."
+msgstr "Невозможно загрузить журнал {0} для экземпляра \"{1}\"."
+
+#: content/databases/logs/views.py:93
+msgid "Log length must be a nonnegative integer."
+msgstr "Длина журнала должна выражаться неотрицательным целым числом"
+
+#: content/databases/logs/views.py:128
+#, python-format
+msgid "Error downloading log file: %s"
+msgstr "Ошибка загрузки файла журнала: %s"
+
+#: content/databases/tables.py:44
+msgid "Deleted instances are not recoverable."
+msgstr "Удалённые экземпляры нельзя восстановить"
+
+#: content/databases/tables.py:49
+msgid "Delete Instance"
+msgid_plural "Delete Instances"
+msgstr[0] "Удалить экземпляр"
+msgstr[1] "Удалить экземпляры"
+msgstr[2] "Удалить экземпляры"
+
+#: content/databases/tables.py:57
+msgid "Scheduled deletion of Instance"
+msgid_plural "Scheduled deletion of Instances"
+msgstr[0] "Удаление экземпляра было занесено в расписание"
+msgstr[1] "Удаление экземпляров было занесено в расписание"
+msgstr[2] "Удаление экземпляров было занесено в расписание"
+
+#: content/databases/tables.py:67
+msgid "Restarted instances will lose any data not saved in persistent storage."
+msgstr ""
+"Все данные перезапущенных экземпляров, не сохранённые в постоянном хранилище, "
+"будут утеряны"
+
+#: content/databases/tables.py:73
+msgid "Restart Instance"
+msgid_plural "Restart Instances"
+msgstr[0] "Перезапустить экземпляр"
+msgstr[1] "Перезапустить экземпляры"
+msgstr[2] "Перезапустить экземпляры"
+
+#: content/databases/tables.py:81
+msgid "Restarted Instance"
+msgid_plural "Restarted Instances"
+msgstr[0] "Экземпляр был перезапущен"
+msgstr[1] "Экземпляры были перезапущены"
+msgstr[2] "Экземпляры были перезапущены"
+
+#: content/databases/tables.py:102
+msgid "Detach Replica"
+msgid_plural "Detach Replicas"
+msgstr[0] "Отсоединить реплику"
+msgstr[1] "Отсоединить реплики"
+msgstr[2] "Отсоединить реплики"
+
+#: content/databases/tables.py:110
+msgid "Replica Detached"
+msgid_plural "Replicas Detached"
+msgstr[0] "Реплика была отсоединена"
+msgstr[1] "Реплики были отсоединены"
+msgstr[2] "Реплики были отсоединены"
+
+#: content/databases/tables.py:128 content/databases/views.py:451
+msgid "Promote to Replica Source"
+msgstr "Повысить уровень до источника репликации"
+
+#: content/databases/tables.py:145
+msgid "Eject Replica Source"
+msgid_plural "Eject Replica Sources"
+msgstr[0] "Извлечь источник репликации"
+msgstr[1] "Извлечь источники репликации"
+msgstr[2] "Извлечь источники репликации"
+
+#: content/databases/tables.py:153
+msgid "Ejected Replica Source"
+msgid_plural "Ejected Replica Sources"
+msgstr[0] "Источник репликации был извлечён"
+msgstr[1] "Источники репликации были извлечены"
+msgstr[2] "Источники репликации были извлечены"
+
+#: content/databases/tables.py:173
+msgid "Grant Access"
+msgid_plural "Grant Access"
+msgstr[0] "Предоставить доступ"
+msgstr[1] "Предоставить доступ"
+msgstr[2] "Предоставить доступ"
+
+#: content/databases/tables.py:181
+msgid "Granted Access to"
+msgid_plural "Granted Access to"
+msgstr[0] "Был предоставлен доступ к"
+msgstr[1] "Был предоставлен доступ к"
+msgstr[2] "Был предоставлен доступ к"
+
+#: content/databases/tables.py:207
+msgid "Revoke Access"
+msgid_plural "Revoke Access"
+msgstr[0] "Отозвать права доступа"
+msgstr[1] "Отозвать права доступа"
+msgstr[2] "Отозвать права доступа"
+
+#: content/databases/tables.py:215
+msgid "Access Revoked to"
+msgid_plural "Access Revoked to"
+msgstr[0] "Были отозваны права доступа к"
+msgstr[1] "Были отозваны права доступа к"
+msgstr[2] "Были отозваны права доступа к"
+
+#: content/databases/tables.py:251
+msgid "Accessible"
+msgstr "Доступно"
+
+#: content/databases/tables.py:256
+#: content/databases/workflows/create_instance.py:304
+msgid "Database Access"
+msgstr "Доступ к БД"
+
+#: content/databases/tables.py:265
+msgid "Manage Access"
+msgstr "Управлять доступом"
+
+#: content/databases/tables.py:283 content/databases/views.py:144
+msgid "Create User"
+msgstr "Создать пользователя"
+
+#: content/databases/tables.py:300 content/databases/views.py:170
+msgid "Edit User"
+msgstr "Редактировать параметры пользователя"
+
+#: content/databases/tables.py:328
+msgid "Delete User"
+msgid_plural "Delete Users"
+msgstr[0] "Удалить пользователя"
+msgstr[1] "Удалить пользователей"
+msgstr[2] "Удалить пользователей"
+
+#: content/databases/tables.py:336
+msgid "Deleted User"
+msgid_plural "Deleted Users"
+msgstr[0] "Пользователь был удалён"
+msgstr[1] "Пользователи были удалены"
+msgstr[2] "Пользователи были удалены"
+
+#: content/databases/tables.py:349 content/databases/views.py:328
+#: content/databases/views.py:331
+msgid "Create Database"
+msgstr "Создать БД"
+
+#: content/databases/tables.py:375
+msgid "Delete Database"
+msgid_plural "Delete Databases"
+msgstr[0] "Удалить БД"
+msgstr[1] "Удалить БД"
+msgstr[2] "Удалить БД"
+
+#: content/databases/tables.py:383
+msgid "Deleted Database"
+msgid_plural "Deleted Databases"
+msgstr[0] "БД была удалена"
+msgstr[1] "БД были удалены"
+msgstr[2] "БД были удалены"
+
+#: content/databases/tables.py:393
+msgid "Error deleting database on instance."
+msgstr "Ошибка удаления БД на экземпляре"
+
+#: content/databases/tables.py:399
+#: content/databases/templates/databases/launch.html:3
+#: content/databases/workflows/create_instance.py:537
+msgid "Launch Instance"
+msgstr "Запустить экземпляр"
+
+#: content/databases/tables.py:423
+msgid "Resize Volume"
+msgstr "Изменить размер тома"
+
+#: content/databases/tables.py:437
+msgid "Resize Instance"
+msgstr "Изменить размер экземпляра"
+
+#: content/databases/tables.py:452 content/databases/views.py:250
+msgid "Attach Configuration Group"
+msgstr "Присоединить группу конфигурации"
+
+#: content/databases/tables.py:491
+msgid "Enable Root"
+msgstr "Включить доступ root"
+
+#: content/databases/tables.py:499
+msgid "There was a problem enabling root."
+msgstr "Возникла ошибка при включении доступа root"
+
+#: content/databases/tables.py:504
+msgid "Disable Root"
+msgstr "Отключить доступ root"
+
+#: content/databases/tables.py:514
+msgid "Successfully disabled root access."
+msgstr "Доступ root был успешно отключён"
+
+#: content/databases/tables.py:517
+#, python-format
+msgid "Cannot disable root access: %s"
+msgstr "Не удалось отключить доступ root: %s"
+
+#: content/databases/tables.py:522 content/databases/views.py:505
+msgid "Manage Root Access"
+msgstr "Управлять доступом root"
+
+#: content/databases/tables.py:534 content/databases/tables.py:738
+#: content/databases/workflows/create_instance.py:48
+msgid "Instance Name"
+msgstr "Имя экземпляра"
+
+#: content/databases/tables.py:536
+msgid "Has Root Ever Been Enabled"
+msgstr "Включался ли когда-нибудь доступ root"
+
+#: content/databases/tables.py:538
+msgid "Status if root was ever enabled for an instance."
+msgstr ""
+"Статус, указывающий, включался ли когда-нибудь доступ "
+"root на экземпляре"
+
+#: content/databases/tables.py:541
+msgid ""
+"Password is only visible immediately after the root is enabled or reset."
+msgstr ""
+"Пароль является видимым только сразу после включения или отката "
+"доступа root"
+
+#: content/databases/tables.py:547
+msgid "Manage Root"
+msgstr "Управлять доступом root"
+
+#: content/databases/tables.py:622 content/databases/tables.py:655
+msgid "-"
+msgstr "-"
+
+#: content/databases/tables.py:653
+#, python-format
+msgid "Replica of %s"
+msgstr "Реплика %s"
+
+#: content/databases/tables.py:660
+msgid "Stop database service inside an instance."
+msgstr "Остановить службу БД внутри экземпляра"
+
+#: content/databases/tables.py:666
+msgid "Stop Database Service"
+msgid_plural "Stop Database Services"
+msgstr[0] "Остановить службу БД"
+msgstr[1] "Остановить службы БД"
+msgstr[2] "Остановить службы БД"
+
+#: content/databases/tables.py:674
+msgid "Database Service stopped"
+msgid_plural "Database Services stopped"
+msgstr[0] "Служба БД была остановлена"
+msgstr[1] "Службы БД были остановлены"
+msgstr[2] "Службы БД были остановлены"
+
+#: content/databases/tables.py:688 content/databases/views.py:101
+msgid "Update Instance"
+msgstr "Обновить экземпляр"
+
+#: content/databases/tables.py:713
+msgctxt "Current status of a Database Instance"
+msgid "Active"
+msgstr "Активен"
+
+#: content/databases/tables.py:715
+msgctxt "Current status of a Database Instance"
+msgid "Healthy"
+msgstr "Работоспособен"
+
+#: content/databases/tables.py:717
+msgctxt "Current status of a Database Instance"
+msgid "Blocked"
+msgstr "Заблокирован"
+
+#: content/databases/tables.py:719
+msgctxt "Current status of a Database Instance"
+msgid "Building"
+msgstr "Создаётся"
+
+#: content/databases/tables.py:721
+msgctxt "Current status of a Database Instance"
+msgid "Failed"
+msgstr "Сбой"
+
+#: content/databases/tables.py:723
+msgctxt "Current status of a Database Instance"
+msgid "Rebooting"
+msgstr "Перезагружается"
+
+#: content/databases/tables.py:725
+msgctxt "Current status of a Database Instance"
+msgid "Resizing"
+msgstr "Изменяется размер"
+
+#: content/databases/tables.py:727
+msgctxt "Current status of a Database Instance"
+msgid "Backup"
+msgstr "Создание резервной копии"
+
+#: content/databases/tables.py:729
+msgctxt "Current status of a Database Instance"
+msgid "Shutdown"
+msgstr "Завершение работы"
+
+#: content/databases/tables.py:731
+msgctxt "Current status of a Database Instance"
+msgid "Error"
+msgstr "Ошибка"
+
+#: content/databases/tables.py:734
+msgctxt "Current status of a Database Instance"
+msgid "Restart Required"
+msgstr "Требуется перезапуск"
+
+#: content/databases/tables.py:748
+msgid "Replication Status"
+msgstr "Статус репликации"
+
+#: content/databases/tables.py:757
+#: content/databases/templates/databases/_detail_overview.html:15
+msgid "Operating Status"
+msgstr "Рабочий статус"
+
+#: content/databases/tables.py:784
+msgid "User Name"
+msgstr "Имя пользователя"
+
+#: content/databases/tables.py:785
+msgid "Allowed Host"
+msgstr "Разрешённый хост"
+
+#: content/databases/tables.py:786 content/databases/tables.py:804
+#: content/databases/tabs.py:104
+msgid "Databases"
+msgstr "Базы данных"
+
+#: content/databases/tables.py:790 content/databases/tabs.py:70
+msgid "Users"
+msgstr "Пользователи"
+
+#: content/databases/tables.py:800
+msgid "Database Name"
+msgstr "Имя БД"
+
+#: content/databases/tables.py:822
+#: content/databases/templates/databases/logs/_detail_log.html:10
+msgid "Download"
+msgstr "Скачать"
+
+#: content/databases/tables.py:824
+msgid "Backup File"
+msgstr "Файл рез. копии"
+
+#: content/databases/tables.py:846
+msgid "Property"
+msgstr "Свойство"
+
+#: content/databases/tables.py:851
+msgid "Configuration Defaults"
+msgstr "Конфигурация по умолчанию"
+
+#: content/databases/tabs.py:45
+msgid "Unable to obtain information on root user"
+msgstr "Не удалось получить сведения о пользователе root"
+
+#: content/databases/tabs.py:90
+msgid "Unable to get user access data."
+msgstr "Не удалось получить данные о доступе пользователей"
+
+#: content/databases/tabs.py:93
+msgid "Unable to get user data."
+msgstr "Не удалось получить данные о пользователе"
+
+#: content/databases/tabs.py:117
+msgid "Unable to get databases data."
+msgstr "Не удалось получить данные БД"
+
+#: content/databases/tabs.py:128
+msgid "Defaults"
+msgstr "Значения по умолчанию"
+
+#: content/databases/tabs.py:158
+msgid "Unable to get database backup data."
+msgstr "Не удалось получить данные о резервной копии"
+
+#: content/databases/tabs.py:181
+#, python-format
+msgid ""
+"Unable to retrieve list of logs.\n"
+"%s"
+msgstr ""
+"Не удалось получить список журналов.\n"
+"%s"
+
+#: content/databases/templates/databases/_attach_config.html:5
+msgid "Select a configuration group to attach to the database instance."
+msgstr "Выберите группу конфигурации для присоединения к экземпляру БД"
+
+#: content/databases/templates/databases/_attach_config.html:6
+msgid ""
+"<strong>Please note:</strong> It may be necessary to reboot the database "
+"instance for this new configuration group to take effect."
+msgstr ""
+"<strong>Обратите внимание:</strong> для вступления в силу параметров новой "
+"группы конфигурации, возможно, понадобится перезапустить экземпляр БД."
+
+#: content/databases/templates/databases/_create_database.html:5
+msgid "Specify the name of the new database."
+msgstr "Укажите имя новой БД"
+
+#: content/databases/templates/databases/_create_database.html:6
+msgid "Optionally provide a character set and collation for the database."
+msgstr "Дополнительно можно указать набор символов и порядок сортировки для БД"
+
+#: content/databases/templates/databases/_create_user.html:5
+msgid "Specify the name of the new user and password."
+msgstr "Укажите имя нового пользователя и пароль"
+
+#: content/databases/templates/databases/_create_user.html:6
+msgid ""
+"Optionally provide the host of the user and a list of databases the user is "
+"granted access to."
+msgstr ""
+"Дополнительно укажите хост пользователя и список БД, к которым "
+"данному пользователю предоставляется доступ."
+
+#: content/databases/templates/databases/_detail_overview.html:25
+msgid "Root Enabled"
+msgstr "Доступ root включён"
+
+#: content/databases/templates/databases/_detail_overview.html:34
+msgid "Fault"
+msgstr "Сбой"
+
+#: content/databases/templates/databases/_detail_overview.html:37
+msgid "Message"
+msgstr "Сообщение"
+
+#: content/databases/templates/databases/_detail_overview.html:50
+msgid "Specs"
+msgstr "Спецификации"
+
+#: content/databases/templates/databases/_detail_overview.html:65
+msgid "Service Status Updated"
+msgstr "Статус службы обновлён"
+
+#: content/databases/templates/databases/_detail_overview.html:70
+msgid "Networking Information"
+msgstr "Сведения о сетях"
+
+#: content/databases/templates/databases/_detail_overview.html:73
+#: content/databases/workflows/create_instance.py:293
+msgid "Is Public"
+msgstr "Общедоступно"
+
+#: content/databases/templates/databases/_detail_overview.html:100
+msgid "Replication"
+msgstr "Репликация"
+
+#: content/databases/templates/databases/_detail_overview.html:104
+msgid "Is a Replica Of"
+msgstr "Является репликой на базе"
+
+#: content/databases/templates/databases/_detail_overview.html:112
+msgid "Replicas"
+msgstr "Реплики"
+
+#: content/databases/templates/databases/_edit_user.html:5
+msgid "Specify a new name, new password or new host name for the user."
+msgstr "Укажите новое имя, новый пароль или новое имя хоста пользователя"
+
+#: content/databases/templates/databases/_edit_user.html:6
+msgid "At least one of the new fields must be changed."
+msgstr "Необходимо изменить значение как минимум одного поля"
+
+#: content/databases/templates/databases/_launch_access_help.html:3
+msgid "Access defines how the database service is exposed."
+msgstr "Доступ определяет степень открытости службы БД"
+
+#: content/databases/templates/databases/_launch_access_help.html:4
+msgid ""
+"CIDRs is a comma-separated list of IPv4, IPv6 or mix of both CIDRs that "
+"restrict access to the database service. 0.0.0.0/0 is used by default if "
+"this parameter is not provided. E.g.: 0.0.0.0/0,202.78.240.0/24"
+msgstr ""
+"Адреса CIDR представляют собой список, через запятую, адресов IPv4, IPv6 или"
+" смеси "
+"адресов обоих протоколов, ограничивающих доступ к службе БД. При отсутствии "
+"предоставленных значений по умолчанию используется 0.0.0.0/0. Например:"
+" 0.0.0.0/0,202.78.240.0/24"
+
+#: content/databases/templates/databases/_launch_advanced_help.html:3
+msgid ""
+"Optionally choose to create this database using a previous backup, or as a "
+"replica of another database instance."
+msgstr ""
+"Дополнительно можно выбрать создание этой БД на основе предыдущей резервной"
+" копии "
+"или в виде реплики другого экземпляра БД."
+
+#: content/databases/templates/databases/_launch_details_help.html:3
+msgid "Specify the details for launching an instance."
+msgstr "Укажите подробности запуска экземпляра"
+
+#: content/databases/templates/databases/_launch_details_help.html:4
+msgid ""
+"<strong>Please note:</strong> The value specified in the Volume Size field "
+"should be greater than 0, however, some configurations do not support "
+"specifying volume size. If specifying the volume size results in an error "
+"stating volume support is not enabled, enter 0."
+msgstr ""
+"<strong>Обратите внимание:</strong> значение, указанное в поле "
+"«Размер тома», должно превышать 0. Тем не менее, некоторые конфигурации "
+"не поддерживают указание размеров томов. Если после указания размера тома "
+"возникает ошибка, говорящая о том, что поддержка томов отсутствует, "
+"введите здесь 0."
+
+#: content/databases/templates/databases/_launch_initialize_help.html:4
+msgid "Optionally provide a comma separated list of databases to create:"
+msgstr "Дополнительно предоставьте список, через запятые, создаваемых БД:"
+
+#: content/databases/templates/databases/_launch_initialize_help.html:7
+#: content/databases/workflows/create_instance.py:325
+msgid "Initial Admin User"
+msgstr "Начальный пользователь-администратор"
+
+#: content/databases/templates/databases/_launch_initialize_help.html:8
+msgid ""
+"Create an optional initial user. This user will have access to all databases "
+"you create."
+msgstr ""
+"Дополнительно создайте начального пользователя. У этого пользователя будет "
+"доступ ко всем созданным БД."
+
+#: content/databases/templates/databases/_launch_initialize_help.html:12
+msgid "Username (required)"
+msgstr "Имя пользователя (обязательно)"
+
+#: content/databases/templates/databases/_launch_initialize_help.html:13
+msgid "Password (required)"
+msgstr "Пароль (обязательно)"
+
+#: content/databases/templates/databases/_launch_initialize_help.html:14
+#: content/databases/workflows/create_instance.py:331
+msgid "Allowed Host (optional)"
+msgstr "Разрешённый хост (необязательно)"
+
+#: content/databases/templates/databases/_launch_initialize_help.html:15
+msgid ""
+"Allow the user to connect from this host only. If not provided this user "
+"will be allowed to connect from anywhere."
+msgstr ""
+"Разрешить пользователю выполнять подключения только "
+"с этого хоста. При отсутствии значения пользователь сможет подключаться "
+"с любого местоположения."
+
+#: content/databases/templates/databases/_launch_network_help.html:4
+msgid ""
+"Move networks from 'Available Networks' to 'Selected Networks' by clicking "
+"the button, or dragging and dropping. You can change the NIC order by "
+"dragging and dropping as well."
+msgstr ""
+"Переместите сети из «Доступных сетей» в «Выбранные сети» нажатием "
+"на кнопку или перетаскиванием. Порядок сетевых контроллеров также можно"
+" изменить "
+"перетаскиванием."
+
+#: content/databases/templates/databases/_launch_networks.html:6
+msgid "Selected networks"
+msgstr "Выбранные сети"
+
+#: content/databases/templates/databases/_launch_networks.html:8
+msgid "Available networks"
+msgstr "Доступные сети"
+
+#: content/databases/templates/databases/_promote_to_replica_source.html:6
+msgid ""
+"Confirm the current replica is to be promoted as the new replica source."
+msgstr ""
+"Подтвердите повышение уровня текущей реплики до источника новой реплики"
+
+#: content/databases/templates/databases/_promote_to_replica_source.html:7
+msgid "This action cannot be undone."
+msgstr "Это действие нельзя будет отменить."
+
+#: content/databases/templates/databases/_promote_to_replica_source.html:15
+msgid "Current Replica"
+msgstr "Текущая реплика"
+
+#: content/databases/templates/databases/_promote_to_replica_source.html:17
+#: content/databases/templates/databases/_promote_to_replica_source.html:27
+#: content/databases/workflows/create_instance.py:369
+msgid "None"
+msgstr "Нет"
+
+#: content/databases/templates/databases/_promote_to_replica_source.html:18
+#: content/databases/templates/databases/_promote_to_replica_source.html:19
+#: content/databases/templates/databases/_promote_to_replica_source.html:28
+#: content/databases/templates/databases/_promote_to_replica_source.html:29
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: content/databases/templates/databases/_promote_to_replica_source.html:25
+msgid "Current Replica Source"
+msgstr "Источник текущей реплики"
+
+#: content/databases/templates/databases/_resize_instance.html:5
+msgid "Specify a new flavor for the database instance."
+msgstr "Укажите новый вариант конфигурации экземпляра БД"
+
+#: content/databases/templates/databases/_resize_volume.html:5
+msgid "Specify the new volume size for the database instance."
+msgstr "Укажите новый размер тома экземпляра БД"
+
+#: content/databases/templates/databases/_resize_volume.html:6
+msgid ""
+"Please note:</strong> The new value must be greater than the existing volume "
+"size."
+msgstr ""
+"Обратите внимание:</strong> новое значение должно превышать текущее значение"
+" размера тома."
+
+#: content/databases/templates/databases/_update_instance.html:5
+msgid "Update instance."
+msgstr "Обновить экземпляр."
+
+#: content/databases/templates/databases/logs/_detail_log.html:6
+msgid "Log Length"
+msgstr "Длина журнала"
+
+#: content/databases/templates/databases/logs/_detail_log.html:8
+msgid "Go"
+msgstr "Начать"
+
+#: content/databases/templates/databases/logs/_detail_log.html:9
+msgid "Return to Log List"
+msgstr "Вернуться к списку журналов"
+
+#: content/databases/templates/databases/logs/_detail_log.html:11
+msgid "View Full Log"
+msgstr "Просмотреть весь журнал"
+
+#: content/databases/templates/databases/logs/_log_contents.html:4
+#: content/databases/templates/databases/logs/log_contents.html:3
+msgid "Log Contents"
+msgstr "Содержимое журнала"
+
+#: content/databases/templates/databases/logs/_log_contents.html:13
+msgid "Close"
+msgstr "Закрыть"
+
+#: content/databases/templates/databases/logs/view_log.html:3
+msgid "Log"
+msgstr "Журнал"
+
+#: content/databases/templates/databases/logs/view_log.html:6
+msgid "Log: "
+msgstr "Журнал: "
+
+#: content/databases/templates/databases/manage_root.html:7
+msgid ""
+"Note: Enable root access on an instance.  If the root user is already "
+"enabled then a new password is generated."
+msgstr ""
+"Внимание: включите доступ для root на экземпляре. Если пользователь "
+"root уже был ранее включён, то будет создан новый пароль."
+
+#: content/databases/views.py:79
+#: content/databases/workflows/create_instance.py:458
+msgid "Unable to retrieve database instances."
+msgstr "Не удалось получить сведения об экземплярах БД"
+
+#: content/databases/views.py:89
+msgid "Launch Database"
+msgstr "Запустить БД"
+
+#: content/databases/views.py:114 content/databases/views.py:263
+#: content/databases/views.py:368 content/databases/views.py:415
+#: content/databases/views.py:469 content/databases/views.py:516
+msgid "Unable to retrieve instance details."
+msgstr "Не удалось получить подробные сведения об экземпляре."
+
+#: content/databases/views.py:202
+msgid "Database Access for: {{ user_name }}@{{user_host}}"
+msgstr "Доступ к БД для: {{ user_name }}@{{user_host}}"
+
+#: content/databases/views.py:216
+msgid "Unable to retrieve databases."
+msgstr "Не удалось получить сведения о базах данных"
+
+#: content/databases/views.py:226
+msgid "Unable to retrieve accessible databases."
+msgstr "Не удалось получить сведения о БД с возможностью доступа"
+
+#: content/databases/views.py:304
+#, python-format
+msgid "Unable to retrieve details for database instance: %s"
+msgstr "Не удалось получить подробные сведения об экземпляре БД: %s"
+
+#: content/databases/views.py:354 content/databases/views.py:360
+msgid "Resize Database Volume"
+msgstr "Изменить размер тома БД"
+
+#: content/databases/views.py:388 content/databases/views.py:394
+msgid "Resize Database Instance"
+msgstr "Изменить размер экземпляра БД"
+
+#: content/databases/views.py:433
+msgid "Unable to retrieve flavors."
+msgstr "Не удалось получить сведения о вариантах конфигурации"
+
+#: content/databases/views.py:454
+msgid "Promote"
+msgstr "Повысить уровень"
+
+#: content/databases/views.py:524
+msgid "Unable to determine if instance root is enabled."
+msgstr "Не удалось определить, включён ли доступ root на экземпляре"
+
+#: content/databases/workflows/create_instance.py:46
+msgid "Availability Zone"
+msgstr "Зона доступности"
+
+#: content/databases/workflows/create_instance.py:54
+msgid "Volume Type"
+msgstr "Тип тома"
+
+#: content/databases/workflows/create_instance.py:56
+msgid "Applicable only if the volume size is specified."
+msgstr "Применимо только при указанном размере тома"
+
+#: content/databases/workflows/create_instance.py:81
+msgid ""
+"Specify whether future replicated instances will be created on the same "
+"hypervisor (affinity) or on different hypervisors (anti-affinity). This "
+"value is ignored if the instance to be launched is a replica."
+msgstr ""
+"Укажите, будут ли будущие реплицированные экземпляры создаваться "
+"на одном и том же гипервизоре (схожесть), либо на разных гипервизорах "
+"(анти-схожесть). Это значение игнорируется, если экземпляр предполагается"
+" запускать в виде реплики."
+
+#: content/databases/workflows/create_instance.py:95
+msgid "You must select a datastore type and version."
+msgstr "Необходимо выбрать тип и версию хранилища данных"
+
+#: content/databases/workflows/create_instance.py:104
+msgid "You must select a flavor."
+msgstr "Необходимо выбрать вариант конфигурации."
+
+#: content/databases/workflows/create_instance.py:140
+msgid "Unable to retrieve availability zones."
+msgstr "Не удалось получить сведения о зонах доступности"
+
+#: content/databases/workflows/create_instance.py:147
+msgid "No availability zones found"
+msgstr "Зон доступности не найдено"
+
+#: content/databases/workflows/create_instance.py:149
+msgid "Any Availability Zone"
+msgstr "Любая зона доступности"
+
+#: content/databases/workflows/create_instance.py:168
+msgid "No volume type"
+msgstr "Без типа тома"
+
+#: content/databases/workflows/create_instance.py:300
+msgid "Comma-separated CIDRs to connect through."
+msgstr ""
+"Адреса CIDR, через запятые, с помощью которых будет "
+"выполняться подключение"
+
+#: content/databases/workflows/create_instance.py:323
+msgid "Comma separated list of databases to create"
+msgstr "Список создаваемых БД, через запятые"
+
+#: content/databases/workflows/create_instance.py:327
+msgid "Initial admin user to add"
+msgstr "Добавляемый начальный пользователь-администратор"
+
+#: content/databases/workflows/create_instance.py:333
+msgid "Host or IP that the user is allowed to connect through."
+msgstr "Хост или IP, с помощью которых пользователю разрешено подключаться"
+
+#: content/databases/workflows/create_instance.py:337
+msgid "Initialize Databases"
+msgstr "Инициализировать базы данных"
+
+#: content/databases/workflows/create_instance.py:345
+msgid "You must specify a password if you create a user."
+msgstr "При создании пользователя нужно указать пароль"
+
+#: content/databases/workflows/create_instance.py:348
+msgid "You must specify at least one database if you create a user."
+msgstr "При создании пользователя нужно указать минимум одну БД"
+
+#: content/databases/workflows/create_instance.py:363
+msgid "Select a configuration group"
+msgstr "Выберите группу конфигурации"
+
+#: content/databases/workflows/create_instance.py:365
+msgid "Source for Initial State"
+msgstr "Источник начального статуса"
+
+#: content/databases/workflows/create_instance.py:367
+msgid "Choose initial state."
+msgstr "Выбрать начальный статус"
+
+#: content/databases/workflows/create_instance.py:371
+msgid "Replicate from Instance"
+msgstr "Реплицировать экземпляр"
+
+#: content/databases/workflows/create_instance.py:377
+#: content/databases/workflows/create_instance.py:383
+msgid "Backup Name"
+msgstr "Имя резервной копия"
+
+#: content/databases/workflows/create_instance.py:379
+msgid "Select a backup to restore"
+msgstr "Выберите резервную копию для восстановления"
+
+#: content/databases/workflows/create_instance.py:386
+#: content/databases/workflows/create_instance.py:392
+msgid "Master Instance Name"
+msgstr "Имя главного экземпляра"
+
+#: content/databases/workflows/create_instance.py:388
+msgid "Select a master instance"
+msgstr "Выберите главный экземпляр"
+
+#: content/databases/workflows/create_instance.py:395
+msgid "Replica Count"
+msgstr "Число реплик"
+
+#: content/databases/workflows/create_instance.py:399
+msgid "Specify the number of replicas to be created"
+msgstr "Укажите число создаваемых реплик"
+
+#: content/databases/workflows/create_instance.py:414
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: content/databases/workflows/create_instance.py:430
+msgid "Select configuration"
+msgstr "Выберите конфигурацию"
+
+#: content/databases/workflows/create_instance.py:432
+msgid "No configurations available"
+msgstr "Нет доступных конфигураций"
+
+#: content/databases/workflows/create_instance.py:448
+msgid "Select backup"
+msgstr "Выберите рез. копию"
+
+#: content/databases/workflows/create_instance.py:472
+msgid "Select instance"
+msgstr "Выберите экземпляр"
+
+#: content/databases/workflows/create_instance.py:474
+msgid "No instances available"
+msgstr "Нет доступных экземпляров"
+
+#: content/databases/workflows/create_instance.py:488
+msgid "Unable to find configuration group!"
+msgstr "Не удалось найти группу конфигурации"
+
+#: content/databases/workflows/create_instance.py:503
+msgid "Unable to find backup!"
+msgstr "Не удалось найти резервную копию"
+
+#: content/databases/workflows/create_instance.py:505
+msgid "A backup must be selected!"
+msgstr "Необходимо выбрать резервную копию"
+
+#: content/databases/workflows/create_instance.py:515
+msgid "Unable to find master instance!"
+msgstr "Не удалось найти главный экземпляр"
+
+#: content/databases/workflows/create_instance.py:518
+msgid "A master instance must be selected!"
+msgstr "Необходимо выбрать главный экземпляр"
+
+#: content/databases/workflows/create_instance.py:539
+#, python-format
+msgid "Launched %(count)s named \"%(name)s\"."
+msgstr "Запущено %(count)s с именами \"%(name)s\"."

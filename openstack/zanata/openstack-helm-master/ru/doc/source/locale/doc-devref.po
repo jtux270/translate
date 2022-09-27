@@ -1,0 +1,966 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: openstack-helm 0.1.1.dev3497\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-16 09:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../source/devref/endpoints.rst:2
+msgid "Endpoints"
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:4
+msgid ""
+"The project's goal is to provide a consistent mechanism for endpoints. "
+"OpenStack is a highly interconnected application, with various components "
+"requiring connectivity details to numerous services, including other "
+"OpenStack components and infrastructure elements such as databases, queues, "
+"and memcached infrastructure. The project's goal is to ensure that it can "
+"provide a consistent mechanism for defining these \"endpoints\" across all "
+"charts and provide the macros necessary to convert those definitions into "
+"usable endpoints. The charts should consistently default to building "
+"endpoints that assume the operator is leveraging all charts to build their "
+"OpenStack cloud. Endpoints should be configurable if an operator would like "
+"a chart to work with their existing infrastructure or run elements in "
+"different namespaces."
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:17
+msgid ""
+"For instance, in the Neutron chart ``values.yaml`` the following endpoints "
+"are defined:"
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:63
+msgid ""
+"These values define all the endpoints that the Neutron chart may need in "
+"order to build full URL compatible endpoints to various services. Long-term, "
+"these will also include database, memcached, and rabbitmq elements in one "
+"place. Essentially, all external connectivity can be defined centrally."
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:69
+msgid ""
+"The macros that help translate these into the actual URLs necessary are "
+"defined in the ``helm-toolkit`` chart. For instance, the cinder chart "
+"defines a ``glance_api_servers`` definition in the ``cinder.conf`` template:"
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:81
+msgid ""
+"As an example, this line uses the ``endpoints.keystone_endpoint_uri_lookup`` "
+"macro in the ``helm-toolkit`` chart (since it is used by all charts). Note "
+"that there is a second convention here. All ``{{ define }}`` macros in "
+"charts should be pre-fixed with the chart that is defining them. This allows "
+"developers to easily identify the source of a Helm macro and also avoid "
+"namespace collisions. In the example above, the macro ``endpoints."
+"keystone_endpoint_uri_lookup`` is defined in the ``helm-toolkit`` chart. "
+"This macro is passing three parameters (aided by the ``tuple`` method built "
+"into the go/sprig templating library used by Helm):"
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:91
+msgid ""
+"image: This is the OpenStack service that the endpoint is being built for. "
+"This will be mapped to ``glance`` which is the image service for OpenStack."
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:94
+msgid ""
+"internal: This is the OpenStack endpoint type we are looking for - valid "
+"values would be ``internal``, ``admin``, and ``public``"
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:96
+msgid ""
+"api: This is the port to map to for the service. Some components, such as "
+"glance, provide an ``api`` port and a ``registry`` port, for example."
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:100
+msgid ""
+"Charts should not use hard coded values such as ``http://keystone-api:5000`` "
+"because these are not compatible with operator overrides and do not support "
+"spreading components out over various namespaces."
+msgstr ""
+
+#: ../../source/devref/endpoints.rst:105
+msgid ""
+"By default, each endpoint is located in the same namespace as the current "
+"service's helm chart. To connect to a service which is running in a "
+"different Kubernetes namespace, a ``namespace`` can be provided for each "
+"individual endpoint."
+msgstr ""
+
+#: ../../source/devref/fluent-logging.rst:2
+msgid "Logging Mechanism"
+msgstr ""
+
+#: ../../source/devref/fluent-logging.rst:5
+msgid "Logging Requirements"
+msgstr ""
+
+#: ../../source/devref/fluent-logging.rst:7
+msgid ""
+"OpenStack-Helm defines a centralized logging mechanism to provide insight "
+"into the state of the OpenStack services and infrastructure components as "
+"well as underlying Kubernetes platform. Among the requirements for a logging "
+"platform, where log data can come from and where log data need to be "
+"delivered are very variable. To support various logging scenarios, OpenStack-"
+"Helm should provide a flexible mechanism to meet with certain operation "
+"needs."
+msgstr ""
+
+#: ../../source/devref/fluent-logging.rst:16
+msgid ""
+"EFK (Elasticsearch, Fluent-bit & Fluentd, Kibana) based Logging Mechanism"
+msgstr ""
+
+#: ../../source/devref/fluent-logging.rst:17
+msgid ""
+"OpenStack-Helm provides fast and lightweight log forwarder and full featured "
+"log aggregator complementing each other providing a flexible and reliable "
+"solution. Especially, Fluent-bit is used as a log forwarder and Fluentd is "
+"used as a main log aggregator and processor."
+msgstr ""
+
+#: ../../source/devref/fluent-logging.rst:22
+msgid ""
+"Fluent-bit, Fluentd meet OpenStack-Helm's logging requirements for "
+"gathering, aggregating, and delivering of logged events. Fluent-bit runs as "
+"a daemonset on each node and mounts the `/var/lib/docker/containers` "
+"directory. The Docker container runtime engine directs events posted to "
+"stdout and stderr to this directory on the host. Fluent-bit then forward the "
+"contents of that directory to Fluentd. Fluentd runs as deployment at the "
+"designated nodes and expose service for Fluent-bit to forward logs. Fluentd "
+"should then apply the Logstash format to the logs. Fluentd can also write "
+"kubernetes and OpenStack metadata to the logs. Fluentd will then forward the "
+"results to Elasticsearch and to optionally Kafka. Elasticsearch indexes the "
+"logs in a logstash-* index by default. Kafka stores the logs in a ``logs`` "
+"topic by default. Any external tool can then consume the ``logs`` topic."
+msgstr ""
+
+#: ../../source/devref/fluent-logging.rst:43
+msgid ""
+"The resulting logs can then be queried directly through Elasticsearch, or "
+"they can be viewed via Kibana. Kibana offers a dashboard that can create "
+"custom views on logged events, and Kibana integrates well with Elasticsearch "
+"by default."
+msgstr ""
+
+#: ../../source/devref/images.rst:4
+msgid "Images"
+msgstr ""
+
+#: ../../source/devref/images.rst:6
+msgid ""
+"The project's core philosophy regarding images is that the toolsets required "
+"to enable the OpenStack services should be applied by Kubernetes itself. "
+"This requires OpenStack-Helm to develop common and simple scripts with "
+"minimal dependencies that can be overlaid on any image that meets the "
+"OpenStack core library requirements. The advantage of this is that the "
+"project can be image agnostic, allowing operators to use Stackanetes, Kolla, "
+"LOCI, or any image flavor and format they choose and they will all function "
+"the same."
+msgstr ""
+
+#: ../../source/devref/images.rst:15
+msgid ""
+"A long-term goal, besides being image agnostic, is to also be able to "
+"support any of the container runtimes that Kubernetes supports, even those "
+"that might not use Docker's own packaging format. This will allow the "
+"project to continue to offer maximum flexibility with regard to operator "
+"choice."
+msgstr ""
+
+#: ../../source/devref/images.rst:21
+msgid ""
+"To that end, all charts provide an ``images:`` section that allows operators "
+"to override images. Also, all default image references should be fully "
+"spelled out, even those hosted by Docker or Quay. Further, no default image "
+"reference should use ``:latest`` but rather should be pinned to a specific "
+"version to ensure consistent behavior for deployments over time."
+msgstr ""
+
+#: ../../source/devref/images.rst:28
+msgid ""
+"Today, the ``images:`` section has several common conventions. Most "
+"OpenStack services require a database initialization function, a database "
+"synchronization function, and a series of steps for Keystone registration "
+"and integration. Each component may also have a specific image that composes "
+"an OpenStack service. The images may or may not differ, but regardless, "
+"should all be defined in ``images``."
+msgstr ""
+
+#: ../../source/devref/images.rst:35
+msgid ""
+"The following standards are in use today, in addition to any components "
+"defined by the service itself:"
+msgstr ""
+
+#: ../../source/devref/images.rst:38
+msgid ""
+"dep\\_check: The image that will perform dependency checking in an init-"
+"container."
+msgstr ""
+
+#: ../../source/devref/images.rst:40
+msgid ""
+"db\\_init: The image that will perform database creation operations for the "
+"OpenStack service."
+msgstr ""
+
+#: ../../source/devref/images.rst:42
+msgid ""
+"db\\_sync: The image that will perform database sync (schema initialization "
+"and migration) for the OpenStack service."
+msgstr ""
+
+#: ../../source/devref/images.rst:44
+msgid ""
+"db\\_drop: The image that will perform database deletion operations for the "
+"OpenStack service."
+msgstr ""
+
+#: ../../source/devref/images.rst:46
+msgid ""
+"ks\\_user: The image that will perform keystone user creation for the "
+"service."
+msgstr ""
+
+#: ../../source/devref/images.rst:48
+msgid ""
+"ks\\_service: The image that will perform keystone service registration for "
+"the service."
+msgstr ""
+
+#: ../../source/devref/images.rst:50
+msgid ""
+"ks\\_endpoints: The image that will perform keystone endpoint registration "
+"for the service."
+msgstr ""
+
+#: ../../source/devref/images.rst:52
+msgid ""
+"pull\\_policy: The image pull policy, one of \"Always\", \"IfNotPresent\", "
+"and \"Never\" which will be used by all containers in the chart."
+msgstr ""
+
+#: ../../source/devref/images.rst:55
+msgid ""
+"An illustrative example of an ``images:`` section taken from the heat chart:"
+msgstr ""
+
+#: ../../source/devref/images.rst:76
+msgid ""
+"The OpenStack-Helm project today uses a mix of Docker images from "
+"Stackanetes and Kolla, but will likely standardize on a default set of "
+"images for all charts without any reliance on image-specific utilities."
+msgstr ""
+
+#: ../../source/devref/index.rst:2
+msgid "Developer References"
+msgstr ""
+
+#: ../../source/devref/index.rst:4
+msgid "Contents:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:3
+msgid "Networking"
+msgstr ""
+
+#: ../../source/devref/networking.rst:4
+msgid ""
+"Currently OpenStack-Helm supports OpenVSwitch and LinuxBridge as a network "
+"virtualization engines. In order to support many possible backends (SDNs), "
+"modular architecture of Neutron chart was developed. OpenStack-Helm can "
+"support every SDN solution that has Neutron plugin, either core_plugin or "
+"mechanism_driver."
+msgstr ""
+
+#: ../../source/devref/networking.rst:9
+msgid ""
+"The Neutron reference architecture provides mechanism_drivers :code:"
+"`OpenVSwitch` (OVS) and :code:`linuxbridge` (LB) with ML2 :code:"
+"`core_plugin` framework."
+msgstr ""
+
+#: ../../source/devref/networking.rst:12
+msgid "Other networking services provided by Neutron are:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:14
+msgid "L3 routing - creation of routers"
+msgstr ""
+
+#: ../../source/devref/networking.rst:15
+msgid "DHCP - auto-assign IP address and DNS info"
+msgstr ""
+
+#: ../../source/devref/networking.rst:16
+msgid "Metadata - Provide proxy for Nova metadata service"
+msgstr ""
+
+#: ../../source/devref/networking.rst:18
+msgid ""
+"Introducing a new SDN solution should consider how the above services are "
+"provided. It maybe required to disable built-in Neutron functionality."
+msgstr ""
+
+#: ../../source/devref/networking.rst:22
+msgid "Neutron architecture"
+msgstr ""
+
+#: ../../source/devref/networking.rst:24
+msgid "Neutron chart includes the following services:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:27
+msgid "neutron-server"
+msgstr ""
+
+#: ../../source/devref/networking.rst:28
+msgid ""
+"neutron-server is serving the networking REST API for operator and other "
+"OpenStack services usage. The internals of Neutron are highly flexible, "
+"providing plugin mechanisms for all networking services exposed. The "
+"consistent API is exposed to the user, but the internal implementation is up "
+"to the chosen SDN."
+msgstr ""
+
+#: ../../source/devref/networking.rst:35
+msgid "network"
+msgstr ""
+
+#: ../../source/devref/networking.rst:36
+msgid "subnet"
+msgstr ""
+
+#: ../../source/devref/networking.rst:37
+msgid ""
+"Typical networking API request is an operation of create/update/delete:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:37
+msgid "port"
+msgstr ""
+
+#: ../../source/devref/networking.rst:39
+msgid ""
+"To use other Neutron reference architecture types of SDN, these options "
+"should be configured in :code:`neutron.conf`:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:59
+msgid ""
+"All of the above configs are endpoints or path to the specific class "
+"implementing the interface. You can see the endpoints to class mapping in "
+"`setup.cfg <https://github.com/openstack/neutron/blob/"
+"412c49b3930ce8aecb0a07aec50a9607058e5bc7/setup.cfg#L69>`_."
+msgstr ""
+
+#: ../../source/devref/networking.rst:63
+msgid ""
+"If the SDN of your choice is using the ML2 core plugin, then the extra "
+"options in `neutron/ml2/plugins/ml2_conf.ini` should be configured:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:78
+msgid ""
+"SDNs implementing ML2 driver can add extra/plugin-specific configuration "
+"options in `neutron/ml2/plugins/ml2_conf.ini`. Or define its own "
+"`ml2_conf_<name>.ini` file where configs specific to the SDN would be placed."
+""
+msgstr ""
+
+#: ../../source/devref/networking.rst:82
+msgid "The above configuration options are handled by `neutron/values.yaml`:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:105
+msgid ""
+"Neutron-server service is scheduled on nodes with `openstack-control-plane="
+"enabled` label."
+msgstr ""
+
+#: ../../source/devref/networking.rst:109
+msgid "neutron-dhcp-agent"
+msgstr ""
+
+#: ../../source/devref/networking.rst:110
+msgid ""
+"DHCP agent is running dnsmasq process which is serving the IP assignment and "
+"DNS info. DHCP agent is dependent on the L2 agent wiring the interface. So "
+"one should be aware that when changing the L2 agent, it also needs to be "
+"changed in the DHCP agent. The configuration of the DHCP agent includes "
+"option `interface_driver`, which will instruct how the tap interface created "
+"for serving the request should be wired."
+msgstr ""
+
+#: ../../source/devref/networking.rst:126
+msgid ""
+"Another place where the DHCP agent is dependent on L2 agent is the "
+"dependency for the L2 agent daemonset:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:143
+msgid ""
+"There is also a need for DHCP agent to pass ovs agent config file (in :code:"
+"`neutron/templates/bin/_neutron-dhcp-agent.sh.tpl`):"
+msgstr ""
+
+#: ../../source/devref/networking.rst:157
+msgid ""
+"This requirement is OVS specific, the `ovsdb_connection` string is defined "
+"in `openvswitch_agent.ini` file, specifying how DHCP agent can connect to "
+"ovs. When using other SDNs, running the DHCP agent may not be required. When "
+"the SDN solution is addressing the IP assignments in another way, neutron's "
+"DHCP agent should be disabled."
+msgstr ""
+
+#: ../../source/devref/networking.rst:163
+msgid ""
+"neutron-dhcp-agent service is scheduled to run on nodes with the label "
+"`openstack-control-plane=enabled`."
+msgstr ""
+
+#: ../../source/devref/networking.rst:167
+msgid "neutron-l3-agent"
+msgstr ""
+
+#: ../../source/devref/networking.rst:168
+msgid ""
+"L3 agent is serving the routing capabilities for Neutron networks. It is "
+"also dependent on the L2 agent wiring the tap interface for the routers."
+msgstr ""
+
+#: ../../source/devref/networking.rst:171
+msgid "All dependencies described in neutron-dhcp-agent are valid here."
+msgstr ""
+
+#: ../../source/devref/networking.rst:173
+msgid ""
+"If the SDN implements its own version of L3 networking, neutron-l3-agent "
+"should not be started."
+msgstr ""
+
+#: ../../source/devref/networking.rst:176
+msgid ""
+"neutron-l3-agent service is scheduled to run on nodes with the label "
+"`openstack-control-plane=enabled`."
+msgstr ""
+
+#: ../../source/devref/networking.rst:180
+msgid "neutron-metadata-agent"
+msgstr ""
+
+#: ../../source/devref/networking.rst:181
+msgid ""
+"Metadata-agent is a proxy to nova-metadata service. This one provides "
+"information about public IP, hostname, ssh keys, and any tenant specific "
+"information. The same dependencies apply for metadata as it is for DHCP and "
+"L3 agents. Other SDNs may require to force the config driver in nova, since "
+"the metadata service is not exposed by it."
+msgstr ""
+
+#: ../../source/devref/networking.rst:187
+msgid ""
+"neutron-metadata-agent service is scheduled to run on nodes with the label "
+"`openstack-control-plane=enabled`."
+msgstr ""
+
+#: ../../source/devref/networking.rst:192
+msgid "Configuring network plugin"
+msgstr ""
+
+#: ../../source/devref/networking.rst:193
+msgid ""
+"To be able to configure multiple networking plugins inside of OpenStack-"
+"Helm, a new configuration option is added:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:204
+msgid ""
+"This option will allow to configure the Neutron services in proper way, by "
+"checking what is the actual backed set in :code:`neutron/values.yaml`."
+msgstr ""
+
+#: ../../source/devref/networking.rst:207
+msgid ""
+"In order to meet modularity criteria of Neutron chart, section `manifests` "
+"in :code:`neutron/values.yaml` contains boolean values describing which "
+"Neutron's Kubernetes resources should be deployed:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:241
+msgid ""
+"If :code:`.Values.manifests.daemonset_ovs_agent` will be set to false, "
+"neutron ovs agent would not be launched. In that matter, other type of L2 or "
+"L3 agent on compute node can be run."
+msgstr ""
+
+#: ../../source/devref/networking.rst:245
+msgid ""
+"To enable new SDN solution, there should be separate chart created, which "
+"would handle the deployment of service, setting up the database and any "
+"related networking functionality that SDN is providing."
+msgstr ""
+
+#: ../../source/devref/networking.rst:250
+msgid "OpenVSwitch"
+msgstr ""
+
+#: ../../source/devref/networking.rst:251
+msgid ""
+"The ovs set of daemonsets are running on the node labeled `openvswitch="
+"enabled`. This includes the compute and controller/network nodes. For more "
+"flexibility, OpenVSwitch as a tool was split out of Neutron chart, and put "
+"in separate chart dedicated OpenVSwitch. Neutron OVS agent remains in "
+"Neutron chart. Splitting out the OpenVSwitch creates possibilities to use it "
+"with different SDNs, adjusting the configuration accordingly."
+msgstr ""
+
+#: ../../source/devref/networking.rst:259
+msgid "neutron-ovs-agent"
+msgstr ""
+
+#: ../../source/devref/networking.rst:260
+msgid ""
+"As part of Neutron chart, this daemonset is running Neutron OVS agent. It is "
+"dependent on having :code:`openvswitch-db` and :code:`openvswitch-vswitchd` "
+"deployed and ready. Since its the default choice of the networking backend, "
+"all configuration is in place in `neutron/values.yaml`. :code:`neutron-ovs-"
+"agent` should not be deployed when another SDN is used in `network.backend`."
+msgstr ""
+
+#: ../../source/devref/networking.rst:266
+msgid ""
+"Script in :code:`neutron/templates/bin/_neutron-openvswitch-agent-init.sh."
+"tpl` is responsible for determining the tunnel interface and its IP for "
+"later usage by :code:`neutron-ovs-agent`. The IP is set in init container "
+"and shared between init container and main container with :code:`neutron-ovs-"
+"agent` via file :code:`/tmp/pod-shared/ml2-local-ip.ini`."
+msgstr ""
+
+#: ../../source/devref/networking.rst:272
+msgid ""
+"Configuration of OVS bridges can be done via `neutron/templates/bin/_neutron-"
+"openvswitch-agent-init.sh.tpl`. The script is configuring the external "
+"network bridge and sets up any bridge mappings defined in :code:`conf."
+"auto_bridge_add`.  These values should align with :code:`conf.plugins."
+"openvswitch_agent.ovs.bridge_mappings`."
+msgstr ""
+
+#: ../../source/devref/networking.rst:280
+msgid "openvswitch-db and openvswitch-vswitchd"
+msgstr ""
+
+#: ../../source/devref/networking.rst:281
+msgid ""
+"This runs the OVS tool and database. OpenVSwitch chart is not Neutron "
+"specific, it may be used with other technologies that are leveraging the OVS "
+"technology, such as OVN or ODL."
+msgstr ""
+
+#: ../../source/devref/networking.rst:285
+msgid ""
+"A detail worth mentioning is that ovs is configured to use sockets, rather "
+"than the default loopback mechanism."
+msgstr ""
+
+#: ../../source/devref/networking.rst:298
+msgid "Linuxbridge"
+msgstr ""
+
+#: ../../source/devref/networking.rst:299
+msgid ""
+"Linuxbridge is the second type of Neutron reference architecture L2 agent. "
+"It is running on nodes labeled `linuxbridge=enabled`. As mentioned before, "
+"all nodes that are requiring the L2 services need to be labeled with "
+"linuxbridge. This includes both the compute and controller/network nodes. It "
+"is not possible to label the same node with both openvswitch and linuxbridge "
+"(or any other network virtualization technology) at the same time."
+msgstr ""
+
+#: ../../source/devref/networking.rst:307
+msgid "neutron-lb-agent"
+msgstr ""
+
+#: ../../source/devref/networking.rst:308
+msgid ""
+"This daemonset includes the linuxbridge Neutron agent with bridge-utils and "
+"ebtables utilities installed. This is all that is needed, since linuxbridge "
+"uses native kernel libraries."
+msgstr ""
+
+#: ../../source/devref/networking.rst:312
+msgid ""
+":code:`neutron/templates/bin/_neutron-linuxbridge-agent-init.sh.tpl` is "
+"configuring the tunnel IP, external bridge and all bridge mappings defined "
+"in config. It is done in init container, and the IP for tunneling is shared "
+"using file :code:`/tmp/pod-shared/ml2-local-ip.ini` with main linuxbridge "
+"container."
+msgstr ""
+
+#: ../../source/devref/networking.rst:318
+msgid ""
+"In order to use linuxbridge in your OpenStack-Helm deployment, you need to "
+"label the compute and controller/network nodes with `linuxbridge=enabled` "
+"and use this `neutron/values.yaml` override:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:363
+msgid "Other SDNs"
+msgstr ""
+
+#: ../../source/devref/networking.rst:364
+msgid ""
+"In order to add support for more SDNs, these steps need to be performed:"
+msgstr ""
+
+#: ../../source/devref/networking.rst:366
+msgid ""
+"Configure neutron-server with SDN specific core_plugin/mechanism_drivers."
+msgstr ""
+
+#: ../../source/devref/networking.rst:367
+msgid "If required, add new networking agent label type."
+msgstr ""
+
+#: ../../source/devref/networking.rst:368
+msgid ""
+"Specify if new SDN would like to use existing services from Neutron: L3, "
+"DHCP, metadata."
+msgstr ""
+
+#: ../../source/devref/networking.rst:370
+msgid "Create separate chart with new SDN deployment method."
+msgstr ""
+
+#: ../../source/devref/networking.rst:374
+msgid "Nova config dependency"
+msgstr ""
+
+#: ../../source/devref/networking.rst:375
+msgid ""
+"Whenever we change the L2 agent, it should be reflected in ``nova/values."
+"yaml`` in dependency resolution for nova-compute."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:2
+msgid "Node and node label specific daemonset configurations"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:4
+msgid ""
+"A typical Helm daemonset may leverage a secret to store configuration data. "
+"However, there are cases where the same secret document can't be used for "
+"the entire daemonset, because there are node-specific differences."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:8
+msgid ""
+"To address this use-case, the ``helm-toolkit.utils.daemonset_overrides`` "
+"template was added in helm-toolkit. This was created with the intention that "
+"it should be straightforward to convert (wrap) a pre-existing daemonset with "
+"the functionality to override secret parameters on a per-node or per-"
+"nodelabel basis."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:15
+msgid "Adapting your daemonset to support node/nodelabel overrides"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:17
+msgid ""
+"Consider the following (simplified) secret and daemonset pairing example:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:50
+msgid "Assume the chart name is ``mychart``."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:52
+msgid ""
+"Now we can wrap the existing YAML to make it support node and nodelabel "
+"overrides, with minimal changes to the existing YAML (note where $secretName "
+"has been substituted):"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:123
+msgid ""
+"Your daemonset should now support node and nodelabl level overrides. (Note "
+"that you will also need your chart to have helm-toolkit listed as a "
+"dependency.)"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:127
+msgid "Implementation details of node/nodelabel overrides"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:129
+msgid ""
+"Instead of having one daemonset with one monolithic secret, this helm-"
+"toolkit feature permits a common daemonset and secret template, from which "
+"daemonset and secret pairings are auto-generated. It supports establishing "
+"value overrides for nodes with specific label value pairs and for targeting "
+"nodes with specific hostnames and hostlabels. The overridden configuration "
+"is merged with the normal config data, with the override data taking "
+"precedence."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:136
+msgid ""
+"The chart will then generate one daemonset for each host and label override, "
+"in addition to a default daemonset for which no overrides are applied. Each "
+"daemonset generated will also exclude from its scheduling criteria all other "
+"hosts and labels defined in other overrides for the same daemonset, to "
+"ensure that there is no overlap of daemonsets (i.e., one and only one "
+"daemonset of a given type for each node)."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:143
+msgid ""
+"For example, if you have some special conf setting that should be applied to "
+"``host1.fqdn``, and another special conf setting that should be applied to "
+"nodes labeled with ``someNodeLabel``, then three secret/daemonset pairs will "
+"be generated and registered with kubernetes: one for ``host1.fqdn``, one for "
+"``someNodeLabel``, and one for ``default``."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:149
+msgid ""
+"The order of precedence for matches is FQDN, node label, and then default. "
+"If a node matches both a FQDN and a nodelabel, then only the FQDN override "
+"is applied. Pay special attention to adding FQDN overrides for nodes that "
+"match a nodelabel override, as you would need to duplicate the nodelabel "
+"overrides for that node in the FQDN overrides for them to still apply."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:155
+msgid ""
+"If there is no matching FQDN and no matching nodelabel, then the default "
+"daemonset/secret (with no overrides applied) is used."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:158
+msgid ""
+"If a node matches more than one nodelabel, only the last matching nodelabel "
+"will apply (last in terms of the order the overrides are defined in the "
+"YAML)."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:162
+msgid "Exercising node/nodelabel overrides"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:164
+msgid ""
+"The following example demonstrates how to exercise the node/nodelabel "
+"overrides:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:226
+msgid "Nova vcpu example"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:228
+msgid ""
+"Some nodes may have a different vcpu_pin_set in nova.conf due to differences "
+"in CPU hardware."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:231
+msgid ""
+"To address this, we can specify overrides in the values fed to the chart. Ex:"
+""
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:272
+msgid "Note that only one set of overrides is applied per node, such that:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:274
+msgid "Host overrides supercede label overrides"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:275
+msgid ""
+"The farther down the list the label appears, the greater precedence it has. "
+"e.g., \"another-label\" overrides will apply to a node containing both "
+"labels."
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:278
+msgid ""
+"Also note that other non-overridden values are inherited by hosts and labels "
+"with overrides. The following shows a set of example hosts and the values "
+"fed into each:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:281
+msgid ""
+"``host1.fqdn`` with labels ``compute-type: dpdk, sriov`` and ``another-label:"
+" another-value``:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:291
+msgid ""
+"``host2.fqdn`` with labels ``compute-type: dpdk, sriov`` and ``another-label:"
+" another-value``:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:301
+msgid ""
+"``host3.fqdn`` with labels ``compute-type: dpdk, sriov`` and ``another-label:"
+" another-value``:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:311
+msgid "``host4.fqdn`` with labels ``compute-type: dpdk, sriov``:"
+msgstr ""
+
+#: ../../source/devref/node-and-label-specific-configurations.rst:321
+msgid "``host5.fqdn`` with no labels:"
+msgstr ""
+
+#: ../../source/devref/oslo-config.rst:2
+msgid "OSLO-Config Values"
+msgstr ""
+
+#: ../../source/devref/oslo-config.rst:4
+msgid ""
+"OpenStack-Helm generates oslo-config compatible formatted configuration "
+"files for services dynamically from values specified in a yaml tree. This "
+"allows operators to control any and all aspects of an OpenStack services "
+"configuration. An example snippet for an imaginary Keystone configuration is "
+"described here:"
+msgstr ""
+
+#: ../../source/devref/oslo-config.rst:38
+msgid ""
+"This will be consumed by the templated ``configmap-etc.yaml`` manifest to "
+"produce the following config file:"
+msgstr ""
+
+#: ../../source/devref/oslo-config.rst:73
+msgid ""
+"Note that some additional values have been injected into the config file, "
+"this is performed via statements in the configmap template, which also calls "
+"the ``helm-toolkit.utils.to_oslo_conf`` to convert the yaml to the required "
+"layout:"
+msgstr ""
+
+#: ../../source/devref/pod-disruption-budgets.rst:2
+msgid "Pod Disruption Budgets"
+msgstr ""
+
+#: ../../source/devref/pod-disruption-budgets.rst:4
+msgid ""
+"OpenStack-Helm leverages PodDisruptionBudgets to enforce quotas that ensure "
+"that a certain number of replicas of a pod are available at any given time.  "
+"This is particularly important in the case when a Kubernetes node needs to "
+"be drained."
+msgstr ""
+
+#: ../../source/devref/pod-disruption-budgets.rst:10
+msgid ""
+"These quotas are configurable by modifying the ``minAvailable`` field within "
+"each PodDisruptionBudget manifest, which is conveniently mapped to a "
+"templated variable inside the ``values.yaml`` file. The ``min_available`` "
+"within each service's ``values.yaml`` file can be represented by either a "
+"whole number, such as ``1``, or a percentage, such as ``80%``.  For example, "
+"when deploying 5 replicas of a pod (such as keystone-api), using "
+"``min_available: 3`` would enforce policy to ensure at least 3 replicas were "
+"running, whereas using ``min_available: 80%`` would ensure that 4 replicas "
+"of that pod are running."
+msgstr ""
+
+#: ../../source/devref/pod-disruption-budgets.rst:20
+msgid ""
+"**Note:** The values defined in a PodDisruptionBudget may conflict with "
+"other values that have been provided if an operator chooses to leverage "
+"Rolling Updates for deployments.  In the case where an operator defines a "
+"``maxUnavailable`` and ``maxSurge`` within an update strategy that is higher "
+"than a ``minAvailable`` within a pod disruption budget, a scenario may occur "
+"where pods fail to be evicted from a deployment."
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:2
+msgid "Upgrades and Reconfiguration"
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:4
+msgid ""
+"The OpenStack-Helm project assumes all upgrades will be done through Helm. "
+"This includes handling several different resource types. First, changes to "
+"the Helm chart templates themselves are handled. Second, all of the "
+"resources layered on top of the container image, such as ``ConfigMaps`` "
+"which includes both scripts and configuration files, are updated during an "
+"upgrade. Finally, any image references will result in rolling updates of "
+"containers, replacing them with the updating image."
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:12
+msgid ""
+"As Helm stands today, several issues exist when you update images within "
+"charts that might have been used by jobs that already ran to completion or "
+"are still in flight. An example of where this behavior would be desirable is "
+"when an updated db\\_sync image has updated to point from one openstack "
+"release to another. In this case, the operator will likely want a db\\_sync "
+"job, which was already run and completed during site installation, to run "
+"again with the updated image to bring the schema inline with the Newton "
+"release."
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:21
+msgid ""
+"The OpenStack-Helm project also implements annotations across all chart "
+"configmaps so that changing resources inside containers, such as "
+"configuration files, triggers a Kubernetes rolling update. This means that "
+"those resources can be updated without deleting and redeploying the service "
+"and can be treated like any other upgrade, such as a container image change."
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:28
+msgid ""
+"Note: Rolling update values can conflict with values defined in each "
+"service's PodDisruptionBudget.  See `here <https://docs.openstack.org/"
+"openstack-helm/latest/devref/pod-disruption-budgets.html>`_ for more "
+"information."
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:33
+msgid "This is accomplished with the following annotation:"
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:42
+msgid ""
+"The ``hash`` function defined in the ``helm-toolkit`` chart ensures that any "
+"change to any file referenced by configmap-bin.yaml or configmap-etc.yaml "
+"results in a new hash, which will then trigger a rolling update."
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:47
+msgid ""
+"All ``Deployment`` chart components are outfitted by default with rolling "
+"update strategies:"
+msgstr ""
+
+#: ../../source/devref/upgrades.rst:57
+msgid ""
+"In ``values.yaml`` in each chart, the same defaults are supplied in every "
+"chart, which allows the operator to override at upgrade or deployment time."
+msgstr ""
+

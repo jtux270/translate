@@ -1,0 +1,420 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: python-keystoneclient\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-09 03:43+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:65
+msgid "2.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:40
+msgid "2.2.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:25
+msgid "2.3.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "2.3.2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:25
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "3.10.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:32
+msgid "3.11.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "3.12.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "3.15.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "3.17.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:22
+msgid "3.18.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "3.19.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "3.21.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:22
+msgid "3.22.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "3.5.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:72
+msgid "3.6.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:57
+msgid "3.7.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:42
+msgid "3.8.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:22
+msgid "3.9.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:51
+msgid ""
+"Added a ``allow_expired`` argument to ``validate`` and ``get_token_data`` in "
+" `keystoneclient.v3.tokens`. Setting this to ``True``, allos for a token "
+"validation query to fetch expired tokens."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid ""
+"Added ability to filter on multiple values with the same parameter key. For "
+"example, we can now filter on user names that contain both ``test`` and "
+"``user`` using ``keystone.users.list(name__contains=['test', 'user'])``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:66
+msgid ""
+"Added support for ``domain configs``. A user can now upload domain specific "
+"configurations to keytone using the client. See ``client.domain_configs."
+"create``, ``client.domain_configs.delete``, ``client.domain_configs.get`` "
+"and ``client.domain_configs.update``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:14
+msgid ""
+"Added support for managing project-specific limits. The ``POST`` API for "
+"limits in keystone supports batch creation, but the client implementation "
+"does not. Creation for limits using the client must be done one at a time."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:20
+msgid ""
+"Added support for managing registered limits. The ``POST`` API for "
+"registered limits in keystone supports batch creation, but the client "
+"implementation does not. Creation of registered limits using the client must "
+"be done one at a time."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:16
+msgid ""
+"Added support to return \"x-openstack-request-id\" header in request_ids "
+"attribute if ``include_metadata=True``. Also, for APIs which return response "
+"as None, client will return request_ids as well if ``include_metadata`` is "
+"True."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:31
+msgid ""
+"Adds support for creating access rules as an attribute of application "
+"credentials as well as for retrieving and deleting them."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14
+msgid ""
+"Adds support for creating, reading, and deleting application credentials. "
+"With application credentials, a user can grant their applications limited "
+"access to their cloud resources. Applications can use keystoneauth with the "
+"`v3applicationcredential` auth plugin to authenticate with keystone without "
+"needing the user's password."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:10 origin/stable/mitaka>:99
+#: origin/stable/newton>:10 origin/stable/ocata>:27
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:85
+msgid "Critical Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:41
+msgid ""
+"Deprecate the `keystoneclient.generic` client. This client used to be able "
+"to determine available API versions and some basics around installed "
+"extensions however the APIs were never upgraded for the v3 API. It doesn't "
+"seem to be used in the openstack ecosystem."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:55 stable/pike>:37
+#: stable/stein>:27
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid "Keystone Client now supports endpoint group filtering."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:30 origin/stable/mitaka>:45
+#: origin/stable/ocata>:10 origin/stable/ocata>:47 origin/stable/ocata>:62
+#: stable/pike>:20 stable/queens>:10 stable/rocky>:10 stable/stein>:10
+#: stable/train>:10 stable/ussuri>:27
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14
+msgid ""
+"Now keystone client supports to list projects which belongs to the given "
+"parent project."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:121 origin/stable/newton>:40
+#: origin/stable/ocata>:87
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:70 origin/stable/newton>:30
+#: origin/stable/ocata>:77 stable/pike>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Python 2.7 support has been dropped. Last release of python-keystoneclient "
+"to support python 2.7 is OpenStack Train. The minimum version of Python now "
+"supported is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:44
+msgid ""
+"Removed `keystoneclient.apiclient.exceptions`. This file was deprecated in "
+"v0.7.1 and has now been replaced by `keystoneclient.exceptions`."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:24
+msgid ""
+"Support for handling the relationship between endpoint groups and projects "
+"has been added. It is now possible to list, associate, check and "
+"disassociate endpoint groups that have access to a project."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:125
+msgid "Support v2 parameters for the v3 service create method."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:18 origin/stable/newton>:18
+#: origin/stable/ocata>:35
+msgid ""
+"The ``X-Service-Token`` header value is now properly masked, and is "
+"displayed as a hash value, in the log."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:81
+msgid ""
+"The ``data`` argument for creating and updating credentials has been removed."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:91
+msgid ""
+"The ``data`` argument for creating and updating credentials was deprecated "
+"in the 1.7.0 release. It has been replaced by the ``blob`` argument."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:48
+msgid ""
+"The ``keystone`` CLI has been removed, using the ``openstack`` CLI is "
+"recommended. This feature has been deprecated since the Liberty release of "
+"Keystone."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:34
+msgid "The ``keystone`` CLI has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:31
+msgid ""
+"The region resource in Keystone never support or contain \"enabled\" "
+"property. Thus the property is deprecated and will be removed in future "
+"versions."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:10
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:59
+msgid ""
+"[`blueprint deprecate-to-ksa <https://blueprints.launchpad.net/python-"
+"keystoneclient/+spec/deprecate-to-ksa>`_] Several modules related to "
+"authentication in keystoneclient have been deprecated in favor of "
+"[`keystoneauth <http://docs.openstack.org/developer/keystoneauth/>`_] These "
+"modules include: ``keystoneclient.session``, ``keystoneclient.adapter``, "
+"``keystoneclient.httpclient``, ``keystoneclient.auth.base``, "
+"``keystoneclient.auth.cli``, ``keystoneclient.auth.conf``, ``keystoneclient."
+"auth.identity.base``, and ``keystoneclient.auth.token_endpoint``. Tips for "
+"migrating to `keystoneauth` have been [`documented <http://docs.openstack."
+"org/developer/keystoneauth/migrating.html>`_]."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:22
+msgid ""
+"[`blueprint project-tags <https://blueprints.launchpad.net/keystone/+spec/"
+"project-tags>`_] The keystoneclient now supports project tags feature in "
+"keystone.  This allows operators to use the client to associate tags to a "
+"project, retrieve tags associated with a project, delete tags associated "
+"with a project, and filter projects based on tags."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid ""
+"[`blueprint return-request-id-to-caller <https://blueprints.launchpad.net/"
+"python-keystoneclient/+spec/return-request-id-to-caller>`_] Instantiating "
+"client with ``include_metadata=True`` will cause manager response to return "
+"data along with request_ids for better tracing. Refer [`using-api-v3 <https:/"
+"/docs.openstack.org/python-keystoneclient/latest/using-api-v3.html#getting-"
+"metadata-responses>`_]"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:89
+msgid ""
+"[`bug 1449066 <https://bugs.launchpad.net/python-keystoneclient/+bug/"
+"1449066>`_] The `keystoneclient.middleware` module has been removed in favor "
+"of the keystonemiddleware library. The aforementioned module has been "
+"deprecated since keystoneclient v0.10.0 which was included in the Juno "
+"release of OpenStack."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:111
+msgid ""
+"[`bug 1457702 <https://bugs.launchpad.net/python-keystoneclient/+bug/"
+"1457702>`_] Change default endpoint to public for keystone v3."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:103
+msgid ""
+"[`bug 1462694 <https://bugs.launchpad.net/python-keystoneclient/+bug/"
+"1462694>`_] Add support for `include_subtree` in list_role_assignments."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:49
+msgid ""
+"[`bug 1479569 <https://bugs.launchpad.net/python-keystoneclient/+bug/"
+"1479569>`_] With the ``include_names`` parameter set to True the names of "
+"the role assignments are returned with the entities IDs. (GET /"
+"role_assignments?include_names=True)"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:115
+msgid ""
+"[`bug 1520244 <https://bugs.launchpad.net/python-keystoneclient/+bug/"
+"1520244>`_] Support `truncated` flag returned from server."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:93
+msgid ""
+"[`bug 1526651 <https://bugs.launchpad.net/python-keystoneclient/+bug/"
+"1526651>`_] The `keystoneclient.apiclient` module has been removed in favor "
+"of `keystoneclient.exceptions`. The aforementioned module has been "
+"deprecated since keystoneclient v0.7.1 which was inclued in the Juno release "
+"of OpenStack."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:107
+msgid ""
+"[`bug 1526686 <https://bugs.launchpad.net/python-keystoneclient/+bug/"
+"1526686>`_] Replace textwrap with faster code in cms functions."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:14 origin/stable/newton>:14
+#: origin/stable/ocata>:31
+msgid ""
+"[`bug 1616105 <https://bugs.launchpad.net/keystoneauth/+bug/1616105>`_] Only "
+"log the response body when the ``Content-Type`` header is set to "
+"``application/json``. This avoids logging large binary objects (such as "
+"images). Other ``Content-Type`` will not be logged. Additional ``Content-"
+"Type`` strings can be added as required."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:79
+msgid "keystoneclient.apiclient has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:74
+msgid "keystoneclient.middleware has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:34
+msgid "support for implied roles in v3 API."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "keystoneclient Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+

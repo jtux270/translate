@@ -1,0 +1,391 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: oslo.policy\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-22 09:42+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "1.15.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:22
+msgid "1.22.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "1.25.3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:65
+msgid "1.29.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:41
+msgid "1.33.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:24
+msgid "1.33.2"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "1.33.2-3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:84
+msgid "1.37.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:41
+msgid "1.38.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:24
+msgid "1.38.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "1.38.1-6"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:41
+msgid "1.41.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "1.9.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:24
+msgid "2.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "2.1.3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:24
+msgid "2.3.3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "2.3.4"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:63
+msgid "2.4.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:47
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:24
+msgid "3.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "3.1.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:56
+msgid "3.2.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:39
+msgid "3.3.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "3.4.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:54
+msgid "3.6.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:35
+msgid "3.6.2"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:5
+msgid "3.7.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:33
+msgid ""
+"A new configuration option ``enforce_new_defaults`` has been added to the "
+"``[oslo_policy]`` group to control whether or not to use the old deprecated "
+"defaults. If ``True``, the old deprecated defaults are not going to be "
+"evaluated which means if any existing token is allowed for old defaults but "
+"disallowed for new defaults it will be disallowed. It is encouraged to "
+"enable this flag along with the ``enforce_scope`` flag so that you can get "
+"the benefits of new defaults and ``scope_type`` together. This way operators "
+"can switch to new defaults without overwriting the rules in the policy file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:50
+msgid ""
+"A new configuration option has been added to the ``[oslo_policy]`` group "
+"called ``enforce_scope``. When set to ``True``, oslo.policy will raise an "
+"``InvalidScope`` exception if the context passed into the enforce method "
+"doesn't match the policy's ``scope_types``. If ``False``, a warning will be "
+"logged for operators. Note that operators should only enable this option "
+"once they've audited their users to ensure system users have roles on the "
+"system. This could potentially prevent some users from being able to make "
+"system-level API calls. This will also give other services the flexibility "
+"to fix long-standing RBAC issues in OpenStack once they start introducing "
+"``scope_types`` for policies used in their service."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:48
+msgid ""
+"A new tool, ``oslopolicy-validator``, has been added. It allows deployers to "
+"easily run basic sanity checks against their policy files. See the "
+"documentation for full details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:14
+msgid ""
+"Add ``oslopolicy-convert-json-to-yaml`` tool to convert the json formatted "
+"policy file to yaml format in compatible way. Refer to `this document <https:"
+"//docs.openstack.org/oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml."
+"html>`_ for details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:33
+msgid ""
+"Add ``oslopolicy-policy-upgrade`` command to help operators upgrade their "
+"self-defined policy file to new release format. It will upgrade the "
+"deprected policy name with the new name."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid ""
+"Add ``sphinxpolicygen`` Sphinx plugin, which can be used to generate a "
+"sample policy file for use in documentation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:74
+msgid ""
+"Add support for custom rule check plugins. ``http`` and ``https`` external "
+"rule checks have been converted into stevedore plugins and serve as examples."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:31
+msgid ""
+"Added the option to define a more descriptive policy rule by using `policy."
+"DocumentedRuleDefault` class. When using this class it is required that the "
+"description and operations parameters are defined, unlike `policy."
+"RuleDefault`. The operations parameter is a list of dictionaries that must "
+"contain the two keys 'path' and 'method' which represent the API URL and the "
+"HTTP REQUEST METHOD. More information can be found in the `policy usage "
+"documentation <https://docs.openstack.org/developer/oslo.policy/usage."
+"html>`_."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14 stable/queens>:33 stable/rocky>:33
+msgid ""
+"As reported in launchpad bug 1723030, under some circumstances policy checks "
+"caused a significant performance degradation. This release includes improved "
+"logic around rule validation to prevent that."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:10 stable/queens>:10 stable/queens>:29
+#: stable/rocky>:10 stable/rocky>:29 stable/rocky>:62 stable/rocky>:89
+#: stable/stein>:10 stable/train>:10 stable/train>:29 stable/ussuri>:10
+#: stable/ussuri>:68 stable/victoria>:61 stable/wallaby>:40 stable/wallaby>:59
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:33 stable/ussuri>:72
+msgid ""
+"Deprecated policy warnings are now suppressed in the ``oslopolicy-list-"
+"redundant`` tool so that they don't overwhelm the relevant output."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:21
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:31
+msgid ""
+"JSON format support and ``--format`` option in ``oslopolicy-sample-"
+"generator`` and ``oslopolicy-policy-upgrade`` tools are also deprecated. In "
+"future release, ``--format`` option will be removed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:10 stable/pike>:27
+#: stable/queens>:46 stable/queens>:70 stable/rocky>:46 stable/stein>:29
+#: stable/stein>:46 stable/ussuri>:29 stable/victoria>:10 stable/victoria>:44
+#: stable/wallaby>:10
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:10
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:56
+msgid ""
+"Support for Python 2.7 has been dropped. The minimum version of Python now "
+"supported is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid "Switch to reno for managing release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:44
+msgid ""
+"This fixes the Bug# 1914095. Policy engine has bug of modifying the "
+"registered rule original object which caused issue when there are multiple "
+"policy objects are processing rules in parallel. With this fix. policy "
+"engine will make copies of all the registered rules and process accordingly."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:52 stable/wallaby>:23
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:27
+msgid ""
+"Users with a ``RuleDefault`` or ``DocumentedRuleDefault`` that have "
+"configured a ``deprecated_rule`` should move the ``deprecated_reason`` and "
+"``deprecated_since`` parameters to this ``DeprecatedRule``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:76
+msgid ""
+"[`bug 1741073 <https://bugs.launchpad.net/oslo.policy/+bug/1741073>`_] "
+"Documentation has been improved to include ``oslopolicy-sample-generator`` "
+"and ``oslopolicy-list-redundant`` usage."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:99
+msgid ""
+"[`bug 1771442 <https://bugs.launchpad.net/oslo.policy/+bug/1771442>`_] "
+"Policy rules that are deprecated for removal are now properly formatted when "
+"rendering sample policy files for documentation."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:93
+msgid ""
+"[`bug 1773473 <https://bugs.launchpad.net/oslo.policy/+bug/1773473>`_] The "
+"``sphinxext`` extension for rendering policy documentation now supports "
+"``scope_types`` attributes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:50 stable/rocky>:66
+msgid ""
+"[`bug 1779172 <https://bugs.launchpad.net/keystone/+bug/1779172>`_] The "
+"``enforce()`` method now supports the ability to parse ``oslo.context`` "
+"objects if passed into ``enforce()`` as ``creds``. This provides more "
+"consistent policy enforcement for service developers by ensuring the "
+"attributes provided in policy enforcement are standardized. In this case "
+"they are being standardized through the ``oslo_context.context."
+"RequestContext.to_policy_values()`` method."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14 stable/rocky>:14 stable/stein>:14
+#: stable/train>:14 stable/ussuri>:14 stable/victoria>:65
+msgid ""
+"[`bug 1880959 <https://bugs.launchpad.net/keystone/+bug/1880959>`_] The "
+"behavior of policy file reloading from policy directories was fixed. "
+"Previously the rules from policy files located in the directories specified "
+"in the ``policy_dirs`` option were not reapplied after the rules from the "
+"primary policy file have been reapplied due to a change."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:63
+msgid ""
+"[`bug 1913718 <https://launchpad.net/bugs/1913718>`_] The `Enforcer()` "
+"object now only processes deprecated rules once at load or enforcement time, "
+"improving performance for users that make extensive use of policy "
+"enforcement."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:14
+msgid ""
+"``DeprecatedRule`` now accepts two new parameters: ``deprecated_reason`` and "
+"``deprecated_since``. These should be used in place of the equivalent "
+"parameters on the rule that is replacing this rule in order to avoid "
+"confusion."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:25
+msgid ""
+"``policy_file`` support for JSON formatted file is deprecated. Use YAML "
+"formatted file which will be default in future. Use `oslopolicy-convert-json-"
+"to-yaml <https://docs.openstack.org/oslo.policy/latest/cli/oslopolicy-"
+"convert-json-to-yaml.html>`_ tool to convert the existing JSON to YAML "
+"formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:50
+msgid ""
+"oslopolicy-checker was added the ability to accept a file containing a hash "
+"that represents the target. This makes it possible to check policies that "
+"have non-conventional targets such as barbican."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "oslo.policy Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Unreleased Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

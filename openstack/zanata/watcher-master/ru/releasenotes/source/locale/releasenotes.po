@@ -1,0 +1,990 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: python-watcher\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 13:14+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "0.29.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:20
+msgid "0.34.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "1.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:94
+msgid "1.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:20
+msgid "1.10.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "1.11.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:75
+msgid "1.3.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:20
+msgid "1.4.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "1.4.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:56
+msgid "1.5.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:39
+msgid "1.6.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "1.7.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:46
+msgid "1.9.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current stable/wallaby>:5
+msgid "6.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:152
+msgid "A ``watcher-status upgrade check`` has been added for this."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:32
+msgid ""
+"A new threadpool for the decision engine that contributors can use to "
+"improve the performance of many operations, primarily I/O bound onces. The "
+"amount of workers used by the decision engine threadpool can be configured "
+"to scale according to the available infrastructure using the "
+"`watcher_decision_engine.max_general_workers` config option. Documentation "
+"for contributors to effectively use this threadpool is available online: "
+"https://docs.openstack.org/watcher/latest/contributor/concurrency.html"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:21
+msgid ""
+"API calls while building the Compute data model will be retried upon failure."
+" The amount of failures allowed before giving up and the time before "
+"reattempting are configurable. The `api_call_retries` and "
+"`api_query_timeout` parameters in the `[collector]` group can be used to "
+"adjust these paremeters. 10 retries with a 1 second time in between "
+"reattempts is the default."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:24
+msgid ""
+"Add a new webhook API and a new audit type EVENT, the microversion is 1.4. "
+"Now Watcher user can create audit with EVENT type and the audit will be "
+"triggered by webhook API. The user guide is available online: https://docs."
+"openstack.org/watcher/latest/user/event_type_audit.html"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:69
+msgid "Add a service supervisor to watch Watcher deamons."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:84
+msgid "Add action for compute node power on/off"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:49
+msgid ""
+"Add description property for dynamic action. Admin can see detail "
+"information of any specify action."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14
+msgid ""
+"Add force field to Audit. User can set --force to enable the new option when "
+"launching audit. If force is True, audit will be executed despite of ongoing "
+"actionplan. The new audit may create a wrong actionplan if they use the same "
+"data model."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:119
+msgid ""
+"Add keystone_client Group for user to configure 'interface' and "
+"'region_name' by watcher.conf. The default value of 'interface' is 'admin'."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:29
+msgid "Add notifications related to Action object."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid "Add notifications related to Action plan object."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:29
+msgid "Add notifications related to Audit object."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:65
+msgid "Add notifications related to Service object."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:107
+msgid ""
+"Add show data model api for Watcher. New in version 1.3. User can use "
+"'openstack optimize datamodel list' command to view the current data model "
+"information in memory. User can also add '--audit <Audit_UUID>' to view "
+"specific data model in memory filted by the scope in audit. User can also "
+"add '--detail' to view detailed information about current data model. User "
+"can also add '--type <type>' to specify the type of data model. Default type "
+"is 'compute'. In the future, type 'storage' and 'baremetal' will be "
+"supported."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:28
+msgid ""
+"Add start_time and end_time fields in audits table. User can set the start "
+"time and/or end time when creating CONTINUOUS audit."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:61
+msgid ""
+"Add superseded state for an action plan if the cluster data model has "
+"changed after it has been created."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:124
+msgid ""
+"Added Placement API helper to Watcher. Now Watcher can get information about "
+"resource providers, it can be used for the data model and strategies. Config "
+"group placement_client with options 'api_version', 'interface' and "
+"'region_name' is also added. The default values for 'api_version' and "
+"'interface' are 1.29 and 'public', respectively."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:103
+msgid "Added SUSPENDED audit state"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:18
+msgid ""
+"Added a generic scoring engine module, which will standarize interactions "
+"with scoring engines through the common API. It is possible to use the "
+"scoring engine by different Strategies, which improve the code and data "
+"model re-use."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:103
+msgid ""
+"Added a new config option 'action_execution_rule' which is a dict type. Its "
+"key field is strategy name and the value is 'ALWAYS' or 'ANY'. 'ALWAYS' "
+"means the callback function returns True as usual. 'ANY' means the return "
+"depends on the result of previous action execution. The callback returns "
+"True if previous action gets failed, and the engine continues to run the "
+"next action. If previous action executes success, the callback returns False "
+"then the next action will be ignored. For strategies that aren't in "
+"'action_execution_rule', the callback always returns True. Please add the "
+"next section in the watcher.conf file if your strategy needs this feature. "
+"[watcher_workflow_engines.taskflow] action_execution_rule = {'your strategy "
+"name': 'ANY'}"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:54
+msgid ""
+"Added a new strategy based on the airflow of servers. This strategy makes "
+"decisions to migrate VMs to make the airflow uniform."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid ""
+"Added a standard way to both declare and fetch configuration options so that "
+"whenever the administrator generates the Watcher configuration sample file, "
+"it contains the configuration options of the plugins that are currently "
+"available."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:62
+msgid ""
+"Added a strategy based on the VM workloads of hypervisors. This strategy "
+"makes decisions to migrate workloads to make the total VM workloads of each "
+"hypervisor balanced, when the total VM workloads of hypervisor reaches "
+"threshold."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:35
+msgid ""
+"Added a strategy for one compute node maintenance, without having the user's "
+"application been interrupted. If given one backup node, the strategy will "
+"firstly migrate all instances from the maintenance node to the backup node. "
+"If the backup node is not provided, it will migrate all instances, relying "
+"on nova-scheduler."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:50
+msgid ""
+"Added a strategy that monitors if there is a higher load on some hosts "
+"compared to other hosts in the cluster and re-balances the work across hosts "
+"to minimize the standard deviation of the loads in the cluster."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:26
+msgid ""
+"Added a way to add a new action without having to amend the source code of "
+"the default planner."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:23
+msgid ""
+"Added a way to check state of strategy before audit's execution. "
+"Administrator can use \"watcher strategy state <strategy_name>\" command to "
+"get information about metrics' availability, datasource's availability and "
+"CDM's availability."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:34
+msgid ""
+"Added a way to compare the efficacy of different strategies for a give "
+"optimization goal."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:30
+msgid ""
+"Added a way to create periodic audit to be able to optimize continuously the "
+"cloud infrastructure."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:38
+msgid ""
+"Added a way to return the of available goals depending on which strategies "
+"have been deployed on the node where the decison engine is running."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:22
+msgid ""
+"Added an in-memory cache of the cluster model built up and kept fresh via "
+"notifications from services of interest in addition to periodic syncing "
+"logic."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:37
+msgid ""
+"Added binding between apscheduler job and Watcher decision engine service. "
+"It will allow to provide HA support in the future."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:88
+msgid "Added cinder cluster data model"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:53
+msgid ""
+"Added gnocchi support as data source for metrics. Administrator can change "
+"data source for each strategy using config file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid "Added new tool ``watcher-status upgrade check``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:67
+msgid ""
+"Added notifications about cancelling of action plan. Now event based plugins "
+"know when action plan cancel started and completed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:58
+msgid "Added policies to handle user rights to access Watcher API."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:27
+msgid "Added storage capacity balance strategy."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:31
+msgid ""
+"Added strategy \"Zone migration\" and it's goal \"Hardware maintenance\". "
+"The strategy migrates many instances and volumes efficiently with minimum "
+"downtime automatically."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:100
+msgid ""
+"Added strategy \"node resource consolidation\". This strategy is used to "
+"centralize VMs to as few nodes as possible by VM migration. User can set an "
+"input parameter to decide how to select the destination node."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:61
+msgid ""
+"Added strategy to identify and migrate a Noisy Neighbor - a low priority VM "
+"that negatively affects peformance of a high priority VM by over utilizing "
+"Last Level Cache."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:33
+msgid ""
+"Added the functionality to filter out instances which have metadata field "
+"'optimize' set to False. For now, this is only available for the "
+"basic_consolidation strategy (if \"check_optimize_metadata\" configuration "
+"option is enabled)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:57
+msgid "Added using of JSONSchema instead of voluptuous to validate Actions."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:69
+msgid "Added volume migrate action"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14
+msgid ""
+"Adds audit scoper for storage data model, now watcher users can specify "
+"audit scope for storage CDM in the same manner as compute scope."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:19
+msgid "Adds baremetal data model in Watcher"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:30
+msgid ""
+"All datasources can now be configured to retry retrieving a metric upon "
+"encountering an error. Between each attempt will be a set amount of time "
+"which can be adjusted from the configuration. These configuration options "
+"can be found in the `[watcher_datasources]` group and are named "
+"`query_max_retries` and `query_timeout`."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:42
+msgid ""
+"Allow decision engine to pass strategy parameters, like optimization "
+"threshold, to selected strategy, also strategy to provide parameters info to "
+"end user."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:38
+msgid ""
+"Allow using file to override metric map. Override the metric map of each "
+"datasource as soon as it is created by the manager. This override comes from "
+"a file whose path is provided by a setting in config file. The setting is "
+"`watcher_decision_engine/metric_map_path`.  The file contains a map per "
+"datasource whose keys are the metric names as recognized by watcher and the "
+"value is the real name of the metric in the datasource. This setting "
+"defaults to `/etc/watcher/metric_map.yaml`, and presence of this file is "
+"optional."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:156
+msgid ""
+"An Watcher API WSGI application script ``watcher-api-wsgi`` is now available."
+" It is auto-generated by ``pbr`` and allows to run the API service using "
+"WSGI server (for example Nginx and uWSGI)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:55
+msgid ""
+"Audits have 'name' field now, that is more friendly to end users. Audit's "
+"name can't exceed 63 characters."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:24
+msgid ""
+"Baremetal Model gets Audit scoper with an ability to exclude Ironic nodes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:89
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:143
+msgid ""
+"Ceilometer Datasource has been deprecated since its API has been deprecated "
+"in Ocata cycle. Watcher has supported Ceilometer for some releases after "
+"Ocata to let users migrate to Gnocchi/Monasca datasources. Since Train "
+"release, Ceilometer support will be removed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:37
+msgid "Centralize all configuration options for Watcher."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:46
+msgid ""
+"Copy all audit templates parameters into audit instead of having a reference "
+"to the audit template."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:28 current stable/stein>:139 stable/train>:164
+#: stable/wallaby>:28
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:48
+msgid ""
+"Each CDM collector can have its own CDM scoper now. This changed Scope JSON "
+"schema definition for the audit template POST data. Please see audit "
+"template create help message in python-watcherclient."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:41
+msgid ""
+"Enhancement of vm_workload_consolidation strategy by using 'memory.resident' "
+"metric in place of 'memory.usage', as memory.usage shows the memory usage "
+"inside guest-os and memory.resident represents volume of RAM used by "
+"instance on host machine."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14 stable/queens>:65
+msgid ""
+"Existing workload_balance strategy based on the VM workloads of CPU. This "
+"feature improves the strategy. By the input parameter \"metrics\", it makes "
+"decision to migrate a VM base on CPU or memory utilization."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:29
+msgid ""
+"Feature to exclude instances from audit scope based on project_id is added. "
+"Now instances from particular project in OpenStack can be excluded from "
+"audit defining scope in audit templates."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:119
+msgid ""
+"For a large cloud infrastructure, retrieving data from Nova may take a long "
+"time. To avoid getting too much data from Nova, building the compute data "
+"model according to the scope of audit."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:67
+msgid ""
+"Grafana has been added as datasource that can be used for collecting metrics."
+" The configuration options allow to specify what metrics and how they are "
+"stored in grafana so that no matter how Grafana is configured it can still "
+"be used. The configuration can be done via the typical configuration file "
+"but it is recommended to configure most options in the yaml file for metrics."
+" For a complete walkthrough on configuring Grafana see: https://docs."
+"openstack.org/watcher/latest/datasources/grafana.html"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:142
+msgid ""
+"If Gnocchi was configured to have a custom amount of retries and or a custom "
+"timeout then the configuration needs to moved into the "
+"`[watcher_datasources]` group instead of the `[gnocchi_client]` group."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:49
+msgid ""
+"Improved interface for datasource baseclass that better defines expected "
+"values and types for parameters and return types of all abstract methods. "
+"This allows all strategies to work with every datasource provided the "
+"metrics are configured for that given datasource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:71
+msgid ""
+"Instance cold migration logic is now replaced with using Nova migrate "
+"Server(migrate Action) API which has host option since v2.56."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Many operations in the decision engine will block on I/O. Such I/O "
+"operations can stall the execution of a sequential application significantly."
+" To reduce the potential bottleneck of many operations the general purpose "
+"decision engine threadpool is introduced."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:10 origin/stable/ocata>:10
+#: origin/stable/ocata>:25 stable/pike>:10 stable/pike>:25 stable/pike>:80
+#: stable/pike>:99 stable/queens>:10 stable/queens>:44 stable/queens>:61
+#: stable/rocky>:10 stable/rocky>:25 stable/rocky>:51 stable/stein>:20
+#: stable/train>:10 stable/ussuri>:20
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:33
+msgid ""
+"New framework for ``watcher-status upgrade check`` command is added. This "
+"framework allows adding various checks which can be run before a Watcher "
+"upgrade to ensure if the upgrade can be performed safely."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:82
+msgid ""
+"Nova API version is now set to 2.56 by default. This needs the migrate "
+"action of migration type cold with destination_node parameter to work."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:132
+msgid ""
+"Now Watcher strategy can select specific planner beyond default. Strategy "
+"can set planner property to specify its own planner."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:131
+msgid ""
+"Operator can now use new CLI tool ``watcher-status upgrade check`` to check "
+"if Watcher deployment can be safely upgraded from N-1 to N release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:10 stable/ussuri>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:65
+msgid ""
+"Provide a notification mechanism into Watcher that supports versioning. "
+"Whenever a Watcher object is created, updated or deleted, a versioned "
+"notification will, if it's relevant, be automatically sent to notify in "
+"order to allow an event-driven style of architecture within Watcher. "
+"Moreover, it will also give other services and/or 3rd party softwares (e.g. "
+"monitoring solutions or rules engines) the ability to react to such events."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:45
+msgid ""
+"Provides a generic way to define the scope of an audit. The set of audited "
+"resources will be called \"Audit scope\" and will be defined in each audit "
+"template (which contains the audit settings)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:55
+msgid ""
+"Python 2.7 support has been dropped. Last release of Watcher to support py2."
+"7 is OpenStack Train. The minimum version of Python now supported by Watcher "
+"is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:178
+msgid ""
+"Several strategies have changed the `node` parameter to `compute_node` to be "
+"better aligned with terminology. These strategies include "
+"`basic_consolidation` and `workload_stabilzation`. The `node` parameter will "
+"remain supported during Train release and will be removed in the subsequent "
+"release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:62
+msgid ""
+"Specific strategies can override this order and use datasources which are "
+"not listed in the global preference."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:43
+msgid ""
+"The building of the compute (Nova) data model will be done using the "
+"decision engine threadpool, thereby, significantly reducing the total time "
+"required to build it."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:168
+msgid ""
+"The configuration options for query retries in `[gnocchi_client]` are "
+"deprecated and the option in `[watcher_datasources]` should now be used."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current stable/wallaby>:14
+msgid ""
+"The default value of ``[oslo_policy] policy_file`` config option has been "
+"changed from ``policy.json`` to ``policy.yaml``. Operators who are utilizing "
+"customized or previously generated static policy JSON files (which are not "
+"needed by default), should generate new policy files or convert them in YAML "
+"format. Use the `oslopolicy-convert-json-to-yaml <https://docs.openstack.org/"
+"oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml.html>`_ tool to "
+"convert a JSON to YAML formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:49
+msgid ""
+"The graph model describes how VMs are associated to compute hosts. This "
+"allows for seeing relationships upfront between the entities and hence can "
+"be used to identify hot/cold spots in the data center and influence a "
+"strategy decision."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:93
+msgid ""
+"The migrate action of migration type cold with destination_node parameter "
+"was fixed. Before fixing, it booted an instance in the service project as a "
+"migrated instance."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:148
+msgid ""
+"The minimum required version of the ``[nova_client]/api_version`` value is "
+"now enforced to be ``2.56`` which is available since the Queens version of "
+"the nova compute service."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:173
+msgid ""
+"The new strategy baseclass has significant changes in method parameters and "
+"any out-of-tree strategies will have to be adopted."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:45
+msgid ""
+"There is new ability to create Watcher continuous audits with cron interval. "
+"It means you may use, for example, optional argument '--interval \"\\*/5 \\* "
+"\\* \\* \\*\"' to launch audit every 5 minutes. These jobs are executed on a "
+"best effort basis and therefore, we recommend you to use a minimal cron "
+"interval of at least one minute."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 current stable/rocky>:78 stable/stein>:127
+#: stable/train>:138 stable/ussuri>:51 stable/wallaby>:10
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:32 current stable/wallaby>:32
+msgid ""
+"Use of JSON policy files was deprecated by the ``oslo.policy`` library "
+"during the Victoria development cycle. As a result, this deprecation is "
+"being noted in the Wallaby cycle with an anticipated future removal of "
+"support by ``oslo.policy``. As such operators will need to convert to YAML "
+"policy files. Please see the upgrade notes for details on migration of any "
+"custom policy files."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:186
+msgid ""
+"Using ``watcher/api/app.wsgi`` script is deprecated and it will be removed "
+"in U release. Please switch to automatically generated ``watcher-api-wsgi`` "
+"script instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:33
+msgid ""
+"Watcher can continuously optimize the OpenStack cloud for a specific "
+"strategy or goal by triggering an audit periodically which generates an "
+"action plan and run it automatically."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:77
+msgid ""
+"Watcher can get resource information such as total, allocation ratio and "
+"reserved information from Placement API. Now we add some new fields to the "
+"Watcher Data Model:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:57
+msgid ""
+"Watcher can now run specific actions in parallel improving the performances "
+"dramatically when executing an action plan."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:43
+msgid ""
+"Watcher consumes Nova notifications to update its internal Compute "
+"CDM(Cluster Data Model). All the notifications as below"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:41
+msgid "Watcher database can now be upgraded thanks to Alembic."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:63
+msgid ""
+"Watcher got an ability to calculate multiple global efficacy indicators "
+"during audit's execution. Now global efficacy can be calculated for many "
+"resource types (like volumes, instances, network) if strategy supports "
+"efficacy indicators."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:59
+msgid ""
+"Watcher has a whole scope of the cluster, when building compute CDM which "
+"includes all instances. It filters excluded instances when migration during "
+"the audit."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:56
+msgid ""
+"Watcher now supports configuring which datasource to use and in which order. "
+"This configuration is done by specifying datasources in the "
+"watcher_datasources section:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:150
+msgid ""
+"Watcher removes the support to Nova legacy notifications because of Nova "
+"will deprecate them."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:14
+msgid ""
+"Watcher services can be launched in HA mode. From now on Watcher Decision "
+"Engine and Watcher Applier services may be deployed on different nodes to "
+"run in active-active or active-passive mode. Any ONGOING Audits or Action "
+"Plans will be CANCELLED if service they are executed on is restarted."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:39
+msgid ""
+"Watcher starts to support API microversions since Stein cycle. From now "
+"onwards all API changes should be made with saving backward compatibility. "
+"To specify API version operator should use OpenStack-API-Version HTTP header."
+" If operator wants to know the mininum and maximum supported versions by "
+"API, he/she can access /v1 resource and Watcher API will return appropriate "
+"headers in response."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:53
+msgid ""
+"Watcher supports multiple metrics backend and relies on Ceilometer and "
+"Monasca."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:89
+msgid "We also add some new propeties:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:60
+msgid "``[watcher_datasources] datasources = gnocchi,monasca,ceilometer``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:73
+msgid ""
+"all Watcher objects have been refactored to support OVO (oslo."
+"versionedobjects) which was a prerequisite step in order to implement "
+"versioned notifications."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:95
+msgid ""
+"disk_gb_capacity: The amount of disk, take allocation ratio into account, "
+"but do not include reserved."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:86
+msgid ""
+"disk_gb_reserved: The amount of disk a node has reserved for its own use."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:87
+msgid "disk_ratio: Disk allocation ratio."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:89
+msgid "instance.create.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:53
+msgid "instance.delete.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:91
+msgid "instance.live_migration_force_complete.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:93
+msgid "instance.live_migration_post_dest.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:57
+msgid "instance.lock"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:61
+msgid "instance.pause.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:63
+msgid "instance.power_off.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:65
+msgid "instance.power_on.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:85
+msgid "instance.rebuild.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:87
+msgid "instance.rescue.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:67
+msgid "instance.resize_confirm.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:69
+msgid "instance.restore.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:71
+msgid "instance.resume.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:73
+msgid "instance.shelve.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:75
+msgid "instance.shutdown.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:95
+msgid "instance.soft_delete.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:77
+msgid "instance.suspend.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:59
+msgid "instance.unlock"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:79
+msgid "instance.unpause.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:81
+msgid "instance.unrescue.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:83
+msgid "instance.unshelve.end"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:51
+msgid "instance.update"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:93
+msgid ""
+"memory_mb_capacity: The amount of memory, take allocation ratio into "
+"account, but do not include reserved."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:83
+msgid ""
+"memory_mb_reserved: The amount of memory a node has reserved for its own use."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:85
+msgid "memory_ratio: Memory allocation ratio."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:55
+msgid "new:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:47
+msgid "pre-existing:"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:97
+msgid "service.create"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:99
+msgid "service.delete"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:49
+msgid "service.update"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:91
+msgid ""
+"vcpu_capacity: The amount of vcpu, take allocation ratio into account, but "
+"do not include reserved."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:82
+msgid "vcpu_ratio: CPU allocation ratio."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:81
+msgid "vcpu_reserved: The amount of cpu a node has reserved for its own use."
+msgstr ""
+
+#: ../source/index.rst:16
+msgid "Welcome to watcher's Release Notes documentation!"
+msgstr ""
+
+#: ../source/index.rst:18
+msgid "Contents:"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

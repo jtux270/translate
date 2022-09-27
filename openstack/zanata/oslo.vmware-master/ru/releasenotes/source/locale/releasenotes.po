@@ -1,0 +1,134 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: oslo.vmware Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-14 12:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "2.8.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:40
+msgid "3.4.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:20
+msgid "3.5.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "3.6.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:45
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:14
+msgid ""
+"Code accessing the ``cookiejar`` must use ``session.client.cookiejar`` "
+"instead of the previous ``session.client.options.transport.cookiejar``, "
+"because with `this spec <https://specs.openstack.org/openstack/oslo-specs/"
+"specs/victoria/oslo-vmware-soap-library-switch.html>`_ we switch the backing "
+"SOAP library and different libraries have different locations for their "
+"transport and cookiejar objects."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:49
+msgid ""
+"Incomplete VMDK upload during ImportVApp is falsely marked as successful "
+"leading to a corrupted VM."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:10
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Support for Python 2.7 has been dropped. The minimum version of Python now "
+"supported is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid "Switch to reno for managing release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:10 stable/victoria>:10
+#: stable/victoria>:25
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:29
+msgid ""
+"``ManagedObjectReference``'s ``value`` and ``_type`` attributes must not be "
+"used anymore in depending projects. Instead, ``vim_util.get_moref_value()`` "
+"and ``vim_util.get_moref_type()`` have to be used, because with `this spec "
+"<https://specs.openstack.org/openstack/oslo-specs/specs/victoria/oslo-vmware-"
+"soap-library-switch.html>`_ we switch the backing SOAP library and different "
+"libraries have different representations of those attributes."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "oslo.vmware Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Unreleased Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

@@ -1,0 +1,144 @@
+# Lucas Palm <lapalm@us.ibm.com>, 2015. #zanata
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: oslo.policy VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-07-22 09:42+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-09-21 03:08+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: oslo_policy/_external.py:85
+#, python-format
+msgid "Unable to find ssl cert_file  : %s"
+msgstr ""
+
+#: oslo_policy/_external.py:88
+#, python-format
+msgid "Unable to access ssl cert_file  : %s"
+msgstr ""
+
+#: oslo_policy/_external.py:92
+#, python-format
+msgid "Unable to find ssl key_file : %s"
+msgstr ""
+
+#: oslo_policy/_external.py:95
+#, python-format
+msgid "Unable to access ssl key_file  : %s"
+msgstr ""
+
+#: oslo_policy/_external.py:101
+#, python-format
+msgid "Unable to find ca cert_file  : %s"
+msgstr ""
+
+#: oslo_policy/opts.py:29
+msgid ""
+"This option controls whether or not to enforce scope when evaluating "
+"policies. If ``True``, the scope of the token used in the request is "
+"compared to the ``scope_types`` of the policy being enforced. If the scopes "
+"do not match, an ``InvalidScope`` exception will be raised. If ``False``, a "
+"message will be logged informing operators that policies are being invoked "
+"with mismatching scope."
+msgstr ""
+
+#: oslo_policy/opts.py:39
+msgid ""
+"This option controls whether or not to use old deprecated defaults when "
+"evaluating policies. If ``True``, the old deprecated defaults are not going "
+"to be evaluated. This means if any existing token is allowed for old "
+"defaults but is disallowed for new defaults, it will be disallowed. It is "
+"encouraged to enable this flag along with the ``enforce_scope`` flag so that "
+"you can get the benefits of new defaults and ``scope_type`` together"
+msgstr ""
+
+#: oslo_policy/opts.py:50
+msgid ""
+"The relative or absolute path of a file that maps roles to permissions for a "
+"given service. Relative paths must be specified in relation to the "
+"configuration file setting this option."
+msgstr ""
+
+#: oslo_policy/opts.py:57
+msgid "Default rule. Enforced when a requested rule is not found."
+msgstr ""
+"Правило по умолчанию. Используется в случае, если запрашиваемое правило "
+"отсутствует."
+
+#: oslo_policy/opts.py:62
+msgid ""
+"Directories where policy configuration files are stored. They can be "
+"relative to any directory in the search path defined by the config_dir "
+"option, or absolute paths. The file defined by policy_file must exist for "
+"these directories to be searched.  Missing or empty directories are ignored."
+msgstr ""
+"Каталоги, в которых хранятся файлы конфигурации стратегий. Могут быть "
+"относительными к другим каталогам в пути поиска, определенном опцией "
+"config_dir, или абсолютными. Указанный в policy_file файл должен "
+"существовать, чтобы была возможность поиска в этих каталогах. Отсутствующие "
+"и пустые каталоги игнорируются."
+
+#: oslo_policy/opts.py:74
+msgid "Content Type to send and receive data for REST based policy check"
+msgstr ""
+
+#: oslo_policy/opts.py:77
+msgid "server identity verification for REST based policy check"
+msgstr ""
+
+#: oslo_policy/opts.py:81
+msgid "Absolute path to ca cert file for REST based policy check"
+msgstr ""
+
+#: oslo_policy/opts.py:84
+msgid "Absolute path to client cert for REST based policy check"
+msgstr ""
+
+#: oslo_policy/opts.py:87
+msgid "Absolute path client key file REST based policy check"
+msgstr ""
+
+#: oslo_policy/policy.py:312
+#, python-format
+msgid "%(rule)s is disallowed by policy"
+msgstr ""
+
+#: oslo_policy/policy.py:333
+#, python-format
+msgid "Policy %(name)s is already registered"
+msgstr ""
+
+#: oslo_policy/policy.py:339
+#, python-format
+msgid "Policy %(name)s has not been registered"
+msgstr ""
+
+#: oslo_policy/policy.py:345
+#, python-format
+msgid "Policies %(names)s are not well defined. Check logs for more details."
+msgstr ""
+
+#: oslo_policy/policy.py:352
+#, python-format
+msgid "Invalid policy rule default: %(error)s."
+msgstr ""
+
+#: oslo_policy/policy.py:359
+#, python-format
+msgid "Invalid context object: %(error)s."
+msgstr ""
+
+#: oslo_policy/policy.py:571
+#, python-format
+msgid "Rules must be an instance of dict or Rules, got %s instead"
+msgstr "Rules должно быть экземпляром dict или Rules, получено %s"
+

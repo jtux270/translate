@@ -1,0 +1,986 @@
+# Lucas Palm <lapalm@us.ibm.com>, 2015. #zanata.
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata.
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata.
+# ДроноваЮ <juliette.tux@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: magnum VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-10 08:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-12-06 16:21+0300\n"
+"Last-Translator: ДроноваЮ <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-i18n-doc@kde.org>\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.08.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: magnum/api/attr_validator.py:95
+#, python-format
+msgid ""
+"Multiple external networks exist with same name '%s'. Please use the "
+"external network ID instead."
+msgstr ""
+
+#: magnum/api/attr_validator.py:123
+#, python-format
+msgid ""
+"property \"labels/mesos_slave_isolation\" with value \"%(isolation_val)s\" "
+"is not supported, supported values are: %(supported_isolation)s"
+msgstr ""
+
+#: magnum/api/attr_validator.py:140
+#, python-format
+msgid ""
+"property \"labels/mesos_slave_image_providers\" with value "
+"\"%(image_providers)s\" is not supported, supported values are: "
+"%(supported_image_providers)s"
+msgstr ""
+
+#: magnum/api/attr_validator.py:156
+msgid ""
+"Docker runtime isolator has to be specified if 'docker' is included in "
+"'mesos_slave_image_providers' Please add 'docker/runtime' to "
+"'mesos_slave_isolation' labels flags"
+msgstr ""
+
+#: magnum/api/attr_validator.py:170
+msgid "Json format error"
+msgstr ""
+
+#: magnum/api/attr_validator.py:180
+#, python-format
+msgid ""
+"property \"labels/swarm_strategy\" with value \"%(strategy)s\" is not "
+"supported, supported values are: %(supported_strategies)s"
+msgstr ""
+
+#: magnum/api/attr_validator.py:213
+msgid "master_count must be 1 when master_lb_enabled is False"
+msgstr ""
+
+#: magnum/api/utils.py:41
+msgid "Limit must be positive"
+msgstr ""
+
+#: magnum/api/utils.py:51
+#, python-format
+msgid "Invalid sort direction: %s. Acceptable values are 'asc' or 'desc'"
+msgstr ""
+
+#: magnum/api/utils.py:62
+msgid ""
+"Invalid docker memory specified. Acceptable values are format: "
+"<number>[<unit>],where unit = b, k, m or g"
+msgstr ""
+
+#: magnum/api/utils.py:67
+#, python-format
+msgid "Docker Minimum memory limit allowed is %d B."
+msgstr ""
+
+#: magnum/api/utils.py:77
+#, python-format
+msgid "Adding a new attribute %s to the root of the resource is not allowed."
+msgstr ""
+
+#: magnum/api/utils.py:81
+#, python-format
+msgid "The attribute %s has existed, please use 'replace' operation instead."
+msgstr ""
+
+#: magnum/api/validation.py:223
+#, python-format
+msgid "cannot change cluster property(ies) %s."
+msgstr ""
+
+#: magnum/api/validation.py:232
+#, python-format
+msgid "cannot change federation property(ies) %s."
+msgstr ""
+
+#: magnum/api/validation.py:249
+#, python-format
+msgid "Requested COE type %s is not supported."
+msgstr ""
+
+#: magnum/api/validation.py:260
+#, python-format
+msgid ""
+"Network driver type %(driver)s is not supported, expecting a "
+"%(supported_drivers)s network driver."
+msgstr ""
+
+#: magnum/api/validation.py:272
+#, python-format
+msgid ""
+"Network driver type %(driver)s is not allowed, expecting a "
+"%(allowed_drivers)s network driver. "
+msgstr ""
+
+#: magnum/api/validation.py:287
+#, python-format
+msgid ""
+"Volume driver type %(driver)s is not supported, expecting a "
+"%(supported_volume_driver)s volume driver."
+msgstr ""
+
+#: magnum/api/validation.py:302
+#, python-format
+msgid ""
+"Server type %(server_type)s is not supported, expecting a "
+"%(supported_server_types)s server type."
+msgstr ""
+
+#: magnum/api/controllers/base.py:115
+#, python-format
+msgid ""
+"Version %(ver)s was requested but the requested API %(api)s is not supported "
+"for this version."
+msgstr ""
+
+#: magnum/api/controllers/versions.py:94 magnum/api/controllers/versions.py:101
+#, python-format
+msgid "Invalid service type for %s header"
+msgstr ""
+
+#: magnum/api/controllers/versions.py:109
+#, python-format
+msgid "Invalid value for %s header"
+msgstr ""
+
+#: magnum/api/controllers/v1/__init__.py:214
+#, python-format
+msgid ""
+"Mutually exclusive versions requested. Version %(ver)s requested but not "
+"supported by this service.The supported version range is: [%(min)s, %(max)s]."
+msgstr ""
+
+#: magnum/api/controllers/v1/__init__.py:226
+#, python-format
+msgid ""
+"Version %(ver)s was requested but the minor version is not supported by this "
+"service. The supported version range is: [%(min)s, %(max)s]."
+msgstr ""
+
+#: magnum/api/controllers/v1/cluster.py:489
+#, python-format
+msgid ""
+"You have reached the maximum clusters per project, %d. You may delete a "
+"cluster to make room for a new one."
+msgstr ""
+
+#: magnum/api/controllers/v1/quota.py:187
+msgid "Must provide a valid project ID."
+msgstr ""
+
+#: magnum/api/controllers/v1/stats.py:58
+#, python-format
+msgid "Invalid stats type. Allowed values are '%s'"
+msgstr ""
+
+#: magnum/api/controllers/v1/types.py:140
+#, python-format
+msgid "Wrong type. Expected '%(type)s', got '%(value)s'"
+msgstr ""
+
+#: magnum/api/controllers/v1/types.py:205
+#, python-format
+msgid "'%s' is an internal attribute and can not be updated"
+msgstr ""
+
+#: magnum/api/controllers/v1/types.py:209
+#, python-format
+msgid "'%s' is a mandatory attribute and can not be removed"
+msgstr ""
+
+#: magnum/api/controllers/v1/types.py:214
+msgid "'add' and 'replace' operations needs value"
+msgstr ""
+
+#: magnum/api/middleware/auth_token.py:41
+#, python-format
+msgid "Cannot compile public API routes: %s"
+msgstr ""
+
+#: magnum/api/middleware/parsable_error.py:77
+#, python-format
+msgid "ErrorDocumentMiddleware received an invalid status %s"
+msgstr ""
+
+#: magnum/cmd/api.py:45
+#, python-format
+msgid "Unable to find cert_file : %s"
+msgstr ""
+
+#: magnum/cmd/api.py:49
+#, python-format
+msgid "Unable to find key_file : %s"
+msgstr ""
+
+#: magnum/cmd/status.py:35
+msgid "Policy File JSON to YAML Migration"
+msgstr ""
+
+#: magnum/common/exception.py:77
+msgid "An unknown exception occurred."
+msgstr ""
+
+#: magnum/common/exception.py:122 magnum/common/exception.py:127
+#, python-format
+msgid "The %(name)s %(id)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:131
+#, python-format
+msgid "The %(name)s resource %(id)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:135
+#, python-format
+msgid "%(client)s connection failed. %(message)s"
+msgstr ""
+
+#: magnum/common/exception.py:140
+msgid "Unacceptable parameters."
+msgstr ""
+
+#: magnum/common/exception.py:145
+#, python-format
+msgid "Expected a uuid but received %(uuid)s."
+msgstr ""
+
+#: magnum/common/exception.py:149
+#, python-format
+msgid "Expected a name but received %(name)s."
+msgstr ""
+
+#: magnum/common/exception.py:153
+#, python-format
+msgid ""
+"Received invalid discovery URL '%(discovery_url)s' for discovery endpoint "
+"'%(discovery_endpoint)s'."
+msgstr ""
+
+#: magnum/common/exception.py:158
+#, python-format
+msgid "Failed to get discovery url from '%(discovery_endpoint)s'."
+msgstr ""
+
+#: magnum/common/exception.py:162
+#, python-format
+msgid "Invalid discovery URL '%(discovery_url)s'."
+msgstr ""
+
+#: magnum/common/exception.py:166
+#, python-format
+msgid ""
+"Expected cluster size %(expect_size)d but get cluster size %(size)d from "
+"'%(discovery_url)s'."
+msgstr ""
+
+#: magnum/common/exception.py:171
+#, python-format
+msgid "Failed to get the size of cluster from '%(discovery_url)s'."
+msgstr ""
+
+#: magnum/common/exception.py:175
+#, python-format
+msgid "Expected an uuid or int but received %(identity)s."
+msgstr ""
+
+#: magnum/common/exception.py:179
+#, python-format
+msgid "Received invalid csr %(csr)s."
+msgstr ""
+
+#: magnum/common/exception.py:183
+#, python-format
+msgid "Received invalid subnet %(subnet)s."
+msgstr ""
+
+#: magnum/common/exception.py:187
+#, python-format
+msgid "Received invalid tag for %(tag)s."
+msgstr ""
+
+#: magnum/common/exception.py:195
+msgid "Conflict."
+msgstr ""
+
+#: magnum/common/exception.py:200
+#, python-format
+msgid ""
+"Version of %(name)s %(min_ver)s %(max_ver)s intersects with another versions."
+msgstr ""
+
+#: magnum/common/exception.py:207
+#, python-format
+msgid "%(err)s"
+msgstr ""
+
+#: magnum/common/exception.py:211
+#, python-format
+msgid "Couldn't apply patch '%(patch)s'. Reason: %(reason)s"
+msgstr ""
+
+#: magnum/common/exception.py:215
+msgid "Not authorized."
+msgstr ""
+
+#: magnum/common/exception.py:220
+#, python-format
+msgid "Policy doesn't allow %(action)s to be performed."
+msgstr ""
+
+#: magnum/common/exception.py:224
+#, python-format
+msgid "Expected a MAC address but received %(mac)s."
+msgstr ""
+
+#: magnum/common/exception.py:228
+#, python-format
+msgid ""
+"Expected a single dns address or comma separated dns list, but received "
+"%(dns)s."
+msgstr ""
+
+#: magnum/common/exception.py:234
+#, python-format
+msgid "Invalid configuration file. %(error_msg)s"
+msgstr ""
+
+#: magnum/common/exception.py:238
+#, python-format
+msgid "ClusterTemplate %(clustertemplate)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:242
+#, python-format
+msgid "A ClusterTemplate with UUID %(uuid)s already exists."
+msgstr ""
+
+#: magnum/common/exception.py:246
+#, python-format
+msgid ""
+"ClusterTemplate %(clustertemplate)s is referenced by one or multiple "
+"clusters."
+msgstr ""
+
+#: magnum/common/exception.py:251
+msgid "Not authorized to set public or hidden flag for cluster template."
+msgstr ""
+
+#: magnum/common/exception.py:256
+#, python-format
+msgid "Cluster %(cluster)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:260
+#, python-format
+msgid "A cluster with UUID %(uuid)s already exists."
+msgstr ""
+
+#: magnum/common/exception.py:264
+#, python-format
+msgid "%(operation)s is not supported."
+msgstr ""
+
+#: magnum/common/exception.py:269
+#, python-format
+msgid "Cluster type (%(server_type)s, %(os)s, %(coe)s) not supported."
+msgstr ""
+
+#: magnum/common/exception.py:274
+#, python-format
+msgid "Required parameter %(heat_param)s not provided."
+msgstr ""
+
+#: magnum/common/exception.py:278
+#, python-format
+msgid "Cluster %(cluster_name)s already has an operation in progress."
+msgstr ""
+
+#: magnum/common/exception.py:284
+msgid "Valid volume type could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:290
+#, python-format
+msgid "Image %(image_id)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:295
+#, python-format
+msgid "Not authorized for image %(image_id)s."
+msgstr ""
+
+#: magnum/common/exception.py:300
+#, python-format
+msgid "Image %(image_id)s doesn't contain os_distro field."
+msgstr ""
+
+#: magnum/common/exception.py:305
+#, python-format
+msgid "A key pair %(x509keypair)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:309
+#, python-format
+msgid "A key pair with UUID %(uuid)s already exists."
+msgstr ""
+
+#: magnum/common/exception.py:313
+#, python-format
+msgid "Could not store certificate: %(msg)s"
+msgstr ""
+
+#: magnum/common/exception.py:317
+#, python-format
+msgid "Extension '%(extension)s' not allowed"
+msgstr ""
+
+#: magnum/common/exception.py:321
+#, python-format
+msgid "Unable to find keypair %(keypair)s."
+msgstr ""
+
+#: magnum/common/exception.py:325
+#, python-format
+msgid "A magnum service %(magnum_service_id)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:329
+#, python-format
+msgid "A magnum service with ID %(id)s already exists."
+msgstr ""
+
+#: magnum/common/exception.py:333
+msgid "Unsupported quantity format for k8s cluster."
+msgstr ""
+
+#: magnum/common/exception.py:337
+msgid "Unsupported quantity format for Swarm cluster."
+msgstr ""
+
+#: magnum/common/exception.py:342
+#, python-format
+msgid "Unable to find flavor %(flavor)s."
+msgstr ""
+
+#: magnum/common/exception.py:349
+#, python-format
+msgid "Unable to find fixed network %(network)s."
+msgstr ""
+
+#: magnum/common/exception.py:355
+#, python-format
+msgid "Unable to find fixed subnet %(subnet)s."
+msgstr ""
+
+#: magnum/common/exception.py:362
+#, python-format
+msgid "Unable to find external network %(network)s."
+msgstr ""
+
+#: magnum/common/exception.py:367
+#, python-format
+msgid "Failed to create trust for trustee %(trustee_user_id)s."
+msgstr ""
+
+#: magnum/common/exception.py:371
+#, python-format
+msgid "Failed to delete trust %(trust_id)s."
+msgstr ""
+
+#: magnum/common/exception.py:375
+#, python-format
+msgid "Failed to create trustee %(username)s in domain %(domain_id)s"
+msgstr ""
+
+#: magnum/common/exception.py:380
+#, python-format
+msgid "Failed to delete trustee %(trustee_id)s"
+msgstr ""
+
+#: magnum/common/exception.py:384
+#, python-format
+msgid ""
+"Quota for project %(project_id)s already exists for resource %(resource)s."
+msgstr ""
+
+#: magnum/common/exception.py:389
+#, python-format
+msgid "Quota could not be found: %(msg)s"
+msgstr ""
+
+#: magnum/common/exception.py:393
+#, python-format
+msgid "Resource limit exceeded: %(msg)s"
+msgstr ""
+
+#: magnum/common/exception.py:397
+msgid "Failed to list regions."
+msgstr ""
+
+#: magnum/common/exception.py:401
+msgid "Failed to list services."
+msgstr ""
+
+#: magnum/common/exception.py:405
+#, python-format
+msgid "Failed to create trustee or trust for Cluster: %(cluster_uuid)s"
+msgstr ""
+
+#: magnum/common/exception.py:410
+#, python-format
+msgid "Failed to create certificates for Cluster: %(cluster_uuid)s"
+msgstr ""
+
+#: magnum/common/exception.py:414
+#, python-format
+msgid "Federation %(federation)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:418
+#, python-format
+msgid "A federation with UUID %(uuid)s already exists."
+msgstr ""
+
+#: magnum/common/exception.py:422
+#, python-format
+msgid ""
+"A cluster with UUID %(uuid)s is already a member of the federation "
+"%(federation_name)s."
+msgstr ""
+
+#: magnum/common/exception.py:427
+#, python-format
+msgid ""
+"Failed to pre-delete resources for cluster %(cluster_uuid)s, error: %(msg)s."
+msgstr ""
+
+#: magnum/common/exception.py:432
+#, python-format
+msgid ""
+"A node group with name %(name)s already exists in the cluster %(cluster_id)s."
+msgstr ""
+
+#: magnum/common/exception.py:437
+#, python-format
+msgid "Nodegroup %(nodegroup)s could not be found."
+msgstr ""
+
+#: magnum/common/exception.py:441
+msgid "Resizing a master nodegroup is not supported."
+msgstr ""
+
+#: magnum/common/exception.py:445
+msgid ""
+"Resizing a nodegroup to zero is not supported in the provided microversion."
+msgstr ""
+
+#: magnum/common/exception.py:450
+msgid "Cluster upgrade is not supported in the provided microversion."
+msgstr ""
+
+#: magnum/common/exception.py:455
+#, python-format
+msgid ""
+"Resizing %(nodegroup)s outside the allowed range: min_node_count = "
+"%(min_nc)s, max_node_count = %(max_nc)s"
+msgstr ""
+
+#: magnum/common/exception.py:461
+msgid "Deleting a default nodegroup is not supported."
+msgstr ""
+
+#: magnum/common/exception.py:465
+#, python-format
+msgid "%(attr)s for %(nodegroup)s is invalid (%(expl)s)."
+msgstr ""
+
+#: magnum/common/exception.py:469
+msgid "Creating master nodegroups is currently not supported."
+msgstr ""
+
+#: magnum/common/exception.py:473
+#, python-format
+msgid "Nodegroup %(nodegroup)s already has an operation in progress."
+msgstr ""
+
+#: magnum/common/exception.py:478
+#, python-format
+msgid "Cluster Template is not valid for upgrade: %(reason)s"
+msgstr ""
+
+#: magnum/common/exception.py:482
+msgid "Cluster API address is not available yet"
+msgstr ""
+
+#: magnum/common/keystone.py:277
+msgid "region_name needs to be configured in magnum.conf"
+msgstr ""
+
+#: magnum/common/keystone.py:292
+#, python-format
+msgid ""
+"region_name %(region_name)s is invalid, expecting a region_name in "
+"%(region_name_list)s."
+msgstr ""
+
+#: magnum/common/short_id.py:47
+#, python-format
+msgid "Invalid UUID version (%d)"
+msgstr ""
+
+#: magnum/common/urlfetch.py:46
+#, python-format
+msgid "Invalid URL scheme %s"
+msgstr ""
+
+#: magnum/common/urlfetch.py:52 magnum/common/urlfetch.py:77
+#, python-format
+msgid "Failed to retrieve manifest: %s"
+msgstr ""
+
+#: magnum/common/cert_manager/barbican_cert_manager.py:34
+msgid "Retrieved Barbican Container is not of the correct type (certificate)."
+msgstr ""
+
+#: magnum/common/cert_manager/local_cert_manager.py:136
+msgid "Certificate could not be read."
+msgstr ""
+
+#: magnum/common/cert_manager/local_cert_manager.py:144
+msgid "Private Key could not be read."
+msgstr ""
+
+#: magnum/conductor/scale_manager.py:52
+#, python-format
+msgid "Output key '%(output_key)s' is missing from stack %(stack_id)s"
+msgstr ""
+
+#: magnum/conductor/handlers/ca_conductor.py:89
+#: magnum/conductor/handlers/cluster_conductor.py:119
+#, python-format
+msgid "Updating a cluster when status is \"%s\""
+msgstr ""
+
+#: magnum/conductor/handlers/cluster_conductor.py:257
+#, python-format
+msgid "Resizing a cluster when status is \"%s\""
+msgstr ""
+
+#: magnum/conductor/handlers/cluster_conductor.py:323
+#, python-format
+msgid "Upgrading a cluster when status is \"%s\""
+msgstr ""
+
+#: magnum/conductor/handlers/nodegroup_conductor.py:62
+#, python-format
+msgid "%(fname)s when nodegroup status is \"%(status)s\""
+msgstr ""
+
+#: magnum/conf/barbican.py:22 magnum/conf/cinder.py:55 magnum/conf/glance.py:24
+#: magnum/conf/heat.py:24 magnum/conf/magnum_client.py:22
+#: magnum/conf/neutron.py:24 magnum/conf/nova.py:24 magnum/conf/octavia.py:24
+#: magnum/conf/trust.py:58
+msgid ""
+"Region in Identity service catalog to use for communication with the "
+"OpenStack service."
+msgstr ""
+
+#: magnum/conf/barbican.py:26 magnum/conf/cinder.py:59 magnum/conf/glance.py:28
+#: magnum/conf/heat.py:28 magnum/conf/magnum_client.py:26
+#: magnum/conf/neutron.py:28 magnum/conf/nova.py:28 magnum/conf/octavia.py:28
+msgid ""
+"Type of endpoint in Identity service catalog to use for communication with "
+"the OpenStack service."
+msgstr ""
+
+#: magnum/conf/cinder.py:28
+msgid ""
+"The default docker volume_type to use for volumes used for docker storage. "
+"To use the cinder volumes for docker storage, you need to select a default "
+"value. Otherwise, Magnum will select random one from Cinder volume type list."
+msgstr ""
+
+#: magnum/conf/cinder.py:35
+msgid ""
+"The default etcd volume_type to use for volumes used for etcd storage. To "
+"use the cinder volumes for etcd storage, you need to select a default value. "
+"Otherwise, Magnum will select random one from Cinder volume type list."
+msgstr ""
+
+#: magnum/conf/cinder.py:42
+msgid ""
+"The default boot volume_type to use for volumes used for VM of COE. To use "
+"the cinder volumes for VM of COE, you need to select a default value. "
+"Otherwise, Magnum will select random one from Cinder volume type list."
+msgstr ""
+
+#: magnum/conf/cinder.py:49
+msgid "The default volume size to use for volumes used for VM of COE."
+msgstr ""
+
+#: magnum/conf/cinder.py:63
+msgid "Version of Cinder API to use in cinderclient."
+msgstr ""
+
+#: magnum/conf/cinder.py:68 magnum/conf/glance.py:36 magnum/conf/heat.py:36
+#: magnum/conf/neutron.py:33 magnum/conf/nova.py:36 magnum/conf/octavia.py:33
+msgid "Optional CA cert file to use in SSL connections."
+msgstr ""
+
+#: magnum/conf/cinder.py:70 magnum/conf/glance.py:38 magnum/conf/heat.py:38
+#: magnum/conf/neutron.py:35 magnum/conf/nova.py:38 magnum/conf/octavia.py:35
+msgid "Optional PEM-formatted certificate chain file."
+msgstr ""
+
+#: magnum/conf/cinder.py:72 magnum/conf/glance.py:40 magnum/conf/heat.py:40
+#: magnum/conf/neutron.py:37 magnum/conf/nova.py:40 magnum/conf/octavia.py:37
+msgid "Optional PEM-formatted file that contains the private key."
+msgstr ""
+
+#: magnum/conf/cinder.py:76 magnum/conf/glance.py:44 magnum/conf/heat.py:44
+#: magnum/conf/neutron.py:41 magnum/conf/nova.py:44 magnum/conf/octavia.py:41
+msgid "If set, then the server's certificate will not be verified."
+msgstr ""
+
+#: magnum/conf/cluster.py:23
+msgid "Url for etcd public discovery endpoint."
+msgstr ""
+
+#: magnum/conf/cluster.py:27
+msgid ""
+"This configuration option is no longer used. Installing a new driver enables "
+"it for use automatically."
+msgstr ""
+
+#: magnum/conf/cluster.py:33
+msgid "Enabled cluster definition entry points."
+msgstr ""
+
+#: magnum/conf/cluster.py:37
+msgid ""
+"Affinity policy for server group of cluster nodes. Possible values include "
+"\"affinity\", \"anti-affinity\", \"soft-affinity\" and \"soft-anti-"
+"affinity\"."
+msgstr ""
+
+#: magnum/conf/cluster.py:47
+msgid "The timeout in seconds to wait for the load balancers to be deleted."
+msgstr ""
+
+#: magnum/conf/cluster_templates.py:23
+msgid ""
+"Allowed network drivers for kubernetes cluster-templates. Use 'all' keyword "
+"to allow all drivers supported for kubernetes cluster-templates. Supported "
+"network drivers include flannel."
+msgstr ""
+
+#: magnum/conf/cluster_templates.py:30
+msgid "Default network driver for kubernetes cluster-templates."
+msgstr ""
+
+#: magnum/conf/cluster_templates.py:35
+msgid ""
+"Allowed network drivers for docker swarm cluster-templates. Use 'all' "
+"keyword to allow all drivers supported for swarm cluster-templates. "
+"Supported network drivers include docker and flannel."
+msgstr ""
+
+#: magnum/conf/cluster_templates.py:43
+msgid "Default network driver for docker swarm cluster-templates."
+msgstr ""
+
+#: magnum/conf/cluster_templates.py:48
+msgid ""
+"Allowed network drivers for mesos cluster-templates. Use 'all' keyword to "
+"allow all drivers supported for mesos cluster-templates. Supported network "
+"drivers include docker."
+msgstr ""
+
+#: magnum/conf/cluster_templates.py:55
+msgid "Default network driver for mesos cluster-templates."
+msgstr ""
+
+#: magnum/conf/docker_registry.py:22
+msgid "Region name of Swift"
+msgstr ""
+
+#: magnum/conf/docker_registry.py:25
+msgid "Name of the container in Swift which docker registry stores images in"
+msgstr ""
+
+#: magnum/conf/glance.py:32
+msgid "Version of Glance API to use in glanceclient."
+msgstr ""
+
+#: magnum/conf/heat.py:32
+msgid "Version of Heat API to use in heatclient."
+msgstr ""
+
+#: magnum/conf/nova.py:32
+msgid "Version of Nova API to use in novaclient."
+msgstr ""
+
+#: magnum/conf/quota.py:23
+msgid ""
+"Max number of clusters allowed per project. Admin can override this default "
+"quota for a project by setting explicit limit in quotas DB table (using /"
+"quotas REST API endpoint)."
+msgstr ""
+
+#: magnum/conf/services.py:19
+msgid ""
+"Name of this node. This can be an opaque identifier. It is not necessarily a "
+"hostname, FQDN, or IP address. However, the node name must be valid within "
+"an AMQP key, and if using ZeroMQ, a valid hostname, FQDN, or IP address."
+msgstr ""
+
+#: magnum/conf/trust.py:23
+msgid ""
+"This setting controls whether to assign a trust to the cluster user or not. "
+"You will need to set it to True for clusters with volume_driver=cinder or "
+"registry_enabled=true in the underlying cluster template to work. This is a "
+"potential security risk since the trust gives instances OpenStack API access "
+"to the cluster's project. Note that this setting does not affect per-cluster "
+"trusts assigned to the Magnum service user."
+msgstr ""
+
+#: magnum/conf/trust.py:33
+msgid "Id of the domain to create trustee for clusters"
+msgstr ""
+
+#: magnum/conf/trust.py:35
+msgid "Name of the domain to create trustee for s"
+msgstr ""
+
+#: magnum/conf/trust.py:37
+msgid ""
+"Id of the admin with roles sufficient to manage users in the trustee_domain"
+msgstr ""
+
+#: magnum/conf/trust.py:40
+msgid ""
+"Name of the admin with roles sufficient to manage users in the "
+"trustee_domain"
+msgstr ""
+
+#: magnum/conf/trust.py:43
+msgid ""
+"Id of the domain admin user's domain. trustee_domain_id is used by default"
+msgstr ""
+
+#: magnum/conf/trust.py:46
+msgid ""
+"Name of the domain admin user's domain. trustee_domain_name is used by "
+"default"
+msgstr ""
+
+#: magnum/conf/trust.py:49
+msgid "Password of trustee_domain_admin"
+msgstr ""
+
+#: magnum/conf/trust.py:52
+msgid "The roles which are delegated to the trustee by the trustor"
+msgstr ""
+
+#: magnum/conf/trust.py:56
+msgid "Auth interface used by instances/trustee"
+msgstr ""
+
+#: magnum/conf/utils.py:47
+msgid "Maximum raw byte size of any manifest."
+msgstr ""
+
+#: magnum/conf/x509.py:38
+msgid "Certificate can get the CA flag in x509 extensions."
+msgstr ""
+
+#: magnum/conf/x509.py:41
+#, python-format
+msgid "List of allowed x509 extensions. Available values: %s"
+msgstr ""
+
+#: magnum/conf/x509.py:45
+#, python-format
+msgid "List of allowed x509 key usage. Available values: %s"
+msgstr ""
+
+#: magnum/conf/x509.py:49
+msgid "Number of days for which a certificate is valid."
+msgstr ""
+
+#: magnum/conf/x509.py:51
+msgid "Size of generated private key. "
+msgstr ""
+
+#: magnum/db/sqlalchemy/api.py:115
+#, python-format
+msgid "The sort_key value \"%(key)s\" is an invalid field for sorting"
+msgstr ""
+
+#: magnum/db/sqlalchemy/api.py:278
+msgid "Cannot overwrite UUID for an existing Cluster."
+msgstr ""
+
+#: magnum/db/sqlalchemy/api.py:419
+msgid "Cannot overwrite UUID for an existing ClusterTemplate."
+msgstr ""
+
+#: magnum/db/sqlalchemy/api.py:489
+msgid "Cannot overwrite UUID for an existing X509KeyPair."
+msgstr ""
+
+#: magnum/db/sqlalchemy/api.py:628 magnum/db/sqlalchemy/api.py:644
+#: magnum/db/sqlalchemy/api.py:673
+#, python-format
+msgid "project_id %(project_id)s resource %(resource)s."
+msgstr ""
+
+#: magnum/db/sqlalchemy/api.py:656
+#, python-format
+msgid "quota id %s ."
+msgstr ""
+
+#: magnum/db/sqlalchemy/api.py:767
+msgid "Cannot overwrite UUID for an existing Federation."
+msgstr ""
+
+#: magnum/drivers/heat/driver.py:685
+#, python-format
+msgid "Stack with id %s not found in Heat."
+msgstr ""
+
+#: magnum/drivers/heat/k8s_fedora_template_def.py:67
+msgid ""
+"\"cluster_user_trust\" must be set to True in magnum.conf when "
+"\"cloud_provider_enabled\" label is set to true."
+msgstr ""
+
+#: magnum/drivers/heat/k8s_fedora_template_def.py:72
+msgid ""
+"\"cinder\" volume driver needs \"cloud_provider_enabled\" label to be true "
+"or unset."
+msgstr ""
+
+#: magnum/tests/unit/common/test_exception.py:21
+#, python-format
+msgid "templated %(name)s"
+msgstr ""
+
+#: magnum/tests/unit/common/test_exception.py:34
+#, python-format
+msgid "custom templated %(name)s"
+msgstr ""
+
+#: magnum/tests/unit/objects/utils.py:215
+msgid "A datetime.datetime is required here"
+msgstr ""
+

@@ -1,0 +1,2460 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-23 17:32+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: neutron_lib/rpc.py:74 neutron_lib/rpc.py:214 neutron_lib/rpc.py:231
+msgid "'TRANSPORT' must not be None"
+msgstr ""
+
+#: neutron_lib/rpc.py:77
+msgid "'NOTIFICATION_TRANSPORT' must not be None"
+msgstr ""
+
+#: neutron_lib/rpc.py:79 neutron_lib/rpc.py:249
+msgid "'NOTIFIER' must not be None"
+msgstr ""
+
+#: neutron_lib/api/attributes.py:29
+msgid ""
+"Specifying 'project_id' or 'tenant_id' other than the authenticated "
+"project in request requires admin or advsvc privileges"
+msgstr ""
+
+#: neutron_lib/api/attributes.py:56
+msgid "'project_id' and 'tenant_id' do not match"
+msgstr ""
+
+#: neutron_lib/api/attributes.py:199
+#, python-format
+msgid "Failed to parse request. Required attribute '%s' not specified"
+msgstr ""
+
+#: neutron_lib/api/attributes.py:206
+#, python-format
+msgid "Attribute '%s' not allowed in POST"
+msgstr ""
+
+#: neutron_lib/api/attributes.py:236
+#, python-format
+msgid "Invalid input for %(attr)s. Reason: %(reason)s."
+msgstr ""
+
+#: neutron_lib/api/attributes.py:267
+msgid "Running without keystone AuthN requires that tenant_id is specified"
+msgstr ""
+
+#: neutron_lib/api/attributes.py:284
+#: neutron_lib/api/validators/allowedaddresspairs.py:71
+#: neutron_lib/api/validators/multiprovidernet.py:35
+#, python-format
+msgid "Unrecognized attribute(s) '%s'"
+msgstr ""
+
+#: neutron_lib/api/converters.py:36
+#, python-format
+msgid "'%s' cannot be converted to boolean"
+msgstr ""
+
+#: neutron_lib/api/converters.py:62 neutron_lib/api/validators/__init__.py:291
+#: neutron_lib/api/validators/__init__.py:329
+#: neutron_lib/api/validators/__init__.py:990
+#, python-format
+msgid "'%s' is not an integer"
+msgstr ""
+
+#: neutron_lib/api/converters.py:100
+#, python-format
+msgid "'%s' must be a non negative decimal"
+msgstr ""
+
+#: neutron_lib/api/converters.py:115
+#, python-format
+msgid "'%s' is not of the form <key>=[value]"
+msgstr ""
+
+#: neutron_lib/api/converters.py:208
+#, python-format
+msgid "%s is not in a CIDR format"
+msgstr ""
+
+#: neutron_lib/api/converters.py:230
+#, python-format
+msgid "Input value %s must be string type"
+msgstr ""
+
+#: neutron_lib/api/converters.py:255
+#, python-format
+msgid ""
+"IP protocol '%s' is not supported. Only protocol names and their integer "
+"representation (0 to 255) are supported"
+msgstr ""
+
+#: neutron_lib/api/extensions.py:191
+msgid "Extension module API definition not set."
+msgstr ""
+
+#: neutron_lib/api/extensions.py:193
+#, python-format
+msgid "Extension module API definition does not define '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:54
+#, python-format
+msgid ""
+"Invalid input. '%(target_dict)s' must be a dictionary with keys: "
+"%(expected_keys)s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:66
+#, python-format
+msgid ""
+"Validation of dictionary's keys failed. Expected keys: %(expected_keys)s "
+"Provided keys: %(provided_keys)s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:106
+#, python-format
+msgid "'%s' is not a list"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:112
+#, python-format
+msgid "Duplicate items in the list: '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:129
+msgid "List should not be empty"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:161
+#, python-format
+msgid "%(data)s is not in %(valid_values)s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:167
+#, python-format
+msgid ""
+"'data' of type '%(typedata)s' and 'valid_values' of type '%(typevalues)s'"
+" are not compatible for comparison"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:175
+msgid "'valid_values' does not support membership operations"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:204
+#, python-format
+msgid "'%s' Blank strings are not permitted"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:231
+#, python-format
+msgid "'%s' is not a valid string"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:236
+#, python-format
+msgid "'%(data)s' exceeds maximum length of %(max_len)s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:269
+#, python-format
+msgid "'%s' is not a valid boolean value"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:304
+#, python-format
+msgid "'%s' is not an integer:boolean"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:333
+#, python-format
+msgid "'%(data)s' is too small - must be at least '%(limit)d'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:338
+#, python-format
+msgid "'%(data)s' is too large - must be no larger than '%(limit)d'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:360
+#, python-format
+msgid "'%s' contains whitespace"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:386
+#, python-format
+msgid "'%s' is not a valid MAC address"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:431
+#: neutron_lib/api/validators/__init__.py:440
+#, python-format
+msgid "'%s' is not a valid IP address"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:437
+#, python-format
+msgid "'%(data)s' is not an accepted IP address, '%(ip)s' is recommended"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:459
+#, python-format
+msgid "No valid key specs matched for: %s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:499
+#, python-format
+msgid "Invalid data format for IP pool: '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:526
+#: neutron_lib/api/validators/__init__.py:533
+#, python-format
+msgid "Invalid data format for fixed IP: '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:541
+#, python-format
+msgid "Duplicate IP address '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:563
+#, python-format
+msgid "Invalid data format for nameserver: '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:572
+#, python-format
+msgid "'%(host)s' is not a valid nameserver. %(msg)s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:577
+#, python-format
+msgid "Duplicate nameserver '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:594
+#, python-format
+msgid "Invalid data format for hostroute: '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:611
+#, python-format
+msgid "Duplicate hostroute '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:641
+#, python-format
+msgid "'%(data)s' is neither a valid IP address, nor is it a valid IP subnet"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:657
+#: neutron_lib/tests/unit/api/validators/test_validators.py:668
+#: neutron_lib/tests/unit/api/validators/test_validators.py:676
+#: neutron_lib/tests/unit/api/validators/test_validators.py:690
+#: neutron_lib/tests/unit/api/validators/test_validators.py:698
+#, python-format
+msgid "'%(data)s' isn't a recognized IP subnet cidr, '%(cidr)s' is recommended"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:663
+#, python-format
+msgid "'%s' is not a valid IP subnet"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:681
+#: neutron_lib/tests/unit/api/validators/test_validators.py:740
+#, python-format
+msgid "'%(data)s' is not a recognized CIDR, '%(cidr)s' is recommended"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:685
+#: neutron_lib/tests/unit/api/validators/test_validators.py:748
+#, python-format
+msgid "'%(data)s' is not a routable CIDR"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:689
+#, python-format
+msgid "'%s' is not a valid CIDR"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:750
+#, python-format
+msgid "'%s' is not a valid input"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:814
+#, python-format
+msgid "'%s' is not a valid UUID"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:905
+#, python-format
+msgid "'%s' is not a dictionary"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:924
+#, python-format
+msgid "Unexpected keys supplied: %s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:995
+#, python-format
+msgid "'%s' should be non-negative"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1014
+#: neutron_lib/api/validators/__init__.py:1019
+msgid "Port range must be two integers separated by a colon"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1023
+#, python-format
+msgid "Invalid port: %s"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1027
+msgid "First port in a port range must be lower than the second port"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1043
+#, python-format
+msgid "Invalid data format for subports: '%s' is not a list"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1051
+#, python-format
+msgid "Invalid data format for subport: '%s' is not a dict"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1058
+msgid "A valid port UUID must be specified"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1062
+#, python-format
+msgid "Invalid UUID for subport: '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1065
+#, python-format
+msgid "Non unique UUID for subport: '%s'"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1079
+#, python-format
+msgid ""
+"Invalid subport details '%s': missing segmentation information. Must "
+"specify both segmentation_id and segmentation_type"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1085
+#, python-format
+msgid "Segmentation ID '%(seg_id)s' for '%(subport)s' is not unique"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1112
+msgid "Subnet service types must be a list."
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1157
+#, python-format
+msgid "Ethertype %s is not a two octet hexadecimal number or ethertype name."
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1165
+#, python-format
+msgid ""
+"Ethertype %(ethertype)s is not a valid ethertype, must be one of "
+"%(valid_ethertypes)s."
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1226
+#, python-format
+msgid "Validator '%s' does not exist"
+msgstr ""
+
+#: neutron_lib/api/validators/__init__.py:1258
+#, python-format
+msgid "Validator type %s is already defined"
+msgstr ""
+
+#: neutron_lib/api/validators/allowedaddresspairs.py:43
+msgid "Allowed address pairs must be a list."
+msgstr ""
+
+#: neutron_lib/api/validators/availability_zone.py:46
+msgid "Too many availability_zone_hints specified"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:35
+#, python-format
+msgid "'%(trimmed)s' exceeds the %(maxlen)s character FQDN limit"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:40
+msgid "Encountered an empty component"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:43
+#, python-format
+msgid "Name '%s' must not start or end with a hyphen"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:46
+#, python-format
+msgid ""
+"Name '%s' must be 1-63 characters long, each of which can only be "
+"alphanumeric or a hyphen"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:52
+#, python-format
+msgid "TLD '%s' must not be all numeric"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:54
+#, python-format
+msgid "'%(data)s' not a valid PQDN or FQDN. Reason: %(reason)s"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:69
+#, python-format
+msgid ""
+"The dns_name passed is a PQDN and its size is '%(dns_name_len)s'. The "
+"dns_domain option in neutron.conf is set to %(dns_domain)s, with a length"
+" of '%(higher_labels_len)s'. When the two are concatenated to form a FQDN"
+" (with a '.' at the end), the resulting length exceeds the maximum size "
+"of '%(fqdn_max_len)s'"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:86
+#, python-format
+msgid ""
+"The dns_name passed is a FQDN. Its higher level labels must be equal to "
+"the dns_domain option in neutron.conf, that has been set to "
+"'%(dns_domain)s'. It must also include one or more valid DNS labels to "
+"the left of '%(dns_domain)s'"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:149
+#, python-format
+msgid "'%s' is a FQDN. It should be a relative domain name"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:156
+#, python-format
+msgid ""
+"'%(data)s' contains %(length)s characters. Adding a domain name will "
+"cause it to exceed the maximum length of a FQDN of '%(max_len)s'"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:178
+#, python-format
+msgid "'%s' is not a FQDN"
+msgstr ""
+
+#: neutron_lib/api/validators/dns.py:185
+#, python-format
+msgid ""
+"'%(data)s' contains %(length)s characters. Adding a sub-domain will cause"
+" it to exceed the maximum length of a FQDN of '%(max_len)s'"
+msgstr ""
+
+#: neutron_lib/callbacks/exceptions.py:18
+#, python-format
+msgid "The value '%(value)s' for %(element)s is not valid."
+msgstr ""
+
+#: neutron_lib/callbacks/registry.py:75
+msgid "'events' must be a collection (list, tuple, set)"
+msgstr ""
+
+#: neutron_lib/db/api.py:205
+#, python-format
+msgid "Could not find position of var %s"
+msgstr ""
+
+#: neutron_lib/db/model_query.py:113
+#, python-format
+msgid "'%s' is not supported as field"
+msgstr ""
+
+#: neutron_lib/db/sqlalchemytypes.py:30
+#, python-format
+msgid ""
+"Received type '%(type)s' and value '%(value)s'. Expecting "
+"netaddr.IPAddress type."
+msgstr ""
+
+#: neutron_lib/db/sqlalchemytypes.py:47
+#, python-format
+msgid ""
+"Received type '%(type)s' and value '%(value)s'. Expecting "
+"netaddr.IPNetwork type."
+msgstr ""
+
+#: neutron_lib/db/sqlalchemytypes.py:63
+#, python-format
+msgid ""
+"Received type '%(type)s' and value '%(value)s'. Expecting netaddr.EUI "
+"type."
+msgstr ""
+
+#: neutron_lib/db/standard_attr.py:110
+#, python-format
+msgid "%s must define api_collections"
+msgstr ""
+
+#: neutron_lib/db/standard_attr.py:134
+#, python-format
+msgid "%s must define collection_resource_map"
+msgstr ""
+
+#: neutron_lib/db/standard_attr.py:213
+#, python-format
+msgid ""
+"Model %(sub)s tried to register for API resource %(res)s which conflicts "
+"with model %(other)s."
+msgstr ""
+
+#: neutron_lib/db/standard_attr.py:242
+#, python-format
+msgid ""
+"API parent %(collection)s/%(resource)s for model %(subclass)s is already "
+"registered."
+msgstr ""
+
+#: neutron_lib/db/standard_attr.py:254
+#, python-format
+msgid ""
+"%s may not be deleted in bulk because it bumps the revision of other "
+"resources via SQLAlchemy event handlers, which are not compatible with "
+"bulk deletes."
+msgstr ""
+
+#: neutron_lib/db/utils.py:45
+#, python-format
+msgid "'%s' is an invalid attribute for sort key"
+msgstr ""
+
+#: neutron_lib/db/utils.py:50
+#, python-format
+msgid ""
+"Attribute '%(attr)s' references another resource and cannot be used to "
+"sort '%(resource)s' resources"
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:32
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:41
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:46
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:51
+msgid "An unknown exception occurred."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:64
+#, python-format
+msgid "Bad %(resource)s request: %(msg)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:79
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:71
+msgid "Not authorized."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:84
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:76
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:225
+msgid "The service is unavailable."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:96
+#, python-format
+msgid "User does not have admin privileges: %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:107
+#, python-format
+msgid "Object %(id)s not found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:118
+#, python-format
+msgid "Network %(net_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:129
+#, python-format
+msgid "Subnet %(subnet_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:140
+#, python-format
+msgid "Port %(port_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:152
+#, python-format
+msgid "Port %(port_id)s could not be found on network %(net_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:164
+#, python-format
+msgid "Device '%(device_name)s' does not exist."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:169
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:123
+msgid "The resource is in use."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:181
+#, python-format
+msgid ""
+"Unable to complete operation on network %(net_id)s. There are one or more"
+" ports still in use on the network."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:196
+#, python-format
+msgid "Unable to complete operation on subnet %(subnet_id)s: %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:201
+msgid "One or more ports have an IP allocation from this subnet"
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:216
+#, python-format
+msgid ""
+"Unable to complete operation on subnet pool %(subnet_pool_id)s. "
+"%(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:221
+msgid "Two or more concurrent subnets allocated"
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:235
+#, python-format
+msgid ""
+"Unable to complete operation on port %(port_id)s for network %(net_id)s. "
+"Port already has an attached device %(device_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:249
+#, python-format
+msgid "Port %(port_id)s cannot be deleted directly via the port API: %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:264
+#, python-format
+msgid ""
+"Unable to complete operation on port %(port_id)s, port is already bound, "
+"port type: %(vif_type)s, old_mac %(old_mac)s, new_mac %(new_mac)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:278
+#, python-format
+msgid ""
+"Unable to complete operation on port %(port_id)s, port is already bound "
+"to host %(host_id)s, numa_affinity_policy value given "
+"%(numa_affinity_policy)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:293
+#, python-format
+msgid ""
+"Unable to complete operation for network %(net_id)s. The mac address "
+"%(mac)s is in use."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:305
+#, python-format
+msgid ""
+"IP address %(ip_address)s is not a valid IP for any of the subnets on the"
+" specified network."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:317
+#, python-format
+msgid "IP address %(ip_address)s is not a valid IP for the specified subnet."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:330
+#, python-format
+msgid ""
+"Unable to complete operation for network %(net_id)s. The IP address "
+"%(ip_address)s is in use."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:343
+#, python-format
+msgid ""
+"Unable to create the network. The VLAN %(vlan_id)s on physical network "
+"%(physical_network)s is in use."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:356
+#, python-format
+msgid "Unable to create the network. The tunnel ID %(tunnel_id)s is in use."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:371
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:230
+msgid ""
+"Unable to create the network. No tenant network is available for "
+"allocation."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:384
+#, python-format
+msgid ""
+"Subnet on port %(port_id)s does not match the requested subnet "
+"%(subnet_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:404
+#, python-format
+msgid "Invalid input for operation: %(error_message)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:412
+#, python-format
+msgid "No more IP addresses available on network %(net_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:423
+#, python-format
+msgid "Creation failed. %(dev_name)s already exists."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:434
+#, python-format
+msgid "Quota exceeded for resources: %(overs)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:442
+#, python-format
+msgid "Invalid content type %(content_type)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:453
+#, python-format
+msgid "Unable to find any IP address on external network %(net_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:464
+#, python-format
+msgid "An invalid value was provided for %(opt_name)s: %(opt_value)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:477
+#, python-format
+msgid "Invalid network tunnel range: '%(tunnel_range)s' - %(error)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:493
+#, python-format
+msgid "Failed to initialize policy %(policy)s because %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:502
+#, python-format
+msgid "Failed to check policy %(policy)s because %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:529
+#, python-format
+msgid "Unable to generate unique mac for host %(host)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:537
+#, python-format
+msgid "Unable to generate unique mac on network %(net_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:545
+#, python-format
+msgid "Invalid service type: %(service_type)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:549
+#, python-format
+msgid "Invalid network VLAN range: '%(vlan_range)s' - '%(error)s'."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:559
+msgid "Empty physical network name."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:563
+msgid "Both tenant_id and project_id passed as filters."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:567
+#, python-format
+msgid "Subnet pool %(subnetpool_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:571
+#, python-format
+msgid "Unsupported port state: %(port_state)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:575
+#, python-format
+msgid "Port %(port_id)s is already acquired by another DHCP agent"
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:580
+#, python-format
+msgid ""
+"Unable to complete operation for %(subnet_id)s. The number of host routes"
+" exceeds the limit %(quota)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:586
+#, python-format
+msgid ""
+"Unable to complete operation for %(subnet_id)s. The number of DNS "
+"nameservers exceeds the limit %(quota)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:591
+#, python-format
+msgid ""
+"Unable to create the flat network. Physical network %(physical_network)s "
+"is in use."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:596
+msgid ""
+"Unable to create the network. No available network found in maximum "
+"allowed attempts."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:601
+#, python-format
+msgid "Malformed request body: %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:605
+#, python-format
+msgid "The allocation pool %(pool)s is not valid."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:609
+#, python-format
+msgid ""
+"Operation %(op)s is not supported for device_owner %(device_owner)s on "
+"port %(port_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:614
+#, python-format
+msgid ""
+"Found overlapping allocation pools: %(pool_1)s %(pool_2)s for subnet "
+"%(subnet_cidr)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:619
+#, python-format
+msgid "The allocation pool %(pool)s spans beyond the subnet cidr %(subnet_cidr)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:624
+#, python-format
+msgid "Bridge %(bridge)s does not exist."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:628
+#, python-format
+msgid "Unknown quota resources %(unknown)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:632
+msgid "Tenant-id was missing from quota request."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:636
+#, python-format
+msgid ""
+"Change would make usage less than 0 for the following resources: "
+"%(unders)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:641
+#, python-format
+msgid ""
+"Unable to reconfigure sharing settings for network %(network)s. Multiple "
+"tenants are using it."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:646
+#, python-format
+msgid "Extensions not found: %(extensions)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:650
+#, python-format
+msgid "Gateway ip %(ip_address)s conflicts with allocation pool %(pool)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:655
+#, python-format
+msgid ""
+"Current gateway ip %(ip_address)s already in use by port %(port_id)s. "
+"Unable to update."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:660
+#, python-format
+msgid "Invalid network VXLAN port range: '%(vxlan_range)s'."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:664
+msgid "VXLAN network unsupported."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:668
+#, python-format
+msgid "Found duplicate extension: %(alias)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:677
+#, python-format
+msgid ""
+"The following device_id %(device_id)s is not owned by your tenant or "
+"matches another tenants router."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:682
+#, python-format
+msgid "Invalid CIDR %(input)s given as IP prefix."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:691
+msgid "Both network_id and router_id are None. One must be provided."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:696
+msgid "Empty subnet pool prefix list."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:700
+msgid "Cannot mix IPv4 and IPv6 prefixes in a subnet pool."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:704
+#, python-format
+msgid "Prefix '%(prefix)s' not supported in IPv%(version)s pool."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:708
+#, python-format
+msgid ""
+"Illegal prefix bounds: %(prefix_type)s=%(prefixlen)s, "
+"%(base_prefix_type)s=%(base_prefixlen)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:713
+#, python-format
+msgid "Illegal update to prefixes: %(msg)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:717
+#, python-format
+msgid "Failed to allocate subnet: %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:721
+msgid ""
+"Failed to associate address scope: subnetpools within an address scope "
+"must have unique prefixes."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:726
+#, python-format
+msgid ""
+"Illegal subnetpool association: subnetpool %(subnetpool_id)s cannot be "
+"associated with address scope %(address_scope_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:732
+#, python-format
+msgid ""
+"Illegal subnetpool association: subnetpool %(subnetpool_id)s cannot "
+"associate with address scope %(address_scope_id)s because subnetpool "
+"ip_version is not %(ip_version)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:738
+#, python-format
+msgid "Illegal subnetpool update : %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:742
+#, python-format
+msgid ""
+"Unable to allocate subnet with prefix length %(prefixlen)s, minimum "
+"allowed prefix is %(min_prefixlen)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:747
+#, python-format
+msgid ""
+"Unable to allocate subnet with prefix length %(prefixlen)s, maximum "
+"allowed prefix is %(max_prefixlen)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:752
+#, python-format
+msgid "Unable to delete subnet pool: %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:756
+msgid "Per-tenant subnet pool prefix quota exceeded."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:760
+msgid ""
+"Subnets hosted on the same network must be allocated from the same subnet"
+" pool."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:765
+#, python-format
+msgid "Object action %(action)s failed because: %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:769
+msgid "IPtables conntrack zones exhausted, iptables rules cannot be applied."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:774
+#, python-format
+msgid "Quota for tenant %(tenant_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:778
+#, python-format
+msgid "Multiple filter IDs for IP %(ip)s found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:782
+#, python-format
+msgid "Filter ID for IP %(ip)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:786
+#, python-format
+msgid "Failed to add %(direction)s qdisc to device %(device)s."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:791
+#, python-format
+msgid "Binding for port %(port_id)s for host %(host)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:796
+#, python-format
+msgid "Binding for port %(port_id)s on host %(host)s is already active."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:801
+#, python-format
+msgid "Binding for port %(port_id)s on host %(host)s already exists."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:806
+#, python-format
+msgid ""
+"Binding for port %(port_id)s on host %(host)s could not be created or "
+"updated."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:817
+#, python-format
+msgid ""
+"Subnet service type %(service_type)s does not correspond to a valid "
+"device owner."
+msgstr ""
+
+#: neutron_lib/exceptions/__init__.py:822
+#, python-format
+msgid "Subnet service type %(service_type)s is not a string."
+msgstr ""
+
+#: neutron_lib/exceptions/address_group.py:20
+#, python-format
+msgid "Address group %(address_group_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/address_group.py:24
+#, python-format
+msgid ""
+"Address group %(address_group_id)s is in use on one or more security "
+"group rules."
+msgstr ""
+
+#: neutron_lib/exceptions/address_group.py:29
+#, python-format
+msgid ""
+"Addresses %(addresses)s not found in the address group "
+"%(address_group_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/address_group.py:34
+#, python-format
+msgid ""
+"Addresses %(addresses)s already exist in the address group "
+"%(address_group_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/address_scope.py:20
+#, python-format
+msgid "Address scope %(address_scope_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/address_scope.py:24
+#, python-format
+msgid ""
+"Unable to complete operation on address scope %(address_scope_id)s. There"
+" are one or more subnet pools in use on the address scope."
+msgstr ""
+
+#: neutron_lib/exceptions/address_scope.py:30
+#, python-format
+msgid "Unable to update address scope %(address_scope_id)s : %(reason)s."
+msgstr ""
+
+#: neutron_lib/exceptions/address_scope.py:35
+msgid ""
+"Subnets of the same address family hosted on the same network must all "
+"participate in the same address scope."
+msgstr ""
+
+#: neutron_lib/exceptions/agent.py:20
+#, python-format
+msgid "Agent %(id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/agent.py:24
+#, python-format
+msgid "Agent with agent_type=%(agent_type)s and host=%(host)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/agent.py:29
+#, python-format
+msgid "Multiple agents with agent_type=%(agent_type)s and host=%(host)s found."
+msgstr ""
+
+#: neutron_lib/exceptions/allowedaddresspairs.py:20
+msgid "AllowedAddressPair must contain ip_address"
+msgstr ""
+
+#: neutron_lib/exceptions/allowedaddresspairs.py:24
+msgid ""
+"Port Security must be enabled in order to have allowed address pairs on a"
+" port."
+msgstr ""
+
+#: neutron_lib/exceptions/allowedaddresspairs.py:29
+#, python-format
+msgid ""
+"Request contains duplicate address pair: mac_address %(mac_address)s "
+"ip_address %(ip_address)s."
+msgstr ""
+
+#: neutron_lib/exceptions/allowedaddresspairs.py:34
+#, python-format
+msgid "The number of allowed address pair exceeds the maximum %(quota)s."
+msgstr ""
+
+#: neutron_lib/exceptions/availability_zone.py:19
+#, python-format
+msgid "AvailabilityZone %(availability_zone)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/dhcpagentscheduler.py:22
+#, python-format
+msgid "Agent %(id)s is not a valid DHCP Agent or has been disabled."
+msgstr ""
+
+#: neutron_lib/exceptions/dhcpagentscheduler.py:26
+#, python-format
+msgid ""
+"The network %(network_id)s has been already hosted by the DHCP Agent "
+"%(agent_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/dhcpagentscheduler.py:31
+#, python-format
+msgid "The network %(network_id)s is not hosted by the DHCP Agent %(agent_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/dns.py:20
+#, python-format
+msgid "Domain %(dns_domain)s not found in the external DNS service"
+msgstr ""
+
+#: neutron_lib/exceptions/dns.py:24
+#, python-format
+msgid "Name %(dns_name)s is duplicated in the external DNS service"
+msgstr ""
+
+#: neutron_lib/exceptions/dns.py:28
+#, python-format
+msgid "External DNS driver %(driver)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/dns.py:32
+#, python-format
+msgid ""
+"Value of %(parameter)s has to be multiple of %(number)s, with maximum "
+"value of %(maximum)s and minimum value of %(minimum)s"
+msgstr ""
+
+#: neutron_lib/exceptions/dvr.py:20
+#, python-format
+msgid "Distributed Virtual Router Mac Address for host %(host)s does not exist."
+msgstr ""
+
+#: neutron_lib/exceptions/external_net.py:21
+#, python-format
+msgid ""
+"External network %(net_id)s cannot be updated to be made non-external, "
+"since it has existing gateway ports."
+msgstr ""
+
+#: neutron_lib/exceptions/extraroute.py:21
+#, python-format
+msgid "Invalid format for routes: %(routes)s, %(reason)s"
+msgstr ""
+
+#: neutron_lib/exceptions/extraroute.py:25
+#, python-format
+msgid ""
+"Router interface for subnet %(subnet_id)s on router %(router_id)s cannot "
+"be deleted, as it is required by one or more routes."
+msgstr ""
+
+#: neutron_lib/exceptions/extraroute.py:31
+#, python-format
+msgid ""
+"Unable to complete operation for %(router_id)s. The number of routes "
+"exceeds the maximum %(quota)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:20
+#, python-format
+msgid "Firewall group %(firewall_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:24
+#, python-format
+msgid "Firewall group %(firewall_id)s is still active."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:28
+#, python-format
+msgid ""
+"Operation cannot be performed since associated firewall group "
+"%(firewall_id)s is in %(pending_state)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:33
+#, python-format
+msgid "Port %(port_id)s of firewall group is invalid."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:37
+#, python-format
+msgid ""
+"Operation cannot be performed as port %(port_id)s is in an invalid "
+"project %(project_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:42
+#, python-format
+msgid ""
+"Port(s) %(port_ids)s provided already associated with other firewall "
+"group(s)."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:47
+#, python-format
+msgid "Firewall policy %(firewall_policy_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:51
+#, python-format
+msgid "Firewall policy %(firewall_policy_id)s is being used."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:59
+#, python-format
+msgid ""
+"Operation cannot be performed since firewall policy "
+"%(firewall_policy_id)s for your project could not be found. Please "
+"confirm if the firewall policy exists and is shared."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:69
+#, python-format
+msgid ""
+"Operation cannot be performed since firewall policy "
+"%(firewall_policy_id)s could not find the firewall rule "
+"%(firewall_rule_id)s. Please confirm if the firewall rule exists and is "
+"shared."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:80
+#, python-format
+msgid ""
+"Operation cannot be performed. Before sharing firewall policy "
+"%(firewall_policy_id)s, share associated firewall rule "
+"%(firewall_rule_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:86
+#, python-format
+msgid "Firewall rule %(firewall_rule_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:90
+#, python-format
+msgid "Firewall rule %(firewall_rule_id)s is being used."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:94
+#, python-format
+msgid ""
+"Firewall rule %(firewall_rule_id)s is not associated with firewall policy"
+" %(firewall_policy_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:99
+#, python-format
+msgid ""
+"Protocol %(protocol)s is not supported. Only protocol values %(values)s "
+"and their integer representation (0 to 255) are supported."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:105
+#, python-format
+msgid ""
+"Action %(action)s is not supported. Only action values %(values)s are "
+"supported."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:110
+#, python-format
+msgid "%(param)s are not allowed when protocol is set to ICMP."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:115
+msgid "Source/destination port requires a protocol."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:119
+#, python-format
+msgid "Invalid value for port %(port)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:123
+msgid "Missing rule info argument for insert/remove rule operation."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:128
+msgid "Invalid input - IP addresses do not agree with IP Version."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:138
+#, python-format
+msgid "%(driver)s: Internal driver error."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:147
+#, python-format
+msgid ""
+"Operation cannot be performed since firewall rule %(firewall_rule_id)s is"
+" not shared and belongs to another project %(project_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:158
+#, python-format
+msgid ""
+"Operation cannot be performed since firewall rule %(firewall_rule_id)s is"
+" already associated with firewall policy %(firewall_policy_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:164
+msgid "Deleting default firewall group not allowed."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:168
+msgid "Updating default firewall group not allowed."
+msgstr ""
+
+#: neutron_lib/exceptions/firewall_v2.py:176
+msgid ""
+"Default firewall group already exists. 'default' is the reserved name for"
+" firewall group."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:20
+#, python-format
+msgid "Flavor %(flavor_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:24
+#, python-format
+msgid "Flavor %(flavor_id)s is used by some service instance."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:28
+#, python-format
+msgid "Service Profile %(sp_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:32
+#, python-format
+msgid "Service Profile %(sp_id)s is used by some service instance."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:36
+#, python-format
+msgid "Service Profile %(sp_id)s is already associated with flavor %(fl_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:41
+#, python-format
+msgid "Service Profile %(sp_id)s is not associated with flavor %(fl_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:46
+#, python-format
+msgid "Service Profile driver %(driver)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:50
+msgid "Service Profile needs either a driver or metainfo."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:54
+msgid "Flavor is not enabled."
+msgstr ""
+
+#: neutron_lib/exceptions/flavors.py:58
+msgid "Service Profile is not enabled."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:21
+#, python-format
+msgid "Router %(router_id)s could not be found"
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:25
+#, python-format
+msgid "Router %(router_id)s %(reason)s"
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:34
+#, python-format
+msgid "Router %(router_id)s does not have an interface with id %(port_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:39
+#, python-format
+msgid "Router %(router_id)s has no interface on subnet %(subnet_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:44
+#, python-format
+msgid ""
+"Router interface for subnet %(subnet_id)s on router %(router_id)s cannot "
+"be deleted, as it is required by one or more floating IPs."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:50
+#, python-format
+msgid "Floating IP %(floatingip_id)s could not be found"
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:54
+#, python-format
+msgid ""
+"External network %(external_network_id)s is not reachable from subnet "
+"%(subnet_id)s.  Therefore, cannot associate Port %(port_id)s with a "
+"Floating IP."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:60
+#, python-format
+msgid ""
+"Cannot associate floating IP %(floating_ip_address)s (%(fip_id)s) with "
+"port %(port_id)s using fixed IP %(fixed_ip)s, as that fixed IP already "
+"has a floating IP on external network %(net_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:67
+#, python-format
+msgid ""
+"Gateway cannot be updated for router %(router_id)s, since a gateway to "
+"external network %(net_id)s is required by one or more floating IPs."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:73
+#, python-format
+msgid "Error %(reason)s while attempting the operation."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:77
+#, python-format
+msgid "Router '%(router_id)s' is not compatible with this agent."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:81
+#, python-format
+msgid ""
+"Router '%(router_id)s' with features '%(features)s' could not be found in"
+" the router factory."
+msgstr ""
+
+#: neutron_lib/exceptions/l3.py:92
+msgid "Aborting periodic_sync_routers_task due to an error."
+msgstr ""
+
+#: neutron_lib/exceptions/l3_ext_ha_mode.py:20
+#, python-format
+msgid ""
+"Failed to allocate a VRID in the network %(network_id)s for the router "
+"%(router_id)s after %(max_tries)s tries."
+msgstr ""
+
+#: neutron_lib/exceptions/l3_ext_ha_mode.py:25
+#, python-format
+msgid ""
+"No more Virtual Router Identifier (VRID) available when creating router "
+"%(router_id)s. The limit of number of HA Routers per tenant is 254."
+msgstr ""
+
+#: neutron_lib/exceptions/l3_ext_ha_mode.py:31
+#, python-format
+msgid "Network for tenant %(tenant_id)s concurrently deleted."
+msgstr ""
+
+#: neutron_lib/exceptions/l3_ext_ha_mode.py:35
+#, python-format
+msgid ""
+"The HA Network CIDR specified in the configuration file isn't valid; "
+"%(cidr)s."
+msgstr ""
+
+#: neutron_lib/exceptions/l3_ext_ha_mode.py:40
+#, python-format
+msgid ""
+"max_l3_agents_per_router %(max_agents)s config parameter is not valid as "
+"it cannot be negative. It must be 1 or greater. Alternatively, it can be "
+"0 to mean unlimited."
+msgstr ""
+
+#: neutron_lib/exceptions/metering.py:20
+#, python-format
+msgid "Metering label '%(label_id)s' does not exist."
+msgstr ""
+
+#: neutron_lib/exceptions/metering.py:24
+msgid "Duplicate Metering Rule in POST."
+msgstr ""
+
+#: neutron_lib/exceptions/metering.py:28
+#, python-format
+msgid "Metering label rule '%(rule_id)s' does not exist."
+msgstr ""
+
+#: neutron_lib/exceptions/metering.py:32
+#, python-format
+msgid ""
+"Metering label rule with remote_ip_prefix '%(remote_ip_prefix)s' overlaps"
+" another."
+msgstr ""
+
+#: neutron_lib/exceptions/multiprovidernet.py:21
+msgid "Segments and provider values cannot both be set."
+msgstr ""
+
+#: neutron_lib/exceptions/multiprovidernet.py:25
+msgid "Duplicate segment entry in request."
+msgstr ""
+
+#: neutron_lib/exceptions/network_segment_range.py:20
+#, python-format
+msgid "Network type %(type)s does not support network segment ranges."
+msgstr ""
+
+#: neutron_lib/exceptions/network_segment_range.py:25
+#, python-format
+msgid "Network Segment Range %(range_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/network_segment_range.py:29
+#, python-format
+msgid ""
+"Network Segment Range %(range_id)s is referenced by one or more tenant "
+"networks."
+msgstr ""
+
+#: neutron_lib/exceptions/network_segment_range.py:34
+#, python-format
+msgid ""
+"Network Segment Range %(range_id)s is a default segment range which could"
+" not be updated or deleted."
+msgstr ""
+
+#: neutron_lib/exceptions/network_segment_range.py:39
+#, python-format
+msgid "Network segment range overlaps with range(s) with id %(range_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:20
+msgid "Placement API endpoint not found."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:24
+#, python-format
+msgid "Placement resource not found on url: %(url)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:28
+#, python-format
+msgid "Placement resource provider not found %(resource_provider)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:32
+#, python-format
+msgid ""
+"Placement resource provider generation does not match with the server "
+"side for resource provider: %(resource_provider)s with generation "
+"%(generation)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:38
+#, python-format
+msgid ""
+"Placement inventory not found for resource provider "
+"%(resource_provider)s, resource class %(resource_class)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:43
+#, python-format
+msgid ""
+"Placement inventory update conflict for resource provider "
+"%(resource_provider)s, resource class %(resource_class)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:48
+#, python-format
+msgid "Aggregate not found for resource provider %(resource_provider)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:53
+#, python-format
+msgid "Placement trait not found %(trait)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:57
+#, python-format
+msgid "Placement resource class not found %(resource_class)s"
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:61
+#, python-format
+msgid ""
+"Placement API version %(current_version)s, do not meet the needed version"
+" %(needed_version)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:66
+#, python-format
+msgid "Another resource provider exists with the provided name: %(name)s."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:71
+#, python-format
+msgid "Placement Client Error (4xx): %(msg)s"
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:76
+#, python-format
+msgid "No such resource provider known by Neutron: %(rsc_provider)s"
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:81
+#, python-format
+msgid ""
+"Expected one driver to be responsible for resource provider "
+"%(rsc_provider)s, but got many: %(drivers)s"
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:86
+#, python-format
+msgid ""
+"Resource allocation has been changed for consumer %(consumer)s in "
+"Placement while Neutron tried to update it."
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:91
+#, python-format
+msgid "Resource allocation is deleted for consumer %(consumer)s"
+msgstr ""
+
+#: neutron_lib/exceptions/placement.py:95
+#, python-format
+msgid "Resource provider %(resource_provider)s for %(consumer)s does not exist"
+msgstr ""
+
+#: neutron_lib/exceptions/port_security.py:20
+msgid ""
+"Port has security group associated. Cannot disable port security or IP "
+"address until security group is removed."
+msgstr ""
+
+#: neutron_lib/exceptions/port_security.py:25
+msgid ""
+"Port security must be enabled and port must have an IP address in order "
+"to use security groups."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:21
+#, python-format
+msgid "QoS policy %(policy_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:25
+#, python-format
+msgid "QoS rule %(rule_id)s for policy %(policy_id)s could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:30
+#, python-format
+msgid "A default QoS policy exists for project %(project_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:34
+#, python-format
+msgid ""
+"QoS binding for port %(port_id)s and policy %(policy_id)s could not be "
+"found."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:39
+#, python-format
+msgid ""
+"QoS binding for port %(port_id)s and policy %(policy_id)s could not be "
+"created: %(db_error)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:44
+#, python-format
+msgid ""
+"QoS binding for network %(net_id)s and policy %(policy_id)s could not be "
+"found."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:49
+#, python-format
+msgid ""
+"QoS binding for floating IP %(fip_id)s and policy %(policy_id)s could not"
+" be found."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:54
+#, python-format
+msgid "QoS Policy %(policy_id)s is used by %(object_type)s %(object_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:59
+#, python-format
+msgid ""
+"QoS binding for floating IP %(fip_id)s and policy %(policy_id)s could not"
+" be created: %(db_error)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:64
+#, python-format
+msgid ""
+"QoS binding for network %(net_id)s and policy %(policy_id)s could not be "
+"created: %(db_error)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:69
+#, python-format
+msgid "Rule %(rule_type)s is not supported by port %(port_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:73
+#, python-format
+msgid "Rule %(rule_type)s is not supported by network %(network_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:78
+#, python-format
+msgid ""
+"Unable to add the rule with value %(rule_value)s to the policy "
+"%(policy_id)s as the existing rule of type %(existing_rule)s restricts "
+"the bandwidth to %(existing_value)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:85
+#, python-format
+msgid ""
+"Rule %(new_rule_type)s conflicts with rule %(rule_id)s which already "
+"exists in QoS Policy %(policy_id)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:91
+#, python-format
+msgid ""
+"Failed to remove provided policy %(policy_id)s because you are not "
+"authorized."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:96
+#, python-format
+msgid ""
+"TC Qdisc type %(qdisc_type)s is not supported; supported types: "
+"%(supported_qdisc_types)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:101
+#, python-format
+msgid ""
+"TC Qdisc type %(qdisc_type)s needs following arguments: "
+"%(needed_arguments)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:106
+#, python-format
+msgid ""
+"QoS binding for router %(router_id)s gateway and policy %(policy_id)s "
+"could not be found."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:111
+#, python-format
+msgid ""
+"QoS binding for router %(router_id)s gateway and policy %(policy_id)s "
+"could not be created: %(db_error)s."
+msgstr ""
+
+#: neutron_lib/exceptions/qos.py:116
+#, python-format
+msgid ""
+"Allocation for consumer %(consumer)s is not possible on resource provider"
+" %(rp)s, the requested amount of bandwidth would exceed the capacity "
+"available."
+msgstr ""
+
+#: neutron_lib/exceptions/vlantransparent.py:21
+msgid "Backend does not support VLAN Transparency."
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:19
+#, python-format
+msgid "VPNService %(vpnservice_id)s could not be found"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:23
+#, python-format
+msgid "ipsec_site_connection %(ipsec_site_conn_id)s not found"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:27
+#, python-format
+msgid "ipsec_site_connection %(attr)s is equal to or less than dpd_interval"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:32
+#, python-format
+msgid "ipsec_site_connection MTU %(mtu)d is too small for ipv%(version)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:37
+#, python-format
+msgid "ipsec_site_connection peer cidr %(peer_cidr)s is invalid CIDR"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:42
+#, python-format
+msgid "IKEPolicy %(ikepolicy_id)s could not be found"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:46
+#, python-format
+msgid "IPsecPolicy %(ipsecpolicy_id)s could not be found"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:50
+#, python-format
+msgid ""
+"IKEPolicy %(ikepolicy_id)s is in use by existing IPsecSiteConnection and "
+"can't be updated or deleted"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:55
+#, python-format
+msgid "VPNService %(vpnservice_id)s is still in use"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:59
+#, python-format
+msgid "Subnet %(subnet_id)s is used by VPNService %(vpnservice_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:63
+#, python-format
+msgid "Subnet %(subnet_id)s is used by endpoint group %(group_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:67
+#, python-format
+msgid ""
+"Subnet %(subnet_id)s is used by ipsec site connection "
+"%(ipsec_site_connection_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:72
+#, python-format
+msgid "Invalid state %(state)s of vpnaas resource %(id)s for updating"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:77
+#, python-format
+msgid ""
+"IPsecPolicy %(ipsecpolicy_id)s is in use by existing IPsecSiteConnection "
+"and can't be updated or deleted"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:82
+#, python-format
+msgid "Can not load driver :%(device_driver)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:86
+#, python-format
+msgid "Subnet %(subnet_id)s is not connected to Router %(router_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:91
+#, python-format
+msgid "Router %(router_id)s has no external network gateway set"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:95
+#, python-format
+msgid "Peer address %(peer_address)s cannot be resolved"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:99
+#, python-format
+msgid "Router's %(router_id)s external network has no %(ip_version)s subnet"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:105
+#, python-format
+msgid "Endpoint group %(endpoint_group_id)s could not be found"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:109
+#, python-format
+msgid ""
+"Endpoint '%(endpoint)s' is invalid for group type '%(group_type)s': "
+"%(why)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:114
+#, python-format
+msgid "No endpoints specified for endpoint group '%(group)s'"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:118
+#, python-format
+msgid "Subnet %(subnet)s in endpoint group does not exist"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:122
+#, python-format
+msgid ""
+"Endpoints in group %(group)s do not have the same IP version, as required"
+" for IPSec site-to-site connection"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:127
+msgid ""
+"Peer CIDRs do not have the same IP version, as required for IPSec site-"
+"to-site connection"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:132
+msgid "IP versions are not compatible between peer and local endpoints"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:137
+#, python-format
+msgid ""
+"Endpoint group%(suffix)s %(which)s cannot be specified, when VPN Service "
+"has subnet specified"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:142
+#, python-format
+msgid ""
+"Endpoint group %(which)s type is '%(group_type)s' and should be "
+"'%(expected)s'"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:147
+msgid "Peer CIDRs cannot be specified, when using endpoint groups"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:152
+msgid "Missing peer CIDRs for IPsec site-to-site connection"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:156
+#, python-format
+msgid ""
+"Missing endpoint group%(suffix)s %(which)s for IPSec site-to-site "
+"connection"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:161
+#, python-format
+msgid "Endpoint group %(group_id)s is in use and cannot be deleted"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:166
+msgid "Flavors plugin not found"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:170
+#, python-format
+msgid "No service provider found for flavor %(flavor_id)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:175
+#, python-format
+msgid ""
+"IPSec does not support %(resource)s attribute %(key)s with value "
+"'%(value)s'"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:180
+#, python-format
+msgid "IKE does not support %(resource)s attribute %(key)s with value '%(value)s'"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:186
+#, python-format
+msgid "Fatal - %(reason)s"
+msgstr ""
+
+#: neutron_lib/exceptions/vpn.py:191
+#, python-format
+msgid ""
+"Cisco CSR does not support %(resource)s attribute %(key)s with value "
+"'%(value)s'"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:48
+#: neutron_lib/objects/common_types.py:129
+#, python-format
+msgid "Field value %s is not an integer"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:51
+#, python-format
+msgid "Field value %s is invalid"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:103
+#, python-format
+msgid "Field value %s is not a string"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:106
+#, python-format
+msgid "Domain name %s is too long"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:118
+msgid "No possible values specified"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:122
+#, python-format
+msgid "Possible value %s is not an integer"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:133
+#: neutron_lib/objects/logapi/event_types.py:29
+#, python-format
+msgid "Field value %(value)s is not in the list of valid values: %(values)s"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:204
+#: neutron_lib/objects/common_types.py:217
+#, python-format
+msgid "Field value %s is not a netaddr.EUI"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:239
+#, python-format
+msgid "Field value %s is not stringified JSON"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:241
+#, python-format
+msgid "Field value %s is not type of dict or stringified JSON"
+msgstr ""
+
+#: neutron_lib/objects/common_types.py:275
+#: neutron_lib/objects/common_types.py:288
+#, python-format
+msgid "Field value %s is not a netaddr.IPNetwork"
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:20
+#, python-format
+msgid "Unable to update the following object fields: %(fields)s"
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:36
+#, python-format
+msgid ""
+"Failed to create a duplicate %(object_type)s: for attribute(s) "
+"%(attributes)s with value(s) %(values)s"
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:50
+#, python-format
+msgid "NeutronDbObject not found by model %(model)s."
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:54
+#, python-format
+msgid "For class %(object_type)s missing primary keys: %(missing_keys)s"
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:66
+#, python-format
+msgid "Incorrect range limits specified: start = %(start)s, end = %(end)s"
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:71
+#, python-format
+msgid "Synthetic field %(field)s shouldn't have more than one foreign key"
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:76
+#, python-format
+msgid "%(child)s does not define a foreign key for %(parent)s"
+msgstr ""
+
+#: neutron_lib/objects/exceptions.py:80
+#, python-format
+msgid "Synthetic field(s) %(fields)s undefined, misspelled, or otherwise invalid"
+msgstr ""
+
+#: neutron_lib/placement/client.py:491
+#: neutron_lib/tests/unit/placement/test_client.py:279
+msgid "No inventory of class"
+msgstr ""
+
+#: neutron_lib/placement/utils.py:129
+#, python-format
+msgid ""
+"Cannot parse resource_provider_bandwidths. Expected: non-negative integer"
+" bandwidth value, got: %s"
+msgstr ""
+
+#: neutron_lib/placement/utils.py:164
+#, python-format
+msgid ""
+"Cannot parse resource_provider_bandwidths. Expected: "
+"DEVICE:EGRESS:INGRESS, got: %s"
+msgstr ""
+
+#: neutron_lib/placement/utils.py:168
+#, python-format
+msgid ""
+"Cannot parse resource_provider_bandwidths. Same device listed multiple "
+"times: %s"
+msgstr ""
+
+#: neutron_lib/placement/utils.py:208
+#, python-format
+msgid "Cannot parse inventory_defaults. Unexpected options: %s"
+msgstr ""
+
+#: neutron_lib/placement/utils.py:220
+#, python-format
+msgid ""
+"Cannot parse inventory_defaults.allocation_ratio. Expected: non-negative "
+"float, got: %s"
+msgstr ""
+
+#: neutron_lib/placement/utils.py:233
+#, python-format
+msgid ""
+"Cannot parse inventory_defaults.%(key)s. Expected: non-negative int, got:"
+" %(got)s"
+msgstr ""
+
+#: neutron_lib/plugins/utils.py:113
+#, python-format
+msgid "%(id)s is not a valid %(type)s identifier"
+msgstr ""
+
+#: neutron_lib/plugins/utils.py:118
+msgid "End of tunnel range is less than start of tunnel range"
+msgstr ""
+
+#: neutron_lib/plugins/utils.py:126
+#, python-format
+msgid "%s is not a valid VLAN tag"
+msgstr ""
+
+#: neutron_lib/plugins/utils.py:143
+msgid "End of VLAN range is less than start of VLAN range"
+msgstr ""
+
+#: neutron_lib/plugins/utils.py:164
+msgid "Need exactly two values for VLAN range"
+msgstr ""
+
+#: neutron_lib/plugins/utils.py:285
+msgid ""
+"Too long prefix provided. New name would exceed given length for an "
+"interface name."
+msgstr ""
+
+#: neutron_lib/tests/_base.py:99
+#, python-format
+msgid "Unknown attribute '%s'."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:56
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:63
+msgid "Bad A request: B."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:81
+msgid "User does not have admin privileges: hoser."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:87
+msgid "Object fallout tato not found."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:93
+msgid "Network spam could not be found."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:99
+msgid "Subnet root could not be found."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:105
+msgid "Port harbor could not be found."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:111
+msgid "Port serial could not be found on network USB."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:117
+msgid "Device 'device' does not exist."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:128
+msgid ""
+"Unable to complete operation on network foo. There are one or more ports "
+"still in use on the network."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:135
+msgid "Unable to complete operation on subnet garbage: not full."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:141
+msgid ""
+"Unable to complete operation on subnet garbage: One or more ports have an"
+" IP allocation from this subnet."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:148
+msgid "Unable to complete operation on subnet pool ymca. because."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:154
+msgid ""
+"Unable to complete operation on subnet pool ymca. Two or more concurrent "
+"subnets allocated."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:161
+msgid ""
+"Unable to complete operation on port a for network c. Port already has an"
+" attached device b."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:168
+msgid "Port harbor cannot be deleted directly via the port API: docking."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:175
+msgid ""
+"Unable to complete operation on port bigmac, port is already bound, port "
+"type: ketchup, old_mac onions, new_mac salt."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:184
+msgid ""
+"Unable to complete operation for network nutters. The mac address grill "
+"is in use."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:191
+msgid ""
+"IP address shazam! is not a valid IP for any of the subnets on the "
+"specified network."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:198
+msgid "IP address 300.400.500.600 is not a valid IP for the specified subnet."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:205
+msgid ""
+"Unable to complete operation for network boredom. The IP address "
+"crazytown is in use."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:212
+msgid ""
+"Unable to create the network. The VLAN virtual on physical network phys "
+"is in use."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:219
+msgid "Unable to create the network. The tunnel ID sewer is in use."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:236
+msgid "Subnet on port porter does not match the requested subnet submit."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:249
+msgid "Invalid input for operation: warp core breach."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:255
+msgid "No more IP addresses available on network nuke."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:261
+msgid "Creation failed. hal9000 already exists."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:267
+msgid "Quota exceeded for resources: tube socks."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:273
+msgid "Invalid content type porn."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:279
+msgid "Unable to find any IP address on external network darpanet."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:285
+msgid "An invalid value was provided for which muppet: big bird."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:291
+msgid "Invalid network tunnel range: 'rats' - present."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:297
+msgid "Invalid network tunnel range: '3:4' - present."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:303
+msgid "Failed to initialize policy policy because reason."
+msgstr ""
+
+#: neutron_lib/tests/unit/exceptions/test_exceptions.py:309
+msgid "Failed to check policy policy because reason."
+msgstr ""
+
+#: neutron_lib/utils/helpers.py:46
+#, python-format
+msgid "Invalid mapping: '%s'"
+msgstr ""
+
+#: neutron_lib/utils/helpers.py:49
+#, python-format
+msgid "Missing key in mapping: '%s'"
+msgstr ""
+
+#: neutron_lib/utils/helpers.py:52
+#, python-format
+msgid "Missing value in mapping: '%s'"
+msgstr ""
+
+#: neutron_lib/utils/helpers.py:55
+#, python-format
+msgid "Key %(key)s in mapping: '%(mapping)s' not unique"
+msgstr ""
+
+#: neutron_lib/utils/helpers.py:59
+#, python-format
+msgid "Value %(value)s in mapping: '%(mapping)s' not unique"
+msgstr ""
+
+#: neutron_lib/utils/runtime.py:59
+#, python-format
+msgid "Plugin '%(p)s' already in namespace: %(ns)s"
+msgstr ""
+
+#: neutron_lib/utils/runtime.py:69
+#, python-format
+msgid "Plugin '%(p)s' not in namespace: %(ns)s"
+msgstr ""
+
+#: neutron_lib/utils/runtime.py:110 neutron_lib/utils/runtime.py:126
+msgid "Class not found."
+msgstr ""
+

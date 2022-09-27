@@ -1,0 +1,1638 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: openstack-helm 0.1.1.dev3497\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-16 09:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../source/install/common-requirements.rst:3
+msgid "Common Deployment Requirements"
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:6
+msgid "Passwordless Sudo"
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:8
+msgid ""
+"Throughout this guide the assumption is that the user is: ``ubuntu``. "
+"Because this user has to execute root level commands remotely to other "
+"nodes, it is advised to add the following lines to ``/etc/sudoers`` for each "
+"node:"
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:19
+msgid "Latest Version Installs"
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:21
+msgid ""
+"On the host or master node, install the latest versions of Git, CA Certs & "
+"Make if necessary"
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:28
+msgid "Proxy Configuration"
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:30
+msgid ""
+"This guide assumes that users wishing to deploy behind a proxy have already "
+"defined the conventional proxy environment variables ``http_proxy``, "
+"``https_proxy``, and ``no_proxy``."
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:34
+msgid ""
+"In order to deploy OpenStack-Helm behind corporate proxy servers, add the "
+"following entries to ``openstack-helm-infra/tools/gate/devel/local-vars."
+"yaml``."
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:44
+msgid ""
+"The ``.svc.cluster.local`` address is required to allow the OpenStack client "
+"to communicate without being routed through proxy servers. The IP address "
+"``172.17.0.1`` is the advertised IP address for the Kubernetes API server. "
+"Replace the addresses if your configuration does not match the one defined "
+"above."
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:50
+msgid ""
+"Add the address of the Kubernetes API, ``172.17.0.1``, and ``.svc.cluster."
+"local`` to your ``no_proxy`` and ``NO_PROXY`` environment variables."
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:59
+msgid ""
+"By default, this installation will use Google DNS Server IPs (8.8.8.8, 8.8.4."
+"4) and will update resolv.conf as a result. If those IPs are blocked by the "
+"proxy, this will overwrite the original DNS entries and result in the "
+"inability to connect to anything on the network behind the proxy. These DNS "
+"nameserver entries can be changed by updating the "
+"``external_dns_nameservers`` entry in this file:"
+msgstr ""
+
+#: ../../source/install/common-requirements.rst:69
+msgid ""
+"It is recommended to add your own existing DNS nameserver entries to avoid "
+"losing connection."
+msgstr ""
+
+#: ../../source/install/developer/cleaning-deployment.rst:3
+msgid "Cleaning the Deployment"
+msgstr ""
+
+#: ../../source/install/developer/cleaning-deployment.rst:6
+msgid "Removing Helm Charts"
+msgstr ""
+
+#: ../../source/install/developer/cleaning-deployment.rst:8
+msgid "To delete an installed helm chart, use the following command:"
+msgstr ""
+
+#: ../../source/install/developer/cleaning-deployment.rst:14
+msgid ""
+"This will delete all Kubernetes resources generated when the chart was "
+"instantiated. However for OpenStack charts, by default, this will not delete "
+"the database and database users that were created when the chart was "
+"installed. All OpenStack projects can be configured such that upon deletion, "
+"their database will also be removed. To delete the database when the chart "
+"is deleted the database drop job must be enabled before installing the chart."
+" There are two ways to enable the job, set the job_db_drop value to true in "
+"the chart's ``values.yaml`` file, or override the value using the helm "
+"install command as follows:"
+msgstr ""
+
+#: ../../source/install/developer/cleaning-deployment.rst:30
+msgid "Environment tear-down"
+msgstr ""
+
+#: ../../source/install/developer/cleaning-deployment.rst:32
+msgid ""
+"To tear-down, the development environment charts should be removed first "
+"from the 'openstack' namespace and then the 'ceph' namespace using the "
+"commands from the `Removing Helm Charts` section. Additionally charts should "
+"be removed from the 'nfs' and 'libvirt' namespaces if deploying with NFS "
+"backing or bare metal development support. You can run the following "
+"commands to loop through and delete the charts, then stop the kubelet "
+"systemd unit and remove all the containers before removing the directories "
+"used on the host by pods."
+msgstr ""
+
+#: ../../source/install/developer/cleaning-deployment.rst:89
+msgid ""
+"These commands will restore the environment back to a clean Kubernetes "
+"deployment, that can either be manually removed or over-written by "
+"restarting the deployment process. It is recommended to restart the host "
+"before doing so to ensure any residual state, eg. Network interfaces are "
+"removed."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:3
+msgid "Deploy OVS-DPDK"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:6
+#: ../../source/install/developer/requirements-and-host-config.rst:14
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:8
+msgid ""
+"A correct DPDK configuration depends heavily on the specific hardware "
+"resources and its configuration. Before deploying Openvswitch with DPDK, "
+"check the amount and type of available hugepages on the host OS."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:23
+msgid ""
+"In this example, 8 hugepages of 1G size have been allocated. 2 of those are "
+"being used and 6 are still available."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:26
+msgid ""
+"More information on how to allocate and configure hugepages on the host OS "
+"can be found in the `Openvswitch documentation <http://docs.openvswitch.org/"
+"en/latest/intro/install/dpdk/>`_."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:30
+msgid ""
+"In order to allow OVS inside a pod to make use of hugepages, the "
+"corresponding type and amount of hugepages must be specified in the resource "
+"section of the OVS chart's values.yaml:"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:57
+msgid ""
+"Additionally, the default configuration of the neutron chart must be adapted "
+"according to the underlying hardware. The corresponding configuration "
+"parameter is labeled with \"CHANGE-ME\" in the script \"values_overrides/"
+"dpdk.yaml\". Specifically, the \"ovs_dpdk\" configuration section should "
+"list all NICs which should be bound to DPDK with their corresponding PCI-IDs."
+" Moreover, the name of each NIC needs to be unique, e.g., dpdk0, dpdk1, etc."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:83
+msgid ""
+"In the example above, bonding isn't used and hence an empty list is passed "
+"in the \"bonds\" section."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:87
+msgid "Deployment"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:89
+msgid ""
+"Once the above requirements are met, start deploying Openstack Helm using "
+"the deployment scripts under the dpdk directory in an increasing order"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:96
+msgid ""
+"One can also specify the name of Openstack release and container OS "
+"distribution as overrides before running the deployment scripts, for "
+"instance,"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:105
+msgid ""
+"Note that OVS-DPDK deployment has been tested with Openstack Rocky release "
+"and Ubuntu Bionic container distributions. If the above variables aren't "
+"set, the defaults (currently Openstack Ocata and Ubuntu Xenial) will be used."
+""
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:110
+#: ../../source/install/ext-dns-fqdn.rst:195
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:113
+msgid "OVS startup failure"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:115
+msgid ""
+"If OVS fails to start up because of no hugepages are available, check the "
+"configuration of the OVS daemonset. Older versions of helm-toolkit were not "
+"able to render hugepage configuration into the Kubernetes manifest and just "
+"removed the hugepage attributes. If no hugepage configuration is defined for "
+"the OVS daemonset, consider using a newer version of helm-toolkit."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:136
+msgid "Adding a DPDK port to Openvswitch fails"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:138
+msgid ""
+"When adding a DPDK port (a NIC bound to DPDK) to OVS fails, one source of "
+"error is related to an incorrect configuration with regards to the NUMA "
+"topology of the underlying hardware. Every NIC is connected to one specific "
+"NUMA socket. In order to use a NIC as DPDK port in OVS, the OVS "
+"configurations regarding hugepage(s) and PMD thread(s) need to match the "
+"NUMA topology."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:144
+msgid ""
+"The NUMA socket a given NIC is connected to can be found in the ovs-vswitchd "
+"log:"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:154
+msgid ""
+"In this example, the NIC with PCI-ID 0000:00:04.0 is connected to NUMA "
+"socket 1. As a result, this NIC can only be used by OVS if"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:157
+msgid "hugepages have been allocated on NUMA socket 1 by OVS, and"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:158
+msgid "PMD threads have been assigned to NUMA socket 1."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:160
+msgid ""
+"To allocate hugepages to NUMA sockets in OVS, ensure that the "
+"``socket_memory`` attribute in values.yaml specifies a value for the "
+"corresponding NUMA socket. In the following example, OVS will use one 1G "
+"hugepage for NUMA socket 0 and socket 1."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:170
+msgid ""
+"To allocate PMD threads to NUMA sockets in OVS, ensure that the "
+"``pmd_cpu_mask`` attribute in values.yaml includes CPU sockets on the "
+"corresponding NUMA socket. In the example below, the mask of 0xf covers the "
+"first 4 CPU cores which are distributed across NUMA sockets 0 and 1."
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:179
+msgid ""
+"The mapping of CPU cores to NUMA sockets can be determined by means of "
+"``lspci``, for instance:"
+msgstr ""
+
+#: ../../source/install/developer/deploy-ovs-dpdk.rst:188
+msgid ""
+"More information can be found in the `Openvswitch documentation <http://docs."
+"openvswitch.org/en/latest/intro/install/dpdk/>`_."
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:3
+msgid "Deployment With Ceph"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:6
+#: ../../source/install/developer/deploy-with-nfs.rst:6
+msgid ""
+"For other deployment options, select appropriate ``Deployment with ...`` "
+"option from `Index <../developer/index.html>`__ page."
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:10
+#: ../../source/install/multinode.rst:120
+msgid "Deploy Ceph"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:12
+msgid ""
+"We are going to install Ceph OSDs backed by loopback devices as this will "
+"help us not to attach extra disks, in case if you have enough disks on the "
+"node then feel free to skip creating loopback devices by exporting "
+"CREATE_LOOPBACK_DEVICES_FOR_CEPH to false and export the  block devices "
+"names as environment variables(CEPH_OSD_DATA_DEVICE and "
+"CEPH_OSD_DB_WAL_DEVICE)."
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:18
+msgid ""
+"We are also going to separate Ceph metadata and data onto a different "
+"devices to replicate the ideal scenario of fast disks for metadata and slow "
+"disks to store data. You can change this as per your design by referring to "
+"the documentation explained in ../openstack-helm-infra/ceph-osd/values.yaml"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:23
+msgid ""
+"This script will create two loopback devices for Ceph as one disk for OSD "
+"data and other disk for block DB and block WAL. If default devices (loop0 "
+"and loop1) are busy in your case, feel free to change them by exporting "
+"environment variables(CEPH_OSD_DATA_DEVICE and CEPH_OSD_DB_WAL_DEVICE)."
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:29
+msgid ""
+"if you are rerunning the below script then make sure to skip the loopback "
+"device creation by exporting CREATE_LOOPBACK_DEVICES_FOR_CEPH to false."
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:36
+#: ../../source/install/developer/deploy-with-ceph.rst:49
+#: ../../source/install/developer/deploy-with-ceph.rst:62
+#: ../../source/install/developer/deploy-with-ceph.rst:75
+#: ../../source/install/developer/deploy-with-ceph.rst:88
+#: ../../source/install/developer/deploy-with-ceph.rst:101
+#: ../../source/install/developer/deploy-with-ceph.rst:114
+#: ../../source/install/developer/deploy-with-ceph.rst:130
+#: ../../source/install/developer/deploy-with-ceph.rst:143
+#: ../../source/install/developer/deploy-with-ceph.rst:156
+#: ../../source/install/developer/deploy-with-ceph.rst:172
+#: ../../source/install/developer/deploy-with-ceph.rst:185
+#: ../../source/install/developer/deploy-with-ceph.rst:198
+#: ../../source/install/developer/deploy-with-ceph.rst:211
+#: ../../source/install/developer/deploy-with-ceph.rst:224
+#: ../../source/install/developer/deploy-with-nfs.rst:16
+#: ../../source/install/developer/deploy-with-nfs.rst:29
+#: ../../source/install/developer/deploy-with-nfs.rst:42
+#: ../../source/install/developer/deploy-with-nfs.rst:55
+#: ../../source/install/developer/deploy-with-nfs.rst:68
+#: ../../source/install/developer/deploy-with-nfs.rst:81
+#: ../../source/install/developer/deploy-with-nfs.rst:94
+#: ../../source/install/developer/deploy-with-nfs.rst:107
+#: ../../source/install/developer/deploy-with-nfs.rst:120
+#: ../../source/install/developer/deploy-with-nfs.rst:133
+#: ../../source/install/developer/deploy-with-nfs.rst:146
+#: ../../source/install/developer/deploy-with-nfs.rst:159
+#: ../../source/install/developer/exercise-the-cloud.rst:13
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:79
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:115
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:128
+#: ../../source/install/multinode.rst:83 ../../source/install/multinode.rst:101
+#: ../../source/install/multinode.rst:147
+#: ../../source/install/multinode.rst:160
+#: ../../source/install/multinode.rst:173
+#: ../../source/install/multinode.rst:186
+#: ../../source/install/multinode.rst:199
+#: ../../source/install/multinode.rst:212
+#: ../../source/install/multinode.rst:225
+#: ../../source/install/multinode.rst:238
+#: ../../source/install/multinode.rst:251
+#: ../../source/install/multinode.rst:264
+#: ../../source/install/multinode.rst:277
+#: ../../source/install/multinode.rst:290
+#: ../../source/install/multinode.rst:303
+#: ../../source/install/multinode.rst:316
+msgid ""
+"Alternatively, this step can be performed by running the script directly:"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:43
+msgid "Activate the OpenStack namespace to be able to use Ceph"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:56
+#: ../../source/install/developer/deploy-with-nfs.rst:23
+#: ../../source/install/multinode.rst:167
+msgid "Deploy MariaDB"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:69
+#: ../../source/install/developer/deploy-with-nfs.rst:36
+#: ../../source/install/multinode.rst:180
+msgid "Deploy RabbitMQ"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:82
+#: ../../source/install/developer/deploy-with-nfs.rst:49
+#: ../../source/install/multinode.rst:193
+msgid "Deploy Memcached"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:95
+#: ../../source/install/developer/deploy-with-nfs.rst:62
+#: ../../source/install/multinode.rst:206
+msgid "Deploy Keystone"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:108
+#: ../../source/install/developer/deploy-with-nfs.rst:75
+#: ../../source/install/multinode.rst:297
+msgid "Deploy Heat"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:121
+#: ../../source/install/developer/deploy-with-nfs.rst:88
+msgid "Deploy Horizon"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:123
+msgid ""
+"Horizon deployment is not tested in the OSH development environment "
+"community gates"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:137
+#: ../../source/install/multinode.rst:219
+msgid "Deploy Rados Gateway for object store"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:150
+#: ../../source/install/developer/deploy-with-nfs.rst:101
+#: ../../source/install/multinode.rst:232
+msgid "Deploy Glance"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:163
+#: ../../source/install/multinode.rst:245
+msgid "Deploy Cinder"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:165
+msgid ""
+"Cinder deployment is not tested in the OSH development environment community "
+"gates"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:179
+#: ../../source/install/developer/deploy-with-nfs.rst:114
+#: ../../source/install/multinode.rst:258
+msgid "Deploy OpenvSwitch"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:192
+#: ../../source/install/developer/deploy-with-nfs.rst:127
+#: ../../source/install/multinode.rst:271
+msgid "Deploy Libvirt"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:205
+#: ../../source/install/developer/deploy-with-nfs.rst:140
+#: ../../source/install/multinode.rst:284
+msgid "Deploy Compute Kit (Nova and Neutron)"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-ceph.rst:218
+#: ../../source/install/developer/deploy-with-nfs.rst:153
+msgid "Setup the gateway to the public network"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-nfs.rst:3
+msgid "Deployment With NFS"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-nfs.rst:10
+msgid "Deploy NFS Provisioner"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:3
+msgid "Deployment with Tungsten Fabric"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:6
+msgid "Intro"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:8
+msgid ""
+"Tungsten Fabric is the multicloud and multistack network solution which you "
+"can use for your OpenStack as a network plugin. This document decribes how "
+"you can deploy a single node Open Stack based on Tungsten Fabric using "
+"openstack helm for development purpose."
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:13
+msgid "Prepare host"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:15
+msgid ""
+"First you have to set up OpenStack and Linux versions and install needed "
+"packages"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:27
+msgid "Install OpenStack packages"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:34
+msgid "Install k8s Minikube"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:41
+msgid "Setup DNS for use cluster DNS"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:52
+msgid "Setup env for apply values_overrides"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:59
+msgid "Setup OpenStack client"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:66
+msgid "Setup Ingress"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:73
+msgid "Setup MariaDB"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:80
+msgid "Setup Memcached"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:87
+msgid "Setup RabbitMQ"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:94
+msgid "Setup NFS"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:101
+msgid "Setup Keystone"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:108
+msgid "Setup Heat"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:115
+msgid "Setup Glance"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:122
+msgid "Prepare host and openstack helm for tf"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:129
+msgid "Setup libvirt"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:136
+msgid "Setup Neutron and Nova"
+msgstr ""
+
+#: ../../source/install/developer/deploy-with-tungsten-fabric.rst:143
+msgid "Setup Tungsten Fabric"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:3
+msgid "Exercise the Cloud"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:5
+msgid ""
+"Once OpenStack-Helm has been deployed, the cloud can be exercised either "
+"with the OpenStack client, or the same heat templates that are used in the "
+"validation gates."
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:19
+msgid ""
+"To run further commands from the CLI manually, execute the following to set "
+"up authentication credentials::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:24
+msgid ""
+"Note that this command will only enable you to auth successfully using the "
+"``python-openstackclient`` CLI. To use legacy clients like the ``python-"
+"novaclient`` from the CLI, reference the auth values in ``/etc/openstack/"
+"clouds.yaml`` and run::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:36
+msgid ""
+"The example above uses the default values used by ``openstack-helm-infra``."
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:40
+msgid "Subsequent Runs & Post Clean-up"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:42
+msgid ""
+"Execution of the **900-use-it.sh** script results in the creation of 4 heat "
+"stacks and a unique keypair enabling access to a newly created VM.  "
+"Subsequent runs of the **900-use-it.sh** script requires deletion of the "
+"stacks, a keypair, and key files, generated during the initial script "
+"execution."
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:47
+msgid ""
+"The following steps serve as a guide to clean-up the client environment by "
+"deleting stacks and respective artifacts created during the **900-use-it."
+"sh** script:"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:50
+msgid ""
+"List the stacks created during script execution which will need to be "
+"deleted::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:59
+msgid ""
+"Delete the stacks returned from the *openstack helm stack list* command "
+"above::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:66
+msgid "List the keypair(s) generated during the script execution::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:72
+msgid "Delete the keypair(s) returned from the list command above::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:76
+msgid ""
+"Manually remove the keypair directories created from the script in the ~/."
+"ssh directory::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:82
+msgid ""
+"As a final validation step, re-run the **openstack helm stack list** and "
+"**openstack helm keypair list** commands and confirm the returned results "
+"are shown as empty.::"
+msgstr ""
+
+#: ../../source/install/developer/exercise-the-cloud.rst:88
+msgid ""
+"Alternatively, these steps can be performed by running the script directly::"
+msgstr ""
+
+#: ../../source/install/developer/index.rst:2
+msgid "Development"
+msgstr ""
+
+#: ../../source/install/developer/index.rst:4 ../../source/install/index.rst:4
+#: ../../source/install/plugins/index.rst:4
+msgid "Contents:"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:3
+msgid "Kubernetes and Common Setup"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:6
+msgid "Install Basic Utilities"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:8
+msgid ""
+"To get started with OSH, we will need  ``git``,  ``curl`` and ``make``."
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:15
+#: ../../source/install/kubernetes-gate.rst:47
+msgid "Clone the OpenStack-Helm Repos"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:17
+msgid ""
+"Once the host has been configured the repos containing the OpenStack-Helm "
+"charts should be cloned:"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:29
+msgid "OSH Proxy & DNS Configuration"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:33
+msgid ""
+"If you are not deploying OSH behind a proxy, skip this step and continue "
+"with \"Deploy Kubernetes & Helm\"."
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:36
+msgid ""
+"In order to deploy OSH behind a proxy, add the following entries to "
+"``openstack-helm-infra/tools/gate/devel/local-vars.yaml``:"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:47
+#: ../../source/install/developer/requirements-and-host-config.rst:80
+#: ../../source/install/developer/requirements-and-host-config.rst:99
+msgid ""
+"Depending on your specific proxy, https_proxy may be the same as http_proxy. "
+"Refer to your specific proxy documentation."
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:50
+msgid ""
+"By default OSH will use Google DNS Server IPs (8.8.8.8, 8.8.4.4) and will "
+"update resolv.conf as a result. If those IPs are blocked by your proxy, "
+"running the OSH scripts will result in the inability to connect to anything "
+"on the network. These DNS nameserver entries can be changed by updating the "
+"external_dns_nameservers entry in the file ``openstack-helm-infra/tools/"
+"images/kubeadm-aio/assets/opt/playbooks/vars.yaml``."
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:63
+msgid "These values can be retrieved by running:"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:70
+msgid "Deploy Kubernetes & Helm"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:72
+msgid ""
+"You may now deploy kubernetes, and helm onto your machine, first move into "
+"the ``openstack-helm`` directory and then run the following:"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:85
+msgid ""
+"This command will deploy a single node KubeADM administered cluster. This "
+"will use the parameters in ``${OSH_INFRA_PATH}/playbooks/vars.yaml`` to "
+"control the deployment, which can be over-ridden by adding entries to "
+"``${OSH_INFRA_PATH}/tools/gate/devel/local-vars.yaml``."
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:91
+msgid "Helm Chart Installation"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:93
+msgid ""
+"Using the Helm packages previously pushed to the local Helm repository, run "
+"the following commands to instruct tiller to create an instance of the given "
+"chart. During installation, the helm client will print useful information "
+"about resources created, the state of the Helm releases, and whether any "
+"additional configuration steps are necessary."
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:100
+msgid "Install OpenStack-Helm"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:102
+msgid ""
+"The following commands all assume that they are run from the ``openstack-"
+"helm`` directory and the repos have been cloned as above."
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:106
+#: ../../source/install/multinode.rst:74
+msgid "Setup Clients on the host and assemble the charts"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:108
+#: ../../source/install/multinode.rst:76
+msgid ""
+"The OpenStack clients and Kubernetes RBAC rules, along with assembly of the "
+"charts can be performed by running the following commands:"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:122
+#: ../../source/install/multinode.rst:91
+msgid "Deploy the ingress controller"
+msgstr ""
+
+#: ../../source/install/developer/kubernetes-and-common-setup.rst:134
+msgid ""
+"To continue to deploy OpenStack on Kubernetes via OSH, see :doc:`Deploy NFS<."
+"/deploy-with-nfs>` or :doc:`Deploy Ceph<./deploy-with-ceph>`."
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:3
+msgid "Requirements and Host Configuration"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:6
+#: ../../source/install/ext-dns-fqdn.rst:6
+#: ../../source/install/kubernetes-gate.rst:6
+#: ../../source/install/multinode.rst:6
+msgid "Overview"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:8
+msgid ""
+"Below are some instructions and suggestions to help you get started with a "
+"Kubeadm All-in-One environment on Ubuntu 18.04. Other supported versions of "
+"Linux can also be used, with the appropriate changes to package installation."
+""
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:17
+msgid "System Requirements"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:19
+msgid "The recommended minimum system requirements for a full deployment are:"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:21
+msgid "16GB of RAM"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:22
+msgid "8 Cores"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:23
+#: ../../source/install/developer/requirements-and-host-config.rst:29
+msgid "48GB HDD"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:25
+msgid ""
+"For a deployment without cinder and horizon the system requirements are:"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:27
+msgid "8GB of RAM"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:28
+msgid "4 Cores"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:31
+msgid "This guide covers the minimum number of requirements to get started."
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:33
+msgid ""
+"All commands below should be run as a normal user, not as root. Appropriate "
+"versions of Docker, Kubernetes, and Helm will be installed by the playbooks "
+"used below, so there's no need to install them ahead of time."
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:37
+msgid ""
+"By default the Calico CNI will use ``192.168.0.0/16`` and Kubernetes "
+"services will use ``10.96.0.0/16`` as the CIDR for services. Check that "
+"these CIDRs are not in use on the development node before proceeding, or "
+"adjust as required."
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:43
+msgid "Host Configuration"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:45
+msgid ""
+"OpenStack-Helm uses the hosts networking namespace for many pods including, "
+"Ceph, Neutron and Nova components. For this, to function, as expected pods "
+"need to be able to resolve DNS requests correctly. Ubuntu Desktop and some "
+"other distributions make use of ``mdns4_minimal`` which does not operate as "
+"Kubernetes expects with its default TLD of ``.local``. To operate at "
+"expected either change the ``hosts`` line in the ``/etc/nsswitch.conf``, or "
+"confirm that it matches:"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:58
+msgid "Host Proxy & DNS Configuration"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:62
+msgid "If you are not deploying OSH behind a proxy, skip this step."
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:64
+msgid ""
+"Set your local environment variables to use the proxy information. This "
+"involves adding or setting the following values in ``/etc/environment``:"
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:83
+msgid ""
+"Your changes to `/etc/environment` will not be applied until you source them:"
+""
+msgstr ""
+
+#: ../../source/install/developer/requirements-and-host-config.rst:89
+msgid ""
+"OSH runs updates for local apt packages, so we will need to set the proxy "
+"for apt as well by adding these lines to `/etc/apt/apt.conf`:"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:3
+msgid "External DNS to FQDN/Ingress"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:8
+msgid ""
+"In order to access your OpenStack deployment on Kubernetes we can use the "
+"Ingress Controller or NodePorts to provide a pathway in. A background on "
+"Ingress, OpenStack-Helm fully qualified domain name (FQDN) overrides, "
+"installation, examples, and troubleshooting will be discussed here."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:14
+msgid "Ingress"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:16
+msgid ""
+"OpenStack-Helm utilizes the `Kubernetes Ingress Controller <https://"
+"kubernetes.io/docs/concepts/services-networking/ingress/>`__"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:19
+msgid ""
+"An Ingress is a collection of rules that allow inbound connections to reach "
+"the cluster services."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:30
+msgid ""
+"It can be configured to give services externally-reachable URLs, load "
+"balance traffic, terminate SSL, offer name based virtual hosting, and more."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:33
+msgid ""
+"Essentially the use of Ingress for OpenStack-Helm is an Nginx proxy service. "
+"Ingress (Nginx) is accessible by your cluster public IP - e.g. the IP "
+"associated with ``kubectl get pods -o wide --all-namespaces | grep ingress-"
+"api`` Ingress/Nginx will be listening for server name requests of "
+"\"keystone\" or \"keystone.openstack\" and will route those requests to the "
+"proper internal K8s Services. These public listeners in Ingress must match "
+"the external DNS that you will set up to access your OpenStack deployment. "
+"Note each rule also has a Service that directs Ingress Controllers allow "
+"access to the endpoints from within the cluster."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:44
+msgid "External DNS and FQDN"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:46
+msgid ""
+"Prepare ahead of time your FQDN and DNS layouts. There are a handful of "
+"OpenStack endpoints you will want to expose for API and Dashboard access."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:49
+msgid ""
+"Update your lab/environment DNS server with your appropriate host values "
+"creating A Records for the edge node IP's and various FQDN's. Alternatively "
+"you can test these settings locally by editing your ``/etc/hosts``. Below is "
+"an example with a dummy domain ``os.foo.org`` and dummy Ingress IP ``1.2.3."
+"4``."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:66
+msgid "The default FQDN's for OpenStack-Helm are"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:77
+msgid ""
+"We want to change the **public** configurations to match our DNS layouts "
+"above. In each Chart ``values.yaml`` is a ``endpoints`` configuration that "
+"has ``host_fqdn_override``'s for each API that the Chart either produces or "
+"is dependent on. `Read more about how Endpoints are developed <https://docs."
+"openstack.org/openstack-helm/latest/devref/endpoints.html>`__. Note while "
+"Glance Registry is listening on a Ingress http endpoint, you will not need "
+"to expose the registry for external services."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:86 ../../source/install/index.rst:2
+msgid "Installation"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:88
+msgid ""
+"Implementing the FQDN overrides **must** be done at install time. If you run "
+"these as helm upgrades, Ingress will notice the updates though none of the "
+"endpoint build-out jobs will run again, unless they are cleaned up manually "
+"or using a tool like Armada."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:92
+msgid ""
+"Two similar options exist to set the FQDN overrides for External DNS mapping."
+""
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:94
+msgid ""
+"**First**, edit the ``values.yaml`` for Neutron, Glance, Horizon, Keystone, "
+"and Nova."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:96
+msgid "Using Horizon as an example, find the ``endpoints`` config."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:98
+msgid ""
+"For ``identity`` and ``dashboard`` at ``host_fdqn_override.public`` replace "
+"``null`` with the value as ``keystone.os.foo.org`` and ``horizon.os.foo."
+"org``"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:125
+msgid ""
+"After making the configuration changes, run a ``make`` and then install as "
+"you would from AIO or MultiNode instructions."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:128
+msgid ""
+"**Second** option would be as ``--set`` flags when calling ``helm install``"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:130
+msgid ""
+"Add to the Install steps these flags - also adding a shell environment "
+"variable to save on repeat code."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:144
+msgid ""
+"Note if you need to make a DNS change, you will have to do uninstall (``helm "
+"delete <chart>``) and install again."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:147
+msgid ""
+"Once installed, access the API's or Dashboard at `http://horizon.os.foo.org`"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:151
+msgid "Examples"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:153
+msgid "Code examples below."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:155
+msgid ""
+"If doing an `AIO install <https://docs.openstack.org/openstack-helm/latest/"
+"install/developer/index.html>`__, all the ``--set`` flags"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:197
+msgid "**Review the Ingress configuration.**"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:199
+msgid "Get the Nginx configuration from the Ingress Pod:"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:206
+msgid ""
+"Look for *server* configuration with a *server_name* matching your desired "
+"FQDN"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:222
+msgid "**Check Chart Status**"
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:224
+msgid "Get the ``helm status`` of your chart."
+msgstr ""
+
+#: ../../source/install/ext-dns-fqdn.rst:231
+msgid "Verify the *v1beta1/Ingress* resource has a Host with your FQDN value"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:3
+msgid "Gate-Based Kubernetes"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:8
+msgid ""
+"You can use any Kubernetes deployment tool to bring up a working Kubernetes "
+"cluster for use with OpenStack-Helm. This guide describes how to simply "
+"stand up a multinode Kubernetes cluster via the OpenStack-Helm gate scripts, "
+"which use KubeADM and Ansible. Although this cluster won't be production-"
+"grade, it will serve as a quick starting point in a lab or proof-of-concept "
+"environment."
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:16
+msgid "OpenStack-Helm-Infra KubeADM deployment"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:18
+msgid "On the worker nodes:"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:29
+msgid "SSH-Key preparation"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:31
+msgid ""
+"Create an ssh-key on the master node, and add the public key to each node "
+"that you intend to join the cluster."
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:35
+msgid "To generate the key you can use ``ssh-keygen -t rsa``"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:36
+msgid ""
+"To copy the ssh key to each node, this can be accomplished with the ``ssh-"
+"copy-id`` command, for example: *ssh-copy-id ubuntu@192.168.122.178*"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:39
+msgid ""
+"Copy the key: ``sudo cp ~/.ssh/id_rsa /etc/openstack-helm/deploy-key.pem``"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:40
+msgid ""
+"Set correct ownership: ``sudo chown ubuntu /etc/openstack-helm/deploy-key."
+"pem``"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:43
+msgid ""
+"Test this by ssh'ing to a node and then executing a command with 'sudo'. "
+"Neither operation should require a password."
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:49
+msgid ""
+"Once the host has been configured the repos containing the OpenStack-Helm "
+"charts should be cloned onto each node in the cluster:"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:63
+msgid "Create an inventory file"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:65
+msgid "On the master node create an inventory file for the cluster:"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:68
+msgid ""
+"node_one, node_two and node_three below are all worker nodes, children of "
+"the master node that the commands below are executed on."
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:103
+msgid "Create an environment file"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:105
+msgid "On the master node create an environment file for the cluster:"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:118
+msgid ""
+"Additional configuration variables can be found `here <https://github.com/"
+"openstack/openstack-helm-infra/blob/master/roles/deploy-kubeadm-aio-common/"
+"defaults/main.yml>`_. In particular, ``kubernetes_cluster_pod_subnet`` can "
+"be used to override the pod subnet set up by Calico (the default container "
+"SDN), if you have a preexisting network that conflicts with the default pod "
+"subnet of 192.168.0.0/16."
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:125
+msgid ""
+"This installation, by default will use Google DNS servers, 8.8.8.8 or 8.8.4."
+"4 and updates resolv.conf. These DNS nameserver entries can be changed by "
+"updating file ``/opt/openstack-helm-infra/tools/images/kubeadm-aio/assets/"
+"opt/playbooks/vars.yaml`` under section ``external_dns_nameservers``. This "
+"change must be done on each node in your cluster."
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:133
+msgid "Run the playbooks"
+msgstr ""
+
+#: ../../source/install/kubernetes-gate.rst:135
+msgid "On the master node run the playbooks:"
+msgstr ""
+
+#: ../../source/install/multinode.rst:3
+msgid "Multinode"
+msgstr ""
+
+#: ../../source/install/multinode.rst:8
+msgid ""
+"In order to drive towards a production-ready OpenStack solution, our goal is "
+"to provide containerized, yet stable `persistent volumes <https://kubernetes."
+"io/docs/concepts/storage/persistent-volumes/>`_ that Kubernetes can use to "
+"schedule applications that require state, such as MariaDB (Galera). Although "
+"we assume that the project should provide a \"batteries included\" approach "
+"towards persistent storage, we want to allow operators to define their own "
+"solution as well. Examples of this work will be documented in another "
+"section, however evidence of this is found throughout the project. If you "
+"find any issues or gaps, please create a `story <https://storyboard."
+"openstack.org/#!/project/886>`_ to track what can be done to improve our "
+"documentation."
+msgstr ""
+
+#: ../../source/install/multinode.rst:21
+msgid ""
+"Please see the supported application versions outlined in the `source "
+"variable file <https://github.com/openstack/openstack-helm-infra/blob/master/"
+"roles/build-images/defaults/main.yml>`_."
+msgstr ""
+
+#: ../../source/install/multinode.rst:24
+msgid ""
+"Other versions and considerations (such as other CNI SDN providers), config "
+"map data, and value overrides will be included in other documentation as we "
+"explore these options further."
+msgstr ""
+
+#: ../../source/install/multinode.rst:28
+msgid ""
+"The installation procedures below, will take an administrator from a new "
+"``kubeadm`` installation to OpenStack-Helm deployment."
+msgstr ""
+
+#: ../../source/install/multinode.rst:31
+msgid ""
+"Many of the default container images that are referenced across OpenStack-"
+"Helm charts are not intended for production use; for example, while LOCI and "
+"Kolla can be used to produce production-grade images, their public reference "
+"images are not prod-grade.  In addition, some of the default images use "
+"``latest`` or ``master`` tags, which are moving targets and can lead to "
+"unpredictable behavior.  For production-like deployments, we recommend "
+"building custom images, or at minimum caching a set of known images, and "
+"incorporating them into OpenStack-Helm via values overrides."
+msgstr ""
+
+#: ../../source/install/multinode.rst:40
+msgid ""
+"Until the Ubuntu kernel shipped with 16.04 supports CephFS subvolume mounts "
+"by default the `HWE Kernel <../troubleshooting/ubuntu-hwe-kernel.html>`__ is "
+"required to use CephFS."
+msgstr ""
+
+#: ../../source/install/multinode.rst:45
+msgid "Kubernetes Preparation"
+msgstr ""
+
+#: ../../source/install/multinode.rst:47
+msgid ""
+"You can use any Kubernetes deployment tool to bring up a working Kubernetes "
+"cluster for use with OpenStack-Helm. For production deployments, please "
+"choose (and tune appropriately) a highly-resilient Kubernetes distribution, "
+"e.g.:"
+msgstr ""
+
+#: ../../source/install/multinode.rst:52
+msgid ""
+"`Airship <https://airshipit.org/>`_, a declarative open cloud infrastructure "
+"platform"
+msgstr ""
+
+#: ../../source/install/multinode.rst:54
+msgid ""
+"`KubeADM <https://kubernetes.io/docs/setup/independent/high-availability/"
+">`_, the foundation of a number of Kubernetes installation solutions"
+msgstr ""
+
+#: ../../source/install/multinode.rst:57
+msgid ""
+"For a lab or proof-of-concept environment, the OpenStack-Helm gate scripts "
+"can be used to quickly deploy a multinode Kubernetes cluster using KubeADM "
+"and Ansible. Please refer to the deployment guide `here <./kubernetes-gate."
+"html>`__."
+msgstr ""
+
+#: ../../source/install/multinode.rst:62
+msgid ""
+"Managing and configuring a Kubernetes cluster is beyond the scope of "
+"OpenStack-Helm and this guide."
+msgstr ""
+
+#: ../../source/install/multinode.rst:66
+msgid "Deploy OpenStack-Helm"
+msgstr ""
+
+#: ../../source/install/multinode.rst:69
+msgid ""
+"The following commands all assume that they are run from the ``/opt/"
+"openstack-helm`` directory."
+msgstr ""
+
+#: ../../source/install/multinode.rst:108
+msgid "Create loopback devices for CEPH"
+msgstr ""
+
+#: ../../source/install/multinode.rst:110
+msgid ""
+"Create two loopback devices for ceph as one disk for OSD data and other disk "
+"for block DB and block WAL. If loop0 and loop1  devices are busy in your "
+"case , feel free to change them in parameters by using --ceph-osd-data and --"
+"ceph-osd-dbwal options."
+msgstr ""
+
+#: ../../source/install/multinode.rst:122
+msgid ""
+"The script below configures Ceph to use loopback devices created in previous "
+"step as backend for ceph osds. To configure a custom block device-based "
+"backend, please refer to the ``ceph-osd`` `values.yaml <https://github.com/"
+"openstack/openstack-helm/blob/master/ceph-osd/values.yaml>`_."
+msgstr ""
+
+#: ../../source/install/multinode.rst:126
+msgid ""
+"Additional information on Kubernetes Ceph-based integration can be found in "
+"the documentation for the `CephFS <https://github.com/kubernetes-incubator/"
+"external-storage/blob/master/ceph/cephfs/README.md>`_ and `RBD <https://"
+"github.com/kubernetes-incubator/external-storage/blob/master/ceph/rbd/README."
+"md>`_ storage provisioners, as well as for the alternative `NFS <https://"
+"github.com/kubernetes-incubator/external-storage/blob/master/nfs/README."
+"md>`_ provisioner."
+msgstr ""
+
+#: ../../source/install/multinode.rst:133
+msgid ""
+"The upstream Ceph image repository does not currently pin tags to specific "
+"Ceph point releases.  This can lead to unpredictable results in long-lived "
+"deployments.  In production scenarios, we strongly recommend overriding the "
+"Ceph images to use either custom built images or controlled, cached images."
+msgstr ""
+
+#: ../../source/install/multinode.rst:140
+msgid ""
+"The `./tools/deployment/multinode/kube-node-subnet.sh` script requires "
+"docker to run."
+msgstr ""
+
+#: ../../source/install/multinode.rst:154
+msgid "Activate the openstack namespace to be able to use Ceph"
+msgstr ""
+
+#: ../../source/install/multinode.rst:310
+msgid "Deploy Barbican"
+msgstr ""
+
+#: ../../source/install/multinode.rst:323
+msgid "Configure OpenStack"
+msgstr ""
+
+#: ../../source/install/multinode.rst:325
+msgid ""
+"Configuring OpenStack for a particular production use-case is beyond the "
+"scope of this guide. Please refer to the OpenStack `Configuration <https://"
+"docs.openstack.org/latest/configuration/>`_ documentation for your selected "
+"version of OpenStack to determine what additional values overrides should be "
+"provided to the OpenStack-Helm charts to ensure appropriate networking, "
+"security, etc. is in place."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:11
+msgid "Deploy tap-as-a-service (TaaS) Neutron / Dashboard plugin"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:13
+msgid ""
+"This guide explains how to deploy tap-as-a-service (TaaS) Neutron plugin and "
+"TaaS Dashboard plugin in Neutron and Horizon charts respectively."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:16
+msgid ""
+"TaaS plugin provides a mechanism to mirror certain traffic (for example "
+"tagged with specific VLANs) from a source VM to any traffic analyzer VM. "
+"When packet will be forwarded, the original value of source and target ip/"
+"ports information will not be altered and the system administrator will be "
+"able to run, for ex. tcpdump, on the target VM to trace these packets."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:22
+msgid "For more details, refer to TaaS specification: Tap-as-a-service_."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:28
+msgid "TaaS Architecture"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:30
+msgid ""
+"As any other Neutron plugin, TaaS neutron plugin functionality consists of "
+"following modules:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:36
+msgid ""
+"**TaaS Plugin**: This is the front-end of TaaS which runs on controller node "
+"(Neutron server). This serves TaaS APIs and stores/retrieves TaaS "
+"configuration state to/from Neutron TaaS DB."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:40
+msgid ""
+"**TaaS Agent, TaaS OVS Driver and TaaS SR-IOV Driver**: This forms the back-"
+"end of TaaS which runs as a ML2 agent extension on compute nodes. It handles "
+"the RPC calls made by TaaS Plugin and configures the mechanism driver, i.e. "
+"OpenVSwitch or SR-IOV Nic Switch."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:45
+msgid ""
+"**TaaS Dashboard Plugin**: Horizon Plugin which adds GUI panels for TaaS "
+"resources in the Horizon Dashboard."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:50
+msgid "Prepare LOCI images"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:52
+msgid ""
+"Before deploying TaaS and/or TaaS Dashboard, it needs to be added in Neutron "
+"and/or Horizon LOCI images."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:55
+msgid "This is a two step process, i.e."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:57
+msgid ""
+"Prepare a requirements LOCI image with Neutron TaaS and TaaS Dashboard code "
+"installed."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:60
+msgid ""
+"Prepare Neutron or Horizon LOCI image using this requirements image as :code:"
+"`docker build --build-arg WHEELS` command argument."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:64
+msgid "Requirements LOCI image"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:66
+msgid "Create a patchset for ``openstack/requirements`` repo"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:68
+msgid ""
+"Add TaaS and TaaS dashboard dependencies in :code:`upper-constraints.txt` "
+"file in :code:`openstack/requirements` repo, i.e. https://opendev.org/"
+"openstack/requirements"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:80
+msgid ""
+"For example if gerrit refspec for this commit is \"refs/changes/xx/xxxxxx/"
+"x\", so export the :code:`REQUIREMENTS_REF_SPEC` variable as follows:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:90
+msgid "Build the requirements LOCI image using above commit"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:92
+msgid ""
+"Use it as ``docker build --build-arg PROJECT_REF=${REQUIREMENTS_REF_SPEC}`` "
+"command argument to build the requirements LOCI image."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:97
+msgid "Neutron and Horizon LOCI images"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:99
+msgid "Create a patchset for ``openstack/neutron`` repo"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:101
+msgid ""
+"Add TaaS dependency in ``requirements.txt`` file in ``openstack/neutron`` "
+"repo, i.e. https://opendev.org/openstack/neutron"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:111
+msgid ""
+"For example if gerrit refspec for this commit is \"refs/changes/xx/xxxxxx/"
+"x\"; so export the :code:`NEUTRON_REF_SPEC` variable as follows:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:121
+msgid "Create a patchset for ``openstack/horizon`` repo"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:123
+msgid ""
+"Add TaaS Dashboard dependency in ``requirements.txt`` file in ``openstack/"
+"horizon`` repo, i.e. https://opendev.org/openstack/horizon"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:133
+msgid ""
+"For example if gerrit refspec for this commit is \"refs/changes/xx/xxxxxx/"
+"x\"; so export the :code:`HORIZON_REF_SPEC` variable as follows:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:143
+msgid "Putting it all together"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:145
+msgid ""
+"Apart from the variables above with gerrit refspec values, additionally "
+"export following environment variables with values as applicable:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:156
+msgid ""
+"Use above gerrit commits to prepare the LOCI images using following script:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:253
+msgid "Deploy TaaS Plugin"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:256
+msgid "Override images in Neutron chart"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:258
+msgid ""
+"Override the :code:`images` section parameters for Neutron chart with the "
+"custom LOCI image's tag, prepared as explained in above sections."
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:276
+msgid "Configure TaaS in Neutron chart"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:278
+msgid ""
+"While deploying neutron-server and L2 agents, TaaS should be enabled in "
+"``conf: neutron`` section to add TaaS as a service plugin; in ``conf: "
+"plugins`` section to add TaaS as a L2 agent extension; in ``conf: "
+"taas_plugin`` section to configure the ``service_provider`` endpoint used by "
+"Neutron TaaS plugin:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:302
+msgid "Deploy TaaS Dashboard Plugin"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:304
+msgid ""
+"TaaS dashboard plugin can be deployed simply by using custom LOCI images "
+"having TaaS Dashboard code installed (as explained in above sections), i.e. "
+"override the :code:`images` section parameters for Horizon charts:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:317
+msgid "Set log level for TaaS"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:319
+msgid ""
+"Default log level for Neutron TaaS is :code:`INFO`. For changing it, "
+"override following parameter:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:331
+msgid "References"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:332
+msgid "Neutron TaaS support in Openstack-Helm commits:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:334
+msgid "https://review.openstack.org/#/c/597200/"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:335
+msgid "https://review.openstack.org/#/c/607392/"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:337
+msgid "Add TaaS panel to Horizon Dashboard:"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:339
+msgid "https://review.openstack.org/#/c/621606/"
+msgstr ""
+
+#: ../../source/install/plugins/deploy-tap-as-a-service-neutron-plugin.rst:None
+msgid "Neutron TaaS Architecture"
+msgstr ""
+
+#: ../../source/install/plugins/index.rst:2
+msgid "Plugins"
+msgstr ""
+

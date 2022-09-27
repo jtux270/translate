@@ -1,0 +1,222 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Дронова Юлия <juliette.tux@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-05 08:24+1000\n"
+"PO-Revision-Date: 2022-03-09 20:30+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#: aodh/api/controllers/v2/alarms.py:93
+#, python-format
+msgid "Alarm quota exceeded for user %(u)s on project %(p)s"
+msgstr ""
+"Превышена квота на сигналы оповещения для пользователя %(u)s проекта %(p)s"
+
+#: aodh/api/controllers/v2/alarms.py:181
+#, python-format
+msgid "Timezone %s is not valid"
+msgstr "Недопустимый часовой пояс %s"
+
+#: aodh/api/controllers/v2/alarms.py:312
+msgid "Time constraint names must be unique for a given alarm."
+msgstr ""
+"Для указанного сигнала оповещения имена временных ограничений должны быть"
+" уникальными."
+
+#: aodh/api/controllers/v2/alarms.py:322
+#, python-format
+msgid "%(rule)s must be set for %(type)s type alarm"
+msgstr ""
+"для сигналов оповещения с типом %(type)s необходимо настроить правило(а) "
+"%(rule)s"
+
+#: aodh/api/controllers/v2/alarms.py:333
+#, python-format
+msgid "%(rule1)s and %(rule2)s cannot be set at the same time"
+msgstr "%(rule1)s и %(rule2)s не могут быть настроены одновременно"
+
+#: aodh/api/controllers/v2/alarms.py:354
+#, python-format
+msgid "%(name)s count exceeds maximum value %(maximum)d"
+msgstr "количество %(name)s превышает максимальное значение %(maximum)d"
+
+#: aodh/api/controllers/v2/alarms.py:366
+#, python-format
+msgid "Unable to parse action %s"
+msgstr "Невозможно проанализировать действие %s"
+
+#: aodh/api/controllers/v2/alarms.py:369
+#, python-format
+msgid "Unsupported action %s"
+msgstr "Действие не поддерживается: %s"
+
+#: aodh/api/controllers/v2/alarms.py:372
+#, python-format
+msgid "You are not authorized to create action: %s"
+msgstr "Отсутствует авторизация для создания действия: %s"
+
+#: aodh/api/controllers/v2/alarms.py:458
+msgid "trust URL cannot contain a trust ID."
+msgstr "доверенный URL не может содержать ID доверия."
+
+#: aodh/api/controllers/v2/alarms.py:683 aodh/api/controllers/v2/alarms.py:850
+msgid "Alarm incorrect"
+msgstr "Неверный сигнал оповещения"
+
+#: aodh/api/controllers/v2/alarms.py:745
+msgid "state invalid"
+msgstr "недопустимое состояние"
+
+#: aodh/api/controllers/v2/base.py:49
+#, python-format
+msgid "Not Authorized to access %(aspect)s %(id)s"
+msgstr "Отсутствует авторизация на доступ к %(aspect)s %(id)s"
+
+#: aodh/api/controllers/v2/base.py:201
+#, python-format
+msgid ""
+"Unable to convert the value %(value)s to the expected data type %(type)s."
+msgstr "Не удалось преобразовать %(value)s в ожидаемый тип данных %(type)s."
+
+#: aodh/api/controllers/v2/base.py:206
+#, python-format
+msgid ""
+"The data type %(type)s is not supported. The supported data type list is:"
+" %(supported)s"
+msgstr ""
+"Тип данных %(type)s не поддерживается. Список поддерживаемых типов: "
+"%(supported)s"
+
+#: aodh/api/controllers/v2/base.py:211
+#, python-format
+msgid ""
+"Unexpected exception converting %(value)s to the expected data type "
+"%(type)s."
+msgstr ""
+"Непредвиденное исключение при преобразовании %(value)s в ожидаемый тип данных"
+" %(type)s."
+
+#: aodh/api/controllers/v2/base.py:221
+#, python-format
+msgid "Alarm %s not found"
+msgstr "Сигнал оповещения %s не найден"
+
+#: aodh/api/controllers/v2/base.py:223
+#, python-format
+msgid "Alarm %(alarm_id)s not found in project %(project)s"
+msgstr "Сигнал оповещения %(alarm_id)s не найден в проекте %(project)s"
+
+#: aodh/api/controllers/v2/query.py:204
+#, python-format
+msgid "Filter expression not valid: %s"
+msgstr "Недопустимое выражение фильтра: %s"
+
+#: aodh/api/controllers/v2/query.py:219
+#, python-format
+msgid "Order-by expression not valid: %s"
+msgstr "Недопустимое выражение сортировки по признаку: %s"
+
+#: aodh/api/controllers/v2/query.py:229
+msgid "Limit should be positive"
+msgstr "Лимит должен быть положительным числом"
+
+#: aodh/api/controllers/v2/query.py:338
+#, python-format
+msgid "Failed to parse the timestamp value %s"
+msgstr "Не удалось проанализировать значение временной метки %s"
+
+#: aodh/api/controllers/v2/alarm_rules/composite.py:25
+#, python-format
+msgid ""
+"Invalid input composite rule: %s, it should be a dict with an \"and\" or "
+"\"or\" as key, and the value of dict should be a list of basic threshold "
+"rules or sub composite rules, can be nested."
+msgstr ""
+"Недопустимое составное правило для ввода: %s. Правило должно представлять"
+" собой словарь с ключевыми «и» или «или», и значение словаря должно"
+" представлять собой список базовых правил порога или подсоставных правил;"
+" список может быть вложенным."
+
+#: aodh/api/controllers/v2/alarm_rules/composite.py:58
+msgid "Threshold rules should be combined with \"and\" or \"or\""
+msgstr "Пороговые правила должны комбинироваться с помощью «и» или «или»"
+
+#: aodh/api/controllers/v2/alarm_rules/composite.py:67
+msgid "type must be set in every rule"
+msgstr "тип должен быть задан в каждом правиле"
+
+#: aodh/api/controllers/v2/alarm_rules/composite.py:71
+#, python-format
+msgid ""
+"Unsupported sub-rule type :%(rule)s in composite rule, should be one of: "
+"%(plugins)s"
+msgstr ""
+"Неподдерживаемый тип подпункта правила :%(rule)s в составном правиле, но"
+" должно "
+"быть что-то одно из: %(plugins)s"
+
+#: aodh/api/controllers/v2/alarm_rules/composite.py:89
+#, python-format
+msgid "%s is not JSON serializable"
+msgstr "%s нельзя сериализовать в JSON"
+
+#: aodh/api/controllers/v2/alarm_rules/event.py:59
+#, python-format
+msgid "Query value or traits invalid: %s"
+msgstr "Недопустимое значение запроса или признаков: %s"
+
+#: aodh/api/controllers/v2/alarm_rules/event.py:63
+#, python-format
+msgid "Alarm when %s event occurred."
+msgstr "Запускать сигнал оповещения при возникновении события %s"
+
+#: aodh/api/controllers/v2/alarm_rules/threshold.py:93
+#, python-format
+msgid ""
+"Alarm when %(meter_name)s is %(comparison_operator)s a %(statistic)s of "
+"%(threshold)s over %(period)s seconds"
+msgstr ""
+"Оповещать, если %(meter_name)s является %(comparison_operator)s %(statistic)s "
+"пороговых значений %(threshold)s за период %(period)s (в секундах)."
+
+#: aodh/cmd/status.py:35
+msgid "policy File JSON to YAML Migration"
+msgstr "файл политики миграции с JSON на YAML"
+
+#: aodh/evaluator/ceilometer.py:131
+msgid "alarm stats retrieval failed"
+msgstr "не удалось получить статистику сигналов оповещения"
+
+#: aodh/notifier/log.py:31
+#, python-format
+msgid ""
+"Notifying alarm %(alarm_name)s %(alarm_id)s of %(severity)s priority from"
+" %(previous)s to %(current)s with action %(action)s because %(reason)s."
+msgstr ""
+"Уведомляется триггер сигнала оповещения %(alarm_name)s %(alarm_id)s с"
+" приоритетом %(severity)s, c  %(previous)s до %(current)s с действием "
+"%(action)s по причине %(reason)s."
+
+#: aodh/storage/models.py:80
+msgid "timestamp should be datetime object"
+msgstr "временная метка должна быть объектом datetime"
+
+#: aodh/storage/models.py:82
+msgid "state_timestamp should be datetime object"
+msgstr "state_timestamp должен быть объектом datetime"
+

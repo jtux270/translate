@@ -1,0 +1,3240 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Дронова Юлия <juliette.tux@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 22:44+0000\n"
+"PO-Revision-Date: 2022-03-01 19:35+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:32
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:52
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:100
+#: content/data_processing/clusters/cluster_templates/views.py:139
+#: content/data_processing/clusters/cluster_templates/views.py:155
+#: content/data_processing/clusters/cluster_templates/views.py:174
+#: content/data_processing/clusters/templates/cluster_templates/import.html:3
+#: content/data_processing/clusters/templates/cluster_templates/import_nodegroups.html:3
+msgid "Import Cluster Template"
+msgstr "Импорт шаблона кластера"
+
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:40
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:40
+msgid "Template File"
+msgstr "Файл шаблона"
+
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:57
+#: content/data_processing/clusters/cluster_templates/tables.py:34
+#: content/data_processing/clusters/cluster_templates/tables.py:175
+#: content/data_processing/clusters/clusters/tables.py:37
+#: content/data_processing/clusters/clusters/tables.py:256
+#: content/data_processing/clusters/clusters/tabs.py:189
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:57
+#: content/data_processing/clusters/nodegroup_templates/tables.py:32
+#: content/data_processing/clusters/nodegroup_templates/tables.py:146
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:5
+#: content/data_processing/clusters/templates/clusters/_details.html:5
+#: content/data_processing/clusters/templates/clusters/_health_checks_table.html:8
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:5
+#: content/data_processing/data_plugins/templates/data_plugins/_details.html:5
+#: content/data_processing/jobs/data_sources/tables.py:90
+#: content/data_processing/jobs/data_sources/workflows/create.py:29
+#: content/data_processing/jobs/job_binaries/forms.py:61
+#: content/data_processing/jobs/job_binaries/tables.py:110
+#: content/data_processing/jobs/job_templates/tables.py:31
+#: content/data_processing/jobs/job_templates/tables.py:127
+#: content/data_processing/jobs/job_templates/workflows/create.py:74
+#: content/data_processing/jobs/templates/data_sources/_details.html:5
+#: content/data_processing/jobs/templates/job_binaries/_details.html:5
+#: content/data_processing/jobs/templates/job_templates/_details.html:5
+#: content/data_processing/jobs/templates/job_templates/config_template.html:54
+#: content/data_processing/utils/workflow_helpers.py:116
+#: content/data_processing/utils/workflow_helpers.py:135
+msgid "Name"
+msgstr "Имя"
+
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:59
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:59
+msgid ""
+"Name must be provided either here or in the template. If provided in both "
+"places, this one will be used."
+msgstr ""
+"Имя должно быть указано либо здесь, либо в шаблоне. Если оно указано в обоих "
+"местах, будет использоваться имя, указанное здесь."
+
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:82
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:168
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:220
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:135
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:165
+msgid "Could not parse template"
+msgstr "Не удалось проанализировать шаблон"
+
+#: content/data_processing/clusters/cluster_templates/forms/import_forms.py:218
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:163
+msgid "Template JSON contained invalid key"
+msgstr "JSON шаблона содержал недопустимый ключ"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:35
+#: content/data_processing/clusters/cluster_templates/tables.py:179
+#: content/data_processing/clusters/clusters/tables.py:261
+#: content/data_processing/clusters/nodegroup_templates/tables.py:33
+#: content/data_processing/clusters/nodegroup_templates/tables.py:149
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:6
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:19
+#: content/data_processing/clusters/templates/clusters/_configure_general_help.html:6
+#: content/data_processing/clusters/templates/clusters/_details.html:35
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:6
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:46
+#: content/data_processing/data_plugins/tabs.py:98
+#: content/data_processing/data_plugins/workflows/update.py:57
+msgid "Plugin"
+msgstr "Модуль"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:36
+#: content/data_processing/clusters/cluster_templates/tables.py:185
+#: content/data_processing/clusters/clusters/tables.py:268
+#: content/data_processing/clusters/nodegroup_templates/tables.py:34
+#: content/data_processing/clusters/nodegroup_templates/tables.py:155
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:8
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:21
+#: content/data_processing/clusters/templates/clusters/_configure_general_help.html:8
+#: content/data_processing/clusters/templates/clusters/_details.html:37
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:8
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:48
+#: content/data_processing/clusters/wizard/forms.py:69
+#: content/data_processing/jobs/wizard/forms.py:64
+#: content/data_processing/utils/workflow_helpers.py:273
+#: content/data_processing/utils/workflow_helpers.py:279
+msgid "Version"
+msgstr "Версия"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:37
+#: content/data_processing/clusters/cluster_templates/tables.py:191
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:84
+#: content/data_processing/clusters/clusters/workflows/create.py:70
+#: content/data_processing/clusters/image_registry/forms.py:31
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:88
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:15
+#: content/data_processing/clusters/templates/clusters/_details.html:15
+#: content/data_processing/clusters/templates/clusters/_health_checks_table.html:10
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:15
+#: content/data_processing/data_plugins/tables.py:47
+#: content/data_processing/data_plugins/templates/data_plugins/_details.html:9
+#: content/data_processing/data_plugins/templates/data_plugins/_label_details.html:10
+#: content/data_processing/jobs/data_sources/tables.py:96
+#: content/data_processing/jobs/data_sources/workflows/create.py:129
+#: content/data_processing/jobs/job_binaries/forms.py:208
+#: content/data_processing/jobs/job_binaries/tables.py:115
+#: content/data_processing/jobs/job_templates/tables.py:33
+#: content/data_processing/jobs/job_templates/tables.py:133
+#: content/data_processing/jobs/job_templates/workflows/create.py:101
+#: content/data_processing/jobs/templates/data_sources/_details.html:19
+#: content/data_processing/jobs/templates/job_binaries/_details.html:17
+#: content/data_processing/jobs/templates/job_templates/_details.html:17
+#: content/data_processing/utils/workflow_helpers.py:139
+msgid "Description"
+msgstr "Описание"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:42
+#: content/data_processing/clusters/clusters/tables.py:49
+#: content/data_processing/clusters/clusters/views.py:203
+#: content/data_processing/clusters/clusters/workflows/create.py:51
+#: content/data_processing/clusters/clusters/workflows/create.py:207
+#: content/data_processing/clusters/templates/clusters/_create_cluster.html:9
+#: content/data_processing/clusters/templates/clusters/configure.html:3
+#: content/data_processing/clusters/templates/clusters/create.html:3
+#: content/data_processing/clusters/templates/clusters/create_cluster.html:3
+msgid "Launch Cluster"
+msgstr "Запустить кластер"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:63
+#: content/data_processing/clusters/nodegroup_templates/tables.py:67
+msgid "Copy Template"
+msgstr "Копировать шаблон"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:70
+#: content/data_processing/clusters/nodegroup_templates/tables.py:81
+msgid "Export Template"
+msgstr "Экспорт шаблона"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:87
+#: content/data_processing/clusters/nodegroup_templates/tables.py:74
+msgid "Edit Template"
+msgstr "Редактировать шаблон"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:96
+#: content/data_processing/clusters/nodegroup_templates/tables.py:99
+msgid "Delete Template"
+msgid_plural "Delete Templates"
+msgstr[0] "Удалить шаблон"
+msgstr[1] "Удалить шаблоны"
+msgstr[2] "Удалить шаблоны"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:104
+#: content/data_processing/clusters/nodegroup_templates/tables.py:107
+msgid "Deleted Template"
+msgid_plural "Deleted Templates"
+msgstr[0] "Шаблон был удалён"
+msgstr[1] "Шаблоны были удалены"
+msgstr[2] "Шаблоны были удалены"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:115
+#: content/data_processing/clusters/nodegroup_templates/tables.py:39
+msgid "Create Template"
+msgstr "Создать шаблон"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:124
+#: content/data_processing/clusters/nodegroup_templates/tables.py:48
+msgid "Import Template"
+msgstr "Импорт шаблона"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:133
+#: content/data_processing/clusters/cluster_templates/views.py:88
+msgid "Configure Cluster Template"
+msgstr "Настроить шаблон кластера"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:187
+#: content/data_processing/clusters/cluster_templates/tabs.py:90
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:216
+#: content/data_processing/clusters/clusters/tabs.py:138
+msgid "Node Groups"
+msgstr "Группы узлов"
+
+#: content/data_processing/clusters/cluster_templates/tables.py:195
+#: content/data_processing/clusters/cluster_templates/tabs.py:36
+msgid "Cluster Templates"
+msgstr "Шаблоны кластеров"
+
+#: content/data_processing/clusters/cluster_templates/tabs.py:52
+msgid "Unable to fetch cluster template list"
+msgstr "Не удалось получить список шаблонов кластеров"
+
+#: content/data_processing/clusters/cluster_templates/tabs.py:57
+#: content/data_processing/clusters/clusters/tabs.py:58
+#: content/data_processing/clusters/nodegroup_templates/tabs.py:57
+#: content/data_processing/jobs/data_sources/tabs.py:47
+#: content/data_processing/jobs/job_binaries/tabs.py:47
+#: content/data_processing/jobs/job_templates/tabs.py:52
+#: content/data_processing/jobs/jobs/tabs.py:60
+msgid "General Info"
+msgstr "Общие сведения"
+
+#: content/data_processing/clusters/cluster_templates/tabs.py:74
+#: content/data_processing/clusters/clusters/tabs.py:115
+msgid "Configuration Details"
+msgstr "Сведения о конфигурации"
+
+#: content/data_processing/clusters/cluster_templates/tabs.py:111
+msgid "Unable to fetch node group details."
+msgstr "Не удалось получить сведения о группе узлов"
+
+#: content/data_processing/clusters/cluster_templates/views.py:50
+#, python-format
+msgid "Unable to retrieve details for cluster template \"%s\"."
+msgstr "Не удалось получить подробные сведения о шаблоне кластера \"%s\"."
+
+#: content/data_processing/clusters/cluster_templates/views.py:80
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:61
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:321
+#: content/data_processing/clusters/templates/cluster_templates/configure.html:3
+msgid "Create Cluster Template"
+msgstr "Создать шаблон кластера"
+
+#: content/data_processing/clusters/cluster_templates/views.py:96
+msgid "Copy Cluster Template"
+msgstr "Копировать шаблон кластера"
+
+#: content/data_processing/clusters/cluster_templates/views.py:114
+#: content/data_processing/clusters/clusters/views.py:241
+msgid "Unable to fetch cluster template."
+msgstr "Не удалось получить шаблон кластера."
+
+#: content/data_processing/clusters/cluster_templates/views.py:134
+#: content/data_processing/clusters/cluster_templates/views.py:150
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:62
+#: content/data_processing/clusters/nodegroup_templates/views.py:139
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:718
+msgid "Next"
+msgstr "Вперёд"
+
+#: content/data_processing/clusters/cluster_templates/views.py:169
+#: content/data_processing/clusters/nodegroup_templates/views.py:156
+msgid "Import"
+msgstr "Импорт"
+
+#: content/data_processing/clusters/cluster_templates/workflows/copy.py:29
+#, python-format
+msgid "Cluster Template copy %s created"
+msgstr "Была создана копия шаблона кластера %s"
+
+#: content/data_processing/clusters/cluster_templates/workflows/copy.py:117
+msgid "Unable to fetch template to copy."
+msgstr "Не удалось получить шаблон для копирования"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:50
+msgid "Select plugin and hadoop version for cluster template"
+msgstr "Выберите версию модуля и версию hadoop для шаблона кластера"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:63
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:719
+#: content/data_processing/jobs/job_templates/workflows/launch.py:600
+msgid "Created"
+msgstr "Создано"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:64
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:720
+#: content/data_processing/jobs/job_templates/workflows/launch.py:601
+msgid "Could not create"
+msgstr "Не удалось создать"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:82
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:86
+msgid "Template Name"
+msgstr "Имя шаблона"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:89
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:192
+msgid "Auto-configure"
+msgstr "Настроить автоматически"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:90
+msgid ""
+"If selected, instances of a cluster will be automatically configured during "
+"creation. Otherwise you should manually specify configuration values"
+msgstr ""
+"При выбранном параметре, конфигурация экземпляров кластера будет "
+"создаваться автоматически во время создания. В противном случае значения "
+"параметров нужно будет указать вручную."
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:98
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:99
+msgid "cluster template"
+msgstr "шаблон кластера"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:141
+#: content/data_processing/data_plugins/tabs.py:47
+msgid "Details"
+msgstr "Подробности"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:238
+#: content/data_processing/clusters/clusters/workflows/update.py:40
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:464
+msgid "Select Shares"
+msgstr "Выбрать общие ресурсы"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:249
+#: content/data_processing/clusters/clusters/workflows/update.py:77
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:475
+#: content/data_processing/jobs/data_sources/workflows/create.py:156
+#: content/data_processing/jobs/job_binaries/forms.py:267
+msgid "Failed to get list of shares"
+msgstr "Не удалось получить список общих ресурсов"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:259
+#: content/data_processing/clusters/clusters/workflows/update.py:87
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:480
+msgid "Shares"
+msgstr "Общие ресурсы"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:260
+#: content/data_processing/clusters/clusters/workflows/update.py:88
+msgid "Select the manila shares for this cluster"
+msgstr "Выбрать общие ресурсы manila для этого кластера"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:286
+msgid "Domain Name"
+msgstr "Доменное имя"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:295
+msgid "No domain is specified"
+msgstr "Домен не указан"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:304
+msgid "DNS Domain Names"
+msgstr "Доменные имена DNS"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:322
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:535
+#: content/data_processing/jobs/data_sources/workflows/create.py:190
+#: content/data_processing/jobs/job_binaries/views.py:45
+#: content/data_processing/jobs/job_templates/workflows/create.py:225
+#: content/data_processing/jobs/job_templates/workflows/launch.py:599
+msgid "Create"
+msgstr "Создать"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:323
+#, python-format
+msgid "Created Cluster Template %s"
+msgstr "Шаблон кластера %s создан"
+
+#: content/data_processing/clusters/cluster_templates/workflows/create.py:432
+msgid "Cluster template creation failed"
+msgstr "Не удалось создать шаблон кластера"
+
+#: content/data_processing/clusters/cluster_templates/workflows/edit.py:32
+#, python-format
+msgid "Cluster Template %s updated"
+msgstr "Шаблон кластера %s обновлён"
+
+#: content/data_processing/clusters/cluster_templates/workflows/edit.py:34
+#: content/data_processing/clusters/nodegroup_templates/workflows/edit.py:31
+#: content/data_processing/jobs/data_sources/workflows/edit.py:28
+#: content/data_processing/jobs/job_binaries/views.py:65
+msgid "Update"
+msgstr "Обновить"
+
+#: content/data_processing/clusters/cluster_templates/workflows/edit.py:35
+msgid "Edit Cluster Template"
+msgstr "Изменить шаблон кластера"
+
+#: content/data_processing/clusters/cluster_templates/workflows/edit.py:56
+msgid "Unable to fetch template to edit."
+msgstr "Не удалось получить шаблон для редактирования"
+
+#: content/data_processing/clusters/cluster_templates/workflows/edit.py:114
+msgid "Cluster template update failed"
+msgstr "Не удалось обновить шаблон кластера"
+
+#: content/data_processing/clusters/clusters/tables.py:38
+#: content/data_processing/clusters/clusters/tables.py:272
+#: content/data_processing/clusters/templates/clusters/_details.html:17
+#: content/data_processing/clusters/templates/clusters/_event_log.html:11
+#: content/data_processing/clusters/templates/clusters/_event_log.html:34
+#: content/data_processing/clusters/templates/clusters/_health_checks_table.html:7
+#: content/data_processing/jobs/jobs/tables.py:41
+#: content/data_processing/jobs/jobs/tables.py:251
+#: content/data_processing/jobs/templates/jobs/_details.html:5
+msgid "Status"
+msgstr "Статус"
+
+#: content/data_processing/clusters/clusters/tables.py:43
+msgid "Cluster Creation Guide"
+msgstr "Мастер создания кластеров"
+
+#: content/data_processing/clusters/clusters/tables.py:57
+#: content/data_processing/clusters/clusters/views.py:223
+#: content/data_processing/clusters/clusters/workflows/scale.py:37
+#: content/data_processing/clusters/templates/clusters/scale.html:3
+msgid "Scale Cluster"
+msgstr "Масштабировать кластер"
+
+#: content/data_processing/clusters/clusters/tables.py:69
+msgid "Delete Cluster"
+msgid_plural "Delete Clusters"
+msgstr[0] "Удалить кластер"
+msgstr[1] "Удалить кластеры"
+msgstr[2] "Удалить кластеры"
+
+#: content/data_processing/clusters/clusters/tables.py:77
+msgid "Deleted Cluster"
+msgid_plural "Deleted Clusters"
+msgstr[0] "Кластер удалён"
+msgstr[1] "Кластеры удалены"
+msgstr[2] "Кластеры удалены"
+
+#: content/data_processing/clusters/clusters/tables.py:92
+msgid "Start Verification"
+msgid_plural "Start Verifications"
+msgstr[0] "Запустить проверку подлинности"
+msgstr[1] "Запустить проверки подлинности"
+msgstr[2] "Запустить проверки подлинности"
+
+#: content/data_processing/clusters/clusters/tables.py:100
+msgid "Started Verification"
+msgid_plural "Started Verifications"
+msgstr[0] "Проверка подлинности запущена"
+msgstr[1] "Проверки подлинности запущены"
+msgstr[2] "Проверки подлинности запущены"
+
+#: content/data_processing/clusters/clusters/tables.py:115
+msgid "Force Delete Cluster"
+msgid_plural "Force Delete Clusters"
+msgstr[0] "Удалить кластер принудительно"
+msgstr[1] "Удалить кластеры принудительно"
+msgstr[2] "Удалить кластеры принудительно"
+
+#: content/data_processing/clusters/clusters/tables.py:123
+msgid "Force Deleted Cluster"
+msgid_plural "Force Deleted Clusters"
+msgstr[0] "Кластер был принудительно удалён"
+msgstr[1] "Кластеры были принудительно удалены"
+msgstr[2] "Кластеры были принудительно удалены"
+
+#: content/data_processing/clusters/clusters/tables.py:134
+msgid "Update Shares"
+msgstr "Обновить общие ресурсы"
+
+#: content/data_processing/clusters/clusters/tables.py:153
+#: content/data_processing/jobs/jobs/tables.py:137
+msgid "Unable to update row"
+msgstr "Не удалось обновить строку"
+
+#: content/data_processing/clusters/clusters/tables.py:197
+#: content/data_processing/clusters/clusters/views.py:210
+#: content/data_processing/clusters/clusters/workflows/create.py:190
+#: content/data_processing/jobs/job_templates/workflows/launch.py:444
+msgid "Configure Cluster"
+msgstr "Настроить кластер"
+
+#: content/data_processing/clusters/clusters/tables.py:238
+msgid "Checking"
+msgstr "Идёт проверка"
+
+#: content/data_processing/clusters/clusters/tables.py:276
+msgid "Health"
+msgstr "Работоспособность"
+
+#: content/data_processing/clusters/clusters/tables.py:280
+msgid "Instances Count"
+msgstr "Число экземпляров"
+
+#: content/data_processing/clusters/clusters/tables.py:283
+msgid "Uptime"
+msgstr "Время беспрерывной работы"
+
+#: content/data_processing/clusters/clusters/tables.py:287
+#: content/data_processing/clusters/clusters/tabs.py:38
+#: content/data_processing/clusters/panel.py:21
+#: content/data_processing/clusters/templates/clusters/index.html:3
+#: content/data_processing/clusters/views.py:42
+msgid "Clusters"
+msgstr "Кластеры"
+
+#: content/data_processing/clusters/clusters/tabs.py:53
+msgid "Unable to fetch cluster list"
+msgstr "Не удалось получить список кластеров"
+
+#: content/data_processing/clusters/clusters/tabs.py:78
+msgid "Unable to fetch base image details"
+msgstr "Не удалось получить подробные сведения о базовом образе"
+
+#: content/data_processing/clusters/clusters/tabs.py:96
+msgid "Unable to fetch network details"
+msgstr "Не удалось получить подробные сведения о сети"
+
+#: content/data_processing/clusters/clusters/tabs.py:166
+msgid "Unable to get node group details."
+msgstr "Не удалось получить подробные сведения о группе узлов"
+
+#: content/data_processing/clusters/clusters/tabs.py:192
+msgid "Internal IP"
+msgstr "Внутренний IP"
+
+#: content/data_processing/clusters/clusters/tabs.py:195
+msgid "Management IP"
+msgstr "IP управления"
+
+#: content/data_processing/clusters/clusters/tabs.py:199
+msgid "Cluster Instances"
+msgstr "Экземпляры кластера"
+
+#: content/data_processing/clusters/clusters/tabs.py:203
+msgid "Instances"
+msgstr "Экземпляры"
+
+#: content/data_processing/clusters/clusters/tabs.py:228
+msgid "Unable to fetch instance details."
+msgstr "Не удалось получить подробные сведения об экземпляре."
+
+#: content/data_processing/clusters/clusters/tabs.py:233
+msgid "Cluster Events"
+msgstr "События кластера"
+
+#: content/data_processing/clusters/clusters/tabs.py:246
+#: content/data_processing/clusters/templates/clusters/_health_checks_table.html:3
+#: content/data_processing/data_plugins/templates/data_plugins/_label_details.html:3
+msgid "Cluster health checks"
+msgstr "Проверка работоспособности кластера"
+
+#: content/data_processing/clusters/clusters/views.py:53
+#, python-format
+msgid "Unable to retrieve details for cluster \"%s\"."
+msgstr "Не удалось получить подробные сведения о кластере \"%s\"."
+
+#: content/data_processing/clusters/clusters/views.py:112
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: content/data_processing/clusters/clusters/views.py:115
+#: content/data_processing/clusters/clusters/views.py:134
+msgid "Completed Successfully"
+msgstr "Выполнено успешно"
+
+#: content/data_processing/clusters/clusters/views.py:117
+#: content/data_processing/clusters/clusters/views.py:136
+msgid "Failed"
+msgstr "Сбой"
+
+#: content/data_processing/clusters/clusters/views.py:122
+msgid "No info available"
+msgstr "Нет доступных данных"
+
+#: content/data_processing/clusters/clusters/views.py:129
+msgid "In progress"
+msgstr "Выполняется"
+
+#: content/data_processing/clusters/clusters/views.py:178
+#: content/data_processing/clusters/templates/clusters/_details.html:23
+#: content/data_processing/data_plugins/tabs.py:97
+#: content/data_processing/data_plugins/tabs.py:106
+msgid "No description"
+msgstr "Без описания"
+
+#: content/data_processing/clusters/clusters/views.py:256
+#: content/data_processing/clusters/clusters/workflows/update.py:115
+#: content/data_processing/clusters/templates/clusters/update.html:3
+msgid "Update Cluster Shares"
+msgstr "Обновить общие ресурсы кластера"
+
+#: content/data_processing/clusters/clusters/views.py:272
+msgid "Unable to fetch cluster."
+msgstr "Не удалось получить сведения о кластере"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:41
+#: content/data_processing/jobs/job_templates/workflows/launch.py:588
+msgid "Select plugin and hadoop version for cluster"
+msgstr "Выберите версию модуля и версию hadoop для кластера"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:68
+msgid "Cluster Name"
+msgstr "Имя кластера"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:74
+msgid "Cluster Template"
+msgstr "Шаблон кластера"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:79
+msgid "Cluster Count"
+msgstr "Число кластеров"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:82
+msgid "Number of clusters to launch."
+msgstr "Число кластеров для запуска"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:84
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:78
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:165
+#: content/data_processing/clusters/templates/clusters/_details.html:48
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:21
+msgid "Base Image"
+msgstr "Базовый образ"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:88
+#: content/data_processing/clusters/templates/clusters/_details.html:55
+msgid "Keypair"
+msgstr "Пара ключей"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:90
+msgid "Which keypair to use for authentication."
+msgstr "Используемая для аутентификации пара ключей"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:101
+#: content/data_processing/clusters/templates/clusters/_details.html:52
+msgid "Neutron Management Network"
+msgstr "Сеть управления Neutron"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:107
+#: content/data_processing/clusters/clusters/workflows/create.py:109
+msgid "cluster"
+msgstr "кластер"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:129
+msgid "Unable to fetch keypair choices."
+msgstr "Не удалось получить сведения о выборе пар ключей"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:131
+msgid "No keypair"
+msgstr "Без пары ключей"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:151
+msgid "No Templates Available"
+msgstr "Нет доступных шаблонов"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:208
+#: content/data_processing/jobs/job_templates/workflows/launch.py:517
+#: content/data_processing/jobs/job_templates/workflows/launch.py:609
+msgid "Launch"
+msgstr "Запустить"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:209
+#, python-format
+msgid "Launched Cluster %s"
+msgstr "Кластер %s был запущен"
+
+#: content/data_processing/clusters/clusters/workflows/create.py:245
+msgid "Unable to create the cluster"
+msgstr "Не удалось создать кластер"
+
+#: content/data_processing/clusters/clusters/workflows/scale.py:38
+msgid "Scale"
+msgstr "Масштабирование"
+
+#: content/data_processing/clusters/clusters/workflows/scale.py:45
+msgid "Scaled cluster successfully started."
+msgstr "Масштабирование кластера начато успешно"
+
+#: content/data_processing/clusters/clusters/workflows/scale.py:106
+msgid "Unable to fetch cluster to scale"
+msgstr "Не удалось получить сведения о масштабируемом кластере"
+
+#: content/data_processing/clusters/clusters/workflows/scale.py:161
+msgid "Unable to fetch cluster to scale."
+msgstr "Не удалось получить сведения о масштабируемом кластере."
+
+#: content/data_processing/clusters/clusters/workflows/scale.py:171
+msgid "Scale cluster operation failed"
+msgstr "Сбой действия по масштабированию кластера"
+
+#: content/data_processing/clusters/clusters/workflows/update.py:116
+#: content/data_processing/data_plugins/workflows/update.py:74
+msgid "Updated"
+msgstr "Обновлено"
+
+#: content/data_processing/clusters/clusters/workflows/update.py:117
+msgid "Could not update cluster shares"
+msgstr "Не удалось обновить общие ресурсы кластера"
+
+#: content/data_processing/clusters/clusters/workflows/update.py:131
+msgid "Cluster share update failed."
+msgstr "Не удалось обновить общие ресурсы кластера."
+
+#: content/data_processing/clusters/image_registry/forms.py:29
+msgid "User Name"
+msgstr "Имя пользователя"
+
+#: content/data_processing/clusters/image_registry/forms.py:46
+msgid "Successfully updated image."
+msgstr "Образ успешно обновлён"
+
+#: content/data_processing/clusters/image_registry/forms.py:50
+msgid "Failed to update image."
+msgstr "Сбой обновления образа"
+
+#: content/data_processing/clusters/image_registry/forms.py:59
+#: content/data_processing/clusters/image_registry/tables.py:69
+msgid "Image"
+msgstr "Образ"
+
+#: content/data_processing/clusters/image_registry/forms.py:72
+msgid "Select Image"
+msgstr "Выбрать образ"
+
+#: content/data_processing/clusters/image_registry/forms.py:74
+msgid "No images available."
+msgstr "Нет доступных образов."
+
+#: content/data_processing/clusters/image_registry/forms.py:84
+#, python-format
+msgid "Unable to retrieve images with filter %s."
+msgstr "Не удалось получить сведения об образах с фильтром %s."
+
+#: content/data_processing/clusters/image_registry/forms.py:111
+msgid "Unable to fetch available images."
+msgstr "Не удалось получить сведения о доступных образах"
+
+#: content/data_processing/clusters/image_registry/tables.py:25
+msgid "Edit Tags"
+msgstr "Редактировать метки"
+
+#: content/data_processing/clusters/image_registry/tables.py:38
+#: content/data_processing/clusters/image_registry/views.py:97
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:51
+#: content/data_processing/clusters/templates/image_registry/_register_image.html:9
+#: content/data_processing/clusters/templates/image_registry/register_image.html:3
+msgid "Register Image"
+msgstr "Зарегистрировать образ"
+
+#: content/data_processing/clusters/image_registry/tables.py:50
+msgid "Unregister Image"
+msgid_plural "Unregister Images"
+msgstr[0] "Отменить регистрацию образа"
+msgstr[1] "Отменить регистрацию образов"
+msgstr[2] "Отменить регистрацию образов"
+
+#: content/data_processing/clusters/image_registry/tables.py:58
+msgid "Unregistered Image"
+msgid_plural "Unregistered Images"
+msgstr[0] "Регистрация образа отменена"
+msgstr[1] "Регистрация образов отменена"
+msgstr[2] "Регистрация образов отменена"
+
+#: content/data_processing/clusters/image_registry/tables.py:73
+msgid "Tags"
+msgstr "Метки"
+
+#: content/data_processing/clusters/image_registry/tables.py:74
+msgid "User"
+msgstr "Пользователь"
+
+#: content/data_processing/clusters/image_registry/tables.py:78
+#: content/data_processing/clusters/image_registry/tabs.py:26
+msgid "Image Registry"
+msgstr "Реестр образов"
+
+#: content/data_processing/clusters/image_registry/tabs.py:35
+msgid "Unable to retrieve image list"
+msgstr "Не удалось получить список образов"
+
+#: content/data_processing/clusters/image_registry/views.py:37
+#: content/data_processing/clusters/image_registry/views.py:53
+msgid "Unable to process plugin tags"
+msgstr "Не удалось обработать метки модуля"
+
+#: content/data_processing/clusters/image_registry/views.py:64
+#: content/data_processing/clusters/templates/image_registry/_edit_tags.html:9
+#: content/data_processing/clusters/templates/image_registry/edit_tags.html:3
+msgid "Edit Image Tags"
+msgstr "Редактировать метки образов"
+
+#: content/data_processing/clusters/image_registry/views.py:79
+msgid "Unable to fetch the image details"
+msgstr "Не удалось получить подробные сведения об образе"
+
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:32
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:52
+#: content/data_processing/clusters/nodegroup_templates/views.py:144
+#: content/data_processing/clusters/nodegroup_templates/views.py:161
+#: content/data_processing/clusters/templates/nodegroup_templates/import.html:3
+msgid "Import Node Group Template"
+msgstr "Импорт шаблона группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:65
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:363
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:34
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:36
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:82
+msgid "Security Groups"
+msgstr "Группы безопасности"
+
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:67
+msgid ""
+"Launch instances in these security groups. Auto security group will be "
+"determined by the value present in the imported template."
+msgstr ""
+"Запуск экземпляров в данной группе безопасности. Автоматические "
+"группы безопасности будут определены значением в импортированном шаблоне."
+
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:73
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:187
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:16
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:41
+msgid "Floating IP Pool"
+msgstr "Пул плавающих IP"
+
+#: content/data_processing/clusters/nodegroup_templates/forms/import_forms.py:76
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:92
+msgid "OpenStack Flavor"
+msgstr "Вариант конфигурации OpenStack"
+
+#: content/data_processing/clusters/nodegroup_templates/tables.py:57
+msgid "Configure Template"
+msgstr "Настроить шаблон"
+
+#: content/data_processing/clusters/nodegroup_templates/tables.py:157
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:452
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:47
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:49
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:97
+msgid "Node Processes"
+msgstr "Процессы узла"
+
+#: content/data_processing/clusters/nodegroup_templates/tables.py:163
+#: content/data_processing/clusters/nodegroup_templates/tabs.py:36
+msgid "Node Group Templates"
+msgstr "Шаблоны группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/tabs.py:52
+msgid "Unable to fetch node group template list"
+msgstr "Не удалось получить список шаблонов группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/tabs.py:77
+msgid "Unable to fetch flavor for template."
+msgstr "Не удалось получить сведения о варианте конфигурации шаблона"
+
+#: content/data_processing/clusters/nodegroup_templates/tabs.py:86
+msgid "Unable to fetch floating ip pools."
+msgstr "Не удалось получить сведения о пулах плавающих IP"
+
+#: content/data_processing/clusters/nodegroup_templates/tabs.py:95
+#, python-format
+msgid "Unable to fetch Base Image with id: %s."
+msgstr "Не удалось получить сведения о базовом образе с ID %s."
+
+#: content/data_processing/clusters/nodegroup_templates/tabs.py:120
+#: content/data_processing/clusters/templates/nodegroup_templates/_service_confs.html:2
+msgid "Service Configurations"
+msgstr "Конфигурации служб"
+
+#: content/data_processing/clusters/nodegroup_templates/views.py:50
+#, python-format
+msgid "Unable to retrieve details for node group template \"%s\"."
+msgstr "Не удалось получить подробные сведения о шаблоне группы узлов \"%s\"."
+
+#: content/data_processing/clusters/nodegroup_templates/views.py:81
+#: content/data_processing/clusters/nodegroup_templates/views.py:89
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:534
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:717
+#: content/data_processing/clusters/templates/nodegroup_templates/configure.html:3
+msgid "Create Node Group Template"
+msgstr "Создать шаблон группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/views.py:119
+msgid "Unable to fetch template object."
+msgstr "Не удалось получить сведения об объекте шаблона"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/copy.py:24
+#, python-format
+msgid "Node Group Template copy %s created"
+msgstr "Была создана копия шаблона группы узлов %s"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/copy.py:113
+msgid "Unable to fetch plugin details."
+msgstr "Не удалось получить подробные сведения о модуле"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:55
+msgid "Ephemeral Drive"
+msgstr "Временный диск"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:57
+msgid "Cinder Volume"
+msgstr "Том Cinder"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:59
+msgid "Cinder service is unavailable now"
+msgstr "На данный момент служба Cinder недоступна"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:71
+msgid "Unable to retrieve volumes availability zones."
+msgstr "Не удалось получить сведения о зонах доступности томов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:81
+msgid "Unable to retrieve Nova availability zones."
+msgstr "Не удалось получить сведения о зонах доступности Nova"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:95
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:21
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:35
+msgid "Availability Zone"
+msgstr "Зона доступности"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:96
+msgid "Launch instances in this availability zone."
+msgstr "Запустить экземпляры в этой зоне доступности"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:102
+msgid "Attached storage location"
+msgstr "Местоположение прикреплённого хранилища"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:103
+msgid "Choose a storage location"
+msgstr "Выберите местоположение хранилища"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:111
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:117
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:62
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:64
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:110
+msgid "Volumes per node"
+msgstr "Томов на узел"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:122
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:128
+msgid "Volumes size (GB)"
+msgstr "Размеры томов (Гбайт)"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:133
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:138
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:66
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:68
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:114
+msgid "Volumes type"
+msgstr "Тип томов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:143
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:150
+msgid "Volume local to instance"
+msgstr "Локальный том экземпляра"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:145
+msgid "Instance and attached volumes will be created on the same physical host"
+msgstr ""
+"Экземпляр и прикреплённые к нему тома будут созданы на одном "
+"и том же физическом хосте"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:155
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:161
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:119
+msgid "Volumes Availability Zone"
+msgstr "Зона доступности томов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:156
+msgid "Create volumes in this availability zone."
+msgstr "Создать тома в этой зоне доступности"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:193
+msgid ""
+"If selected, instances of a node group will be automatically configured "
+"during cluster creation. Otherwise you should manually specify configuration "
+"values."
+msgstr ""
+"При выбранном параметре, конфигурация экземпляров группы узлов будет "
+"создаваться автоматически во время создания кластера. В противном случае"
+" значения "
+"параметров нужно будет указать вручную."
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:203
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:28
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:30
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:57
+msgid "Proxy Gateway"
+msgstr "Шлюз прокси"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:205
+msgid ""
+"Sahara will use instances of this node group to access other cluster "
+"instances."
+msgstr ""
+"Для доступа к экземплярам из других кластеров Sahara будет использовать "
+"экземпляры этой группы узлов."
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:210
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:212
+msgid "node group template"
+msgstr "шаблон группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:216
+msgid "Boot storage location"
+msgstr "Местоположение загрузочного хранилища"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:217
+msgid "Choose a boot mode"
+msgstr "Выберите тип загрузки"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:225
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:231
+msgid "Boot volume type"
+msgstr "Тип загрузочного тома"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:236
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:243
+msgid "Boot volume local to instance"
+msgstr "Локальный загрузочный том экземпляра"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:238
+msgid "Boot volume locality"
+msgstr "Размещение загрузочного тома"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:248
+msgid "Boot volume availability Zone"
+msgstr "Зона доступности загрузочного тома"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:251
+msgid "Create boot volume in this availability zone."
+msgstr "Создать загрузочный том в этой зоне доступности"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:257
+msgid "Boot volume availability zone"
+msgstr "Зона доступности загрузочного тома"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:292
+msgid "No volume type"
+msgstr "Без типа тома"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:308
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:315
+msgid "No availability zone specified"
+msgstr "Зона доступности не указана"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:339
+msgid "Configure Node Group Template"
+msgstr "Создать конфигурацию шаблона группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:348
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:31
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:33
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:62
+msgid "Auto Security Group"
+msgstr "Автоматическая группа безопасности"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:350
+msgid "Create security group for this Node Group."
+msgstr "Создать группу безопасности для этой группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:358
+msgid "Unable to get security group list."
+msgstr "Не удалось получить список групп безопасности."
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:365
+msgid "Launch instances in these security groups."
+msgstr "Запустить экземпляры в этих группах безопасности"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:370
+msgid "Security"
+msgstr "Безопасность"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:371
+msgid "Control access to instances of the node group."
+msgstr "Управление доступом к экземплярам группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:399
+#, python-format
+msgid "%s processes: "
+msgstr "процессы %s: "
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:438
+msgid "Unable to generate process choices."
+msgstr "Не удалось создать выбор процессов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:446
+msgid "Select Node Group Processes"
+msgstr "Выбрать процессы группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:453
+msgid "Select node processes for the node group"
+msgstr "Выбрать процессы узла для группы узла"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:481
+msgid "Select the manila shares for this node group"
+msgstr "Выбрать общие ресурсы manila для этой группы узлов"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:536
+#, python-format
+msgid "Created Node Group Template %s"
+msgstr "Шаблон группы узлов %s создан"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/create.py:699
+msgid "Select plugin and hadoop version"
+msgstr "Выберите версию модуля и версию hadoop"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/edit.py:30
+#, python-format
+msgid "Node Group Template %s updated"
+msgstr "Шаблон %s группы узлов обновлён"
+
+#: content/data_processing/clusters/nodegroup_templates/workflows/edit.py:32
+msgid "Edit Node Group Template"
+msgstr "Редактировать шаблон группы узлов"
+
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:2
+msgid "Cluster Template Configuration Overview"
+msgstr "Обзор конфигурации шаблона кластера"
+
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:12
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:37
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:12
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:37
+#, python-format
+msgid "%(conf_name)s: %(conf_value)s"
+msgstr "%(conf_name)s: %(conf_value)s"
+
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:16
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:41
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:16
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:41
+#: content/data_processing/clusters/templates/nodegroup_templates/_service_confs.html:17
+msgid "No configurations"
+msgstr "Без конфигураций"
+
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:21
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:21
+msgid "Cluster configurations are not specified"
+msgstr "Конфигурации кластеров не указаны"
+
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:25
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:25
+msgid "Node Groups Configuration Overview"
+msgstr "Обзор конфигурации групп узлов"
+
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:29
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:29
+#, python-format
+msgid "Node Group Name: %(node_group_name)s"
+msgstr "Имя группы узлов: %(node_group_name)s"
+
+#: content/data_processing/clusters/templates/cluster_templates/_cluster_template_configs_details.html:46
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:46
+msgid "Node group configurations are not specified"
+msgstr "Конфигурации группы узлов не указаны"
+
+#: content/data_processing/clusters/templates/cluster_templates/_config_domain_names_help.html:4
+msgid "Select the domain name for internal and external hostname resolution."
+msgstr "Выбрать доменное имя для разрешения внутренних и внешних имён хостов"
+
+#: content/data_processing/clusters/templates/cluster_templates/_config_domain_names_help.html:7
+msgid ""
+"Selected domain name should already exist in the Designate. You can check it "
+"in &quot;DNS&quot; tab on the left menu or by executing &quot;designate "
+"domain-list&quot; on the controller node."
+msgstr ""
+"Выбранное доменное имя уже должно существовать в Designate. Проверить это"
+" можно "
+"либо во вкладке &quot;DNS&quot; левого меню, либо выполнив команду"
+" &quot;designate "
+"domain-list&quot; на узле контроллера."
+
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:4
+msgid "This Cluster Template will be created for:"
+msgstr "Шаблон кластера будет создан для:"
+
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:15
+#: content/data_processing/clusters/templates/image_registry/_help.html:15
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:14
+msgid "Warning!"
+msgstr "Предупреждение"
+
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:16
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:15
+#, python-format
+msgid ""
+"Version: <b>%(hadoop_version)s</b> of plugin <b>%(plugin_name)s </b> is now "
+"deprecated."
+msgstr ""
+"Версия: <b>%(hadoop_version)s</b> модуля <b>%(plugin_name)s </b> сейчас "
+"считается устаревшей."
+
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:24
+msgid ""
+"The Cluster Template object should specify Node Group Templates that will be "
+"used to build a Cluster. You can add Node Groups using Node Group Templates "
+"on a &quot;Node Groups&quot; tab."
+msgstr ""
+"Объект «Шаблон кластера» должен указывать конкретные шаблоны группы узлов, на"
+" базе "
+"которых будет создаваться кластер. Добавить группы узлов можно с помощью "
+"пункта «Шаблоны групп узлов» во вкладке &quot;Группы узлов&quot;."
+
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:28
+msgid "You may set <b>cluster</b> scoped configurations on corresponding tabs."
+msgstr ""
+"В соответствующих вкладках можно настроить конфигурации области <b>кластер</b"
+">."
+
+#: content/data_processing/clusters/templates/cluster_templates/_configure_general_help.html:31
+msgid ""
+"The Cluster Template object may specify a list of processes in anti-affinity "
+"group. That means these processes may not be launched more than once on a "
+"single host."
+msgstr ""
+"Объект «Шаблон кластера» может указывать на список процессов в группе "
+"анти-схожести. Это означает, что данные процессы могут быть запущены не более"
+" одного раза "
+"на одном хосте."
+
+#: content/data_processing/clusters/templates/cluster_templates/_create_general_help.html:3
+msgid "Select a plugin and version for a new Cluster template."
+msgstr "Выберите модуль и версию для нового шаблона кластера."
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:7
+#: content/data_processing/clusters/templates/clusters/_details.html:7
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:7
+#: content/data_processing/jobs/templates/data_sources/_details.html:7
+#: content/data_processing/jobs/templates/job_binaries/_details.html:7
+#: content/data_processing/jobs/templates/job_templates/_details.html:7
+#: content/data_processing/jobs/templates/jobs/_details.html:9
+msgid "Project ID"
+msgstr "ID проекта"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:13
+#: content/data_processing/clusters/templates/clusters/_details.html:13
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:13
+#: content/data_processing/jobs/jobs/tables.py:38
+#: content/data_processing/jobs/jobs/tables.py:232
+#: content/data_processing/jobs/templates/data_sources/_details.html:13
+#: content/data_processing/jobs/templates/job_binaries/_details.html:13
+#: content/data_processing/jobs/templates/job_templates/_details.html:13
+#: content/data_processing/jobs/templates/jobs/_details.html:7
+msgid "ID"
+msgstr "ID"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:16
+#: content/data_processing/clusters/templates/clusters/_details.html:16
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:16
+#: content/data_processing/jobs/templates/data_sources/_details.html:20
+#: content/data_processing/jobs/templates/job_binaries/_details.html:18
+#: content/data_processing/jobs/templates/job_templates/_details.html:18
+#: content/data_processing/jobs/templates/job_templates/_details.html:27
+#: content/data_processing/jobs/templates/job_templates/_details.html:33
+msgid "None"
+msgstr "Нет"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:23
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:25
+#: content/data_processing/clusters/templates/clusters/_details.html:57
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:27
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:53
+msgid "Use auto-configuration"
+msgstr "Использовать авто-конфигурацию"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:25
+#: content/data_processing/clusters/templates/clusters/_details.html:59
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:17
+#: content/data_processing/jobs/templates/data_sources/_details.html:21
+#: content/data_processing/jobs/templates/job_binaries/_details.html:19
+#: content/data_processing/jobs/templates/job_templates/_details.html:19
+#: content/data_processing/jobs/templates/jobs/_details.html:25
+#: content/data_processing/utils/acl.py:124
+msgid "Public"
+msgstr "Общедоступный"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:27
+#: content/data_processing/clusters/templates/clusters/_details.html:61
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:19
+#: content/data_processing/jobs/templates/data_sources/_details.html:23
+#: content/data_processing/jobs/templates/job_binaries/_details.html:21
+#: content/data_processing/jobs/templates/job_templates/_details.html:21
+#: content/data_processing/jobs/templates/jobs/_details.html:27
+#: content/data_processing/utils/acl.py:135
+msgid "Protected"
+msgstr "Защищённый"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:30
+msgid "Domain name"
+msgstr "Доменное имя"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:35
+#: content/data_processing/clusters/templates/clusters/_details.html:65
+msgid "Anti-affinity enabled for"
+msgstr "Анти-схожесть включена для"
+
+#: content/data_processing/clusters/templates/cluster_templates/_details.html:45
+#: content/data_processing/clusters/templates/clusters/_details.html:75
+msgid "no processes"
+msgstr "нет процессов"
+
+#: content/data_processing/clusters/templates/cluster_templates/_import.html:23
+#: content/data_processing/clusters/templates/cluster_templates/_import_nodegroups.html:24
+#: content/data_processing/clusters/templates/cluster_templates/_upload_file.html:23
+#: content/data_processing/clusters/templates/cluster_wizard/_ngt_select.html:29
+#: content/data_processing/clusters/templates/cluster_wizard/_plugin_select.html:29
+#: content/data_processing/clusters/templates/clusters/_create_cluster.html:22
+#: content/data_processing/clusters/templates/image_registry/_edit_tags.html:27
+#: content/data_processing/clusters/templates/image_registry/_register_image.html:25
+#: content/data_processing/clusters/templates/nodegroup_templates/_import.html:23
+#: content/data_processing/jobs/templates/job_binaries/_create.html:26
+#: content/data_processing/jobs/templates/job_wizard/_job_type_select.html:29
+msgid "Cancel"
+msgstr "Отмена"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:6
+#, python-format
+msgid "Node Group: %(node_group_name)s"
+msgstr "Группа узлов: %(node_group_name)s"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:7
+msgid "Nodes Count"
+msgstr "Число узлов"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:10
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:12
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:30
+msgid "Flavor"
+msgstr "Вариант конфигурации"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:11
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:13
+msgid "Flavor is not specified"
+msgstr "Вариант конфигурации не указан"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:13
+#: content/data_processing/clusters/templates/clusters/_details.html:41
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:20
+msgid "Template"
+msgstr "Шаблон"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:17
+#: content/data_processing/clusters/templates/clusters/_details.html:45
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:24
+msgid "Template not specified"
+msgstr "Шаблон не указан"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:57
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:59
+msgid "Node processes are not specified"
+msgstr "Процессы узла не указаны"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:60
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:62
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:107
+msgid "HDFS placement"
+msgstr "Размещение HDFS"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:64
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:66
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:112
+msgid "Volumes size"
+msgstr "Размер томов"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:68
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:70
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:116
+msgid "Volumes local to instance"
+msgstr "Тома, локальные относительно экземпляра"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:71
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:73
+msgid "Drive type"
+msgstr "Тип диска"
+
+#: content/data_processing/clusters/templates/cluster_templates/_nodegroups_details.html:72
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:74
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:123
+msgid "Ephemeral drive"
+msgstr "Временный диск"
+
+#: content/data_processing/clusters/templates/cluster_templates/_upload_file.html:10
+#: content/data_processing/clusters/templates/cluster_templates/upload_file.html:3
+msgid "Upload Template"
+msgstr "Выгрузить шаблон"
+
+#: content/data_processing/clusters/templates/cluster_templates/_upload_file.html:21
+msgid "Upload"
+msgstr "Выгрузить"
+
+#: content/data_processing/clusters/templates/cluster_templates/cluster_node_groups_template.html:95
+msgid "Select a Node Group Template to add:"
+msgstr "Выберите добавляемый шаблон группы узлов:"
+
+#: content/data_processing/clusters/templates/cluster_wizard/_ngt_select.html:12
+#: content/data_processing/clusters/templates/cluster_wizard/ngt_select.html:3
+#: content/data_processing/clusters/wizard/views.py:85
+msgid "Choose node group template"
+msgstr "Выберите шаблон группы узлов"
+
+#: content/data_processing/clusters/templates/cluster_wizard/_ngt_select.html:27
+#: content/data_processing/clusters/templates/cluster_wizard/_plugin_select.html:27
+#: content/data_processing/jobs/templates/job_templates/job_interface_arguments_template.html:7
+#: content/data_processing/jobs/templates/job_wizard/_job_type_select.html:27
+msgid "Select"
+msgstr "Выбрать"
+
+#: content/data_processing/clusters/templates/cluster_wizard/_ngt_select_help.html:3
+msgid ""
+"Select an existing node group template.\n"
+"    "
+msgstr ""
+"Выбрать существующий шаблон группы узлов.\n"
+"    "
+
+#: content/data_processing/clusters/templates/cluster_wizard/_plugin_select.html:12
+#: content/data_processing/clusters/templates/cluster_wizard/plugin_select.html:3
+#: content/data_processing/clusters/wizard/views.py:76
+msgid "Choose plugin and version"
+msgstr "Выбрать модуль и версию"
+
+#: content/data_processing/clusters/templates/cluster_wizard/_plugin_select_help.html:3
+msgid ""
+"Select which plugin and version that you want to use to create your cluster."
+msgstr ""
+"Выбрать модуль и версию, которую нужно использовать для создания кластера"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:3
+#: content/data_processing/data_plugins/templates/data_plugins/plugins.html:3
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:3
+#: content/data_processing/jobs/templates/jobs/job_executions.html:3
+#: enabled/_1810_data_processing_panel_group.py:17
+msgid "Data Processing"
+msgstr "Обработка данных"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:11
+msgid ""
+"The first step is to determine which type of cluster you want to run.  You "
+"may have several choices available depending on the configuration of your "
+"system. Click on \"choose plugin\" to bring up the list of data processing "
+"plugins.  There you will be able to choose the data processing plugin along "
+"with the version number. Choosing this up front will allow the rest of the "
+"cluster creation steps to focus only on options that are pertinent to your "
+"desired cluster type."
+msgstr ""
+"Первый шаг — это определение будущего типа запускаемого кластера. В"
+" зависимости "
+"от системной конфигурации могут присутствовать несколько доступных вариантов. "
+"Для просмотра списка модулей обработки данных нажмите «Выбрать модуль». "
+"Здесь можно будет выбрать модуль обработки данных, а также номер версии. "
+"Если выбрать их заранее, то параметры в следующих шагах создания кластера"
+" будут относиться "
+"только к ранее выбранному типу кластера."
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:22
+msgid "Choose plugin"
+msgstr "Выберите модуль"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:23
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:83
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:118
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:150
+msgid "Current choice:"
+msgstr "Текущий выбор:"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:26
+msgid "Plugin:"
+msgstr "Модуль:"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:28
+msgid "Version:"
+msgstr "Версия:"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:33
+msgid "No plugin chosen"
+msgstr "Модуль не выбран"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:42
+msgid ""
+"You need to register an image to launch instances of your cluster. Skip this "
+"step if you already have a registered image for your plugin, otherwise click "
+"the link below. In the form you will need to choose the image, input the "
+"username and add tags for the chosen plugin."
+msgstr ""
+"Для запуска экземпляров в кластере необходимо зарегистрировать образ. "
+"Пропустите этот шаг, если для модуля уже имеется зарегистрированный образ. "
+"В противном случае нажмите на ссылку ниже, где в предоставленной форме"
+" необходимо "
+"будет выбрать образ, указать имя пользователя и добавить метки для выбранного"
+" модуля."
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:58
+msgid ""
+"Next, you need to define the different types of machines in your cluster.  "
+"This is done by defining a Node Group Template for each type of machine.  A "
+"very common case is where you need to have one or more machines running a "
+"\"master\" set of processes while another set of machines need to be running "
+"the \"worker\" processes.  Here, you will define the Node Group Template for "
+"your \"master\" node(s)."
+msgstr ""
+"Далее необходимо будет настроить различные типы машин в кластере. "
+"Это делает путём указания «Шаблона группы узлов» для каждого из типов машин. "
+"Очень распространённым случаем является тот, где на одной или более машин "
+"выполняется «главный» набор процессов, в то время как на другом наборе машин "
+"выполняются «рабочие» процессы. Здесь нужно будет настроить шаблон группы "
+"узлов для «главного» узла (или узлов)."
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:73
+msgid "Create a Master Node Group Template"
+msgstr "Создайте шаблон главной группы узлов"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:75
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:110
+msgid " or "
+msgstr " или "
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:79
+msgid "Choose an existing Master Node Group Template"
+msgstr "Выберите уже существующий шаблон главной группы узлов"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:86
+msgid "Master Node Group Template:"
+msgstr "Шаблон главной группы узлов:"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:91
+msgid "No Master Node Group Template Created"
+msgstr "Шаблон главной группы узлов не был создан"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:100
+msgid ""
+"Repeat the Node Group Template creation process, but this time you are "
+"creating your \"worker\" Node Group Template."
+msgstr ""
+"Повторите процесс создания шаблона главной группы узлов, но на этот раз "
+"будет создан шаблон «рабочей» группы узлов."
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:108
+msgid "Create a Worker Node Group Template"
+msgstr "Создайте шаблон рабочей группы узлов"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:114
+msgid "Choose an existing Worker Node Group Template"
+msgstr "Выберите уже существующий шаблон рабочей группы узлов"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:121
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:153
+msgid "Worker Node Group Template:"
+msgstr "Шаблон рабочей группы узлов:"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:126
+msgid "No Worker Node Group Template Created"
+msgstr "Шаблон рабочей группы узлов не был создан"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:135
+msgid ""
+"Now you need to set the layout of your cluster.  By creating a Cluster "
+"Template, you will be choosing the number of instances of each Node Group "
+"Template that will appear in your cluster.  Additionally, you will have a "
+"chance to set any cluster-specific configuration items in the additional "
+"tabs on the create Cluster Template form."
+msgstr ""
+"Теперь необходимо настроить схему кластера. Во время создания «Шаблона"
+" кластера» "
+"будет выбрано число экземпляров для каждого из шаблонов группы узлов,"
+" присутствующего "
+"в кластере. Кроме того, в дополнительных вкладках формы создания шаблона"
+" кластера у вас "
+"будет возможность настроить элементы конфигурации, относящиеся к конкретному"
+" кластеру."
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:148
+msgid "Create a Cluster Template"
+msgstr "Создать шаблон кластера"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:158
+msgid "No Cluster Template Created"
+msgstr "Шаблон кластера не был создан"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:167
+msgid ""
+"You are now ready to launch your cluster.  When you click on the link below, "
+"you will need to give your cluster a name, choose the Cluster Template to "
+"use and choose which image to use to build your instances.  After you click "
+"on \"Create\", your instances will begin to spawn.  Your cluster should be "
+"operational in a few minutes."
+msgstr ""
+"Всё готово для запуска кластера. Перейдя по ссылке ниже, укажите имя"
+" кластера, "
+"выберите используемый шаблон кластера и образ для создания экземпляров. После "
+"нажатия на кнопку «Создать» запустится процесс создания экземпляров, и через "
+"несколько минут кластер скорей всего будет готов к работе."
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:180
+msgid "Launch a Cluster"
+msgstr "Запустить кластер"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:188
+msgid "Reset Cluster Guide"
+msgstr "Заново запустить мастер кластеров"
+
+#: content/data_processing/clusters/templates/cluster_wizard/cluster_guide.html:190
+msgid "Reset Cluster Creation Guide"
+msgstr "Заново запустить мастер создания кластеров"
+
+#: content/data_processing/clusters/templates/clusters/_cluster_configs_details.html:2
+msgid "Cluster Configuration Overview"
+msgstr "Обзор конфигурации кластера"
+
+#: content/data_processing/clusters/templates/clusters/_configure_general_help.html:4
+msgid "This Cluster will be started with:"
+msgstr "Этот кластер будет запущен с:"
+
+#: content/data_processing/clusters/templates/clusters/_configure_general_help.html:12
+msgid "Cluster can be launched using existing Cluster Templates."
+msgstr "Кластер можно запустить, используя уже существующие шаблоны кластеров"
+
+#: content/data_processing/clusters/templates/clusters/_configure_general_help.html:15
+msgid ""
+"The Cluster object should specify OpenStack Image to boot instances for "
+"Cluster."
+msgstr ""
+"Для объекта кластера должен быть указан образ OpenStack, используемый "
+"при загрузке экземпляров кластера."
+
+#: content/data_processing/clusters/templates/clusters/_configure_general_help.html:18
+msgid "User has to choose a keypair to have access to clusters instances."
+msgstr ""
+"Для получения доступа к экземплярам кластера, пользователь должен "
+"выбрать пару ключей"
+
+#: content/data_processing/clusters/templates/clusters/_create_cluster.html:20
+msgid " Done"
+msgstr " Готово"
+
+#: content/data_processing/clusters/templates/clusters/_create_general_help.html:3
+msgid "Select a plugin and version for a new Cluster."
+msgstr "Выберите модуль и версию для нового кластера."
+
+#: content/data_processing/clusters/templates/clusters/_details.html:19
+msgid "Status description"
+msgstr "Описание статуса"
+
+#: content/data_processing/clusters/templates/clusters/_details.html:28
+msgid "Error Details"
+msgstr "Подробности ошибки"
+
+#: content/data_processing/clusters/templates/clusters/_details.html:83
+#, python-format
+msgid "%(key)s: %(val)s"
+msgstr "%(key)s: %(val)s"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:3
+msgid "Cluster provision steps"
+msgstr "Шаги по регистрации кластера"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:7
+msgid "Step Description"
+msgstr "Описание шагов"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:8
+msgid "Started at"
+msgstr "Начато в"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:9
+#: content/data_processing/clusters/templates/clusters/_health_checks_table.html:9
+#: content/data_processing/jobs/jobs/tables.py:254
+msgid "Duration"
+msgstr "Продолжительность"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:10
+msgid "Progress"
+msgstr "Ход выполнения"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:30
+msgid "Node Group"
+msgstr "Группа узлов"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:31
+msgid "Instance"
+msgstr "Экземпляр"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:32
+msgid "Event time"
+msgstr "Время события"
+
+#: content/data_processing/clusters/templates/clusters/_event_log.html:33
+msgid "Info"
+msgstr "Сведения"
+
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:8
+#, python-format
+msgid "Name: %(node_group_name)s"
+msgstr "Имя: %(node_group_name)s"
+
+#: content/data_processing/clusters/templates/clusters/_nodegroups_details.html:9
+msgid "Number of Nodes"
+msgstr "Число узлов"
+
+#: content/data_processing/clusters/templates/clusters/index.html:34
+msgid "Add Node Group"
+msgstr "Добавить группу узлов"
+
+#: content/data_processing/clusters/templates/image_registry/_edit_tags.html:28
+#: content/data_processing/clusters/templates/image_registry/_register_image.html:26
+msgid "Done"
+msgstr "Готово"
+
+#: content/data_processing/clusters/templates/image_registry/_help.html:3
+msgid "Image Registry tool:"
+msgstr "Инструмент для работы с реестром образов:"
+
+#: content/data_processing/clusters/templates/image_registry/_help.html:6
+msgid ""
+"Image Registry is used to provide additional information about images for "
+"Data Processing."
+msgstr ""
+"Реестр образов используется для предоставления дополнительных сведений "
+"об образах для службы обработки данных."
+
+#: content/data_processing/clusters/templates/image_registry/_help.html:9
+msgid ""
+"Specified User Name will be used by Data Processing to apply configs and "
+"manage processes on instances."
+msgstr ""
+"Предоставленное имя пользователя будет использоваться службой обработки"
+" данных "
+"для применения конфигураций и управления процессами на экземплярах."
+
+#: content/data_processing/clusters/templates/image_registry/_help.html:16
+msgid ""
+"Input correct User Name for image. For Ubuntu images input 'ubuntu', "
+"'fedora' for Fedora images, 'cloud-user' for CentOS 6.x images and 'centos' "
+"for CentOS 7.x images."
+msgstr ""
+"Введите правильное имя пользователя для образа. Для образов Ubuntu "
+"введите «ubuntu», для образов Fedora — «fedora», для образов CentOS 6.x "
+"укажите «cloud-user», для образов CentOS 7.x — «centos»."
+
+#: content/data_processing/clusters/templates/image_registry/_help.html:21
+msgid ""
+"Tags are used for filtering images suitable for each plugin and each Data "
+"Processing version. To add required tags, select a plugin and a Data "
+"Processing version and click the &quot;Add&quot; button."
+msgstr ""
+"Метки используются для фильтрации образов, подходящих для каждого из модулей "
+"и для каждой из версий службы обработки данных. Для добавления обязательных"
+" меток "
+"выберите модуль и версию службы обработки данных и нажмите на кнопку"
+" &quot;Добавить&quot;."
+
+#: content/data_processing/clusters/templates/image_registry/_help.html:25
+msgid "You may also add any custom tag."
+msgstr "Также можно добавить любую пользовательскую метку"
+
+#: content/data_processing/clusters/templates/image_registry/_help.html:28
+msgid "Unnecessary tags may be removed by clicking a cross near tag's name."
+msgstr "Ненужные метки можно удалить, нажав на крестик рядом с именем метки."
+
+#: content/data_processing/clusters/templates/image_registry/_tag_form.html:6
+msgid "Plugin and Version Tag"
+msgstr "Метка модуля и версии"
+
+#: content/data_processing/clusters/templates/image_registry/_tag_form.html:34
+msgid "Custom Tag"
+msgstr "Пользовательская метка"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:4
+msgid "This Node Group Template will be created for:"
+msgstr "Данный шаблон группы узлов будет создан для:"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:24
+msgid ""
+"The Node Group Template object specifies the processes that will be launched "
+"on each instance. Check one or more processes. When processes are selected, "
+"you may set <b>node</b> scoped configurations on corresponding tabs."
+msgstr ""
+"Объект «шаблон группы узлов» обозначает процессы, которые будут запущены "
+"на каждом экземпляре. Отметьте один или несколько процессов. После выбора"
+" процессов "
+"в соответствующих вкладках можно настраивать конфигурации области <b>узла</b>."
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:30
+msgid ""
+"You must choose a flavor to determine the size (VCPUs, memory and storage) "
+"of all launched VMs."
+msgstr ""
+"Для настройки размера (вирт. ЦП, памяти и хранилища) запускаемой ВМ "
+"необходимо выбрать вариант конфигурации"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_configure_general_help.html:33
+msgid ""
+"Data Processing provides different storage location options. You may choose "
+"Ephemeral Drive or a Cinder Volume to be attached to instances."
+msgstr ""
+"Служба обработки данных предлагает различные возможности местонахождения"
+" хранилищ. "
+"В качестве подключаемых к экземплярам хранилищ можно выбрать временный диск"
+" или "
+"том Cinder."
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_create_general_help.html:3
+msgid "Select a plugin and version for the new Node Group template."
+msgstr "Выберите модуль и версию для нового шаблона группы узлов."
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:25
+#: content/data_processing/utils/workflow_helpers.py:244
+msgid "No image specified"
+msgstr "Образ не указан"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:68
+msgid "Boot from Volume"
+msgstr "Загрузка с тома"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:71
+msgid "Boot Volume type"
+msgstr "Тип загрузочного тома"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:73
+msgid "Boot Volume AZ"
+msgstr "Загрузочный том AZ"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:75
+msgid "Boot Volume locality"
+msgstr "Размещение загрузочного тома"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_details.html:109
+msgid "Cinder volumes"
+msgstr "Тома Cinder"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_fields_help.html:3
+msgid "Filter"
+msgstr "Фильтр"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_fields_help.html:4
+msgid "Show full configuration"
+msgstr "Показать полную конфигурацию"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_fields_help.html:5
+msgid "Hide full configuration"
+msgstr "Скрыть полную конфигурацию"
+
+#: content/data_processing/clusters/templates/nodegroup_templates/_service_confs.html:12
+#, python-format
+msgid "%(conf_name)s: %(conf_val)s"
+msgstr "%(conf_name)s: %(conf_val)s"
+
+#: content/data_processing/clusters/wizard/forms.py:44
+#: content/data_processing/jobs/wizard/forms.py:43
+msgid "Cluster type chosen"
+msgstr "Выбранный тип кластера"
+
+#: content/data_processing/clusters/wizard/forms.py:48
+#: content/data_processing/jobs/wizard/forms.py:47
+msgid "Unable to set cluster type"
+msgstr "Не удалось указать тип кластера"
+
+#: content/data_processing/clusters/wizard/forms.py:57
+#: content/data_processing/jobs/wizard/forms.py:56
+#: content/data_processing/utils/workflow_helpers.py:258
+msgid "Plugin Name"
+msgstr "Имя модуля"
+
+#: content/data_processing/clusters/wizard/forms.py:90
+#: content/data_processing/jobs/wizard/forms.py:85
+msgid "Choose plugin type and version"
+msgstr "Выберите тип модуля и версию"
+
+#: content/data_processing/clusters/wizard/forms.py:95
+msgid "Node Group Template"
+msgstr "Шаблон группы узлов"
+
+#: content/data_processing/clusters/wizard/forms.py:148
+#: content/data_processing/jobs/wizard/forms.py:115
+msgid "Job type chosen"
+msgstr "Выбранный тип задач"
+
+#: content/data_processing/clusters/wizard/forms.py:152
+msgid "Unable to set node group template"
+msgstr "Не удалось указать шаблон группы узлов"
+
+#: content/data_processing/clusters/wizard/views.py:33
+msgid "Guided Cluster Creation"
+msgstr "Создание кластера с помощью мастера"
+
+#: content/data_processing/data_plugins/panel.py:21
+#: content/data_processing/data_plugins/tables.py:51
+#: content/data_processing/data_plugins/tabs.py:32
+msgid "Plugins"
+msgstr "Модули"
+
+#: content/data_processing/data_plugins/tables.py:25
+#: content/data_processing/data_plugins/templates/data_plugins/update.html:3
+#: content/data_processing/data_plugins/views.py:56
+#: content/data_processing/data_plugins/workflows/update.py:73
+msgid "Update Plugin"
+msgstr "Обновить модуль"
+
+#: content/data_processing/data_plugins/tables.py:39
+#: content/data_processing/data_plugins/templates/data_plugins/_details.html:7
+msgid "Title"
+msgstr "Заголовок"
+
+#: content/data_processing/data_plugins/tables.py:44
+msgid "Enabled Versions"
+msgstr "Включённые версии"
+
+#: content/data_processing/data_plugins/tabs.py:42
+msgid "Unable to fetch plugin list"
+msgstr "Не удалось получить список модулей"
+
+#: content/data_processing/data_plugins/tabs.py:64
+#: content/data_processing/data_plugins/tabs.py:90
+msgid "Unable to retrieve plugin."
+msgstr "Не удалось получить сведения о модуле"
+
+#: content/data_processing/data_plugins/tabs.py:69
+msgid "Label details"
+msgstr "Подробности о метке"
+
+#: content/data_processing/data_plugins/tabs.py:107
+#, python-format
+msgid "Plugin version %s"
+msgstr "Версия модуля %s"
+
+#: content/data_processing/data_plugins/templates/data_plugins/_details.html:11
+msgid "Supported Versions"
+msgstr "Поддерживаемые версии"
+
+#: content/data_processing/data_plugins/templates/data_plugins/_label_details.html:7
+msgid "Label"
+msgstr "Метка"
+
+#: content/data_processing/data_plugins/templates/data_plugins/_label_details.html:8
+msgid "Scope"
+msgstr "Область"
+
+#: content/data_processing/data_plugins/templates/data_plugins/_label_details.html:9
+msgid "Checked?"
+msgstr "Отмечено?"
+
+#: content/data_processing/data_plugins/templates/data_plugins/_list_versions.html:8
+msgid "No enabled versions"
+msgstr "Нет включённых версий"
+
+#: content/data_processing/data_plugins/views.py:33
+msgid "Data Processing Plugins"
+msgstr "Модули обработки данных"
+
+#: content/data_processing/data_plugins/views.py:40
+msgid "Unable to retrieve data processing plugins."
+msgstr "Не удалось получить сведения о модулях обработки данных"
+
+#: content/data_processing/data_plugins/views.py:48
+msgid "Data Processing Plugin Details"
+msgstr "Подробные сведения о модулях обработки данных"
+
+#: content/data_processing/data_plugins/views.py:71
+msgid "Unable to fetch plugin object."
+msgstr "Не удалось получить объект модуля."
+
+#: content/data_processing/data_plugins/workflows/update.py:31
+msgid "Plugin label"
+msgstr "Метка модуля"
+
+#: content/data_processing/data_plugins/workflows/update.py:34
+#, python-format
+msgid "Plugin version %(version)s label"
+msgstr "Метка модуля версии %(version)s"
+
+#: content/data_processing/data_plugins/workflows/update.py:58
+msgid "Update the plugin labels"
+msgstr "Обновить метки модуля"
+
+#: content/data_processing/data_plugins/workflows/update.py:75
+msgid "Could not update plugin"
+msgstr "Не удалось обновить модуль"
+
+#: content/data_processing/data_plugins/workflows/update.py:109
+msgid "Plugin update failed."
+msgstr "Сбой обновления модуля"
+
+#: content/data_processing/jobs/data_sources/tables.py:29
+#: content/data_processing/jobs/data_sources/views.py:39
+#: content/data_processing/jobs/data_sources/workflows/create.py:161
+#: content/data_processing/jobs/data_sources/workflows/create.py:189
+#: content/data_processing/jobs/templates/data_sources/create.html:3
+msgid "Create Data Source"
+msgstr "Создать источник данных"
+
+#: content/data_processing/jobs/data_sources/tables.py:39
+msgid "Delete Data Source"
+msgid_plural "Delete Data Sources"
+msgstr[0] "Удалить источник данных"
+msgstr[1] "Удалить источники данных"
+msgstr[2] "Удалить источники данных"
+
+#: content/data_processing/jobs/data_sources/tables.py:47
+msgid "Deleted Data Source"
+msgid_plural "Deleted Data Sources"
+msgstr[0] "Источник данных удалён"
+msgstr[1] "Источники данных удалены"
+msgstr[2] "Источники данных удалены"
+
+#: content/data_processing/jobs/data_sources/tables.py:58
+#: content/data_processing/jobs/data_sources/views.py:44
+#: content/data_processing/jobs/data_sources/workflows/edit.py:27
+msgid "Edit Data Source"
+msgstr "Редактировать источник данных"
+
+#: content/data_processing/jobs/data_sources/tables.py:94
+#: content/data_processing/jobs/job_templates/tables.py:32
+#: content/data_processing/jobs/job_templates/tables.py:131
+#: content/data_processing/jobs/templates/data_sources/_details.html:15
+#: content/data_processing/jobs/templates/job_templates/_details.html:15
+msgid "Type"
+msgstr "Тип"
+
+#: content/data_processing/jobs/data_sources/tables.py:100
+#: content/data_processing/jobs/data_sources/tabs.py:32
+msgid "Data Sources"
+msgstr "Источники данных"
+
+#: content/data_processing/jobs/data_sources/tabs.py:42
+msgid "Unable to fetch data source list"
+msgstr "Не удалось получить список источников данных"
+
+#: content/data_processing/jobs/data_sources/views.py:70
+#, python-format
+msgid "Unable to retrieve details for data source \"%s\"."
+msgstr "Не удалось получить подробные сведения об источнике данных \"%s\"."
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:32
+msgid "Data Source Type"
+msgstr "Тип источника данных"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:39
+#: content/data_processing/jobs/data_sources/workflows/create.py:44
+msgid "Manila share"
+msgstr "Общий ресурс manila"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:48
+#: content/data_processing/jobs/data_sources/workflows/create.py:53
+#: content/data_processing/jobs/data_sources/workflows/create.py:54
+#: content/data_processing/jobs/data_sources/workflows/create.py:55
+#: content/data_processing/jobs/data_sources/workflows/create.py:56
+#: content/data_processing/jobs/job_binaries/forms.py:72
+#: content/data_processing/jobs/job_binaries/forms.py:79
+#: content/data_processing/jobs/job_binaries/forms.py:166
+#: content/data_processing/jobs/job_binaries/forms.py:173
+#: content/data_processing/jobs/templates/data_sources/_details.html:17
+#: content/data_processing/jobs/templates/job_binaries/_details.html:15
+msgid "URL"
+msgstr "URL"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:52
+msgid "Path on share"
+msgstr "Путь на общем ресурсе"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:60
+#: content/data_processing/jobs/data_sources/workflows/create.py:65
+msgid "Source username"
+msgstr "Имя пользователя источника"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:72
+#: content/data_processing/jobs/data_sources/workflows/create.py:75
+msgid "Source password"
+msgstr "Пароль источника"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:79
+msgid "S3 accsss key"
+msgstr "Ключ доступа S3"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:84
+msgid "S3 access key"
+msgstr "Ключ доступа S3"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:91
+#: content/data_processing/jobs/data_sources/workflows/create.py:94
+msgid "S3 secret key"
+msgstr "Секретный ключ S3"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:98
+#: content/data_processing/jobs/data_sources/workflows/create.py:104
+msgid "S3 endpoint"
+msgstr "Конечная точка S3"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:100
+msgid "Endpoint should be specified without protocol"
+msgstr "Конечные точки должны указываться без протокола"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:108
+#: content/data_processing/jobs/data_sources/workflows/create.py:114
+msgid "Use SSL"
+msgstr "Использовать SSL"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:118
+#: content/data_processing/jobs/data_sources/workflows/create.py:125
+msgid "Use bucket in path"
+msgstr "Использовать в пути контейнер (bucket)"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:121
+msgid "If checked, bucket will be in path instead of host"
+msgstr ""
+"Если пункт отмечен, то вместо хоста в пути будет указан контейнер (bucket)"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:133
+#: content/data_processing/jobs/data_sources/workflows/create.py:134
+msgid "data source"
+msgstr "источник данных"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:191
+msgid "Data source created"
+msgstr "Источник данных создан"
+
+#: content/data_processing/jobs/data_sources/workflows/create.py:192
+msgid "Could not create data source"
+msgstr "Не удалось создать источник данных"
+
+#: content/data_processing/jobs/data_sources/workflows/edit.py:29
+msgid "Data source updated"
+msgstr "Источник данных был обновлён"
+
+#: content/data_processing/jobs/data_sources/workflows/edit.py:30
+msgid "Could not update data source"
+msgstr "Не удалось обновить источник данных"
+
+#: content/data_processing/jobs/job_binaries/forms.py:64
+msgid "Storage type"
+msgstr "Тип хранилища"
+
+#: content/data_processing/jobs/job_binaries/forms.py:83
+#: content/data_processing/jobs/job_binaries/forms.py:89
+msgid "Share"
+msgstr "Общий ресурс"
+
+#: content/data_processing/jobs/job_binaries/forms.py:93
+#: content/data_processing/jobs/job_binaries/forms.py:99
+msgid "Path"
+msgstr "Путь"
+
+#: content/data_processing/jobs/job_binaries/forms.py:103
+msgid "Internal binary"
+msgstr "Внутренний бинарный файл"
+
+#: content/data_processing/jobs/job_binaries/forms.py:110
+msgid "Internal Binary"
+msgstr "Внутренний бинарный файл"
+
+#: content/data_processing/jobs/job_binaries/forms.py:114
+#: content/data_processing/jobs/job_binaries/forms.py:120
+msgid "Upload File"
+msgstr "Выгрузить файл"
+
+#: content/data_processing/jobs/job_binaries/forms.py:124
+#: content/data_processing/jobs/job_binaries/forms.py:130
+msgid "Script name"
+msgstr "Имя сценария"
+
+#: content/data_processing/jobs/job_binaries/forms.py:134
+#: content/data_processing/jobs/job_binaries/forms.py:141
+msgid "Script text"
+msgstr "Текст сценария"
+
+#: content/data_processing/jobs/job_binaries/forms.py:145
+#: content/data_processing/jobs/job_binaries/forms.py:151
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: content/data_processing/jobs/job_binaries/forms.py:155
+#: content/data_processing/jobs/job_binaries/forms.py:162
+msgid "Password"
+msgstr "Пароль"
+
+#: content/data_processing/jobs/job_binaries/forms.py:177
+#: content/data_processing/jobs/job_binaries/forms.py:183
+msgid "S3 Endpoint"
+msgstr "Конечная точка S3"
+
+#: content/data_processing/jobs/job_binaries/forms.py:187
+#: content/data_processing/jobs/job_binaries/forms.py:193
+msgid "Access Key"
+msgstr "Ключ доступа"
+
+#: content/data_processing/jobs/job_binaries/forms.py:197
+#: content/data_processing/jobs/job_binaries/forms.py:204
+msgid "Secret Key"
+msgstr "Секретный ключ"
+
+#: content/data_processing/jobs/job_binaries/forms.py:213
+#: content/data_processing/jobs/job_binaries/forms.py:215
+msgid "job binary"
+msgstr "Бинарный файл задачи"
+
+#: content/data_processing/jobs/job_binaries/forms.py:276
+msgid "Failed to get list of internal binaries."
+msgstr "Не удалось получить список внутренних бинарных файлов"
+
+#: content/data_processing/jobs/job_binaries/forms.py:321
+#: content/data_processing/jobs/job_binaries/forms.py:371
+#, python-format
+msgid "Unable to create job binary: %s"
+msgstr "Не удалось создать бинарный файл задачи: %s"
+
+#: content/data_processing/jobs/job_binaries/forms.py:326
+#: content/data_processing/jobs/job_binaries/forms.py:375
+msgid "Unable to create job binary"
+msgstr "Не удалось создать бинарный файл задачи"
+
+#: content/data_processing/jobs/job_binaries/forms.py:340
+#: content/data_processing/jobs/job_binaries/tables.py:30
+#: content/data_processing/jobs/job_binaries/views.py:42
+#: content/data_processing/jobs/templates/job_binaries/create.html:3
+msgid "Create Job Binary"
+msgstr "Создать бинарный файл задачи"
+
+#: content/data_processing/jobs/job_binaries/forms.py:357
+msgid "Unable to upload job binary"
+msgstr "Не удалось выгрузить бинарный файл задачи"
+
+#: content/data_processing/jobs/job_binaries/forms.py:411
+msgid "Failed to fetch internal binary list"
+msgstr "Не удалось получить список внутренних бинарных файлов"
+
+#: content/data_processing/jobs/job_binaries/forms.py:472
+#, python-format
+msgid "Unable to update job binary: %s"
+msgstr "Не удалось обновить бинарный файл задачи: %s"
+
+#: content/data_processing/jobs/job_binaries/forms.py:477
+msgid "Unable to update job binary"
+msgstr "Не удалось обновить бинарный файл задачи"
+
+#: content/data_processing/jobs/job_binaries/tables.py:40
+msgid "Delete Job Binary"
+msgid_plural "Delete Job Binaries"
+msgstr[0] "Удалить бинарный файл задачи"
+msgstr[1] "Удалить бинарные файлы задач"
+msgstr[2] "Удалить бинарные файлы задач"
+
+#: content/data_processing/jobs/job_binaries/tables.py:48
+msgid "Deleted Job Binary"
+msgid_plural "Deleted Job Binaries"
+msgstr[0] "Бинарный файл задачи удалён"
+msgstr[1] "Бинарные файлы задач удалены"
+msgstr[2] "Бинарные файлы задач удалены"
+
+#: content/data_processing/jobs/job_binaries/tables.py:74
+msgid "Download Job Binary"
+msgstr "Загрузить бинарный файл задачи"
+
+#: content/data_processing/jobs/job_binaries/tables.py:81
+#: content/data_processing/jobs/job_binaries/views.py:62
+msgid "Edit Job Binary"
+msgstr "Редактировать бинарный файл задачи"
+
+#: content/data_processing/jobs/job_binaries/tables.py:113
+msgid "Url"
+msgstr "Url"
+
+#: content/data_processing/jobs/job_binaries/tables.py:119
+#: content/data_processing/jobs/job_binaries/tabs.py:32
+msgid "Job Binaries"
+msgstr "Бинарные файлы задач"
+
+#: content/data_processing/jobs/job_binaries/tabs.py:42
+msgid "Unable to fetch job binary list"
+msgstr "Не удалось получить список бинарных файлов задач"
+
+#: content/data_processing/jobs/job_binaries/views.py:73
+#, python-format
+msgid "Unable to retrieve job binary \"%s\"."
+msgstr "Не удалось получить бинарный файл задачи \"%s\"."
+
+#: content/data_processing/jobs/job_binaries/views.py:96
+#, python-format
+msgid "Unable to retrieve details for job binary \"%s\"."
+msgstr "Не удалось получить подробные сведения о бинарном файле задачи \"%s\"."
+
+#: content/data_processing/jobs/job_binaries/views.py:126
+#, python-format
+msgid "Unable to fetch job binary: %(exc)s"
+msgstr "Не удалось получить бинарный файл задачи: %(exc)s"
+
+#: content/data_processing/jobs/job_templates/tables.py:38
+#: content/data_processing/jobs/job_templates/views.py:42
+#: content/data_processing/jobs/job_templates/workflows/create.py:143
+#: content/data_processing/jobs/job_templates/workflows/create.py:224
+#: content/data_processing/jobs/templates/job_templates/create.html:3
+msgid "Create Job Template"
+msgstr "Создать шаблон задачи"
+
+#: content/data_processing/jobs/job_templates/tables.py:48
+msgid "Delete Job Template"
+msgid_plural "Delete Job Templates"
+msgstr[0] "Удалить шаблон задачи"
+msgstr[1] "Удалить шаблоны задач"
+msgstr[2] "Удалить шаблоны задач"
+
+#: content/data_processing/jobs/job_templates/tables.py:56
+msgid "Deleted Job Template"
+msgid_plural "Deleted Jobs Templates"
+msgstr[0] "Шаблон задачи был удалён"
+msgstr[1] "Шаблоны задач были удалены"
+msgstr[2] "Шаблоны задач были удалены"
+
+#: content/data_processing/jobs/job_templates/tables.py:67
+msgid "Launch On Existing Cluster"
+msgstr "Запустить в существующем кластере"
+
+#: content/data_processing/jobs/job_templates/tables.py:80
+#: content/data_processing/jobs/job_templates/tables.py:93
+msgid "Launch On New Cluster"
+msgstr "Запустить в новом кластере"
+
+#: content/data_processing/jobs/job_templates/tables.py:137
+#: content/data_processing/jobs/job_templates/tabs.py:32
+msgid "Job Templates"
+msgstr "Шаблоны задач"
+
+#: content/data_processing/jobs/job_templates/tabs.py:47
+msgid "Unable to fetch job template list"
+msgstr "Не удалось получить список шаблонов задач"
+
+#: content/data_processing/jobs/job_templates/views.py:56
+#, python-format
+msgid "Unable to retrieve details for job template \"%s\"."
+msgstr "Не удалось получить подробные сведения о шаблоне задачи \"%s\"."
+
+#: content/data_processing/jobs/job_templates/views.py:84
+#: content/data_processing/jobs/job_templates/views.py:119
+#: content/data_processing/jobs/job_templates/views.py:132
+#: content/data_processing/jobs/job_templates/workflows/launch.py:516
+#: content/data_processing/jobs/job_templates/workflows/launch.py:598
+#: content/data_processing/jobs/job_templates/workflows/launch.py:608
+#: content/data_processing/jobs/jobs/tables.py:75
+#: content/data_processing/jobs/jobs/tables.py:108
+#: content/data_processing/jobs/templates/job_templates/launch.html:3
+msgid "Launch Job"
+msgid_plural "Launch Jobs"
+msgstr[0] "Запустить задачу"
+msgstr[1] "Запустить задачи"
+msgstr[2] "Запустить задачи"
+
+#: content/data_processing/jobs/job_templates/views.py:110
+#: content/data_processing/jobs/job_templates/workflows/launch.py:121
+msgid "Unable to fetch clusters."
+msgstr "Не удалось получить сведения о кластерах"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:39
+#: content/data_processing/jobs/job_templates/workflows/create.py:46
+#: content/data_processing/jobs/job_templates/workflows/create.py:47
+#: content/data_processing/jobs/job_templates/workflows/create.py:49
+#: content/data_processing/jobs/job_templates/workflows/create.py:50
+#: content/data_processing/jobs/job_templates/workflows/create.py:51
+#: content/data_processing/jobs/job_templates/workflows/create.py:52
+msgid "Choose libraries"
+msgstr "Выбрать библиотеки"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:48
+msgid "Choose additional files"
+msgstr "Выбрать дополнительные файлы"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:64
+#: content/data_processing/jobs/job_templates/workflows/create.py:130
+msgid "-- not selected --"
+msgstr "-- не выбрано --"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:69
+#: content/data_processing/jobs/templates/job_templates/_details.html:29
+msgid "Libs"
+msgstr "Библиотеки"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:76
+#: content/data_processing/jobs/wizard/forms.py:90
+msgid "Job Type"
+msgstr "Тип задачи"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:83
+#: content/data_processing/jobs/job_templates/workflows/create.py:92
+#: content/data_processing/jobs/job_templates/workflows/create.py:93
+#: content/data_processing/jobs/job_templates/workflows/create.py:95
+#: content/data_processing/jobs/job_templates/workflows/create.py:96
+#: content/data_processing/jobs/job_templates/workflows/create.py:97
+#: content/data_processing/jobs/job_templates/workflows/create.py:98
+msgid "Choose a main binary"
+msgstr "Выбрать главный бинарный файл"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:85
+msgid "Choose the binary which should be used in this Job."
+msgstr "Выберите бинарный файл, который нужно использовать в этой задаче"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:94
+msgid "Choose a shell script"
+msgstr "Выберите сценарий shell"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:104
+#: content/data_processing/jobs/job_templates/workflows/create.py:105
+#: content/data_processing/jobs/job_templates/workflows/launch.py:51
+#: content/data_processing/jobs/job_templates/workflows/launch.py:52
+#: content/data_processing/jobs/job_templates/workflows/launch.py:112
+#: content/data_processing/jobs/job_templates/workflows/launch.py:113
+msgid "job"
+msgstr "задача"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:184
+#: content/data_processing/jobs/job_templates/workflows/launch.py:502
+msgid "Interface Arguments"
+msgstr "Аргументы интерфейса"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:226
+msgid "Job created"
+msgstr "Задача была создана"
+
+#: content/data_processing/jobs/job_templates/workflows/create.py:227
+msgid "Could not create job template"
+msgstr "Не удалось создать шаблон задачи"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:40
+msgid "Input"
+msgstr "Ввод"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:46
+msgid "Output"
+msgstr "Вывод"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:61
+#: content/data_processing/jobs/job_templates/workflows/launch.py:102
+#: content/data_processing/jobs/job_templates/workflows/launch.py:130
+#: content/data_processing/jobs/jobs/tables.py:39
+msgid "Job"
+msgstr "Задача"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:80
+msgid "Unable to fetch data sources."
+msgstr "Не удалось получить сведения об источниках данных."
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:94
+msgid "Unable to fetch jobs."
+msgstr "Не удалось получить сведения о задачах"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:108
+#: content/data_processing/jobs/jobs/tables.py:40
+#: content/data_processing/jobs/jobs/tables.py:244
+#: content/data_processing/jobs/templates/jobs/_details.html:37
+msgid "Cluster"
+msgstr "Кластер"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:126
+msgid "No clusters available"
+msgstr "Нет доступных кластеров"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:194
+msgid "Main Class"
+msgstr "Основной класс"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:198
+msgid "Topology Name"
+msgstr "Имя топологии"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:199
+msgid "Use the same topology name as defined in your .yaml file"
+msgstr "Использовать имя топологии, указанное в файле .yaml"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:203
+msgid "Java Opts"
+msgstr "Параметры Java"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:206
+msgid "Mapper"
+msgstr "Модуль отображения"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:209
+msgid "Reducer"
+msgstr "Редуктор"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:213
+msgid "Use HBase Common library"
+msgstr "Использовать общую библиотеку HBase"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:214
+msgid "Run HBase EDP Jobs with common HBase library on HDFS"
+msgstr "Запускать задачи HBase EDP с общей библиотекой HBase на HDFS"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:218
+msgid "Adapt For Oozie"
+msgstr "Адаптировать под Oozie"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:219
+msgid ""
+"Automatically modify the Hadoop configuration so that job config values are "
+"set and so that Oozie will handle exit codes correctly."
+msgstr ""
+"Автоматически изменять конфигурацию Hadoop, с тем, чтобы "
+"настраивать значения параметров задачи, и система Oozie корректно"
+" обрабатывала "
+"коды выходов."
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:225
+msgid "Enable Swift Paths"
+msgstr "Включить пути Swift"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:226
+msgid ""
+"Modify the configuration so that swift URLs can be dereferenced through HDFS "
+"at runtime."
+msgstr ""
+"Изменить конфигурацию таким образом, чтобы URL swift могли быть разыменованы "
+"с помощью HDFS во время выполнения."
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:231
+msgid "Use Data Source Substitution for Names and UUIDs"
+msgstr "Использовать замену источников данных для имён и UUID"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:232
+msgid ""
+"Substitute data source objects for URLs of the form datasource://name or "
+"uuid."
+msgstr ""
+"Заменять объекты источников данных URL, имеющих вид «источник_данных://имя» "
+"или UUID"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:341
+msgid "Configure"
+msgstr "Настроить"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:440
+msgid "Persist cluster after job exit"
+msgstr "Не удалять кластер после завершения задачи"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:518
+#: content/data_processing/jobs/job_templates/workflows/launch.py:610
+msgid "Job launched"
+msgstr "Задача была запущена"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:519
+#: content/data_processing/jobs/job_templates/workflows/launch.py:611
+msgid "Could not launch job"
+msgstr "Не удалось запустить задачу"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:549
+msgid "Plugin name"
+msgstr "Имя модуля"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:554
+msgid "Job configs"
+msgstr "Конфигурации задач"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:558
+msgid "Job args"
+msgstr "Аргументы задач"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:562
+msgid "Job params"
+msgstr "Параметры задач"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:568
+msgid "Job Execution ID"
+msgstr "ID выполнения задачи"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:647
+msgid "Unable to create new cluster for job."
+msgstr "Не удалось создать новый кластер для задачи"
+
+#: content/data_processing/jobs/job_templates/workflows/launch.py:664
+msgid "Unable to launch job."
+msgstr "Не удалось запустить задачу"
+
+#: content/data_processing/jobs/jobs/tables.py:46
+msgid "Job Guide"
+msgstr "Мастер задач"
+
+#: content/data_processing/jobs/jobs/tables.py:54
+msgid "Delete Job"
+msgid_plural "Delete Jobs"
+msgstr[0] "Удалить задачу"
+msgstr[1] "Удалить задачи"
+msgstr[2] "Удалить задачи"
+
+#: content/data_processing/jobs/jobs/tables.py:62
+msgid "Deleted Job"
+msgid_plural "Deleted Jobs"
+msgstr[0] "Задача была удалена"
+msgstr[1] "Задачи были удалены"
+msgstr[2] "Задачи были удалены"
+
+#: content/data_processing/jobs/jobs/tables.py:83
+#: content/data_processing/jobs/jobs/tables.py:116
+msgid "Launched Job"
+msgid_plural "Launched Jobs"
+msgstr[0] "Задача была запущена"
+msgstr[1] "Задачи были запущены"
+msgstr[2] "Задачи были запущены"
+
+#: content/data_processing/jobs/jobs/tables.py:89
+msgid "Relaunch On Existing Cluster"
+msgstr "Повторно запустить в существующем кластере"
+
+#: content/data_processing/jobs/jobs/tables.py:122
+msgid "Relaunch On New Cluster"
+msgstr "Повторно запустить в новом кластере"
+
+#: content/data_processing/jobs/jobs/tables.py:185
+#: content/data_processing/jobs/jobs/tables.py:200
+msgid "Not available"
+msgstr "Недоступно"
+
+#: content/data_processing/jobs/jobs/tables.py:222
+msgctxt "Current status of a Job"
+msgid "Done with Error"
+msgstr "Выполнена с ошибкой"
+
+#: content/data_processing/jobs/jobs/tables.py:224
+msgctxt "Current status of a Job"
+msgid "Failed"
+msgstr "Сбой"
+
+#: content/data_processing/jobs/jobs/tables.py:226
+msgctxt "Current status of a Job"
+msgid "Killed"
+msgstr "Убита"
+
+#: content/data_processing/jobs/jobs/tables.py:228
+msgctxt "Current status of a Job"
+msgid "Succeeded"
+msgstr "Выполнена успешно"
+
+#: content/data_processing/jobs/jobs/tables.py:239
+#: content/data_processing/jobs/templates/jobs/_details.html:15
+msgid "Job Template"
+msgstr "Шаблон задачи"
+
+#: content/data_processing/jobs/jobs/tables.py:263
+#: content/data_processing/jobs/jobs/tabs.py:32
+#: content/data_processing/jobs/panel.py:21
+#: content/data_processing/jobs/templates/jobs/index.html:3
+#: content/data_processing/jobs/views.py:43
+msgid "Jobs"
+msgstr "Задачи"
+
+#: content/data_processing/jobs/jobs/tabs.py:55
+msgid "Unable to fetch job list"
+msgstr "Не удалось получить список задач"
+
+#: content/data_processing/jobs/jobs/tabs.py:90
+msgid "Engine Job ID"
+msgstr "ID задачи базового обработчика"
+
+#: content/data_processing/jobs/jobs/tabs.py:93
+msgid "Oozie Job ID"
+msgstr "ID задачи Oozie"
+
+#: content/data_processing/jobs/jobs/views.py:39
+#, python-format
+msgid "Unable to retrieve details for job \"%s\"."
+msgstr "Не удалось получить подробные сведения о задаче \"%s\"."
+
+#: content/data_processing/jobs/templates/data_sources/_create_data_source_help.html:4
+msgid "Create a Data Source with a specified name."
+msgstr "Создать источник данных с указанным именем"
+
+#: content/data_processing/jobs/templates/data_sources/_create_data_source_help.html:7
+msgid "Select the type of your Data Source."
+msgstr "Выбрать тип создаваемого источника данных"
+
+#: content/data_processing/jobs/templates/data_sources/_create_data_source_help.html:10
+msgid "You may need to enter the username and password for your Data Source."
+msgstr ""
+"Возможно, для источника данных понадобится указать имя пользователя и пароль"
+
+#: content/data_processing/jobs/templates/data_sources/_create_data_source_help.html:13
+msgid ""
+"For Data Sources on a Manila share, choose the share and enter the path "
+"relative to the share (example: /outputdir/myinputfile.txt)"
+msgstr ""
+"Для источников данных на общих ресурсах Manila выберите общий ресурс "
+"и укажите путь относительно ресурса (пример: /outputdir/myinputfile.txt)"
+
+#: content/data_processing/jobs/templates/data_sources/_create_data_source_help.html:16
+msgid ""
+"For Data Sources in S3 storage, the URL should be specified in the format "
+"s3a://bucket/path. Also, each of the access properties may be optional if "
+"you have configured that property on your cluster manually."
+msgstr ""
+"Для источников данных в хранилищах S3 необходимо указывать URL в формате: "
+"s3a://bucket/path. Кроме того, каждый из параметров доступа может быть"
+" необязательным, "
+"если этот параметр был вручную настроен в кластере."
+
+#: content/data_processing/jobs/templates/data_sources/_create_data_source_help.html:20
+msgid "You may also enter an optional description for your Data Source."
+msgstr "Для источника данных также можно создать дополнительное описание"
+
+#: content/data_processing/jobs/templates/data_sources/_details.html:25
+#: content/data_processing/jobs/templates/job_binaries/_details.html:23
+msgid "Create time"
+msgstr "Время создания"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:4
+msgid ""
+"<b>Important</b>:  The name that you give your job binary will be the name "
+"used in your job execution. If your binary requires a particular name or "
+"extension (ie: \".jar\"), be sure to include it here."
+msgstr ""
+"<b>Важно</b>: имя, присвоенное бинарному файлу задачи, будет использоваться "
+"во время выполнения задачи. Если бинарному файлу требуется конкретное имя или "
+"расширение (например: \".jar\"), обязательно укажите его здесь."
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:8
+msgid "Select the storage type for your job binary."
+msgstr "Выберите тип хранилища для бинарного файла задачи"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:10
+msgid "Data Processing internal database"
+msgstr "Внутренняя БД службы обработки данных"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:11
+msgid "Swift"
+msgstr "Swift"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:12
+msgid "S3"
+msgstr "S3"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:16
+msgid ""
+"For Data Processing internal job binaries, you may choose from the following:"
+msgstr ""
+"Для бинарных файлов внутренних задач службы обработки данных доступны "
+"следующие варианты:"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:18
+msgid "Choose an existing file"
+msgstr "Выберите уже существующий файл"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:19
+msgid "Upload a new file"
+msgstr "Выгрузить новый файл"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:20
+msgid "Create a script to be uploaded dynamically"
+msgstr "Создать сценарий для динамической выгрузки"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:24
+msgid "For Object Store job binaries, you must:"
+msgstr "Для бинарных файлов задач хранилища объектов необходимо:"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:26
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:33
+msgid "Enter the URL for the file"
+msgstr "Указать URL файла"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:27
+msgid "Enter the username and password required to access that file"
+msgstr "Указать имя пользователя и пароль для доступа к этому файлу"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:31
+msgid "For S3 job binaries, you must:"
+msgstr "Для бинарных файлов задач S3 необходимо:"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:34
+msgid "Enter the access key and secret key required to access that file"
+msgstr "Указать ключ доступа и секретный ключ для доступа к этому файлу"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:35
+msgid "Enter the endpoint of the S3 service where the file is stored"
+msgstr "Указать конечную точку службы S3, где хранится этот файл"
+
+#: content/data_processing/jobs/templates/job_binaries/_create_job_binary_help.html:39
+msgid "You may also enter an optional description for your job binary."
+msgstr "Для бинарного файла задачи также можно создать дополнительное описание"
+
+#: content/data_processing/jobs/templates/job_binaries/_details.html:26
+msgid "Download job binary"
+msgstr "Загрузить бинарный файл задачи"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:4
+msgid "Create a job template with a specified name."
+msgstr "Создать шаблон задачи с указанным именем"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:7
+msgid "Select the type of your job:"
+msgstr "Выберите тип задачи:"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:9
+#: content/data_processing/utils/helpers.py:186
+msgid "Pig"
+msgstr "Pig"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:10
+#: content/data_processing/utils/helpers.py:187
+msgid "Hive"
+msgstr "Hive"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:11
+#: content/data_processing/utils/helpers.py:188
+msgid "Spark"
+msgstr "Spark"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:12
+#: content/data_processing/utils/helpers.py:189
+msgid "Storm"
+msgstr "Storm"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:13
+#: content/data_processing/utils/helpers.py:190
+msgid "Storm Pyleus"
+msgstr "Storm Pyleus"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:14
+#: content/data_processing/utils/helpers.py:191
+msgid "MapReduce"
+msgstr "MapReduce"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:15
+msgid "Java Action"
+msgstr "Java Action"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:16
+msgid "Shell Action"
+msgstr "Shell Action"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:20
+msgid ""
+"Choose or create your main binary.  Additional libraries can be added from "
+"the \"Libs\" tab."
+msgstr ""
+"Выберите или создайте главную библиотеку. Дополнительные библиотеки "
+"можно добавить во вкладке «Библиотеки»."
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:23
+msgid ""
+"For Storm, Storm Pyleus, Spark and Shell jobs, only a main is required,\"libs"
+"\" are optional."
+msgstr ""
+"Для задач Storm, Storm Pyleus, Spark и Shell требуется только "
+"основная библиотека, вкладка «Библиотеки» является дополнительной"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:26
+msgid ""
+"For MapReduce or Java Action jobs, \"mains\" are not applicable.  You are "
+"required to add one or more \"libs\" for these jobs."
+msgstr ""
+"Для задач MapReduce или Java Action «основная библиотека» не применяется. "
+"Для этих задач требуется добавить одну или более задач из вкладки"
+" «Библиотеки»."
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_help.html:30
+msgid "You may also enter an optional description for your job template."
+msgstr "Для шаблона задачи также можно создать дополнительное описание"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_libs_help.html:4
+msgid "Add libraries to your job template."
+msgstr "Добавить библиотеки в шаблон задачи"
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_libs_help.html:7
+msgid ""
+"Choose from the list of binaries and click \"choose\" to add the library to "
+"your job template.  This can be repeated for additional libraries."
+msgstr ""
+"Выберите бинарный файл в списке и нажмите «Выбрать» для "
+"добавления библиотек. Процесс можно повторить для добавления "
+"дополнительных библиотек."
+
+#: content/data_processing/jobs/templates/job_templates/_create_job_libs_help.html:10
+msgid ""
+"For Shell Action jobs, any required files beyond the main script may be "
+"added as \"libraries\"."
+msgstr ""
+"Для задач Shell Action в виде «библиотек» можно добавить любые файлы помимо"
+" основного файла сценария."
+
+#: content/data_processing/jobs/templates/job_templates/_details.html:23
+msgid "Mains"
+msgstr "Основные"
+
+#: content/data_processing/jobs/templates/job_templates/_details.html:35
+msgid "Created time"
+msgstr "Время создания"
+
+#: content/data_processing/jobs/templates/job_templates/_details.html:37
+msgid "Updated time"
+msgstr "Время обновления"
+
+#: content/data_processing/jobs/templates/job_templates/_details.html:38
+msgid "Never"
+msgstr "Никогда"
+
+#: content/data_processing/jobs/templates/job_templates/_launch_job_configure_help.html:4
+msgid "Enter any custom configuration required for your job's execution."
+msgstr ""
+"Укажите любую пользовательскую конфигурацию, необходимую для "
+"выполнения задачи."
+
+#: content/data_processing/jobs/templates/job_templates/_launch_job_help.html:4
+msgid "Launch the given job template on a cluster."
+msgstr "Запустить шаблон указанной задачи в кластере"
+
+#: content/data_processing/jobs/templates/job_templates/_launch_job_help.html:7
+msgid "Choose the cluster to use for the job."
+msgstr "Выберите кластер для задачи"
+
+#: content/data_processing/jobs/templates/job_templates/_launch_job_help.html:10
+msgid "Choose the Input Data Source (n/a for Java and Shell jobs)."
+msgstr "Выберите «Источник вводных данных» (недоступно для задач Java и Shell)"
+
+#: content/data_processing/jobs/templates/job_templates/_launch_job_help.html:13
+msgid "Choose the Output Data Source (n/a for Java and Shell jobs)."
+msgstr ""
+"Выберите «Источник выходных данных» (недоступно для задач Java и Shell)"
+
+#: content/data_processing/jobs/templates/job_templates/config_template.html:5
+msgid "Select property name"
+msgstr "Выберите имя свойства"
+
+#: content/data_processing/jobs/templates/job_templates/config_template.html:16
+#: content/data_processing/jobs/templates/job_templates/config_template.html:34
+#: content/data_processing/jobs/templates/job_templates/config_template.html:47
+#: content/data_processing/jobs/templates/job_templates/library_template.html:3
+msgid "Remove"
+msgstr "Удалить"
+
+#: content/data_processing/jobs/templates/job_templates/config_template.html:55
+#: content/data_processing/jobs/templates/job_templates/config_template.html:65
+msgid "Value"
+msgstr "Значение"
+
+#: content/data_processing/jobs/templates/job_templates/config_template.html:59
+#: content/data_processing/jobs/templates/job_templates/config_template.html:69
+msgid "Add"
+msgstr "Добавить"
+
+#: content/data_processing/jobs/templates/job_templates/config_template.html:239
+msgid "Configuration"
+msgstr "Конфигурация"
+
+#: content/data_processing/jobs/templates/job_templates/config_template.html:242
+msgid "Parameters"
+msgstr "Параметры"
+
+#: content/data_processing/jobs/templates/job_templates/config_template.html:245
+msgid "Arguments"
+msgstr "Аргументы"
+
+#: content/data_processing/jobs/templates/job_templates/job_interface_arguments_template.html:3
+msgid "Select a Value Type for your next argument:"
+msgstr "Выберите «Тип значения» для следующего аргумента:"
+
+#: content/data_processing/jobs/templates/job_templates/job_interface_arguments_template.html:8
+#: content/data_processing/utils/workflow_helpers.py:157
+msgid "String"
+msgstr "Строка"
+
+#: content/data_processing/jobs/templates/job_templates/job_interface_arguments_template.html:9
+#: content/data_processing/utils/workflow_helpers.py:158
+msgid "Number"
+msgstr "Число"
+
+#: content/data_processing/jobs/templates/job_templates/job_interface_arguments_template.html:10
+#: content/data_processing/utils/workflow_helpers.py:159
+msgid "Data Source"
+msgstr "Источник данных"
+
+#: content/data_processing/jobs/templates/job_templates/library_template.html:86
+msgid "Choose"
+msgstr "Выберите"
+
+#: content/data_processing/jobs/templates/job_templates/library_template.html:98
+msgid "Chosen Libraries"
+msgstr "Выбранные библиотеки"
+
+#: content/data_processing/jobs/templates/job_wizard/_job_type_select.html:12
+#: content/data_processing/jobs/templates/job_wizard/job_type_select.html:3
+#: content/data_processing/jobs/wizard/views.py:59
+msgid "Choose job type"
+msgstr "Выберите тип задачи"
+
+#: content/data_processing/jobs/templates/job_wizard/_job_type_select_help.html:3
+msgid ""
+"Select which type of job that you want to run. This choice will dictate "
+"which steps are required to successfully execute your job."
+msgstr ""
+"Выберите, какой тип будет иметь запускаемая задача. Этот выбор "
+"повлияет на шаги, требуемые для успешного выполнения задачи"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:12
+msgid ""
+"First, select which type of job that you want to run.  This choice will "
+"determine which other steps are required"
+msgstr ""
+"Сначала выберите тип запускаемой задачи. Этот выбор определит "
+"дальнейшие шаги."
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:20
+msgid "Select type"
+msgstr "Выберите тип"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:23
+msgid "Current type:"
+msgstr "Текущий тип:"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:30
+msgid "No type chosen"
+msgstr "Тип не выбран"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:41
+msgid ""
+"Data Sources are what your job uses for input and output.  Depending on the "
+"type of job you will be running, you may need to define one or more data "
+"sources.  You can create multiple data sources by repeating this step."
+msgstr ""
+"«Источники данных» используются задачей для ввода и вывода. В зависимости "
+"от типа запускаемой задачи понадобится настроить один или несколько"
+" источников данных. "
+"Несколько источников данных можно создать, повторяя этот шаг."
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:51
+msgid "Create a data source"
+msgstr "Создайте источник данных"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:60
+msgid ""
+"Define your Job Template. This is where you choose the type of job that you "
+"want to run (Pig, Java Action, Spark, etc) and choose or upload the files "
+"necessary to run it.  The inputs and outputs will be defined later."
+msgstr ""
+"Настройте шаблон задачи. Здесь выбирается тип задачи, которую будет"
+" необходимо "
+"выполнить (Pig, Java Action, Spark и т.д.), а также выбираются или"
+" выгружаются файлы, "
+"необходимые для запуска этой задачи. Ввод и вывод будут настроены позже."
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:70
+msgid "Create a job template"
+msgstr "Создайте шаблон задачи"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:72
+msgid "Job template:"
+msgstr "Шаблон задачи:"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:79
+msgid "No job template created"
+msgstr "Шаблон задачи не был создан"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:88
+msgid ""
+"Launch your job.  When launching, you may need to choose your input and "
+"output data sources.  This is where you would also add any special "
+"configuration values, parameters, or arguments that you need to pass along "
+"to your job."
+msgstr ""
+"Запустите созданную задачу. Во время запуска, может понадобиться выбрать "
+"источники данных ввода и вывода. Также, именно в этот момент нужно добавлять"
+" любые особые "
+"конфигурационные значения, параметры или аргументы, передаваемые задаче."
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:98
+msgid "Launch job"
+msgstr "Запустить задачу"
+
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:107
+#: content/data_processing/jobs/templates/job_wizard/jobex_guide.html:109
+msgid "Reset Job Execution Guide"
+msgstr "Заново запустить мастер выполнения задачи"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:30
+msgid "Input Data Source"
+msgstr "Источник вводных данных"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:34
+msgid "Output Data Source"
+msgstr "Источник выходных данных"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:39
+msgid "Last Updated"
+msgstr "Время посл. обновления"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:41
+msgctxt "Start time"
+msgid "Started"
+msgstr "Начато"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:43
+msgctxt "End time"
+msgid "Ended"
+msgstr "Завершено"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:45
+msgid "Return Code"
+msgstr "Код возврата"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:49
+msgctxt "Created time"
+msgid "Created"
+msgstr "Создано"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:51
+msgid "Job Configuration"
+msgstr "Конфигурация задачи"
+
+#: content/data_processing/jobs/templates/jobs/_details.html:53
+#, python-format
+msgid "%(group)s:"
+msgstr "%(group)s:"
+
+#: content/data_processing/jobs/wizard/forms.py:119
+msgid "Unable to set job type"
+msgstr "Не удалось настроить тип задачи"
+
+#: content/data_processing/jobs/wizard/views.py:29
+msgid "Guided Job Execution"
+msgstr "Выполнение задачи с помощью мастера"
+
+#: content/data_processing/utils/acl.py:125
+#, python-format
+msgid "If selected, %s will be shared across the tenants"
+msgstr "Если выбрано, %s будет общим ресурсом арендаторов"
+
+#: content/data_processing/utils/acl.py:136
+#, python-format
+msgid ""
+"If selected, %s will be protected from modifications until this will be "
+"unselected"
+msgstr ""
+"Если выбрано, %s будет заблокировано от внесения изменений "
+"до отмены выбора."
+
+#: content/data_processing/utils/anti_affinity.py:26
+msgid "Use anti-affinity groups for: "
+msgstr "Использовать группы анти-схожести для: "
+
+#: content/data_processing/utils/anti_affinity.py:28
+msgid "Use anti-affinity groups for processes"
+msgstr "Использовать группы анти-схожести для процессов"
+
+#: content/data_processing/utils/anti_affinity.py:61
+msgid "Unable to populate anti-affinity processes."
+msgstr "Не удалось наполнить процессы анти-схожести"
+
+#: content/data_processing/utils/helpers.py:192
+msgid "Streaming MapReduce"
+msgstr "Streaming MapReduce"
+
+#: content/data_processing/utils/helpers.py:194
+msgid "Java"
+msgstr "Java"
+
+#: content/data_processing/utils/helpers.py:195
+msgid "Shell"
+msgstr "Shell"
+
+#: content/data_processing/utils/helpers.py:207
+msgid ""
+"You've chosen a cluster that is in 'Error' state. Appropriate execution of "
+"the job can't be guaranteed."
+msgstr ""
+"Был выбран кластер со статусом «Ошибка». Корректное выполнение задачи "
+"не гарантируется."
+
+#: content/data_processing/utils/neutron_support.py:31
+msgid "Unable to retrieve networks."
+msgstr "Не удалось получить сведения о сетях"
+
+#: content/data_processing/utils/workflow_helpers.py:120
+msgid "Node group cluster"
+msgstr "Кластер группы узлов"
+
+#: content/data_processing/utils/workflow_helpers.py:124
+msgid "Count"
+msgstr "Число"
+
+#: content/data_processing/utils/workflow_helpers.py:143
+msgid "Mapping Type"
+msgstr "Тип отображения"
+
+#: content/data_processing/utils/workflow_helpers.py:146
+msgid "Positional Argument"
+msgstr "Позиционный аргумент"
+
+#: content/data_processing/utils/workflow_helpers.py:147
+msgid "Configuration Value"
+msgstr "Конфигурационное значение"
+
+#: content/data_processing/utils/workflow_helpers.py:148
+msgid "Named Parameter"
+msgstr "Именованный параметр"
+
+#: content/data_processing/utils/workflow_helpers.py:150
+msgid "Location"
+msgstr "Местоположение"
+
+#: content/data_processing/utils/workflow_helpers.py:154
+msgid "Value Type"
+msgstr "Тип значения"
+
+#: content/data_processing/utils/workflow_helpers.py:162
+msgid "Required"
+msgstr "Обязательный"
+
+#: content/data_processing/utils/workflow_helpers.py:166
+msgid "Default Value"
+msgstr "Значение по умолчанию"
+
+#: content/data_processing/utils/workflow_helpers.py:195
+#, python-format
+msgid "Unable to retrieve security group %(group)s."
+msgstr "Не удалось получить сведения о группе безопасности %(group)s."
+
+#: content/data_processing/utils/workflow_helpers.py:241
+msgid "Unable to fetch image choices."
+msgstr "Не удалось получить сведения о выборе образов"
+
+#: content/data_processing/utils/workflow_helpers.py:246
+msgid "No Images Available"
+msgstr "Нет доступных образов"
+
+#: content/data_processing/utils/workflow_helpers.py:382
+msgid "Read/Write"
+msgstr "Чтение/запись"
+
+#: content/data_processing/utils/workflow_helpers.py:382
+msgid "Read only"
+msgstr "Только чтение"
+
+#: content/data_processing/utils/workflow_helpers.py:427
+msgid "The value of shares must be a list of values"
+msgstr "Значение общих ресурсов должно быть списком значений"

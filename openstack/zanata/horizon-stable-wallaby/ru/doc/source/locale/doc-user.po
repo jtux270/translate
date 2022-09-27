@@ -1,0 +1,2368 @@
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon 19.2.1.dev8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-29 12:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-08-04 09:02+0000\n"
+"Last-Translator: Ilya Alekseyev <ilyaalekseyev@acm.org>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../source/user/browser_support.rst:3
+msgid "Supported Browsers"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:5
+msgid ""
+"Horizon is primarily tested and supported on the latest version of Firefox "
+"and the latest version of Chrome. Issues related to IE, Safari and Opera "
+"will also be considered."
+msgstr ""
+
+#: ../../source/user/browser_support.rst:9
+msgid ""
+"This page aims to informally document what that means for different "
+"releases, everyone is warmly encouraged to update this page based on the "
+"versions they've tested with."
+msgstr ""
+
+#: ../../source/user/browser_support.rst:13
+msgid "Legend:"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:15
+msgid "Very good: Very well tested, should work as expected"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:16
+msgid ""
+"Good: Moderately tested, should look nice and work fine, maybe a few visual "
+"hiccups"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:18
+msgid "Poor: Doesn't look good"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:19
+msgid "Broken: Essential functionality not working (link to bug in the notes)"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:20
+msgid "No: Not supported"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:23
+msgid "Notes"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:23
+msgid "Status"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:25
+msgid "Firefox"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:25
+#: ../../source/user/browser_support.rst:27
+msgid "Very good"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:27
+msgid "Chrome"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:29
+msgid "MS Edge"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:29
+#: ../../source/user/browser_support.rst:32
+msgid "Poor"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:29
+msgid "There're some bugs but most of features work"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:32
+msgid "IE 11"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:32
+msgid "There're some bugs but most"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:33
+msgid "of features work"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:35
+msgid "IE 10 and below"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:35
+msgid "Not supported."
+msgstr ""
+
+#: ../../source/user/browser_support.rst:37
+msgid "Good"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:37
+msgid "Safari"
+msgstr "Safari"
+
+#: ../../source/user/browser_support.rst:39
+msgid "?"
+msgstr "?"
+
+#: ../../source/user/browser_support.rst:39
+msgid "Is should work good with Webkit"
+msgstr ""
+
+#: ../../source/user/browser_support.rst:39
+msgid "Opera"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:3
+msgid "Configure access and security for instances"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:5
+msgid ""
+"Before you launch an instance, you should add security group rules to enable "
+"users to ping and use SSH to connect to the instance. Security groups are "
+"sets of IP filter rules that define networking access and are applied to all "
+"instances within a project. To do so, you either add rules to the default "
+"security group :ref:`security_groups_add_rule` or add a new security group "
+"with rules."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:12
+msgid ""
+"Key pairs are SSH credentials that are injected into an instance when it is "
+"launched. To use key pair injection, the image that the instance is based on "
+"must contain the ``cloud-init`` package. Each project should have at least "
+"one key pair. For more information, see the section :ref:`keypair_add`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:18
+msgid ""
+"If you have generated a key pair with an external tool, you can import it "
+"into OpenStack. The key pair can be used for multiple instances that belong "
+"to a project. For more information, see the section :ref:"
+"`dashboard_import_keypair`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:25
+msgid ""
+"A key pair belongs to an individual user, not to a project. To share a key "
+"pair across multiple users, each user needs to import that key pair."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:29
+msgid ""
+"When an instance is created in OpenStack, it is automatically assigned a "
+"fixed IP address in the network to which the instance is assigned. This IP "
+"address is permanently associated with the instance until the instance is "
+"terminated. However, in addition to the fixed IP address, a floating IP "
+"address can also be attached to an instance. Unlike fixed IP addresses, "
+"floating IP addresses are able to have their associations modified at any "
+"time, regardless of the state of the instances involved."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:40
+msgid "Add a rule to the default security group"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:42
+msgid ""
+"This procedure enables SSH and ICMP (ping) access to instances. The rules "
+"apply to all instances within a given project, and should be set for every "
+"project unless there is a reason to prohibit SSH or ICMP access to the "
+"instances."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:47
+msgid ""
+"This procedure can be adjusted as necessary to add additional security group "
+"rules to a project, if your cloud requires them."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:52
+msgid ""
+"When adding a rule, you must specify the protocol used with the destination "
+"port or source port."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:55
+#: ../../source/user/configure-access-and-security-for-instances.rst:105
+#: ../../source/user/configure-access-and-security-for-instances.rst:146
+#: ../../source/user/configure-access-and-security-for-instances.rst:181
+#: ../../source/user/create-networks.rst:18
+#: ../../source/user/create-networks.rst:74
+#: ../../source/user/create-networks.rst:116
+#: ../../source/user/launch-instances.rst:19
+#: ../../source/user/launch-instances.rst:247
+#: ../../source/user/launch-instances.rst:262
+#: ../../source/user/launch-instances.rst:284
+#: ../../source/user/manage-containers.rst:24
+#: ../../source/user/manage-containers.rst:46
+#: ../../source/user/manage-containers.rst:80
+#: ../../source/user/manage-containers.rst:104
+#: ../../source/user/manage-containers.rst:134
+#: ../../source/user/manage-containers.rst:161
+#: ../../source/user/manage-images.rst:28
+#: ../../source/user/manage-images.rst:107
+#: ../../source/user/manage-images.rst:136
+#: ../../source/user/manage-volumes.rst:14
+#: ../../source/user/manage-volumes.rst:68
+#: ../../source/user/manage-volumes.rst:101
+#: ../../source/user/manage-volumes.rst:117
+#: ../../source/user/manage-volumes.rst:138
+#: ../../source/user/manage-volumes.rst:166
+msgid "Log in to the dashboard."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:57
+#: ../../source/user/configure-access-and-security-for-instances.rst:107
+#: ../../source/user/configure-access-and-security-for-instances.rst:148
+#: ../../source/user/configure-access-and-security-for-instances.rst:183
+#: ../../source/user/create-networks.rst:20
+#: ../../source/user/create-networks.rst:76
+#: ../../source/user/launch-instances.rst:21
+#: ../../source/user/launch-instances.rst:249
+#: ../../source/user/launch-instances.rst:264
+#: ../../source/user/launch-instances.rst:286
+#: ../../source/user/manage-containers.rst:26
+#: ../../source/user/manage-containers.rst:48
+#: ../../source/user/manage-containers.rst:82
+#: ../../source/user/manage-containers.rst:106
+#: ../../source/user/manage-containers.rst:136
+#: ../../source/user/manage-containers.rst:163
+#: ../../source/user/manage-images.rst:30
+#: ../../source/user/manage-images.rst:109
+#: ../../source/user/manage-images.rst:138
+#: ../../source/user/manage-volumes.rst:16
+#: ../../source/user/manage-volumes.rst:70
+#: ../../source/user/manage-volumes.rst:103
+#: ../../source/user/manage-volumes.rst:119
+#: ../../source/user/manage-volumes.rst:140
+#: ../../source/user/manage-volumes.rst:168
+msgid ""
+"Select the appropriate project from the drop down menu at the top left."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:59
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Network` tab. The :"
+"guilabel:`Security Groups` tab shows the security groups that are available "
+"for this project."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:63
+msgid "Select the default security group and click :guilabel:`Manage Rules`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:65
+msgid "To allow SSH access, click :guilabel:`Add Rule`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:67
+#: ../../source/user/configure-access-and-security-for-instances.rst:86
+msgid "In the :guilabel:`Add Rule` dialog box, enter the following values:"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:69
+msgid "**Rule**: ``SSH``"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:70
+#: ../../source/user/configure-access-and-security-for-instances.rst:90
+msgid "**Remote**: ``CIDR``"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:71
+#: ../../source/user/configure-access-and-security-for-instances.rst:91
+msgid "**CIDR**: ``0.0.0.0/0``"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:75
+msgid ""
+"To accept requests from a particular range of IP addresses, specify the IP "
+"address block in the :guilabel:`CIDR` box."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:79
+#: ../../source/user/configure-access-and-security-for-instances.rst:93
+msgid "Click :guilabel:`Add`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:81
+msgid ""
+"Instances will now have SSH port 22 open for requests from any IP address."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:84
+msgid "To add an ICMP rule, click :guilabel:`Add Rule`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:88
+msgid "**Rule**: ``All ICMP``"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:89
+msgid "**Direction**: ``Ingress``"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:95
+msgid "Instances will now accept all incoming ICMP packets."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:100
+msgid "Add a key pair"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:102
+msgid "Create at least one key pair for each project."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:109
+#: ../../source/user/configure-access-and-security-for-instances.rst:150
+msgid "On the :guilabel:`Project` tab, open the :guilabel:`Compute` tab."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:111
+#: ../../source/user/configure-access-and-security-for-instances.rst:152
+msgid ""
+"Click the :guilabel:`Key Pairs` tab, which shows the key pairs that are "
+"available for this project."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:114
+msgid "Click :guilabel:`Create Key Pair`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:116
+msgid ""
+"In the :guilabel:`Create Key Pair` dialog box, enter a name for your key "
+"pair, and click :guilabel:`Create Key Pair`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:119
+msgid "The private key will be downloaded automatically."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:121
+msgid ""
+"To change its permissions so that only you can read and write to the file, "
+"run the following command:"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:130
+msgid ""
+"If you are using the Dashboard from a Windows computer, use PuTTYgen to load "
+"the ``*.pem`` file and convert and save it as ``*.ppk``. For more "
+"information see the `WinSCP web page for PuTTYgen <https://winscp.net/eng/"
+"docs/ui_puttygen>`__."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:135
+msgid "To make the key pair known to SSH, run the :command:`ssh-add` command."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:144
+msgid "Import a key pair"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:155
+msgid "Click :guilabel:`Import Key Pair`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:157
+msgid ""
+"In the :guilabel:`Import Key Pair` dialog box, enter the name of your key "
+"pair, copy the public key into the :guilabel:`Public Key` box, and then "
+"click :guilabel:`Import Key Pair`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:161
+msgid "The Compute database registers the public key of the key pair."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:163
+msgid "The Dashboard lists the key pair on the :guilabel:`Key Pairs` tab."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:166
+msgid "Allocate a floating IP address to an instance"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:168
+msgid ""
+"When an instance is created in OpenStack, it is automatically assigned a "
+"fixed IP address in the network to which the instance is assigned. This IP "
+"address is permanently associated with the instance until the instance is "
+"terminated."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:173
+msgid ""
+"However, in addition to the fixed IP address, a floating IP address can also "
+"be attached to an instance. Unlike fixed IP addresses, floating IP addresses "
+"can have their associations modified at any time, regardless of the state of "
+"the instances involved. This procedure details the reservation of a floating "
+"IP address from an existing pool of addresses and the association of that "
+"address with a specific instance."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:185
+msgid "On the :guilabel:`Project` tab, open the :guilabel:`Network` tab."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:187
+msgid ""
+"Click the :guilabel:`Floating IPs` tab, which shows the floating IP "
+"addresses allocated to instances."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:190
+msgid "Click :guilabel:`Allocate IP To Project`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:192
+msgid "Choose the pool from which to pick the IP address."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:194
+msgid "Click :guilabel:`Allocate IP`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:196
+msgid "In the :guilabel:`Floating IPs` list, click :guilabel:`Associate`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:198
+msgid ""
+"In the :guilabel:`Manage Floating IP Associations` dialog box, choose the "
+"following options:"
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:201
+msgid ""
+"The :guilabel:`IP Address` field is filled automatically, but you can add a "
+"new IP address by clicking the :guilabel:`+` button."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:205
+msgid ""
+"In the :guilabel:`Port to be associated` field, select a port from the list."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:208
+msgid "The list shows all the instances with their fixed IP addresses."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:210
+msgid "Click :guilabel:`Associate`."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:214
+msgid ""
+"To disassociate an IP address from an instance, click the :guilabel:"
+"`Disassociate` button."
+msgstr ""
+
+#: ../../source/user/configure-access-and-security-for-instances.rst:217
+msgid ""
+"To release the floating IP address back into the floating IP pool, click the "
+":guilabel:`Release Floating IP` option in the :guilabel:`Actions` column."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:3
+msgid "Create and manage networks"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:5
+msgid ""
+"The OpenStack Networking service provides a scalable system for managing the "
+"network connectivity within an OpenStack cloud deployment. It can easily and "
+"quickly react to changing network needs (for example, creating and assigning "
+"new IP addresses)."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:10
+msgid ""
+"Networking in OpenStack is complex. This section provides the basic "
+"instructions for creating a network and a router. For detailed information "
+"about managing networks, refer to the `OpenStack Networking Guide <https://"
+"docs.openstack.org/neutron/latest/admin/>`__."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:16
+msgid "Create a network"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:22
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Network` tab and click :"
+"guilabel:`Networks` category."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:25
+msgid "Click :guilabel:`Create Network`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:27
+msgid ""
+"In the :guilabel:`Create Network` dialog box, specify the following values."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:29
+msgid ":guilabel:`Network` tab"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:31
+msgid ":guilabel:`Network Name`: Specify a name to identify the network."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:33
+msgid ""
+":guilabel:`Shared`: Share the network with other projects. Non admin users "
+"are not allowed to set shared option."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:36
+msgid ":guilabel:`Admin State`: The state to start the network in."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:38
+msgid ":guilabel:`Create Subnet`: Select this check box to create a subnet"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:40
+msgid ""
+"You do not have to specify a subnet when you create a network, but if you do "
+"not specify a subnet, the network can not be attached to an instance."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:43
+msgid ":guilabel:`Subnet` tab"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:45
+msgid ":guilabel:`Subnet Name`: Specify a name for the subnet."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:47
+msgid ":guilabel:`Network Address`: Specify the IP address for the subnet."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:49
+msgid ":guilabel:`IP Version`: Select IPv4 or IPv6."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:51
+msgid ""
+":guilabel:`Gateway IP`: Specify an IP address for a specific gateway. This "
+"parameter is optional."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:54
+msgid ""
+":guilabel:`Disable Gateway`: Select this check box to disable a gateway IP "
+"address."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:57
+msgid ":guilabel:`Subnet Details` tab"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:59
+msgid ":guilabel:`Enable DHCP`: Select this check box to enable DHCP."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:61
+msgid ":guilabel:`Allocation Pools`: Specify IP address pools."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:63
+msgid ":guilabel:`DNS Name Servers`: Specify a name for the DNS server."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:65
+msgid ":guilabel:`Host Routes`: Specify the IP address of host routes."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:67
+#: ../../source/user/manage-containers.rst:181
+msgid "Click :guilabel:`Create`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:69
+msgid "The dashboard shows the network on the :guilabel:`Networks` tab."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:72
+msgid "Create a router"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:78
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Network` tab and click :"
+"guilabel:`Routers` category."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:81
+msgid "Click :guilabel:`Create Router`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:83
+msgid ""
+"In the :guilabel:`Create Router` dialog box, specify a name for the router "
+"and :guilabel:`External Network`, and click :guilabel:`Create Router`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:86
+msgid "The new router is now displayed in the :guilabel:`Routers` tab."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:88
+msgid ""
+"To connect a private network to the newly created router, perform the "
+"following steps:"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:91
+msgid "On the :guilabel:`Routers` tab, click the name of the router."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:93
+msgid ""
+"On the :guilabel:`Router Details` page, click the :guilabel:`Interfaces` "
+"tab, then click :guilabel:`Add Interface`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:96
+msgid ""
+"In the :guilabel:`Add Interface` dialog box, select a :guilabel:`Subnet`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:98
+msgid ""
+"Optionally, in the :guilabel:`Add Interface` dialog box, set an :guilabel:"
+"`IP Address` for the router interface for the selected subnet."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:101
+msgid ""
+"If you choose not to set the :guilabel:`IP Address` value, then by default "
+"OpenStack Networking uses the first host IP address in the subnet."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:105
+msgid ""
+"The :guilabel:`Router Name` and :guilabel:`Router ID` fields are "
+"automatically updated."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:108
+msgid "Click :guilabel:`Add Interface`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:110
+msgid ""
+"You have successfully created the router. You can view the new topology from "
+"the :guilabel:`Network Topology` tab."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:114
+msgid "Create a port"
+msgstr ""
+
+#: ../../source/user/create-networks.rst:118
+msgid ""
+"Select the appropriate project from the drop-down menu at the top left."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:120
+msgid "On the :guilabel:`Project` tab, click :guilabel:`Networks` category."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:122
+msgid ""
+"Click on the :guilabel:`Network Name` of the network in which the port has "
+"to be created."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:125
+msgid "Go to the :guilabel:`Ports` tab and click :guilabel:`Create Port`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:127
+msgid ""
+"In the :guilabel:`Create Port` dialog box, specify the following values."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:129
+msgid ":guilabel:`Name`: Specify name to identify the port."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:131
+msgid ":guilabel:`Device ID`: Device ID attached to the port."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:133
+msgid ":guilabel:`Device Owner`: Device owner attached to the port."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:135
+msgid ""
+":guilabel:`Binding Host`: The ID of the host where the port is allocated."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:137
+msgid ""
+":guilabel:`Binding VNIC Type`: Select the VNIC type that is bound to the "
+"neutron port."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:140
+msgid "Click :guilabel:`Create Port`."
+msgstr ""
+
+#: ../../source/user/create-networks.rst:142
+msgid "The new port is now displayed in the :guilabel:`Ports` list."
+msgstr ""
+
+#: ../../source/user/index.rst:3
+msgid "OpenStack Dashboard User Documentation"
+msgstr ""
+
+#: ../../source/user/index.rst:5
+msgid ""
+"As a cloud end user, you can use the OpenStack dashboard to provision your "
+"own resources within the limits set by administrators. You can modify the "
+"examples provided in this section to create other types and sizes of server "
+"instances."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:3
+msgid "Launch and manage instances"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:5
+msgid ""
+"Instances are virtual machines that run inside the cloud. You can launch an "
+"instance from the following sources:"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:8
+msgid "Images uploaded to the Image service."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:10
+msgid ""
+"Image that you have copied to a persistent volume. The instance launches "
+"from the volume, which is provided by the ``cinder-volume`` API through "
+"iSCSI."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:14
+msgid "Instance snapshot that you took."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:17
+msgid "Launch an instance"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:23
+#: ../../source/user/launch-instances.rst:288
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Compute` tab and click :"
+"guilabel:`Instances` category."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:26
+msgid ""
+"The dashboard shows the instances with its name, its private and floating IP "
+"addresses, size, status, task, power state, and so on."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:29
+#: ../../source/user/launch-instances.rst:167
+msgid "Click :guilabel:`Launch Instance`."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:31
+msgid ""
+"In the :guilabel:`Launch Instance` dialog box, specify the following values:"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:33
+msgid ":guilabel:`Details` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:36
+msgid "Assign a name to the virtual machine."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:40
+msgid ""
+"The name you assign here becomes the initial host name of the server. If the "
+"name is longer than 63 characters, the Compute service truncates it "
+"automatically to ensure dnsmasq works correctly."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:44
+msgid ""
+"After the server is built, if you change the server name in the API or "
+"change the host name directly, the names are not updated in the dashboard."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:48
+msgid ""
+"Server names are not guaranteed to be unique when created so you could have "
+"two instances with the same host name."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:49
+msgid "Instance Name"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:52
+msgid "Description"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:52
+msgid "You can assign a brief description of the virtual machine."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:55
+msgid ""
+"By default, this value is set to the availability zone given by the cloud "
+"provider (for example, ``us-west`` or ``apac-south``). For some cases, it "
+"could be ``nova``."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:57
+msgid "Availability Zone"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:60
+msgid ""
+"To launch multiple instances, enter a value greater than ``1``. The default "
+"is ``1``."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:61
+msgid "Count"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:63
+msgid ":guilabel:`Source` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:66
+msgid "Your options are:"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:69
+msgid ""
+"If you choose this option, a new field for :guilabel:`Image Name` displays. "
+"You can select the image from the list."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:70
+msgid "Boot from image"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:73
+msgid ""
+"If you choose this option, a new field for :guilabel:`Instance Snapshot` "
+"displays. You can select the snapshot from the list."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:74
+msgid "Boot from snapshot"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:77
+msgid ""
+"If you choose this option, a new field for :guilabel:`Volume` displays. You "
+"can select the volume from the list."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:78
+msgid "Boot from volume"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:81
+msgid ""
+"With this option, you can boot from an image and create a volume by entering "
+"the :guilabel:`Device Size` and :guilabel:`Device Name` for your volume. "
+"Click the :guilabel:`Delete Volume on Instance Delete` option to delete the "
+"volume on deleting the instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:85
+msgid "Boot from image (creates a new volume)"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:88
+msgid ""
+"Using this option, you can boot from a volume snapshot and create a new "
+"volume by choosing :guilabel:`Volume Snapshot` from a list and adding a :"
+"guilabel:`Device Name` for your volume. Click the :guilabel:`Delete Volume "
+"on Instance Delete` option to delete the volume on deleting the instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:92
+msgid "Boot from volume snapshot (creates a new volume)"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:92
+msgid "Instance Boot Source"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:95
+msgid ""
+"This field changes based on your previous selection. If you have chosen to "
+"launch an instance using an image, the :guilabel:`Image Name` field displays."
+" Select the image name from the dropdown list."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:97
+msgid "Image Name"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:100
+msgid ""
+"This field changes based on your previous selection. If you have chosen to "
+"launch an instance using a snapshot, the :guilabel:`Instance Snapshot` field "
+"displays. Select the snapshot name from the dropdown list."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:103
+msgid "Instance Snapshot"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:106
+msgid ""
+"This field changes based on your previous selection. If you have chosen to "
+"launch an instance using a volume, the :guilabel:`Volume` field displays. "
+"Select the volume name from the dropdown list. If you want to delete the "
+"volume on instance delete, check the :guilabel:`Delete Volume on Instance "
+"Delete` option."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:110
+msgid "Volume"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:112
+msgid ":guilabel:`Flavor` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:115
+msgid "Specify the size of the instance to launch."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:119
+msgid ""
+"The flavor is selected based on the size of the image selected for launching "
+"an instance. For example, while creating an image, if you have entered the "
+"value in the :guilabel:`Minimum RAM (MB)` field as 2048, then on selecting "
+"the image, the default flavor is ``m1.small``."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:123
+msgid "Flavor"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:125
+msgid ":guilabel:`Networks` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:128
+msgid ""
+"To add a network to the instance, click the :guilabel:`+` in the :guilabel:"
+"`Available` field."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:129
+msgid "Selected Networks"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:131
+msgid ":guilabel:`Network Ports` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:134
+msgid "Activate the ports that you want to assign to the instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:134
+msgid "Ports"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:136
+msgid ":guilabel:`Security Groups` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:139
+msgid "Activate the security groups that you want to assign to the instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:141
+msgid ""
+"Security groups are a kind of cloud firewall that define which incoming "
+"network traffic is forwarded to instances."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:144
+msgid ""
+"If you have not created any security groups, you can assign only the default "
+"security group to the instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:145
+msgid "Security Groups"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:147
+msgid ":guilabel:`Key Pair` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:150
+msgid "Specify a key pair."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:152
+msgid ""
+"If the image uses a static root password or a static key set (neither is "
+"recommended), you do not need to provide a key pair to launch the instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:154
+msgid "Key Pair"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:156
+msgid ":guilabel:`Configuration` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:159
+msgid "Specify a customization script that runs after your instance launches."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:160
+msgid "Customization Script Source"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:162
+msgid ":guilabel:`Metadata` tab"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:165
+msgid "Add Metadata items to your instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:165
+msgid "Available Metadata"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:169
+msgid "The instance starts on a compute node in the cloud."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:173
+msgid ""
+"If you did not provide a key pair, security groups, or rules, users can "
+"access the instance only from inside the cloud through VNC. Even pinging the "
+"instance is not possible without an ICMP rule configured."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:177
+msgid ""
+"You can also launch an instance from the :guilabel:`Images` or :guilabel:"
+"`Volumes` category when you launch an instance from an image or a volume "
+"respectively."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:181
+msgid ""
+"When you launch an instance from an image, OpenStack creates a local copy of "
+"the image on the compute node where the instance starts."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:184
+msgid ""
+"For details on creating images, see `Creating images manually <https://docs."
+"openstack.org/image-guide/create-images-manually.html>`_ in the *OpenStack "
+"Virtual Machine Image Guide*."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:188
+msgid "When you launch an instance from a volume, note the following steps:"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:190
+msgid ""
+"To select the volume from which to launch, launch an instance from an "
+"arbitrary image on the volume. The arbitrary image that you select does not "
+"boot. Instead, it is replaced by the image on the volume that you choose in "
+"the next steps."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:195
+msgid ""
+"To boot a Xen image from a volume, the image you launch in must be the same "
+"type, fully virtualized or paravirtualized, as the one on the volume."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:199
+msgid ""
+"Select the volume or volume snapshot from which to boot. Enter a device name."
+" Enter ``vda`` for KVM images or ``xvda`` for Xen images."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:204
+msgid ""
+"When running QEMU without support for the hardware virtualization, set "
+"``cpu_mode=\"none\"`` alongside ``virt_type=qemu`` in ``/etc/nova/nova-"
+"compute.conf`` to solve the following error:"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:214
+msgid "Connect to your instance by using SSH"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:216
+msgid ""
+"To use SSH to connect to your instance, use the downloaded keypair file."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:221
+msgid "The user name is ``ubuntu`` for the Ubuntu cloud images on TryStack."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:223
+msgid "Copy the IP address for your instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:225
+msgid ""
+"Use the :command:`ssh` command to make a secure connection to the instance. "
+"For example:"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:232
+msgid "At the prompt, type ``yes``."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:234
+msgid ""
+"It is also possible to SSH into an instance without an SSH keypair, if the "
+"administrator has enabled root password injection.  For more information "
+"about root password injection, see `Injecting the administrator password "
+"<https://docs.openstack.org/nova/latest/admin/admin-password-injection."
+"html>`_ in the *OpenStack Administrator Guide*."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:241
+msgid "Track usage for instances"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:243
+msgid ""
+"You can track usage for instances for each project. You can track costs per "
+"month by showing meters like number of vCPUs, disks, RAM, and uptime for all "
+"your instances."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:251
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Compute` tab and click :"
+"guilabel:`Overview` category."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:254
+msgid ""
+"To query the instance usage for a month, select a month and click :guilabel:"
+"`Submit`."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:257
+msgid "To download a summary, click :guilabel:`Download CSV Summary`."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:260
+msgid "Create an instance snapshot"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:266
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Compute` tab and click "
+"the :guilabel:`Instances` category."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:269
+msgid "Select the instance from which to create a snapshot."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:271
+msgid "In the actions column, click :guilabel:`Create Snapshot`."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:273
+msgid ""
+"In the :guilabel:`Create Snapshot` dialog box, enter a name for the "
+"snapshot, and click :guilabel:`Create Snapshot`."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:276
+msgid "The :guilabel:`Images` category shows the instance snapshot."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:278
+msgid ""
+"To launch an instance from the snapshot, select the snapshot and click :"
+"guilabel:`Launch`. Proceed with launching an instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:282
+msgid "Manage an instance"
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:291
+msgid "Select an instance."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:293
+msgid "In the menu list in the actions column, select the state."
+msgstr ""
+
+#: ../../source/user/launch-instances.rst:295
+msgid ""
+"You can resize or rebuild an instance. You can also choose to view the "
+"instance console log, edit instance or the security groups. Depending on the "
+"current state of the instance, you can pause, resume, suspend, soft or hard "
+"reboot, or terminate it."
+msgstr ""
+
+#: ../../source/user/log-in.rst:3
+msgid "Log in to the dashboard"
+msgstr ""
+
+#: ../../source/user/log-in.rst:5
+msgid "The dashboard is generally installed on the controller node."
+msgstr ""
+
+#: ../../source/user/log-in.rst:7
+msgid ""
+"Ask the cloud operator for the host name or public IP address from which you "
+"can access the dashboard, and for your user name and password. If the cloud "
+"supports multi-domain model, you also need to ask for your domain name."
+msgstr ""
+
+#: ../../source/user/log-in.rst:12
+msgid "Open a web browser that has JavaScript and cookies enabled."
+msgstr ""
+
+#: ../../source/user/log-in.rst:16
+msgid ""
+"To use the Virtual Network Computing (VNC) client for the dashboard, your "
+"browser must support HTML5 Canvas and HTML5 WebSockets. The VNC client is "
+"based on noVNC. For details, see `noVNC: HTML5 VNC Client <https://github."
+"com/novnc/noVNC/blob/master/README.md>`__. For a list of supported browsers, "
+"see `Browser support <https://github.com/novnc/noVNC#browser-"
+"requirements>`__."
+msgstr ""
+
+#: ../../source/user/log-in.rst:23
+msgid ""
+"In the address bar, enter the host name or IP address for the dashboard, for "
+"example, ``https://ipAddressOrHostName/``."
+msgstr ""
+
+#: ../../source/user/log-in.rst:28
+msgid ""
+"If a certificate warning appears when you try to access the URL for the "
+"first time, a self-signed certificate is in use, which is not considered "
+"trustworthy by default. Verify the certificate or add an exception in the "
+"browser to bypass the warning."
+msgstr ""
+
+#: ../../source/user/log-in.rst:33
+msgid ""
+"On the :guilabel:`Log In` page, enter your user name and password, and click "
+":guilabel:`Sign In`. If the cloud supports multi-domain model, you also need "
+"to enter your domain name."
+msgstr ""
+
+#: ../../source/user/log-in.rst:37
+msgid ""
+"The top of the window displays your user name. You can also access the :"
+"guilabel:`Settings` tab (:ref:`dashboard-settings-tab`) or sign out of the "
+"dashboard."
+msgstr ""
+
+#: ../../source/user/log-in.rst:41
+msgid ""
+"The visible tabs and functions in the dashboard depend on the access "
+"permissions, or roles, of the user you are logged in as."
+msgstr ""
+
+#: ../../source/user/log-in.rst:44
+msgid ""
+"If you are logged in as an end user, the :guilabel:`Project` tab (:ref:"
+"`dashboard-project-tab`) and :guilabel:`Identity` tab (:ref:`dashboard-"
+"identity-tab`) are displayed."
+msgstr ""
+
+#: ../../source/user/log-in.rst:48
+msgid ""
+"If you are logged in as an administrator, the :guilabel:`Project` tab (:ref:"
+"`dashboard-project-tab`) and :guilabel:`Admin` tab (:ref:`dashboard-admin-"
+"tab`) and :guilabel:`Identity` tab (:ref:`dashboard-identity-tab`) are "
+"displayed."
+msgstr ""
+
+#: ../../source/user/log-in.rst:56
+msgid "OpenStack dashboard — Project tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:58
+msgid ""
+"Projects are organizational units in the cloud and are also known as tenants "
+"or accounts. Each user is a member of one or more projects. Within a "
+"project, a user creates and manages instances."
+msgstr ""
+
+#: ../../source/user/log-in.rst:62
+msgid ""
+"From the :guilabel:`Project` tab, you can view and manage the resources in a "
+"selected project, including instances and images. You can select the project "
+"from the drop-down menu at the top left. If the cloud supports multi-domain "
+"model, you can also select the domain from this menu."
+msgstr ""
+
+#: ../../source/user/log-in.rst:70
+msgid "**Figure: Project tab**"
+msgstr ""
+
+#: ../../source/user/log-in.rst:72
+msgid ""
+"From the :guilabel:`Project` tab, you can access the following categories:"
+msgstr ""
+
+#: ../../source/user/log-in.rst:74
+msgid ":guilabel:`API Access`: View API endpoints."
+msgstr ""
+
+#: ../../source/user/log-in.rst:77 ../../source/user/log-in.rst:148
+msgid "Compute tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:79
+msgid ":guilabel:`Overview`: View reports for the project."
+msgstr ""
+
+#: ../../source/user/log-in.rst:81
+msgid ""
+":guilabel:`Instances`: View, launch, create a snapshot from, stop, pause, or "
+"reboot instances, or connect to them through VNC."
+msgstr ""
+
+#: ../../source/user/log-in.rst:84
+msgid ""
+":guilabel:`Images`: View images and instance snapshots created by project "
+"users, plus any images that are publicly available. Create, edit, and delete "
+"images, and launch instances from images and snapshots."
+msgstr ""
+
+#: ../../source/user/log-in.rst:88
+msgid ""
+":guilabel:`Key Pairs`: View, create, edit, import, and delete key pairs."
+msgstr ""
+
+#: ../../source/user/log-in.rst:91 ../../source/user/log-in.rst:167
+msgid "Volume tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:93
+msgid ":guilabel:`Volumes`: View, create, edit, and delete volumes."
+msgstr ""
+
+#: ../../source/user/log-in.rst:95
+msgid ":guilabel:`Backups`: View, create, edit, and delete backups."
+msgstr ""
+
+#: ../../source/user/log-in.rst:97
+msgid ""
+":guilabel:`Snapshots`: View, create, edit, and delete volume snapshots."
+msgstr ""
+
+#: ../../source/user/log-in.rst:99
+msgid ""
+":guilabel:`Consistency Groups`: View, create, edit, and delete consistency "
+"groups."
+msgstr ""
+
+#: ../../source/user/log-in.rst:102
+msgid ""
+":guilabel:`Consistency Group Snapshots`: View, create, edit, and delete "
+"consistency group snapshots."
+msgstr ""
+
+#: ../../source/user/log-in.rst:106 ../../source/user/log-in.rst:176
+msgid "Network tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:108
+msgid ":guilabel:`Network Topology`: View the network topology."
+msgstr ""
+
+#: ../../source/user/log-in.rst:110
+msgid ":guilabel:`Networks`: Create and manage public and private networks."
+msgstr ""
+
+#: ../../source/user/log-in.rst:112
+msgid ":guilabel:`Routers`: Create and manage routers."
+msgstr ""
+
+#: ../../source/user/log-in.rst:114
+msgid ""
+":guilabel:`Security Groups`: View, create, edit, and delete security groups "
+"and security group rules.."
+msgstr ""
+
+#: ../../source/user/log-in.rst:117
+msgid ""
+":guilabel:`Floating IPs`: Allocate an IP address to or release it from a "
+"project."
+msgstr ""
+
+#: ../../source/user/log-in.rst:121
+msgid "Object Store tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:123
+msgid ":guilabel:`Containers`: Create and manage containers and objects."
+msgstr ""
+
+#: ../../source/user/log-in.rst:128
+msgid "OpenStack dashboard — Admin tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:130
+msgid ""
+"Administrative users can use the :guilabel:`Admin` tab to view usage and to "
+"manage instances, volumes, flavors, images, networks, and so on."
+msgstr ""
+
+#: ../../source/user/log-in.rst:137
+msgid "**Figure: Admin tab**"
+msgstr ""
+
+#: ../../source/user/log-in.rst:139
+msgid ""
+"From the :guilabel:`Admin` tab, you can access the following category to "
+"complete these tasks:"
+msgstr ""
+
+#: ../../source/user/log-in.rst:143
+msgid "Overview tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:145
+msgid ":guilabel:`Overview`: View basic reports."
+msgstr ""
+
+#: ../../source/user/log-in.rst:150
+msgid ":guilabel:`Hypervisors`: View the hypervisor summary."
+msgstr ""
+
+#: ../../source/user/log-in.rst:152
+msgid ""
+":guilabel:`Host Aggregates`: View, create, and edit host aggregates. View "
+"the list of availability zones."
+msgstr ""
+
+#: ../../source/user/log-in.rst:155
+msgid ""
+":guilabel:`Instances`: View, pause, resume, suspend, migrate, soft or hard "
+"reboot, and delete running instances that belong to users of some, but not "
+"all, projects. Also, view the log for an instance or access an instance "
+"through VNC."
+msgstr ""
+
+#: ../../source/user/log-in.rst:160
+msgid ""
+":guilabel:`Flavors`: View, create, edit, view extra specifications for, and "
+"delete flavors. A flavor is the size of an instance."
+msgstr ""
+
+#: ../../source/user/log-in.rst:163
+msgid ""
+":guilabel:`Images`: View, create, edit properties for, and delete custom "
+"images."
+msgstr ""
+
+#: ../../source/user/log-in.rst:169
+msgid ":guilabel:`Volumes`: View, create, manage, and delete volumes."
+msgstr ""
+
+#: ../../source/user/log-in.rst:171
+msgid ":guilabel:`Snapshots`: View, manage, and delete volume snapshots."
+msgstr ""
+
+#: ../../source/user/log-in.rst:173
+msgid ""
+":guilabel:`Volume Types`: View, create, manage, and delete volume types."
+msgstr ""
+
+#: ../../source/user/log-in.rst:178
+msgid ""
+":guilabel:`Networks`: View, create, edit properties for, and delete networks."
+""
+msgstr ""
+
+#: ../../source/user/log-in.rst:181
+msgid ""
+":guilabel:`Routers`: View, create, edit properties for, and delete routers."
+msgstr ""
+
+#: ../../source/user/log-in.rst:183
+msgid ""
+":guilabel:`Floating IPs`: Allocate an IP address for a project or release it."
+""
+msgstr ""
+
+#: ../../source/user/log-in.rst:186
+msgid "System tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:188
+msgid ""
+":guilabel:`Defaults`: View default quota values. Quotas are hard-coded in "
+"OpenStack Compute and define the maximum allowable size and number of "
+"resources."
+msgstr ""
+
+#: ../../source/user/log-in.rst:192
+msgid ""
+":guilabel:`Metadata Definitions`: Import namespace and view the metadata "
+"information."
+msgstr ""
+
+#: ../../source/user/log-in.rst:195
+msgid ""
+":guilabel:`System Information`: Use the following tabs to view the service "
+"information:"
+msgstr ""
+
+#: ../../source/user/log-in.rst:198
+msgid ":guilabel:`Services`: View a list of the services."
+msgstr ""
+
+#: ../../source/user/log-in.rst:200
+msgid ":guilabel:`Compute Services`: View a list of all Compute services."
+msgstr ""
+
+#: ../../source/user/log-in.rst:202
+msgid ""
+":guilabel:`Block Storage Services`: View a list of all Block Storage "
+"services."
+msgstr ""
+
+#: ../../source/user/log-in.rst:205
+msgid ":guilabel:`Network Agents`: View the network agents."
+msgstr ""
+
+#: ../../source/user/log-in.rst:210
+msgid "OpenStack dashboard — Identity tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:215
+msgid "**Figure:Identity tab**"
+msgstr ""
+
+#: ../../source/user/log-in.rst:217
+msgid ""
+":guilabel:`Projects`: View, create, assign users to, remove users from, and "
+"delete projects."
+msgstr ""
+
+#: ../../source/user/log-in.rst:220
+msgid ":guilabel:`Users`: View, create, enable, disable, and delete users."
+msgstr ""
+
+#: ../../source/user/log-in.rst:225
+msgid "OpenStack dashboard — Settings tab"
+msgstr ""
+
+#: ../../source/user/log-in.rst:230
+msgid "**Figure:Settings tab**"
+msgstr ""
+
+#: ../../source/user/log-in.rst:232
+msgid ""
+"Click the :guilabel:`Settings` button from the user drop down menu at the "
+"top right of any page, you will see the :guilabel:`Settings` tab."
+msgstr ""
+
+#: ../../source/user/log-in.rst:235
+msgid ":guilabel:`User Settings`: View and manage dashboard settings."
+msgstr ""
+
+#: ../../source/user/log-in.rst:237
+msgid ":guilabel:`Change Password`: Change the password of the user."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:3
+msgid "Create and manage object containers"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:5
+msgid ""
+"OpenStack Object Storage (swift) is used for redundant, scalable data "
+"storage using clusters of standardized servers to store petabytes of "
+"accessible data. It is a long-term storage system for large amounts of "
+"static data which can be retrieved and updated."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:10
+msgid ""
+"OpenStack Object Storage provides a distributed, API-accessible storage "
+"platform that can be integrated directly into an application or used to "
+"store any type of file, including VM images, backups, archives, or media "
+"files. In the OpenStack dashboard, you can only manage containers and "
+"objects."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:16
+msgid ""
+"In OpenStack Object Storage, containers provide storage for objects in a "
+"manner similar to a Windows folder or Linux file directory, though they "
+"cannot be nested. An object in OpenStack consists of the file to be stored "
+"in the container and any accompanying metadata."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:22
+msgid "Create a container"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:28
+#: ../../source/user/manage-containers.rst:50
+#: ../../source/user/manage-containers.rst:84
+#: ../../source/user/manage-containers.rst:108
+#: ../../source/user/manage-containers.rst:138
+#: ../../source/user/manage-containers.rst:165
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Object Store` tab and "
+"click :guilabel:`Containers` category."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:31
+msgid "Click :guilabel:`Container`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:33
+msgid ""
+"In the :guilabel:`Create Container` dialog box, enter a name for the "
+"container, and then click :guilabel:`Create`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:36
+msgid "You have successfully created a container."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:40
+msgid ""
+"To delete a container, click the :guilabel:`More` button and select :"
+"guilabel:`Delete Container`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:44
+msgid "Upload an object"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:53
+#: ../../source/user/manage-containers.rst:87
+#: ../../source/user/manage-containers.rst:111
+#: ../../source/user/manage-containers.rst:141
+#: ../../source/user/manage-containers.rst:168
+msgid "Select the container in which you want to store your object."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:55
+msgid "Click the :guilabel:`Upload File` icon."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:57
+msgid ""
+"The :guilabel:`Upload File To Container: <name>` dialog box appears. "
+"``<name>`` is the name of the container to which you are uploading the "
+"object."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:62
+#: ../../source/user/manage-containers.rst:151
+msgid "Enter a name for the object."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:64
+#: ../../source/user/manage-containers.rst:93
+msgid "Browse to and select the file that you want to upload."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:66
+msgid "Click :guilabel:`Upload File`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:68
+msgid "You have successfully uploaded an object to the container."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:72
+msgid ""
+"To delete an object, click the :guilabel:`More button` and select :guilabel:"
+"`Delete Object`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:76
+msgid "Manage an object"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:78
+msgid "**To edit an object**"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:89
+msgid ""
+"Click the menu button and choose :guilabel:`Edit` from the dropdown list."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:91
+msgid "The :guilabel:`Edit Object` dialog box is displayed."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:95
+#: ../../source/user/manage-containers.rst:153
+msgid "Click :guilabel:`Update Object`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:99
+msgid ""
+"To delete an object, click the menu button and select :guilabel:`Delete "
+"Object`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:102
+msgid "**To copy an object from one container to another**"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:113
+msgid ""
+"Click the menu button and choose :guilabel:`Copy` from the dropdown list."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:115
+msgid ""
+"In the :guilabel:`Copy Object` launch dialog box, enter the following values:"
+""
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:118
+msgid ""
+":guilabel:`Destination Container`: Choose the destination container from the "
+"list."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:120
+msgid ""
+":guilabel:`Path`: Specify a path in which the new copy should be stored "
+"inside of the selected container."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:122
+msgid ""
+":guilabel:`Destination object name`: Enter a name for the object in the new "
+"container."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:125
+msgid "Click :guilabel:`Copy Object`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:127
+msgid "**To create a metadata-only object without a file**"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:129
+msgid ""
+"You can create a new object in container without a file available and can "
+"upload the file later when it is ready. This temporary object acts a place-"
+"holder for a new object, and enables the user to share object metadata and "
+"URL info in advance."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:143
+msgid "Click :guilabel:`Upload Object`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:145
+msgid ""
+"The :guilabel:`Upload Object To Container`: ``<name>`` dialog box is "
+"displayed."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:148
+msgid ""
+"``<name>`` is the name of the container to which you are uploading the "
+"object."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:155
+msgid "**To create a pseudo-folder**"
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:157
+msgid ""
+"Pseudo-folders are similar to folders in your desktop operating system. They "
+"are virtual collections defined by a common prefix on the object's name."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:170
+msgid "Click :guilabel:`Create Pseudo-folder`."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:172
+msgid ""
+"The :guilabel:`Create Pseudo-Folder in Container` ``<name>`` dialog box is "
+"displayed. ``<name>`` is the name of the container to which you are "
+"uploading the object."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:176
+msgid "Enter a name for the pseudo-folder."
+msgstr ""
+
+#: ../../source/user/manage-containers.rst:178
+msgid ""
+"A slash (/) character is used as the delimiter for pseudo-folders in Object "
+"Storage."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:3
+msgid "Upload and manage images"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:5
+msgid ""
+"A virtual machine image, referred to in this document simply as an image, is "
+"a single file that contains a virtual disk that has a bootable operating "
+"system installed on it. Images are used to create virtual machine instances "
+"within the cloud. For information about creating image files, see the "
+"`OpenStack Virtual Machine Image Guide <https://docs.openstack.org/image-"
+"guide/>`_."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:12
+msgid ""
+"Depending on your role, you may have permission to upload and manage virtual "
+"machine images. Operators might restrict the upload and management of images "
+"to cloud administrators or operators only. If you have the appropriate "
+"privileges, you can use the dashboard to upload and manage images in the "
+"admin project."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:20
+msgid ""
+"You can also use the :command:`openstack` and :command:`glance` command-line "
+"clients or the Image service to manage images."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:24
+msgid "Upload an image"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:26
+msgid "Follow this procedure to upload an image to a project:"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:32
+#: ../../source/user/manage-images.rst:140
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Compute` tab and click :"
+"guilabel:`Images` category."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:35
+#: ../../source/user/manage-images.rst:97
+msgid "Click :guilabel:`Create Image`."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:37
+msgid "The :guilabel:`Create An Image` dialog box appears."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:41
+msgid "**Dashboard — Create Image**"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:43
+msgid "Enter the following values:"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:46
+msgid ":guilabel:`Image Name`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:46
+msgid "Enter a name for the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:48
+msgid ":guilabel:`Image Description`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:48
+msgid "Enter a brief description of the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:51
+msgid ":guilabel:`Image Source`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:51
+msgid ""
+"Choose the image source from the dropdown list. Your choices are :guilabel:"
+"`Image Location` and :guilabel:`Image File`."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:56
+msgid ":guilabel:`Image File` or :guilabel:`Image Location`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:56
+msgid ""
+"Based on your selection for :guilabel:`Image Source`, you either enter the "
+"location URL of the image in the :guilabel:`Image Location` field, or browse "
+"for the image file on your file  system and add it."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:65
+msgid ":guilabel:`Format`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:65
+msgid "Select the image format (for example, QCOW2) for the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:68
+msgid ":guilabel:`Architecture`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:68
+msgid ""
+"Specify the architecture. For example, ``i386`` for a 32-bit architecture or "
+"``x86_64`` for a 64-bit architecture."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:73
+msgid ":guilabel:`Minimum Disk (GB)`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:73
+#: ../../source/user/manage-images.rst:75
+msgid "Leave this field empty."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:75
+msgid ":guilabel:`Minimum RAM (MB)`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:77
+msgid ":guilabel:`Copy Data`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:77
+msgid "Specify this option to copy image data to the Image service."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:80
+msgid ":guilabel:`Visibility`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:80
+msgid "The access permission for the image. ``Public`` or ``Private``."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:84
+msgid ":guilabel:`Protected`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:84
+msgid ""
+"Select this check box to ensure that only users with permissions can delete "
+"the image. ``Yes`` or ``No``."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:89
+msgid ":guilabel:`Image Metadata`"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:89
+msgid ""
+"Specify this option to add resource metadata. The glance Metadata Catalog "
+"provides a list of metadata image definitions. (Note: Not all cloud "
+"providers enable this feature.)"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:99
+msgid ""
+"The image is queued to be uploaded. It might take some time before the "
+"status changes from Queued to Active."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:103
+msgid "Update an image"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:105
+msgid "Follow this procedure to update an existing image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:111
+msgid "Select the image that you want to edit."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:113
+msgid ""
+"In the :guilabel:`Actions` column, click the menu button and then select :"
+"guilabel:`Edit Image` from the list."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:116
+msgid ""
+"In the :guilabel:`Edit Image` dialog box, you can perform various actions. "
+"For example:"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:119
+msgid "Change the name of the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:120
+msgid "Change the description of the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:121
+msgid "Change the format of the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:122
+msgid "Change the minimum disk of the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:123
+msgid "Change the minimum RAM  of the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:124
+msgid "Select the :guilabel:`Public` button to make the image public."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:125
+msgid "Clear the :guilabel:`Private` button to make the image private."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:126
+msgid "Change the metadata of the image."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:128
+msgid "Click :guilabel:`Edit Image`."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:131
+msgid "Delete an image"
+msgstr ""
+
+#: ../../source/user/manage-images.rst:133
+msgid ""
+"Deletion of images is permanent and **cannot** be reversed. Only users with "
+"the appropriate permissions can delete images."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:143
+msgid "Select the images that you want to delete."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:145
+msgid "Click :guilabel:`Delete Images`."
+msgstr ""
+
+#: ../../source/user/manage-images.rst:147
+msgid ""
+"In the :guilabel:`Confirm Delete Images` dialog box, click :guilabel:`Delete "
+"Images` to confirm the deletion."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:3
+msgid "Create and manage volumes"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:5
+msgid ""
+"Volumes are block storage devices that you attach to instances to enable "
+"persistent storage. You can attach a volume to a running instance or detach "
+"a volume and attach it to another instance at any time. You can also create "
+"a snapshot from or delete a volume. Only administrative users can create "
+"volume types."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:12
+msgid "Create a volume"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:18
+#: ../../source/user/manage-volumes.rst:72
+#: ../../source/user/manage-volumes.rst:121
+#: ../../source/user/manage-volumes.rst:142
+#: ../../source/user/manage-volumes.rst:170
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Volumes` tab and click :"
+"guilabel:`Volumes` category."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:21
+#: ../../source/user/manage-volumes.rst:56
+msgid "Click :guilabel:`Create Volume`."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:23
+msgid "In the dialog box that opens, enter or select the following values."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:25
+msgid ":guilabel:`Volume Name`: Specify a name for the volume."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:27
+msgid ""
+":guilabel:`Description`: Optionally, provide a brief description for the "
+"volume."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:30
+msgid ":guilabel:`Volume Source`: Select one of the following options:"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:32
+msgid ""
+"No source, empty volume: Creates an empty volume. An empty volume does not "
+"contain a file system or a partition table."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:35
+msgid ""
+"Snapshot: If you choose this option, a new field for :guilabel:`Use snapshot "
+"as a source` displays. You can select the snapshot from the list."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:39
+msgid ""
+"Image: If you choose this option, a new field for :guilabel:`Use image as a "
+"source` displays. You can select the image from the list."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:42
+msgid ""
+"Volume: If you choose this option, a new field for :guilabel:`Use volume as "
+"a source` displays. You can select the volume from the list. Options to use "
+"a snapshot or a volume as the source for a volume are displayed only if "
+"there are existing snapshots or volumes."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:47
+msgid ":guilabel:`Type`: Leave this field blank."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:49
+msgid ":guilabel:`Size (GB)`: The size of the volume in gibibytes (GiB)."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:51
+msgid ""
+":guilabel:`Availability Zone`: Select the Availability Zone from the list. "
+"By default, this value is set to the availability zone given by the cloud "
+"provider (for example, ``us-west`` or ``apac-south``). For some cases, it "
+"could be ``nova``."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:58
+msgid "The dashboard shows the volume on the :guilabel:`Volumes` tab."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:63
+msgid "Attach a volume to an instance"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:65
+msgid ""
+"After you create one or more volumes, you can attach them to instances. You "
+"can attach a volume to one instance at a time."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:75
+msgid ""
+"Select the volume to add to an instance and click :guilabel:`Manage "
+"Attachments`."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:78
+msgid ""
+"In the :guilabel:`Manage Volume Attachments` dialog box, select an instance."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:80
+msgid ""
+"Enter the name of the device from which the volume is accessible by the "
+"instance."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:85
+msgid ""
+"The actual device name might differ from the volume name because of "
+"hypervisor settings."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:88
+msgid "Click :guilabel:`Attach Volume`."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:90
+msgid ""
+"The dashboard shows the instance to which the volume is now attached and the "
+"device name."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:93
+msgid ""
+"You can view the status of a volume in the Volumes tab of the dashboard. The "
+"volume is either Available or In-Use."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:96
+msgid ""
+"Now you can log in to the instance and mount, format, and use the disk."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:99
+msgid "Detach a volume from an instance"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:105
+msgid ""
+"On the :guilabel:`Project` tab, open the :guilabel:`Volumes` tab and click "
+"the :guilabel:`Volumes` category."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:108
+msgid "Select the volume and click :guilabel:`Manage Attachments`."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:110
+msgid "Click :guilabel:`Detach Volume` and confirm your changes."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:112
+#: ../../source/user/manage-volumes.rst:177
+msgid "A message indicates whether the action was successful."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:115
+msgid "Create a snapshot from a volume"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:124
+msgid "Select a volume from which to create a snapshot."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:126
+msgid "In the :guilabel:`Actions` column, click :guilabel:`Create Snapshot`."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:128
+msgid ""
+"In the dialog box that opens, enter a snapshot name and a brief description."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:131
+msgid "Confirm your changes."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:133
+msgid "The dashboard shows the new volume snapshot in Volume Snapshots tab."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:136
+msgid "Edit a volume"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:145
+msgid "Select the volume that you want to edit."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:147
+msgid "In the :guilabel:`Actions` column, click :guilabel:`Edit Volume`."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:149
+msgid ""
+"In the :guilabel:`Edit Volume` dialog box, update the name and description "
+"of the volume."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:152
+msgid "Click :guilabel:`Edit Volume`."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:156
+msgid ""
+"You can extend a volume by using the :guilabel:`Extend Volume` option "
+"available in the :guilabel:`More` dropdown list and entering the new value "
+"for volume size."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:161
+msgid "Delete a volume"
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:163
+msgid ""
+"When you delete an instance, the data in its attached volumes is not deleted."
+""
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:173
+msgid "Select the check boxes for the volumes that you want to delete."
+msgstr ""
+
+#: ../../source/user/manage-volumes.rst:175
+msgid "Click :guilabel:`Delete Volumes` and confirm your choice."
+msgstr ""
+

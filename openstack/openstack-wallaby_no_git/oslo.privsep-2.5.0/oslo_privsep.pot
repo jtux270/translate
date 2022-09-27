@@ -1,0 +1,83 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-01 16:00+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: oslo_privsep/comm.py:151
+msgid "Premature eof waiting for privileged process"
+msgstr ""
+
+#: oslo_privsep/daemon.py:147
+#, python-format
+msgid "Failed to set uid %s"
+msgstr ""
+
+#: oslo_privsep/daemon.py:161
+#, python-format
+msgid "Failed to set gid %s"
+msgstr ""
+
+#: oslo_privsep/daemon.py:209
+msgid "Privsep daemon failed to start"
+msgstr ""
+
+#: oslo_privsep/daemon.py:226
+#, python-format
+msgid "Unexpected response: %r"
+msgstr ""
+
+#: oslo_privsep/daemon.py:423
+msgid "Failed to remove supplemental groups"
+msgstr ""
+
+#: oslo_privsep/daemon.py:476
+#, python-format
+msgid "Unknown privsep cmd: %s"
+msgstr ""
+
+#: oslo_privsep/daemon.py:482
+#, python-format
+msgid "Invalid privsep function: %s not exported"
+msgstr ""
+
+#: oslo_privsep/priv_context.py:46
+msgid "User that the privsep daemon should run as."
+msgstr ""
+
+#: oslo_privsep/priv_context.py:48
+msgid "Group that the privsep daemon should run as."
+msgstr ""
+
+#: oslo_privsep/priv_context.py:51
+msgid "List of Linux capabilities retained by the privsep daemon."
+msgstr ""
+
+#: oslo_privsep/priv_context.py:55
+msgid ""
+"The number of threads available for privsep to concurrently run "
+"processes. Defaults to the number of CPU cores in the system."
+msgstr ""
+
+#: oslo_privsep/priv_context.py:61
+msgid ""
+"Command to invoke to start the privsep daemon if not using the \"fork\" "
+"method. If not specified, a default is generated using \"sudo privsep-"
+"helper\" and arguments designed to recreate the current configuration. "
+"This command must accept suitable --privsep_context and "
+"--privsep_sock_path arguments."
+msgstr ""
+

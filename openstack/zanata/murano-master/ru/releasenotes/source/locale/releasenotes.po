@@ -1,0 +1,1048 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: murano\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-06 08:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/ocata>:45
+msgid ""
+"\"List Environments\" API call is now able to filter environments by an "
+"owner project (tenant)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:37
+msgid ""
+"/environments/ENV_ID/model/PATH endpoint added. GET request responds with "
+"the subsection of ENV_ID's object model located in its PATH. PATCH request "
+"applies json-patch from request body to ENV_ID's model. It does not contain "
+"PATH in the URL."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:30
+msgid "1.0.2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:5
+msgid "1.0.3"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current stable/wallaby>:5
+msgid "11.0.0.0rc1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:64
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:39
+msgid "2.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:24
+msgid "2.0.2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "2.0.2-12"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:20
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "3.0.0-15"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:20
+msgid "3.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "3.2.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "5.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "7.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "9.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14
+msgid ""
+"A configuration file setting `[engine]/agent_source` was added. The value is "
+"then used for the `pip install` command to install the murano-agent. Since "
+"pip accepts http and git URLs, this can be used to install agent from the "
+"custom git repo or install version other than the latest."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:193
+msgid ""
+"API call for deleting a service from environment template did not return "
+"result of its operation. The issue is fixed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:137
+msgid "Add multiple engine workers"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:23
+msgid ""
+"Add notifications about environment events that are required for tracking. "
+"These are AMQP notifications and oslo.messaging library is used for sending "
+"them. The follow event types are provided: environment.deploy.end, "
+"environment.delete.end, environment.exists There are 2 new configuration "
+"options controlling these notifications: stats.env_audit_period, "
+"env_audit_enabled."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:93
+msgid ""
+"Added :command:`murano-test-tunner` command to run murano package tests."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:141
+msgid ""
+"Added API endpoint ``/templates/{env_template_id}/services/{path:.*?}`` for "
+"environment template application update operation."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:85
+msgid ""
+"Added Support for application deployment across OpenStack regions. Now, all "
+"OpenStack resource classes inherit from ``io.murano.CloudResource`` that "
+"provides ``.getRegion()`` method and ``regionName`` property. This allows to "
+"assign resources to different regions. ``.getRegion()`` returns ``io.murano."
+"CloudRegion`` instance that resource or its parent belongs to. "
+"``CloudRegion`` has interface similar to ``Environment`` class and is the "
+"correct way to get ``HeatStack`` instance associated with the region, "
+"default network configuration, security group manager and agent listener "
+"instances. ``Environment`` now acts as default region so backward "
+"compatibility is not broken. However new applications should not use "
+"environment to set security group rules but rather a region(s) of their "
+"instance(s) in order to work correctly when their instances were configured "
+"to use region other than the default."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:49
+msgid ""
+"Added a MetadataAware mixin class capable to retrieve the metadata "
+"attributes from the implementing objects and all its parents."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:53
+msgid ""
+"Added a ``metadata()`` yaql function to retrieve the meta information about "
+"the object, stored in the \"?/metadata\" section of object model."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:129
+msgid ""
+"Added a new API endpoint ``v1/actions`` to call static public methods. It "
+"accepts class name, method name, method arguments, and optionally package "
+"name and class version in the request body. This call does not create an "
+"environment, object instances or database records."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:93
+msgid ""
+"Added a new engine RPC call to generate json-schema from MuranoPL class. The "
+"schema may be generated either from the entire class or for specific model "
+"builders - static actions that can be used to generate object model from "
+"their input. Class schema is built by inspecting class properties and method "
+"schema using the same algorithm but applied to its arguments."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:29
+msgid ""
+"Added a new manifest format 1.4.0. Introduced the 'Scope' keyword for class "
+"methods to declare a method's accessibility from outside through the API "
+"call."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid ""
+"Added a new yaql function 'decryptData' which pairs with 'encryptData' on "
+"the dashboard side. Application authors can use these functions to secure "
+"sensitive input to their Murano applications such as passwords."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:121
+msgid "Added ability to extend MuranoPL entities with custom metadata."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:61
+msgid "Added ability to retrieve current user and project info"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:65
+msgid "Added ability to retrieve environment owner user and project info"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:77
+msgid ""
+"Added an overload of the new function - ``new($model, $owner)``. It loads "
+"complete object graph in a single call. Objects in the model can have cross "
+"references. In that case, this is the only way to instantiate the graph. "
+"Objects might be specified either in object model format (with '?' attribute "
+"or in MuranoPL format (used for Meta definitions)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:57
+msgid "Added classes that represent OpenStack user and project"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:157
+msgid "Added clone action to environment templates."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:109
+msgid "Added filter by 'Name' which only matches package name."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:117
+msgid ""
+"Added magnum plugin to murano, that allows creating/deleting of magnum "
+"baymodels and bays from MuranoPL"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid "Added new tool ``murano-status upgrade check``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:149
+msgid ""
+"Added public field to environment templates. GET method for api now displays "
+"public templates from other projects(tenants)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:153
+msgid "Added public filter to environment templates api."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:89
+msgid ""
+"Added the ``api_workers`` option to ``murano`` config group. It controls the "
+"number of API workers launched by murano. If not set, it would default to "
+"the number of CPUs available."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:45
+msgid ""
+"Added the ``description_text`` field to environment and environment "
+"templates database tables and respective API objects."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:41
+msgid ""
+"Added the ``driver`` configuration option to the ``networking`` group. It "
+"allows to explicitly select the networking driver. It supports 'neutron' and "
+"'nova' options. If set to ``None`` (default), murano attempts to use "
+"'neutron' if available, 'nova' otherwise. The change is backward compatible."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:37
+msgid ""
+"Added the ``timeout`` parameter to ``runCommand`` and ``putFile`` methods of "
+"the ``io.murano.configuration.Linux`` class."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:145
+msgid ""
+"Added the capability to declare MuranoPL YAML methods with variable length "
+"positional and keyword arguments. This is done using argument ``Usage`` "
+"attribute. Regular arguments have Standard usage which is the default. "
+"Variable length args (args in Python) should have \"Usage: VarArgs\" and "
+"keyword args (kwargs) are declared with \"Usage: KwArgs\". Inside the method "
+"they are seen as a list and a dictionary correspondingly. For such arguments "
+"contracts are written for individual argument values thus no need to write "
+"them as lists/dicts."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:73
+msgid ""
+"Added the following meta-classes to the core library - ``Title`` "
+"``Description`` ``HelpText`` ``Hidden`` ``Section`` ``Position`` "
+"``ModelBuilder``. These classes will later be used to implement dynamic "
+"object model generation."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:39 origin/stable/mitaka>:113
+msgid ""
+"All HOT template outputs are put into a single dictionary property "
+"'templateOutputs' rather than in a generated property per each output. As a "
+"result there are no more constraints on output names."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:223
+msgid ""
+"Avoid race condition during parallel upload of packages, when packages have "
+"same tags."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:47
+msgid ""
+"Avoid the `'method' object has no attribute '__yaql_function__'` error when "
+"calling some YAQL functions with Python 3"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:161
+msgid ""
+"Basic reflection capabilities were added to MuranoPL. Now it is possible to "
+"get type info with typeinfo() function and using it as a starting point "
+"obtain information about the class, its methods and properties as well as "
+"the package of the class. Reflected properties can be used to obtain or set "
+"its value in a given object or invoke its method."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:20 origin/stable/mitaka>:10
+#: origin/stable/mitaka>:29 origin/stable/mitaka>:54 origin/stable/mitaka>:207
+#: origin/stable/newton>:10 origin/stable/newton>:185 origin/stable/ocata>:81
+#: stable/pike>:64 stable/wallaby>:43
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:119
+msgid "Bumped the RUNTIME_VERSION attribute to 1.5"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:117
+msgid ""
+"Changed the type representation in object model. Previous format was to have "
+"three attributes in \"?\" section of the object - type, classVersion and "
+"package where only the \"type\" is mandatory. Now they are merged into "
+"single attribute \"type\" that has a format ``typeName/version@package``. "
+"Version and package parts are still optional."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:81
+msgid ""
+"Class configs are now also versioned. For class foo.bar version 1.2.3 the "
+"following file names will be examined: foo.bar-1.2.3.json foo.bar-1.2.3.yaml "
+"foo.bar-1.2.json foo.bar-1.2.yaml foo.bar-1.json foo.bar-1.yaml In addition "
+"for classes of version 0.x.y file name without version suffix are also "
+"examined as a last attempt so the backward compatibility is retained"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:77
+msgid ""
+"Classes to work with Cinder volumes were added to core library. Now it is "
+"possible to create new volume from various sources or use existing volume. "
+"Also it is possible to attach volumes to instances and boot instances from "
+"volumes."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:14 origin/stable/newton>:189
+msgid ""
+"Core Library's init scripts used to have various problems detecting pre-"
+"installed (by DIB) murano-agent on non-ubuntu images. Agent setup script now "
+"checks wider list of directories before attempting to install murano-agnet "
+"and service script now does not impose strict script location."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:165
+msgid ""
+"Deprecated the 'Usage Action' keyword. For format versions >= 1.4.0, use "
+"'Scope Public' instead."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:28 current origin/stable/newton>:161
+#: stable/pike>:53 stable/wallaby>:28
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:113
+msgid ""
+"Due to refactoring, contracts work a little bit faster because there is no "
+"more need to generate yaql function definition for each contract method on "
+"each call."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:89
+msgid "Enable mocks in MuranoPL tests cases."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:191
+msgid ""
+"Enabling multiple workers might break workflows under BSD and Windows "
+"systems"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:209
+msgid ""
+"Equality check (assertEqual) in test-runner can now properly compare two "
+"MuranoPl objects."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:43
+msgid ""
+"File ``murano-paste.ini has been updated to use oslo HTTPProxyToWSGI "
+"middleware. Config option ``secure_proxy_ssl_header`` has been removed. "
+"Please refer to oslo_middleware configuration options if you wish deploy "
+"murano behind TLS proxy. Most notably you would need to set "
+"``enable_proxy_headers_parsing`` under group ``oslo_middleware`` to True, to "
+"enable header parsing."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:97
+msgid ""
+"Fixed 'io.murano.SharedIp' class to properly wotk in muti-region "
+"environments."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:58 origin/stable/newton>:197
+msgid ""
+"Fixed a bug when the UI dialog was not displayed in Murano Dashboard for "
+"applications which don't have UI definitions bundled in the package but "
+"generate them based on the package contents instead. This usually affected "
+"HOT-based packages and other non-muranopl-based applications."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:227
+msgid ""
+"Fixed incorrect murano behaviour if deployed on devstack with keystone v3 by "
+"default."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:241
+msgid ""
+"Fixed the issue that prevented the test-runner from properly invoking "
+"``setUp`` and ``tearDown`` methods of fixtures in some cases."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:125
+msgid ""
+"For MuranoPL classes new key \"Usage\" was added. By default it is \"Class\"."
+" But it can also be \"Meta\" to define meta-class. Meta-class has all the "
+"capabilities of regular classes and in addition has 3 new attributes: "
+"Cardinality, Applies and Inherited."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:173
+msgid ""
+"Heat stacks created by murano during environment deployment now have "
+"'murano' tag by default. This is controlled by ``stack_tags`` config "
+"parameter."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:75
+msgid ""
+"If a VM being a part of some shared-ip group is attached to the network "
+"which is not owned by the current tenant (shared network) a policy violation "
+"may occur thus failing the deployment."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:133
+msgid ""
+"Implemented a new contract function ``template()``. ``template()`` works "
+"similar to the ``class()`` in regards to the data validation but does not "
+"instantiate objects. Instead, the data is left in the object model in "
+"dictionary format so that it could be instantiated later with the ``new()`` "
+"function. Additionally, the function allows excluding specified properties "
+"from validation and from the resulting template so that they could be "
+"provided later. Objects that are assigned to the property or argument with "
+"``template()`` contract will be automatically converted to their object "
+"model representation."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:97
+msgid ""
+"Implemented a new framework for MuranoPL contracts. Now, instead of several "
+"independent implementations of the same yaql methods (string(), class() etc."
+") all implementations of the same method are combined into single class. "
+"Therefore, we now have a class per contract method. This also simplifies "
+"development of new contracts. Each such class can provide methods for data "
+"transformation (default contract usage), validation that is used to decide "
+"if the method can be considered an extension method for the value, and json "
+"schema generation method that was moved from the schema generator script."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:33
+msgid ""
+"Implemented the capability for API endpoint ``/catalog/packages`` to filter "
+"'id', 'category', 'tag' properties using the 'in' operator. An example of "
+"using the 'in' operator for 'id' is 'id=in:id1,id2,id3'. This filter is "
+"added using syntax that conforms to the latest guidelines from the OpenStack "
+"API-WG."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:69
+msgid ""
+"Implemented the capability for the helper methods of Linux class to run "
+"concurrently if executed for different VM agents."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:57
+msgid ""
+"Internally, both pre-deployment garbage collection (that was done by "
+"comparision of ``Objects`` and ``ObjectsCopy``) and post-deployment orphan "
+"object collection are now done through the new GC."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:49
+msgid ""
+"Introduced a new MuranoPL class ``io.murano.system.GC`` Now MuranoPL garbage "
+"collector can be used to set up destruction dependencies between murano "
+"objects. If object Foo is subscribed to object Bar's destruction, it will be "
+"notified through a specific handler. If both Foo and Bar are going to be "
+"destroyed during one execution session, Foo will be destroyed after Bar. You "
+"can omit the handler, in this case destruction order will also be preserved. "
+"Handler can be a static or a usual function."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:97
+msgid ""
+"Introduced two YAQL *inject* functions to enable mocks ``def inject(target, "
+"target_method, mock_object, mock_name)`` and ``def inject(target, "
+"target_method, yaql_expr)``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:29
+msgid ""
+"It is now possible to configure the notifications to use a different "
+"transport URL than the RPCs. These could potentially be completely different "
+"message broker hosts (though they doesn't need to be). If the notification-"
+"specific configuration is not provided, the notifier will use the same "
+"transport as the RPCs."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:33
+msgid ""
+"It is now possible to make a GET request to '/deployments' endpoint. This "
+"will result in deployments for all environments in a specific project "
+"(tenant) being returned."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:93
+msgid ""
+"It is now possible to make a PUT request with body equal to '[]' to '/"
+"environments/<env_id>/services' endpoint. This will result in removing all "
+"apps from current session. This allows deleting the last application from "
+"environment from CLI."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:225 origin/stable/ocata>:109
+msgid ""
+"It is now possible to use version specifications like '=0.0.0' when "
+"``semantic_version`` library version '2.3.1' is installed. Previously such "
+"specifications caused an error and '==0.0.0' had to be used."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:129
+msgid ""
+"It is possible to attach meta-class instances to packages, classes "
+"(including other meta-classes), properties, methods and method arguments. "
+"Each of them got new \"Meta\" key containing list (or single scalar) of meta-"
+"class instances."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:215
+msgid ""
+"It was impossible to explicitly provide attribute owner class to getAttr/"
+"setAttr methods without using namespace prefix or if the type was not from "
+"the core library."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:187 origin/stable/ocata>:71
+msgid "Known Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:33
+msgid ""
+"Murano engine can be configured to sign all the RabbitMQ messages sent to "
+"the agents. When the RSA key is provided, engine will provide agents with "
+"its public part and sign all the messages sent. Agents then will ignore any "
+"command that was not sent by the engine."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:145
+msgid ""
+"Murano engine is now capable of caching packages on disk for reuse. This is "
+"controlled by `packages_cache` directory path and `enable_packages_cache` "
+"boolean parameter (true by default). The packages are cached in a eventlet/"
+"inter-process safe manner and are cleaned up as soon as newer version of the "
+"package becomes available (unless it's used by ongoing deployment)"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:18 origin/stable/newton>:229
+msgid ""
+"Murano engine no longer logs methods ``string()``, ``json()``, and "
+"``yaml()`` of the 'io.murano.system.Resources' class. This is done to "
+"prevent UnicodeDecodeError's when transferring binary files to murano agent."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:219
+msgid ""
+"Murano is now able to assign correct floating IPs when using multiple "
+"external networks. It attempts to choose one that shares a router with "
+"internal network."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:33 origin/stable/newton>:217
+msgid ""
+"Murano is now able to deploy applications in the environments with disabled "
+"Neutron Security Groups. Detection is based on the presence of 'security-"
+"group' Neutron extension."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:211
+msgid ""
+"Murano is now able to work with keystone configured to use a templated "
+"catalog."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:105
+msgid ""
+"Murano no longer specifies fixed-ip parameter for ports when creating VMs "
+"attached to networks owned and shared by other tenants. Specifying this "
+"parameter for non-owned networks could cause violation of neutron policies."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:28
+msgid ""
+"Murano switched to using standard oslo middleware HTTPProxyToWSGI instead of "
+"custom implementation. This middleware parses the X-Forwarded-Proto HTTP "
+"header or the Proxy protocol in order to help murano respond with the "
+"correct URL refs when it's put behind a TLS proxy (such as HAProxy). This "
+"middleware is disabled by default, but can be enabled via a configuration "
+"option in the oslo_middleware group."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:177
+msgid "Murano was migrated to yaql 1.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:35 origin/stable/mitaka>:69
+#: origin/stable/newton>:25 origin/stable/ocata>:25 stable/pike>:10
+#: stable/queens>:10 stable/stein>:20
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:155
+msgid "New database migration 015 has to be applied."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:181
+msgid ""
+"New format MuranoPL/1.3 can be specified in manifest files. MuranoPL/1.3 is "
+"identical to MuranoPL/1.2 but except for the fact that MuranoPL/1.3 packages "
+"cannot be imported to earlier Murano versions. Thus applications that use "
+"new features of yaql 1.1 should use this format version."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:24
+msgid ""
+"New framework for ``murano-status upgrade check`` command is added. This "
+"framework allows adding various checks which can be run before a Murano "
+"upgrade to ensure if the upgrade can be performed safely."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:101
+msgid ""
+"New method type: extension methods. Extension methods enable you to \"add\" "
+"methods to existing types without modifying the original type. Extension "
+"methods are a special kind of static method, but they are called as if they "
+"were instance methods on the extended type. Extension methods are identified "
+"by \"Usage: Extension\" and the type they extend is determined by their "
+"first argument contract. Thus such methods must have at lease one parameter."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:53
+msgid ""
+"New on-request garbage collector for MuranoPL objects were implemented. "
+"Garbage collection is triggered by io.murano.system.GC.collect() static "
+"method. Garbage collector destroys all object that are not reachable anymore."
+" GC can handle objects with cross-references and isolated object graphs. "
+"When portion of object model becomes not reachable it destroyed in "
+"predictable order such that child objects get destroyed before their parents "
+"and, when possible, before objects that are subscribed to their destruction "
+"notifications."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:141
+msgid ""
+"New operator *is* was added to MuranoPL. Now it is possible to test if "
+"MuranoPL object is of particular type."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:85
+msgid ""
+"New plugin 'murano_heat-translator_plugin' was added. Now it is possible to "
+"deploy applications from CSAR templates."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:105
+msgid ""
+"New type-level keyword \"Import\" which can be either list or scalar that "
+"specifies type names which extensions methods should be imported into class "
+"context and thus become available to type members."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:89
+msgid "Now admin can delete user's environments."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:73
+msgid ""
+"Now all native MuranoPL methods (those that are written in Python) have "
+"\"?muranoMethod\" metadata key referring to MuranoMethod instance for the "
+"method."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:133
+msgid ""
+"Now it is possible to have several classes in one YAML file. Classes are "
+"separated using YAML document separator (3 dashes). Empty documents are "
+"skipped. If the class doesn't have Namespace section corresponding section "
+"from the previous class in the same file is used. Thus it is possible to "
+"declare namespace prefixes once at the file header. Even if there are "
+"several classes in one file all of them are still required to be declared in "
+"manifest file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:36
+msgid ""
+"Operator can now use new CLI tool ``murano-status upgrade check`` to check "
+"if Murano deployment can be safely upgraded from N-1 to N release."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:10 origin/stable/ocata>:115
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:213
+msgid ""
+"Prevented the resource leak for objects created during deployment with "
+"``new()`` function call."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14 origin/stable/ocata>:101
+msgid ""
+"Previously Cinder Volumes created in MuranoPL were not released correctly on "
+"object destruction. The issue is now fixed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:205
+msgid ""
+"Previously murano assumed that the service user and service project are in "
+"the 'Default' domain. These values can now be set in ``keystone_authtoken`` "
+"config group."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:101
+msgid ""
+"Previously, when a class overrode a property from its parent class the value "
+"was stored separately for both of them, transformed by each of the contracts."
+" Thus each class saw the value of its contract. In absolute majority of the "
+"cases, the observed value was the same. However, if the contracts were "
+"compatible on the provided value (say int() and string() contracts on the "
+"value \"123\") they were different. This is considered to be a bad pattern. "
+"Now, the value is stored only once per object and transformed by the "
+"contract defined in the actual object type. All base contracts are used to "
+"validate the transformed object thus this pattern will not work anymore."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:121
+msgid ""
+"Previously, when pre-deployment garbage collection occurred it executed ``."
+"destroy`` method for objects that were present in the ``ObjectsCopy`` "
+"section of the object model (which is the the snapshot of the model after "
+"last deployment) and not present in the current model anymore (because they "
+"were deleted through the API between deployments). If the destroyed objects "
+"were to access another object that was not deleted it was accessing its copy "
+"from the ``ObjectsCopy``. Thus any changes to the internal state made by "
+"that object were lost after the garbage collection finished (that is, before "
+"the ``.deploy`` method call) and could not affect the deployment. Now, if "
+"the object is present in both ``Objects`` and ``ObjectsCopy``, a single "
+"instance (the one from ``Objects``) is used for both garbage collection and "
+"deployment. As a consequence, instances (in their ``.destroy`` method) now "
+"may observe changes made to other objects they refer if they were not "
+"deleted, but modified through the API. In some rare cases, it may break "
+"existing applications."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Python 2.7 support has been dropped. Last release of Murano to support "
+"python 2.7 is OpenStack Train. The minimum version of Python now supported "
+"by Murano is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:68
+msgid ""
+"Remove hardcoded constant called 'ITERATORS_LIMIT', that can be exceeded "
+"(2000) having big amount of objects. Introduce dsl_iterators_limit "
+"configuration option instead of constant."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:57
+msgid ""
+"Removed `show_categories` endpoint from the application catalog API which "
+"has been deprecated since the Liberty cycle. Use `list_categories` instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:201
+msgid ""
+"Removed the need for Keystone v2 options (admin_user, admin_password, "
+"admin_tenant_name) when Keystone v3 is in use."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:169
+msgid ""
+"Renamed the ``workers`` option from the ``engine`` group to "
+"``engine_workers`` to reduce ambiguity with the ``api_workers`` option."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:24 origin/stable/mitaka>:231
+msgid ""
+"RequestContext now serialises it's roles. This should allow murano to work "
+"correctly (and allow rules like \"role:xxx\" in policy.json) when using oslo."
+"context prior to 2.2.0 and oslo.policy"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:18
+msgid ""
+"Requires a valid secret storage backend (e.g. Barbican) to be configured via "
+"Castellan."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:10 origin/stable/mitaka>:44
+#: origin/stable/newton>:175
+msgid "Security Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:125
+msgid ""
+"Separated murano service broker from murano-api into a murano-cfapi service. "
+"Created a separate database and ``paste.ini`` for service broker."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid ""
+"Since Newton release, heat is available as a devstack plugin. So we remove "
+"heat as enable_service in devstack."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:137
+msgid ""
+"Split ``Instance``'s ``.deploy()`` method into two phases - "
+"``beginDeploy()`` and ``endDeploy()``. This allows the application developer "
+"to provision multiple instances at once without the need to push the stack "
+"for each instance."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:165
+msgid ""
+"Static methods and properties were introduced. Both properties and methods "
+"can be marked as Usage: Static Statics can be accessed using ns:Class."
+"property / ns:Class.method(), :Class.property / :Class.method() to access "
+"class from current namespace or type('full.name').property / type('full."
+"name').method() to use full type name."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:109
+msgid ""
+"The ``string()`` contract no longer converts everything to string values. "
+"Now it only converts scalar values to strings. Previous behavior allowed "
+"``string()`` property to accept lists and convert them to their Python "
+"string representation which is clearly not what developers expected."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:81
+msgid ""
+"The contract ``class()`` now uses the same approach to load classes from "
+"dictionaries. Thus the same two syntaxes apply there as well."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current stable/wallaby>:14
+msgid ""
+"The default value of ``[oslo_policy] policy_file`` config option has been "
+"changed from ``policy.json`` to ``policy.yaml``. Operators who are utilizing "
+"customized or previously generated static policy JSON files (which are not "
+"needed by default), should generate new policy files or convert them in YAML "
+"format. Use the `oslopolicy-convert-json-to-yaml <https://docs.openstack.org/"
+"oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml.html>`_ tool to "
+"convert a JSON to YAML formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:237
+msgid ""
+"The test-runner now does not output logs to stderr by default unless a "
+"'use_stderr' parameter is specified in the configuration file."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:233
+msgid ""
+"The test-runner now outputs the tests it runs and their results to stdout "
+"directly, instead of the logging system."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:105
+msgid ""
+"The value that is stored in the object's properties is obtained by executing "
+"special \"finalize\" contract implementation which by default returns the "
+"input value unmodified. Because validation happens on the transformed value "
+"before it gets finalized it is possible for transformation to return a value "
+"that will pass the validation though the final value won't. This is used to "
+"relax the template() contract limitation that prevented child class from "
+"excluding additional properties from the template."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 current origin/stable/mitaka>:197
+#: origin/stable/newton>:151 stable/pike>:39 stable/stein>:32 stable/ussuri>:10
+#: stable/wallaby>:10
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:32 current stable/wallaby>:32
+msgid ""
+"Use of JSON policy files was deprecated by the ``oslo.policy`` library "
+"during the Victoria development cycle. As a result, this deprecation is "
+"being noted in the Wallaby cycle with an anticipated future removal of "
+"support by ``oslo.policy``. As such operators will need to convert to YAML "
+"policy files. Please see the upgrade notes for details on migration of any "
+"custom policy files."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:23
+msgid ""
+"Users can now assign an existing security group to an application as an "
+"alternative to using the one created by Murano's ``SecurityGroupManager``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:201
+msgid ""
+"When updating to Mitaka, the operator should update service name and type "
+"for endpoint in keystone from \"application_catalog\" to \"application-"
+"catalog\" if SQL is used for catalog back-end driver."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:221
+msgid ""
+"Whenever murano-engine accesses script files, text script files are opened "
+"in 'rU' mode which recognizes all types of newlines, and binary files are "
+"opened in 'rb' mode to prevent their corruption."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:85
+msgid ""
+"added default rules to NeutronSecurityGroupManager to avoid error if "
+"`createDefaultInstanceSecurityGroupRules()` method isn't extended in "
+"inheritor and SecurityGroups isn't created in application with call of "
+"`addGroupIngress()` method."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:14 origin/stable/mitaka>:48
+#: origin/stable/newton>:179
+msgid ""
+"cve-2016-4972 has been addressed. In ceveral places Murano used loaders "
+"inherited directly from yaml.Loader when parsing MuranoPL and UI files from "
+"packages. This is unsafe, because this loader is capable of creating custom "
+"python objects from specifically constructed yaml files. With this change "
+"all yaml loading operations are done using safe loaders instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:169
+msgid "io.murano.configuration.Linux methods are now static"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:65
+msgid ""
+"io.murano.system.GC.isDestroyed() static method was added. It checks if the "
+"object is destroyed and thus no methods can be invoked on it."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:61
+msgid ""
+"io.murano.system.GC.isDoomed() static method was added. It can be used "
+"within the ``.destroy`` method to test if other object is also going to be "
+"destroyed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:41
+msgid ""
+"io.murano.system.HeatStack.push can be called with async => true flag for "
+"asynchronous push"
+msgstr ""
+
+#: ../source/index.rst:16
+msgid "Murano Release Notes"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

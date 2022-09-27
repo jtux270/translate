@@ -1,0 +1,902 @@
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata.
+# Aleksey Alekseenko <9118250541@mail.ru>, 2016. #zanata.
+# Alexander <ainikitenkov@gmail.com>, 2016. #zanata.
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata.
+# Artem <amikhalev90@gmail.com>, 2016. #zanata.
+# Daisy <guoyingc@cn.ibm.com>, 2016. #zanata.
+# Irina Kochetova <ikochetova@hystax.com>, 2016. #zanata.
+# Maxim Bozhenko <mbozhenko@gmail.com>, 2016. #zanata.
+# Nikita Burtsev <nikita.burtsev@gmail.com>, 2016. #zanata.
+# Artem <amikhalev90@gmail.com>, 2017. #zanata.
+# Fedor Tarasenko <feodor.tarasenko@gmail.com>, 2017. #zanata.
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2017. #zanata.
+# Roman Gorshunov <roman.gorshunov@att.com>, 2019. #zanata.
+# ДроноваЮ <juliette.tux@gmail.com>, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: heat-dashboard VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-03-31 04:14+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-02-22 14:05+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.12.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: heat_dashboard/content/resource_types/panel.py:20
+#: heat_dashboard/content/resource_types/tables.py:34
+#: heat_dashboard/content/resource_types/views.py:30
+msgid "Resource Types"
+msgstr "Типы ресурсов"
+
+#: heat_dashboard/content/resource_types/tables.py:21
+msgid "Type ="
+msgstr "Тип ="
+
+#: heat_dashboard/content/resource_types/tables.py:21
+msgid "Case sensitive"
+msgstr "Регистрозависимый"
+
+#: heat_dashboard/content/resource_types/tables.py:26
+#: heat_dashboard/content/template_versions/tables.py:27
+msgid "Type"
+msgstr "Тип"
+
+#: heat_dashboard/content/resource_types/tabs.py:20
+#: heat_dashboard/content/stacks/tabs.py:56
+#: heat_dashboard/content/stacks/tabs.py:72
+msgid "Overview"
+msgstr "Обзор"
+
+#: heat_dashboard/content/resource_types/views.py:42
+msgid "Unable to retrieve stack resource types."
+msgstr "Не удалось получить сведения о типах ресурсов стека"
+
+#: heat_dashboard/content/resource_types/views.py:59
+msgid "Unable to retrieve resource type details."
+msgstr "Не удалось получить подробные сведения о типах ресурсов"
+
+#: heat_dashboard/content/resource_types/templates/resource_types/_details.html:8
+#: heat_dashboard/content/resource_types/templates/stacks.resource_types/_details.html:8
+msgid "Attributes"
+msgstr "Атрибуты"
+
+#: heat_dashboard/content/resource_types/templates/resource_types/_details.html:12
+#: heat_dashboard/content/resource_types/templates/stacks.resource_types/_details.html:12
+msgid "Properties"
+msgstr "Свойства"
+
+#: heat_dashboard/content/stacks/forms.py:56
+msgid "Unable to retrieve images"
+msgstr "Не удалось получить сведения об образах"
+
+#: heat_dashboard/content/stacks/forms.py:58
+msgid "Select Image"
+msgstr "Выберите образ"
+
+#: heat_dashboard/content/stacks/forms.py:64
+msgid "No images available"
+msgstr "Нет доступных образов."
+
+#: heat_dashboard/content/stacks/forms.py:89
+#: heat_dashboard/content/stacks/templates/stacks/select_template.html:3
+#: heat_dashboard/content/stacks/views.py:91
+msgid "Select Template"
+msgstr "Выберите шаблон"
+
+#: heat_dashboard/content/stacks/forms.py:90
+msgid "Select a template to launch a stack."
+msgstr "Выберите шаблон для запуска стека."
+
+#: heat_dashboard/content/stacks/forms.py:94
+msgid "File"
+msgstr "Файл"
+
+#: heat_dashboard/content/stacks/forms.py:95
+msgid "Direct Input"
+msgstr "Прямой ввод"
+
+#: heat_dashboard/content/stacks/forms.py:96
+msgid "URL"
+msgstr "URL"
+
+#: heat_dashboard/content/stacks/forms.py:98
+msgid "Template Source"
+msgstr "Источник шаблона"
+
+#: heat_dashboard/content/stacks/forms.py:106
+#: heat_dashboard/content/stacks/forms.py:108
+msgid "Template File"
+msgstr "Файл шаблона"
+
+#: heat_dashboard/content/stacks/forms.py:109
+msgid "A local template to upload."
+msgstr "Локальный шаблон для отправки"
+
+#: heat_dashboard/content/stacks/forms.py:116
+#: heat_dashboard/content/stacks/forms.py:118
+msgid "Template URL"
+msgstr "URL шаблона"
+
+#: heat_dashboard/content/stacks/forms.py:119
+msgid "An external (HTTP) URL to load the template from."
+msgstr "Внешний адрес URL (HTTP) для скачивания шаблона."
+
+#: heat_dashboard/content/stacks/forms.py:126
+#: heat_dashboard/content/stacks/forms.py:128
+msgid "Template Data"
+msgstr "Дата создания шаблона"
+
+#: heat_dashboard/content/stacks/forms.py:129
+msgid "The raw contents of the template."
+msgstr "Необработанное содержимое шаблона"
+
+#: heat_dashboard/content/stacks/forms.py:135
+msgid "Environment Source"
+msgstr "Источник окружения"
+
+#: heat_dashboard/content/stacks/forms.py:143
+#: heat_dashboard/content/stacks/forms.py:145
+msgid "Environment File"
+msgstr "Файл окружения"
+
+#: heat_dashboard/content/stacks/forms.py:146
+msgid "A local environment to upload."
+msgstr "Локальное окружение для отправки"
+
+#: heat_dashboard/content/stacks/forms.py:153
+#: heat_dashboard/content/stacks/forms.py:155
+msgid "Environment Data"
+msgstr "Данные окружения"
+
+#: heat_dashboard/content/stacks/forms.py:156
+msgid "The raw contents of the environment file."
+msgstr "Необработанное содержимое файла окружения"
+
+#: heat_dashboard/content/stacks/forms.py:160
+msgid "Referenced Files"
+msgstr "Указанные файлы"
+
+#: heat_dashboard/content/stacks/forms.py:179
+msgid "template"
+msgstr "шаблон"
+
+#: heat_dashboard/content/stacks/forms.py:180
+msgid "environment"
+msgstr "окружение"
+
+#: heat_dashboard/content/stacks/forms.py:242
+#, python-format
+msgid "There was a problem parsing the %(prefix)s: %(error)s"
+msgstr "Во время анализа %(prefix)s возникла ошибка: %(error)s"
+
+#: heat_dashboard/content/stacks/forms.py:249
+#, python-format
+msgid "Please specify a %s using only one source method."
+msgstr "Укажите %s с использованием только одного способа источника"
+
+#: heat_dashboard/content/stacks/forms.py:256
+msgid "You must specify a template via one of the available sources."
+msgstr "Необходимо указать шаблон с помощью одного из доступных источников"
+
+#: heat_dashboard/content/stacks/forms.py:279
+msgid "Edit Template"
+msgstr "Редактировать шаблон"
+
+#: heat_dashboard/content/stacks/forms.py:280
+msgid "Select a new template to re-launch a stack."
+msgstr "Выберите новый шаблон для повторного запуска стека"
+
+#: heat_dashboard/content/stacks/forms.py:281
+#: heat_dashboard/content/stacks/forms.py:462
+msgid "Stack ID"
+msgstr "ID стека"
+
+#: heat_dashboard/content/stacks/forms.py:283
+#: heat_dashboard/content/stacks/forms.py:314
+#: heat_dashboard/content/stacks/forms.py:465
+#: heat_dashboard/content/stacks/tables.py:265
+msgid "Stack Name"
+msgstr "Имя стека"
+
+#: heat_dashboard/content/stacks/forms.py:290
+#: heat_dashboard/content/stacks/templates/stacks/preview_template.html:3
+#: heat_dashboard/content/stacks/views.py:159
+msgid "Preview Template"
+msgstr "Предпросмотр шаблона"
+
+#: heat_dashboard/content/stacks/forms.py:291
+msgid "Select a new template to preview a stack."
+msgstr "Выберите новый шаблон для предварительного просмотра стека"
+
+#: heat_dashboard/content/stacks/forms.py:299
+msgid "Create Stack"
+msgstr "Создать стек"
+
+#: heat_dashboard/content/stacks/forms.py:315
+msgid "Name of the stack to create."
+msgstr "Имя создаваемого стека"
+
+#: heat_dashboard/content/stacks/forms.py:318
+msgid ""
+"Name must start with a letter and may only contain letters, numbers, "
+"underscores, periods and hyphens."
+msgstr ""
+"Имя должно начинаться с буквы и может состоять только из букв, чисел, "
+"символов нижнего подчёркивания, точек и тире."
+
+#: heat_dashboard/content/stacks/forms.py:323
+msgid "Creation Timeout (minutes)"
+msgstr "Истечение времени ожидания создания (в минутах)"
+
+#: heat_dashboard/content/stacks/forms.py:324
+msgid "Stack creation timeout in minutes."
+msgstr "Истечение времени ожидания создания стека в минутах"
+
+#: heat_dashboard/content/stacks/forms.py:326
+msgid "Rollback On Failure"
+msgstr "Откат при сбое"
+
+#: heat_dashboard/content/stacks/forms.py:327
+msgid "Enable rollback on create/update failure."
+msgstr "Включить откат при сбое создания/обновления"
+
+#: heat_dashboard/content/stacks/forms.py:339
+#, python-format
+msgid "Password for user \"%s\""
+msgstr "Пароль пользователя \"%s\""
+
+#: heat_dashboard/content/stacks/forms.py:340
+msgid ""
+"This is required for operations to be performed throughout the lifecycle of "
+"the stack"
+msgstr ""
+"Требуется для действий, которые должны выполняться в течение жизненного "
+"цикла стека"
+
+#: heat_dashboard/content/stacks/forms.py:439
+msgid "Stack creation started."
+msgstr "Создание стека началось"
+
+#: heat_dashboard/content/stacks/forms.py:459
+#: heat_dashboard/content/stacks/templates/stacks/update.html:3
+msgid "Update Stack Parameters"
+msgstr "Обновить параметры стека"
+
+#: heat_dashboard/content/stacks/forms.py:469
+msgid "Updating Timeout (minutes)"
+msgstr "Истечение времени ожидания обновления (в минутах)"
+
+#: heat_dashboard/content/stacks/forms.py:470
+msgid "Stack updating timeout in minutes."
+msgstr "Истечение времени ожидания обновления стека (в минутах)"
+
+#: heat_dashboard/content/stacks/forms.py:495
+msgid "Stack update started."
+msgstr "Обновление стека началось"
+
+#: heat_dashboard/content/stacks/forms.py:504
+msgid "Preview Stack Parameters"
+msgstr "Предварительный просмотр параметров стека"
+
+#: heat_dashboard/content/stacks/panel.py:19
+#: heat_dashboard/content/stacks/tables.py:290
+#: heat_dashboard/content/stacks/views.py:41
+msgid "Stacks"
+msgstr "Стеки"
+
+#: heat_dashboard/content/stacks/tables.py:32
+#: heat_dashboard/content/stacks/templates/stacks/create.html:3
+#: heat_dashboard/content/stacks/views.py:174
+msgid "Launch Stack"
+msgstr "Запустить стек"
+
+#: heat_dashboard/content/stacks/tables.py:42
+#: heat_dashboard/content/stacks/templates/stacks/preview.html:3
+#: heat_dashboard/content/stacks/views.py:242
+msgid "Preview Stack"
+msgstr "Предварительный просмотр стека"
+
+#: heat_dashboard/content/stacks/tables.py:52
+#: heat_dashboard/content/stacks/tables.py:58
+msgid "Check Stack"
+msgid_plural "Check Stacks"
+msgstr[0] "Проверить стек"
+msgstr[1] "Проверить стеки"
+msgstr[2] "Проверить стеки"
+
+#: heat_dashboard/content/stacks/tables.py:66
+msgid "Checked Stack"
+msgid_plural "Checked Stacks"
+msgstr[0] "Стек проверен"
+msgstr[1] "Стеки проверены"
+msgstr[2] "Стеки проверены"
+
+#: heat_dashboard/content/stacks/tables.py:78
+#: heat_dashboard/content/stacks/tables.py:84
+msgid "Suspend Stack"
+msgid_plural "Suspend Stacks"
+msgstr[0] "Перевести стек в режим гибернации"
+msgstr[1] "Перевести стеки в режим гибернации"
+msgstr[2] "Перевести стеки в режим гибернации"
+
+#: heat_dashboard/content/stacks/tables.py:92
+msgid "Suspended Stack"
+msgid_plural "Suspended Stacks"
+msgstr[0] "Стек был переведён в режим гибернации"
+msgstr[1] "Стеки были переведены в режим гибернации"
+msgstr[2] "Стеки были переведены в режим гибернации"
+
+#: heat_dashboard/content/stacks/tables.py:105
+#: heat_dashboard/content/stacks/tables.py:111
+msgid "Resume Stack"
+msgid_plural "Resume Stacks"
+msgstr[0] "Возобновить работу стека"
+msgstr[1] "Возобновить работу стеков"
+msgstr[2] "Возобновить работу стеков"
+
+#: heat_dashboard/content/stacks/tables.py:119
+msgid "Resumed Stack"
+msgid_plural "Resumed Stacks"
+msgstr[0] "Работа стека была возобновлена"
+msgstr[1] "Работа стеков была возобновлена"
+msgstr[2] "Работа стеков была возобновлена"
+
+#: heat_dashboard/content/stacks/tables.py:132
+msgid "Change Stack Template"
+msgstr "Изменить шаблон стека"
+
+#: heat_dashboard/content/stacks/tables.py:144
+msgid "Delete Stack"
+msgid_plural "Delete Stacks"
+msgstr[0] "Удалить стек"
+msgstr[1] "Удалить стеки"
+msgstr[2] "Удалить стеки"
+
+#: heat_dashboard/content/stacks/tables.py:152
+msgid "Deleted Stack"
+msgid_plural "Deleted Stacks"
+msgstr[0] "Стек был удалён"
+msgstr[1] "Стеки были удалены"
+msgstr[2] "Стеки были удалены"
+
+#: heat_dashboard/content/stacks/tables.py:192
+msgid "Stack Name ="
+msgstr "Имя стека ="
+
+#: heat_dashboard/content/stacks/tables.py:192
+msgid "Case-sensitive"
+msgstr "Регистрозависимый"
+
+#: heat_dashboard/content/stacks/tables.py:193
+msgid "Stack ID ="
+msgstr "ID стека ="
+
+#: heat_dashboard/content/stacks/tables.py:194
+msgid "Status ="
+msgstr "Статус ="
+
+#: heat_dashboard/content/stacks/tables.py:203
+msgctxt "current status of stack"
+msgid "Init In Progress"
+msgstr "Выполняется init"
+
+#: heat_dashboard/content/stacks/tables.py:205
+msgctxt "current status of stack"
+msgid "Init Complete"
+msgstr "Выполнение init завершено"
+
+#: heat_dashboard/content/stacks/tables.py:207
+msgctxt "current status of stack"
+msgid "Init Failed"
+msgstr "Сбой init"
+
+#: heat_dashboard/content/stacks/tables.py:209
+msgctxt "current status of stack"
+msgid "Create In Progress"
+msgstr "Идёт создание"
+
+#: heat_dashboard/content/stacks/tables.py:211
+msgctxt "current status of stack"
+msgid "Create Complete"
+msgstr "Создание завершено"
+
+#: heat_dashboard/content/stacks/tables.py:213
+msgctxt "current status of stack"
+msgid "Create Failed"
+msgstr "Сбой создания"
+
+#: heat_dashboard/content/stacks/tables.py:215
+msgctxt "current status of stack"
+msgid "Delete In Progress"
+msgstr "Идёт удаление"
+
+#: heat_dashboard/content/stacks/tables.py:217
+msgctxt "current status of stack"
+msgid "Delete Complete"
+msgstr "Удаление завершено"
+
+#: heat_dashboard/content/stacks/tables.py:219
+msgctxt "current status of stack"
+msgid "Delete Failed"
+msgstr "Сбой удаления"
+
+#: heat_dashboard/content/stacks/tables.py:221
+msgctxt "current status of stack"
+msgid "Update In Progress"
+msgstr "Выполняется обновление"
+
+#: heat_dashboard/content/stacks/tables.py:223
+msgctxt "current status of stack"
+msgid "Update Complete"
+msgstr "Обновление завершено"
+
+#: heat_dashboard/content/stacks/tables.py:225
+msgctxt "current status of stack"
+msgid "Update Failed"
+msgstr "Сбой обновления"
+
+#: heat_dashboard/content/stacks/tables.py:227
+msgctxt "current status of stack"
+msgid "Rollback In Progress"
+msgstr "Выполняется откат"
+
+#: heat_dashboard/content/stacks/tables.py:229
+msgctxt "current status of stack"
+msgid "Rollback Complete"
+msgstr "Откат выполнен"
+
+#: heat_dashboard/content/stacks/tables.py:231
+msgctxt "current status of stack"
+msgid "Rollback Failed"
+msgstr "Сбой отката"
+
+#: heat_dashboard/content/stacks/tables.py:233
+msgctxt "current status of stack"
+msgid "Suspend In Progress"
+msgstr "Выполняется перевод в режим гибернации"
+
+#: heat_dashboard/content/stacks/tables.py:235
+msgctxt "current status of stack"
+msgid "Suspend Complete"
+msgstr "Перевод в режим гибернации завершён"
+
+#: heat_dashboard/content/stacks/tables.py:237
+msgctxt "current status of stack"
+msgid "Suspend Failed"
+msgstr "Сбой перевода в режим гибернации"
+
+#: heat_dashboard/content/stacks/tables.py:239
+msgctxt "current status of stack"
+msgid "Resume In Progress"
+msgstr "Идёт возобновление работы"
+
+#: heat_dashboard/content/stacks/tables.py:241
+msgctxt "current status of stack"
+msgid "Resume Complete"
+msgstr "Возобновление работы выполнено"
+
+#: heat_dashboard/content/stacks/tables.py:243
+msgctxt "current status of stack"
+msgid "Resume Failed"
+msgstr "Сбой возобновления работы"
+
+#: heat_dashboard/content/stacks/tables.py:245
+msgctxt "current status of stack"
+msgid "Adopt In Progress"
+msgstr "Выполняется взятие стека под контроль"
+
+#: heat_dashboard/content/stacks/tables.py:247
+msgctxt "current status of stack"
+msgid "Adopt Complete"
+msgstr "Стек взят под контроль"
+
+#: heat_dashboard/content/stacks/tables.py:249
+msgctxt "current status of stack"
+msgid "Adopt Failed"
+msgstr "Сбой взятия стека под контроль"
+
+#: heat_dashboard/content/stacks/tables.py:251
+msgctxt "current status of stack"
+msgid "Snapshot In Progress"
+msgstr "Идёт создание снимка"
+
+#: heat_dashboard/content/stacks/tables.py:253
+msgctxt "current status of stack"
+msgid "Snapshot Complete"
+msgstr "Снимок готов"
+
+#: heat_dashboard/content/stacks/tables.py:255
+msgctxt "current status of stack"
+msgid "Snapshot Failed"
+msgstr "Сбой создания снимка"
+
+#: heat_dashboard/content/stacks/tables.py:257
+msgctxt "current status of stack"
+msgid "Check In Progress"
+msgstr "Выполняется проверка"
+
+#: heat_dashboard/content/stacks/tables.py:259
+msgctxt "current status of stack"
+msgid "Check Complete"
+msgstr "Проверка завершена"
+
+#: heat_dashboard/content/stacks/tables.py:261
+msgctxt "current status of stack"
+msgid "Check Failed"
+msgstr "Сбой проверки"
+
+#: heat_dashboard/content/stacks/tables.py:268
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:16
+msgid "Created"
+msgstr "Создано"
+
+#: heat_dashboard/content/stacks/tables.py:273
+msgid "Updated"
+msgstr "Обновлено"
+
+#: heat_dashboard/content/stacks/tables.py:282
+#: heat_dashboard/content/stacks/tables.py:328
+#: heat_dashboard/content/stacks/tables.py:383
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:13
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:20
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:23
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:28
+msgid "Status"
+msgstr "Статус"
+
+#: heat_dashboard/content/stacks/tables.py:318
+#: heat_dashboard/content/stacks/tables.py:371
+msgid "Stack Resource"
+msgstr "Ресурс стека"
+
+#: heat_dashboard/content/stacks/tables.py:321
+#: heat_dashboard/content/stacks/tables.py:374
+msgid "Resource"
+msgstr "Ресурс"
+
+#: heat_dashboard/content/stacks/tables.py:323
+msgid "Time Since Event"
+msgstr "Прошло времени после события"
+
+#: heat_dashboard/content/stacks/tables.py:331
+#: heat_dashboard/content/stacks/tables.py:387
+msgid "Status Reason"
+msgstr "Причина статуса"
+
+#: heat_dashboard/content/stacks/tables.py:335
+msgid "Stack Events"
+msgstr "События стека"
+
+#: heat_dashboard/content/stacks/tables.py:377
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:17
+msgid "Stack Resource Type"
+msgstr "Тип ресурса стека"
+
+#: heat_dashboard/content/stacks/tables.py:379
+msgid "Date Updated"
+msgstr "Дата обновления"
+
+#: heat_dashboard/content/stacks/tables.py:405
+msgid "Stack Resources"
+msgstr "Ресурсы стека"
+
+#: heat_dashboard/content/stacks/tabs.py:33
+msgid "Topology"
+msgstr "Топология"
+
+#: heat_dashboard/content/stacks/tabs.py:86
+msgid "Events"
+msgstr "События"
+
+#: heat_dashboard/content/stacks/tabs.py:131
+#, python-format
+msgid "Unable to get events for stack \"%s\"."
+msgstr "Не удалось получить сведения о событиях стека \"%s\"."
+
+#: heat_dashboard/content/stacks/tabs.py:143
+#: heat_dashboard/content/stacks/templates/stacks/_preview_details.html:41
+msgid "Resources"
+msgstr "Ресурсы"
+
+#: heat_dashboard/content/stacks/tabs.py:167
+#, python-format
+msgid "Unable to get resources for stack \"%s\"."
+msgstr "Не удалось получить сведения о ресурсах стека \"%s\"."
+
+#: heat_dashboard/content/stacks/tabs.py:175
+msgid "Template"
+msgstr "Шаблон"
+
+#: heat_dashboard/content/stacks/views.py:79
+msgid "Unable to retrieve stack list."
+msgstr "Не удалось получить список стеков"
+
+#: heat_dashboard/content/stacks/views.py:88
+#: heat_dashboard/content/stacks/views.py:117
+#: heat_dashboard/content/stacks/views.py:156
+msgid "Next"
+msgstr "Дальше"
+
+#: heat_dashboard/content/stacks/templates/stacks/change_template.html:3
+#: heat_dashboard/content/stacks/views.py:121
+msgid "Change Template"
+msgstr "Изменить шаблон"
+
+#: heat_dashboard/content/stacks/views.py:135
+#: heat_dashboard/content/stacks/views.py:229
+#: heat_dashboard/content/stacks/views.py:284
+msgid "Unable to retrieve stack."
+msgstr "Не удалось получить сведения о стеке"
+
+#: heat_dashboard/content/stacks/views.py:171
+msgid "Launch"
+msgstr "Запустить"
+
+#: heat_dashboard/content/stacks/views.py:199
+msgid "Update"
+msgstr "Обновить"
+
+#: heat_dashboard/content/stacks/views.py:202
+msgid "Update Stack"
+msgstr "Обновить стек"
+
+#: heat_dashboard/content/stacks/views.py:239
+msgid "Preview"
+msgstr "Предварительный просмотр"
+
+#: heat_dashboard/content/stacks/templates/stacks/preview_details.html:3
+#: heat_dashboard/content/stacks/views.py:252
+msgid "Preview Stack Details"
+msgstr "Подробности предварительного просмотра стека"
+
+#: heat_dashboard/content/stacks/views.py:295
+msgid "Unable to retrieve stack template."
+msgstr "Не удалось получить сведения о шаблоне стека"
+
+#: heat_dashboard/content/stacks/views.py:330
+msgid "Unable to retrieve resource."
+msgstr "Не удалось получить сведения о ресурсе"
+
+#: heat_dashboard/content/stacks/views.py:343
+msgid "Unable to retrieve metadata."
+msgstr "Не удалось получить метаданные."
+
+#: heat_dashboard/content/stacks/templates/stacks/_change_template.html:5
+#: heat_dashboard/content/stacks/templates/stacks/_create.html:4
+#: heat_dashboard/content/stacks/templates/stacks/_preview.html:4
+#: heat_dashboard/content/stacks/templates/stacks/_preview_template.html:5
+#: heat_dashboard/content/stacks/templates/stacks/_select_template.html:5
+#: heat_dashboard/content/stacks/templates/stacks/_update.html:4
+msgid "Description:"
+msgstr "Описание:"
+
+#: heat_dashboard/content/stacks/templates/stacks/_change_template.html:6
+#: heat_dashboard/content/stacks/templates/stacks/_select_template.html:6
+msgid ""
+"A template is used to automate the deployment of infrastructure, services, "
+"and applications."
+msgstr ""
+"Шаблон используется для автоматизации процесса развёртывания инфраструктуры,"
+" служб "
+"и приложений"
+
+#: heat_dashboard/content/stacks/templates/stacks/_change_template.html:7
+msgid ""
+"Use one of the available template source options to specify the template to "
+"be used in changing this stack."
+msgstr ""
+"Используйте один из возможных способов доступа к источнику шаблона для "
+"указания шаблона, который будет использован для изменения параметров данного"
+" стека"
+
+#: heat_dashboard/content/stacks/templates/stacks/_create.html:5
+msgid "Create a new stack with the provided values."
+msgstr "Создать новый стек с указанными значениями"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:5
+msgid "Name"
+msgstr "Имя"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:7
+msgid "ID"
+msgstr "ID"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:9
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:19
+#: heat_dashboard/content/template_versions/tables.py:43
+msgid "Description"
+msgstr "Описание"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:18
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:26
+msgid "Last Updated"
+msgstr "Последнее обновление"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:22
+#, python-format
+msgid "%(stack_status_title)s: %(stack_status_reason)s"
+msgstr "%(stack_status_title)s: %(stack_status_reason)s"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:26
+msgid "Outputs"
+msgstr "Выходные данные"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:38
+msgid "Stack Parameters"
+msgstr "Параметры стека"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:47
+msgid "Launch Parameters"
+msgstr "Параметры запуска"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:50
+msgid "Timeout"
+msgstr "Истечение времени ожидания"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:51
+msgid "Minutes"
+msgstr "Минут"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:52
+msgid "Rollback"
+msgstr "Откат"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:53
+msgid "Disabled"
+msgstr "Отключено"
+
+#: heat_dashboard/content/stacks/templates/stacks/_detail_overview.html:53
+msgid "Enabled"
+msgstr "Включено"
+
+#: heat_dashboard/content/stacks/templates/stacks/_preview.html:5
+msgid "Preview a new stack with the provided values."
+msgstr "Предварительный просмотр нового стека с указанными значениями"
+
+#: heat_dashboard/content/stacks/templates/stacks/_preview_details.html:4
+msgid "Stack Preview"
+msgstr "Предварительный просмотр стека"
+
+#: heat_dashboard/content/stacks/templates/stacks/_preview_details.html:19
+msgid "Parameters"
+msgstr "Параметры"
+
+#: heat_dashboard/content/stacks/templates/stacks/_preview_details.html:30
+msgid "Links"
+msgstr "Ссылки"
+
+#: heat_dashboard/content/stacks/templates/stacks/_preview_details.html:57
+msgid "Close"
+msgstr "Закрыть"
+
+#: heat_dashboard/content/stacks/templates/stacks/_preview_template.html:6
+msgid ""
+"Use one of the available template source options to specify the template to "
+"be used in previewing this stack."
+msgstr ""
+"Используйте один из возможных способов доступа к источнику шаблона для "
+"указания шаблона, который будет использован для предварительного просмотра"
+" параметров данного стека"
+
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:5
+msgid "Stack Resource ID"
+msgstr "ID ресурса стека"
+
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:7
+msgid "Resource ID"
+msgstr "ID ресурса"
+
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:30
+#, python-format
+msgid "%(resource_status)s: %(resource_status_reason)s"
+msgstr "%(resource_status)s: %(resource_status_reason)s"
+
+#: heat_dashboard/content/stacks/templates/stacks/_resource_overview.html:34
+msgid "Resource Metadata"
+msgstr "Метаданные ресурса"
+
+#: heat_dashboard/content/stacks/templates/stacks/_select_template.html:7
+msgid ""
+"Use one of the available template source options to specify the template to "
+"be used in creating this stack."
+msgstr ""
+"Используйте один из возможных способов доступа к источнику шаблона для "
+"указания шаблона, который будет использован для создания данного стека"
+
+#: heat_dashboard/content/stacks/templates/stacks/_update.html:5
+msgid ""
+"Update a stack with the provided values. Please note that any encrypted "
+"parameters, such as passwords, will be reset to default if you do not change "
+"them here."
+msgstr ""
+"Обновите стек на основе указанных значений. Обратите внимание: значения любых"
+" зашифрованных"
+"параметров, например, паролей, будут возвращены к изначальным, если не"
+" изменить их здесь."
+
+#: heat_dashboard/content/template_generator/panel.py:21
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:7
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:33
+#: heat_dashboard/content/template_generator/views.py:25
+msgid "Template Generator"
+msgstr "Создатель шаблонов"
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:8
+msgid ""
+"Please drag and drop resource icons into center canvas to define resource "
+"for template."
+msgstr ""
+"Для указания ресурсов шаблона перетащите значки ресурсов на центральный холст."
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:24
+msgid "Template Version"
+msgstr "Версия шаблона"
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:39
+msgid "Manage Drafts"
+msgstr "Управление черновиками"
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:47
+msgid "Save Draft"
+msgstr "Сохранить черновик"
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:52
+msgid "Load Draft"
+msgstr "Загрузить черновик"
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:58
+msgid "Import Draft"
+msgstr "Импортировать черновик"
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:63
+msgid "Export Draft"
+msgstr "Экспортировать черновик"
+
+#: heat_dashboard/content/template_generator/templates/template_generator/index.html:70
+msgid "Clear Canvas"
+msgstr "Очистить холст"
+
+#: heat_dashboard/content/template_versions/panel.py:20
+#: heat_dashboard/content/template_versions/tables.py:36
+#: heat_dashboard/content/template_versions/templates/stacks.template_versions/index.html:3
+#: heat_dashboard/content/template_versions/templates/template_versions/index.html:3
+#: heat_dashboard/content/template_versions/views.py:29
+msgid "Template Versions"
+msgstr "Версии шаблонов"
+
+#: heat_dashboard/content/template_versions/tables.py:23
+msgid "Version"
+msgstr "Версия"
+
+#: heat_dashboard/content/template_versions/tables.py:42
+msgid "Function"
+msgstr "Функция"
+
+#: heat_dashboard/content/template_versions/tables.py:50
+#: heat_dashboard/content/template_versions/tabs.py:26
+msgid "Template Functions"
+msgstr "Функции шаблонов"
+
+#: heat_dashboard/content/template_versions/tabs.py:43
+#, python-format
+msgid "Unable to get functions for template version \"%s\"."
+msgstr "Не удалось получить сведения о функциях в версии шаблона \"%s\"."
+
+#: heat_dashboard/content/template_versions/views.py:38
+msgid "Unable to retrieve template versions."
+msgstr "Не удалось получить сведения о версиях шаблона"
+
+#: heat_dashboard/content/template_versions/views.py:54
+msgid "Unable to retrieve template functions."
+msgstr "Не удалось получить сведения о функциях шаблона"
+
+#: heat_dashboard/enabled/_1610_project_orchestration_panel.py:20
+msgid "Orchestration"
+msgstr "Оркестрация"
+

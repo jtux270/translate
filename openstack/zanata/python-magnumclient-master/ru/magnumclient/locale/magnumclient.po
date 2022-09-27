@@ -1,0 +1,1087 @@
+#
+# ДроноваЮ <juliette.tux@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: python-magnumclient VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-05-25 13:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-12-22 03:14+0300\n"
+"Last-Translator: ДроноваЮ <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-i18n-doc@kde.org>\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.08.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: magnumclient/shell.py:126
+msgid "Print debugging output."
+msgstr "Показывать вывод отладки."
+
+#: magnumclient/shell.py:132
+msgid ""
+"Use the auth token cache. Defaults to False if env[OS_CACHE] is not set."
+msgstr ""
+"Использовать кэш маркера аутентификации. Если переменная env[OS_CACHE] не"
+" настроена, "
+"то по умолчанию: False"
+
+#: magnumclient/shell.py:138
+msgid "Region name. Default=env[OS_REGION_NAME]."
+msgstr "Название региона. По умолчанию=env[OS_REGION_NAME]."
+
+#: magnumclient/shell.py:158
+msgid "Defaults to env[OS_AUTH_URL]."
+msgstr "По умолчанию: env[OS_AUTH_URL]."
+
+#: magnumclient/shell.py:163
+msgid "Defaults to env[OS_USER_ID]."
+msgstr "По умолчанию: env[OS_USER_ID]."
+
+#: magnumclient/shell.py:168
+msgid "Defaults to env[OS_USERNAME]."
+msgstr "По умолчанию: env[OS_USERNAME]."
+
+#: magnumclient/shell.py:174
+msgid "Defaults to env[OS_USER_DOMAIN_ID]."
+msgstr "По умолчанию: env[OS_USER_DOMAIN_ID]."
+
+#: magnumclient/shell.py:180
+msgid "Defaults to env[OS_USER_DOMAIN_NAME]."
+msgstr "По умолчанию: env[OS_USER_DOMAIN_NAME]."
+
+#: magnumclient/shell.py:186
+msgid "Defaults to env[OS_PROJECT_ID]."
+msgstr "По умолчанию: env[OS_PROJECT_ID]."
+
+#: magnumclient/shell.py:192
+msgid "Defaults to env[OS_PROJECT_NAME]."
+msgstr "По умолчанию: env[OS_PROJECT_NAME]."
+
+#: magnumclient/shell.py:210
+msgid "Defaults to env[OS_PROJECT_DOMAIN_ID]."
+msgstr "По умолчанию: env[OS_PROJECT_DOMAIN_ID]."
+
+#: magnumclient/shell.py:216
+msgid "Defaults to env[OS_PROJECT_DOMAIN_NAME]."
+msgstr "По умолчанию: env[OS_PROJECT_DOMAIN_NAME]."
+
+#: magnumclient/shell.py:222
+msgid "Defaults to env[OS_TOKEN]."
+msgstr "По умолчанию: env[OS_TOKEN]."
+
+#: magnumclient/shell.py:228
+msgid "Defaults to env[OS_PASSWORD]."
+msgstr "По умолчанию: env[OS_PASSWORD]."
+
+#: magnumclient/shell.py:232
+msgid "Defaults to container-infra for all actions."
+msgstr "По умолчанию: container-infra для всех действий."
+
+#: magnumclient/shell.py:247
+msgid "Defaults to env[OS_ENDPOINT_TYPE]"
+msgstr "По умолчанию: env[OS_ENDPOINT_TYPE]"
+
+#: magnumclient/shell.py:259
+msgid "Defaults to env[OS_CLOUD]."
+msgstr "По умолчанию: env[OS_CLOUD]."
+
+#: magnumclient/shell.py:273
+msgid "Accepts \"api\", defaults to env[MAGNUM_API_VERSION]."
+msgstr "Принимает \"api\", по умолчанию: env[MAGNUM_API_VERSION]."
+
+#: magnumclient/shell.py:281
+msgid ""
+"Specify a CA bundle file to use in verifying a TLS (https) server "
+"certificate. Defaults to env[OS_CACERT]."
+msgstr ""
+"Укажите сборный файл ЦС, удостоверяющий сертификат TLS (https) "
+"сервера. По умолчанию: env[OS_CACERT]."
+
+#: magnumclient/shell.py:289
+msgid "Use this API endpoint instead of the Service Catalog."
+msgstr "Использовать конечную точку этого API вместо Service Catalog."
+
+#: magnumclient/shell.py:303
+msgid "Do not verify https connections"
+msgstr "Не проверять подключения https"
+
+#: magnumclient/shell.py:415
+#, python-format
+msgid ""
+"The requested API version %(ver)s is an unexpected format. Acceptable "
+"formats are 'X', 'X.Y', or the literal string '%(latest)s'."
+msgstr ""
+"Непредвиденный формат запрошенной версии API %(ver)s. Принимаются форматы: "
+"'X', 'X.Y', либо строковый литерал '%(latest)s'."
+
+#: magnumclient/shell.py:612
+msgid "Display help for <subcommand>."
+msgstr "Вывести справку для <subcommand>."
+
+#: magnumclient/common/cliutils.py:64
+#, python-format
+msgid "Missing arguments: %s"
+msgstr "Отсутствует аргумент: %s"
+
+#: magnumclient/common/cliutils.py:71
+#, python-format
+msgid "Duplicate \"%(param)s\" arguments: %(dupes)s"
+msgstr "Аргументы \"%(param)s\" дублируются: %(dupes)s"
+
+#: magnumclient/common/cliutils.py:272
+#, fuzzy, python-format
+msgid ""
+"Field labels list %(labels)s has different number of elements than fields "
+"list %(fields)s"
+msgstr ""
+"У списка меток полей %(labels)s другое число элементов, чем у списка "
+"полей %(fields)s"
+
+#: magnumclient/common/cliutils.py:495
+#, python-format
+msgid "Non-existent fields are specified: %s"
+msgstr "Указаны несуществующие поля: %s"
+
+#: magnumclient/common/utils.py:64
+#, python-format
+msgid "Attributes must be a list of PATH=VALUE not \"%s\""
+msgstr "Атрибуты должны указываться списком вида PATH=VALUE, а не \"%s\""
+
+#: magnumclient/common/utils.py:94
+#, python-format
+msgid "Unknown PATCH operation: %s"
+msgstr "Неизвестное действие PATCH: %s"
+
+#: magnumclient/common/utils.py:125
+#, python-format
+msgid "labels must be a list of KEY=VALUE not %s"
+msgstr "метки должны указываться списком вида KEY=VALUE, а не %s"
+
+#: magnumclient/common/utils.py:151
+#, python-format
+msgid "Cannot get JSON from file '%(file)s'. Error: %(err)s"
+msgstr "Не удалось получить JSON из файла '%(file)s'. Ошибка: %(err)s"
+
+#: magnumclient/common/utils.py:155
+#, python-format
+msgid "For JSON: '%(string)s', error: '%(err)s'"
+msgstr "Для JSON: '%(string)s', ошибка: '%(err)s'"
+
+#: magnumclient/common/apiclient/exceptions.py:82
+#, python-format
+msgid "Authentication failed. Missing options: %s"
+msgstr "Сбой аутентификации. Отсутствуют параметры: %s"
+
+#: magnumclient/common/apiclient/exceptions.py:91
+#, python-format
+msgid "AuthSystemNotFound: %r"
+msgstr "AuthSystemNotFound: %r"
+
+#: magnumclient/common/apiclient/exceptions.py:109
+#, python-format
+msgid "AmbiguousEndpoints: %r"
+msgstr "AmbiguousEndpoints: %r"
+
+#: magnumclient/common/apiclient/exceptions.py:116
+msgid "HTTP Error"
+msgstr "Ошибка HTTP"
+
+#: magnumclient/common/apiclient/exceptions.py:136
+msgid "HTTP Redirection"
+msgstr "Перенаправление HTTP"
+
+#: magnumclient/common/apiclient/exceptions.py:144
+msgid "HTTP Client Error"
+msgstr "Ошибка клиента HTTP"
+
+#: magnumclient/common/apiclient/exceptions.py:153
+msgid "HTTP Server Error"
+msgstr "Ошибка сервера HTTP"
+
+#: magnumclient/common/apiclient/exceptions.py:163
+msgid "Multiple Choices"
+msgstr "Несколько вариантов"
+
+#: magnumclient/common/apiclient/exceptions.py:172
+msgid "Bad Request"
+msgstr "Недопустимый запрос"
+
+#: magnumclient/common/apiclient/exceptions.py:182
+msgid "Unauthorized"
+msgstr "Не авторизовано"
+
+#: magnumclient/common/apiclient/exceptions.py:191
+msgid "Payment Required"
+msgstr "Требуется оплата"
+
+#: magnumclient/common/apiclient/exceptions.py:201
+msgid "Forbidden"
+msgstr "Запрещено"
+
+#: magnumclient/common/apiclient/exceptions.py:211
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: magnumclient/common/apiclient/exceptions.py:221
+msgid "Method Not Allowed"
+msgstr "Недопустимый метод"
+
+#: magnumclient/common/apiclient/exceptions.py:231
+msgid "Not Acceptable"
+msgstr "Не приемлемо"
+
+#: magnumclient/common/apiclient/exceptions.py:240
+#, fuzzy
+msgid "Proxy Authentication Required"
+msgstr "Требуется аутентификация прокси"
+
+#: magnumclient/common/apiclient/exceptions.py:249
+msgid "Request Timeout"
+msgstr "Истечение времени ожидания запроса"
+
+#: magnumclient/common/apiclient/exceptions.py:259
+msgid "Conflict"
+msgstr "Конфликт"
+
+#: magnumclient/common/apiclient/exceptions.py:269
+#, fuzzy
+msgid "Gone"
+msgstr "Потеряно"
+
+#: magnumclient/common/apiclient/exceptions.py:279
+msgid "Length Required"
+msgstr "Требуется длина"
+
+#: magnumclient/common/apiclient/exceptions.py:289
+msgid "Precondition Failed"
+msgstr "Не выполнено предварительное условие"
+
+#: magnumclient/common/apiclient/exceptions.py:298
+msgid "Request Entity Too Large"
+msgstr "Слишком большой объект запроса"
+
+#: magnumclient/common/apiclient/exceptions.py:315
+msgid "Request-URI Too Long"
+msgstr "Слишком длинный URI запроса"
+
+#: magnumclient/common/apiclient/exceptions.py:325
+msgid "Unsupported Media Type"
+msgstr "Этот тип мультимедиа не поддерживается"
+
+#: magnumclient/common/apiclient/exceptions.py:335
+msgid "Requested Range Not Satisfiable"
+msgstr "Невозможно обеспечить запрошенный диапазон"
+
+#: magnumclient/common/apiclient/exceptions.py:344
+msgid "Expectation Failed"
+msgstr "Ошибка ожидания"
+
+#: magnumclient/common/apiclient/exceptions.py:354
+msgid "Unprocessable Entity"
+msgstr "Необрабатываемый объект"
+
+#: magnumclient/common/apiclient/exceptions.py:363
+msgid "Internal Server Error"
+msgstr "Внутренняя ошибка сервера"
+
+#: magnumclient/common/apiclient/exceptions.py:374
+msgid "Not Implemented"
+msgstr "Не реализовано"
+
+#: magnumclient/common/apiclient/exceptions.py:384
+msgid "Bad Gateway"
+msgstr ""
+
+#: magnumclient/common/apiclient/exceptions.py:393
+msgid "Service Unavailable"
+msgstr ""
+
+#: magnumclient/common/apiclient/exceptions.py:403
+msgid "Gateway Timeout"
+msgstr ""
+
+#: magnumclient/common/apiclient/exceptions.py:412
+msgid "HTTP Version Not Supported"
+msgstr ""
+
+#: magnumclient/osc/v1/certificates.py:37
+msgid "Rotate the CA certificate for cluster to revoke access."
+msgstr ""
+
+#: magnumclient/osc/v1/certificates.py:59
+msgid "Show details about the CA certificate for a cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/certificates.py:80
+msgid "Generate the CA certificate for a cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:71
+msgid "Create a Cluster Template."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:79
+#: magnumclient/v1/cluster_templates_shell.py:41
+msgid "Name of the cluster template to create."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:84
+#: magnumclient/v1/baymodels_shell.py:53
+#: magnumclient/v1/cluster_templates_shell.py:87
+msgid "Specify the Container Orchestration Engine to use."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:89
+#: magnumclient/v1/cluster_templates_shell.py:58
+msgid "The name or UUID of the base image to customize for the Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:96
+#: magnumclient/v1/cluster_templates_shell.py:82
+msgid ""
+"The external Neutron network name or UUID to connect to this Cluster "
+"Template."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:101
+msgid "The name or UUID of the SSH keypair to load into the Cluster nodes."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:107
+#: magnumclient/v1/cluster_templates_shell.py:90
+msgid "The private Neutron network name to connect to this Cluster model."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:113
+#: magnumclient/osc/v1/clusters.py:137
+#: magnumclient/v1/cluster_templates_shell.py:94
+msgid "The private Neutron subnet name to connect to Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:118
+#: magnumclient/v1/baymodels_shell.py:63
+#: magnumclient/v1/cluster_templates_shell.py:97
+msgid "The network driver name for instantiating container networks."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:124
+#: magnumclient/v1/baymodels_shell.py:67
+#: magnumclient/v1/cluster_templates_shell.py:101
+msgid "The volume driver name for instantiating container volume."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:131
+#: magnumclient/v1/cluster_templates_shell.py:106
+msgid "The DNS nameserver to use for this cluster template."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:136
+#: magnumclient/osc/v1/clusters.py:125
+#: magnumclient/v1/cluster_templates_shell.py:118
+msgid "The nova flavor name or UUID to use when launching the Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:142
+#: magnumclient/osc/v1/clusters.py:120
+#: magnumclient/v1/cluster_templates_shell.py:129
+msgid ""
+"The nova flavor name or UUID to use when launching the master node of the "
+"Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:149
+#: magnumclient/v1/baymodels_shell.py:84
+#: magnumclient/v1/cluster_templates_shell.py:134
+msgid "Specify the number of size in GB for the docker volume to use."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:156
+msgid ""
+"Select a docker storage driver. Supported: devicemapper, overlay, overlay2. "
+"Default: overlay2"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:162
+#: magnumclient/v1/cluster_templates_shell.py:143
+msgid "The http_proxy address to use for nodes in Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:167
+#: magnumclient/v1/cluster_templates_shell.py:146
+msgid "The https_proxy address to use for nodes in Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:172
+#: magnumclient/v1/cluster_templates_shell.py:149
+msgid "The no_proxy address to use for nodes in Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:178
+#: magnumclient/v1/cluster_templates_shell.py:152
+msgid ""
+"Arbitrary labels in the form of key=value pairs to associate with a cluster "
+"template. May be used multiple times."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:186
+#: magnumclient/v1/cluster_templates_shell.py:157
+msgid "Disable TLS in the Cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:191
+#: magnumclient/v1/cluster_templates_shell.py:160
+msgid "Make cluster template public."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:197
+#: magnumclient/v1/cluster_templates_shell.py:163
+msgid "Enable docker registry in the Cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:203
+#: magnumclient/v1/baymodels_shell.py:117
+#: magnumclient/v1/cluster_templates_shell.py:167
+msgid ""
+"Specify the server type to be used for example vm. For this release default "
+"server type will be vm."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:210
+#: magnumclient/v1/cluster_templates_shell.py:172
+msgid ""
+"Indicates whether created Clusters should have a load balancer for master "
+"nodes or not."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:218
+#: magnumclient/osc/v1/clusters.py:144
+#: magnumclient/v1/cluster_templates_shell.py:179
+msgid "Indicates whether created Clusters should have a floating ip."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:225
+#: magnumclient/osc/v1/clusters.py:151 magnumclient/v1/baymodels_shell.py:136
+#: magnumclient/v1/cluster_templates_shell.py:186
+msgid "Disables floating ip creation on the new Cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:231
+msgid "Indicates the cluster template should be hidden."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:236
+msgid "Indicates the cluster template should be visible."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:242
+msgid "Tags to be added to the cluster template."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:304
+msgid "Delete a Cluster Template."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:312
+#: magnumclient/v1/cluster_templates_shell.py:246
+msgid "ID or name of the (cluster template)s to delete."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:335
+msgid "List Cluster Templates."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:345
+#: magnumclient/v1/cluster_templates_shell.py:274
+msgid "Maximum number of cluster templates to return"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:349
+#: magnumclient/osc/v1/clusters.py:279 magnumclient/osc/v1/nodegroups.py:197
+#: magnumclient/v1/baymodels_shell.py:219
+#: magnumclient/v1/cluster_templates_shell.py:277
+msgid "Column to sort results by"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:354
+#: magnumclient/osc/v1/clusters.py:284 magnumclient/osc/v1/nodegroups.py:202
+#: magnumclient/v1/baymodels_shell.py:223 magnumclient/v1/bays_shell.py:48
+#: magnumclient/v1/cluster_templates_shell.py:281
+#: magnumclient/v1/clusters_shell.py:50 magnumclient/v1/quotas_shell.py:37
+msgid "Direction to sort. \"asc\" or \"desc\"."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:359
+#: magnumclient/v1/baymodels_shell.py:227
+#: magnumclient/v1/cluster_templates_shell.py:285
+msgid ""
+"Comma-separated list of fields to display. Available fields: uuid, name, "
+"coe, image_id, public, link, apiserver_port, server_type, tls_disabled, "
+"registry_enabled"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:385
+msgid "Show a Cluster Template."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:394
+#: magnumclient/v1/cluster_templates_shell.py:263
+msgid "ID or name of the cluster template to show."
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:418
+msgid "The name or UUID of cluster template to update"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:424
+#: magnumclient/osc/v1/clusters.py:341 magnumclient/osc/v1/nodegroups.py:275
+msgid "Operations: one of 'add', 'replace' or 'remove'"
+msgstr ""
+
+#: magnumclient/osc/v1/cluster_templates.py:432
+#: magnumclient/osc/v1/clusters.py:349 magnumclient/osc/v1/nodegroups.py:283
+#: magnumclient/v1/baymodels_shell.py:271 magnumclient/v1/bays_shell.py:187
+#: magnumclient/v1/cluster_templates_shell.py:327
+#: magnumclient/v1/clusters_shell.py:221
+msgid "Attributes to add/replace or remove (only PATH is necessary on remove)"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:63
+msgid "Create a cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:88
+msgid ""
+"Arbitrary labels in the form of key=valuepairs to associate with a cluster "
+"template. May be used multiple times."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:131
+msgid "The private Neutron network name to connect to this Cluster template."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:157
+msgid ""
+"The labels provided will be merged with the labels configured in the "
+"specified cluster template."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:165
+msgid "Enable master LB creation on the new cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:171
+msgid "Disable master LB creation on the new cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:244
+msgid "Delete a cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:266
+msgid "List clusters"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:275
+msgid "Maximum number of clusters to return"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:305
+msgid "Show a Cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:312 magnumclient/v1/clusters_shell.py:186
+msgid "ID or name of the cluster to show."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:328
+msgid "Update a Cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:335 magnumclient/osc/v1/clusters.py:384
+#: magnumclient/osc/v1/clusters.py:474 magnumclient/osc/v1/clusters.py:517
+#: magnumclient/osc/v1/nodegroups.py:269
+msgid "The name or UUID of cluster to update"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:358 magnumclient/v1/clusters_shell.py:209
+msgid "Rollback cluster on update failure."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:377
+msgid "Get Configuration for a Cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:389 magnumclient/v1/bays_shell.py:214
+#: magnumclient/v1/clusters_shell.py:250
+msgid "Directory to save the certificate and config files."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:395 magnumclient/v1/bays_shell.py:217
+#: magnumclient/v1/clusters_shell.py:253
+msgid "Overwrite files if existing."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:401
+msgid "Output certificates in separate files."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:407
+msgid "Use certificate in config files."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:413
+msgid "Use Keystone token in config files."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:467
+msgid "Resize a Cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:479
+msgid "Desired node count of the cluser."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:485
+msgid "Server ID of the nodes to be removed. Repeat to addmore server ID"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:491 magnumclient/osc/v1/clusters.py:533
+msgid "The name or UUID of the nodegroup of current cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:510
+msgid "Upgrade a Cluster"
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:521
+msgid "The new cluster template ID will be upgraded to."
+msgstr ""
+
+#: magnumclient/osc/v1/clusters.py:528
+msgid "The max batch size for upgrading each time."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:48
+msgid "Create a nodegroup"
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:63
+msgid ""
+"Arbitrary labels in the form of key=valuepairs to associate with a nodegroup."
+" May be used multiple times."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:99
+msgid "The name or UUID of the base image to customize for the NodeGroup."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:104
+msgid ""
+"The nova flavor name or UUID to use when launching the nodes in this "
+"NodeGroup."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:111
+msgid ""
+"The labels provided will be merged with the labels configured in the "
+"specified cluster."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:152
+msgid "Delete a nodegroup"
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:159
+msgid "ID or name of the cluster where the nodegroup(s) belong(s)."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:180
+msgid "List nodegroups"
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:188 magnumclient/osc/v1/nodegroups.py:236
+#: magnumclient/osc/v1/nodegroups.py:265
+msgid "ID or name of the cluster where the nodegroup belongs."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:193
+msgid "Maximum number of nodegroups to return"
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:206
+msgid "List the nodegroups in the cluster with this role"
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:229
+msgid "Show a nodegroup"
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:240
+msgid "ID or name of the nodegroup to show."
+msgstr ""
+
+#: magnumclient/osc/v1/nodegroups.py:258
+msgid "Update a Nodegroup"
+msgstr ""
+
+#: magnumclient/osc/v1/quotas.py:35
+msgid "Create a quota."
+msgstr ""
+
+#: magnumclient/osc/v1/quotas.py:75
+msgid "Delete specified resource quota."
+msgstr ""
+
+#: magnumclient/osc/v1/quotas.py:108
+msgid "Show details about the given project resource quota."
+msgstr ""
+
+#: magnumclient/osc/v1/quotas.py:133
+msgid "Update information about the given project resource quota."
+msgstr ""
+
+#: magnumclient/osc/v1/quotas.py:175
+msgid "Print a list of available quotas."
+msgstr ""
+
+#: magnumclient/osc/v1/quotas.py:182 magnumclient/v1/quotas_shell.py:25
+msgid ""
+"The last quota UUID of the previous page; displays list of quotas after "
+"\"marker\"."
+msgstr ""
+
+#: magnumclient/osc/v1/stats.py:22
+msgid "Show stats for the given project_id"
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:34
+msgid "Name of the baymodel to create."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:38
+msgid "The name or UUID of the base image to customize for the bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:43
+msgid "The name of the SSH keypair to load into the Bay nodes."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:48
+msgid "The external Neutron network ID to connect to this bay model."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:56
+msgid "The private Neutron network name to connect to this bay model."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:60
+msgid "The private Neutron subnet name to connect to bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:72
+msgid "The DNS nameserver to use for this baymodel."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:76
+msgid "The nova flavor id to use when launching the bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:79
+msgid "The nova flavor id to use when launching the master node of the bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:89
+#: magnumclient/v1/cluster_templates_shell.py:139
+msgid ""
+"Select a docker storage driver. Supported: devicemapper, overlay. Default: "
+"devicemapper"
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:93
+msgid "The http_proxy address to use for nodes in bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:96
+msgid "The https_proxy address to use for nodes in bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:99
+msgid "The no_proxy address to use for nodes in bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:102
+msgid ""
+"Arbitrary labels in the form of key=value pairs to associate with a baymodel."
+" May be used multiple times."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:107
+msgid "Disable TLS in the Bay."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:110
+msgid "Make baymodel public."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:113
+msgid "Enable docker registry in the Bay"
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:122
+msgid ""
+"Indicates whether created bays should have a load balancer for master nodes "
+"or not."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:129
+msgid "Indicates whether created bays should have a floating ipor not."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:183
+msgid "ID or name of the (baymodel)s to delete."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:202
+msgid "ID or name of the baymodel to show."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:216
+msgid "Maximum number of baymodels to return"
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:234
+msgid "Show detailed information about the baymodels."
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:259
+msgid "UUID or name of baymodel"
+msgstr ""
+
+#: magnumclient/v1/baymodels_shell.py:264 magnumclient/v1/bays_shell.py:180
+#: magnumclient/v1/cluster_templates_shell.py:320
+#: magnumclient/v1/clusters_shell.py:214
+msgid "Operations: 'add', 'replace' or 'remove'"
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:36
+msgid ""
+"The last bay UUID of the previous page; displays list of bays after "
+"\"marker\"."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:41
+msgid "Maximum number of bays to return."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:44 magnumclient/v1/clusters_shell.py:46
+#: magnumclient/v1/quotas_shell.py:33
+msgid "Column to sort results by."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:52
+msgid ""
+"Comma-separated list of fields to display. Available fields: uuid, name, "
+"baymodel_id, stack_id, status, master_count, node_count, links, "
+"bay_create_timeout"
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:78
+msgid "Name of the bay to create."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:82
+msgid "ID or name of the baymodel."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:87
+msgid "The bay node count."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:92
+msgid "The number of master nodes for the bay."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:95 magnumclient/v1/clusters_shell.py:126
+msgid "Specifies custom discovery url for node discovery."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:100
+msgid "The timeout for bay creation in minutes. The default is 60 minutes."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:132
+msgid "ID or name of the (bay)s to delete."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:151
+msgid "ID or name of the bay to show."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:154
+msgid "Display extra associated Baymodel info."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:172
+msgid "UUID or name of bay"
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:175
+msgid "Rollback bay on update failure."
+msgstr ""
+
+#: magnumclient/v1/bays_shell.py:210
+msgid "ID or name of the bay to retrieve config."
+msgstr ""
+
+#: magnumclient/v1/certificates_shell.py:45
+#: magnumclient/v1/certificates_shell.py:76
+msgid "ID or name of the bay."
+msgstr ""
+
+#: magnumclient/v1/certificates_shell.py:50
+#: magnumclient/v1/certificates_shell.py:80
+#: magnumclient/v1/certificates_shell.py:102
+msgid "ID or name of the cluster."
+msgstr ""
+
+#: magnumclient/v1/certificates_shell.py:54
+#, python-format
+msgid "ID or name of the cluster. %s"
+msgstr ""
+
+#: magnumclient/v1/certificates_shell.py:71
+msgid "File path of the csr file to send to Magnum to get signed."
+msgstr ""
+
+#: magnumclient/v1/cluster_templates_shell.py:45
+#, python-format
+msgid "Name of the cluster template to create. %s"
+msgstr ""
+
+#: magnumclient/v1/cluster_templates_shell.py:69
+msgid "The name of the SSH keypair to load into the Cluster nodes."
+msgstr ""
+
+#: magnumclient/v1/cluster_templates_shell.py:192
+msgid "Make cluster template hidden."
+msgstr ""
+
+#: magnumclient/v1/cluster_templates_shell.py:196
+msgid "Make cluster template visible."
+msgstr ""
+
+#: magnumclient/v1/cluster_templates_shell.py:292
+msgid "Show detailed information about the cluster templates."
+msgstr ""
+
+#: magnumclient/v1/cluster_templates_shell.py:315
+msgid "UUID or name of cluster template"
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:38
+msgid ""
+"The last cluster UUID of the previous page; displays list of clusters after "
+"\"marker\"."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:43
+msgid "Maximum number of clusters to return."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:54
+msgid ""
+"Comma-separated list of fields to display. Available fields: uuid, name, "
+"cluster_template_id, stack_id, status, master_count, node_count, links, "
+"create_timeout"
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:83
+msgid "Name of the cluster to create."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:87
+#, python-format
+msgid "Name of the cluster to create. %s"
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:92
+msgid "ID or name of the cluster template."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:104
+msgid "Name of the keypair to use for this cluster."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:108
+msgid "The size in GB for the docker volume to use"
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:111
+msgid ""
+"Arbitrary labels in the form of key=value pairs to associate with a cluster. "
+"May be used multiple times."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:118
+msgid "The cluster node count."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:123
+msgid "The number of master nodes for the cluster."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:131
+msgid "The timeout for cluster creation in minutes. The default is 60 minutes."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:170
+msgid "ID or name of the (cluster)s to delete."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:189
+msgid "Display extra associated cluster template info."
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:206
+msgid "UUID or name of cluster"
+msgstr ""
+
+#: magnumclient/v1/clusters_shell.py:246
+msgid "ID or name of the cluster to retrieve config."
+msgstr ""
+
+#: magnumclient/v1/quotas_shell.py:30
+msgid "Maximum number of quotas to return."
+msgstr ""
+
+#: magnumclient/v1/quotas_shell.py:41
+msgid "Flag to indicate list all tenant quotas."
+msgstr ""
+
+#: magnumclient/v1/quotas_shell.py:59 magnumclient/v1/quotas_shell.py:129
+msgid "Project Id."
+msgstr ""
+
+#: magnumclient/v1/quotas_shell.py:63 magnumclient/v1/quotas_shell.py:133
+msgid "Resource name."
+msgstr ""
+
+#: magnumclient/v1/quotas_shell.py:68 magnumclient/v1/quotas_shell.py:138
+msgid "Max resource limit."
+msgstr ""
+
+#: magnumclient/v1/quotas_shell.py:91 magnumclient/v1/quotas_shell.py:114
+msgid "Project ID."
+msgstr ""
+
+#: magnumclient/v1/quotas_shell.py:95 magnumclient/v1/quotas_shell.py:118
+msgid "Resource name"
+msgstr ""
+
+#: magnumclient/v1/stats_shell.py:20
+msgid "Project ID"
+msgstr ""
+

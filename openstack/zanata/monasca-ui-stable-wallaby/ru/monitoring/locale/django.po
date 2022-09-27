@@ -1,0 +1,870 @@
+#
+# ДроноваЮ <juliette.tux@gmail.com>, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: monasca-ui VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-03-30 13:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-02-22 13:08+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.12.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: monitoring/alarmdefs/templates/alarmdefs/alarm.html:14
+#: monitoring/alarmdefs/templates/alarmdefs/detail.html:7
+#: monitoring/alarms/templates/alarms/alarm.html:17 monitoring/dashboard.py:22
+#: monitoring/notifications/templates/notifications/index.html:3
+#: monitoring/notifications/templates/notifications/index.html:11
+#: monitoring/overview/templates/overview/index.html:3
+#: monitoring/overview/templates/overview/index.html:7
+#: monitoring/overview/templates/overview/index.html:13
+msgid "Monitoring"
+msgstr "Мониторинг"
+
+#: monitoring/alarmdefs/forms.py:59 monitoring/alarms/forms.py:55
+msgid "min"
+msgstr "мин"
+
+#: monitoring/alarmdefs/forms.py:59 monitoring/alarms/forms.py:55
+msgid "max"
+msgstr "макс"
+
+#: monitoring/alarmdefs/forms.py:59 monitoring/alarms/forms.py:55
+msgid "sum"
+msgstr "сумма"
+
+#: monitoring/alarmdefs/forms.py:60 monitoring/alarms/forms.py:56
+msgid "count"
+msgstr "число"
+
+#: monitoring/alarmdefs/forms.py:60 monitoring/alarms/forms.py:56
+msgid "avg"
+msgstr "в среднем"
+
+#: monitoring/alarmdefs/forms.py:60
+msgid "last"
+msgstr "посл."
+
+#: monitoring/alarmdefs/forms.py:62
+msgid "AND"
+msgstr "И"
+
+#: monitoring/alarmdefs/forms.py:62
+msgid "OR"
+msgstr "ИЛИ"
+
+#: monitoring/alarmdefs/forms.py:189 monitoring/alarmdefs/tables.py:88
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:7
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:27
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:11
+#: monitoring/alarmdefs/workflows.py:77 monitoring/alarms/forms.py:119
+#: monitoring/alarms/forms.py:182 monitoring/alarms/tables.py:242
+#: monitoring/alarms/templates/alarms/alarm_history.html:13
+#: monitoring/notifications/forms.py:49 monitoring/notifications/tables.py:95
+msgid "Name"
+msgstr "Имя"
+
+#: monitoring/alarmdefs/forms.py:193 monitoring/alarmdefs/workflows.py:80
+msgid "An unique name of the alarm."
+msgstr "Уникальное имя сигнала тревоги."
+
+#: monitoring/alarmdefs/forms.py:194
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:11
+#: monitoring/alarmdefs/workflows.py:129 monitoring/alarmdefs/workflows.py:142
+#: monitoring/alarms/forms.py:186
+msgid "Expression"
+msgstr "Выражение"
+
+#: monitoring/alarmdefs/forms.py:197 monitoring/alarmdefs/workflows.py:132
+msgid "An alarm expression."
+msgstr "Выражение сигнала оповещения"
+
+#: monitoring/alarmdefs/forms.py:198 monitoring/alarmdefs/workflows.py:135
+msgid "Match by"
+msgstr "Сопоставить по"
+
+#: monitoring/alarmdefs/forms.py:201 monitoring/alarmdefs/workflows.py:138
+msgid "The metric dimensions used to create unique alarms."
+msgstr ""
+"Метрические единицы, используемые для создания уникальных сигналов тревоги."
+
+#: monitoring/alarmdefs/forms.py:203 monitoring/alarmdefs/tables.py:91
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:9
+#: monitoring/alarmdefs/templates/alarmdefs/_edit.html:10
+#: monitoring/alarmdefs/workflows.py:82 monitoring/alarms/forms.py:189
+#: monitoring/notifications/templates/notifications/_create.html:16
+#: monitoring/notifications/templates/notifications/_edit.html:10
+msgid "Description"
+msgstr "Описание"
+
+#: monitoring/alarmdefs/forms.py:206 monitoring/alarmdefs/workflows.py:84
+msgid "A description of an alarm."
+msgstr "Описание сигнала тревоги."
+
+#: monitoring/alarmdefs/forms.py:207 monitoring/alarmdefs/workflows.py:70
+#: monitoring/alarms/forms.py:192
+msgid "Low"
+msgstr "Низкая"
+
+#: monitoring/alarmdefs/forms.py:208 monitoring/alarmdefs/workflows.py:71
+#: monitoring/alarms/forms.py:193
+msgid "Medium"
+msgstr "Средняя"
+
+#: monitoring/alarmdefs/forms.py:209 monitoring/alarmdefs/workflows.py:72
+#: monitoring/alarms/forms.py:194
+msgid "High"
+msgstr "Высокая"
+
+#: monitoring/alarmdefs/forms.py:210 monitoring/alarmdefs/workflows.py:73
+#: monitoring/alarms/forms.py:195
+msgid "Critical"
+msgstr "Критическая"
+
+#: monitoring/alarmdefs/forms.py:211
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:15
+#: monitoring/alarmdefs/workflows.py:86 monitoring/alarms/forms.py:196
+msgid "Severity"
+msgstr "Степень серьёзности"
+
+#: monitoring/alarmdefs/forms.py:216 monitoring/alarmdefs/workflows.py:91
+msgid ""
+"Severity of an alarm. Must be either LOW, MEDIUM, HIGH or CRITICAL. Default "
+"is LOW."
+msgstr ""
+"Степень серьёзности сигнала оповещения. Варианты: НИЗКАЯ, СРЕДНЯЯ, ВЫСОКАЯ "
+"или КРИТИЧЕСКАЯ. По умолчанию НИЗКАЯ"
+
+#: monitoring/alarmdefs/forms.py:221 monitoring/alarmdefs/tables.py:93
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:17
+#: monitoring/alarms/forms.py:204
+msgid "Notifications Enabled"
+msgstr "Уведомления включены"
+
+#: monitoring/alarmdefs/forms.py:225
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:22
+#: monitoring/alarmdefs/workflows.py:30 monitoring/alarmdefs/workflows.py:54
+#: monitoring/alarms/forms.py:208 monitoring/notifications/panel.py:22
+#: monitoring/notifications/tables.py:108
+#: monitoring/notifications/templates/notifications/index.html:6
+#: monitoring/notifications/templates/notifications/index.html:12
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: monitoring/alarmdefs/forms.py:228 monitoring/alarmdefs/workflows.py:33
+msgid ""
+"Notification methods. Notifications can be sent when an alarm state "
+"transition occurs."
+msgstr ""
+"Способы уведомлений. Уведомления посылаются при смене состояний "
+"сигнала оповещения."
+
+#: monitoring/alarmdefs/forms.py:231 monitoring/alarmdefs/workflows.py:38
+msgid "Alarm Actions"
+msgstr "Действия сигнала оповещения"
+
+#: monitoring/alarmdefs/forms.py:234 monitoring/alarmdefs/workflows.py:43
+msgid "OK Actions"
+msgstr "Действия OK"
+
+#: monitoring/alarmdefs/forms.py:237 monitoring/alarmdefs/workflows.py:48
+msgid "Undetermined Actions"
+msgstr "Неопределённые действия"
+
+#: monitoring/alarmdefs/forms.py:246 monitoring/alarmdefs/workflows.py:67
+#: monitoring/alarms/forms.py:218
+msgid "Unable to retrieve notifications."
+msgstr "Не удалось получить сведения об уведомлениях"
+
+#: monitoring/alarmdefs/forms.py:269
+msgid "Alarm definition has been updated."
+msgstr "Определение сигнала тревоги было обновлено"
+
+#: monitoring/alarmdefs/forms.py:272
+msgid "Unable to update alarm definition."
+msgstr "Не удалось обновить определение сигнала тревоги"
+
+#: monitoring/alarmdefs/panel.py:23 monitoring/alarmdefs/tables.py:103
+#: monitoring/alarmdefs/templates/alarmdefs/alarm.html:6
+#: monitoring/alarmdefs/templates/alarmdefs/alarm.html:15
+#: monitoring/alarmdefs/templates/alarmdefs/alarm.html:20
+#: monitoring/alarmdefs/templates/alarmdefs/detail.html:8
+msgid "Alarm Definitions"
+msgstr "Определения сигналов тревоги"
+
+#: monitoring/alarmdefs/tables.py:27 monitoring/alarmdefs/workflows.py:192
+#: monitoring/alarmdefs/workflows.py:193
+msgid "Create Alarm Definition"
+msgstr "Создать определение сигнала тревоги"
+
+#: monitoring/alarmdefs/tables.py:42
+#: monitoring/alarmdefs/templates/alarmdefs/_edit.html:7
+msgid "Edit Alarm Definition"
+msgstr "Редактировать определение сигнала тревоги"
+
+#: monitoring/alarmdefs/tables.py:54 monitoring/alarmdefs/tables.py:58
+msgid "Delete Alarm Definition"
+msgid_plural "Delete Alarm Definitions"
+msgstr[0] "Удалить определение сигнала тревоги"
+msgstr[1] "Удалить определения сигналов тревоги"
+msgstr[2] "Удалить определения сигналов тревоги"
+
+#: monitoring/alarmdefs/tables.py:66
+msgid "Deleted Alarm Definition"
+msgid_plural "Deleted Alarm Definitions"
+msgstr[0] "Определение сигнала тревоги было удалено"
+msgstr[1] "Определения сигналов тревоги были удалены"
+msgstr[2] "Определения сигналов тревоги были удалены"
+
+#: monitoring/alarmdefs/views.py:63 monitoring/alarmdefs/views.py:96
+msgid "Could not retrieve alarm definitions"
+msgstr "Не удалось получить определения сигнала оповещения"
+
+#: monitoring/alarmdefs/views.py:157 monitoring/alarmdefs/views.py:224
+#, python-format
+msgid "Notification %s has already been deleted."
+msgstr "Уведомление %s уже было удалено."
+
+#: monitoring/alarmdefs/views.py:176 monitoring/alarmdefs/views.py:244
+msgid "Unable to retrieve alarm details."
+msgstr "Не удалось получить подробности об сигнале тревоги"
+
+#: monitoring/alarmdefs/workflows.py:96
+msgid "Details"
+msgstr "Подробности"
+
+#: monitoring/alarmdefs/workflows.py:110
+#, python-format
+msgid "Alarm definition with %s name already exists"
+msgstr "Определение сигнала тревоги с именем %s уже существует"
+
+#: monitoring/alarmdefs/workflows.py:119
+msgid "Failed to validate name"
+msgstr "Не удалось выполнить валидацию имени"
+
+#: monitoring/alarmdefs/workflows.py:155
+msgid "Unable to retrieve metrics"
+msgstr "Не удалось получить метрики"
+
+#: monitoring/alarmdefs/workflows.py:194
+#, python-format
+msgid "Alarm definition %s has been created"
+msgstr "Определение сигнала тревоги %s было создано"
+
+#: monitoring/alarmdefs/workflows.py:195
+#, python-format
+msgid "Unable to create alarm definition %s"
+msgstr "Не удалось создать определение сигнала тревоги %s"
+
+#: monitoring/alarmdefs/workflows.py:205
+msgid "Unknown name"
+msgstr "Неизвестное имя"
+
+#: monitoring/alarmdefs/workflows.py:226
+msgid "Unable to create alarm definition."
+msgstr "Не удалось создать определение сигнала тревоги"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_create_ad_details_help.html:8
+msgid ""
+"\n"
+"        The Name field is used to identify the alarm definition.\n"
+"        "
+msgstr ""
+"\n"
+"        Поле «Имя» используется для настройки определения "
+" сигнала тревоги.\n"
+"        "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_create_ad_details_help.html:14
+msgid ""
+"\n"
+"        The Description field can be used to describe alarm definition's\n"
+"        purpose.\n"
+"        "
+msgstr ""
+"\n"
+"        Поле «Описание» можно использовать для описания назначения\n"
+"        определения сигнала тревоги.\n"
+"        "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_create_ad_details_help.html:20
+msgid ""
+"\n"
+"        The Severity field allows to specify the importance of alarm\n"
+"        definition.\n"
+"        "
+msgstr ""
+"\n"
+"        Поле «Степень серьёзности» даёт возможность указать\n"
+"        степень серьёзности для определения сигнала оповещения.\n"
+"        "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_create_ad_expression_help.html:13
+msgid ""
+"\n"
+"        Each alarm definition is defined by its expression composed out of:\n"
+"        mathematical function, metric, threshold and comparator for metric's\n"
+"        value and the threshold. Additionally it is possible to narrow\n"
+"        evaluation of the alarm to certain entities by choosing their\n"
+"        dimensions. The deterministic alarms never enter UNDETERMINED state.\n"
+"        Use them for metrics that are received sporadically.\n"
+"        "
+msgstr ""
+"\n"
+"        Каждое из определений сигнала оповещения настраивается с помощью"
+" выражения, состоящего из:\n"
+"        математической функции, метрики, порога и оператора сравнения"
+" значения метрики и порога.\n"
+"        Кроме того, возможно сузить рамки анализа сигнала оповещения до"
+" некоторых сущностей, выбрав их\n"
+"        размеры. Детерминированные сигналы оповещения никогда не получают"
+" НЕОПРЕДЕЛЁННОГО статуса.\n"
+"        используйте их для спорадически получаемых метрик.\n"
+"        "
+" "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_create_ad_notification_help.html:9
+msgid ""
+"\n"
+"        The Notifications field contains the list of Notifications that "
+"should\n"
+"        be sent when transitioning to another state.\n"
+"        "
+msgstr ""
+"\n"
+"        Поле «Уведомления» содержит список уведомлений, которые\n"
+"        будут посылаться при переходе в другой статус.\n"
+"        "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_create_ad_notification_help.html:15
+msgid ""
+"\n"
+"        If for some transitions notifications should not be sent they can be\n"
+"        disabled.\n"
+"        "
+msgstr ""
+"\n"
+"        Если для некоторых переходов состояний не должны посылаться\n"
+"         уведомления, их можно отключить.\n"
+"        "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:4
+msgid "Info"
+msgstr "Сведения"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:8
+#: monitoring/alarmdefs/templates/alarmdefs/detail.html:9
+#: monitoring/alarms/templates/alarms/alarm_history.html:14
+msgid "None"
+msgstr "Нет"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:13
+msgid "Deterministic"
+msgstr "Детерминированный"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:28
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:12
+#: monitoring/notifications/forms.py:56 monitoring/notifications/tables.py:96
+msgid "Type"
+msgstr "Тип"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:29
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:13
+#: monitoring/notifications/forms.py:62 monitoring/notifications/tables.py:97
+msgid "Address"
+msgstr "Адрес"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:30
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:14
+msgid "Alarm"
+msgstr "Сигнал тревоги"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:31
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:15
+msgid "OK"
+msgstr "OK"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_detail.html:32
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:16
+msgid "Undetermined"
+msgstr "Не определено"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_edit.html:13
+msgid ""
+"\n"
+"          The Name field is used to identify the alarm definition.\n"
+"        "
+msgstr ""
+"\n"
+"          Поле «Имя» используется для настройки определения"
+" сигнала тревоги.\n"
+"        "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_edit.html:17
+msgid ""
+"\n"
+"      The Expression field  which if true, triggers a notification to be "
+"sent.\n"
+"      See <a href=\"https://github.com/openstack/monasca-api/blob/master/"
+"docs/monasca-api-spec.md#alarm-definition-expressions\" target="
+"\"_blank\">Alarm Expressions</a> for how to write an expression.\n"
+"    "
+msgstr ""
+"\n"
+"      Поле «Выражение». В случае значения «Верно» срабатывает механизм"
+" посылки уведомления.\n"
+"      Информацию о том, как писать выражения, см. по ссылке: <a"
+" href=\"https://github.com/openstack/monasca-api/blob/master/"
+"docs/monasca-api-spec.md#alarm-definition-expressions\" target="
+"\"_blank\">Выражения для сигналов тревоги</a>.\n"
+"    "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_edit.html:20
+msgid ""
+"\n"
+"      The Notifications field contains the list of Notifications that should "
+"be sent when transitioning to another ALARM state.\n"
+"    "
+msgstr ""
+"\n"
+"        Поле «Уведомления» содержит список уведомлений, которые\n"
+"        будут посылаться при переходе сигнала тревоги в другой статус.\n"
+"        "
+
+#: monitoring/alarmdefs/templates/alarmdefs/_edit.html:27
+#: monitoring/notifications/templates/notifications/_create.html:36
+#: monitoring/notifications/templates/notifications/_edit.html:21
+msgid "Cancel"
+msgstr "Отмена"
+
+#: monitoring/alarmdefs/templates/alarmdefs/_edit.html:28
+msgid "Save"
+msgstr "Сохранить"
+
+#: monitoring/alarmdefs/templates/alarmdefs/alarm.html:28
+#: monitoring/alarms/templates/alarms/alarm.html:27
+#: monitoring/alarms/templates/alarms/alarm_history.html:64
+#: monitoring/notifications/templates/notifications/index.html:21
+msgid "Previous Page"
+msgstr "Пред. страница"
+
+#: monitoring/alarmdefs/templates/alarmdefs/alarm.html:31
+#: monitoring/alarms/templates/alarms/alarm.html:30
+#: monitoring/alarms/templates/alarms/alarm_history.html:68
+#: monitoring/notifications/templates/notifications/index.html:24
+msgid "Next Page"
+msgstr "След. страница"
+
+#: monitoring/alarmdefs/templates/alarmdefs/detail.html:3
+#: monitoring/alarmdefs/templates/alarmdefs/detail.html:14
+msgid "Alarm Definition Details"
+msgstr "Подробные сведения об определении триггера сигнала оповещения"
+
+#: monitoring/alarmdefs/templates/alarmdefs/edit.html:3
+msgid "Edit Alarm Definitions"
+msgstr "Редактировать определение триггера сигнала оповещения"
+
+#: monitoring/alarmdefs/templates/alarmdefs/match_by_field.html:6
+msgid "Add a match by"
+msgstr "Добавить совпадение по"
+
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:5
+#: monitoring/alarms/forms.py:227
+msgid "No notifications available."
+msgstr "Нет доступных уведомлений"
+
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:5
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:48
+msgid "Add"
+msgstr "Добавить"
+
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:38
+msgid "Remove"
+msgstr "Удалить"
+
+#: monitoring/alarmdefs/templates/alarmdefs/notification_field.html:46
+#: monitoring/alarms/forms.py:224
+msgid "Select Notification"
+msgstr "Выбрать уведомление"
+
+#: monitoring/alarms/forms.py:146
+msgid "+ Add more"
+msgstr "+ Добавить ещё"
+
+#: monitoring/alarms/forms.py:200
+msgid "State"
+msgstr "Состояние"
+
+#: monitoring/alarms/forms.py:265
+msgid "Alarm has been created successfully."
+msgstr "Сигнал оповещения был успешно создан"
+
+#: monitoring/alarms/forms.py:267
+msgid "Unable to create the alarm."
+msgstr "Не удалось создать сигнал оповещения"
+
+#: monitoring/alarms/forms.py:299
+msgid "Alarm has been edited successfully."
+msgstr "Сигнал оповещения был успешно изменён"
+
+#: monitoring/alarms/forms.py:301
+msgid "Unable to edit the alarm."
+msgstr "Не удалось изменить сигнал оповещения"
+
+#: monitoring/alarms/panel.py:23 monitoring/alarms/tables.py:257
+#: monitoring/alarms/templates/alarms/alarm.html:4
+#: monitoring/alarms/templates/alarms/alarm.html:18
+msgid "Alarms"
+msgstr "Сигналы оповещения"
+
+#: monitoring/alarms/tables.py:107
+msgid "Show History"
+msgstr "Показать историю"
+
+#: monitoring/alarms/tables.py:120
+msgid "Create Alarm"
+msgstr "Создать сигнал оповещения"
+
+#: monitoring/alarms/tables.py:136
+msgid "Edit Alarm"
+msgstr "Редактировать сигнал оповещения"
+
+#: monitoring/alarms/tables.py:149
+#, fuzzy
+msgid "Graph Metric"
+msgstr "Метрика графика"
+
+#: monitoring/alarms/tables.py:188
+msgid "Show Alarm Definition"
+msgstr "Показать определение сигнала оповещения"
+
+#: monitoring/alarms/tables.py:198 monitoring/alarms/tables.py:202
+msgid "Delete Alarm"
+msgid_plural "Delete Alarms"
+msgstr[0] "Удалить сигнал оповещения"
+msgstr[1] "Удалить сигналы оповещения"
+msgstr[2] "Удалить сигналы оповещения"
+
+#: monitoring/alarms/tables.py:210
+msgid "Deleted Alarm"
+msgid_plural "Deleted Alarms"
+msgstr[0] "Сигнал оповещения удалён"
+msgstr[1] "Сигналы оповещения удалены"
+msgstr[2] "Сигналы оповещения удалены"
+
+#: monitoring/alarms/tables.py:225
+#: monitoring/alarms/templates/alarms/_filter.html:4
+msgid "Filter Alarms"
+msgstr "Фильтровать сигналы оповещения"
+
+#: monitoring/alarms/tables.py:239
+msgid "Status"
+msgstr "Статус"
+
+#: monitoring/alarms/tables.py:243
+msgid "Alarm Id"
+msgstr "ID сигнала оповещения"
+
+#: monitoring/alarms/tables.py:245
+msgid "Metric Names"
+msgstr "Имена метрик"
+
+#: monitoring/alarms/tables.py:247
+msgid "Metric Dimensions"
+msgstr "Измерения метрик"
+
+#: monitoring/alarms/tables.py:274
+msgid "Timestamp"
+msgstr "Временная метка"
+
+#: monitoring/alarms/tables.py:276
+msgid "Old State"
+msgstr "Старое состояние"
+
+#: monitoring/alarms/tables.py:277
+msgid "New State"
+msgstr "Новое состояние"
+
+#: monitoring/alarms/tables.py:279
+msgid "Alarm Metric Dimensions"
+msgstr "Измерения метрик сигнала оповещения"
+
+#: monitoring/alarms/tables.py:280
+msgid "Reason"
+msgstr "Причина"
+
+#: monitoring/alarms/tables.py:288
+#: monitoring/alarms/templates/alarms/alarm_history.html:4
+#: monitoring/alarms/templates/alarms/alarm_history.html:8
+msgid "Alarm History"
+msgstr "История сигналов оповещения"
+
+#: monitoring/alarms/views.py:74
+msgid "UTC"
+msgstr "UTC"
+
+#: monitoring/alarms/views.py:75
+#, fuzzy
+msgid "Browser local"
+msgstr "Browser local"
+
+#: monitoring/alarms/views.py:97 monitoring/overview/views.py:191
+#, python-format
+msgid "Unable to list alarms: %s"
+msgstr "Не удалось получить список сигналов оповещения: %s"
+
+#: monitoring/alarms/views.py:150 monitoring/alarms/views.py:158
+#: monitoring/alarms/views.py:171 monitoring/alarms/views.py:204
+#: monitoring/alarms/views.py:211 monitoring/alarms/views.py:226
+msgid "Could not retrieve alarms"
+msgstr "Не удалось получить список сигналов оповещения"
+
+#: monitoring/alarms/views.py:308 monitoring/alarms/views.py:357
+#, python-format
+msgid "Could not retrieve alarm history for %s"
+msgstr "Не удалось получить историю сигналов для %s"
+
+#: monitoring/alarms/views.py:315
+msgid "Failed to present alarm history"
+msgstr "Не удалось показать историю сигналов оповещения"
+
+#: monitoring/alarms/views.py:332
+#, python-format
+msgid "Could not retrieve alarm for %s"
+msgstr "Не удалось получить сведения о сигнале оповещения %s"
+
+#: monitoring/alarms/templates/alarms/_filter.html:48
+msgid "Alarm ID"
+msgstr "ID сигнала оповещения"
+
+#: monitoring/alarms/templates/alarms/_filter.html:49
+#: monitoring/alarms/templates/alarms/_filter.html:56
+msgid "Value"
+msgstr "Значение"
+
+#: monitoring/alarms/templates/alarms/_filter.html:50
+#: monitoring/alarms/templates/alarms/_filter.html:60
+msgid "Submit"
+msgstr "Отправить"
+
+#: monitoring/alarms/templates/alarms/_filter.html:55
+msgid "Dimension(s)"
+msgstr "Измерения"
+
+#: monitoring/alarms/templates/alarms/_filter.html:56
+msgid "Key"
+msgstr "Ключ"
+
+#: monitoring/alarms/templates/alarms/_filter.html:59
+msgid "Metric Name"
+msgstr "Имя метрики"
+
+#: monitoring/alarms/templates/alarms/alarm.html:8
+msgid "Alarms for "
+msgstr "Сигналы оповещения для "
+
+#: monitoring/alarms/templates/alarms/alarm.html:11
+msgid "All Alarms"
+msgstr "Все сигналы оповещения"
+
+#: monitoring/alarms/templates/alarms/alarm_history.html:10
+msgid "Alarm Details"
+msgstr "Подробные сведения о сигнале оповещения"
+
+#: monitoring/alarms/templates/alarms/alarm_history.html:15
+msgid "Associated Metrics"
+msgstr "Связанные метрики"
+
+#: monitoring/alarms/templates/alarms/alarm_history.html:48
+msgid "---Please select---"
+msgstr "---Сделайте выбор---"
+
+#: monitoring/alarms/templates/alarms/alarm_meter.html:4
+msgid "Measurements for Alarms"
+msgstr "Единицы измерения сигналов оповещения"
+
+#: monitoring/alarms/templates/alarms/alarm_meter.html:16
+msgid "Service Health"
+msgstr "Работоспособность службы"
+
+#: monitoring/alarms/templates/alarms/alarm_meter.html:17
+msgid "Service :"
+msgstr "Служба :"
+
+#: monitoring/config/local_settings.py:18
+msgid "OpenStack Services"
+msgstr "Службы OpenStack"
+
+#: monitoring/config/local_settings.py:19
+msgid "Servers"
+msgstr "Серверы"
+
+#: monitoring/notifications/constants.py:26
+msgid "Address must contain a valid email address."
+msgstr "Адрес должен содержать действительный адрес почты"
+
+#: monitoring/notifications/constants.py:28
+msgid "Address must contain a valid URL address."
+msgstr "Адрес должен содержать действительный URL"
+
+#: monitoring/notifications/forms.py:53
+msgid "A descriptive name of the notification method."
+msgstr "Описательное имя метода уведомления"
+
+#: monitoring/notifications/forms.py:61
+msgid "The type of notification method (i.e. email)."
+msgstr "Тип метода уведомления (например, почтовый адрес)"
+
+#: monitoring/notifications/forms.py:66
+msgid "The email/url address to notify."
+msgstr "Адрес URL/почты для уведомлений"
+
+#: monitoring/notifications/forms.py:67 monitoring/notifications/tables.py:98
+msgid "Period"
+msgstr "Период"
+
+#: monitoring/notifications/forms.py:72
+msgid "The notification period."
+msgstr "Период уведомлений"
+
+#: monitoring/notifications/forms.py:82
+msgid "Period must be zero except for type webhook."
+msgstr "Период должен быть равен нулю, за исключением типа webhook"
+
+#: monitoring/notifications/forms.py:119
+msgid "Notification method has been created successfully."
+msgstr "Метод уведомлений был успешно создан"
+
+#: monitoring/notifications/forms.py:123
+msgid "Unable to create the notification method."
+msgstr "Не удалось создать метод уведомлений"
+
+#: monitoring/notifications/forms.py:155
+msgid "Notification has been edited successfully."
+msgstr "Уведомление было успешно редактировано"
+
+#: monitoring/notifications/forms.py:158
+msgid "Unable to edit the notification."
+msgstr "Не удалось изменить уведомление"
+
+#: monitoring/notifications/tables.py:28 monitoring/notifications/tables.py:32
+msgid "Delete Notification"
+msgid_plural "Delete Notifications"
+msgstr[0] "Удалить уведомление"
+msgstr[1] "Удалить уведомления"
+msgstr[2] "Удалить уведомления"
+
+#: monitoring/notifications/tables.py:40
+msgid "Deleted Notification"
+msgid_plural "Deleted Notifications"
+msgstr[0] "Уведомление удалено"
+msgstr[1] "Уведомления удалены"
+msgstr[2] "Уведомления удалены"
+
+#: monitoring/notifications/tables.py:54
+msgid "Unable to delete notification."
+msgstr "Не удалось удалить уведомление"
+
+#: monitoring/notifications/tables.py:59
+#: monitoring/notifications/templates/notifications/edit.html:3
+msgid "Create Notification"
+msgstr "Создать уведомление"
+
+#: monitoring/notifications/tables.py:75
+#: monitoring/notifications/templates/notifications/_edit.html:7
+msgid "Edit Notification"
+msgstr "Изменить уведомление"
+
+#: monitoring/notifications/views.py:57 monitoring/notifications/views.py:90
+msgid "Could not retrieve notifications"
+msgstr "Не удалось получить сведения об уведомлениях"
+
+#: monitoring/notifications/views.py:150
+msgid "Unable to retrieve notification details."
+msgstr "Не удалось получить подробные сведения об уведомлении"
+
+#: monitoring/notifications/templates/notifications/_create.html:7
+#: monitoring/notifications/templates/notifications/_create.html:37
+#: monitoring/notifications/templates/notifications/create.html:3
+msgid "Create Notification Method"
+msgstr "Создать метод уведомлений"
+
+#: monitoring/notifications/templates/notifications/_create.html:19
+#: monitoring/notifications/templates/notifications/_edit.html:13
+msgid ""
+"\n"
+"      The Name field is used to identify the notification method.\n"
+"    "
+msgstr ""
+"\n"
+"      Поле «Имя» служит для идентификации метода уведомлений.\n"
+"    "
+
+#: monitoring/notifications/templates/notifications/_create.html:22
+msgid ""
+"\n"
+"      The Type field indicates how the notification is sent when an alarm is "
+"triggered.\n"
+"    "
+msgstr ""
+"\n"
+"      Поле «Тип» указывает, как именно будут посылаться уведомления при"
+" срабатывании триггера сигнала оповещения.\n"
+"    "
+
+#: monitoring/notifications/templates/notifications/_create.html:26
+msgid ""
+"\n"
+"      The Address field indicates the email address, URL, or PagerDuty "
+"service\n"
+"      key to be notified.\n"
+"    "
+msgstr ""
+"\n"
+"      В поле «Адрес» указывается почтовый адрес, URL или ключ службы"
+" PagerDuty\n"
+"      для получения уведомлений.\n"
+"    "
+
+#: monitoring/notifications/templates/notifications/_create.html:30
+msgid ""
+"\n"
+"      A non-zero value in the period field indicates how frequently a "
+"notification\n"
+"      should be resent (only valid for webhook urls).\n"
+"    "
+msgstr ""
+"\n"
+"      Ненулевое значение в поле периода означает частоту повторных отправок\n"
+"      уведомлений (действительно только для адресов URL webhook).\n"
+"    "
+
+#: monitoring/notifications/templates/notifications/_detail.html:7
+#: monitoring/notifications/templates/notifications/detail.html:3
+msgid "Notification Method Details"
+msgstr "Подробности метода уведомлений"
+
+#: monitoring/notifications/templates/notifications/_detail.html:16
+msgid "Close"
+msgstr "Закрыть"
+
+#: monitoring/notifications/templates/notifications/_edit.html:22
+msgid "Save Notification"
+msgstr "Сохранить уведомление"
+
+#: monitoring/overview/panel.py:23
+#: monitoring/overview/templates/overview/index.html:8
+msgid "Overview"
+msgstr "Обзор"
+
+#: monitoring/overview/views.py:407
+#, python-format
+msgid "User %s does not have sufficient privileges to access Kibana"
+msgstr "У пользователя %s нет достаточных привилегий для доступа к Kibana"
+

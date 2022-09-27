@@ -1,0 +1,4045 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenStack contributors
+# This file is distributed under the same license as the Installation Guide package.
+# 
+# Translators:
+# Ainur Shakirov <ainur.shakirov.tt@gmail.com>, 2014
+# Aleksei Dushechkin, 2015
+# Aleksei Dushechkin, 2015
+# Aleksey Rusetskiy <fenuks@fenuks.ru>, 2015
+# Evgeniya Shumakher, 2013
+# Evgeniya Shumakher, 2013
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2014
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Aleksey Alekseenko <9118250541@mail.ru>, 2016. #zanata
+# Alexander <ainikitenkov@gmail.com>, 2016. #zanata
+# Andrew <apapsujko@gmail.com>, 2016. #zanata
+# Dmitriy Makarov <dmakarov@hystax.com>, 2016. #zanata
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2016. #zanata
+# Ivan Shashero <ishashero@hystax.com>, 2016. #zanata
+# Nickolay Smirnov <nsmirnov@hystax.com>, 2016. #zanata
+# Veronika Stepurova <vstepurova@hystax.com>, 2016. #zanata
+# Yulia Ryndenkova <yryndenkova@hystax.com>, 2016. #zanata
+# Thomas Vysokos <thomas.vysokos@hivemind.agency>, 2017. #zanata
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2018. #zanata
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Installation Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-23 18:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-10-15 09:23+0000\n"
+"Last-Translator: Ilya Alekseyev <ilyaalekseyev@acm.org>\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Zanata 4.3.3\n"
+"Language-Team: Russian\n"
+
+#: ../environment-etcd-obs.rst:3
+msgid "Etcd for SUSE"
+msgstr "Etcd для SUSE"
+
+#: ../environment-etcd-obs.rst:5
+msgid ""
+"Right now, there is no distro package available for etcd3. This guide uses "
+"the tarball installation as a workaround until proper distro packages are "
+"available."
+msgstr ""
+"В текущий момент пакет для etcd3 в дистрибутиве недоступен. В этом "
+"руководстве мы используем инсталляцию из tar архива, как временный вариант, "
+"пока в дистрибутиве не появится пакет."
+
+#: ../environment-etcd-obs.rst:9 ../environment-etcd-rdo.rst:9
+#: ../environment-etcd-ubuntu.rst:9
+msgid "The etcd service runs on the controller node."
+msgstr "Сервис etcd работает на ноде контроллера."
+
+#: ../environment-etcd-obs.rst:12 ../environment-etcd-rdo.rst:12
+#: ../environment-etcd-ubuntu.rst:12 ../environment-memcached-obs.rst:10
+#: ../environment-memcached-rdo.rst:10 ../environment-memcached-ubuntu.rst:10
+#: ../environment-messaging-obs.rst:18 ../environment-messaging-rdo.rst:18
+#: ../environment-messaging-ubuntu.rst:18 ../environment-ntp-controller.rst:10
+#: ../environment-ntp-other.rst:11 ../environment-sql-database-obs.rst:11
+#: ../environment-sql-database-rdo.rst:11
+#: ../environment-sql-database-ubuntu.rst:26
+msgid "Install and configure components"
+msgstr "Установите и сконфигурируйте компоненты"
+
+#: ../environment-etcd-obs.rst:14
+msgid "Install etcd:"
+msgstr "Установите etcd:"
+
+#: ../environment-etcd-obs.rst:16
+msgid "Create etcd user:"
+msgstr "Создайте пользователя etcd:"
+
+#: ../environment-etcd-obs.rst:27
+msgid "Create the necessary directories:"
+msgstr "Создайте необходимые директории:"
+
+#: ../environment-etcd-obs.rst:36
+msgid "Determine your system architecture:"
+msgstr "Определите архитектуру вашей системы:"
+
+#: ../environment-etcd-obs.rst:42
+msgid "Download and install the etcd tarball for x86_64/amd64:"
+msgstr "Скачайте tar архив и установите etcd для x86_64/amd64:"
+
+#: ../environment-etcd-obs.rst:56
+msgid "Or download and install the etcd tarball for arm64:"
+msgstr "Или скачайте tar архив и установите etcd для arm64:"
+
+#: ../environment-etcd-obs.rst:70
+msgid ""
+"Create and edit the ``/etc/etcd/etcd.conf.yml`` file and set the ``initial-"
+"cluster``, ``initial-advertise-peer-urls``, ``advertise-client-urls``, "
+"``listen-client-urls`` to the management IP address of the controller node "
+"to enable access by other nodes via the management network:"
+msgstr ""
+"Создайте и отредактируйте файл ``/etc/etcd/etcd.conf.yml`` задав опции "
+"``initial-cluster``, ``initial-advertise-peer-urls``, ``advertise-client-"
+"urls``, ``listen-client-urls`` как  IP адресс менеджмент сети ноды "
+"контроллера чтобы обеспечить доступ других нод по менеджмент сети:"
+
+#: ../environment-etcd-obs.rst:88
+msgid "Create and edit the ``/usr/lib/systemd/system/etcd.service`` file:"
+msgstr ""
+"Создайте и отредактируйте файл ``/usr/lib/systemd/system/etcd.service``:"
+
+#: ../environment-etcd-obs.rst:108
+msgid "Reload systemd service files with:"
+msgstr "Перезагрузите файлы конфигурации сервиса systemd:"
+
+#: ../environment-etcd-obs.rst:116 ../environment-etcd-rdo.rst:41
+#: ../environment-etcd-ubuntu.rst:45 ../environment-memcached-obs.rst:34
+#: ../environment-memcached-rdo.rst:42 ../environment-memcached-ubuntu.rst:39
+#: ../environment-sql-database-obs.rst:40
+#: ../environment-sql-database-rdo.rst:42
+#: ../environment-sql-database-ubuntu.rst:63
+msgid "Finalize installation"
+msgstr "Завершите установку"
+
+#: ../environment-etcd-obs.rst:118 ../environment-etcd-rdo.rst:43
+msgid "Enable and start the etcd service:"
+msgstr "Разрешите и запустите сервис etcd:"
+
+#: ../environment-etcd-rdo.rst:3
+msgid "Etcd for RHEL and CentOS"
+msgstr "Etcd для RHEL и CentOS"
+
+#: ../environment-etcd-rdo.rst:5 ../environment-etcd-ubuntu.rst:5
+#: ../environment-etcd.rst:5
+msgid ""
+"OpenStack services may use Etcd, a distributed reliable key-value store for "
+"distributed key locking, storing configuration, keeping track of service "
+"live-ness and other scenarios."
+msgstr ""
+"Сервисы OpenStack могут использовать Etcd, распределенное надежное хранилище "
+"данных типа ключ-значение для распределенной блокировки ключа, хранения "
+"конфигурации, отслеживания работоспособности сервисов и для других сценариев."
+""
+
+#: ../environment-etcd-rdo.rst:14 ../environment-messaging-obs.rst:20
+#: ../environment-messaging-rdo.rst:20 ../environment-messaging-ubuntu.rst:20
+msgid "Install the package:"
+msgstr "Установите пакет:"
+
+#: ../environment-etcd-rdo.rst:20
+msgid ""
+"Edit the ``/etc/etcd/etcd.conf`` file and set the ``ETCD_INITIAL_CLUSTER``, "
+"``ETCD_INITIAL_ADVERTISE_PEER_URLS``, ``ETCD_ADVERTISE_CLIENT_URLS``, "
+"``ETCD_LISTEN_CLIENT_URLS`` to the management IP address of the controller "
+"node to enable access by other nodes via the management network:"
+msgstr ""
+"Отредактируйте файл ``/etc/etcd/etcd.conf`` и установите параметры "
+"``ETCD_INITIAL_CLUSTER``, ``ETCD_INITIAL_ADVERTISE_PEER_URLS``, "
+"``ETCD_ADVERTISE_CLIENT_URLS``, ``ETCD_LISTEN_CLIENT_URLS`` как  IP адрес "
+"ноды контроллера в менеджмент сети , чтобы обеспечить доступ других нод "
+"через менеджмент сеть:"
+
+#: ../environment-etcd-ubuntu.rst:3
+msgid "Etcd for Ubuntu"
+msgstr "Etcd для Ubuntu"
+
+#: ../environment-etcd-ubuntu.rst:14
+msgid "Install the ``etcd`` package:"
+msgstr "Установите пакет ``etcd``:"
+
+#: ../environment-etcd-ubuntu.rst:22
+msgid ""
+"As of Ubuntu 18.04, the ``etcd`` package is no longer available from the "
+"default repository. To install successfully, enable the ``Universe`` "
+"repository on Ubuntu."
+msgstr ""
+"Для Ubuntu 18.04, пакет ``etcd`` больше недоступен в репозитории по "
+"умолчанию. Для установки разрешите репозиторий ``Universe``."
+
+#: ../environment-etcd-ubuntu.rst:26
+msgid ""
+"Edit the ``/etc/default/etcd`` file and set the ``ETCD_INITIAL_CLUSTER``, "
+"``ETCD_INITIAL_ADVERTISE_PEER_URLS``, ``ETCD_ADVERTISE_CLIENT_URLS``, "
+"``ETCD_LISTEN_CLIENT_URLS`` to the management IP address of the controller "
+"node to enable access by other nodes via the management network:"
+msgstr ""
+"Отредактируйте файл ``/etc/default/etcd`` и установите параметры "
+"``ETCD_INITIAL_CLUSTER``, ``ETCD_INITIAL_ADVERTISE_PEER_URLS``, "
+"``ETCD_ADVERTISE_CLIENT_URLS``, ``ETCD_LISTEN_CLIENT_URLS`` как  IP адрес "
+"ноды контроллера в менеджмент сети , чтобы обеспечить доступ других нод "
+"через менеджмент сеть:"
+
+#: ../environment-etcd-ubuntu.rst:47
+msgid "Enable and restart the etcd service:"
+msgstr "Разрешите и запустите сервис etcd:"
+
+#: ../environment-etcd.rst:3
+msgid "Etcd"
+msgstr "Etcd"
+
+#: ../environment-memcached-obs.rst:2
+msgid "Memcached for SUSE"
+msgstr "Memcached для SUSE"
+
+#: ../environment-memcached-obs.rst:4 ../environment-memcached-rdo.rst:4
+#: ../environment-memcached-ubuntu.rst:4 ../environment-memcached.rst:4
+msgid ""
+"The Identity service authentication mechanism for services uses Memcached to "
+"cache tokens. The memcached service typically runs on the controller node. "
+"For production deployments, we recommend enabling a combination of "
+"firewalling, authentication, and encryption to secure it."
+msgstr ""
+"Механизм идентификатора по аутентификации сервисов использует Memcached для "
+"кэширования токенов. Сервис memcached обычно работает на Управляющем узле. "
+"Для продакшн конфигураций мы рекомендуем для безопасности включать "
+"комбинацию из файрвола, аутентификации и шифрования."
+
+# #-#-#-#-#  basics-packages.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  ceilometer-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-memcached-obs.rst:12 ../environment-memcached-rdo.rst:12
+#: ../environment-memcached-ubuntu.rst:12 ../environment-ntp-controller.rst:12
+#: ../environment-sql-database-obs.rst:13
+#: ../environment-sql-database-rdo.rst:13
+#: ../environment-sql-database-ubuntu.rst:28
+msgid "Install the packages:"
+msgstr "Установите пакеты:"
+
+#: ../environment-memcached-obs.rst:18 ../environment-memcached-rdo.rst:26
+msgid ""
+"Edit the ``/etc/sysconfig/memcached`` file and complete the following "
+"actions:"
+msgstr ""
+"Отредактируйте файл ``/etc/sysconfig/memcached`` и выполните следующие "
+"действия:"
+
+#: ../environment-memcached-obs.rst:21 ../environment-memcached-rdo.rst:29
+msgid ""
+"Configure the service to use the management IP address of the controller "
+"node. This is to enable access by other nodes via the management network:"
+msgstr ""
+"Сконфигурируйте сервис на использование IP адреса менеджмент сети ноды "
+"контроллера. Это позволит другим нодам получить доступ через менеджмент сеть:"
+""
+
+#: ../environment-memcached-obs.rst:31
+msgid "Change the existing line ``MEMCACHED_PARAMS=\"-l 127.0.0.1\"``."
+msgstr "Замените имеющуюся строку ``MEMCACHED_PARAMS=\"-l 127.0.0.1\"``."
+
+#: ../environment-memcached-obs.rst:36 ../environment-memcached-rdo.rst:44
+msgid ""
+"Start the Memcached service and configure it to start when the system boots:"
+msgstr ""
+"Запустите сервис Memcached и настройте его автоматический запуск при "
+"загрузке системы:"
+
+#: ../environment-memcached-rdo.rst:2
+msgid "Memcached for RHEL and CentOS"
+msgstr "Memcached для RHEL и CentOS"
+
+#: ../environment-memcached-rdo.rst:14 ../environment-packages-rdo.rst:162
+msgid "**For CentOS 7 and RHEL 7**"
+msgstr ""
+
+#: ../environment-memcached-rdo.rst:20 ../environment-packages-rdo.rst:168
+msgid "**For CentOS 8 and RHEL 8**"
+msgstr ""
+
+#: ../environment-memcached-rdo.rst:39
+msgid "Change the existing line ``OPTIONS=\"-l 127.0.0.1,::1\"``."
+msgstr ""
+
+#: ../environment-memcached-ubuntu.rst:2
+msgid "Memcached for Ubuntu"
+msgstr ""
+
+#: ../environment-memcached-ubuntu.rst:14
+msgid "For Ubuntu versions prior to 18.04 use:"
+msgstr ""
+
+#: ../environment-memcached-ubuntu.rst:20
+msgid "For Ubuntu 18.04 and newer versions use:"
+msgstr ""
+
+#: ../environment-memcached-ubuntu.rst:26
+msgid ""
+"Edit the ``/etc/memcached.conf`` file and configure the service to use the "
+"management IP address of the controller node. This is to enable access by "
+"other nodes via the management network:"
+msgstr ""
+
+#: ../environment-memcached-ubuntu.rst:36
+msgid "Change the existing line that had ``-l 127.0.0.1``."
+msgstr ""
+
+#: ../environment-memcached-ubuntu.rst:41
+msgid "Restart the Memcached service:"
+msgstr "Перезапустите сервис Memcached:"
+
+#: ../environment-memcached.rst:2
+msgid "Memcached"
+msgstr "Memcached"
+
+#: ../environment-messaging-obs.rst:2
+msgid "Message queue for SUSE"
+msgstr ""
+
+#: ../environment-messaging-obs.rst:4 ../environment-messaging-rdo.rst:4
+#: ../environment-messaging-ubuntu.rst:4 ../environment-messaging.rst:4
+msgid ""
+"OpenStack uses a :term:`message queue` to coordinate operations and status "
+"information among services. The message queue service typically runs on the "
+"controller node. OpenStack supports several message queue services including "
+"`RabbitMQ <https://www.rabbitmq.com>`__, `Qpid <https://qpid.apache.org>`__, "
+"and `ZeroMQ <http://zeromq.org>`__. However, most distributions that package "
+"OpenStack support a particular message queue service. This guide implements "
+"the RabbitMQ message queue service because most distributions support it. If "
+"you prefer to implement a different message queue service, consult the "
+"documentation associated with it."
+msgstr ""
+
+#: ../environment-messaging-obs.rst:15 ../environment-messaging-rdo.rst:15
+#: ../environment-messaging-ubuntu.rst:15 ../environment-messaging.rst:15
+msgid "The message queue runs on the controller node."
+msgstr "Очередь сообщений работает на управляющем узле."
+
+#: ../environment-messaging-obs.rst:26 ../environment-messaging-rdo.rst:26
+msgid ""
+"Start the message queue service and configure it to start when the system "
+"boots:"
+msgstr ""
+"Запустите сервис очереди сообщений и настройте его автоматический запуск при "
+"загрузке системы:"
+
+#: ../environment-messaging-obs.rst:34 ../environment-messaging-rdo.rst:34
+#: ../environment-messaging-ubuntu.rst:26
+msgid "Add the ``openstack`` user:"
+msgstr "Добавьте пользователя ``openstack``:"
+
+#: ../environment-messaging-obs.rst:42 ../environment-messaging-rdo.rst:42
+#: ../environment-messaging-ubuntu.rst:34
+msgid "Replace ``RABBIT_PASS`` with a suitable password."
+msgstr "Замените ``RABBIT_PASS`` подходящим паролем."
+
+#: ../environment-messaging-obs.rst:44 ../environment-messaging-rdo.rst:44
+#: ../environment-messaging-ubuntu.rst:36
+msgid ""
+"Permit configuration, write, and read access for the ``openstack`` user:"
+msgstr ""
+"Разрешите изменение настроек, запись и чтение для пользователя ``openstack``:"
+""
+
+#: ../environment-messaging-rdo.rst:2
+msgid "Message queue for RHEL and CentOS"
+msgstr ""
+
+#: ../environment-messaging-ubuntu.rst:2
+msgid "Message queue for Ubuntu"
+msgstr ""
+
+#: ../environment-messaging.rst:2
+msgid "Message queue"
+msgstr "Очередь сообщений"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-compute.rst:2
+msgid "Compute node"
+msgstr "Вычислительный узел"
+
+#: ../environment-networking-compute.rst:5
+#: ../environment-networking-controller.rst:5
+#: ../environment-networking-storage-cinder.rst:8
+msgid "Configure network interfaces"
+msgstr "Настройка сетевых интерфейсов"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-compute.rst:7
+#: ../environment-networking-controller.rst:7
+msgid "Configure the first interface as the management interface:"
+msgstr "Настройте первый интерфейс как управляющий интерфейс:"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-compute.rst:9
+msgid "IP address: 10.0.0.31"
+msgstr "IP-адрес: 10.0.0.31"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-compute.rst:11
+#: ../environment-networking-controller.rst:11
+msgid "Network mask: 255.255.255.0 (or /24)"
+msgstr "Маска сети: 255.255.255.0 (или /24)"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-compute.rst:13
+#: ../environment-networking-controller.rst:13
+msgid "Default gateway: 10.0.0.1"
+msgstr "Маршрут по умолчанию: 10.0.0.1"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-compute.rst:17
+msgid "Additional compute nodes should use 10.0.0.32, 10.0.0.33, and so on."
+msgstr ""
+"Дополнительные вычислительные узлы должны использовать 10.0.0.32, 10.0.0.33, "
+"и так далее."
+
+#: ../environment-networking-compute.rst:19
+#: ../environment-networking-controller.rst:15
+msgid ""
+"The provider interface uses a special configuration without an IP address "
+"assigned to it. Configure the second interface as the provider interface:"
+msgstr ""
+"Интерфейс провайдера использует специальную конфигурацию без указания IP-"
+"адреса. Настройте второй интерфейс как интерфейс провайдера:"
+
+#: ../environment-networking-compute.rst:23
+#: ../environment-networking-controller.rst:19
+msgid ""
+"Replace ``INTERFACE_NAME`` with the actual interface name. For example, "
+"*eth1* or *ens224*."
+msgstr ""
+"Замените ``INTERFACE_NAME`` реалным именем интерфейса. Например, *eth1* or "
+"*ens224*."
+
+#: ../environment-networking-compute.rst:26
+#: ../environment-networking-controller.rst:22
+#: ../environment-ntp-controller.rst:14 ../environment-ntp-controller.rst:70
+#: ../environment-ntp-other.rst:15 ../environment-ntp-other.rst:52
+msgid "For Ubuntu:"
+msgstr "Для Ubuntu:"
+
+#: ../environment-networking-compute.rst:28
+#: ../environment-networking-controller.rst:24
+msgid "Edit the ``/etc/network/interfaces`` file to contain the following:"
+msgstr ""
+"Отредактируйте файл ``/etc/network/interfaces``, чтобы он содержал следующее:"
+""
+
+#: ../environment-networking-compute.rst:38
+#: ../environment-networking-controller.rst:34
+#: ../environment-ntp-controller.rst:20 ../environment-ntp-other.rst:21
+msgid "For RHEL or CentOS:"
+msgstr "Для RHEL или CentOS:"
+
+#: ../environment-networking-compute.rst:40
+#: ../environment-networking-controller.rst:36
+msgid ""
+"Edit the ``/etc/sysconfig/network-scripts/ifcfg-INTERFACE_NAME`` file to "
+"contain the following:"
+msgstr ""
+"Отредактируйте файл ``/etc/sysconfig/network-scripts/ifcfg-INTERFACE_NAME``, "
+"чтобы он содержал следующее:"
+
+#: ../environment-networking-compute.rst:43
+#: ../environment-networking-controller.rst:39
+msgid "Do not change the ``HWADDR`` and ``UUID`` keys."
+msgstr "Не изменяйте ключи ``HWADDR`` и ``UUID``."
+
+#: ../environment-networking-compute.rst:52
+#: ../environment-networking-controller.rst:48
+#: ../environment-ntp-controller.rst:26 ../environment-ntp-other.rst:27
+msgid "For SUSE:"
+msgstr "Для SUSE:"
+
+#: ../environment-networking-compute.rst:54
+#: ../environment-networking-controller.rst:50
+msgid ""
+"Edit the ``/etc/sysconfig/network/ifcfg-INTERFACE_NAME`` file to contain the "
+"following:"
+msgstr ""
+"Отредактируйте файл ``/etc/sysconfig/network/ifcfg-INTERFACE_NAME``, чтобы "
+"он содержал следующее:"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-compute.rst:62
+#: ../environment-networking-controller.rst:58
+#: ../environment-networking-storage-cinder.rst:25
+msgid "Reboot the system to activate the changes."
+msgstr "Перезагрузите систему чтобы применить изменения."
+
+#: ../environment-networking-compute.rst:65
+#: ../environment-networking-controller.rst:61
+#: ../environment-networking-storage-cinder.rst:19
+msgid "Configure name resolution"
+msgstr "Настройте определение имен"
+
+#: ../environment-networking-compute.rst:67
+msgid "Set the hostname of the node to ``compute1``."
+msgstr "Установите имя хоста узла как``compute1``."
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-ntp.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-controller.rst:2
+#: ../environment-ntp-controller.rst:5
+msgid "Controller node"
+msgstr "Управляющий узел"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-controller.rst:9
+msgid "IP address: 10.0.0.11"
+msgstr "IP-адрес: 10.0.0.11"
+
+#: ../environment-networking-controller.rst:63
+msgid "Set the hostname of the node to ``controller``."
+msgstr "Установите имя хоста узла как ``controller``."
+
+#: ../environment-networking-storage-cinder.rst:2
+msgid "Block storage node (Optional)"
+msgstr "Узел блочного хранилища (опционально)"
+
+#: ../environment-networking-storage-cinder.rst:4
+msgid ""
+"If you want to deploy the Block Storage service, configure one additional "
+"storage node."
+msgstr ""
+"Если вы хотите развернуть сервис блочных хранилищ, настройте один "
+"дополнительный узел хранилища."
+
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-storage-cinder.rst:10
+msgid "Configure the management interface:"
+msgstr "Настройте управляющий интерфейс:"
+
+#: ../environment-networking-storage-cinder.rst:12
+msgid "IP address: ``10.0.0.41``"
+msgstr "IP-адрес: ``10.0.0.41``"
+
+#: ../environment-networking-storage-cinder.rst:14
+msgid "Network mask: ``255.255.255.0`` (or ``/24``)"
+msgstr "Маска сети: ``255.255.255.0`` (или ``/24``)"
+
+#: ../environment-networking-storage-cinder.rst:16
+msgid "Default gateway: ``10.0.0.1``"
+msgstr "Маршрут по умолчанию: ``10.0.0.1``"
+
+#: ../environment-networking-storage-cinder.rst:21
+msgid "Set the hostname of the node to ``block1``."
+msgstr "Установите имя хоста узла как ``block1``."
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-initial-networks.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-verify.rst:2
+msgid "Verify connectivity"
+msgstr "Проверка соединения"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking-verify.rst:4
+msgid ""
+"We recommend that you verify network connectivity to the Internet and among "
+"the nodes before proceeding further."
+msgstr ""
+"Мы рекомендуем проверить связь с Интернетом и между узлами перед тем как "
+"двигаться дальше."
+
+#: ../environment-networking-verify.rst:7
+msgid "From the *controller* node, test access to the Internet:"
+msgstr "Проверьте доступ к интернету с *управляющего* узла:"
+
+#: ../environment-networking-verify.rst:23
+msgid ""
+"From the *controller* node, test access to the management interface on the "
+"*compute* node:"
+msgstr ""
+"С *Управляющего* узла проверьте доступ к управляющему интерфейсу на узле "
+"*вычислительных ресурсов*: "
+
+#: ../environment-networking-verify.rst:40
+msgid "From the *compute* node, test access to the Internet:"
+msgstr "Проверьте доступ к интернету с узла вычислительных ресурсов:"
+
+#: ../environment-networking-verify.rst:56
+msgid ""
+"From the *compute* node, test access to the management interface on the "
+"*controller* node:"
+msgstr ""
+"С узла *вычислительных ресурсов* проверьте доступ к управляющему интерфейсу "
+"на *Управляющему* узлу: "
+
+#: ../environment-networking-verify.rst:75
+msgid ""
+"RHEL, CentOS and SUSE distributions enable a restrictive :term:`firewall` by "
+"default. During the installation process, certain steps will fail unless you "
+"alter or disable the firewall. For more information about securing your "
+"environment, refer to the `OpenStack Security Guide <https://docs.openstack."
+"org/security-guide/>`_."
+msgstr ""
+
+#: ../environment-networking-verify.rst:81
+msgid ""
+"Ubuntu does not enable a restrictive :term:`firewall` by default. For more "
+"information about securing your environment, refer to the `OpenStack "
+"Security Guide <https://docs.openstack.org/security-guide/>`_."
+msgstr ""
+
+#: ../environment-networking.rst:4
+msgid "Host networking"
+msgstr "Сеть узлов"
+
+#: ../environment-networking.rst:6
+msgid ""
+"After installing the operating system on each node for the architecture that "
+"you choose to deploy, you must configure the network interfaces. We "
+"recommend that you disable any automated network management tools and "
+"manually edit the appropriate configuration files for your distribution. For "
+"more information on how to configure networking on your distribution, see "
+"the documentation."
+msgstr ""
+
+#: ../environment-networking.rst:15
+msgid ""
+"`Ubuntu Network Configuration <https://help.ubuntu.com/lts/serverguide/"
+"network-configuration.html>`__"
+msgstr ""
+
+#: ../environment-networking.rst:17
+msgid ""
+"`RHEL 7 <https://access.redhat.com/documentation/en-us/"
+"red_hat_enterprise_linux/7/html/networking_guide/index>`__ or `RHEL 8 <https:"
+"//access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/"
+"configuring_and_managing_networking/index>`__ Network Configuration"
+msgstr ""
+
+#: ../environment-networking.rst:21
+msgid ""
+"`SLES 12 <https://www.suse.com/documentation/sles-12/book_sle_admin/data/"
+"sec_basicnet_manconf.html>`__ or `SLES 15 <https://www.suse.com/"
+"documentation/sles-15/book_sle_admin/data/sec_network_manconf.html>`__ or "
+"`openSUSE <https://doc.opensuse.org/documentation/leap/reference/html/book."
+"opensuse.reference/cha.network.html>`__ Network Configuration"
+msgstr ""
+
+#: ../environment-networking.rst:28
+msgid ""
+"All nodes require Internet access for administrative purposes such as "
+"package installation, security updates, :term:`DNS <Domain Name System "
+"(DNS)>`, and :term:`NTP <Network Time Protocol (NTP)>`. In most cases, nodes "
+"should obtain Internet access through the management network interface. To "
+"highlight the importance of network separation, the example architectures "
+"use `private address space <https://tools.ietf.org/html/rfc1918>`__ for the "
+"management network and assume that the physical network infrastructure "
+"provides Internet access via :term:`NAT <Network Address Translation (NAT)>` "
+"or other methods. The example architectures use routable IP address space "
+"for the provider (external) network and assume that the physical network "
+"infrastructure provides direct Internet access."
+msgstr ""
+
+#: ../environment-networking.rst:40
+msgid ""
+"In the provider networks architecture, all instances attach directly to the "
+"provider network. In the self-service (private) networks architecture, "
+"instances can attach to a self-service or provider network. Self-service "
+"networks can reside entirely within OpenStack or provide some level of "
+"external network access using :term:`NAT <Network Address Translation "
+"(NAT)>` through the provider network."
+msgstr ""
+
+#: ../environment-networking.rst:52
+msgid "The example architectures assume use of the following networks:"
+msgstr ""
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking.rst:54
+msgid "Management on 10.0.0.0/24 with gateway 10.0.0.1"
+msgstr "Управляющая на 10.0.0.0/24 со шлюзом 10.0.0.1"
+
+#: ../environment-networking.rst:56
+msgid ""
+"This network requires a gateway to provide Internet access to all nodes for "
+"administrative purposes such as package installation, security updates, :"
+"term:`DNS <Domain Name System (DNS)>`, and :term:`NTP <Network Time Protocol "
+"(NTP)>`."
+msgstr ""
+
+#: ../environment-networking.rst:61
+msgid "Provider on 203.0.113.0/24 with gateway 203.0.113.1"
+msgstr ""
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking.rst:63
+msgid ""
+"This network requires a gateway to provide Internet access to instances in "
+"your OpenStack environment."
+msgstr ""
+"Этой сети требуется шлюз для обеспечения доступа в Интернет инстансам в "
+"вашей среде OpenStack."
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking.rst:66
+msgid ""
+"You can modify these ranges and gateways to work with your particular "
+"network infrastructure."
+msgstr ""
+"Вы можете изменить эти диапазоны согласно вашей сетевой инфраструктуре."
+
+#: ../environment-networking.rst:69
+msgid ""
+"Network interface names vary by distribution. Traditionally, interfaces use "
+"``eth`` followed by a sequential number. To cover all variations, this guide "
+"refers to the first interface as the interface with the lowest number and "
+"the second interface as the interface with the highest number."
+msgstr ""
+
+#: ../environment-networking.rst:77
+msgid ""
+"Ubuntu has changed the network interface naming concept. Refer `Changing "
+"Network Interfaces name Ubuntu 16.04 <https://askubuntu.com/questions/767786/"
+"changing-network-interfaces-name-ubuntu-16-04>`_."
+msgstr ""
+
+#: ../environment-networking.rst:80
+msgid ""
+"Unless you intend to use the exact configuration provided in this example "
+"architecture, you must modify the networks in this procedure to match your "
+"environment. Each node must resolve the other nodes by name in addition to "
+"IP address. For example, the ``controller`` name must resolve to ``10.0.0."
+"11``, the IP address of the management interface on the controller node."
+msgstr ""
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-networking.rst:89
+msgid ""
+"Reconfiguring network interfaces will interrupt network connectivity. We "
+"recommend using a local terminal session for these procedures."
+msgstr ""
+"Перенастройка сетевых интерфейсов сбросит сетевые соединения. Мы рекомендуем "
+"использовать локальную терминальную сессию для этих процедур."
+
+#: ../environment-networking.rst:95
+msgid ""
+"RHEL, CentOS and SUSE distributions enable a restrictive :term:`firewall` by "
+"default. Ubuntu does not. For more information about securing your "
+"environment, refer to the `OpenStack Security Guide <https://docs.openstack."
+"org/security-guide/>`_."
+msgstr ""
+
+#: ../environment-networking.rst:None
+msgid "Network layout"
+msgstr ""
+
+#: ../environment-ntp-controller.rst:7
+msgid "Perform these steps on the controller node."
+msgstr ""
+
+#: ../environment-ntp-controller.rst:32
+msgid ""
+"Edit the ``chrony.conf`` file and add, change, or remove the following keys "
+"as necessary for your environment."
+msgstr ""
+
+#: ../environment-ntp-controller.rst:35 ../environment-ntp-other.rst:36
+msgid "For RHEL, CentOS, or SUSE, edit the ``/etc/chrony.conf`` file:"
+msgstr ""
+
+#: ../environment-ntp-controller.rst:41 ../environment-ntp-other.rst:42
+msgid "For Ubuntu, edit the ``/etc/chrony/chrony.conf`` file:"
+msgstr ""
+
+#: ../environment-ntp-controller.rst:47
+msgid ""
+"Replace ``NTP_SERVER`` with the hostname or IP address of a suitable more "
+"accurate (lower stratum) NTP server. The configuration supports multiple "
+"``server`` keys."
+msgstr ""
+
+#: ../environment-ntp-controller.rst:53
+msgid ""
+"By default, the controller node synchronizes the time via a pool of public "
+"servers. However, you can optionally configure alternative servers such as "
+"those provided by your organization."
+msgstr ""
+
+#: ../environment-ntp-controller.rst:57
+msgid ""
+"To enable other nodes to connect to the chrony daemon on the controller "
+"node, add this key to the same ``chrony.conf`` file mentioned above:"
+msgstr ""
+
+#: ../environment-ntp-controller.rst:65
+msgid ""
+"If necessary, replace ``10.0.0.0/24`` with a description of your subnet."
+msgstr ""
+
+#: ../environment-ntp-controller.rst:68
+msgid "Restart the NTP service:"
+msgstr "Перезапустите сервис NTP:"
+
+#: ../environment-ntp-controller.rst:76 ../environment-ntp-other.rst:58
+msgid "For RHEL, CentOS, or SUSE:"
+msgstr ""
+
+#: ../environment-ntp-other.rst:5
+msgid "Other nodes"
+msgstr "На других узлах"
+
+#: ../environment-ntp-other.rst:7
+msgid ""
+"Other nodes reference the controller node for clock synchronization. Perform "
+"these steps on all other nodes."
+msgstr ""
+
+#: ../environment-ntp-other.rst:13
+msgid "Install the packages."
+msgstr ""
+
+#: ../environment-ntp-other.rst:33
+msgid ""
+"Configure the ``chrony.conf`` file and comment out or remove all but one "
+"``server`` key. Change it to reference the controller node."
+msgstr ""
+
+#: ../environment-ntp-other.rst:48
+msgid "Comment out the ``pool 2.debian.pool.ntp.org offline iburst`` line."
+msgstr ""
+
+#: ../environment-ntp-other.rst:50
+msgid "Restart the NTP service."
+msgstr ""
+
+# #-#-#-#-#  basics-ntp.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  dashboard-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-ntp-verify.rst:4
+#: ../launch-instance-networks-selfservice.rst:213
+msgid "Verify operation"
+msgstr "Проверьте работу"
+
+#: ../environment-ntp-verify.rst:6
+msgid ""
+"We recommend that you verify NTP synchronization before proceeding further. "
+"Some nodes, particularly those that reference the controller node, can take "
+"several minutes to synchronize."
+msgstr ""
+"Мы рекомендуем вам проверить синхронизацию NTP перед тем, как двигаться "
+"дальше. Некоторым узлам, особенно тем, которые используют управляющий узел, "
+"может потребоваться несколько минут."
+
+#: ../environment-ntp-verify.rst:10
+msgid "Run this command on the *controller* node:"
+msgstr "Запустите эту команду на *управляющем* узле:"
+
+#: ../environment-ntp-verify.rst:22
+msgid ""
+"Contents in the *Name/IP address* column should indicate the hostname or IP "
+"address of one or more NTP servers. Contents in the *MS* column should "
+"indicate *\\** for the server to which the NTP service is currently "
+"synchronized."
+msgstr ""
+
+#: ../environment-ntp-verify.rst:26
+msgid "Run the same command on *all other* nodes:"
+msgstr "Выполните эту же команду на *всех остальных* узлах"
+
+#: ../environment-ntp-verify.rst:37
+msgid ""
+"Contents in the *Name/IP address* column should indicate the hostname of the "
+"controller node."
+msgstr ""
+"Информация в *Имя/IP адресс* столбце должна содержать имя хоста управляющего "
+"узла"
+
+#: ../environment-ntp.rst:4
+msgid "Network Time Protocol (NTP)"
+msgstr "Протокол сетевого времени (NTP)"
+
+#: ../environment-ntp.rst:6
+msgid ""
+"To properly synchronize services among nodes, you can install Chrony, an "
+"implementation of :term:`NTP <Network Time Protocol (NTP)>`. We recommend "
+"that you configure the controller node to reference more accurate (lower "
+"stratum) servers and other nodes to reference the controller node."
+msgstr ""
+
+#: ../environment-packages-obs.rst:2
+msgid "OpenStack packages for SUSE"
+msgstr ""
+
+#: ../environment-packages-obs.rst:4 ../environment-packages-rdo.rst:4
+#: ../environment-packages.rst:4
+msgid ""
+"Distributions release OpenStack packages as part of the distribution or "
+"using other methods because of differing release schedules. Perform these "
+"procedures on all nodes."
+msgstr ""
+"Дистрибутивы выпускают пакеты OpenStack как часть дистрибутива или используя "
+"другие методы из-за различных графиков выпуска. Выполните эти действия на "
+"всех узлах."
+
+#: ../environment-packages-obs.rst:10 ../environment-packages-rdo.rst:17
+#: ../environment-packages.rst:10
+msgid ""
+"The set up of OpenStack packages described here needs to be done on all "
+"nodes: controller, compute, and Block Storage nodes."
+msgstr ""
+"Настройка описанных здесь пакетов OpenStack должна быть выполнена на всех "
+"узлах: управляющих, узлах вычислительных ресурсов, узлах блочного хранилища."
+
+#: ../environment-packages-obs.rst:15 ../environment-packages-rdo.rst:22
+#: ../environment-packages.rst:15
+msgid ""
+"Your hosts must contain the latest versions of base installation packages "
+"available for your distribution before proceeding further."
+msgstr ""
+"Для дальнейшего продолжения ваши хосты должны иметь последние версию "
+"установочных пакетов, доступных для вашего дистрибутива "
+
+#: ../environment-packages-obs.rst:20 ../environment-packages-rdo.rst:27
+#: ../environment-packages.rst:20
+msgid ""
+"Disable or remove any automatic update services because they can impact your "
+"OpenStack environment."
+msgstr ""
+"Отключите или удалите все службы автоматического обновления, поскольку они "
+"могут повлиять на вашу среду OpenStack."
+
+#: ../environment-packages-obs.rst:25 ../environment-packages-rdo.rst:77
+msgid "Enable the OpenStack repository"
+msgstr "Разрешите доступ к репозиторию OpenStack"
+
+#: ../environment-packages-obs.rst:27
+msgid ""
+"Enable the Open Build Service repositories based on your openSUSE or SLES "
+"version, and on the version of OpenStack you want to install:"
+msgstr ""
+
+#: ../environment-packages-obs.rst:30
+msgid "**On openSUSE for OpenStack Ussuri:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:36
+msgid "**On openSUSE for OpenStack Train:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:42
+msgid "**On openSUSE for OpenStack Stein:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:48
+msgid "**On openSUSE for OpenStack Rocky:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:54
+msgid "**On openSUSE for OpenStack Queens:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:60
+msgid "**On openSUSE for OpenStack Pike:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:68
+msgid ""
+"The openSUSE distribution uses the concept of patterns to represent "
+"collections of packages. If you selected 'Minimal Server Selection (Text "
+"Mode)' during the initial installation, you may be presented with a "
+"dependency conflict when you attempt to install the OpenStack packages. To "
+"avoid this, remove the minimal\\_base-conflicts package:"
+msgstr ""
+"Дистрибутив openSUSE использует концепцию паттернов для представления "
+"коллекции пакетов. Если вы выбрали 'Минимальный сервер (Текстовый режим)' во "
+"время первоначальной установки, вы можете столкнуться с конфликтом "
+"зависимостей при попытке установить пакеты OpenStack. Для избежания "
+"проблемы, удалите пакет minimal\\_base-conflicts:"
+
+#: ../environment-packages-obs.rst:79
+msgid "**On SLES for OpenStack Ussuri:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:85
+msgid "**On SLES for OpenStack Train:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:91
+msgid "**On SLES for OpenStack Stein:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:97
+msgid "**On SLES for OpenStack Rocky:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:103
+msgid "**On SLES for OpenStack Queens:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:109
+msgid "**On SLES for OpenStack Pike:**"
+msgstr ""
+
+#: ../environment-packages-obs.rst:117
+msgid ""
+"The packages are signed by GPG key ``D85F9316``. You should verify the "
+"fingerprint of the imported GPG key before using it."
+msgstr ""
+"Пакеты подписаны GPG ключом ``D85F9316``. Вам следует проверить отпечаток "
+"проимпортированного ключа перед его использованием."
+
+#: ../environment-packages-obs.rst:128 ../environment-packages-rdo.rst:147
+msgid "Finalize the installation"
+msgstr "Завершите установку"
+
+#: ../environment-packages-obs.rst:130 ../environment-packages-rdo.rst:149
+msgid "Upgrade the packages on all nodes:"
+msgstr ""
+
+#: ../environment-packages-obs.rst:138 ../environment-packages-rdo.rst:157
+msgid ""
+"If the upgrade process includes a new kernel, reboot your host to activate "
+"it."
+msgstr ""
+"Если обновление включает новое ядро, перезагрузите хост, чтобы задействовать "
+"его."
+
+#: ../environment-packages-obs.rst:141
+msgid "Install the OpenStack client:"
+msgstr "Установите клиент OpenStack"
+
+#: ../environment-packages-rdo.rst:2
+msgid "OpenStack packages for RHEL and CentOS"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:10
+msgid ""
+"Starting with the Ussuri release, you will need to use either CentOS8 or "
+"RHEL 8. Previous OpenStack releases will need to use either CentOS7 or RHEL "
+"7. Instructions are included for both distributions and versions where "
+"different."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:31
+msgid "Prerequisites"
+msgstr "Предварительные требования"
+
+#: ../environment-packages-rdo.rst:35
+msgid ""
+"We recommend disabling EPEL when using RDO packages due to updates in EPEL "
+"breaking backwards compatibility. Or, preferably pin package versions using "
+"the ``yum-versionlock`` plugin."
+msgstr ""
+"Мы рекомендуем отключение EPEL при использовании RDO пакетов из-за "
+"обновлений в EPEL, нарушающих обратную совместимость. Альтернативой может "
+"служить фиксация версий пакетов с использованием плагина ``yum-versionlock``."
+""
+
+#: ../environment-packages-rdo.rst:41
+msgid ""
+"The following steps apply to RHEL only. CentOS does not require these steps."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:44
+msgid ""
+"When using RHEL, it is assumed that you have registered your system using "
+"Red Hat Subscription Management and that you have the ``rhel-7-server-rpms`` "
+"or ``rhel-8-for-x86_64-baseos-rpms`` repository enabled by default depending "
+"on your version."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:49
+msgid ""
+"For more information on registering a RHEL 7 system, see the `Red Hat "
+"Enterprise Linux 7 System Administrator's Guide <https://access.redhat.com/"
+"documentation/en-US/Red_Hat_Enterprise_Linux/7/html/"
+"System_Administrators_Guide/part-Subscription_and_Support.html>`_."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:53
+msgid ""
+"In addition to ``rhel-7-server-rpms`` on a RHEL 7 system, you also need to "
+"have the ``rhel-7-server-optional-rpms``, ``rhel-7-server-extras-rpms``, and "
+"``rhel-7-server-rh-common-rpms`` repositories enabled:"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:62
+msgid ""
+"For more information on registering a RHEL 8 system, see the `Red Hat "
+"Enterprise Linux 8 Installation Guide <https://access.redhat.com/"
+"documentation/en-us/red_hat_enterprise_linux/8/html/"
+"performing_a_standard_rhel_installation/post-installation-tasks_installing-"
+"rhel>`_."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:66
+msgid ""
+"In addition to ``rhel-8-for-x86_64-baseos-rpms`` on a RHEL 8 system, you "
+"also need to have the ``rhel-8-for-x86_64-appstream-rpms``, ``rhel-8-for-"
+"x86_64-supplementary-rpms``, and ``codeready-builder-for-rhel-8-x86_64-"
+"rpms`` repositories enabled:"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:79
+msgid ""
+"On CentOS, the ``extras`` repository provides the RPM that enables the "
+"OpenStack repository. CentOS includes the ``extras`` repository by default, "
+"so you can simply install the package to enable the OpenStack repository. "
+"For CentOS8, you will also need to enable the PowerTools repository."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:85
+msgid "**When installing the Victoria release, run:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:92
+msgid "**When installing the Ussuri release, run:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:99
+msgid "**When installing the Train release, run:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:105
+msgid "**When installing the Stein release, run:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:111
+msgid "**When installing the Rocky release, run:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:117
+msgid "**When installing the Queens release, run:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:123
+msgid "**When installing the Pike release, run:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:129
+msgid ""
+"On RHEL, download and install the RDO repository RPM to enable the OpenStack "
+"repository."
+msgstr ""
+"На RHEL скачайте и установите RDO репозиторий RPM для активации OpenStack "
+"репозитория."
+
+#: ../environment-packages-rdo.rst:132
+msgid "**On RHEL 7:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:138
+msgid "**On RHEL 8:**"
+msgstr ""
+
+#: ../environment-packages-rdo.rst:144
+msgid ""
+"The RDO repository RPM installs the latest available OpenStack release."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:160
+msgid "Install the appropriate OpenStack client for your version."
+msgstr ""
+
+#: ../environment-packages-rdo.rst:174
+msgid ""
+"RHEL and CentOS enable :term:`SELinux` by default. Install the ``openstack-"
+"selinux`` package to automatically manage security policies for OpenStack "
+"services:"
+msgstr ""
+"RHEL и CentOS по умолчанию активируют :term:`SELinux`. Установите пакет "
+"``openstack-selinux``для автоматического управления политиками безопасности "
+"для сервисов OpenStack:"
+
+#: ../environment-packages-ubuntu.rst:2
+msgid "OpenStack packages for Ubuntu"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:4
+msgid ""
+"Ubuntu releases OpenStack with each Ubuntu release. Ubuntu LTS releases are "
+"provided every two years. OpenStack packages from interim releases of Ubuntu "
+"are made available to the prior Ubuntu LTS via the Ubuntu Cloud Archive."
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:11
+msgid ""
+"The archive enablement described here needs to be done on all nodes that run "
+"OpenStack services."
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:16
+msgid "Archive Enablement"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:18
+msgid "**OpenStack Wallaby for Ubuntu 20.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:24
+msgid "**OpenStack Victoria for Ubuntu 20.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:30
+msgid "**OpenStack Ussuri for Ubuntu 20.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:36
+msgid "**OpenStack Ussuri for Ubuntu 18.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:42
+msgid "**OpenStack Train for Ubuntu 18.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:48
+msgid "**OpenStack Stein for Ubuntu 18.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:54
+msgid "**OpenStack Rocky for Ubuntu 18.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:60
+msgid "**OpenStack Queens for Ubuntu 18.04 LTS:**"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:68
+msgid ""
+"For a full list of supported Ubuntu OpenStack releases, see \"Ubuntu "
+"OpenStack release cycle\" at https://www.ubuntu.com/about/release-cycle."
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:74
+msgid "Sample Installation"
+msgstr ""
+
+#: ../environment-packages-ubuntu.rst:82
+msgid "Client Installation"
+msgstr ""
+
+#: ../environment-packages.rst:2
+msgid "OpenStack packages"
+msgstr "Пакеты OpenStack"
+
+#: ../environment-security.rst:2
+msgid "Security"
+msgstr "Безопасность"
+
+#: ../environment-security.rst:4
+msgid ""
+"OpenStack services support various security methods including password, "
+"policy, and encryption. Additionally, supporting services including the "
+"database server and message broker support password security."
+msgstr ""
+
+#: ../environment-security.rst:8
+msgid ""
+"To ease the installation process, this guide only covers password security "
+"where applicable. You can create secure passwords manually, but the database "
+"connection string in services configuration file cannot accept special "
+"characters like \"@\". We recommend you generate them using a tool such as "
+"`pwgen <https://sourceforge.net/projects/pwgen/>`_, or by running the "
+"following command:"
+msgstr ""
+
+#: ../environment-security.rst:20
+msgid ""
+"For OpenStack services, this guide uses ``SERVICE_PASS`` to reference "
+"service account passwords and ``SERVICE_DBPASS`` to reference database "
+"passwords."
+msgstr ""
+"Для сервисов OpenStack данная инструкция использует ``SERVICE_PASS`` для "
+"ссылки на пароли аккаунтов и ``SERVICE_DBPASS`` для ссылки на пароли баз "
+"данных."
+
+#: ../environment-security.rst:24
+msgid ""
+"The following table provides a list of services that require passwords and "
+"their associated references in the guide."
+msgstr ""
+
+#: ../environment-security.rst:27
+msgid "**Passwords**"
+msgstr "**Пароли**"
+
+#: ../environment-security.rst:31
+msgid "Password name"
+msgstr "Имя пароля"
+
+# #-#-#-#-#  app_reserved_uids.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basic_environment.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  overview.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../environment-security.rst:32
+msgid "Description"
+msgstr "Описание"
+
+#: ../environment-security.rst:33
+msgid "Database password (no variable used)"
+msgstr "Пароль базы данных(не используются переменные)"
+
+#: ../environment-security.rst:34
+msgid "Root password for the database"
+msgstr "Пароль root для базы данных"
+
+#: ../environment-security.rst:35
+msgid "``ADMIN_PASS``"
+msgstr "``ADMIN_PASS``"
+
+#: ../environment-security.rst:36
+msgid "Password of user ``admin``"
+msgstr "Пароль пользователя ``admin``"
+
+#: ../environment-security.rst:37
+msgid "``CINDER_DBPASS``"
+msgstr "``CINDER_DBPASS``"
+
+#: ../environment-security.rst:38
+msgid "Database password for the Block Storage service"
+msgstr "Пароль базы данных сервиса блочных хранилищ"
+
+#: ../environment-security.rst:39
+msgid "``CINDER_PASS``"
+msgstr "``CINDER_PASS``"
+
+#: ../environment-security.rst:40
+msgid "Password of Block Storage service user ``cinder``"
+msgstr "Пароль пользователя ``cinder`` сервиса блочных хранилищ"
+
+#: ../environment-security.rst:41
+msgid "``DASH_DBPASS``"
+msgstr "``DASH_DBPASS``"
+
+#: ../environment-security.rst:42
+msgid "Database password for the Dashboard"
+msgstr ""
+
+#: ../environment-security.rst:43
+msgid "``DEMO_PASS``"
+msgstr "``DEMO_PASS``"
+
+#: ../environment-security.rst:44
+msgid "Password of user ``demo``"
+msgstr "Пароль пользователя ``demo``"
+
+#: ../environment-security.rst:45
+msgid "``GLANCE_DBPASS``"
+msgstr "``GLANCE_DBPASS``"
+
+#: ../environment-security.rst:46
+msgid "Database password for Image service"
+msgstr "Пароль базы данных сервиса управления образами"
+
+#: ../environment-security.rst:47
+msgid "``GLANCE_PASS``"
+msgstr "``GLANCE_PASS``"
+
+#: ../environment-security.rst:48
+msgid "Password of Image service user ``glance``"
+msgstr ""
+
+#: ../environment-security.rst:49
+msgid "``KEYSTONE_DBPASS``"
+msgstr "``KEYSTONE_DBPASS``"
+
+#: ../environment-security.rst:50
+msgid "Database password of Identity service"
+msgstr "Пароль базы данных сервиса Идентификации"
+
+#: ../environment-security.rst:51
+msgid "``METADATA_SECRET``"
+msgstr ""
+
+#: ../environment-security.rst:52
+msgid "Secret for the metadata proxy"
+msgstr ""
+
+#: ../environment-security.rst:53
+msgid "``NEUTRON_DBPASS``"
+msgstr "``NEUTRON_DBPASS``"
+
+#: ../environment-security.rst:54
+msgid "Database password for the Networking service"
+msgstr "Пароль базы данных для сервиса управления сетью"
+
+#: ../environment-security.rst:55
+msgid "``NEUTRON_PASS``"
+msgstr "``NEUTRON_PASS``"
+
+#: ../environment-security.rst:56
+msgid "Password of Networking service user ``neutron``"
+msgstr "Пароль пользователя ``neutron `` сервиса управления сетью"
+
+#: ../environment-security.rst:57
+msgid "``NOVA_DBPASS``"
+msgstr "``NOVA_DBPASS``"
+
+#: ../environment-security.rst:58
+msgid "Database password for Compute service"
+msgstr "Пароль базы данных для сервиса Вычислительных ресурсов"
+
+#: ../environment-security.rst:59
+msgid "``NOVA_PASS``"
+msgstr "``NOVA_PASS``"
+
+#: ../environment-security.rst:60
+msgid "Password of Compute service user ``nova``"
+msgstr "Пароль пользователя ``nova `` сервиса Вычислительных ресурсов"
+
+#: ../environment-security.rst:61
+msgid "``PLACEMENT_PASS``"
+msgstr ""
+
+#: ../environment-security.rst:62
+msgid "Password of the Placement service user ``placement``"
+msgstr ""
+
+#: ../environment-security.rst:63
+msgid "``RABBIT_PASS``"
+msgstr "``RABBIT_PASS``"
+
+#: ../environment-security.rst:64
+msgid "Password of RabbitMQ user ``openstack``"
+msgstr ""
+
+#: ../environment-security.rst:66
+msgid ""
+"OpenStack and supporting services require administrative privileges during "
+"installation and operation. In some cases, services perform modifications to "
+"the host that can interfere with deployment automation tools such as "
+"Ansible, Chef, and Puppet. For example, some OpenStack services add a root "
+"wrapper to ``sudo`` that can interfere with security policies. See the "
+"`Compute service documentation for Pike <https://docs.openstack.org/nova/"
+"pike/admin/root-wrap-reference.html>`_, the `Compute service documentation "
+"for Queens <https://docs.openstack.org/nova/queens/admin/root-wrap-reference."
+"html>`_, or the `Compute service documentation for Rocky <https://docs."
+"openstack.org/nova/rocky/admin/root-wrap-reference.html>`_ for more "
+"information."
+msgstr ""
+
+#: ../environment-security.rst:79
+msgid ""
+"The Networking service assumes default values for kernel network parameters "
+"and modifies firewall rules. To avoid most issues during your initial "
+"installation, we recommend using a stock deployment of a supported "
+"distribution on your hosts. However, if you choose to automate deployment of "
+"your hosts, review the configuration and policies applied to them before "
+"proceeding further."
+msgstr ""
+
+#: ../environment-sql-database-obs.rst:2
+msgid "SQL database for SUSE"
+msgstr ""
+
+#: ../environment-sql-database-obs.rst:4 ../environment-sql-database-rdo.rst:4
+#: ../environment-sql-database-ubuntu.rst:4 ../environment-sql-database.rst:4
+msgid ""
+"Most OpenStack services use an SQL database to store information. The "
+"database typically runs on the controller node. The procedures in this guide "
+"use MariaDB or MySQL depending on the distribution. OpenStack services also "
+"support other SQL databases including `PostgreSQL <https://www.postgresql."
+"org/>`__."
+msgstr ""
+
+#: ../environment-sql-database-obs.rst:19
+msgid ""
+"Create and edit the ``/etc/my.cnf.d/openstack.cnf`` file and complete the "
+"following actions:"
+msgstr ""
+"Создайте и отредактируйте файл ``/etc/my.cnf.d/openstack.cnf`` и выполните "
+"следующие действия: "
+
+#: ../environment-sql-database-obs.rst:22
+#: ../environment-sql-database-rdo.rst:23
+#: ../environment-sql-database-ubuntu.rst:45
+msgid ""
+"Create a ``[mysqld]`` section, and set the ``bind-address`` key to the "
+"management IP address of the controller node to enable access by other nodes "
+"via the management network. Set additional keys to enable useful options and "
+"the UTF-8 character set:"
+msgstr ""
+"Создайте раздел ``[mysqld]`` и задайте ключу ``bind-address``значение "
+"управляющего IP адреса управляющего узла для открытия доступа другими узлами "
+"в управляющей сети. Задайте дополнительные ключи для включения полезных "
+"опций и набора символов UTF-8:"
+
+#: ../environment-sql-database-obs.rst:42
+#: ../environment-sql-database-rdo.rst:44
+msgid ""
+"Start the database service and configure it to start when the system boots:"
+msgstr ""
+"Запустите сервис баз данных и настройте его автоматический запуск при "
+"загрузке системы:"
+
+#: ../environment-sql-database-obs.rst:50
+#: ../environment-sql-database-rdo.rst:52
+#: ../environment-sql-database-ubuntu.rst:71
+msgid ""
+"Secure the database service by running the ``mysql_secure_installation`` "
+"script. In particular, choose a suitable password for the database ``root`` "
+"account:"
+msgstr ""
+
+#: ../environment-sql-database-rdo.rst:2
+msgid "SQL database for RHEL and CentOS"
+msgstr ""
+
+#: ../environment-sql-database-rdo.rst:19
+msgid ""
+"Create and edit the ``/etc/my.cnf.d/openstack.cnf`` file (backup existing "
+"configuration files in ``/etc/my.cnf.d/`` if needed) and complete the "
+"following actions:"
+msgstr ""
+
+#: ../environment-sql-database-ubuntu.rst:2
+msgid "SQL database for Ubuntu"
+msgstr ""
+
+#: ../environment-sql-database-ubuntu.rst:12
+msgid ""
+"As of Ubuntu 16.04, MariaDB was changed to use the \"unix_socket "
+"Authentication Plugin\". Local authentication is now performed using the "
+"user credentials (UID), and password authentication is no longer used by "
+"default. This means that the root user no longer uses a password for local "
+"access to the server."
+msgstr ""
+
+#: ../environment-sql-database-ubuntu.rst:21
+msgid ""
+"As of Ubuntu 18.04, the ``mariadb-server`` package is no longer available "
+"from the default repository. To install successfully, enable the "
+"``Universe`` repository on Ubuntu."
+msgstr ""
+
+#: ../environment-sql-database-ubuntu.rst:30
+msgid "As of Ubuntu 20.04, install the packages:"
+msgstr ""
+
+#: ../environment-sql-database-ubuntu.rst:36
+msgid "As of Ubuntu 18.04 or 16.04, install the packages:"
+msgstr ""
+
+#: ../environment-sql-database-ubuntu.rst:42
+msgid ""
+"Create and edit the ``/etc/mysql/mariadb.conf.d/99-openstack.cnf`` file and "
+"complete the following actions:"
+msgstr ""
+"Создайте и отредактируйте файл ``/etc/mysql/mariadb.conf.d/99-openstack."
+"cnf`` и выполните следующие действия: "
+
+#: ../environment-sql-database-ubuntu.rst:65
+msgid "Restart the database service:"
+msgstr "Перезапустите сервис баз данных:"
+
+#: ../environment-sql-database.rst:2
+msgid "SQL database"
+msgstr "SQL база данных"
+
+#: ../environment-sql-database.rst:12
+msgid ""
+"If you see ``Too many connections`` or ``Too many open files`` error log "
+"messages on OpenStack services, verify that maximum number of connection "
+"settings are well applied to your environment. In MariaDB, you may also need "
+"to change `open_files_limit <https://mariadb.com/kb/en/library/server-system-"
+"variables/#open_files_limit>`__ configuration."
+msgstr ""
+
+#: ../environment.rst:3
+msgid "Environment"
+msgstr "Окружение"
+
+#: ../environment.rst:5
+msgid ""
+"This section explains how to configure the controller node and one compute "
+"node using the example architecture."
+msgstr ""
+"В этом разделе объясняется как настроить управляющий узел и один "
+"вычислительный узел использующий указанную архитектуру."
+
+#: ../environment.rst:8
+msgid ""
+"Although most environments include Identity, Image service, Compute, at "
+"least one networking service, and the Dashboard, the Object Storage service "
+"can operate independently. If your use case only involves Object Storage, "
+"you can skip to"
+msgstr ""
+
+#: ../environment.rst:13
+msgid ""
+"`Object Storage Installation Guide for Stein <https://docs.openstack.org/"
+"swift/stein/install/>`_"
+msgstr ""
+
+#: ../environment.rst:15
+msgid ""
+"`Object Storage Installation Guide for Rocky <https://docs.openstack.org/"
+"swift/rocky/install/>`_"
+msgstr ""
+
+#: ../environment.rst:17
+msgid ""
+"`Object Storage Installation Guide for Queens <https://docs.openstack.org/"
+"swift/queens/install/>`_"
+msgstr ""
+
+#: ../environment.rst:19
+msgid ""
+"`Object Storage Installation Guide for Pike <https://docs.openstack.org/"
+"swift/pike/install/>`_"
+msgstr ""
+
+#: ../environment.rst:21
+msgid "after configuring the appropriate nodes for it."
+msgstr ""
+
+#: ../environment.rst:23
+msgid ""
+"You must use an account with administrative privileges to configure each "
+"node. Either run the commands as the ``root`` user or configure the ``sudo`` "
+"utility."
+msgstr ""
+
+#: ../environment.rst:29
+msgid ""
+"The :command:`systemctl enable` call on openSUSE outputs a warning message "
+"when the service uses SysV Init scripts instead of native systemd files. "
+"This warning can be ignored."
+msgstr ""
+
+#: ../environment.rst:34
+msgid ""
+"For best performance, we recommend that your environment meets or exceeds "
+"the hardware requirements in :ref:`figure-hwreqs`."
+msgstr ""
+
+#: ../environment.rst:37
+msgid ""
+"The following minimum requirements should support a proof-of-concept "
+"environment with core services and several :term:`CirrOS` instances:"
+msgstr ""
+
+#: ../environment.rst:40
+msgid "Controller Node: 1 processor, 4 GB memory, and 5 GB storage"
+msgstr ""
+"Управляющий узел: 1 процессор, 4 Гб оперативной памяти и 5 Гб хранилище"
+
+#: ../environment.rst:42
+msgid "Compute Node: 1 processor, 2 GB memory, and 10 GB storage"
+msgstr "Вычислительный узел: 1 процессор, 2 ГБ памяти и 10 ГБ хранилища"
+
+#: ../environment.rst:44
+msgid ""
+"As the number of OpenStack services and virtual machines increase, so do the "
+"hardware requirements for the best performance. If performance degrades "
+"after enabling additional services or virtual machines, consider adding "
+"hardware resources to your environment."
+msgstr ""
+"С увеличением числа OpenStack сервисов и виртуальных машин делайте "
+"требования к оборудованию для лучшей производительности. Если "
+"производительность снижается после включения дополнительных сервисов или "
+"виртуальных машин, рассмотрите вопрос о добавлении аппаратных ресурсов для "
+"вашего окружения."
+
+#: ../environment.rst:49
+msgid ""
+"To minimize clutter and provide more resources for OpenStack, we recommend a "
+"minimal installation of your Linux distribution. Also, you must install a 64-"
+"bit version of your distribution on each node."
+msgstr ""
+"Чтобы свести к минимуму беспорядок и обеспечить дополнительные ресурсы для "
+"OpenStack, мы рекомендуем минимальную установку вашего дистрибутива Linux. "
+"Кроме того, необходимо установить 64-битную версию вашего дистрибутива на "
+"каждый узел."
+
+#: ../environment.rst:53
+msgid ""
+"A single disk partition on each node works for most basic installations. "
+"However, you should consider :term:`Logical Volume Manager (LVM)` for "
+"installations with optional services such as Block Storage."
+msgstr ""
+"Одиночный раздел диска на каждом узле работает для большинства базовых "
+"установок. Тем не менее, вы должны учитывать :term:`Logical Volume Manager "
+"(LVM)` для установок с дополнительными сервисами, такими как блочное "
+"хранилище."
+
+#: ../environment.rst:57
+msgid ""
+"For first-time installation and testing purposes, many users select to build "
+"each host as a :term:`virtual machine (VM)`. The primary benefits of VMs "
+"include the following:"
+msgstr ""
+"Для первичной установки и в целях тестирования большинство пользователей "
+"решают использовать при создании каждого из хостов :term:`virtual machine "
+"(VM)`.  Основные преимущества  виртуальных машин включают в себя следующее:"
+
+#: ../environment.rst:61
+msgid ""
+"One physical server can support multiple nodes, each with almost any number "
+"of network interfaces."
+msgstr ""
+"Один физический сервер может поддерживать множество узлов, каждый с "
+"практически любым числом сетевых интерфейсов."
+
+#: ../environment.rst:64
+msgid ""
+"Ability to take periodic \"snap shots\" throughout the installation process "
+"and \"roll back\" to a working configuration in the event of a problem."
+msgstr ""
+"Возможность создавать периодические \"быстрые копии\" во время процесса "
+"установки и \"откатываться\" на рабочую конфигурацию в случае проблем."
+
+#: ../environment.rst:68
+msgid ""
+"However, VMs will reduce performance of your instances, particularly if your "
+"hypervisor and/or processor lacks support for hardware acceleration of "
+"nested VMs."
+msgstr ""
+"Однако, ВМ уменьшают производительность ваших инстансов OpenStack, особенно "
+"если ваш гипервизор и/или процессор не поддерживают аппаратное ускорение "
+"вложенных ВМ."
+
+#: ../environment.rst:74
+msgid ""
+"If you choose to install on VMs, make sure your hypervisor provides a way to "
+"disable MAC address filtering on the provider network interface."
+msgstr ""
+"Если вы выбираете установку на виртуальные машины, убедитесь, что ваш "
+"гипервизор предоставляет возможность отключения фильтрации  MAC-адресов на "
+"сетевом интерфейсе поставщика."
+
+#: ../environment.rst:78
+msgid ""
+"For more information about system requirements, see the `OpenStack Pike "
+"Administrator Guides <https://docs.openstack.org/pike/admin/>`_, the "
+"`OpenStack Queens Administrator Guides <https://docs.openstack.org/queens/"
+"admin/>`_, or the `OpenStack Rocky Administrator Guides <https://docs."
+"openstack.org/rocky/admin/>`_."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:3
+msgid "Firewalls and default ports"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:5
+msgid ""
+"On some deployments, such as ones where restrictive firewalls are in place, "
+"you might need to manually configure a firewall to permit OpenStack service "
+"traffic."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:9
+msgid ""
+"To manually configure a firewall, you must permit traffic through the ports "
+"that each OpenStack service uses. This table lists the default ports that "
+"each OpenStack service uses:"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:13
+msgid "Default ports that OpenStack components use"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:16
+msgid "OpenStack service"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:17
+msgid "Default ports"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:18
+msgid "Application Catalog (``murano``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:19
+msgid "8082"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:20
+msgid "Backup Service (``Freezer``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:21
+msgid "9090"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:22
+msgid "Big Data Processing Framework (``sahara``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:23 ../firewalls-default-ports.rst:41
+msgid "8386"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:24
+msgid "Block Storage (``cinder``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:25
+msgid "8776"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:26
+msgid "Clustering (``senlin``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:27
+msgid "8777"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:28
+msgid "Compute (``nova``) endpoints"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:29
+msgid "8774"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:30
+msgid "Compute ports for access to virtual machine consoles"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:31
+msgid "5900-5999"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:32
+msgid "Compute VNC proxy for browsers (openstack-nova-novncproxy)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:33
+msgid "6080"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:34
+msgid ""
+"Compute VNC proxy for traditional VNC clients (openstack-nova-xvpvncproxy)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:35
+msgid "6081"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:36
+msgid "Container Infrastructure Management (``Magnum``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:37
+msgid "9511"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:38
+msgid "Container Service (``Zun``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:39
+msgid "9517"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:40
+msgid "Data processing service (``sahara``) endpoint"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:42
+msgid "Database service (``Trove``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:43
+msgid "8779"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:44
+msgid "DNS service (``Designate``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:45
+msgid "9001"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:46
+msgid "High Availability Service (``Masakari``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:47
+msgid "15868"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:48
+msgid "Identity service (``keystone``) endpoint"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:49
+msgid "5000"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:50
+msgid "Image service (``glance``) API"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:51
+msgid "9292"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:52
+msgid "Key Manager service (``Barbican``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:53
+msgid "9311"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:54
+msgid "Loadbalancer service (``Octavia``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:55
+msgid "9876"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:56
+msgid "Networking (``neutron``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:57
+msgid "9696"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:58
+msgid "NFV Orchestration service (``tacker``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:59
+msgid "9890"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:60
+msgid "Object Storage (``swift``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:61
+msgid "6000, 6001, 6002"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:62
+msgid "Orchestration (``heat``) endpoint"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:63
+msgid "8004"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:64
+msgid ""
+"Orchestration AWS CloudFormation-compatible API (``openstack-heat-api-cfn``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:65
+msgid "8000"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:66
+msgid ""
+"Orchestration AWS CloudWatch-compatible API (``openstack-heat-api-"
+"cloudwatch``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:67
+msgid "8778"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:68
+msgid "Placement API (``placement``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:69
+msgid "8003"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:70
+msgid "Proxy port for HTML5 console used by Compute service"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:71
+msgid "6082"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:72
+msgid "Rating service (``Cloudkitty``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:73
+msgid "8889"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:74
+msgid "Registration service (``Adjutant``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:75
+msgid "5050"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:76
+msgid "Resource Reservation service (``Blazar``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:77
+msgid "1234"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:78
+msgid "Root Cause Analysis service (``Vitrage``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:79
+msgid "8999"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:80
+msgid "Shared File Systems service (``Manila``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:81
+msgid "8786"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:82
+msgid "Telemetry alarming service (``Aodh``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:83
+msgid "8042"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:84
+msgid "Telemetry event service (``Panko``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:85
+msgid "8977"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:86
+msgid "Workflow service (``Mistral``)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:87
+msgid "8989"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:89
+msgid ""
+"To function properly, some OpenStack components depend on other, non-"
+"OpenStack services. For example, the OpenStack dashboard uses HTTP for non-"
+"secure communication. In this case, you must configure the firewall to allow "
+"traffic to and from HTTP."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:94
+msgid "This table lists the ports that other OpenStack components use:"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:96
+msgid ""
+"Default ports that secondary services related to OpenStack components use"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:99
+msgid "Service"
+msgstr "Сервис"
+
+#: ../firewalls-default-ports.rst:100
+msgid "Default port"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:101
+msgid "Used by"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:102
+msgid "HTTP"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:103
+msgid "80"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:104
+msgid ""
+"OpenStack dashboard (``Horizon``) when it is not configured to use secure "
+"access."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:105
+msgid "HTTP alternate"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:106
+msgid "8080"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:107
+msgid "OpenStack Object Storage (``swift``) service."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:108
+msgid "HTTPS"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:109
+msgid "443"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:110
+msgid ""
+"Any OpenStack service that is enabled for SSL, especially secure-access "
+"dashboard."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:111
+msgid "rsync"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:112
+msgid "873"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:113
+msgid "OpenStack Object Storage. Required."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:114
+msgid "iSCSI target"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:115
+msgid "3260"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:116
+msgid "OpenStack Block Storage. Required."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:117
+msgid "MySQL database service"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:118
+msgid "3306"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:119
+msgid "Most OpenStack components."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:120
+msgid "Message Broker (AMQP traffic)"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:121
+msgid "5672"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:122
+msgid "OpenStack Block Storage, Networking, Orchestration, and Compute."
+msgstr ""
+
+#: ../firewalls-default-ports.rst:124
+msgid ""
+"On some deployments, the default port used by a service may fall within the "
+"defined local port range of a host. To check a host's local port range:"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:132
+msgid ""
+"If a service's default port falls within this range, run the following "
+"program to check if the port has already been assigned to another "
+"application:"
+msgstr ""
+
+#: ../firewalls-default-ports.rst:140
+msgid ""
+"Configure the service to use a different port if the default port is already "
+"being used by another application."
+msgstr ""
+
+#: ../get-started-conceptual-architecture.rst:7
+msgid "Conceptual architecture"
+msgstr "Концептуальная архитектура"
+
+#: ../get-started-conceptual-architecture.rst:9
+msgid ""
+"The following diagram shows the relationships among the OpenStack services:"
+msgstr ""
+
+#: ../get-started-conceptual-architecture.rst:None
+msgid "OpenStack conceptual architecture"
+msgstr ""
+
+#: ../get-started-logical-architecture.rst:3
+#: ../get-started-logical-architecture.rst:None
+msgid "Logical architecture"
+msgstr ""
+
+#: ../get-started-logical-architecture.rst:5
+msgid ""
+"To design, deploy, and configure OpenStack, administrators must understand "
+"the logical architecture."
+msgstr ""
+
+#: ../get-started-logical-architecture.rst:8
+msgid ""
+"As shown in :ref:`get_started_conceptual_architecture`, OpenStack consists "
+"of several independent parts, named the OpenStack services. All services "
+"authenticate through a common Identity service. Individual services interact "
+"with each other through public APIs, except where privileged administrator "
+"commands are necessary."
+msgstr ""
+
+#: ../get-started-logical-architecture.rst:14
+msgid ""
+"Internally, OpenStack services are composed of several processes. All "
+"services have at least one API process, which listens for API requests, "
+"preprocesses them and passes them on to other parts of the service. With the "
+"exception of the Identity service, the actual work is done by distinct "
+"processes."
+msgstr ""
+
+#: ../get-started-logical-architecture.rst:20
+msgid ""
+"For communication between the processes of one service, an AMQP message "
+"broker is used. The service's state is stored in a database. When deploying "
+"and configuring your OpenStack cloud, you can choose among several message "
+"broker and database solutions, such as RabbitMQ, MySQL, MariaDB, and SQLite."
+msgstr ""
+
+#: ../get-started-logical-architecture.rst:26
+msgid ""
+"Users can access OpenStack via the web-based user interface implemented by "
+"the Horizon Dashboard, via `command-line clients <https://docs.openstack.org/"
+"cli-reference/>`__ and by issuing API requests through tools like browser "
+"plug-ins or :command:`curl`. For applications, `several SDKs <https://"
+"developer.openstack.org/#sdk>`__ are available. Ultimately, all these access "
+"methods issue REST API calls to the various OpenStack services."
+msgstr ""
+
+#: ../get-started-logical-architecture.rst:34
+msgid ""
+"The following diagram shows the most common, but not the only possible, "
+"architecture for an OpenStack cloud:"
+msgstr ""
+
+#: ../get-started-with-openstack.rst:3
+msgid "Get started with OpenStack"
+msgstr ""
+
+#: ../get-started-with-openstack.rst:5
+msgid ""
+"The OpenStack project is an open source cloud computing platform for all "
+"types of clouds, which aims to be simple to implement, massively scalable, "
+"and feature rich. Developers and cloud computing technologists from around "
+"the world create the OpenStack project."
+msgstr ""
+
+#: ../get-started-with-openstack.rst:10
+msgid ""
+"OpenStack provides an :term:`Infrastructure-as-a-Service (IaaS)` solution "
+"through a set of interrelated services. Each service offers an :term:"
+"`Application Programming Interface (API)` that facilitates this integration. "
+"Depending on your needs, you can install some or all services."
+msgstr ""
+
+#: ../get-started-with-openstack.rst:17
+msgid "The OpenStack services"
+msgstr ""
+
+#: ../get-started-with-openstack.rst:19
+msgid ""
+"The `OpenStack project navigator <https://www.openstack.org/software/project-"
+"navigator/openstack-components>`_ lets you browse the OpenStack services "
+"that make up the OpenStack architecture. The services are categorized per "
+"the service type and release series."
+msgstr ""
+
+#: ../get-started-with-openstack.rst:25
+msgid "The OpenStack architecture"
+msgstr ""
+
+#: ../get-started-with-openstack.rst:27
+msgid ""
+"The following sections describe the OpenStack architecture in more detail:"
+msgstr ""
+
+#: ../index.rst:3
+msgid "OpenStack Installation Guide"
+msgstr ""
+
+#: ../launch-instance-cinder.rst:4 ../launch-instance.rst:202
+#: ../overview.rst:125
+msgid "Block Storage"
+msgstr "Блочное Хранилище"
+
+#: ../launch-instance-cinder.rst:7
+msgid "Create a volume"
+msgstr "Создайте диск"
+
+#: ../launch-instance-cinder.rst:9
+msgid ""
+"Source the ``demo`` credentials to perform the following steps as a non-"
+"administrative project:"
+msgstr "Используйте полномочия ``demo`` для  выполнения следующих шагов:"
+
+#: ../launch-instance-cinder.rst:16
+msgid "Create a 1 GB volume:"
+msgstr "Создайте 1 ГБ диск:"
+
+#: ../launch-instance-cinder.rst:46
+msgid ""
+"After a short time, the volume status should change from ``creating`` to "
+"``available``:"
+msgstr ""
+"Довольно быстро статус диска должен изменится с ``creating` на ``available``:"
+""
+
+#: ../launch-instance-cinder.rst:60
+msgid "Attach the volume to an instance"
+msgstr "Подключите диск к инстансу"
+
+#: ../launch-instance-cinder.rst:62
+msgid "Attach a volume to an instance:"
+msgstr "Подключите диск к инстансу"
+
+#: ../launch-instance-cinder.rst:68
+msgid ""
+"Replace ``INSTANCE_NAME`` with the name of the instance and ``VOLUME_NAME`` "
+"with the name of the volume you want to attach to it."
+msgstr ""
+"Замените ``INSTANCE_NAME`` на имя инстанса и `VOLUME_NAME`` на имя тома, "
+"который вы хотите к нему подключить."
+
+#: ../launch-instance-cinder.rst:71
+#: ../launch-instance-networks-provider.rst:129
+#: ../launch-instance-networks-selfservice.rst:112
+msgid "**Example**"
+msgstr "**Пример**"
+
+#: ../launch-instance-cinder.rst:73
+msgid "Attach the ``volume1`` volume to the ``provider-instance`` instance:"
+msgstr "Подключите том ``volume1`` к инстансу``provider-instance``"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-initial-rings.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-cinder.rst:81 ../launch-instance-selfservice.rst:236
+msgid "This command provides no output."
+msgstr "Эта команда ничего не выводит."
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-cinder.rst:83
+msgid "List volumes:"
+msgstr "Получите список дисков:"
+
+#: ../launch-instance-cinder.rst:95
+msgid ""
+"Access your instance using SSH and use the ``fdisk`` command to verify "
+"presence of the volume as the ``/dev/vdb`` block storage device:"
+msgstr ""
+"Войдите в ваш инстанс по SSH и используйте команду ``fdisk`` для того чтобы "
+"убедиться в наличии тома как устройства блочного хранилища ``/dev/vdb``:"
+
+#: ../launch-instance-cinder.rst:123
+msgid ""
+"You must create a file system on the device and mount it to use the volume."
+msgstr ""
+"Вам необходимо создать на устройстве файловую систему  и монтировать её, "
+"чтобы использовать том."
+
+#: ../launch-instance-cinder.rst:126
+msgid ""
+"For more information about how to manage volumes, see the `python-"
+"openstackclient documentation for Pike <https://docs.openstack.org/python-"
+"openstackclient/pike/cli/command-objects/volume.html>`_, the `python-"
+"openstackclient documentation for Queens <https://docs.openstack.org/python-"
+"openstackclient/queens/cli/command-objects/volume.html>`_, or the `python-"
+"openstackclient documentation for Rocky <https://docs.openstack.org/python-"
+"openstackclient/rocky/cli/command-objects/volume.html>`_."
+msgstr ""
+
+#: ../launch-instance-cinder.rst:133
+msgid "Return to :ref:`launch-instance`."
+msgstr "Вернитесь к :ref:`launch-instance`."
+
+#: ../launch-instance-networks-provider.rst:4
+msgid "Provider network"
+msgstr "Сеть провайдера"
+
+#: ../launch-instance-networks-provider.rst:6
+msgid ""
+"Before launching an instance, you must create the necessary virtual network "
+"infrastructure. For networking option 1, an instance uses a provider "
+"(external) network that connects to the physical network infrastructure via "
+"layer-2 (bridging/switching). This network includes a DHCP server that "
+"provides IP addresses to instances."
+msgstr ""
+"Перед запуском инстанса вы должны создать необходимые виртуальные сети.  В "
+"первом варианте сети инстанс использует сеть провайдера (внешняя) которая "
+"подключена к физической сети через уровень 2 (layer-2, bridging/switching). "
+"Эта сеть включает DHCP сервер который предоставляет IP адреса инстансам."
+
+#: ../launch-instance-networks-provider.rst:12
+msgid ""
+"The ``admin`` or other privileged user must create this network because it "
+"connects directly to the physical network infrastructure."
+msgstr ""
+"``admin`` или другой привилегированный пользователь должен создать эту сеть "
+"потому что она подключается прямо к физической сетевой инфраструктуре. "
+
+#: ../launch-instance-networks-provider.rst:17
+#: ../launch-instance-networks-selfservice.rst:23
+msgid ""
+"The following instructions and diagrams use example IP address ranges. You "
+"must adjust them for your particular environment."
+msgstr ""
+"Следующие инструкции и схемы используют примерные  диапазоны IP адресов. Вы "
+"должны изменить их для вашего конкретного окружения."
+
+#: ../launch-instance-networks-provider.rst:23
+msgid "**Networking Option 1: Provider networks - Overview**"
+msgstr "**Вариант сети 1: Сеть провайдера - Обзор**"
+
+#: ../launch-instance-networks-provider.rst:23
+msgid "Networking Option 1: Provider networks - Overview"
+msgstr ""
+
+#: ../launch-instance-networks-provider.rst:28
+msgid "**Networking Option 1: Provider networks - Connectivity**"
+msgstr "**Вариант сети 1: Сеть провайдера - Подключение**"
+
+#: ../launch-instance-networks-provider.rst:28
+msgid "Networking Option 1: Provider networks - Connectivity"
+msgstr ""
+
+#: ../launch-instance-networks-provider.rst:31
+msgid "Create the provider network"
+msgstr "Создайте сеть провайдера"
+
+#: ../launch-instance-networks-provider.rst:33
+#: ../launch-instance-networks-selfservice.rst:219
+msgid ""
+"On the controller node, source the ``admin`` credentials to gain access to "
+"admin-only CLI commands:"
+msgstr ""
+"На управляющем узле, подставьте учетную запись ``admin`` для получения "
+"доступа к инструкциям командной строки, доступным только администраторам:"
+
+# #-#-#-#-#  networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-initial-networks.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-networks-provider.rst:40
+#: ../launch-instance-networks-selfservice.rst:46
+msgid "Create the network:"
+msgstr "Создайте сеть:"
+
+#: ../launch-instance-networks-provider.rst:80
+msgid "The ``--share`` option allows all projects to use the virtual network."
+msgstr ""
+"Флаг ``--share`` разрешает всем проектам использовать виртуальную сеть"
+
+#: ../launch-instance-networks-provider.rst:82
+msgid ""
+"The ``--external`` option defines the virtual network to be external. If you "
+"wish to create an internal network, you can use ``--internal`` instead. "
+"Default value is ``internal``."
+msgstr ""
+
+#: ../launch-instance-networks-provider.rst:86
+msgid ""
+"The ``--provider-physical-network provider`` and ``--provider-network-type "
+"flat`` options connect the flat virtual network to the flat (native/"
+"untagged) physical network on the ``eth1`` interface on the host using "
+"information from the following files:"
+msgstr ""
+"Опции ``--provider-physical-network provider`` и ``--provider-network-type "
+"flat`` соединяют плоскую виртаульную сеть с плоской (родной/непомеченной) "
+"физической сетью на интерфейсе ``eth1``хоста используя информацию из "
+"следующих файлов:"
+
+#: ../launch-instance-networks-provider.rst:91
+#: ../launch-instance-networks-selfservice.rst:83
+msgid "``ml2_conf.ini``:"
+msgstr "``ml2_conf.ini``:"
+
+#: ../launch-instance-networks-provider.rst:98
+msgid "``linuxbridge_agent.ini``:"
+msgstr "``linuxbridge_agent.ini``:"
+
+#: ../launch-instance-networks-provider.rst:105
+#: ../launch-instance-networks-selfservice.rst:93
+msgid "Create a subnet on the network:"
+msgstr "Создайте подсеть в сети:"
+
+#: ../launch-instance-networks-provider.rst:114
+msgid ""
+"Replace ``PROVIDER_NETWORK_CIDR`` with the subnet on the provider physical "
+"network in CIDR notation."
+msgstr ""
+"Замените ``PROVIDER_NETWORK_CIDR`` подсетью в провайдерской физической сети "
+"нотации CIDR."
+
+#: ../launch-instance-networks-provider.rst:117
+msgid ""
+"Replace ``START_IP_ADDRESS`` and ``END_IP_ADDRESS`` with the first and last "
+"IP address of the range within the subnet that you want to allocate for "
+"instances. This range must not include any existing active IP addresses."
+msgstr ""
+"Замените ``START_IP_ADDRESS`` и ``END_IP_ADDRESS`` первым и последним IP "
+"адресами из диапазона в подсети, которую вы хотите выделить для инстансов. "
+"Этот диапазон не должен включать существующие активные адреса."
+
+#: ../launch-instance-networks-provider.rst:122
+#: ../launch-instance-networks-selfservice.rst:101
+msgid ""
+"Replace ``DNS_RESOLVER`` with the IP address of a DNS resolver. In most "
+"cases, you can use one from the ``/etc/resolv.conf`` file on the host."
+msgstr ""
+"Замените ``DNS_RESOLVER`` IP адресом  DNS распознавателя. В большинстве "
+"случаев, вы можете использовать адрес из файла ``/etc/resolv.conf`` на хосте."
+""
+
+#: ../launch-instance-networks-provider.rst:126
+msgid ""
+"Replace ``PROVIDER_NETWORK_GATEWAY`` with the gateway IP address on the "
+"provider network, typically the \".1\" IP address."
+msgstr ""
+"Замените ``PROVIDER_NETWORK_GATEWAY`` IP адресом шлюза провайдерской сети, "
+"обычно это \".1\"."
+
+#: ../launch-instance-networks-provider.rst:131
+msgid ""
+"The provider network uses 203.0.113.0/24 with a gateway on 203.0.113.1. A "
+"DHCP server assigns each instance an IP address from 203.0.113.101 to 203.0."
+"113.250. All instances use 8.8.4.4 as a DNS resolver."
+msgstr ""
+"Провайдерская сеть использует 203.0.113.0/24 со шлюзом 203.0.113.1.  DHCP "
+"сервер назначает каждому инстансы адрес из диапазона  203.0.113.101 - 203.0."
+"113.250. Все инстансы используют 8.8.4.4 в качестве DNS распознавателя."
+
+#: ../launch-instance-networks-provider.rst:168
+#: ../launch-instance-networks-selfservice.rst:267
+msgid ""
+"Return to :ref:`Launch an instance - Create virtual networks <launch-"
+"instance-networks>`."
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:4
+msgid "Self-service network"
+msgstr "Собственная сеть"
+
+#: ../launch-instance-networks-selfservice.rst:6
+msgid ""
+"If you chose networking option 2, you can also create a self-service "
+"(private) network that connects to the physical network infrastructure via "
+"NAT. This network includes a DHCP server that provides IP addresses to "
+"instances. An instance on this network can automatically access external "
+"networks such as the Internet. However, access to an instance on this "
+"network from external networks such as the Internet requires a :term:"
+"`floating IP address`."
+msgstr ""
+"Если вы выбрали сетевую настройку 2, вы так же можете создать собственную "
+"(частную) сеть, которая соединяется с инфраструктурой физической сети по NAT."
+" Эта сеть включает в себя DHCP сервер, который предоставляет IP адреса "
+"инстансам. Инстанс в этой  сети автоматически имеет доступ к внешней сети, "
+"такой как Интернет. Однако, доступ к инстансу в этой сети из внешней сети, "
+"такой как Интернет, требует наличия :term:`назначаемого адреса`."
+
+#: ../launch-instance-networks-selfservice.rst:13
+msgid ""
+"The ``demo`` or other unprivileged user can create this network because it "
+"provides connectivity to instances within the ``demo`` project only."
+msgstr ""
+"``demo`` или другой не привилегированный пользователь может создать эту сеть "
+"поскольку она обеспечивает подключение к инстансам только для проекта "
+"``demo``."
+
+#: ../launch-instance-networks-selfservice.rst:18
+msgid ""
+"You must :ref:`create the provider network <launch-instance-networks-"
+"provider>` before the self-service network."
+msgstr ""
+"Вы должны :ref:`создать провайдерскую сеть <launch-instance-networks-"
+"provider>` до создания сети самообслуживания."
+
+#: ../launch-instance-networks-selfservice.rst:29
+msgid "**Networking Option 2: Self-service networks - Overview**"
+msgstr "**Сетевая Опция 2: Сети самообслуживания - Обзор**"
+
+#: ../launch-instance-networks-selfservice.rst:29
+msgid "Networking Option 2: Self-service networks - Overview"
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:34
+msgid "**Networking Option 2: Self-service networks - Connectivity**"
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:34
+msgid "Networking Option 2: Self-service networks - Connectivity"
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:37
+msgid "Create the self-service network"
+msgstr "Создайте собственную сеть"
+
+#: ../launch-instance-networks-selfservice.rst:39
+#: ../launch-instance-networks-selfservice.rst:165
+#: ../launch-instance-provider.rst:12 ../launch-instance-selfservice.rst:12
+msgid ""
+"On the controller node, source the ``demo`` credentials to gain access to "
+"user-only CLI commands:"
+msgstr ""
+"На управляющем узле укажите учетную запись ``demo`` для получения доступа к "
+"инструкциям командной строки, доступным только пользователям:"
+
+#: ../launch-instance-networks-selfservice.rst:79
+msgid ""
+"Non-privileged users typically cannot supply additional parameters to this "
+"command. The service automatically chooses parameters using information from "
+"the following files:"
+msgstr ""
+"Не обладающие правами пользователи обычно не могут передавать дополнительные "
+"параметры этой команде. Служба автоматически выбирает параметры используя "
+"информацию из следующих файлов:"
+
+#: ../launch-instance-networks-selfservice.rst:105
+msgid ""
+"Replace ``SELFSERVICE_NETWORK_GATEWAY`` with the gateway you want to use on "
+"the self-service network, typically the \".1\" IP address."
+msgstr ""
+"Замените ``SELFSERVICE_NETWORK_GATEWAY`` на шлюз который вы будете "
+"использовать для собственной сети, обычно это \".1\" IP адрес."
+
+#: ../launch-instance-networks-selfservice.rst:108
+msgid ""
+"Replace ``SELFSERVICE_NETWORK_CIDR`` with the subnet you want to use on the "
+"self-service network. You can use any arbitrary value, although we recommend "
+"a network from `RFC 1918 <https://tools.ietf.org/html/rfc1918>`_."
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:114
+msgid ""
+"The self-service network uses 172.16.1.0/24 with a gateway on 172.16.1.1. A "
+"DHCP server assigns each instance an IP address from 172.16.1.2 to 172.16.1."
+"254. All instances use 8.8.4.4 as a DNS resolver."
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:152
+msgid "Create a router"
+msgstr "Создать маршрутизатор"
+
+#: ../launch-instance-networks-selfservice.rst:154
+msgid ""
+"Self-service networks connect to provider networks using a virtual router "
+"that typically performs bidirectional NAT. Each router contains an interface "
+"on at least one self-service network and a gateway on a provider network."
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:158
+msgid ""
+"The provider network must include the ``router:external`` option to enable "
+"self-service routers to use it for connectivity to external networks such as "
+"the Internet. The ``admin`` or other privileged user must include this "
+"option during network creation or add it later. In this case, the ``router:"
+"external`` option was set by using the ``--external`` parameter when "
+"creating the ``provider`` network."
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:172
+msgid "Create the router:"
+msgstr "Создать маршрутизатор:"
+
+#: ../launch-instance-networks-selfservice.rst:200
+msgid "Add the self-service network subnet as an interface on the router:"
+msgstr "Добавьте собственную сеть в интерфейс маршрутизатора:"
+
+#: ../launch-instance-networks-selfservice.rst:206
+msgid "Set a gateway on the provider network on the router:"
+msgstr "Укажите шлюз сети провайдера на маршрутизаторае:"
+
+#: ../launch-instance-networks-selfservice.rst:215
+msgid ""
+"We recommend that you verify operation and fix any issues before proceeding. "
+"The following steps use the IP address ranges from the network and subnet "
+"creation examples."
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:226
+msgid ""
+"List network namespaces. You should see one ``qrouter`` namespace and two "
+"``qdhcp`` namespaces."
+msgstr ""
+"Список  сетевого пространства имен. Вы увидите одно пространство имен "
+"``qrouter`` и два пространства имен   ``qdhcp``."
+
+#: ../launch-instance-networks-selfservice.rst:237
+msgid ""
+"List ports on the router to determine the gateway IP address on the provider "
+"network:"
+msgstr ""
+
+#: ../launch-instance-networks-selfservice.rst:251
+msgid ""
+"Ping this IP address from the controller node or any host on the physical "
+"provider network:"
+msgstr ""
+"Пропингуйте этот IP адрес с управляющего узла или любого другого хоста в "
+"физической сети провайдера:"
+
+#: ../launch-instance-provider.rst:4
+msgid "Launch an instance on the provider network"
+msgstr "Запустите инстанс в сети провайдера"
+
+#: ../launch-instance-provider.rst:7 ../launch-instance-selfservice.rst:7
+msgid "Determine instance options"
+msgstr "Задайте настройки инстанса"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:9 ../launch-instance-selfservice.rst:9
+msgid ""
+"To launch an instance, you must at least specify the flavor, image name, "
+"network, security group, key, and instance name."
+msgstr ""
+"Для запуска инстанса, вам необходимо как минимум выбрать схему, имя образа, "
+"сеть, группу безопасности, ключ и имя инстанса."
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:19 ../launch-instance-selfservice.rst:19
+msgid ""
+"A flavor specifies a virtual resource allocation profile which includes "
+"processor, memory, and storage."
+msgstr ""
+"Схема описывает выделение виртуальных ресурсов, которые включают процессор, "
+"память и хранилище."
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:22 ../launch-instance-selfservice.rst:22
+msgid "List available flavors:"
+msgstr "Получите список доступных схем:"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:36 ../launch-instance-selfservice.rst:36
+msgid "You can also reference a flavor by ID."
+msgstr "Вы так же можете указывать схему по ID."
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:38 ../launch-instance-selfservice.rst:38
+msgid "List available images:"
+msgstr "Получите список доступных образов:"
+
+#: ../launch-instance-provider.rst:50 ../launch-instance-selfservice.rst:50
+msgid "This instance uses the ``cirros`` image."
+msgstr "Этот инстанс использует образ ``cirros``."
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:52 ../launch-instance-selfservice.rst:52
+msgid "List available networks:"
+msgstr "Получите список доступных сетей:"
+
+#: ../launch-instance-provider.rst:65
+msgid ""
+"This instance uses the ``provider`` provider network. However, you must "
+"reference this network using the ID instead of the name."
+msgstr ""
+"Этот инстанс использует ``provider`` провайдерскую сеть. Как бы то ни было, "
+"вы должны указать эту сеть используя ID вместо имени."
+
+#: ../launch-instance-provider.rst:70
+msgid ""
+"If you chose option 2, the output should also contain the ``selfservice`` "
+"self-service network."
+msgstr ""
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:73 ../launch-instance-selfservice.rst:68
+msgid "List available security groups:"
+msgstr "Получите список групп безопасности:"
+
+#: ../launch-instance-provider.rst:85 ../launch-instance-selfservice.rst:80
+msgid "This instance uses the ``default`` security group."
+msgstr "Этот инстанс использует группу безопасности ``default``."
+
+#: ../launch-instance-provider.rst:88
+msgid "Launch the instance"
+msgstr "Запустить инстанс"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:90 ../launch-instance-selfservice.rst:82
+msgid "Launch the instance:"
+msgstr "Запустите инстанс:"
+
+#: ../launch-instance-provider.rst:92
+msgid ""
+"Replace ``PROVIDER_NET_ID`` with the ID of the ``provider`` provider network."
+""
+msgstr "Замените ``PROVIDER_NET_ID`` на ID ``provider`` провайдерской сети."
+
+#: ../launch-instance-provider.rst:97
+msgid ""
+"If you chose option 1 and your environment contains only one network, you "
+"can omit the ``--nic`` option because OpenStack automatically chooses the "
+"only network available."
+msgstr ""
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance-provider.rst:139 ../launch-instance-selfservice.rst:125
+msgid "Check the status of your instance:"
+msgstr "Проверьте статус инстанса:"
+
+#: ../launch-instance-provider.rst:151 ../launch-instance-selfservice.rst:138
+msgid ""
+"The status changes from ``BUILD`` to ``ACTIVE`` when the build process "
+"successfully completes."
+msgstr ""
+
+#: ../launch-instance-provider.rst:155
+msgid "Access the instance using the virtual console"
+msgstr "Зайдите на инстанс используя виртуальную консоль"
+
+#: ../launch-instance-provider.rst:157 ../launch-instance-selfservice.rst:144
+msgid ""
+"Obtain a :term:`Virtual Network Computing (VNC)` session URL for your "
+"instance and access it from a web browser:"
+msgstr ""
+"Obtain a :term:`Virtual Network Computing (VNC)` session URL for your "
+"instance and access it from a web browser:"
+
+#: ../launch-instance-provider.rst:173 ../launch-instance-selfservice.rst:160
+msgid ""
+"If your web browser runs on a host that cannot resolve the ``controller`` "
+"host name, you can replace ``controller`` with the IP address of the "
+"management interface on your controller node."
+msgstr ""
+"Если ваш браузер открыт на хосте который не распозноет имя хоста "
+"``controller``, вы можете изменить  ``controller`` на IP адрес менеджерского "
+"интерфейса вашего управляющего узла."
+
+#: ../launch-instance-provider.rst:177 ../launch-instance-selfservice.rst:164
+msgid ""
+"The CirrOS image includes conventional user name/password authentication and "
+"provides these credentials at the login prompt. After logging into CirrOS, "
+"we recommend that you verify network connectivity using ``ping``."
+msgstr ""
+
+#: ../launch-instance-provider.rst:182
+msgid "Verify access to the provider physical network gateway:"
+msgstr "Проверьте доступ к шлюзу провайдерской сети: "
+
+#: ../launch-instance-provider.rst:198 ../launch-instance-selfservice.rst:185
+msgid "Verify access to the internet:"
+msgstr "Проверьте доступ к интернету:"
+
+#: ../launch-instance-provider.rst:215 ../launch-instance-selfservice.rst:202
+msgid "Access the instance remotely"
+msgstr "Удаленный доступ к инстансу"
+
+#: ../launch-instance-provider.rst:217
+msgid ""
+"Verify connectivity to the instance from the controller node or any host on "
+"the provider physical network:"
+msgstr ""
+"Проверьте подключение к инстансу с управляющего узла или любого другого "
+"хоста в физической сети провайдера:"
+
+#: ../launch-instance-provider.rst:234 ../launch-instance-selfservice.rst:268
+msgid ""
+"Access your instance using SSH from the controller node or any host on the "
+"provider physical network:"
+msgstr ""
+"Войдите в ваш инстанс по SSH с управляющего узла или любого хоста в "
+"провайдерской сети:"
+
+#: ../launch-instance-provider.rst:246 ../launch-instance-selfservice.rst:280
+msgid ""
+"If your instance does not launch or seem to work as you expect, see the "
+"`Troubleshoot Compute documentation for Pike <https://docs.openstack.org/"
+"nova/pike/admin/support-compute.html>`_, the `Troubleshoot Compute "
+"documentation for Queens <https://docs.openstack.org/nova/queens/admin/"
+"support-compute.html>`_, or the `Troubleshoot Compute documentation for "
+"Rocky <https://docs.openstack.org/nova/rocky/admin/support-compute.html>`_ "
+"for more information or use one of the :doc:`many other options <common/app-"
+"support>` to seek assistance. We want your first installation to work!"
+msgstr ""
+
+#: ../launch-instance-provider.rst:256 ../launch-instance-selfservice.rst:290
+msgid "Return to :ref:`Launch an instance <launch-instance-complete>`."
+msgstr ""
+
+#: ../launch-instance-selfservice.rst:4
+msgid "Launch an instance on the self-service network"
+msgstr "Запустите инстанс в собственной сети "
+
+#: ../launch-instance-selfservice.rst:65
+msgid ""
+"This instance uses the ``selfservice`` self-service network. However, you "
+"must reference this network using the ID instead of the name."
+msgstr ""
+"Этот инстанс использует ``selfservice`` собственный сетевой сервис. Как бы "
+"то ни было, вы должны указать эту сеть используя ID вместо имени."
+
+#: ../launch-instance-selfservice.rst:84
+msgid ""
+"Replace ``SELFSERVICE_NET_ID`` with the ID of the ``selfservice`` network."
+msgstr "Замените ``SELFSERVICE_NET_ID`` на ID ``selfservice``сети."
+
+#: ../launch-instance-selfservice.rst:142
+msgid "Access the instance using a virtual console"
+msgstr "Зайдите на инстанс используя виртуальную консоль"
+
+#: ../launch-instance-selfservice.rst:169
+msgid "Verify access to the self-service network gateway:"
+msgstr "Проверьте доступ к шлюзу собственного сервиса сети: "
+
+#: ../launch-instance-selfservice.rst:204
+msgid "Create a :term:`floating IP address` on the provider virtual network:"
+msgstr "Создайте  :term:`floating IP address` в провайдерской сети:"
+
+#: ../launch-instance-selfservice.rst:228
+msgid "Associate the floating IP address with the instance:"
+msgstr "Укажите назначаемый IP-адрес для инстанса:"
+
+#: ../launch-instance-selfservice.rst:238
+msgid "Check the status of your floating IP address:"
+msgstr "Проверьте статус своего внешнего IP-адреса:"
+
+#: ../launch-instance-selfservice.rst:251
+msgid ""
+"Verify connectivity to the instance via floating IP address from the "
+"controller node or any host on the provider physical network:"
+msgstr ""
+"Проверьте подключение к инстансу по назначаемому IP адресу с управляющего "
+"узла или любого другого хоста в физической сети провайдера:"
+
+#: ../launch-instance.rst:5 ../launch-instance.rst:187
+msgid "Launch an instance"
+msgstr "Запуск инстанса"
+
+#: ../launch-instance.rst:7
+msgid ""
+"This section creates the necessary virtual networks to support launching "
+"instances. Networking option 1 includes one provider (external) network with "
+"one instance that uses it. Networking option 2 includes one provider network "
+"with one instance that uses it and one self-service (private) network with "
+"one instance that uses it."
+msgstr ""
+
+#: ../launch-instance.rst:13
+msgid ""
+"The instructions in this section use command-line interface (CLI) tools on "
+"the controller node. However, you can follow the instructions on any host "
+"that the tools are installed."
+msgstr ""
+
+#: ../launch-instance.rst:17
+msgid ""
+"For more information on the CLI tools, see the `OpenStackClient "
+"documentation for Pike <https://docs.openstack.org/python-openstackclient/"
+"pike/cli/command-objects/server.html#server-create>`_, the `OpenStackClient "
+"documentation for Queens <https://docs.openstack.org/python-openstackclient/"
+"queens/cli/command-objects/server.html#server-create>`_, or the "
+"`OpenStackClient documentation for Rocky <https://docs.openstack.org/python-"
+"openstackclient/rocky/cli/command-objects/server.html#server-create>`_."
+msgstr ""
+
+#: ../launch-instance.rst:24
+msgid ""
+"To use the dashboard, see the `Dashboard User Documentation for Pike <https:/"
+"/docs.openstack.org/horizon/pike/user/>`_, the `Dashboard User Documentation "
+"for Queens <https://docs.openstack.org/horizon/queens/user/>`_, or the "
+"`Dashboard User Documentation for Rocky <https://docs.openstack.org/horizon/"
+"rocky/user/>`_."
+msgstr ""
+
+#: ../launch-instance.rst:34
+msgid "Create virtual networks"
+msgstr "Создайте виртуальные сети"
+
+#: ../launch-instance.rst:36
+msgid ""
+"Create virtual networks for the networking option that you chose when "
+"configuring Neutron. If you chose option 1, create only the provider network."
+" If you chose option 2, create the provider and self-service networks."
+msgstr ""
+
+#: ../launch-instance.rst:47
+msgid ""
+"After creating the appropriate networks for your environment, you can "
+"continue preparing the environment to launch an instance."
+msgstr ""
+"После создания необходимых сетей для вашего окружения, вы можете продолжить "
+"подготовку окружения к запуску инстанса."
+
+#: ../launch-instance.rst:51
+msgid "Create m1.nano flavor"
+msgstr "Создайте тип инстанса m1.nano"
+
+#: ../launch-instance.rst:53
+msgid ""
+"The smallest default flavor consumes 512 MB memory per instance. For "
+"environments with compute nodes containing less than 4 GB memory, we "
+"recommend creating the ``m1.nano`` flavor that only requires 64 MB per "
+"instance. Only use this flavor with the CirrOS image for testing purposes."
+msgstr ""
+"Самый маленький стандартный тип инстанса включает 512Мб ОЗУ на инстанс. Для "
+"окружений с вычислительными узлами с менее чем 4Гб ОЗУ мы рекомендуем "
+"создать шаблон инстанса ``m1.nano`` который требует всего 64Мб на инстанс. "
+"Используйте этот тип инстанса только для CirrOS образа в тестовых целях."
+
+#: ../launch-instance.rst:80
+msgid "Generate a key pair"
+msgstr "Сгенерируйте пару ключей"
+
+#: ../launch-instance.rst:82
+msgid ""
+"Most cloud images support :term:`public key authentication` rather than "
+"conventional password authentication. Before launching an instance, you must "
+"add a public key to the Compute service."
+msgstr ""
+"Большинство образов поддерживают :term:`аутентификацию по публичному ключу`, "
+"а не привычную аутентификацию по паролю. Перед запуском инстанса, вы должны "
+"добавить публичный ключ в вычислительную службу."
+
+#: ../launch-instance.rst:86
+msgid "Source the ``demo`` project credentials:"
+msgstr ""
+
+#: ../launch-instance.rst:92
+msgid "Generate a key pair and add a public key:"
+msgstr ""
+
+#: ../launch-instance.rst:109
+msgid ""
+"Alternatively, you can skip the ``ssh-keygen`` command and use an existing "
+"public key."
+msgstr ""
+"Либо, вы можете пропустить команду ``ssh-keygen``  и использовать "
+"существующий публичный ключ."
+
+#: ../launch-instance.rst:112
+msgid "Verify addition of the key pair:"
+msgstr "Проверьте добавленую пару ключей:"
+
+#: ../launch-instance.rst:125
+msgid "Add security group rules"
+msgstr "Добавьте правила групп безопасности"
+
+#: ../launch-instance.rst:127
+msgid ""
+"By default, the ``default`` security group applies to all instances and "
+"includes firewall rules that deny remote access to instances. For Linux "
+"images such as CirrOS, we recommend allowing at least ICMP (ping) and secure "
+"shell (SSH)."
+msgstr ""
+
+#: ../launch-instance.rst:132
+msgid "Add rules to the ``default`` security group:"
+msgstr "Добавьте правила в группу безопасности ``default``:"
+
+#: ../launch-instance.rst:134
+msgid "Permit :term:`ICMP <Internet Control Message Protocol (ICMP)>` (ping):"
+msgstr ""
+"Разрешить  :term:`ICMP <Internet Control Message Protocol (ICMP)>` (ping):"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+#: ../launch-instance.rst:160
+msgid "Permit secure shell (SSH) access:"
+msgstr "Разрешите доступ до защищённой оболочки (SSH):"
+
+#: ../launch-instance.rst:189
+msgid ""
+"If you chose networking option 1, you can only launch an instance on the "
+"provider network. If you chose networking option 2, you can launch an "
+"instance on the provider network and the self-service network."
+msgstr ""
+
+#: ../launch-instance.rst:204
+msgid ""
+"If your environment includes the Block Storage service, you can create a "
+"volume and attach it to an instance."
+msgstr ""
+"Если ваша среда включает службу Блочного Хранилища, вы можете создать диск  "
+"и подключить его к инстансу."
+
+#: ../launch-instance.rst:213
+msgid "Orchestration"
+msgstr "Оркестрация"
+
+#: ../launch-instance.rst:215
+msgid ""
+"If your environment includes the Orchestration service, you can create a "
+"stack that launches an instance."
+msgstr ""
+"Если ваша среда включает службу Оркестрации, вы можете создать диск  и "
+"подключить его к инстансу."
+
+#: ../launch-instance.rst:218
+msgid ""
+"For more information, see the `Orchestration installation guide for Pike "
+"<https://docs.openstack.org/heat/pike/install/>`_, the `Orchestration "
+"installation guide for Queens <https://docs.openstack.org/heat/queens/"
+"install/>`_, or the `Orchestration installation guide for Rocky <https://"
+"docs.openstack.org/heat/rocky/install/>`_."
+msgstr ""
+
+#: ../launch-instance.rst:226
+msgid "Shared File Systems"
+msgstr "Общие файловые системы"
+
+#: ../launch-instance.rst:228
+msgid ""
+"If your environment includes the Shared File Systems service, you can create "
+"a share and mount it in an instance."
+msgstr ""
+"Если ваша среда включает службу Общих файловых систем, вы можете создать "
+"диск  и подключить его к инстансу."
+
+#: ../launch-instance.rst:231
+msgid ""
+"For more information, see the `Shared File Systems installation guide for "
+"Pike <https://docs.openstack.org/manila/pike/install/>`_, the `Shared File "
+"Systems installation guide for Queens <https://docs.openstack.org/manila/"
+"queens/install/>`_, or the `Shared File Systems installation guide for Rocky "
+"<https://docs.openstack.org/manila/rocky/install/>`_."
+msgstr ""
+
+#: ../openstack-services.rst:3
+msgid "Install OpenStack services"
+msgstr ""
+
+#: ../openstack-services.rst:5
+msgid ""
+"The installation of individual OpenStack services is covered in the Project "
+"Installation Guides that are available at the following locations:"
+msgstr ""
+
+#: ../openstack-services.rst:9
+msgid ""
+"`OpenStack Installation Guides for Wallaby <https://docs.openstack.org/"
+"wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:11
+msgid ""
+"`OpenStack Installation Guides for Victoria <https://docs.openstack.org/"
+"victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:13
+msgid ""
+"`OpenStack Installation Guides for Ussuri <https://docs.openstack.org/ussuri/"
+"install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:15
+msgid ""
+"`OpenStack Installation Guides for Train <https://docs.openstack.org/train/"
+"install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:17
+msgid ""
+"`OpenStack Installation Guides for Stein <https://docs.openstack.org/stein/"
+"install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:19
+msgid ""
+"`OpenStack Installation Guides for Rocky <https://docs.openstack.org/rocky/"
+"install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:21
+msgid ""
+"`OpenStack Installation Guides for Queens <https://docs.openstack.org/queens/"
+"install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:23
+msgid ""
+"`OpenStack Installation Guides for Pike <https://docs.openstack.org/pike/"
+"install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:27
+msgid "Minimal deployment for Wallaby"
+msgstr ""
+
+#: ../openstack-services.rst:29 ../openstack-services.rst:52
+#: ../openstack-services.rst:75 ../openstack-services.rst:98
+#: ../openstack-services.rst:121 ../openstack-services.rst:144
+#: ../openstack-services.rst:165 ../openstack-services.rst:186
+msgid ""
+"At a minimum, you need to install the following services. Install the "
+"services in the order specified below:"
+msgstr ""
+
+#: ../openstack-services.rst:32
+msgid ""
+"Identity service – `keystone installation for Wallaby <https://docs."
+"openstack.org/keystone/wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:34
+msgid ""
+"Image service – `glance installation for Wallaby <https://docs.openstack.org/"
+"glance/wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:36
+msgid ""
+"Placement service – `placement installation for Wallaby <https://docs."
+"openstack.org/placement/wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:38
+msgid ""
+"Compute service – `nova installation for Wallaby <https://docs.openstack.org/"
+"nova/wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:40
+msgid ""
+"Networking service – `neutron installation for Wallaby <https://docs."
+"openstack.org/neutron/wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:43 ../openstack-services.rst:66
+#: ../openstack-services.rst:89 ../openstack-services.rst:112
+#: ../openstack-services.rst:135 ../openstack-services.rst:156
+#: ../openstack-services.rst:177 ../openstack-services.rst:198
+msgid ""
+"We advise to also install the following components after you have installed "
+"the minimal deployment services:"
+msgstr ""
+
+#: ../openstack-services.rst:46
+msgid ""
+"Dashboard – `horizon installation for Wallaby <https://docs.openstack.org/"
+"horizon/wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:47
+msgid ""
+"Block Storage service – `cinder installation for Wallaby <https://docs."
+"openstack.org/cinder/wallaby/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:50
+msgid "Minimal deployment for Victoria"
+msgstr ""
+
+#: ../openstack-services.rst:55
+msgid ""
+"Identity service – `keystone installation for Victoria <https://docs."
+"openstack.org/keystone/victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:57
+msgid ""
+"Image service – `glance installation for Victoria <https://docs.openstack."
+"org/glance/victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:59
+msgid ""
+"Placement service – `placement installation for Victoria <https://docs."
+"openstack.org/placement/victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:61
+msgid ""
+"Compute service – `nova installation for Victoria <https://docs.openstack."
+"org/nova/victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:63
+msgid ""
+"Networking service – `neutron installation for Victoria <https://docs."
+"openstack.org/neutron/victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:69
+msgid ""
+"Dashboard – `horizon installation for Victoria <https://docs.openstack.org/"
+"horizon/victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:70
+msgid ""
+"Block Storage service – `cinder installation for Victoria <https://docs."
+"openstack.org/cinder/victoria/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:73
+msgid "Minimal deployment for Ussuri"
+msgstr ""
+
+#: ../openstack-services.rst:78
+msgid ""
+"Identity service – `keystone installation for Ussuri <https://docs.openstack."
+"org/keystone/ussuri/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:80
+msgid ""
+"Image service – `glance installation for Ussuri <https://docs.openstack.org/"
+"glance/ussuri/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:82
+msgid ""
+"Placement service – `placement installation for Ussuri <https://docs."
+"openstack.org/placement/ussuri/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:84
+msgid ""
+"Compute service – `nova installation for Ussuri <https://docs.openstack.org/"
+"nova/ussuri/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:86
+msgid ""
+"Networking service – `neutron installation for Ussuri <https://docs."
+"openstack.org/neutron/ussuri/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:92
+msgid ""
+"Dashboard – `horizon installation for Ussuri <https://docs.openstack.org/"
+"horizon/ussuri/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:93
+msgid ""
+"Block Storage service – `cinder installation for Ussuri <https://docs."
+"openstack.org/cinder/ussuri/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:96
+msgid "Minimal deployment for Train"
+msgstr ""
+
+#: ../openstack-services.rst:101
+msgid ""
+"Identity service – `keystone installation for Train <https://docs.openstack."
+"org/keystone/train/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:103
+msgid ""
+"Image service – `glance installation for Train <https://docs.openstack.org/"
+"glance/train/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:105
+msgid ""
+"Placement service – `placement installation for Train <https://docs."
+"openstack.org/placement/train/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:107
+msgid ""
+"Compute service – `nova installation for Train <https://docs.openstack.org/"
+"nova/train/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:109
+msgid ""
+"Networking service – `neutron installation for Train <https://docs.openstack."
+"org/neutron/train/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:115
+msgid ""
+"Dashboard – `horizon installation for Train <https://docs.openstack.org/"
+"horizon/train/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:116
+msgid ""
+"Block Storage service – `cinder installation for Train <https://docs."
+"openstack.org/cinder/train/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:119
+msgid "Minimal deployment for Stein"
+msgstr ""
+
+#: ../openstack-services.rst:124
+msgid ""
+"Identity service – `keystone installation for Stein <https://docs.openstack."
+"org/keystone/stein/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:126
+msgid ""
+"Image service – `glance installation for Stein <https://docs.openstack.org/"
+"glance/stein/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:128
+msgid ""
+"Placement service – `placement installation for Stein <https://docs."
+"openstack.org/placement/stein/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:130
+msgid ""
+"Compute service – `nova installation for Stein <https://docs.openstack.org/"
+"nova/stein/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:132
+msgid ""
+"Networking service – `neutron installation for Stein <https://docs.openstack."
+"org/neutron/stein/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:138
+msgid ""
+"Dashboard – `horizon installation for Stein <https://docs.openstack.org/"
+"horizon/stein/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:139
+msgid ""
+"Block Storage service – `cinder installation for Stein <https://docs."
+"openstack.org/cinder/stein/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:142
+msgid "Minimal deployment for Rocky"
+msgstr ""
+
+#: ../openstack-services.rst:147
+msgid ""
+"Identity service – `keystone installation for Rocky <https://docs.openstack."
+"org/keystone/rocky/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:149
+msgid ""
+"Image service – `glance installation for Rocky <https://docs.openstack.org/"
+"glance/rocky/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:151
+msgid ""
+"Compute service – `nova installation for Rocky <https://docs.openstack.org/"
+"nova/rocky/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:153
+msgid ""
+"Networking service – `neutron installation for Rocky <https://docs.openstack."
+"org/neutron/rocky/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:159
+msgid ""
+"Dashboard – `horizon installation for Rocky <https://docs.openstack.org/"
+"horizon/rocky/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:160
+msgid ""
+"Block Storage service – `cinder installation for Rocky <https://docs."
+"openstack.org/cinder/rocky/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:163
+msgid "Minimal deployment for Queens"
+msgstr ""
+
+#: ../openstack-services.rst:168
+msgid ""
+"Identity service – `keystone installation for Queens <https://docs.openstack."
+"org/keystone/queens/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:170
+msgid ""
+"Image service – `glance installation for Queens <https://docs.openstack.org/"
+"glance/queens/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:172
+msgid ""
+"Compute service – `nova installation for Queens <https://docs.openstack.org/"
+"nova/queens/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:174
+msgid ""
+"Networking service – `neutron installation for Queens <https://docs."
+"openstack.org/neutron/queens/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:180
+msgid ""
+"Dashboard – `horizon installation for Queens <https://docs.openstack.org/"
+"horizon/queens/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:181
+msgid ""
+"Block Storage service – `cinder installation for Queens <https://docs."
+"openstack.org/cinder/queens/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:184
+msgid "Minimal deployment for Pike"
+msgstr ""
+
+#: ../openstack-services.rst:189
+msgid ""
+"Identity service – `keystone installation for Pike <https://docs.openstack."
+"org/keystone/pike/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:191
+msgid ""
+"Image service – `glance installation for Pike <https://docs.openstack.org/"
+"glance/pike/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:193
+msgid ""
+"Compute service – `nova installation for Pike <https://docs.openstack.org/"
+"nova/pike/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:195
+msgid ""
+"Networking service – `neutron installation for Pike <https://docs.openstack."
+"org/neutron/pike/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:201
+msgid ""
+"Dashboard – `horizon installation for Pike <https://docs.openstack.org/"
+"horizon/pike/install/>`_"
+msgstr ""
+
+#: ../openstack-services.rst:202
+msgid ""
+"Block Storage service – `cinder installation for Pike <https://docs."
+"openstack.org/cinder/pike/install/>`_"
+msgstr ""
+
+#: ../overview.rst:3
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../overview.rst:5
+msgid ""
+"The :term:`OpenStack` project is an open source cloud computing platform "
+"that supports all types of cloud environments. The project aims for simple "
+"implementation, massive scalability, and a rich set of features. Cloud "
+"computing experts from around the world contribute to the project."
+msgstr ""
+
+#: ../overview.rst:10
+msgid ""
+"OpenStack provides an :term:`Infrastructure-as-a-Service (IaaS)` solution "
+"through a variety of complementary services. Each service offers an :term:"
+"`Application Programming Interface (API)` that facilitates this integration."
+msgstr ""
+
+#: ../overview.rst:15
+msgid ""
+"This guide covers step-by-step deployment of the major OpenStack services "
+"using a functional example architecture suitable for new users of OpenStack "
+"with sufficient Linux experience. This guide is not intended to be used for "
+"production system installations, but to create a minimum proof-of-concept "
+"for the purpose of learning about OpenStack."
+msgstr ""
+
+#: ../overview.rst:21
+msgid ""
+"After becoming familiar with basic installation, configuration, operation, "
+"and troubleshooting of these OpenStack services, you should consider the "
+"following steps toward deployment using a production architecture:"
+msgstr ""
+
+#: ../overview.rst:25
+msgid ""
+"Determine and implement the necessary core and optional services to meet "
+"performance and redundancy requirements."
+msgstr ""
+
+#: ../overview.rst:28
+msgid ""
+"Increase security using methods such as firewalls, encryption, and service "
+"policies."
+msgstr ""
+
+#: ../overview.rst:31
+msgid ""
+"Use a deployment tool such as Ansible, Chef, Puppet, or Salt to automate "
+"deployment and management of the production environment. The OpenStack "
+"project has a couple of deployment projects with specific guides per version:"
+""
+msgstr ""
+
+#: ../overview.rst:36
+msgid "`Wallaby release <https://docs.openstack.org/wallaby/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:37
+msgid "`Victoria release <https://docs.openstack.org/victoria/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:38
+msgid "`Ussuri release <https://docs.openstack.org/ussuri/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:39
+msgid "`Train release <https://docs.openstack.org/train/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:40
+msgid "`Stein release <https://docs.openstack.org/stein/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:41
+msgid "`Rocky release <https://docs.openstack.org/rocky/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:42
+msgid "`Queens release <https://docs.openstack.org/queens/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:43
+msgid "`Pike release <https://docs.openstack.org/pike/deploy/>`_"
+msgstr ""
+
+#: ../overview.rst:48
+msgid "Example architecture"
+msgstr "Пример архитектуры"
+
+#: ../overview.rst:50
+msgid ""
+"The example architecture requires at least two nodes (hosts) to launch a "
+"basic :term:`virtual machine <virtual machine (VM)>` or instance. Optional "
+"services such as Block Storage and Object Storage require additional nodes."
+msgstr ""
+
+#: ../overview.rst:56
+msgid ""
+"The example architecture used in this guide is a minimum configuration, and "
+"is not intended for production system installations. It is designed to "
+"provide a minimum proof-of-concept for the purpose of learning about "
+"OpenStack. For information on creating architectures for specific use cases, "
+"or how to determine which architecture is required, see the `Architecture "
+"Design Guide <https://docs.openstack.org/arch-design/>`_."
+msgstr ""
+
+#: ../overview.rst:63
+msgid ""
+"This example architecture differs from a minimal production architecture as "
+"follows:"
+msgstr ""
+"Этот пример архитектуры отличается от минимальной производственной "
+"архитектуры следующим образом:"
+
+#: ../overview.rst:66
+msgid ""
+"Networking agents reside on the controller node instead of one or more "
+"dedicated network nodes."
+msgstr ""
+"Сетевые агенты находятся на управляющем узле вместо одного или нескольких "
+"выделенных сетевых узлов."
+
+#: ../overview.rst:69
+msgid ""
+"Overlay (tunnel) traffic for self-service networks traverses the management "
+"network instead of a dedicated network."
+msgstr ""
+"Оверлейный (туннельный) трафик для собственных сетей проходит через "
+"управляющую сеть, а не через выделенную."
+
+#: ../overview.rst:72
+msgid ""
+"For more information on production architectures for Pike, see the "
+"`Architecture Design Guide <https://docs.openstack.org/arch-design/>`_, "
+"`OpenStack Networking Guide for Pike <https://docs.openstack.org/neutron/"
+"pike/admin/>`_, and `OpenStack Administrator Guides for Pike <https://docs."
+"openstack.org/pike/admin/>`_."
+msgstr ""
+
+#: ../overview.rst:78
+msgid ""
+"For more information on production architectures for Queens, see the "
+"`Architecture Design Guide <https://docs.openstack.org/arch-design/>`_, "
+"`OpenStack Networking Guide for Queens <https://docs.openstack.org/neutron/"
+"queens/admin/>`_, and `OpenStack Administrator Guides for Queens <https://"
+"docs.openstack.org/queens/admin/>`_."
+msgstr ""
+
+#: ../overview.rst:84
+msgid ""
+"For more information on production architectures for Rocky, see the "
+"`Architecture Design Guide <https://docs.openstack.org/arch-design/>`_, "
+"`OpenStack Networking Guide for Rocky <https://docs.openstack.org/neutron/"
+"rocky/admin/>`_, and `OpenStack Administrator Guides for Rocky <https://docs."
+"openstack.org/rocky/admin/>`_."
+msgstr ""
+
+#: ../overview.rst:95
+msgid "**Hardware requirements**"
+msgstr "**Аппаратные требования**"
+
+#: ../overview.rst:95
+msgid "Hardware requirements"
+msgstr ""
+
+#: ../overview.rst:98
+msgid "Controller"
+msgstr "Контроллер"
+
+#: ../overview.rst:100
+msgid ""
+"The controller node runs the Identity service, Image service, Placement "
+"service, management portions of Compute, management portion of Networking, "
+"various Networking agents, and the Dashboard. It also includes supporting "
+"services such as an SQL database, :term:`message queue`, and :term:`NTP "
+"<Network Time Protocol (NTP)>`."
+msgstr ""
+
+#: ../overview.rst:106
+msgid ""
+"Optionally, the controller node runs portions of the Block Storage, Object "
+"Storage, Orchestration, and Telemetry services."
+msgstr ""
+"Дополнительно,  узел контроллера может запускать управляющие модули блочного "
+"хранилища, хранилища объектов, службы оркестрации и телеметрии"
+
+#: ../overview.rst:109
+msgid "The controller node requires a minimum of two network interfaces."
+msgstr "Узел управления требует как минимум два сетевых интерфейса."
+
+#: ../overview.rst:112
+msgid "Compute"
+msgstr "Вычислительные ресурсы"
+
+#: ../overview.rst:114
+msgid ""
+"The compute node runs the :term:`hypervisor` portion of Compute that "
+"operates instances. By default, Compute uses the :term:`KVM <kernel-based VM "
+"(KVM)>` hypervisor. The compute node also runs a Networking service agent "
+"that connects instances to virtual networks and provides firewalling "
+"services to instances via :term:`security groups <security group>`."
+msgstr ""
+
+#: ../overview.rst:121
+msgid ""
+"You can deploy more than one compute node. Each node requires a minimum of "
+"two network interfaces."
+msgstr ""
+"Вы можете развернуть несколько вычислительных узлов. Каждый узел требует как "
+"минимум два сетевых интерфейса. "
+
+#: ../overview.rst:127
+msgid ""
+"The optional Block Storage node contains the disks that the Block Storage "
+"and Shared File System services provision for instances."
+msgstr ""
+"Необязательный узел Блочного хранения содержит диски блочного хранилища и "
+"служб общих файловых систем предоставляемые инстансам"
+
+#: ../overview.rst:130 ../overview.rst:144
+msgid ""
+"For simplicity, service traffic between compute nodes and this node uses the "
+"management network. Production environments should implement a separate "
+"storage network to increase performance and security."
+msgstr ""
+"Для простоты, служебный трафик между вычислительными узлами и этим узлом "
+"использует служебную сеть. Производственное окружение должно быть "
+"реализовано в отдельной сети хранилищ, для увеличения производительности и "
+"безопасности."
+
+#: ../overview.rst:134
+msgid ""
+"You can deploy more than one block storage node. Each node requires a "
+"minimum of one network interface."
+msgstr ""
+"Вы можете развернуть более одного узла Блочного хранения. Каждый узел "
+"требует как минимум один сетевой интерфейс."
+
+#: ../overview.rst:138
+msgid "Object Storage"
+msgstr "Хранилище объектов"
+
+#: ../overview.rst:140
+msgid ""
+"The optional Object Storage node contain the disks that the Object Storage "
+"service uses for storing accounts, containers, and objects."
+msgstr ""
+"Необязательный узел хранилища объектов содержит диски службы хранилища "
+"объектов для сохранения учетных записей, контейнеров и объектов."
+
+#: ../overview.rst:148
+msgid ""
+"This service requires two nodes. Each node requires a minimum of one network "
+"interface. You can deploy more than two object storage nodes."
+msgstr ""
+"Эта служба требует два узла. На каждый узел требуется как минимум один "
+"сетевой интерфейс. Вы можете развернуть больше двух узлов хранилища объектов."
+""
+
+#: ../overview.rst:152
+msgid "Networking"
+msgstr "Сеть"
+
+#: ../overview.rst:154
+msgid "Choose one of the following virtual networking options."
+msgstr ""
+
+#: ../overview.rst:159
+msgid "Networking Option 1: Provider networks"
+msgstr "Вариант сети 1: Провайдерские Сети"
+
+#: ../overview.rst:161
+msgid ""
+"The provider networks option deploys the OpenStack Networking service in the "
+"simplest way possible with primarily layer-2 (bridging/switching) services "
+"and VLAN segmentation of networks. Essentially, it bridges virtual networks "
+"to physical networks and relies on physical network infrastructure for layer-"
+"3 (routing) services. Additionally, a :term:`DHCP<Dynamic Host Configuration "
+"Protocol (DHCP)>` service provides IP address information to instances."
+msgstr ""
+
+#: ../overview.rst:169
+msgid ""
+"The OpenStack user requires more information about the underlying network "
+"infrastructure to create a virtual network to exactly match the "
+"infrastructure."
+msgstr ""
+
+#: ../overview.rst:175
+msgid ""
+"This option lacks support for self-service (private) networks, layer-3 "
+"(routing) services, and advanced services such as :term:`LBaaS <Load-"
+"Balancer-as-a-Service (LBaaS)>` and :term:`FWaaS<FireWall-as-a-Service "
+"(FWaaS)>`. Consider the self-service networks option below if you desire "
+"these features."
+msgstr ""
+
+#: ../overview.rst:189
+msgid "Networking Option 2: Self-service networks"
+msgstr "Вариант сети 2: Сети самообслуживания"
+
+#: ../overview.rst:191
+msgid ""
+"The self-service networks option augments the provider networks option with "
+"layer-3 (routing) services that enable :term:`self-service` networks using "
+"overlay segmentation methods such as :term:`VXLAN <Virtual Extensible LAN "
+"(VXLAN)>`. Essentially, it routes virtual networks to physical networks "
+"using :term:`NAT<Network Address Translation (NAT)>`. Additionally, this "
+"option provides the foundation for advanced services such as LBaaS and FWaaS."
+""
+msgstr ""
+
+#: ../overview.rst:199
+msgid ""
+"The OpenStack user can create virtual networks without the knowledge of "
+"underlying infrastructure on the data network. This can also include VLAN "
+"networks if the layer-2 plug-in is configured accordingly."
+msgstr ""
+
+#: ../overview.rst:None
+msgid "Networking Option 1: Provider networks - Service layout"
+msgstr ""
+
+#: ../overview.rst:None
+msgid "Networking Option 2: Self-service networks - Service layout"
+msgstr ""
+
+#: ../preface.rst:3
+msgid "Preface"
+msgstr ""
+
+#: ../preface.rst:6
+msgid "Abstract"
+msgstr "Введение"
+
+#: ../preface.rst:8
+msgid ""
+"The OpenStack system consists of several key services that are separately "
+"installed. These services work together depending on your cloud needs and "
+"include the Compute, Identity, Networking, Image, Block Storage, Object "
+"Storage, Telemetry, Orchestration, and Database services. You can install "
+"any of these projects separately and configure them stand-alone or as "
+"connected entities."
+msgstr ""
+"Система OpenStack состоит из нескольких ключевых сервисов, которые "
+"устанавливаются независимо. Эти сервисы работают сообща в зависимости от "
+"ваших облачных потребностей. и включают в себя сервис вычислительных "
+"ресурсов, идентификации, сетевого управления, управления образами, блочных "
+"хранилищ, объектных хранилищ, сервис телеметрии, оркестрации и баз данных. "
+"Все эти проекты можно устанавливать независимо и настраивать по отдельности "
+"или как связанные сущности."
+
+#: ../preface.rst:15
+msgid ""
+"Explanations of configuration options and sample configuration files are "
+"included."
+msgstr ""
+"Включены пояснения к конфигурационным параметрам и примеры конфигурационных "
+"файлов."
+
+#: ../preface.rst:20
+msgid ""
+"The Training Labs scripts provide an automated way of deploying the cluster "
+"described in this Installation Guide into VirtualBox or KVM VMs. You will "
+"need a desktop computer or a laptop with at least 8 GB memory and 20 GB free "
+"storage running Linux, MacOS, or Windows. Please see the `OpenStack Training "
+"Labs <https://docs.openstack.org/training_labs/>`_."
+msgstr ""
+
+#: ../preface.rst:27
+msgid ""
+"This guide documents the installation of OpenStack starting with the Pike "
+"release. It covers multiple releases."
+msgstr ""
+
+#: ../preface.rst:32
+msgid ""
+"This guide is a work-in-progress and is subject to updates frequently. Pre-"
+"release packages have been used for testing, and some instructions may not "
+"work with final versions. Please help us make this guide better by reporting "
+"any errors you encounter."
+msgstr ""
+"Это руководство пользователя находится в разработке и довольно часто "
+"обновляется. Для тестирования использовались предварительные пакеты, и "
+"некоторые инструкции могут не работать с их финальными версиями. Пожалуйста, "
+"помогите нам сделать это руководство лучше, сообщив о любой найденной вами "
+"ошибке."
+
+#: ../preface.rst:38
+msgid "Operating systems"
+msgstr ""
+
+#: ../preface.rst:40
+msgid ""
+"Currently, this guide describes OpenStack installation for the following "
+"Linux distributions:"
+msgstr ""
+
+#: ../preface.rst:44
+msgid ""
+"You can install OpenStack by using packages on openSUSE Leap 42.3, openSUSE "
+"Leap 15, SUSE Linux Enterprise Server 12 SP4, SUSE Linux Enterprise Server "
+"15 through the Open Build Service Cloud repository."
+msgstr ""
+
+#: ../preface.rst:47
+msgid "openSUSE and SUSE Linux Enterprise Server"
+msgstr ""
+
+#: ../preface.rst:50
+msgid ""
+"You can install OpenStack by using packages available on both Red Hat "
+"Enterprise Linux 7 and 8 and their derivatives through the RDO repository."
+msgstr ""
+
+#: ../preface.rst:54
+msgid "..note::"
+msgstr ""
+
+#: ../preface.rst:58
+msgid "Red Hat Enterprise Linux and CentOS"
+msgstr ""
+
+#: ../preface.rst:61
+msgid ""
+"You can walk through an installation by using packages available through "
+"Canonical's Ubuntu Cloud archive repository for Ubuntu 16.04+ (LTS)."
+msgstr ""
+
+#: ../preface.rst:66
+msgid ""
+"The Ubuntu Cloud Archive pockets for Pike and Queens provide OpenStack "
+"packages for Ubuntu 16.04 LTS; OpenStack Queens is installable direct using "
+"Ubuntu 18.04 LTS; the Ubuntu Cloud Archive pockets for Rocky and Stein "
+"provide OpenStack packages for Ubuntu 18.04 LTS; the Ubuntu Cloud Archive "
+"pocket for Victoria provides OpenStack packages for Ubuntu 20.04 LTS."
+msgstr ""
+
+#: ../preface.rst:70
+msgid "Ubuntu"
+msgstr ""
+
+#: ../shared/edit_hosts_file.txt:1
+msgid "Edit the ``/etc/hosts`` file to contain the following:"
+msgstr "Отредактируйте файл `/etc/hosts``, чтобы он содержал следующее:"
+
+#: ../shared/edit_hosts_file.txt:22
+msgid ""
+"Some distributions add an extraneous entry in the ``/etc/hosts`` file that "
+"resolves the actual hostname to another loopback IP address such as ``127.0."
+"1.1``. You must comment out or remove this entry to prevent name resolution "
+"problems. **Do not remove the 127.0.0.1 entry.**"
+msgstr ""
+
+#: ../shared/edit_hosts_file.txt:30
+msgid ""
+"This guide includes host entries for optional services in order to reduce "
+"complexity should you choose to deploy them."
+msgstr ""
+

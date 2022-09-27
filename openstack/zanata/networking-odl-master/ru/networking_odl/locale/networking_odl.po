@@ -1,0 +1,350 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: networking-odl VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-17 09:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: networking_odl/ceilometer/network/statistics/opendaylight_v2/client.py:135
+#: networking_odl/tests/unit/ceilometer/network/statistics/opendaylight_v2/test_client.py:103
+#, python-format
+msgid "OpenDaylight API returned %(status)s %(reason)s"
+msgstr ""
+
+#: networking_odl/cmd/analyze_journal.py:42
+msgid "Log file to analyze."
+msgstr ""
+
+#: networking_odl/cmd/analyze_journal.py:44
+msgid "Prints the N slowest entries (10 by default)."
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:79
+msgid ""
+"\n"
+"            Specifies allowed network types given as a Comma-separated list "
+"of\n"
+"            types.\n"
+"\n"
+"            Default: --allowed_network_types=local,vlan,vxlan,gre\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:89
+msgid ""
+"\n"
+"            Comma-separated list of <physical_network>:<bridge> tuples "
+"mapping\n"
+"            physical network names to the agent's node-specific Open vSwitch\n"
+"            bridge names to be used for flat and VLAN networks. The length "
+"of\n"
+"            bridge names should be no more than 11. Each bridge must exist, "
+"and\n"
+"            should have a physical network interface configured as a port. "
+"All\n"
+"            physical networks configured on the server should have mappings "
+"to\n"
+"            appropriate bridges on each agent.\n"
+"\n"
+"            Note: If you remove a bridge from this mapping, make sure to\n"
+"            disconnect it from the integration bridge as it won't be managed "
+"by\n"
+"            the agent anymore.\n"
+"\n"
+"            Default: --bridge_mappings=\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:109
+msgid ""
+"\n"
+"            It specifies the OVS data path to use.\n"
+"\n"
+"            If this value is given then --ovs_dpdk will be ignored.\n"
+"            If neither this option or --ovs_dpdk are given then it will use "
+"a\n"
+"            valid value for current host.\n"
+"\n"
+"            Choices: --datapath_type=\n"
+"                     --datapath_type=system         # kernel data path\n"
+"                     --datapath_type=netdev         # userspace data path\n"
+"                     --datapath_type=dpdkvhostuser  # userspace data path\n"
+"\n"
+"            Default: --datapath_type=netdev         # if support is detected\n"
+"                     --datapath_type=system         # in all other cases\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:128
+msgid ""
+"\n"
+"            It specifies the host name of the target machine.\n"
+"\n"
+"            Default: --host=$HOSTNAME  # running machine host name\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:136
+msgid ""
+"\n"
+"            IP address of local overlay (tunnel) network end-point.\n"
+"            It accepts either an IPv4 or IPv6 address that resides on one\n"
+"            of the host network interfaces. The IP version of this\n"
+"            value must match the value of the 'overlay_ip_version'\n"
+"            option in the ML2 plug-in configuration file on the Neutron\n"
+"            server node(s).\n"
+"\n"
+"            Default: local_ip=\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:150
+msgid ""
+"\n"
+"            It uses user-space type of virtual interface (vhostuser) instead "
+"of\n"
+"            the system based one (ovs).\n"
+"\n"
+"            If this option is not specified it tries to detect vhostuser\n"
+"            support on running host and in case of positive match it uses it."
+"\n"
+"\n"
+"            NOTE: if --datapath_type is given then this option is ignored.\n"
+"\n"
+"            Default:\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:165
+msgid ""
+"\n"
+"            It adds SR-IOV virtual interface support to allow ovs hardware\n"
+"            offload.\n"
+"\n"
+"            NOTE: This feature should be used with ovs>=2.8.0 and SR-IOV NIC\n"
+"            which support switchdev mode and tc offload.\n"
+"\n"
+"            Default:\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:177
+msgid ""
+"\n"
+"            Fives pre-made host configuration for OpenDaylight as a JSON\n"
+"            string.\n"
+"\n"
+"            NOTE: when specified all other options are ignored!\n"
+"\n"
+"            An entry should look like:\n"
+"                --ovs_hostconfigs='{\n"
+"                    \"ODL L2\": {\n"
+"                        \"allowed_network_types\":\n"
+"                            [\"local\",\"vlan\", \"vxlan\",\"gre\"],\n"
+"                        \"bridge_mappings\": {\"physnet1\":\"br-ex\"}\n"
+"                        \"supported_vnic_types\": [\n"
+"                            {\n"
+"                                \"vnic_type\":\"normal\",\n"
+"                                \"vif_type\":\"ovs\",\n"
+"                                \"vif_details\":{}\n"
+"                             }\n"
+"                        ],\n"
+"                    },\n"
+"                    \"ODL L3\": {}\n"
+"                }'\n"
+"\n"
+"            Default: --ovs_hostconfigs=\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:207
+msgid ""
+"\n"
+"            It specifies the OVS VHostUser mode.\n"
+"\n"
+"            Choices: --vhostuser_mode=client\n"
+"                     --vhostuser_mode=server\n"
+"\n"
+"            Default: --vhostuser_mode=client\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:219
+msgid ""
+"\n"
+"            Enable VHostUser OVS Plug.\n"
+"\n"
+"            Default: --vhostuser_ovs_plug\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:229
+msgid ""
+"\n"
+"            VHostUser socket port prefix.\n"
+"\n"
+"            Choices: --vhostuser_socket_dir=vhu\n"
+"                     --vhostuser_socket_dir=socket\n"
+"\n"
+"            Default: --vhostuser_socket_dir=vhu\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:241
+msgid ""
+"\n"
+"            OVS VHostUser socket directory.\n"
+"\n"
+"            Default: --vhostuser_socket_dir=/var/run/openvswitch\n"
+"            "
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:327
+msgid ""
+"--ovs_dpdk option was specified but the 'netdev' datapath_type was not "
+"enabled. To override use option --datapath_type=netdev"
+msgstr ""
+
+#: networking_odl/cmd/set_ovs_hostconfigs.py:364
+#, python-format
+msgid "vif type: '%s' not supported"
+msgstr ""
+
+#: networking_odl/common/config.py:23
+msgid "HTTP URL of OpenDaylight REST interface."
+msgstr ""
+
+#: networking_odl/common/config.py:25
+msgid "HTTP username for authentication."
+msgstr ""
+
+#: networking_odl/common/config.py:27
+msgid "HTTP password for authentication."
+msgstr ""
+
+#: networking_odl/common/config.py:29
+msgid "HTTP timeout in seconds."
+msgstr ""
+
+#: networking_odl/common/config.py:31
+msgid "Tomcat session timeout in minutes."
+msgstr ""
+
+#: networking_odl/common/config.py:33
+msgid "Sync thread timeout in seconds or fraction."
+msgstr ""
+
+#: networking_odl/common/config.py:35
+msgid "Number of times to retry a row before failing."
+msgstr ""
+
+#: networking_odl/common/config.py:37
+msgid "Journal maintenance operations interval in seconds."
+msgstr ""
+
+#: networking_odl/common/config.py:39
+msgid ""
+"Time to keep completed rows (in seconds).For performance reasons it's not "
+"recommended to change this from the default value (0) which indicates "
+"completed rows aren't kept.This value will be checked every "
+"maintenance_interval by the cleanup thread. To keep completed rows "
+"indefinitely, set the value to -1"
+msgstr ""
+
+#: networking_odl/common/config.py:48
+msgid "Test without real ODL."
+msgstr ""
+
+#: networking_odl/common/config.py:51
+msgid "Name of the controller to be used for port binding."
+msgstr ""
+
+#: networking_odl/common/config.py:53
+msgid ""
+"Time in seconds to wait before a processing row is marked back to pending."
+msgstr ""
+
+#: networking_odl/common/config.py:56
+msgid "Path for ODL host configuration REST interface"
+msgstr ""
+
+#: networking_odl/common/config.py:59
+msgid "Poll interval in seconds for getting ODL hostconfig"
+msgstr ""
+
+#: networking_odl/common/config.py:61
+msgid "Enable websocket for pseudo-agent-port-binding."
+msgstr ""
+
+#: networking_odl/common/config.py:63
+msgid "Wait this many seconds before retrying the odl features fetch"
+msgstr ""
+
+#: networking_odl/common/config.py:72
+msgid ""
+"Enables the networking-odl driver to supply special neutron ports of "
+"\"dhcp\" type to OpenDaylight Controller for its use in providing DHCP "
+"Service."
+msgstr ""
+
+#: networking_odl/common/exceptions.py:33
+#, python-format
+msgid "unsupported resource type: %(resource)s"
+msgstr ""
+
+#: networking_odl/common/exceptions.py:45
+#, python-format
+msgid "%(method)s not found in %(plugin)s"
+msgstr ""
+
+#: networking_odl/common/exceptions.py:56
+#, python-format
+msgid "%(resource_type)s resource is not registered for maintenance"
+msgstr ""
+
+#: networking_odl/common/lightweight_testing.py:67
+#: networking_odl/common/lightweight_testing.py:86
+msgid "resource_list can not be None"
+msgstr ""
+
+#: networking_odl/common/websocket_client.py:79
+msgid "Invalid ODL URL"
+msgstr ""
+
+#: networking_odl/common/websocket_client.py:207
+msgid "bad_request (http400),check path."
+msgstr ""
+
+#: networking_odl/common/websocket_client.py:237
+msgid "bad_request (http400),check path"
+msgstr ""
+
+#: networking_odl/common/websocket_client.py:246
+msgid "websocket subscribe bad stream data"
+msgstr ""
+
+#: networking_odl/journal/dependency_validations.py:213
+msgid "unsupported operation {}"
+msgstr ""
+
+#: networking_odl/journal/worker.py:82
+msgid "Thread has to be stopped before started again"
+msgstr ""
+
+#: networking_odl/ml2/port_binding.py:100
+#, python-format
+msgid ""
+"Port binding controller '%(name)s (%(controller)r)' doesn't implement "
+"PortBindingController interface."
+msgstr ""
+

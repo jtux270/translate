@@ -1,0 +1,1077 @@
+#
+# Дронова Юлия <juliette.tux@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: senlin-dashboard VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-03-27 02:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-09-20 17:45+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.08.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: senlin_dashboard/api/utils.py:62
+#, python-format
+msgid "The specified input is not a valid YAML format: %s"
+msgstr "Указанный ввод не является допустимым форматом YAML: %s"
+
+#: senlin_dashboard/cluster/dashboard.py:19
+#: senlin_dashboard/cluster/nodes/forms.py:50
+#: senlin_dashboard/cluster/receivers/forms.py:53
+msgid "Cluster"
+msgstr "Кластер"
+
+#: senlin_dashboard/cluster/clusters/forms.py:30
+msgid "Cluster Name"
+msgstr "Имя кластера"
+
+#: senlin_dashboard/cluster/clusters/forms.py:31
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:9
+#: senlin_dashboard/cluster/nodes/forms.py:47
+#: senlin_dashboard/cluster/nodes/forms.py:99
+msgid "Profile"
+msgstr "Профиль"
+
+#: senlin_dashboard/cluster/clusters/forms.py:33
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:29
+msgid "Min Size"
+msgstr "Мин. размер"
+
+#: senlin_dashboard/cluster/clusters/forms.py:36
+msgid "Min size of the cluster. Default to 0."
+msgstr "Мин. размер кластера. По умолчанию: 0"
+
+#: senlin_dashboard/cluster/clusters/forms.py:38
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:27
+msgid "Max Size"
+msgstr "Макс. размер"
+
+#: senlin_dashboard/cluster/clusters/forms.py:41
+msgid "Max size of the cluster. Default to -1, means unlimited."
+msgstr "Макс. размер кластера. По умолчанию: -1, т.е. без ограничений"
+
+#: senlin_dashboard/cluster/clusters/forms.py:44
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:31
+msgid "Desired Capacity"
+msgstr "Желательный объём"
+
+#: senlin_dashboard/cluster/clusters/forms.py:46
+msgid "Desired capacity of the cluster. Default to 0."
+msgstr "Желательный объём кластера. По умолчанию: 0"
+
+#: senlin_dashboard/cluster/clusters/forms.py:49
+msgid "Parent Cluster"
+msgstr "Родительский кластер"
+
+#: senlin_dashboard/cluster/clusters/forms.py:53
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:33
+msgid "Timeout"
+msgstr "Истечение времени ожидания"
+
+#: senlin_dashboard/cluster/clusters/forms.py:55
+msgid "Cluster creation timeout in seconds."
+msgstr "Истечение времени ожидания создания кластера, в сек."
+
+#: senlin_dashboard/cluster/clusters/forms.py:58
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:44
+#: senlin_dashboard/cluster/nodes/forms.py:59
+#: senlin_dashboard/cluster/nodes/forms.py:107
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:38
+#: senlin_dashboard/cluster/profiles/forms.py:94
+#: senlin_dashboard/cluster/profiles/forms.py:151
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:24
+msgid "Metadata"
+msgstr "Метаданные"
+
+#: senlin_dashboard/cluster/clusters/forms.py:60
+msgid "YAML formated metadata"
+msgstr "Метаданные в формате YAML"
+
+#: senlin_dashboard/cluster/clusters/forms.py:67
+#: senlin_dashboard/cluster/nodes/forms.py:68
+#: senlin_dashboard/cluster/nodes/forms.py:116
+msgid "Select Profile"
+msgstr "Выбрать профиль"
+
+#: senlin_dashboard/cluster/clusters/forms.py:81
+#, python-format
+msgid "The specified metadata is not a valid YAML format: %s"
+msgstr "Указаны метаданные с недопустимым форматом YAML: %s"
+
+#: senlin_dashboard/cluster/clusters/forms.py:86
+#, python-format
+msgid "Creating cluster \"%s\" successfully"
+msgstr "Кластер \"%s\" был успешно создан"
+
+#: senlin_dashboard/cluster/clusters/forms.py:92
+msgid "Unable to create cluster."
+msgstr "Не удалось создать кластер."
+
+#: senlin_dashboard/cluster/clusters/forms.py:98
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:12
+#: senlin_dashboard/cluster/policies/panel.py:21
+#: senlin_dashboard/cluster/policies/tables.py:93
+#: senlin_dashboard/cluster/policies/templates/policies/index.html:3
+#: senlin_dashboard/cluster/policies/urls.py:21
+#: senlin_dashboard/cluster/policies/views.py:33
+msgid "Policies"
+msgstr "Политики"
+
+#: senlin_dashboard/cluster/clusters/forms.py:100
+#: senlin_dashboard/cluster/clusters/tables.py:265
+msgid "Enabled"
+msgstr "Включена"
+
+#: senlin_dashboard/cluster/clusters/forms.py:103
+msgid "Whether the policy should be enabled once attached. Default to enabled."
+msgstr ""
+"Должна ли политика активироваться сразу после подключения. По умолчанию — да."
+
+#: senlin_dashboard/cluster/clusters/forms.py:115
+msgid "Select Policy"
+msgstr "Выберите политику"
+
+#: senlin_dashboard/cluster/clusters/forms.py:122
+#, python-format
+msgid "Attaching policy %(policy)s to cluster %(cluster)s."
+msgstr "Подключается политика %(policy)s к кластеру %(cluster)s."
+
+#: senlin_dashboard/cluster/clusters/forms.py:130
+msgid "Unable to attach policy."
+msgstr "Не удалось подключить политику"
+
+#: senlin_dashboard/cluster/clusters/panel.py:21
+#: senlin_dashboard/cluster/clusters/tables.py:217
+#: senlin_dashboard/cluster/clusters/templates/clusters/index.html:3
+#: senlin_dashboard/cluster/clusters/urls.py:23
+#: senlin_dashboard/cluster/clusters/views.py:33
+msgid "Clusters"
+msgstr "Кластеры"
+
+#: senlin_dashboard/cluster/clusters/tables.py:29
+#: senlin_dashboard/cluster/clusters/templates/clusters/create.html:3
+#: senlin_dashboard/cluster/clusters/views.py:74
+msgid "Create Cluster"
+msgstr "Создать кластер"
+
+#: senlin_dashboard/cluster/clusters/tables.py:38
+#: senlin_dashboard/cluster/clusters/templates/clusters/manage_policies.html:3
+#: senlin_dashboard/cluster/clusters/views.py:123
+msgid "Manage Policies"
+msgstr "Управление политиками"
+
+#: senlin_dashboard/cluster/clusters/tables.py:49
+msgid "Check Cluster"
+msgid_plural "Check Clusters"
+msgstr[0] "Проверить кластер"
+msgstr[1] "Проверить кластеры"
+msgstr[2] "Проверить кластеры"
+
+#: senlin_dashboard/cluster/clusters/tables.py:57
+msgid "Checked Cluster"
+msgid_plural "Checked Clusters"
+msgstr[0] "Кластер был проверен"
+msgstr[1] "Кластеры были проверены"
+msgstr[2] "Кластеры были проверены"
+
+#: senlin_dashboard/cluster/clusters/tables.py:72
+msgid "Recover Cluster"
+msgid_plural "Recover Clusters"
+msgstr[0] "Восстановить кластер"
+msgstr[1] "Восстановить кластеры"
+msgstr[2] "Восстановить кластеры"
+
+#: senlin_dashboard/cluster/clusters/tables.py:80
+msgid "Recovered Cluster"
+msgid_plural "Recovered Clusters"
+msgstr[0] "Кластер был восстановлен"
+msgstr[1] "Кластеры были восстановлены"
+msgstr[2] "Кластеры были восстановлены"
+
+#: senlin_dashboard/cluster/clusters/tables.py:109
+msgid "Delete Cluster"
+msgid_plural "Delete Clusters"
+msgstr[0] "Удалить кластер"
+msgstr[1] "Удалить кластеры"
+msgstr[2] "Удалить кластеры"
+
+#: senlin_dashboard/cluster/clusters/tables.py:117
+msgid "Scheduled deletion of Cluster"
+msgid_plural "Scheduled deletion of Clusters"
+msgstr[0] "Удаление кластера занесено в расписание"
+msgstr[1] "Удаление кластеров занесено в расписание"
+msgstr[2] "Удаление кластеров занесено в расписание"
+
+#: senlin_dashboard/cluster/clusters/tables.py:147
+msgid "Cluster Name ="
+msgstr "Имя кластера ="
+
+#: senlin_dashboard/cluster/clusters/tables.py:148
+#: senlin_dashboard/cluster/nodes/tables.py:158
+msgid "Status ="
+msgstr "Статус ="
+
+#: senlin_dashboard/cluster/clusters/tables.py:149
+#: senlin_dashboard/cluster/nodes/tables.py:159
+#: senlin_dashboard/cluster/profiles/tables.py:72
+msgid "Profile Name ="
+msgstr "Название профиля ="
+
+#: senlin_dashboard/cluster/clusters/tables.py:169
+msgctxt "Current status of a Cluster"
+msgid "INIT"
+msgstr "INIT"
+
+#: senlin_dashboard/cluster/clusters/tables.py:170
+msgctxt "Current status of a Cluster"
+msgid "ACTIVE"
+msgstr "АКТИВЕН"
+
+#: senlin_dashboard/cluster/clusters/tables.py:171
+msgctxt "Current status of a Cluster"
+msgid "ERROR"
+msgstr "ОШИБКА"
+
+#: senlin_dashboard/cluster/clusters/tables.py:172
+msgctxt "Current status of a Cluster"
+msgid "CRITICAL"
+msgstr "КРИТИЧЕСКИЙ"
+
+#: senlin_dashboard/cluster/clusters/tables.py:174
+msgctxt "Current status of a Cluster"
+msgid "WARNING"
+msgstr "ПРЕДУПРЕЖДЕНИЕ"
+
+#: senlin_dashboard/cluster/clusters/tables.py:175
+msgctxt "Current status of a Cluster"
+msgid "CREATING"
+msgstr "СОЗДАНИЕ"
+
+#: senlin_dashboard/cluster/clusters/tables.py:177
+msgctxt "Current status of a Cluster"
+msgid "UPDATING"
+msgstr "ОБНОВЛЕНИЕ"
+
+#: senlin_dashboard/cluster/clusters/tables.py:179
+msgctxt "Current status of a Cluster"
+msgid "DELETING"
+msgstr "УДАЛЕНИЕ"
+
+#: senlin_dashboard/cluster/clusters/tables.py:181
+msgctxt "Current status of a Cluster"
+msgid "RESIZING"
+msgstr "ИЗМЕНЕНИЕ РАЗМЕРА"
+
+#: senlin_dashboard/cluster/clusters/tables.py:183
+msgctxt "Current status of a Cluster"
+msgid "CHECKING"
+msgstr "ИДЁТ ПРОВЕРКА"
+
+#: senlin_dashboard/cluster/clusters/tables.py:185
+msgctxt "Current status of a Cluster"
+msgid "RECOVERING"
+msgstr "ИДЁТ ВОССТАНОВЛЕНИЕ"
+
+#: senlin_dashboard/cluster/clusters/tables.py:191
+#: senlin_dashboard/cluster/clusters/tables.py:261
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:7
+#: senlin_dashboard/cluster/nodes/tables.py:190
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:7
+#: senlin_dashboard/cluster/policies/forms.py:53
+#: senlin_dashboard/cluster/policies/forms.py:102
+#: senlin_dashboard/cluster/policies/tables.py:77
+#: senlin_dashboard/cluster/policies/templates/policies/_detail_overview.html:7
+#: senlin_dashboard/cluster/profiles/forms.py:67
+#: senlin_dashboard/cluster/profiles/forms.py:144
+#: senlin_dashboard/cluster/profiles/tables.py:79
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:7
+#: senlin_dashboard/cluster/receivers/forms.py:51
+#: senlin_dashboard/cluster/receivers/tables.py:77
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:7
+msgid "Name"
+msgstr "Имя"
+
+#: senlin_dashboard/cluster/clusters/tables.py:194
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:21
+#: senlin_dashboard/cluster/nodes/event_tables.py:49
+#: senlin_dashboard/cluster/nodes/tables.py:203
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:17
+msgid "Status"
+msgstr "Статус"
+
+#: senlin_dashboard/cluster/clusters/tables.py:199
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:24
+#: senlin_dashboard/cluster/nodes/event_tables.py:54
+#: senlin_dashboard/cluster/nodes/tables.py:208
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:20
+msgid "Status Reason"
+msgstr "Причина назначения статуса"
+
+#: senlin_dashboard/cluster/clusters/tables.py:202
+#: senlin_dashboard/cluster/nodes/tables.py:194
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:9
+msgid "Profile Name"
+msgstr "Название профиля"
+
+#: senlin_dashboard/cluster/clusters/tables.py:205
+#: senlin_dashboard/cluster/nodes/tables.py:211
+#: senlin_dashboard/cluster/policies/tables.py:82
+#: senlin_dashboard/cluster/profiles/tables.py:84
+#: senlin_dashboard/cluster/receivers/tables.py:86
+msgid "Created"
+msgstr "Создано"
+
+#: senlin_dashboard/cluster/clusters/tables.py:210
+#: senlin_dashboard/cluster/nodes/tables.py:216
+#: senlin_dashboard/cluster/policies/tables.py:87
+#: senlin_dashboard/cluster/profiles/tables.py:89
+#: senlin_dashboard/cluster/receivers/tables.py:91
+msgid "Updated"
+msgstr "Обновлено"
+
+#: senlin_dashboard/cluster/clusters/tables.py:235
+msgid "Detach Policy"
+msgid_plural "Detach Policies"
+msgstr[0] "Открепить политику"
+msgstr[1] "Открепить политики"
+msgstr[2] "Открепить политики"
+
+#: senlin_dashboard/cluster/clusters/tables.py:244
+msgid "Detaching Policy"
+msgid_plural "Detaching Policies"
+msgstr[0] "Выполняется открепление политики"
+msgstr[1] "Выполняется открепление политик"
+msgstr[2] "Выполняется открепление политик"
+
+#: senlin_dashboard/cluster/clusters/tables.py:262
+#: senlin_dashboard/cluster/policies/tables.py:79
+#: senlin_dashboard/cluster/policies/templates/policies/_detail_overview.html:11
+#: senlin_dashboard/cluster/profiles/tables.py:81
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:11
+#: senlin_dashboard/cluster/receivers/forms.py:60
+#: senlin_dashboard/cluster/receivers/tables.py:79
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:11
+msgid "Type"
+msgstr "Тип"
+
+#: senlin_dashboard/cluster/clusters/tables.py:271
+msgid "Attached Policies"
+msgstr "Прикреплённые политики"
+
+#: senlin_dashboard/cluster/clusters/tabs.py:25
+#: senlin_dashboard/cluster/nodes/tabs.py:23
+#: senlin_dashboard/cluster/policies/tabs.py:19
+#: senlin_dashboard/cluster/profiles/tabs.py:19
+#: senlin_dashboard/cluster/receivers/tabs.py:19
+msgid "Overview"
+msgstr "Обзор"
+
+#: senlin_dashboard/cluster/clusters/tabs.py:60
+#: senlin_dashboard/cluster/nodes/tabs.py:69
+msgid "Unable to retrieve node event list."
+msgstr "Не удалось получить список событий узла"
+
+#: senlin_dashboard/cluster/clusters/tabs.py:65
+#: senlin_dashboard/cluster/nodes/panel.py:21
+#: senlin_dashboard/cluster/nodes/tables.py:223
+#: senlin_dashboard/cluster/nodes/templates/nodes/index.html:3
+#: senlin_dashboard/cluster/nodes/urls.py:21
+#: senlin_dashboard/cluster/nodes/views.py:33
+msgid "Nodes"
+msgstr "Узлы"
+
+#: senlin_dashboard/cluster/clusters/tabs.py:80
+msgid "Unable to retrieve nodes from cluster."
+msgstr "Не удалось получить сведения кластера об узлах"
+
+#: senlin_dashboard/cluster/clusters/views.py:63
+msgid "Unable to retrieve clusters."
+msgstr "Не удалось получить сведения о кластерах"
+
+#: senlin_dashboard/cluster/clusters/views.py:95
+msgid "Unable to retrieve cluster."
+msgstr "Не удалось получить сведения о кластере"
+
+#: senlin_dashboard/cluster/clusters/templates/clusters/_create.html:5
+#: senlin_dashboard/cluster/nodes/templates/nodes/_create.html:5
+#: senlin_dashboard/cluster/nodes/templates/nodes/_update.html:5
+#: senlin_dashboard/cluster/policies/templates/policies/_create.html:5
+#: senlin_dashboard/cluster/policies/templates/policies/_update.html:5
+#: senlin_dashboard/cluster/profiles/templates/profiles/_create.html:9
+#: senlin_dashboard/cluster/profiles/templates/profiles/_update.html:5
+#: senlin_dashboard/cluster/receivers/templates/receivers/_create.html:5
+msgid "Description:"
+msgstr "Описание:"
+
+#: senlin_dashboard/cluster/clusters/templates/clusters/_create.html:6
+msgid ""
+"Cluster is the collection of cloud objects, e.g. Nova servers, Heat stacks, "
+"Cinder volumes, etc."
+msgstr ""
+"Кластер представляет собой коллекцию облачных объектов, например, серверов "
+"Nova, стеков Heat, томов Cinder и так далее."
+
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:4
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:4
+#: senlin_dashboard/cluster/policies/templates/policies/_detail_overview.html:4
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:4
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:4
+msgid "Information"
+msgstr "Сведения"
+
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:19
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:15
+#: senlin_dashboard/cluster/policies/templates/policies/_detail_overview.html:9
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:9
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:9
+msgid "ID"
+msgstr "ID"
+
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:35
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:29
+#: senlin_dashboard/cluster/policies/templates/policies/_detail_overview.html:15
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:15
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:19
+msgctxt "Created time"
+msgid "Created"
+msgstr "Создано"
+
+#: senlin_dashboard/cluster/clusters/templates/clusters/_detail_overview.html:38
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:32
+#: senlin_dashboard/cluster/policies/templates/policies/_detail_overview.html:18
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:18
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:22
+msgctxt "Updated time"
+msgid "Updated"
+msgstr "Обновлено"
+
+#: senlin_dashboard/cluster/clusters/templates/clusters/_manage_policies.html:5
+msgid "Available Policies"
+msgstr "Доступные политики"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:33
+msgctxt "Current status of the event"
+msgid "INIT"
+msgstr "INIT"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:34
+msgctxt "Current status of the event"
+msgid "ACTIVE"
+msgstr "АКТИВЕН"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:35
+msgctxt "Current status of the event"
+msgid "ERROR"
+msgstr "ОШИБКА"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:36
+msgctxt "Current status of the event"
+msgid "DELETED"
+msgstr "УДАЛЁН"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:37
+msgctxt "Current status of the event"
+msgid "WARNING"
+msgstr "ПРЕДУПРЕЖДЕНИЕ"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:39
+msgctxt "Current status of the event"
+msgid "CREATING"
+msgstr "СОЗДАНИЕ"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:41
+msgctxt "Current status of the event"
+msgid "UPDATING"
+msgstr "ОБНОВЛЕНИЕ"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:43
+msgctxt "Current status of the event"
+msgid "DELETING"
+msgstr "УДАЛЕНИЕ"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:46
+msgid "Object ID"
+msgstr "ID объекта"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:47
+msgid "Object Name"
+msgstr "Имя объекта"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:55
+#: senlin_dashboard/cluster/receivers/forms.py:57
+#: senlin_dashboard/cluster/receivers/tables.py:83
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:15
+msgid "Action"
+msgstr "Действие"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:57
+msgid "Generated At"
+msgstr "Создан в"
+
+#: senlin_dashboard/cluster/nodes/event_tables.py:62
+#: senlin_dashboard/cluster/nodes/tabs.py:32
+msgid "Event"
+msgstr "Событие"
+
+#: senlin_dashboard/cluster/nodes/forms.py:33
+#, python-format
+msgid "The specified metadata is not a valid YAML: %s"
+msgstr "Указаны метаданные с недопустимым YAML: %s"
+
+#: senlin_dashboard/cluster/nodes/forms.py:45
+#: senlin_dashboard/cluster/nodes/forms.py:97
+msgid "Node Name"
+msgstr "Имя узла"
+
+#: senlin_dashboard/cluster/nodes/forms.py:48
+#: senlin_dashboard/cluster/nodes/forms.py:100
+msgid "Profile used for this node."
+msgstr "Профиль, использующийся для этого узла"
+
+#: senlin_dashboard/cluster/nodes/forms.py:52
+msgid "Cluster for this node."
+msgstr "Кластер для этого узла"
+
+#: senlin_dashboard/cluster/nodes/forms.py:55
+#: senlin_dashboard/cluster/nodes/forms.py:103
+#: senlin_dashboard/cluster/nodes/tables.py:198
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:26
+msgid "Role"
+msgstr "Роль"
+
+#: senlin_dashboard/cluster/nodes/forms.py:57
+#: senlin_dashboard/cluster/nodes/forms.py:105
+msgid "Role for this node in the specific cluster."
+msgstr "Роль этого узла в конкретном кластере"
+
+#: senlin_dashboard/cluster/nodes/forms.py:61
+#: senlin_dashboard/cluster/nodes/forms.py:109
+#: senlin_dashboard/cluster/profiles/forms.py:97
+#: senlin_dashboard/cluster/profiles/forms.py:154
+msgid "YAML formatted metadata."
+msgstr "Метаданные в формате YAML."
+
+#: senlin_dashboard/cluster/nodes/forms.py:73
+#: senlin_dashboard/cluster/receivers/forms.py:74
+msgid "Select Cluster"
+msgstr "Выберите кластер"
+
+#: senlin_dashboard/cluster/nodes/forms.py:85
+#, python-format
+msgid "Creating node \"%s\" successfully"
+msgstr "Узел \"%s\" был успешно создан"
+
+#: senlin_dashboard/cluster/nodes/forms.py:91
+msgid "Unable to create node."
+msgstr "Невозможно создать узел"
+
+#: senlin_dashboard/cluster/nodes/forms.py:131
+#, python-format
+msgid "Your node %s update request has been accepted for processing."
+msgstr "Запрос на обновление узла %s был принят на обработку"
+
+#: senlin_dashboard/cluster/nodes/forms.py:138
+msgid "Unable to update node."
+msgstr "Невозможно обновить узел"
+
+#: senlin_dashboard/cluster/nodes/tables.py:27
+#: senlin_dashboard/cluster/nodes/templates/nodes/create.html:3
+#: senlin_dashboard/cluster/nodes/views.py:74
+msgid "Create Node"
+msgstr "Создать узел"
+
+#: senlin_dashboard/cluster/nodes/tables.py:38
+msgid "Delete Node"
+msgid_plural "Delete Nodes"
+msgstr[0] "Удалить узел"
+msgstr[1] "Удалить узлы"
+msgstr[2] "Удалить узлы"
+
+#: senlin_dashboard/cluster/nodes/tables.py:46
+msgid "Scheduled deletion of Node"
+msgid_plural "Scheduled deletion of Nodes"
+msgstr[0] "Удаление узла занесено в расписание"
+msgstr[1] "Удаление узлов занесено в расписание"
+msgstr[2] "Удаление узлов занесено в расписание"
+
+#: senlin_dashboard/cluster/nodes/tables.py:64
+#: senlin_dashboard/cluster/nodes/templates/nodes/update.html:3
+#: senlin_dashboard/cluster/nodes/views.py:124
+msgid "Update Node"
+msgstr "Обновить узел"
+
+#: senlin_dashboard/cluster/nodes/tables.py:75
+msgid "Recover Node"
+msgid_plural "Recover Nodes"
+msgstr[0] "Восстановить узел"
+msgstr[1] "Восстановить узлы"
+msgstr[2] "Восстановить узлы"
+
+#: senlin_dashboard/cluster/nodes/tables.py:83
+msgid "Recovered Node"
+msgid_plural "Recovered Nodes"
+msgstr[0] "Узел был восстановлен"
+msgstr[1] "Узлы были восстановлены"
+msgstr[2] "Узлы были восстановлены"
+
+#: senlin_dashboard/cluster/nodes/tables.py:104
+msgid "Check Node"
+msgid_plural "Check Nodes"
+msgstr[0] "Проверить узел"
+msgstr[1] "Проверить узлы"
+msgstr[2] "Проверить узлы"
+
+#: senlin_dashboard/cluster/nodes/tables.py:112
+msgid "Checked Node"
+msgid_plural "Checked Nodes"
+msgstr[0] "Узел был проверен"
+msgstr[1] "Узлы были проверены"
+msgstr[2] "Узлы были проверены"
+
+#: senlin_dashboard/cluster/nodes/tables.py:157
+msgid "Node Name ="
+msgstr "Имя узла ="
+
+#: senlin_dashboard/cluster/nodes/tables.py:160
+#: senlin_dashboard/cluster/receivers/tables.py:70
+msgid "Cluster ID ="
+msgstr "ID кластера ="
+
+#: senlin_dashboard/cluster/nodes/tables.py:177
+msgctxt "Current status of a Node"
+msgid "INIT"
+msgstr "INIT"
+
+#: senlin_dashboard/cluster/nodes/tables.py:178
+msgctxt "Current status of a Node"
+msgid "ACTIVE"
+msgstr "АКТИВЕН"
+
+#: senlin_dashboard/cluster/nodes/tables.py:179
+msgctxt "Current status of a Node"
+msgid "ERROR"
+msgstr "ОШИБКА"
+
+#: senlin_dashboard/cluster/nodes/tables.py:180
+msgctxt "Current status of a Node"
+msgid "WARNING"
+msgstr "ПРЕДУПРЕЖДЕНИЕ"
+
+#: senlin_dashboard/cluster/nodes/tables.py:181
+msgctxt "Current status of a Node"
+msgid "CREATING"
+msgstr "СОЗДАНИЕ"
+
+#: senlin_dashboard/cluster/nodes/tables.py:182
+msgctxt "Current status of a Node"
+msgid "UPDATING"
+msgstr "ОБНОВЛЕНИЕ"
+
+#: senlin_dashboard/cluster/nodes/tables.py:183
+msgctxt "Current status of a Node"
+msgid "DELETING"
+msgstr "УДАЛЕНИЕ"
+
+#: senlin_dashboard/cluster/nodes/tables.py:184
+msgctxt "Current status of a Node"
+msgid "RECOVERING"
+msgstr "ИДЁТ ВОССТАНОВЛЕНИЕ"
+
+#: senlin_dashboard/cluster/nodes/tables.py:197
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:23
+msgid "Physical ID"
+msgstr "Физический ID"
+
+#: senlin_dashboard/cluster/nodes/tables.py:201
+#: senlin_dashboard/cluster/nodes/templates/nodes/_detail_overview.html:12
+#: senlin_dashboard/cluster/receivers/tables.py:82
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:13
+msgid "Cluster ID"
+msgstr "ID кластера"
+
+#: senlin_dashboard/cluster/nodes/views.py:63
+msgid "Unable to retrieve nodes."
+msgstr "Не удалось получить сведения об узлах"
+
+#: senlin_dashboard/cluster/nodes/views.py:94
+#: senlin_dashboard/cluster/nodes/views.py:149
+msgid "Unable to retrieve node."
+msgstr "Не удалось получить сведения об узле"
+
+#: senlin_dashboard/cluster/nodes/templates/nodes/_create.html:6
+msgid ""
+"Nodes are the physical objects, which can belong to any cluster of the same "
+"profile type."
+msgstr ""
+"Узлы — это физические объекты, которые могут принадлежать к любому кластеру "
+"с одним и тем же типом профиля."
+
+#: senlin_dashboard/cluster/nodes/templates/nodes/_update.html:6
+msgid "You may update the editable properties of your node here."
+msgstr "Здесь можно обновить редактируемые параметры узла"
+
+#: senlin_dashboard/cluster/policies/forms.py:42
+#, python-format
+msgid "The specified spec is not a valid YAML: %s"
+msgstr "Указаны спецификации с недопустимым форматом YAML: %s"
+
+#: senlin_dashboard/cluster/policies/forms.py:55
+#: senlin_dashboard/cluster/policies/templates/policies/_detail_overview.html:13
+#: senlin_dashboard/cluster/profiles/forms.py:146
+#: senlin_dashboard/cluster/profiles/templates/profiles/_detail_overview.html:13
+msgid "Spec"
+msgstr "Спецификация"
+
+#: senlin_dashboard/cluster/policies/forms.py:57
+msgid "The spec yaml used to create the policy."
+msgstr "YAML спецификации, использованный для создания политики"
+
+#: senlin_dashboard/cluster/policies/forms.py:59
+msgid "Cooldown"
+msgstr "Ожидание"
+
+#: senlin_dashboard/cluster/policies/forms.py:63
+msgid ""
+"An integer indicating the cooldown seconds once the policy is effected. "
+"Default to 0."
+msgstr ""
+"Целое число, указывающее ожидание (в сек.) после вступления "
+"в силу политики. По умолчанию: 0"
+
+#: senlin_dashboard/cluster/policies/forms.py:66
+msgid "Level"
+msgstr "Уровень"
+
+#: senlin_dashboard/cluster/policies/forms.py:71
+msgid ""
+"An integer between 0 and 100 representing the enforcement level. Default to "
+"0."
+msgstr ""
+"Целое число от 0 до 100, представляющее уровень применения политик. По"
+" умолчанию: 0."
+
+#: senlin_dashboard/cluster/policies/forms.py:78
+#, python-format
+msgid "The specified data is not a valid YAML data: %s"
+msgstr "Указаны данные с недопустимым форматом YAML: %s"
+
+#: senlin_dashboard/cluster/policies/forms.py:90
+#, python-format
+msgid "Your policy %s has been created."
+msgstr "Политика %s была создана"
+
+#: senlin_dashboard/cluster/policies/forms.py:95
+msgid "Unable to create new policy."
+msgstr "Не удалось создать новую политику"
+
+#: senlin_dashboard/cluster/policies/forms.py:110
+#, python-format
+msgid "Your policy %s has been updated."
+msgstr "Политика %s была обновлена"
+
+#: senlin_dashboard/cluster/policies/forms.py:118
+msgid "Unable to update policy."
+msgstr "Не удалось обновить политику"
+
+#: senlin_dashboard/cluster/policies/tables.py:25
+#: senlin_dashboard/cluster/policies/templates/policies/create.html:3
+#: senlin_dashboard/cluster/policies/views.py:74
+msgid "Create Policy"
+msgstr "Создать политику"
+
+#: senlin_dashboard/cluster/policies/tables.py:33
+#: senlin_dashboard/cluster/policies/templates/policies/update.html:3
+#: senlin_dashboard/cluster/policies/views.py:119
+msgid "Update Policy"
+msgstr "Обновить политику"
+
+#: senlin_dashboard/cluster/policies/tables.py:43
+msgid "Delete Policy"
+msgid_plural "Delete Policies"
+msgstr[0] "Удалить политику"
+msgstr[1] "Удалить политики"
+msgstr[2] "Удалить политики"
+
+#: senlin_dashboard/cluster/policies/tables.py:51
+msgid "Deleted Policy"
+msgid_plural "Deleted Policies"
+msgstr[0] "Политика была удалена"
+msgstr[1] "Политики были удалены"
+msgstr[2] "Политики были удалены"
+
+#: senlin_dashboard/cluster/policies/tables.py:68
+msgid "Policy Name ="
+msgstr "Имя политики ="
+
+#: senlin_dashboard/cluster/policies/tables.py:69
+#: senlin_dashboard/cluster/receivers/tables.py:68
+msgid "Type ="
+msgstr "Тип ="
+
+#: senlin_dashboard/cluster/policies/tables.py:70
+msgid "Level ="
+msgstr "Уровень ="
+
+#: senlin_dashboard/cluster/policies/views.py:63
+msgid "Unable to retrieve policies."
+msgstr "Не удалось получить сведения о политиках"
+
+#: senlin_dashboard/cluster/policies/views.py:94
+#: senlin_dashboard/cluster/policies/views.py:133
+msgid "Unable to retrieve policy."
+msgstr "Не удалось получить сведения о политике"
+
+#: senlin_dashboard/cluster/policies/templates/policies/_create.html:6
+#, fuzzy
+msgid ""
+"A policy is a set of rules that can be checked and/or enforced when an "
+"Action is performed on a Cluster."
+msgstr ""
+"Политика — это набор правил, с которыми можно свериться и/или применить "
+"во время выполнения действия в кластере."
+
+#: senlin_dashboard/cluster/policies/templates/policies/_create.html:8
+msgid "Policy Spec Examples"
+msgstr "Примеры спецификаций политик"
+
+#: senlin_dashboard/cluster/policies/templates/policies/_update.html:6
+msgid "Edit the name for the Policy."
+msgstr "Изменить имя политики"
+
+#: senlin_dashboard/cluster/profiles/forms.py:45
+#: senlin_dashboard/cluster/profiles/forms.py:57
+#, python-format
+msgid "The specified file is not a valid YAML file: %s"
+msgstr "Указанный файл не является допустимым файлом YAML: %s"
+
+#: senlin_dashboard/cluster/profiles/forms.py:69
+msgid "Spec Source"
+msgstr "Источник спецификации"
+
+#: senlin_dashboard/cluster/profiles/forms.py:71
+msgid "File"
+msgstr "Файл"
+
+#: senlin_dashboard/cluster/profiles/forms.py:72
+msgid "YAML"
+msgstr "YAML"
+
+#: senlin_dashboard/cluster/profiles/forms.py:77
+#: senlin_dashboard/cluster/profiles/forms.py:81
+msgid "Spec File"
+msgstr "Файл спецификации"
+
+#: senlin_dashboard/cluster/profiles/forms.py:83
+msgid "The spec file used to create the profile."
+msgstr "Файл спецификации, использованный для создания данного профиля"
+
+#: senlin_dashboard/cluster/profiles/forms.py:85
+#: senlin_dashboard/cluster/profiles/forms.py:91
+msgid "Spec YAML"
+msgstr "YAML спецификации"
+
+#: senlin_dashboard/cluster/profiles/forms.py:92
+msgid "The spec yaml used to create the profile."
+msgstr "YAML спецификации, использованный для создания данного профиля"
+
+#: senlin_dashboard/cluster/profiles/forms.py:107
+msgid "A spec file or yaml must be specified."
+msgstr "Необходимо указать файл или YAML спецификации"
+
+#: senlin_dashboard/cluster/profiles/forms.py:110
+msgid "Can not specify both sepc file and yaml."
+msgstr "Нельзя указать одновременно и файл и YAML"
+
+#: senlin_dashboard/cluster/profiles/forms.py:129
+#, python-format
+msgid "Your profile %s has been created."
+msgstr "Профиль %s был создан."
+
+#: senlin_dashboard/cluster/profiles/forms.py:137
+msgid "Unable to create new profile"
+msgstr "Не удалось создать новый профиль"
+
+#: senlin_dashboard/cluster/profiles/forms.py:149
+msgid "Update the spec of a profile is not allowed"
+msgstr "Обновление спецификаций профиля не разрешено"
+
+#: senlin_dashboard/cluster/profiles/forms.py:166
+#, python-format
+msgid "Your profile %s has been updated."
+msgstr "Профиль %s был обновлён"
+
+#: senlin_dashboard/cluster/profiles/forms.py:174
+msgid "Unable to update profile"
+msgstr "Не удалось обновить профиль"
+
+#: senlin_dashboard/cluster/profiles/panel.py:23
+#: senlin_dashboard/cluster/profiles/tables.py:95
+#: senlin_dashboard/cluster/profiles/templates/profiles/index.html:3
+#: senlin_dashboard/cluster/profiles/urls.py:22
+#: senlin_dashboard/cluster/profiles/views.py:33
+msgid "Profiles"
+msgstr "Профили"
+
+#: senlin_dashboard/cluster/profiles/tables.py:25
+#: senlin_dashboard/cluster/profiles/templates/profiles/create.html:3
+#: senlin_dashboard/cluster/profiles/views.py:74
+msgid "Create Profile"
+msgstr "Создать профиль"
+
+#: senlin_dashboard/cluster/profiles/tables.py:33
+#: senlin_dashboard/cluster/profiles/templates/profiles/update.html:3
+#: senlin_dashboard/cluster/profiles/views.py:86
+msgid "Update Profile"
+msgstr "Обновить профиль"
+
+#: senlin_dashboard/cluster/profiles/tables.py:43
+msgid "Delete Profile"
+msgid_plural "Delete Profiles"
+msgstr[0] "Удалить профиль"
+msgstr[1] "Удалить профили"
+msgstr[2] "Удалить профили"
+
+#: senlin_dashboard/cluster/profiles/tables.py:51
+msgid "Deleted Profile"
+msgid_plural "Deleted Profiles"
+msgstr[0] "Профиль был удалён"
+msgstr[1] "Профили были удалены"
+msgstr[2] "Профили были удалены"
+
+#: senlin_dashboard/cluster/profiles/views.py:63
+msgid "Unable to retrieve profiles."
+msgstr "Не удалось получить сведения о профилях"
+
+#: senlin_dashboard/cluster/profiles/views.py:113
+#: senlin_dashboard/cluster/profiles/views.py:147
+msgid "Unable to retrieve profile."
+msgstr "Не удалось получить сведения о профиле"
+
+#: senlin_dashboard/cluster/profiles/templates/profiles/_create.html:10
+msgid "A profile encodes the information needed for node creation."
+msgstr "В профиле кодируется информация, необходимая для создания узла"
+
+#: senlin_dashboard/cluster/profiles/templates/profiles/_create.html:12
+msgid "Profile Spec Examples"
+msgstr "Примеры спецификаций профилей"
+
+#: senlin_dashboard/cluster/profiles/templates/profiles/_update.html:6
+msgid "You may update the editable properties of your profile here."
+msgstr "Здесь можно обновить редактируемые параметры профиля"
+
+#: senlin_dashboard/cluster/receivers/forms.py:39
+#, python-format
+msgid "The specified params is not a valid YAML: %s"
+msgstr "Указаны параметры с недопустимым форматом YAML: %s"
+
+#: senlin_dashboard/cluster/receivers/forms.py:54
+msgid "Targeted cluster for this receiver."
+msgstr "Целевой кластер для данного получателя"
+
+#: senlin_dashboard/cluster/receivers/forms.py:58
+msgid "Name or ID of the targeted action to be triggered."
+msgstr "Имя или ID запускаемого целевого действия"
+
+#: senlin_dashboard/cluster/receivers/forms.py:62
+msgid "Type of the receiver to create. Default to webhook"
+msgstr "Тип создаваемого получателя. По умолчанию: веб-перехватчик"
+
+#: senlin_dashboard/cluster/receivers/forms.py:64
+msgid "Parameters"
+msgstr "Параметры"
+
+#: senlin_dashboard/cluster/receivers/forms.py:67
+msgid ""
+"YAML formatted parameters that will be passed to target action when the "
+"receiver is triggered."
+msgstr ""
+"Параметры в формате YAML, которые будут переданы целевому действию "
+"после запуска получателя"
+
+#: senlin_dashboard/cluster/receivers/forms.py:78
+msgid "Select Type"
+msgstr "Выберите тип"
+
+#: senlin_dashboard/cluster/receivers/forms.py:87
+#, python-format
+msgid "The parameters is not a valid YAML formatted: %s"
+msgstr "Параметры с недопустимым форматированием YAML: %s"
+
+#: senlin_dashboard/cluster/receivers/forms.py:95
+#, python-format
+msgid "Your receiver %s has been created successfully."
+msgstr "Получатель %s был успешно создан"
+
+#: senlin_dashboard/cluster/receivers/forms.py:100
+msgid "Unable to create new receiver."
+msgstr "Не удалось создать новый получатель"
+
+#: senlin_dashboard/cluster/receivers/panel.py:21
+#: senlin_dashboard/cluster/receivers/tables.py:97
+#: senlin_dashboard/cluster/receivers/templates/receivers/index.html:3
+#: senlin_dashboard/cluster/receivers/urls.py:24
+#: senlin_dashboard/cluster/receivers/views.py:31
+msgid "Receivers"
+msgstr "Получатели"
+
+#: senlin_dashboard/cluster/receivers/tables.py:25
+#: senlin_dashboard/cluster/receivers/templates/receivers/create.html:3
+#: senlin_dashboard/cluster/receivers/views.py:72
+msgid "Create Receiver"
+msgstr "Создать получатель"
+
+#: senlin_dashboard/cluster/receivers/tables.py:36
+msgid "Delete Receiver"
+msgid_plural "Delete Receivers"
+msgstr[0] "Удалить получатель"
+msgstr[1] "Удалить получатели"
+msgstr[2] "Удалить получатели"
+
+#: senlin_dashboard/cluster/receivers/tables.py:44
+msgid "Deleted Receiver"
+msgid_plural "Deleted Receivers"
+msgstr[0] "Получатель удалён"
+msgstr[1] "Получатели удалены"
+msgstr[2] "Получатели удалены"
+
+#: senlin_dashboard/cluster/receivers/tables.py:67
+msgid "Receiver Name ="
+msgstr "Имя получателя ="
+
+#: senlin_dashboard/cluster/receivers/tables.py:69
+msgid "Action ="
+msgstr "Действие ="
+
+#: senlin_dashboard/cluster/receivers/views.py:61
+msgid "Unable to retrieve receivers."
+msgstr "Не удалось получить сведения о получателях"
+
+#: senlin_dashboard/cluster/receivers/views.py:91
+msgid "Unable to retrieve receiver."
+msgstr "Не удалось получить сведения о получателе"
+
+#: senlin_dashboard/cluster/receivers/templates/receivers/_create.html:6
+msgid ""
+"A Receiver is used to prepare Senlin engine to react to external alarms or "
+"events so that a specific Action can be initiated on a senlin cluster "
+"automatically. For example, when workload on a cluster climbs high, a "
+"receiver can change the size of a specified cluster."
+msgstr ""
+"Получатель используется для подготовки реагирования базового обработчика"
+" Senlin "
+"на внешние сигналы тревоги или события так, чтобы в кластере senlin автоматически"
+" инициировалось "
+"конкретное событие. Например: при высокой рабочей нагрузке в кластере"
+" получатель "
+"может изменить размер конкретного кластера."
+
+#: senlin_dashboard/cluster/receivers/templates/receivers/_detail_overview.html:17
+msgid "Channel"
+msgstr "Канал"
+

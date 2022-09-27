@@ -1,0 +1,568 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: aodh\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-14 09:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/liberty>:20
+msgid "1.1.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:5
+msgid "1.1.3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "10.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:5
+msgid "12.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current
+msgid "12.0.0-15"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:35
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:20
+msgid "2.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "2.0.2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:28
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "4.0.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "5.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "6.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "9.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:37
+msgid ""
+"A healthcheck endpoint is provided by default at /healthcheck. It leverages "
+"oslo_middleware healthcheck middleware. It allows to retrieve information "
+"about the health of the API service."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current
+msgid ""
+"A new ``alarm_histories_delete_bacth_size`` option has been added to limit a "
+"number of alarm histories deleted from the database by aodh-expirer in a "
+"single iteration. This parameter is useful when there are a lot of alarm "
+"histories in the database."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:29 origin/stable/mitaka>:70
+msgid ""
+"A new default policy.json is provided to properly handle RBAC control. "
+"Existing policy.json files may not grant the appropriate access."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:44
+msgid ""
+"Add a new composite type alarm, which allow users specifying a composite "
+"rule to define an alarm with multiple triggering conditions, using a "
+"combination of *and*, *or* relationships. The composite rule is composed of "
+"multiple threshold rules or gnocchi rules."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:58 origin/stable/mitaka>:14
+msgid ""
+"Add a tool for migrating alarm and alarm history data from NoSQL storage to "
+"SQL storage. The migration tool has been tested OK in devstack environment, "
+"but users need to be cautious with this, because the data migration between "
+"storage backends is a bit dangerous."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:52
+msgid "Add support for Keystone v3 authentication"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:34
+msgid ""
+"Added a new evaluator for the alarms of type ``loadbalancer_member_health`` "
+"which evaluates the alarm by checking the operating status of the members in "
+"a given load balancer pool."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:30
+msgid ""
+"Added a new notifier(``trust+heat``) that works together with "
+"``loadbalancer_member_health`` evaluator for auto-healing purpose."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14
+msgid "Added new tool ``aodh-status upgrade check``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:51
+msgid "All the deprecated non-SQL drivers have been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:23
+msgid ""
+"Aodh Quota API is aiming for multi-tenancy support. By default, only the "
+"admin user is able to change or delete the resource quota for projects as "
+"defined by the default policy rule 'telemetry:update_quotas' and 'telemetry:"
+"delete_quotas'. User alarm quota and alarm action quota are not supported in "
+"Quota API."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:69
+msgid ""
+"Aodh now leverages microseconds timestamps available since MySQL 5.6.4, "
+"meaning it is now the minimum required version of MySQL."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14
+msgid ""
+"Aodh now support policy in code, which means if users didn't modify any of "
+"policy rules, they can leave policy file (in `json` or `yaml` format) empty "
+"or not deploy it at all. Because from now, Aodh keeps all default policies "
+"under `aodh/api/policies` module. Users can still modify/generate `policy."
+"yaml` file which will override policy rules in code if those rules show in "
+"`policy.yaml` file."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:92
+msgid ""
+"Because queues provide the equivalent functionality. RPC support is "
+"deprecated and will be removed after Mitaka."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:9 ../source/newton.rst:82
+#: origin/stable/liberty>:10 origin/stable/liberty>:45 origin/stable/mitaka>:25
+#: origin/stable/mitaka>:108 origin/stable/ocata>:10 stable/pike>:39
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:24
+msgid ""
+"Ceilometer's API is deprecated in Ocata. Therefore, threshold alarms are now "
+"deprecated as well. Threshold rules will be removed when Ceilometer's API is "
+"also removed. Similar functionality is provided through Gnocchi alarm rules: "
+"``gnocchi_resources_threshold``, "
+"``gnocchi_aggregation_by_metrics_threshold``, or "
+"``gnocchi_aggregation_by_resources_threshold``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:39
+msgid ""
+"Default `policy.json` file is now removed as Aodh now generate the default "
+"policies from code. Please be aware that when using that file in your "
+"environment."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:74 branch>:23 current
+#: origin/stable/mitaka>:84 stable/pike>:20 stable/queens>:25
+#: stable/wallaby>:28
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:88
+msgid ""
+"Drop support for NoSQL backends in Aodh. SQL is a prefectly sufficient "
+"backend for handling the scope of alarms. To maximise available resources, "
+"NoSQL backends are deprecated so developers do not need to worry about "
+"adding features to multiple backends."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:61
+msgid ""
+"Gnocchi aggregation capabilities are now cached to minimise redundant calls "
+"to Gnocchi when validating aggregation methods. The cache is stored in-"
+"memory for an hour. If additional aggregations are added to Gnocchi, they "
+"will not be proprogated to Aodh's API service for at most an hour or unless "
+"the service is restarted."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:48
+msgid "Gnocchi dispatcher now uses client rather than direct http requests"
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:28 branch>:10 current
+#: origin/stable/mitaka>:40 origin/stable/ocata>:33 stable/pike>:10
+#: stable/queens>:10 stable/train>:20 stable/ussuri>:10
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:24
+msgid ""
+"New framework for ``aodh-status upgrade check`` command is added. This "
+"framework allows adding various checks which can be run before a Aodh "
+"upgrade to ensure if the upgrade can be performed safely."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:44
+msgid ""
+"Operator can now use new CLI tool ``aodh-status upgrade check`` to check if "
+"Aodh deployment can be safely upgraded from N-1 to N release."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:94 origin/stable/liberty>:55
+#: origin/stable/ocata>:57 stable/queens>:35
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:39 origin/stable/mitaka>:102
+msgid ""
+"Patch was added to address inconsistent RBAC policy handling. Certain rules "
+"may not have been given appropriate access."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:33
+msgid ""
+"Python 2.7 support has been dropped. Last release of Aodh to support py2.7 "
+"is OpenStack Train. The minimum version of Python now supported by Aodh is "
+"Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:78
+msgid ""
+"Queue based communication is the new default IPC protocol. RPC can still be "
+"used by choosing rpc as ipc_protocol option. Only one protocol can be run at "
+"any given time."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:60
+msgid "Remove eventlet from Aodh in favour of threaded approach"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:35 origin/stable/mitaka>:98
+msgid "Security Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:59
+msgid "Start using reno to manage release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:56
+msgid ""
+"Support for queue based communication between alarm evaluator service and "
+"alarm notifier services was added. Original implementation involved using "
+"RPC but there is significant overhead involved with using RPC. Work queues "
+"provided required functionality with better performance."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:19
+msgid ""
+"Support to deploy aodh-evaluator in active/active mode by leveraging "
+"database non-locking mechanism. With this feature, there could be multiple "
+"aodh-evaluator processes running without dependency of etcd or zookeeper."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:27 current
+msgid ""
+"The ``[coordination] check_watchers`` parameter has been deprecated since it "
+"has been ineffective."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"The admin user can fetch alarms of all the projects, e.g. ``curl -X GET "
+"\"${aodh_prefix}/v2/alarms?q.field=all_projects&q.op=eq&q.value=true\" X-"
+"Auth-Token:$token``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:47
+msgid "The api.pecan_debug option has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:14
+msgid ""
+"The default value of ``[oslo_policy] policy_file`` config option has been "
+"changed from ``policy.json`` to ``policy.yaml``. Operators who are utilizing "
+"customized or previously generated static policy JSON files (which are not "
+"needed by default), should generate new policy files or convert them in YAML "
+"format. Use the `oslopolicy-convert-json-to-yaml <https://docs.openstack.org/"
+"oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml.html>`_ tool to "
+"convert a JSON to YAML formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:29
+msgid "The deprecated 'threshold' alarm type has been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:33
+msgid "The deprecated combination alarms support have been removed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid ""
+"The reason of the state change is now part of the API as \"state_reason\" "
+"field of the alarm object."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:54 origin/stable/liberty>:25
+#: origin/stable/mitaka>:10 origin/stable/mitaka>:66 origin/stable/ocata>:43
+#: stable/train>:40 stable/ussuri>:29 stable/wallaby>:10
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:32
+msgid ""
+"Use of JSON policy files was deprecated by the ``oslo.policy`` library "
+"during the Victoria development cycle. As a result, this deprecation is "
+"being noted in the Wallaby cycle with an anticipated future removal of "
+"support by ``oslo.policy``. As such operators will need to convert to YAML "
+"policy files. Please see the upgrade notes for details on migration of any "
+"custom policy files."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:13 origin/stable/ocata>:14
+#: stable/pike>:43
+msgid ""
+"When an unprivileged user want to access to Gnocchi resources created by "
+"Ceilometer, that doesn't work because the filter scope the Gnocchi query to "
+"resource owner to the user. To fix we introduce a new configuration option "
+"\"gnocchi_external_project_owner\" set by default to \"service\". The new "
+"filter now allow two kind of Gnocchi resources:"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:49 origin/stable/mitaka>:132
+msgid ""
+"[`bug 1504495 <https://bugs.launchpad.net/ceilometer/+bug/1504495>`_] Patch "
+"was added to address inconsistent RBAC policy handling. Certain rules may "
+"not have been given appropriate access."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:120
+msgid ""
+"[`bug 1511252 <https://bugs.launchpad.net/aodh/+bug/1511252>`_] Fix an issue "
+"with combination alarms where it fails to evaluate all issues in the chain "
+"of alarms."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:128
+msgid ""
+"[`bug 1513738 <https://bugs.launchpad.net/aodh/+bug/1513738>`_] Fix an issue "
+"where alarms using Gnocchi aggregations are not being evaluated."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:116
+msgid ""
+"[`bug 1518447 <https://bugs.launchpad.net/aodh/+bug/1518447>`_] Fix to "
+"ensure ceilometerclient is properly initialised on startup."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:124
+msgid ""
+"[`bug 1539069 <https://bugs.launchpad.net/aodh/+bug/1539069>`_] Fix to "
+"handle scenario where no valid statistics exist for specified period."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:112
+msgid ""
+"[`bug 1540395 <https://bugs.launchpad.net/aodh/+bug/1540395>`_] Fix reason "
+"string to properly handle transitions when one sample is outside of defined "
+"threshold."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:90 origin/stable/liberty>:14
+#: origin/stable/mitaka>:29
+msgid ""
+"[`bug 1575530 <https://bugs.launchpad.net/aodh/+bug/1575530>`_] Patch was "
+"added to fix and improve the partition coordinator, make sure the input "
+"tasks can be correctly distributed to partition members."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:74
+msgid ""
+"gnocchiclient library is now a requirement if using ceilometer+gnocchi."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:21 stable/pike>:50
+msgid ""
+"owned by \"gnocchi_external_project_owner\" and the original project_id of "
+"the resource is the user project."
+msgstr ""
+
+#: ../../<reno.sphinxext ../source/newton.rst:19 origin/stable/ocata>:20
+#: stable/pike>:49
+msgid "owned by the user project"
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "Aodh Release Notes"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:6
+msgid "3.0.3"
+msgstr ""
+
+#: ../source/newton.rst:20
+msgid ""
+"owned by \"gnocchi_external_project_owner\" and the orignal project_id of "
+"the resource is the user project."
+msgstr ""
+
+#: ../source/newton.rst:25
+msgid "3.0.0"
+msgstr ""
+
+#: ../source/newton.rst:32
+msgid ""
+"Enable aodh services, including aodh-evaluator, aodh-listener and aodh-"
+"notifier to run in multiple worker mode. New options are introduced "
+"corresponsively as [evaluator]workers, [listener]workers and "
+"[notifier]workers. They all default to 1."
+msgstr ""
+
+#: ../source/newton.rst:37
+msgid ""
+"Add support for batch processing of messages from queue. This will allow the "
+"aodh-listener to grab multiple event messages per thread to enable more "
+"efficient processing."
+msgstr ""
+
+#: ../source/newton.rst:41
+msgid ""
+"A new option “rest_notifier_ca_bundle_certificate_path” has been added in "
+"the configuration file, set None as default value. If this option is present "
+"and SSL is used for alarm action the certificate path provided will be used "
+"as value of verify parameter in action request."
+msgstr ""
+
+#: ../source/newton.rst:45
+msgid ""
+"Allow to extends the alarm evaluation windows to compensate the reporting/"
+"ingestion lag. An new option is introduced additional_ingestion_lag "
+"defaulted to 0. It represents the number of seconds of the window extension."
+msgstr ""
+
+#: ../source/newton.rst:50
+msgid ""
+"Add support for batch processing of messages from queue. This will allow the "
+"aodh-notifier to grab multiple messages per thread to enable more efficient "
+"processing."
+msgstr ""
+
+#: ../source/newton.rst:62
+msgid ""
+"batch_size and batch_timeout configuration options are added to [listener] "
+"section of configuration. The batch_size controls the number of messages to "
+"grab before processing. Similarly, the batch_timeout defines the wait time "
+"before processing."
+msgstr ""
+
+#: ../source/newton.rst:66
+msgid ""
+"batch_size and batch_timeout configuration options are added to [notifier] "
+"section of configuration. The batch_size controls the number of messages to "
+"grab before processing. Similarly, the batch_timeout defines the wait time "
+"before processing."
+msgstr ""
+
+#: ../source/newton.rst:70
+msgid ""
+"Add a tool for converting combination alarms to composite alarms, since we "
+"have deprecated the combination alarm support and recommend to use composite "
+"alarm to perform multiple conditions alarming."
+msgstr ""
+
+#: ../source/newton.rst:78
+msgid ""
+"The combination alarms are officially deprecated and disabled by default. "
+"Set api.enable_combination_alarms to True to enable them. Existing alarms "
+"will still be evaluated, but access to them via the API is linked to whether "
+"that configuration option is turned on or off. It's advised to use composite "
+"alarms instead."
+msgstr ""
+
+#: ../source/newton.rst:86
+msgid ""
+"[`bug 1582131 <https://bugs.launchpad.net/aodh/+bug/1582131>`_] Fix an issue "
+"with adding CA_BUNDLE certificate parth as value of \"verify\" parameter in "
+"SSL requests."
+msgstr ""
+
+#: ../source/newton.rst:98
+msgid "Alarm name unique constraint for each project has been removed."
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

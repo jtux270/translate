@@ -1,0 +1,408 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: python-muranoclient\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-14 09:27+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/newton>:20
+msgid "0.10.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "0.11.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "0.12.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:5
+msgid "0.7.3"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:103
+msgid "0.8.1"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:74
+msgid "0.8.2"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:49
+msgid "0.8.4"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:20
+msgid "0.8.5"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "0.8.6"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:71
+msgid "0.9.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:38
+msgid ""
+"Ability to load package from directory was added. If specified directory "
+"contains all the needed files then package will be imported as usual."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:65
+msgid ""
+"Add an ability to use arguments --resources-dir and --template for the "
+"command package-create simultaneously. It allows to create HOT-packages with "
+"Resources folder."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:120
+msgid ""
+"Added '--dep-exists-action' option to murano command-line interface. It "
+"allows to apply different default actions for existing main package and "
+"existing dependencies. In case of specifying just '--exists-action', action "
+"for dependencies equals to that like it was previously."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:68 origin/stable/newton>:152
+msgid ""
+"Added fallback from token to username/password if both are provided and "
+"token expires or is invalid."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:83
+msgid ""
+"Added python-muranoclient support in openstack-client by setting entry "
+"points and implementing interface functions."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:20 origin/stable/mitaka>:10
+#: origin/stable/mitaka>:35 origin/stable/mitaka>:64 origin/stable/mitaka>:89
+#: origin/stable/mitaka>:108 origin/stable/newton>:10 origin/stable/newton>:57
+#: origin/stable/newton>:144 origin/stable/ocata>:62
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid ""
+"CLI command :command:``env-templat-create-env`` now supports ``--region`` "
+"flag"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:97
+msgid ""
+"Changed murano-client CLI outputs to show only items affected by current "
+"operation instead of full item list."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:52
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:14 origin/stable/newton>:61
+msgid ""
+"Fixed a bug when a package containing multi-class yamls could not be added "
+"to glare-based catalog."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:156
+msgid ""
+"Fixed order of packages import - main package can not be imported before all "
+"its dependencies are imported. Cyclic requirements are imported in random "
+"order."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:93
+msgid ""
+"Fixes use murano package-import with version parameter, It always shows "
+"version of client. Rename the parameter 'version' to 'package-version'"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:148
+msgid ""
+"Importing a package into glare, now fills 'inherited' field with full "
+"inheritance info (previously it only contained immediate parent classes)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:24 origin/stable/mitaka>:43
+#: origin/stable/newton>:164
+msgid ""
+"It is now possible to import packages with '!yaql' tag, when glare is used "
+"as backend. Before this fix, importing such package caused a parsing error."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:66
+msgid ""
+"It was impossible to use `--owned` flag when Glare was used to filter "
+"packages. This issue is fixed now."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14 origin/stable/ocata>:70
+msgid ""
+"It was possible to import the same murano package from the CLI into the same "
+"project multiple times if glare was used and the package was imported as a "
+"private one. The issue is now fixed."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:54 origin/stable/mitaka>:79
+#: origin/stable/newton>:25 origin/stable/newton>:76 origin/stable/ocata>:10
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:26
+msgid ""
+"New Murano CLI command ``murano environment-model-edit <ID> <FILE> --session-"
+"id <SESSION_ID>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:22
+msgid ""
+"New Murano CLI command ``murano environment-model-show <ID> [--path <PATH>] "
+"[--session-id <SESSION_ID>]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:104
+msgid "New OSC command ``category create <name>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:108
+msgid "New OSC command ``category delete <id> [<id> ...]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:96
+msgid "New OSC command ``category list``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:100
+msgid "New OSC command ``category show <id>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:112
+msgid ""
+"New OSC command ``environment create [--join-net-id <NET_ID>] [--join-subnet-"
+"id <SUBNET_ID>] [--region <REGION_NAME>] <ENVIRONMENT_NAME>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:116
+msgid ""
+"New OSC command ``environment delete [--abandon] <NAME or ID> [<NAME or ID> ."
+"..]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:80
+msgid "New OSC command ``environment list [--all-tenants]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:88
+msgid "New OSC command ``environment rename <id> <name>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:92
+msgid "New OSC command ``environment session create <id>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:84
+msgid ""
+"New OSC command ``environment show <id or name> [--session-id <session id>] "
+"[--only-apps]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:37
+msgid ""
+"New OSC command ``openstack class-schema [--package-name PACKAGE_NAME] [--"
+"class-version PACKAGE_VERSION] <CLASS> [<METHOD> [<METHOD> ...]]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:34
+msgid ""
+"New OSC command ``openstack environment model edit <ID> <FILE> --session-id "
+"<SESSION_ID>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:30
+msgid ""
+"New OSC command ``openstack environment model show <ID> [--path <PATH>] [--"
+"session-id <SESSION_ID>]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:46
+msgid "New OSC command ``package list``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:33
+msgid ""
+"New murano CLI command ``murano class-schema [--package-name PACKAGE_NAME] [-"
+"-class-version PACKAGE_VERSION] <CLASS> [<METHOD> [<METHOD> ...]]``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:128
+msgid ""
+"OSC plugin now honores ``--murano-url`` and ``MURANO_URL``, to allow using "
+"custom murano endpoint"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Python 2.7 support has been dropped. Last release of python-muranoclient to "
+"support python 2.7 is OpenStack Train. The minimum version of Python now "
+"supported is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:10 origin/stable/mitaka>:25
+#: origin/stable/newton>:134
+msgid "Security Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:58 origin/stable/newton>:124
+msgid ""
+"Since glare has been moved to a separate service muranoclient CLI now "
+"distinguishes between --glance-url and --glare-url. If --glare-url is not "
+"supplied muranoclient requests an endpoint of type 'artifact' from keystone."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:56
+msgid ""
+"Since glare is a separate project now usage of 'glance' value for --murano-"
+"packages-service has been deprecated and is scheduled to be removed in P "
+"cycle"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:29
+msgid "Support for class/method JSON-schema API was added"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:18
+msgid "Support for environment model edit API was added"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:41
+msgid ""
+"Support for static actions API was added - New Murano CLI command ``murano "
+"static-action-call [--arguments [<KEY=VALUE> [<KEY=VALUE> ...]]] [--package-"
+"name <PACKAGE>] [--class-version CLASS_VERSION] <CLASS> <METHOD>`` - New OSC "
+"command ``openstack static-action call [--arguments [<KEY=VALUE> [<KEY="
+"VALUE> ...]]] [--package-name <PACKAGE>] [--class-version CLASS_VERSION] "
+"<CLASS> <METHOD>``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:42
+msgid ""
+"The client now is able to consume the updated `List Environments` API call, "
+"which may be used to filter environments by an owner project (tenant)."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:47 stable/ussuri>:10
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:39 origin/stable/newton>:160
+msgid ""
+"cli now makes use of type of the endpoint (defined either as a --os-endpoint-"
+"type command line parameter or OS_ENDPOINT_TYPE environment variable). This "
+"type defines which interface will be used when connecting to murano, glance "
+"and glare APIs."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:116
+msgid ""
+"command 'package_update' was broken since murano start support of keystone "
+"v3. The error occurred because murano tried to pass custom content type "
+"parameter in the request kwargs, not headers."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:14 origin/stable/mitaka>:29
+#: origin/stable/newton>:138
+msgid ""
+"cve-2016-4972 has been addressed. In ceveral places Murano used loaders "
+"inherited directly from yaml.Loader when parsing MuranoPL and UI files from "
+"packages. This is unsafe, because this loader is capable of creating custom "
+"python objects from specifically constructed yaml files. With this change "
+"all yaml loading operations are done using safe loaders instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:51
+msgid ""
+"environment-action-call command now accepts action argument values of any "
+"type in JSON format, for example environment-action-call $ENV_ID --action-id "
+"$ACT_ID --arguments foo=bar listArg='[\"item1\", \"item2\", \"item3\"]' "
+"nullArg=null stringArg='\"null\"' intArg=5"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:112
+msgid ""
+"fixes no attribute error caused by the new raw_request return, by let the "
+"SessionClient raw_request only return response without data."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "Murano Client Release Notes"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

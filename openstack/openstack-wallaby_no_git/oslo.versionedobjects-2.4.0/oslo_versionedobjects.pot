@@ -1,0 +1,199 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-01 13:33+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: oslo_versionedobjects/base.py:601
+#, python-format
+msgid "Cannot load '%s' in the base class"
+msgstr ""
+
+#: oslo_versionedobjects/base.py:609
+msgid "Cannot save anything in the base class"
+msgstr ""
+
+#: oslo_versionedobjects/base.py:681
+#, python-format
+msgid "%(objname)s object has no attribute '%(attrname)s'"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:103
+msgid "An unknown exception occurred."
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:143
+#, python-format
+msgid "Object action %(action)s failed because: %(reason)s"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:147
+#, python-format
+msgid "Field %(field)s of %(objname)s is not an instance of Field"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:151
+#, python-format
+msgid "Cannot call %(method)s on orphaned %(objtype)s object"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:155
+#, python-format
+msgid ""
+"Version %(objver)s of %(objname)s is not supported, supported version is "
+"%(supported)s"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:160
+#, python-format
+msgid "Cannot modify readonly field %(field)s"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:164
+#, python-format
+msgid "Unsupported object type %(objtype)s"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:168
+msgid "Enum fields require a list of valid_values"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:172
+msgid "Enum valid values are not valid"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:176
+#, python-format
+msgid "%(typename)s in %(fieldname)s is not an instance of Enum"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:180
+#, python-format
+msgid "%(fieldname)s missing field type"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:184
+#, python-format
+msgid "Invalid target version %(version)s"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:188
+#, python-format
+msgid "No subobject existed at version %(target_version)s"
+msgstr ""
+
+#: oslo_versionedobjects/exception.py:192
+#, python-format
+msgid ""
+"%(child_objname)s is referenced by %(parent_objname)s but is not "
+"registered"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:37
+#, python-format
+msgid "Key %(key)s must be of type %(expected)s not %(actual)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:47
+#, python-format
+msgid "Element %(key)s:%(val)s must be of type %(expected)s not %(actual)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:180
+#, python-format
+msgid "Field `%s' cannot be None"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:271
+#, python-format
+msgid "A string is required in field %(attr)s, not a %(type)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:299
+#, python-format
+msgid "Version %(val)s is not a valid predicate in field %(attr)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:324 oslo_versionedobjects/fields.py:330
+#, python-format
+msgid "Field value %s is invalid"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:345
+#, python-format
+msgid "%s has no pattern"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:392
+#, python-format
+msgid "Malformed MAC %s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:406
+#, python-format
+msgid "Malformed PCI address %s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:423 oslo_versionedobjects/fields.py:443
+#, python-format
+msgid "Value must be >= 0 for field %s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:476
+#, python-format
+msgid "A datetime.datetime is required in field %(attr)s, not a %(type)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:525 oslo_versionedobjects/fields.py:539
+#: oslo_versionedobjects/fields.py:553
+#, python-format
+msgid "Network \"%(val)s\" is not valid in field %(attr)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:650
+#, python-format
+msgid "A list is required in field %(attr)s, not a %(type)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:675
+#, python-format
+msgid "A dict is required in field %(attr)s, not a %(type)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:741
+#, python-format
+msgid "A set is required in field %(attr)s, not a %(type)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:804
+#, python-format
+msgid ""
+"An object of type %(type)s is required in field %(attr)s, not a "
+"%(valtype)s"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:1014
+#, python-format
+msgid "%(object)s.%(name)s is not allowed to transition out of %(value)s state"
+msgstr ""
+
+#: oslo_versionedobjects/fields.py:1027
+#, python-format
+msgid ""
+"%(object)s.%(name)s is not allowed to transition out of "
+"'%(current_value)s' state to '%(value)s' state, choose from %(options)r"
+msgstr ""
+

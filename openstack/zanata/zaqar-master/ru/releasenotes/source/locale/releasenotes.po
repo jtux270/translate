@@ -1,0 +1,564 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: zaqar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-18 09:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/liberty>:5
+msgid "1.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "10.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "11.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:5
+msgid "12.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current
+msgid "12.0.0-10"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "2.0.0-10"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "5.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5 stable/rocky>:48
+msgid "6.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "7.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "8.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:18
+msgid ""
+"A new queue action is added so that users can purge a queue quickly. That "
+"means all the messages and subscriptions will be deleted automatically but "
+"the metadata of the queue will be kept."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid ""
+"Add a new webhook notifier using trust authentication. When using the "
+"'trust+' URL prefix, Zaqar will create a Keystone trust for the user, and "
+"then use it when a notification happens to authenticate against Keystone and "
+"send the token to the endpoint."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:24
+msgid ""
+"Add an new option named 'message_delete_with_claim_id', when it is True, "
+"delete messages must need claim_ids and message_ids both in request "
+"parameters. This will improve the security of the message."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:22
+msgid "Add migration support for Zaqar's sqlalchemy storage driver."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:29
+msgid ""
+"Add three new reserved metdata in response body of querying queue. "
+"\"_dead_letter_queue\", \"_dead_letter_queue_messages_ttl\" and "
+"\"_max_claim_count\". Those metadata will help user to know better about "
+"dead letter queue."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:65
+msgid ""
+"Add two configurations for the notification endpoint of the websocket "
+"server, instead of a random port and local address. One is 'notification-"
+"bind', address on which the notification server will listen. Another is "
+"'notification-port', port on which the notification server will listen."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid "Added new tool ``zaqar-status upgrade check``."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:10 origin/stable/mitaka>:10
+#: origin/stable/newton>:50 stable/pike>:61 stable/wallaby>:71
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:48
+msgid "Critical Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:26
+msgid ""
+"Currently Zaqar can support more built-in/reserved attributes in queue. For "
+"now there are two important attributes 'max_messages_post_size' and "
+"'max_message_ttl'. With this feature, when user query queues Zaqar will show "
+"those two attributes (read from config file if there is no customized value "
+"from user) in queue metadata so that user can know what value it is."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:28
+msgid ""
+"Currently the email subscription in Zaqar relay on the third part tools, "
+"such as \"sendmail\". It means that deployer should install it out of Zaqar. "
+"If he forgets, Zaqar will raise internal error. This work let Zaqar support "
+"email subscription by itself using the ``smtp`` python library."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:30
+msgid ""
+"Currently, the v1 API is still accessible though it has been deprecated for "
+"a while. And we're going to deprecate v1.1 soon. To keep the backward "
+"compatibility, a new config option - ``enable_deprecated_api_versions`` is "
+"added so that operator can totally turn off an API version or still support "
+"it by adding the API version to the list of the new config option."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:40 stable/wallaby>:56
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:30
+msgid ""
+"Encrypted Messages in Queue (Change-Id "
+"`Icecfb9a232cfeefc2f9603934696bb2dcd56bc9c <https://review.opendev.org/#/q/"
+"Icecfb9a232cfeefc2f9603934696bb2dcd56bc9c>`_)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:75
+msgid ""
+"Fix SSLError caused by not passing the cafile (Change-Id "
+"`I176e3876f2652608aaf51b0f74f4d971d31253e2 <https://review.opendev.org/#/q/"
+"I176e3876f2652608aaf51b0f74f4d971d31253e2>`_)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:81
+msgid ""
+"Fix the issue that the function unpackb has no encoding option (Change-Id "
+"`bb92e983a79e5c1608f6a603816e1b88283e34c9 <https://review.opendev.org/#/q/"
+"bb92e983a79e5c1608f6a603816e1b88283e34c9>`_)"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:20
+msgid "Fixed bugs for stable and security."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:65
+msgid ""
+"In IPv6 management network environment, starting Zaqar server will run into "
+"'Address family for hostname not support' error when use WSGI simple server. "
+"The root cause is that Python's TCPServer implementation is hard-coded to "
+"use IPv4, even in IPv6 environments. Now this issue has been fixed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:40
+msgid ""
+"In Queens, we support the old way to use pool_group and the new way without "
+"it in Flavor both. In Stein, we will remove the pool_group totally and only "
+"keep the new way in Flavor and Pool."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:18
+msgid ""
+"Introduce Guru to Zaqar. Guru is a mechanism whereby developers and system "
+"administrators can generate a report about the state of a running Zaqar "
+"executable. This report is called a *Guru Meditation Report*. Now Guru can "
+"support wsgi, websocket and uwsgi modes all."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current
+msgid ""
+"Introduce a new request header called \"EXTRA-SPEC\" and driver mechanism "
+"with stevedore to let developers to implement the task about how to deal "
+"with this informtaion. In Wallaby, there's just an empty handler by default."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:36
+msgid ""
+"Introduce a new resource called Topic into Zaqar. Topic is a concept from "
+"AWS Simple Notification Service (SNS), it will has relevance with "
+"subscriptions. User can send message to a topic, and then the subscribers "
+"will get the message according to different protocols, like http, email, "
+"sms, etc. This feature will help Zaqar to split Messaging Queue Service and "
+"Notification Service clearly."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 current origin/stable/newton>:10
+#: origin/stable/ocata>:10 stable/pike>:10 stable/queens>:10 stable/rocky>:10
+#: stable/rocky>:53 stable/stein>:20 stable/ussuri>:10 stable/victoria>:10
+#: stable/wallaby>:26
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:47
+msgid ""
+"New framework for ``zaqar-status upgrade check`` command is added. This "
+"framework allows adding various checks which can be run before a Zaqar "
+"upgrade to ensure if the upgrade can be performed safely."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:34
+msgid ""
+"Now before users send messages to subscribers through a queue, the "
+"subscribers should be confirmed first. Zaqar only sends messages to the "
+"confirmed subscribers. This feature supports \"webhook\" and \"mailto\" "
+"subscribers with mongoDB or redis backend. The \"mailto\" part will be done "
+"in O cycle. Set \"require_confirmation = True\" to enable this feature. The "
+"default value is \"False\" now and we will enable it by default after one or "
+"two cycles."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:59
+msgid ""
+"Operator can now use new CLI tool ``zaqar-status upgrade check`` to check if "
+"Zaqar deployment can be safely upgraded from N-1 to N release."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:20 stable/rocky>:35
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:10 stable/wallaby>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:24
+msgid ""
+"Python 2.7 support has been dropped. Last release of Zaqar to support py2.7 "
+"is OpenStack Train. The minimum version of Python now supported by Zaqar is "
+"Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:14 origin/stable/mitaka>:14
+#: origin/stable/newton>:61
+msgid ""
+"Query for all subscriptions on a given queue by taking into account the "
+"returned marker, if any. Without this fix, only 10 subscriptions can be "
+"extracted from database to send notification."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:22
+msgid ""
+"Queues now behave lazy in subscriptions also. So there is no need for the "
+"user to pre-create a queue before creating a subscription for this queue. "
+"Zaqar will create the queue automatically on the subscription creation "
+"request. As before, all subscriptions will continue to stay active even if "
+"the corresponding queue was deleted."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:42
+msgid ""
+"Redis connection doesn't support password configure in zaqar, so redis-"
+"server can not set a password. If redis service doesn't set a password, it "
+"will suffer a large number of attacks. The patch will support password "
+"configure for redis connection in zaqar."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:20
+msgid ""
+"Since some clients use different format of client id not only uuid, like "
+"user id of ldap, so Zaqar will remove the format contrain of client id. Add "
+"one option 'client_id_uuid_safe' to allow user to control the validation of "
+"client id. Add two options 'min_length_client_id' and 'max_length_client_id' "
+"to allow user to control the length of client id if not using uuid. This "
+"also requires user to ensure the client id is immutable."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:24
+msgid ""
+"Since we have introduced the 'pool_list' instead of pool_group in Queens, "
+"Now we will update the APIs to suggest users use new argument."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:24
+msgid "Start using reno to manage release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:18
+msgid ""
+"Support 'post_data' and 'post_headers' options on subscribers, allowing "
+"customization of the payload when having a webhook subscriber. The "
+"'post_data' option supports the '$zaqar_message$' string template, which "
+"will be replaced by the serialized JSON message if specified."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:22
+msgid ""
+"Support Redis as management storage backend to improve the performance and "
+"ease of deployment. For the management driver, user needs to enable the "
+"redis storage options in redis.conf to persistent data."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:30
+msgid "Support dot character in queue's name, like 'service.test_queue'."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:18
+msgid "Support encrypted messages in queue."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:38
+msgid ""
+"Support for dead letter queue is added for MongoDB, Redis and Swift. With "
+"this feature, message will be moved to the specified dead letter queue if "
+"it's claimed many times but still can't successfully processed by a client. "
+"New reseved metadata keys of queue are added: _max_claim_count, "
+"_dead_letter_queue and _dead_letter_queue_messages_ttl."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:26
+msgid ""
+"Support for delayed queues is added for MongoDB, Redis and Swift. With this "
+"feature, if the queue is a delayed queue, its message will be delayed some "
+"time to be claimed. New reseved metadata key of queue is added: "
+"_default_message_delay."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:14
+msgid ""
+"Support for queue filter when queue listing. With this feature, users can "
+"add filter of name or metadata in query string parameters in queue list to "
+"filter queues."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:18
+msgid ""
+"Support more retry backoff function in webhook type. It will work when Zaqar "
+"failed to send the notification to the subscriber. Users can define the "
+"retry backoff function in metadata of queue. There are four retry backoff "
+"functions including  'linear', 'arithmetic', 'geometric' and 'exponential'."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:33 stable/rocky>:57
+msgid ""
+"Support non-URL encoded message body checksum function, the default "
+"algorithm is MD5. Back-end support for MongoDB, Redis and Swift. With this "
+"feature, when a user sends a message to the queue, Zaqar calculates a "
+"\"checksum\" value for the body of the non-URL encoded message, which the "
+"user can then get after the message is got or claimed. Finally, the user can "
+"use it to verify that the body of the newly obtained message is correct."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:34
+msgid ""
+"Support notificaiton delivery policy in webhook type. It will work when the "
+"notification is sent from Zaqar to the subscriber failed. User can define "
+"the retry policy in the options of subscription or metadata of queue."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:14
+msgid ""
+"Support query queues with filter 'with_count=true' to return the amount of "
+"the queues. This will help users to quickly get the exact total number of "
+"queues which they own."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid ""
+"The OSprofiler is integrated to Zaqar in Ocata. It is a library from oslo. "
+"It aims to analyse the performance bottleneck issue by making possible to "
+"generate one trace per request affecting all involved services and build a "
+"tree of calls."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:39
+msgid ""
+"The code structure for configuration files are changed. This is insensitvie "
+"for end users, but the persons who work for downstream changes should pay "
+"attention. Please refactor your private configurations to ``zaqar/conf/`` "
+"folder as well."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:42
+msgid ""
+"The default value of ``[oslo_policy] policy_file`` config option has been "
+"changed from ``policy.json`` to ``policy.yaml``. Operators who are utilizing "
+"customized or previously generated static policy JSON files (which are not "
+"needed by default), should generate new policy files or convert them in YAML "
+"format. Use the `oslopolicy-convert-json-to-yaml <https://docs.openstack.org/"
+"oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml.html>`_ tool to "
+"convert a JSON to YAML formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid ""
+"The new Swift storage backend is added to Zaqar in Ocata. It's experimental "
+"currently. To use this backend, you should modify the \"drivers\" section in "
+"the config file. [Blueprint `swift-storage-driver <https://blueprints."
+"launchpad.net/zaqar/+spec/swift-storage-driver>`_]"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:26 stable/pike>:22
+msgid ""
+"This feature is the third part of subscription confirmation feature. Support "
+"to send email to subscriber if confirmation is needed. To use this feature, "
+"user need to set the config option \"external_confirmation_url\", "
+"\"subscription_confirmation_email_template\" and "
+"\"unsubscribe_confirmation_email_template\". The confirmation page url that "
+"will be used in email subscription confirmation before notification, this "
+"page is not hosted in Zaqar server, user should build their own web service "
+"to provide this web page. The subscription_confirmation_email_template let "
+"user to customize the subscription confimation email content, including "
+"topic, body and sender. The unsubscribe_confirmation_email_template let user "
+"to customize the unsubscribe confimation email content, including topic, "
+"body and sender too."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:14
+msgid ""
+"To enhance the security of messaging service, the queue in Zaqar supports to "
+"encrypt messages before storing them into storage backends, also could "
+"support to decrypt messages when those are claimed by consumer. To enable "
+"this feature, user just need to take \"_enable_encrypt_messages=True\" when "
+"creating queue. AES-256 is used as the default of encryption algorithm and "
+"encryption key is configurable in the zaqar.conf."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:55 stable/ussuri>:20 stable/wallaby>:38
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:60
+msgid ""
+"Use of JSON policy files was deprecated by the ``oslo.policy`` library "
+"during the Victoria development cycle. As a result, this deprecation is "
+"being noted in the Wallaby cycle with an anticipated future removal of "
+"support by ``oslo.policy``. As such operators will need to convert to YAML "
+"policy files. Please see the upgrade notes for details on migration of any "
+"custom policy files."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:14
+msgid ""
+"Welcome to the Victoria release of the OpenStack Message  service (zaqar). "
+"In this cycle, the Zaqar team would like to bring the following points to "
+"your attention.  Details may be found below."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:54
+msgid ""
+"When access the root path of Zaqar service, for example: curl GET http://127."
+"0.0.1:8888/, user will see 401 error. Which will cause some front end proxy "
+"(like HAProxy) to complain. Now this issue has been fixed."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:52
+msgid ""
+"When using the sqlalchemy driver, operators now are required to run \"zaqar-"
+"sql-db-manage upgrade\" before making the service available. The service "
+"previously tried to create the database on the first request, but it was "
+"bound to race conditions."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:44
+msgid ""
+"Zaqar API v2 has been released for several cycles and it is integrated as "
+"the default API version by most of the OpenStack services. So it is time to "
+"deprecated v1.1 in favor of v2. Now in Newton cycle, Zaqar API v1.1 is "
+"officially deprecated."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:69
+msgid ""
+"Zaqar didn't return the reserved metadata when listing detailed queue. After "
+"this fix, Zaqar will return reserved metadata '_default_message_ttl' and "
+"'_max_messages_post_size' in response of listing detailed queue."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:26
+msgid "Zaqar now supports Cross-Origin Resource Sharing (CORS)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14
+msgid ""
+"Zaqar supports a new way to directly use pool resource without pool_group "
+"when creating Flavor. The old way will be kept in Queens and be marked "
+"useless. Zaqar will remove the pool_group totally in Rocky."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "Zaqar Release Notes"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

@@ -1,0 +1,329 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: solum VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-14 09:18+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: solum/api/auth.py:58
+msgid ""
+"Keystone authentication is disabled by Solum configuration parameter "
+"enable_authentication. Solum will not authenticate incoming request. In "
+"order to enable authentication set enable_authentication option to True."
+msgstr ""
+
+#: solum/api/auth.py:141
+msgid "X-Roles is missing. Using deprecated X-Role header"
+msgstr ""
+
+#: solum/api/controllers/camp/v1_1/plans.py:51
+#, python-format
+msgid "Error while processing the JSON Patch document: %(reason)s"
+msgstr ""
+
+#: solum/api/controllers/v1/assembly.py:108
+#: solum/api/controllers/v1/pipeline.py:101
+msgid "The plan was not hosted in solum"
+msgstr ""
+
+#: solum/api/controllers/v1/assembly.py:112
+#: solum/api/controllers/v1/pipeline.py:105
+msgid "The plan was not given or could not be found"
+msgstr ""
+
+#: solum/api/controllers/v1/datamodel/language_pack.py:72
+msgid "Names must not be longer than 100 characters"
+msgstr ""
+
+#: solum/api/controllers/v1/datamodel/language_pack.py:77
+msgid "Names must only contain a-z,0-9,-,_"
+msgstr ""
+
+#: solum/api/controllers/v1/datamodel/sensor.py:53
+#, python-format
+msgid "Value \"%s\" is not an integer."
+msgstr ""
+
+#: solum/api/controllers/v1/datamodel/types.py:47
+msgid "Names must only contain a-z,A-Z,0-9,-,_"
+msgstr ""
+
+#: solum/api/controllers/v1/datamodel/types.py:114
+#, python-format
+msgid "Wrong type. Expected '%(type)s', got '%(value)s'"
+msgstr ""
+
+#: solum/cmd/api.py:42 solum/cmd/conductor.py:34 solum/cmd/deployer.py:35
+#: solum/cmd/worker.py:52
+#, python-format
+msgid "Starting server in PID %s"
+msgstr ""
+
+#: solum/cmd/api.py:47
+#, python-format
+msgid "serving on 0.0.0.0:%(port)s, view at http://127.0.0.1:%(port)s"
+msgstr ""
+
+#: solum/cmd/api.py:51
+#, python-format
+msgid "serving on http://%(host)s:%(port)s"
+msgstr ""
+
+#: solum/cmd/status.py:41
+msgid "Policy File JSON to YAML Migration"
+msgstr ""
+
+#: solum/common/clients.py:32
+msgid "Region of endpoint in Identity service catalog to use for all clients."
+msgstr ""
+
+#: solum/common/clients.py:40
+msgid ""
+"If set, then the server's certificate for barbican will not be verified."
+msgstr ""
+
+#: solum/common/clients.py:51
+msgid ""
+"Type of endpoint in Identity service catalog to use for communication with "
+"the Glance service."
+msgstr ""
+
+#: solum/common/clients.py:56 solum/common/clients.py:67
+#: solum/common/clients.py:89 solum/common/clients.py:104
+#: solum/common/clients.py:121 solum/common/clients.py:137
+msgid "Region of endpoint in Identity service catalog to use."
+msgstr ""
+
+#: solum/common/clients.py:62
+msgid ""
+"Type of endpoint in Identity service catalog to use for communication with "
+"the OpenStack service."
+msgstr ""
+
+#: solum/common/clients.py:70 solum/common/clients.py:124
+msgid "Optional CA cert file to use in SSL connections."
+msgstr ""
+
+#: solum/common/clients.py:72
+msgid "Optional PEM-formatted certificate chain file."
+msgstr ""
+
+#: solum/common/clients.py:74
+msgid "Optional PEM-formatted file that contains the private key."
+msgstr ""
+
+#: solum/common/clients.py:78
+msgid "If set, then the server's certificate will not be verified."
+msgstr ""
+
+#: solum/common/clients.py:84
+msgid ""
+"Type of endpoint in Queue service catalog to use for communication with the "
+"Zaqar service."
+msgstr ""
+
+#: solum/common/clients.py:93
+msgid "If set, then the server's certificate for zaqar will not be verified."
+msgstr ""
+
+#: solum/common/clients.py:99
+msgid ""
+"Type of endpoint in Identity service catalog to use for communication with "
+"the Neutron service."
+msgstr ""
+
+#: solum/common/clients.py:107
+msgid "Optional CA bundle file to use in SSL connections."
+msgstr ""
+
+#: solum/common/clients.py:110
+msgid ""
+"If set, then the server's certificate for neutron will not be verified."
+msgstr ""
+
+#: solum/common/clients.py:116
+msgid ""
+"Type of endpoint in Identity service catalog to use for communication with "
+"the Swift service."
+msgstr ""
+
+#: solum/common/clients.py:127
+msgid "If set the server certificate will not be verified."
+msgstr ""
+
+#: solum/common/clients.py:132
+msgid ""
+"Type of endpoint in Identity service catalog to use for communication with "
+"the mistral service."
+msgstr ""
+
+#: solum/common/clients.py:140
+msgid "Optional CA cert file to use in SSL connections with Mistral."
+msgstr ""
+
+#: solum/common/clients.py:144
+msgid ""
+"If set the server certificate will not be verified while using Mistral."
+msgstr ""
+
+#: solum/common/exception.py:95
+#, python-format
+msgid ""
+"Your request could not be handled because of a problem in the server. Error "
+"Correlation id is: %s"
+msgstr ""
+
+#: solum/common/exception.py:231
+msgid "An unknown exception occurred."
+msgstr ""
+
+#: solum/common/exception.py:245
+msgid "Exception in string format operation"
+msgstr ""
+
+#: solum/common/exception.py:262
+#, python-format
+msgid "Resource limit exceeded. Reason: %(reason)s"
+msgstr ""
+
+#: solum/common/exception.py:266
+#, python-format
+msgid "The request is malformed. Reason: %(reason)s"
+msgstr ""
+
+#: solum/common/exception.py:271
+#, python-format
+msgid "The %(name)s %(id)s could not be found."
+msgstr ""
+
+#: solum/common/exception.py:275
+#, python-format
+msgid "The %(name)s already exists."
+msgstr ""
+
+#: solum/common/exception.py:279
+#, python-format
+msgid "The request is forbidden. Reason: %(reason)s"
+msgstr ""
+
+#: solum/common/exception.py:284
+#, python-format
+msgid "The %(name)s resource %(id)s could not be found."
+msgstr ""
+
+#: solum/common/exception.py:289
+#, python-format
+msgid "The %(name)s resource already exists."
+msgstr ""
+
+#: solum/common/exception.py:294
+#, python-format
+msgid ""
+"The %(name)s resource cannot be deleted because one or more resources "
+"reference it."
+msgstr ""
+
+#: solum/common/exception.py:300
+#, python-format
+msgid ""
+"'%(name)s' is not a supported media type for the %(method)s method of this "
+"resource"
+msgstr ""
+
+#: solum/common/exception.py:306
+msgid "Server is incapable of processing the specified request."
+msgstr ""
+
+#: solum/common/exception.py:311
+#, python-format
+msgid ""
+"Plan %(name)s cannot be deleted because one or more Assemblies reference it."
+msgstr ""
+
+#: solum/common/exception.py:316
+#, python-format
+msgid ""
+"Languagepack %(name)s cannot be deleted because one or more applications "
+"reference it."
+msgstr ""
+
+#: solum/common/exception.py:321
+msgid "The requested operation is not implemented."
+msgstr ""
+
+#: solum/common/exception.py:326
+#, python-format
+msgid "%(client)s connection failed. %(message)s"
+msgstr ""
+
+#: solum/common/exception.py:330
+msgid "Invalid object size."
+msgstr ""
+
+#: solum/common/exception.py:334
+msgid "Maximum retries has been reached."
+msgstr ""
+
+#: solum/common/solum_keystoneclient.py:33
+msgid "Subset of trustor roles to be delegated to solum."
+msgstr ""
+
+#: solum/common/solum_keystoneclient.py:163
+msgid "Keystone v3 API connection failed, no password trust or auth_token!"
+msgstr ""
+
+#: solum/common/solum_keystoneclient.py:174
+msgid "trust token re-scoping failed!"
+msgstr ""
+
+#: solum/common/urlfetch.py:37
+#, python-format
+msgid "Fetching data from %s"
+msgstr ""
+
+#: solum/common/urlfetch.py:42
+#, python-format
+msgid "Invalid URL scheme %s"
+msgstr ""
+
+#: solum/common/urlfetch.py:55
+#, python-format
+msgid "Failed to read file: %s"
+msgstr ""
+
+#: solum/common/urlfetch.py:79
+#, python-format
+msgid "Failed to retrieve file: %s"
+msgstr ""
+
+#: solum/tests/deployer/handlers/test_noop.py:32
+#: solum/tests/deployer/handlers/test_noop.py:39
+#: solum/tests/deployer/handlers/test_noop.py:51
+#: solum/tests/worker/handlers/test_noop.py:32
+#: solum/tests/worker/handlers/test_noop.py:41
+#: solum/tests/worker/handlers/test_noop.py:50
+#: solum/tests/worker/handlers/test_shell.py:710
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: solum/worker/handlers/shell.py:708
+#, python-format
+msgid "Failed to successfully get environment for building languagepack: `%s`"
+msgstr ""
+
+#: solum/worker/handlers/shell.py:761
+#, python-format
+msgid "Failed to successfully build languagepack: `%s`"
+msgstr ""
+

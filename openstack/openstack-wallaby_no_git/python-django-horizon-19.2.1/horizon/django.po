@@ -1,0 +1,570 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Дронова Юлия <juliette.tux@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-22 01:32+0000\n"
+"PO-Revision-Date: 2022-01-10 17:54+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.0\n"
+
+#: base.py:521
+msgid "Other"
+msgstr "Другое"
+
+#: browsers/base.py:88
+msgid "Navigation Item"
+msgstr "Элемент навигации"
+
+#: browsers/views.py:44
+#, python-format
+msgid "Select a %s to browse."
+msgstr "Выберите %s для просмотра"
+
+#: browsers/views.py:77 browsers/views.py:102 defaults.py:59
+msgid "Horizon"
+msgstr "Horizon"
+
+#: conf/default.py:44
+msgid "Password is not accepted"
+msgstr "Пароль не принят"
+
+#: decorators.py:53
+msgid "Please log in to continue."
+msgstr "Для продолжения выполните вход в систему"
+
+#: decorators.py:85 decorators.py:109
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "Отсутствует авторизация на доступ к %s"
+
+#: exceptions.py:110
+#, python-format
+msgid "Invalid service catalog: %s"
+msgstr "Недопустимый каталог служб: %s"
+
+#: exceptions.py:118
+#, python-format
+msgid "A %(resource)s with the name \"%(name)s\" already exists."
+msgstr "%(resource)s с именем \"%(name)s\" уже существует."
+
+#: exceptions.py:135
+#, python-format
+msgid ""
+"The value of %(resource)s is %(name)s inside the template. When launching a "
+"stack from this interface, the value must start with \"http://\" or "
+"\"https://\""
+msgstr ""
+"Значение %(resource)s представляет собой %(name)s внутри шаблона. При запуске"
+" стека "
+"с помощью данного интерфейса значение должно начинаться с \"http://\" или"
+" \"https://\""
+
+#: exceptions.py:220
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "Отсутствует авторизация: %s"
+
+#: exceptions.py:223 templates/not_authorized.html:5
+msgid "Unauthorized. Please try logging in again."
+msgstr ""
+"Отсутствует авторизация. Попробуйте выполнить повторный вход в систему."
+
+#: forms/fields.py:72
+msgid "Incorrect format for IP address"
+msgstr "Неверный формат адреса IP"
+
+#: forms/fields.py:73
+msgid "Invalid version for IP address"
+msgstr "Недопустимая версия адреса IP"
+
+#: forms/fields.py:74
+msgid "Invalid subnet mask"
+msgstr "Недопустимая маска подсети"
+
+#: forms/fields.py:152
+msgid "Invalid MAC Address format"
+msgstr "Недопустимый формат адреса MAC"
+
+#: forms/views.py:138 templates/horizon/common/_datepicker_form.html:20
+msgid "Submit"
+msgstr "Отправить"
+
+#: forms/views.py:139 templates/horizon/common/_workflow.html:52
+#: templates/horizon/common/_workflow.html:60
+msgid "Cancel"
+msgstr "Отмена"
+
+#: notifications.py:75
+#, python-format
+msgid "Message json file '%(path)s' is malformed. %(exception)s"
+msgstr "Неправильный формат '%(path)s' файла сообщения json. %(exception)s"
+
+#: notifications.py:99
+#, python-format
+msgid "Error processing message json file '%(path)s': %(exception)s"
+msgstr "Ошибка при обработке файла сообщения json '%(path)s': %(exception)s"
+
+#: tables/actions.py:473
+#: templates/horizon/common/_data_table_table_actions.html:21
+#: templates/horizon/common/_data_table_table_actions.html:31
+#: templates/horizon/common/_workflow_step_update_members.html:15
+#: templates/horizon/common/_workflow_step_update_members.html:26
+msgid "Filter"
+msgstr "Фильтр"
+
+#: tables/actions.py:652
+msgid "This action cannot be undone."
+msgstr "Это действие нельзя будет отменить."
+
+#: tables/actions.py:800
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "Отсутствуют разрешения на выполнение %(action)s: %(objs)s"
+
+#: tables/actions.py:807
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "Невозможно выполнить %(action)s: %(objs)s"
+
+#: tables/actions.py:813
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: tables/base.py:334
+msgid "-"
+msgstr "-"
+
+#: tables/base.py:1097
+msgid "No items to display."
+msgstr "Нет элементов для отображения"
+
+#: tables/base.py:1166
+msgid "Please specify a search criteria first."
+msgstr "Сначала нужно указать критерии поиска"
+
+#: tables/base.py:1222
+#: templates/horizon/common/_data_table_table_actions.html:56
+msgid "Actions"
+msgstr "Действия"
+
+#: tables/base.py:1482
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "Нет результатов поиска для id \"%s\"."
+
+#: tables/base.py:1647
+msgid "Please select a row before taking that action."
+msgstr "Перед выполнением этого действия сначала нужно выбрать строку"
+
+#: templates/auth/_description.html:9
+msgid ""
+"If you are not sure which authentication method to use, contact your "
+"administrator."
+msgstr ""
+"Если вы не знаете, какой способ аутентификации необходимо использовать, "
+"свяжитесь с администратором"
+
+#: templates/auth/_login_form.html:17
+msgid "Log in"
+msgstr "Вход в систему"
+
+#: templates/auth/_login_form.html:41
+msgid "You do not have permission to access the resource:"
+msgstr "Отсутствуют права на доступ к ресурсу:"
+
+#: templates/auth/_login_form.html:50
+#, python-format
+msgid ""
+"Login as different user or go back to <a href=\"%(home_url)s\">home page</a>"
+msgstr ""
+"Войдите в систему с правами другого пользователя или вернитесь на <a href=\""
+"%(home_url)s\">домашнюю  страницу</a>"
+
+#: templates/auth/_login_form.html:81
+msgid "Sign In"
+msgstr "Войти в систему"
+
+#: templates/auth/_password_form.html:17
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: templates/auth/_password_form.html:52
+msgid "Change"
+msgstr "Изменить"
+
+#: templates/auth/login.html:4 templates/not_authorized.html:9
+msgid "Login"
+msgstr "Выполнить вход"
+
+#: templates/auth/password.html:4
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+#: templates/horizon/_messages.html:10
+msgid "Info: "
+msgstr "Сведения: "
+
+#: templates/horizon/_messages.html:18
+msgid "Warning: "
+msgstr "Предупреждение: "
+
+#: templates/horizon/_messages.html:26
+msgid "Success: "
+msgstr "Успешно: "
+
+#: templates/horizon/_messages.html:36
+msgid "Error: "
+msgstr "Ошибка: "
+
+#: templates/horizon/client_side/_confirm.html:9
+msgid "You have selected: [[selection]]. "
+msgstr "Ваш выбор: [[selection]]. "
+
+#: templates/horizon/client_side/_confirm.html:11
+msgid "Please confirm your selection."
+msgstr "Подтвердите выбор"
+
+#: templates/horizon/common/_data_table.html:72
+msgid "Summary"
+msgstr "Сводные данные"
+
+#: templates/horizon/common/_data_table_pagination.html:4
+#: templates/horizon/common/_data_table_pagination_with_pages.html:5
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "Отображается %(counter)s элемент"
+msgstr[1] "Отображаются %(counter)s элемента"
+msgstr[2] "Отображаются %(counter)s элементов"
+
+#: templates/horizon/common/_data_table_pagination.html:11
+msgid "&laquo;&nbsp;Prev"
+msgstr "&laquo;&nbsp;Назад"
+
+#: templates/horizon/common/_data_table_pagination.html:14
+#: templates/horizon/common/_data_table_pagination_with_pages.html:23
+msgid "Next&nbsp;&raquo;"
+msgstr "Вперёд&nbsp;&raquo;"
+
+#: templates/horizon/common/_data_table_pagination_with_pages.html:12
+msgid "&laquo;&laquo;&nbsp;First"
+msgstr "&laquo;&laquo;&nbsp;Первая"
+
+#: templates/horizon/common/_data_table_pagination_with_pages.html:13
+msgid "&laquo;&nbsp;Prev&nbsp;"
+msgstr "&laquo;&nbsp;Пред&nbsp;"
+
+#: templates/horizon/common/_data_table_pagination_with_pages.html:24
+msgid "Last&nbsp;&raquo;&raquo;"
+msgstr "Посл&nbsp;&raquo;&raquo;"
+
+#: templates/horizon/common/_data_table_table_actions.html:54
+msgid "More Actions"
+msgstr "Больше действий"
+
+#: templates/horizon/common/_datepicker_form.html:4
+msgid "Select a period of time to query its usage:"
+msgstr "Выберите отрезок времени для запроса о потреблении:"
+
+#: templates/horizon/common/_datepicker_form.html:5
+msgid "The date should be in YYYY-MM-DD format."
+msgstr "Даты указываются в формате ГГГГ-ММ-ДД"
+
+#: templates/horizon/common/_datepicker_form.html:13
+msgid "to"
+msgstr "до"
+
+#: templates/horizon/common/_domain_page_header.html:6
+#, python-format
+msgid "%(context_name)s:"
+msgstr "%(context_name)s:"
+
+#: templates/horizon/common/_formset_table.html:35
+msgid "Add a row"
+msgstr "Добавить строку"
+
+#: templates/horizon/common/_formset_table_row.html:15
+#, python-format
+msgid "%(name)s: %(error)s"
+msgstr "%(name)s: %(error)s"
+
+#: templates/horizon/common/_keystone_provider_selector.html:8
+msgid "Keystone Providers:"
+msgstr "Поставщики Keystone:"
+
+#: templates/horizon/common/_limit_summary.html:5
+msgid "Limit Summary"
+msgstr "Сводные данные об ограничениях"
+
+#: templates/horizon/common/_limit_summary.html:17
+#, python-format
+msgid "%(usedphrase)s %(used)s of %(available)s"
+msgstr "%(usedphrase)s %(used)s из %(available)s"
+
+#: templates/horizon/common/_limit_summary.html:21
+#, python-format
+msgid "%(usedphrase)s %(used)s (No Limit)"
+msgstr "%(usedphrase)s %(used)s (без ограничений)"
+
+#: templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "Отображается %(nav_items)s элемент"
+msgstr[1] "Отображаются %(nav_items)s элемента"
+msgstr[2] "Отображается %(nav_items)s элементов"
+
+#: templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "Отображается %(content_items)s элемент"
+msgstr[1] "Отображаются %(content_items)s элемента"
+msgstr[2] "Отображается %(content_items)s элементов"
+
+#: templates/horizon/common/_usage_summary.html:3
+msgid "Usage Summary"
+msgstr "Сводные данные потребления"
+
+#: templates/horizon/common/_usage_summary.html:12
+msgid "Active Instances:"
+msgstr "Активные экземпляры:"
+
+#: templates/horizon/common/_usage_summary.html:14
+msgid "Active RAM:"
+msgstr "Активно ОЗУ:"
+
+#: templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours:"
+msgstr "Использовано часов вирт. ЦП за этот период:"
+
+#: templates/horizon/common/_usage_summary.html:18
+msgid "This Period's GB-Hours:"
+msgstr "Гбайт-часов за этот период:"
+
+#: templates/horizon/common/_usage_summary.html:20
+msgid "This Period's RAM-Hours:"
+msgstr "ОЗУ-часов за этот период:"
+
+#: templates/horizon/common/_workflow.html:54
+msgid "Back"
+msgstr "Назад"
+
+#: templates/horizon/common/_workflow.html:55
+msgid "Next"
+msgstr "Вперёд"
+
+#: templates/not_authorized.html:8
+msgid "You are not authorized to access this page"
+msgstr "Отсутствует авторизация на доступ к этой странице"
+
+#: templatetags/horizon.py:143
+msgid "(No Limit)"
+msgstr "(без ограничений)"
+
+#: templatetags/horizon.py:146 templatetags/horizon.py:147
+msgid "Available"
+msgstr "Доступно"
+
+#: templatetags/sizeformat.py:51 templatetags/sizeformat.py:58
+#, python-format
+msgid "%(size)d Byte"
+msgid_plural "%(size)d Bytes"
+msgstr[0] "%(size)d байт"
+msgstr[1] "%(size)d байта"
+msgstr[2] "%(size)d байтов"
+
+#: templatetags/sizeformat.py:55
+msgid "Infinity"
+msgstr "Бесконечность"
+
+#: templatetags/sizeformat.py:61
+#, python-format
+msgid "%s KB"
+msgstr "%s Кбайт"
+
+#: templatetags/sizeformat.py:63
+#, python-format
+msgid "%s MB"
+msgstr "%s Мбайт"
+
+#: templatetags/sizeformat.py:65
+#, python-format
+msgid "%s GB"
+msgstr "%s Гбайт"
+
+#: templatetags/sizeformat.py:67
+#, python-format
+msgid "%s TB"
+msgstr "%s Тбайт"
+
+#: templatetags/sizeformat.py:69
+#, python-format
+msgid "%s PB"
+msgstr "%s Пбайт"
+
+#: templatetags/sizeformat.py:71
+#, python-format
+msgid "%s EB"
+msgstr "%s Эбайт"
+
+#: templatetags/sizeformat.py:73
+#, python-format
+msgid "%s ZB"
+msgstr "%s Збайт"
+
+#: templatetags/sizeformat.py:74
+#, python-format
+msgid "%s YB"
+msgstr "%s Ибайт"
+
+#: templatetags/sizeformat.py:82
+msgid "0 Bytes"
+msgstr "0 байтов"
+
+#: test/test_dashboards/dogs/puppies/tables.py:31
+msgid "Sell Puppy"
+msgid_plural "Sell Puppies"
+msgstr[0] "Sell Puppy"
+msgstr[1] "Sell Puppies"
+msgstr[2] "Sell Puppies"
+
+#: test/test_dashboards/dogs/puppies/tables.py:40
+msgid "Sold Puppy"
+msgid_plural "Sold Puppies"
+msgstr[0] "Sold Puppy"
+msgstr[1] "Sold Puppies"
+msgstr[2] "Sold Puppies"
+
+#: test/unit/tables/test_tables.py:161
+msgid "Batch Item"
+msgid_plural "Batch Items"
+msgstr[0] "Batch Item"
+msgstr[1] "Batch Items"
+msgstr[2] "Batch Items"
+
+#: test/unit/tables/test_tables.py:170
+msgid "Batched Item"
+msgid_plural "Batched Items"
+msgstr[0] "Batched Item"
+msgstr[1] "Batched Items"
+msgstr[2] "Batched Items"
+
+#: test/unit/tables/test_tables.py:198
+msgid "Up Item"
+msgid_plural "Up Items"
+msgstr[0] "Up Item"
+msgstr[1] "Up Items"
+msgstr[2] "Up Items"
+
+#: test/unit/tables/test_tables.py:205
+msgid "Down Item"
+msgid_plural "Down Items"
+msgstr[0] "Down Item"
+msgstr[1] "Down Items"
+msgstr[2] "Down Items"
+
+#: test/unit/tables/test_tables.py:214
+msgid "Upped Item"
+msgid_plural "Upped Items"
+msgstr[0] "Upped Item"
+msgstr[1] "Upped Items"
+msgstr[2] "Upped Items"
+
+#: test/unit/tables/test_tables.py:221
+msgid "Downed Item"
+msgid_plural "Downed Items"
+msgstr[0] "Downed Item"
+msgstr[1] "Downed Items"
+msgstr[2] "Downed Items"
+
+#: test/unit/test_views.py:58
+msgid "Fake"
+msgstr "Тестовый заполнитель"
+
+#: utils/filters.py:50
+msgid "Never"
+msgstr "Никогда"
+
+#: utils/validators.py:28
+msgid "Not a valid port number"
+msgstr "Не является допустимым номером порта"
+
+#: utils/validators.py:35
+msgid "Not a valid ICMP type"
+msgstr "Не является допустимым типом ICMP"
+
+#: utils/validators.py:42
+msgid "Not a valid ICMP code"
+msgstr "Не является допустимым кодом ICMP"
+
+#: utils/validators.py:47
+msgid "Not a valid IP protocol number"
+msgstr "Не является допустимым номером протокола IP"
+
+#: utils/validators.py:61
+msgid "One colon allowed in port range"
+msgstr "При указании диапазона портов допускается только одно двоеточие"
+
+#: utils/validators.py:68
+msgid "Invalid metadata entry. Use comma-separated key=value pairs"
+msgstr ""
+"Недопустимая запись метаданных. Используйте пары «ключ=значение», через"
+" запятую"
+
+#: utils/validators.py:85
+msgid "The string may only contain ASCII printable characters."
+msgstr "Строка может содержать только печатные символы ASCII"
+
+#: workflows/base.py:74
+msgid "Processing..."
+msgstr "Идёт обработка…"
+
+#: workflows/base.py:512
+msgid "All available"
+msgstr "Все доступные"
+
+#: workflows/base.py:513
+msgid "Members"
+msgstr "Участники"
+
+#: workflows/base.py:514
+msgid "None available."
+msgstr "Нет доступных"
+
+#: workflows/base.py:515
+msgid "No members."
+msgstr "Нет участников"
+
+#: workflows/base.py:623
+msgid "Save"
+msgstr "Сохранить"
+
+#: workflows/base.py:624
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s выполнено успешно"
+
+#: workflows/base.py:625
+#, python-format
+msgid "%s did not complete."
+msgstr "%s не выполнено."
+
+#: workflows/base.py:900
+msgid ""
+"The current user has insufficient permission to complete the requested task."
+msgstr ""
+"У текущего пользователя нет достаточных полномочий на выполнение "
+"запрошенной задачи"

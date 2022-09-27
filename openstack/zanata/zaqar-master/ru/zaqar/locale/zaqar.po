@@ -1,0 +1,1025 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: zaqar VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-18 09:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: zaqar/api/v2/endpoints.py:115
+#, python-format
+msgid "Queue %s could not be created."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:120
+#, python-format
+msgid "Queue %s created."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:141
+#, python-format
+msgid "Queue %s could not be deleted."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:146
+#, python-format
+msgid "Queue %s removed."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:171
+#, python-format
+msgid "Queue %s does not exist."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:176
+#, python-format
+msgid "Cannot retrieve queue %s."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:217
+#, python-format
+msgid "Cannot retrieve queue %s stats."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:424
+msgid "Invalid request."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:425 zaqar/transport/wsgi/v1_1/messages.py:168
+#: zaqar/transport/wsgi/v2_0/messages.py:225
+msgid "No messages were found in the request body."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:492 zaqar/transport/wsgi/v1_0/messages.py:165
+#: zaqar/transport/wsgi/v1_1/messages.py:196
+#: zaqar/transport/wsgi/v2_0/messages.py:253
+msgid "No messages could be enqueued."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:532 zaqar/transport/wsgi/v1_0/messages.py:276
+#: zaqar/transport/wsgi/v1_1/messages.py:344
+#: zaqar/transport/wsgi/v2_0/messages.py:423
+msgid "A claim was specified, but the message is not currently claimed."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:538 zaqar/transport/wsgi/v1_0/messages.py:282
+#: zaqar/transport/wsgi/v1_1/messages.py:350
+#: zaqar/transport/wsgi/v2_0/messages.py:429
+msgid "The specified claim does not exist or has expired."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:544 zaqar/transport/wsgi/v1_0/messages.py:288
+#: zaqar/transport/wsgi/v1_1/messages.py:356
+#: zaqar/transport/wsgi/v2_0/messages.py:435
+msgid ""
+"This message is claimed; it cannot be deleted without a valid claim ID."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:718 zaqar/api/v2/endpoints.py:777
+#, python-format
+msgid "Claim %s does not exist."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:769
+#, python-format
+msgid "Claim %s updated."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:805
+#, python-format
+msgid "Claim %s deleted."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:892
+#, python-format
+msgid "Subscription %s could not be created."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:898
+#, python-format
+msgid "Subscription %s created."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:902
+#, python-format
+msgid "Subscription %s not created."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:927
+#, python-format
+msgid ""
+"Subscription %(subscription)s for queue %(queue)s could not be deleted."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:934
+#, python-format
+msgid "Subscription %s removed."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:961
+#, python-format
+msgid "Subscription %(subscription)s for queue %(queue)s does not exist."
+msgstr ""
+
+#: zaqar/api/v2/endpoints.py:968
+#, python-format
+msgid "Cannot retrieve subscription %s."
+msgstr ""
+
+#: zaqar/cmd/status.py:40
+msgid "policy File JSON to YAML Migration"
+msgstr ""
+
+#: zaqar/common/pipeline.py:92
+#, python-format
+msgid "Stage %(stage)s does not implement %(method)s"
+msgstr ""
+
+#: zaqar/common/pipeline.py:110
+#, python-format
+msgid "Method %s not found in any of the registered stages"
+msgstr ""
+
+#: zaqar/common/api/api.py:47
+msgid "{0} is not a valid action"
+msgstr ""
+
+#: zaqar/common/api/utils.py:70
+msgid "Doctype must be either a JSONObject or JSONArray"
+msgstr ""
+
+#: zaqar/common/api/utils.py:122 zaqar/transport/wsgi/utils.py:171
+msgid "Missing \"{name}\" field."
+msgstr ""
+
+#: zaqar/common/api/utils.py:130 zaqar/transport/wsgi/utils.py:179
+msgid "The value of the \"{name}\" field must be a {vtype}."
+msgstr ""
+
+#: zaqar/common/api/utils.py:197
+msgid "Unexpected error."
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:100
+msgid ""
+"X-PROJECT-ID cannot be an empty string. Specify the right header X-PROJECT-"
+"ID and retry."
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:108
+msgid "The header X-PROJECT-ID was missing"
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:131
+#: zaqar/common/transport/wsgi/helpers.py:144
+msgid "Malformed hexadecimal UUID."
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:182
+msgid "Invalid queue identification"
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:183
+msgid "The format of the submitted queue name or project id is not valid."
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:236
+msgid "Invalid Content-Type"
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:237
+msgid ""
+"Endpoint does not accept `application/x-www-form-urlencoded` content; "
+"currently supported media type is `application/json`; specify proper client-"
+"side media type with the \"Content-Type\" header."
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:314
+msgid "Invalid topic identification"
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:315
+msgid "The format of the submitted topic name or project id is not valid."
+msgstr ""
+
+#: zaqar/common/transport/wsgi/helpers.py:338
+msgid "Extra spec cannot be an empty if specify the header."
+msgstr ""
+
+#: zaqar/conf/storage.py:21
+msgid ""
+"Pipeline to use for processing queue operations. This pipeline will be "
+"consumed before calling the storage driver's controller methods."
+msgstr ""
+
+#: zaqar/conf/storage.py:28
+msgid ""
+"Pipeline to use for processing message operations. This pipeline will be "
+"consumed before calling the storage driver's controller methods."
+msgstr ""
+
+#: zaqar/conf/storage.py:35
+msgid ""
+"Pipeline to use for processing claim operations. This pipeline will be "
+"consumed before calling the storage driver's controller methods."
+msgstr ""
+
+#: zaqar/conf/storage.py:42
+msgid ""
+"Pipeline to use for processing subscription operations. This pipeline will "
+"be consumed before calling the storage driver's controller methods."
+msgstr ""
+
+#: zaqar/conf/storage.py:49
+msgid ""
+"Pipeline to use for processing topic operations. This pipeline will be "
+"consumed before calling the storage driver's controller methods."
+msgstr ""
+
+#: zaqar/notification/tasks/mailto.py:35
+msgid "Can't make confirmation email body, need a valid confirm url."
+msgstr ""
+
+#: zaqar/storage/pooling.py:530
+#, python-format
+msgid ""
+"register queue to pool: old flavor: %(oldflavor)s , new flavor: %(flavor)s"
+msgstr ""
+
+#: zaqar/storage/pooling.py:545
+#, python-format
+msgid "register queue to pool: new flavor:%(flavor)s"
+msgstr ""
+
+#: zaqar/storage/pooling.py:566
+msgid "register queue to pool: new flavor: None"
+msgstr ""
+
+#: zaqar/storage/pooling.py:569
+#, python-format
+msgid "register queue: project:%(project)s queue:%(queue)s pool:%(pool)s"
+msgstr ""
+
+#: zaqar/storage/mongodb/driver.py:92
+#, python-format
+msgid "The mongodb driver requires mongodb>=2.2, %s found"
+msgstr ""
+
+#: zaqar/storage/mongodb/driver.py:97
+msgid ""
+"Either a replica set or a mongos is required to guarantee message delivery"
+msgstr ""
+
+#: zaqar/storage/mongodb/driver.py:114
+msgid ""
+"Using a write concern other than `majority` or > 2 makes the service "
+"unreliable. Please use a different write concern or set `unreliable` to True "
+"in the config file."
+msgstr ""
+
+#: zaqar/storage/mongodb/messages.py:881
+#, python-format
+msgid ""
+"%(attempts)d attempt(s) required to post %(num_messages)d messages to queue "
+"\"%(queue)s\" under project %(project)s"
+msgstr ""
+
+#: zaqar/storage/mongodb/messages.py:926
+#, python-format
+msgid ""
+"First attempt failed while adding messages to queue \"%(queue)s\" under "
+"project %(project)s"
+msgstr ""
+
+#: zaqar/storage/mongodb/queues.py:173
+#, python-format
+msgid ""
+"Failed to increment the message counter for queue %(name)s and project "
+"%(project)s"
+msgstr ""
+
+#: zaqar/storage/mongodb/topic_messages.py:782
+#, python-format
+msgid ""
+"%(attempts)d attempt(s) required to post %(num_messages)d messages to queue "
+"\"%(topic)s\" under project %(project)s"
+msgstr ""
+
+#: zaqar/storage/mongodb/topic_messages.py:827
+#, python-format
+msgid ""
+"First attempt failed while adding messages to topic \"%(topic)s\" under "
+"project %(project)s"
+msgstr ""
+
+#: zaqar/storage/mongodb/topics.py:159
+#, python-format
+msgid ""
+"Failed to increment the message counter for topic %(name)s and project "
+"%(project)s"
+msgstr ""
+
+#: zaqar/storage/redis/catalogue.py:101
+#, python-format
+msgid "CatalogueController:insert %(prj)s:%(queue)s  %(pool)s failed"
+msgstr ""
+
+#: zaqar/storage/redis/catalogue.py:106
+#, python-format
+msgid "CatalogueController:insert %(prj)s:%(queue)s:%(pool)s, success"
+msgstr ""
+
+#: zaqar/storage/redis/catalogue.py:186
+#, python-format
+msgid "CatalogueController:delete %(prj)s:%(queue)s failed"
+msgstr ""
+
+#: zaqar/storage/redis/catalogue.py:191
+#, python-format
+msgid "CatalogueController:delete %(prj)s:%(queue)s success"
+msgstr ""
+
+#: zaqar/storage/redis/catalogue.py:210
+#, python-format
+msgid "CatalogueController:_update %(prj)s:%(queue)s:%(pool)s failed"
+msgstr ""
+
+#: zaqar/storage/redis/catalogue.py:215
+#, python-format
+msgid "CatalogueController:_update %(prj)s:%(queue)s:%(pool)s"
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:44
+msgid "Malformed Redis URI"
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:47
+msgid "Invalid scheme in Redis URI"
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:98 zaqar/storage/redis/driver.py:128
+msgid "The Redis configuration URI contains an invalid port"
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:108
+msgid "The Redis configuration URI does not define any sentinel hosts"
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:117
+msgid ""
+"The Redis URI specifies multiple sentinel hosts, but is missing the "
+"\"master\" query string parameter. Please set \"master\" to the name of the "
+"Redis master server as specified in the sentinel configuration file."
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:133
+msgid "Missing host name in Redis URI"
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:142
+msgid "Missing path in Redis URI"
+msgstr ""
+
+#: zaqar/storage/redis/driver.py:171
+#, python-format
+msgid "The Redis driver requires redis-server>=2.6, %s found"
+msgstr ""
+
+#: zaqar/transport/encryptor.py:177
+msgid "Encrypted data appears to be corrupted."
+msgstr ""
+
+#: zaqar/transport/encryptor.py:200 zaqar/transport/encryptor.py:214
+msgid "Now Zaqar only support AES-256 and need to specify thekey."
+msgstr ""
+
+#: zaqar/transport/validation.py:70 zaqar/transport/validation.py:697
+msgid "Project ids may not be more than {0} characters long."
+msgstr ""
+
+#: zaqar/transport/validation.py:74
+msgid "Queue names may not be more than {0} characters long."
+msgstr ""
+
+#: zaqar/transport/validation.py:79
+msgid ""
+"Queue names may only contain ASCII letters, digits, underscores, and dashes."
+msgstr ""
+
+#: zaqar/transport/validation.py:85
+#, python-format
+msgid ""
+"Unable to find `op` in JSON Schema change. It must be one of the following: "
+"%(available)s."
+msgstr ""
+
+#: zaqar/transport/validation.py:90
+#, python-format
+msgid ""
+"Invalid operation: `%(op)s`. It must be one of the following: %(available)s."
+msgstr ""
+
+#: zaqar/transport/validation.py:101
+#, python-format
+msgid "Unable to find '%s' in JSON Schema change"
+msgstr ""
+
+#: zaqar/transport/validation.py:126
+#, python-format
+msgid "Pointer `%s` does not start with \"/\"."
+msgstr ""
+
+#: zaqar/transport/validation.py:129
+#, python-format
+msgid "Pointer `%s` contains adjacent \"/\"."
+msgstr ""
+
+#: zaqar/transport/validation.py:132
+#, python-format
+msgid "Pointer `%s` end with \"/\"."
+msgstr ""
+
+#: zaqar/transport/validation.py:135
+#, python-format
+msgid "Pointer `%s` does not contains valid token."
+msgstr ""
+
+#: zaqar/transport/validation.py:138
+#, python-format
+msgid "Pointer `%s` contains \"~\" not part of a recognized escape sequence."
+msgstr ""
+
+#: zaqar/transport/validation.py:144
+msgid "Operation \"{0}\" requires a member named \"value\"."
+msgstr ""
+
+#: zaqar/transport/validation.py:153
+msgid "The root of path must be metadata, e.g /metadata/key."
+msgstr ""
+
+#: zaqar/transport/validation.py:159
+#, python-format
+msgid "Invalid JSON pointer for this resource: '/%s, e.g /metadata/key'"
+msgstr ""
+
+#: zaqar/transport/validation.py:168
+msgid "Unrecognized JSON Schema draft version"
+msgstr ""
+
+#: zaqar/transport/validation.py:177
+msgid "retry_policy must be a dict."
+msgstr ""
+
+#: zaqar/transport/validation.py:189
+msgid "retry_backoff_function must be a string."
+msgstr ""
+
+#: zaqar/transport/validation.py:195
+msgid "invalid retry_backoff_function."
+msgstr ""
+
+#: zaqar/transport/validation.py:199
+msgid "ignore_subscription_override must be a boolean."
+msgstr ""
+
+#: zaqar/transport/validation.py:204
+#, python-format
+msgid "Retry policy: %s must be a integer."
+msgstr ""
+
+#: zaqar/transport/validation.py:211
+msgid "minimum_delay must less than maximum_delay."
+msgstr ""
+
+#: zaqar/transport/validation.py:214
+msgid "invalid minimum_delay and maximum_delay."
+msgstr ""
+
+#: zaqar/transport/validation.py:226
+msgid "Request body must be a JSON array of operation objects."
+msgstr ""
+
+#: zaqar/transport/validation.py:231
+msgid "Operations must be JSON objects."
+msgstr ""
+
+#: zaqar/transport/validation.py:261 zaqar/transport/validation.py:651
+#: zaqar/transport/validation.py:664
+msgid "Limit must be at least 1 and no greater than {0}."
+msgstr ""
+
+#: zaqar/transport/validation.py:273
+msgid "Queue metadata is too large. Max size: {0}"
+msgstr ""
+
+#: zaqar/transport/validation.py:287
+msgid "_default_message_ttl must be integer."
+msgstr ""
+
+#: zaqar/transport/validation.py:293
+msgid ""
+"_default_message_ttl can not exceed {0} seconds, and must be at least {1} "
+"seconds long."
+msgstr ""
+
+#: zaqar/transport/validation.py:301
+msgid "_max_messages_post_size must be integer."
+msgstr ""
+
+#: zaqar/transport/validation.py:308
+msgid ""
+"_max_messages_post_size can not exceed {0},  and must be at least greater "
+"than 0."
+msgstr ""
+
+#: zaqar/transport/validation.py:314
+msgid "_max_claim_count must be integer."
+msgstr ""
+
+#: zaqar/transport/validation.py:319
+msgid "_dead_letter_queue_messages_ttl must be integer."
+msgstr ""
+
+#: zaqar/transport/validation.py:324 zaqar/transport/validation.py:420
+msgid ""
+"The TTL for a message may not exceed {0} seconds, and must be at least {1} "
+"seconds long."
+msgstr ""
+
+#: zaqar/transport/validation.py:332
+msgid "_default_message_delay must be integer."
+msgstr ""
+
+#: zaqar/transport/validation.py:338
+msgid ""
+"The TTL can not exceed {0} seconds, and must be at least {1} seconds long."
+msgstr ""
+
+#: zaqar/transport/validation.py:346
+msgid "_enable_encrypt_messages must be boolean."
+msgstr ""
+
+#: zaqar/transport/validation.py:359
+msgid "Post body must contain key \"resource_types\"."
+msgstr ""
+
+#: zaqar/transport/validation.py:364
+msgid "Resource types must be a sub set of {0}."
+msgstr ""
+
+#: zaqar/transport/validation.py:376
+msgid "No messages to enqueu."
+msgstr ""
+
+#: zaqar/transport/validation.py:396
+msgid ""
+"Message collection size is too large. The max size for current queue is {0}. "
+"It is calculated by max size = min(max_messages_post_size_config: {1}, "
+"max_messages_post_size_queue: {2})."
+msgstr ""
+
+#: zaqar/transport/validation.py:411
+msgid "Message collection size is too large. Max size {0}"
+msgstr ""
+
+#: zaqar/transport/validation.py:430
+msgid ""
+"The Delay TTL for a message may not exceed {0} seconds,and must be at least "
+"{1} seconds long."
+msgstr ""
+
+#: zaqar/transport/validation.py:447 zaqar/transport/validation.py:511
+#: zaqar/transport/validation.py:628
+msgid "Limit must be at least 1 and may not be greater than {0}."
+msgstr ""
+
+#: zaqar/transport/validation.py:466
+msgid "pop and id params cannot be present together in the delete request."
+msgstr ""
+
+#: zaqar/transport/validation.py:472
+msgid ""
+"The request should have either \"ids\" or \"pop\" parameter in the request, "
+"to be able to delete."
+msgstr ""
+
+#: zaqar/transport/validation.py:479
+msgid ""
+"The request should have both \"ids\" and \"claim_ids\" parameter in the "
+"request when message_delete_with_claim_id is True."
+msgstr ""
+
+#: zaqar/transport/validation.py:486
+msgid "Pop value must be at least 1 and may not be greater than {0}."
+msgstr ""
+
+#: zaqar/transport/validation.py:493
+msgid "ids parameter should have at least 1 and not greater than {0} values."
+msgstr ""
+
+#: zaqar/transport/validation.py:520
+msgid ""
+"The grace for a claim may not exceed {0} seconds, and must be at least {1} "
+"seconds long."
+msgstr ""
+
+#: zaqar/transport/validation.py:536
+msgid ""
+"The TTL for a claim may not exceed {0} seconds, and must be at least {1} "
+"seconds long."
+msgstr ""
+
+#: zaqar/transport/validation.py:550
+#, python-format
+msgid "Missing parameter %s in body."
+msgstr ""
+
+#: zaqar/transport/validation.py:562
+msgid "No subscription to create."
+msgstr ""
+
+#: zaqar/transport/validation.py:565
+msgid "Subscriptions must be a dict."
+msgstr ""
+
+#: zaqar/transport/validation.py:576
+msgid "The subscriber type of subscription must be supported in the list {0}."
+msgstr ""
+
+#: zaqar/transport/validation.py:582
+msgid "Options must be a dict."
+msgstr ""
+
+#: zaqar/transport/validation.py:590
+msgid "TTL must be an integer."
+msgstr ""
+
+#: zaqar/transport/validation.py:594
+msgid "The TTL for a subscription must be at least {0} seconds long."
+msgstr ""
+
+#: zaqar/transport/validation.py:602
+msgid ""
+"The TTL seconds for a subscription plus current time must be less than {0}."
+msgstr ""
+
+#: zaqar/transport/validation.py:615
+msgid "The 'confirmed' should be boolean."
+msgstr ""
+
+#: zaqar/transport/validation.py:677
+msgid "Length of client id must be at least {0} and no greater than {1}."
+msgstr ""
+
+#: zaqar/transport/validation.py:701
+msgid "Topic names may not be more than {0} characters long."
+msgstr ""
+
+#: zaqar/transport/validation.py:706
+msgid ""
+"Topic names may only contain ASCII letters, digits, underscores, and dashes."
+msgstr ""
+
+#: zaqar/transport/websocket/driver.py:86 zaqar/transport/wsgi/driver.py:192
+#, python-format
+msgid "Serving on host %(bind)s:%(port)s"
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:24
+msgid "Service temporarily unavailable"
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:25
+msgid "Please try again in a few seconds."
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:36
+msgid "Invalid API request"
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:45
+msgid "Invalid request body"
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:54
+msgid "Document type not supported."
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:63
+msgid "Not authorized"
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:64
+msgid "You are not authorized to complete this action."
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:73
+msgid "Resource conflict"
+msgstr ""
+
+#: zaqar/transport/wsgi/errors.py:82
+msgid "Not found"
+msgstr ""
+
+#: zaqar/transport/wsgi/utils.py:53
+msgid "Request body can not be empty"
+msgstr ""
+
+#: zaqar/transport/wsgi/utils.py:64 zaqar/transport/wsgi/v2_0/queues.py:169
+#: zaqar/transport/wsgi/v2_0/topic.py:165
+msgid "Request body could not be parsed."
+msgstr ""
+
+#: zaqar/transport/wsgi/utils.py:69 zaqar/transport/wsgi/v2_0/queues.py:174
+#: zaqar/transport/wsgi/v2_0/topic.py:170
+msgid "JSON contains integer that is too large."
+msgstr ""
+
+#: zaqar/transport/wsgi/utils.py:74 zaqar/transport/wsgi/v2_0/queues.py:179
+#: zaqar/transport/wsgi/v2_0/topic.py:175
+msgid "Request body could not be read."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/claims.py:74
+#: zaqar/transport/wsgi/v1_1/claims.py:94
+#: zaqar/transport/wsgi/v2_0/claims.py:96
+msgid "Claim could not be created."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/claims.py:115
+#: zaqar/transport/wsgi/v1_1/claims.py:142
+#: zaqar/transport/wsgi/v2_0/claims.py:145
+msgid "Claim could not be queried."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/claims.py:157
+#: zaqar/transport/wsgi/v1_1/claims.py:184
+#: zaqar/transport/wsgi/v2_0/claims.py:188
+msgid "Claim could not be updated."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/claims.py:171
+#: zaqar/transport/wsgi/v1_1/claims.py:198
+#: zaqar/transport/wsgi/v2_0/claims.py:203
+msgid "Claim could not be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/messages.py:61
+#: zaqar/transport/wsgi/v1_0/messages.py:253
+#: zaqar/transport/wsgi/v1_1/messages.py:74
+#: zaqar/transport/wsgi/v1_1/messages.py:318
+#: zaqar/transport/wsgi/v2_0/messages.py:77
+#: zaqar/transport/wsgi/v2_0/messages.py:396
+msgid "Message could not be retrieved."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/messages.py:104
+#: zaqar/transport/wsgi/v1_1/messages.py:120
+#: zaqar/transport/wsgi/v2_0/messages.py:149
+msgid "Messages could not be listed."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/messages.py:170
+#: zaqar/transport/wsgi/v1_1/messages.py:201
+#: zaqar/transport/wsgi/v2_0/messages.py:258
+msgid "Messages could not be enqueued."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/messages.py:226
+#: zaqar/transport/wsgi/v1_1/messages.py:267
+#: zaqar/transport/wsgi/v2_0/messages.py:331
+msgid "Messages could not be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/messages.py:265
+#: zaqar/transport/wsgi/v1_1/messages.py:333
+#: zaqar/transport/wsgi/v1_1/pools.py:203
+#: zaqar/transport/wsgi/v2_0/messages.py:412
+#: zaqar/transport/wsgi/v2_0/pools.py:222
+msgid "Unable to delete"
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/messages.py:293
+#: zaqar/transport/wsgi/v1_1/messages.py:361
+#: zaqar/transport/wsgi/v2_0/messages.py:440
+msgid "Message could not be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/metadata.py:51
+#: zaqar/transport/wsgi/v1_1/queues.py:52
+#: zaqar/transport/wsgi/v2_0/queues.py:73
+msgid "Queue metadata could not be retrieved."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/metadata.py:70
+msgid ""
+"Reserved queue attributes in metadata (which names start with \"_\") can not "
+"be set in API v1."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/metadata.py:91
+msgid "Metadata could not be updated."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/queues.py:45
+#: zaqar/transport/wsgi/v1_1/queues.py:88
+#: zaqar/transport/wsgi/v2_0/queues.py:106
+msgid "Queue could not be created."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/queues.py:69
+#: zaqar/transport/wsgi/v1_1/queues.py:101
+#: zaqar/transport/wsgi/v2_0/queues.py:123
+msgid "Queue could not be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/queues.py:107
+#: zaqar/transport/wsgi/v1_1/queues.py:138
+#: zaqar/transport/wsgi/v2_0/queues.py:276
+msgid "Queues could not be listed."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_0/stats.py:71 zaqar/transport/wsgi/v1_1/stats.py:72
+#: zaqar/transport/wsgi/v2_0/stats.py:76
+msgid "Queue stats could not be read."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_1/flavors.py:154
+#, python-format
+msgid "Flavor %(flavor)s could not be created. "
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_1/flavors.py:157
+#: zaqar/transport/wsgi/v2_0/flavors.py:200
+#: zaqar/transport/wsgi/v2_0/flavors.py:209
+#: zaqar/transport/wsgi/v2_0/flavors.py:222
+#: zaqar/transport/wsgi/v2_0/flavors.py:231
+#: zaqar/transport/wsgi/v2_0/flavors.py:274
+#: zaqar/transport/wsgi/v2_0/flavors.py:284
+#: zaqar/transport/wsgi/v2_0/flavors.py:325
+#: zaqar/transport/wsgi/v2_0/flavors.py:338
+msgid "Unable to create"
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_1/health.py:37
+#: zaqar/transport/wsgi/v2_0/health.py:41
+msgid "Health status could not be read."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_1/messages.py:229
+#: zaqar/transport/wsgi/v2_0/messages.py:287
+msgid ""
+"No messages with IDs: {ids} found in the queue {queue} for project {project}."
+""
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_1/messages.py:285
+#: zaqar/transport/wsgi/v2_0/messages.py:349
+msgid "Messages could not be popped."
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_1/pools.py:185
+#: zaqar/transport/wsgi/v2_0/pools.py:202
+msgid "Unable to create pool"
+msgstr ""
+
+#: zaqar/transport/wsgi/v1_1/pools.py:204
+#: zaqar/transport/wsgi/v2_0/pools.py:223
+msgid "This pool is used by flavors {flavor}; It cannot be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/flavors.py:205
+#: zaqar/transport/wsgi/v2_0/flavors.py:218
+#: zaqar/transport/wsgi/v2_0/flavors.py:227
+#, python-format
+msgid "Flavor %(flavor)s could not be created, error:%(msg)s"
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/flavors.py:271
+#, python-format
+msgid "Flavor %(flavor)s could not be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/flavors.py:301
+#, python-format
+msgid "Flavor %(flavor)s cant be updated, error:%(msg)s"
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/flavors.py:305
+msgid "updatefail"
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/flavors.py:321
+#: zaqar/transport/wsgi/v2_0/flavors.py:334
+#, python-format
+msgid "Flavor %(flavor)s could not be updated, error:%(msg)s"
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/purge.py:79
+msgid "Queue could not be purged."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/queues.py:159
+#: zaqar/transport/wsgi/v2_0/topic.py:155
+#, python-format
+msgid "Accepted media type for PATCH: %s."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/queues.py:183
+#: zaqar/transport/wsgi/v2_0/topic.py:179
+msgid "PATCH body could not be empty for update."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/queues.py:215
+msgid "Queue could not be updated."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/queues.py:230
+#: zaqar/transport/wsgi/v2_0/topic.py:226
+#, python-format
+msgid "Can't replace non-existent object %s."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/queues.py:245
+#: zaqar/transport/wsgi/v2_0/topic.py:241
+#, python-format
+msgid "Can't remove non-existent object %s."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:59
+msgid "Subscription could not be retrieved."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:75
+msgid "Subscription could not be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:106
+#, python-format
+msgid "Subscription %(subscription_id)s could not be updated."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:110
+msgid "Unable to update subscription"
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:151
+msgid "Subscriptions could not be listed."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:205
+msgid "Subscription could not be created."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:231
+msgid ""
+"Such subscription already exists.Subscriptions are unique by project + queue "
+"+ subscriber URI."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:299
+#, python-format
+msgid "Subscription %(subscription_id)s could not be confirmed."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/subscriptions.py:303
+msgid "Unable to confirm subscription"
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/topic.py:69
+msgid "Topic metadata could not be retrieved."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/topic.py:102
+msgid "Topic could not be created."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/topic.py:119
+msgid "Topic could not be deleted."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/topic.py:211
+msgid "Topic could not be updated."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/topic.py:267
+msgid "Topics could not be listed."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/topic_purge.py:78
+msgid "Topic could not be purged."
+msgstr ""
+
+#: zaqar/transport/wsgi/v2_0/topic_stats.py:76
+msgid "Topic stats could not be read."
+msgstr ""
+

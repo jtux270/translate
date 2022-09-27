@@ -1,0 +1,1061 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: openstack-helm 0.1.1.dev3497\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-16 09:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../source/testing/ceph-node-resiliency.rst:3
+msgid "Ceph - Node Reduction, Expansion and Ceph Recovery"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:5
+msgid ""
+"This document captures steps and result from node reduction and expansion as "
+"well as ceph recovery."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:9
+msgid "Test Scenarios:"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:10
+msgid ""
+"1) Node reduction: Shutdown 1 of 3 nodes to simulate node failure. Capture "
+"effect of node failure on Ceph as well as other OpenStack services that are "
+"using Ceph."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:13
+msgid ""
+"2) Node expansion: Apply Ceph and OpenStack related labels to another unused "
+"k8 node. Node expansion should provide more resources for k8 to schedule "
+"PODs for Ceph and OpenStack services."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:17
+msgid ""
+"3) Fix Ceph Cluster: After node expansion, perform maintenance on Ceph "
+"cluster to ensure quorum is reached and Ceph is HEALTH_OK."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:21
+#: ../../source/testing/ceph-upgrade.rst:14
+msgid "Setup:"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:22
+msgid "6 Nodes (VM based) env"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:23
+msgid ""
+"Only 3 nodes will have Ceph and OpenStack related labels. Each of these 3 "
+"nodes will have one MON and one OSD running on them."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:25
+#: ../../source/testing/ceph-upgrade.rst:16
+msgid ""
+"Followed OSH multinode guide steps to setup nodes and install K8s cluster"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:26
+msgid ""
+"Followed OSH multinode guide steps to install Ceph and OpenStack charts up "
+"to Cinder."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:30
+#: ../../source/testing/ceph-upgrade.rst:50
+msgid "Steps:"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:31
+msgid ""
+"1) Initial Ceph and OpenStack deployment: Install Ceph and OpenStack charts "
+"on 3 nodes (mnode1, mnode2 and mnode3). Capture Ceph cluster status as well "
+"as K8s PODs status."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:35
+msgid ""
+"2) Node reduction (failure): Shutdown 1 of 3 nodes (mnode3) to test node "
+"failure. This should cause Ceph cluster to go in HEALTH_WARN state as it has "
+"lost 1 MON and 1 OSD. Capture Ceph cluster status as well as K8s PODs status."
+""
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:40
+msgid ""
+"3) Node expansion: Add Ceph and OpenStack related labels to 4th node "
+"(mnode4) for expansion. Ceph cluster would show new MON and OSD being added "
+"to cluster. However Ceph cluster would continue to show HEALTH_WARN because "
+"1 MON and 1 OSD are still missing."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:46
+msgid ""
+"4) Ceph cluster recovery: Perform Ceph maintenance to make Ceph cluster "
+"HEALTH_OK. Remove lost MON and OSD from Ceph cluster."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:52
+msgid "Step 1: Initial Ceph and OpenStack deployment"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:55
+msgid ""
+"Make sure only 3 nodes (mnode1, mnode2, mnode3) have Ceph and OpenStack "
+"related labels. K8s would only schedule PODs on these 3 nodes."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:58
+#: ../../source/testing/ceph-node-resiliency.rst:360
+#: ../../source/testing/ceph-node-resiliency.rst:638
+msgid "``Ceph status:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:83
+#: ../../source/testing/ceph-node-resiliency.rst:444
+msgid "``Ceph MON Status:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:187
+#: ../../source/testing/ceph-node-resiliency.rst:389
+#: ../../source/testing/ceph-node-resiliency.rst:774
+msgid "``Ceph quorum status:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:244
+#: ../../source/testing/ceph-node-resiliency.rst:546
+#: ../../source/testing/ceph-node-resiliency.rst:837
+msgid "``Ceph PODs:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:273
+#: ../../source/testing/ceph-node-resiliency.rst:579
+#: ../../source/testing/ceph-node-resiliency.rst:873
+msgid "``OpenStack PODs:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:302
+#: ../../source/testing/ceph-node-resiliency.rst:617
+#: ../../source/testing/ceph-node-resiliency.rst:911
+msgid "``Result/Observation:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:304
+msgid "Ceph cluster is in HEALTH_OK state with 3 MONs and 3 OSDs."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:305
+msgid "All PODs are in running state."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:309
+msgid "Step 2: Node reduction (failure):"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:311
+msgid ""
+"Shutdown 1 of 3 nodes (mnode1, mnode2, mnode3) to simulate node failure/lost."
+""
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:313
+msgid "In this test env, let's shutdown ``mnode3`` node."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:315
+msgid "``Following are PODs scheduled on mnode3 before shutdown:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:339
+msgid ""
+"In this test env, MariaDB chart is deployed with only 1 replica. In order to "
+"test properly, the node with MariaDB server POD (mnode2) should not be "
+"shutdown."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:343
+msgid ""
+"In this test env, each node has Ceph and OpenStack related PODs. Due to "
+"this, shutting down a Node will cause issue with Ceph as well as OpenStack "
+"services. These PODs level failures are captured following subsequent "
+"screenshots."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:347
+msgid "``Check node status:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:619
+msgid ""
+"PODs that were scheduled on mnode3 node has status of NodeLost/Unknown."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:620
+msgid "Ceph status shows HEALTH_WARN as expected"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:621
+msgid "Ceph status shows 1 Ceph MON and 1 Ceph OSD missing."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:622
+msgid "OpenStack PODs that were scheduled mnode3 also shows NodeLost/Unknown."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:625
+msgid "Step 3: Node Expansion"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:627
+msgid "Let's add more resources for K8s to schedule PODs on."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:629
+msgid ""
+"In this test env, let's use ``mnode4`` and apply Ceph and OpenStack related "
+"labels."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:633
+msgid ""
+"Since the node that was shutdown earlier had both Ceph and OpenStack PODs, "
+"mnode4 should get Ceph and OpenStack related labels as well."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:636
+msgid "After applying labels, let's check status"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:662
+#: ../../source/testing/ceph-node-resiliency.rst:968
+msgid "``Ceph MON Status``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:913
+msgid "Ceph MON and OSD PODs got scheduled on mnode4 node."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:914
+msgid "Ceph status shows that MON and OSD count has been increased."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:915
+msgid "Ceph status still shows HEALTH_WARN as one MON and OSD are still down."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:918
+msgid "Step 4: Ceph cluster recovery"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:920
+msgid ""
+"Now that we have added new node for Ceph and OpenStack PODs, let's perform "
+"maintenance on Ceph cluster."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:924
+msgid "1) Remove out of quorum MON:"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:926
+msgid ""
+"Using ``ceph mon_status`` and ``ceph -s`` commands, confirm ID of MON that "
+"is out of quorum."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:928
+msgid "In this test env, ``mnode3`` is out of quorum."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:931
+msgid ""
+"In this test env, since out of quorum MON is no longer available due to node "
+"failure, we can processed with removing it from Ceph cluster."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:934
+msgid "``Remove MON from Ceph cluster``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:941
+msgid "``Ceph Status:``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:966
+msgid ""
+"As shown above, Ceph status is now HEALTH_OK and shows 3 MONs available."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1052
+msgid "``Ceph quorum status``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1111
+msgid "2) Remove down OSD from Ceph cluster:"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1113
+msgid ""
+"As shown in Ceph status above, ``osd: 4 osds: 3 up, 3 in`` 1 of 4 OSDs is "
+"still down. Let's remove that OSD."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1116
+msgid "First, run ``ceph osd tree`` command to get list of OSDs."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1132
+msgid "Above output shows that ``osd.1`` is down."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1134
+msgid "Run ``ceph osd purge`` command to remove OSD from ceph cluster."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1141
+msgid "``Ceph status``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1166
+msgid ""
+"Above output shows Ceph cluster in HEALTH_OK with all OSDs and MONs up and "
+"running."
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1168
+msgid "``Ceph PODs``"
+msgstr ""
+
+#: ../../source/testing/ceph-node-resiliency.rst:1204
+msgid "``OpenStack PODs``"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:3
+msgid "Resiliency Tests for OpenStack-Helm/Ceph"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:6
+msgid "Mission"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:8
+msgid ""
+"The goal of our resiliency tests for `OpenStack-Helm/Ceph <https://github."
+"com/openstack/openstack-helm/tree/master/ceph>`_ is to show symptoms of "
+"software/hardware failure and provide the solutions."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:13
+msgid ""
+"Our focus lies on resiliency for various failure scenarios but not on "
+"performance or stress testing."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:14
+msgid "Caveats:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:17
+msgid "Software Failure"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:18
+msgid "`Monitor failure <./monitor-failure.html>`_"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:19
+msgid "`OSD failure <./osd-failure.html>`_"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:22
+msgid "Hardware Failure"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:23
+msgid "`Disk failure <./disk-failure.html>`_"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/README.rst:24
+msgid "`Host failure <./host-failure.html>`_"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:3
+msgid "Disk Failure"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:6
+#: ../../source/testing/ceph-resiliency/host-failure.rst:6
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:6
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:6
+msgid "Test Environment"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:8
+#: ../../source/testing/ceph-resiliency/host-failure.rst:8
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:8
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:8
+msgid "Cluster size: 4 host machines"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:9
+#: ../../source/testing/ceph-resiliency/host-failure.rst:9
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:9
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:9
+msgid "Number of disks: 24 (= 6 disks per host * 4 hosts)"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:10
+#: ../../source/testing/ceph-resiliency/host-failure.rst:10
+msgid "Kubernetes version: 1.10.5"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:11
+#: ../../source/testing/ceph-resiliency/host-failure.rst:11
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:11
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:11
+msgid "Ceph version: 12.2.3"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:12
+#: ../../source/testing/ceph-resiliency/host-failure.rst:12
+msgid "OpenStack-Helm commit: 25e50a34c66d5db7604746f4d2e12acbdd6c1459"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:15
+msgid "Case: A disk fails"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:18
+#: ../../source/testing/ceph-resiliency/host-failure.rst:18
+#: ../../source/testing/ceph-resiliency/host-failure.rst:106
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:134
+msgid "Symptom:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:20
+msgid ""
+"This is to test a scenario when a disk failure happens. We monitor the ceph "
+"status and notice one OSD (osd.2) on voyager4 which has ``/dev/sdh`` as a "
+"backend is down."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:82
+msgid "Solution:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:84
+msgid "To replace the failed OSD, execute the following procedure:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:86
+msgid ""
+"From the Kubernetes cluster, remove the failed OSD pod, which is running on "
+"``voyager4``:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:94
+msgid ""
+"Note: To find the daemonset associated with a failed OSD, check out the "
+"followings:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:103
+msgid ""
+"Remove the failed OSD (OSD ID = 2 in this example) from the Ceph cluster:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:112
+msgid "Find that Ceph is healthy with a lost OSD (i.e., a total of 23 OSDs):"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:136
+msgid ""
+"4. Replace the failed disk with a new one. If you repair (not replace) the "
+"failed disk, you may need to run the following:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:143
+msgid "Start a new OSD pod on ``voyager4``:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/disk-failure.rst:149
+msgid ""
+"Validate the Ceph status (i.e., one OSD is added, so the total number of "
+"OSDs becomes 24):"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:3
+msgid "Host Failure"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:15
+msgid "Case: One host machine where ceph-mon is running is rebooted"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:20
+msgid "After reboot (node voyager3), the node status changes to ``NotReady``."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:31
+msgid ""
+"Ceph status shows that ceph-mon running on ``voyager3`` becomes out of "
+"quorum. Also, six osds running on ``voyager3`` are down; i.e., 18 osds are "
+"up out of 24 osds."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:64
+#: ../../source/testing/ceph-resiliency/host-failure.rst:195
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:179
+msgid "Recovery:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:65
+msgid ""
+"The node status of ``voyager3`` changes to ``Ready`` after the node is up "
+"again. Also, Ceph pods are restarted automatically. Ceph status shows that "
+"the monitor running on ``voyager3`` is now in quorum."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:101
+msgid "Case: A host machine where ceph-mon is running is down"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:103
+msgid ""
+"This is for the case when a host machine (where ceph-mon is running) is down."
+""
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:108
+msgid ""
+"After the host is down (node voyager3), the node status changes to "
+"``NotReady``."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:119
+msgid ""
+"Ceph status shows that ceph-mon running on ``voyager3`` becomes out of "
+"quorum. Also, 6 osds running on ``voyager3`` are down (i.e., 18 out of 24 "
+"osds are up). Some placement groups become degraded and undersized."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:154
+msgid "The pod status of ceph-mon and ceph-osd shows as ``NodeLost``."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:168
+msgid ""
+"After 10+ miniutes, Ceph starts rebalancing with one node lost (i.e., 6 osds "
+"down) and the status stablizes with 18 osds."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:197
+msgid ""
+"The node status of ``voyager3`` changes to ``Ready`` after the node is up "
+"again. Also, Ceph pods are restarted automatically. The Ceph status shows "
+"that the monitor running on ``voyager3`` is now in quorum and 6 osds gets "
+"back up (i.e., a total of 24 osds are up)."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/host-failure.rst:224
+msgid ""
+"Also, the pod status of ceph-mon and ceph-osd changes from ``NodeLost`` back "
+"to ``Running``."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/index.rst:3
+msgid "Ceph Resiliency"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:3
+msgid "Monitor Failure"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:10
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:10
+msgid "Kubernetes version: 1.9.3"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:12
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:12
+msgid "OpenStack-Helm commit: 28734352741bae228a4ea4f40bcacc33764221eb"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:14
+msgid ""
+"We have 3 Monitors in this Ceph cluster, one on each of the 3 Monitor hosts."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:18
+msgid "Case: 1 out of 3 Monitor Processes is Down"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:20
+msgid "This is to test a scenario when 1 out of 3 Monitor processes is down."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:22
+msgid ""
+"To bring down 1 Monitor process (out of 3), we identify a Monitor process "
+"and kill it from the monitor host (not a pod)."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:31
+msgid ""
+"In the mean time, we monitored the status of Ceph and noted that it takes "
+"about 24 seconds for the killed Monitor process to recover from ``down`` to "
+"``up``. The reason is that Kubernetes automatically restarts pods whenever "
+"they are killed."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:64
+msgid ""
+"We also monitored the status of the Monitor pod through ``kubectl get pods -"
+"n ceph``, and the status of the pod (where a Monitor process is killed) "
+"changed as follows: ``Running`` -> ``Error`` -> ``Running`` and this "
+"recovery process takes about 24 seconds."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:70
+msgid "Case: 2 out of 3 Monitor Processes are Down"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:72
+msgid ""
+"This is to test a scenario when 2 out of 3 Monitor processes are down. To "
+"bring down 2 Monitor processes (out of 3), we identify two Monitor processes "
+"and kill them from the 2 monitor hosts (not a pod)."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:76
+msgid ""
+"We monitored the status of Ceph when the Monitor processes are killed and "
+"noted that the symptoms are similar to when 1 Monitor process is killed:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:80
+msgid ""
+"It takes longer (about 1 minute) for the killed Monitor processes to recover "
+"from ``down`` to ``up``."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:83
+msgid ""
+"The status of the pods (where the two Monitor processes are killed) changed "
+"as follows: ``Running`` -> ``Error`` -> ``CrashLoopBackOff`` -> ``Running`` "
+"and this recovery process takes about 1 minute."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:89
+msgid "Case: 3 out of 3 Monitor Processes are Down"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:91
+msgid ""
+"This is to test a scenario when 3 out of 3 Monitor processes are down. To "
+"bring down 3 Monitor processes (out of 3), we identify all 3 Monitor "
+"processes and kill them from the 3 monitor hosts (not pods)."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:95
+msgid ""
+"We monitored the status of Ceph Monitor pods and noted that the symptoms are "
+"similar to when 1 or 2 Monitor processes are killed:"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:123
+msgid ""
+"The status of the pods (where the three Monitor processes are killed) "
+"changed as follows: ``Running`` -> ``Error`` -> ``CrashLoopBackOff`` -> "
+"``Running`` and this recovery process takes about 1 minute."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:128
+msgid "Case: Monitor database is destroyed"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:130
+msgid ""
+"We intentionlly destroy a Monitor database by removing ``/var/lib/openstack-"
+"helm/ceph/mon/mon/ceph-voyager3/store.db``."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:136
+msgid ""
+"A Ceph Monitor running on voyager3 (whose Monitor database is destroyed) "
+"becomes out of quorum, and the mon-pod's status stays in ``Running`` -> "
+"``Error`` -> ``CrashLoopBackOff`` while keeps restarting."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:169
+msgid ""
+"The logs of the failed mon-pod shows the ceph-mon process cannot run as ``/"
+"var/lib/ceph/mon/ceph-voyager3/store.db`` does not exist."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/monitor-failure.rst:181
+msgid ""
+"Remove the entire ceph-mon directory on voyager3, and then Ceph will "
+"automatically recreate the database by using the other ceph-mons' database."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:3
+msgid "OSD Failure"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:15
+msgid "Case: OSD processes are killed"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:17
+msgid "This is to test a scenario when some of the OSDs are down."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:19
+msgid ""
+"To bring down 6 OSDs (out of 24), we identify the OSD processes and kill "
+"them from a storage host (not a pod)."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:52
+msgid ""
+"In the mean time, we monitor the status of Ceph and noted that it takes "
+"about 30 seconds for the 6 OSDs to recover from ``down`` to ``up``. The "
+"reason is that Kubernetes automatically restarts OSD pods whenever they are "
+"killed."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:69
+msgid "Case: A OSD pod is deleted"
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:71
+msgid ""
+"This is to test a scenario when an OSD pod is deleted by ``kubectl delete "
+"$OSD_POD_NAME``. Meanwhile, we monitor the status of Ceph and note that it "
+"takes about 90 seconds for the OSD running in deleted pod to recover from "
+"``down`` to ``up``."
+msgstr ""
+
+#: ../../source/testing/ceph-resiliency/osd-failure.rst:102
+msgid ""
+"We also monitored the pod status through ``kubectl get pods -n ceph`` during "
+"this process. The deleted OSD pod status changed as follows: ``Terminating`` "
+"-> ``Init:1/3`` -> ``Init:2/3`` -> ``Init:3/3`` -> ``Running``, and this "
+"process takes about 90 seconds. The reason is that Kubernetes automatically "
+"restarts OSD pods whenever they are deleted."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:3
+msgid "Ceph Upgrade"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:5
+msgid ""
+"This guide documents steps showing Ceph version upgrade. The main goal of "
+"this document is to demostrate Ceph chart update without downtime for OSH "
+"components."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:9
+msgid "Test Scenario:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:10
+msgid ""
+"Upgrade Ceph component version from ``12.2.4`` to ``12.2.5`` without "
+"downtime to OSH components."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:15
+msgid "3 Node (VM based) env."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:17
+msgid "Followed OSH multinode guide steps upto Ceph install"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:20
+msgid "Plan:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:21
+msgid "Install Ceph charts (12.2.4) by updating Docker images in overrides."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:22
+msgid "Install OSH components as per OSH multinode guide."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:23
+msgid ""
+"Upgrade Ceph charts to version 12.2.5 by updating docker images in overrides."
+""
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:27
+msgid "Docker Images:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:28
+msgid "Ceph Luminous point release images for Ceph components"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:35
+msgid "Ceph RBD provisioner docker images."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:42
+msgid "Ceph Cephfs provisioner docker images."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:53
+msgid "Follow all steps from OSH multinode guide with below changes."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:55
+msgid "Install Ceph charts (version 12.2.4)"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:58
+msgid ""
+"Update ceph install script ``./tools/deployment/multinode/030-ceph.sh`` to "
+"add ``images:`` section in overrides as shown below."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:62
+msgid "OSD count is set to 3 based on env setup."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:65
+msgid "Following is a partial part from script to show changes."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:104
+msgid ""
+"``ceph_bootstrap``, ``ceph-config_helper`` and ``ceph_rbs_pool`` images are "
+"used for jobs. ``ceph_mon_check`` has one script that is stable so no need "
+"to upgrade."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:108
+msgid "Deploy and Validate Ceph"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:130
+msgid "Check Ceph Pods"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:168
+msgid "Check version of each Ceph components."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:187
+#: ../../source/testing/ceph-upgrade.rst:562
+msgid "Check which images Provisionors and Mon-Check PODs are using"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:190
+msgid ""
+"Showing partial output from kubectl describe command to show which image is "
+"Docker container is using"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:221
+msgid "Install Openstack charts"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:223
+msgid "Continue with OSH multinode guide to install other Openstack charts."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:225
+msgid "Capture Ceph pods statuses."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:261
+msgid "Capture Openstack pods statuses."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:321
+msgid "Upgrade Ceph charts to update version"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:323
+msgid ""
+"Use Ceph override file ``ceph.yaml`` that was generated previously and "
+"update images section as below"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:326
+msgid "``cp /tmp/ceph.yaml ceph-update.yaml``"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:328
+msgid ""
+"Update, image section in new overrides ``ceph-update.yaml`` as shown below"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:347
+msgid "Update Ceph Mon chart with new overrides"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:350
+msgid "``helm upgrade ceph-mon ./ceph-mon --values=ceph-update.yaml``"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:352
+#: ../../source/testing/ceph-upgrade.rst:381
+msgid "``series of console outputs:``"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:371
+msgid ""
+"``Results:`` Mon pods got updated one by one (rolling updates). Each Mon pod "
+"got respawn and was in 1/1 running state before next Mon pod got updated. "
+"Each Mon pod got restarted. Other ceph pods were not affected with this "
+"update. No interruption to OSH pods."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:377
+msgid "Update Ceph OSD chart with new overrides:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:379
+msgid "``helm upgrade ceph-osd ./ceph-osd --values=ceph-update.yaml``"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:397
+#: ../../source/testing/ceph-upgrade.rst:425
+msgid ""
+"``Results:`` Rolling updates (one pod at a time). Other ceph pods are "
+"running. No interruption to OSH pods."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:401
+msgid "Update Ceph Client chart with new overrides:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:403
+msgid "``helm upgrade ceph-client ./ceph-client --values=ceph-update.yaml``"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:428
+msgid "Update Ceph Provisioners chart with new overrides:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:430
+msgid ""
+"``helm upgrade ceph-provisioners ./ceph-provisioners --values=ceph-update."
+"yaml``"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:447
+msgid ""
+"``Results:`` All provisioner pods got terminated at once (same time). Other "
+"ceph pods are running. No interruption to OSH pods."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:450
+msgid "Capture final Ceph pod statuses:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:485
+msgid "Capture final Openstack pod statuses:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:543
+msgid "Confirm Ceph component's version."
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:592
+msgid "Conclusion:"
+msgstr ""
+
+#: ../../source/testing/ceph-upgrade.rst:593
+msgid ""
+"Ceph can be upgraded without downtime for Openstack components in a "
+"multinode env."
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:3
+msgid "Helm Tests"
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:5
+msgid ""
+"Every OpenStack-Helm chart should include any required Helm tests necessary "
+"to provide a sanity check for the OpenStack service.  Information on using "
+"the Helm testing framework can be found in the Helm repository_.  Currently, "
+"the Rally testing framework is used to provide these checks for the core "
+"services.  The Keystone Helm test template can be used as a reference, and "
+"can be found here_."
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:17
+msgid "Testing Expectations"
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:19
+msgid ""
+"Any templates for Helm tests submitted should follow the philosophies "
+"applied in the other templates.  These include: use of overrides where "
+"appropriate, use of endpoint lookups and other common functionality in helm-"
+"toolkit, and mounting any required scripting templates via the configmap-bin "
+"template for the service chart.  If Rally tests are not appropriate or "
+"adequate for a service chart, any additional tests should be documented "
+"appropriately and adhere to the same expectations."
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:28
+msgid "Running Tests"
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:30
+msgid "Any Helm tests associated with a chart can be run by executing:"
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:36
+msgid ""
+"The output of the Helm tests can be seen by looking at the logs of the pod "
+"created by the Helm tests.  These logs can be viewed with:"
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:43
+msgid ""
+"Additional information on Helm tests for OpenStack-Helm and how to execute "
+"these tests locally via the scripts used in the gate can be found in the "
+"gates_ directory."
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:51
+msgid "Adding Tests"
+msgstr ""
+
+#: ../../source/testing/helm-tests.rst:53
+msgid ""
+"All tests should be added to the gates during development, and are required "
+"for any new service charts prior to merging.  All Helm tests should be "
+"included as part of the deployment script.  An example of this can be seen "
+"in this script_."
+msgstr ""
+
+#: ../../source/testing/index.rst:3
+msgid "Testing"
+msgstr ""
+

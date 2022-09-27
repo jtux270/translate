@@ -1,0 +1,2089 @@
+# Lucas Palm <lapalm@us.ibm.com>, 2015. #zanata.
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata.
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata.
+# ДроноваЮ <juliette.tux@gmail.com>, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: python-heatclient VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-08-18 09:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-02-23 16:42+0300\n"
+"Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.12.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: heatclient/exc.py:53
+msgid "Key \"error\" not exists"
+msgstr "Ключ \"error\" не существует"
+
+#: heatclient/exc.py:70
+#, python-format
+msgid ""
+"ERROR: %(message)s\n"
+"%(traceback)s"
+msgstr ""
+"ОШИБКА: %(message)s\n"
+"%(traceback)s"
+
+#: heatclient/exc.py:73
+#, python-format
+msgid "ERROR: %s"
+msgstr "ОШИБКА: %s"
+
+#: heatclient/exc.py:80
+msgid "Requested version of Heat API is not available."
+msgstr "Запрошенная версия Heat API недоступна."
+
+#: heatclient/exc.py:81
+#, python-format
+msgid "%(name)s (HTTP %(code)s) %(details)s"
+msgstr "%(name)s (HTTP %(code)s) %(details)s"
+
+#: heatclient/shell.py:46
+msgid ""
+"Explicitly allow heatclient to perform \"insecure SSL\" (https) requests. "
+"The server's certificate will not be verified against any certificate "
+"authorities. This option should be used with caution."
+msgstr ""
+"Явно разрешить heatclient выполнение запросов \"insecure SSL\" (https). "
+"Сертификат сервера не будет проверяться никакими центрами сертификации. "
+"Этот параметр нужно использовать с осторожностью."
+
+#: heatclient/shell.py:55
+msgid ""
+"Path of certificate file to use in SSL connection. This file can optionally "
+"be prepended with the private key."
+msgstr ""
+"Путь до файла сертификата, используемого в соединениях SSL. Дополнительно, "
+"перед файлом можно указать частный ключ."
+
+#: heatclient/shell.py:62 heatclient/shell.py:74 heatclient/shell.py:88
+#, python-format
+msgid "DEPRECATED! Use %(arg)s."
+msgstr "УСТАРЕВШИЙ ПАРАМЕТР. Используйте %(arg)s."
+
+#: heatclient/shell.py:67
+msgid ""
+"Path of client key to use in SSL connection. This option is not necessary if "
+"your key is prepended to your cert file."
+msgstr ""
+"Путь до ключа клиента, используемого в соединениях SSL. Данный параметр "
+"не нужен, если ключ указывается перед файлом сертификата."
+
+#: heatclient/shell.py:81
+#, fuzzy
+msgid ""
+"Path of CA TLS certificate(s) used to verify the remote server's certificate."
+" Without this option glance looks for the default system CA certificates."
+msgstr ""
+"Путь до сертификата(ов) ЦС TLS, используемых для подтверждения сертификата "
+"удалённого сервера. В отсутствии этого параметра glance будет искать "
+"исходные системные сертификаты ЦС."
+
+#: heatclient/shell.py:93 heatclient/shell.py:102 heatclient/shell.py:111
+#: heatclient/shell.py:120 heatclient/shell.py:153 heatclient/shell.py:162
+#: heatclient/shell.py:171 heatclient/shell.py:180 heatclient/shell.py:190
+#: heatclient/shell.py:200 heatclient/shell.py:209 heatclient/shell.py:218
+#: heatclient/shell.py:227 heatclient/shell.py:236 heatclient/shell.py:267
+#: heatclient/shell.py:291
+#, python-format
+msgid "Defaults to %(value)s."
+msgstr "По умолчанию: %(value)s."
+
+#: heatclient/shell.py:129
+#, python-format
+msgid ""
+"Another way to specify tenant ID. This option is mutually exclusive with "
+"%(arg)s. Defaults to %(value)s."
+msgstr ""
+"Ещё один способ указать ID арендатора. Данный параметр и %(arg)s являются"
+" взаимоисключающими. "
+"По умолчанию: %(value)s."
+
+#: heatclient/shell.py:141
+#, python-format
+msgid ""
+"Another way to specify tenant name. This option is mutually exclusive with "
+"%(arg)s. Defaults to %(value)s."
+msgstr ""
+"Ещё один способ указать имя арендатора Данный параметр и %(arg)s являются"
+" взаимоисключающими. "
+"По умолчанию: %(value)s."
+
+#: heatclient/shell.py:247
+#, python-format
+msgid "See \"%(arg)s\" for help on a specific command."
+msgstr "Для получения помощи по конкретной команде см. \"%(arg)s\"."
+
+#: heatclient/shell.py:262
+msgid "Shows the client version and exits."
+msgstr "Показывает версию клиента и завершает работу"
+
+#: heatclient/shell.py:273
+msgid "Print more verbose output."
+msgstr "Показывать более подробный вывод."
+
+#: heatclient/shell.py:276
+#, fuzzy
+msgid ""
+"Number of seconds to wait for an API response, defaults to system socket "
+"timeout"
+msgstr ""
+"Число секунд, в течение которых нужно ожидать ответа API, по умолчанию: "
+"системное значение истечения времени ожидания события сокета"
+
+#: heatclient/shell.py:285
+#, python-format
+msgid "Do not contact keystone for a token. Defaults to %(value)s."
+msgstr ""
+"Не запрашивать keystone для получения маркёра. По умолчанию: %(value)s."
+
+#: heatclient/shell.py:300
+#, python-format
+msgid "Defaults to %(value)s or 1."
+msgstr "По умолчанию: %(value)s или 1."
+
+#: heatclient/shell.py:318
+#, python-format
+msgid "Send %(arg1)s and %(arg2)s to heat."
+msgstr "Послать %(arg1)s и %(arg2)s в heat."
+
+#: heatclient/shell.py:333
+#, fuzzy
+msgid ""
+"HMAC key to use for encrypting context data for performance profiling of "
+"operation. This key should be the value of HMAC key configured in osprofiler "
+"middleware in heat, it is specified in the paste configuration (/etc/heat/"
+"api-paste.ini). Without the key, profiling will not be triggered even if "
+"osprofiler is enabled on server side."
+msgstr ""
+"Ключ HMAC, используемый для шифрования данных контекста в целях "
+"профилирования производительности операции. Этот ключ должен иметь "
+"значение ключа HMAC, настроенного в утилите промежуточного звена osprofiler "
+"в heat, и указанного в конфигурации paste (/etc/heat/api-paste.ini). Без"
+" этого ключа "
+"профилирование не будет запущено, даже если osprofiler включён на стороне"
+" сервера."
+
+#: heatclient/shell.py:452
+msgid ""
+"You must provide a username via either --os-username or env[OS_USERNAME] or "
+"a token via --os-auth-token or env[OS_AUTH_TOKEN]"
+msgstr ""
+"Имя пользователя нужно указать либо с помощью параметра"
+" --os-username/переменной env[OS_USERNAME], "
+"либо с помощью маркера через параметр --os-auth-token/переменную"
+" env[OS_AUTH_TOKEN]"
+
+#: heatclient/shell.py:458
+msgid ""
+"You must provide a password via either --os-password or env[OS_PASSWORD] or "
+"a token via --os-auth-token or env[OS_AUTH_TOKEN]"
+msgstr ""
+"Пароль необходимо указать либо с помощью параметра --os-password/переменной"
+" env[OS_PASSWORD], "
+"либо с помощью маркера через параметр --os-auth-token/ переменную"
+" env[OS_AUTH_TOKEN]"
+
+#: heatclient/shell.py:465
+msgid ""
+"If you specify --os-no-client-auth you must also specify a Heat API URL via "
+"either --heat-url or env[HEAT_URL]"
+msgstr ""
+"Если указывается --os-no-client-auth, то также нужно указать адрес URL для"
+" Heat API через "
+"параметр --heat-url, либо через переменную env[HEAT_URL]"
+
+#: heatclient/shell.py:477
+msgid ""
+"You must provide a tenant id via either --os-tenant-id or env[OS_TENANT_ID] "
+"or a tenant name via either --os-tenant-name or env[OS_TENANT_NAME] or a "
+"project id via either --os-project-id or env[OS_PROJECT_ID] or a project "
+"name via either --os-project-name or env[OS_PROJECT_NAME]"
+msgstr ""
+"Необходимо предоставить либо ID арендатора с помощью параметра"
+" --os-tenant-id/переменной env[OS_TENANT_ID], "
+"либо имя арендатора с помощью параметра --os-tenant-name/переменной"
+" env[OS_TENANT_NAME],"
+"либо ID проекта с помощью параметра  --os-project-id/переменной"
+" env[OS_PROJECT_ID], либо название проекта "
+"с помощью параметра --os-project-name/переменной env[OS_PROJECT_NAME]"
+
+#: heatclient/shell.py:485
+msgid ""
+"You must provide an auth url via either --os-auth-url or via "
+"env[OS_AUTH_URL]"
+msgstr ""
+"Необходимо предоставить адрес url для авторизации либо с помощью параметра"
+" --os-auth-url, либо с помощью "
+"переменной env[OS_AUTH_URL]"
+
+#: heatclient/shell.py:559
+#, python-format
+msgid "Trace ID: %s"
+msgstr "ID трассировки: %s"
+
+#: heatclient/shell.py:560
+#, python-format
+msgid ""
+"To display trace use next command:\n"
+"osprofiler trace show --html %s "
+msgstr ""
+"Для просмотра трассировки используйте следующую команду:\n"
+"osprofiler trace show --html %s "
+
+#: heatclient/shell.py:580
+msgid "Display help for <subcommand>."
+msgstr "Просмотреть справку для <subcommand>."
+
+#: heatclient/shell.py:607
+msgid "... terminating heat client"
+msgstr "... клиент heat завершает работу"
+
+#: heatclient/common/base.py:227 heatclient/common/base.py:377
+#, python-format
+msgid "No %(name)s matching %(args)s."
+msgstr "Нет %(name)s, совпадающих с %(args)s."
+
+#: heatclient/common/deployment_utils.py:50
+#: heatclient/osc/v1/software_deployment.py:94
+msgid "ID of the server being deployed to"
+msgstr "ID сервера, разворачиваемого на"
+
+#: heatclient/common/deployment_utils.py:55
+msgid "Name of the current action being deployed"
+msgstr "Имя текущего развёртываемого действия"
+
+#: heatclient/common/deployment_utils.py:60
+msgid "How the server should signal to heat with the deployment output values."
+msgstr ""
+"Как именно сервер должен сигнализировать в Heat о выходных значениях"
+" развёртывания."
+
+#: heatclient/common/deployment_utils.py:69
+msgid "ID of signal to use for signaling output values"
+msgstr "ID сигнала, используемого для передачи значений вывода"
+
+#: heatclient/common/deployment_utils.py:76
+msgid "HTTP verb to use for signaling output values"
+msgstr "Метод HTTP, используемый для сигнализации значений вывода"
+
+#: heatclient/common/deployment_utils.py:83
+#, python-format
+msgid "Unsupported signal transport %s"
+msgstr "Неподдерживаемый транспорт сигнала %s"
+
+#: heatclient/common/deployment_utils.py:124
+msgid ""
+"Cannot use --os-no-client-auth, auth required to create a Swift TempURL."
+msgstr ""
+"Невозможно использовать --os-no-client-auth, для создания Swift TempURL"
+" необходима "
+"авторизация."
+
+#: heatclient/common/environment_format.py:50
+msgid "The environment is not a valid YAML mapping data type."
+msgstr "Окружение не является допустимым типом YAML с отображением данных"
+
+#: heatclient/common/environment_format.py:55
+#, python-format
+msgid "environment has wrong section \"%s\""
+msgstr "у окружения неверный раздел \"%s\""
+
+#: heatclient/common/event_utils.py:39
+#, python-format
+msgid "Unexpected hook type %s"
+msgstr "Непредвиденный тип перехватчика событий %s"
+
+#: heatclient/common/event_utils.py:129 heatclient/common/hook_utils.py:63
+#: heatclient/osc/v1/resource.py:128 heatclient/osc/v1/snapshot.py:53
+#: heatclient/osc/v1/snapshot.py:166 heatclient/osc/v1/stack.py:602
+#: heatclient/osc/v1/stack.py:635 heatclient/osc/v1/stack.py:776
+#: heatclient/osc/v1/stack.py:911 heatclient/osc/v1/stack.py:955
+#: heatclient/osc/v1/stack.py:1014 heatclient/osc/v1/stack.py:1077
+#: heatclient/osc/v1/stack.py:1110 heatclient/osc/v1/stack.py:1175
+#: heatclient/v1/shell.py:360 heatclient/v1/shell.py:384
+#: heatclient/v1/shell.py:399 heatclient/v1/shell.py:414
+#: heatclient/v1/shell.py:592 heatclient/v1/shell.py:720
+#: heatclient/v1/shell.py:800 heatclient/v1/shell.py:879
+#: heatclient/v1/shell.py:968 heatclient/v1/shell.py:1614
+#: heatclient/v1/shell.py:1697 heatclient/v1/shell.py:1751
+#, python-format
+msgid "Stack not found: %s"
+msgstr "Стек не найден: %s"
+
+#: heatclient/common/event_utils.py:190 heatclient/common/event_utils.py:245
+#, python-format
+msgid ""
+"\n"
+" Stack %(name)s %(status)s \n"
+msgstr ""
+"\n"
+" Стек %(name)s %(status)s \n"
+
+#: heatclient/common/hook_utils.py:66
+#, python-format
+msgid "Stack status %s not IN_PROGRESS"
+msgstr "Статусом стека %s не является IN_PROGRESS"
+
+#: heatclient/common/hook_utils.py:76
+#, python-format
+msgid "Unexpected stack status %s, only create, update and delete supported"
+msgstr ""
+"Непредвиденный статус стека %s, поддерживается только создание, обновление и"
+" удаление"
+
+#: heatclient/common/http.py:217
+#, python-format
+msgid "Error finding address for %(url)s: %(e)s"
+msgstr "Ошибка нахождения адреса %(url)s: %(e)s"
+
+#: heatclient/common/http.py:222
+#, python-format
+msgid "Error communicating with %(endpoint)s %(e)s"
+msgstr "Ошибка обмена данными с %(endpoint)s %(e)s"
+
+#: heatclient/common/http.py:231
+#, python-format
+msgid "Authentication failed: %s"
+msgstr "Сбой аутентификации: %s"
+
+#: heatclient/common/http.py:241 heatclient/v1/stacks.py:114
+msgid "Location not returned with redirect"
+msgstr ""
+
+#: heatclient/common/http.py:339
+msgid "Location not returned with 302"
+msgstr ""
+
+#: heatclient/common/template_format.py:81
+msgid "Template format version not found."
+msgstr "Версия формата шаблона не найдена"
+
+#: heatclient/common/template_utils.py:81
+#, python-format
+msgid ""
+"Need to specify exactly one of [%(arg1)s, %(arg2)s or %(arg3)s] or %(arg4)s"
+msgstr ""
+"Необходимо точно указать что одно из: [%(arg1)s, %(arg2)s, или %(arg3)s], или"
+" %(arg4)s"
+
+#: heatclient/common/template_utils.py:91
+#, python-format
+msgid "Could not fetch template from %s"
+msgstr "Не удалось получить шаблон из %s"
+
+#: heatclient/common/template_utils.py:99
+#, python-format
+msgid "Error parsing template %(url)s %(error)s"
+msgstr "Ошибка анализа шаблона %(url)s %(error)s"
+
+#: heatclient/common/utils.py:101
+#, python-format
+msgid ""
+"Field labels list %(labels)s has different number of elements than fields "
+"list %(fields)s"
+msgstr ""
+"Список меток полей %(labels)s содержит другое число элементов, чем список "
+"полей %(fields)s"
+
+#: heatclient/common/utils.py:316
+#, python-format
+msgid "No %(name)s with a name or ID of '%(name_or_id)s' exists."
+msgstr "Не существует %(name)s с именем или ID '%(name_or_id)s'."
+
+#: heatclient/common/utils.py:342
+#, python-format
+msgid "Malformed parameter(%s). Use the key=value format."
+msgstr ""
+"Неправильный формат параметра parameter(%s). Используйте формат"
+" «ключ=значение»."
+
+#: heatclient/common/utils.py:398
+#, python-format
+msgid "The format(%s) is unsupported."
+msgstr "Формат format(%s) не поддерживается."
+
+#: heatclient/common/utils.py:417
+#, python-format
+msgid "Could not fetch contents for %s"
+msgstr "Не удалось получить содержимое %s"
+
+#: heatclient/osc/v1/event.py:38 heatclient/osc/v1/event.py:102
+msgid "Name or ID of stack to show events for"
+msgstr "Имя или ID стека, события которого нужно показать"
+
+#: heatclient/osc/v1/event.py:43
+msgid "Name of the resource event belongs to"
+msgstr "Имя ресурса, к которому принадлежит событие"
+
+#: heatclient/osc/v1/event.py:48
+msgid "ID of event to display details for"
+msgstr "ID события, для которого нужно показать подробные сведения"
+
+#: heatclient/osc/v1/event.py:107
+msgid ""
+"Name of resource to show events for. Note: this cannot be specified with --"
+"nested-depth"
+msgstr ""
+"Имя ресурса, события которого нужно показать. Обратите внимание: этот"
+" параметр "
+"нельзя уточнить с помощью --nested-depth"
+
+#: heatclient/osc/v1/event.py:114
+msgid "Filter parameters to apply on returned events"
+msgstr "Фильтрация параметров для применения к возвращённым событиям"
+
+#: heatclient/osc/v1/event.py:120
+msgid "Limit the number of events returned"
+msgstr "Ограничить число возвращаемых событий"
+
+#: heatclient/osc/v1/event.py:125
+msgid "Only return events that appear after the given ID"
+msgstr "Возвращать только те события, которые показаны после указанного ID"
+
+#: heatclient/osc/v1/event.py:131
+msgid ""
+"Depth of nested stacks from which to display events. Note: this cannot be "
+"specified with --resource"
+msgstr ""
+"Глубина вложенных стеков, с которой нужно показывать события. Обратите "
+"внимание: этот параметр нельзя уточнить с помощью --resource"
+
+#: heatclient/osc/v1/event.py:138
+#, fuzzy
+msgid ""
+"Sort output by selected keys and directions (asc or desc) (default: asc). "
+"Specify multiple times to sort on multiple keys. Sort key can be: "
+"\"event_time\" (default), \"resource_name\", \"links\", "
+"\"logical_resource_id\", \"resource_status\", \"resource_status_reason\", "
+"\"physical_resource_id\", or \"id\". You can leave the key empty and specify "
+"\":desc\" for sorting by reverse time."
+msgstr ""
+"Сортировать вывод на основе выбранных ключей и направлений (по возр. или"
+" убыв.) (по умолчанию: "
+"по возр.). Для сортировки по нескольким ключам указывайте несколько ключей."
+" Ключами сортировки "
+"могут быть: \"event_time\" (default), \"resource_name\", \"links\","
+" \"logical_resource_id\", \"resource_status\", \"resource_status_reason\", "
+"\"physical_resource_id\" или \"id\". Для сортировки по обратному времени"
+" оставьте ключ пустым и укажите \":desc\"."
+
+#: heatclient/osc/v1/event.py:150
+msgid "Print events until process is halted"
+msgstr "Выводить события до тех пор, пока процесс не будет остановлен"
+
+#: heatclient/osc/v1/event.py:169 heatclient/v1/shell.py:1181
+msgid "--nested-depth cannot be specified with --resource"
+msgstr "--nested-depth нельзя уточнить с помощью --resource"
+
+#: heatclient/osc/v1/event.py:194
+msgid "--follow can only be specified with --format log"
+msgstr "--follow можно уточнить только с помощью --format log"
+
+#: heatclient/osc/v1/resource.py:41 heatclient/osc/v1/resource.py:88
+#: heatclient/osc/v1/stack.py:590 heatclient/osc/v1/stack.py:623
+#: heatclient/osc/v1/stack.py:981 heatclient/osc/v1/stack.py:1061
+#: heatclient/osc/v1/stack.py:1098
+msgid "Name or ID of stack to query"
+msgstr "Имя или ID запрашиваемого стека"
+
+#: heatclient/osc/v1/resource.py:46
+msgid "Name of resource"
+msgstr "Имя ресурса"
+
+#: heatclient/osc/v1/resource.py:52
+msgid "Attribute to show, can be specified multiple times"
+msgstr "Показываемый атрибут, можно указать несколько раз"
+
+#: heatclient/osc/v1/resource.py:66
+#, python-format
+msgid "Stack or resource not found: %(stack)s %(resource)s"
+msgstr "Стек или ресурс не найден: %(stack)s %(resource)s"
+
+#: heatclient/osc/v1/resource.py:93
+msgid ""
+"Enable detailed information presented for each resource in resource list"
+msgstr ""
+"Включить показ подробных сведений для каждого ресурса в списке ресурсов"
+
+#: heatclient/osc/v1/resource.py:100
+msgid "Depth of nested stacks from which to display resources"
+msgstr "Глубина вложенных стеков, с которой нужно показывать ресурсы"
+
+#: heatclient/osc/v1/resource.py:107
+msgid ""
+"Filter parameters to apply on returned resources based on their name, "
+"status, type, action, id and physical_resource_id"
+msgstr ""
+"Фильтрация параметров для применения к возвращённым событиям на основе их "
+"имён, статуса, тип, действия, ID и physical_resource_id"
+
+#: heatclient/osc/v1/resource.py:161 heatclient/osc/v1/stack.py:1327
+#: heatclient/osc/v1/stack.py:1396 heatclient/osc/v1/stack_failures.py:39
+msgid "Stack to display (name or ID)"
+msgstr "Показываемый стек (имя или ID)"
+
+#: heatclient/osc/v1/resource.py:166
+msgid "Name of the resource to show the metadata for"
+msgstr "Имя ресурса, для которого нужно показать метаданные"
+
+#: heatclient/osc/v1/resource.py:182 heatclient/osc/v1/resource.py:253
+#, python-format
+msgid "Stack %(stack)s or resource %(resource)s not found."
+msgstr "Стек %(stack)s или ресурс %(resource)s не найден."
+
+#: heatclient/osc/v1/resource.py:202 heatclient/osc/v1/resource.py:269
+msgid "Name or ID of stack the resource belongs to"
+msgstr "Имя или ID стека, к которому принадлежит ресурс"
+
+#: heatclient/osc/v1/resource.py:207
+#, fuzzy
+msgid "Name of the resoure to signal"
+msgstr "Имя ресурса, "
+
+#: heatclient/osc/v1/resource.py:212
+msgid "JSON Data to send to the signal handler"
+msgstr "Данные JSON, посылаемые обработчику сигнала"
+
+#: heatclient/osc/v1/resource.py:217
+msgid "File containing JSON data to send to the signal handler"
+msgstr "Файл, содержащий данные JSON, посылаемые обработчику сигнала"
+
+#: heatclient/osc/v1/resource.py:234
+msgid "Should only specify one of data or data-file"
+msgstr "Нужно указать только что-то одно: данные или файл с данными"
+
+#: heatclient/osc/v1/resource.py:245 heatclient/v1/shell.py:1075
+#, python-format
+msgid "Data should be in JSON format: %s"
+msgstr "Данные должны быть в формате JSON: %s"
+
+#: heatclient/osc/v1/resource.py:247 heatclient/v1/shell.py:1077
+msgid "Data should be a JSON dict"
+msgstr "Данные должны быть в виде JSON dict"
+
+#: heatclient/osc/v1/resource.py:274
+msgid "Name of the resource"
+msgstr "Имя ресурса"
+
+#: heatclient/osc/v1/resource.py:280
+msgid "Reason for state change"
+msgstr "Причина изменения состояния"
+
+#: heatclient/osc/v1/resource.py:286
+msgid "Set the resource as healthy"
+msgstr "Пометить ресурс как работоспособный"
+
+#: heatclient/osc/v1/resource.py:301 heatclient/v1/shell.py:1002
+#: heatclient/v1/shell.py:1041 heatclient/v1/shell.py:1082
+#: heatclient/v1/shell.py:1107
+#, python-format
+msgid "Stack or resource not found: %(id)s %(resource)s"
+msgstr "Стек или ресурс не найден: %(id)s %(resource)s"
+
+#: heatclient/osc/v1/resource_type.py:39
+msgid "Resource type to show details for"
+msgstr "Тип ресурса, для которого нужно показать подробности"
+
+#: heatclient/osc/v1/resource_type.py:44
+msgid "Optional template type to generate, hot or cfn"
+msgstr "Дополнительный создаваемый тип шаблона, hot или cfn"
+
+#: heatclient/osc/v1/resource_type.py:50
+msgid "Show resource type with corresponding description."
+msgstr "Показать тип ресурса с соответствующим описанием"
+
+#: heatclient/osc/v1/resource_type.py:58
+msgid "Cannot use --template-type and --long in one time."
+msgstr "Нельзя одновременно использовать и --template-type и --long."
+
+#: heatclient/osc/v1/resource_type.py:71
+#, python-format
+msgid "Template type invalid: %s"
+msgstr "Недопустимый тип шаблона: %s"
+
+#: heatclient/osc/v1/resource_type.py:81
+#, python-format
+msgid "Resource type not found: %s"
+msgstr "Тип ресурса не найден: %s"
+
+#: heatclient/osc/v1/resource_type.py:100
+msgid ""
+"Filter parameters to apply on returned resource types. This can be specified "
+"multiple times. It can be any of name, version or support_status"
+msgstr ""
+"Параметры фильтра, которые нужно применить к возвращаемым типам ресурсов."
+" Можно указывать несколько раз. "
+"Фильтром "
+"может быть: имя, версия или support_status"
+
+#: heatclient/osc/v1/resource_type.py:109
+msgid ""
+"Show resource types with corresponding description of each resource type."
+msgstr ""
+"Показывать типы ресурсов с соответствующим описанием для каждого типа ресурсов"
+
+#: heatclient/osc/v1/snapshot.py:39
+msgid "Name or ID of stack containing the snapshots"
+msgstr "Имя или ID стека, в котором содержатся снимки"
+
+#: heatclient/osc/v1/snapshot.py:74 heatclient/osc/v1/snapshot.py:113
+msgid "Name or ID of stack containing the snapshot"
+msgstr "Имя или ID стека, в котором содержится снимок"
+
+#: heatclient/osc/v1/snapshot.py:79
+msgid "ID of the snapshot to show"
+msgstr "ID просматриваемого снимка"
+
+#: heatclient/osc/v1/snapshot.py:93 heatclient/osc/v1/snapshot.py:228
+#, python-format
+msgid "Snapshot ID <%(snapshot_id)s> not found for stack <%(stack_id)s>"
+msgstr "ID снимка <%(snapshot_id)s> не найден в стеке <%(stack_id)s>"
+
+#: heatclient/osc/v1/snapshot.py:118
+msgid "ID of the snapshot to restore"
+msgstr "ID восстанавливаемого снимка"
+
+#: heatclient/osc/v1/snapshot.py:133
+#, python-format
+msgid "Stack %(stack)s or snapshot %(snapshot)s not found."
+msgstr "Стек %(stack)s или снимок %(snapshot)s не нйден."
+
+#: heatclient/osc/v1/snapshot.py:149 heatclient/osc/v1/snapshot.py:189
+msgid "Name or ID of stack"
+msgstr "Имя или ID стека"
+
+#: heatclient/osc/v1/snapshot.py:154
+msgid "Name of snapshot"
+msgstr "Имя снимка"
+
+#: heatclient/osc/v1/snapshot.py:194
+msgid "ID of stack snapshot"
+msgstr "ID снимка стека"
+
+#: heatclient/osc/v1/snapshot.py:199 heatclient/osc/v1/stack.py:720
+msgid "Skip yes/no prompt (assume yes)"
+msgstr "Пропустить запрос на ввод «yes/no» (будет подразумеваться «yes»)"
+
+#: heatclient/osc/v1/snapshot.py:211 heatclient/v1/shell.py:1649
+msgid "Are you sure you want to delete the snapshot of this stack [Y/N]?"
+msgstr "Точно удалить снимок этого стека [Y/N]?"
+
+#: heatclient/osc/v1/software_config.py:43
+msgid "IDs of the software configs to delete"
+msgstr "Идентификаторы удаляемых конфигураций ПО"
+
+#: heatclient/osc/v1/software_config.py:63 heatclient/v1/shell.py:1398
+#, python-format
+msgid "Software config with ID %s not found"
+msgstr "Конфигурация ПО с ID %s не найдена"
+
+#: heatclient/osc/v1/software_config.py:68
+#, python-format
+msgid "Unable to delete %(count)s of the %(total)s software configs."
+msgstr "Не удалось удалить %(count)s из %(total)s конфигураций ПО."
+
+#: heatclient/osc/v1/software_config.py:84
+msgid "Limit the number of configs returned"
+msgstr "Ограничить число возвращаемых конфигураций"
+
+#: heatclient/osc/v1/software_config.py:89
+msgid "Return configs that appear after the given config ID"
+msgstr "Возвращать конфигурации, показанные после указанного ID конфигурации"
+
+#: heatclient/osc/v1/software_config.py:121
+msgid "Name of the software config to create"
+msgstr "Имя создаваемой конфигурации ПО"
+
+#: heatclient/osc/v1/software_config.py:126
+msgid ""
+"Path to JSON/YAML containing map defining <inputs>, <outputs>, and <options>"
+msgstr ""
+"Путь до JSON/YAML, в которых содержатся параметры отображения "
+"<inputs>, <outputs> и <options>"
+
+#: heatclient/osc/v1/software_config.py:132
+msgid "Path to software config script/data"
+msgstr "Путь до сценария/данных конфигурации ПО"
+
+#: heatclient/osc/v1/software_config.py:138
+msgid "Group name of tool expected by the software config"
+msgstr "Имя группы инструмента, ожидаемое конфигурацией ПО"
+
+#: heatclient/osc/v1/software_config.py:199
+msgid "ID of the config"
+msgstr "ID конфигурации"
+
+#: heatclient/osc/v1/software_config.py:205 heatclient/v1/shell.py:1369
+msgid "Only display the value of the <config> property."
+msgstr "Показать только значение свойства <config>"
+
+#: heatclient/osc/v1/software_config.py:220 heatclient/v1/shell.py:1449
+#, python-format
+msgid "Configuration not found: %s"
+msgstr "Конфигурация не найдена: %s"
+
+#: heatclient/osc/v1/software_deployment.py:40 heatclient/v1/shell.py:1435
+msgid ""
+"Name of the derived config associated with this deployment. This is used to "
+"apply a sort order to the list of configurations currently deployed to the "
+"server."
+msgstr ""
+"Имя производной конфигурации, связанной с данным развёртыванием. Используется "
+"для применения порядка сортировки к списку конфигураций, на данный момент"
+" развёрнутых на сервере."
+
+#: heatclient/osc/v1/software_deployment.py:48 heatclient/v1/shell.py:1407
+msgid ""
+"Input value to set on the deployment. This can be specified multiple times."
+msgstr ""
+"Значение ввода, настраиваемое для развёртывания. Можно указать несколько раз."
+
+#: heatclient/osc/v1/software_deployment.py:55
+msgid ""
+"Name of an action for this deployment. This can be a custom action, or one "
+"of CREATE, UPDATE, DELETE, SUSPEND, RESUME. Default is UPDATE"
+msgstr ""
+"Имя действия данного развёртывания. Может быть либо пользовательским, либо "
+"одним из следующих: СОЗДАНИЕ, ОБНОВЛЕНИЕ, УДАЛЕНИЕ, ГИБЕРНАЦИЯ, ВЫВОД ИЗ"
+" ГИБЕРНАЦИИ. По умолчанию:"
+" ОБНОВЛЕНИЕ"
+
+#: heatclient/osc/v1/software_deployment.py:62
+msgid "ID of the configuration to deploy"
+msgstr "ID развёртываемой конфигурации"
+
+#: heatclient/osc/v1/software_deployment.py:68
+msgid ""
+"How the server should signal to heat with the deployment output values. "
+"TEMP_URL_SIGNAL will create a Swift TempURL to be signaled via HTTP PUT. "
+"ZAQAR_SIGNAL will create a dedicated zaqar queue to be signaled using the "
+"provided keystone credentials.NO_SIGNAL will result in the resource going to "
+"the COMPLETE state without waiting for any signal"
+msgstr ""
+"Как именно сервер должен сигнализировать в Heat о выходных значениях"
+" развёртывания. TEMP_URL_SIGNAL создаст Swift TempURL для сигнализирования с"
+" использованием HTTP PUT. ZAQAR_SIGNAL создаст соответствующую очередь zaqar,"
+" которая будет сигнализироваться с использованием предоставленных учётных"
+" данных keystone. NO_SIGNAL — ресурс переходит в состояние COMPLETE, не"
+" ожидая сигналов."
+
+#: heatclient/osc/v1/software_deployment.py:79 heatclient/v1/shell.py:1427
+msgid ""
+"Optional name of container to store TEMP_URL_SIGNAL objects in. If not "
+"specified a container will be created with a name derived from the "
+"DEPLOY_NAME"
+msgstr ""
+"Дополнительное имя контейнера для хранения объектов TEMP_URL_SIGNAL. "
+"Если не указано, контейнер будет создан с именем, производным от DEPLOY_NAME."
+
+#: heatclient/osc/v1/software_deployment.py:88
+msgid "Deployment timeout in minutes"
+msgstr "Истечение времени ожидания развёртывания, в минутах."
+
+#: heatclient/osc/v1/software_deployment.py:108
+#, python-format
+msgid "Software configuration not found: %s"
+msgstr "Конфигурация ПО не найдена: %s"
+
+#: heatclient/osc/v1/software_deployment.py:144 heatclient/v1/shell.py:1513
+msgid "ID of the deployment(s) to delete."
+msgstr "ID удаляемых развёртываний"
+
+#: heatclient/osc/v1/software_deployment.py:160 heatclient/v1/shell.py:1527
+#, python-format
+msgid "Deployment with ID %s not found"
+msgstr "Развёртывание с ID %s не найдено"
+
+#: heatclient/osc/v1/software_deployment.py:162
+#, python-format
+msgid "Deployment with ID %s failed to delete"
+msgstr "Сбой удаления развёртывания с ID %s"
+
+#: heatclient/osc/v1/software_deployment.py:171 heatclient/v1/shell.py:1536
+#, python-format
+msgid ""
+"Failed to delete the correlative config %(config_id)s of deployment "
+"%(deploy_id)s"
+msgstr ""
+"Не удалось удалить соответственную конфигурацию %(config_id)s развёртывания "
+"%(deploy_id)s"
+
+#: heatclient/osc/v1/software_deployment.py:176
+#, python-format
+msgid "Unable to delete %(count)s of the %(total)s deployments."
+msgstr "Не удалось удалить %(count)s из %(total)s развёртываний."
+
+#: heatclient/osc/v1/software_deployment.py:192
+#: heatclient/osc/v1/software_deployment.py:279
+msgid "ID of the server to fetch deployments for"
+msgstr "ID сервера, для которого нужно получить развёртывания"
+
+#: heatclient/osc/v1/software_deployment.py:197
+msgid "List more fields in output"
+msgstr "Показывать больше полей списка в выводе"
+
+#: heatclient/osc/v1/software_deployment.py:232
+msgid "ID of the deployment"
+msgstr "ID развёртывания"
+
+#: heatclient/osc/v1/software_deployment.py:237
+msgid "Show more fields in output"
+msgstr "Показывать больше полей в выводе"
+
+#: heatclient/osc/v1/software_deployment.py:250
+#, python-format
+msgid "Software Deployment not found: %s"
+msgstr "Развёртывание ПО не найдено: %s"
+
+#: heatclient/osc/v1/software_deployment.py:301
+msgid "ID of deployment to show the output for"
+msgstr "ID развёртывания, вывод которого нужно показать"
+
+#: heatclient/osc/v1/software_deployment.py:308 heatclient/osc/v1/stack.py:988
+msgid "Name of an output to display"
+msgstr "Имя просматриваемого развёртывания"
+
+#: heatclient/osc/v1/software_deployment.py:314
+msgid "Display all deployment outputs"
+msgstr "Просмотреть выводы всех развёртываний"
+
+#: heatclient/osc/v1/software_deployment.py:331 heatclient/v1/shell.py:1563
+#, python-format
+msgid "Error: either %(output)s or %(all)s argument is needed."
+msgstr "Ошибка: необходим либо аргумент %(output)s, либо %(all)s"
+
+#: heatclient/osc/v1/software_deployment.py:337 heatclient/v1/shell.py:1496
+#: heatclient/v1/shell.py:1568
+#, python-format
+msgid "Deployment not found: %s"
+msgstr "Развёртывание не найдено: %s"
+
+#: heatclient/osc/v1/software_deployment.py:348
+#, python-format
+msgid "Output %(output)s does not exist in deployment %(deployment)s"
+msgstr "В развёртывании %(deployment)s вывод %(output)s не существует"
+
+#: heatclient/osc/v1/stack.py:48 heatclient/osc/v1/stack.py:236
+#: heatclient/osc/v1/stack.py:814 heatclient/osc/v1/template.py:111
+msgid "Path to the environment. Can be specified multiple times"
+msgstr "Путь до окружения. Можно указать несколько раз."
+
+#: heatclient/osc/v1/stack.py:53 heatclient/osc/v1/stack.py:229
+#: heatclient/osc/v1/template.py:128
+msgid ""
+"Swift files container name. Local files other than root template would be "
+"ignored. If other files are not found in swift, heat engine would raise an "
+"error."
+msgstr ""
+"Имя контейнера файлов Swift. Все локальные файлы, кроме корневого шаблона,"
+" будут игнорироваться. "
+"Если в Swift не будут найдены другие файлы, движок heat сообщит об ошибке."
+
+#: heatclient/osc/v1/stack.py:61
+msgid "Stack creating timeout in minutes"
+msgstr "Истечение времени ожидания стека в минутах"
+
+#: heatclient/osc/v1/stack.py:68
+msgid ""
+"Name of a resource to set a pre-create hook to. Resources in nested stacks "
+"can be set using slash as a separator: ``nested_stack/another/my_resource``. "
+"You can use wildcards to match multiple stacks or resources: ``nested_stack/"
+"an*/*_resource``. This can be specified multiple times"
+msgstr ""
+"Имя ресурса, для которого нужно настроить перехватчик событий pre-create. Для"
+" ресурсов "
+"во вложенных стеках используется в качестве разделителя косая черта:"
+" ``nested_stack/another/my_resource``. "
+"Для совпадения с несколькими стеками или ресурсами используются"
+" подстановочные знаки: "
+"``nested_stack/an*/*_resource``. Можно указывать несколько раз."
+
+#: heatclient/osc/v1/stack.py:78 heatclient/osc/v1/stack.py:825
+msgid "Enable rollback on create/update failure"
+msgstr "Включить возможность отката в случае сбоя при создании/обновлении"
+
+#: heatclient/osc/v1/stack.py:84 heatclient/osc/v1/stack.py:270
+#: heatclient/osc/v1/template.py:122
+msgid ""
+"Parameter values used to create the stack. This can be specified multiple "
+"times"
+msgstr ""
+"Значения параметров, используемые для создания стека. Можно указывать"
+" несколько раз."
+
+#: heatclient/osc/v1/stack.py:91
+msgid ""
+"Parameter values from file used to create the stack. This can be specified "
+"multiple times. Parameter values would be the content of the file"
+msgstr ""
+"Значения параметров из файла, использованного для создания стека. Можно "
+"указывать несколько раз. Содержимым файла являются значения параметров."
+
+#: heatclient/osc/v1/stack.py:98
+msgid "Wait until stack goes to CREATE_COMPLETE or CREATE_FAILED"
+msgstr ""
+"Подождать, пока стек не перейдёт в статус CREATE_COMPLETE или CREATE_FAILED"
+
+#: heatclient/osc/v1/stack.py:105
+msgid "Poll interval in seconds for use with --wait, defaults to 5."
+msgstr ""
+"Интервал опросов, в секундах, для использования с параметром --wait, "
+"по умолчанию: 5."
+
+#: heatclient/osc/v1/stack.py:111
+msgid "A list of tags to associate with the stack"
+msgstr "Список меток, связанных со стеком"
+
+#: heatclient/osc/v1/stack.py:116
+msgid ""
+"Do not actually perform the stack create, but show what would be created"
+msgstr ""
+"Не выполнять фактическое создание стека, только показать, что именно будет"
+" создано"
+
+#: heatclient/osc/v1/stack.py:122
+msgid "Name of the stack to create"
+msgstr "Имя создаваемого стека"
+
+#: heatclient/osc/v1/stack.py:128 heatclient/osc/v1/stack.py:224
+#: heatclient/osc/v1/template.py:141
+msgid "Path to the template"
+msgstr "Путь до шаблона"
+
+#: heatclient/osc/v1/stack.py:240
+msgid ""
+"Name of a resource to set a pre-update hook to. Resources in nested stacks "
+"can be set using slash as a separator: ``nested_stack/another/my_resource``. "
+"You can use wildcards to match multiple stacks or resources: ``nested_stack/"
+"an*/*_resource``. This can be specified multiple times"
+msgstr ""
+"Имя ресурса, для которого нужно настроить перехватчик событий pre-update. Для"
+" ресурсов "
+"во вложенных стеках используется в качестве разделителя косая черта:"
+" ``nested_stack/another/my_resource``. "
+"Для совпадения с несколькими стеками или ресурсами используются"
+" подстановочные знаки: "
+"``nested_stack/an*/*_resource``. Можно указывать несколько раз."
+
+#: heatclient/osc/v1/stack.py:249
+msgid "Stack update timeout in minutes"
+msgstr "Истечение времени ожидания обновления стека, в минутах"
+
+#: heatclient/osc/v1/stack.py:253
+msgid ""
+"Set rollback on update failure. Value \"enabled\" sets rollback to enabled. "
+"Value \"disabled\" sets rollback to disabled. Value \"keep\" uses the value "
+"of existing stack to be updated (default)"
+msgstr ""
+"Настроить откат при сбое обновления. При значении \"enabled\" откат"
+" включается, "
+"при значении \"disabled\" — отключается. Значение \"keep\" (по умолчанию)"
+" означает, что будет "
+"использоваться значение обновления существующего стека."
+
+#: heatclient/osc/v1/stack.py:261 heatclient/v1/shell.py:467
+msgid ""
+"Do not actually perform the stack update, but show what would be changed"
+msgstr ""
+"Не выполнять фактическое обновление стека, только показать, что именно будет"
+" обновлено."
+
+#: heatclient/osc/v1/stack.py:266 heatclient/v1/shell.py:470
+msgid "Show nested stacks when performing --dry-run"
+msgstr "При выполнении --dry-run показать вложенные стеки"
+
+#: heatclient/osc/v1/stack.py:276 heatclient/v1/shell.py:80
+#: heatclient/v1/shell.py:243 heatclient/v1/shell.py:477
+msgid ""
+"Parameter values from file used to create the stack. This can be specified "
+"multiple times. Parameter value would be the content of the file"
+msgstr ""
+"Значения параметров из файла, использованного для создания стека. Можно "
+"указывать несколько раз. Содержимым файла являются значения параметров."
+
+#: heatclient/osc/v1/stack.py:283
+#, python-format
+msgid ""
+"Re-use the template, parameters and environment of the current stack. If the "
+"template argument is omitted then the existing template is used. If no "
+"%(env_arg)s is specified then the existing environment is used. Parameters "
+"specified in %(arg)s will patch over the existing values in the current "
+"stack. Parameters omitted will keep the existing values"
+msgstr ""
+"Повторно использовать шаблон, параметры и окружение текущего стека. "
+"Если аргумент для шаблона опускается, то используется текущий шаблон. "
+"Если не указан %(env_arg)s, то используется текущее окружение. Параметры, "
+"указанные в %(arg)s, будут использованы вместо существующих значений в текущем"
+" стеке. "
+"Для опущенных параметров сохраняются текущие значения."
+
+#: heatclient/osc/v1/stack.py:294
+#, python-format
+msgid ""
+"Remove the parameters from the set of parameters of current stack for the "
+"%(cmd)s. The default value in the template will be used. This can be "
+"specified multiple times"
+msgstr ""
+"Удалить параметры из набора параметров %(cmd)s текущего стека. "
+"Будет использоваться значение по умолчанию шаблона. Можно указывать несколько "
+"раз."
+
+#: heatclient/osc/v1/stack.py:302
+msgid "Name or ID of stack to update"
+msgstr "Имя или ID обновляемого стека"
+
+#: heatclient/osc/v1/stack.py:306
+msgid "An updated list of tags to associate with the stack"
+msgstr "Обновлённый список меток для привязки к стеку"
+
+#: heatclient/osc/v1/stack.py:311
+msgid "Wait until stack goes to UPDATE_COMPLETE or UPDATE_FAILED"
+msgstr ""
+"Подождать, пока стек не перейдёт в статус UPDATE_COMPLETE или UPDATE_FAILED"
+
+#: heatclient/osc/v1/stack.py:317
+#, fuzzy
+msgid "Stack update with observe on reality."
+msgstr "Обновление стека с наблюдением в реальном времени"
+
+#: heatclient/osc/v1/stack.py:375
+#, python-format
+msgid "--rollback invalid value: %s"
+msgstr "недопустимое значение --rollback: %s"
+
+#: heatclient/osc/v1/stack.py:433 heatclient/v1/shell.py:422
+msgid "Do not resolve outputs of the stack."
+msgstr "Не сопоставлять выводы стеков"
+
+#: heatclient/osc/v1/stack.py:505
+msgid "Include soft-deleted stacks in the stack listing"
+msgstr "Включить стеки с «мягким удалением» в список стеков"
+
+#: heatclient/osc/v1/stack.py:510
+msgid "Include nested stacks in the stack listing"
+msgstr "Включить вложенные стеки в список стеков"
+
+#: heatclient/osc/v1/stack.py:515
+msgid "Include hidden stacks in the stack listing"
+msgstr "Включить скрытые стеки в список стеков"
+
+#: heatclient/osc/v1/stack.py:521
+msgid ""
+"Filter properties to apply on returned stacks (repeat to filter on multiple "
+"properties)"
+msgstr ""
+"Фильтрация свойств для применения к возвращённым стекам ( повторить для"
+" фильтрации "
+"по нескольким свойствам)"
+
+#: heatclient/osc/v1/stack.py:528
+msgid ""
+"List of tags to filter by. Can be combined with --tag-mode to specify how to "
+"filter tags"
+msgstr ""
+"Список меток для фильтрации. Можно сочетать с --tag-mode для указания, "
+"каким именно способом нужно выполнять фильтрацию"
+
+#: heatclient/osc/v1/stack.py:534
+msgid ""
+"Method of filtering tags. Must be one of \"any\", \"not\", or \"not-any\". "
+"If not specified, multiple tags will be combined with the boolean AND "
+"expression"
+msgstr ""
+"Способ фильтрации по меткам. Должен быть один из: \"any\", \"not\" или"
+" \"not-any\". "
+"Если способ не указан, то несколько меток будут комбинироваться с "
+"помощью логического выражения AND"
+
+#: heatclient/osc/v1/stack.py:541
+msgid "The number of stacks returned"
+msgstr "Число возвращаемых стеков"
+
+#: heatclient/osc/v1/stack.py:546
+msgid "Only return stacks that appear after the given ID"
+msgstr "Возвращать только те стеки, которые показываются после указанного ID"
+
+#: heatclient/osc/v1/stack.py:551
+msgid ""
+"Sort output by selected keys and directions (asc or desc) (default: asc). "
+"Specify multiple times to sort on multiple properties"
+msgstr ""
+"Сортировать вывод только по выбранным ключам и направлениям: по возр. (asc),"
+" или по убыв. (desc)."
+"По умолчанию: по возр. Для сортировки по нескольким свойствам укажите"
+" несколько раз."
+
+#: heatclient/osc/v1/stack.py:558
+msgid "Include all projects (admin only)"
+msgstr "Включить все проекты (только для администраторов)"
+
+#: heatclient/osc/v1/stack.py:563
+msgid "List fewer fields in output"
+msgstr "Показывать меньше полей списка в выводе"
+
+#: heatclient/osc/v1/stack.py:568
+msgid "List additional fields in output, this is implied by --all-projects"
+msgstr ""
+"Выводить дополнительные поля в выводе, подразумевается параметром"
+" --all-projects"
+
+#: heatclient/osc/v1/stack.py:672
+msgid "tag mode must be one of \"any\", \"not\", \"not-any\""
+msgstr "режим меток должен быть один из: \"any\", \"not\", \"not-any\""
+
+#: heatclient/osc/v1/stack.py:715
+msgid "Stack(s) to delete (name or ID)"
+msgstr "Стеки для удаления (имя или ID)"
+
+#: heatclient/osc/v1/stack.py:725
+msgid "Wait for stack delete to complete"
+msgstr "Подождать завершения удаления стека"
+
+#: heatclient/osc/v1/stack.py:737 heatclient/v1/shell.py:310
+msgid "Are you sure you want to delete this stack(s) [y/N]? "
+msgstr "Точно удалить эти  стеки [y/N]? "
+
+#: heatclient/osc/v1/stack.py:779
+#, python-format
+msgid "Forbidden: %s"
+msgstr "Запрещено: %s"
+
+#: heatclient/osc/v1/stack.py:793 heatclient/v1/shell.py:335
+#, python-format
+msgid "Unable to delete %(count)d of the %(total)d stacks."
+msgstr "Не удалось удалить %(count)d из %(total)d стеков."
+
+#: heatclient/osc/v1/stack.py:808
+msgid "Name of the stack to adopt"
+msgstr "Имя стека, над которым устанавливается контроль"
+
+#: heatclient/osc/v1/stack.py:820
+msgid "Stack creation timeout in minutes"
+msgstr "Истечение времени ожидания создания стека в минутах"
+
+#: heatclient/osc/v1/stack.py:831
+msgid ""
+"Parameter values used to create the stack. Can be specified multiple times"
+msgstr ""
+"Значения параметров, используемые для создания стека. Можно указывать"
+" несколько раз."
+
+#: heatclient/osc/v1/stack.py:837
+msgid "Wait until stack adopt completes"
+msgstr "Подождать завершения взятия стека под контроль"
+
+#: heatclient/osc/v1/stack.py:843
+msgid "Path to adopt stack data file"
+msgstr "Путь до файла данных стека, который берётся под контроль"
+
+#: heatclient/osc/v1/stack.py:893
+msgid "Name or ID of stack to abandon"
+msgstr "Имя или ID отделяемого стека"
+
+#: heatclient/osc/v1/stack.py:898
+msgid "File to output abandon results"
+msgstr "Файл для вывода результатов отделения стека"
+
+#: heatclient/osc/v1/stack.py:937
+msgid "Name or ID of stack to export"
+msgstr "Имя или ID экспортируемого стека"
+
+#: heatclient/osc/v1/stack.py:942
+msgid "File to output export data"
+msgstr "Файл для вывода данных экспорта"
+
+#: heatclient/osc/v1/stack.py:993
+msgid "Display all stack outputs"
+msgstr "Показать выводы всех стеков"
+
+#: heatclient/osc/v1/stack.py:1003
+msgid "Either <OUTPUT NAME> or --all must be specified."
+msgstr "Необходимо указать либо <OUTPUT NAME>, либо --all."
+
+#: heatclient/osc/v1/stack.py:1007
+msgid "Cannot specify both <OUTPUT NAME> and --all."
+msgstr "Нельзя указывать одновременно и <OUTPUT NAME> и --all."
+
+#: heatclient/osc/v1/stack.py:1030
+#, python-format
+msgid "Stack %(id)s or output %(out)s not found."
+msgstr "Стек %(id)s или вывод %(out)s не найден."
+
+#: heatclient/osc/v1/stack.py:1045 heatclient/v1/shell.py:770
+#, python-format
+msgid "Output error: %s"
+msgstr "Ошибка вывода: %s"
+
+#: heatclient/osc/v1/stack.py:1200
+msgid "Stack(s) to suspend (name or ID)"
+msgstr "Стеки, которые нужно перевести в режим гибернации (имя или ID)"
+
+#: heatclient/osc/v1/stack.py:1201
+msgid "Wait for suspend to complete"
+msgstr "Подождать завершения перехода в режим гибернации"
+
+#: heatclient/osc/v1/stack.py:1220
+msgid "Stack(s) to resume (name or ID)"
+msgstr "Стеки, которые нужно вывести из гибернации (имя или ID)"
+
+#: heatclient/osc/v1/stack.py:1221
+msgid "Wait for resume to complete"
+msgstr "Подождать окончания выхода из гибернации"
+
+#: heatclient/osc/v1/stack.py:1240
+msgid "Stack(s) to check update (name or ID)"
+msgstr "Стеки, обновления для которызх нужно проверить (имя или ID)"
+
+#: heatclient/osc/v1/stack.py:1241
+msgid "Wait for check to complete"
+msgstr "Подождать завершения проверки"
+
+#: heatclient/osc/v1/stack.py:1266
+msgid "Stack(s) to cancel (name or ID)"
+msgstr "Стеки, для которых нужно отменить текущую задачу (имя или ID)"
+
+#: heatclient/osc/v1/stack.py:1267
+msgid "Wait for cancel to complete"
+msgstr "Подождать завершения отмены"
+
+#: heatclient/osc/v1/stack.py:1272
+msgid "Cancel without rollback"
+msgstr "Отменить без отката"
+
+#: heatclient/osc/v1/stack.py:1309
+#, python-format
+msgid "Stack %(id)s with status '%(status)s' not in cancelable state"
+msgstr ""
+"Для стеков %(id)s со статусом '%(status)s' нельзя отменить текущую задачу"
+
+#: heatclient/osc/v1/stack.py:1332
+msgid "Depth of nested stacks from which to display hooks"
+msgstr ""
+"Глубина вложенных стеков, начиная с которой нужно показывать перехватчики"
+" событий"
+
+#: heatclient/osc/v1/stack.py:1364 heatclient/v1/shell.py:1188
+#: heatclient/v1/shell.py:1239
+#, python-format
+msgid "--nested-depth invalid value %s"
+msgstr "недопустимое значение --nested-depth: %s"
+
+#: heatclient/osc/v1/stack.py:1401
+msgid "Clear the pre-create hooks"
+msgstr "Удалить программные ловушки pre-create"
+
+#: heatclient/osc/v1/stack.py:1406
+msgid "Clear the pre-update hooks"
+msgstr "Удалить программные ловушки pre-update"
+
+#: heatclient/osc/v1/stack.py:1411
+msgid "Clear the pre-delete hooks"
+msgstr "Удалить программные ловушки pre-delete"
+
+#: heatclient/osc/v1/stack.py:1417
+msgid ""
+"Resource names with hooks to clear. Resources in nested stacks can be set "
+"using slash as a separator: ``nested_stack/another/my_resource``. You can "
+"use wildcards to match multiple stacks or resources: ``nested_stack/an*/"
+"*_resource``"
+msgstr ""
+"Имена ресурсов, для которых нужно удалить программные ловушки. Ресурсы во"
+" вложенных "
+"стеках можно указать, используя в качестве разделителя косую черту:"
+" `nested_stack/another/my_resource``. "
+"Для совпадения с несколькими стеками или ресурсами можно использовать "
+"подстановочные знаки: ``nested_stack/an*/*_resource``"
+
+#: heatclient/osc/v1/stack_failures.py:45
+msgid "Show full deployment logs in output"
+msgstr "Показывать полные журналы развёртывания в выводе"
+
+#: heatclient/osc/v1/template.py:69
+msgid "Template version to get the functions for"
+msgstr "Версия шаблона, для которой нужно получить функции"
+
+#: heatclient/osc/v1/template.py:75
+msgid "Show condition functions for template."
+msgstr "Показать функции условия шаблона"
+
+#: heatclient/osc/v1/template.py:90 heatclient/v1/shell.py:1742
+#, python-format
+msgid "Template version not found: %s"
+msgstr "Версия шаблона не найдена: %s"
+
+#: heatclient/osc/v1/template.py:116
+msgid "Resolve parameters from nested templates as well"
+msgstr "Разрешать также параметры из вложенных шаблонов"
+
+#: heatclient/osc/v1/template.py:135
+msgid "List of heat errors to ignore"
+msgstr "Список игнорируемых ошибок heat"
+
+#: heatclient/tests/unit/test_shell.py:2186
+#: heatclient/tests/unit/test_shell.py:2211
+#: heatclient/tests/unit/test_shell.py:2225
+msgid ""
+"Request to delete the snapshot 2 of the stack teststack/1 has been accepted."
+msgstr "Запрос на удаление снимка 2 стека teststack/1 был принят"
+
+#: heatclient/v1/shell.py:47 heatclient/v1/shell.py:221
+#: heatclient/v1/shell.py:433 heatclient/v1/shell.py:890
+msgid "Path to the template."
+msgstr "Путь до шаблона"
+
+#: heatclient/v1/shell.py:49 heatclient/v1/shell.py:153
+#: heatclient/v1/shell.py:223 heatclient/v1/shell.py:435
+#: heatclient/v1/shell.py:892
+msgid "Path to the environment, it can be specified multiple times."
+msgstr "Путь к окружению, можно указать несколько раз"
+
+#: heatclient/v1/shell.py:54
+msgid ""
+"Name of a resource to set a pre-create hook to. Resources in nested stacks "
+"can be set using slash as a separator: nested_stack/another/my_resource. You "
+"can use wildcards to match multiple stacks or resources: nested_stack/an*/"
+"*_resource. This can be specified multiple times"
+msgstr ""
+"Имя ресурса, для которого нужно настроить перехватчик событий pre-create. "
+"Ресурсы во вложенных стеках можно указать, используя в качестве разделителя"
+" косую черту: "
+"`nested_stack/another/my_resource``. Для совпадения с несколькими стеками или"
+" ресурсами можно использовать "
+"подстановочные знаки: ``nested_stack/an*/*_resource``. Параметр можно"
+" указывать "
+"несколько раз."
+
+#: heatclient/v1/shell.py:61 heatclient/v1/shell.py:227
+#: heatclient/v1/shell.py:447 heatclient/v1/shell.py:888
+msgid "URL of template."
+msgstr "URL шаблона."
+
+#: heatclient/v1/shell.py:63 heatclient/v1/shell.py:449
+#: heatclient/v1/shell.py:896
+msgid "URL to retrieve template object (e.g. from swift)."
+msgstr "URL для получения объекта шаблона (напр. из swift)."
+
+#: heatclient/v1/shell.py:66 heatclient/v1/shell.py:158
+#, python-format
+msgid "Stack creation timeout in minutes. DEPRECATED use %(arg)s instead."
+msgstr ""
+"Истечение времени ожидания создания стека в минутах. УСТАРЕВШИЙ "
+"ПАРАМЕТР, используйте вместо него %(arg)s."
+
+#: heatclient/v1/shell.py:71 heatclient/v1/shell.py:163
+msgid "Stack creation timeout in minutes."
+msgstr "Истечение времени ожидания создания стека в минутах"
+
+#: heatclient/v1/shell.py:73 heatclient/v1/shell.py:167
+msgid "Enable rollback on create/update failure."
+msgstr "Включить откат при сбое создания/обновления"
+
+#: heatclient/v1/shell.py:75 heatclient/v1/shell.py:169
+#: heatclient/v1/shell.py:472
+msgid ""
+"Parameter values used to create the stack. This can be specified multiple "
+"times, or once with parameters separated by a semicolon."
+msgstr ""
+"Значения параметров, используемые для создания стека. Можно указать "
+"несколько раз, либо один раз, разделяя параметры точками с запятой"
+
+#: heatclient/v1/shell.py:85
+msgid ""
+"Poll and report events until stack completes. Optional poll interval in "
+"seconds can be provided as argument, default 5."
+msgstr ""
+"Опрашивать и сообщать о событиях, пока стек не будет заполнен. "
+"Дополнительно в виде аргумента можно указать интервал опросов в секундах, "
+"по умолчанию: 5."
+
+#: heatclient/v1/shell.py:89
+msgid "Name of the stack to create."
+msgstr "Имя создаваемого стека"
+
+#: heatclient/v1/shell.py:91 heatclient/v1/shell.py:250
+msgid "A list of tags to associate with the stack."
+msgstr "Список меток, связанных со стеком"
+
+#: heatclient/v1/shell.py:165
+msgid "Path to adopt stack data file."
+msgstr "Путь до файла данных стека, который берётся под контроль"
+
+#: heatclient/v1/shell.py:174
+msgid "Name of the stack to adopt."
+msgstr "Имя стека, который нужно взять под контроль"
+
+#: heatclient/v1/shell.py:183
+#, python-format
+msgid "Need to specify %(arg)s"
+msgstr "Необходимо указать %(arg)s"
+
+#: heatclient/v1/shell.py:229
+msgid "URL to retrieve template object (e.g. from swift)"
+msgstr "URL для получения объекта шаблона (напр. из swift)"
+
+#: heatclient/v1/shell.py:231
+msgid ""
+"Stack creation timeout in minutes. This is only used during validation in "
+"preview."
+msgstr ""
+"Истечение времени ожидания создания стека в минутах. Используется "
+"только во время проверки правильности в предварительном просмотре"
+
+#: heatclient/v1/shell.py:234
+#, python-format
+msgid ""
+"Enable rollback on failure. This option is not used during preview and "
+"exists only for symmetry with %(cmd)s."
+msgstr ""
+"Включить откат при сбое. Этот параметр не используется во время "
+"предварительного просмотра и существует только для симметрии с %(cmd)s."
+
+#: heatclient/v1/shell.py:238
+msgid ""
+"Parameter values used to preview the stack. This can be specified multiple "
+"times, or once with parameters separated by semicolon."
+msgstr ""
+"Значения параметра, используемые для предварительного просмотра стека. Можно"
+" указать "
+"несколько раз, либо один раз, разделяя параметры точками с запятой"
+
+#: heatclient/v1/shell.py:248
+msgid "Name of the stack to preview."
+msgstr "Имя стека для предварительного просмотра"
+
+#: heatclient/v1/shell.py:298
+msgid "Name or ID of stack(s) to delete."
+msgstr "Имя или ID удаляемых стеков."
+
+#: heatclient/v1/shell.py:300 heatclient/v1/shell.py:1641
+msgid "Skip yes/no prompt (assume yes)."
+msgstr "Пропустить запрос на ввод «yes/no» (будет подразумеваться «yes»)"
+
+#: heatclient/v1/shell.py:329
+#, python-format
+msgid "Request to delete stack %s has been accepted."
+msgstr "Запрос на удаление стека %s был принят"
+
+#: heatclient/v1/shell.py:342
+msgid ""
+"file to output abandon result. If the option is specified, the result will "
+"be output into <FILE>."
+msgstr ""
+"файл для вывода результатов отделения. Если параметр указан, результат "
+"будет выводиться в <FILE>."
+
+#: heatclient/v1/shell.py:346
+msgid "Name or ID of stack to abandon."
+msgstr "Имя или ID отделяемого стека."
+
+#: heatclient/v1/shell.py:375
+msgid "Name or ID of stack to suspend."
+msgstr "Имя или ID стека, переводимого в режим гибернации"
+
+#: heatclient/v1/shell.py:390
+msgid "Name or ID of stack to resume."
+msgstr "Имя или ID стека, который нужно вывести из гибернации"
+
+#: heatclient/v1/shell.py:405
+msgid "Name or ID of stack to check."
+msgstr "Имя или ID проверяемого стека"
+
+#: heatclient/v1/shell.py:420
+msgid "Name or ID of stack to describe."
+msgstr "Имя или ID стека для описания."
+
+#: heatclient/v1/shell.py:440
+msgid ""
+"Name of a resource to set a pre-update hook to. Resources in nested stacks "
+"can be set using slash as a separator: nested_stack/another/my_resource. You "
+"can use wildcards to match multiple stacks or resources: nested_stack/an*/"
+"*_resource. This can be specified multiple times"
+msgstr ""
+"Имя ресурса, для которого нужно настроить перехватчик событий pre-update. "
+"Ресурсы во вложенных стеках можно указать, используя в качестве разделителя"
+" косую черту: "
+"`nested_stack/another/my_resource``. Для совпадения с несколькими стеками или"
+" ресурсами можно использовать "
+"подстановочные знаки: ``nested_stack/an*/*_resource``. Параметр можно"
+" указывать "
+"несколько раз."
+
+#: heatclient/v1/shell.py:452
+msgid "Stack update timeout in minutes."
+msgstr "Истечение времени ожидания обновления стека в минутах"
+
+#: heatclient/v1/shell.py:454
+#, python-format
+msgid ""
+"DEPRECATED! Use %(arg)s argument instead. Enable rollback on stack update "
+"failure. NOTE: default behavior is now to use the rollback value of existing "
+"stack."
+msgstr ""
+"УСТАРЕВШИЙ ПАРАМЕТР! Используйте вместо него аргумент %(arg)s. Включить "
+"откат при сбое обновления стека. ВНИМАНИЕ: поведением по умолчанию сейчас "
+"является использование значения отката существующего стека"
+
+#: heatclient/v1/shell.py:460
+#, python-format
+msgid ""
+"Set rollback on update failure. Values %(true)s  set rollback to enabled. "
+"Values %(false)s set rollback to disabled. Default is to use the value of "
+"existing stack to be updated."
+msgstr ""
+"Настроить откат при сбое обновления. Значения %(true)s: откат "
+"включён. Значения %(false)s: откат выключён. Поведением по умолчанию "
+"является использование значения отката существующего стека."
+
+#: heatclient/v1/shell.py:482
+#, python-format
+msgid ""
+"Re-use the template, parameters and environment of the current stack. If the "
+"template argument is omitted then the existing template is used. If no "
+"%(env_arg)s is specified then the existing environment is used. Parameters "
+"specified in %(arg)s will patch over the existing values in the current "
+"stack. Parameters omitted will keep the existing values."
+msgstr ""
+"Повторно использовать шаблон, параметры и окружение текущего стека. "
+"Если аргумент для шаблона опускается, то используется текущий шаблон. "
+"Если не указан %(env_arg)s, то используется текущее окружение. Параметры, "
+"указанные в %(arg)s, будут использованы вместо существующих значений в текущем"
+" стеке. Для опущенных параметров сохраняются текущие значения."
+
+#: heatclient/v1/shell.py:491
+#, python-format
+msgid ""
+"Remove the parameters from the set of parameters of current stack for the "
+"%(cmd)s. The default value in the template will be used. This can be "
+"specified multiple times."
+msgstr ""
+"Удалить параметры из набора параметров %(cmd)s текущего стека. "
+"Будет использоваться значение по умолчанию шаблона. Можно указывать несколько "
+"раз."
+
+#: heatclient/v1/shell.py:498
+msgid "Name or ID of stack to update."
+msgstr "Имя или ID обновляемого стека."
+
+#: heatclient/v1/shell.py:500
+msgid "An updated list of tags to associate with the stack."
+msgstr "Обновлённый список меток, связанных со стеком"
+
+#: heatclient/v1/shell.py:583
+msgid "Name or ID of stack to cancel update for."
+msgstr "Имя или ID стека, для которого нужно отменить обновление"
+
+#: heatclient/v1/shell.py:598
+msgid "Include soft-deleted stacks in the stack listing."
+msgstr "Включить стеки с «мягким удалением» в список стеков"
+
+#: heatclient/v1/shell.py:600
+msgid "Include nested stacks in the stack listing."
+msgstr "Включить вложенные стеки в список стеков"
+
+#: heatclient/v1/shell.py:602
+msgid "Include hidden stacks in the stack listing."
+msgstr "Включить скрытые стеки в список стеков"
+
+#: heatclient/v1/shell.py:604
+msgid ""
+"Filter parameters to apply on returned stacks. This can be specified "
+"multiple times, or once with parameters separated by a semicolon."
+msgstr ""
+"Фильтрация параметров, применяемых к возвращаемым стекам. "
+"Можно указать "
+"несколько раз, либо один раз, разделяя параметры точками с запятой."
+
+#: heatclient/v1/shell.py:609
+msgid ""
+"Show stacks containing these tags. If multiple tags are passed, they will be "
+"combined using the AND boolean expression. "
+msgstr ""
+"Показать стеки с этими метками. При передаче нескольких меток, они будут "
+"комбинироваться с помощью логического выражения AND. "
+
+#: heatclient/v1/shell.py:613
+msgid ""
+"Show stacks containing these tags, If multiple tags are passed, they will be "
+"combined using the OR boolean expression. "
+msgstr ""
+"Показать стеки с этими метками. При передаче нескольких меток, они будут "
+"комбинироваться с помощью логического выражения OR. "
+
+#: heatclient/v1/shell.py:617
+msgid ""
+"Show stacks not containing these tags, If multiple tags are passed, they "
+"will be combined using the AND boolean expression. "
+msgstr ""
+"Показать стеки, в которых эти метки не содержатся. При передаче нескольких"
+" меток, они будут "
+"комбинироваться с помощью логического выражения AND. "
+
+#: heatclient/v1/shell.py:621
+msgid ""
+"Show stacks not containing these tags, If multiple tags are passed, they "
+"will be combined using the OR boolean expression. "
+msgstr ""
+"Показать стеки, в которых эти метки не содержатся. При передаче нескольких"
+" меток, они будут "
+"комбинироваться с помощью логического выражения OR. "
+
+#: heatclient/v1/shell.py:625
+msgid "Limit the number of stacks returned."
+msgstr "Ограничить число возвращаемых меток."
+
+#: heatclient/v1/shell.py:627
+msgid "Only return stacks that appear after the given stack ID."
+msgstr "Возвращать только те стеки, которые показаны после указанного ID стека"
+
+#: heatclient/v1/shell.py:629
+msgid ""
+"List of keys for sorting the returned stacks. This can be specified multiple "
+"times or once with keys separated by semicolons. Valid sorting keys include "
+"\"stack_name\", \"stack_status\", \"creation_time\" and \"updated_time\"."
+msgstr ""
+"Список ключей для сортировки возвращённых стеков. Можно указать "
+"несколько раз, либо один раз, разделяя ключи точками с запятой. Допустимые "
+"ключи сортировки: \"stack_name\", \"stack_status\", \"creation_time\" и"
+" \"updated_time\"."
+
+#: heatclient/v1/shell.py:636
+msgid "Sorting direction (either \"asc\" or \"desc\") for the sorting keys."
+msgstr ""
+"Направление сортировки (по возрастающей или по убывающей, \"asc\" или"
+" \"desc\"), для ключей сортировки"
+
+#: heatclient/v1/shell.py:639
+msgid ""
+"Display stacks from all tenants. Operation only authorized for users who "
+"match the policy (default or explicitly configured in policy.json) in heat."
+msgstr ""
+"Показывать стеки всех арендаторов. Операция авторизована только "
+"для тех пользователей, которые соответствуют политике (по умолчанию, либо "
+"явно настроенной в policy.json) в heat."
+
+#: heatclient/v1/shell.py:643
+#, python-format
+msgid ""
+"Display stack owner information. This is automatically enabled when using "
+"%(arg)s."
+msgstr ""
+"Показывать сведения о владельце стека. Включается автоматически, если "
+"используется %(arg)s."
+
+#: heatclient/v1/shell.py:681
+#, python-format
+msgid "Sorting key '%(key)s' not one of the supported keys: %(keys)s"
+msgstr ""
+"Ключ сортировки '%(key)s' не является одним из поддерживаемых ключей: %(keys)s"
+
+#: heatclient/v1/shell.py:689
+msgid "Sorting direction must be one of 'asc' and 'desc'"
+msgstr ""
+"Направление сортировки должно быть либо по возрастающей, \"asc\", либо по"
+" убывающей, \"desc\""
+
+#: heatclient/v1/shell.py:709 heatclient/v1/shell.py:732
+msgid "Name or ID of stack to query."
+msgstr "Имя или ID запрашиваемого стека."
+
+#: heatclient/v1/shell.py:734 heatclient/v1/shell.py:1549
+msgid "Name of an output to display."
+msgstr "Имя вывода для отображения"
+
+#: heatclient/v1/shell.py:736
+msgid "The output value format, one of: json, raw."
+msgstr "Формат выходного значения, один из: json, raw."
+
+#: heatclient/v1/shell.py:739
+msgid "Display all stack outputs."
+msgstr "Показать выводы всех стеков"
+
+#: heatclient/v1/shell.py:741
+msgid "Enable detail information presented, like key and description."
+msgstr "Включить подробные сведения, например, ключ и описание."
+
+#: heatclient/v1/shell.py:759
+#, python-format
+msgid "Output %(key)s not found."
+msgstr "Вывод %(key)s не найден."
+
+#: heatclient/v1/shell.py:763
+#, python-format
+msgid "Stack %(id)s or output %(key)s not found."
+msgstr "Стек %(id)s или вывод %(key)s не найден."
+
+#: heatclient/v1/shell.py:791
+msgid "Can't specify an output name and the --all flag"
+msgstr "Нельзя указывать имя вывода вместе с флагом --all"
+
+#: heatclient/v1/shell.py:811
+msgid ""
+"Filter parameters to apply on returned resource types. This can be specified "
+"multiple times, or once with parameters separated by a semicolon. It can be "
+"any of name, version and support_status"
+msgstr ""
+"Фильтрация параметров, применяемых к возвращаемым типам ресурсов. "
+"Можно указать несколько раз, либо один раз, разделяя параметры точками с"
+" запятой. Фильтром "
+"моет быть: имя, версия или support_status"
+
+#: heatclient/v1/shell.py:827
+msgid "Resource type to get the details for."
+msgstr "Тип ресурса, для которого нужно получить подробные сведения"
+
+#: heatclient/v1/shell.py:837
+#, python-format
+msgid "Resource Type not found: %s"
+msgstr "Тип ресурса не найден: %s"
+
+#: heatclient/v1/shell.py:843 heatclient/v1/shell.py:1015
+msgid "Resource type to generate a template for."
+msgstr "Тип ресурса, для которого нужно создать шаблон."
+
+#: heatclient/v1/shell.py:846 heatclient/v1/shell.py:1018
+msgid "Template type to generate, hot or cfn."
+msgstr "Создаваемый тип шаблона, hot или cfn."
+
+#: heatclient/v1/shell.py:848 heatclient/v1/shell.py:1020
+#, python-format
+msgid "The template output format, one of: %s."
+msgstr "Формат вывода шаблона, один из: %s."
+
+#: heatclient/v1/shell.py:861
+#, python-format
+msgid "Resource Type %s not found."
+msgstr "Тип ресурса %s не найден."
+
+#: heatclient/v1/shell.py:870
+msgid "Name or ID of stack to get the template for."
+msgstr "Имя или ID стека, для которого нужно получить шаблон"
+
+#: heatclient/v1/shell.py:898
+msgid "Resolve parameters from nested templates as well."
+msgstr "Сопоставлять также и параметры из вложенных шаблонов"
+
+#: heatclient/v1/shell.py:900
+msgid ""
+"Parameter values for the template. This can be specified multiple times, or "
+"once with parameters separated by a semicolon."
+msgstr ""
+"Значения параметров шаблона. Можно указать "
+"несколько раз, либо один раз, разделяя параметры точками с запятой."
+
+#: heatclient/v1/shell.py:905
+msgid "List of heat errors to ignore."
+msgstr "Список игнорируемых ошибок heat."
+
+#: heatclient/v1/shell.py:943
+msgid "Name or ID of stack to show the resources for."
+msgstr "Имя или ID стека, ресурсы которого нужно показать."
+
+#: heatclient/v1/shell.py:945
+msgid "Depth of nested stacks from which to display resources."
+msgstr "Глубина вложенных стеков, с которой нужно показывать ресурсы"
+
+#: heatclient/v1/shell.py:947
+msgid ""
+"Enable detail information presented for each resource in resources list."
+msgstr "Включить подробные сведения для каждого ресурса в списке ресурсов"
+
+#: heatclient/v1/shell.py:950
+msgid ""
+"Filter parameters to apply on returned resources based on their name, "
+"status, type, action, id and physical_resource_id. This can be specified "
+"multiple times."
+msgstr ""
+"Фильтрация параметров, применяемых к возвращаемым событиям, на основе "
+"их имени, статуса, типа, действия, ID и physical_resource_id. Можно указать"
+" несколько раз."
+
+#: heatclient/v1/shell.py:984
+msgid "Name or ID of stack to show the resource for."
+msgstr "Имя или ID стека, ресурс которого нужно показать."
+
+#: heatclient/v1/shell.py:986
+msgid "Name of the resource to show the details for."
+msgstr "Имя ресурса, для которого нужно показать подробные сведения"
+
+#: heatclient/v1/shell.py:988
+msgid "Attribute to show, it can be specified multiple times."
+msgstr "Показываемый атрибут, можно указать несколько раз"
+
+#: heatclient/v1/shell.py:1028
+msgid "Name or ID of stack to show the resource metadata for."
+msgstr "Имя или ID стека, для которого нужно показать метаданные ресурса."
+
+#: heatclient/v1/shell.py:1030
+msgid "Name of the resource to show the metadata for."
+msgstr "Имя ресурса, для которого нужно показать метаданные"
+
+#: heatclient/v1/shell.py:1049 heatclient/v1/shell.py:1088
+msgid "Name or ID of stack the resource belongs to."
+msgstr "Имя или ID стека, которому принадлежит ресурс."
+
+#: heatclient/v1/shell.py:1051
+msgid "Name of the resource to signal."
+msgstr "Имя сигнализируемого ресурса"
+
+#: heatclient/v1/shell.py:1053
+msgid "JSON Data to send to the signal handler."
+msgstr "Данные JSON, отправляемые обработчику сигнала."
+
+#: heatclient/v1/shell.py:1055
+msgid "File containing JSON data to send to the signal handler."
+msgstr "Файл, содержащий данные JSON, посылаемые обработчику сигнала"
+
+#: heatclient/v1/shell.py:1065
+msgid "Can only specify one of data and data-file"
+msgstr "Нужно указать только что-то одно: данные или файл с данными"
+
+#: heatclient/v1/shell.py:1090
+msgid "Name or physical ID of the resource."
+msgstr "Имя или физический ID ресурса"
+
+#: heatclient/v1/shell.py:1092
+msgid "Reason for state change."
+msgstr "Причина изменения состояния."
+
+#: heatclient/v1/shell.py:1094
+msgid "Set the resource as healthy."
+msgstr "Пометить ресурс как работоспособный"
+
+#: heatclient/v1/shell.py:1113
+msgid "Name or ID of the stack these resources belong to."
+msgstr "Имя или ID стека, которому принадлежат эти ресурсы."
+
+#: heatclient/v1/shell.py:1115
+msgid "Clear the pre-create hooks (optional)"
+msgstr "Удалить перехватчики событий pre-create (дополнительно)"
+
+#: heatclient/v1/shell.py:1117
+msgid "Clear the pre-update hooks (optional)"
+msgstr "Удалить перехватчики событий pre-update (дополнительно)"
+
+#: heatclient/v1/shell.py:1119
+msgid "Clear the pre-delete hooks (optional)"
+msgstr "Удалить программные ловушки pre-delete (дополнительно)"
+
+#: heatclient/v1/shell.py:1121
+msgid ""
+"Resource names with hooks to clear. Resources in nested stacks can be set "
+"using slash as a separator: nested_stack/another/my_resource. You can use "
+"wildcards to match multiple stacks or resources: nested_stack/an*/*_resource"
+msgstr ""
+"Имена ресурсов, для которых нужно удалить программные ловушки. Ресурсы во"
+" вложенных "
+"стеках можно указать, используя в качестве разделителя косую черту:"
+" `nested_stack/another/my_resource``. "
+"Для совпадения с несколькими стеками или ресурсами можно использовать "
+"подстановочные знаки: ``nested_stack/an*/*_resource"
+
+#: heatclient/v1/shell.py:1149 heatclient/v1/shell.py:1261
+#: heatclient/v1/shell.py:1272
+msgid "Name or ID of stack to show the events for."
+msgstr "Имя или ID стека, события которого нужно показать."
+
+#: heatclient/v1/shell.py:1151
+msgid "Name of the resource to filter events by."
+msgstr "Имя ресурса, события которого нужно отфильтровать"
+
+#: heatclient/v1/shell.py:1153
+msgid ""
+"Filter parameters to apply on returned events. This can be specified "
+"multiple times, or once with parameters separated by a semicolon."
+msgstr ""
+"Фильтрация параметров, применяемых к возвращаемым событиям. "
+"Можно указать несколько раз, либо один раз, разделяя параметры точками с"
+" запятой."
+
+#: heatclient/v1/shell.py:1158
+msgid "Limit the number of events returned."
+msgstr "Ограничить число возвращаемых событий."
+
+#: heatclient/v1/shell.py:1160
+msgid "Only return events that appear after the given event ID."
+msgstr ""
+"Возвращать только те события, которые показаны после указанного ID стека"
+
+#: heatclient/v1/shell.py:1162
+msgid ""
+"Depth of nested stacks from which to display events. Note this cannot be "
+"specified with --resource."
+msgstr ""
+"Глубина вложенных стеков, с которой нужно показывать события. Обратите "
+"внимание: этот параметр нельзя уточнить с помощью --resource."
+
+#: heatclient/v1/shell.py:1165
+msgid "The output value format, one of: log, table"
+msgstr "Формат выходного значения, один из: log, table"
+
+#: heatclient/v1/shell.py:1216
+msgid "Name or ID of stack to show the pending hooks for."
+msgstr ""
+"Имя или ID стека, для которого нужно показать отложенные перехватчики событий."
+
+#: heatclient/v1/shell.py:1218
+msgid "Depth of nested stacks from which to display hooks."
+msgstr ""
+"Глубина вложенных стеков, с которой нужно показывать перехватчики событий"
+
+#: heatclient/v1/shell.py:1263 heatclient/v1/shell.py:1274
+msgid "Name of the resource the event belongs to."
+msgstr "Имя ресурса, которому принадлежит событие."
+
+#: heatclient/v1/shell.py:1265 heatclient/v1/shell.py:1276
+msgid "ID of event to display details for."
+msgstr "ID события, подробности которого нужно показать."
+
+#: heatclient/v1/shell.py:1299
+msgid ""
+"Path to JSON/YAML containing map defining <inputs>, <outputs>, and <options>."
+msgstr ""
+"Путь до JSON/YAML, в которых содержатся параметры отображения "
+"<inputs>, <outputs> и <options>"
+
+#: heatclient/v1/shell.py:1302
+msgid "Path to configuration script/data."
+msgstr "Путь до сценария/данных конфигурации"
+
+#: heatclient/v1/shell.py:1304
+msgid "Group name of configuration tool expected by the config."
+msgstr "Имя группы инструмента конфигурации, ожидаемого конфигурацией"
+
+#: heatclient/v1/shell.py:1306
+msgid "Name of the configuration to create."
+msgstr "Имя создаваемой конфигурации"
+
+#: heatclient/v1/shell.py:1349
+msgid "Limit the number of configs returned."
+msgstr "Ограничить число возвращаемых конфигураций."
+
+#: heatclient/v1/shell.py:1351
+msgid "Return configs that appear after the given config ID."
+msgstr "Возвращать конфигурации, показанные после указанного ID конфигурации."
+
+#: heatclient/v1/shell.py:1367
+msgid "ID of the config."
+msgstr "ID конфигурации."
+
+#: heatclient/v1/shell.py:1386
+msgid "ID of the configuration(s) to delete."
+msgstr "ID удаляемых конфигураций."
+
+#: heatclient/v1/shell.py:1400
+#, python-format
+msgid "Unable to delete %(count)d of the %(total)d configs."
+msgstr "Не удалось удалить %(count)d из %(total)d конфигураций."
+
+#: heatclient/v1/shell.py:1411
+msgid ""
+"Name of action for this deployment. Can be a custom action, or one of: "
+"CREATE, UPDATE, DELETE, SUSPEND, RESUME"
+msgstr ""
+"Имя действия данного развёртывания. Может быть пользовательским, либо одним"
+" из: "
+"СОЗДАТЬ, ОБНОВИТЬ, УДАЛИТЬ, ГИБЕРНАЦИЯ, ВЫВОД ИЗ ГИБЕРНАЦИИ"
+
+#: heatclient/v1/shell.py:1415
+msgid "ID of the configuration to deploy."
+msgstr "ID разворачиваемой конфигурации."
+
+#: heatclient/v1/shell.py:1417
+msgid "ID of the server being deployed to."
+msgstr "ID сервера, на котором выполняется развёртывание."
+
+#: heatclient/v1/shell.py:1421
+msgid ""
+"How the server should signal to heat with the deployment output values. "
+"TEMP_URL_SIGNAL will create a Swift TempURL to be signaled via HTTP PUT. "
+"NO_SIGNAL will result in the resource going to the COMPLETE state without "
+"waiting for any signal."
+msgstr ""
+"Как именно сервер должен сигнализировать в Heat о выходных значениях"
+" развёртывания. TEMP_URL_SIGNAL создаст Swift TempURL для сигнализирования с"
+" использованием HTTP PUT. NO_SIGNAL — ресурс переходит в состояние COMPLETE,"
+" не ожидая сигналов."
+
+#: heatclient/v1/shell.py:1433
+msgid "Deployment timeout in minutes."
+msgstr "Истечение времени ожидания развёртывания, в минутах"
+
+#: heatclient/v1/shell.py:1473 heatclient/v1/shell.py:1502
+msgid "ID of the server to fetch deployments for."
+msgstr "ID сервера, для которого нужно получить развёртывания."
+
+#: heatclient/v1/shell.py:1487
+msgid "ID of the deployment."
+msgstr "ID развёртывания."
+
+#: heatclient/v1/shell.py:1541
+#, python-format
+msgid "Unable to delete %(count)d of the %(total)d deployments."
+msgstr "Не удалось удалить %(count)d из %(total)d развёртываний."
+
+#: heatclient/v1/shell.py:1547
+msgid "ID deployment to show the output for."
+msgstr "ID развёртывания, вывод которого нужно показать"
+
+#: heatclient/v1/shell.py:1551
+msgid "Display all deployment outputs."
+msgstr "Показать выводы всех развёртываний"
+
+#: heatclient/v1/shell.py:1553
+msgid "The output value format, one of: raw, json"
+msgstr "Формат выходного значения, один из: raw, json"
+
+#: heatclient/v1/shell.py:1601
+msgid "Name or ID of stack to snapshot."
+msgstr "Имя или ID стека, для которого нужно сделать снимок"
+
+#: heatclient/v1/shell.py:1603
+msgid "If specified, the name given to the snapshot."
+msgstr "Имя снимка, если будет указано"
+
+#: heatclient/v1/shell.py:1620 heatclient/v1/shell.py:1637
+#: heatclient/v1/shell.py:1673
+msgid "Name or ID of the stack containing the snapshot."
+msgstr "Имя или ID стека, содержащего снимок"
+
+#: heatclient/v1/shell.py:1622
+msgid "The ID of the snapshot to show."
+msgstr "ID снимка, который нужно показать"
+
+#: heatclient/v1/shell.py:1631 heatclient/v1/shell.py:1669
+#: heatclient/v1/shell.py:1684
+msgid "Stack or snapshot not found"
+msgstr "Стек или снимок не найден"
+
+#: heatclient/v1/shell.py:1639
+msgid "The ID of the snapshot to delete."
+msgstr "ID удаляемого снимка."
+
+#: heatclient/v1/shell.py:1664
+#, python-format
+msgid ""
+"Request to delete the snapshot %(snapshot_id)s of the stack %(stack_id)s has "
+"been accepted."
+msgstr ""
+"Запрос на удаление снимка %(snapshot_id)s стека %(stack_id)s был принят."
+
+#: heatclient/v1/shell.py:1675
+msgid "The ID of the snapshot to restore."
+msgstr "ID восстанавливаемого снимка."
+
+#: heatclient/v1/shell.py:1688
+msgid "Name or ID of the stack containing the snapshots."
+msgstr "Имя или ID стека, содержащего снимки"
+
+#: heatclient/v1/shell.py:1732
+msgid "Template version to get the functions for."
+msgstr "Версия шаблона, для которой нужно получить функции"
+

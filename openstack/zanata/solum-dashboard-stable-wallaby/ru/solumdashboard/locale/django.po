@@ -1,0 +1,512 @@
+#
+# ДроноваЮ <juliette.tux@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: solum-dashboard VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-04-06 07:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-10-19 17:44+0300\n"
+"Last-Translator: ДроноваЮ <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-i18n-doc@kde.org>\n"
+"Language: ru\n"
+"X-Generator: Lokalize 21.08.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: solumdashboard/dashboard.py:22
+#: solumdashboard/templates/applications/index.html:3
+#: solumdashboard/templates/assemblies/index.html:3
+#: solumdashboard/templates/languagepacks/index.html:3
+msgid "Solum"
+msgstr "Solum"
+
+#: solumdashboard/applications/forms.py:33
+msgid "Target"
+msgstr "Цель"
+
+#: solumdashboard/applications/forms.py:41
+msgid "Scale target must be greater than zero"
+msgstr "Цель масштабирования должна быть больше нуля"
+
+#: solumdashboard/applications/forms.py:53
+#: solumdashboard/templates/applications/_detail.html:21
+msgid "Source"
+msgstr "Источник"
+
+#: solumdashboard/applications/forms.py:55
+msgid "App File"
+msgstr "Файл приложения"
+
+#: solumdashboard/applications/forms.py:56
+msgid "Input"
+msgstr "Ввод"
+
+#: solumdashboard/applications/forms.py:64
+#: solumdashboard/applications/forms.py:69
+msgid "Local app file location"
+msgstr "Местоположение локального файла приложения"
+
+#: solumdashboard/applications/forms.py:72
+#: solumdashboard/applications/workflows/update.py:24
+msgid "Application Name"
+msgstr "Имя приложения"
+
+#: solumdashboard/applications/forms.py:74
+#: solumdashboard/applications/tables.py:107
+#: solumdashboard/applications/workflows/update.py:26
+#: solumdashboard/templates/applications/_detail.html:15
+msgid "Languagepack"
+msgstr "Языковый пакет"
+
+#: solumdashboard/applications/forms.py:75
+msgid "Source repository"
+msgstr "Исходный репозиторий"
+
+#: solumdashboard/applications/forms.py:76
+msgid "Application entry point"
+msgstr "Точка входа приложения"
+
+#: solumdashboard/applications/forms.py:78
+msgid "Command to execute unit tests"
+msgstr "Команда для выполнения юнит-тестов"
+
+#: solumdashboard/applications/forms.py:80
+msgid "The port your application listens on"
+msgstr "Порт, на котором слушает приложение"
+
+#: solumdashboard/applications/forms.py:83
+msgid "A yaml file containing custom parameters"
+msgstr "Файл yaml с частными параметрами"
+
+#: solumdashboard/applications/forms.py:90
+msgid "Please supply an app file"
+msgstr "Предоставьте файл приложения"
+
+#: solumdashboard/applications/forms.py:94
+msgid "Please supply a name"
+msgstr "Укажите имя"
+
+#: solumdashboard/applications/forms.py:97
+msgid "Please supply a languagepack"
+msgstr "Предоставьте языковый пакет"
+
+#: solumdashboard/applications/forms.py:100
+msgid "Please supply a github url"
+msgstr "Укажите URL на сайте github"
+
+#: solumdashboard/applications/forms.py:103
+msgid "Please supply a run command"
+msgstr "Укажите команду запуска"
+
+#: solumdashboard/applications/forms.py:169
+msgid "Application was successfully created."
+msgstr "Приложение было успешно создано"
+
+#: solumdashboard/applications/forms.py:172
+msgid "Unable to create application."
+msgstr "Не удалось создать приложение"
+
+#: solumdashboard/applications/forms.py:179
+msgid "ID of the DU image"
+msgstr "ID образа разворачиваемого юнита"
+
+#: solumdashboard/applications/panel.py:24
+#: solumdashboard/applications/tables.py:114
+#: solumdashboard/applications/views.py:36
+msgid "Applications"
+msgstr "Приложения"
+
+#: solumdashboard/applications/tables.py:30
+msgid "New Application"
+msgstr "Новое приложение"
+
+#: solumdashboard/applications/tables.py:37
+#: solumdashboard/applications/views.py:62
+#: solumdashboard/applications/views.py:63
+#: solumdashboard/templates/applications/_scale.html:7
+#: solumdashboard/templates/applications/scale.html:3
+#: solumdashboard/templates/applications/scale.html:6
+msgid "Scale Application"
+msgstr "Масштабировать приложение"
+
+#: solumdashboard/applications/tables.py:44
+msgid "Update Application"
+msgstr "Обновить приложение"
+
+#: solumdashboard/applications/tables.py:51
+msgid "Build and Deploy Application"
+msgstr "Собрать и развернуть приложение"
+
+#: solumdashboard/applications/tables.py:64
+msgid "Delete Application"
+msgid_plural "Delete Applications"
+msgstr[0] "Удалить приложение"
+msgstr[1] "Удалить приложения"
+msgstr[2] "Удалить приложения"
+
+#: solumdashboard/applications/tables.py:72
+msgid "Deleted Application"
+msgid_plural "Deleted Applications"
+msgstr[0] "Приложение было удалено"
+msgstr[1] "Приложения были удалены"
+msgstr[2] "Приложения были удалены"
+
+#: solumdashboard/applications/tables.py:88
+msgid "View Application Logs"
+msgstr "Просмотреть журналы приложения"
+
+#: solumdashboard/applications/tables.py:100
+#: solumdashboard/assemblies/tables.py:67
+#: solumdashboard/languagepacks/tables.py:75
+#: solumdashboard/templates/applications/_detail.html:5
+#: solumdashboard/templates/assemblies/_detail.html:5
+#: solumdashboard/templates/languagepacks/_detail.html:5
+msgid "Name"
+msgstr "Имя"
+
+#: solumdashboard/applications/tables.py:101
+#: solumdashboard/templates/applications/_detail.html:7
+#: solumdashboard/templates/applications/_detail.html:44
+#: solumdashboard/templates/assemblies/_detail.html:7
+#: solumdashboard/templates/languagepacks/_detail.html:7
+msgid "ID"
+msgstr "ID"
+
+#: solumdashboard/applications/tables.py:103
+#: solumdashboard/templates/applications/_detail.html:9
+#: solumdashboard/templates/applications/_log.html:13
+#: solumdashboard/templates/languagepacks/_detail.html:24
+msgid "Created at"
+msgstr "Создано"
+
+#: solumdashboard/applications/tables.py:105
+#: solumdashboard/applications/workflows/update.py:25
+#: solumdashboard/assemblies/tables.py:70
+#: solumdashboard/languagepacks/forms.py:37
+#: solumdashboard/languagepacks/tables.py:76
+#: solumdashboard/templates/applications/_detail.html:13
+#: solumdashboard/templates/assemblies/_detail.html:9
+#: solumdashboard/templates/languagepacks/_detail.html:9
+msgid "Description"
+msgstr "Описание"
+
+#: solumdashboard/applications/tabs.py:28 solumdashboard/assemblies/tabs.py:23
+msgid "General Info"
+msgstr "Общие сведения"
+
+#: solumdashboard/applications/tabs.py:49
+msgid "Logs"
+msgstr "Журналы"
+
+#: solumdashboard/applications/views.py:46
+msgid "Unable to retrieve apps."
+msgstr "Не удалось получить сведения о приложениях"
+
+#: solumdashboard/applications/views.py:53
+#: solumdashboard/applications/views.py:54
+#: solumdashboard/templates/applications/create.html:3
+msgid "Create Application"
+msgstr "Создать приложение"
+
+#: solumdashboard/applications/views.py:115
+msgid "Unable to retrieve application details."
+msgstr "Не удалось получить подробные сведения о приложении"
+
+#: solumdashboard/applications/views.py:126
+#: solumdashboard/applications/views.py:127
+msgid "Launch Application"
+msgstr "Запустить приложение"
+
+#: solumdashboard/applications/workflows/update.py:27
+#: solumdashboard/templates/applications/_detail.html:19
+msgid "Ports"
+msgstr "Порты"
+
+#: solumdashboard/applications/workflows/update.py:30
+msgid "Source Repository"
+msgstr "Исходный репозиторий"
+
+#: solumdashboard/applications/workflows/update.py:32
+msgid "Source Revision"
+msgstr "Ревизия источника"
+
+#: solumdashboard/applications/workflows/update.py:37
+msgid "Workflow Test Command"
+msgstr "Команда для выполнения теста рабочего процесса"
+
+#: solumdashboard/applications/workflows/update.py:39
+msgid "Workflow Run Command"
+msgstr "Команда для запуска рабочего процесса"
+
+#: solumdashboard/applications/workflows/update.py:51
+msgid "Update App"
+msgstr "Обновить приложение"
+
+#: solumdashboard/applications/workflows/update.py:52
+msgid "Update"
+msgstr "Обновить"
+
+#: solumdashboard/applications/workflows/update.py:53
+msgid "App updated"
+msgstr "Приложение обновлено"
+
+#: solumdashboard/applications/workflows/update.py:54
+msgid "Could not update app"
+msgstr "Не удалось обновить приложение"
+
+#: solumdashboard/assemblies/panel.py:24 solumdashboard/assemblies/tables.py:77
+#: solumdashboard/assemblies/views.py:30
+msgid "Assemblies"
+msgstr "Сборки"
+
+#: solumdashboard/assemblies/tables.py:26
+msgid "New Assembly"
+msgstr "Новая сборка"
+
+#: solumdashboard/assemblies/tables.py:35
+msgid "Delete Assembly"
+msgid_plural "Delete Assemblies"
+msgstr[0] "Удалить сборку"
+msgstr[1] "Удалить сборки"
+msgstr[2] "Удалить сборки"
+
+#: solumdashboard/assemblies/tables.py:43
+msgid "Scheduled deletion of Assembly"
+msgid_plural "Scheduled deletion of Assemblies"
+msgstr[0] "Удаление сборки было занесено в расписание"
+msgstr[1] "Удаление сборок было занесено в расписание"
+msgstr[2] "Удаление сборок было занесено в расписание"
+
+#: solumdashboard/assemblies/tables.py:59
+msgid "View"
+msgstr "Просмотреть"
+
+#: solumdashboard/assemblies/tables.py:65
+#: solumdashboard/languagepacks/tables.py:73
+msgid "UUID"
+msgstr "UUID"
+
+#: solumdashboard/assemblies/tables.py:68
+#: solumdashboard/templates/applications/_log.html:2
+#: solumdashboard/templates/assemblies/_detail.html:2
+msgid "Application"
+msgstr "Приложение"
+
+#: solumdashboard/assemblies/views.py:40
+msgid "Unable to retrieve assemblies."
+msgstr "Не удалось получить сведения о сборках"
+
+#: solumdashboard/languagepacks/forms.py:35
+msgid "Source URI"
+msgstr "URI источника"
+
+#: solumdashboard/languagepacks/forms.py:36
+msgid "Languagepack Name"
+msgstr "Имя языкового пакета"
+
+#: solumdashboard/languagepacks/forms.py:39
+msgid "Parameter File"
+msgstr "Файл параметра"
+
+#: solumdashboard/languagepacks/forms.py:41
+msgid "Languagepack Metadata File"
+msgstr "Файл метаданных языкового пакета"
+
+#: solumdashboard/languagepacks/forms.py:63
+#, python-format
+msgid "Languagepack %s was successfully created."
+msgstr "Языковый пакет %s был успешно создан."
+
+#: solumdashboard/languagepacks/forms.py:70
+msgid "Unable to create languagepack."
+msgstr "Не удалось создать языковый пакет"
+
+#: solumdashboard/languagepacks/panel.py:24
+#: solumdashboard/languagepacks/tables.py:87
+#: solumdashboard/languagepacks/views.py:37
+msgid "Languagepacks"
+msgstr "Языковые пакеты"
+
+#: solumdashboard/languagepacks/tables.py:29
+msgid "Delete Languagepack"
+msgid_plural "Delete Languagepacks"
+msgstr[0] "Удалить языковый пакет"
+msgstr[1] "Удалить языковые пакеты"
+msgstr[2] "Удалить языковые пакеты"
+
+#: solumdashboard/languagepacks/tables.py:37
+msgid "Deleted Languagepack"
+msgid_plural "Deleted Languagepacks"
+msgstr[0] "Языковый пакет был удалён"
+msgstr[1] "Языковые пакеты были удалены"
+msgstr[2] "Языковые пакеты были удалены"
+
+#: solumdashboard/languagepacks/tables.py:61
+msgid "New Languagepack"
+msgstr "Новый языковый пакет"
+
+#: solumdashboard/languagepacks/tables.py:77
+#: solumdashboard/templates/applications/_detail.html:46
+#: solumdashboard/templates/assemblies/_detail.html:11
+#: solumdashboard/templates/languagepacks/_detail.html:11
+msgid "Status"
+msgstr "Статус"
+
+#: solumdashboard/languagepacks/tables.py:80
+#: solumdashboard/templates/languagepacks/_detail.html:13
+msgid "Source Uri"
+msgstr "URI источника"
+
+#: solumdashboard/languagepacks/views.py:47
+msgid "Unable to retrieve languagepacks."
+msgstr "Не удалось получить сведения о языковых пакетах"
+
+#: solumdashboard/languagepacks/views.py:78
+msgid "Unable to retrieve languagepack details."
+msgstr "Не удалось получить подробные сведения о языковых пакетах"
+
+#: solumdashboard/languagepacks/views.py:95
+#: solumdashboard/languagepacks/views.py:96
+#: solumdashboard/templates/languagepacks/create.html:3
+msgid "Create Languagepack"
+msgstr "Создать языковый пакет"
+
+#: solumdashboard/templates/applications/_create.html:8
+#: solumdashboard/templates/applications/_launch.html:11
+#: solumdashboard/templates/languagepacks/_create.html:8
+msgid "Description:"
+msgstr "Описание:"
+
+#: solumdashboard/templates/applications/_create.html:10
+msgid "Enter the details for the application."
+msgstr "Укажите подробные сведения о приложении."
+
+#: solumdashboard/templates/applications/_detail.html:11
+msgid "Updated at"
+msgstr "Время обновления:"
+
+#: solumdashboard/templates/applications/_detail.html:17
+msgid "Entry points"
+msgstr "Точки входа"
+
+#: solumdashboard/templates/applications/_detail.html:23
+msgid "Trigger UUID"
+msgstr "UUID запуска"
+
+#: solumdashboard/templates/applications/_detail.html:25
+msgid "Trigger"
+msgstr "Механизм запуска"
+
+#: solumdashboard/templates/applications/_detail.html:27
+msgid "App URL"
+msgstr "URL приложения"
+
+#: solumdashboard/templates/applications/_detail.html:31
+msgid "Target Instances"
+msgstr "Целевые экземпляры"
+
+#: solumdashboard/templates/applications/_detail.html:37
+msgid "Workflow details for"
+msgstr "Подробные сведения о рабочем процессе для"
+
+#: solumdashboard/templates/applications/_detail.html:42
+msgid "Workflow ID"
+msgstr "ID рабочего процесса"
+
+#: solumdashboard/templates/applications/_detail.html:49
+msgid "No Workflow details."
+msgstr "Нет подробных сведений о рабочем процессе."
+
+#: solumdashboard/templates/applications/_launch.html:7
+#: solumdashboard/templates/applications/launch.html:3
+#: solumdashboard/templates/applications/launch.html:6
+msgid "Deploy Application"
+msgstr "Развернуть приложение"
+
+#: solumdashboard/templates/applications/_launch.html:13
+msgid ""
+"The ID of the DU image is optional, You can deploy the applications without "
+"this."
+msgstr ""
+"ID образа разворачиваемого юнита не является обязательным, приложение можно "
+"развернуть и без него"
+
+#: solumdashboard/templates/applications/_log.html:5
+msgid "Log details for "
+msgstr "Подробности журнала для "
+
+#: solumdashboard/templates/applications/_log.html:10
+#: solumdashboard/templates/languagepacks/_detail.html:22
+msgid "Resource UUID"
+msgstr "UUID ресурса"
+
+#: solumdashboard/templates/applications/_log.html:17
+#: solumdashboard/templates/languagepacks/_detail.html:27
+msgid "Local Storage"
+msgstr "Локальное хранилище"
+
+#: solumdashboard/templates/applications/_log.html:21
+#: solumdashboard/templates/languagepacks/_detail.html:30
+msgid "Swift Container"
+msgstr "Контейнер Swift"
+
+#: solumdashboard/templates/applications/_log.html:23
+#: solumdashboard/templates/languagepacks/_detail.html:32
+msgid "Swift Path"
+msgstr "Путь к Swift"
+
+#: solumdashboard/templates/applications/_log.html:27
+#: solumdashboard/templates/languagepacks/_detail.html:35
+msgid "Location"
+msgstr "Местоположение"
+
+#: solumdashboard/templates/applications/detail.html:3
+#: solumdashboard/templates/applications/detail.html:6
+msgid "Application Details"
+msgstr "Подробные сведения о приложении"
+
+#: solumdashboard/templates/applications/index.html:6
+msgid "Solum - Applications"
+msgstr "Solum - приложения"
+
+#: solumdashboard/templates/assemblies/_detail.html:13
+msgid "URI"
+msgstr "URI"
+
+#: solumdashboard/templates/assemblies/_detail.html:15
+msgid "Trigger URI"
+msgstr "URI запуска"
+
+#: solumdashboard/templates/assemblies/detail.html:3
+#: solumdashboard/templates/assemblies/detail.html:6
+msgid "Assembly Details"
+msgstr "Подробности сборки"
+
+#: solumdashboard/templates/assemblies/index.html:6
+msgid "Solum - Assemblies"
+msgstr "Solum - сборки"
+
+#: solumdashboard/templates/languagepacks/_create.html:10
+msgid "Enter the details for the languagepack."
+msgstr "Укажите подробные сведения о языковом пакете."
+
+#: solumdashboard/templates/languagepacks/_detail.html:17
+msgid "Log details"
+msgstr "Подробности журнала"
+
+#: solumdashboard/templates/languagepacks/_detail.html:39
+msgid "No Log details."
+msgstr "Нет подробностей журнала."
+
+#: solumdashboard/templates/languagepacks/detail.html:3
+#: solumdashboard/templates/languagepacks/detail.html:6
+msgid "Languagepack Details"
+msgstr "Подробные сведения о языковом пакете"
+
+#: solumdashboard/templates/languagepacks/index.html:6
+msgid "Solum - Languagepacks"
+msgstr "Solum - языковые пакеты"
+

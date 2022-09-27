@@ -1,0 +1,4419 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: python-neutronclient VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2021-07-27 11:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: neutronclient/client.py:257
+msgid ""
+"For \"noauth\" authentication strategy, the endpoint must be specified "
+"either in the constructor or using --os-url"
+msgstr ""
+
+#: neutronclient/client.py:268
+#, python-format
+msgid "Unknown auth strategy: %s"
+msgstr ""
+
+#: neutronclient/shell.py:97
+#, python-format
+msgid "invalid int value: %r"
+msgstr ""
+
+#: neutronclient/shell.py:99
+#, python-format
+msgid "input value %d is negative"
+msgstr ""
+
+#: neutronclient/shell.py:136
+#, python-format
+msgid "\n"
+"Commands for API v%s:\n"
+msgstr ""
+
+#: neutronclient/shell.py:203
+msgid ""
+"Increase verbosity of output and show tracebacks on errors. You can repeat "
+"this option."
+msgstr ""
+
+#: neutronclient/shell.py:210
+msgid "Suppress output except warnings and errors."
+msgstr ""
+
+#: neutronclient/shell.py:216
+msgid "Show this help message and exit."
+msgstr ""
+
+#: neutronclient/shell.py:222
+msgid ""
+"How many times the request to the Neutron server should be retried if it "
+"fails. Defaults to 0."
+msgstr ""
+
+#: neutronclient/shell.py:242
+msgid "Defaults to env[OS_NETWORK_SERVICE_TYPE] or \"network\"."
+msgstr ""
+
+#: neutronclient/shell.py:247
+msgid "Defaults to env[OS_ENDPOINT_TYPE] or \"public\"."
+msgstr ""
+
+#: neutronclient/shell.py:254
+msgid "DEPRECATED! Use --os-service-type."
+msgstr ""
+
+#: neutronclient/shell.py:261
+msgid "DEPRECATED! Use --os-endpoint-type."
+msgstr ""
+
+#: neutronclient/shell.py:266
+msgid "DEPRECATED! Only keystone is supported."
+msgstr ""
+
+#: neutronclient/shell.py:274
+msgid "Defaults to env[OS_CLOUD]."
+msgstr ""
+
+#: neutronclient/shell.py:278
+msgid "Authentication URL, defaults to env[OS_AUTH_URL]."
+msgstr ""
+
+#: neutronclient/shell.py:286
+msgid "Authentication tenant name, defaults to env[OS_TENANT_NAME]."
+msgstr ""
+
+#: neutronclient/shell.py:291
+msgid ""
+"Another way to specify tenant name. This option is mutually exclusive with  -"
+"-os-tenant-name. Defaults to env[OS_PROJECT_NAME]."
+msgstr ""
+
+#: neutronclient/shell.py:303
+msgid "Authentication tenant ID, defaults to env[OS_TENANT_ID]."
+msgstr ""
+
+#: neutronclient/shell.py:308
+msgid ""
+"Another way to specify tenant ID. This option is mutually exclusive with  --"
+"os-tenant-id. Defaults to env[OS_PROJECT_ID]."
+msgstr ""
+
+#: neutronclient/shell.py:315
+msgid "Authentication username, defaults to env[OS_USERNAME]."
+msgstr ""
+
+#: neutronclient/shell.py:322
+msgid "Authentication user ID (Env: OS_USER_ID)"
+msgstr ""
+
+#: neutronclient/shell.py:331
+msgid "OpenStack user domain ID. Defaults to env[OS_USER_DOMAIN_ID]."
+msgstr ""
+
+#: neutronclient/shell.py:341
+msgid "OpenStack user domain name. Defaults to env[OS_USER_DOMAIN_NAME]."
+msgstr ""
+
+#: neutronclient/shell.py:359
+msgid "Defaults to env[OS_PROJECT_DOMAIN_ID]."
+msgstr ""
+
+#: neutronclient/shell.py:364
+msgid "Defaults to env[OS_PROJECT_DOMAIN_NAME]."
+msgstr ""
+
+#: neutronclient/shell.py:369
+msgid ""
+"Path of certificate file to use in SSL connection. This file can optionally "
+"be prepended with the private key. Defaults to env[OS_CERT]."
+msgstr ""
+
+#: neutronclient/shell.py:377
+msgid ""
+"Specify a CA bundle file to use in verifying a TLS (https) server "
+"certificate. Defaults to env[OS_CACERT]."
+msgstr ""
+
+#: neutronclient/shell.py:384
+msgid ""
+"Path of client key to use in SSL connection. This option is not necessary if "
+"your key is prepended to your certificate file. Defaults to env[OS_KEY]."
+msgstr ""
+
+#: neutronclient/shell.py:391
+msgid "Authentication password, defaults to env[OS_PASSWORD]."
+msgstr ""
+
+#: neutronclient/shell.py:398
+msgid "Authentication region name, defaults to env[OS_REGION_NAME]."
+msgstr ""
+
+#: neutronclient/shell.py:406
+msgid "Authentication token, defaults to env[OS_TOKEN]."
+msgstr ""
+
+#: neutronclient/shell.py:414
+msgid ""
+"Timeout in seconds to wait for an HTTP response. Defaults to "
+"env[OS_NETWORK_TIMEOUT] or None if not specified."
+msgstr ""
+
+#: neutronclient/shell.py:419
+msgid "Defaults to env[OS_URL]."
+msgstr ""
+
+#: neutronclient/shell.py:428
+msgid ""
+"Explicitly allow neutronclient to perform \"insecure\" SSL (https) requests. "
+"The server's certificate will not be verified against any certificate "
+"authorities. This option should be used with caution."
+msgstr ""
+
+#: neutronclient/shell.py:531
+#, python-format
+msgid "Try 'neutron help %s' for more information."
+msgstr ""
+
+#: neutronclient/shell.py:639
+msgid ""
+"neutron CLI is deprecated and will be removed in the Z cycle. Use openstack "
+"CLI instead."
+msgstr ""
+
+#: neutronclient/shell.py:644
+msgid "... terminating neutron client"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:49
+msgid "An unknown exception occurred."
+msgstr ""
+
+#: neutronclient/common/exceptions.py:73
+#, python-format
+msgid "Neutron server returns request_ids: %s"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:83
+#, python-format
+msgid "%(msg)s\n"
+"%(id)s"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:98
+msgid "Unauthorized: bad credentials."
+msgstr ""
+
+#: neutronclient/common/exceptions.py:103
+msgid "Forbidden: your credentials don't give you access to this resource."
+msgstr ""
+
+#: neutronclient/common/exceptions.py:198
+msgid "auth_url was not provided to the Neutron client"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:202
+msgid "Could not find Service or Region in Service Catalog."
+msgstr ""
+
+#: neutronclient/common/exceptions.py:206
+#, python-format
+msgid "Could not find endpoint type %(type_)s in Service Catalog."
+msgstr ""
+
+#: neutronclient/common/exceptions.py:210
+msgid ""
+"Found more than one matching endpoint in Service Catalog: "
+"%(matching_endpoints)"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:223
+#, python-format
+msgid "Connection to neutron failed: %(reason)s"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:227
+#, python-format
+msgid "SSL certificate validation has failed: %(reason)s"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:231
+#, python-format
+msgid "Malformed response body: %(reason)s"
+msgstr ""
+
+#: neutronclient/common/exceptions.py:235
+#, python-format
+msgid "Invalid content type %(content_type)s."
+msgstr ""
+
+#: neutronclient/common/exceptions.py:259
+#, python-format
+msgid ""
+"Multiple %(resource)s matches found for name '%(name)s', use an ID to be "
+"more specific."
+msgstr ""
+
+#: neutronclient/common/serializer.py:70
+msgid "Cannot understand JSON"
+msgstr ""
+
+#: neutronclient/common/utils.py:66
+#, python-format
+msgid ""
+"Invalid %(api_name)s client version '%(version)s'. must be one of: "
+"%(map_keys)s"
+msgstr ""
+
+#: neutronclient/common/utils.py:138
+#, python-format
+msgid "missing value for key '%s'"
+msgstr ""
+
+#: neutronclient/common/utils.py:145
+#, python-format
+msgid "invalid key-value '%s', expected format: key=value"
+msgstr ""
+
+#: neutronclient/common/utils.py:152
+#, python-format
+msgid ""
+"Invalid key(s) '%(invalid_keys)s' specified. Valid key(s): '%(valid_keys)s'."
+msgstr ""
+
+#: neutronclient/common/utils.py:160
+#, python-format
+msgid "Required key(s) '%s' not specified."
+msgstr ""
+
+#: neutronclient/common/validators.py:38
+#, python-format
+msgid "%(attr_name)s \"%(val)s\" should be an integer [%(min)i:%(max)i]."
+msgstr ""
+
+#: neutronclient/common/validators.py:43
+#, python-format
+msgid ""
+"%(attr_name)s \"%(val)s\" should be an integer greater than or equal to "
+"%(min)i."
+msgstr ""
+
+#: neutronclient/common/validators.py:48
+#, python-format
+msgid ""
+"%(attr_name)s \"%(val)s\" should be an integer smaller than or equal to "
+"%(max)i."
+msgstr ""
+
+#: neutronclient/common/validators.py:53
+#, python-format
+msgid "%(attr_name)s \"%(val)s\" should be an integer."
+msgstr ""
+
+#: neutronclient/common/validators.py:68
+#, python-format
+msgid "%(attr_name)s \"%(val)s\" is not a valid CIDR."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:64
+msgid "Show detailed information."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:79
+msgid ""
+"Specify the field(s) to be returned by server. You can repeat this option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:89
+msgid ""
+"Specify retrieve unit of each request, then split one request to several "
+"requests."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:99
+msgid ""
+"Sorts the list by the specified fields in the specified directions. You can "
+"repeat this option, but you must specify an equal number of sort_dir and "
+"sort_key values. Extra sort_dir options are ignored. Missing sort_dir "
+"options use the default asc value."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:108
+msgid "Sorts the list in the specified direction. You can repeat this option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:134
+#: neutronclient/neutron/v2_0/__init__.py:220
+#: neutronclient/neutron/v2_0/__init__.py:246
+#: neutronclient/neutron/v2_0/__init__.py:251
+#, python-format
+msgid "Invalid values_specs %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:212
+#, python-format
+msgid "Duplicated options %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:228
+msgid "Invalid value_specs {valspec}: type {curtypestr} is not supported"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:393
+#: neutronclient/neutron/v2_0/auto_allocated_topology.py:41
+#: neutronclient/neutron/v2_0/auto_allocated_topology.py:94
+#: neutronclient/neutron/v2_0/quota.py:44
+#: neutronclient/neutron/v2_0/quota.py:104
+#: neutronclient/neutron/v2_0/quota.py:148
+msgid "The owner tenant ID."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:420
+#, python-format
+msgid "Created a new %s:"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:437
+#, python-format
+msgid "ID or name of %s to update."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:439
+#, python-format
+msgid "ID of %s to update."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:461
+#, python-format
+msgid "Must specify new values to update %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:477
+#, python-format
+msgid "Updated %(resource)s: %(id)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:496
+#, python-format
+msgid "ID(s) or name(s) of %s to delete."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:498
+#, python-format
+msgid "ID(s) of %s to delete."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:516
+#, python-format
+msgid "Deleted %(resource)s: %(id)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:535
+#, python-format
+msgid "Deleted %(resource)s(s): %(id)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:542
+#, python-format
+msgid "Unable to find %(resource)s(s) with id(s) '%(id)s'."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:547
+#, python-format
+msgid ""
+"Multiple %(resource)s(s) matches found for name(s) '%(id)s'. Please use an "
+"ID to be more specific."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:599
+#, python-format
+msgid "Filter %s according to their name."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:603
+#, python-format
+msgid "Filter %s belonging to the given tenant."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:607
+#, python-format
+msgid "Filter and list the %s whose administrative state is active"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:785
+#, python-format
+msgid "ID or name of %s to look up."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/__init__.py:787
+#, python-format
+msgid "ID of %s to look up."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/address_scope.py:46
+msgid "Set the address scope as shared."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/address_scope.py:50
+msgid "Specify the name of the address scope."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/address_scope.py:56
+msgid "Specify the address family of the address scope."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/address_scope.py:80
+msgid "Updated name of the address scope."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/address_scope.py:83
+msgid "Set sharing of address scope. (True means shared)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agent.py:69
+msgid "Set admin state up of the agent to false."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agent.py:72
+msgid "Description for the agent."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:34
+#: neutronclient/neutron/v2_0/agentscheduler.py:59
+#: neutronclient/neutron/v2_0/agentscheduler.py:87
+msgid "ID of the DHCP agent."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:38
+msgid "Network to add."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:47
+#, python-format
+msgid "Added network %s to DHCP agent"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:63
+msgid "Network to remove."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:72
+#, python-format
+msgid "Removed network %s from DHCP agent"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:110
+msgid "Network to query."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:134
+#: neutronclient/neutron/v2_0/agentscheduler.py:159
+msgid "ID of the L3 agent."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:138
+msgid "Router to add."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:147
+#, python-format
+msgid "Added router %s to L3 agent"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:163
+msgid "Router to remove."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:172
+#, python-format
+msgid "Removed router %s from L3 agent"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:191
+msgid "ID of the L3 agent to query."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:213
+msgid "Router to query."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:247
+#: neutronclient/neutron/v2_0/agentscheduler.py:302
+msgid "ID of the loadbalancer agent to query."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:272
+msgid "Pool to query."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/agentscheduler.py:327
+msgid "LoadBalancer to query."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/auto_allocated_topology.py:36
+msgid ""
+"Validate the requirements for auto-allocated-topology. (Does not return a "
+"topology.)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/auto_allocated_topology.py:57
+#, python-format
+msgid "Invalid argument(s): --%s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/auto_allocated_topology.py:111
+#, python-format
+msgid "Deleted topology for tenant %s."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/availability_zone.py:21
+#, python-format
+msgid ""
+"Availability Zone for the %s (requires availability zone extension, this "
+"option can be repeated)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/dns.py:25
+#, python-format
+msgid ""
+"Assign DNS %(attribute)s to the %(resource)s (requires DNS integration "
+"extension)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/dns.py:47
+#, python-format
+msgid ""
+"Assign DNS %(attribute)s to the %(resource)s (requires DNS integration "
+"extension.)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/dns.py:52
+#, python-format
+msgid ""
+"Unassign DNS %(attribute)s from the %(resource)s (requires DNS integration "
+"extension.)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:49
+msgid "ID or name of the network from which the floating IP is allocated."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:53
+msgid "Description of the floating IP."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:56
+msgid "ID of the port to be associated with the floating IP."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:62
+#: neutronclient/neutron/v2_0/floatingip.py:113
+msgid "IP address on the port (only required if port has multiple IPs)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:69
+msgid "IP address of the floating IP"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:73
+msgid "Subnet ID on which you want to create the floating IP."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:106
+msgid "ID of the floating IP to associate."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:109
+msgid "ID or name of the port to be associated with the floating IP."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:127
+#, python-format
+msgid "Associated floating IP %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:140
+msgid "ID of the floating IP to disassociate."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/floatingip.py:147
+#, python-format
+msgid "Disassociated floating IP %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/metering.py:44
+msgid "Name of the metering label to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/metering.py:47
+msgid "Description of the metering label to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/metering.py:51
+msgid "Set the label as shared."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/metering.py:91
+msgid "ID or name of the label."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/metering.py:94
+#: neutronclient/neutron/v2_0/securitygroup.py:344
+msgid "CIDR to match on."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/metering.py:99
+msgid "Direction of traffic, default: ingress."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/metering.py:103
+msgid "Exclude this CIDR from the label, default: not excluded."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:61
+#, python-format
+msgid ""
+"Filter %s according to their operation status.(For example: ACTIVE, ERROR "
+"etc)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:66
+msgid "Filter and list the networks which are shared."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:69
+msgid "Filter and list the networks which are external."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:72
+#, python-format
+msgid ""
+"Filter and list %s which has all given tags. Multiple tags can be set like --"
+"tags <tag[,tag...]>"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:77
+#, python-format
+msgid ""
+"Filter and list %s which has any given tags. Multiple tags can be set like --"
+"tags-any <tag[,tag...]>"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:82
+#, python-format
+msgid ""
+"Filter and list %s which does not have all given tags. Multiple tags can be "
+"set like --not-tags <tag[,tag...]>"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:87
+#, python-format
+msgid ""
+"Filter and list %s which does not have any given tags. Multiple tags can be "
+"set like --not-tags-any <tag[,tag...]>"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewall.py:94
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:46
+#: neutronclient/neutron/v2_0/lb/member.py:48
+#: neutronclient/neutron/v2_0/lb/pool.py:51
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:95
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:123
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:90
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:64
+#: neutronclient/neutron/v2_0/lb/v2/member.py:89
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:101
+#: neutronclient/neutron/v2_0/lb/vip.py:52
+#: neutronclient/neutron/v2_0/network.py:164
+#: neutronclient/neutron/v2_0/port.py:234
+#: neutronclient/neutron/v2_0/router.py:61
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:149
+#: neutronclient/neutron/v2_0/vpn/vpnservice.py:63
+msgid "Set admin state up to false."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:172
+msgid "Set the network as shared."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:177
+msgid "The physical mechanism by which the virtual network is implemented."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:182
+msgid ""
+"Name of the physical network over which the virtual network is implemented."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:187
+msgid "VLAN ID for VLAN networks or tunnel-id for GRE/VXLAN networks."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:193
+msgid "Create a VLAN transparent network."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:196
+msgid "Name of the network to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:199
+msgid "Description of network."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:235
+msgid "Name of the network."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network.py:238
+msgid "Description of this network."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network_ip_availability.py:31
+msgid ""
+"Returns IP availability for the network subnets with a given IP version. "
+"Default: 4"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network_ip_availability.py:38
+msgid "Returns IP availability for the network matching a given network ID."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network_ip_availability.py:41
+msgid "Returns IP availability for the network matching a given name."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network_ip_availability.py:44
+msgid "Returns IP availability for the networks with a given tenant ID."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/network_ip_availability.py:58
+msgid "ID or name of network to look up."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:39
+msgid "Name of this port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:42
+msgid "Description of this port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:47
+msgid ""
+"Desired IP and/or subnet for this port: subnet_id=<name_or_id>,ip_address="
+"<ip>. You can repeat this option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:56
+msgid "Device ID of this port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:62
+msgid "Device owner of this port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:108
+msgid "ID or name of the router to look up."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:131
+msgid "Security group associated with the port. You can repeat this option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:136
+msgid "Associate no security groups with the port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:161
+msgid ""
+"Extra dhcp options to be assigned to this port: opt_name="
+"<dhcp_option_name>,opt_value=<value>,ip_version={4,6}. You can repeat this "
+"option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:172
+msgid ""
+"Invalid --extra-dhcp-opt option, can only be: opt_name="
+"<dhcp_option_name>,opt_value=<value>,ip_version={4,6}. You can repeat this "
+"option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:205
+msgid ""
+"Allowed address pair associated with the port. \"ip_address\" parameter is "
+"required. IP address or CIDR can be specified for \"ip_address\". "
+"\"mac_address\" parameter is optional. You can repeat this option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:213
+msgid "Associate no allowed address pairs with the port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:241
+msgid "MAC address of this port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:252
+msgid "VNIC type for this port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:261
+msgid "Custom data to be passed as binding:profile."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:272
+msgid "ID or name of the network this port belongs to."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/port.py:317
+msgid "Set admin state up for the port."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/purge.py:120
+msgid "Tenant has no supported resources."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/purge.py:128
+msgid "ID of Tenant owning the resources to be deleted."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:59
+#, python-format
+msgid "Deleted %(resource)s: %(tenant_id)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:154
+msgid "The limit of networks."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:157
+msgid "The limit of subnets."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:160
+msgid "The limit of ports."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:163
+msgid "The limit of routers."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:166
+msgid "The limit of floating IPs."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:169
+msgid "The limit of security groups."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:172
+msgid "The limit of security groups rules."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:175
+msgid "The limit of vips."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:178
+msgid "The limit of pools."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:181
+msgid "The limit of pool members."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:185
+msgid "The limit of health monitors."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:188
+msgid "The limit of load balancers."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:191
+msgid "The limit of listeners."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:194
+msgid "The limit of RBAC policies."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:205
+#, python-format
+msgid "Quota limit for %(name)s must be an integer"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/quota.py:222
+msgid "Must specify a valid resource with new quota value"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/rbac.py:66
+msgid "ID or name of the RBAC object."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/rbac.py:71
+msgid "Type of the object that RBAC policy affects."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/rbac.py:75 neutronclient/neutron/v2_0/rbac.py:106
+msgid "ID of the tenant to which the RBAC policy will be enforced."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/rbac.py:81
+msgid "Action for the RBAC policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:68
+msgid "Name of the router to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:71
+#: neutronclient/neutron/v2_0/router.py:114
+msgid "Description of router."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:74
+msgid "ID or name of flavor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:77
+msgid "Create a distributed router."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:80
+msgid "Create a highly available router."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:111
+msgid "Updated name of the router."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:117
+msgid "Specify the administrative state of the router (True means \"Up\")."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:124
+msgid "True means this router should operate in distributed mode."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:131
+msgid "Route to associate with the router. You can repeat this option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:136
+msgid "Remove routes associated with the router."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:166
+#: neutronclient/neutron/v2_0/router.py:231
+#: neutronclient/neutron/v2_0/router.py:288
+msgid "ID or name of the router."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:169
+msgid ""
+"The format is \"SUBNET|subnet=SUBNET|port=PORT\". Either a subnet or port "
+"must be specified. Both ID and name are accepted as SUBNET or PORT. Note "
+"that \"subnet=\" can be omitted when specifying a subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:182
+msgid "You must specify either subnet or port for INTERFACE parameter."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:207
+#, python-format
+msgid "Added interface %(port)s to router %(router)s."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:219
+#, python-format
+msgid "Removed interface from router %s."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:234
+msgid "ID or name of the external network for the gateway."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:237
+msgid "Enable source NAT on the router gateway."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:240
+msgid "Disable source NAT on the router gateway."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:246
+msgid ""
+"Desired IP and/or subnet on external network: subnet_id="
+"<name_or_id>,ip_address=<ip>. You can specify both of subnet_id and "
+"ip_address or specify one of them as well. You can repeat this option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:275
+#, python-format
+msgid "Set gateway for router %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/router.py:296
+#, python-format
+msgid "Removed gateway from router %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:127
+msgid "Name of the security group to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:130
+msgid "Description of the security group to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:154
+msgid "Updated name of the security group."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:157
+msgid "Updated description of the security group."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:195
+msgid "Do not convert security group ID to its name."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:311
+msgid "Description of security group rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:314
+msgid "ID or name of the security group to which the rule is added."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:320
+msgid "Direction of traffic: ingress/egress."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:323
+msgid "IPv4/IPv6"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:327
+msgid ""
+"Protocol of packet. Allowed values are [icmp, icmpv6, tcp, udp] and integer "
+"representations [0-255]."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:332
+msgid "Starting port range. For ICMP it is type."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:338
+msgid "Ending port range. For ICMP it is code."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/securitygroup.py:350
+msgid "ID or name of the remote security group to which the rule is applied."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:54
+msgid "Name of this subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:57
+msgid "Description of this subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:61
+msgid "Gateway IP of this subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:65
+msgid "Do not configure a gateway for this subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:70
+msgid ""
+"Allocation pool IP addresses for this subnet (This option can be repeated)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:81
+msgid "Additional route (This option can be repeated)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:85
+msgid "DNS name server for this subnet (This option can be repeated)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:90
+msgid "Disable DHCP for this subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:94
+msgid "Enable DHCP for this subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:113
+msgid "You cannot enable and disable DHCP at the same time."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:130
+msgid "--ipv6-ra-mode is invalid when --ip-version is 4"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:135
+msgid "--ipv6-address-mode is invalid when --ip-version is 4"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:170
+msgid ""
+"IP version to use, default is 4. Note that when subnetpool is specified, IP "
+"version is determined from the subnetpool and this option is ignored."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:181
+msgid "Network ID or name this subnet belongs to."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:184
+msgid "CIDR of subnet to create."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:189
+msgid "IPv6 RA (Router Advertisement) mode."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:194
+msgid "IPv6 address mode."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:197
+msgid "ID or name of subnetpool from which this subnet will obtain a CIDR."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:202
+msgid "Use default subnetpool for ip_version, if it exists."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:205
+msgid "Prefix length for subnet allocation from subnetpool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:208
+msgid "ID of segment with which this subnet will be associated."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnet.py:245
+#, python-format
+msgid ""
+"An IPv%(ip)d subnet with a %(cidr)s CIDR will have only one usable IP "
+"address so the device attached to it will not have any IP connectivity."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:32
+msgid "Description of subnetpool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:35
+msgid "Subnetpool minimum prefix length."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:38
+msgid "Subnetpool maximum prefix length."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:41
+msgid "Subnetpool default prefix length."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:46
+msgid "Subnetpool prefixes (This option can be repeated)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:49
+msgid ""
+"Specify whether this should be the default subnetpool (True meaning default)."
+""
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:87
+msgid "Set the subnetpool as shared."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:91
+msgid "Name of the subnetpool to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:95
+#: neutronclient/neutron/v2_0/subnetpool.py:133
+msgid ""
+"ID or name of the address scope with which the subnetpool is associated. "
+"Prefixes must be unique across address scopes."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:129
+msgid "Updated name of the subnetpool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/subnetpool.py:139
+msgid "Detach subnetpool from the address scope."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:34
+msgid "Resource Type."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:37
+msgid "Resource name or ID."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:48
+msgid "Tag to be added."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:55
+msgid "Cannot add an empty value as tag"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:72
+msgid "Tag (This option can be repeated)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:92
+msgid "Remove all tags on the resource."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:94
+msgid "Tag to be removed."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/tag.py:100
+msgid "--all or --tag must be specified"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/dragentscheduler.py:25
+#: neutronclient/neutron/v2_0/bgp/dragentscheduler.py:81
+msgid "ID of the Dynamic Routing agent."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/dragentscheduler.py:28
+#: neutronclient/neutron/v2_0/bgp/dragentscheduler.py:103
+#: neutronclient/neutron/v2_0/bgp/speaker.py:147
+#: neutronclient/neutron/v2_0/bgp/speaker.py:176
+#: neutronclient/neutron/v2_0/bgp/speaker.py:205
+#: neutronclient/neutron/v2_0/bgp/speaker.py:233
+#: neutronclient/neutron/v2_0/bgp/speaker.py:267
+msgid "ID or name of the BGP speaker."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/dragentscheduler.py:45
+#, python-format
+msgid "Associated BGP speaker %s to the Dynamic Routing agent."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/dragentscheduler.py:64
+#, python-format
+msgid "Disassociated BGP speaker %s from the Dynamic Routing agent."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:37
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:32
+msgid "Must provide password if auth-type is specified."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:40
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:38
+msgid "Must provide auth-type if password is specified."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:68
+msgid "Name of the BGP peer to create."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:73
+msgid "Peer IP address."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:78
+#, python-format
+msgid "Peer AS number. (Integer in [%(min_val)s, %(max_val)s] is allowed.)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:88
+msgid "Authentication algorithm. Supported algorithms: none(default), md5"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:93
+msgid "Authentication password."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:112
+msgid "Updated name of the BGP peer."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/peer.py:116
+msgid "Updated authentication password."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:49
+msgid ""
+"Whether to enable or disable the advertisement of floating-ip host routes by "
+"the BGP speaker. By default floating ip host routes will be advertised by "
+"the BGP speaker."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:55
+msgid ""
+"Whether to enable or disable the advertisement of tenant network routes by "
+"the BGP speaker. By default tenant network routes will be advertised by the "
+"BGP speaker."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:92
+msgid "Name of the BGP speaker to create."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:97
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:135
+#, python-format
+msgid "Local AS number. (Integer in [%(min_val)s, %(max_val)s] is allowed.)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:104
+msgid "IP version for the BGP speaker (default is 4)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:124
+msgid "Name of the BGP speaker to update."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:151
+msgid "ID or name of the BGP peer to add."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:162
+#, python-format
+msgid "Added BGP peer %(peer)s to BGP speaker %(speaker)s."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:180
+msgid "ID or name of the BGP peer to remove."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:191
+#, python-format
+msgid "Removed BGP peer %(peer)s from BGP speaker %(speaker)s."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:209
+msgid "ID or name of the network to add."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:220
+#, python-format
+msgid "Added network %(net)s to BGP speaker %(speaker)s."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:237
+msgid "ID or name of the network to remove."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/bgp/speaker.py:248
+#, python-format
+msgid "Removed network %(net)s from BGP speaker %(speaker)s."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/contrib/_fox_sockets.py:24
+#: neutronclient/neutron/v2_0/contrib/_fox_sockets.py:77
+msgid "Name of this fox socket."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:47
+#: neutronclient/neutron/v2_0/flavor/flavor.py:84
+msgid "Name for the flavor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:51
+msgid ""
+"Service type to which the flavor applies to: e.g. VPN. (See service-provider-"
+"list for loaded examples.)"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:55
+#: neutronclient/neutron/v2_0/flavor/flavor.py:87
+msgid "Description for the flavor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:60
+#: neutronclient/neutron/v2_0/flavor/flavor.py:92
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:57
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:92
+msgid "Sets enabled flag."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:111
+msgid "ID or name of the flavor to associate."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:115
+msgid "ID of the flavor profile to be associated with the flavor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:127
+#, python-format
+msgid "Associated flavor %(flavor)s with flavor_profile %(profile)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:144
+msgid "ID or name of the flavor to be disassociated."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:148
+msgid "ID of the flavor profile to be disassociated from the flavor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor.py:159
+#, python-format
+msgid "Disassociated flavor %(flavor)s from flavor_profile %(profile)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:46
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:81
+msgid "Description for the flavor profile."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:49
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:84
+msgid "Python module path to driver."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:52
+#: neutronclient/neutron/v2_0/flavor/flavor_profile.py:87
+msgid "Metainfo for the flavor profile."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewall.py:24
+msgid "Name for the firewall."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewall.py:27
+msgid "Description for the firewall."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewall.py:34
+msgid ""
+"ID or name of the router associated with the firewall (requires FWaaS router "
+"insertion extension to be enabled). This option can be repeated."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewall.py:40
+msgid ""
+"Associate no routers with the firewall (requires FWaaS router insertion "
+"extension)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewall.py:88
+#: neutronclient/neutron/v2_0/fw/firewall.py:112
+msgid "ID or name of the firewall policy associated to this firewall."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewall.py:116
+msgid "Update the admin state for the firewall (True means UP)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:36
+msgid "Description for the firewall policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:39
+msgid ""
+"Ordered list of whitespace-delimited firewall rule names or IDs; e.g., --"
+"firewall-rules \"rule1 rule2\""
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:85
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:111
+msgid "Name for the firewall policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:89
+msgid "Create a shared policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:94
+msgid "Sets audited to True."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:114
+msgid "Update the sharing status of the policy. (True means shared)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:118
+msgid ""
+"Update the audit status of the policy. (True means auditing is enabled)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:168
+msgid "Insert before this rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:172
+msgid "Insert after this rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:176
+msgid "New rule to insert."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:187
+#, python-format
+msgid "Inserted firewall rule in firewall policy %(id)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:214
+msgid "ID or name of the firewall rule to be removed from the policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallpolicy.py:226
+#, python-format
+msgid "Removed firewall rule from firewall policy %(id)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:32
+msgid "Name for the firewall rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:35
+msgid "Description for the firewall rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:38
+msgid "Source IP address or subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:41
+msgid "Destination IP address or subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:44
+msgid "Source port (integer in [1, 65535] or range in a:b)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:47
+msgid "Destination port (integer in [1, 65535] or range in a:b)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:51
+msgid "Whether to enable or disable this rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:56
+msgid "Protocol for the firewall rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:62
+msgid "Action for the firewall rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:131
+msgid "Set shared flag for the firewall rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:137
+msgid "IP version for the firewall rule (default is 4)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:153
+msgid "Update the shared flag for the firewall rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/fw/firewallrule.py:158
+msgid "Update IP version for the firewall rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:49
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:53
+msgid ""
+"The list of HTTP status codes expected in response from the member to "
+"declare it healthy. This attribute can contain one value, or a list of "
+"values separated by comma, or a range of values (e.g. \"200-299\"). If this "
+"attribute is not specified, it defaults to \"200\"."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:57
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:39
+msgid "The HTTP method used for requests by the monitor of type HTTP."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:61
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:43
+msgid ""
+"The HTTP path used in the HTTP request used by the monitor to test a member "
+"health. This must be a string beginning with a / (forward slash)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:67
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:26
+msgid "The time in seconds between sending probes to members."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:71
+msgid ""
+"Number of permissible connection failures before changing the member status "
+"to INACTIVE. [1..10]"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:76
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:33
+msgid ""
+"Maximum number of seconds for a monitor to wait for a connection to be "
+"established before it times out. The value must be less than the delay value."
+""
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:82
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:99
+msgid "One of the predefined health monitor types."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:119
+msgid "Health monitor to associate."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:122
+msgid "ID of the pool to be associated with the health monitor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:131
+#, python-format
+msgid "Associated health monitor %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:145
+msgid "Health monitor to disassociate."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:148
+msgid "ID of the pool to be disassociated with the health monitor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/healthmonitor.py:159
+#, python-format
+msgid "Disassociated health monitor %s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/member.py:51
+msgid "Weight of pool member in the pool (default:1, [0..256])."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/member.py:55
+msgid "IP address of the pool member on the pool network."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/member.py:59
+#: neutronclient/neutron/v2_0/lb/v2/member.py:101
+msgid "Port on which the pool member listens for requests or connections."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/member.py:63
+msgid "ID or name of the pool this vip belongs to."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/pool.py:54
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:45
+msgid "Description of the pool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/pool.py:59
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:53
+msgid "The algorithm used to distribute load between the members of the pool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/pool.py:64
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:47
+msgid "The name of the pool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/pool.py:69
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:117
+#: neutronclient/neutron/v2_0/lb/vip.py:73
+msgid "Protocol for balancing."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/pool.py:73
+msgid "The subnet on which the members of the pool will be located."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/pool.py:77
+msgid "Provider name of the loadbalancer service."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/vip.py:45
+msgid "ID or name of the pool to which this vip belongs."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/vip.py:48
+msgid "IP address of the vip."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/vip.py:55
+msgid ""
+"The maximum number of connections per second allowed for the vip. Valid "
+"values: a positive integer or -1 for unlimited (default)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/vip.py:60
+msgid "Description of the vip to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/vip.py:64
+msgid "Name of the vip to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/vip.py:68
+msgid ""
+"TCP port on which to listen for client traffic that is associated with the "
+"vip address."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/vip.py:77
+msgid "The subnet on which to allocate the vip address."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:29
+msgid "Name of the health monitor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:49
+msgid ""
+"Number of permissible connection failures before changing the member status "
+"to INACTIVE. [1..10]."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:102
+msgid "ID or name of the pool that this healthmonitor will monitor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/healthmonitor.py:128
+msgid ""
+"Update the administrative state of the health monitor (True meaning \"Up\")."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:36
+msgid "Name of the policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:39
+msgid "Description of the policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:46
+msgid "Action type of the policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:49
+msgid "ID or name of the pool for REDIRECT_TO_POOL action type."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:52
+msgid ""
+"URL for REDIRECT_TO_URL action type. This should be a valid URL string."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:57
+msgid ""
+"L7 policy position in ordered policies list. This must be an integer "
+"starting from 1. Not specifying the position will place the policy at the "
+"tail of existing policies list."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:66
+msgid "Action must be REDIRECT_TO_URL"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:69
+msgid "Action must be REDIRECT_TO_POOL"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:74
+msgid "Redirect URL must be specified"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:77
+msgid "Redirect pool must be specified"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:128
+msgid "ID or name of the listener this policy belongs to."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7policy.py:144
+msgid "Specify the administrative state of the policy (True meaning \"Up\")."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:38
+msgid "ID or name of L7 policy this rule belongs to."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:47
+msgid "Rule type."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:54
+msgid "Rule compare type."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:59
+msgid "Invert the compare type."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:62
+msgid "Key to compare. Relevant for HEADER and COOKIE types only."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:67
+msgid "Value to compare."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:120
+msgid "Set admin state up to false"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/l7rule.py:137
+msgid "Specify the administrative state of the rule (True meaning \"Up\")."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:43
+msgid "Description of the listener."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:47
+msgid ""
+"The maximum number of connections per second allowed for the listener. "
+"Positive integer or -1 for unlimited (default)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:52
+msgid "Default pool for the listener."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:93
+msgid ""
+"The name of the listener. At least one of --default-pool or --loadbalancer "
+"must be specified."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:98
+msgid "Default TLS container reference to retrieve TLS information."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:104
+msgid "List of TLS container references for SNI."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:108
+msgid "ID or name of the load balancer."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:114
+msgid "Protocol for the listener."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:119
+msgid "Protocol port for the listener."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:123
+msgid "Either --default-pool or --loadbalancer must be specified."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:152
+msgid "Name of the listener."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/listener.py:155
+msgid "Specify the administrative state of the listener. (True meaning \"Up\")"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:27
+msgid "Description of the load balancer."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:30
+msgid "Name of the load balancer."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:67
+msgid "Provider name of the load balancer service."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:70
+msgid "ID or name of the flavor."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:73
+msgid "VIP address for the load balancer."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:76
+msgid "Load balancer VIP subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:102
+msgid ""
+"Update the administrative state of the load balancer (True meaning \"Up\")."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/loadbalancer.py:165
+#, python-format
+msgid "ID or name of %s to show."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/member.py:37
+#: neutronclient/neutron/v2_0/lb/v2/member.py:105
+#: neutronclient/neutron/v2_0/lb/v2/member.py:130
+msgid "ID or name of the pool that this member belongs to."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/member.py:43
+msgid "Name of the member."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/member.py:46
+msgid "Weight of the member in the pool (default:1, [0..256])."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/member.py:93
+msgid "Subnet ID or name for the member."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/member.py:97
+msgid "IP address of the pool member in the pool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/member.py:133
+msgid "Update the administrative state of the member (True meaning \"Up\")."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:104
+msgid ""
+"Listener whose default-pool should be set to this pool. At least one of --"
+"listener or --loadbalancer must be specified."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:109
+msgid ""
+"Loadbalancer with which this pool should be associated. At least one of --"
+"listener or --loadbalancer must be specified."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:123
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:166
+msgid "The type of session persistence to use and associated cookie name."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:128
+msgid "At least one of --listener or --loadbalancer must be specified."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:158
+msgid "Update the administrative state of the pool (True meaning \"Up\")."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/lb/v2/pool.py:171
+msgid "Clear session persistence for the pool."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/bandwidth_limit_rule.py:30
+msgid "Maximum bandwidth in kbps."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/bandwidth_limit_rule.py:33
+msgid "Maximum burst bandwidth in kbps."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/bandwidth_limit_rule.py:40
+msgid "Must provide max-kbps or max-burst-kbps option."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/dscp_marking_rule.py:40
+msgid ""
+"DSCP mark: value can be 0, even numbers from 8-56,                 excluding "
+"42, 44, 50, 52, and 54."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/dscp_marking_rule.py:47
+#, python-format
+msgid ""
+"DSCP mark: %s not supported. Please note value can either be 0 or any even "
+"number from 8-56 excluding 42, 44, 50, 52 and 54."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/minimum_bandwidth_rule.py:31
+msgid "QoS minimum bandwidth assurance, expressed in kilobits per second."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/minimum_bandwidth_rule.py:44
+msgid "Traffic direction."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:34
+msgid "ID or name of the QoS policy that shouldbe attached to the resource."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:52
+msgid "Detach QoS policy from the resource."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:96
+msgid "Name of the QoS policy to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:99
+msgid "Description of the QoS policy to be created."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:103
+#: neutronclient/neutron/v2_0/qos/policy.py:134
+msgid "Accessible by other tenants. Set shared to True (default is False)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:126
+msgid "Name of the QoS policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:129
+msgid "Description of the QoS policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/policy.py:139
+msgid "Not accessible by other tenants. Set shared to False."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/rule.py:26
+msgid "ID or name of the QoS policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/qos/rule.py:32
+msgid "ID of the QoS rule."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/endpoint_group.py:24
+msgid "Set a name for the endpoint group."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/endpoint_group.py:27
+msgid "Set a description for the endpoint group."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/endpoint_group.py:32
+msgid "Type of endpoints in group (e.g. subnet, cidr, vlan)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/endpoint_group.py:37
+msgid "Endpoint(s) for the group. Must all be of the same type."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:28
+msgid "Description of the IKE policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:34
+msgid "Authentication algorithm, default:sha1."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:39
+msgid "Encryption algorithm, default:aes-128."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:45
+msgid "IKE Phase1 negotiation mode, default:main."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:51
+msgid "IKE version for the policy, default:v1."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:56
+msgid "Perfect Forward Secrecy, default:group5."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:101
+msgid "Name of the IKE policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ikepolicy.py:117
+msgid "Updated name of the IKE policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:59
+msgid "Set friendly name for the connection."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:62
+msgid "Set a description for the connection."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:71
+msgid "Local endpoint group ID/name with subnet(s) for IPSec connection."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:75
+msgid "Peer endpoint group ID/name with CIDR(s) for IPSec connection."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:80
+msgid ""
+"[DEPRECATED in Mitaka] Remote subnet(s) in CIDR format. Cannot be specified "
+"when using endpoint groups. Only applicable, if subnet provided for VPN "
+"service."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:86
+msgid ""
+"Peer router identity for authentication. Can be IPv4/IPv6 address, e-mail "
+"address, key id, or FQDN."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:91
+msgid "Peer gateway public IPv4/IPv6 address or FQDN."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:95
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:180
+msgid "Pre-shared key string."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:99
+msgid "MTU size for the connection, default:1500."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:104
+msgid "Initiator state in lowercase, default:bi-directional"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:125
+msgid "Invalid MTU value: MTU must be greater than or equal to 68."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:130
+msgid "You cannot specify both endpoint groups and peer CIDR(s)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:153
+msgid "VPN service instance ID associated with this connection."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:157
+msgid "IKE policy ID associated with this connection."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:161
+msgid "IPsec policy ID associated with this connection."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:185
+msgid "You must specify both local and peer endpoint groups."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:189
+msgid "You must specify endpoint groups or peer CIDR(s)."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsec_site_connection.py:205
+msgid "Update the administrative state. (True meaning \"Up\")"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:31
+msgid "Authentication algorithm for IPsec policy, default:sha1."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:34
+msgid "Description of the IPsec policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:40
+msgid "Encapsulation mode for IPsec policy, default:tunnel."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:45
+msgid "Encryption algorithm for IPsec policy, default:aes-128."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:55
+msgid "Perfect Forward Secrecy for IPsec policy, default:group5."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:61
+msgid "Transform protocol for IPsec policy, default:esp."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:102
+msgid "Name of the IPsec policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/ipsecpolicy.py:118
+msgid "Updated name of the IPsec policy."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:35
+#: neutronclient/osc/v2/vpnaas/utils.py:35
+#, python-format
+msgid ""
+"DPD Dictionary KeyError: Reason-Invalid DPD key : '%(key)s' not in "
+"%(supported_key)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:42
+#: neutronclient/osc/v2/vpnaas/utils.py:42
+#, python-format
+msgid ""
+"DPD Dictionary ValueError: Reason-Invalid DPD action : '%(key_value)s' not "
+"in %(supported_action)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:54
+#: neutronclient/osc/v2/vpnaas/utils.py:54
+#, python-format
+msgid ""
+"DPD Dictionary ValueError: Reason-Invalid positive integer value: '%(key)s' ="
+" %(value)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:69
+#: neutronclient/osc/v2/vpnaas/utils.py:69
+#, python-format
+msgid ""
+"Lifetime Dictionary KeyError: Reason-Invalid unit key : '%(key)s' not in "
+"%(supported_key)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:76
+#: neutronclient/osc/v2/vpnaas/utils.py:76
+#, python-format
+msgid ""
+"Lifetime Dictionary ValueError: Reason-Invalid units : '%(key_value)s' not "
+"in %(supported_units)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:87
+#: neutronclient/osc/v2/vpnaas/utils.py:87
+#, python-format
+msgid ""
+"Lifetime Dictionary ValueError: Reason-Invalid value should be at least 60:"
+"'%(key_value)s' = %(value)s"
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:99
+#: neutronclient/osc/v2/vpnaas/utils.py:99
+#, python-format
+msgid ""
+"%s lifetime attributes. 'units'-seconds, default:seconds. 'value'-non "
+"negative integer, default:3600."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/utils.py:106
+#: neutronclient/osc/v2/vpnaas/utils.py:106
+#, python-format
+msgid ""
+" %s Dead Peer Detection attributes. 'action'-"
+"hold,clear,disabled,restart,restart-by-peer. 'interval' and 'timeout' are "
+"non negative integers.  'interval' should be less than 'timeout' value.  "
+"'action', default:hold 'interval', default:30,  'timeout', default:120."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/vpnservice.py:25
+msgid "Name for the VPN service."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/vpnservice.py:28
+msgid "Description for the VPN service."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/vpnservice.py:66
+msgid "Router unique identifier for the VPN service."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/vpnservice.py:69
+msgid "[DEPRECATED in Mitaka] Unique identifier for the local private subnet."
+msgstr ""
+
+#: neutronclient/neutron/v2_0/vpn/vpnservice.py:102
+msgid "Update the admin state for the VPN Service.(True means UP)"
+msgstr ""
+
+#: neutronclient/osc/utils.py:41
+msgid "Owner's project (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/utils.py:48
+msgid ""
+"Domain the project belongs to (name or ID). This can be used in case "
+"collisions between project names exist."
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_dragent.py:33
+msgid "ID of the dynamic routing agent"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_dragent.py:36
+msgid "ID or name of the BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_dragent.py:90
+#: neutronclient/osc/v2/dynamic_routing/bgp_dragent.py:121
+msgid "List dynamic routing agents hosting a BGP speaker (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:63
+msgid "Create a BGP peer"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:70
+msgid "Name of the BGP peer to create"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:75
+msgid "Peer IP address"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:80
+#, python-format
+msgid "Peer AS number. (Integer in [%(min_val)s, %(max_val)s] is allowed)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:89
+msgid "Authentication algorithm. Supported algorithms: none (default), md5"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:94
+msgid "Authentication password"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:109
+msgid "Delete a BGP peer"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:116
+msgid "BGP peer to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:128
+msgid "List BGP peers"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:141
+msgid "Update a BGP peer"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:148
+msgid "Updated name of the BGP peer"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:152
+msgid "Updated authentication password"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:156
+msgid "BGP peer to update (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:171
+msgid "Show information for a BGP peer"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_peer.py:178
+msgid "BGP peer to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:55
+msgid ""
+"Enable the advertisement of floating IP host routes by the BGP speaker. "
+"(default)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:60
+msgid ""
+"Disable the advertisement of floating IP host routes by the BGP speaker."
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:65
+msgid ""
+"Enable the advertisement of tenant network routes by the BGP speaker. "
+"(default)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:70
+msgid "Disable the advertisement of tenant network routes by the BGP speaker."
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:75
+msgid "Add a network to a BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:82
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:106
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:210
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:232
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:257
+msgid "BGP speaker (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:86
+msgid "Network to add (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:99
+msgid "Add a peer to a BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:110
+msgid "BGP Peer to add (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:123
+msgid "Create a BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:130
+msgid "Name of the BGP speaker to create"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:142
+msgid "IP version for the BGP speaker (default is 4)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:159
+msgid "Delete a BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:166
+msgid "BGP speaker to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:178
+msgid "List BGP speakers"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:185
+msgid "List BGP speakers hosted by an agent (ID only)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:202
+msgid "List routes advertised"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:225
+msgid "Remove a network from a BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:236
+msgid "Network to remove (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:250
+msgid "Remove a peer from a BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:261
+msgid "BGP Peer to remove (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:275
+msgid "Set BGP speaker properties"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:284
+msgid "BGP speaker to update (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:288
+msgid "New name for the BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:303
+msgid "Show a BGP speaker"
+msgstr ""
+
+#: neutronclient/osc/v2/dynamic_routing/bgp_speaker.py:310
+msgid "BGP speaker to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:52
+msgid "Name for the firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:56
+msgid "Description of the firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:62
+msgid "Ingress firewall policy (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:67
+msgid "Detach ingress firewall policy from the firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:73
+msgid "Egress firewall policy (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:78
+msgid "Detach egress firewall policy from the firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:84
+msgid ""
+"Share the firewall group to be used in all projects (by default, it is "
+"restricted to be used by the current project)."
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:90
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:342
+msgid "Restrict use of the firewall group to the current project"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:96
+msgid "Enable firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:100
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:347
+msgid "Disable firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:167
+msgid "Create a new firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:178
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:265
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:323
+msgid ""
+"Port(s) (name or ID) to apply firewall group.  This option can be repeated"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:184
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:271
+msgid "Detach all port from the firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:198
+msgid "Delete firewall group(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:206
+msgid "Firewall group(s) to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:219
+#, python-format
+msgid ""
+"Failed to delete firewall group with name or ID '%(firewall_group)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:225
+#, python-format
+msgid "%(result)s of %(total)s firewall group(s) failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:231
+msgid "List firewall groups"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:238
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:279
+#: neutronclient/osc/v2/fwaas/firewallrule.py:290
+#: neutronclient/osc/v2/logging/network_log.py:199
+#: neutronclient/osc/v2/logging/network_log.py:219
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:358
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:197
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:159
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:127
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:121
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:131
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:136
+#: neutronclient/osc/v2/trunk/network_trunk.py:136
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:151
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:180
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:294
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:179
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:172
+msgid "List additional fields in output"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:252
+msgid "Set firewall group properties"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:260
+msgid "Firewall group to update (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:283
+#, python-format
+msgid "Failed to set firewall group '%(group)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:289
+msgid "Display firewall group details"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:296
+msgid "Firewall group to show (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:310
+msgid "Unset firewall group properties"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:317
+msgid "Firewall group to unset (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:328
+msgid "Remove all ports for this firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:332
+msgid "Ingress firewall policy (name or ID) to delete"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:337
+msgid "Egress firewall policy (name or ID) to delete"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallgroup.py:380
+#, python-format
+msgid "Failed to unset firewall group '%(group)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:91
+msgid "Description of the firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:96
+msgid "Enable auditing for the policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:100
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:385
+msgid "Disable auditing for the policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:105
+msgid ""
+"Share the firewall policy to be used in all projects (by default, it is "
+"restricted to be used by the current project)."
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:111
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:389
+msgid "Restrict use of the firewall policy to the current project"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:117
+msgid "Create a new firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:126
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:305
+msgid "Name for the firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:132
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:310
+msgid "Firewall rule(s) to apply (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:136
+msgid "Unset all firewall rules from firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:150
+msgid "Delete firewall policy(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:158
+msgid "Firewall policy(s) to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:171
+#, python-format
+msgid ""
+"Failed to delete Firewall policy with name or ID '%(firewall_policy)s': "
+"%(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:177
+#, python-format
+msgid "%(result)s of %(total)s firewall policy(s) failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:183
+msgid "Insert a rule into a given firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:190
+msgid "Firewall policy to insert rule (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:194
+msgid "Insert the new rule before this existing rule  (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:199
+msgid "Insert the new rule after this existing rule  (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:204
+msgid "Firewall rule to be inserted (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:235
+#, python-format
+msgid "Inserted firewall rule %(rule)s in firewall policy %(policy)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:241
+msgid "Remove a rule from a given firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:248
+msgid "Firewall policy to remove rule (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:252
+msgid "Firewall rule to remove from policy (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:265
+#, python-format
+msgid "Removed firewall rule %(rule)s from firewall policy %(policy)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:271
+msgid "List firewall policies"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:293
+msgid "Set firewall policy properties"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:301
+msgid "Firewall policy to update (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:314
+msgid "Remove all firewall rules from firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:327
+#, python-format
+msgid "Failed to set firewall policy '%(policy)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:333
+msgid "Display firewall policy details"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:340
+msgid "Firewall policy to show (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:356
+msgid "Firewall rule (name or ID) is required."
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:363
+msgid "Unset firewall policy properties"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:370
+msgid "Firewall policy to unset (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:376
+msgid "Remove firewall rule(s) from the firewall policy (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:381
+msgid "Remove all firewall rules from the firewall policy"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallpolicy.py:423
+#, python-format
+msgid "Failed to unset firewall policy '%(policy)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:61
+msgid "Name of the firewall rule"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:65
+msgid "Description of the firewall rule"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:70
+msgid "Protocol for the firewall rule"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:75
+msgid "Action for the firewall rule"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:80
+msgid "Set IP version 4 or 6 (default is 4)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:85
+#: neutronclient/osc/v2/fwaas/firewallrule.py:387
+msgid "Source IP address or subnet"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:89
+msgid "Detach source IP address"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:94
+#: neutronclient/osc/v2/fwaas/firewallrule.py:391
+msgid "Destination IP address or subnet"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:98
+msgid "Detach destination IP address"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:103
+#: neutronclient/osc/v2/fwaas/firewallrule.py:395
+msgid ""
+"Source port number or range(integer in [1, 65535] or range like 123:456)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:108
+msgid "Detach source port number or range"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:113
+#: neutronclient/osc/v2/fwaas/firewallrule.py:400
+msgid ""
+"Destination port number or range(integer in [1, 65535] or range like 123:"
+"456)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:118
+msgid "Detach destination port number or range"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:123
+msgid ""
+"Share the firewall rule to be used in all projects (by default, it is "
+"restricted to be used by the current project)."
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:129
+#: neutronclient/osc/v2/fwaas/firewallrule.py:405
+msgid "Restrict use of the firewall rule to the current project"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:134
+msgid "Enable this rule (default is enabled)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:138
+#: neutronclient/osc/v2/fwaas/firewallrule.py:409
+msgid "Disable this rule"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:143
+#: neutronclient/osc/v2/fwaas/firewallrule.py:414
+msgid "Source firewall group (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:147
+#: neutronclient/osc/v2/fwaas/firewallrule.py:156
+msgid "No associated destination firewall group"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:152
+#: neutronclient/osc/v2/fwaas/firewallrule.py:419
+msgid "Destination firewall group (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:230
+msgid "Create a new firewall rule"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:249
+msgid "Delete firewall rule(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:257
+msgid "Firewall rule(s) to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:270
+#, python-format
+msgid ""
+"Failed to delete Firewall rule with name or ID '%(firewall_rule)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:276
+#, python-format
+msgid "%(result)s of %(total)s firewall rule(s) failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:282
+msgid "List firewall rules that belong to a given tenant"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:327
+msgid "Set firewall rule properties"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:335
+msgid "Firewall rule to set (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:348
+#, python-format
+msgid "Failed to set firewall rule '%(rule)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:354
+msgid "Display firewall rule details"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:361
+msgid "Firewall rule to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:376
+msgid "Unset firewall rule properties"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:383
+msgid "Firewall rule to unset (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/fwaas/firewallrule.py:451
+#, python-format
+msgid "Failed to unset firewall rule '%(rule)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:56
+msgid "Description of the network log"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:61
+msgid "Enable this log (default is disabled)"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:65
+msgid "Disable this log"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:109
+msgid "Create a new network log"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:118
+msgid "Name for the network log"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:124
+msgid "An event to store with log"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:133
+msgid ""
+"Network log type(s). You can see supported type(s) with following command:\n"
+"$ openstack network loggable resources list"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:139
+msgid ""
+"Name or ID of resource (security group or firewall group) that used for "
+"logging. You can control for logging target combination with --target option."
+""
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:145
+msgid ""
+"Port (name or ID) for logging. You can control for logging target "
+"combination with --resource option."
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:159
+msgid "Delete network log(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:167
+msgid "Network log(s) to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:180
+#, python-format
+msgid "Failed to delete network log with name or ID '%(network_log)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:186
+#, python-format
+msgid "%(result)s of %(total)s network log(s) failed to delete"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:192
+msgid "List supported loggable resources"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:212
+msgid "List network logs"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:257
+msgid "Set network log properties"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:265
+msgid "Network log to set (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:269
+msgid "Name of the network log"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:281
+#, python-format
+msgid "Failed to set network log '%(logging)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:287
+msgid "Display network log details"
+msgstr ""
+
+#: neutronclient/osc/v2/logging/network_log.py:294
+msgid "Network log to show (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:68
+msgid "Add Route Target to import/export list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:69
+msgid "Remove Route Target from import/export list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:70
+msgid "Add Route Target to import list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:71
+msgid "Remove Route Target from import list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:72
+msgid "Add Route Target to export list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:73
+msgid "Remove Route Target from export list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:74
+msgid ""
+"Add Route Distinguisher to the list of Route Distinguishers from which a "
+"Route Distinguishers will be picked from to advertise a VPN route"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:77
+msgid ""
+"Remove Route Distinguisher from the list of Route Distinguishers from which "
+"a Route Distinguishers will be picked from to advertise a VPN route"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:80
+msgid "repeat option for multiple Route Targets"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:81
+msgid "repeat option for multiple Route Distinguishers"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:90
+msgid "Name of the BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:104
+msgid "Empty route target list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:119
+msgid "Empty import route target list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:135
+msgid "Empty export route target list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:150
+msgid "Empty route distinguisher list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:154
+msgid ""
+"VXLAN Network Identifier to be used for this BGPVPN when a VXLAN "
+"encapsulation is used"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:159
+msgid ""
+"Default BGP LOCAL_PREF to use in route advertisementstowards this BGPVPN."
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:228
+msgid "Create BGP VPN resource"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:238
+msgid ""
+"BGP VPN type selection between IP VPN (l3) and Ethernet VPN (l2) (default: "
+"l3)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:278
+msgid "Set BGP VPN properties"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:285
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:305
+msgid "BGP VPN to update (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:298
+msgid "Unset BGP VPN properties"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:318
+msgid "Delete BGP VPN resource(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:326
+msgid "BGP VPN(s) to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:344
+#, python-format
+msgid "Failed to delete %(fails)s of %(total)s BGP VPN."
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:350
+msgid "List BGP VPN resources"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:364
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:202
+msgid ""
+"Filter property to apply on returned BGP VPNs (repeat to filter on multiple "
+"properties)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:390
+msgid "Show information of a given BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/bgpvpn.py:397
+msgid "BGP VPN to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/network_association.py:46
+msgid "Create a BGP VPN network association"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/network_association.py:51
+msgid "Delete a BGP VPN network association(s) for a given BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/network_association.py:57
+msgid "List BGP VPN network associations for a given BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/network_association.py:62
+msgid "Show information of a given BGP VPN network association"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:118
+#, python-format
+msgid "Fixed IPs of the port will be advertised to the BGP VPN%s"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:120
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:58
+msgid " (default)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:122
+msgid "Fixed IPs of the port will not be advertised to the BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:125
+msgid ""
+". Optionally, can control the value of the BGP LOCAL_PREF of the routes that "
+"will be advertised"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:129
+#, python-format
+msgid "Add prefix route in CIDR notation%s"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:131
+msgid "Remove prefix route in CIDR notation"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:132
+msgid "repeat option for multiple prefix routes"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:134
+#, python-format
+msgid "Add BGP VPN route for route leaking%s"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:136
+msgid "Remove BGP VPN route"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:137
+msgid "repeat option for multiple BGP VPN routes"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:193
+msgid "Empty prefix route list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:200
+msgid "Empty BGP VPN route list"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:289
+msgid "Create a BGP VPN port association"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:294
+msgid "Set BGP VPN port association properties"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:299
+msgid "Unset BGP VPN port association properties"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:304
+msgid "Delete a BGP VPN port association(s) for a given BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:310
+msgid "List BGP VPN port associations for a given BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/port_association.py:315
+msgid "Show information of a given BGP VPN port association"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:42
+#, python-format
+msgid "BGP VPN to apply the %s association (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:48
+#, python-format
+msgid "%s to associate the BGP VPN (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:102
+#, python-format
+msgid "%s association ID to update"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:108
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:150
+#, python-format
+msgid "BGP VPN the %s association belongs to (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:144
+#, python-format
+msgid "%s association ID(s) to remove"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:176
+#, python-format
+msgid ""
+"Failed to delete %(fails)s of %(total)s %(assoc_res_name)s BGP VPN "
+"association(s)."
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:192
+msgid "BGP VPN listed associations belong to (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:235
+#, python-format
+msgid "%s association ID to look up"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/resource_association.py:241
+msgid "BGP VPN the association belongs to (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:56
+#, python-format
+msgid "Routes will be advertised to the BGP VPN%s"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:60
+msgid "Routes from the router will not be advertised to the BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:89
+msgid "Create a BGP VPN router association"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:94
+msgid "Set BGP VPN router association properties"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:98
+msgid "Unset BGP VPN router association properties"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:102
+msgid "Delete a BGP VPN router association(s) for a given BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:108
+msgid "List BGP VPN router associations for a given BGP VPN"
+msgstr ""
+
+#: neutronclient/osc/v2/networking_bgpvpn/router_association.py:113
+msgid "Show information of a given BGP VPN router association"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:60
+msgid "Create a flow classifier"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:67
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:217
+msgid "Name of the flow classifier"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:71
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:221
+msgid "Description for the flow classifier"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:75
+msgid "IP protocol name. Protocol name should be as per IANA standard."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:81
+msgid "L2 ethertype, default is IPv4"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:85
+msgid ""
+"Source protocol port (allowed range [1,65535]. Must be specified as a:b, "
+"where a=min-port and b=max-port) in the allowed range."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:91
+msgid ""
+"Destination protocol port (allowed range [1,65535]. Must be specified as a:"
+"b, where a=min-port and b=max-port) in the allowed range."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:97
+msgid "Source IP address in CIDR notation"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:101
+msgid "Destination IP address in CIDR notation"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:105
+msgid "Neutron source port (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:109
+msgid "Neutron destination port (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:112
+msgid ""
+"Dictionary of L7 parameters. Currently, no value is supported for this "
+"option."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:127
+msgid "Delete a given flow classifier"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:134
+msgid "Flow classifier to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:145
+#, python-format
+msgid "Failed to delete flow classifier with name or ID '%(fc)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:152
+msgid "List flow classifiers"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:210
+msgid "Set flow classifier properties"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:225
+msgid "Flow classifier to modify (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:238
+#, python-format
+msgid "Failed to update flow classifier '%(fc)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:244
+msgid "Display flow classifier details"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:251
+msgid "Flow classifier to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_flow_classifier.py:314
+#, python-format
+msgid "Protocol port value %s must be an integer or integer:integer."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:45
+msgid "Create a port chain"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:52
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:149
+msgid "Name of the port chain"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:56
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:153
+msgid "Description for the port chain"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:63
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:159
+msgid "Add flow classifier (name or ID). This option can be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:70
+msgid ""
+"Dictionary of chain parameters. Supports correlation=(mpls|nsh) (default is "
+"mpls) and symmetric=(true|false)."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:79
+msgid "Add port pair group (name or ID). This option can be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:94
+msgid "Delete a given port chain"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:101
+msgid "Port chain to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:112
+#, python-format
+msgid "Failed to delete port chain with name or ID '%(pc)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:119
+msgid "List port chains"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:142
+msgid "Set port chain properties"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:164
+msgid "Remove associated flow classifiers from the port chain"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:170
+msgid ""
+"Add port pair group (name or ID). Current port pair groups order is kept, "
+"the added port pair group will be placed at the end of the port chain. This "
+"option can be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:177
+msgid ""
+"Remove associated port pair groups from the port chain. At least one --port-"
+"pair-group must be specified together."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:183
+msgid "Port chain to modify (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:209
+msgid "At least one --port-pair-group must be specified."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:236
+#, python-format
+msgid "Failed to update port chain '%(pc)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:242
+msgid "Display port chain details"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:249
+msgid "Port chain to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:263
+msgid "Unset port chain properties"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:270
+msgid "Port chain to unset (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:277
+msgid ""
+"Remove flow classifier(s) from the port chain (name or ID). This option can "
+"be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:282
+msgid "Remove all flow classifiers from the port chain"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:288
+msgid ""
+"Remove port pair group(s) from the port chain (name or ID). This option can "
+"be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:320
+msgid "At least one port pair group must be specified."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_chain.py:328
+#, python-format
+msgid "Failed to unset port chain '%(pc)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:43
+msgid "Create a port pair"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:50
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:144
+msgid "Name of the port pair"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:54
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:148
+msgid "Description for the port pair"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:60
+msgid ""
+"Dictionary of service function parameters. Currently, correlation="
+"(None|mpls|nsh) and weight are supported. Weight is an integer that "
+"influences the selection of a port pair within a port pair group for a flow. "
+"The higher the weight, the more flows will hash to the port pair. The "
+"default weight is 1."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:70
+msgid "Ingress neutron port (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:75
+msgid "Egress neutron port (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:89
+msgid "Delete a given port pair"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:96
+msgid "Port pair to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:107
+#, python-format
+msgid "Failed to delete port pair with name or ID '%(port_pair)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:114
+msgid "List port pairs"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:137
+msgid "Set port pair properties"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:152
+msgid "Port pair to modify (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:165
+#, python-format
+msgid "Failed to update port pair '%(port_pair)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:171
+msgid "Display port pair details"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair.py:178
+msgid "Port pair to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:44
+msgid "Create a port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:51
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:158
+msgid "Name of the port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:55
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:162
+msgid "Description for the port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:62
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:169
+msgid "Port pair (name or ID). This option can be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:68
+msgid ""
+"Port pairs of this port pair group are deployed as passive tap service "
+"function"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:74
+msgid ""
+"Port pairs of this port pair group are deployed as l3 service function "
+"(default)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:81
+msgid ""
+"Dictionary of port pair group parameters. Currently only one parameter lb-"
+"fields is supported. <lb-fields> is a & separated list of load-balancing "
+"fields."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:98
+msgid "Delete a given port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:105
+msgid "Port pair group to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:116
+#, python-format
+msgid "Failed to delete port pair group with name or ID '%(ppg)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:123
+msgid "List port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:147
+msgid "Set port pair group properties"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:154
+msgid "Port pair group to modify (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:174
+msgid "Remove all port pair from port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:199
+#, python-format
+msgid "Failed to update port pair group '%(ppg)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:205
+msgid "Display port pair group details"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:212
+msgid "Port pair group to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:226
+msgid "Unset port pairs from port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:233
+msgid "Port pair group to unset (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:240
+msgid ""
+"Remove port pair(s) from the port pair group (name or ID). This option can "
+"be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:245
+msgid "Remove all port pairs from the port pair group"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_port_pair_group.py:266
+#, python-format
+msgid "Failed to unset port pair group '%(ppg)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:44
+msgid "Name of the service graph."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:47
+msgid "Description for the service graph."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:54
+msgid ""
+"Service graph branching point: the key is the source Port Chain while the "
+"value is a list of destination Port Chains. This option can be repeated."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:69
+#, python-format
+msgid "Failed to create service graph using '%(pcs)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:75
+msgid "Set service graph properties"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:82
+msgid "Name of the service graph"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:86
+msgid "Description for the service graph"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:90
+msgid "Service graph to modify (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:103
+#, python-format
+msgid "Failed to update service graph '%(service_graph)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:117
+msgid "ID or name of the service graph to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:128
+msgid "List service graphs"
+msgstr ""
+
+#: neutronclient/osc/v2/sfc/sfc_service_graph.py:158
+msgid "ID or name of the service graph to display."
+msgstr ""
+
+#: neutronclient/osc/v2/subnet_onboard/subnet_onboard.py:36
+msgid "Onboard all subnets associated with this network"
+msgstr ""
+
+#: neutronclient/osc/v2/subnet_onboard/subnet_onboard.py:41
+msgid "Target subnet pool for onboarding subnets"
+msgstr ""
+
+#: neutronclient/osc/v2/subnet_onboard/subnet_onboard.py:53
+#, python-format
+msgid "Failed to onboard subnets for network '%(n)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:45
+msgid "Name of the trunk to create"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:50
+#: neutronclient/osc/v2/trunk/network_trunk.py:193
+msgid "A description of the trunk"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:56
+msgid "Parent port belonging to this trunk (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:64
+msgid ""
+"Subport to add. Subport is of form 'port=<name or ID>,segmentation-type="
+",segmentation-ID=' (--subport) option can be repeated"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:73
+msgid "Enable trunk (default)"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:78
+#: neutronclient/osc/v2/trunk/network_trunk.py:214
+msgid "Disable trunk"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:104
+msgid "Trunk(s) to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:117
+#, python-format
+msgid "Failed to delete trunk with name or ID '%(trunk)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:122
+#, python-format
+msgid "%(result)s of %(total)s trunks failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:183
+msgid "Trunk to modify (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:188
+msgid "Set trunk name"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:201
+msgid ""
+"Subport to add. Subport is of form 'port=<name or ID>,segmentation-type="
+",segmentation-ID='(--subport) option can be repeated"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:209
+msgid "Enable trunk"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:226
+#, python-format
+msgid "Failed to set trunk '%(t)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:235
+#, python-format
+msgid "Failed to add subports to trunk '%(t)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:247
+msgid "Trunk to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:270
+msgid "List subports belonging to this trunk (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:294
+msgid "Unset subports from this trunk (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:301
+msgid ""
+"Subport to delete (name or ID of the port) (--subport) option can be "
+"repeated"
+msgstr ""
+
+#: neutronclient/osc/v2/trunk/network_trunk.py:367
+#, python-format
+msgid "Segmentation-id '%s' is not an integer"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:43
+msgid "Description for the endpoint group"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:62
+msgid "Create an endpoint group"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:70
+msgid "Name for the endpoint group"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:74
+msgid "Type of endpoints in group (e.g. subnet, cidr)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:80
+msgid ""
+"Endpoint(s) for the group. Must all be of the same type. (--value) option "
+"can be repeated"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:108
+msgid "Delete endpoint group(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:116
+msgid "Endpoint group(s) to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:131
+#, python-format
+msgid ""
+"Failed to delete endpoint group with name or ID '%(endpoint_group)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:137
+#, python-format
+msgid "%(result)s of %(total)s endpoint group failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:143
+msgid "List endpoint groups that belong to a given project"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:164
+msgid "Set endpoint group properties"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:172
+msgid "Set a name for the endpoint group"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:176
+msgid "Endpoint group to set (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:192
+#, python-format
+msgid "Failed to set endpoint group %(endpoint_group)s: %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:199
+msgid "Display endpoint group details"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/endpoint_group.py:206
+msgid "Endpoint group to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:54
+msgid "Description of the IKE policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:59
+msgid "Authentication algorithm"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:64
+msgid "Encryption algorithm"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:69
+msgid "IKE Phase1 negotiation mode"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:74
+msgid "IKE version for the policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:79
+msgid "Perfect Forward Secrecy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:116
+msgid "Create an IKE policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:124
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:201
+msgid "Name of the IKE policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:140
+msgid "Delete IKE policy (policies)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:148
+msgid "IKE policy to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:161
+#, python-format
+msgid "Failed to delete IKE policy with name or ID '%(ikepolicy)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:167
+#, python-format
+msgid "%(result)s of %(total)s IKE policy failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:173
+msgid "List IKE policies that belong to a given project"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:193
+msgid "Set IKE policy properties"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:205
+msgid "IKE policy to set (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:220
+#, python-format
+msgid "Failed to set IKE policy '%(ike)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:226
+msgid "Display IKE policy details"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ikepolicy.py:233
+msgid "IKE policy to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:71
+msgid "Description for the connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:80
+msgid "MTU size for the connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:85
+msgid "Initiator state"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:90
+msgid ""
+"Remote subnet(s) in CIDR format. Cannot be specified when using endpoint "
+"groups. Only applicable, if subnet provided for VPN service."
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:96
+msgid "Local endpoint group (name or ID) with subnet(s) for IPsec connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:101
+msgid "Peer endpoint group (name or ID) with CIDR(s) for IPSec connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:107
+msgid "Enable IPSec site connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:112
+msgid "Disable IPSec site connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:116
+msgid ""
+"An ID to be used instead of the external IP address for a virtual router"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:163
+msgid "Create an IPsec site connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:171
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:315
+msgid ""
+"Peer router identity for authentication. Can be IPv4/IPv6 address, e-mail "
+"address, key id, or FQDN"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:176
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:319
+msgid "Peer gateway public IPv4/IPv6 address or FQDN"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:185
+msgid "VPN service instance associated with this connection (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:191
+msgid "IKE policy associated with this connection (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:196
+msgid "IPsec policy associated with this connection (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:201
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:323
+msgid "Set friendly name for the connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:236
+msgid "You must specify both local and peer endpoint groups"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:240
+msgid "You must specify endpoint groups or peer CIDR(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:250
+msgid "Delete IPsec site connection(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:258
+msgid "IPsec site connection to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:273
+#, python-format
+msgid ""
+"Failed to delete IPsec site connection with name or ID '%(ipsec_site_conn)s':"
+" %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:279
+#, python-format
+msgid "%(result)s of %(total)s IPsec site connection failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:285
+msgid "List IPsec site connections that belong to a given project"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:308
+msgid "Set IPsec site connection properties"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:327
+msgid "IPsec site connection to set (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:348
+#, python-format
+msgid "Failed to set IPsec site connection '%(ipsec_conn)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:355
+msgid "Show information of a given IPsec site connection"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsec_site_connection.py:362
+msgid "IPsec site connection to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:53
+msgid "Description of the IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:58
+msgid "Authentication algorithm for IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:63
+msgid "Encapsulation mode for IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:68
+msgid "Encryption algorithm for IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:78
+msgid "Perfect Forward Secrecy for IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:83
+msgid "Transform protocol for IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:114
+msgid "Create an IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:122
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:200
+msgid "Name of the IPsec policy"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:138
+msgid "Delete IPsec policy(policies)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:146
+msgid "ipsec policy to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:159
+#, python-format
+msgid "Failed to delete IPsec policy with name or ID '%(ipsecpolicy)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:165
+#, python-format
+msgid "%(result)s of %(total)s IPsec policy failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:171
+msgid "List IPsec policies that belong to a given project"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:192
+msgid "Set IPsec policy properties"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:204
+msgid "IPsec policy to set (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:219
+#, python-format
+msgid "Failed to set IPsec policy '%(ipsec)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:225
+msgid "Display IPsec policy details"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/ipsecpolicy.py:232
+msgid "IPsec policy to display (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:46
+msgid "Description for the VPN service"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:50
+msgid "Local private subnet (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:54
+msgid "Flavor for the VPN service (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:59
+msgid "Enable VPN service"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:64
+msgid "Disable VPN service"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:98
+msgid "Create an VPN service"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:106
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:193
+msgid "Name for the VPN service"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:111
+msgid "Router for the VPN service (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:131
+msgid "Delete VPN service(s)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:139
+msgid "VPN service to delete (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:152
+#, python-format
+msgid "Failed to delete VPN service with name or ID '%(vpnservice)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:158
+#, python-format
+msgid "%(result)s of %(total)s vpn service failed to delete."
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:164
+msgid "List VPN services that belong to a given project"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:185
+msgid "Set VPN service properties"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:197
+msgid "VPN service to modify (name or ID)"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:212
+#, python-format
+msgid "Failed to set vpn service '%(vpn)s': %(e)s"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:218
+msgid "Display VPN service details"
+msgstr ""
+
+#: neutronclient/osc/v2/vpnaas/vpnservice.py:225
+msgid "VPN service to display (name or ID)"
+msgstr ""
+
+#: neutronclient/tests/unit/test_exceptions.py:29
+#: neutronclient/tests/unit/test_exceptions.py:42
+#, python-format
+msgid "Exception with %(reason)s"
+msgstr ""
+
+#: neutronclient/v2_0/client.py:313
+#, python-format
+msgid "Unable to serialize object of type = '%s'"
+msgstr ""
+
+#: neutronclient/v2_0/client.py:344
+#, python-format
+msgid "Failed to connect to Neutron server after %d attempts"
+msgstr ""
+
+#: neutronclient/v2_0/client.py:347
+msgid "Failed to connect Neutron server"
+msgstr ""
+
+#: neutronclient/v2_0/client.py:436
+#, python-format
+msgid "Unable to find %(resource)s with id '%(id)s'"
+msgstr ""
+
+#: neutronclient/v2_0/client.py:464
+#, python-format
+msgid "Unable to find %(resource)s with name '%(name)s'"
+msgstr ""
+
+#: neutronclient/v2_0/client.py:484
+#, python-format
+msgid "Unable to find %(resource)s with name or id '%(name_or_id)s'"
+msgstr ""
+

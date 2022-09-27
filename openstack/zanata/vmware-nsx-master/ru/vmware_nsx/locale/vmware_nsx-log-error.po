@@ -1,0 +1,964 @@
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: vmware-nsx 0.0.2.dev1348\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-04-12 20:50+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-04-12 06:51+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: vmware_nsx/api_client/base.py:184
+#, python-format
+msgid "Login request for an invalid connection: '%s'"
+msgstr ""
+
+#: vmware_nsx/api_client/client.py:104
+#, python-format
+msgid "Request timed out: %(method)s to %(url)s"
+msgstr ""
+
+#: vmware_nsx/api_client/client.py:115
+#, python-format
+msgid "Received error code: %s"
+msgstr ""
+
+#: vmware_nsx/api_client/client.py:116
+#, python-format
+msgid "Server Error Message: %s"
+msgstr ""
+
+#: vmware_nsx/api_client/client.py:122
+#, python-format
+msgid ""
+"%(method)s to %(url)s, unexpected response code: %(status)d (content = "
+"'%(body)s')"
+msgstr ""
+
+#: vmware_nsx/api_client/client.py:139
+msgid "Unable to determine NSX version. Plugin might not work as expected."
+msgstr ""
+
+#: vmware_nsx/api_client/eventlet_client.py:146
+#, python-format
+msgid "Login error \"%s\""
+msgstr ""
+
+#: vmware_nsx/common/sync.py:627
+#, python-format
+msgid ""
+"An error occurred while communicating with NSX backend. Will retry "
+"synchronization in %d seconds"
+msgstr ""
+
+#: vmware_nsx/common/utils.py:230
+#, python-format
+msgid "Error while opening file %(path)s: %(err)s"
+msgstr ""
+
+#: vmware_nsx/db/nsxv_db.py:306
+#, python-format
+msgid "Duplicate internal network for purpose %s"
+msgstr ""
+
+#: vmware_nsx/db/nsxv_db.py:339
+#, python-format
+msgid "Duplicate internal Edge IP %s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/lsnmanager.py:72
+#, python-format
+msgid "Unable to find Logical Service Node for network %s."
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/lsnmanager.py:113
+#, python-format
+msgid ""
+"Unable to find Logical Service Node Port for LSN %(lsn_id)s and subnet "
+"%(subnet_id)s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/lsnmanager.py:140
+#, python-format
+msgid ""
+"Unable to find Logical Service Node Port for LSN %(lsn_id)s and mac address "
+"%(mac)s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/lsnmanager.py:322
+#, python-format
+msgid "Error while configuring LSN port %s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/migration.py:83
+#, python-format
+msgid "Port %s is already gone"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:138
+#, python-format
+msgid ""
+"Error while creating subnet %(cidr)s for network %(network)s. Please, "
+"contact administrator"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/nsx.py:243
+#, python-format
+msgid "Error while configuring DHCP for port %s"
+msgstr ""
+
+#: vmware_nsx/dhcp_meta/rpc.py:142
+#, python-format
+msgid ""
+"An error occurred while operating on the metadata access network for router:"
+"'%s'"
+msgstr ""
+
+#: vmware_nsx/dvs/dvs.py:91
+#, python-format
+msgid "Failed to create port group for %(net_id)s with tag %(tag)s."
+msgstr ""
+
+#: vmware_nsx/dvs/dvs.py:164
+#, python-format
+msgid "Failed to get object properties of %s"
+msgstr ""
+
+#: vmware_nsx/dvs/dvs.py:180
+#, python-format
+msgid "Failed to reconfigure DVPortGroup %s"
+msgstr ""
+
+#: vmware_nsx/dvs/dvs.py:255
+#, python-format
+msgid "Failed to delete port group for %s."
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/l2gateway.py:130
+#, python-format
+msgid "There is no NSX mapping for connector type %s"
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/router.py:258
+#, python-format
+msgid "Cannot update NSX routes %(routes)s for router %(router_id)s"
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/switch.py:151 vmware_nsx/nsxlib/mh/switch.py:166
+#, python-format
+msgid "Network not found, Error: %s"
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/switch.py:189 vmware_nsx/nsxlib/mh/switch.py:299
+#: vmware_nsx/nsxlib/mh/switch.py:330
+#, python-format
+msgid "Port or Network not found, Error: %s"
+msgstr ""
+
+#: vmware_nsx/nsxlib/mh/switch.py:372
+#, python-format
+msgid "Port not found, Error: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/dvs/plugin.py:167 vmware_nsx/plugins/nsx_v/plugin.py:843
+msgid "Failed to create network"
+msgstr ""
+
+#: vmware_nsx/plugins/dvs/plugin.py:228
+#, python-format
+msgid "Unable to delete DVS port group %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:237
+#, python-format
+msgid "Unable to process default l2 gw service: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:275
+#, python-format
+msgid "Unable to create port on NSX logical router %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:364
+#, python-format
+msgid ""
+"Unable to plug attachment in NSX logical router port %(r_port_id)s, "
+"associated with Neutron %(q_port_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:439
+#, python-format
+msgid ""
+"An exception occurred while creating the neutron port %s on the NSX plaform"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:546
+#, python-format
+msgid ""
+"Ignoring exception as this means the peer for port '%s' has already been "
+"deleted."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:1183
+msgid "Unable to create port or set port attachment in NSX."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:1315
+#, python-format
+msgid "Unable to update port id: %s."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:1411
+#, python-format
+msgid ""
+"Unable to create L3GW port on logical router %(router_uuid)s. Verify Default "
+"Layer-3 Gateway service %(def_l3_gw_svc)s id is correct"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:1790
+#, python-format
+msgid "Logical router resource %s not found on NSX platform"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:1826
+#, python-format
+msgid ""
+"An error occurred while removing NAT rules on the NSX platform for floating "
+"ip:%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:1944
+#, python-format
+msgid ""
+"An error occurred while creating NAT rules on the NSX platform for floating "
+"ip:%(floating_ip)s mapped to internal ip:%(internal_ip)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:2068
+msgid ""
+"Unable to remove gateway service from NSX plaform - the resource was not "
+"found"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:2124
+#, python-format
+msgid ""
+"Rolling back database changes for gateway device %s because of an error in "
+"the NSX backend"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:2311
+#, python-format
+msgid ""
+"Removal of gateway device: %(neutron_id)s failed on NSX backend (NSX id:"
+"%(nsx_id)s). Neutron and NSX states have diverged."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:2359
+#, python-format
+msgid ""
+"Error while updating security profile %(uuid)s with name %(name)s: %(error)s."
+""
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_mh/plugin.py:2400
+#, python-format
+msgid ""
+"An exception occurred while removing the NSX security profile "
+"%(sec_profile_id)s, associated with Netron security group %(sec_group_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/managers.py:50
+#, python-format
+msgid ""
+"Type driver '%(new_driver)s' ignored because type driver '%(old_driver)s' is "
+"already registered for type '%(type)s'"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/md_proxy.py:182
+#, python-format
+msgid "Exception %s while creating internal network for metadata service"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/md_proxy.py:454
+#, python-format
+msgid "Exception %s while creating internal edge for metadata service"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:345
+#, python-format
+msgid "Unable to update section for logging. %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:925
+msgid "Failed to delete network"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:1099
+msgid "Failed to create port"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:1332
+#, python-format
+msgid "Could not delete the spoofguard policy. Exception %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:1680
+#, python-format
+msgid "Failed to update DHCP for subnet %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:1701
+#, python-format
+msgid "Could not set up DHCP Edge firewall. Exception %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:2127
+#: vmware_nsx/plugins/nsx_v/plugin.py:2149
+msgid "Failed to update edge router"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:2316
+msgid "Failed to create security group"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:2370
+msgid "Failed to delete security group"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:2498
+msgid "Failed to create security group rule"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/plugin.py:2519
+msgid "Failed to delete security group rule"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/drivers/distributed_router_driver.py:442
+#, python-format
+msgid "VDR DHCP binding is missing for %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:214
+#, python-format
+msgid "VCNS: Failed to get edge status:\n"
+"%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:244
+#, python-format
+msgid "NSXv: Failed to query vnic %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:265
+#, python-format
+msgid ""
+"NSXv: %(num)s jobs still running on edge %(edge_id)s. Too many jobs may lead "
+"to job time out at the backend"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:270
+msgid "NSXv: jobs are still runnings!"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:330
+#, python-format
+msgid "Failed to update vdr interface on edge: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:340
+#, python-format
+msgid "Failed to delete vdr interface on edge: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:354
+#, python-format
+msgid "Failed to delete vnic %(vnic_index)s: on edge %(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:360
+#, python-format
+msgid "Failed to delete vnic %d"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:395
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:566
+msgid "NSXv: deploy edge failed."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:412
+#, python-format
+msgid "VCNS: Edge %s status query failed."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:418
+#, python-format
+msgid "VCNS: Unable to retrieve edge %(edge_id)s status. Retry %(retries)d."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:424
+#, python-format
+msgid "VCNS: Unable to retrieve edge %s status. Abort."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:433
+#, python-format
+msgid "NSXv: Failed to deploy edge %(edge_id)s status %(status)d"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:448
+#, python-format
+msgid "Failed to update edge: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:464
+#, python-format
+msgid "VCNS: Failed to delete %(edge_id)s:\n"
+"%(response)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:469
+#, python-format
+msgid "VCNS: Failed to delete %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:478
+#, python-format
+msgid "VCNS: Failed to get edges:\n"
+"%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:653
+#, python-format
+msgid "VCNS: Failed to get nat config:\n"
+"%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:677
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:802
+#, python-format
+msgid "VCNS: Failed to create snat rule:\n"
+"%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:719
+#, python-format
+msgid "VCNS: Failed to delete snat rule:\n"
+"%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:911
+#, python-format
+msgid "VCNS: Failed to update routes:\n"
+"%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:965
+msgid "Failed to get service config"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:977
+msgid "Failed to enable loadbalancer service config"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:985
+#, python-format
+msgid "NSXv: Failed to get job for %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:998
+#, python-format
+msgid "Unable to delete %(pg)s (job status %(state)s) exception %(ex)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:1035
+#, python-format
+msgid "Failed to %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:1072
+#, python-format
+msgid "Failed to create bridge in the %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_appliance_driver.py:1079
+#, python-format
+msgid "Failed to delete bridge in the %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:241
+#, python-format
+msgid "Failed to get firewall with edge id: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:269
+#, python-format
+msgid "Failed to get firewall rule: %(rule_id)s with edge_id: %(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:285
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:416
+#, python-format
+msgid "Failed to update firewall with edge_id: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:297
+#, python-format
+msgid "Failed to delete firewall with edge_id:%s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:312
+#, python-format
+msgid "Failed to update firewall rule: %(rule_id)s with edge_id: %(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:326
+#, python-format
+msgid "Failed to delete firewall rule: %(rule_id)s with edge_id: %(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:344
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:372
+#, python-format
+msgid ""
+"Failed to add firewall rule above: %(rule_id)s with edge_id: %(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_firewall_driver.py:383
+#, python-format
+msgid "Failed to append a firewall rulewith edge_id: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_ipsecvpn_driver.py:138
+#, python-format
+msgid "Failed to update ipsec vpn configuration with edge_id: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_ipsecvpn_driver.py:149
+#, python-format
+msgid "Failed to delete ipsec vpn configuration with edge_id: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:464
+#, python-format
+msgid "net %(id)s on edge %(edge_id)s overlaps with new net %(net_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:475
+#, python-format
+msgid ""
+"unexpected sub intf %(id)s on edge %(edge_id)s overlaps with new net "
+"%(net_id)s. we would update with deleting it for DB consistency"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:788
+#, python-format
+msgid ""
+"Failed to find the dhcp port on subnet %s to do metadata host route "
+"insertion"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:895
+#, python-format
+msgid ""
+"Remove network %(id)s failed since no binding found on edge %(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:916
+#, python-format
+msgid ""
+"Failed to delete vnic %(vnic_index)d tunnel %(tunnel_index)d on edge "
+"%(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:1041
+#, python-format
+msgid ""
+"Failed to update the dhcp service for %(edge_id)s  on vnic %(vnic_index)d "
+"tunnel %(tunnel_index)d"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:1083
+#, python-format
+msgid ""
+"Failed to delete the tunnel %(tunnel_index)d on vnic %(vnic_index)dfrom DHCP "
+"Edge %(edge_id)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:1452
+msgid "Failed to query conflict_router_ids"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:1787
+#, python-format
+msgid ""
+"vnic binding on edge %(edge_id)s for network %(net_id)s not found, so route: "
+"destination: %(dest)s, nexthop: %(nexthop)s can't be applied!"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:2028
+msgid "NSXv: network is still in use at the backend"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/edge_utils.py:2102
+#, python-format
+msgid "Failed to deploy Edge for router %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/vcns.py:842
+#, python-format
+msgid "Unable to get NSX version. Exception: %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:98
+#, python-format
+msgid "Task %(task)s encountered exception in %(func)s at state %(state)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:188
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:207
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:229
+#, python-format
+msgid "Task %(task)s encountered exception in %(cb)s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:319
+msgid "TaskManager terminating because of an exception"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v/vshield/tasks/tasks.py:373
+msgid "Exception in _check_pending_tasks"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:283
+#, python-format
+msgid "Failed to update firewall rule logging for rule in section %s"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:516
+#, python-format
+msgid "Failed to create network %s"
+msgstr "Не удалось создать сеть %s"
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:624
+#: vmware_nsx/plugins/nsx_v3/plugin.py:1137
+#: vmware_nsx/services/l2gateway/nsx_v3/driver.py:184
+msgid "Unable to update NSX backend, rolling back changes on neutron"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:907
+#, python-format
+msgid "Failed to create port %s on NSX backend"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:1354
+#, python-format
+msgid ""
+"Failed to set gateway info for router being created: %s - removing router"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:1628
+#, python-format
+msgid ""
+"router port on router %(router_id)s for net %(net_id)s not found at the "
+"backend"
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:1798
+msgid "Unable to create security-group on the backend."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:1827
+#, python-format
+msgid ""
+"Failed to create backend firewall rules for security-group %(name)s "
+"(%(id)s), rolling back changes."
+msgstr ""
+
+#: vmware_nsx/plugins/nsx_v3/plugin.py:1853
+#, python-format
+msgid ""
+"Failed to update security-group %(name)s (%(id)s), rolling back changes in "
+"Neutron."
+msgstr ""
+
+#: vmware_nsx/services/l2gateway/nsx_v/driver.py:82
+msgid "Failed to create backend device for L2 gateway"
+msgstr ""
+
+#: vmware_nsx/services/l2gateway/nsx_v/driver.py:144
+msgid "Failed to update NSX, rolling back changes on neutron"
+msgstr ""
+
+#: vmware_nsx/services/l2gateway/nsx_v3/driver.py:218
+msgid "Unable to create L2 gateway port, rolling back changes on neutron"
+msgstr ""
+
+#: vmware_nsx/services/l2gateway/nsx_v3/driver.py:233
+msgid ""
+"Unable to add L2 gateway connection mappings, rolling back changes on "
+"neutron"
+msgstr ""
+
+#: vmware_nsx/services/l2gateway/nsx_v3/driver.py:254
+#, python-format
+msgid "Unable to delete bridge endpoint %s on the backend."
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:209
+#: vmware_nsx/services/lbaas/nsx_v/v2/loadbalancer_mgr.py:63
+#: vmware_nsx/services/lbaas/nsx_v/v2/pool_mgr.py:80
+#, python-format
+msgid "Failed to create pool %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:227
+#: vmware_nsx/services/lbaas/nsx_v/v2/pool_mgr.py:112
+#, python-format
+msgid "Failed to update pool %s"
+msgstr "Неудалось обновить пул %s"
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:240
+#: vmware_nsx/services/lbaas/nsx_v/v2/loadbalancer_mgr.py:87
+#: vmware_nsx/services/lbaas/nsx_v/v2/pool_mgr.py:143
+#, python-format
+msgid "Failed to delete pool %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:242
+#, python-format
+msgid "No mapping found for pool %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:266
+#: vmware_nsx/services/lbaas/nsx_v/v2/listener_mgr.py:150
+#, python-format
+msgid "Failed to create app profile on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:286
+#: vmware_nsx/services/lbaas/nsx_v/v2/listener_mgr.py:172
+#, python-format
+msgid "Failed to create vip on Edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:306
+#: vmware_nsx/services/lbaas/nsx_v/v2/listener_mgr.py:233
+#, python-format
+msgid "Failed to update app profile on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:317
+#, python-format
+msgid "Failed to update vip on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:323
+#, python-format
+msgid "No mapping found for vip %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:338
+#: vmware_nsx/services/lbaas/nsx_v/v2/listener_mgr.py:254
+#, python-format
+msgid "vip not found on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:343
+#: vmware_nsx/services/lbaas/nsx_v/v2/listener_mgr.py:260
+#, python-format
+msgid "Failed to delete vip on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:349
+#: vmware_nsx/services/lbaas/nsx_v/v2/listener_mgr.py:266
+#, python-format
+msgid "app profile not found on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:354
+#: vmware_nsx/services/lbaas/nsx_v/v2/listener_mgr.py:272
+#, python-format
+msgid "Failed to delete app profile on Edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:389
+#: vmware_nsx/services/lbaas/nsx_v/v2/member_mgr.py:91
+#, python-format
+msgid "Failed to create member on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:413
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:443
+#: vmware_nsx/services/lbaas/nsx_v/v2/member_mgr.py:135
+#, python-format
+msgid "Failed to update member on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:474
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:496
+#, python-format
+msgid "Failed to associate monitor on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:522
+#: vmware_nsx/services/lbaas/nsx_v/v2/healthmon_mgr.py:139
+#, python-format
+msgid "Failed to update monitor on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:552
+#: vmware_nsx/services/lbaas/nsx_v/v2/healthmon_mgr.py:168
+#, python-format
+msgid "Failed to delete monitor mapping on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:566
+#: vmware_nsx/services/lbaas/nsx_v/v2/healthmon_mgr.py:182
+#, python-format
+msgid "Failed to delete monitor on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v1/edge_loadbalancer_driver.py:582
+#, python-format
+msgid "Failed to read load balancer statistics, edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v2/healthmon_mgr.py:90
+#: vmware_nsx/services/lbaas/nsx_v/v2/healthmon_mgr.py:108
+#, python-format
+msgid "Failed to create health monitor on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v2/member_mgr.py:138
+#, python-format
+msgid "Pool %(pool_id)s on Edge %(edge_id)s has no members to update"
+msgstr ""
+
+#: vmware_nsx/services/lbaas/nsx_v/v2/member_mgr.py:172
+#, python-format
+msgid "Failed to delete member on edge: %s"
+msgstr ""
+
+#: vmware_nsx/services/qos/nsx_v3/plugin.py:57
+msgid "Failed to create qos-policy"
+msgstr ""
+
+#: vmware_nsx/shell/nsxadmin.py:196
+#, python-format
+msgid "Supported list of NSX-V resources: %s"
+msgstr ""
+
+#: vmware_nsx/shell/nsxadmin.py:200
+#, python-format
+msgid "Supported list of NSX-V3 resources: %s"
+msgstr ""
+
+#: vmware_nsx/shell/nsxadmin.py:210
+#, python-format
+msgid "Supported list of operations for the NSX-V resource %s"
+msgstr ""
+
+#: vmware_nsx/shell/nsxadmin.py:218
+#, python-format
+msgid "Supported list of operations for the NSX-V3 resource %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:68
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:73
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:78
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:105
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:134
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:140
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:147
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:215
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:176
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:191
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:110
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:115
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:120
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/spoofguard_policy.py:131
+#, python-format
+msgid "%s"
+msgstr "%s"
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:86
+#, python-format
+msgid "Edge: %s is not a backup edge; aborting delete"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:156
+#, python-format
+msgid "Edge %s no mismatch with NSX"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:186
+#, python-format
+msgid "No database entry for router id %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:191
+#, python-format
+msgid "Could not determine the name for Edge %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:210
+msgid "Update edge..."
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:213
+#, python-format
+msgid "Update failed - %s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/backup_edges.py:218
+#, python-format
+msgid "Edge %s has no backup prefix on NSX"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/dhcp_binding.py:99
+msgid "Need to specify edge-id parameter"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:174
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:189
+#, python-format
+msgid "Edge %s not found"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:182
+#, python-format
+msgid "Edge appliance size not in %(size)s"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:198
+msgid ""
+"Need to specify edge-id parameter and attribute to update. Add --property "
+"edge-id=<edge-id> --property highavailability=True"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/edges.py:204
+msgid "Need to specify edge-id. Add --property edge-id=<edge-id>"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/networks.py:59
+msgid ""
+"Need to specify dvs-id parameter and attribute to update. Add --property dvs-"
+"id=<dvs-id> --property teamingpolicy=<policy>"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/networks.py:66
+msgid "Need to specify dvs-id. Add --property dvs-id=<dvs-id>"
+msgstr ""
+
+#: vmware_nsx/shell/admin/plugins/nsxv/resources/networks.py:81
+msgid "No teaming policy set. Add --property teamingpolicy=<policy>"
+msgstr ""
+

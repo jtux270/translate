@@ -1,0 +1,279 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: oslo.utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-03 14:09+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "3.13.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "3.18.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "3.35.1-4"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "3.36.5"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:21
+msgid "3.40.5"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "3.40.6"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:43
+msgid "3.41.3"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:21
+msgid "3.41.4"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "3.41.5"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:37
+msgid "3.42.1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:21
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "4.1.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:22
+msgid "4.4.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "4.5.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:22
+msgid "4.7.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:43 current stable/wallaby>:5
+msgid "4.8.0"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:22 current
+msgid "4.9.1"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current
+msgid "4.9.2-1"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:31
+msgid ""
+"A wrapper for hashlib.md5() has been added to allow OpenStack to run on "
+"systems where FIPS is enabled.  Under FIPS, md5 is disabled and calls to "
+"hashlib.md5() will fail.  In most cases in OpenStack, though, md5 is not "
+"used within a security context."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:52 current stable/wallaby>:14
+msgid ""
+"Add a ``strict`` flag to ``netutils.is_valid_ipv4`` to allowing users to "
+"restrict validation to IP addresses in presentation format (``a.b.c.d``) as "
+"opposed to address format (``a.b.c.d``, ``a.b.c``, ``a.b``, ``a``)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:20 stable/rocky>:20 stable/stein>:36
+#: stable/train>:36 stable/ussuri>:52
+msgid ""
+"Additional password names were included from real world logs that contained "
+"sensitive information."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:10 stable/queens>:35
+#: stable/rocky>:35 stable/stein>:10 stable/stein>:51 stable/train>:10
+#: stable/train>:62 stable/ussuri>:10
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:27 current
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:41
+msgid ""
+"Downstream python already supports this option, though.  This wrapper simply "
+"allows for this option to be supported where the underlying python version "
+"supports it."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid "Expanded range of allowed ports by adding 0 to valid number."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:36
+msgid ""
+"In https://bugs.python.org/issue9216, a proposal has been made to allow the "
+"addition of a keyword parameter usedforsecurity, which can be used to "
+"designate non-security context uses.  In this case, md5() operations would "
+"be permitted.  This feature is expected to be delivered in python 3.9."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid "Introduce reno for deployer release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:29 stable/rocky>:29 stable/stein>:45
+#: stable/train>:56
+msgid ""
+"It also ensures that some fancy names with a common base, but added number "
+"are actually taken care of."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 branch>:48 current stable/victoria>:10
+#: stable/victoria>:27 stable/wallaby>:10 stable/wallaby>:27
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:14
+msgid ""
+"New method ``is_json`` ``is_yaml`` added in fileutils. These can be used to "
+"check if file is JSON or YAML formatted."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:31
+msgid ""
+"New method ``netutils.get_mac_addr_by_ipv6(ipv6, dialect)`` extracts the MAC "
+"address from IPv6 addresses generated from MACs."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:31 current
+msgid ""
+"Oslo.utils's ``fnmatch`` module is deprecated, please use the stdlib "
+"``fnmatch`` module which is thread safe for python 3+."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:10
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:10 stable/rocky>:10 stable/stein>:26
+#: stable/train>:26 stable/train>:48 stable/ussuri>:42
+msgid "Security Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:30
+msgid ""
+"Support for Python 2.7 has been dropped. The minimum version of Python now "
+"supported is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:36 current
+msgid ""
+"Support for parsing the ``human`` format has been deprecated and will be "
+"removed in a future release."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14 stable/rocky>:14 stable/stein>:30
+#: stable/train>:30 stable/ussuri>:46
+msgid ""
+"This patch ensures that we mask sensitive data when masking dicts, even if "
+"the case doesn't match. This means the behaviour of mask_password and "
+"mask_dict_password is now the same."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:25 stable/rocky>:25 stable/stein>:41
+#: stable/train>:52
+msgid ""
+"This patch ensures we actually mask sensitive data, even if case doesn't "
+"match the static entry we have in the patterns."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:26
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:39 stable/rocky>:39 stable/stein>:55
+#: stable/train>:66
+msgid "https://bugs.launchpad.net/tripleo/+bug/1850843"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current
+msgid ""
+"keystoneidsentinel singleton was introduced to generate random keystone-like "
+"UUIDs. New sentinel could be used in the same way as existing uuidsentinel."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14 stable/train>:14 stable/ussuri>:14
+msgid ""
+"qemu 4.1.0 output shifts to scientific notation at 1000mb, breaking oslo."
+"utils. ``QemuImgInfo`` is now fixed to support this notation."
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "oslo.utils Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Unreleased Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

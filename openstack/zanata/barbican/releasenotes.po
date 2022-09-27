@@ -1,0 +1,755 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Barbican Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-18 20:59+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../<reno.sphinxext stable/rocky>:61
+msgid ""
+"(For deployments overriding default policies) After upgrading, please review "
+"Barbican policy files and ensure that you port any rules tied to `order:put` "
+"are remapped to `orders:put`."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:5
+msgid "1.0.0-5"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:82
+msgid "10.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:5
+msgid "10.0.0-9"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:78
+msgid "11.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:5
+msgid "11.0.0-8"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:21
+msgid "12.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:5
+msgid "12.0.0-1"
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:5 current
+msgid "12.0.0.0rc1-15"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:5
+msgid "2.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:5
+msgid "3.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:5
+msgid "4.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:5
+msgid "5.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:53
+msgid "6.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:5
+msgid "6.0.1-12"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:34
+msgid "7.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:5
+msgid "7.0.0-17"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:5
+msgid "8.0.0"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:5
+msgid "9.0.1-7"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:34 stable/ussuri>:34 stable/victoria>:34
+#: stable/wallaby>:50
+msgid ""
+"A new \"token_labels\" option has been added to the PKCS#11 driver which "
+"supersedes the previous \"token_label\" option.  The new option is used to "
+"specify a list of tokens that can be used by Barbican.  This is required for "
+"some HSM devices that use separate tokens for load balancing.  For most use "
+"cases the new option will just have a single token.  The old option is "
+"deprecated, but will still be used if present."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:28 stable/ussuri>:28 stable/victoria>:28
+#: stable/wallaby>:44
+msgid ""
+"Added a new boolean option to the PKCS#11 backend: `os_locking_ok`.  When "
+"set to True, the flag CKF_OS_LOCKING_OK will be passed to the C_Initialize "
+"function.  The new option defaults to False."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:14 stable/rocky>:43
+msgid ""
+"Added new options to the PKCS#11 Cryptographic Plugin configuration to "
+"enable the use of different encryption and hmac mechanisms. Added support "
+"for `CKM_AES_CBC` encryption in the PKCS#11 Cryptographic Plugin."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:14
+msgid "Added new tool ``barbican-status upgrade check``."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:24
+msgid ""
+"Added two new subcommands to `barbican-manage hsm` that can query the HSM to "
+"check if a MKEK or HMAC key with the given label already exists.  See "
+"`barbican-manage hsm check_mkek --help` and `barbican-manage hsm check_hmac -"
+"-help` for details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:14 stable/ussuri>:14 stable/victoria>:14
+#: stable/wallaby>:30
+msgid ""
+"Added two options for the PKCS#11 Crypto Plugin: `[p11_crypto_plugin]/"
+"token_serial_number` and `[p11_crypto_plugin]/token_label`.  Both are "
+"optional and can be used instead of `[p11_crypto_plugin]/slot_id` to "
+"identify the Token to be used by the PKCS#11 plugin.  When either one of the "
+"new options is defined the plugin will search all slots on the PKCS#11 "
+"device for a token that matches the given value.  `token_serial_number` has "
+"the highest precendence and other values will be ignored when this value is "
+"set.  If `token_serial_number` is not set, then `token_label` has the next "
+"highest precedence and `slot_id` will be ignored. `slot_id` will be used "
+"when neither one of the new options is set."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:41 stable/rocky>:22 stable/rocky>:81
+#: stable/stein>:68 stable/train>:67 stable/ussuri>:67 stable/victoria>:67
+#: stable/victoria>:97 stable/wallaby>:247
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:85
+msgid ""
+"By default barbican checks only the algorithm and the bit_length when "
+"creating a new secret. The xts-mode cuts the key in half for aes, so for "
+"using aes-256 with xts, you have to use a 512 bit key, but barbican allows "
+"only a maximum of 256 bit. A check for the mode within the "
+"_is_algorithm_supported method of the class SimpleCryptoPlugin was added to "
+"allow 512 bit keys for aes-xts in this plugin."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:76
+msgid "CAs"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:72
+msgid "Certificate Orders"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:86
+msgid "Critical Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/victoria>:87
+msgid ""
+"Default for auto_db_create has been changed to False (was True). This is a "
+"change compared to the previous behavior, but required to protect production "
+"deployments from performing upgrades without control. If you wish to keep "
+"the auto db creation/upgrade behavior, change this to True in your "
+"configuration."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:33 stable/rocky>:14 stable/stein>:60
+msgid ""
+"Deprecated the `generate_iv` option name.  It has been renamed to "
+"`aes_gcm_generate_iv` to reflect the fact that it only applies to the "
+"CKM_AES_GCM mechanism."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:27 stable/rocky>:73
+msgid ""
+"Deprecated the `p11_crypto_plugin:algoritm` option. Users should update "
+"their configuration to use `p11_crypto_plugin:encryption_mechanism` instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:68 stable/pike>:21
+#: stable/queens>:23 stable/queens>:68 stable/rocky>:10 stable/rocky>:69
+#: stable/stein>:56 stable/train>:55 stable/ussuri>:55 stable/victoria>:55
+#: stable/wallaby>:125
+msgid "Deprecation Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:76 stable/victoria>:101
+msgid "Fixed Story # 2007732: Migrations broken on MySQL 8.x."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:45 stable/rocky>:26 stable/stein>:72
+msgid ""
+"Fixed Story #2004734:  Added a new option `always_set_cka_sensitive` to fix "
+"a regression that affected Safenet HSMs.  The option defaults to `True` as "
+"required by Safenet HSMs.  Other HSMs may require it be set to `False`."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:78
+msgid ""
+"Fixed Story #2004734: Added a new option 'hmac_keywrap_mechanism' to make "
+"the mechanism used to calculate a HMAC from an wrapped PKEK configurable. "
+"This was introduced because of an problem with Utimaco HSMs which throw an "
+"'CKR_MECHANISM_INVALID' error, e.g. when a new PKEK is generated. For "
+"Utimaco HSMs, 'hmac_keywrap_mechanism' should be set to 'CKM_AES_MAC' in "
+"barbican.conf."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:251
+msgid ""
+"Fixed Story #2006978:  An admin user now can delete other users secrets by "
+"adjust the policy file."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:71 stable/ussuri>:71 stable/victoria>:71
+#: stable/wallaby>:256
+msgid ""
+"Fixed Story #2008649: Correctly reinitialize PKCS11 object after secondary "
+"failures."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:94
+msgid ""
+"Fixed the response code for invalid subroutes for individual secrets.  The "
+"API was previously responding with the incorrect code \"406 - Method not "
+"allowed\", but now responds correctly with \"404 - Not Found\"."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:60 origin/stable/mitaka>:90
+msgid ""
+"If you are upgrading from previous version of barbican that uses the PKCS#11 "
+"Cryptographic Plugin driver, you will need to run the migration script"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:63
+msgid "Implement secure-rbac for consumers resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:67
+msgid "Implement secure-rbac for containers resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:71
+msgid "Implement secure-rbac for orders resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:75
+msgid "Implement secure-rbac for quotas resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:79
+msgid "Implement secure-rbac for secretmeta resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:83
+msgid "Implement secure-rbac for secrets resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:87
+msgid "Implement secure-rbac for secretstores resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:91
+msgid "Implement secure-rbac for transportkeys resource."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:59
+msgid "Implement secure-rbac policy for ACLs."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:91
+msgid ""
+"It is now possible for barbican-keystone-listener to listen on the same "
+"standard notification topic without interfering with other services by using "
+"the notification listener pools feature of oslo.messaging. To use it, set "
+"the new ``[keystone_notifications]pool_name`` option to some unique value "
+"(but the same for all instances of barbican-keystone-listener service). This "
+"feature is available only for those messaging transports of oslo.messaging "
+"that support it. At the moment those are rabbitmq and kafka. For more "
+"details see `oslo.messagind docs <https://docs.openstack.org/oslo.messaging/"
+"latest/reference/notification_listener.html>`_"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:40
+msgid "Known Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:14
+msgid ""
+"Maintain the policy rules in code and add an oslo.policy CLI script in tox "
+"to generate policy sample file. The script can be called like \"oslopolicy-"
+"sample-generator --config-file=etc/oslo-config-generator/policy.conf\" and "
+"will generate a policy.yaml.sample file with the effective policy."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:10 current origin/stable/mitaka>:30
+#: origin/stable/newton>:20 origin/stable/ocata>:20 stable/pike>:10
+#: stable/queens>:10 stable/rocky>:39 stable/stein>:20 stable/train>:10
+#: stable/ussuri>:10 stable/ussuri>:87 stable/victoria>:10 stable/wallaby>:10
+#: stable/wallaby>:26
+msgid "New Features"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:24
+msgid ""
+"New feature to support multiple secret store plugin backends. This feature "
+"is not enabled by default. To use this feature, the relevant feature flag "
+"needs to be enabled and supporting configuration needs to be added in the "
+"service configuration. Once enabled, a project adminstrator will be able to "
+"specify one of the available secret store backends as a preferred secret "
+"store for their project secrets. This secret store preference applies only "
+"to new secrets (key material) created or stored within that project. "
+"Existing secrets are not impacted. See http://docs.openstack.org/developer/"
+"barbican/setup/plugin_backends.html for instructions on how to setup "
+"Barbican multiple backends, and the API documentation for further details."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:31
+msgid ""
+"New framework for ``barbican-status upgrade check`` command is added. This "
+"framework allows adding various checks which can be run before a Barbican "
+"upgrade to ensure if the upgrade can be performed safely."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/newton>:14
+msgid ""
+"Now within a single deployment, multiple secret store plugin backends can be "
+"configured and used. With this change, a project adminstrator can pre-define "
+"a preferred plugin backend for storing their secrets. New APIs are added to "
+"manage this project level secret store preference."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:48
+msgid ""
+"Operator can now use new CLI tool ``barbican-status upgrade check`` to check "
+"if Barbican deployment can be safely upgraded from N-1 to N release."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:10 stable/pike>:32
+#: stable/queens>:82 stable/rocky>:102
+msgid "Other Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/stein>:37
+msgid ""
+"Port existing policy RuleDefault objects to the newer, more verbose "
+"DocumentedRuleDefaults."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:10 origin/stable/newton>:10
+#: origin/stable/ocata>:10 stable/queens>:58 stable/stein>:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/ussuri>:111
+msgid ""
+"Python 2.7 support has been dropped. Last release of Barbican to support "
+"python 2.7 is OpenStack Train. The minimum version of Python now supported "
+"by Barbican is Python 3.6."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:50
+msgid ""
+"Remap the `order:put` to `orders:put` to align with language in the orders "
+"controller."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:25
+msgid ""
+"Removed application/pkix media type because Barbican will not be using media "
+"types for format conversion."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:146
+msgid "Security Issues"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/liberty>:14
+msgid "Start using reno to manage release notes."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:59 stable/ussuri>:59 stable/victoria>:59
+#: stable/wallaby>:129
+msgid ""
+"The \"token_label\" option in the PKCS#11 driver is deprecated.  Th new "
+"\"token_labels\" option should be used instead.  If present, \"token_label\" "
+"will still be used by appending it to \"token_labels\"."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:72
+msgid ""
+"The 'barbican-db-manage' script is deprecated.  Use the new 'barbican-"
+"manage' utility instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:34
+msgid ""
+"The 'barbican-manage' tool can be used to manage database schema changes as "
+"well as provision and rotate keys in the HSM backend."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:24
+msgid ""
+"The 'http_proxy_to_wsgi' middleware can be used to help barbican respond "
+"with the correct URL refs when it's put behind a TLS proxy (such as HAProxy)."
+" This middleware is disabled by default, but can be enabled via a "
+"configuration option in the oslo_middleware group."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:76
+msgid ""
+"The 'pkcs11-kek-rewrap' script is deprecated.  Use the new 'barbican-manage' "
+"utility instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:80
+msgid ""
+"The 'pkcs11-key-generation' script is deprecated.  Use the new 'barbican-"
+"manage' utility instead."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:56
+msgid ""
+"The Metadata API requires an update to the Database Schema. Existing "
+"deployments that are being upgraded to Mitaka should use the 'barbican-"
+"manage' utility to update the schema."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:19
+msgid ""
+"The Mitaka release includes a new API to add arbitrary user-defined metadata "
+"to Secrets."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:34
+msgid ""
+"The barbican-api-paste.ini configuration file for the paste pipeline was "
+"updated to add the http_proxy_to_wsgi middleware."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:204
+msgid ""
+"The current policy allows all users except those with the audit role to list "
+"a secrets metadata keys and get the metadata values. The new desired policy "
+"will restrict this to members.  For backwards compatibility, the old "
+"policies remain in effect, but they are deprecated and will be removed in "
+"future, leaving the more restrictive new policy."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:182
+msgid ""
+"The current policy allows all users except those with the audit role to list "
+"orders or retrieve an orders metadata.  The new desired policy will restrict "
+"this to members.  For backwards compatibility, the old policies remain in "
+"effect, but they are deprecated and will be removed in future, leaving the "
+"more restrictive new policy."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:238
+msgid ""
+"The current policy allows users with the admin role to add or delete "
+"transport keys.  This interface was only ever intended to be used by system "
+"admins, and so it has been restricted using the new policy to the system "
+"admin only (admins with system_scope:all)."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:232
+msgid ""
+"The current policy only allows users with the admin role to list and get "
+"secretstore resources.  The new policy allows all users to perform these "
+"operations."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:196
+msgid ""
+"The current policy only allows users with the key-manager:service-admin role "
+"to list, get, add, update or delete project quotas.  The new policy allows "
+"system readers to list quotas and get quotas for specific projects and "
+"system admins (role:admin and system_scope:all) to add, update and delete "
+"project quotas."
+msgstr ""
+
+#: ../../<reno.sphinxext branch>:14 current stable/wallaby>:14
+msgid ""
+"The default maximum secret size has been increased from 10 kB to 20 kb, and "
+"the default maximum request size has been increased from 15 kB to 25 kB."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:111
+msgid ""
+"The default value of ``[oslo_policy] policy_file`` config option has been "
+"changed from ``policy.json`` to ``policy.yaml``. Operators who are utilizing "
+"customized or previously generated static policy JSON files (which are not "
+"needed by default), should generate new policy files or convert them in YAML "
+"format. Use the `oslopolicy-convert-json-to-yaml <https://docs.openstack.org/"
+"oslo.policy/latest/cli/oslopolicy-convert-json-to-yaml.html>`_ tool to "
+"convert a JSON to YAML formatted policy file in backward compatible way."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/train>:43 stable/ussuri>:43 stable/victoria>:43
+#: stable/wallaby>:95
+msgid ""
+"The hsm subcommand for the barbican-manage command line tool no longer "
+"requires any parameters at run time.  If any value used by the PKCS#11 value "
+"is needed it will be taken from /etc/barbican/barbican.conf. You may "
+"continue to specify any values on the command line, and those will take "
+"precedence over the values specified in barbican.conf, so any existing "
+"scripts that use barbican-manage should continue to work as expected."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:158
+msgid ""
+"The new secure-rbac policy allows ACLs to be modified or deleted by members "
+"of a project.  This is a change from the previous policy which only allowed "
+"these operations by the project admin or the secret or container creators."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:164
+msgid ""
+"The new secure-rbac policy allows consumers to be added and deleted by "
+"members.  This is a change from the previous policy which only allowed the "
+"secret's creator or admins or those that had a read acl on the secret."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:176
+msgid ""
+"The new secure-rbac policy allows for container deletion by members. This is "
+"a change from the previous policy that only allowed deletion by the creator "
+"or the project admin."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:226
+msgid ""
+"The new secure-rbac policy allows for secret deletion by members.  This is a "
+"change from the previous policy that only allowed deletion by the creator or "
+"the project admin."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:190
+msgid ""
+"The new secure-rbac policy allows for secret deletion by members.  This is a "
+"change from the previous policy that only allowed deletion by the project "
+"admin."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:213
+msgid ""
+"The new secure-rbac policy allows for secret metadata addition, modification "
+"and deletion by members.  This is a change from the previous policy that "
+"only allowed deletion by the project admin or the secret creator."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:220
+msgid ""
+"The new secure-rbac policy allows for two-step secret creation to be done by "
+"any member.  This is a change from the previous policy that only allowed "
+"step two to be performed by the creator."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:170
+msgid ""
+"The new secure-rbac policy allows secrets to be added and removed from "
+"containers by members. This is a change from the previous policy which only "
+"allowed admins to add and remove secrets."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:150
+msgid ""
+"The new secure-rbac policy does not allow listing ACLs for private secrets "
+"or private containers.  This is a change from the previous policy which "
+"allowed listing ACLs of private secrets or private containers by users with "
+"some role assignments on the project.  The previous policy is deprecated, "
+"but it will continue to be used until it is removed in a future release."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:44
+msgid ""
+"The service will encounter errors if you attempt to run this new release "
+"using data stored by a previous version of the PKCS#11 Cryptographic Plugin "
+"that has not yet been migrated for this release.  The logged errors will "
+"look like"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/ocata>:14
+msgid "This release adds http_proxy_to_wsgi middleware to the pipeline."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:14
+msgid ""
+"This release includes a new command line utility 'barbican-manage' that "
+"consolidates and supersedes the separate HSM and database management scripts."
+""
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:24
+msgid ""
+"This release includes significant improvements to the performance of the "
+"PKCS#11 Cryptographic Plugin driver.  These changes will require a data "
+"migration of any existing data stored by previous versions of the PKCS#11 "
+"backend."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:62
+msgid ""
+"This release notify that we will remove Certificate Orders and CAs from API."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:52 origin/stable/ocata>:30
+#: stable/rocky>:57 stable/stein>:44 stable/ussuri>:107 stable/victoria>:83
+#: stable/wallaby>:107
+msgid "Upgrade Notes"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/wallaby>:135
+msgid ""
+"Use of JSON policy files was deprecated by the ``oslo.policy`` library "
+"during the Victoria development cycle. As a result, this deprecation is "
+"being noted in the Wallaby cycle with an anticipated future removal of "
+"support by ``oslo.policy``. As such operators will need to convert to YAML "
+"policy files. Please see the upgrade notes for details on migration of any "
+"custom policy files."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:86
+msgid ""
+"Why are we deprecating Certificate Issuance? There are a few reasons that "
+"were considered for this decision.  First, there does not seem to be a lot "
+"of interest in the community to fully develop the Certificate Authority "
+"integration with Barbican.  We have a few outstanding blueprints that are "
+"needed to make Certificate Issuance fully functional, but so far no one has "
+"committed to getting the work done.  Additionally, we've had very little buy-"
+"in from public Certificate Authorities.  Both Symantec and Digicert were "
+"interested in integration in the past, but that interest didn't materialize "
+"into robust CA plugins like we hoped it would. Secondly, there have been new "
+"developments in the space of Certificate Authorities since we started "
+"Barbican.  The most significant of these was the launch of the Let's Encrypt "
+"public CA along with the definition of the ACME protocol for certificate "
+"issuance.  We believe that future certificate authority services would do "
+"good to implement the ACME standard, which is quite different than the API "
+"the Barbican team had developed. Lastly, deprecating Certificate Issuance "
+"within Barbican will simplify both the architecture and deployment of "
+"Barbican.  This will allow us to focus on the features that Barbican does "
+"well -- the secure storage of secret material."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/queens>:92
+msgid ""
+"Will Barbican still be able to store Certificates? Yes, absolutely!  The "
+"only thing we're deprecating is the plugin interface that talks to "
+"Certificate Authorities and associated APIs. While you will not be able to "
+"use Barbican to issue a new certificate, you will always be able to securely "
+"store any certificates in Barbican, including those issued by public CAs or "
+"internal CAs."
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:46
+msgid ""
+"``'P11CryptoPluginException: HSM returned response code: 0xc0L "
+"CKR_SIGNATURE_INVALID'``"
+msgstr ""
+
+#: ../../<reno.sphinxext origin/stable/mitaka>:62 origin/stable/mitaka>:92
+msgid "``python barbican/cmd/pkcs11_migrate_kek_signatures.py``"
+msgstr ""
+
+#: ../../<reno.sphinxext stable/rocky>:106
+msgid ""
+"default value of 'control_exchange' in 'barbican.conf' has been changed to "
+"'keystone'."
+msgstr ""
+
+#: ../../<reno.sphinxext stable/pike>:36
+msgid ""
+"oslo-config-generator is now used to generate a barbican.conf.sample file"
+msgstr ""
+
+#: ../source/index.rst:3
+msgid "Barbican Release Notes"
+msgstr ""
+
+#: ../source/index.rst:5
+msgid "Contents:"
+msgstr ""
+
+#: ../source/liberty.rst:3
+msgid "Liberty Series Release Notes"
+msgstr ""
+
+#: ../source/mitaka.rst:3
+msgid "Mitaka Series Release Notes"
+msgstr ""
+
+#: ../source/newton.rst:3
+msgid "Newton Series Release Notes"
+msgstr ""
+
+#: ../source/ocata.rst:3
+msgid "Ocata Series Release Notes"
+msgstr ""
+
+#: ../source/pike.rst:3
+msgid "Pike Series Release Notes"
+msgstr ""
+
+#: ../source/queens.rst:3
+msgid "Queens Series Release Notes"
+msgstr ""
+
+#: ../source/rocky.rst:3
+msgid "Rocky Series Release Notes"
+msgstr ""
+
+#: ../source/stein.rst:3
+msgid "Stein Series Release Notes"
+msgstr ""
+
+#: ../source/train.rst:3
+msgid "Train Series Release Notes"
+msgstr ""
+
+#: ../source/unreleased.rst:3
+msgid "Current Series Release Notes"
+msgstr ""
+
+#: ../source/ussuri.rst:3
+msgid "Ussuri Series Release Notes"
+msgstr ""
+
+#: ../source/victoria.rst:3
+msgid "Victoria Series Release Notes"
+msgstr ""
+
+#: ../source/wallaby.rst:3
+msgid "Wallaby Series Release Notes"
+msgstr ""
+

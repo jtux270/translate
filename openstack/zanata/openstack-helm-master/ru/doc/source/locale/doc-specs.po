@@ -1,0 +1,2825 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: openstack-helm 0.1.1.dev3497\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-16 09:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../../source/specs/developer-environment.rst:11
+msgid "Developer Environment"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:13
+msgid ""
+"https://blueprints.launchpad.net/openstack-helm/+spec/developer-environment"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:16
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:22
+#: ../../source/specs/multi-os.rst:18
+#: ../../source/specs/neutron-multiple-sdns.rst:19
+#: ../../source/specs/nginx-sidecar.rst:8
+#: ../../source/specs/osh-1.0-requirements.rst:19
+#: ../../source/specs/osh-lma-stack.rst:22
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:19
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:19
+#: ../../source/specs/values-ordering.rst:6
+msgid "Problem Description"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:18
+msgid ""
+"Developers require a simple way of instantiating a working environment for "
+"OpenStack-Helm, that allows them to quickly begin development of the project."
+" This is more complex to achieve than many OpenStack Projects that can "
+"simply rely upon a devstack plugin to achieve this. This is as OpenStack-"
+"Helm is focused on the deployment of OpenStack (and associated) Projects, "
+"rather than the development of the projects themselves, and also requires "
+"additional supporting infrastructure, e.g. Kubernetes and a CNI."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:27
+#: ../../source/specs/multi-os.rst:29
+msgid "Use cases"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:28
+msgid "Development of OpenStack-Helm"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:29
+msgid "PoC deployments of OpenStack-Helm"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:32
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:75
+#: ../../source/specs/multi-os.rst:34
+#: ../../source/specs/neutron-multiple-sdns.rst:39
+#: ../../source/specs/nginx-sidecar.rst:19
+#: ../../source/specs/osh-1.0-requirements.rst:32
+#: ../../source/specs/osh-lma-stack.rst:102
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:37
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:36
+#: ../../source/specs/values-ordering.rst:20
+msgid "Proposed Change"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:34
+msgid ""
+"The OpenStack-Helm Zuulv2 gates were written to allow use outside of "
+"OpenStack-Infra, to quickly set up a Kubernetes cluster, with the adoption "
+"of Zuulv3 underway it is logical to extend this paradigm to the Zuulv3 "
+"Playbooks. This will be driven via a ``Makefile`` that will allow developers "
+"to perform the following actions:"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:40
+msgid "Prepare Host(s) for OpenStack-Helm deployment"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:41
+msgid "Deploy Kubernetes via KubeADM, with charts for CNI and DNS services"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:43
+msgid ""
+"At this point, curated scripts will be used to deploy OpenStack-Helm "
+"services on demand as desired, with documentation provided to allow a new "
+"developer to quickly set up either a single or multimode deployment of a "
+"reference `OpenStack Compute Kit <https://governance.openstack.org/tc/"
+"reference/tags/starter-kit_compute.html>`_ environment with the addition of:"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:49
+msgid "Ceph backed Object Storage"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:50
+msgid "Ceph backed Block Storage (cinder)"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:51
+msgid "Orchestration (heat)"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:52
+msgid "Web UI (horizon)"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:54
+msgid ""
+"A set of scripts will be provided to exercise the deployed environment that "
+"checks the basic functionality of the deployed cloud, driven where possible "
+"via OpenStack heat:"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:58
+msgid "Create external network"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:59
+msgid "Setup access to the external network from the development machine"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:60
+msgid "Create tenant network"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:61
+msgid "Create tenant router to link tenant network and external"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:62
+msgid "Create SSH Key in nova"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:63
+msgid "Create VM on tenant network"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:64
+msgid "Assign Floating IP to VM"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:65
+msgid "SSH into VM and check it can access the internet"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:67
+msgid ""
+"This deployment process will be gated, to ensure that the development the "
+"environment is consistently working against ``master`` for the OpenStack-"
+"Helm repositories."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:72
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:104
+#: ../../source/specs/multi-os.rst:112
+#: ../../source/specs/neutron-multiple-sdns.rst:175
+#: ../../source/specs/nginx-sidecar.rst:27
+#: ../../source/specs/osh-1.0-requirements.rst:210
+#: ../../source/specs/osh-lma-stack.rst:164
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:149
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:143
+#: ../../source/specs/values-ordering.rst:67
+msgid "Security Impact"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:73
+msgid ""
+"There will be no security impact, as it will deploy the charts in OpenStack-"
+"Helm[-infra/-addons] upon a reference KubeADM administered cluster."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:77
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:110
+#: ../../source/specs/multi-os.rst:118
+#: ../../source/specs/neutron-multiple-sdns.rst:179
+#: ../../source/specs/nginx-sidecar.rst:33
+#: ../../source/specs/osh-1.0-requirements.rst:214
+#: ../../source/specs/osh-lma-stack.rst:170
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:158
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:147
+#: ../../source/specs/values-ordering.rst:72
+msgid "Performance Impact"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:78
+#: ../../source/specs/values-ordering.rst:74
+msgid "This feature will not affect the performance of OpenStack-Helm."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:81
+#: ../../source/specs/multi-os.rst:134
+#: ../../source/specs/neutron-multiple-sdns.rst:184
+#: ../../source/specs/nginx-sidecar.rst:40
+#: ../../source/specs/osh-1.0-requirements.rst:218
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:163
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:151
+#: ../../source/specs/values-ordering.rst:77
+msgid "Alternatives"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:82
+msgid ""
+"The alternative would be to continue supporting the current bash driven "
+"containerized KubeADM and Kubelet approach, though this has the following "
+"issues:"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:86
+msgid ""
+"The containerized Kubelet cannot survive a restart, as it does not setup "
+"mounts correctly."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:88
+msgid ""
+"The bash scripts are largely undocumented and have grown to the point where "
+"they are very hard for a new developer to work on."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:90
+msgid ""
+"The move to Zuulv3 native operation of the OpenStack-Helm gates mean there "
+"would be no code reuse between the gate and developer environments, so "
+"supporting the existing code for Zuulv2 will incur significant tech-debt."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:95
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:117
+#: ../../source/specs/multi-os.rst:158
+#: ../../source/specs/neutron-multiple-sdns.rst:192
+#: ../../source/specs/nginx-sidecar.rst:45
+#: ../../source/specs/osh-1.0-requirements.rst:227
+#: ../../source/specs/osh-lma-stack.rst:181
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:175
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:155
+#: ../../source/specs/values-ordering.rst:83
+msgid "Implementation"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:98
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:120
+#: ../../source/specs/multi-os.rst:161
+#: ../../source/specs/neutron-multiple-sdns.rst:195
+#: ../../source/specs/nginx-sidecar.rst:48
+#: ../../source/specs/osh-1.0-requirements.rst:233
+#: ../../source/specs/osh-lma-stack.rst:184
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:178
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:158
+#: ../../source/specs/values-ordering.rst:86
+msgid "Assignee(s)"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:101
+#: ../../source/specs/multi-os.rst:164 ../../source/specs/nginx-sidecar.rst:51
+#: ../../source/specs/osh-1.0-requirements.rst:235
+msgid "Primary assignee:"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:101
+#: ../../source/specs/neutron-multiple-sdns.rst:200
+msgid "portdirect (Pete Birley)"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:104
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:127
+#: ../../source/specs/multi-os.rst:167
+#: ../../source/specs/neutron-multiple-sdns.rst:204
+#: ../../source/specs/nginx-sidecar.rst:54
+#: ../../source/specs/osh-1.0-requirements.rst:250
+#: ../../source/specs/osh-lma-stack.rst:193
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:186
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:166
+#: ../../source/specs/values-ordering.rst:93
+msgid "Work Items"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:106
+msgid ""
+"The following work items need to be completed for this Specification to be "
+"implemented."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:109
+msgid "Update of Developer Documentation"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:110
+msgid ""
+"Update of Makefile for OpenStack-Helm-Infra to allow modular deployment of "
+"components"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:112
+msgid ""
+"Develop scripts for bringing up OpenStack-Helm Charts and perform basic "
+"interactive tests"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:114
+msgid "Add gate for developer environment"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:117
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:138
+#: ../../source/specs/multi-os.rst:191
+#: ../../source/specs/neutron-multiple-sdns.rst:212
+#: ../../source/specs/nginx-sidecar.rst:62
+#: ../../source/specs/osh-1.0-requirements.rst:255
+#: ../../source/specs/osh-lma-stack.rst:210
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:193
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:173
+#: ../../source/specs/values-ordering.rst:105
+msgid "Testing"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:118
+msgid ""
+"A gate will be added to OpenStack-Helm that runs through the developer "
+"environment deployment process."
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:122
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:144
+#: ../../source/specs/multi-os.rst:203
+#: ../../source/specs/neutron-multiple-sdns.rst:217
+#: ../../source/specs/nginx-sidecar.rst:68
+#: ../../source/specs/osh-1.0-requirements.rst:259
+#: ../../source/specs/osh-lma-stack.rst:216
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:197
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:177
+#: ../../source/specs/values-ordering.rst:114
+msgid "Documentation Impact"
+msgstr ""
+
+#: ../../source/specs/developer-environment.rst:123
+msgid ""
+"The developer documentation in OpenStack-Helm should be updated to match the "
+"gated developer deploy process."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:10
+msgid "fluentbit-fluentd logging architecture"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:12
+msgid "Blueprints: 1. osh-logging-framework_"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:17
+msgid ""
+"Releated Specs: 1. OSH logging monitoring and alerting: https://review."
+"openstack.org/#/c/482687/"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:24
+msgid ""
+"OpenStack-Helm defines a centralized logging mechanism to provide insight "
+"into the state of the OpenStack services and infrastructure components as "
+"well as underlying Kubernetes platform. Among the requirements for a logging "
+"platform, where log data can come from and where log data need to be "
+"delivered are very variable. To support various logging scenarios, OpenStack-"
+"Helm should provide a flexible mechanism to meet with certain operation "
+"needs. This spec proposes fast and lightweight log forwarder and full "
+"featured log aggregator complementing each other providing a flexible and "
+"reliable solution. Especially, Fluentbit is proposed as a log forwarder and "
+"Fluentd is proposed as a main log aggregator and processor."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:36
+#: ../../source/specs/osh-lma-stack.rst:35
+msgid "Platform Requirements"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:39
+#: ../../source/specs/osh-lma-stack.rst:38
+msgid "Logging Requirements"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:41
+msgid "The requirements for a logging collector/aggregator include:"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:43
+msgid "Log collection daemon runs on each node to forward logs to aggregator"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:44
+msgid "Log collection daemon should have a minimal server footprint"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:45
+msgid "Log aggregator deployment runs on a selected node as deployment"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:46
+#: ../../source/specs/osh-lma-stack.rst:45
+msgid "Ability to apply custom metadata and uniform format to logs"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:47
+msgid "Log aggregator should have HA capability"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:48
+msgid "Log aggregator should have a flexible output capability to choose from"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:49
+msgid "Log aggregator is able to send data to Elasticsearch and Kafka"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:50
+msgid "Log aggregator should be scalable"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:53
+msgid "Logical Diagram"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:55
+msgid ""
+"diagram link: https://github.com/sktelecom-oslab/docs/blob/master/images/"
+"fluentbit-fluentd-diagram.png"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:58
+#: ../../source/specs/osh-lma-stack.rst:66
+msgid "Use Cases"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:61
+#: ../../source/specs/osh-lma-stack.rst:69
+msgid "Logging Use Cases"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:63
+msgid ""
+"Example uses for centralized logging with Fluentbit and Fluentd include:"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:65
+msgid ""
+"Cover the following logging use cases https://review.openstack.org/#/c/"
+"482687/"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:66
+msgid "Collect logs from the node by Fluentbit"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:67
+msgid "Every Fluentbit send logs to Fluentd with Kubernetes metadata attached"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:68
+msgid "Fluentd then attaches Kubernetes and/or OpenStack metadata"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:69
+msgid "Fluentd properly filters and categorizes logs"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:70
+msgid ""
+"Fluentd send aggregated logs to Elasticsearch for the internal use cases"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:71
+msgid ""
+"Aggregator also send aggregated logs to Kafka for external tools to consume"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:78
+#: ../../source/specs/osh-lma-stack.rst:105
+msgid "Logging"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:80
+msgid ""
+"Fluentbit, Fluentd meet OpenStack-Helm's logging requirements for gathering, "
+"aggregating, and delivering of logged events. Fluntbit runs as a daemonset "
+"on each node and mounts the /var/lib/docker/containers directory. The Docker "
+"container runtime engine directs events posted to stdout and stderr to this "
+"directory on the host. Fluentbit then forward the contents of that directory "
+"to Fluentd. Fluentd runs as deployment at the designated nodes and expose "
+"service for Fluentbit to forward logs. Fluentd should then apply the "
+"Logstash format to the logs. Fluentd can also write Kubernetes and OpenStack "
+"metadata to the logs. Fluentd will then forward the results to Elasticsearch "
+"and to optionally Kafka. Elasticsearch indexes the logs in a logstash-* "
+"index by default. Kafka stores the logs in a 'logs' topic by default. Any "
+"external tool can then consume the 'logs' topic."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:93
+#: ../../source/specs/osh-lma-stack.rst:121
+#: ../../source/specs/osh-lma-stack.rst:151
+msgid "The proposal includes the following:"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:95
+msgid "Helm chart for Fluentbit-Fluentd Combination"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:97
+msgid ""
+"The above chart must include sensible configuration values to make the "
+"logging platform usable by default. These include: proper input "
+"configurations for both Fluentbit and Fluentd, proper output configurations "
+"for both Fluentbit and Fluentd, proper metadata and formats applied to the "
+"logs via Fluentd."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:106
+#: ../../source/specs/osh-lma-stack.rst:166
+msgid ""
+"All services running within the platform should be subject to the security "
+"practices applied to the other OpenStack-Helm charts."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:112
+#: ../../source/specs/osh-lma-stack.rst:172
+msgid ""
+"To minimize the performance impacts, the following should be considered:"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:114
+#: ../../source/specs/osh-lma-stack.rst:174
+msgid "Sane defaults for log retention and rotation policies"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:123
+msgid "sungil (Sungil Im) jayahn (Jaesuk Ahn)"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:124
+#: ../../source/specs/neutron-multiple-sdns.rst:197
+#: ../../source/specs/osh-lma-stack.rst:190
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:180
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:160
+#: ../../source/specs/values-ordering.rst:90
+msgid "Primary assignees:"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:129
+msgid "Fluentbit-Fluentd logging chart"
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:131
+#: ../../source/specs/osh-lma-stack.rst:203
+msgid ""
+"All charts should follow design approaches applied to all other OpenStack-"
+"Helm charts, including the use of helm-toolkit."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:134
+#: ../../source/specs/osh-lma-stack.rst:206
+msgid ""
+"All charts require valid and sensible default values to provide operational "
+"value out of the box."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:139
+#: ../../source/specs/osh-lma-stack.rst:211
+msgid ""
+"Testing should include Helm tests for each of the included charts as well as "
+"an integration test in the gate."
+msgstr ""
+
+#: ../../source/specs/fluentbit-fluentd-architecture.rst:145
+#: ../../source/specs/osh-lma-stack.rst:217
+msgid ""
+"Documentation should be included for each of the included charts as well as "
+"documentation detailing the requirements for a usable monitoring platform, "
+"preferably with sane default values out of the box."
+msgstr ""
+
+#: ../../source/specs/index.rst:2
+msgid "Project Specifications"
+msgstr ""
+
+#: ../../source/specs/index.rst:4
+msgid ""
+"Specifications in this repository represent a consensus on the topics "
+"covered within.  They should be considered a mandate on the path forward "
+"with regards to the content on which they are drafted."
+msgstr ""
+
+#: ../../source/specs/index.rst:8
+msgid "Here is a list of the current specs:"
+msgstr ""
+
+#: ../../source/specs/index.rst:17
+msgid "Specifications Purpose"
+msgstr ""
+
+#: ../../source/specs/index.rst:19
+msgid ""
+"A specification should precede any broad-reaching technical changes or "
+"proposals to OpenStack-Helm.  Examples of changes requiring a specification "
+"include:  a standard format to the values.yaml files, multiple backend "
+"support for neutron, and the approach for logging and monitoring in "
+"OpenStack-Helm.  Some additional features will not need an accompanying "
+"specification, but may be tied back to an existing specification.  An "
+"example of this would be introducing a service in OpenStack-Helm that could "
+"be included under the scope of a specification already drafted and approved."
+msgstr ""
+
+#: ../../source/specs/index.rst:29
+msgid "Specifications Process"
+msgstr ""
+
+#: ../../source/specs/index.rst:31
+msgid ""
+"Before drafting a specification, a blueprint should be filed in Storyboard_ "
+"along with any dependencies the blueprint requires.  Once the blueprint has "
+"been registered, submit the specification as a patch set to the specs/ "
+"directory using the supplied template."
+msgstr ""
+
+#: ../../source/specs/index.rst:36
+msgid ""
+"More information about the blueprint + specification lifecycle can be found "
+"here_."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:11
+msgid "Multi-OS Support"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:13
+msgid "Include the URL of your Storyboard RFE:"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:15
+msgid "https://storyboard.openstack.org/#!/story/2005130"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:20
+msgid ""
+"Our :ref:`images documentation` documentation claims to be independent of "
+"the image. However, some helm charts hard code paths of binaries, "
+"executables' runtime configurations, etc. Therefore, the image agnostic "
+"promise is broken."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:25
+msgid ""
+"We need to adapt all the helm charts to remove the hard-coded bits, be image "
+"agnostic, to allow users to bring their own images."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:31
+msgid "Allow the usage of multiple base images in OSH."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:36
+msgid ""
+"Edit all helm charts to remove possible references to image specific "
+"elements, replacing them with values overrides or conditionals."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:39
+msgid ""
+"It is important to notice that the helm charts can be split in two "
+"categories for now:"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:42
+msgid ""
+"Helm charts for which we use official upstream images. (Called further "
+"``Category A`` helm charts)"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:44
+msgid ""
+"Helm charts for which we are building images in osh-images. (Called further "
+"``Category B`` helm charts)"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:47
+msgid ""
+"For the ``Category B`` helm charts, an informal testing has been done in the "
+"past to ensure image independence. However, there is nothing exercising this "
+"independence in gates. Due to that, code of the helm charts might or might "
+"not require adapting."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:52
+msgid ""
+"In all cases, we will need to provide different ``profiles`` (in other "
+"words, overrides), to test different image providers use cases in CI."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:55
+msgid ""
+"The ``profiles`` yaml files (for example ``centos_7``, ``opensuse_15``) will "
+"be provided in each chart's ``example_values/`` directory. This folder will "
+"be masked to helm through a helmignore file. Its content is only for user "
+"consumption, not for inclusion in helm charts through the File directive. In "
+"other words, this is a user interface given for convenience merely using the "
+"abilities of the existing helm charts."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:63
+msgid ""
+"The default ``values.yaml`` need to expose those abilities, by adding a new "
+"series of keys/values to add the necessary features."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:66
+msgid "The existing schema for images is the following:"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:77
+msgid ""
+"For this spec, we assume ``imagename1`` and ``imagename2`` are similarly "
+"built. This means we do not require any override per image. Instead we "
+"require a generic kind of override, per application, usable by all charts."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:81
+msgid ""
+"I propose to extend the conf schema with generic software information. For "
+"example, for apache2:"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:98
+msgid ""
+"When possible, ``values_overrides/`` will refer to existing ``helm-toolkit`` "
+"functions to avoid repeating ourselves."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:101
+msgid "This approach:"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:103
+msgid ""
+"Proposes a common approach to software configuration, describing the distro/"
+"image specific differences for applications."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:105
+msgid ""
+"Exposes security/configuration features of software, allowing deployers to "
+"configure software to their needs."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:107
+msgid ""
+"Allows different profiles of apache, should some charts require different "
+"args for example for the same kind of images, by using yaml dict merges "
+"features."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:114
+msgid ""
+"No direct impact, as there is no change in the current software/"
+"configuration location, merely a templating change."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:120
+msgid "No benchmark was done to evaluate:"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:122
+msgid ""
+"the impact of exposing extra key/values in the helm chart ``values.yaml`` "
+"file (could possibly have a deployment speed/ram usage increase)."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:124
+msgid ""
+"the impact of adding functionality in the ``helm-toolkit`` to deal with a "
+"common multi-distro aspect (could possibly increase helm chart rendering "
+"time)"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:126
+msgid ""
+"the impact of adding extra conditionals in the helm charts, to deal with "
+"multi-distro aspect (if not using the approach above, or when using an "
+"alternative approach)"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:130
+msgid ""
+"The performance aspect of these point are restricted to deployment, and have "
+"no performance impact on operations."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:136
+msgid ""
+"Not providing a support of multiple images. This leads to ease of "
+"maintainance and reduced gate impact, with the risk of having less "
+"contributors. For available overrides, users would have to provide many "
+"overrides themselves, while this spec proposes a common community approach."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:142
+msgid ""
+"Create conditionals in the helm charts. This is problematic, as the amount "
+"of conditionals will increase and will be harder to maintain. Overrides "
+"files are easy to sync between charts."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:146
+msgid ""
+"Only provide one way to configure software, and expect to always have the "
+"same versions. This is further away from the \"image independent\" contract, "
+"with extra burden: We will need to maintain a curated list of versions, deal "
+"with the differences of the defaults (selinux/apparmor profiles come to mind "
+"as path sensitive for example), and different expectations for operational "
+"teams (\"The code is not where I expect it to be in the image\"). Embracing "
+"difference could even allow deployers to have different expectations for "
+"images, for example: apache+mod_wsgi vs uwsgi standalone or uwsgi + nginx."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:164
+msgid "evrardjp"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:169
+msgid ""
+"This spec will be worked helm chart by helm chart, starting with keystone."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:171
+msgid ""
+"A few areas have been identified on changes required. Each of them will be a "
+"work item."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:174
+msgid ""
+"Make webserver binary path/arguments templated using ``values.yaml``. As "
+"expressed above, this allows us to provide different overrides per image/"
+"distribution to automatically wire things."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:177
+msgid ""
+"Dynamically alter webserver environment conditionally in the helm chart. For "
+"example, for apache, ensure the necessary modules to run openstack are "
+"available and loaded at helm chart deploy time. This will leverage the "
+"binaries listed in ``values.yaml``. These series of commands are "
+"distribution/image dependent, as commands to list modules to load might "
+"differ. However with a few parameters, we can get a very distro independent "
+"process which would allow us to load all the required apache modules."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:185
+msgid ""
+"Alter webserver configuration per distro. Different distros have different "
+"expectations in terms of path (including a different series of files "
+"required), and it would make the operators' life easier by using their "
+"expected distro paths."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:193
+msgid ""
+"No change in testing is required, *per se*. It is expected the new software "
+"configuration would be tested with the current practices."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:197
+msgid ""
+"On top of that, the newly provided `example_values/` must aim for being "
+"tested **as soon as possible upon delivery**. Without tests, those examples "
+"will decrepit. The changes in CI pipelines for making use of "
+"`example_values` is outside the scope of this spec."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:205
+msgid ""
+"None more than this spec, as it should be relatively transparent for the "
+"user. However, extra documentation to explain the usage of "
+"``value_overrides`` would be welcomed."
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:210
+#: ../../source/specs/neutron-multiple-sdns.rst:223
+#: ../../source/specs/osh-1.0-requirements.rst:263
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:202
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:181
+msgid "References"
+msgstr ""
+
+#: ../../source/specs/multi-os.rst:212
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:194
+msgid "None"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:11
+msgid "Neutron multiple SDNs"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:13
+msgid "Blueprint: neutron-multiple-sdns_"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:21
+msgid ""
+"Currently OpenStack-Helm supports OpenVSwitch as a network virtualization "
+"engine. In order to support many possible backends (SDNs), changes are "
+"required in neutron chart and in deployment techniques. OpenStack-Helm can "
+"support every SDN solution that has Neutron plugin, either core_plugin or "
+"mechanism_driver."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:26
+msgid ""
+"The Neutron reference architecture provides mechanism_drivers OpenVSwitch "
+"(OVS) and linuxbridge (LB) with ML2 core_plugin framework."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:29
+msgid "Other networking services provided by Neutron are:"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:31
+msgid "L3 routing - creation of routers"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:32
+msgid "DHCP - auto-assign IP address and DNS info"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:33
+msgid "Metadata- Provide proxy for Nova metadata service"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:35
+msgid ""
+"Introducing a new SDN solution should consider how the above services are "
+"provided. It may be required to disable the built-in Neutron functionality."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:41
+msgid ""
+"To be able to install Neutron with multiple possible SDNs as networking "
+"plugin, Neutron chart should be modified to enable installation of base "
+"services with decomposable approach. This means that operator can define "
+"which components from base Neutron chart should be installed, and which "
+"should not. This plus proper configuration of Neutron chart would enable "
+"operator to flexibly provision OpenStack with chosen SDN."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:48
+msgid ""
+"Every Kubernetes manifest inside Neutron chart can be enabled or disabled. "
+"That would provide flexibility to the operator, to choose which Neutron "
+"components are reusable with different type of SDNs. For example, neutron-"
+"server which is serving the API and configuring the database can be used "
+"with different types of SDN plugin, and provider of that SDN chart would not "
+"need to copy all logic from Neutron base chart to manage the API and "
+"database."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:55
+msgid ""
+"The proposes change would be to add in :code:`neutron/values.yaml` new "
+"section with boolean values describing which Neutron's Kubernetes resources "
+"should be enabled:"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:83
+msgid ""
+"Then, inside Kubernetes manifests, add global if statement, deciding if "
+"given manifest should be declared on Kubernetes API, for example :code:"
+"`neutron/templates/daemonset-ovs-agent.yaml`:"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:102
+msgid ""
+"If :code:`.Values.manifests.daemonset_ovs_agent` will be set to false, "
+"neutron ovs agent would not be launched. In that matter, other type of L2 or "
+"L3 agent on compute node can be run."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:106
+msgid ""
+"To enable new SDN solution, there should be separate chart created, which "
+"would handle the deployment of service, setting up the database and any "
+"related networking functionality that SDN is providing."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:111
+#: ../../source/specs/osh-1.0-requirements.rst:27
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:31
+msgid "Use case"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:113
+msgid ""
+"Let's consider how new SDN can take advantage of disaggregated Neutron "
+"services architecture. First assumption is that neutron-server functionality "
+"would be common for all SDNs, as it provides networking API, database "
+"management and Keystone interaction. Required modifications are:"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:118
+msgid "Configuration in :code:`neutron.conf` and :code:`ml2_conf.ini`"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:119
+msgid "Providing the neutron plugin code."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:121
+msgid ""
+"The code can be supplied as modified neutron server image, or plugin can be "
+"mounted to original image. The :code:`manifests` section in :code:`neutron/"
+"values.yaml` should be enabled for below components:"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:144
+msgid ""
+"Next, Neutron services like L3 routing, DHCP and metadata serving should be "
+"considered. If SDN provides its own implementation, the Neutron's default "
+"one should be disabled:"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:155
+msgid "Provision of those services should be included inside SDN chart."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:157
+msgid ""
+"The last thing to be considered is VM network virtualization. What engine "
+"does SDN use? It is OpenVSwitch, Linux Bridges or l3 routing (no l2 "
+"connectivity). If SDN is using the OpenVSwitch, it can take advantage of "
+"existing OVS daemonsets. Any modification that would be required to OVS "
+"manifests can be included in base Neutron chart as a configurable option. In "
+"that way, the features of OVS can be shared between different SDNs. When "
+"using the OVS, default Neutron L2 agent should be disabled, but OVS-DB and "
+"OVS-vswitchd can be left enabled."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:176
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:144
+#: ../../source/specs/values-ordering.rst:69
+msgid "No security impact."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:180
+msgid "VM networking performance would be dependent of SDN used."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:185
+msgid ""
+"Alternatives to decomposable Neutron chart would be to copy whole Neutron "
+"chart and create spin-offs with new SDN enabled. This approach has drawbacks "
+"of maintaining the whole neutron chart in many places, and copies of "
+"standard services may be out of sync with OSH improvements. This implies "
+"constant maintenance effort to up to date."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:199
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:162
+msgid "korzen (Artur Korzeniewski)"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:206
+msgid "Implement decomposable Neutron chart"
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:207
+msgid "Add Linux Bridge as first alternative for OVS - separate spec needed."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:208
+msgid ""
+"Add one SDN to see if proposed change is working OK - separate spec needed."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:213
+msgid ""
+"First reasonable testing in gates would be to setup Linux Bridge and check "
+"if VM network connectivity is working."
+msgstr ""
+
+#: ../../source/specs/neutron-multiple-sdns.rst:218
+msgid ""
+"Documentation of how new SDN can be enabled, how Neutron should be "
+"configured. Also, for each new SDN that would be incorporated, the "
+"architecture overview should be provided."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:3
+msgid "Nginx Sidecar"
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:5
+msgid ""
+"Blueprint: https://blueprints.launchpad.net/openstack-helm/+spec/nginx-"
+"sidecar"
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:10
+msgid ""
+"In a secured deployment, TLS certificates are used to protect the transports "
+"amongst the various components.  In some cases, this requires additional "
+"mechanism to handle TLS offloading and to terminate the connection "
+"gracefully:"
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:14
+msgid "services do not handle TLS offloading and termination,"
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:15
+msgid ""
+"services whose native handling of TLS offloading and termination cause major "
+"performance impact, for example, eventlet."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:21
+msgid ""
+"This specification proposes to add a nginx sidecar container to the pod for "
+"service that requires the tls offloading. The nginx can be used to handle "
+"the TLS offoading and terminate the TLS connection, and routes the traffic "
+"to the service via localhost (127.0.0.1)."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:29
+msgid ""
+"This enhances the system's security design by allowing pods with services "
+"that cannot natively manage TLS to secure the traffic to the service pod."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:35
+msgid ""
+"There is no significant performance impact as the traffic will be locally "
+"routed (via 127.0.0.1) and may potentially improve performance for services "
+"whose native TLS handling is inefficient."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:42
+msgid "Instead of using nginx, haproxy can be used instead."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:51
+msgid "Pete Birley <pete@port.direct>"
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:56
+msgid ""
+"Update ``helm toolkit`` to provide snippet to create the nginx sidecar "
+"container for the services that require it."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:58
+msgid "Update service charts to use the updated ``helm toolkit``."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:59
+msgid "Update relevant Documentation."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:64
+msgid ""
+"The testing will be performed by the OpenStack-Helm gate to demonstrate the "
+"sidecar container correctly routes traffic to the correct services."
+msgstr ""
+
+#: ../../source/specs/nginx-sidecar.rst:70
+msgid ""
+"OpenStack-Helm documentation will be updated to indicate the usage of the "
+"nginx sidecar."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:11
+msgid "OpenStack-Helm 1.0 Requirements"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:13
+msgid "Topic: osh-1.0-requirements_"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:21
+msgid ""
+"OpenStack-Helm has undergone rapid development and maturation over its "
+"lifetime, and is nearing the point of real-world readiness.  This spec "
+"details the functionality that must be implemented in OpenStack-Helm for it "
+"to be considered ready for a 1.0 release, as well as for general use."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:28
+msgid ""
+"This spec describes a point-in-time readiness for OpenStack-Helm 1.0, after "
+"which it will be for historical reference only."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:34
+msgid "The proposed requirements for a 1.0 release are as follows:"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:37
+msgid "Gating"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:38
+msgid ""
+"A foundational requirement of 1.0 readiness is the presence of robust gating "
+"that will ensure functionality, backward compatibility, and upgradeability. "
+"This will allow development to continue and for support for new versions of "
+"OpenStack to be added post-1.0. The following gating requirements must be "
+"met:"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:44
+msgid "**Helm test for all charts**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:46
+msgid ""
+"Helm test is the building block for all gating.  Each chart must integrate a "
+"helm-test script which validates proper functionality.  This is already a "
+"merge criterion for new charts, but a handful of older charts still need for "
+"helm test functionality to be added.  No additional charts will be merged "
+"prior to 1.0 unless they meet this requirement (and others in this document)."
+""
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:52
+msgid "**Resiliency across reboots**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:54
+msgid ""
+"All services should survive node reboots, and their functionality validated "
+"following a reboot by a gate."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:57
+msgid "**Upgrades**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:59
+msgid ""
+"Gating must prove that upgrades from each supported OpenStack version to the "
+"next operate flawlessly, using the default image set (LOCI).  Specifically, "
+"each OpenStack chart should be upgraded from one release to the next, and "
+"each infrastructure service from one minor version to the next.  Both the "
+"container image and configuration must be modified as part of this upgrade. "
+"At minimum, Newton to Ocata upgrade must be validated for the 1.0 release."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:67
+msgid "Code Completion and Refactoring"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:68
+msgid ""
+"A number of in-progress and planned development efforts must be completed "
+"prior to 1.0, to ensure a stable OpenStack-Helm interface thereafter."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:71
+msgid "**Charts in the appropriate project**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:73
+msgid ""
+"All charts should migrate to their appropriate home project as follows:"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:75
+msgid "OpenStack-Helm for OpenStack services"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:76
+msgid "OpenStack-Helm-Infra for supporting services"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:77
+msgid "OpenStack-Helm-Addons for ancillary services"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:79
+msgid "In particular, these charts must move to OpenStack-Helm-Infra:"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:81
+msgid "ceph"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:82
+msgid "etcd"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:83
+msgid "ingress"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:84
+msgid "ldap"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:85
+msgid "libvirt"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:86
+msgid "mariadb"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:87
+msgid "memcached"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:88
+msgid "mongodb"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:89
+msgid "openvswitch"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:90
+msgid "postgresql"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:91
+msgid "rabbitmq"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:93
+msgid "**Combined helm-toolkit**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:95
+msgid ""
+"Currently both OpenStack-Helm and OpenStack-Helm-Infra have their own "
+"parallel versions of the Helm-Toolkit library chart.  They must be combined "
+"into a single chart in OpenStack-Helm-Infra prior to 1.0."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:99
+msgid "**Standardization of manifests**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:101
+msgid ""
+"Work is underway to refactor common manifest patterns into reusable snippets "
+"in Helm-Toolkit.  The following manifests have yet to be combined:"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:104
+msgid "Database drop Job"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:105
+msgid "Prometheus exporters"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:106
+msgid "API Deployments"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:107
+msgid "Worker Deployments"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:108
+msgid "StatefulSets"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:109
+msgid "CronJobs"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:110
+msgid "Etc ConfigMaps"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:111
+msgid "Bin ConfigMaps"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:113
+msgid "**Standardization of values**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:115
+msgid ""
+"OpenStack-Helm has developed a number of conventions around the format and "
+"ordering of charts' `values.yaml` file, in support of both reusable Helm-"
+"Toolkit functions and ease of developer ramp-up.  For 1.0 readiness, "
+"OpenStack-Helm must cement these conventions within a spec, as well as the "
+"ordering of `values.yaml` keys. These conventions must then be gated to "
+"guarantee conformity. The spec in progress can be found here [1]_."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:122
+msgid "**Inclusion of all core services**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:124
+msgid ""
+"Charts for all core OpenStack services must be present to achieve 1.0 "
+"releasability.  The only core service outstanding at this time is Swift."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:127
+msgid "**Split Ceph chart**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:129
+msgid ""
+"The monolithic Ceph chart does not allow for following Ceph upgrade best "
+"practices, namely to upgrade Mons, OSDs, and client services in that order. "
+"The Ceph chart must therefore be split into at least three charts (one for "
+"each of the above upgrade phases) prior to 1.0 to ensure smooth in-place "
+"upgradability."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:135
+msgid "**Values-driven config files**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:137
+msgid ""
+"In order to maximize flexibility for operators, and to help facilitate "
+"upgrades to newer versions of containerized software without editing the "
+"chart itself, all configuration files will be specified dynamically based on "
+"`values.yaml` and overrides.  In most cases the config files will be "
+"generated based on the YAML values tree itself, and in some cases the config "
+"file content will be specified in `values.yaml` as a string literal."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:146
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:147
+msgid ""
+"Comprehensive documentation is key to the ability for real-world operators "
+"to benefit from OpenStack-Helm, and so it is a requirement for 1.0 "
+"releasability. The following outstanding items must be completed from a "
+"documentation perspective:"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:152
+msgid "**Document version requirements**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:154
+msgid ""
+"Version requirements for the following must be documented and maintained:"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:156
+msgid "Kubernetes"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:157
+msgid "Helm"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:158
+msgid "Operating system"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:159
+msgid "External charts (Calico)"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:161
+msgid "**Document Kubernetes requirements**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:163
+msgid ""
+"OpenStack-Helm supports a \"bring your own Kubernetes\" paradigm.  Any "
+"particular k8s configuration or feature requirements must be documented."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:167
+msgid "Hosts must use KubeDNS / CoreDNS for resolution"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:168
+msgid ""
+"Kubernetes must enable mount propagation (until it is enabled by default)"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:169
+msgid "Helm must be installed"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:171
+msgid ""
+"Examples of how to set up the above under KubeADM and KubeSpray-based "
+"clusters must be documented as well."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:174
+msgid "**OpenStack-Helm release process**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:176
+msgid ""
+"The OpenStack-Helm release process will be somewhat orthogonal to the "
+"OpenStack release process, and the differences and relationship between the "
+"two must be documented in a spec.  This will help folks quickly understand "
+"why OpenStack-Helm is a Release-Independent project from an OpenStack "
+"perspective."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:181
+msgid "**Release notes**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:183
+msgid ""
+"Release notes for the 1.0 release must be prepared, following OpenStack best "
+"practices.  The criteria for future changes that should be included in "
+"release notes in an ongoing fashion must be defined / documented as well."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:187
+msgid "`values.yaml` changes"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:188
+msgid "New charts"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:189
+msgid "Any other changes to the external interface of OpenStack-Helm"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:191
+msgid "**LMA Operations Guide**"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:193
+msgid ""
+"A basic Logging, Monitoring, and Alerting-oriented operations guide must be "
+"in place, illustrating for operators (and developers) how to set up and use "
+"an example LMA setup for OpenStack and supporting services.  It will include "
+"instructions on how to perform basic configuration and how to access and use "
+"the user interfaces at a high level.  It will also link out to more detailed "
+"documentation for the LMA tooling itself."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:201
+msgid "Process and Tooling"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:202
+msgid ""
+"To facilitate effective collaboration and communication across the OpenStack-"
+"Helm community team, work items for the enhancements above will be captured "
+"in Storyboard.  Therefore, migration from Launchpad to Storyboard must be "
+"accomplished prior to the 1.0 release.  Going forward, Storyboard will be "
+"leveraged as a tool to collaboratively define and communicate the OpenStack-"
+"Helm roadmap."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:211
+#: ../../source/specs/osh-1.0-requirements.rst:215
+msgid "No impact"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:219
+msgid ""
+"This spec lays out the criteria for a stable and reliable 1.0 release, which "
+"can serve as the basis for real-world use as well as ongoing development. "
+"The alternative approaches would be to either iterate indefinitely without "
+"defining a 1.0 release, which would fail to signal to operators the point at "
+"which the platform is ready for real-world use; or, to define a 1.0 release "
+"which fails to satisfy key features which real-world operators need."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:229
+msgid ""
+"This spec describes a wide variety of self-contained work efforts, which "
+"will be implemented individually by the whole OpenStack-Helm team."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:237
+msgid "mattmceuen (Matt McEuen <matt.mceuen@att.com>) for coordination"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:238
+msgid ""
+"powerds (DaeSeong Kim <daeseong.kim@sk.com>) for the `values.yaml` ordering "
+"spec [1]_"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:240
+msgid ""
+"portdirect (Pete Birley <pete@port.direct>) for the release management spec "
+"[2]_"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:242
+msgid ""
+"randeep.jalli (Randeep Jalli <rj2083@att.com>) and renmak (Renis Makadia "
+"<renis.makadia@att.com>) for splitting up the Ceph chart"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:245
+msgid ""
+"rwellum (Rich Wellum <richwellum@gmail.com>) for coordination of Storyboard "
+"adoption"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:247
+msgid "Additional assignees TBD"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:252
+msgid "See above for the list of work items."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:256
+msgid "See above for gating requirements."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:260
+msgid "See above for documentation requirements."
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:265
+msgid "https://review.openstack.org/#/c/552485/"
+msgstr ""
+
+#: ../../source/specs/osh-1.0-requirements.rst:266
+msgid "TODO - release management spec"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:11
+msgid "OSH Logging, Monitoring, and Alerting"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:13
+msgid "Blueprints: 1. osh-monitoring_ 2. osh-logging-framework_"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:24
+msgid ""
+"OpenStack-Helm currently lacks a centralized mechanism for providing insight "
+"into the performance of the OpenStack services and infrastructure components."
+" The log formats of the different components in OpenStack-Helm vary, which "
+"makes identifying causes for issues difficult across services.  To support "
+"operational readiness by default, OpenStack-Helm should include components "
+"for logging events in a common format, monitoring metrics at all levels, "
+"alerting and alarms for those metrics, and visualization tools for querying "
+"the logs and metrics in a single pane view."
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:40
+msgid "The requirements for a logging platform include:"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:42
+msgid "All services in OpenStack-Helm log to stdout and stderr by default"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:43
+msgid "Log collection daemon runs on each node to forward logs to storage"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:44
+msgid "Proper directories mounted to retrieve logs from the node"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:46
+msgid "Time-series database for logs collected"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:47
+#: ../../source/specs/osh-lma-stack.rst:58
+msgid "Backed by highly available storage"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:48
+msgid "Configurable log rotation mechanism"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:49
+msgid "Ability to perform custom queries against stored logs"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:50
+#: ../../source/specs/osh-lma-stack.rst:60
+msgid "Single pane visualization capabilities"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:53
+msgid "Monitoring Requirements"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:55
+msgid "The requirements for a monitoring platform include:"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:57
+msgid "Time-series database for collected metrics"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:59
+msgid "Common method to configure all monitoring targets"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:61
+msgid "Ability to perform custom queries against metrics collected"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:62
+msgid "Alerting capabilities to notify operators when thresholds exceeded"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:71
+msgid "Example uses for centralized logging include:"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:73
+msgid "Record compute instance behavior across nodes and services"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:74
+msgid "Record OpenStack service behavior and status"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:75
+msgid "Find all backtraces for a tenant id's uuid"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:76
+msgid ""
+"Identify issues with infrastructure components, such as RabbitMQ, mariadb, "
+"etc"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:77
+msgid ""
+"Identify issues with Kubernetes components, such as: etcd, CNI, scheduler, "
+"etc"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:78
+msgid "Organizational auditing needs"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:79
+msgid ""
+"Visualize logged events to determine if an event is recurring or an outlier"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:80
+msgid ""
+"Find all logged events that match a pattern (service, pod, behavior, etc)"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:83
+msgid "Monitoring Use Cases"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:85
+msgid "Example OpenStack-Helm metrics requiring monitoring include:"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:87
+msgid "Host utilization: memory usage, CPU usage, disk I/O, network I/O, etc"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:88
+msgid "Kubernetes metrics: pod status, replica availability, job status, etc"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:89
+msgid "Ceph metrics: total pool usage, latency, health, etc"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:90
+msgid ""
+"OpenStack metrics: tenants, networks, flavors, floating IPs, quotas, etc"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:91
+msgid ""
+"Proactive monitoring of stack traces across all deployed infrastructure"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:93
+msgid "Examples of how these metrics can be used include:"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:95
+msgid "Add or remove nodes depending on utilization"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:96
+msgid "Trigger alerts when desired replicas fall below required number"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:97
+msgid "Trigger alerts when services become unavailable or unresponsive"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:98
+msgid "Identify etcd performance that could lead to cluster instability"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:99
+msgid ""
+"Visualize performance to identify trends in traffic or utilization over time"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:107
+msgid ""
+"Fluentd, Elasticsearch, and Kibana meet OpenStack-Helm's logging "
+"requirements for capture, storage and visualization of logged events.  "
+"Fluentd runs as a daemonset on each node and mounts the /var/lib/docker/"
+"containers directory. The Docker container runtime engine directs events "
+"posted to stdout and stderr to this directory on the host.  Fluentd should "
+"then declare the contents of that directory as an input stream, and use the "
+"fluent-plugin-elasticsearch plugin to apply the Logstash format to the logs. "
+" Fluentd will also use the fluentd-plugin-kubernetes-metadata plugin to "
+"write Kubernetes metadata to the log record.  Fluentd will then forward the "
+"results to Elasticsearch, which indexes the logs in a logstash-* index by "
+"default.  The resulting logs can then be queried directly through "
+"Elasticsearch, or they can be viewed via Kibana. Kibana offers a dashboard "
+"that can create custom views on logged events, and Kibana integrates well "
+"with Elasticsearch by default."
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:123
+msgid "Helm chart for Fluentd"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:124
+msgid "Helm chart for Elasticsearch"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:125
+msgid "Helm chart for Kibana"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:127
+msgid ""
+"All three charts must include sensible configuration values to make the "
+"logging platform usable by default.  These include: proper input "
+"configurations for Fluentd, proper metadata and formats applied to the logs "
+"via Fluentd, sensible indexes created for Elasticsearch, and proper "
+"configuration values for Kibana to query the Elasticsearch indexes "
+"previously created."
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:134
+msgid "Monitoring"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:136
+msgid ""
+"Prometheus and Grafana meet OpenStack-Helm's monitoring requirements.  The "
+"Prometheus monitoring tool provides the ability to scrape targets for "
+"metrics over HTTP, and it stores these metrics in Prometheus's time-series "
+"database. The monitoring targets can be discovered via static configuration "
+"in Prometheus or through service discovery.  Prometheus includes a querying "
+"language that provides meaningful queries against the metrics gathered and "
+"supports the creation of rules to measure these metrics against for alerting "
+"purposes.  It also supports a wide range of Prometheus exporters for "
+"existing services, including Ceph and OpenStack.  Grafana supports "
+"Prometheus as a data source, and provides the ability to view the metrics "
+"gathered by Prometheus in a single pane dashboard.  Grafana can be "
+"bootstrapped with dashboards for each target scraped, or the dashboards can "
+"be added via Grafana's web interface directly.  To meet OpenStack-Helm's "
+"alerting needs, Alertmanager can be used to interface with Prometheus and "
+"send alerts based on Prometheus rule evaluations."
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:153
+msgid "Helm chart for Prometheus"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:154
+msgid "Helm chart for Alertmanager"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:155
+msgid "Helm chart for Grafana"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:156
+msgid "Helm charts for any appropriate Prometheus exporters"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:158
+msgid ""
+"All charts must include sensible configuration values to make the monitoring "
+"platform usable by default.  These include:  static Prometheus "
+"configurations for the included exporters, static dashboards for Grafana "
+"mounted via configMaps and configurations for Alertmanager out of the box."
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:175
+msgid "Identify opportunities for improving Prometheus's operation over time"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:176
+msgid "Elasticsearch configured to prevent memory swapping to disk"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:177
+msgid ""
+"Elasticsearch configured in a highly available manner with sane defaults"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:187
+msgid ""
+"srwilker (Steve Wilkerson) portdirect (Pete Birley) lr699s (Larry Rensing)"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:195
+msgid "Fluentd chart"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:196
+msgid "Elasticsearch chart"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:197
+msgid "Kibana chart"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:198
+msgid "Prometheus chart"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:199
+msgid "Alertmanager chart"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:200
+msgid "Grafana chart"
+msgstr ""
+
+#: ../../source/specs/osh-lma-stack.rst:201
+msgid ""
+"Charts for exporters: kube-state-metrics, ceph-exporter, openstack-exporter?"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:11
+msgid "Support OCI image registry with authentication turned on"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:13
+msgid "Blueprint: support-oci-image-registry-with-authentication-turned-on_"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:20
+msgid ""
+"In the current openstack-helm, all charts provide an ``images:`` section in "
+"their ``values.yaml`` that have the container images references. By default, "
+"the container images are all downloaded from a registry hosted by Docker or "
+"Quay. However, the image references can be overridden by operators to "
+"download images from any OCI image registry. In the case that the OCI image "
+"registry has authentication turned on, kubelet would fail to download the "
+"images because the current Openstack-Helm does not provide a way to pass the "
+"OCI image registry credentials to kubernetes when pulling images."
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:32
+msgid ""
+"Operators should be able to use Openstack-Helm to deploy containerized "
+"openstack services with a docker registry has authentication turned on."
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:38
+msgid ""
+"To be able to pull images from an OCI image registry which has the "
+"authentication turned on, kubernetes needs credentials. For each chart, a "
+"new ``endpoints:`` entry could be added in ``values.yaml`` to provide image "
+"credentials, a secret needs to be generated to hold the credentials and the "
+"``imagePullSecrets:`` field should be added in each service account to "
+"specify which secret should be used to get the credentials from when pulling "
+"images by kubelet."
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:45
+msgid "The detailed proposes change are described as following:"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:47
+msgid ""
+"1. For each chart, add a new entry ``oci_image_registry:`` under ``endpoints:"
+"`` in ``values.yaml``. The entry ``oci_image_registry:`` has the ``auth:`` "
+"section which provides the credentials for accessing registry images and an "
+"option ``enabled:`` to determine whether images authentication is required "
+"or not. The registry basic information would also be included for generating "
+"the registry URL by the endpoint lookup functions. Also add a new entry "
+"``oci_image_registry:`` under ``secrets:`` to indicate the secret name. In "
+"order to create the secret that holds the provided credentials, add a new "
+"component ``secret_registry`` in ``manifests:`` section. For example:"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:84
+msgid ""
+"The option ``enabled:`` under ``auth:`` and the manifest ``secret_registry:"
+"`` provide the ability for operator to determine whether they would like to "
+"have secrets generated and passed to kubernetes for pulling images."
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:88
+msgid ""
+"The secret would not be created with the default option ``enabled: false`` "
+"and ``secret_registry: true``. To enable secret creation, operator should "
+"override ``enabled:`` to true. The above example shows the default "
+"credentials, operator should override the ``username:`` and ``password:`` "
+"under ``auth:`` section to provide their own credentials."
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:94
+msgid ""
+"Then, add manifest ``secret-registry.yaml`` in ``templates/`` to leverage "
+"the function that will be added in helm-toolkit to create the secret. For "
+"example:"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:103
+msgid ""
+"Add a helm-toolkit function ``helm-toolkit.manifests.secret_registry`` to "
+"create a manifest for secret generation. For example:"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:127
+msgid ""
+"Reference the created secret by adding the ``imagePullSecrets:`` field to "
+"ServiceAccount resource template [2]_ in ``helm-toolkit/snippets/"
+"_kubernetes_pod_rbac_serviceaccount.tpl``. To handle it as optional, the "
+"field is wrapped in a conditional. For example,"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:142
+msgid ""
+"If .Values.endpoints.oci_image_registry.auth.enabled will be set to true, "
+"then any containers created with the current service account will have the "
+"``imagePullSecrets`` automatically added to their spec and the secret will "
+"be passed to kubelet to be used for pulling images."
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:150
+msgid ""
+"The credentials for the registry could be exposed by running the kubectl "
+"command: kubectl get secret <secret-name> --output=\"jsonpath={.data.\\."
+"dockerconfigjson}\" | base64 --decode"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:153
+msgid ""
+"Authentication should be enabled for normal users to access Kube API server "
+"via either kubectl command or kube REST API call."
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:159
+msgid "No performance impact"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:164
+msgid "Before using Openstack-Helm to deploy openstack services,"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:166
+msgid "Put .docker/config.json in docker/kubelet root directory on all nodes"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:167
+msgid "Pre-pulling images on all nodes"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:169
+msgid ""
+"But above alternatives have limitations and security impact. i.e...require "
+"root access to configure on all nodes, all pods can read any configured "
+"private registries, all pods can use any images cached on a node [1]_"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:182
+msgid "Angie Wang (angiewang)"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:187
+msgid ""
+"Provide the credentials and add the manifest across all charts in OSH and "
+"OSH-infra"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:188
+msgid ""
+"Update helm-toolkit to provide manifest to create secret for registry "
+"authentication"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:189
+msgid ""
+"Update helm-toolkit serviceaccount template to pass the secret in a "
+"conditional"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:198
+msgid "Documentation of how to enable the registry secret generation"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:203
+msgid "https://kubernetes.io/docs/concepts/containers/images"
+msgstr ""
+
+#: ../../source/specs/support-OCI-image-registry-with-authentication-turned-on.rst:204
+msgid ""
+"https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-"
+"account/#add-imagepullsecrets-to-a-service-account"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:11
+msgid "Support linux bridge on neutron helm chart"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:13
+msgid "Blueprint: support-linux-bridge-on-neutron_"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:21
+msgid ""
+"This specification will address enablement of LinuxBridge network "
+"virtualization for OpenStack Helm (OSH). LinuxBridge is second available "
+"networking technology in Neutron's reference architecture. The first one is "
+"OVS, that is already implemented in OSH."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:26
+msgid ""
+"The LinuxBridge (LB) is Neutron's L2 agent, using linux kernel bridges as "
+"network configuration for VMs. Both OVS and LB are part of Neutron's Modular "
+"Layer 2 (ML2) framework, allowing to simultaneously utilize the variety of "
+"layer 2 networking technologies."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:31
+msgid ""
+"Other services inside Neutron reference stack (L3/DHCP/metadata agents) are "
+"dependent on L2 connectivity agent. Thus, replacing OVS with LB would cause "
+"changes in mentioned services configuration."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:38
+msgid ""
+"LinuxBridge installation with neutron chart takes advantaged of decomposable "
+"neutron chart in OSH. LinuxBridge agent will be added as daemonset, "
+"similarly how OVS is implemented. New value :code:`daemonset_lb_agent` "
+"should be added in :code:`neutron/values.yaml` in :code:`manifests` section:"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:56
+msgid ""
+"By default, :code:`daemonset_lb_agent` will be set to false to remain "
+"default behaviour of installing OVS as networking agent."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:59
+msgid ""
+"Installing OVS requires Kubernetes worker node labeling with tag :code:"
+"`openvswitch=enabled`. To mark nodes where LB should be used, new tag will "
+"be introduced: :code:`linuxbridge=enabled`."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:63
+msgid ""
+"LinuxBridge should support external bridge configuration, as well as auto "
+"bridge add mechanism implemented for OVS."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:66
+msgid ""
+"As mentioned before, configuration of L3/DHCP/metadata agent should be "
+"adjusted to use LinuxBridge, sample configuration override:"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:94
+msgid ""
+"Having services configured, also the services pod dependencies should be "
+"updated to reflect the new kind on L2 agent:"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:119
+msgid "LinuxBridge should be also enabled in :code:`manifests` section:"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:129
+msgid "In above example OVS and Neutron OVS agent are disabled."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:131
+msgid ""
+"Another place where Neutron L2 agent should be pointed is dependencies list "
+"in other OpenStack projects. Currently, :code:`nova-compute` has dependency "
+"for :code:`ovs-agent` in :code:`nova/values.yaml`, it should be changed to:"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:148
+msgid ""
+"VM networking performance would be dependent on linux bridge implementation."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:152
+msgid ""
+"OVS is an alternative in Neutron reference architecture. It is already in "
+"tree."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:168
+msgid "Add LinuxBridge daemonset"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:169
+msgid "Add gate job testing VM network connectivity"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:170
+msgid "Add documentation on how to use LinuxBridge"
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:174
+msgid "Gate job testing VM network connectivity."
+msgstr ""
+
+#: ../../source/specs/support-linux-bridge-on-neutron.rst:178
+msgid "Documentation on how to use LinuxBridge with Neutron chart."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:3
+msgid "Deploying multuple Ceph clusters"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:5
+msgid ""
+"This guide shows how to setup multiple Ceph clusters. One Ceph cluster will "
+"be used for k8s RBD storage and while other Ceph cluster will be for tenant "
+"facing storage backend for Cinder and Glance."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:10
+msgid "Ceph Clusters:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:13
+msgid "Ceph for RBD:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:15
+msgid ""
+"This Ceph cluster will be used for k8s RBD storage (pvc). This can be used "
+"by entire Kubernetes cluster."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:18
+msgid "k8s namespace: ceph"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:19
+msgid "mon endpoint port: 6789"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:20
+msgid "mgr endpoint port: 7000"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:21
+msgid "metric port: 9283"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:22
+msgid "storage classes: general (rbd based for pvc)"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:23
+msgid "no ceph-mds and ceph-rgw"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:26
+msgid "Ceph for Tenant:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:28
+msgid ""
+"This Ceph cluster will be used by Cinder and Glance as storage backend."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:30
+msgid "k8s namespace: tenant-ceph"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:31
+msgid "mon endpoint port: 6790"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:32
+msgid "mgr endpoint port: 7001"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:33
+msgid "metric port: 9284"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:34
+msgid "no storage classes"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:35
+msgid "no ceph-mds"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:38
+msgid "Env Setup:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:39
+msgid "6 VM based hosts (node1, node2, node3, node4, node5, node6)"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:42
+msgid "k8s node labels:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:43
+msgid "``Ceph for RBD related labels:``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:45 ../../source/specs/tenant-ceph.rst:56
+msgid "Labels assigned to nodes: node1, node2, node3:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:47
+msgid ""
+"openstack-control-plane=enabled, ceph-mon=enabled, ceph-mgr=enabled, ceph-"
+"rgw=enabled, ceph-mds=enabled, ceph-osd=enabled"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:54
+msgid "``Ceph for Tenant related labels:``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:58
+msgid ""
+"tenant-ceph-control-plane=enabled, ceph-mon-tenant=enabled, ceph-mgr-tenant="
+"enabled, ceph-rgw-tenant=enabled"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:63
+msgid "Labels assigned to nodes: node4, node5, node6:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:65
+msgid ""
+"openstack-data-plane=enabled, openstack-compute-node=enabled, ceph-osd-"
+"tenant=enabled, openstack-data-plane=enabled"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:72
+msgid ""
+"``k8s node list with labels`` After applying above labels, node labels "
+"should look like following."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:88
+msgid "Test Steps:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:91
+msgid "1) Prepare scripts:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:93
+msgid ""
+"OpenStack-Helm multinode guide includes scripts which are used to specify "
+"overrides and deploy charts."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:96
+msgid "Duplicate scripts as shows below for later use."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:107
+msgid "2) Deploy ingress chart:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:109
+msgid "Script to update and execute: ``020-ingress.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:111
+msgid "Update script to include namespace ``tenant-ceph`` as shown below."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:118
+#: ../../source/specs/tenant-ceph.rst:178
+#: ../../source/specs/tenant-ceph.rst:612
+#: ../../source/specs/tenant-ceph.rst:677
+msgid "Execute script."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:121
+msgid "3) Deploy Ceph for RBD:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:123
+msgid "Script to update and execute: ``030-ceph.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:125
+msgid ""
+"Update script with following overrides. Note: The original RBD provisioner "
+"is now deprecated. The CSI RBD provisioner is selected here. If you prefer "
+"the original non-CSI RBD provisioner, then set rbd_provisioner to true "
+"instead."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:174
+msgid ""
+"``cephfs_provisioner: false`` and ``provision_storage_class: false`` are set "
+"to false to disable cephfs. ``deployment_mds: false`` is set to disable ceph-"
+"mds"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:181
+msgid "4) Deploy MariaDB, RabbitMQ, Memcached and Keystone:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:183
+msgid ""
+"Use default overrides and execute following scripts as per OSH guide steps:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:185
+msgid "``040-ceph-ns-activate.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:186
+msgid "``050-mariadb.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:187
+msgid "``060-rabbitmq.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:188
+msgid "``070-memcached.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:189
+msgid "``080-keystone.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:193
+msgid "Result from Steps 2, 3, 4:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:195
+msgid "``Ceph Pods``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:225
+msgid "``Openstack Pods:``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:254
+#: ../../source/specs/tenant-ceph.rst:784
+msgid "``Ceph Status``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:275
+msgid "``Ceph ConfigMaps``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:298
+msgid "``ceph-mon-etc (ceph.conf)``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:335
+msgid "Note that mon_addr and mon_host have default mon port 6789."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:337
+msgid "``k8s storageclass``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:345
+msgid "``Ceph services``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:358
+msgid "``Ceph endpoints``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:371
+msgid "``netstat ceph mon port``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:384
+msgid "``Ceph secrets``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:414
+msgid "``Openstack secrets``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:455
+msgid "``Openstack PV list``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:466
+msgid "``Openstack endpoints``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:479
+msgid "``Openstack services``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:493
+msgid "5) Deploy Ceph for Tenant:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:495
+msgid "Script to update and execute: ``030-tenant-ceph.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:497
+msgid ""
+"Make following changes to script: 1 Replace occurrence of ``ceph-fs-uuid."
+"txt`` with ``tenant-ceph-fs-uuid.txt``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:500
+msgid "2 Replace occurrence of ``ceph.yaml`` with ``tenant-ceph.yaml``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:502
+msgid ""
+"3 For tenant Ceph, no need to deploy ceph-provisioners. Update script to "
+"``for CHART in ceph-mon ceph-osd ceph-client; do``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:506
+msgid "Update script's override section with following:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:600
+msgid "Port numbers for Ceph_Mon and Ceph_Mgr are different from default."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:601
+msgid "We are disabling rbd and cephfs provisioners."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:602
+msgid ""
+"Labels for mon, osd, rgw, mgr and job have been updated for tenant Ceph."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:603
+msgid ""
+"Under storageclass section, values for following have been updated: "
+"ceph_configmap_name, admin_secret_name, admin_secret_namespace, "
+"user_secret_name"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:605
+msgid "Under storage: mon directory have been updated."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:607
+msgid ""
+"For Tenant Ceph, we will not be provisioning storage classes therefor, "
+"update script to not install ceph-provisioners chart as following."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:610
+msgid "``for CHART in ceph-mon ceph-osd ceph-client; do``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:615
+msgid "6) Enable Openstack namespace to use Tenant Ceph:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:617
+msgid "Script to update and execute: ``040-tenant-ceph-ns-activate.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:619
+msgid "Update script as following:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:680
+msgid "7) Tenant Ceph: Deploy Rados Gateway:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:682
+msgid "Script to update: ``090-tenant-ceph-radosgateway.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:684
+msgid "Update script with following overrides:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:738
+msgid "Execute script"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:765
+msgid "Results from Step 5, 6, 7:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:767
+msgid "``Storage on node1, node2, node3:``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:776
+msgid "``Storage on node4, node5, node6:``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:854
+msgid "mon_addr and mon_host have non default mon port 6790."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:947
+msgid "8) Deploy Glance:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:949
+msgid "Script to update and execute: ``100-glance.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:951
+#: ../../source/specs/tenant-ceph.rst:1001
+msgid "Update script overrides as following:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:993
+msgid ""
+"Above output shows ``http://ceph-rgw.openstack.svc.cluster.local`` which "
+"shows that swift is pointing to tenant-ceph."
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:997
+msgid "9) Deploy Cinder:"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:999
+msgid "Script to update and execute: ``110-cinder.sh``"
+msgstr ""
+
+#: ../../source/specs/tenant-ceph.rst:1052
+msgid ""
+"Above output shows that tenant ceph now has 19 pools including one for "
+"Cinder."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:3
+msgid "Values File Ordering"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:8
+msgid ""
+"Each chart's values.yaml file contains various settings such as docker image "
+"definition, chart structure setting, form of the resources being "
+"distributed, and process configuration.  Currently, the structure of the "
+"yaml file is complicated, and finding keys between charts proves difficult "
+"due to the lack of uniform values organization across charts."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:14
+msgid ""
+"This specification proposes introducing a uniform values.yaml structure "
+"across all charts in openstack-helm, openstack-helm-infra, and openstack-"
+"helm-addons, with the goal of reducing the complexities of working across "
+"multiple charts and reducing the effort for creating new charts."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:22
+msgid ""
+"This specification proposes defining entries in the values.yaml file into "
+"two categories: top-level keys, and their children (sub-level) keys."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:25
+msgid ""
+"The top-level keys are based on the organizational keys common to all charts "
+"in the openstack-helm repositories.  The top-level keys are strictly ordered "
+"according to function, which creates a common organization pattern between "
+"all charts."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:29
+msgid ""
+"All keys under top-level keys are listed in alphabetical order, with the "
+"exception of the conf key.  As some configuration files require a strict "
+"ordering of their content, excluding this key from any alphabetical "
+"organization is required."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:34
+msgid ""
+"This specification also proposes to restrict the addition of any new top-"
+"level keys in charts across all OpenStack-Helm repositories, in order to "
+"maintain the common structure the ordering creates.  The addition of a new "
+"top-level key shall be agreed upon by the OpenStack-Helm team on a case-by-"
+"case basis.  The addition of any new top-level keys should be documented, "
+"and this specification shall be amended to account for any added keys."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:41
+msgid "Top-level keys are placed in this order:"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:43
+msgid "images * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:45
+msgid "labels * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:47
+msgid "dependencies * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:49
+msgid "pod * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:51
+msgid "secrets * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:53
+msgid "endpoints * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:55
+msgid "bootstrap * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:57
+msgid "network * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:59
+msgid "manifests * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:61
+msgid "monitoring * sub-keys (alphabetical order)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:63
+msgid "conf * sub-keys (up-to-chart-developer)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:79
+msgid ""
+"The alternative is to provide no organization layout for charts across all "
+"openstack-helm repositories."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:89
+msgid ""
+"powerds0111 (DaeSeong Kim <daeseong.kim@sk.com>) srwilkers (Steve Wilkerson "
+"<sw5822@att.com>)"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:95
+msgid ""
+"The following work items need to be completed for this specification to be "
+"implemented."
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:98
+msgid "Update of developer documentation"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:99
+msgid ""
+"Add a template highlighting the updated values ordering for use in chart "
+"development"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:101
+msgid ""
+"Change ordering of keys across all charts in openstack-helm, openstack-helm-"
+"infra, and openstack-helm-addons"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:107
+msgid ""
+"To successfully enforce the ordering defined here, our gates need a method "
+"for validating the ordering and the schema of all values.yaml files.  "
+"Without such a mechanism, the overhead associated with properly reviewing "
+"and validating any changes to the structure will be substantial.  A tool, "
+"such as yamllint, would provide this functionality and remove the need to "
+"write a custom validation tool"
+msgstr ""
+
+#: ../../source/specs/values-ordering.rst:116
+msgid ""
+"The developer documentation in OpenStack-Helm should be updated to guide key "
+"ordering on value files."
+msgstr ""
+

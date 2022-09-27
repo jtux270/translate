@@ -1,0 +1,706 @@
+# Andreas Jaeger <jaegerandi@gmail.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenStack API Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-23 18:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-07-22 07:05+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Zanata 4.3.3\n"
+"Language-Team: Russian\n"
+
+#: ../api-quick-start.rst:5
+msgid "OpenStack APIs"
+msgstr "Интерфейсы программирования приложений, OpenStack API"
+
+#: ../api-quick-start.rst:7
+msgid ""
+"To authenticate access to OpenStack services, you must first issue an "
+"authentication request with a payload of credentials to OpenStack Identity "
+"to get an authentication token."
+msgstr "Для аутонтифицированного доступа в сервисы OpenStack  сначала нужно "
+
+#: ../api-quick-start.rst:11
+msgid ""
+"Credentials are usually a combination of your user name and password, and "
+"optionally, the name or ID of the project of your cloud. Ask your cloud "
+"administrator for your user name, password, and project so that you can "
+"generate authentication tokens. Alternatively, you can supply a token rather "
+"than a user name and password."
+msgstr ""
+
+#: ../api-quick-start.rst:17
+msgid ""
+"When you send API requests, you include the token in the ``X-Auth-Token`` "
+"header. If you access multiple OpenStack services, you must get a token for "
+"each service. A token is valid for a limited time before it expires. A token "
+"can also become invalid for other reasons. For example, if the roles for a "
+"user change, existing tokens for that user are no longer valid."
+msgstr ""
+"Отправляя API запрос вы включаете токен в заголовок ' ' X-Auth-Token' '. "
+"Если вы хотите получить доступ к нескольким сервисам OpenStack, вам "
+"необходимо  получить токен для каждого из них. Токен действителен "
+"ограниченное время, после истечения которого он становится недействительным. "
+"Токен так же может стать не действительным по другим причинам. К примеру, "
+"если изменить роль пользователя, существующий токен для этого пользователя "
+"перестанет быть действительным."
+
+#: ../api-quick-start.rst:24
+msgid "Authentication and API request workflow"
+msgstr "Схема авторизации и API"
+
+#: ../api-quick-start.rst:26
+msgid ""
+"Request an authentication token from the Identity endpoint that your cloud "
+"administrator gave you. Send a payload of credentials in the request as "
+"shown in :ref:`authenticate`. If the request succeeds, the server returns an "
+"authentication token."
+msgstr ""
+
+#: ../api-quick-start.rst:31
+msgid ""
+"Send API requests and include the token in the ``X-Auth-Token`` header. "
+"Continue to send API requests with that token until the service completes "
+"the request or the Unauthorized (401) error occurs."
+msgstr ""
+"Отправьте API запрос и укажите токен в заголовке X-Auth-Token. Продолжайте "
+"отправлять API запросы с этим токеном пока сервис не выполнит запрос или "
+"завершится с  ошибкой авторизации(401)"
+
+#: ../api-quick-start.rst:35
+msgid "If the Unauthorized (401) error occurs, request another token."
+msgstr "При возникновении ошибки авторизации(401), запросите другой токен"
+
+#: ../api-quick-start.rst:37
+msgid ""
+"The examples in this section use cURL commands. For information about cURL, "
+"see http://curl.haxx.se/. For information about the OpenStack APIs, see :ref:"
+"`current_api_versions`."
+msgstr ""
+
+#: ../api-quick-start.rst:45
+msgid "Authenticate"
+msgstr "Аутентификация"
+
+#: ../api-quick-start.rst:47
+msgid "The payload of credentials to authenticate contains these parameters:"
+msgstr ""
+"Суть учётной записи в аутентификации следующих содержащихся параметров:"
+
+#: ../api-quick-start.rst:49
+msgid "Credential parameters"
+msgstr ""
+
+#: ../api-quick-start.rst:53
+msgid "Parameter"
+msgstr "Параметр"
+
+#: ../api-quick-start.rst:54
+msgid "Type"
+msgstr "Тип"
+
+#: ../api-quick-start.rst:55
+msgid "Description"
+msgstr "Описание"
+
+#: ../api-quick-start.rst:56
+msgid "*User Domain* (required)"
+msgstr ""
+
+#: ../api-quick-start.rst:57 ../api-quick-start.rst:60
+#: ../api-quick-start.rst:64 ../api-quick-start.rst:67
+#: ../api-quick-start.rst:70 ../api-quick-start.rst:73
+msgid "string"
+msgstr "строка"
+
+#: ../api-quick-start.rst:58
+msgid "The Domain of the user."
+msgstr ""
+
+#: ../api-quick-start.rst:59
+msgid "username (required)"
+msgstr "имя пользователя (необходимо)"
+
+#: ../api-quick-start.rst:61
+msgid ""
+"The user name. If you do not provide a user name and password, you must "
+"provide a token."
+msgstr ""
+"Имя пользователя. Если вы не указываете имя пользователя и пароль, вы должны "
+"указать токен."
+
+#: ../api-quick-start.rst:63
+msgid "password (required)"
+msgstr "пароль (необходимо)"
+
+#: ../api-quick-start.rst:65
+msgid "The password for the user."
+msgstr "Пароль для пользователя."
+
+#: ../api-quick-start.rst:66
+msgid "*Project Domain* (optional)"
+msgstr ""
+
+#: ../api-quick-start.rst:68
+msgid ""
+"The Domain of the project. This is a required part of the scope object."
+msgstr ""
+
+#: ../api-quick-start.rst:69
+msgid "*Project Name* (optional)"
+msgstr ""
+
+#: ../api-quick-start.rst:71
+msgid ""
+"The project name. Both the *Project ID* and *Project Name* are optional."
+msgstr ""
+
+#: ../api-quick-start.rst:72
+msgid "*Project ID* (optional)"
+msgstr ""
+
+#: ../api-quick-start.rst:74
+msgid ""
+"The project ID. Both the *project ID* and *Project Name* are optional. But "
+"one of them is required along with the *Project Domain*. They are wrapped "
+"under a scope object. If you do not know the project name or ID, send a "
+"request without any scope object."
+msgstr ""
+
+#: ../api-quick-start.rst:79
+msgid ""
+"In a typical OpenStack deployment that runs Identity, you can specify your "
+"project name, and user name and password credentials to authenticate."
+msgstr ""
+
+#: ../api-quick-start.rst:82
+msgid ""
+"First, export your project name to the ``OS_PROJECT_NAME`` environment "
+"variable, your project domain name to the ``OS_PROJECT_DOMAIN_NAME`` "
+"environment variable, your user name to the ``OS_USERNAME`` environment "
+"variable, your password to the ``OS_PASSWORD`` environment variable and your "
+"user domain name to the ``OS_USER_DOMAIN_NAME`` environment variable."
+msgstr ""
+
+#: ../api-quick-start.rst:89
+msgid ""
+"The example below uses an endpoint from an installation of Ocata by "
+"following the installation guide. However, you can also use ``$OS_AUTH_URL`` "
+"as an environment variable as needed to change the URL."
+msgstr ""
+
+#: ../api-quick-start.rst:93
+msgid "Then, run this cURL command to request a token:"
+msgstr "После этого выполните эту cURL команду чтобы запросить токен"
+
+#: ../api-quick-start.rst:100
+msgid ""
+"If the request succeeds, it returns the ``Created (201)`` response code "
+"along with the token as a value in the ``X-Subject-Token`` response header. "
+"The header is followed by a response body that has an object of type "
+"``token`` which has the token expiration date and time in the form "
+"``\"expires_at\":\"datetime\"`` along with other attributes."
+msgstr ""
+
+#: ../api-quick-start.rst:106
+msgid "The following example shows a successful response:"
+msgstr "Следующий пример показывает успешный ответ:"
+
+#: ../api-quick-start.rst:172
+msgid ""
+"In the above request, the query string ``nocatalog`` is used as you just "
+"want to get a token and do not want the service catalog (if it is available "
+"for the user) cluttering the output. If a user wants to get the service "
+"catalog, this query string need not be appended to the URL."
+msgstr ""
+
+#: ../api-quick-start.rst:179
+msgid "Send API requests"
+msgstr "Отправка запросов API"
+
+#: ../api-quick-start.rst:181
+msgid ""
+"This section shows how to make some basic Compute API calls. For a complete "
+"list of Compute API calls, see `Compute API <https://docs.openstack.org/api-"
+"ref/compute/>`__."
+msgstr ""
+
+#: ../api-quick-start.rst:185
+msgid ""
+"Export the token ID to the ``OS_TOKEN`` environment variable. For example:"
+msgstr ""
+
+#: ../api-quick-start.rst:191
+msgid ""
+"The token expires every hour by default, though it can be configured "
+"differently - see the `expiration <https://docs.openstack.org/keystone/"
+"latest/configuration/config-options.html#token.expiration>`__ option in the "
+"the *Identity Service Configuration Guide*."
+msgstr ""
+
+#: ../api-quick-start.rst:196
+msgid ""
+"Export the project name to the ``OS_PROJECT_NAME`` environment variable. For "
+"example:"
+msgstr ""
+
+#: ../api-quick-start.rst:203
+msgid ""
+"Then, use the Compute API to list flavors, substituting the Compute API "
+"endpoint with one containing your project ID below:"
+msgstr ""
+
+#: ../api-quick-start.rst:289
+msgid ""
+"Export the $OS_PROJECT_ID from the token call, and then use the Compute API "
+"to list images:"
+msgstr ""
+
+#: ../api-quick-start.rst:400
+msgid ""
+"Export the $OS_PROJECT_ID from the token call, and then use the Compute API "
+"to list servers:"
+msgstr ""
+
+#: ../api-quick-start.rst:433
+msgid "OpenStack command-line clients"
+msgstr "Клиенты командной строки OpenStack"
+
+#: ../api-quick-start.rst:435
+msgid ""
+"For scripting work and simple requests, you can use a command-line client "
+"like the ``openstack-client`` client. This client enables you to use the "
+"Identity, Compute, Block Storage, and Object Storage APIs through a command-"
+"line interface. Also, each OpenStack project has a related client project "
+"that includes Python API bindings and a command-line interface (CLI)."
+msgstr ""
+
+#: ../api-quick-start.rst:441
+msgid ""
+"For information about the command-line clients, see `OpenStack Command-Line "
+"Interface Reference <https://docs.openstack.org/cli-reference/>`__."
+msgstr ""
+
+#: ../api-quick-start.rst:445
+msgid "Install the clients"
+msgstr "Установка клиентов"
+
+#: ../api-quick-start.rst:447
+msgid ""
+"Use ``pip`` to install the OpenStack clients on a Mac OS X or Linux system. "
+"It is easy and ensures that you get the latest version of the client from "
+"the `Python Package Index <https://pypi.org/>`__. Also, ``pip`` lets you "
+"update or remove a package."
+msgstr ""
+
+#: ../api-quick-start.rst:452
+msgid ""
+"You must install the client for each project separately, but the ``python-"
+"openstackclient`` covers multiple projects."
+msgstr ""
+
+#: ../api-quick-start.rst:455
+msgid "Install or update a client package:"
+msgstr "Установите или обновите клиентский модуль"
+
+#: ../api-quick-start.rst:461
+msgid "Where *PROJECT* is the project name."
+msgstr ""
+
+#: ../api-quick-start.rst:463
+msgid "For example, install the ``openstack`` client:"
+msgstr "К примеру, установите ' 'openstack' ' клиент:"
+
+#: ../api-quick-start.rst:469
+msgid "To update the ``openstack`` client, run this command:"
+msgstr "Для обновления ' 'openstack' ' клиента выполните следующую команду:"
+
+#: ../api-quick-start.rst:475
+msgid "To remove the ``openstack`` client, run this command:"
+msgstr "Для удаления ' 'openstack' ' клиента выполните следующую команду:"
+
+#: ../api-quick-start.rst:481
+msgid ""
+"Before you can issue client commands, you must download and source the "
+"``openrc`` file to set environment variables."
+msgstr ""
+"Для выполнения клиентских команд вы должны загрузить и указать ' 'openrc' ' "
+"файл, чтобы задать параметры окружения."
+
+#: ../api-quick-start.rst:484
+msgid ""
+"For complete information about the OpenStack clients, including how to "
+"source the ``openrc`` file, see `OpenStack End User Guide <https://docs."
+"openstack.org/user-guide/>`__, `OpenStack Administrator Guide <https://docs."
+"openstack.org/admin-guide/>`__, and `OpenStack Command-Line Interface "
+"Reference <https://docs.openstack.org/cli-reference/>`__."
+msgstr ""
+
+#: ../api-quick-start.rst:490
+msgid "Launch an instance"
+msgstr "Запуск инстанса"
+
+#: ../api-quick-start.rst:492
+msgid ""
+"To launch instances, you must choose a name, an image, and a flavor for your "
+"instance."
+msgstr "Для запуска инстансов, вы должны выбрать имя, образ и тип инстанса."
+
+#: ../api-quick-start.rst:495
+msgid ""
+"To list available images, call the Compute API through the ``openstack`` "
+"client:"
+msgstr ""
+
+#: ../api-quick-start.rst:510
+msgid "To list flavors, run this command:"
+msgstr "Для получения списка типа инстансов, выполните команду:"
+
+#: ../api-quick-start.rst:530
+msgid "To launch an instance, note the IDs of your desired image and flavor."
+msgstr ""
+"Для запуска инстанса выберите идентификаторы (ID) требуемого образа и типа "
+"инстанса."
+
+#: ../api-quick-start.rst:532
+msgid ""
+"To launch the ``my_instance`` instance, run the ``openstack server create`` "
+"command with the image and flavor IDs and the server name:"
+msgstr ""
+
+#: ../api-quick-start.rst:574
+msgid ""
+"For information about the default ports that the OpenStack components use, "
+"see `Firewalls and default ports <https://docs.openstack.org/install-guide/"
+"firewalls-default-ports.html>`_ in the *OpenStack Installation Guide*."
+msgstr ""
+
+#: ../index.rst:3
+msgid "OpenStack API Documentation"
+msgstr ""
+
+#: ../index.rst:5
+msgid ""
+"Use the OpenStack APIs to launch server instances, create images, assign "
+"metadata to instances and images, create storage containers and objects, and "
+"complete other actions in your OpenStack cloud."
+msgstr ""
+
+#: ../index.rst:10
+msgid ""
+"The links below are grouped according to the API status that reflects the "
+"state of the endpoint on the service."
+msgstr ""
+
+#: ../index.rst:13
+msgid ""
+"'Current' indicates a stable version that is up-to-date, recent, and might "
+"receive future versions. This endpoint should be prioritized over all others."
+""
+msgstr ""
+
+#: ../index.rst:16
+msgid ""
+"'Supported' is a stable version that is available on the server. However, it "
+"is not likely the most recent available and might not be updated or might be "
+"deprecated at some time in the future."
+msgstr ""
+
+#: ../index.rst:19
+msgid ""
+"'Deprecated' is a stable version that is still available but is being "
+"deprecated and might be removed in the future."
+msgstr ""
+
+#: ../index.rst:21
+msgid ""
+"'Experimental' is not a stable version. This version is under development or "
+"contains features that are otherwise subject to change."
+msgstr ""
+
+#: ../index.rst:24
+msgid ""
+"For more information about API status values and version information, see "
+"`Version Discovery <https://wiki.openstack.org/wiki/VersionDiscovery>`__."
+msgstr ""
+
+#: ../index.rst:27
+msgid ""
+"The notation '(microversions)' next to the link to an API reference "
+"indicates that the API follows a `pattern established by the Compute service "
+"<https://docs.openstack.org/api-guide/compute/microversions.html>`__ to "
+"enable small, documented changes to the API on a resource-by-resource basis."
+msgstr ""
+
+#: ../index.rst:37
+msgid "Current API versions"
+msgstr ""
+
+#: ../index.rst:39
+msgid ""
+"`Acceleration API v1 <https://docs.openstack.org/api-ref/accelerator/v1/>`__"
+msgstr ""
+
+#: ../index.rst:41
+msgid "`Admin Logic API <https://docs.openstack.org/api-ref/admin-logic/>`__"
+msgstr ""
+
+#: ../index.rst:44
+msgid ""
+"`Application Catalog API v1 <https://docs.openstack.org/api-ref/application-"
+"catalog/v1/>`__"
+msgstr ""
+
+#: ../index.rst:46
+msgid ""
+"`Application Container Service API <https://docs.openstack.org/api-ref/"
+"application-container/>`__ (microversions)"
+msgstr ""
+
+#: ../index.rst:48
+msgid "`Backup API v1 <https://docs.openstack.org/api-ref/backup/v1/>`__"
+msgstr ""
+
+#: ../index.rst:50
+msgid ""
+"`Bare Metal API v1 <https://docs.openstack.org/api-ref/baremetal/>`__ "
+"(microversions)"
+msgstr ""
+
+#: ../index.rst:52
+msgid ""
+"`Block Storage API v3 <https://docs.openstack.org/api-ref/block-storage/v3/"
+">`__ (microversions)"
+msgstr ""
+
+#: ../index.rst:54 ../index.rst:117
+msgid ""
+"The Block Storage API v3 is functionally identical to the Block Storage API "
+"v2. Subsequent API v3 microversions, such as v3.1, differ from API v2."
+msgstr ""
+
+#: ../index.rst:58
+msgid "`Clustering API v1 <https://docs.openstack.org/api-ref/clustering/>`__"
+msgstr ""
+
+#: ../index.rst:60
+msgid ""
+"`Compute API <https://docs.openstack.org/api-ref/compute/>`__ "
+"(microversions)"
+msgstr ""
+
+#: ../index.rst:62
+msgid ""
+"`Container Infrastructure Management API <https://docs.openstack.org/api-ref/"
+"container-infrastructure-management/>`__ (microversions)"
+msgstr ""
+
+#: ../index.rst:64
+msgid ""
+"`Data Processing v1.1 <https://docs.openstack.org/api-ref/data-processing/"
+">`__"
+msgstr ""
+
+#: ../index.rst:66
+msgid ""
+"`Data Protection Orchestration v1 <https://docs.openstack.org/api-ref/data-"
+"protection-orchestration/>`__"
+msgstr ""
+
+#: ../index.rst:68
+msgid ""
+"`Database Service API v1.0 <https://docs.openstack.org/api-ref/database/>`__"
+msgstr ""
+
+#: ../index.rst:70
+msgid ""
+"`Domain Name Server (DNS) API v2 <https://docs.openstack.org/api-ref/dns/"
+">`__"
+msgstr ""
+
+#: ../index.rst:72
+msgid "`EC2 API Service <https://docs.openstack.org/api-ref/ec2-api/>`__"
+msgstr ""
+
+#: ../index.rst:74
+msgid ""
+"`Function Engine <https://docs.openstack.org/api-ref/function-engine/>`__"
+msgstr ""
+
+#: ../index.rst:76
+msgid "`Identity API v3 <https://docs.openstack.org/api-ref/identity/v3>`__"
+msgstr ""
+
+#: ../index.rst:78
+msgid ""
+"`Identity API v3 extensions <https://docs.openstack.org/api-ref/identity/v3-"
+"ext>`__"
+msgstr ""
+
+#: ../index.rst:80
+msgid "`Image service API v2 <https://docs.openstack.org/api-ref/image/v2>`__"
+msgstr ""
+
+#: ../index.rst:82
+msgid ""
+"`Key Manager API v1 <https://docs.openstack.org/barbican/latest/api/>`__"
+msgstr ""
+
+#: ../index.rst:84
+msgid ""
+"`Load Balancer API v2 <https://docs.openstack.org/api-ref/load-balancer/"
+"v2>`__"
+msgstr ""
+
+#: ../index.rst:86
+msgid "`Messaging API v2 <https://docs.openstack.org/api-ref/message>`__"
+msgstr ""
+
+#: ../index.rst:88
+msgid ""
+"`Networking API v2.0 <https://docs.openstack.org/api-ref/network/v2>`__"
+msgstr ""
+
+#: ../index.rst:90
+msgid ""
+"`NFV Orchestration API v1.0 <https://docs.openstack.org/api-ref/nfv-"
+"orchestration/v1/>`__"
+msgstr ""
+
+#: ../index.rst:92
+msgid ""
+"`Object Storage API v1 <https://docs.openstack.org/api-ref/object-store>`__"
+msgstr ""
+
+#: ../index.rst:94
+msgid ""
+"`Orchestration API v1 <https://docs.openstack.org/api-ref/orchestration/v1/"
+">`__"
+msgstr ""
+
+#: ../index.rst:96
+msgid ""
+"`Placement API <https://docs.openstack.org/api-ref/placement/>`__ "
+"(microversions)"
+msgstr ""
+
+#: ../index.rst:98
+msgid ""
+"`Resource Optimization API v1 <https://docs.openstack.org/api-ref/resource-"
+"optimization>`__"
+msgstr ""
+
+#: ../index.rst:100
+msgid "`Search API v1 <https://docs.openstack.org/api-ref/search>`__"
+msgstr ""
+
+#: ../index.rst:102
+msgid ""
+"`Shared File Systems API v2 <https://docs.openstack.org/api-ref/shared-file-"
+"system>`__ (microversions)"
+msgstr ""
+
+#: ../index.rst:104
+msgid ""
+"The Shared File Systems API v1 is functionally identical to the Shared File "
+"Systems API v2. Subsequent API v2 microversions, such as v2.1, differ from "
+"API v1."
+msgstr ""
+
+#: ../index.rst:109
+msgid "Supported API versions"
+msgstr ""
+
+#: ../index.rst:113
+msgid "Deprecated API versions"
+msgstr ""
+
+#: ../index.rst:115
+msgid ""
+"`Block Storage API v2 <https://docs.openstack.org/api-ref/block-storage/v2/"
+">`__"
+msgstr ""
+
+#: ../index.rst:121
+msgid ""
+"`Identity API v2.0 extensions <https://docs.openstack.org/api-ref/identity/"
+"v2-ext>`__"
+msgstr ""
+
+#: ../index.rst:126
+msgid "API quick-start examples"
+msgstr ""
+
+#: ../index.rst:128
+msgid ""
+"With the `TryStack <https://www.openstack.org/software/start>`__ OpenStack "
+"installation, these services work together in the background of the "
+"installation, and many of these examples work on TryStack."
+msgstr ""
+
+#: ../index.rst:132
+msgid ""
+"After you authenticate through Identity, you can use the other OpenStack "
+"APIs to create and manage resources in your OpenStack cloud. You can launch "
+"instances from images and assign metadata to instances through the Compute "
+"API or the **openstack** command-line client."
+msgstr ""
+
+#: ../index.rst:137
+msgid "To begin sending API requests, use one of the following methods:"
+msgstr ""
+
+#: ../index.rst:139
+msgid "**cURL**"
+msgstr ""
+
+#: ../index.rst:141
+msgid ""
+"A command-line tool that lets you send HTTP requests and receive responses. "
+"See the section called :ref:`openstack_API_quick_guide`."
+msgstr ""
+
+#: ../index.rst:144
+msgid "**OpenStack command-line client**"
+msgstr ""
+
+#: ../index.rst:146
+msgid ""
+"The OpenStack project provides a command-line client that enables you to "
+"access APIs through easy-to-use commands. See the section called :ref:"
+"`client-intro`."
+msgstr ""
+
+#: ../index.rst:150
+msgid "**REST clients**"
+msgstr ""
+
+#: ../index.rst:152
+msgid ""
+"Both Mozilla and Google provide browser-based graphical interfaces for REST. "
+"For Firefox, see `RESTClient <https://addons.mozilla.org/en-US/firefox/addon/"
+"restclient/>`__. For Chrome, see `rest-client <https://code.google.com/"
+"archive/p/rest-client/>`__."
+msgstr ""
+
+#: ../index.rst:158
+msgid "**OpenStack Python Software Development Kit (SDK)**"
+msgstr ""
+
+#: ../index.rst:160
+msgid ""
+"Use this SDK to write Python automation scripts that create and manage "
+"resources in your OpenStack cloud. The SDK implements Python bindings to the "
+"OpenStack API, which enables you to perform automation tasks in Python by "
+"making calls on Python objects rather than making REST calls directly. All "
+"OpenStack command-line tools are implemented by using the Python SDK. See "
+"`OpenStack Python SDK <https://docs.openstack.org/user-guide/sdk.html>`__ in "
+"the *OpenStack End User Guide*."
+msgstr ""
+
