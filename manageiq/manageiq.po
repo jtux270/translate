@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: manageiq 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-09 08:49-0400\n"
-"PO-Revision-Date: 2022-10-07 22:32+0300\n"
+"PO-Revision-Date: 2022-10-10 19:20+0300\n"
 "Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
 "Language-Team: RU\n"
 "Language: ru\n"
@@ -3463,7 +3463,7 @@ msgstr "Account|Включено"
 
 #: ../config/model_attributes.rb:9
 msgid "Account|Expires"
-msgstr ""
+msgstr "Account|Истечение срока действия"
 
 #: ../config/model_attributes.rb:10
 msgid "Account|Homedir"
@@ -7208,7 +7208,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:42
 msgid "AssetDetail|Manufacturer"
-msgstr ""
+msgstr "AssetDetail|Изготовитель"
 
 #: ../config/model_attributes.rb:43
 msgid "AssetDetail|Model"
@@ -10769,9 +10769,9 @@ msgstr "Идёт отмена"
 #: ../config/model_display_names.rb:15 ../config/model_attributes.rb:185
 msgid "Canister"
 msgid_plural "Canisters"
-msgstr[0] "Контейнер"
-msgstr[1] "Контейнеры"
-msgstr[2] "Контейнеры"
+msgstr[0] "Контейнер (canister)"
+msgstr[1] "Контейнеры (canister)"
+msgstr[2] "Контейнеры (canister)"
 
 #: ../config/model_attributes.rb:186
 msgid "Canister|Controller redundancy status"
@@ -10815,7 +10815,7 @@ msgstr "Canister|Имя"
 
 #: ../config/model_attributes.rb:196
 msgid "Canister|Phy isolation"
-msgstr ""
+msgstr "Canister|Физич. изоляция"
 
 #: ../config/model_attributes.rb:197
 msgid "Canister|Position"
@@ -10843,7 +10843,7 @@ msgstr "Canister|Статус"
 
 #: ../config/model_attributes.rb:203
 msgid "Canister|System cache memory"
-msgstr ""
+msgstr "Canister|Память в системном кэше"
 
 #: ../app/controllers/mixins/containers_external_logging_support_mixin.rb:23
 msgid ""
@@ -12746,7 +12746,7 @@ msgstr "Classification|Имя"
 
 #: ../config/model_attributes.rb:270
 msgid "Classification|Ns"
-msgstr ""
+msgstr "Classification|Ns"
 
 #: ../config/model_attributes.rb:271
 msgid "Classification|Perf by tag"
@@ -13955,7 +13955,7 @@ msgstr "CloudNetwork|Включено"
 
 #: ../config/model_attributes.rb:308
 msgid "CloudNetwork|External facing"
-msgstr ""
+msgstr "CloudNetwork|С внешним выходом"
 
 #: ../config/model_attributes.rb:309
 msgid "CloudNetwork|Extra attributes"
@@ -15065,7 +15065,7 @@ msgstr "Выполнено"
 #. TRANSLATORS: file: product/views/ContainerBuild.yaml
 #: ../config/yaml_strings.rb:721
 msgid "Completion Deadline"
-msgstr "Крайний срок завершения"
+msgstr "с"
 
 #. TRANSLATORS: en.yml key: dictionary.column.completion_deadline_seconds
 #: ../config/dictionary_strings.rb:376
@@ -15135,9 +15135,8 @@ msgid "ComplianceDetail|Condition desc"
 msgstr "ComplianceDetail|Условия по убыванию"
 
 #: ../config/model_attributes.rb:465
-#, fuzzy
 msgid "ComplianceDetail|Condition result"
-msgstr "ComplianceDetail|Condition result"
+msgstr "ComplianceDetail|Результат условия"
 
 #: ../config/model_attributes.rb:466
 msgid "ComplianceDetail|Created on"
@@ -16393,8 +16392,9 @@ msgid "ConfiguredSystem|Ipmi present"
 msgstr "ConfiguredSystem|Ipmi присутствует"
 
 #: ../config/model_attributes.rb:603
+#, fuzzy
 msgid "ConfiguredSystem|Last checkin"
-msgstr ""
+msgstr "ConfiguredSystem|Последний возврат"
 
 #: ../config/model_attributes.rb:604
 msgid "ConfiguredSystem|Mac address"
@@ -21140,9 +21140,8 @@ msgstr[2] "Валюты"
 
 #. TRANSLATORS: file: db/fixtures/miq_report_formats.yml
 #: ../config/yaml_strings.rb:4641
-#, fuzzy
 msgid "Currency, 2 Decimals ($1,234.00)"
-msgstr "Валюта, 2 десятичных ($1,234.00)"
+msgstr "Валюта, 2 знака после запятой ($1,234.00)"
 
 #: ../config/model_attributes.rb:1242
 msgid "Currency|Code"
@@ -33888,7 +33887,7 @@ msgstr "Внешняя БД"
 #. TRANSLATORS: en.yml key: dictionary.column.external_facing
 #: ../config/dictionary_strings.rb:880
 msgid "External Facing"
-msgstr ""
+msgstr "С внешним выходом"
 
 #:
 #: ../app/models/manageiq/providers/openstack/network_manager/network_router.rb:90
@@ -41005,6 +41004,7 @@ msgstr "Время последней загрузки"
 #. TRANSLATORS: file: product/views/ConfiguredSystem.yaml
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_AnsibleTower_AutomationManager_ConfiguredSystem.yaml
 #: ../config/yaml_strings.rb:686
+#, fuzzy
 msgid "Last Checkin"
 msgstr "Последний возврат"
 
@@ -45950,7 +45950,7 @@ msgstr "Свойство продукта MIQ"
 
 #: ../config/model_attributes.rb:3016
 msgid "Miq product features share"
-msgstr "Совместный доступ к свойствам продукта MIQ"
+msgstr "Разделяемые свойства продукта MIQ"
 
 #: ../config/model_attributes.rb:3020
 msgid "Miq queue"
@@ -49918,7 +49918,6 @@ msgid "Must be implemented in subclass"
 msgstr "Необходимо реализовать в подклассе"
 
 #: ../app/models/miq_provision/state_machine.rb:9
-#, fuzzy
 msgid ""
 "Must be implemented in subclass and signal :post_create_destination when self."
 "destination is set"
@@ -50055,9 +50054,9 @@ msgstr "Удалённая консоль NATIVE не поддерживаетс
 #: ../app/models/file_depot_nfs.rb:11 ../config/dictionary_strings.rb:2878
 msgid "NFS"
 msgid_plural "NFS"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "NFS"
+msgstr[1] "NFS"
+msgstr[2] "NFS"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:46
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:99
@@ -50078,7 +50077,7 @@ msgstr "NVMe"
 
 #: src/vm-snapshot-form/snapshot-form/snapshotForm.jsx:32
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 #: ../app/views/catalog/_form_basic_info.html.haml:10
 #: ../app/views/catalog/_sandt_tree_show.html.haml:23
@@ -50088,6 +50087,8 @@ msgstr "Имя / Описание"
 #: ../app/javascript/forms/mappers/validatorMapper.jsx:6
 msgid "Name can only contain lowercase letters, numbers, or underscores"
 msgstr ""
+"Имена могут состоять только из букв в нижнем регистре, чисел или символов"
+" подчёркивания"
 
 #: ../app/javascript/components/catalog-form/catalog-form.schema.js:12
 #: ../app/javascript/components/copy-catalog-form/copy-catalog-form.schema.js:12
@@ -50127,7 +50128,7 @@ msgstr "Требуется имя"
 #: ../app/javascript/components/generic-objects-form/helper.js:61
 #: ../app/javascript/components/generic-objects-form/helper.js:68
 msgid "Name must be unique"
-msgstr ""
+msgstr "Имя должно быть уникальным"
 
 #:
 #: ../app/javascript/components/cloud-networks/nsxt-cloud-network-form.schema.js:60
@@ -50165,6 +50166,8 @@ msgid ""
 "Name: %{hd_name}, Location: %{location}, Size: %{size}, Percent Used Provision"
 "ed Space: %{prov}, Filename: %{filename}, Mode: %{mode}"
 msgstr ""
+"Имя: %{hd_name}, местоположение: %{location}, размер: %{size}, используемое "
+"выделенное место, в процентах: %{prov}, имя файла: %{filename}, режим: %{mode}"
 
 #: ../lib/rbac/filterer.rb:750
 msgid "Named scope '%{scope_name}' is not defined for class '%{class_name}'"
@@ -50174,15 +50177,15 @@ msgstr ""
 
 #: ../app/views/miq_ae_class/_copy_objects_form.html.haml:62
 msgid "Namespace"
-msgstr ""
+msgstr "Пространство имён"
 
 #: ../app/views/miq_ae_class/_all_tabs.html.haml:51
 msgid "Namespace Details"
-msgstr ""
+msgstr "Подробные сведения о пространстве имён"
 
 #: ../app/views/miq_ae_class/_all_tabs.html.haml:62
 msgid "Namespaces"
-msgstr ""
+msgstr "Пространства имён"
 
 #: ../app/views/shared/views/_prov_dialog.html.haml:67
 #: ../app/views/shared/views/_prov_dialog.html.haml:336
@@ -50852,7 +50855,7 @@ msgstr "NetworkGroup|Href slug"
 
 #: ../config/model_attributes.rb:3417
 msgid "NetworkGroup|Name"
-msgstr ""
+msgstr "NetworkGroup|Имя"
 
 #: ../config/model_attributes.rb:3418
 msgid "NetworkGroup|Region description"
@@ -50864,7 +50867,7 @@ msgstr "NetworkGroup|Номер региона"
 
 #: ../config/model_attributes.rb:3420
 msgid "NetworkGroup|Status"
-msgstr ""
+msgstr "NetworkGroup|Статус"
 
 #. TRANSLATORS: file: product/views/NetworkPort.yaml
 #: ../config/yaml_strings.rb:1560
@@ -50889,39 +50892,39 @@ msgstr "NetworkPort|Admin state up"
 
 #: ../config/model_attributes.rb:3423
 msgid "NetworkPort|Allowed address pairs"
-msgstr ""
+msgstr "NetworkPort|Допустимые пары адресов"
 
 #: ../config/model_attributes.rb:3424
 msgid "NetworkPort|Binding profile"
-msgstr ""
+msgstr "NetworkPort|Профиль привязки"
 
 #: ../config/model_attributes.rb:3425
 msgid "NetworkPort|Binding virtual interface details"
-msgstr ""
+msgstr "NetworkPort|Подробности о вирт. интерфейсе привязки"
 
 #: ../config/model_attributes.rb:3426
 msgid "NetworkPort|Binding virtual interface type"
-msgstr ""
+msgstr "NetworkPort|Тип вирт. интерфейса привязки"
 
 #: ../config/model_attributes.rb:3427
 msgid "NetworkPort|Binding virtual nic type"
-msgstr ""
+msgstr "NetworkPort|Тип вирт. сетевого контроллера привязки"
 
 #: ../config/model_attributes.rb:3428
 msgid "NetworkPort|Cloud subnets names"
-msgstr ""
+msgstr "NetworkPort|Имена облачных подсетей"
 
 #: ../config/model_attributes.rb:3429
 msgid "NetworkPort|Device owner"
-msgstr ""
+msgstr "NetworkPort|Владелец устройства"
 
 #: ../config/model_attributes.rb:3430
 msgid "NetworkPort|Device ref"
-msgstr ""
+msgstr "NetworkPort|Отсылка к устройству"
 
 #: ../config/model_attributes.rb:3431
 msgid "NetworkPort|Device type"
-msgstr ""
+msgstr "NetworkPort|Тип устройства"
 
 #: ../config/model_attributes.rb:3432
 msgid "NetworkPort|Ems ref"
@@ -50929,23 +50932,23 @@ msgstr "NetworkPort|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3433
 msgid "NetworkPort|Extra attributes"
-msgstr ""
+msgstr "NetworkPort|Дополнительные атрибуты"
 
 #: ../config/model_attributes.rb:3434
 msgid "NetworkPort|Extra dhcp opts"
-msgstr ""
+msgstr "NetworkPort|Дополнительные параметры DHCP"
 
 #: ../config/model_attributes.rb:3435
 msgid "NetworkPort|Fixed ip addresses"
-msgstr ""
+msgstr "NetworkPort|Фиксированные адреса IP"
 
 #: ../config/model_attributes.rb:3436
 msgid "NetworkPort|Fixed ips"
-msgstr ""
+msgstr "NetworkPort|Фиксированные IP"
 
 #: ../config/model_attributes.rb:3437
 msgid "NetworkPort|Floating ip addresses"
-msgstr ""
+msgstr "NetworkPort|«Плавающие» адреса IP"
 
 #: ../config/model_attributes.rb:3438
 msgid "NetworkPort|Href slug"
@@ -50957,11 +50960,11 @@ msgstr "NetworkPort|Адреса IP"
 
 #: ../config/model_attributes.rb:3440
 msgid "NetworkPort|Mac address"
-msgstr ""
+msgstr "NetworkPort|Адрес MAC"
 
 #: ../config/model_attributes.rb:3441
 msgid "NetworkPort|Name"
-msgstr ""
+msgstr "NetworkPort|Имя"
 
 #: ../config/model_attributes.rb:3442
 msgid "NetworkPort|Region description"
@@ -50973,11 +50976,11 @@ msgstr "NetworkPort|Номер региона"
 
 #: ../config/model_attributes.rb:3444
 msgid "NetworkPort|Source"
-msgstr ""
+msgstr "NetworkPort|Источник"
 
 #: ../config/model_attributes.rb:3445
 msgid "NetworkPort|Status"
-msgstr ""
+msgstr "NetworkPort|Статус"
 
 #. TRANSLATORS: file: product/views/NetworkRouter.yaml
 #: ../config/yaml_strings.rb:1566
@@ -50990,7 +50993,7 @@ msgstr "NetworkRouter|Admin state up"
 
 #: ../config/model_attributes.rb:3452
 msgid "NetworkRouter|Distributed"
-msgstr ""
+msgstr "NetworkRouter|Распределённый"
 
 #: ../config/model_attributes.rb:3453
 msgid "NetworkRouter|Ems ref"
@@ -50998,15 +51001,15 @@ msgstr "NetworkRouter|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3454
 msgid "NetworkRouter|External gateway info"
-msgstr ""
+msgstr "NetworkRouter|Сведения о внешнем шлюзе"
 
 #: ../config/model_attributes.rb:3455
 msgid "NetworkRouter|Extra attributes"
-msgstr ""
+msgstr "NetworkRouter|Дополнительные атрибуты"
 
 #: ../config/model_attributes.rb:3456
 msgid "NetworkRouter|High availability"
-msgstr ""
+msgstr "NetworkRouter|Высокая доступность"
 
 #: ../config/model_attributes.rb:3457
 msgid "NetworkRouter|Href slug"
@@ -51014,15 +51017,15 @@ msgstr "NetworkRouter|Href slug"
 
 #: ../config/model_attributes.rb:3458
 msgid "NetworkRouter|Main route table"
-msgstr ""
+msgstr "NetworkRouter|Главная таблица маршрутизации"
 
 #: ../config/model_attributes.rb:3459
 msgid "NetworkRouter|Name"
-msgstr ""
+msgstr "NetworkRouter|Имя"
 
 #: ../config/model_attributes.rb:3460
 msgid "NetworkRouter|Propagating vgws"
-msgstr ""
+msgstr "NetworkRouter|Распространение вирт. шлюзов"
 
 #: ../config/model_attributes.rb:3461
 msgid "NetworkRouter|Region description"
@@ -51034,15 +51037,15 @@ msgstr "NetworkRouter|Номер региона"
 
 #: ../config/model_attributes.rb:3463
 msgid "NetworkRouter|Routes"
-msgstr ""
+msgstr "NetworkRouter|Маршруты"
 
 #: ../config/model_attributes.rb:3464
 msgid "NetworkRouter|Status"
-msgstr ""
+msgstr "NetworkRouter|Статус"
 
 #: ../config/model_attributes.rb:3465
 msgid "NetworkRouter|Total vms"
-msgstr ""
+msgstr "NetworkRouter|Всего ВМ"
 
 #. TRANSLATORS: file: product/views/NetworkService.yaml
 #: ../config/yaml_strings.rb:1570
@@ -51055,7 +51058,7 @@ msgstr "NetworkServiceEntry|Описание"
 
 #: ../config/model_attributes.rb:3478
 msgid "NetworkServiceEntry|Destination ports"
-msgstr ""
+msgstr "NetworkServiceEntry|Порты назначения"
 
 #: ../config/model_attributes.rb:3479
 msgid "NetworkServiceEntry|Ems ref"
@@ -51067,11 +51070,11 @@ msgstr "NetworkServiceEntry|Href slug"
 
 #: ../config/model_attributes.rb:3481
 msgid "NetworkServiceEntry|Name"
-msgstr ""
+msgstr "NetworkServiceEntry|Имя"
 
 #: ../config/model_attributes.rb:3482
 msgid "NetworkServiceEntry|Protocol"
-msgstr ""
+msgstr "NetworkServiceEntry|Протокол"
 
 #: ../config/model_attributes.rb:3483
 msgid "NetworkServiceEntry|Region description"
@@ -51083,7 +51086,7 @@ msgstr "NetworkServiceEntry|Номер региона"
 
 #: ../config/model_attributes.rb:3485
 msgid "NetworkServiceEntry|Source ports"
-msgstr ""
+msgstr "NetworkServiceEntry|Исходные порты"
 
 #: ../config/model_attributes.rb:3467
 msgid "NetworkService|Description"
@@ -51095,7 +51098,7 @@ msgstr "NetworkService|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3469
 msgid "NetworkService|Entries count"
-msgstr ""
+msgstr "NetworkService|Число записей"
 
 #: ../config/model_attributes.rb:3470
 msgid "NetworkService|Href slug"
@@ -51103,7 +51106,7 @@ msgstr "NetworkService|Href slug"
 
 #: ../config/model_attributes.rb:3471
 msgid "NetworkService|Name"
-msgstr ""
+msgstr "NetworkService|Имя"
 
 #: ../config/model_attributes.rb:3472
 msgid "NetworkService|Region description"
@@ -51115,11 +51118,11 @@ msgstr "NetworkService|Номер региона"
 
 #: ../config/model_attributes.rb:3474
 msgid "NetworkService|Security policy rules count"
-msgstr ""
+msgstr "NetworkService|Число правил политики безопасности"
 
 #: ../config/model_attributes.rb:3475
 msgid "NetworkService|Shared"
-msgstr ""
+msgstr "NetworkService|Общий ресурс"
 
 #: ../app/controllers/infra_networking_controller.rb:555
 #: ../app/controllers/infra_networking_controller.rb:563
@@ -51135,7 +51138,7 @@ msgstr "Сети"
 
 #: ../config/model_attributes.rb:3396
 msgid "Network|Default gateway"
-msgstr ""
+msgstr "Network|Шлюз по умолчанию"
 
 #: ../config/model_attributes.rb:3397
 msgid "Network|Description"
@@ -51151,11 +51154,11 @@ msgstr "Network|Сервер Dhcp"
 
 #: ../config/model_attributes.rb:3400
 msgid "Network|Dns server"
-msgstr ""
+msgstr "Network|Сервер DNS"
 
 #: ../config/model_attributes.rb:3401
 msgid "Network|Domain"
-msgstr ""
+msgstr "Network|Домен"
 
 #: ../config/model_attributes.rb:3402
 msgid "Network|Guid"
@@ -51163,7 +51166,7 @@ msgstr "Network|Guid"
 
 #: ../config/model_attributes.rb:3403
 msgid "Network|Hostname"
-msgstr ""
+msgstr "Network|Имя хоста"
 
 #: ../config/model_attributes.rb:3404
 msgid "Network|Href slug"
@@ -51175,15 +51178,15 @@ msgstr "Network|Адрес IP"
 
 #: ../config/model_attributes.rb:3406
 msgid "Network|Ipv6address"
-msgstr ""
+msgstr "Network|Ipv6address"
 
 #: ../config/model_attributes.rb:3407
 msgid "Network|Lease expires"
-msgstr ""
+msgstr "Network|Истечение срока действия аренды"
 
 #: ../config/model_attributes.rb:3408
 msgid "Network|Lease obtained"
-msgstr ""
+msgstr "Network|Аренда сети получена"
 
 #: ../config/model_attributes.rb:3409
 msgid "Network|Region description"
@@ -51195,7 +51198,7 @@ msgstr "Network|Номер региона"
 
 #: ../config/model_attributes.rb:3411
 msgid "Network|Subnet mask"
-msgstr ""
+msgstr "Network|Маска подсети"
 
 #: ../app/helpers/dashboard_helper.rb:18
 #: ../app/helpers/orchestration_stack_helper/textual_summary.rb:47
@@ -51226,11 +51229,11 @@ msgstr "Новый профиль оповещения \"%s\" был успеш�
 
 #: ../app/views/miq_ae_class/_class_fields.html.haml:74
 msgid "New Field"
-msgstr ""
+msgstr "Новое поле"
 
 #: ../app/javascript/oldjs/miq_tree.js:336
 msgid "New Folder"
-msgstr ""
+msgstr "Новая папка"
 
 #: ../app/javascript/components/provider-dashboard-charts/charts_config.js:137
 #: ../app/javascript/components/provider-dashboard-charts/charts_config.js:149
@@ -51242,11 +51245,11 @@ msgstr "Тенденция использования нового образа"
 
 #: ../app/views/miq_ae_class/_copy_objects_form.html.haml:34
 msgid "New Name"
-msgstr ""
+msgstr "Новое имя"
 
 #: ../app/views/miq_ae_class/_inputs.html.haml:50
 msgid "New Parameter"
-msgstr ""
+msgstr "Новый параметр"
 
 #: ../app/views/dashboard/_login_more.html.haml:5
 msgid "New Password"
@@ -51278,7 +51281,7 @@ msgstr "Новый «плавающий» IP \"%s\" был успешно пос
 
 #: ../app/javascript/oldjs/miq_tree.js:311
 msgid "New name?"
-msgstr ""
+msgstr "Новое имя?"
 
 #: ../app/helpers/application_helper/import_export_helper.rb:3
 msgid "New object"
@@ -51309,13 +51312,13 @@ msgstr[2] "Новый параметр повлияет на службы"
 #: ../app/views/shared/views/_retire.html.haml:14
 msgid "New setting will affect VM"
 msgid_plural "New setting will affect VMs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Новый параметр повлияет на ВМ"
+msgstr[1] "Новый параметр повлияет на ВМ"
+msgstr[2] "Новый параметр повлияет на ВМ"
 
 #: ./dist/js/ui-components.js:1
 msgid "New tab"
-msgstr ""
+msgstr "Новая вкладка"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/vpc/cloud_manager/provision_workflow/volumes.rb:89
@@ -51329,7 +51332,7 @@ msgstr "Новая зона \"%s\" была успешно добавлена в
 #: ../app/views/layouts/_paging_bar.html.haml:45
 #: ../app/views/layouts/_paging_bar.html.haml:46
 msgid "Next"
-msgstr ""
+msgstr "Далее"
 
 #. TRANSLATORS: en.yml key: dictionary.column.next_available_vnc_port
 #: ../config/dictionary_strings.rb:1460
@@ -51350,7 +51353,7 @@ msgstr "Когда следующее обновление: "
 
 #: ../app/javascript/components/miq-pagination.jsx:19
 msgid "Next page"
-msgstr ""
+msgstr "След. страница"
 
 #:
 #: ../app/models/manageiq/providers/openstack/network_manager/cloud_subnet.rb:113
@@ -51360,11 +51363,11 @@ msgstr "Следующий сетевой переход"
 
 #: src/vm-snapshot-form/snapshot-form/snapshotForm.jsx:52
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: src/rbac-forms/rbacUserTagsList.jsx:25
 msgid "No %s Tags have been assigned"
-msgstr ""
+msgstr "Нет назначенных тегов %s"
 
 #: ../app/models/miq_report/generator.rb:466
 msgid "No %{class_name} object provided"
@@ -51443,7 +51446,7 @@ msgstr "Нет %{tag} %{model}, которые выполнялись %{time}"
 
 #: ../app/views/ops/_rbac_tag_box.html.haml:10
 msgid "No %{tenant_name} Tags have been assigned"
-msgstr ""
+msgstr "Тегов %{tenant_name} не назначалось"
 
 #: ../app/helpers/miq_alert_set_helper.rb:58
 msgid "No Alerts are defined."
@@ -51455,12 +51458,12 @@ msgstr "Нет выбранных оповещений"
 
 #: src/tagging/components/InnerComponents/TagView.js:24
 msgid "No Assigned Tags"
-msgstr ""
+msgstr "Нет назначенных тегов"
 
 #: ../app/helpers/generic_object_definition_helper/textual_summary.rb:47
 #: ../app/helpers/generic_object_helper/textual_summary.rb:36
 msgid "No Associations defined"
-msgstr ""
+msgstr "Связи не настроены"
 
 #: ../app/helpers/miq_action_helper.rb:35
 msgid "No Attribute/Value Pairs found"
@@ -51468,12 +51471,12 @@ msgstr "Пар «атрибут/значение» не найдено"
 
 #: ../app/views/shared/buttons/_ab_show.html.haml:131
 msgid "No Attribute/Value Pairs found."
-msgstr ""
+msgstr "Пар «атрибут/значение» не найдено."
 
 #: ../app/helpers/generic_object_definition_helper/textual_summary.rb:36
 #: ../app/helpers/generic_object_helper/textual_summary.rb:23
 msgid "No Attributes defined"
-msgstr ""
+msgstr "Нет настроенных атрибутов"
 
 #: ../app/controllers/miq_ae_class_controller.rb:2683
 msgid "No Automate Domain were selected to be marked as %{action}"
@@ -51605,7 +51608,7 @@ msgstr "В текущем регионе хранилищ данных не на
 
 #: ../lib/miq_expression.rb:1112
 msgid "No Date/Time value specified"
-msgstr ""
+msgstr "Нет указанного значения даты/времени"
 
 #: ../app/controllers/application_controller/buttons.rb:1025
 #: ../app/controllers/catalog_controller.rb:1772
@@ -51666,16 +51669,16 @@ msgstr ""
 
 #: ../app/views/shared/buttons/_ab_list.html.haml:8
 msgid "No Items found."
-msgstr ""
+msgstr "Элементов не найдено"
 
 #: ../app/helpers/generic_object_definition_helper/textual_summary.rb:67
 #: ../app/helpers/generic_object_helper/textual_summary.rb:65
 msgid "No Methods defined"
-msgstr ""
+msgstr "Нет настроенных методов"
 
 #: src/rbac-forms/rbacAssignUserTags.jsx:78
 msgid "No My Company Tags are assigned"
-msgstr ""
+msgstr "Нет присвоенных «Тегов моей компании»"
 
 #: ../app/controllers/catalog_controller.rb:716
 msgid "No Ordering Dialog is available"
@@ -51691,7 +51694,7 @@ msgstr "Для %{button} не было выбрано серверов PXE"
 
 #: ../app/javascript/components/vm-edit-form/vm-edit-form.schema.js:35
 msgid "No Parent"
-msgstr ""
+msgstr "Нет родителя"
 
 #: ../app/helpers/application_helper/button/physical_server_provision.rb:4
 msgid "No Physical Infrastructure Provider that supports VM provisioning added"
@@ -51943,7 +51946,7 @@ msgstr "Нет доступных параметров"
 
 #: ../app/views/layouts/_tl_options.html.haml:26
 msgid "No category selected"
-msgstr ""
+msgstr "Категория не выбрана"
 
 #: ../app/javascript/components/dashboard-widgets/widget-chart/index.jsx:14
 msgid "No chart data found."
@@ -52072,6 +52075,9 @@ msgid ""
 "No drift history found, an Analysis or Virtual Black Box Synchronization for t"
 "his VM may need to be run."
 msgstr ""
+"История смещений не найдена, возможно, для этой ВМ необходимо будет выполнить"
+" анализ "
+"или синхронизацию вирт. чёрного ящика"
 
 #: ../app/javascript/components/miq-structured-list/index.jsx:229
 msgid "No entries found for %s"
@@ -52138,7 +52144,7 @@ msgstr "Поля для перемещения выше не были выбра
 
 #: ../app/views/shared/_file_chooser.html.haml:7
 msgid "No file chosen"
-msgstr ""
+msgstr "Файл не выбран"
 
 #: ../app/views/layouts/_adv_search_footer.html.haml:21
 #: ../app/views/layouts/_adv_search_footer.html.haml:47
@@ -52148,7 +52154,7 @@ msgstr "Нет доступных фильтров"
 
 #: ../app/views/layouts/listnav/_show_list.html.haml:3
 msgid "No filters defined."
-msgstr ""
+msgstr "Нет настроенных фильтров"
 
 #: ../app/controllers/host_aggregate_controller.rb:110
 msgid "No hosts available to add to Host Aggregate \"%{name}\""
@@ -52173,7 +52179,7 @@ msgstr "Нет возвращённых сведений о %{email}"
 
 #: ../app/views/layouts/_user_input_filter.html.haml:96
 msgid "No input to apply"
-msgstr ""
+msgstr "Нет ввода для применения"
 
 #: ../app/views/miq_ae_class/_class_instances.html.haml:8
 msgid "No instances found"
@@ -52181,7 +52187,7 @@ msgstr "Экземпляров не найдено"
 
 #: ../app/views/miq_ae_class/_class_methods.html.haml:7
 msgid "No methods found"
-msgstr ""
+msgstr "Методов не найдено"
 
 #: ../app/models/manageiq/providers/kubernetes/container_manager.rb:42
 msgid "No metrics endpoint has been added"
@@ -52205,7 +52211,7 @@ msgstr "Заметок не вводилось"
 
 #: src/forms/pf-select.jsx:53
 msgid "No option found"
-msgstr ""
+msgstr "Параметров не найдено"
 
 #: ../app/javascript/components/action-form/action-form.schema.js:93
 #: ../app/javascript/components/button-group/group-form.schema.js:66
@@ -52219,7 +52225,7 @@ msgstr "Параметры не выбраны"
 #: src/tagging/components/InnerComponents/TagSelector.js:56
 #: src/tagging/components/InnerComponents/ValueSelector.js:28
 msgid "No options"
-msgstr ""
+msgstr "Нет параметров"
 
 #:
 #: ../app/models/manageiq/providers/embedded_ansible/automation_manager/job.rb:162
@@ -52250,7 +52256,7 @@ msgstr "Поставщиков для %{task} выбрано не было"
 
 #: ../app/javascript/components/no-records-found.jsx:7
 msgid "No records found"
-msgstr ""
+msgstr "Записей не найдено"
 
 #: ../app/models/miq_report/notification.rb:67
 msgid "No records found for scheduled report \"%{name}\""
@@ -52288,7 +52294,7 @@ msgstr "Нет доступных для загрузки сохранённых
 
 #: ../app/views/miq_ae_class/_class_fields.html.haml:9
 msgid "No schema found"
-msgstr ""
+msgstr "Схем не найдено"
 
 #: ../app/helpers/condition_helper.rb:23
 msgid "No scope defined, the scope of this condition includes all elements."
@@ -52345,7 +52351,7 @@ msgstr "Нет подсетей для удаления интерфейсов �
 
 #: ../app/models/mixins/scanning_mixin.rb:308
 msgid "No synchronize category specified"
-msgstr ""
+msgstr "Категория синхронизации не указана"
 
 #: ../app/controllers/miq_task_controller.rb:96
 msgid "No task were selected to cancel"
@@ -52374,7 +52380,7 @@ msgstr "Действительных записей импорта не было
 
 #: ../app/models/miq_user_scope.rb:21
 msgid "No value provided for option :class"
-msgstr ""
+msgstr "Для параметра :class не указано значение"
 
 #: ../app/models/miq_user_scope.rb:18
 msgid "No value provided for option :feature_type"
@@ -52393,7 +52399,7 @@ msgstr "Узел"
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/110_Number of Images per Node.yaml
 #: ../config/yaml_strings.rb:6457
 msgid "Node Name"
-msgstr ""
+msgstr "Имя узла"
 
 #: ../app/helpers/container_service_helper/textual_summary.rb:14
 msgid "Node Port"
@@ -52433,7 +52439,7 @@ msgstr "Узлы по потреблению памяти"
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/050_Number of Nodes per CPU Cores.yaml
 #: ../config/yaml_strings.rb:6423
 msgid "Nodes by Number of CPU Cores"
-msgstr ""
+msgstr "Узлы по числу ядер ЦП"
 
 #: ../app/controllers/ems_infra_controller.rb:175
 msgid "Nodes were added successfully. Refresh queued."
@@ -52455,7 +52461,7 @@ msgstr "Файлы, не относящиеся к ВМ"
 #. TRANSLATORS: en.yml key: dictionary.column.v_debris_percent_of_used
 #: ../config/dictionary_strings.rb:2352
 msgid "Non-VM Files Percent of Used"
-msgstr ""
+msgstr "Процент используемых файлов, не относящихся к ВМ"
 
 #: ../app/presenters/tree_builder_clusters.rb:41
 msgid "Non-clustered Hosts"
@@ -52481,7 +52487,7 @@ msgstr "Нет доступных"
 
 #: ../app/views/layouts/_edit_to_email.html.haml:36
 msgid "None Available or All Selected"
-msgstr ""
+msgstr "Ничего не доступно или выбрано всё"
 
 #: ../app/controllers/mixins/actions/vm_actions/ownership.rb:46
 msgid "None of the selected items allow ownership changes"
@@ -52497,11 +52503,11 @@ msgstr "Нормальный рабочий диапазон"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:107
 msgid "Normal Operating Ranges (over 30 days)"
-msgstr ""
+msgstr "Нормальные рабочие диапазоны (более 30 дней)"
 
 #: ../app/views/vm_common/_right_size.html.haml:6
 msgid "Normal Operating Ranges (up to 30 days' data)"
-msgstr ""
+msgstr "Нормальные рабочие диапазоны (данные до 30 дней)"
 
 #: ../app/helpers/quadicon_helper.rb:63
 msgid "Normal health state"
@@ -52513,8 +52519,9 @@ msgid "Normalized State"
 msgstr "Нормализованное состояние"
 
 #: ../app/views/layouts/exp_atom/_editor.html.haml:21
+#, fuzzy
 msgid "Not"
-msgstr ""
+msgstr "Не…"
 
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:94
@@ -52543,7 +52550,7 @@ msgstr "Недоступно"
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
 #: ../config/yaml_strings.rb:7500
 msgid "Not Managed"
-msgstr ""
+msgstr "Неуправляемый"
 
 #:
 #: ../app/javascript/components/vm-server-relationship-form/vm-server-relationship-form.schema.js:9
@@ -52564,7 +52571,7 @@ msgstr "Недоступно. Был ли назначен облачный по
 
 #: ../app/views/ops/_tenant_quota_form.html.haml:39
 msgid "Not enforced"
-msgstr ""
+msgstr "Принудительно не применяется"
 
 #: ../app/views/shared/views/_alerts_list.html.haml:98
 #: ../app/views/static/edit_alert_dialog.html.haml:33
@@ -52631,10 +52638,14 @@ msgstr ""
 msgid ""
 "Note: Some items might be hidden due to the possibility of an ownership change"
 msgstr ""
+"Примечание: некоторые элементы могут быть скрыты в связи с возможным"
+" изменением владельца"
 
 #: ../app/views/ops/_rbac_tenant_details.html.haml:7
 msgid "Note: Total quota can be restricted by quotas defined at upper levels"
 msgstr ""
+"Примечание: общая квота может быть ограничена квотами, настроенными на более"
+" высоких уровнях"
 
 #: ../app/views/layouts/_auth_credentials.html.haml:25
 #: ../app/views/layouts/angular-bootstrap/_auth_credentials_angular_bootstrap.html.haml:48
@@ -52710,7 +52721,7 @@ msgstr "Тип уведомлений"
 
 #: ../config/model_attributes.rb:3494
 msgid "NotificationRecipient|Details"
-msgstr ""
+msgstr "NotificationRecipient|Подробности"
 
 #: ../config/model_attributes.rb:3495
 msgid "NotificationRecipient|Href slug"
@@ -52726,15 +52737,15 @@ msgstr "NotificationRecipient|Номер региона"
 
 #: ../config/model_attributes.rb:3498
 msgid "NotificationRecipient|Seen"
-msgstr ""
+msgstr "NotificationRecipient|Просмотрено"
 
 #: ../config/model_attributes.rb:3500
 msgid "NotificationType|Audience"
-msgstr ""
+msgstr "NotificationType|Аудитория"
 
 #: ../config/model_attributes.rb:3501
 msgid "NotificationType|Expires in"
-msgstr ""
+msgstr "NotificationType|Срок действия истекает через"
 
 #: ../config/model_attributes.rb:3502
 msgid "NotificationType|Href slug"
@@ -52746,7 +52757,7 @@ msgstr "NotificationType|Уровень"
 
 #: ../config/model_attributes.rb:3504
 msgid "NotificationType|Link to"
-msgstr ""
+msgstr "NotificationType|Ссылка на"
 
 #: ../config/model_attributes.rb:3505
 msgid "NotificationType|Message"
@@ -52754,7 +52765,7 @@ msgstr "NotificationType|Сообщение"
 
 #: ../config/model_attributes.rb:3506
 msgid "NotificationType|Name"
-msgstr ""
+msgstr "NotificationType|Имя"
 
 #: ../config/model_attributes.rb:3507
 msgid "NotificationType|Region description"
@@ -52771,7 +52782,7 @@ msgstr "Уведомления"
 
 #: ../config/model_attributes.rb:3487
 msgid "Notification|Cause type"
-msgstr ""
+msgstr "Notification|Тип причины"
 
 #: ../config/model_attributes.rb:3488
 msgid "Notification|Href slug"
@@ -52779,7 +52790,7 @@ msgstr "Notification|Href slug"
 
 #: ../config/model_attributes.rb:3489
 msgid "Notification|Options"
-msgstr ""
+msgstr "Notification|Параметры"
 
 #: ../config/model_attributes.rb:3490
 msgid "Notification|Region description"
@@ -52791,7 +52802,7 @@ msgstr "Notification|Номер региона"
 
 #: ../config/model_attributes.rb:3492
 msgid "Notification|Subject type"
-msgstr ""
+msgstr "Notification|Тип субъекта"
 
 #: ../lib/manageiq/providers/nuage/engine.rb:19
 msgid "Nuage Provider"
@@ -52976,9 +52987,8 @@ msgstr "Количество ВМ по типу"
 
 #. TRANSLATORS: file: db/fixtures/miq_report_formats.yml
 #: ../config/yaml_strings.rb:4639
-#, fuzzy
 msgid "Number, 2 Decimals (1,234.00)"
-msgstr "Номер, 2 Decimals (1,234.00)"
+msgstr "Номер, 2 знака после запятой (1,234.00)"
 
 #: ../lib/manageiq/providers/openstack/legacy/openstack_handle/handle.rb:68
 msgid "Numeric-only passwords are not accepted"
@@ -53047,7 +53057,7 @@ msgstr "ID продукта ОС"
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/059_Guest OS Information (any OS).yaml
 #: ../config/yaml_strings.rb:5921
 msgid "OS Service Pack"
-msgstr "Пакет обновления ОС"
+msgstr "Пакет обновлений ОС"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/059_Guest OS Information (any OS).yaml
 #: ../config/yaml_strings.rb:5923
@@ -53391,22 +53401,22 @@ msgstr "Открыть внешнее журналирование с поста
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4555
 msgid "Open Remote Console"
-msgstr ""
+msgstr "Открыть удалённую консоль"
 
 #: ../app/views/shared/buttons/_ab_options_form.html.haml:74
 #: ../app/views/shared/buttons/_ab_show.html.haml:51
 msgid "Open URL"
-msgstr ""
+msgstr "Открыть URL"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4557
 msgid "Open VMware VMRC Console"
-msgstr ""
+msgstr "Открыть удалённую консоль VMware"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4559
 msgid "Open Web Console"
-msgstr ""
+msgstr "Открыть веб-консоль"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3434
@@ -53421,7 +53431,7 @@ msgstr "Открыть консоль настроенной системы"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3860
 msgid "Open a VMRC console for VMs"
-msgstr ""
+msgstr "Открыть удалённую консоль для ВМ"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:277
 msgid ""
@@ -53435,7 +53445,7 @@ msgstr ""
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4186
 msgid "Open a management console"
-msgstr ""
+msgstr "Открыть консоль управления"
 
 #:
 #: ../app/helpers/application_helper/toolbar/cloud/instance_operations_button_group_mixin.rb:113
@@ -53444,7 +53454,7 @@ msgstr "Открыть консоль управления для этой ВМ"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:287
 msgid "Open a native console for this VM"
-msgstr ""
+msgstr "Открыть встроенную консоль для этой ВМ"
 
 #: ../app/helpers/application_helper/toolbar/ems_cloud_center.rb:134
 #: ../app/helpers/application_helper/toolbar/ems_infra_center.rb:146
@@ -53474,7 +53484,7 @@ msgstr "Открыть веб-консоль на базе HTML5 для этой
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3856
 msgid "Open a web-based console for VMs"
-msgstr ""
+msgstr "Открыть веб-консоль для ВМ"
 
 #: ../app/helpers/application_helper/toolbar/ems_physical_infra_center.rb:90
 msgid "Open a web-based console for this provider"
@@ -53509,12 +53519,12 @@ msgstr "Открыть страницу документации"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3862
 msgid "Open the Native console for VMs"
-msgstr ""
+msgstr "Открыть встроенную консоль для ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2652
 msgid "Open the Product Website"
-msgstr ""
+msgstr "Открыть веб-сайт продукта"
 
 #: ../app/javascript/components/dashboard-widgets/widget-wrapper/helper.jsx:186
 #: ../app/presenters/widget_presenter.rb:52
@@ -53614,11 +53624,11 @@ msgstr "Результаты правила OpenSCAP"
 
 #: ../config/model_attributes.rb:3509
 msgid "Openscap result"
-msgstr ""
+msgstr "Результат OpenSCAP"
 
 #: ../config/model_attributes.rb:3514
 msgid "Openscap rule result"
-msgstr ""
+msgstr "Результат правила OpenSCAP"
 
 #: ../config/model_attributes.rb:3510
 msgid "OpenscapResult|Href slug"
@@ -53638,7 +53648,7 @@ msgstr "OpenscapResult|Тип ресурса"
 
 #: ../config/model_attributes.rb:3515
 msgid "OpenscapRuleResult|Cves"
-msgstr ""
+msgstr "OpenscapRuleResult|CVE"
 
 #: ../config/model_attributes.rb:3516
 msgid "OpenscapRuleResult|Href slug"
@@ -53646,7 +53656,7 @@ msgstr "OpenscapRuleResult|Href slug"
 
 #: ../config/model_attributes.rb:3517
 msgid "OpenscapRuleResult|Name"
-msgstr ""
+msgstr "OpenscapRuleResult|Имя"
 
 #: ../config/model_attributes.rb:3518
 msgid "OpenscapRuleResult|Region description"
@@ -53658,7 +53668,7 @@ msgstr "OpenscapRuleResult|Номер региона"
 
 #: ../config/model_attributes.rb:3520
 msgid "OpenscapRuleResult|Result"
-msgstr ""
+msgstr "OpenscapRuleResult|Результат"
 
 #: ../config/model_attributes.rb:3521
 msgid "OpenscapRuleResult|Severity"
@@ -53666,7 +53676,7 @@ msgstr "OpenscapRuleResult|Степень важности"
 
 #: ../config/model_attributes.rb:3522
 msgid "OpenscapRuleResult|Title"
-msgstr ""
+msgstr "OpenscapRuleResult|Заголовок"
 
 #: ../app/helpers/host_helper/textual_summary.rb:88
 msgid "Openstack Hardware"
@@ -53683,17 +53693,17 @@ msgstr "Планировщик Openstack Nova"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:982
 msgid "Operate"
-msgstr ""
+msgstr "Действия"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2557
 msgid "Operate Group"
-msgstr ""
+msgstr "Действия с группой"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2599
 msgid "Operate Servers"
-msgstr "Действие с серверами"
+msgstr "Действия с серверами"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2591
@@ -53703,7 +53713,7 @@ msgstr "Действия с арендаторами"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2537
 msgid "Operate User"
-msgstr ""
+msgstr "Действия с пользователем"
 
 #. TRANSLATORS: file: product/views/ContainerNode.yaml
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_InfraManager_Template.yaml
@@ -53773,15 +53783,15 @@ msgstr "OperatingSystemFlavor|Номер региона"
 
 #: ../config/model_attributes.rb:3524
 msgid "OperatingSystem|Bitness"
-msgstr ""
+msgstr "OperatingSystem|Разрядность"
 
 #: ../config/model_attributes.rb:3525
 msgid "OperatingSystem|Build number"
-msgstr ""
+msgstr "OperatingSystem|Номер сборки"
 
 #: ../config/model_attributes.rb:3526
 msgid "OperatingSystem|Distribution"
-msgstr ""
+msgstr "OperatingSystem|Дистрибутив"
 
 #: ../config/model_attributes.rb:3527
 msgid "OperatingSystem|Href slug"
@@ -53789,59 +53799,59 @@ msgstr "OperatingSystem|Href slug"
 
 #: ../config/model_attributes.rb:3528
 msgid "OperatingSystem|Kernel version"
-msgstr ""
+msgstr "OperatingSystem|Версия ядра"
 
 #: ../config/model_attributes.rb:3529
 msgid "OperatingSystem|Lockout duration"
-msgstr ""
+msgstr "OperatingSystem|Длительность блокировки"
 
 #: ../config/model_attributes.rb:3530
 msgid "OperatingSystem|Lockout threshold"
-msgstr ""
+msgstr "OperatingSystem|Порог блокировки"
 
 #: ../config/model_attributes.rb:3531
 msgid "OperatingSystem|Max pw age"
-msgstr ""
+msgstr "OperatingSystem|Макс. возраст пароля"
 
 #: ../config/model_attributes.rb:3532
 msgid "OperatingSystem|Min pw age"
-msgstr ""
+msgstr "OperatingSystem|Мин. возраст пароля"
 
 #: ../config/model_attributes.rb:3533
 msgid "OperatingSystem|Min pw len"
-msgstr ""
+msgstr "OperatingSystem|Мин. длина пароля"
 
 #: ../config/model_attributes.rb:3534
 msgid "OperatingSystem|Name"
-msgstr ""
+msgstr "OperatingSystem|Имя"
 
 #: ../config/model_attributes.rb:3535
 msgid "OperatingSystem|Product key"
-msgstr ""
+msgstr "OperatingSystem|Ключ продукта"
 
 #: ../config/model_attributes.rb:3536
 msgid "OperatingSystem|Product name"
-msgstr ""
+msgstr "OperatingSystem|Имя продукта"
 
 #: ../config/model_attributes.rb:3537
 msgid "OperatingSystem|Product type"
-msgstr ""
+msgstr "OperatingSystem|Тип продукта"
 
 #: ../config/model_attributes.rb:3538
 msgid "OperatingSystem|Productid"
-msgstr ""
+msgstr "OperatingSystem|ID продукта"
 
 #: ../config/model_attributes.rb:3539
 msgid "OperatingSystem|Pw complex"
-msgstr ""
+msgstr "OperatingSystem|Сложность пароля"
 
 #: ../config/model_attributes.rb:3540
 msgid "OperatingSystem|Pw encrypt"
-msgstr ""
+msgstr "OperatingSystem|Шифрование пароля"
 
 #: ../config/model_attributes.rb:3541
 msgid "OperatingSystem|Pw hist"
-msgstr ""
+msgstr "OperatingSystem|История паролей"
 
 #: ../config/model_attributes.rb:3542
 msgid "OperatingSystem|Region description"
@@ -53853,23 +53863,23 @@ msgstr "OperatingSystem|Номер региона"
 
 #: ../config/model_attributes.rb:3544
 msgid "OperatingSystem|Reset lockout counter"
-msgstr ""
+msgstr "OperatingSystem|Сбросить счётчик блокировки"
 
 #: ../config/model_attributes.rb:3545
 msgid "OperatingSystem|Service pack"
-msgstr ""
+msgstr "OperatingSystem|Пакет обновлений"
 
 #: ../config/model_attributes.rb:3546
 msgid "OperatingSystem|System root"
-msgstr ""
+msgstr "OperatingSystem|root системы"
 
 #: ../config/model_attributes.rb:3547
 msgid "OperatingSystem|System type"
-msgstr ""
+msgstr "OperatingSystem|Тип системы"
 
 #: ../config/model_attributes.rb:3548
 msgid "OperatingSystem|Version"
-msgstr ""
+msgstr "OperatingSystem|Версия"
 
 #:
 #: ../app/models/manageiq/providers/openstack/cloud_manager/vm/operations/snapshot.rb:20
@@ -53928,7 +53938,7 @@ msgstr "Параметр 2"
 
 #: ../app/views/miq_ae_class/_method_data.html.haml:14
 msgid "Optional, if not specified, method name is used."
-msgstr ""
+msgstr "Дополнительно, если не указано, используется имя метода"
 
 #: ./src/dialog-editor/components/modal-field/field.html:14
 msgid "Options"
@@ -53936,7 +53946,7 @@ msgstr "Параметры"
 
 #: ../app/views/layouts/_perf_options.html.haml:5
 msgid "Options %{model}"
-msgstr ""
+msgstr "Параметры %{model}"
 
 #: ../app/views/dashboard/login.html.haml:42
 msgid "Or"
@@ -53953,7 +53963,7 @@ msgstr "Оркестрация"
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_sets.yml
 #: ../config/yaml_strings.rb:858
 msgid "Orchestration Lifecycle"
-msgstr ""
+msgstr "Жизненный цикл оркестрации"
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_CloudManager_OrchestrationStack.yaml
 #. TRANSLATORS: file: product/views/OrchestrationStack.yaml
@@ -54175,7 +54185,7 @@ msgstr "OrchestrationStackOutput|Href slug"
 
 #: ../config/model_attributes.rb:3591
 msgid "OrchestrationStackOutput|Key"
-msgstr ""
+msgstr "OrchestrationStackOutput|Ключ"
 
 #: ../config/model_attributes.rb:3592
 msgid "OrchestrationStackOutput|Region description"
@@ -54187,7 +54197,7 @@ msgstr "OrchestrationStackOutput|Номер региона"
 
 #: ../config/model_attributes.rb:3594
 msgid "OrchestrationStackOutput|Value"
-msgstr ""
+msgstr "OrchestrationStackOutput|Значение"
 
 #: ../config/model_attributes.rb:3596
 msgid "OrchestrationStackParameter|Ems ref"
@@ -54199,7 +54209,7 @@ msgstr "OrchestrationStackParameter|Href slug"
 
 #: ../config/model_attributes.rb:3598
 msgid "OrchestrationStackParameter|Name"
-msgstr ""
+msgstr "OrchestrationStackParameter|Имя"
 
 #: ../config/model_attributes.rb:3599
 msgid "OrchestrationStackParameter|Region description"
@@ -54211,7 +54221,7 @@ msgstr "OrchestrationStackParameter|Номер региона"
 
 #: ../config/model_attributes.rb:3601
 msgid "OrchestrationStackParameter|Value"
-msgstr ""
+msgstr "OrchestrationStackParameter|Значение"
 
 #: ../config/model_attributes.rb:3603
 msgid "OrchestrationStackResource|Description"
@@ -54223,7 +54233,7 @@ msgstr "OrchestrationStackResource|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3605
 msgid "OrchestrationStackResource|Finish time"
-msgstr ""
+msgstr "OrchestrationStackResource|Время завершения"
 
 #: ../config/model_attributes.rb:3606
 msgid "OrchestrationStackResource|Href slug"
@@ -54231,19 +54241,19 @@ msgstr "OrchestrationStackResource|Href slug"
 
 #: ../config/model_attributes.rb:3607
 msgid "OrchestrationStackResource|Last updated"
-msgstr ""
+msgstr "OrchestrationStackResource|Последнее обновление:"
 
 #: ../config/model_attributes.rb:3608
 msgid "OrchestrationStackResource|Logical resource"
-msgstr ""
+msgstr "OrchestrationStackResource|Логический ресурс"
 
 #: ../config/model_attributes.rb:3609
 msgid "OrchestrationStackResource|Name"
-msgstr ""
+msgstr "OrchestrationStackResource|Имя"
 
 #: ../config/model_attributes.rb:3610
 msgid "OrchestrationStackResource|Physical resource"
-msgstr ""
+msgstr "OrchestrationStackResource|Физический ресурс"
 
 #: ../config/model_attributes.rb:3611
 msgid "OrchestrationStackResource|Region description"
@@ -54255,23 +54265,23 @@ msgstr "OrchestrationStackResource|Номер региона"
 
 #: ../config/model_attributes.rb:3613
 msgid "OrchestrationStackResource|Resource category"
-msgstr ""
+msgstr "OrchestrationStackResource|Категория ресурса"
 
 #: ../config/model_attributes.rb:3614
 msgid "OrchestrationStackResource|Resource status"
-msgstr ""
+msgstr "OrchestrationStackResource|Статус ресурса"
 
 #: ../config/model_attributes.rb:3615
 msgid "OrchestrationStackResource|Resource status reason"
-msgstr ""
+msgstr "OrchestrationStackResource|Причина статуса ресурса"
 
 #: ../config/model_attributes.rb:3616
 msgid "OrchestrationStackResource|Start time"
-msgstr ""
+msgstr "OrchestrationStackResource|Время начала"
 
 #: ../config/model_attributes.rb:3557
 msgid "OrchestrationStack|Ancestry"
-msgstr ""
+msgstr "OrchestrationStack|Предки"
 
 #: ../config/model_attributes.rb:3558
 msgid "OrchestrationStack|Description"
@@ -54283,11 +54293,11 @@ msgstr "OrchestrationStack|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3560
 msgid "OrchestrationStack|Evm owner email"
-msgstr ""
+msgstr "OrchestrationStack|Почта владельца EVM"
 
 #: ../config/model_attributes.rb:3561
 msgid "OrchestrationStack|Evm owner name"
-msgstr ""
+msgstr "OrchestrationStack|Имя владельца EVM"
 
 #: ../config/model_attributes.rb:3562
 msgid "OrchestrationStack|Evm owner userid"
@@ -54295,11 +54305,11 @@ msgstr "OrchestrationStack|Userid владельца EVM"
 
 #: ../config/model_attributes.rb:3563
 msgid "OrchestrationStack|Finish time"
-msgstr ""
+msgstr "OrchestrationStack|Время завершения"
 
 #: ../config/model_attributes.rb:3564
 msgid "OrchestrationStack|Hosts"
-msgstr ""
+msgstr "OrchestrationStack|Хосты"
 
 #: ../config/model_attributes.rb:3565
 msgid "OrchestrationStack|Href slug"
@@ -54307,19 +54317,19 @@ msgstr "OrchestrationStack|Href slug"
 
 #: ../config/model_attributes.rb:3566
 msgid "OrchestrationStack|Name"
-msgstr ""
+msgstr "OrchestrationStack|Имя"
 
 #: ../config/model_attributes.rb:3567
 msgid "OrchestrationStack|Owned by current ldap group"
-msgstr ""
+msgstr "OrchestrationStack|Владелец — текущая группа LDAP"
 
 #: ../config/model_attributes.rb:3568
 msgid "OrchestrationStack|Owned by current user"
-msgstr ""
+msgstr "OrchestrationStack|Владелец — текущий пользователь"
 
 #: ../config/model_attributes.rb:3569
 msgid "OrchestrationStack|Owning ldap group"
-msgstr ""
+msgstr "OrchestrationStack|Группа LDAP, явл. владельцем"
 
 #: ../config/model_attributes.rb:3570
 msgid "OrchestrationStack|Region description"
@@ -54331,19 +54341,19 @@ msgstr "OrchestrationStack|Номер региона"
 
 #: ../config/model_attributes.rb:3572
 msgid "OrchestrationStack|Resource group"
-msgstr ""
+msgstr "OrchestrationStack|Группа ресурса"
 
 #: ../config/model_attributes.rb:3573
 msgid "OrchestrationStack|Retired"
-msgstr ""
+msgstr "OrchestrationStack|Выведено из эксплуатации"
 
 #: ../config/model_attributes.rb:3574
 msgid "OrchestrationStack|Retirement last warn"
-msgstr ""
+msgstr "OrchestrationStack|Последнее предупреждение о выводе из эксплуатации"
 
 #: ../config/model_attributes.rb:3575
 msgid "OrchestrationStack|Retirement requester"
-msgstr ""
+msgstr "OrchestrationStack|Инициатор запроса вывода из эксплуатации"
 
 #: ../config/model_attributes.rb:3576
 msgid "OrchestrationStack|Retirement state"
@@ -54351,47 +54361,47 @@ msgstr "OrchestrationStack|Состояние вывода из эксплуат
 
 #: ../config/model_attributes.rb:3577
 msgid "OrchestrationStack|Retirement warn"
-msgstr ""
+msgstr "OrchestrationStack|Предупреждение о выводе из эксплуатации"
 
 #: ../config/model_attributes.rb:3578
 msgid "OrchestrationStack|Retires on"
-msgstr ""
+msgstr "OrchestrationStack|Когда выводится из эксплуатации:"
 
 #: ../config/model_attributes.rb:3579
 msgid "OrchestrationStack|Start time"
-msgstr ""
+msgstr "OrchestrationStack|Start Время начала"
 
 #: ../config/model_attributes.rb:3580
 msgid "OrchestrationStack|Status"
-msgstr ""
+msgstr "OrchestrationStack|Статус"
 
 #: ../config/model_attributes.rb:3581
 msgid "OrchestrationStack|Status reason"
-msgstr ""
+msgstr "OrchestrationStack|Причина статуса"
 
 #: ../config/model_attributes.rb:3582
 msgid "OrchestrationStack|Stdout"
-msgstr ""
+msgstr "OrchestrationStack|Stdout"
 
 #: ../config/model_attributes.rb:3583
 msgid "OrchestrationStack|Total cloud networks"
-msgstr ""
+msgstr "OrchestrationStack|Всего облачных сетей"
 
 #: ../config/model_attributes.rb:3584
 msgid "OrchestrationStack|Total security groups"
-msgstr ""
+msgstr "OrchestrationStack|Всего групп безопасности"
 
 #: ../config/model_attributes.rb:3585
 msgid "OrchestrationStack|Total vms"
-msgstr ""
+msgstr "OrchestrationStack|Всего ВМ"
 
 #: ../config/model_attributes.rb:3586
 msgid "OrchestrationStack|Verbosity"
-msgstr ""
+msgstr "OrchestrationStack|Уровень детализации"
 
 #: ../config/model_attributes.rb:3618
 msgid "OrchestrationTemplate|Content"
-msgstr ""
+msgstr "OrchestrationTemplate|Содержимое"
 
 #: ../config/model_attributes.rb:3619
 msgid "OrchestrationTemplate|Description"
@@ -54399,7 +54409,7 @@ msgstr "OrchestrationTemplate|Описание"
 
 #: ../config/model_attributes.rb:3620
 msgid "OrchestrationTemplate|Draft"
-msgstr ""
+msgstr "OrchestrationTemplate|Черновик"
 
 #: ../config/model_attributes.rb:3621
 msgid "OrchestrationTemplate|Ems ref"
@@ -54411,11 +54421,11 @@ msgstr "OrchestrationTemplate|Href slug"
 
 #: ../config/model_attributes.rb:3623
 msgid "OrchestrationTemplate|Md5"
-msgstr ""
+msgstr "OrchestrationTemplate|Md5"
 
 #: ../config/model_attributes.rb:3624
 msgid "OrchestrationTemplate|Name"
-msgstr ""
+msgstr "OrchestrationTemplate|Имя"
 
 #: ../config/model_attributes.rb:3625
 msgid "OrchestrationTemplate|Orderable"
@@ -54518,22 +54528,22 @@ msgstr "Потерянные ВМ и образы"
 #. TRANSLATORS: en.yml key: dictionary.column.os_priority
 #: ../config/dictionary_strings.rb:1546
 msgid "Os Priority"
-msgstr ""
+msgstr "Приоритет ОС"
 
 #: ../config/model_display_names.rb:175
 msgid "Os Process"
 msgid_plural "Os Processes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Процесс ОС"
+msgstr[1] "Процессы ОС"
+msgstr[2] "Процессы ОС"
 
 #: ../config/model_attributes.rb:3628
 msgid "Os process"
-msgstr ""
+msgstr "Процесс ОС"
 
 #: ../config/model_attributes.rb:3629
 msgid "OsProcess|Cpu time"
-msgstr ""
+msgstr "OsProcess|Время ЦП"
 
 #: ../config/model_attributes.rb:3630
 msgid "OsProcess|Created on"
@@ -54545,31 +54555,31 @@ msgstr "OsProcess|Href slug"
 
 #: ../config/model_attributes.rb:3632
 msgid "OsProcess|Memory size"
-msgstr ""
+msgstr "OsProcess|Размер памяти"
 
 #: ../config/model_attributes.rb:3633
 msgid "OsProcess|Memory usage"
-msgstr ""
+msgstr "OsProcess|Потребление памяти"
 
 #: ../config/model_attributes.rb:3634
 msgid "OsProcess|Name"
-msgstr ""
+msgstr "OsProcess|Имя"
 
 #: ../config/model_attributes.rb:3635
 msgid "OsProcess|Percent cpu"
-msgstr ""
+msgstr "OsProcess|ЦП, %"
 
 #: ../config/model_attributes.rb:3636
 msgid "OsProcess|Percent memory"
-msgstr ""
+msgstr "OsProcess|Память, %"
 
 #: ../config/model_attributes.rb:3637
 msgid "OsProcess|Pid"
-msgstr ""
+msgstr "OsProcess|Pid"
 
 #: ../config/model_attributes.rb:3638
 msgid "OsProcess|Priority"
-msgstr ""
+msgstr "OsProcess|Приоритет"
 
 #: ../config/model_attributes.rb:3639
 msgid "OsProcess|Region description"
@@ -54599,7 +54609,7 @@ msgstr "Другие файлы ВМ"
 #. TRANSLATORS: en.yml key: dictionary.column.v_vm_misc_percent_of_used
 #: ../config/dictionary_strings.rb:2442
 msgid "Other VM Files Percent of Used"
-msgstr ""
+msgstr "Процент используемых файлов, относящихся к другим ВМ"
 
 #: ../app/controllers/ops_controller/ops_rbac.rb:717
 msgid "Outdated filters were removed from group \"%{name}\""
@@ -54612,7 +54622,7 @@ msgstr "Сервер исходящей почты SMTP"
 #. TRANSLATORS: file: product/views/ContainerBuild.yaml
 #: ../config/yaml_strings.rb:719
 msgid "Output"
-msgstr ""
+msgstr "Вывод"
 
 #: ../app/helpers/container_build_helper/textual_summary.rb:28
 msgid "Output Image"
@@ -54621,7 +54631,7 @@ msgstr "Образ вывода"
 #. TRANSLATORS: en.yml key: dictionary.column.output_name
 #: ../config/dictionary_strings.rb:1560
 msgid "Output Name"
-msgstr ""
+msgstr "Имя вывода"
 
 #. TRANSLATORS: file: product/views/OrchestrationStackOutput.yaml
 #: ../app/controllers/orchestration_stack_controller.rb:45
@@ -54662,7 +54672,7 @@ msgstr "Перезаписать существующие отчёты?"
 #. TRANSLATORS: en.yml key: dictionary.column.owned_by_current_user
 #: ../config/dictionary_strings.rb:1570
 msgid "Owned by Me?"
-msgstr ""
+msgstr "Я владелец?"
 
 #. TRANSLATORS: file: product/views/Vm__restricted.yaml
 #: ../app/helpers/service_helper/textual_summary.rb:203
@@ -54684,7 +54694,7 @@ msgstr "Владелец"
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/140_Provisioning Activity - by VM.yaml
 #: ../config/yaml_strings.rb:7281
 msgid "Owner Email"
-msgstr ""
+msgstr "Почта владельца"
 
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/110_Provisioning Activity - by Approver.yaml
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/120_Provisioning Activity - by Datastore.yaml
@@ -54692,7 +54702,7 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/140_Provisioning Activity - by VM.yaml
 #: ../config/yaml_strings.rb:7276
 msgid "Owner Name"
-msgstr ""
+msgstr "Имя владельца"
 
 #: ../app/views/catalog/_sandt_tree_show.html.haml:121
 msgid "Ownership Group"
@@ -54731,7 +54741,7 @@ msgstr "Вывод в PDP"
 #. TRANSLATORS: file: product/views/OsProcess-processes.yaml
 #: ../config/yaml_strings.rb:1540
 msgid "PID"
-msgstr ""
+msgstr "PID"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/inventory/parser/power_virtual_servers.rb:51
@@ -54837,14 +54847,14 @@ msgstr "Серверы PXE"
 #: ../app/helpers/textual_mixins/vm_common.rb:63
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Пакет"
+msgstr[1] "Пакеты"
+msgstr[2] "Пакеты"
 
 #. TRANSLATORS: file: product/views/GuestApplication.yaml
 #: ../config/yaml_strings.rb:1043
 msgid "Package Name"
-msgstr ""
+msgstr "Имя пакета"
 
 #: ../app/controllers/container_image_controller.rb:25
 #: ../app/controllers/host_controller.rb:121
@@ -54883,12 +54893,13 @@ msgstr "Паравиртуализация"
 #: ../app/helpers/ops_helper/textual_summary.rb:50
 #: ../config/yaml_strings.rb:1889
 msgid "Parent"
-msgstr ""
+msgstr "Родитель"
 
 #. TRANSLATORS: en.yml key: dictionary.column.v_parent_blue_folder_display_path
 #: ../config/dictionary_strings.rb:2048
+#, fuzzy
 msgid "Parent Blue Folder Display Path"
-msgstr ""
+msgstr "Путь до отображения родительской папки BlueFolder"
 
 #: ../app/helpers/service_helper/textual_summary.rb:155
 msgid "Parent Catalog Item"
@@ -54915,7 +54926,7 @@ msgstr "Поставщик родительского облака"
 #:
 #: ../app/javascript/components/cloud-tenant-form/cloud-tenant-form.schema.js:42
 msgid "Parent Cloud Tenant"
-msgstr ""
+msgstr "Облачный арендатор-родитель"
 
 #: ../app/helpers/resource_pool_helper/textual_summary.rb:80
 #: ../app/views/layouts/_perf_options.html.haml:130
@@ -54930,7 +54941,7 @@ msgstr "Родительский ЦОД"
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/040_Summary for VMs.yaml
 #: ../config/dictionary_strings.rb:2390 ../config/yaml_strings.rb:6114
 msgid "Parent Folder"
-msgstr ""
+msgstr "Родительская папка"
 
 #. TRANSLATORS: en.yml key: dictionary.column.v_owning_folder
 #: ../config/dictionary_strings.rb:2380
@@ -54965,7 +54976,7 @@ msgstr "Платформа родительского хоста"
 #. TRANSLATORS: en.yml key: dictionary.column.parent_name
 #: ../config/dictionary_strings.rb:1596
 msgid "Parent Name"
-msgstr ""
+msgstr "Имя родителя"
 
 #. TRANSLATORS: en.yml key: dictionary.column.v_owning_resource_pool
 #. TRANSLATORS: en.yml key: dictionary.column.v_parent_resource_pool
@@ -54999,7 +55010,7 @@ msgstr[2] "Родительские ВМ"
 
 #: ../app/javascript/components/vm-edit-form/vm-edit-form.schema.js:28
 msgid "Parent VM Selection"
-msgstr ""
+msgstr "Выбор родительских ВМ"
 
 #: ../app/helpers/physical_chassis_helper/textual_summary.rb:54
 #: ../app/helpers/physical_switch_helper/textual_summary.rb:72
@@ -55022,15 +55033,15 @@ msgstr "Таблица разделов"
 
 #: ../app/views/vm_common/_disks.html.haml:7
 msgid "Partitions Aligned"
-msgstr ""
+msgstr "Выровненные разделы"
 
 #: ../config/model_attributes.rb:3643
 msgid "Partition|Aligned"
-msgstr ""
+msgstr "Partition|Выровненный"
 
 #: ../config/model_attributes.rb:3644
 msgid "Partition|Controller"
-msgstr ""
+msgstr "Partition|Контроллер"
 
 #: ../config/model_attributes.rb:3645
 msgid "Partition|Created on"
@@ -55038,7 +55049,7 @@ msgstr "Partition|Когда создано"
 
 #: ../config/model_attributes.rb:3646
 msgid "Partition|Free space"
-msgstr ""
+msgstr "Partition|Свободное место"
 
 #: ../config/model_attributes.rb:3647
 msgid "Partition|Href slug"
@@ -55046,15 +55057,15 @@ msgstr "Partition|Href slug"
 
 #: ../config/model_attributes.rb:3648
 msgid "Partition|Location"
-msgstr ""
+msgstr "Partition|Местоположение"
 
 #: ../config/model_attributes.rb:3649
 msgid "Partition|Name"
-msgstr ""
+msgstr "Partition|Имя"
 
 #: ../config/model_attributes.rb:3650
 msgid "Partition|Partition type"
-msgstr ""
+msgstr "Partition|Тип раздела"
 
 #: ../config/model_attributes.rb:3651
 msgid "Partition|Region description"
@@ -55066,15 +55077,15 @@ msgstr "Partition|Номер региона"
 
 #: ../config/model_attributes.rb:3653
 msgid "Partition|Size"
-msgstr ""
+msgstr "Partition|Размер"
 
 #: ../config/model_attributes.rb:3654
 msgid "Partition|Start address"
-msgstr ""
+msgstr "Partition|Начальный адрес"
 
 #: ../config/model_attributes.rb:3655
 msgid "Partition|Uid"
-msgstr ""
+msgstr "Partition|Uid"
 
 #: ../config/model_attributes.rb:3656
 msgid "Partition|Updated on"
@@ -55082,15 +55093,15 @@ msgstr "Partition|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:3657
 msgid "Partition|Used space"
-msgstr ""
+msgstr "Partition|Используемое место"
 
 #: ../config/model_attributes.rb:3658
 msgid "Partition|Virtual disk file"
-msgstr ""
+msgstr "Partition|Файл вирт. диска"
 
 #: ../config/model_attributes.rb:3659
 msgid "Partition|Volume group"
-msgstr ""
+msgstr "Partition|Группа томов"
 
 #: ../app/views/miq_policy_rsop/_rsop_results.html.haml:26
 msgid "Passed"
@@ -55169,13 +55180,15 @@ msgstr "Пароль:"
 
 #: ../app/views/layouts/angular-bootstrap/_endpoints_angular.html.haml:312
 msgid "Paste here the trusted CA certificates, in PEM format."
-msgstr ""
+msgstr "Вставьте здесь доверенный сертификат ЦС в формате PEM"
 
 #: ../app/views/shared/buttons/_ab_form.html.haml:19
 msgid ""
 "Paste is not available, no object information has been copied from the Simulat"
 "ion screen"
 msgstr ""
+"Вставка недоступна, информация об объекте не была скопирована с экрана"
+" имитации"
 
 #: ../app/views/shared/buttons/_ab_form.html.haml:16
 msgid ""
@@ -55188,7 +55201,7 @@ msgstr ""
 
 #: ../app/views/shared/buttons/_ab_form.html.haml:7
 msgid "Paste object details for use in a Button."
-msgstr ""
+msgstr "Вставить подробности об объекте для использования в кнопке."
 
 #: ../app/controllers/vm_common.rb:1128
 msgid "Patch"
@@ -55234,19 +55247,19 @@ msgstr "Patch|Href slug"
 
 #: ../config/model_attributes.rb:3664
 msgid "Patch|Installed"
-msgstr ""
+msgstr "Patch|Установлен"
 
 #: ../config/model_attributes.rb:3665
 msgid "Patch|Installed on"
-msgstr ""
+msgstr "Patch|Когда установлен:"
 
 #: ../config/model_attributes.rb:3666
 msgid "Patch|Is valid"
-msgstr ""
+msgstr "Patch|Действителен"
 
 #: ../config/model_attributes.rb:3667
 msgid "Patch|Name"
-msgstr ""
+msgstr "Patch|Имя"
 
 #: ../config/model_attributes.rb:3668
 msgid "Patch|Region description"
@@ -55258,7 +55271,7 @@ msgstr "Patch|Номер региона"
 
 #: ../config/model_attributes.rb:3670
 msgid "Patch|Service pack"
-msgstr ""
+msgstr "Patch|Пакет обновлений"
 
 #: ../config/model_attributes.rb:3671
 msgid "Patch|Updated on"
@@ -55266,7 +55279,7 @@ msgstr "Patch|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:3672
 msgid "Patch|V install date"
-msgstr ""
+msgstr "Patch|Дата установки V"
 
 #: ../config/model_attributes.rb:3673
 msgid "Patch|Vendor"
@@ -55355,7 +55368,7 @@ msgstr "Используемое место на дисках, %"
 
 #: ../app/mailers/generic_mailer.rb:145
 msgid "Peer"
-msgstr ""
+msgstr "Одноранговый узел"
 
 #. TRANSLATORS: file: product/views/PhysicalNetworkPort.yaml
 #: ../app/helpers/physical_network_port_helper/textual_summary.rb:18
@@ -55382,31 +55395,31 @@ msgstr "На единицу"
 
 #: ../app/javascript/oldjs/miq_application.js:85
 msgid "Percent"
-msgstr ""
+msgstr "Процент"
 
 #. TRANSLATORS: en.yml key: dictionary.column.used_percent_of_provisioned
 #: ../config/dictionary_strings.rb:2340
 msgid "Percent Used Provisioned Space"
-msgstr ""
+msgstr "Процент использования подготовленного места"
 
 #: ../app/views/vm_common/_disks.html.haml:10
 msgid "Percent Used of Provisioned Size"
-msgstr ""
+msgstr "Процент использования подготовленного размера"
 
 #. TRANSLATORS: file: db/fixtures/miq_report_formats.yml
 #: ../config/yaml_strings.rb:4659
 msgid "Percent, 1 Decimal (99.0%)"
-msgstr ""
+msgstr "Проценты, 1 знак после запятой (99.0%)"
 
 #. TRANSLATORS: file: db/fixtures/miq_report_formats.yml
 #: ../config/yaml_strings.rb:4661
 msgid "Percent, 2 Decimals (99.00%)"
-msgstr ""
+msgstr "Проценты, 2 знака после запятой (99.00%)"
 
 #. TRANSLATORS: file: db/fixtures/miq_report_formats.yml
 #: ../config/yaml_strings.rb:4657
 msgid "Percentage (99%)"
-msgstr ""
+msgstr "Процентное значение (99%)"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1236
@@ -56025,7 +56038,7 @@ msgstr[2] "Производительность: хранилищ данных"
 #. TRANSLATORS: en.yml key: dictionary.model.StoragePerformance (plural form)
 #: ../config/dictionary_strings.rb:3780
 msgid "Performance - Datastores"
-msgstr ""
+msgstr "Производительность: хранилища данных"
 
 #. TRANSLATORS: en.yml key: dictionary.model.HostPerformance
 #: ../app/models/host_performance.rb:8 ../config/dictionary_strings.rb:2930
@@ -56043,12 +56056,12 @@ msgstr "Производительность: хосты"
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerGroupPerformance
 #: ../config/dictionary_strings.rb:2798
 msgid "Performance - Pod"
-msgstr ""
+msgstr "Производительность: под"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ContainerGroupPerformance (plural form)
 #: ../config/dictionary_strings.rb:2800
 msgid "Performance - Pods"
-msgstr ""
+msgstr "Производительность: поды"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ExtManagementSystemPerformance
 #: ../app/models/ext_management_system_performance.rb:7
@@ -56068,9 +56081,9 @@ msgstr "Производительность: поставщики"
 #: ../app/models/vm_performance.rb:10 ../config/dictionary_strings.rb:3814
 msgid "Performance - VM"
 msgid_plural "Performance - VMs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Производительность: ВМ"
+msgstr[1] "Производительность: ВМ"
+msgstr[2] "Производительность: ВМ"
 
 #. TRANSLATORS: en.yml key: dictionary.model.VmPerformance (plural form)
 #: ../config/dictionary_strings.rb:3816
@@ -56112,7 +56125,7 @@ msgstr "Сбор данных наблюдений за событиями мо�
 #. TRANSLATORS: file: product/views/Filesystem.yaml
 #: ../config/yaml_strings.rb:941
 msgid "Permissions"
-msgstr ""
+msgstr "Полномочия"
 
 #. TRANSLATORS: en.yml key: dictionary.model.PersistentVolume
 #: ../config/dictionary_strings.rb:3684
@@ -56142,7 +56155,7 @@ msgstr "Заявка постоянного тома на доступ"
 #. TRANSLATORS: file: product/views/PersistentVolume.yaml
 #: ../config/yaml_strings.rb:1623
 msgid "PersistentVolume"
-msgstr ""
+msgstr "PersistentVolume"
 
 #: ../config/model_attributes.rb:3675
 msgid "PersistentVolumeClaim|Actual access modes"
@@ -56238,9 +56251,9 @@ msgstr[2] "Физич. шасси (Redfish)"
 #: ../config/model_display_names.rb:180
 msgid "Physical Disk"
 msgid_plural "Physical Disks"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Физический диск"
+msgstr[1] "Физические диски"
+msgstr[2] "Физические диски"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3382
@@ -56283,7 +56296,7 @@ msgstr "Поставщики физич. инфраструктуры"
 
 #: ../app/presenters/tree_node/guest_device.rb:7
 msgid "Physical NIC: %{name}"
-msgstr ""
+msgstr "Физич. сетевой контроллер: %{name}"
 
 #:
 #: ../app/models/manageiq/providers/openstack/network_manager/cloud_network.rb:95
@@ -56359,7 +56372,7 @@ msgstr "Физич. стойки (Lenovo)"
 #. TRANSLATORS: file: product/views/OrchestrationStackResource.yaml
 #: ../config/yaml_strings.rb:1592
 msgid "Physical Resource"
-msgstr ""
+msgstr "Физический ресурс"
 
 #. TRANSLATORS: file: product/views/PhysicalServer.yaml
 #: ../app/helpers/host_helper/textual_summary.rb:286
@@ -56520,9 +56533,9 @@ msgstr[2] "Физич. хранилищ (Lenovo)"
 #: ../config/model_display_names.rb:186
 msgid "Physical Storage Family"
 msgid_plural "Physical Storage Families"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Семейство физич. хранилищ"
+msgstr[1] "Семейства физич. хранилищ"
+msgstr[2] "Семейства физич. хранилищ"
 
 #:
 #: ../app/javascript/components/host-initiator-form/host-initiator-form.schema.js:64
@@ -56548,7 +56561,7 @@ msgstr "Физич. хранилища (Lenovo)"
 #. TRANSLATORS: file: product/views/PhysicalSwitch.yaml
 #: ../config/yaml_strings.rb:1667
 msgid "Physical Switch"
-msgstr ""
+msgstr "Физич. коммутатор"
 
 #:
 #: ../app/models/manageiq/providers/cisco_intersight/physical_infra_manager/physical_switch.rb:4
@@ -56592,7 +56605,7 @@ msgstr "Физич. шасси"
 
 #: ../config/model_attributes.rb:3704
 msgid "Physical disk"
-msgstr ""
+msgstr "Физический диск"
 
 #: ../config/model_attributes.rb:3717
 msgid "Physical network port"
@@ -56616,15 +56629,16 @@ msgstr "Семейство физич. хранилищ"
 
 #: ../config/model_attributes.rb:3690
 msgid "PhysicalChassis|Blade slot count"
-msgstr ""
+msgstr "PhysicalChassis|Количество слотов Blade"
 
 #: ../config/model_attributes.rb:3691
 msgid "PhysicalChassis|Ems ref"
 msgstr "PhysicalChassis|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3692
+#, fuzzy
 msgid "PhysicalChassis|Fan slot count"
-msgstr ""
+msgstr "PhysicalChassis|Количество слотов вентиляторов"
 
 #: ../config/model_attributes.rb:3693
 msgid "PhysicalChassis|Health state"
@@ -56636,19 +56650,20 @@ msgstr "PhysicalChassis|Href slug"
 
 #: ../config/model_attributes.rb:3695
 msgid "PhysicalChassis|Management module slot count"
-msgstr ""
+msgstr "PhysicalChassis|Количество слотов модулей управления"
 
 #: ../config/model_attributes.rb:3696
 msgid "PhysicalChassis|Name"
-msgstr ""
+msgstr "PhysicalChassis|Имя"
 
 #: ../config/model_attributes.rb:3697
 msgid "PhysicalChassis|Overall health state"
 msgstr "PhysicalChassis|Состояние общей работоспособности"
 
 #: ../config/model_attributes.rb:3698
+#, fuzzy
 msgid "PhysicalChassis|Powersupply slot count"
-msgstr ""
+msgstr "PhysicalChassis|Количество слотов Powersupply"
 
 #: ../config/model_attributes.rb:3699
 msgid "PhysicalChassis|Region description"
@@ -56660,7 +56675,7 @@ msgstr "PhysicalChassis|Номер региона"
 
 #: ../config/model_attributes.rb:3701
 msgid "PhysicalChassis|Switch slot count"
-msgstr ""
+msgstr "PhysicalChassis|Количество слотов коммутаторов"
 
 #: ../config/model_attributes.rb:3702
 msgid "PhysicalChassis|Uid ems"
@@ -56672,11 +56687,11 @@ msgstr "PhysicalChassis|Производитель"
 
 #: ../config/model_attributes.rb:3705
 msgid "PhysicalDisk|Controller type"
-msgstr ""
+msgstr "PhysicalDisk|Тип контроллера"
 
 #: ../config/model_attributes.rb:3706
 msgid "PhysicalDisk|Disk size"
-msgstr ""
+msgstr "PhysicalDisk|Размер диска"
 
 #: ../config/model_attributes.rb:3707
 msgid "PhysicalDisk|Ems ref"
@@ -56692,11 +56707,11 @@ msgstr "PhysicalDisk|Href slug"
 
 #: ../config/model_attributes.rb:3710
 msgid "PhysicalDisk|Location"
-msgstr ""
+msgstr "PhysicalDisk|Местоположение"
 
 #: ../config/model_attributes.rb:3711
 msgid "PhysicalDisk|Model"
-msgstr ""
+msgstr "PhysicalDisk|Модель"
 
 #: ../config/model_attributes.rb:3712
 msgid "PhysicalDisk|Region description"
@@ -56708,11 +56723,11 @@ msgstr "PhysicalDisk|Номер региона"
 
 #: ../config/model_attributes.rb:3714
 msgid "PhysicalDisk|Serial number"
-msgstr ""
+msgstr "PhysicalDisk|Серийный номер"
 
 #: ../config/model_attributes.rb:3715
 msgid "PhysicalDisk|Status"
-msgstr ""
+msgstr "PhysicalDisk|Статус"
 
 #: ../config/model_attributes.rb:3716
 msgid "PhysicalDisk|Vendor"
@@ -56720,7 +56735,7 @@ msgstr "PhysicalDisk|Производитель"
 
 #: ../config/model_attributes.rb:3718
 msgid "PhysicalNetworkPort|Connected port uid"
-msgstr ""
+msgstr "PhysicalNetworkPort|UID подключённого порта"
 
 #: ../config/model_attributes.rb:3719
 msgid "PhysicalNetworkPort|Ems ref"
@@ -56732,11 +56747,11 @@ msgstr "PhysicalNetworkPort|Href slug"
 
 #: ../config/model_attributes.rb:3721
 msgid "PhysicalNetworkPort|Mac address"
-msgstr ""
+msgstr "PhysicalNetworkPort|Адрес MAC"
 
 #: ../config/model_attributes.rb:3722
 msgid "PhysicalNetworkPort|Peer mac address"
-msgstr ""
+msgstr "PhysicalNetworkPort|Адрес MAC однорангового узла"
 
 #: ../config/model_attributes.rb:3723
 msgid "PhysicalNetworkPort|Port index"
@@ -56744,15 +56759,15 @@ msgstr "PhysicalNetworkPort|Индекс порта"
 
 #: ../config/model_attributes.rb:3724
 msgid "PhysicalNetworkPort|Port name"
-msgstr ""
+msgstr "PhysicalNetworkPort|Имя порта"
 
 #: ../config/model_attributes.rb:3725
 msgid "PhysicalNetworkPort|Port status"
-msgstr ""
+msgstr "PhysicalNetworkPort|Статус порта"
 
 #: ../config/model_attributes.rb:3726
 msgid "PhysicalNetworkPort|Port type"
-msgstr ""
+msgstr "PhysicalNetworkPort|Тип порта"
 
 #: ../config/model_attributes.rb:3727
 msgid "PhysicalNetworkPort|Region description"
@@ -56772,7 +56787,7 @@ msgstr "PhysicalNetworkPort|Vlan включена"
 
 #: ../config/model_attributes.rb:3731
 msgid "PhysicalNetworkPort|Vlan key"
-msgstr ""
+msgstr "PhysicalNetworkPort|Ключ VLAN"
 
 #: ../config/model_attributes.rb:3733
 msgid "PhysicalRack|Ems ref"
@@ -56784,7 +56799,7 @@ msgstr "PhysicalRack|Href slug"
 
 #: ../config/model_attributes.rb:3735
 msgid "PhysicalRack|Name"
-msgstr ""
+msgstr "PhysicalRack|Имя"
 
 #: ../config/model_attributes.rb:3736
 msgid "PhysicalRack|Region description"
@@ -56799,14 +56814,12 @@ msgid "PhysicalRack|Uid ems"
 msgstr "PhysicalRack|Uid ems"
 
 #: ../config/model_attributes.rb:3740
-#, fuzzy
 msgid "PhysicalServer|Ems compliance name"
-msgstr "Физич.сервер|Имя соответствия требованиям сист.внешн.управления"
+msgstr "PhysicalServer|Имя соответствия требованиям EMS"
 
 #: ../config/model_attributes.rb:3741
-#, fuzzy
 msgid "PhysicalServer|Ems compliance status"
-msgstr "Физич.сервер|Статус соответствия требованиям сист.внешн.управления"
+msgstr "PhysicalServer|Статус соответствия требованиям EMS"
 
 #: ../config/model_attributes.rb:3742
 msgid "PhysicalServer|Ems ref"
@@ -56818,11 +56831,11 @@ msgstr "PhysicalServer|Emstype"
 
 #: ../config/model_attributes.rb:3744
 msgid "PhysicalServer|Field replaceable unit"
-msgstr ""
+msgstr "PhysicalServer|Элемент, заменяемый в условиях эксплуатации (FRU)"
 
 #: ../config/model_attributes.rb:3745
 msgid "PhysicalServer|Has policies"
-msgstr ""
+msgstr "PhysicalServer|Есть политики"
 
 #: ../config/model_attributes.rb:3746
 msgid "PhysicalServer|Health state"
@@ -56830,7 +56843,7 @@ msgstr "PhysicalServer|Состояние работоспособности"
 
 #: ../config/model_attributes.rb:3747
 msgid "PhysicalServer|Hostname"
-msgstr ""
+msgstr "PhysicalServer|Имя хоста"
 
 #: ../config/model_attributes.rb:3748
 msgid "PhysicalServer|Href slug"
@@ -56846,19 +56859,19 @@ msgstr "PhysicalServer|Последняя временная метка соот
 
 #: ../config/model_attributes.rb:3751
 msgid "PhysicalServer|Machine type"
-msgstr ""
+msgstr "PhysicalServer|Тип машины"
 
 #: ../config/model_attributes.rb:3752
 msgid "PhysicalServer|Manufacturer"
-msgstr ""
+msgstr "PhysicalServer|Изготовитель"
 
 #: ../config/model_attributes.rb:3753
 msgid "PhysicalServer|Model"
-msgstr ""
+msgstr "PhysicalServer|Модель"
 
 #: ../config/model_attributes.rb:3754
 msgid "PhysicalServer|Name"
-msgstr ""
+msgstr "PhysicalServer|Имя"
 
 #: ../config/model_attributes.rb:3755
 msgid "PhysicalServer|Power state"
@@ -56866,7 +56879,7 @@ msgstr "PhysicalServer|Состояние энергопотребления"
 
 #: ../config/model_attributes.rb:3756
 msgid "PhysicalServer|Product name"
-msgstr ""
+msgstr "PhysicalServer|Имя продукта"
 
 # https://bugzilla.redhat.com/show_bug.cgi?id=1290003
 #: ../config/model_attributes.rb:3757
@@ -56883,7 +56896,7 @@ msgstr "PhysicalServer|Номер региона"
 
 #: ../config/model_attributes.rb:3760
 msgid "PhysicalServer|Serial number"
-msgstr ""
+msgstr "PhysicalServer|Серийный номер"
 
 #: ../config/model_attributes.rb:3761
 msgid "PhysicalServer|Uid ems"
@@ -56891,11 +56904,11 @@ msgstr "PhysicalServer|Uid ems"
 
 #: ../config/model_attributes.rb:3762
 msgid "PhysicalServer|V availability"
-msgstr ""
+msgstr "PhysicalServer|Доступность V"
 
 #: ../config/model_attributes.rb:3763
 msgid "PhysicalServer|V host os"
-msgstr ""
+msgstr "PhysicalServer|ОС хоста V"
 
 #: ../config/model_attributes.rb:3764
 msgid "PhysicalServer|Vendor"
@@ -56911,7 +56924,7 @@ msgstr "PhysicalStorageFamily|Href slug"
 
 #: ../config/model_attributes.rb:3782
 msgid "PhysicalStorageFamily|Name"
-msgstr ""
+msgstr "PhysicalStorageFamily|Имя"
 
 #: ../config/model_attributes.rb:3783
 msgid "PhysicalStorageFamily|Region description"
@@ -56923,7 +56936,7 @@ msgstr "PhysicalStorageFamily|Номер региона"
 
 #: ../config/model_attributes.rb:3785
 msgid "PhysicalStorageFamily|Version"
-msgstr ""
+msgstr "PhysicalStorageFamily|Версия"
 
 #: ../config/model_attributes.rb:3766
 msgid "PhysicalStorage|Access state"
@@ -56931,11 +56944,11 @@ msgstr "PhysicalStorage|Состояние доступа"
 
 #: ../config/model_attributes.rb:3767
 msgid "PhysicalStorage|Canister slots"
-msgstr ""
+msgstr "PhysicalStorage|Слоты контейнера (canister)"
 
 #: ../config/model_attributes.rb:3768
 msgid "PhysicalStorage|Drive bays"
-msgstr ""
+msgstr "PhysicalStorage|Отсеки дисков"
 
 #: ../config/model_attributes.rb:3769
 msgid "PhysicalStorage|Ems ref"
@@ -56943,7 +56956,7 @@ msgstr "PhysicalStorage|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3770
 msgid "PhysicalStorage|Enclosures"
-msgstr ""
+msgstr "PhysicalStorage|Дисковые полки"
 
 #: ../config/model_attributes.rb:3771
 msgid "PhysicalStorage|Health state"
@@ -56955,7 +56968,7 @@ msgstr "PhysicalStorage|Href slug"
 
 #: ../config/model_attributes.rb:3773
 msgid "PhysicalStorage|Name"
-msgstr ""
+msgstr "PhysicalStorage|Имя"
 
 #: ../config/model_attributes.rb:3774
 msgid "PhysicalStorage|Overall health state"
@@ -56971,7 +56984,7 @@ msgstr "PhysicalStorage|Номер региона"
 
 #: ../config/model_attributes.rb:3777
 msgid "PhysicalStorage|Total space"
-msgstr ""
+msgstr "PhysicalStorage|Всего места"
 
 #: ../config/model_attributes.rb:3778
 msgid "PhysicalStorage|Uid ems"
@@ -56980,22 +56993,22 @@ msgstr "PhysicalStorage|Uid ems"
 #: ../config/model_display_names.rb:188 ../config/model_attributes.rb:3786
 msgid "Picture"
 msgid_plural "Pictures"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Картинка"
+msgstr[1] "Картинки"
+msgstr[2] "Картинки"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4410
 msgid "Pictures"
-msgstr ""
+msgstr "Картинки"
 
 #: ../config/model_attributes.rb:3787
 msgid "Picture|Content"
-msgstr ""
+msgstr "Picture|Содержимое"
 
 #: ../config/model_attributes.rb:3788
 msgid "Picture|Extension"
-msgstr ""
+msgstr "Picture|Расширение"
 
 #: ../config/model_attributes.rb:3789
 msgid "Picture|Href slug"
@@ -57003,7 +57016,7 @@ msgstr "Picture|Href slug"
 
 #: ../config/model_attributes.rb:3790
 msgid "Picture|Md5"
-msgstr ""
+msgstr "Picture|Md5"
 
 #: ../config/model_attributes.rb:3791
 msgid "Picture|Region description"
@@ -57053,12 +57066,12 @@ msgstr "Платформа"
 #: ../app/helpers/vm_cloud_helper/textual_summary.rb:63
 #: ../app/helpers/vm_helper/textual_summary.rb:179
 msgid "Platform Tools"
-msgstr ""
+msgstr "Инструменты платформы"
 
 #. TRANSLATORS: file: product/compare/hosts.yaml
 #: ../config/yaml_strings.rb:5330
 msgid "Platform Type"
-msgstr ""
+msgstr "Тип платформы"
 
 #: ../app/helpers/miq_ae_class_helper.rb:142
 #: ../app/helpers/miq_ae_class_helper.rb:159
@@ -57140,7 +57153,7 @@ msgstr "Задачи play"
 
 #: ../app/views/layouts/_exception_contents.html.haml:25
 msgid "Please contact your administrator for assistance."
-msgstr ""
+msgstr "Обратитесь за помощью к администратору."
 
 #: ../app/controllers/catalog_controller.rb:996
 msgid "Please correct invalid Provisioning Entry Point prior to saving"
@@ -57239,47 +57252,47 @@ msgstr[2] "Подов (Kubernetes)"
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:747
 msgid "Pod Compliance Check"
-msgstr "Проверка пода на соответствие требованиям"
+msgstr "Под: проверка на соответствие требованиям"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:755
 msgid "Pod Compliance Failed"
-msgstr "Под не соответствует требованиям"
+msgstr "Под: не соответствует требованиям"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:751
 msgid "Pod Compliance Passed"
-msgstr "Под соответствует требованиям"
+msgstr "Под: соответствует требованиям"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:759
 msgid "Pod Container Created"
-msgstr "Контейнер пода создан"
+msgstr "Под: контейнер создан"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:763
 msgid "Pod Container Failed"
-msgstr "Сбой контейнера пода"
+msgstr "Под: сбой контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:767
 msgid "Pod Container Killing"
-msgstr "Убийство контейнера пода"
+msgstr "Под: убийство контейнера"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:771
 msgid "Pod Container Started"
-msgstr "Контейнер пода запущен"
+msgstr "Под: контейнер запущен"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:775
 msgid "Pod Container Stopped"
-msgstr "Контейнер пода остановлен"
+msgstr "Под: контейнер остановлен"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:779
 msgid "Pod Container Unhealthy"
-msgstr "Контейнер пода неработоспособный"
+msgstr "Под: неработоспособный контейнер"
 
 #: ../app/javascript/components/container-projects/helper.jsx:353
 #: ../app/javascript/components/container-projects/helper.jsx:363
@@ -57289,42 +57302,42 @@ msgstr "Контейнер пода неработоспособный"
 #: ../app/javascript/oldjs/controllers/mixins/charts-mixin.js:135
 #: ../app/javascript/oldjs/controllers/mixins/charts-mixin.js:151
 msgid "Pod Creation and Deletion Trends"
-msgstr "Тенденции создания и удаления подов"
+msgstr "Под: тенденции создания и удаления"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:711
 msgid "Pod Deadline Exceeded"
-msgstr ""
+msgstr "Под: превышен крайний срок выполнения пода"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:715
 msgid "Pod Failed Scheduling"
-msgstr ""
+msgstr "Под: сбой расписания"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:719
 msgid "Pod Failed Validation"
-msgstr "Сбой проверки действительности порта"
+msgstr "Под: сбой проверки действительности"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:727
 msgid "Pod Insufficient Free CPU"
-msgstr ""
+msgstr "Под: недостаточно свободных ресурсов ЦП"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:731
 msgid "Pod Insufficient Free Memory"
-msgstr ""
+msgstr "Под: недостаточно свободной памяти"
 
 #. TRANSLATORS: file: product/views/Container.yaml
 #: ../config/yaml_strings.rb:697
 msgid "Pod Name"
-msgstr ""
+msgstr "Под: имя"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:739
 msgid "Pod Out of Disk"
-msgstr ""
+msgstr "Под: закончилось место на диске"
 
 #: ../app/models/container_group_performance.rb:7
 msgid "Pod Performance"
@@ -57336,7 +57349,7 @@ msgstr[2] "Производительность пода"
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:743
 msgid "Pod Scheduled"
-msgstr ""
+msgstr "Под: занесён в расписание"
 
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/100_Pod counts For Container Images by Project.yaml
 #: ../config/yaml_strings.rb:6447
@@ -57346,12 +57359,12 @@ msgstr "Число подов для образов контейнеров по 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:723
 msgid "Pod hostPort Conflict"
-msgstr "Конфликт пода хост/порт"
+msgstr "Под: конфликт hostPort"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:735
 msgid "Pod nodeSelector Mismatching"
-msgstr ""
+msgstr "Под: несовпадение nodeSelector"
 
 #. TRANSLATORS: file: product/views/ContainerGroup.yaml
 #. TRANSLATORS: file: product/views/ContainerProject.yaml
@@ -57370,12 +57383,12 @@ msgstr "Поды"
 #. TRANSLATORS: en.yml key: dictionary.model.ManageIQ::Providers::Kubernetes::ContainerManager::ContainerGroup (plural form)
 #: ../config/dictionary_strings.rb:3296
 msgid "Pods (Kubernetes)"
-msgstr ""
+msgstr "Поды (Kubernetes)"
 
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/060_Pods per Ready Status.yaml
 #: ../config/yaml_strings.rb:6427
 msgid "Pods per Ready Status"
-msgstr ""
+msgstr "Поды по статусу готовности"
 
 #. TRANSLATORS: file: product/views/MiqPolicy.yaml
 #: ../app/controllers/miq_alert_set_controller.rb:15
@@ -57724,7 +57737,7 @@ msgstr "PolicyEventContent|Номер региона"
 
 #: ../config/model_attributes.rb:3810
 msgid "PolicyEventContent|Resource description"
-msgstr ""
+msgstr "PolicyEventContent|Описание ресурса"
 
 #: ../config/model_attributes.rb:3811
 msgid "PolicyEventContent|Resource type"
@@ -57732,7 +57745,7 @@ msgstr "PolicyEventContent|Тип ресурса"
 
 #: ../config/model_attributes.rb:3795
 msgid "PolicyEvent|Event type"
-msgstr ""
+msgstr "PolicyEvent|Тип события"
 
 #: ../config/model_attributes.rb:3796
 msgid "PolicyEvent|Href slug"
@@ -57740,11 +57753,11 @@ msgstr "PolicyEvent|Href slug"
 
 #: ../config/model_attributes.rb:3797
 msgid "PolicyEvent|Miq event definition description"
-msgstr ""
+msgstr "PolicyEvent|Описание определение события MIQ"
 
 #: ../config/model_attributes.rb:3798
 msgid "PolicyEvent|Miq policy description"
-msgstr ""
+msgstr "PolicyEvent|Политика MIQ: описание"
 
 #: ../config/model_attributes.rb:3799
 msgid "PolicyEvent|Region description"
@@ -57756,7 +57769,7 @@ msgstr "PolicyEvent|Номер региона"
 
 #: ../config/model_attributes.rb:3801
 msgid "PolicyEvent|Result"
-msgstr ""
+msgstr "PolicyEvent|Результат"
 
 #: ../config/model_attributes.rb:3802
 msgid "PolicyEvent|Target class"
@@ -57764,11 +57777,11 @@ msgstr "PolicyEvent|Целевой класс"
 
 #: ../config/model_attributes.rb:3803
 msgid "PolicyEvent|Target name"
-msgstr ""
+msgstr "PolicyEvent|Имя цели"
 
 #: ../config/model_attributes.rb:3804
 msgid "PolicyEvent|Timestamp"
-msgstr ""
+msgstr "PolicyEvent|Временная метка"
 
 #: ../config/model_attributes.rb:3805
 msgid "PolicyEvent|Username"
@@ -57879,7 +57892,7 @@ msgstr "Выключить питание"
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/055_VMs Powered Off registered to a Host.yaml
 #: ../config/yaml_strings.rb:6764
 msgid "Power Off Date"
-msgstr ""
+msgstr "Дата выключения питания"
 
 #:
 #: ../app/helpers/application_helper/toolbar/physical_infrastructure/operations_button_group_mixin.rb:44
@@ -57947,7 +57960,7 @@ msgstr "Включить питание экземпляра"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3838
 msgid "Power On VM"
-msgstr ""
+msgstr "Включить питание ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1655
@@ -57966,11 +57979,11 @@ msgstr "Включить питание выбранных элементов?"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:222
 msgid "Power On this VM"
-msgstr ""
+msgstr "Выключить питание этой ВМ"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:225
 msgid "Power On this VM?"
-msgstr ""
+msgstr "Выключить питание этой ВМ?"
 
 #: ../app/helpers/application_helper/toolbar/host_center.rb:185
 msgid "Power On this item"
@@ -58007,7 +58020,7 @@ msgstr "Состояние энергопотребления"
 #. TRANSLATORS: en.yml key: dictionary.column.power_status
 #: ../config/dictionary_strings.rb:1624
 msgid "Power Status"
-msgstr ""
+msgstr "Состояние питания"
 
 #: ../app/helpers/physical_chassis_helper/textual_summary.rb:119
 msgid "Power Supply Slot Count"
@@ -58099,8 +58112,9 @@ msgstr "GUID службы сервера PowerVS"
 
 #. TRANSLATORS: en.yml key: dictionary.column.powersupply_slot_count
 #: ../config/dictionary_strings.rb:1626
+#, fuzzy
 msgid "Powersupply Slot Count"
-msgstr ""
+msgstr "Количество слотов Powersupply"
 
 #: ../app/helpers/vm_cloud_helper/textual_summary.rb:57
 msgid "Preemptible"
@@ -58109,7 +58123,7 @@ msgstr "«Замещаемая»"
 #. TRANSLATORS: file: product/compare/vms.yaml
 #: ../config/yaml_strings.rb:5486
 msgid "Present"
-msgstr ""
+msgstr "Присутствует"
 
 #: ../app/views/report/_export_custom_reports.html.haml:21
 msgid "Preserve owner?"
@@ -58168,7 +58182,7 @@ msgstr ""
 #: ../app/views/layouts/_paging_bar.html.haml:19
 #: ../app/views/layouts/_paging_bar.html.haml:20
 msgid "Previous"
-msgstr ""
+msgstr "Предыдущее"
 
 #. TRANSLATORS: en.yml key: dictionary.column.previous_state
 #: ../config/dictionary_strings.rb:1628
@@ -58177,12 +58191,12 @@ msgstr "Предыдущее состояние"
 
 #: ../app/javascript/components/miq-pagination.jsx:18
 msgid "Previous page"
-msgstr ""
+msgstr "Предыдущая страница"
 
 #. TRANSLATORS: en.yml key: dictionary.column.price
 #: ../config/dictionary_strings.rb:1630
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 #: ../app/controllers/catalog_controller.rb:1243
 #: ../app/controllers/catalog_controller.rb:1393
@@ -58220,7 +58234,7 @@ msgstr "Первичный фильтр (записей): фильтрация �
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/010_Summary.yaml
 #: ../config/yaml_strings.rb:6003
 msgid "Primary IP Address"
-msgstr ""
+msgstr "Первичный адрес IP"
 
 #: ../app/helpers/application_helper/toolbar/right_size_view.rb:6
 msgid "Print or export"
@@ -58286,7 +58300,7 @@ msgstr "Приоритетные рабоч. процессы"
 #:
 #: ../app/views/layouts/angular-bootstrap/_auth_keypair_angular_bootstrap.html.haml:5
 msgid "Private Key"
-msgstr ""
+msgstr "Закрытый ключ"
 
 #: ../app/models/manageiq/providers/ibm_power_vc/cloud_manager.rb:403
 msgid "Private SSH Key"
@@ -58300,7 +58314,7 @@ msgstr "Закрытый ключ"
 
 #: ../app/helpers/application_helper/button/auth_key_pair_cloud_download.rb:8
 msgid "Private key download is unavailable for this keypair."
-msgstr ""
+msgstr "Для этой пары ключей скачивание закрытого ключа невозможно"
 
 #:
 #: ../app/models/manageiq/providers/awx/automation_manager/machine_credential.rb:27
@@ -58341,90 +58355,90 @@ msgstr "Привилегированный"
 #. TRANSLATORS: en.yml key: dictionary.column.process
 #: ../config/dictionary_strings.rb:1634
 msgid "Process"
-msgstr ""
+msgstr "Процесс"
 
 #: ../app/models/miq_template/operations.rb:6
 msgid "Process Collection is not available for Images and VM Templates."
-msgstr "Сбор процессов недоступен для образов и шаблонов ВМ"
+msgstr "Процесс: сбор процессов недоступен для образов и шаблонов ВМ"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7175
 msgid "Process Cpu Time"
-msgstr ""
+msgstr "Процесс: время ЦП"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7179
 msgid "Process Date Created"
-msgstr ""
+msgstr "Процесс: дата создания"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7181
 msgid "Process Date Updated"
-msgstr ""
+msgstr "Процесс: дата обновления"
 
 #: ../app/views/ops/_selected_by_roles.html.haml:46
 msgid "Process ID"
-msgstr ""
+msgstr "Процесс: ID"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7183
 msgid "Process Memory Size"
-msgstr ""
+msgstr "Процесс: разер памяти"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7185
 msgid "Process Memory Usage"
-msgstr "Потребление памяти процессами"
+msgstr "Процесс: потребление памяти"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7187
 msgid "Process Name"
-msgstr ""
+msgstr "Процесс: имя"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7177
 msgid "Process Percent Cpu"
-msgstr ""
+msgstr "Процесс: ЦП, %"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7189
 msgid "Process Percent Memory"
-msgstr ""
+msgstr "Процесс: память, %"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7191
 msgid "Process Pid"
-msgstr ""
+msgstr "Процесс: PID"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7193
 msgid "Process Priority"
-msgstr ""
+msgstr "Процесс: приоритет"
 
 #. TRANSLATORS: file: product/views/OsProcess-processes.yaml
 #: ../config/yaml_strings.rb:1604
 msgid "Processes"
-msgstr ""
+msgstr "Процессы"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7173
 msgid "Processes for prod VMs sort by CPU Time"
-msgstr ""
+msgstr "Процессы производственных ВМ, сортировка по времени ЦП"
 
 #. TRANSLATORS: file: product/reports/700_Running Processes - Virtual Machines/110_Processes_for_prod_ VMs_sort_by_CPU_Time.yaml
 #: ../config/yaml_strings.rb:7171
 msgid "Processes for prod VMs sorted by CPU Time"
-msgstr ""
+msgstr "Процессы производственных ВМ, сортировка по времени ЦП"
 
 #:
 #: ../app/models/manageiq/providers/ibm_power_vc/inventory/parser/cloud_manager.rb:84
 msgid "Processing units"
-msgstr "Единицы обработки"
+msgstr "Процессоры"
 
 #. TRANSLATORS: file: product/views/Vm-VmReconfigureRequest.yaml
 #: ../config/yaml_strings.rb:1906
 msgid "Processor Cores Per Socket"
-msgstr ""
+msgstr "Ядер ЦП на сокет"
 
 #: ../app/views/miq_request/_reconfigure_show.html.haml:22
 msgid "Processor Cores_Per_Socket"
@@ -58463,7 +58477,7 @@ msgstr "Процессоры"
 
 #: ../app/helpers/textual_mixins/textual_vmm_info.rb:20
 msgid "Product"
-msgstr ""
+msgstr "Продукт"
 
 #: ../app/models/miq_product_feature.rb:309
 msgid "Product Feature"
@@ -58483,18 +58497,18 @@ msgstr "Свойства продукта (только для чтения)"
 #: ../app/models/miq_product_features_share.rb:6
 msgid "Product Features Share"
 msgid_plural "Product Features Shares"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Разделяемые свойства продукта"
+msgstr[1] "Разделяемые свойства продукта"
+msgstr[2] "Разделяемые свойства продукта"
 
 #: ../app/helpers/textual_mixins/textual_os_info.rb:30
 msgid "Product ID"
-msgstr ""
+msgstr "ID продукта"
 
 #. TRANSLATORS: file: product/views/GuestApplication.yaml
 #: ../config/yaml_strings.rb:1045
 msgid "Product Key"
-msgstr ""
+msgstr "Ключ продукта"
 
 #. TRANSLATORS: file: product/views/PhysicalChassis.yaml
 #. TRANSLATORS: file: product/views/PhysicalServer.yaml
@@ -58516,13 +58530,13 @@ msgstr "Тип продукта"
 #. TRANSLATORS: en.yml key: dictionary.model.ProductUpdate
 #: ../config/dictionary_strings.rb:3706
 msgid "Product Update"
-msgstr ""
+msgstr "Обновление продукта"
 
 #. TRANSLATORS: en.yml key: dictionary.model.ProductUpdate (plural form)
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/dictionary_strings.rb:3708 ../config/yaml_strings.rb:2493
 msgid "Product Updates"
-msgstr ""
+msgstr "Изменить обновления"
 
 #: ../app/controllers/ops_controller.rb:186
 msgid "Production"
@@ -58573,16 +58587,16 @@ msgstr "ID проекта"
 #. TRANSLATORS: file: product/views/ContainerTemplate.yaml
 #: ../config/yaml_strings.rb:713
 msgid "Project Name"
-msgstr ""
+msgstr "Название проекта"
 
 #. TRANSLATORS: en.yml key: dictionary.column.project_uid
 #: ../config/dictionary_strings.rb:2582
 msgid "Project Uid"
-msgstr ""
+msgstr "UID проекта"
 
 #: ../app/views/ops/_rbac_group_details.html.haml:96
 msgid "Project/Tenant"
-msgstr ""
+msgstr "Проект/арендатор"
 
 #: ../app/controllers/container_project_controller.rb:38
 #: ../app/helpers/ops_helper/textual_summary.rb:73
@@ -58610,7 +58624,7 @@ msgstr "Проекты по числу контейнеров"
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/070_Projects by Pod Number.yaml
 #: ../config/yaml_strings.rb:6433
 msgid "Projects by Number of Pods"
-msgstr ""
+msgstr "Проекты по числу подов"
 
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/140_Projects by Quota Items.yaml
 #: ../config/yaml_strings.rb:6476
@@ -58732,11 +58746,11 @@ msgstr "Защищён"
 
 #: src/amazon-security-form-group/security-group.jsx:21
 msgid "Proto"
-msgstr ""
+msgstr "Протокол"
 
 #: src/amazon-security-form-group/security-group.jsx:22
 msgid "Proto required"
-msgstr ""
+msgstr "Требуется протокол"
 
 #. TRANSLATORS: file: product/views/CloudSubnet.yaml
 #. TRANSLATORS: file: product/views/FirewallRule.yaml
@@ -58749,7 +58763,7 @@ msgstr "Протокол"
 #. TRANSLATORS: en.yml key: dictionary.column.prov_type
 #: ../config/dictionary_strings.rb:1644
 msgid "Prov Type"
-msgstr ""
+msgstr "Тип подготовки ресурсов"
 
 #: ../app/controllers/mixins/actions/host_actions/misc.rb:214
 msgid "Provide"
@@ -59101,7 +59115,7 @@ msgstr "Provider|Href slug"
 
 #: ../config/model_attributes.rb:3817
 msgid "Provider|Name"
-msgstr ""
+msgstr "Provider|Имя"
 
 #: ../config/model_attributes.rb:3818
 msgid "Provider|Region description"
@@ -59113,15 +59127,15 @@ msgstr "Provider|Номер региона"
 
 #: ../config/model_attributes.rb:3820
 msgid "Provider|Security protocol"
-msgstr ""
+msgstr "Provider|Протокол безопасности"
 
 #: ../config/model_attributes.rb:3821
 msgid "Provider|Url"
-msgstr ""
+msgstr "Provider|Url"
 
 #: ../config/model_attributes.rb:3822
 msgid "Provider|Verify ssl"
-msgstr ""
+msgstr "Provider|Проверка SSL"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1200
@@ -59130,7 +59144,7 @@ msgstr "Предоставляет встроенную веб-консоль о
 
 #: ../app/helpers/application_helper/toolbar/vms_center.rb:120
 msgid "Provision"
-msgstr ""
+msgstr "Подготовка ресурсов"
 
 #: ../app/controllers/application_controller/miq_request_methods.rb:224
 msgid "Provision %{type} Request was cancelled by the user"
@@ -59159,7 +59173,7 @@ msgstr "Затраты на подготовку ресурсов"
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/140_Provisioning Activity - by VM.yaml
 #: ../config/yaml_strings.rb:7296
 msgid "Provision Description"
-msgstr ""
+msgstr "Описание подготовки ресурсов"
 
 #: ../app/helpers/application_helper/toolbar/vm_clouds_center.rb:141
 msgid "Provision Instances"
@@ -59229,7 +59243,7 @@ msgstr "Тип подготовки ресурсов"
 
 #: ../app/helpers/application_helper/toolbar/vm_infras_center.rb:160
 msgid "Provision VMs"
-msgstr ""
+msgstr "Подготовка ресурсов ВМ"
 
 #: ../app/helpers/application_helper/toolbar/template_infras_center.rb:132
 msgid "Provision VMs using selected Template"
@@ -59253,10 +59267,9 @@ msgstr ""
 "%{errors}"
 
 #: ../app/models/mixins/miq_provision_mixin.rb:77
-#, fuzzy
 msgid "Provision workflow does not contain the expected method <%{method}>"
 msgstr ""
-"Поток процедур выделения ресурсов не содержит ожидаемого метода <%{method}>"
+"Поток процедур подготовки ресурсов не содержит ожидаемого метода <%{method}>"
 
 #. TRANSLATORS: en.yml key: dictionary.table.miq_provision_template
 #: ../config/dictionary_strings.rb:4210
@@ -59275,16 +59288,16 @@ msgstr "Подготовленный IOPS SSD (IO1)"
 
 #: ../app/helpers/vm_helper/textual_summary.rb:215
 msgid "Provisioned On"
-msgstr ""
+msgstr "Ресурсы подготовлены на"
 
 #: ../app/views/vm_common/_disks.html.haml:8
 msgid "Provisioned Size"
-msgstr ""
+msgstr "Подготовленный размер"
 
 #. TRANSLATORS: en.yml key: dictionary.column.v_provisioned_percent_of_total
 #: ../config/dictionary_strings.rb:2404
 msgid "Provisioned Space Percent of Total"
-msgstr ""
+msgstr "Всего процентов подготовлено от общего объёма"
 
 #: ../app/views/miq_request/_request.html.haml:93
 msgid "Provisioned VMs"
@@ -59309,7 +59322,7 @@ msgstr "Активность подготовки ресурсов: по утв�
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/120_Provisioning Activity - by Datastore.yaml
 #: ../config/yaml_strings.rb:7308
 msgid "Provisioning Activity - by Datastore"
-msgstr ""
+msgstr "Активность подготовки ресурсов: по хранилищам данных"
 
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/130_Provisioning Activity - by Requester.yaml
 #: ../config/yaml_strings.rb:7310
@@ -59319,7 +59332,7 @@ msgstr "Активность подготовки ресурсов: по зап�
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/140_Provisioning Activity - by VM.yaml
 #: ../config/yaml_strings.rb:7314
 msgid "Provisioning Activity - by VM"
-msgstr ""
+msgstr "Активность подготовки ресурсов: по ВМ"
 
 #. TRANSLATORS: file: product/reports/900_Provisioning - Activity Reports/140_Provisioning Activity - by VM.yaml
 #: ../config/yaml_strings.rb:7312
@@ -59368,7 +59381,7 @@ msgstr ""
 #. TRANSLATORS: file: product/views/MiqProvision.yaml
 #: ../config/yaml_strings.rb:1461
 msgid "Provisions"
-msgstr ""
+msgstr "Подготовка ресурсов"
 
 #: ../app/views/layouts/angular/_per_provider_settings.html.haml:7
 msgid "Proxy"
@@ -59394,12 +59407,12 @@ msgstr "Открытый"
 #:
 #: ../app/javascript/components/auth-key-pair-cloud/auth-key-pair-cloud-form.schema.js:20
 msgid "Public Key"
-msgstr ""
+msgstr "Открытый ключ"
 
 #. TRANSLATORS: file: product/views/Flavor.yaml
 #: ../config/yaml_strings.rb:996
 msgid "Publicly Available"
-msgstr ""
+msgstr "Общедоступно"
 
 #: ../app/models/miq_provision.rb:96
 msgid "Publish"
@@ -59465,7 +59478,7 @@ msgstr "Опубликовать как шаблон"
 #. TRANSLATORS: en.yml key: dictionary.column.puppet_status
 #: ../config/dictionary_strings.rb:1662
 msgid "Puppet Status"
-msgstr ""
+msgstr "Статус Puppet"
 
 #: ../app/helpers/report_helper.rb:19
 msgid "Purple Background"
@@ -59491,12 +59504,12 @@ msgstr "Перевести этот элемент в режим обслужи�
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/063_Guest OS Password Information.yaml
 #: ../config/yaml_strings.rb:5966
 msgid "Pw Complex"
-msgstr ""
+msgstr "Сложность пароля"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/063_Guest OS Password Information.yaml
 #: ../config/yaml_strings.rb:5968
 msgid "Pw Encrypt"
-msgstr ""
+msgstr "Шифрование пароля"
 
 #. TRANSLATORS: file: product/views/PxeImage.yaml
 #: ../config/yaml_strings.rb:1677
@@ -59525,7 +59538,7 @@ msgstr "PxeImageType|Href slug"
 
 #: ../config/model_attributes.rb:3843
 msgid "PxeImageType|Name"
-msgstr ""
+msgstr "PxeImageType|Имя"
 
 #: ../config/model_attributes.rb:3844
 msgid "PxeImageType|Provision type"
@@ -59541,7 +59554,7 @@ msgstr "PxeImageType|Номер региона"
 
 #: ../config/model_attributes.rb:3831
 msgid "PxeImage|Default for windows"
-msgstr ""
+msgstr "PxeImage|По умолчанию для Windows"
 
 #: ../config/model_attributes.rb:3832
 msgid "PxeImage|Description"
@@ -59553,11 +59566,11 @@ msgstr "PxeImage|Href slug"
 
 #: ../config/model_attributes.rb:3834
 msgid "PxeImage|Initrd"
-msgstr ""
+msgstr "PxeImage|Initrd"
 
 #: ../config/model_attributes.rb:3835
 msgid "PxeImage|Kernel"
-msgstr ""
+msgstr "PxeImage|Ядро"
 
 #: ../config/model_attributes.rb:3836
 msgid "PxeImage|Kernel options"
@@ -59565,11 +59578,11 @@ msgstr "PxeImage|Параметры ядра"
 
 #: ../config/model_attributes.rb:3837
 msgid "PxeImage|Name"
-msgstr ""
+msgstr "PxeImage|Имя"
 
 #: ../config/model_attributes.rb:3838
 msgid "PxeImage|Path"
-msgstr ""
+msgstr "PxeImage|Путь"
 
 #: ../config/model_attributes.rb:3839
 msgid "PxeImage|Region description"
@@ -59581,11 +59594,11 @@ msgstr "PxeImage|Номер региона"
 
 #: ../config/model_attributes.rb:3848
 msgid "PxeMenu|Contents"
-msgstr ""
+msgstr "PxeMenu|Содержимое"
 
 #: ../config/model_attributes.rb:3849
 msgid "PxeMenu|File name"
-msgstr ""
+msgstr "PxeMenu|Имя файла"
 
 #: ../config/model_attributes.rb:3850
 msgid "PxeMenu|Href slug"
@@ -59601,7 +59614,7 @@ msgstr "PxeMenu|Номер региона"
 
 #: ../config/model_attributes.rb:3854
 msgid "PxeServer|Access url"
-msgstr ""
+msgstr "PxeServer|URL доступа"
 
 #: ../config/model_attributes.rb:3855
 msgid "PxeServer|Authentication status"
@@ -59609,7 +59622,7 @@ msgstr "PxeServer|Статус аутентификации"
 
 #: ../config/model_attributes.rb:3856
 msgid "PxeServer|Customization directory"
-msgstr ""
+msgstr "PxeServer|Папка настроек"
 
 #: ../config/model_attributes.rb:3857
 msgid "PxeServer|Href slug"
@@ -59621,11 +59634,11 @@ msgstr "PxeServer|Последнее обновление сведений"
 
 #: ../config/model_attributes.rb:3859
 msgid "PxeServer|Name"
-msgstr ""
+msgstr "PxeServer|Имя"
 
 #: ../config/model_attributes.rb:3860
 msgid "PxeServer|Pxe directory"
-msgstr ""
+msgstr "PxeServer|Папка PXE"
 
 #: ../config/model_attributes.rb:3861
 msgid "PxeServer|Region description"
@@ -59637,11 +59650,11 @@ msgstr "PxeServer|Номер региона"
 
 #: ../config/model_attributes.rb:3863
 msgid "PxeServer|Uri"
-msgstr ""
+msgstr "PxeServer|Uri"
 
 #: ../config/model_attributes.rb:3864
 msgid "PxeServer|Uri prefix"
-msgstr ""
+msgstr "PxeServer|Префикс URI"
 
 #: ../config/model_attributes.rb:3865
 msgid "PxeServer|Visibility"
@@ -59649,7 +59662,7 @@ msgstr "PxeServer|Видимость"
 
 #: ../config/model_attributes.rb:3866
 msgid "PxeServer|Windows images directory"
-msgstr ""
+msgstr "PxeServer|Папка с образами Windows"
 
 #: ../config/model_attributes.rb:316
 msgid "Qos policy"
@@ -59678,12 +59691,12 @@ msgstr "Поместить в очередь"
 #. TRANSLATORS: en.yml key: dictionary.column.queue_depth
 #: ../config/dictionary_strings.rb:2648
 msgid "Queue Depth"
-msgstr ""
+msgstr "Глубина очереди"
 
 #. TRANSLATORS: en.yml key: dictionary.column.queue_name
 #: ../config/dictionary_strings.rb:1664
 msgid "Queue Name"
-msgstr ""
+msgstr "Имя очереди"
 
 #: ../app/javascript/components/data-tables/optimization/transform.js:53
 msgid "Queue Report"
@@ -59696,7 +59709,7 @@ msgstr "Поместить отчёт в очередь на создание"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1857
 msgid "Queue up Schedules to run now"
-msgstr ""
+msgstr "Поставить расписания в очередь на выполнение сейчас"
 
 #: ../app/helpers/application_helper/toolbar/miq_report_schedules_center.rb:56
 #: ../app/helpers/application_helper/toolbar/miq_schedules_center.rb:55
@@ -59721,7 +59734,7 @@ msgstr "Поставлено в очередь"
 #. TRANSLATORS: file: product/views/MiqWidget.yaml
 #: ../config/yaml_strings.rb:1473
 msgid "Queued At"
-msgstr ""
+msgstr "Запланировано на:"
 
 #: ../app/controllers/mixins/actions/vm_actions/evacuate.rb:85
 msgid "Queued evacuation of Instance \"%{name}\""
@@ -59735,7 +59748,7 @@ msgstr "Динамич. миграция экземпляра \"%{name}\" был
 #. TRANSLATORS: file: product/reports/780_Tenants - Tenant Quotas/001_Tenant Quotas.yaml
 #: ../config/yaml_strings.rb:6479
 msgid "Quota Name"
-msgstr ""
+msgstr "Имя квоты"
 
 #:
 #: ../app/models/manageiq/providers/openstack/network_manager/network_router.rb:266
@@ -59758,17 +59771,17 @@ msgstr "Квоты для %{model} \"%{name}\" были сохранены"
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/060_VM Relationships.yaml
 #: ../config/dictionary_strings.rb:1344 ../config/yaml_strings.rb:5672
 msgid "RAM"
-msgstr ""
+msgstr "ОЗУ"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/060_Right-Sizing Recommendations.yaml
 #: ../config/yaml_strings.rb:6843
 msgid "RAM Savings"
-msgstr ""
+msgstr "Экономия ОЗУ"
 
 #. TRANSLATORS: en.yml key: dictionary.column.ram_size
 #: ../config/dictionary_strings.rb:1666
 msgid "RAM Size (MB)"
-msgstr ""
+msgstr "Размер ОЗУ (Мбайт)"
 
 #: ../app/javascript/components/flavor-form/flavor-form.schema.js:50
 msgid "RAM size (in MB)"
@@ -59797,7 +59810,7 @@ msgstr "Закрытый ключ RSA или DSA для использовани
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1977
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: ../app/javascript/components/flavor-form/flavor-form.schema.js:90
 msgid "RXTX factor"
@@ -59820,7 +59833,7 @@ msgstr "Стойки"
 
 #: ./dist/js/ui-components.js:1
 msgid "Radio Button"
-msgstr ""
+msgstr "Переключатель"
 
 #: ../app/helpers/container_group_helper/textual_summary.rb:52
 #: ../app/helpers/persistent_volume_helper/textual_summary.rb:140
@@ -59850,7 +59863,7 @@ msgstr "Имя пользователя Rados"
 #. TRANSLATORS: en.yml key: dictionary.column.ram_size_in_bytes
 #: ../config/dictionary_strings.rb:1668
 msgid "Ram Size In Bytes"
-msgstr ""
+msgstr "Размер ОЗУ в байтах"
 
 #: ../app/views/chargeback_rate/_cb_rate_edit_table.html.haml:15
 #: ../app/views/layouts/_perf_options.html.haml:49
@@ -59904,7 +59917,7 @@ msgstr "Тарифы"
 #. TRANSLATORS: file: product/views/StorageCluster.yaml
 #: ../config/yaml_strings.rb:1793
 msgid "Raw Disk Mappings"
-msgstr ""
+msgstr "Отображения неподготовленных дисков"
 
 #. TRANSLATORS: en.yml key: dictionary.column.raw_disk_mappings_supported
 #: ../config/dictionary_strings.rb:1670
@@ -59924,12 +59937,12 @@ msgstr "Мониторы Rbd Ceph"
 #. TRANSLATORS: en.yml key: dictionary.column.rbd_image
 #: ../config/dictionary_strings.rb:1676
 msgid "Rbd Image"
-msgstr ""
+msgstr "Образ RBD"
 
 #. TRANSLATORS: en.yml key: dictionary.column.rbd_keyring
 #: ../config/dictionary_strings.rb:1678
 msgid "Rbd Keyring"
-msgstr ""
+msgstr "Связка ключей RBD"
 
 #. TRANSLATORS: en.yml key: dictionary.column.rbd_pool
 #: ../config/dictionary_strings.rb:1680
@@ -59939,11 +59952,11 @@ msgstr "Пул Rbd"
 #. TRANSLATORS: en.yml key: dictionary.column.rbd_rados_user
 #: ../config/dictionary_strings.rb:1682
 msgid "Rbd Rados User"
-msgstr ""
+msgstr "Пользователь RBD Rados"
 
 #: ../app/views/layouts/_exp_editor.html.haml:27
 msgid "Re-apply the previous change"
-msgstr ""
+msgstr "Повторно применить предыдущее изменение"
 
 #: ../app/helpers/application_helper/toolbar/ems_cloud_center.rb:99
 #: ../app/helpers/application_helper/toolbar/ems_clouds_center.rb:102
@@ -60054,17 +60067,17 @@ msgstr ""
 #. TRANSLATORS: en.yml key: dictionary.column.pct_read
 #: ../config/dictionary_strings.rb:2644
 msgid "Read %"
-msgstr ""
+msgstr "Чтение %"
 
 #. TRANSLATORS: en.yml key: dictionary.column.read_ios_per_sec
 #: ../config/dictionary_strings.rb:2652
 msgid "Read (IOPS)"
-msgstr ""
+msgstr "Чтение (IOPS)"
 
 #. TRANSLATORS: en.yml key: dictionary.column.k_bytes_read_per_sec
 #: ../config/dictionary_strings.rb:2636
 msgid "Read (KBps)"
-msgstr ""
+msgstr "Чтение (Кбайт/сек)"
 
 #. TRANSLATORS: en.yml key: dictionary.column.read_hit_ios_per_sec
 #: ../config/dictionary_strings.rb:2650
@@ -60135,7 +60148,7 @@ msgstr "Только для чтения"
 #. TRANSLATORS: file: product/views/ContainerNode.yaml
 #: ../config/yaml_strings.rb:730
 msgid "Ready"
-msgstr ""
+msgstr "Готово"
 
 #. TRANSLATORS: en.yml key: dictionary.column.ready_condition_status
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/060_Pods per Ready Status.yaml
@@ -60229,12 +60242,12 @@ msgstr "Недавно обнаруженные физич. серверы"
 #. TRANSLATORS: file: product/reports/170_Configuration Management - Containers/040_Recently Discovered Container Groups.yaml
 #: ../config/yaml_strings.rb:6417
 msgid "Recently Discovered Pods"
-msgstr ""
+msgstr "Недавно обнаруженные поды"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/070_Newest VMs.yaml
 #: ../config/yaml_strings.rb:5997
 msgid "Recently Discovered VMs"
-msgstr ""
+msgstr "Недавно обнаруженные ВМ"
 
 #. TRANSLATORS: file: product/views/PersistentVolume.yaml
 #: ../config/yaml_strings.rb:1627
@@ -60249,17 +60262,17 @@ msgstr "Драйвер распознавателя"
 #: ../app/views/vm_common/_right_size.html.haml:151
 #: ../app/views/vm_common/_right_size.html.haml:185
 msgid "Recommended"
-msgstr ""
+msgstr "Рекомендуется"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/060_Right-Sizing Recommendations.yaml
 #: ../config/yaml_strings.rb:6837
 msgid "Recommended CPU"
-msgstr ""
+msgstr "Рекомендуется: ЦП"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/060_Right-Sizing Recommendations.yaml
 #: ../config/yaml_strings.rb:6841
 msgid "Recommended RAM"
-msgstr ""
+msgstr "Рекомендуется: ОЗУ"
 
 #:
 #: ../app/helpers/manageiq/providers/cisco_intersight/toolbar_overrides/physical_server_center.rb:34
@@ -60460,7 +60473,7 @@ msgstr ""
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_tophour.yaml
 #: ../config/yaml_strings.rb:7572
 msgid "Record ID"
-msgstr ""
+msgstr "ID записи"
 
 #: ../app/helpers/application_helper.rb:875
 msgid "Record is not VmOrTemplate class"
@@ -61588,9 +61601,9 @@ msgstr "Номер региона"
 #: ../app/models/miq_region_remote.rb:111
 msgid "Region Remote"
 msgid_plural "Region Remotes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Удалённый доступ к региону"
+msgstr[1] "Удалённые доступы к региону"
+msgstr[2] "Удалённые доступы к региону"
 
 #: ../app/models/miq_region.rb:108
 msgid "Region [%{region_id}] does not match the database's region [%{db_id}]"
@@ -61644,27 +61657,27 @@ msgstr "Регистрация новых хостов"
 #. TRANSLATORS: en.yml key: dictionary.column.registered
 #: ../config/dictionary_strings.rb:1718
 msgid "Registered"
-msgstr ""
+msgstr "Зарегистрировано"
 
 #. TRANSLATORS: en.yml key: dictionary.column.registered_on
 #: ../config/dictionary_strings.rb:1720
 msgid "Registered On"
-msgstr ""
+msgstr "Когда зарегистрировано"
 
 #. TRANSLATORS: file: product/reports/400_Operations- Virtual Machines/010_Registered VMs by Free Space.yaml
 #: ../config/yaml_strings.rb:6575
 msgid "Registered VMs by Free Space"
-msgstr ""
+msgstr "Зарегистрированные ВМ по свободному месту"
 
 #. TRANSLATORS: file: product/reports/400_Operations- Virtual Machines/015_Registered Free Space _35%.yaml
 #: ../config/yaml_strings.rb:6593
 msgid "Registered VMs with Free Space < 35%"
-msgstr ""
+msgstr "Зарегистрированные ВМ со свободным местом < 35%"
 
 #. TRANSLATORS: file: product/reports/400_Operations- Virtual Machines/015_Registered Free Space _35%.yaml
 #: ../config/yaml_strings.rb:6595
 msgid "Registered VMs with Free Space <35%"
-msgstr ""
+msgstr "Зарегистрированные ВМ со свободным местом <35%"
 
 #. TRANSLATORS: file: db/fixtures/notification_types.yml
 #: ../config/yaml_strings.rb:4837
@@ -61680,7 +61693,7 @@ msgstr "Реестры"
 #: ../app/helpers/exp_atom_helper.rb:18 ../app/views/ops/_ap_form.html.haml:49
 #: ../config/yaml_strings.rb:1685
 msgid "Registry"
-msgstr ""
+msgstr "Реестр"
 
 #: ../app/controllers/vm_common.rb:321
 #: ../app/helpers/textual_mixins/vm_common.rb:139
@@ -61689,7 +61702,7 @@ msgstr "Записи реестра"
 
 #: ../app/views/ops/_ap_form_registry.html.haml:4
 msgid "Registry Entry"
-msgstr ""
+msgstr "Запись реестра"
 
 #: ../app/controllers/ops_controller/settings/analysis_profiles.rb:603
 msgid "Registry Entry is required"
@@ -61697,7 +61710,7 @@ msgstr "Требуется запись реестра"
 
 #: ../app/views/ops/_ap_form_registry.html.haml:8
 msgid "Registry Hive"
-msgstr ""
+msgstr "Куст реестра"
 
 #: ../app/controllers/vm_common.rb:1132
 msgid "Registry Item"
@@ -61709,32 +61722,32 @@ msgstr[2] "Элементы реестра"
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/064_Guest OS HKLM Registry Information.yaml
 #: ../config/yaml_strings.rb:5980
 msgid "Registry Item Data"
-msgstr ""
+msgstr "Данные элемента реестра"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/064_Guest OS HKLM Registry Information.yaml
 #: ../config/yaml_strings.rb:5984
 msgid "Registry Item Date Created"
-msgstr ""
+msgstr "Данные элемента реестра созданы"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/064_Guest OS HKLM Registry Information.yaml
 #: ../config/yaml_strings.rb:5986
 msgid "Registry Item Date Updated"
-msgstr ""
+msgstr "Данные элемента реестра обновлены"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/064_Guest OS HKLM Registry Information.yaml
 #: ../config/yaml_strings.rb:5982
 msgid "Registry Item Format"
-msgstr ""
+msgstr "Формат элемента реестра"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/064_Guest OS HKLM Registry Information.yaml
 #: ../config/yaml_strings.rb:5976
 msgid "Registry Item Name"
-msgstr ""
+msgstr "Имя элемента реестра"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/064_Guest OS HKLM Registry Information.yaml
 #: ../config/yaml_strings.rb:5978
 msgid "Registry Item Value Name"
-msgstr ""
+msgstr "Имя значения элемента реестра"
 
 #: ../app/views/ops/_ap_show.html.haml:51
 msgid "Registry Items"
@@ -61743,11 +61756,11 @@ msgstr "Элементы реестра"
 #: ../app/javascript/oldjs/miq_application.js:109
 #: ../app/views/ops/_ap_form_registry.html.haml:9
 msgid "Registry Key"
-msgstr ""
+msgstr "Ключ реестра"
 
 #: ../app/javascript/oldjs/miq_application.js:115
 msgid "Registry Key Value"
-msgstr ""
+msgstr "Значение ключа реестра"
 
 #:
 #: ../app/javascript/components/firmware-registry/firmware-registry-form.schema.js:16
@@ -61756,7 +61769,7 @@ msgstr "Тип реестра"
 
 #: ../app/views/ops/_ap_form_registry.html.haml:10
 msgid "Registry Value"
-msgstr ""
+msgstr "Значение реестра"
 
 #: ../app/controllers/application_controller/filter.rb:608
 msgid "Registry Value Error: %{msg}"
@@ -61764,7 +61777,7 @@ msgstr "Ошибка значения реестра: %{msg}"
 
 #: ../config/model_attributes.rb:3867
 msgid "Registry item"
-msgstr ""
+msgstr "Элемент реестра"
 
 #: ../app/models/manageiq/providers/kubernetes/container_manager.rb:653
 #: ../app/models/manageiq/providers/kubernetes/container_manager/options.rb:40
@@ -61777,11 +61790,11 @@ msgstr "RegistryItem|Когда создано"
 
 #: ../config/model_attributes.rb:3869
 msgid "RegistryItem|Data"
-msgstr ""
+msgstr "RegistryItem|Данные"
 
 #: ../config/model_attributes.rb:3870
 msgid "RegistryItem|Format"
-msgstr ""
+msgstr "RegistryItem|Формат"
 
 #: ../config/model_attributes.rb:3871
 msgid "RegistryItem|Href slug"
@@ -61789,7 +61802,7 @@ msgstr "RegistryItem|Href slug"
 
 #: ../config/model_attributes.rb:3872
 msgid "RegistryItem|Name"
-msgstr ""
+msgstr "RegistryItem|Имя"
 
 #: ../config/model_attributes.rb:3873
 msgid "RegistryItem|Region description"
@@ -61805,7 +61818,7 @@ msgstr "RegistryItem|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:3876
 msgid "RegistryItem|Value name"
-msgstr ""
+msgstr "RegistryItem|Имя значения"
 
 #: ../lib/miq_expression.rb:1139
 msgid "Regular expression '%{value}' is invalid, '%{error_message}'"
@@ -61814,9 +61827,9 @@ msgstr "Недействительное регулярное выражение
 #: ../config/model_display_names.rb:195 ../config/model_attributes.rb:3877
 msgid "Relationship"
 msgid_plural "Relationships"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Отношения"
+msgstr[1] "Отношения"
+msgstr[2] "Отношения"
 
 #: ../app/helpers/ansible_credential_helper/textual_summary.rb:9
 #: ../app/helpers/ansible_playbook_helper/textual_summary.rb:11
@@ -61917,22 +61930,23 @@ msgstr "Relationship|Тип ресурса"
 #. TRANSLATORS: file: product/views/GuestApplication.yaml
 #: ../config/yaml_strings.rb:1041
 msgid "Release"
-msgstr ""
+msgstr "Выпуск"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1004
 msgid "Reload"
-msgstr ""
+msgstr "Перезагрузка"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3596
+#, fuzzy
 msgid "Reload Configuration jobs"
-msgstr "Задачи конфигурации"
+msgstr "Перезагрузить задачи конфигурации"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2627
 msgid "Reload Current Display"
-msgstr ""
+msgstr "Перезагрузить текущее отображение"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1006
@@ -61952,22 +61966,23 @@ msgstr "Обновить отображаемые рабоч. процессы"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2756
 msgid "Reload charts"
-msgstr ""
+msgstr "Перезагрузить диаграммы"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2643
 msgid "Reload current display"
-msgstr ""
+msgstr "Перезагрузить текущее отображение"
 
 #: ../app/helpers/application_helper/toolbar/vm_performance.rb:13
 #: ../app/helpers/application_helper/toolbar/x_vm_performance.rb:13
 msgid "Reload the charts from the most recent C&U data"
 msgstr ""
+"Перезагрузить диаграммы с самыми свежими данными мощности и загруженности"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1394
 msgid "Reload the current display"
-msgstr ""
+msgstr "Перезагрузить текущее отображение"
 
 #:
 #: ../app/models/manageiq/providers/vmware/infra_manager/vm_or_template_shared/operations/relocation.rb:16
@@ -62034,7 +62049,7 @@ msgstr "Удалить"
 
 #: ../app/views/layouts/_edit_to_email.html.haml:22
 msgid "Remove %{email}"
-msgstr ""
+msgstr "Удалить %{email}"
 
 #: ../app/javascript/components/action-form/action-form.schema.js:90
 #: ../app/javascript/components/catalog-form/catalog-form.schema.js:54
@@ -62134,7 +62149,7 @@ msgstr "Удалить хранилище данных из инвентаря"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1745
 msgid "Remove Datastores"
-msgstr ""
+msgstr "Удалить хранилища данных"
 
 #: ../app/helpers/application_helper/toolbar/storages_center.rb:25
 msgid "Remove Datastores from Inventory"
@@ -62151,7 +62166,7 @@ msgstr "Удалить диски"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_domains_center.rb:29
 msgid "Remove Domains"
-msgstr ""
+msgstr "Удалить домены"
 
 #: ../app/helpers/application_helper/toolbar/firmware_registries_center.rb:54
 msgid "Remove Firmware Registries from Inventory"
@@ -62182,7 +62197,7 @@ msgstr "Удалить общие объекты"
 
 #: src/amazon-security-form-group/amazon-security-form-group.jsx:109
 msgid "Remove Group"
-msgstr ""
+msgstr "Удалить группу"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1270
@@ -62228,16 +62243,16 @@ msgstr "Удалить хосты"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2744
 msgid "Remove ISO Datastores"
-msgstr ""
+msgstr "Удалить хранилища данных ISO"
 
 #: ../app/helpers/application_helper/toolbar/iso_datastores_center.rb:19
 msgid "Remove ISO Datastores from Inventory"
-msgstr ""
+msgstr "Удалить хранилища данных ISO из инвентаря"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3782
 msgid "Remove Image"
-msgstr ""
+msgstr "Удалить образ"
 
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:39
 msgid "Remove Image from Inventory"
@@ -62312,11 +62327,11 @@ msgstr "Удалить пары ключей"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_methods_center.rb:55
 msgid "Remove Methods"
-msgstr ""
+msgstr "Удалить методы"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_domain_center.rb:61
 msgid "Remove Namespaces"
-msgstr ""
+msgstr "Удалить пространства имён"
 
 #: ../app/views/miq_request/_reconfigure_show.html.haml:59
 msgid "Remove Network Adapters"
@@ -62422,12 +62437,12 @@ msgstr "Удалить поставщиков"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3556
 msgid "Remove Provier"
-msgstr ""
+msgstr "Удалить поставщика"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3476
 msgid "Remove Repository"
-msgstr ""
+msgstr "Удалить репозиторий"
 
 #: ../app/helpers/application_helper/toolbar/resource_pool_center.rb:13
 msgid "Remove Resource Pool from Inventory"
@@ -62521,7 +62536,7 @@ msgstr "Удалить службы"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1456
 msgid "Remove Snapshot"
-msgstr ""
+msgstr "Удалить снимок"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4018
@@ -62574,12 +62589,12 @@ msgstr "Удалить арендаторов"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3882
 msgid "Remove VM"
-msgstr ""
+msgstr "Удалить ВМ"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1438
 msgid "Remove VM from  Placement Group"
-msgstr ""
+msgstr "Удалить ВМ из группы размещения"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:54
 msgid "Remove Virtual Machine from Inventory"
@@ -62592,7 +62607,7 @@ msgstr "Удалить тома"
 
 #: ../app/presenters/widget_presenter.rb:29
 msgid "Remove Widget"
-msgstr ""
+msgstr "Удалить виджет"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:4138
@@ -62612,7 +62627,7 @@ msgstr "Удалить физич. хранилище"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3478
 msgid "Remove a Repository"
-msgstr ""
+msgstr "Удалить репозиторий"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_cloud_center.rb:84
 msgid "Remove a Security Group from this Instance"
@@ -62620,7 +62635,7 @@ msgstr "Удалить группу безопасности из этого э�
 
 #: ../app/javascript/components/button-group/group-form.schema.js:63
 msgid "Remove all"
-msgstr ""
+msgstr "Удалить всё"
 
 #: ../app/views/miq_policy/_event_edit.html.haml:46
 #: ../app/views/miq_policy/_event_edit.html.haml:115
@@ -62661,7 +62676,7 @@ msgstr "Удалить элементы из инвентаря"
 
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:211
 msgid "Remove resources?"
-msgstr ""
+msgstr "Удалить ресурсы?"
 
 #: ../app/views/miq_policy/_event_edit.html.haml:46
 #: ../app/views/miq_policy/_event_edit.html.haml:115
@@ -62710,7 +62725,7 @@ msgstr "Удалить выбранные диалоги"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_domains_center.rb:28
 msgid "Remove selected Domains"
-msgstr ""
+msgstr "Удалить выбранные домены"
 
 #: ../app/helpers/application_helper/toolbar/firmware_registries_center.rb:58
 msgid "Remove selected Firmware Registries from Inventory?"
@@ -62727,7 +62742,7 @@ msgstr "Удалить выбранные определения общих об
 
 #: ../app/helpers/application_helper/toolbar/iso_datastores_center.rb:18
 msgid "Remove selected ISO Datastores from Inventory"
-msgstr ""
+msgstr "Удалить выбранные хранилища данных ISO из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/ems_infras_center.rb:39
 msgid "Remove selected Infrastructure Providers from Inventory"
@@ -62751,11 +62766,11 @@ msgstr "Удалить выбранные пары ключей из инвен�
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_methods_center.rb:54
 msgid "Remove selected Methods"
-msgstr ""
+msgstr "Удалить выбранные методы"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_domain_center.rb:60
 msgid "Remove selected Namespaces"
-msgstr ""
+msgstr "Удалить выбранные пространства имён"
 
 #: ../app/helpers/application_helper/toolbar/ems_networks_center.rb:40
 msgid "Remove selected Network Providers from Inventory"
@@ -62838,7 +62853,7 @@ msgstr "Удалить службы"
 
 #: ../app/views/layouts/_content.html.haml:36
 msgid "Remove the current filter"
-msgstr ""
+msgstr "Удалить текущий фильтр"
 
 #: ../app/views/chargeback_rate/_cb_rate_edit_table.html.haml:70
 #: ../app/views/chargeback_rate/_tier_row.haml:9
@@ -62862,12 +62877,12 @@ msgstr "Удалить эту группу кнопок"
 #:
 #: ../app/helpers/application_helper/toolbar/generic_object_definition_button_group_center.rb:23
 msgid "Remove this Button Group from Inventory"
-msgstr ""
+msgstr "Удалить эту группу кнопок из инвентаря"
 
 #:
 #: ../app/helpers/application_helper/toolbar/generic_object_definition_button_center.rb:17
 msgid "Remove this Button from Inventory"
-msgstr ""
+msgstr "Удалить эту кнопку из инвентаря"
 
 #:
 #: ../app/helpers/application_helper/toolbar/servicetemplatecatalog_center.rb:20
@@ -62896,7 +62911,7 @@ msgstr "Удалить этого поставщика контейнеров и
 
 #: ../app/helpers/application_helper/toolbar/ansible_credential_center.rb:19
 msgid "Remove this Credential from Inventory"
-msgstr ""
+msgstr "Удалить эти учётные данные из инвентаря"
 
 #: ../app/views/catalog/_sandt_tree_show.html.haml:209
 msgid "Remove this Custom Image"
@@ -62918,11 +62933,11 @@ msgstr "Удалить этот диалог"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_domain_center.rb:18
 msgid "Remove this Domain"
-msgstr ""
+msgstr "Удалить этот домен"
 
 #: ../app/helpers/application_helper/toolbar/firmware_registry_center.rb:48
 msgid "Remove this Firmware Registry from Inventory?"
-msgstr "Удалить реестр встроенного ПО из инвентаря?"
+msgstr "Удалить этот реестр встроенного ПО из инвентаря?"
 
 #:
 #: ../app/helpers/application_helper/toolbar/generic_object_definition_center.rb:29
@@ -62931,7 +62946,7 @@ msgstr "Удалить эти определения общих объектов
 
 #: ../app/helpers/application_helper/toolbar/iso_datastore_center.rb:12
 msgid "Remove this ISO Datastore from Inventory"
-msgstr ""
+msgstr "Удалить это хранилище данных ISO из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/x_template_cloud_center.rb:38
 msgid "Remove this Image from Inventory"
@@ -62960,12 +62975,12 @@ msgstr "Удалить эту пару ключей из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_method_center.rb:21
 msgid "Remove this Method"
-msgstr ""
+msgstr "Удалить этот метод"
 
 #: ../app/helpers/application_helper/toolbar/miq_ae_namespace_center.rb:18
 #: ../app/views/miq_ae_class/_copy_objects_form.html.haml:75
 msgid "Remove this Namespace"
-msgstr ""
+msgstr "Удалить это пространство имён"
 
 #: ../app/helpers/application_helper/toolbar/ems_network_center.rb:31
 msgid "Remove this Network Provider from Inventory"
@@ -63009,7 +63024,7 @@ msgstr "Удалить эту точку входа изменения конф�
 
 #: ../app/helpers/application_helper/toolbar/ansible_repository_center.rb:40
 msgid "Remove this Repository from Inventory"
-msgstr ""
+msgstr "Удалить этот репозиторий из инвентаря"
 
 #: ../app/helpers/application_helper/toolbar/resource_pool_center.rb:12
 msgid "Remove this Resource Pool from Inventory"
@@ -63051,7 +63066,7 @@ msgstr "Удалить эту ВМ из инвентаря"
 
 #: ../app/views/layouts/_exp_editor.html.haml:40
 msgid "Remove this expression element"
-msgstr ""
+msgstr "Удалить этот элемент выражения"
 
 #: ../app/helpers/application_helper/toolbar/ems_cluster_center.rb:18
 #: ../app/helpers/application_helper/toolbar/host_center.rb:61
@@ -63079,11 +63094,11 @@ msgstr "Переименовать облачную БД"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:3886
 msgid "Rename VM"
-msgstr ""
+msgstr "Переименовать ВМ"
 
 #: ../app/helpers/application_helper/toolbar/x_vm_center.rb:40
 msgid "Rename this VM"
-msgstr ""
+msgstr "Переименовать эту ВМ"
 
 #: ../app/controllers/vm_common.rb:1271
 msgid "Renaming VM \"%{name}\""
@@ -63120,16 +63135,16 @@ msgstr "Заменить элементы если они уже существ�
 
 #: ../app/views/layouts/_lightbox_panel.html.haml:3
 msgid "Replace me."
-msgstr ""
+msgstr "Заменить меня"
 
 #. TRANSLATORS: file: product/views/ContainerReplicator.yaml
 #: ../config/yaml_strings.rb:807
 msgid "Replicas"
-msgstr ""
+msgstr "Реплики"
 
 #: ../app/views/ops/_all_tabs.html.haml:63
 msgid "Replication"
-msgstr ""
+msgstr "Репликация"
 
 #: ../app/controllers/ops_controller/settings/common.rb:194
 msgid ""
@@ -63149,7 +63164,7 @@ msgstr "Для этого региона репликация будет отк�
 #. TRANSLATORS: en.yml key: dictionary.table.container_replicator
 #: ../config/dictionary_strings.rb:3918
 msgid "Replicator"
-msgstr ""
+msgstr "Репликатор"
 
 #. TRANSLATORS: file: db/fixtures/miq_event_definition_events.yml
 #: ../config/yaml_strings.rb:791
@@ -65311,7 +65326,7 @@ msgstr "Маркёр STS"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1390
 msgid "Safe Remove"
-msgstr ""
+msgstr "Безопасное удаление"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1392
@@ -65322,9 +65337,9 @@ msgstr "Безопасное удаление томов"
 #: ../app/models/file_depot_smb.rb:19 ../config/dictionary_strings.rb:2888
 msgid "Samba"
 msgid_plural "Sambas"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Samba"
+msgstr[1] "Samba"
+msgstr[2] "Samba"
 
 #. TRANSLATORS: en.yml key: dictionary.model.FileDepotSmb (plural form)
 #: ../config/dictionary_strings.rb:2890
@@ -67598,7 +67613,7 @@ msgstr "Заказ службы был отменён пользователем
 #: ../app/helpers/textual_mixins/textual_os_info.rb:29
 #: ../config/yaml_strings.rb:1612
 msgid "Service Pack"
-msgstr "Пакет обновления"
+msgstr "Пакет обновлений"
 
 #: ../config/model_display_names.rb:224
 msgid "Service Parameters Set"
