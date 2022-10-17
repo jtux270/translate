@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: manageiq 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-09 08:49-0400\n"
-"PO-Revision-Date: 2022-10-14 20:10+0300\n"
+"PO-Revision-Date: 2022-10-17 19:22+0300\n"
 "Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
 "Language-Team: RU\n"
 "Language: ru\n"
@@ -10475,7 +10475,7 @@ msgstr "Расширить резерв ЦП"
 #. TRANSLATORS: file: product/reports/200_Optimization - Virtual Machines/001_CPU Right Sizing Recommendations.yaml
 #: ../config/yaml_strings.rb:6513
 msgid "CPU Right Sizing Recommendations"
-msgstr "Рекомендации по определению правильного размера, ЦП"
+msgstr "Рекомендации по определению правильного размера ЦП"
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/060_Right-Sizing Recommendations.yaml
 #: ../config/yaml_strings.rb:6839
@@ -11264,7 +11264,6 @@ msgstr "Мощности: профиль 2 - метод расчёта вирт.
 
 #. TRANSLATORS: en.yml key: dictionary.column.capacity_profile_2_vcpu_commitment_ratio
 #: ../config/dictionary_strings.rb:2196
-#, fuzzy
 msgid "Capacity - Profile 2 - vCPU Commitment Ratio"
 msgstr "Мощности: профиль 2 - показатель фиксации вирт. ЦП"
 
@@ -11664,7 +11663,7 @@ msgstr "ChargeableField|Источник"
 #: ../app/helpers/application_helper/title.rb:39
 #: ../app/presenters/menu/default_menu.rb:70
 msgid "Chargeback"
-msgstr "Взимание средств за использование"
+msgstr "Взимание средств"
 
 #: ../app/controllers/chargeback_assignment_controller.rb:17
 msgid "Chargeback Assignments"
@@ -11755,10 +11754,9 @@ msgid "Chargeback Rates"
 msgstr "Тарифы взимания средств за использование"
 
 #: ../app/views/report/_form_filter_chargeback.html.haml:4
-#, fuzzy
 #: ../app/views/report/_form_filter_chargeback.html.haml:30
 msgid "Chargeback Resources"
-msgstr "Ресурсы взимание средств за использование"
+msgstr "Ресурсы, за использование которых взимаются средства"
 
 #: ../app/controllers/chargeback_report_controller.rb:34
 msgid "Chargeback Saved Reports"
@@ -11935,11 +11933,11 @@ msgstr "ChargebackRateDetail|Метрика"
 
 #: ../config/model_attributes.rb:231
 msgid "ChargebackRateDetail|Per time"
-msgstr "ChargebackRateDetail|На единицу времени"
+msgstr "ChargebackRateDetail|За единицу времени"
 
 #: ../config/model_attributes.rb:232
 msgid "ChargebackRateDetail|Per unit"
-msgstr "ChargebackRateDetail|На единицу измерения"
+msgstr "ChargebackRateDetail|За единицу измерения"
 
 #: ../config/model_attributes.rb:233
 msgid "ChargebackRateDetail|Region description"
@@ -12315,7 +12313,6 @@ msgid "Check Value Error: %{msg}"
 msgstr "Ошибка проверки значения: %{msg}"
 
 #: src/report-editor/sort-criteria.jsx:25
-#, fuzzy
 msgid "Check input"
 msgstr "Ввод проверки"
 
@@ -12698,11 +12695,11 @@ msgstr "Класс"
 
 #: ../app/models/classification.rb:226 ../app/models/classification.rb:291
 msgid "Class '%{name}' is not eligible for classification"
-msgstr "Класс '%{name}' не подлежит выбору для классификации"
+msgstr "Класс '%{name}' не может быть выбран для классификации"
 
 #: ../app/models/classification.rb:279
 msgid "Class '%{type}' is not eligible for classification"
-msgstr "Класс '%{type}' не подлежит выбору для классификации"
+msgstr "Класс '%{type}' не может быть выбран для классификации"
 
 #: ../app/controllers/miq_ae_class_controller.rb:1596
 msgid "Class Schema Sequence was saved"
@@ -18131,7 +18128,6 @@ msgid "ContainerLimitItem|Max"
 msgstr "ContainerLimitItem|Макс."
 
 #: ../config/model_attributes.rb:891
-#, fuzzy
 msgid "ContainerLimitItem|Max limit request ratio"
 msgstr "ContainerLimitItem|Макс. лимит частоты запросов"
 
@@ -25206,7 +25202,7 @@ msgstr "Прямые шаблоны MIQ"
 #: ../app/helpers/resource_pool_helper/textual_summary.rb:104
 #: ../config/yaml_strings.rb:1693
 msgid "Direct VMs"
-msgstr "Прямые ВМ"
+msgstr "ВМ с пулом ресурсов по умолчанию"
 
 #. TRANSLATORS: file: product/views/FirewallRule.yaml
 #: ../app/helpers/security_group_helper/textual_summary.rb:52
@@ -31328,7 +31324,7 @@ msgstr "EmsCluster|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:1481
 msgid "EmsCluster|V cpu vr ratio"
-msgstr ""
+msgstr "EmsCluster|ЦП: соотношение вирт. к реальн."
 
 #: ../config/model_attributes.rb:1482
 msgid "EmsCluster|V parent datacenter"
@@ -31336,11 +31332,11 @@ msgstr "EmsCluster|Родительский ЦОД"
 
 #: ../config/model_attributes.rb:1483
 msgid "EmsCluster|V qualified desc"
-msgstr ""
+msgstr "EmsCluster|Квалифицированный по убыв."
 
 #: ../config/model_attributes.rb:1484
 msgid "EmsCluster|V ram vr ratio"
-msgstr ""
+msgstr "EmsCluster|Память: соотношение вирт. к реальн."
 
 #. TRANSLATORS: file: product/views/ManageIQ_Providers_ContainerManager.yaml
 #: ../config/yaml_strings.rb:1322
@@ -32545,11 +32541,11 @@ msgstr[2] "Журналы событий"
 
 #: ../app/views/ops/_ap_form_nteventlog.html.haml:4
 msgid "Event Log Entry"
-msgstr "Запись журнала событий"
+msgstr "Элементы журнала событий"
 
 #: ../app/views/ops/_ap_show.html.haml:60
 msgid "Event Log Items"
-msgstr "Элементы журнала события"
+msgstr "Элементы журнала событий"
 
 #: ../app/models/miq_alert.rb:427
 msgid "Event Log Name"
@@ -35903,16 +35899,16 @@ msgstr "Из домена"
 #: ../app/helpers/report_helper/report_schedule_helper.rb:11
 #: ../app/helpers/report_helper/report_schedule_helper.rb:13
 msgid "From E-mail"
-msgstr "Из почтового адреса"
+msgstr "Почтовый адрес отправителя"
 
 #: ../app/helpers/miq_action_helper.rb:41
 #: ../app/views/ops/_settings_server_tab.html.haml:204
 msgid "From E-mail Address"
-msgstr "Из почтового адреса"
+msgstr "Почтовый адрес отправителя"
 
 #: ../app/javascript/components/action-form/action-form.schema.js:339
 msgid "From E-mail Address (leave blank for default)"
-msgstr "Из почтового адреса (без заполнения — значение по умолчанию)"
+msgstr "Почтовый адрес отправителя (без заполнения — значение по умолчанию)"
 
 #: src/amazon-security-form-group/security-group.jsx:29
 msgid "From port"
@@ -37416,7 +37412,6 @@ msgstr "История"
 
 #. TRANSLATORS: en.yml key: dictionary.column.pct_hit
 #: ../config/dictionary_strings.rb:2642
-#, fuzzy
 msgid "Hit %"
 msgstr "% попаданий"
 
@@ -38556,7 +38551,6 @@ msgstr "Хосты: шаблон сравнения"
 
 #. TRANSLATORS: file: product/reports/110_Configuration Management - Hosts/020_Date Brought under Management.yaml
 #: ../config/yaml_strings.rb:6062
-#, fuzzy
 msgid "Hosts: Date brought under Management for Last Week"
 msgstr "Хосты: данные о добавленных под управление хостах за посл. неделю"
 
@@ -43593,17 +43587,17 @@ msgstr "Макс. повторных попыток"
 #. TRANSLATORS: en.yml key: dictionary.column.max_stat_container_group_create_rate
 #: ../config/dictionary_strings.rb:1294
 msgid "Max Stat Container Group Create Rate"
-msgstr "Статистика макс. частоты создания группы контейнеров"
+msgstr "Макс. частота создания групп статич. контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.max_stat_container_group_delete_rate
 #: ../config/dictionary_strings.rb:1296
 msgid "Max Stat Container Group Delete Rate"
-msgstr "Статистика макс. частоты удаления группы контейнеров"
+msgstr "Макс. частота удаления групп статич. контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.max_stat_container_image_registration_rate
 #: ../config/dictionary_strings.rb:1298
 msgid "Max Stat Container Image Registration Rate"
-msgstr "Статистика макс. частоты регистрации группы контейнеров"
+msgstr "Макс. частота регистрации образов статич. контейнеров"
 
 #: ../app/views/miq_ae_class/_method_inputs.html.haml:64
 msgid "Max TTL"
@@ -43901,38 +43895,37 @@ msgstr ""
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/065_VM Performance - daily over last week.yaml
 #: ../config/dictionary_strings.rb:1328 ../config/yaml_strings.rb:6963
 msgid "Memory - Balloon Average"
-msgstr "Память: среднее вытеснение памяти (Balloon)"
+msgstr "Память: средний Balloon"
 
 #. TRANSLATORS: en.yml key: dictionary.column.max_mem_vmmemctl_absolute_average
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/065_VM Performance - daily over last week.yaml
 #: ../config/dictionary_strings.rb:1288 ../config/yaml_strings.rb:6965
 msgid "Memory - Balloon Max Average"
-msgstr "Память: макс. среднее вытеснение памяти (Balloon)"
+msgstr "Память: макс. средний Balloon"
 
 #. TRANSLATORS: en.yml key: dictionary.column.min_mem_vmmemctl_absolute_average
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/065_VM Performance - daily over last week.yaml
 #: ../config/dictionary_strings.rb:1414 ../config/yaml_strings.rb:6967
 msgid "Memory - Balloon Min Average"
-msgstr "Память: мин. среднее вытеснение памяти (Balloon)"
+msgstr "Память: мин. средний Balloon"
 
 #. TRANSLATORS: en.yml key: dictionary.column.mem_vmmemctltarget_absolute_average
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/065_VM Performance - daily over last week.yaml
 #: ../config/dictionary_strings.rb:1330 ../config/yaml_strings.rb:6969
-#, fuzzy
 msgid "Memory - Balloon Target Average"
-msgstr "Память: среднее вытеснение памяти (Balloon)"
+msgstr "Память: средний Balloon Target"
 
 #. TRANSLATORS: en.yml key: dictionary.column.max_mem_vmmemctltarget_absolute_average
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/065_VM Performance - daily over last week.yaml
 #: ../config/dictionary_strings.rb:1290 ../config/yaml_strings.rb:6971
 msgid "Memory - Balloon Target Max Average"
-msgstr ""
+msgstr "Память: макс. средний Balloon Target"
 
 #. TRANSLATORS: en.yml key: dictionary.column.min_mem_vmmemctltarget_absolute_average
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/065_VM Performance - daily over last week.yaml
 #: ../config/dictionary_strings.rb:1416 ../config/yaml_strings.rb:6973
 msgid "Memory - Balloon Target Min Average"
-msgstr ""
+msgstr "Память: мин. средний Balloon Target"
 
 #. TRANSLATORS: en.yml key: dictionary.column.conservative_recommended_mem
 #: ../config/dictionary_strings.rb:2212
@@ -44868,11 +44861,11 @@ msgstr "MetricRollup|Всего зарезервировано ЦП"
 
 #: ../config/model_attributes.rb:2432
 msgid "MetricRollup|Derived host count off"
-msgstr "MetricRollup|Подсчёт общего числа хостов выкл."
+msgstr "MetricRollup|Общее число выключенных хостов"
 
 #: ../config/model_attributes.rb:2433
 msgid "MetricRollup|Derived host count on"
-msgstr "MetricRollup|Подсчёт общего числа хостов вкл."
+msgstr "MetricRollup|Общее число включённых хостов"
 
 #: ../config/model_attributes.rb:2434
 msgid "MetricRollup|Derived host count total"
@@ -44988,11 +44981,11 @@ msgstr "MetricRollup|Общий объём выделенного дисково
 
 #: ../config/model_attributes.rb:2462
 msgid "MetricRollup|Derived vm count off"
-msgstr "MetricRollup|Подсчёт общего числа ВМ выкл."
+msgstr "MetricRollup|Общее число выключенных ВМ"
 
 #: ../config/model_attributes.rb:2463
 msgid "MetricRollup|Derived vm count on"
-msgstr "MetricRollup|Подсчёт общего числа ВМ вкл."
+msgstr "MetricRollup|Общее число включённых ВМ"
 
 #: ../config/model_attributes.rb:2464
 msgid "MetricRollup|Derived vm count total"
@@ -45073,11 +45066,11 @@ msgstr "MetricRollup|Всего зарезервировано ЦП, макс."
 
 #: ../config/model_attributes.rb:2483
 msgid "MetricRollup|Max derived host count off"
-msgstr "MetricRollup|Подсчёт общего макс. числа хостов выкл."
+msgstr "MetricRollup|Общее макс. число выключенных хостов"
 
 #: ../config/model_attributes.rb:2484
 msgid "MetricRollup|Max derived host count on"
-msgstr "MetricRollup|Подсчёт общего макс. числа хостов вкл."
+msgstr "MetricRollup|Общее макс. число включённых хостов"
 
 #: ../config/model_attributes.rb:2485
 msgid "MetricRollup|Max derived host count total"
@@ -45193,11 +45186,11 @@ msgstr "MetricRollup|Общий объём выделенного дисково
 
 #: ../config/model_attributes.rb:2513
 msgid "MetricRollup|Max derived vm count off"
-msgstr "MetricRollup|Подсчёт общего макс. числа ВМ выкл."
+msgstr "MetricRollup|Общее макс. число выключенных ВМ"
 
 #: ../config/model_attributes.rb:2514
 msgid "MetricRollup|Max derived vm count on"
-msgstr "MetricRollup|Подсчёт общего макс. числа ВМ вкл."
+msgstr "MetricRollup|Общее макс. число включённых ВМ"
 
 #: ../config/model_attributes.rb:2515
 msgid "MetricRollup|Max derived vm count total"
@@ -45277,15 +45270,15 @@ msgstr "MetricRollup|Максимальное среднее потреблен�
 
 #: ../config/model_attributes.rb:2532
 msgid "MetricRollup|Max stat container group create rate"
-msgstr "MetricRollup|Статистика макс. частоты создания группы контейнеров"
+msgstr "MetricRollup|Макс. частота создания групп статич. контейнеров"
 
 #: ../config/model_attributes.rb:2533
 msgid "MetricRollup|Max stat container group delete rate"
-msgstr "MetricRollup|Статистика макс. частоты удаления группы контейнеров"
+msgstr "MetricRollup|Макс. частота удаления групп статич. контейнеров"
 
 #: ../config/model_attributes.rb:2534
 msgid "MetricRollup|Max stat container image registration rate"
-msgstr ""
+msgstr "MetricRollup|Макс. частота регистрации образов статич. контейнеров"
 
 #: ../config/model_attributes.rb:2535
 msgid "MetricRollup|Max sys uptime absolute latest"
@@ -45355,19 +45348,19 @@ msgstr "MetricRollup|Всего зарезервированных ЦП, мин�
 
 #: ../config/model_attributes.rb:2551
 msgid "MetricRollup|Min derived host count off"
-msgstr ""
+msgstr "Metric|Общее мин. число выключенных хостов"
 
 #: ../config/model_attributes.rb:2552
 msgid "MetricRollup|Min derived host count on"
-msgstr ""
+msgstr "Metric|Общее мин. число включённых хостов"
 
 #: ../config/model_attributes.rb:2553
 msgid "MetricRollup|Min derived host count total"
-msgstr ""
+msgstr "MetricRollup|Общее число хостов, мин."
 
 #: ../config/model_attributes.rb:2554
 msgid "MetricRollup|Min derived host sockets"
-msgstr ""
+msgstr "MetricRollup|Общее число сокетов, мин."
 
 #: ../config/model_attributes.rb:2555
 msgid "MetricRollup|Min derived memory available"
@@ -45383,115 +45376,115 @@ msgstr "MetricRollup|Всего используется памяти, мин."
 
 #: ../config/model_attributes.rb:2558
 msgid "MetricRollup|Min derived storage disk managed"
-msgstr ""
+msgstr "MetricRollup|Всего управляемых дисков хранилищ, мин."
 
 #: ../config/model_attributes.rb:2559
 msgid "MetricRollup|Min derived storage disk registered"
-msgstr ""
+msgstr "MetricRollup|Всего зарегистрировано дисков хранилищ, мин."
 
 #: ../config/model_attributes.rb:2560
 msgid "MetricRollup|Min derived storage disk unmanaged"
-msgstr ""
+msgstr "MetricRollup|Всего неуправляемых дисков хранилищ, мин."
 
 #: ../config/model_attributes.rb:2561
 msgid "MetricRollup|Min derived storage disk unregistered"
-msgstr ""
+msgstr "MetricRollup|Всего дисков хранилищ без регистрации, мин."
 
 #: ../config/model_attributes.rb:2562
 msgid "MetricRollup|Min derived storage free"
-msgstr ""
+msgstr "MetricRollup|Общий свободный объём хранилища, мин."
 
 #: ../config/model_attributes.rb:2563
 msgid "MetricRollup|Min derived storage mem managed"
-msgstr ""
+msgstr "MetricRollup|Всего управляемой памяти хранилищ, мин."
 
 #: ../config/model_attributes.rb:2564
 msgid "MetricRollup|Min derived storage mem registered"
-msgstr ""
+msgstr "MetricRollup|Всего зарегистрировано памяти хранилищ, мин."
 
 #: ../config/model_attributes.rb:2565
 msgid "MetricRollup|Min derived storage mem unmanaged"
-msgstr ""
+msgstr "MetricRollup|Всего неуправляемой памяти хранилищ, мин."
 
 #: ../config/model_attributes.rb:2566
 msgid "MetricRollup|Min derived storage mem unregistered"
-msgstr ""
+msgstr "MetricRollup|Всего неуправляемой памяти хранилищ, мин."
 
 #: ../config/model_attributes.rb:2567
 msgid "MetricRollup|Min derived storage snapshot managed"
-msgstr ""
+msgstr "MetricRollup|Всего управляемых снимков хранилищ, мин."
 
 #: ../config/model_attributes.rb:2568
 msgid "MetricRollup|Min derived storage snapshot registered"
-msgstr ""
+msgstr "MetricRollup|Всего зарегистрировано снимков хранилищ, мин."
 
 #: ../config/model_attributes.rb:2569
 msgid "MetricRollup|Min derived storage snapshot unmanaged"
-msgstr ""
+msgstr "MetricRollup|Всего неуправляемых снимков хранилищ, мин."
 
 #: ../config/model_attributes.rb:2570
 msgid "MetricRollup|Min derived storage snapshot unregistered"
-msgstr ""
+msgstr "MetricRollup|Всего незарегистрированных снимков хранилищ, мин."
 
 #: ../config/model_attributes.rb:2571
 msgid "MetricRollup|Min derived storage total"
-msgstr ""
+msgstr "MetricRollup|Всего хранилищ, мин."
 
 #: ../config/model_attributes.rb:2572
 msgid "MetricRollup|Min derived storage used managed"
-msgstr ""
+msgstr "MetricRollup|Всего используется управляемых хранилищ, мин."
 
 #: ../config/model_attributes.rb:2573
 msgid "MetricRollup|Min derived storage used registered"
-msgstr ""
+msgstr "MetricRollup|Всего используется зарегистрированных хранилищ, мин."
 
 #: ../config/model_attributes.rb:2574
 msgid "MetricRollup|Min derived storage used unmanaged"
-msgstr ""
+msgstr "MetricRollup|Всего используется неуправляемых хранилищ, мин."
 
 #: ../config/model_attributes.rb:2575
 msgid "MetricRollup|Min derived storage used unregistered"
-msgstr ""
+msgstr "MetricRollup|Всего используется незарегистрированных хранилищ, мин."
 
 #: ../config/model_attributes.rb:2576
 msgid "MetricRollup|Min derived storage vm count managed"
-msgstr ""
+msgstr "MetricRollup|Всего управляемых ВМ хранилищ, мин."
 
 #: ../config/model_attributes.rb:2577
 msgid "MetricRollup|Min derived storage vm count registered"
-msgstr ""
+msgstr "MetricRollup|Всего зарегистрированных ВМ хранилищ, мин."
 
 #: ../config/model_attributes.rb:2578
 msgid "MetricRollup|Min derived storage vm count unmanaged"
-msgstr ""
+msgstr "MetricRollup|Всего неуправляемых ВМ хранилищ, мин."
 
 #: ../config/model_attributes.rb:2579
 msgid "MetricRollup|Min derived storage vm count unregistered"
-msgstr ""
+msgstr "MetricRollup|Всего незарегистрированных ВМ хранилищ, мин."
 
 #: ../config/model_attributes.rb:2580
 msgid "MetricRollup|Min derived vm allocated disk storage"
-msgstr ""
+msgstr "MetricRollup|Общий объём выделенного дискового хранилища ВМ, мин."
 
 #: ../config/model_attributes.rb:2581
 msgid "MetricRollup|Min derived vm count off"
-msgstr ""
+msgstr "MetricRollup|Общее мин. число выключенных ВМ"
 
 #: ../config/model_attributes.rb:2582
 msgid "MetricRollup|Min derived vm count on"
-msgstr ""
+msgstr "Metric|Общее мин. число включённых ВМ"
 
 #: ../config/model_attributes.rb:2583
 msgid "MetricRollup|Min derived vm count total"
-msgstr ""
+msgstr "MetricRollup|Общее число ВМ, мин."
 
 #: ../config/model_attributes.rb:2584
 msgid "MetricRollup|Min derived vm numvcpus"
-msgstr ""
+msgstr "MetricRollup|Общее число вирт. ЦП ВМ, мин."
 
 #: ../config/model_attributes.rb:2585
 msgid "MetricRollup|Min derived vm used disk storage"
-msgstr ""
+msgstr "MetricRollup|Общий объём используемого дискового хранилища ВМ, мин."
 
 #: ../config/model_attributes.rb:2586
 msgid "MetricRollup|Min disk devicelatency absolute average"
@@ -45526,7 +45519,7 @@ msgstr "MetricRollup|Минимальное среднее потреблени�
 
 #: ../config/model_attributes.rb:2592
 msgid "MetricRollup|Min max"
-msgstr ""
+msgstr "MetricRollup|Мин/Макс"
 
 #: ../config/model_attributes.rb:2593
 msgid "MetricRollup|Min mem swapin absolute average"
@@ -45563,15 +45556,15 @@ msgstr "MetricRollup|Минимальное среднее потреблени�
 
 #: ../config/model_attributes.rb:2601
 msgid "MetricRollup|Min stat container group create rate"
-msgstr "MetricRollup|Статистика мин. частоты создания группы контейнеров"
+msgstr "MetricRollup|Мин. частота создания групп статич. контейнеров"
 
 #: ../config/model_attributes.rb:2602
 msgid "MetricRollup|Min stat container group delete rate"
-msgstr "MetricRollup|Статистика мин. частоты удаления группы контейнеров"
+msgstr "MetricRollup|Мин. частота удаления групп статич. контейнеров"
 
 #: ../config/model_attributes.rb:2603
 msgid "MetricRollup|Min stat container image registration rate"
-msgstr ""
+msgstr "MetricRollup|Мин. частота регистрации образов статич. контейнеров"
 
 #: ../config/model_attributes.rb:2604
 msgid "MetricRollup|Min sys uptime absolute latest"
@@ -45592,7 +45585,7 @@ msgstr "MetricRollup|Номер региона"
 
 #: ../config/model_attributes.rb:2608
 msgid "MetricRollup|Resource name"
-msgstr ""
+msgstr "MetricRollup|Имя ресурса"
 
 #: ../config/model_attributes.rb:2609
 msgid "MetricRollup|Resource type"
@@ -45600,15 +45593,15 @@ msgstr "MetricRollup|Тип ресурса"
 
 #: ../config/model_attributes.rb:2610
 msgid "MetricRollup|Stat container group create rate"
-msgstr "MetricRollup|Статистика частоты создания группы контейнеров"
+msgstr "MetricRollup|Частота создания групп статич. контейнеров"
 
 #: ../config/model_attributes.rb:2611
 msgid "MetricRollup|Stat container group delete rate"
-msgstr "MetricRollup|Статистика частоты удаления группы контейнеров"
+msgstr "MetricRollup|Частота удаления групп статич. контейнеров"
 
 #: ../config/model_attributes.rb:2612
 msgid "MetricRollup|Stat container image registration rate"
-msgstr ""
+msgstr "MetricRollup|Частота регистрации образов статич. контейнеров"
 
 #: ../config/model_attributes.rb:2613
 msgid "MetricRollup|Sys uptime absolute latest"
@@ -45733,11 +45726,11 @@ msgstr "Metric|Всего зарезервировано ЦП"
 
 #: ../config/model_attributes.rb:2324
 msgid "Metric|Derived host count off"
-msgstr "Metric|Подсчёт общего числа хостов выкл."
+msgstr "Metric|Общее число выключенных хостов"
 
 #: ../config/model_attributes.rb:2325
 msgid "Metric|Derived host count on"
-msgstr "Metric|Подсчёт общего числа хостов вкл."
+msgstr "Metric|Общее число включённых хостов"
 
 #: ../config/model_attributes.rb:2326
 msgid "Metric|Derived host count total"
@@ -45785,91 +45778,91 @@ msgstr "Metric|Всего управляемой памяти хранилищ"
 
 #: ../config/model_attributes.rb:2337
 msgid "Metric|Derived storage mem registered"
-msgstr ""
+msgstr "Metric|Всего незарегистрированной памяти хранилищ"
 
 #: ../config/model_attributes.rb:2338
 msgid "Metric|Derived storage mem unmanaged"
-msgstr ""
+msgstr "Metric|Всего неуправляемой памяти хранилищ"
 
 #: ../config/model_attributes.rb:2339
 msgid "Metric|Derived storage mem unregistered"
-msgstr ""
+msgstr "Metric|Всего незарегистрированной памяти хранилищ"
 
 #: ../config/model_attributes.rb:2340
 msgid "Metric|Derived storage snapshot managed"
-msgstr ""
+msgstr "Metric|Всего управляемых снимков хранилищ"
 
 #: ../config/model_attributes.rb:2341
 msgid "Metric|Derived storage snapshot registered"
-msgstr ""
+msgstr "Metric|Всего зарегистрировано снимков хранилищ"
 
 #: ../config/model_attributes.rb:2342
 msgid "Metric|Derived storage snapshot unmanaged"
-msgstr ""
+msgstr "Metric|Всего неуправляемых снимков хранилищ"
 
 #: ../config/model_attributes.rb:2343
 msgid "Metric|Derived storage snapshot unregistered"
-msgstr ""
+msgstr "Metric|Всего используется незарегистрированных снимков"
 
 #: ../config/model_attributes.rb:2344
 msgid "Metric|Derived storage total"
-msgstr ""
+msgstr "Metric|Всего места в хранилище"
 
 #: ../config/model_attributes.rb:2345
 msgid "Metric|Derived storage used managed"
-msgstr ""
+msgstr "Metric|Всего используется управляемых хранилищ"
 
 #: ../config/model_attributes.rb:2346
 msgid "Metric|Derived storage used registered"
-msgstr ""
+msgstr "Metric|Всего используется зарегистрированных хранилищ"
 
 #: ../config/model_attributes.rb:2347
 msgid "Metric|Derived storage used unmanaged"
-msgstr ""
+msgstr "Metric|Всего используется неуправляемых хранилищ"
 
 #: ../config/model_attributes.rb:2348
 msgid "Metric|Derived storage used unregistered"
-msgstr ""
+msgstr "Metric|Всего используется незарегистрированных хранилищ"
 
 #: ../config/model_attributes.rb:2349
 msgid "Metric|Derived storage vm count managed"
-msgstr ""
+msgstr "Metric|Всего управляемых ВМ хранилищ"
 
 #: ../config/model_attributes.rb:2350
 msgid "Metric|Derived storage vm count registered"
-msgstr ""
+msgstr "Metric|Всего зарегистрированных ВМ хранилищ"
 
 #: ../config/model_attributes.rb:2351
 msgid "Metric|Derived storage vm count unmanaged"
-msgstr ""
+msgstr "Metric|Всего неуправляемых ВМ хранилищ"
 
 #: ../config/model_attributes.rb:2352
 msgid "Metric|Derived storage vm count unregistered"
-msgstr ""
+msgstr "Metric|Всего незарегистрированных ВМ хранилищ"
 
 #: ../config/model_attributes.rb:2353
 msgid "Metric|Derived vm allocated disk storage"
-msgstr ""
+msgstr "Metric|Общий объём выделенного дискового хранилища ВМ"
 
 #: ../config/model_attributes.rb:2354
 msgid "Metric|Derived vm count off"
-msgstr ""
+msgstr "Metric|Общее число выключенных ВМ"
 
 #: ../config/model_attributes.rb:2355
 msgid "Metric|Derived vm count on"
-msgstr ""
+msgstr "Metric|Общее число включённых ВМ"
 
 #: ../config/model_attributes.rb:2356
 msgid "Metric|Derived vm count total"
-msgstr ""
+msgstr "Metric|Общее число ВМ"
 
 #: ../config/model_attributes.rb:2357
 msgid "Metric|Derived vm numvcpus"
-msgstr ""
+msgstr "Metric|Общее число вирт. ЦП машин"
 
 #: ../config/model_attributes.rb:2358
 msgid "Metric|Derived vm used disk storage"
-msgstr ""
+msgstr "Metric|Общий объём используемого дискового хранилища ВМ"
 
 #: ../config/model_attributes.rb:2359
 msgid "Metric|Disk devicelatency absolute average"
@@ -45969,7 +45962,7 @@ msgstr "Metric|Временная метка"
 
 #: ../config/model_attributes.rb:2383
 msgid "Metric|V date"
-msgstr "Metric|V date"
+msgstr "Metric|Дата"
 
 #: ../config/model_attributes.rb:2384
 msgid "Metric|V derived cpu reserved pct"
@@ -45985,7 +45978,7 @@ msgstr "Metric|Общее число хостов"
 
 #: ../config/model_attributes.rb:2387
 msgid "Metric|V derived memory reserved pct"
-msgstr "Metric|Всего зарезервировано V памяти, %"
+msgstr "Metric|Всего зарезервировано памяти, %"
 
 #: ../config/model_attributes.rb:2388
 msgid "Metric|V derived storage used"
@@ -46172,17 +46165,17 @@ msgstr "Мин. длина пароля"
 #. TRANSLATORS: en.yml key: dictionary.column.min_stat_container_group_create_rate
 #: ../config/dictionary_strings.rb:1420
 msgid "Min Stat Container Group Create Rate"
-msgstr "Статистика мин. частоты создания группы контейнеров"
+msgstr "Мин. частота создания групп статич. контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.min_stat_container_group_delete_rate
 #: ../config/dictionary_strings.rb:1422
 msgid "Min Stat Container Group Delete Rate"
-msgstr "Статистика мин. частоты удаления группы контейнеров"
+msgstr "Мин. частота удаления групп статич. контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.min_stat_container_image_registration_rate
 #: ../config/dictionary_strings.rb:1424
 msgid "Min Stat Container Image Registration Rate"
-msgstr "Статистика мин. частоты регистрации группы контейнеров"
+msgstr "Мин. частота регистрации образов статич. контейнеров"
 
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily.yaml
 #. TRANSLATORS: file: product/charts/miq_reports/vim_perf_daily_cloud.yaml
@@ -46283,9 +46276,8 @@ msgstr "Политика MIQ: настроить данные набора"
 
 #. TRANSLATORS: file: product/reports/520_Events - Policy/120_Policy Events2.yaml
 #: ../config/yaml_strings.rb:6924
-#, fuzzy
 msgid "Miq Policy Set Set Type"
-msgstr "Политика MIQ: тип"
+msgstr "Набор политик MIQ: тип набора"
 
 #. TRANSLATORS: file: product/views/MiqReportResult-all.yaml
 #. TRANSLATORS: file: product/views/MiqReportResult.yaml
@@ -46532,7 +46524,7 @@ msgstr "MiqActionSet|Имя"
 
 #: ../config/model_attributes.rb:2648
 msgid "MiqActionSet|Owner type"
-msgstr ""
+msgstr "MiqActionSet|Тип владельца"
 
 #: ../config/model_attributes.rb:2649
 msgid "MiqActionSet|Read only"
@@ -46552,7 +46544,7 @@ msgstr "MiqActionSet|Данные набора"
 
 #: ../config/model_attributes.rb:2653
 msgid "MiqActionSet|Set type"
-msgstr ""
+msgstr "MiqActionSet|Тип набора"
 
 #: ../config/model_attributes.rb:2654
 msgid "MiqActionSet|Updated on"
@@ -46564,11 +46556,11 @@ msgstr "MiqActionSet|Userid"
 
 #: ../config/model_attributes.rb:2629
 msgid "MiqAction|Action type"
-msgstr ""
+msgstr "MiqAction|Тип действия"
 
 #: ../config/model_attributes.rb:2630
 msgid "MiqAction|Action type description"
-msgstr ""
+msgstr "MiqAction|Описание типа действия"
 
 #: ../config/model_attributes.rb:2631
 msgid "MiqAction|Created on"
@@ -46588,11 +46580,11 @@ msgstr "MiqAction|Href slug"
 
 #: ../config/model_attributes.rb:2635
 msgid "MiqAction|Name"
-msgstr ""
+msgstr "MiqAction|Имя"
 
 #: ../config/model_attributes.rb:2636
 msgid "MiqAction|Options"
-msgstr ""
+msgstr "MiqAction|Параметры"
 
 #: ../config/model_attributes.rb:2637
 msgid "MiqAction|Region description"
@@ -46608,7 +46600,7 @@ msgstr "MiqAction|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:2640
 msgid "MiqAction|V synchronicity"
-msgstr ""
+msgstr "MiqAction|Синхронность"
 
 #: ../config/model_attributes.rb:2657
 msgid "MiqAeClass|Created on"
@@ -46624,7 +46616,7 @@ msgstr "MiqAeClass|Показываемое имя"
 
 #: ../config/model_attributes.rb:2660
 msgid "MiqAeClass|Fqname"
-msgstr ""
+msgstr "MiqAeClass|FQN"
 
 #: ../config/model_attributes.rb:2661
 msgid "MiqAeClass|Href slug"
@@ -46632,23 +46624,23 @@ msgstr "MiqAeClass|Href slug"
 
 #: ../config/model_attributes.rb:2662
 msgid "MiqAeClass|Inherits"
-msgstr ""
+msgstr "MiqAeClass|Наследуется"
 
 #: ../config/model_attributes.rb:2663
 msgid "MiqAeClass|Lower name"
-msgstr ""
+msgstr "MiqAeClass|Имя нижнего уровня"
 
 #: ../config/model_attributes.rb:2664
 msgid "MiqAeClass|Lower relative path"
-msgstr ""
+msgstr "MiqAeClass|Относительный путь нижнего уровня"
 
 #: ../config/model_attributes.rb:2665
 msgid "MiqAeClass|Name"
-msgstr ""
+msgstr "MiqAeClass|Имя"
 
 #: ../config/model_attributes.rb:2666
 msgid "MiqAeClass|Owner"
-msgstr ""
+msgstr "MiqAeClass|Владелец"
 
 #: ../config/model_attributes.rb:2667
 msgid "MiqAeClass|Region description"
@@ -46660,11 +46652,11 @@ msgstr "MiqAeClass|Номер региона"
 
 #: ../config/model_attributes.rb:2669
 msgid "MiqAeClass|Relative path"
-msgstr ""
+msgstr "MiqAeClass|Относительный путь"
 
 #: ../config/model_attributes.rb:2670
 msgid "MiqAeClass|Updated by"
-msgstr ""
+msgstr "MiqAeClass|Кем обновлялось:"
 
 #: ../config/model_attributes.rb:2671
 msgid "MiqAeClass|Updated on"
@@ -46676,15 +46668,15 @@ msgstr "MiqAeClass|Видимость"
 
 #: ../config/model_attributes.rb:2674
 msgid "MiqAeField|Aetype"
-msgstr ""
+msgstr "MiqAeField|Aetype"
 
 #: ../config/model_attributes.rb:2675
 msgid "MiqAeField|Collect"
-msgstr ""
+msgstr "MiqAeField|Собрать"
 
 #: ../config/model_attributes.rb:2676
 msgid "MiqAeField|Condition"
-msgstr ""
+msgstr "MiqAeField|Условие"
 
 #: ../config/model_attributes.rb:2677
 msgid "MiqAeField|Created on"
@@ -46692,7 +46684,7 @@ msgstr "MiqAeField|Когда создано"
 
 #: ../config/model_attributes.rb:2678
 msgid "MiqAeField|Datatype"
-msgstr ""
+msgstr "MiqAeField|Тип данных"
 
 #: ../config/model_attributes.rb:2679
 msgid "MiqAeField|Default value"
@@ -46712,11 +46704,11 @@ msgstr "MiqAeField|Href slug"
 
 #: ../config/model_attributes.rb:2683
 msgid "MiqAeField|Max retries"
-msgstr ""
+msgstr "MiqAeField|Макс. повторных попыток"
 
 #: ../config/model_attributes.rb:2684
 msgid "MiqAeField|Max time"
-msgstr ""
+msgstr "MiqAeField|Макс. время"
 
 #: ../config/model_attributes.rb:2685
 msgid "MiqAeField|Message"
@@ -46724,11 +46716,11 @@ msgstr "MiqAeField|Сообщение"
 
 #: ../config/model_attributes.rb:2686
 msgid "MiqAeField|Name"
-msgstr ""
+msgstr "MiqAeField|Имя"
 
 #: ../config/model_attributes.rb:2687
 msgid "MiqAeField|On entry"
-msgstr ""
+msgstr "MiqAeField|При входе"
 
 #: ../config/model_attributes.rb:2688
 msgid "MiqAeField|On error"
@@ -46736,15 +46728,15 @@ msgstr "MiqAeField|При ошибке"
 
 #: ../config/model_attributes.rb:2689
 msgid "MiqAeField|On exit"
-msgstr ""
+msgstr "MiqAeField|При выходе"
 
 #: ../config/model_attributes.rb:2690
 msgid "MiqAeField|Owner"
-msgstr ""
+msgstr "MiqAeField|Владелец"
 
 #: ../config/model_attributes.rb:2691
 msgid "MiqAeField|Priority"
-msgstr ""
+msgstr "MiqAeField|Приоритет"
 
 #: ../config/model_attributes.rb:2692
 msgid "MiqAeField|Region description"
@@ -46760,11 +46752,11 @@ msgstr "MiqAeField|Область применения"
 
 #: ../config/model_attributes.rb:2695
 msgid "MiqAeField|Substitute"
-msgstr ""
+msgstr "MiqAeField|Замена"
 
 #: ../config/model_attributes.rb:2696
 msgid "MiqAeField|Updated by"
-msgstr ""
+msgstr "MiqAeField|Кем обновлялось:"
 
 #: ../config/model_attributes.rb:2697
 msgid "MiqAeField|Updated on"
@@ -46792,19 +46784,19 @@ msgstr "MiqAeInstance|Href slug"
 
 #: ../config/model_attributes.rb:2704
 msgid "MiqAeInstance|Inherits"
-msgstr ""
+msgstr "MiqAeInstance|Наследуется"
 
 #: ../config/model_attributes.rb:2705
 msgid "MiqAeInstance|Lower name"
-msgstr ""
+msgstr "MiqAeInstance|Имя нижнего уровня"
 
 #: ../config/model_attributes.rb:2706
 msgid "MiqAeInstance|Lower relative path"
-msgstr ""
+msgstr "MiqAeInstance|Относительный путь нижнего уровня"
 
 #: ../config/model_attributes.rb:2707
 msgid "MiqAeInstance|Name"
-msgstr ""
+msgstr "MiqAeInstance|Имя"
 
 #: ../config/model_attributes.rb:2708
 msgid "MiqAeInstance|Region description"
@@ -46816,11 +46808,11 @@ msgstr "MiqAeInstance|Номер региона"
 
 #: ../config/model_attributes.rb:2710
 msgid "MiqAeInstance|Relative path"
-msgstr ""
+msgstr "MiqAeInstance|Относительный путь"
 
 #: ../config/model_attributes.rb:2711
 msgid "MiqAeInstance|Updated by"
-msgstr ""
+msgstr "MiqAeInstance|Кем обновлялось:"
 
 #: ../config/model_attributes.rb:2712
 msgid "MiqAeInstance|Updated on"
@@ -46832,7 +46824,7 @@ msgstr "MiqAeMethod|Когда создано"
 
 #: ../config/model_attributes.rb:2715
 msgid "MiqAeMethod|Data"
-msgstr ""
+msgstr "MiqAeMethod|Данные"
 
 #: ../config/model_attributes.rb:2716
 msgid "MiqAeMethod|Description"
@@ -46844,7 +46836,7 @@ msgstr "MiqAeMethod|Показываемое имя"
 
 #: ../config/model_attributes.rb:2718
 msgid "MiqAeMethod|Embedded methods"
-msgstr ""
+msgstr "MiqAeMethod|Встроенные методы"
 
 #: ../config/model_attributes.rb:2719
 msgid "MiqAeMethod|Href slug"
@@ -46852,27 +46844,27 @@ msgstr "MiqAeMethod|Href slug"
 
 #: ../config/model_attributes.rb:2720
 msgid "MiqAeMethod|Language"
-msgstr ""
+msgstr "MiqAeMethod|Язык"
 
 #: ../config/model_attributes.rb:2721
 msgid "MiqAeMethod|Location"
-msgstr ""
+msgstr "MiqAeMethod|Местоположение"
 
 #: ../config/model_attributes.rb:2722
 msgid "MiqAeMethod|Lower name"
-msgstr ""
+msgstr "MiqAeMethod|Имя нижнего уровня"
 
 #: ../config/model_attributes.rb:2723
 msgid "MiqAeMethod|Lower relative path"
-msgstr ""
+msgstr "MiqAeMethod|Относительный путь нижнего уровня"
 
 #: ../config/model_attributes.rb:2724
 msgid "MiqAeMethod|Name"
-msgstr ""
+msgstr "MiqAeMethod|Имя"
 
 #: ../config/model_attributes.rb:2725
 msgid "MiqAeMethod|Options"
-msgstr ""
+msgstr "MiqAeMethod|Параметры"
 
 #: ../config/model_attributes.rb:2726
 msgid "MiqAeMethod|Region description"
@@ -46884,7 +46876,7 @@ msgstr "MiqAeMethod|Номер региона"
 
 #: ../config/model_attributes.rb:2728
 msgid "MiqAeMethod|Relative path"
-msgstr ""
+msgstr "MiqAeMethod|Относительный путь"
 
 #: ../config/model_attributes.rb:2729
 msgid "MiqAeMethod|Scope"
@@ -46892,7 +46884,7 @@ msgstr "MiqAeMethod|Область применения"
 
 #: ../config/model_attributes.rb:2730
 msgid "MiqAeMethod|Updated by"
-msgstr ""
+msgstr "MiqAeMethod|Кем обновлялось:"
 
 #: ../config/model_attributes.rb:2731
 msgid "MiqAeMethod|Updated on"
@@ -46900,7 +46892,7 @@ msgstr "MiqAeMethod|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:2733
 msgid "MiqAeNamespace|Ancestry"
-msgstr ""
+msgstr "MiqAeNamespace|Предки"
 
 #: ../config/model_attributes.rb:2734
 msgid "MiqAeNamespace|Commit message"
@@ -46908,11 +46900,11 @@ msgstr "MiqAeNamespace|Сообщение коммита"
 
 #: ../config/model_attributes.rb:2735
 msgid "MiqAeNamespace|Commit sha"
-msgstr ""
+msgstr "MiqAeNamespace|sha коммита"
 
 #: ../config/model_attributes.rb:2736
 msgid "MiqAeNamespace|Commit time"
-msgstr ""
+msgstr "MiqAeNamespace|Время коммита"
 
 #: ../config/model_attributes.rb:2737
 msgid "MiqAeNamespace|Created on"
@@ -46936,31 +46928,31 @@ msgstr "MiqAeNamespace|Href slug"
 
 #: ../config/model_attributes.rb:2742
 msgid "MiqAeNamespace|Last import on"
-msgstr ""
+msgstr "MiqAeNamespace|Дата посл. импорта:"
 
 #: ../config/model_attributes.rb:2743
 msgid "MiqAeNamespace|Lower name"
-msgstr ""
+msgstr "MiqAeNamespace|Имя нижнего уровня"
 
 #: ../config/model_attributes.rb:2744
 msgid "MiqAeNamespace|Lower relative path"
-msgstr ""
+msgstr "MiqAeNamespace|Относительный путь нижнего уровня"
 
 #: ../config/model_attributes.rb:2745
 msgid "MiqAeNamespace|Name"
-msgstr ""
+msgstr "MiqAeNamespace|Имя"
 
 #: ../config/model_attributes.rb:2746
 msgid "MiqAeNamespace|Priority"
-msgstr ""
+msgstr "MiqAeNamespace|Приоритет"
 
 #: ../config/model_attributes.rb:2747
 msgid "MiqAeNamespace|Ref"
-msgstr ""
+msgstr "MiqAeNamespace|Отсылка"
 
 #: ../config/model_attributes.rb:2748
 msgid "MiqAeNamespace|Ref type"
-msgstr ""
+msgstr "MiqAeNamespace|Тип отсылки"
 
 #: ../config/model_attributes.rb:2749
 msgid "MiqAeNamespace|Region description"
@@ -46972,19 +46964,19 @@ msgstr "MiqAeNamespace|Номер региона"
 
 #: ../config/model_attributes.rb:2751
 msgid "MiqAeNamespace|Relative path"
-msgstr ""
+msgstr "MiqAeNamespace|Относительный путь"
 
 #: ../config/model_attributes.rb:2752
 msgid "MiqAeNamespace|Source"
-msgstr ""
+msgstr "MiqAeNamespace|Источник"
 
 #: ../config/model_attributes.rb:2753
 msgid "MiqAeNamespace|Top level namespace"
-msgstr ""
+msgstr "MiqAeNamespace|Пространство имён самого верхнего уровня"
 
 #: ../config/model_attributes.rb:2754
 msgid "MiqAeNamespace|Updated by"
-msgstr ""
+msgstr "MiqAeNamespace|Кем обновлялось:"
 
 #: ../config/model_attributes.rb:2755
 msgid "MiqAeNamespace|Updated on"
@@ -46992,11 +46984,11 @@ msgstr "MiqAeNamespace|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:2757
 msgid "MiqAeValue|Collect"
-msgstr ""
+msgstr "MiqAeValue|Собрать"
 
 #: ../config/model_attributes.rb:2758
 msgid "MiqAeValue|Condition"
-msgstr ""
+msgstr "MiqAeValue|Условие"
 
 #: ../config/model_attributes.rb:2759
 msgid "MiqAeValue|Created on"
@@ -47012,15 +47004,15 @@ msgstr "MiqAeValue|Href slug"
 
 #: ../config/model_attributes.rb:2762
 msgid "MiqAeValue|Max retries"
-msgstr ""
+msgstr "MiqAeValue|Макс. повторных попыток"
 
 #: ../config/model_attributes.rb:2763
 msgid "MiqAeValue|Max time"
-msgstr ""
+msgstr "MiqAeValue|Макс. время"
 
 #: ../config/model_attributes.rb:2764
 msgid "MiqAeValue|On entry"
-msgstr ""
+msgstr "MiqAeValue|При входе"
 
 #: ../config/model_attributes.rb:2765
 msgid "MiqAeValue|On error"
@@ -47028,7 +47020,7 @@ msgstr "MiqAeValue|При ошибке"
 
 #: ../config/model_attributes.rb:2766
 msgid "MiqAeValue|On exit"
-msgstr ""
+msgstr "MiqAeValue|При выходе"
 
 #: ../config/model_attributes.rb:2767
 msgid "MiqAeValue|Region description"
@@ -47040,7 +47032,7 @@ msgstr "MiqAeValue|Номер региона"
 
 #: ../config/model_attributes.rb:2769
 msgid "MiqAeValue|Updated by"
-msgstr ""
+msgstr "MiqAeValue|Кем обновлялось:"
 
 #: ../config/model_attributes.rb:2770
 msgid "MiqAeValue|Updated on"
@@ -47048,7 +47040,7 @@ msgstr "MiqAeValue|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:2771
 msgid "MiqAeValue|Value"
-msgstr ""
+msgstr "MiqAeValue|Значение"
 
 #: ../config/model_attributes.rb:2773
 msgid "MiqAeWorkspace|Created on"
@@ -47072,7 +47064,7 @@ msgstr "MiqAeWorkspace|Номер региона"
 
 #: ../config/model_attributes.rb:2778
 msgid "MiqAeWorkspace|Setters"
-msgstr ""
+msgstr "MiqAeWorkspace|Наладчики"
 
 #: ../config/model_attributes.rb:2779
 msgid "MiqAeWorkspace|Updated on"
@@ -47080,11 +47072,11 @@ msgstr "MiqAeWorkspace|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:2780
 msgid "MiqAeWorkspace|Uri"
-msgstr ""
+msgstr "MiqAeWorkspace|Uri"
 
 #: ../config/model_attributes.rb:2781
 msgid "MiqAeWorkspace|Workspace"
-msgstr ""
+msgstr "MiqAeWorkspace|Рабочая область"
 
 #: ../config/model_attributes.rb:2805
 msgid "MiqAlertSet|Created on"
@@ -47259,24 +47251,20 @@ msgid "MiqAlert|Miq expression"
 msgstr "MiqAlert|Выражение Miq"
 
 #: ../config/model_attributes.rb:2793
-#, fuzzy
 msgid "MiqAlert|Notify automate"
-msgstr "MiqAlert|Уведомить automate"
+msgstr "MiqAlert|Уведомление Automate"
 
 #: ../config/model_attributes.rb:2794
-#, fuzzy
 msgid "MiqAlert|Notify email"
 msgstr "MiqAlert|Почта уведомления"
 
 #: ../config/model_attributes.rb:2795
-#, fuzzy
 msgid "MiqAlert|Notify evm event"
-msgstr "MiqAlert|Уведомление о событии evm"
+msgstr "MiqAlert|Уведомление о событии EVM"
 
 #: ../config/model_attributes.rb:2796
-#, fuzzy
 msgid "MiqAlert|Notify snmp"
-msgstr "MiqAlert|Notify snmp"
+msgstr "MiqAlert|snmp уведомлений"
 
 #: ../config/model_attributes.rb:2797
 msgid "MiqAlert|Options"
@@ -47584,7 +47572,7 @@ msgstr ""
 
 #: ../config/model_attributes.rb:2900
 msgid "MiqEnterprise|Name"
-msgstr ""
+msgstr "MiqEnterprise|Имя"
 
 #: ../config/model_attributes.rb:2901
 msgid "MiqEnterprise|Region description"
@@ -48351,7 +48339,7 @@ msgstr "MiqReportResult|Отчёт"
 
 #: ../config/model_attributes.rb:3125
 msgid "MiqReportResult|Report rows per detail row"
-msgstr ""
+msgstr "MiqReportResult|Строк отчёта на строку детализации"
 
 #: ../config/model_attributes.rb:3126
 msgid "MiqReportResult|Report source"
@@ -48695,19 +48683,19 @@ msgstr "MiqRequest|Userid"
 
 #: ../config/model_attributes.rb:3163
 msgid "MiqRequest|V allowed tags"
-msgstr "MiqRequest|Разрешённые теги V"
+msgstr "MiqRequest|Разрешённые теги"
 
 #: ../config/model_attributes.rb:3164
 msgid "MiqRequest|V approved by"
-msgstr ""
+msgstr "MiqRequest|Кем одобрено"
 
 #: ../config/model_attributes.rb:3165
 msgid "MiqRequest|V approved by email"
-msgstr ""
+msgstr "MiqRequest|Одобрено по почте"
 
 #: ../config/model_attributes.rb:3166
 msgid "MiqRequest|V workflow class"
-msgstr "MiqRequest|Класс потока процедур V"
+msgstr "MiqRequest|Класс потока процедур"
 
 #: ../config/model_attributes.rb:3186
 msgid "MiqSchedule|Adhoc"
@@ -48779,11 +48767,11 @@ msgstr "MiqSchedule|Userid"
 
 #: ../config/model_attributes.rb:3203
 msgid "MiqSchedule|V interval unit"
-msgstr "MiqSchedule|Единицы интервала V"
+msgstr "MiqSchedule|Единицы интервала"
 
 #: ../config/model_attributes.rb:3204
 msgid "MiqSchedule|V zone name"
-msgstr "MiqSchedule|Имя зоны V"
+msgstr "MiqSchedule|Имя зоны"
 
 #: ../config/model_attributes.rb:3206
 msgid "MiqScsiLun|Block"
@@ -49294,9 +49282,8 @@ msgid "MiqWidgetSet|Set data"
 msgstr "MiqWidgetSet|Данные набора"
 
 #: ../config/model_attributes.rb:3355
-#, fuzzy
 msgid "MiqWidgetSet|Set type"
-msgstr "MiqWidgetSet|Set type"
+msgstr "MiqWidgetSet|Тип набора"
 
 #: ../config/model_attributes.rb:3356
 msgid "MiqWidgetSet|Updated on"
@@ -50459,7 +50446,7 @@ msgstr ""
 
 #: ../app/models/miq_widget/content_generation.rb:3
 msgid "Must call .new with an options hash."
-msgstr ""
+msgstr "Необходимо вызвать .new с хэшем параметров"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/cloud_manager/vm.rb:86
@@ -53049,9 +53036,8 @@ msgid "Normalized State"
 msgstr "Нормализованное состояние"
 
 #: ../app/views/layouts/exp_atom/_editor.html.haml:21
-#, fuzzy
 msgid "Not"
-msgstr "Не…"
+msgstr "Not"
 
 #:
 #: ../app/javascript/oldjs/controllers/cloud_volume/cloud_volume_form_controller.js:94
@@ -54971,7 +54957,7 @@ msgstr "OrchestrationTemplate|Номер региона"
 
 #: ../app/helpers/catalog_helper.rb:54
 msgid "Order"
-msgstr "Заказ"
+msgstr "Заказать"
 
 #: ../app/controllers/application_controller/dialog_runner.rb:50
 #: ../app/javascript/oldjs/controllers/dialog_user/dialog_user_controller.js:31
@@ -55808,7 +55794,7 @@ msgstr "Patch|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:3672
 msgid "Patch|V install date"
-msgstr "Patch|Дата установки V"
+msgstr "Patch|Дата установки"
 
 #: ../config/model_attributes.rb:3673
 msgid "Patch|Vendor"
@@ -55907,7 +55893,7 @@ msgstr "Адрес MAC однорангового узла"
 
 #: ../app/controllers/miq_request_controller.rb:13
 msgid "Pending Approval"
-msgstr "Отложенное одобрение"
+msgstr "Ожидается одобрение"
 
 #: ../app/helpers/miq_alert_helper.rb:75
 #: ../app/views/miq_alert/_alert_builtin_exp.html.haml:93
@@ -55916,11 +55902,11 @@ msgstr "Поминутно"
 
 #: ../app/views/chargeback_rate/_cb_rate_edit_table.html.haml:13
 msgid "Per Time"
-msgstr "На время"
+msgstr "За время"
 
 #: ../app/views/chargeback_rate/_cb_rate_edit_table.html.haml:14
 msgid "Per Unit"
-msgstr "На единицу"
+msgstr "За единицу"
 
 #: ../app/javascript/oldjs/miq_application.js:85
 msgid "Percent"
@@ -56617,7 +56603,7 @@ msgstr[2] "Производительность: ВМ"
 #. TRANSLATORS: en.yml key: dictionary.model.VmPerformance (plural form)
 #: ../config/dictionary_strings.rb:3816
 msgid "Performance - VMs"
-msgstr ""
+msgstr "Производительность: вирт. машины"
 
 #: ../app/models/miq_alert.rb:445 ../app/models/miq_alert.rb:455
 #: ../app/models/miq_alert.rb:461
@@ -57165,7 +57151,6 @@ msgid "PhysicalChassis|Ems ref"
 msgstr "PhysicalChassis|Отсылка на EMS"
 
 #: ../config/model_attributes.rb:3692
-#, fuzzy
 msgid "PhysicalChassis|Fan slot count"
 msgstr "PhysicalChassis|Количество слотов вентиляторов"
 
@@ -57432,11 +57417,11 @@ msgstr "PhysicalServer|Uid ems"
 
 #: ../config/model_attributes.rb:3762
 msgid "PhysicalServer|V availability"
-msgstr "PhysicalServer|Доступность V"
+msgstr "PhysicalServer|Доступность"
 
 #: ../config/model_attributes.rb:3763
 msgid "PhysicalServer|V host os"
-msgstr "PhysicalServer|ОС хоста V"
+msgstr "PhysicalServer|ОС хоста"
 
 #: ../config/model_attributes.rb:3764
 msgid "PhysicalServer|Vendor"
@@ -58820,7 +58805,6 @@ msgid "Priority Order was saved"
 msgstr "Порядок приоритетов был сохранён"
 
 #: ../app/javascript/components/workers-form/workers.schema.js:39
-#, fuzzy
 msgid "Priority Workers"
 msgstr "Приоритетные рабоч. процессы"
 
@@ -59679,11 +59663,11 @@ msgstr "Запрос подготовки ресурсов %{type} был отм
 
 #: ../app/controllers/vm_common.rb:1243 ../app/controllers/vm_common.rb:1247
 msgid "Provision %{vms_or_templates}"
-msgstr "Подготовка ресурсов %{vms_or_templates}"
+msgstr "Предоставление ресурсов %{vms_or_templates}"
 
 #: ../app/views/miq_request/_pre_prov.html.haml:4
 msgid "Provision %{what} based on the selected %{type}"
-msgstr "Подготовка ресурсов %{what} на  базе выбранных %{type}"
+msgstr "Предоставление ресурсов %{what} на базе выбранных %{type}"
 
 #: ../app/helpers/application_helper/toolbar/configured_systems_center.rb:12
 msgid "Provision Configured Systems"
@@ -60609,7 +60593,7 @@ msgstr "Чтение (Кбайт/сек)"
 #. TRANSLATORS: en.yml key: dictionary.column.read_hit_ios_per_sec
 #: ../config/dictionary_strings.rb:2650
 msgid "Read Hit (IOPS)"
-msgstr ""
+msgstr "Попаданий чтения (IOPS)"
 
 #. TRANSLATORS: file: product/views/MiqGroup.yaml
 #. TRANSLATORS: file: product/views/MiqUserRole.yaml
@@ -64420,11 +64404,11 @@ msgstr[1] "Ресурса"
 msgstr[2] "Ресурсов"
 
 #: ../app/models/mixins/miq_provision_mixin.rb:314
-#, fuzzy
 msgid ""
 "Resource %{resource_name} is not an eligible resource for this provisioning in"
 "stance."
-msgstr "Ресурс %{resource_name} не является ресурсом, подлежащим выбору для"
+msgstr ""
+"Ресурс %{resource_name} не может быть выбран для подготовки этого экземпляра"
 
 #: ../config/model_display_names.rb:197
 msgid "Resource Action"
@@ -64723,39 +64707,39 @@ msgstr "ResourcePool|Когда обновлялось:"
 
 #: ../config/model_attributes.rb:3934
 msgid "ResourcePool|V direct miq templates"
-msgstr "ResourcePool|V прямые шаблоны MIQ"
+msgstr "ResourcePool|Прямые шаблоны MIQ"
 
 #: ../config/model_attributes.rb:3935
 msgid "ResourcePool|V direct vms"
-msgstr "ResourcePool|V прямые ВМ"
+msgstr "ResourcePool|ВМ с пулом ресурсов по умолчанию"
 
 #: ../config/model_attributes.rb:3936
 msgid "ResourcePool|V parent cluster"
-msgstr "ResourcePool|V родительский кластер"
+msgstr "ResourcePool|Родительский кластер"
 
 #: ../config/model_attributes.rb:3937
 msgid "ResourcePool|V parent datacenter"
-msgstr "ResourcePool|V родительский ЦОД"
+msgstr "ResourcePool|Родительский ЦОД"
 
 #: ../config/model_attributes.rb:3938
 msgid "ResourcePool|V parent folder"
-msgstr "ResourcePool|V родительская папка"
+msgstr "ResourcePool|Родительская папка"
 
 #: ../config/model_attributes.rb:3939
 msgid "ResourcePool|V parent host"
-msgstr "ResourcePool|V родительский хост"
+msgstr "ResourcePool|Родительский хост"
 
 #: ../config/model_attributes.rb:3940
 msgid "ResourcePool|V parent resource pool"
-msgstr "ResourcePool|V родительский пул ресурсов"
+msgstr "ResourcePool|Родительский пул ресурсов"
 
 #: ../config/model_attributes.rb:3941
 msgid "ResourcePool|V total miq templates"
-msgstr "ResourcePool|V всего шаблонов MIQ"
+msgstr "ResourcePool|Всего шаблонов MIQ"
 
 #: ../config/model_attributes.rb:3942
 msgid "ResourcePool|V total vms"
-msgstr "ResourcePool|V всего ВМ"
+msgstr "ResourcePool|Всего ВМ"
 
 #: ../config/model_attributes.rb:3943
 msgid "ResourcePool|Vapp"
@@ -65732,9 +65716,9 @@ msgstr "Номера LUN SCSI"
 #: ../app/models/miq_scsi_target.rb:8
 msgid "SCSI Target"
 msgid_plural "SCSI Targets"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Цель SCSI"
+msgstr[1] "Цели SCSI"
+msgstr[2] "Цели SCSI"
 
 #: ../app/presenters/tree_node/miq_scsi_target.rb:5
 msgid "SCSI Target %{target}"
@@ -65820,7 +65804,6 @@ msgid "SSL Verify Mode"
 msgstr "Режим проверки SSL"
 
 #: ../app/models/manageiq/providers/oracle_cloud/container_manager.rb:115
-#, fuzzy
 msgid "SSL trusting custom CA"
 msgstr "Настраиваемый ЦС доверия SSL"
 
@@ -65907,7 +65890,7 @@ msgstr[2] "Адреса SAN"
 
 #: ../config/model_attributes.rb:3944
 msgid "San address"
-msgstr ""
+msgstr "Адрес SAN"
 
 #: ../config/model_attributes.rb:3945
 msgid "SanAddress|Chap name"
@@ -69000,9 +68983,8 @@ msgid "Service|Retires on"
 msgstr "Service|Когда выводится из эксплуатации:"
 
 #: ../config/model_attributes.rb:4146
-#, fuzzy
 msgid "Service|V total vms"
-msgstr "Service|V всего ВМ"
+msgstr "Service|Всего ВМ"
 
 #: ../config/model_attributes.rb:4147
 msgid "Service|Visible"
@@ -71738,17 +71720,17 @@ msgstr "Начальные значения"
 #. TRANSLATORS: en.yml key: dictionary.column.stat_container_group_create_rate
 #: ../config/dictionary_strings.rb:1838
 msgid "Stat Container Group Create Rate"
-msgstr "Статистика частоты создания группы контейнеров"
+msgstr "Частота создания групп статич. контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.stat_container_group_delete_rate
 #: ../config/dictionary_strings.rb:1840
 msgid "Stat Container Group Delete Rate"
-msgstr "Статистика частоты удаления группы контейнеров"
+msgstr "Частота удаления групп статич. контейнеров"
 
 #. TRANSLATORS: en.yml key: dictionary.column.stat_container_image_registration_rate
 #: ../config/dictionary_strings.rb:1842
 msgid "Stat Container Image Registration Rate"
-msgstr "Статистика частоты регистрации группы контейнеров"
+msgstr "Частота регистрации образов статич. контейнеров"
 
 #. TRANSLATORS: file: product/views/Container.yaml
 #. TRANSLATORS: file: product/views/MiqTask.yaml
@@ -72391,7 +72373,7 @@ msgstr "StorageFile|Размер"
 
 #: ../config/model_attributes.rb:4354
 msgid "StorageFile|V size numeric"
-msgstr "StorageFile|V численный размер"
+msgstr "StorageFile|Численный размер"
 
 #. TRANSLATORS: file: product/views/ems_storage.yaml
 #: ../config/yaml_strings.rb:1934
@@ -74510,7 +74492,6 @@ msgid "The Cloud Volume is not connected to an active %{table}"
 msgstr "Облачный том не подключён к активной %{table}"
 
 #: ../app/helpers/miq_alert_set_helper.rb:16
-#, fuzzy
 #: ../app/helpers/term_of_service_helper.rb:5
 #: ../app/helpers/term_of_service_helper.rb:24
 #: ../app/helpers/term_of_service_helper.rb:33
@@ -74787,12 +74768,11 @@ msgstr[1] "Следующие элементы каталога связаны �
 msgstr[2] "Следующие элементы каталога связаны со службами:"
 
 #: ../app/controllers/application_controller/filter.rb:632
-#, fuzzy
 msgid ""
 "The check count value must be an integer to commit this expression element"
 msgstr ""
-"Для фиксации этого элемента выражения значение check count должно быть целым"
-" числом"
+"Для фиксации этого элемента выражения значение числа проверок должно быть"
+" целым числом"
 
 #: ../app/javascript/components/copy-catalog-form/copy-catalog-form.jsx:17
 msgid "The copied item will not be displayed in the catalog by default"
@@ -76000,11 +75980,11 @@ msgstr "Всего настроенных систем"
 
 #: ../app/helpers/resource_pool_helper/textual_summary.rb:71
 msgid "Total Configured VM CPUs"
-msgstr "Всего настроенных ЦП машины"
+msgstr "Всего настроенных ЦП машин"
 
 #: ../app/helpers/resource_pool_helper/textual_summary.rb:67
 msgid "Total Configured VM Memory"
-msgstr "Всего настроенной памяти машины"
+msgstr "Всего настроенной памяти машин"
 
 #. TRANSLATORS: en.yml key: dictionary.column.total_containers
 #: ../config/dictionary_strings.rb:1948
@@ -78746,11 +78726,11 @@ msgstr "User|Группа LDAP"
 
 #: ../config/model_attributes.rb:4532
 msgid "User|Lower email"
-msgstr "User|Формат почтового адреса"
+msgstr "User|Почта нижнего уровня"
 
 #: ../config/model_attributes.rb:4533
 msgid "User|Lower userid"
-msgstr "User|Самый низкий userid"
+msgstr "User|userid нижнего уровня"
 
 #: ../config/model_attributes.rb:4534
 msgid "User|Miq group description"
@@ -80003,9 +79983,8 @@ msgstr "Вирт. машины, ожидающие вывода из экспл�
 
 #. TRANSLATORS: file: product/reports/425_VM Sprawl - Candidates/057_VMs that are Retired.yaml
 #: ../config/yaml_strings.rb:6806
-#, fuzzy
 msgid "VMs that have been Retired (past retirement date)"
-msgstr "Вирт. машины, выведенные из эксплуатации ()"
+msgstr "Вирт. машины, выведенные из эксплуатации (дата прошлого вывода)"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/006_VMs w_Free Space _ 75% by Function.yaml
 #: ../config/yaml_strings.rb:5596
@@ -80079,9 +80058,8 @@ msgstr "ВМ с ежедневным макс. потреблением ЦП > 8
 
 #. TRANSLATORS: file: product/reports/650_Performance by Asset Type - Virtual Machines/100_VMs_with_Max_Daily_Mem_ 50%_past_mo.yaml
 #: ../config/yaml_strings.rb:6975
-#, fuzzy
 msgid "VMs with Maximum Daily Memory Burst > 50% over past month"
-msgstr "ВМ с ежедневным макс.  >  за посл. месяц"
+msgstr "ВМ с максимальными ежедневными пакетами > 50% за посл. месяц"
 
 #. TRANSLATORS: file: product/reports/100_Configuration Management - Virtual Machines/028_VMs with Volume Free Space -= 20%.yaml
 #: ../config/yaml_strings.rb:5806
@@ -80492,7 +80470,7 @@ msgstr "vApp"
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:227
 #: ../app/views/layouts/angular/_ansible_form_options_angular.html.haml:254
 msgid "Variable"
-msgstr "Переменная"
+msgstr "Переменный"
 
 #: ../app/helpers/miq_alert_helper.rb:163
 #: ../app/views/miq_alert/_alert_snmp.html.haml:59
@@ -84399,7 +84377,7 @@ msgstr "Рабочая нагрузка"
 #: ../app/helpers/application_helper/title.rb:79
 #: ../app/presenters/menu/default_menu.rb:64
 msgid "Workloads"
-msgstr "Рабочие нагрузки"
+msgstr "Нагрузки"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:880
@@ -84408,7 +84386,7 @@ msgstr "Представления рабочих нагрузок"
 
 #: ../app/views/layouts/_exp_editor.html.haml:97
 msgid "Wrap this expression element with a NOT"
-msgstr ""
+msgstr "Маркировать этот элемент выражения с помощью NOT"
 
 #. TRANSLATORS: en.yml key: dictionary.column.pct_write
 #: ../config/dictionary_strings.rb:2646
@@ -84423,7 +84401,7 @@ msgstr "Записать (IOPS)"
 #. TRANSLATORS: en.yml key: dictionary.column.write_hit_ios_per_sec
 #: ../config/dictionary_strings.rb:2670
 msgid "Write Hit (IOPS)"
-msgstr ""
+msgstr "Попаданий записи (IOPS)"
 
 #. TRANSLATORS: en.yml key: dictionary.column.k_bytes_written_per_sec
 #: ../config/dictionary_strings.rb:2640
