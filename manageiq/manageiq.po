@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: manageiq 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-09 08:49-0400\n"
-"PO-Revision-Date: 2022-10-17 19:22+0300\n"
+"PO-Revision-Date: 2022-10-18 16:31+0300\n"
 "Last-Translator: Дронова Юлия <juliette.tux@gmail.com>\n"
 "Language-Team: RU\n"
 "Language: ru\n"
@@ -2183,7 +2183,7 @@ msgstr "* Профиль политики применяется только к
 
 #: ../app/views/ops/_zone_tree.html.haml:10
 msgid "* Primary Server Roles shown as %{bold} text."
-msgstr "* Первичные роли сервера показаны текстом %{bold}."
+msgstr "* Первичные роли сервера показаны %{bold}."
 
 #: ../app/views/vm_common/_right_size.html.haml:214
 msgid ""
@@ -6422,7 +6422,7 @@ msgstr "Требуется профиль анализа"
 #: ../app/views/ops/_settings_details_tab.html.haml:25
 #: ../config/yaml_strings.rb:1701
 msgid "Analysis Profiles"
-msgstr "Профили анализов"
+msgstr "Профили анализа"
 
 #: ../app/controllers/mixins/actions/host_actions/misc.rb:196
 msgid "Analyze and Compliance Check"
@@ -9749,12 +9749,11 @@ msgstr "БД мощностей и загруженности"
 
 #: ../app/views/ops/_all_tabs.html.haml:120
 msgid "C & U Gap Collection"
-msgstr "Заполнение разрывов в данных по мощностям и загруженности"
+msgstr "Сбор информации о недозагруженности мощностей"
 
 #: ../app/controllers/ops_controller/diagnostics.rb:261
 msgid "C & U Gap Collection successfully initiated"
-msgstr ""
-"Заполнение разрывов в данных по мощностям и загруженности успешно инициировано"
+msgstr "Сбор информации о недозагруженности мощностей успешно инициирован"
 
 #: ../app/helpers/textual_mixins/textual_devices.rb:82
 msgid "CD-ROM (%{name} %{location}), %{connection}"
@@ -53133,8 +53132,7 @@ msgstr "Внимание: поля, отмеченные звёздочкой (*
 msgid ""
 "Note: Gap Collection is only available for VMware vSphere Infrastructures"
 msgstr ""
-"Внимание: заполнение разрывов в данных доступно только для инфраструктуры"
-" VMware vSphere"
+"Внимание: сбор информации доступен только для инфраструктуры VMware vSphere"
 
 #: ../app/views/ops/_settings_cu_collection_tab.html.haml:39
 msgid "Note: No Clusters available."
@@ -59051,7 +59049,7 @@ msgstr "Изменить обновления"
 
 #: ../app/controllers/ops_controller.rb:186
 msgid "Production"
-msgstr "Производство"
+msgstr "Production"
 
 #: ../app/presenters/tree_builder_policy_simulation_results.rb:48
 msgid "Profile"
@@ -61124,7 +61122,7 @@ msgstr "Обновить сведения о наборах сценариев"
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:2617
 msgid "Refresh Production Log"
-msgstr "Обновить сведения производственного журнала"
+msgstr "Обновить сведения журнала Production"
 
 #: ../app/controllers/application_controller/ci_processing.rb:358
 #: ../app/helpers/application_helper/tasks.rb:18
@@ -80679,7 +80677,7 @@ msgstr "Просмотреть все типы системных образов
 #: ../app/views/ops/_settings_details_tab.html.haml:22
 #: ../app/views/ops/_settings_details_tab.html.haml:24
 msgid "View Analysis Profiles"
-msgstr "Просмотреть профили анализов"
+msgstr "Просмотреть профили анализа"
 
 #. TRANSLATORS: file: db/fixtures/miq_product_features.yml
 #: ../config/yaml_strings.rb:1224
@@ -84881,7 +84879,7 @@ msgstr "назад"
 
 #: ../app/views/ops/_zone_tree.html.haml:10
 msgid "bold"
-msgstr "жирный шрифт"
+msgstr "жирным шрифтом"
 
 #:
 #: ../app/models/manageiq/providers/ibm_cloud/power_virtual_servers/storage_manager/cloud_volume.rb:12
@@ -85252,7 +85250,7 @@ msgstr "описание:[%{session}] для [%{name}]"
 
 #: ../app/views/ops/_zone_tree.html.haml:12
 msgid "dimmed"
-msgstr "уменьшенная яркость"
+msgstr "серым шрифтом"
 
 #: ../app/models/miq_queue.rb:78
 msgid "dir must be one of %{directory}"
